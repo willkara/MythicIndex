@@ -141,9 +141,10 @@
 					/>
 				</div>
 
-				{#if displayImage.caption}
+				{#if displayImage.caption || displayImage.alt}
+					{@const displayText = displayImage.caption || displayImage.alt}
 					<figcaption class="image-caption">
-						{displayImage.caption}
+						{displayText}
 					</figcaption>
 				{/if}
 			</figure>

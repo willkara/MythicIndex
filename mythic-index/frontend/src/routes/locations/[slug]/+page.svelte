@@ -8,6 +8,7 @@
 	import BlockImage from '$lib/components/blocks/BlockImage.svelte';
 	import MarkdownContent from '$lib/components/MarkdownContent.svelte';
 	import Lightbox from '$lib/components/Lightbox.svelte';
+	import MasonryGallery from '$lib/components/MasonryGallery.svelte';
 	import QuickFactsCard from '$lib/components/QuickFactsCard.svelte';
 	import SectionNav, { type SectionItem } from '$lib/components/SectionNav.svelte';
 	import { parseInlineMarkdown } from '$lib/utils/inline-markdown';
@@ -29,6 +30,11 @@
 		lightboxOpen = true;
 	}
 
+	function openLightboxForImage(src: string, index: number) {
+		lightboxIndex = index;
+		lightboxOpen = true;
+	}
+
 	// Lazy load marked for legacy content
 	let markedHtml = $state<string | null>(null);
 
@@ -41,15 +47,15 @@
 		})
 	);
 
-	// Get hero image
-	const heroImage = $derived(
-		data.images.find(i => i.role === 'hero' || i.role === 'profile') || data.images[0]
-	);
+	// All images for masonry gallery (keep original order, hero first)
+	const allImages = $derived(() => {
+		if (data.images.length === 0) return [];
 
-	// Gallery images (excluding hero)
-	const galleryImages = $derived(
-		data.images.filter(i => i !== heroImage)
-	);
+		const heroImg = data.images.find(i => i.role === 'hero' || i.role === 'profile');
+		const otherImages = data.images.filter(i => i !== heroImg);
+
+		return heroImg ? [heroImg, ...otherImages] : data.images;
+	});
 
 	// Section navigation state
 	let activeSectionId = $state<string | null>(null);
@@ -164,31 +170,32 @@
 		</nav>
 	</header>
 
-	<!-- Hero Image (full width for locations) -->
-	{#if heroImage?.src}
-		<figure class="mb-8 -mx-4 md:mx-0">
-			<img
-				src={heroImage.src}
-				alt={heroImage.alt || data.item.title}
-				class="w-full rounded-none md:rounded-2xl shadow-xl object-cover aspect-[21/9]"
-				style="object-position: center 20%"
-				loading="eager"
-			/>
-			{#if heroImage.caption}
-				<figcaption class="text-center text-sm text-muted-foreground mt-3 px-4">{heroImage.caption}</figcaption>
+	<!-- Location Layout with Masonry Gallery Sidebar -->
+	<div class="grid md:grid-cols-[420px_1fr] gap-8 mb-12">
+		<!-- Masonry Image Gallery & Quick Facts -->
+		<aside class="md:sticky md:top-8 h-fit space-y-4">
+			{#if allImages().length > 0}
+				<!-- Scrollable Masonry Gallery -->
+				<div class="max-h-[700px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-muted-foreground/20 scrollbar-track-transparent hover:scrollbar-thumb-muted-foreground/40 transition-colors">
+					<MasonryGallery
+						images={allImages()}
+						onImageClick={openLightboxForImage}
+						aspectRatio="landscape"
+					/>
+				</div>
+			{:else}
+				<!-- Placeholder when no images -->
+				<div class="w-full rounded-2xl bg-muted aspect-video flex items-center justify-center">
+					<MapPin class="h-24 w-24 text-muted-foreground/30" />
+				</div>
 			{/if}
-		</figure>
-	{:else}
-		<!-- Placeholder when no image -->
-		<div class="mb-8 -mx-4 md:mx-0">
-			<div class="w-full rounded-none md:rounded-2xl bg-muted aspect-[21/9] flex items-center justify-center">
-				<MapPin class="h-24 w-24 text-muted-foreground/30" />
-			</div>
-		</div>
-	{/if}
 
-	<!-- Location Info -->
-	<div class="max-w-3xl mx-auto">
+			<!-- Quick Facts Card -->
+			<QuickFactsCard metadata={data.metadata ?? {}} kind="location" />
+		</aside>
+
+		<!-- Location Info -->
+		<div>
 		<h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4 leading-tight">
 			{data.item.title}
 		</h1>
@@ -201,7 +208,7 @@
 		{/if}
 
 		<!-- Metadata -->
-		<div class="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-6">
+		<div class="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-8">
 			<span class="inline-flex items-center gap-1.5">
 				<MapPin class="h-4 w-4" aria-hidden="true" />
 				Location
@@ -211,11 +218,6 @@
 				<Calendar class="h-4 w-4" aria-hidden="true" />
 				Updated {formattedDate}
 			</span>
-		</div>
-
-		<!-- Quick Facts Card -->
-		<div class="mb-8">
-			<QuickFactsCard metadata={data.metadata ?? {}} kind="location" />
 		</div>
 
 		<!-- Content -->
@@ -482,43 +484,19 @@
 		</div>
 	</div>
 
-	<!-- Gallery Section -->
-	{#if galleryImages.length > 0}
-		<section class="mt-12 pt-8 border-t max-w-3xl mx-auto">
-			<h2 class="text-2xl font-semibold mb-6">Gallery</h2>
-			<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-				{#each galleryImages as image, i}
-					<button
-						onclick={() => openLightbox(i)}
-						class="text-left focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-xl"
-					>
-						<figure>
-							<img
-								src={image.src}
-								alt={image.alt}
-								class="w-full rounded-xl shadow-md object-cover aspect-video hover:opacity-90 transition-opacity cursor-pointer"
-								loading="lazy"
-							/>
-							{#if image.caption}
-								<figcaption class="text-center text-sm text-muted-foreground mt-2">{image.caption}</figcaption>
-							{/if}
-						</figure>
-					</button>
-				{/each}
-			</div>
-		</section>
-	{/if}
-
-	{#if lightboxOpen && galleryImages.length > 0}
+	<!-- Lightbox for all images -->
+	{#if lightboxOpen && allImages().length > 0}
 		<Lightbox
-			images={galleryImages}
+			images={allImages()}
 			initialIndex={lightboxIndex}
 			onclose={() => lightboxOpen = false}
 		/>
 	{/if}
 
+	</div>
+
 	<!-- Navigation Footer -->
-	<footer class="mt-16 pt-8 border-t max-w-3xl mx-auto">
+	<footer class="mt-16 pt-8 border-t">
 		<nav class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4" aria-label="Location navigation">
 			{#if data.navigation?.prev}
 				<a
