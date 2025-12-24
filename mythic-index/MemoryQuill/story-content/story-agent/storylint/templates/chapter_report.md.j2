@@ -1,0 +1,34 @@
+# Storylint Report: {{ chapter.slug }} - {{ chapter.title }}
+
+## Overall
+- Quality: {{ report.overall_quality }}/5
+- Confidence: {{ report.confidence }}
+
+## Strengths
+{% for item in report.strengths %}
+- {{ item }}
+{% endfor %}
+
+## Risks
+{% for item in report.risks %}
+- {{ item }}
+{% endfor %}
+
+## Issues
+{% for issue in report.issues %}
+- {{ issue.severity | upper }} / {{ issue.type }} @ {{ issue.location }}
+  - {{ issue.explanation }}
+  - Suggested action: {{ issue.suggested_action }}
+{% if issue.evidence_refs %}  - Evidence: {{ issue.evidence_refs | join(", ") }}
+{% endif %}
+{% endfor %}
+
+## Questions
+{% for item in report.questions %}
+- {{ item }}
+{% endfor %}
+
+## Opportunities
+{% for item in report.opportunities %}
+- {{ item }}
+{% endfor %}

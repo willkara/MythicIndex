@@ -1,0 +1,277 @@
+# ============================================================================
+# PROJECT ART DIRECTION
+# Mythic Index / MemoryQuill - Visual Style Guide
+# Last Light Company
+# ============================================================================
+
+metadata:
+  project: "mythic-index"
+  story: "last-light-company"
+  version: "1.0"
+  last_updated: "2025-12-21"
+  canonical_theme_reference_dir: "MemoryQuill/story-content/theme-reference"
+  north_star: |
+    Match the look of the theme-reference images — specifically:
+    - "ChatGPT Image Dec 19, 2025, 11_37_56 PM.png" (tavern hearth / lantern pools)
+    - "ChatGPT Image Dec 19, 2025, 11_39_59 PM.png" (campfire in misty forest)
+
+    Target: painterly cinematic fantasy illustration with warm, motivated light
+    (lanterns/hearth/window glow), lived-in materials, and normalized high-fantasy
+    worldbuilding (Faerûn/D&D vibe) WITHOUT “sparkly” high-fantasy brightness.
+
+    Traditional “museum oil” texture is a value target, but fantasy readability and
+    world cues take priority.
+
+# ============================================================================
+# CORE AESTHETIC
+# ============================================================================
+
+aesthetic_philosophy: |
+  Painterly cinematic high fantasy with grounded physicality.
+
+  We want images that feel like a premium illustrated novel: readable silhouettes, emotional
+  clarity, and rich material rendering (stone, timber, leather, metal) without drifting into:
+  - photoreal “camera” aesthetics
+  - slick, airbrushed game key art
+  - anime / CGI / plastic rendering
+
+medium_simulation:
+  primary: "painterly realism with oil-paint values"
+  texture: "subtle visible brushwork; selective impasto on highlights"
+  finish: "matte; shine only where physically motivated (metal, wet stone, lantern glass)"
+  edges: "lost-and-found edges; crispness concentrated at focal points"
+  detail_density: |
+    Concentrate detail and contrast at the narrative focal point.
+    Simplify periphery with atmosphere and softer edges to avoid uniform hyper-detail.
+
+fantasy_grounding:
+  baseline: "High-fantasy (D&D / Faerûn vibe) where magic is infrastructure, not spectacle."
+  required_signifiers:
+    - "ward-lanterns / everburning lights used like streetlights"
+    - "rune-stones as safety/utility (subtle), not neon ornament"
+    - "guild seals, alchemical ink stamps, arcane paperwork details"
+    - "mixed ancestries normalized in public (dwarf/elf/tiefling/dragonborn/halfling/etc.)"
+    - "weathered fantasy materials: tarred planks, salt-stained stone, bronze patina, soot-dark beams"
+  magic_vfx_rule: |
+    Prefer object-level glows (lantern, vial, rune-lamp, staff tip) over large spell explosions.
+    Glows must be physically motivated and color-managed (no neon flooding the scene).
+
+    Avoid “sparkly fantasy” rendering: no glitter clouds, fairy-dust particles, twinkle overlays,
+    or rainbow bokeh. If motes exist (embers, dust), they should be sparse and natural.
+
+# ============================================================================
+# STYLE REFERENCES BY MOOD (MATCHES CHAPTER MOOD TAXONOMY)
+# ============================================================================
+
+mood_style_mapping:
+  somber:
+    primary: "Rembrandt chiaroscuro"
+    secondary: "Goya late-period restraint"
+    notes: "Deep shadow structure; grief without melodrama; faces emerging from darkness"
+
+  pastoral:
+    primary: "Romantic landscape naturalism (Constable / Hudson River School values)"
+    secondary: "Caspar David Friedrich scale and solitude"
+    notes: "Air and distance; human scale; nature as presence"
+
+  celebratory:
+    primary: "Dutch Golden Age genre warmth"
+    secondary: "Renaissance feast harmony"
+    notes: "Abundance and community; warm practicals; keep palettes controlled (no rainbow noise)"
+
+  aquatic:
+    primary: "Turner sea-and-mist atmosphere"
+    secondary: "Dutch marine painting clarity"
+    notes: "Moist air, wet reflections, salt haze; cool base with warm practical lights"
+
+  ethereal:
+    primary: "Pre-Raphaelite luminosity (controlled)"
+    secondary: "Symbolist glow (soft edges, dream clarity)"
+    notes: "Jewel accents permitted; keep dimensional shadows; avoid candy saturation"
+
+  intimate:
+    primary: "Vermeer interior light"
+    secondary: "Georges de La Tour candlelit focus"
+    notes: "Single motivated source; quiet gestures; domestic sacredness"
+
+  kinetic:
+    primary: "Baroque diagonals (Delacroix energy)"
+    secondary: "Caravaggio drama applied to motion"
+    notes: "Strong diagonals; implied motion via brushwork; clarity at the impact point"
+
+  ominous:
+    primary: "Goya darkness"
+    secondary: "Storm landscape menace"
+    notes: "Threat implied; oppressive atmosphere; avoid horror-gore unless story demands"
+
+# ============================================================================
+# LIGHTING PHILOSOPHY
+# ============================================================================
+
+lighting_principles:
+  general: |
+    Prefer motivated sources (lanterns, hearths, windows, sun, moon, rune-lamps) over studio light.
+    Every image should answer: “where is the light coming from?”
+    Default value range is low-key: pools of warm light surrounded by readable darkness.
+
+  color_temperature:
+    warm_sources: "fire, lantern, candle, sunset → amber, gold, orange"
+    cool_sources: "moonlight, overcast, mist, rune-lamps (subtle) → silver, blue-gray, pale green"
+    mixed: "Best default: warm key + cool fill for depth"
+
+  shadow_philosophy: |
+    Shadows are colored, not black voids. Preserve form in darkness.
+    Cool shadows against warm light; warm shadows against cool light.
+
+  atmosphere: |
+    Air should be present: dust motes, hearth smoke, fog, rain haze, mist, or steam.
+    Use atmosphere to separate planes (foreground/midground/background).
+
+# ============================================================================
+# COLOR PHILOSOPHY
+# ============================================================================
+
+color_principles:
+  saturation: |
+    Restrained. Rich but not neon. “Illustrated novel” saturation, not “video game UI.”
+
+  palette_construction: |
+    Use 3–4 dominant colors with 1–2 meaningful accents.
+    Accents must pull focus to story-important elements (lantern, sigil, blood, spell focus).
+
+  signature_colors:
+    lantern_gold: "Hope, persistence, memory; the Last Light brand color"
+    dragon_fire_green: "Catastrophic magic; transformation; used sparingly as an accent"
+    glass_grey: "Vitrified stone; witness, grief, preservation"
+    blood_rust: "Cost, sacrifice; avoid bright red unless fresh action"
+
+  always_avoid:
+    - "neon / fluorescent color ramps"
+    - "pure black (use deep umber, charcoal, indigo)"
+    - "pure white (use cream, pale gold, silver)"
+    - "uncontrolled rainbow palettes except rare, intentional celebratory beats"
+    - "sparkly/glitter particle looks and candy-bright spell glow"
+
+# ============================================================================
+# COMPOSITION PRINCIPLES
+# ============================================================================
+
+composition_principles:
+  framing: |
+    Use classical composition (thirds, diagonals, strong silhouettes).
+    Centering is reserved for ritual/symmetry moments (oaths, councils, icons).
+
+  depth: |
+    Layer foreground props, midground action, background architecture/sky.
+    Use atmospheric perspective and value grouping to preserve readability.
+
+  focal_hierarchy: |
+    Sharpest detail and highest contrast live at the story focal point.
+    Backgrounds support; they do not compete.
+
+  human_scale: |
+    When environments are vast, include people/figures for scale.
+    The contrast between human fragility and environment power is thematic.
+
+# ============================================================================
+# CHARACTER + CROWD RULES
+# ============================================================================
+
+character_identity_rules:
+  canon_first: "Never invent defining features when canonical appearance exists."
+  portrait_references: "When portraits are available, they are identity lock."
+  expression_truth: "Prioritize emotional truth; avoid mannequin faces."
+  costume_truth: "Worn, repaired, practical; no pristine cosplay."
+  crowds: |
+    Do not face-clone background figures.
+    Background people should be varied, impressionistic, and subordinate to the focal beat.
+
+# ============================================================================
+# REFERENCE USAGE (MULTI-REFERENCE GENERATION)
+# ============================================================================
+
+reference_policy:
+  portraits:
+    purpose: "Identity lock (face/hair/marks/age)."
+    priority: "Highest"
+  location_overviews:
+    purpose: "Architecture/material continuity (layout, signature elements)."
+    priority: "High"
+  theme_reference_images:
+    purpose: "Art direction only (palette, lighting language, rendering style)."
+    priority: "High"
+    note: "Theme refs steer style; they are not strict environment identity."
+
+# ============================================================================
+# TECHNICAL SPECIFICATIONS (GUIDANCE)
+# ============================================================================
+
+generation_guidance:
+  max_prompt_length_chars: 4000
+  defaults:
+    provider_primary: "google"
+    model_primary: "gemini-3-pro-image-preview"
+    provider_secondary: "openai"
+    model_secondary: "gpt-image-1.5"
+    quality: "high"
+
+aspect_ratios:
+  establishing: "16:9"
+  scene_standard: "16:9"
+  portrait: "2:3"
+  square_icon: "1:1"
+
+size_mapping_openai_gpt_image:
+  "16:9": "1536x1024"
+  "2:3": "1024x1536"
+  "1:1": "1024x1024"
+
+# ============================================================================
+# UNIVERSAL NEGATIVE PROMPT (BASE)
+# ============================================================================
+
+negative_prompt_base: |
+  cartoon, anime, manga, cel-shaded, plastic, glossy, CGI, 3D render,
+  video game screenshot, photorealistic camera look, stock photo,
+  airbrushed skin, perfect studio lighting, beauty editorial,
+  modern elements, futuristic elements, guns/firearms,
+  neon colors, oversaturated glow, sparkles, glitter, fairy-dust, twinkle, rainbow bokeh,
+  high-key overbright lighting, overexposed highlights,
+  text, subtitles, logos, watermarks, signatures, frames,
+  AI artifacts, distorted anatomy, extra fingers, duplicated faces
+
+# ============================================================================
+# PROMPT STRUCTURE TEMPLATE (HUMAN-WRITABLE)
+# ============================================================================
+
+prompt_template: |
+  SUBJECT:
+  [Primary subject + key identity anchors (race/age/build/hair/marks/clothing/equipment)]
+
+  ACTION / EMOTION:
+  [Gesture, expression, interaction; what matters emotionally]
+
+  SETTING:
+  [Location + materials + weather/season + practical fantasy infrastructure cues]
+
+  COMPOSITION:
+  [Camera angle, framing, depth layers, focal point]
+
+  LIGHT + PALETTE:
+  [Motivated source; warm/cool relationship; 3–4 dominant colors + accents]
+
+  STYLE:
+  [Mood key → mood_style_mapping]
+  [End with: painterly realism, subtle brushwork, matte finish]
+
+# ============================================================================
+# HOW TO USE (PIPELINE NOTES)
+# ============================================================================
+
+usage_notes: |
+  Recommended injection order when authoring or compiling prompts:
+  1) PROJECT ART DIRECTION (this file)
+  2) ENTITY SPEC (chapter imagery.yaml / location imagery.yaml / image-ideas.yaml)
+  3) CHARACTER PORTRAIT REFERENCES (identity lock) + LOCATION OVERVIEW REFERENCES (architecture lock)
+  4) THEME REFERENCE IMAGES (style refs)
+  5) Scene-specific additions and negatives (append to negative_prompt_base, keep short)

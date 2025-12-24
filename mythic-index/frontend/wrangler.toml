@@ -1,0 +1,15 @@
+name = "mythicindex-frontend"
+compatibility_date = "2025-12-14"
+compatibility_flags = ["nodejs_compat_v2"]
+pages_build_output_dir = ".svelte-kit/cloudflare"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "mythicindex-db"
+database_id = "a3f97481-6340-44c7-ae75-06dcf0c76ac2"
+
+[vars]
+# WARNING: These values are deployment-specific and safe to commit
+# The Account Hash is public in image URLs anyway
+CLOUDFLARE_ACCOUNT_HASH = "your_account_hash_here"
+CLOUDFLARE_DELIVERY_BASE_URL = "https://imagedelivery.net/your_account_hash_here"

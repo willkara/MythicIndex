@@ -1,0 +1,147 @@
+name: Backup Database to R2
+
+on:
+  schedule:
+    # Run daily at 2 AM UTC
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+    inputs:
+      database_type:
+        description: "Database type to backup"
+        required: true
+        default: "sqlite"
+        type: choice
+        options:
+          - sqlite
+          - postgresql
+
+env:
+  PYTHON_VERSION: "3.11"
+
+jobs:
+  backup-database:
+    name: Backup Database
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          pip install boto3 psycopg2-binary
+
+      - name: Configure AWS CLI for R2
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          aws-region: auto
+
+      - name: Backup SQLite Database
+        if: inputs.database_type == 'sqlite' || github.event_name == 'schedule'
+        run: |
+          # Download current database from production (if deployed)
+          # This is a placeholder - adjust based on your deployment
+          echo "Backing up SQLite database..."
+
+          # Create backup filename with timestamp
+          BACKUP_FILE="backup-sqlite-$(date +%Y%m%d-%H%M%S).db"
+
+          # Copy database file (adjust path as needed)
+          # For Cloudflare Workers with volume, you'd need to download it first
+          # cp /path/to/memoryquill.db "$BACKUP_FILE"
+
+          echo "Backup file would be: $BACKUP_FILE"
+
+      - name: Backup PostgreSQL Database
+        if: inputs.database_type == 'postgresql'
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          echo "Backing up PostgreSQL database..."
+
+          # Extract connection details from DATABASE_URL
+          BACKUP_FILE="backup-postgres-$(date +%Y%m%d-%H%M%S).sql.gz"
+
+          # Create pg_dump backup
+          pg_dump "$DATABASE_URL" | gzip > "$BACKUP_FILE"
+
+          echo "Created backup: $BACKUP_FILE"
+          ls -lh "$BACKUP_FILE"
+
+      - name: Upload backup to R2
+        run: |
+          # Upload all backup files
+          for backup_file in backup-*.{db,sql.gz}; do
+            if [ -f "$backup_file" ]; then
+              echo "Uploading $backup_file to R2..."
+              aws s3 cp "$backup_file" s3://memoryquill-backups/backups/ \
+                --endpoint-url https://${{ secrets.CLOUDFLARE_ACCOUNT_ID }}.r2.cloudflarestorage.com
+
+              echo "✅ Uploaded $backup_file"
+            fi
+          done
+
+      - name: Clean up old backups (keep last 30 days)
+        run: |
+          echo "Cleaning up old backups..."
+
+          # List all backups
+          aws s3 ls s3://memoryquill-backups/backups/ \
+            --endpoint-url https://${{ secrets.CLOUDFLARE_ACCOUNT_ID }}.r2.cloudflarestorage.com \
+            --recursive | while read -r line; do
+
+              # Extract date and filename
+              backup_date=$(echo $line | awk '{print $1}')
+              backup_file=$(echo $line | awk '{print $4}')
+
+              # Calculate age in days
+              backup_timestamp=$(date -d "$backup_date" +%s 2>/dev/null || date -j -f "%Y-%m-%d" "$backup_date" +%s 2>/dev/null || echo "0")
+              current_timestamp=$(date +%s)
+              age_days=$(( ($current_timestamp - $backup_timestamp) / 86400 ))
+
+              # Delete if older than 30 days
+              if [ $age_days -gt 30 ]; then
+                echo "Deleting old backup: $backup_file (age: $age_days days)"
+                aws s3 rm "s3://memoryquill-backups/$backup_file" \
+                  --endpoint-url https://${{ secrets.CLOUDFLARE_ACCOUNT_ID }}.r2.cloudflarestorage.com
+              fi
+            done || echo "Cleanup completed with warnings"
+
+      - name: Add backup summary
+        run: |
+          echo "### 💾 Database Backup Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Date:** $(date)" >> $GITHUB_STEP_SUMMARY
+          echo "**Type:** ${{ inputs.database_type || 'SQLite (scheduled)' }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Backup uploaded to R2 bucket: memoryquill-backups" >> $GITHUB_STEP_SUMMARY
+
+  verify-backup:
+    name: Verify Backup
+    needs: backup-database
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Configure AWS CLI for R2
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          aws-region: auto
+
+      - name: List recent backups
+        run: |
+          echo "### 📋 Recent Backups" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          aws s3 ls s3://memoryquill-backups/backups/ \
+            --endpoint-url https://${{ secrets.CLOUDFLARE_ACCOUNT_ID }}.r2.cloudflarestorage.com \
+            --recursive --human-readable | tail -10 >> $GITHUB_STEP_SUMMARY || echo "Failed to list backups" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY

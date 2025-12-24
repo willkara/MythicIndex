@@ -1,0 +1,85 @@
+location:
+  slug: korraths-office
+  name: Korrath Threnx's Office
+  files:
+    overview:
+      path: locations/korraths-office/overview.md
+      excerpt: ''
+      exists: true
+    description:
+      path: locations/korraths-office/description.md
+      excerpt: ''
+      exists: true
+    inhabitants:
+      path: locations/korraths-office/inhabitants.md
+      excerpt: ''
+      exists: true
+zones_manifest:
+  path: locations/korraths-office/zones.yaml
+  zones:
+  - slug: archive-wall
+    name: The Blueprint Archive
+  - slug: client-pov
+    name: The Client's View
+  - slug: drafting-table
+    name: The Drafting Table
+  - slug: dust-free
+    name: The Dust-Free Zone
+  - slug: empty
+    name: Before the Engineer
+  - slug: essence
+    name: The Architect's Faith
+  - slug: material-library
+    name: The Sample Library
+  - slug: model-shelves
+    name: The Scale Models
+  - slug: office
+    name: Office
+    featured_in_chapters:
+    - ch33-an-architects-honor
+  - slug: pivot
+    name: Engineering as Redemption
+  - slug: retired-tool
+    name: The Retired Tool
+  - slug: revelation
+    name: The Revelation
+  - slug: scale-models
+    name: Load Paths Made Tangible
+  - slug: scry-safe
+    name: The Scry-Safe Circle
+  - slug: tool-boards
+    name: The Tool Discipline
+chapter_evidence:
+- slug: ch33-an-architects-honor
+  files:
+    content:
+      path: chapters/ch33-an-architects-honor/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch33-an-architects-honor/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+intrinsic_characters:
+- slug: cidrella-vexweld
+  reason_intrinsic: Referenced in locations/korraths-office/inhabitants.md
+  files:
+    profile:
+      path: characters/cidrella-vexweld/profile.md
+      excerpt: ''
+      exists: true
+    imagery:
+      path: characters/cidrella-vexweld/imagery.yaml
+      excerpt: ''
+      exists: true
+- slug: korrath-threnx
+  reason_intrinsic: Referenced in locations/korraths-office/inhabitants.md
+  files:
+    profile:
+      path: characters/korrath-threnx/profile.md
+      excerpt: ''
+      exists: true
+    imagery:
+      path: characters/korrath-threnx/imagery.yaml
+      excerpt: ''
+      exists: true

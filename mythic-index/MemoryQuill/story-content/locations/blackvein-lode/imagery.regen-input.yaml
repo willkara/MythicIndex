@@ -1,0 +1,78 @@
+location:
+  slug: blackvein-lode
+  name: Blackvein Lode
+  files:
+    overview:
+      path: locations/blackvein-lode/overview.md
+      excerpt: ''
+      exists: true
+    description:
+      path: locations/blackvein-lode/description.md
+      excerpt: ''
+      exists: true
+    inhabitants:
+      path: locations/blackvein-lode/inhabitants.md
+      excerpt: ''
+      exists: true
+zones_manifest:
+  path: locations/blackvein-lode/zones.yaml
+  zones:
+  - slug: breakthrough
+    name: Underground Breakthrough
+  - slug: command-bench
+    name: Command Staging Bench
+  - slug: family-vigil
+    name: Family Vigil Grounds at Night
+  - slug: family-vigil-grounds
+    name: Family Vigil Grounds
+  - slug: fracture-flag
+    name: The Fracture Flag
+  - slug: grimjaw-listening
+    name: Grimjaw Listening to the Mountain
+  - slug: main-minehead
+    name: Main Minehead and Headframe
+  - slug: mine-entrance
+    name: Mine Entrance
+    featured_in_chapters:
+    - ch05-the-weight-of-the-world
+  - slug: mine-head
+    name: Mine Head
+    featured_in_chapters:
+    - ch05-the-weight-of-the-world
+    - ch06-foundations-of-stone-and-spirit
+  - slug: predawn
+    name: Pre-Dawn Frost
+  - slug: support-buildings
+    name: Lamproom, Tool House, Foreman's Office
+  - slug: surface-yards
+    name: Surface Yards and Retaining Works
+  - slug: underground-collapse-zone
+    name: Deep Gallery (Collapse Zone)
+  - slug: vent-collars
+    name: Ridge Ventilation Collars
+  - slug: ventilation-collars
+    name: Ventilation Shafts and Collars
+  - slug: veyra-perspective
+    name: Veyra's Recognition at the Threshold
+chapter_evidence:
+- slug: ch05-the-weight-of-the-world
+  files:
+    content:
+      path: chapters/ch05-the-weight-of-the-world/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch05-the-weight-of-the-world/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+- slug: ch06-foundations-of-stone-and-spirit
+  files:
+    content:
+      path: chapters/ch06-foundations-of-stone-and-spirit/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch06-foundations-of-stone-and-spirit/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+intrinsic_characters: []

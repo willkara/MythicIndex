@@ -1,0 +1,463 @@
+location_identity:
+  slug: "silken-siren"
+  name: "The Silken Siren"
+  location_type: "establishment"
+  
+  narrative_soul: |
+    The Silken Siren is Waterdeep's shadow economy given form—a place where 
+    information is currency and fear is architecture. There are no guards, 
+    no locks, no visible threats. The security is social: everyone who enters 
+    already knows the rules, and the consequences for breaking them are 
+    understood without ever being spoken. When a seasoned fence refuses gold 
+    rather than answer a question, you've learned everything you need to know 
+    about who truly controls this city's darker currents.
+    
+  one_line_essence: "Where fear polices what walls cannot"
+  
+  symbolic_weight:
+    primary_symbol: "The invisible hand of underworld power"
+    supporting_symbols:
+      - "Information as weapon and shield"
+      - "Self-policing through shared fear"
+      - "The price of knowledge"
+    thematic_tensions:
+      - "Transaction vs. danger—even coin can't buy safety"
+      - "Discretion vs. paranoia—privacy that imprisons"
+      - "Professional competence vs. existential fear"
+
+  transformation_arc: |
+    The Silken Siren doesn't change through the story—it reveals. Marcus's 
+    visit exposes the reach of protection networks (implied Silent Hand) that 
+    turn even professional information brokers into fearful gatekeepers. The 
+    location functions as a demonstration: Korrath Threnx is not merely 
+    criminal, but *protected* at levels that make hardened fences refuse gold.
+
+physical_truth:
+  construction_style: "Unspecified in canon—extrapolate as urban Waterdeep commercial"
+  primary_materials:
+    - "Dark wood (implied from atmosphere)"
+    - "Sound-dampening fabrics (implied)"
+    - "Stone or brick exterior (Waterdeep standard)"
+  scale_impression: "Intimate, moderate capacity—quality over quantity clientele"
+  
+  visual_signature: |
+    Tables positioned as islands of privacy in a dim room. Every patron has 
+    sightlines to exits. The spacing between conversations is deliberate—
+    secrets don't travel here. Staff are professionally invisible. Nothing 
+    overtly threatening, yet danger saturates every surface.
+    
+  sound_signature: |
+    Weighted silence. Conversations exist as murmurs, never rising above 
+    hushed exchange. No laughter. No raised voices. Words are measured, 
+    weighed, spent carefully. The quiet has teeth.
+    
+  scent_signature: |
+    Unspecified in canon. Suggest: old wood polish, candle wax, possibly 
+    pipe smoke—nothing that calls attention.
+    
+  tactile_signature: |
+    The sensation of being watched. Temperature is neutral—not comfortable, 
+    not uncomfortable. What you feel is psychological: the weight of 
+    awareness, the pressure of unspoken rules.
+    
+  canon_specifics:
+    - detail: "Known for 'discrete information exchanges'"
+      source: "ch21, overview.md"
+      visual_importance: "high"
+      
+    - detail: "Fences specializing in magical items frequent it"
+      source: "ch21, inhabitants.md"
+      visual_importance: "medium"
+      
+    - detail: "People glancing toward exits"
+      source: "ch21, overview.md"
+      visual_importance: "high"
+      
+    - detail: "Atmosphere of fear and discretion"
+      source: "ch21, description.md"
+      visual_importance: "high"
+      
+    - detail: "Seating designed for confidential conversation"
+      source: "description.md (implied)"
+      visual_importance: "medium"
+      
+  light_character: |
+    Dim enough for discretion, bright enough to read faces. Likely candle or 
+    lantern light—warm but insufficient to illuminate corners. Shadows are 
+    features, not flaws. Light pools at individual tables but doesn't reach 
+    between them.
+    
+  weather_influence: |
+    Interior space—weather irrelevant to function. Windows (if present) 
+    would be shuttered or curtained for privacy.
+
+contextual_place:
+  region: "Waterdeep (specific ward unspecified)"
+  neighborhood_character: |
+    Canon leaves district unspecified. The clientele (fences, arcane 
+    specialists, information brokers) suggests proximity to both legitimate 
+    trade and shadow economy access points. Not a slum—the clientele is 
+    professional. Not a showcase district—discretion requires obscurity.
+    
+  approach_sequences:
+    - name: "Street approach"
+      description: |
+        Unremarkable exterior (implied)—a place you find if you know to look. 
+        No obvious signage announcing its true purpose. Door might be 
+        attended but not obviously guarded.
+      first_impression: "This could be any establishment... until you step inside"
+      
+  visible_beyond:
+    - direction: "From interior"
+      what_visible: "Nothing—privacy is paramount. Exits are tracked, not views."
+      
+  spatial_relationship: |
+    An island of controlled paranoia within Waterdeep's urban fabric. 
+    Connected to the shadow economy network—fence circuits, broker routes, 
+    informant chains. Physically unremarkable; socially significant.
+
+zones:
+  - slug: "main-exchange-floor"
+    name: "Main Exchange Floor"
+    zone_type: "commons"
+    location_within: "Primary interior space"
+    
+    physical_description: |
+      Tables positioned as private islands across a dimly lit room. Spacing 
+      is deliberate—conversations don't overlap, sightlines don't intersect 
+      unnecessarily. Each seating cluster creates a pocket of confidentiality. 
+      Patrons face doors; backs to walls when possible.
+      
+    narrative_function: "Where information changes hands; the visible heart of the shadow economy"
+    
+    emotional_register: "Tense, watchful, professionally paranoid"
+    
+    character_associations:
+      - character: "Marcus Heartbridge"
+        relationship: "Visitor/intelligence gatherer (ch21)"
+        typical_activities:
+          - "Meeting contacts"
+          - "Attempting to buy information"
+          - "Receiving warnings instead of answers"
+          
+    signature_details:
+      - "Tables as privacy islands"
+      - "Patrons facing exits"
+      - "Deliberate spacing between groups"
+      - "Staff maintaining distance"
+      
+    light_conditions:
+      natural: "Minimal—windows shuttered or absent"
+      artificial: "Table-level candles or small lanterns; pools of light that don't connect"
+      
+    mood_affinity:
+      - "tense"
+      - "ominous"
+      - "intimate"
+
+  - slug: "exit-awareness-zone"
+    name: "Exit Sightlines"
+    zone_type: "threshold"
+    location_within: "Peripheral—doors, windows, egress routes"
+    
+    physical_description: |
+      Not a physical zone but a psychological one. Every patron tracks exits 
+      constantly. The doors and potential escape routes are felt even when 
+      not directly viewed. Multiple egress points exist (implied).
+      
+    narrative_function: "The ever-present escape route; survival awareness made architecture"
+    
+    emotional_register: "Heightened alertness, ready flight"
+    
+    character_associations:
+      - character: "All patrons"
+        relationship: "Instinctive awareness"
+        typical_activities:
+          - "Glancing toward exits"
+          - "Maintaining clear paths to doors"
+          - "Ready to depart quickly"
+          
+    signature_details:
+      - "Nervous glances toward doors (FIRM canon)"
+      - "Tables positioned to not block egress"
+      - "Preparedness to leave quickly"
+      
+    light_conditions:
+      natural: "N/A"
+      artificial: "Exits visible but not highlighted"
+      
+    mood_affinity:
+      - "tense"
+      - "ominous"
+
+  - slug: "private-alcoves"
+    name: "Private Alcoves"
+    zone_type: "sanctuary"
+    location_within: "Peripheral or upper level (implied)"
+    
+    physical_description: |
+      Reserved spaces for the most sensitive exchanges. Enhanced privacy 
+      through visual separation and sound dampening. Access controlled by 
+      reputation and trust level.
+      
+    narrative_function: "Where the most dangerous secrets trade; reserved for trusted clientele"
+    
+    emotional_register: "Maximum discretion, elevated stakes"
+    
+    character_associations:
+      - character: "Trusted clientele (unnamed)"
+        relationship: "Earned access"
+        typical_activities:
+          - "High-value information trades"
+          - "Most sensitive transactions"
+          
+    signature_details:
+      - "Visual separation from main floor"
+      - "Enhanced sound dampening"
+      - "Reserved seating"
+      
+    light_conditions:
+      natural: "None"
+      artificial: "Controlled by occupants"
+      
+    mood_affinity:
+      - "intimate"
+      - "tense"
+
+temporal_states:
+  daily_cycle:
+    - time: "pre-dawn"
+      description: "Closed or near-empty; establishment clearing"
+      activities:
+        - "Final departures"
+        - "Staff cleanup"
+      mood: "Exhausted caution"
+      light_quality: "Extinguishing"
+      
+    - time: "morning"
+      description: "Quiet; specific appointments only"
+      activities:
+        - "Private meetings by arrangement"
+        - "Low-risk transactions"
+      mood: "Subdued, careful"
+      light_quality: "Minimal artificial light"
+      
+    - time: "midday"
+      description: "Near-empty; legitimate cover activity if any"
+      activities:
+        - "Rare scheduled meetings"
+        - "Staff preparation"
+      mood: "Dormant"
+      light_quality: "Whatever exterior light leaks in"
+      
+    - time: "evening"
+      description: "Active; shadow economy awakens"
+      activities:
+        - "Information trading accelerates"
+        - "Regular clientele arrives"
+        - "Deals negotiated"
+      mood: "Tense, busy within limits"
+      light_quality: "Candles lit; pools of warm light"
+      
+    - time: "night"
+      description: "Peak operation; highest tension"
+      activities:
+        - "Most sensitive exchanges"
+        - "Full shadow economy activity"
+        - "Danger at its highest"
+      mood: "Maximum tension and watchfulness"
+      light_quality: "Deliberately dim; shadows dominant"
+      
+  seasonal_variations:
+    - season: "All seasons"
+      changes: "Minimal—interior operation largely weather-independent"
+      mood_shift: "None specified"
+      
+  story_timeline_states:
+    - state_name: "Marcus's visit (ch21)"
+      chapter_range: "ch21 only"
+      description: |
+        The single canon appearance. Marcus attempts to gather intelligence 
+        about Korrath Threnx. The atmosphere shifts when his questions 
+        identify him as someone asking dangerous things. The fence's refusal 
+        to take payment crystallizes the threat.
+        
+  weather_states:
+    - condition: "Interior"
+      description: "Weather irrelevant to interior operation"
+      mood: "Constant tension regardless"
+
+character_space_relationships:
+  - character_slug: "marcus-heartbridge"
+    character_name: "Marcus Heartbridge"
+    
+    primary_association: "Intelligence gatherer; single visit revealing network protection"
+    
+    personal_zones:
+      - zone: "main-exchange-floor"
+        relationship: "Visitor, not regular—his questions marked him as dangerous"
+        typical_use: "Meeting a fence contact; attempting to buy information"
+        
+    signature_moments:
+      - moment: "Fence refusing payment rather than discuss Korrath"
+        chapter: "ch21"
+        visual_potential: |
+          Two figures at a dim table—coin pushed back across wood, fence's 
+          face showing fear rather than greed, Marcus's confusion turning to 
+          understanding. The moment crystallizes what can't be bought.
+          
+    perspective_quote: |
+      "I've paid for secrets in a dozen cities. This was the first time 
+      someone refused my gold because the answer would cost them more 
+      than I could ever give."
+
+narrative_beats:
+  - beat_id: "fence-refuses-payment"
+    chapter: "ch21"
+    scene: "Marcus's intelligence gathering attempt"
+    
+    what_happens: |
+      Marcus meets a fence contact to inquire about Korrath Threnx. The 
+      fence warns him away, refuses payment, and reveals that inquiries 
+      about Korrath are "poison" that brings "visits from unpleasant people."
+    
+    zones_involved:
+      - "main-exchange-floor"
+    characters_present:
+      - "Marcus Heartbridge"
+      - "Unnamed fence contact"
+      
+    visual_potential:
+      description: |
+        A tense exchange at a dim table. Coin sits between them—pushed back 
+        toward Marcus. The fence leans in, face showing genuine fear rather 
+        than negotiation. Behind them, other patrons glance toward exits. 
+        The refusal of gold speaks louder than any threat.
+      key_visual_hook: "Refused coin on a dark table—fear outweighs greed"
+      suggested_mood: "ominous"
+      
+    selection_score:
+      narrative_importance: 4
+      visual_distinctiveness: 4
+      emotional_resonance: 4
+      total: 12
+
+recommended_images:
+  - image_type: "establishing"
+    priority: "primary"
+    
+    target: "The main exchange floor capturing the atmosphere of professional paranoia"
+    
+    rationale: |
+      The Silken Siren's power is atmospheric—fear as security, discretion 
+      as survival. A single establishing shot can capture this: the dim pools 
+      of light, the isolated tables, the glances toward exits. This is the 
+      visual vocabulary of Waterdeep's shadow economy.
+    
+    suggested_mood: "ominous"
+    suggested_time: "Evening/night"
+    suggested_weather: "N/A (interior)"
+    
+    characters_to_include:
+      - "Anonymous patrons (background)"
+      - "Staff (barely visible)"
+    zone_focus: "main-exchange-floor"
+    
+    key_elements:
+      - "Tables as isolated privacy islands"
+      - "Dim, pooled lighting (candles/lanterns)"
+      - "Patrons facing exits, glancing toward doors"
+      - "Deliberate spacing between conversations"
+      - "No visible security—threat is implied"
+      
+    visual_hook: "Fear made visible in body language and spacing"
+    
+    composition_suggestion: "Wide interior shot, slightly elevated angle to show floor layout and patron distribution; emphasize negative space between groups"
+
+  - image_type: "beat"
+    priority: "primary"
+    
+    target: "The fence refusing Marcus's payment"
+    
+    rationale: |
+      This is the narrative core of the Silken Siren's single appearance—
+      the moment when professional greed loses to existential fear. The 
+      visual of refused coin tells the story: some information costs more 
+      than gold can pay.
+    
+    suggested_mood: "ominous"
+    suggested_time: "Evening"
+    suggested_weather: "N/A (interior)"
+    
+    characters_to_include:
+      - "Marcus Heartbridge"
+      - "Unnamed fence (generic shadow economy figure)"
+    zone_focus: "main-exchange-floor"
+    
+    key_elements:
+      - "Dim table-level lighting"
+      - "Coin pushed back across table (visual center)"
+      - "Fence's face showing fear, not negotiation"
+      - "Marcus's expression—confusion turning to understanding"
+      - "Background patrons alert but not intervening"
+      
+    visual_hook: "Refused gold in a dim room—the transaction that can't happen"
+    
+    composition_suggestion: "Medium two-shot across table; coin visible between figures; shallow depth of field with background patrons soft but present; warm candlelight on faces"
+
+  - image_type: "essence"
+    priority: "secondary"
+    
+    target: "A single patron tracking an exit"
+    
+    rationale: |
+      The nervous glance toward exits is canon-specific behavior. A close 
+      portrait of this moment captures the psychology of the space—survival 
+      awareness as constant state.
+    
+    suggested_mood: "tense"
+    suggested_time: "Night"
+    suggested_weather: "N/A (interior)"
+    
+    characters_to_include:
+      - "Anonymous patron (generic shadow economy figure)"
+    zone_focus: "exit-awareness-zone"
+    
+    key_elements:
+      - "Figure in partial profile"
+      - "Eyes directed toward off-frame exit"
+      - "Body language of readiness"
+      - "Dim lighting with face partially shadowed"
+      
+    visual_hook: "The perpetual readiness to flee"
+    
+    composition_suggestion: "Close portrait, off-center subject with negative space toward implied exit; shallow DOF; warm shadow tones"
+
+  - image_type: "perspective"
+    priority: "optional"
+    
+    target: "Marcus's POV entering the establishment"
+    
+    rationale: |
+      Show what Marcus sees when he enters—the layout designed for discretion, 
+      the clientele that doesn't look up, the immediate sense that different 
+      rules apply here.
+    
+    suggested_mood: "ominous"
+    suggested_time: "Evening"
+    suggested_weather: "N/A (interior)"
+    
+    characters_to_include:
+      - "Various patrons (background, not acknowledging viewer)"
+    zone_focus: "main-exchange-floor"
+    
+    key_elements:
+      - "POV entering from threshold"
+      - "Tables arranged for privacy visible"
+      - "Patrons who don't look toward door"
+      - "Staff professionally invisible"
+      - "Dim lighting transitioning from entry"
+      
+    visual_hook: "The moment of entering a space where you don't belong"
+    
+    composition_suggestion: "First-person perspective; doorway framing; interior stretching into pools of private light; figures who deliberately don't acknowledge new arrival"

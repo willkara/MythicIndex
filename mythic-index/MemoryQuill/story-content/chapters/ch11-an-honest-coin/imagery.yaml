@@ -1,0 +1,843 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: An Honest Coin
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch11-an-honest-coin"
+  chapter_number: 11
+  chapter_title: "An Honest Coin"
+  visual_thesis: "From mist-shrouded arrival through shadow-work and flame, ending with the weight of mysterious purpose held in firelight."
+  color_palette:
+    primary:
+      - "#8B9A9E"
+      - "#D4A574"
+      - "#2C3E50"
+      - "#C45C26"
+    accent:
+      - "#1A1A2E"
+      - "#F5DEB3"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 2
+    pastoral: 2
+    celebratory: 0
+    aquatic: 0
+    ethereal: 1
+    intimate: 3
+    kinetic: 1
+    ominous: 1
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: "Full weathered leather armor. Burn scar prominent. Tactical and alert. Bruised cheek in final scene."
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: "Standard patrol gear. Blue cloak. Bruised jaw in final scenes."
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "marcus-heartbridge"
+    name: "Marcus Heartbridge"
+    scene_variations: "High-collared charcoal doublet. Neat mustache. Knowing smirk. Ornate rapier."
+    reference_images:
+      - "marcus-heartbridge-portrait-study-01"
+
+  - ref: "grimjaw-ironbeard"
+    name: "Grimjaw Ironbeard"
+    scene_variations: "Iron-gray beard. Copper pauldrons. Carrying lockpicks and tools."
+    reference_images:
+      - "grimjaw-ironbeard-portrait-01"
+
+  - ref: "quartermaster-fayne"
+    name: "Quartermaster Fayne"
+    scene_variations: "Brass spectacles. Ink-stained fingers. Sketching and documenting."
+    reference_images:
+      - "quartermaster-fayne-standard-portrait-01"
+
+  - ref: "magistrate-vance"
+    name: "Magistrate Elias Vance"
+    scene_variations: "Tired features, disheveled gray hair, faded formal robes."
+    reference_images: []
+
+locations:
+  - ref: "stonebridge"
+    zones:
+      - id: "approach"
+        chapter_context: "Ancient town in morning mist. Five-arch bridge over Silver Rush. Towers emerging from fog."
+      - id: "market"
+        chapter_context: "Bustling square with stalls. Unusually warm winter day. Vibrant colors, active trade."
+
+  - ref: "magistrate-office"
+    zones:
+      - id: "overview"
+        chapter_context: "Cramped stone room. Buried in papers, scrolls, and ledgers. Dusty afternoon light."
+
+  - ref: "croft-warehouse"
+    zones:
+      - id: "overview"
+        chapter_context: "Vast grain warehouse. Mountains of crates. Dark, smoky, later burning. Dockside access."
+
+  - ref: "shepherds-rest-room"
+    zones:
+      - id: "overview"
+        chapter_context: "Second-floor inn room. Forgettable anonymity. Functional furniture. Pre-dawn hearth light."
+
+moments:
+  - id: "ch11-an-honest-coin-moment-01"
+    scene_id: "scn-11-01"
+    title: "The Mist-Born City"
+    narrative_beat: "The Company approaches Stonebridge as it emerges from the morning mist."
+    visual_weight: "hero"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "grimjaw-ironbeard"
+      - "quartermaster-fayne"
+    location_zone: "stonebridge/approach"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch11-an-honest-coin-moment-02"
+    scene_id: "scn-11-01"
+    title: "Institutional Exhaustion"
+    narrative_beat: "Magistrate Vance shows his hands over the useless evidence, a good man defeated by bureaucracy."
+    visual_weight: "high"
+    characters_present:
+      - "magistrate-vance"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    location_zone: "magistrate-office/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch11-an-honest-coin-moment-03"
+    scene_id: "scn-11-02"
+    title: "Market Gossip"
+    narrative_beat: "Grimjaw and Fayne picking up rumors about Croft while buying premium salt and flour."
+    visual_weight: "medium"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "quartermaster-fayne"
+    location_zone: "stonebridge/market"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch11-an-honest-coin-moment-04"
+    scene_id: "scn-11-02"
+    title: "The Stew Critique"
+    narrative_beat: "Grimjaw critiquing the mushroom rendering in his stew while discussing corruption."
+    visual_weight: "medium"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "quartermaster-fayne"
+    location_zone: "stonebridge/market"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch11-an-honest-coin-moment-05"
+    scene_id: "scn-11-04"
+    title: "Tactical Preparation"
+    narrative_beat: "Thorne's hand on the candlelit map as they plan the warehouse infiltration."
+    visual_weight: "medium"
+    characters_present:
+      - "thorne-brightward"
+    location_zone: "shepherds-rest-room/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch11-an-honest-coin-moment-06"
+    scene_id: "scn-11-04"
+    title: "Checking the Picks"
+    narrative_beat: "Grimjaw laying out his lockpicks, revealing a checkered past of 'safety inspection'."
+    visual_weight: "medium"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "quartermaster-fayne"
+    location_zone: "shepherds-rest-room/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch11-an-honest-coin-moment-07"
+    scene_id: "scn-11-05"
+    title: "The Descent"
+    narrative_beat: "Veyra dropping through the ventilation hatch into the warehouse void."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "croft-warehouse/overview"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch11-an-honest-coin-moment-08"
+    scene_id: "scn-11-05"
+    title: "Explosive Escape"
+    narrative_beat: "Veyra bursting through the window in a shower of glass to escape the guards."
+    visual_weight: "critical"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "croft-warehouse/overview"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch11-an-honest-coin-moment-09"
+    scene_id: "scn-11-06"
+    title: "Waking the Law"
+    narrative_beat: "Veyra and Thorne delivering the ledger pages to Vance at his home in the middle of the night."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "magistrate-vance"
+    location_zone: "stonebridge/streets"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch11-an-honest-coin-moment-10"
+    scene_id: "scn-11-07"
+    title: "Weapons in the Fire"
+    narrative_beat: "Discovering smuggled weapons in the saved crates while the warehouse burns."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    location_zone: "croft-warehouse/overview"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch11-an-honest-coin-moment-11"
+    scene_id: "scn-11-07"
+    title: "The Bastion Lock"
+    narrative_beat: "Marcus offering the mysterious lock, the artifact 'seeing' Veyra."
+    visual_weight: "critical"
+    characters_present:
+      - "veyra-thornwake"
+      - "marcus-heartbridge"
+    location_zone: "croft-warehouse/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch11-an-honest-coin-moment-12"
+    scene_id: "scn-11-08"
+    title: "The Silent Witness"
+    narrative_beat: "The innkeeper watching the weary Company return at dawn."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    location_zone: "shepherds-rest-room/overview"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch11-an-honest-coin-moment-13"
+    scene_id: "scn-11-08"
+    title: "Weight of the Future"
+    narrative_beat: "Veyra contemplating the lock by the hearth as the team prepares to depart."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "grimjaw-ironbeard"
+      - "quartermaster-fayne"
+    location_zone: "shepherds-rest-room/overview"
+    transformation_state: "after"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch11-an-honest-coin-img-11-01-01"
+    source_moment: "ch11-an-honest-coin-moment-01"
+    scene_id: "scn-11-01"
+    image_type: "hero"
+    category:
+      - "location"
+      - "moment"
+    scene_mood: "pastoral"
+    mood_rationale: "Arrival at civilization. The mist lifting represents hope and transition. Soft morning light."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      The ancient town of Stonebridge emerges from silver morning mist. The great five-arch bridge dominates the foreground over the Silver Rush river. Beyond, towers and rooftops materialize in layers as the mist lifts. Small figures of the Company approach on the road in foreground.
+    composition_notes: |
+      Extreme wide shot. Bridge as visual anchor. Company figures small. Layered depth through mist.
+    visual_hook: "The moment where stone and timber seem to crystallize from formless mist, a city being born from fog"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "grimjaw-ironbeard"
+      - "quartermaster-fayne"
+    character_states:
+      veyra-thornwake: |
+        Small figure leading. Mohawk silhouette. Lantern at hip.
+      thorne-brightward: |
+        Walking beside Veyra. Blue cloak.
+      grimjaw-ironbeard: |
+        Stocky figure behind.
+    location: "stonebridge"
+    lighting:
+      primary_source: "morning sun"
+      quality: "soft, luminous"
+      direction: "above/behind"
+      color_temperature: "silver/gold"
+      shadow_depth: "gentle"
+      atmospheric: "mist in layers"
+    palette:
+      dominant:
+        - "silver-gray"
+        - "soft gold"
+        - "stone ochre"
+      accent:
+        - "teal-green"
+      avoid:
+        - "harsh contrast"
+    prompt_used: |
+      Ancient stone town emerging from silver morning mist,
+      great five-arch bridge in midground,
+      weathered stonework catching diffused golden light,
+      small figures of travelers on road in foreground,
+      river reflecting fragments of pale sky,
+      classical oil painting, plein air naturalism, soft diffused daylight,
+      Hudson River School grandeur, visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin
+    tags:
+      - "establishing-shot"
+      - "landscape"
+      - "pastoral"
+      - "stonebridge"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch11-an-honest-coin-img-11-01-02"
+    source_moment: "ch11-an-honest-coin-moment-02"
+    scene_id: "scn-11-01"
+    image_type: "anchor"
+    category:
+      - "character"
+      - "moment"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Vance embodies institutional defeat. Cramped office, weight of useless evidence. Rembrandt shadows."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Magistrate Vance sits behind his buried desk, hands spread helplessly over documents. Face shows bone-deep exhaustion. Dusty afternoon light from a small window catches motes. Veyra and Thorne sit opposite him, attentive. Papers and scrolls frame the composition.
+    composition_notes: |
+      Medium shot. Portrait orientation. Vance center-right. Desk as barrier. Light from upper left.
+    visual_hook: "Vance's hands spread helplessly over documents that prove nothing—the gesture of a man who knows the truth but cannot speak it officially"
+    depicts_characters:
+      - "magistrate-vance"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    character_states:
+      magistrate-vance: |
+        Seated, leaning back. Hands spread. Exhausted expression. Gray-brown hair.
+      veyra-thornwake: |
+        Leaning forward. Intent. Burn scar visible.
+      thorne-brightward: |
+        Straight-backed military posture. Watchful.
+    location: "magistrate-office"
+    lighting:
+      primary_source: "narrow window"
+      quality: "diffused, dusty"
+      direction: "upper left"
+      color_temperature: "amber/dust"
+      shadow_depth: "deep, rich"
+      atmospheric: "dust motes"
+    palette:
+      dominant:
+        - "parchment ochre"
+        - "slate shadow"
+        - "ink brown"
+      accent:
+        - "deep blue"
+      avoid:
+        - "bright colors"
+    prompt_used: |
+      Weary magistrate behind desk buried in scrolls,
+      hands spread helplessly over papers,
+      shadows beneath tired eyes,
+      narrow window casting dusty light with visible motes,
+      adventurers leaning in to listen,
+      classical oil painting, Rembrandt lighting, chiaroscuro,
+      muted earth palette, deep rich shadows,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, organized space
+    tags:
+      - "character"
+      - "somber"
+      - "office"
+      - "corruption"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch11-an-honest-coin-img-11-02-01"
+    source_moment: "ch11-an-honest-coin-moment-03"
+    scene_id: "scn-11-02"
+    image_type: "beat"
+    category:
+      - "character"
+      - "location"
+    scene_mood: "pastoral"
+    mood_rationale: "Market intelligence. Active trade in a vibrant square. Human connection and rumors."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Grimjaw and Fayne at a spice merchant's stall in the Stonebridge market. The merchant, a weather-beaten woman, is leaning in to whisper. Grimjaw holds a small sack of salt. The market is busy with colorful stalls and crowds in the background. Warm winter sun.
+    composition_notes: |
+      Medium shot. Merchant stall foreground. Busy market background. Focus on the conspiratorial interaction.
+    visual_hook: "The weather-beaten merchant woman leaning in to whisper gossip, salt being weighed out between them."
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "quartermaster-fayne"
+    character_states:
+      grimjaw-ironbeard: |
+        Holding salt sack. Listening intently.
+      quartermaster-fayne: |
+        Counting coins. Eavesdropping.
+    location: "stonebridge"
+    lighting:
+      primary_source: "Dappled sun"
+      quality: "Warm, active"
+      direction: "Side"
+      color_temperature: "Golden"
+      shadow_depth: "Soft"
+      atmospheric: "Market dust"
+    palette:
+      dominant:
+        - "market colors"
+        - "wood brown"
+        - "stone gray"
+      accent:
+        - "salt white"
+      avoid:
+        - "gloom"
+    prompt_used: |
+      Dwarf and gnome at medieval spice stall,
+      merchant woman whispering gossip,
+      busy market square background,
+      warm sunlight,
+      atmosphere of trade and secrets,
+      classical oil painting, genre scene,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "market"
+      - "intelligence"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch11-an-honest-coin-img-11-04-01"
+    source_moment: "ch11-an-honest-coin-moment-05"
+    scene_id: "scn-11-04"
+    image_type: "beat"
+    category:
+      - "location"
+      - "detail"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: "The 'Character's Silence.' Pre-mission tension. Candlelit map. Focused and conspiratorial."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Close-up of a scarred wooden table in a dim room. A single candle illuminates a hand-drawn map of the warehouse district. Weighted by a pile of coins. Pair of lockpicks nearby. A broad human hand (Thorne's) rests on the table edge.
+    composition_notes: |
+      Tight square framing. Candle focal point off-center. Shallow depth. Map and coins sharp.
+    visual_hook: "A hand-drawn map and a pile of coins spotlighted by a single candle, with a warrior's bruised hand resting at the edge."
+    depicts_characters:
+      - "thorne-brightward"
+    character_states:
+      thorne-brightward: |
+        Only hand visible. Scarred knuckles.
+    location: "shepherds-rest-room"
+    lighting:
+      primary_source: "single candle"
+      quality: "warm, flickering"
+      direction: "center-outward"
+      color_temperature: "amber-gold"
+      shadow_depth: "deep"
+      atmospheric: "still"
+    palette:
+      dominant:
+        - "warm amber"
+        - "parchment"
+        - "shadow"
+      accent:
+        - "gold coins"
+      avoid:
+        - "bright colors"
+    prompt_used: |
+      Macro detail still life on dark wooden table,
+      single candle illuminating hand-drawn map and lockpicks,
+      large scarred human hand at edge of light,
+      conspiratorial atmosphere,
+      classical oil painting, Vermeer lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "detail"
+      - "preparation"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch11-an-honest-coin-img-11-05-01"
+    source_moment: "ch11-an-honest-coin-moment-07"
+    scene_id: "scn-11-05"
+    image_type: "pivot"
+    category:
+      - "action"
+      - "moment"
+      - "character"
+    scene_mood: "ominous"
+    mood_rationale: "Threshold-crossing. Veyra descending into the void. Entering the criminal's domain."
+    aspect_ratio: "2:3"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Veyra drops through the ventilation hatch, silhouette framed against dim light above. Descending into the warehouse void. Dust puffs from grain sacks below. Controlled mid-fall.
+    composition_notes: |
+      Vertical portrait. Veyra at center. Hatch sole light source. Low angle looking up. Deep blacks lower two-thirds.
+    visual_hook: "A silhouette dropping through a rectangle of weak light into absolute void—the moment of no return"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Mid-descent. Body controlled. Mohawk silhouette against light. Prepared for impact.
+    location: "croft-warehouse"
+    lighting:
+      primary_source: "hatch light"
+      quality: "harsh rectangle"
+      direction: "from above"
+      color_temperature: "gray-blue"
+      shadow_depth: "absolute"
+      atmospheric: "rising dust"
+    palette:
+      dominant:
+        - "void black"
+        - "charcoal gray"
+        - "gray-blue"
+      accent:
+        - "pale dust"
+      avoid:
+        - "warm colors"
+    prompt_used: |
+      Silhouette of athletic woman dropping through rectangular hatch into darkness,
+      view from low looking up,
+      hatch creating portal of sickly light,
+      dust motes rising from sacks below,
+      classical oil painting, Symbolist unease,
+      void black and charcoal palette,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, comfortable atmosphere
+    tags:
+      - "action"
+      - "infiltration"
+      - "ominous"
+      - "descent"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch11-an-honest-coin-img-11-05-02"
+    source_moment: "ch11-an-honest-coin-moment-08"
+    scene_id: "scn-11-05"
+    image_type: "anchor"
+    category:
+      - "action"
+      - "moment"
+      - "character"
+    scene_mood: "kinetic"
+    mood_rationale: "Peak action moment. Explosive escape through glass. Diagonal energy and chaos."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Glass explodes outward as Veyra bursts shoulder-first through the office window. Shards suspended in air. Launched into the moonless night. Trajectory toward dark dock below. Interior light silhouettes her.
+    composition_notes: |
+      Wide dynamic horizontal momentum. Veyra center-left moving right. Glass shards radiate. Vertical light source left.
+    visual_hook: "Glass shards suspended around her silhouette like frozen rain—the explosive instant of escape made eternal"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Mid-flight. Shoulder leading. Profile catches light from behind. Committed action.
+    location: "croft-warehouse"
+    lighting:
+      primary_source: "interior office light"
+      quality: "harsh, backlighting"
+      direction: "behind/left"
+      color_temperature: "orange-yellow vs night"
+      shadow_depth: "extreme"
+      atmospheric: "shattering glass"
+    palette:
+      dominant:
+        - "orange-yellow"
+        - "night black"
+        - "dock gray"
+      accent:
+        - "glass fragments"
+      avoid:
+        - "static"
+    prompt_used: |
+      Muscular woman with mohawk bursting through window in explosion of glass shards,
+      fragments suspended in air around her silhouette,
+      jumping into moonless night toward dark dock,
+      harsh backlighting from interior,
+      explosive diagonal composition,
+      classical oil painting, Romantic dynamism,
+      Delacroix energy, visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, static pose
+    tags:
+      - "action"
+      - "escape"
+      - "kinetic"
+      - "peak-moment"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch11-an-honest-coin-img-11-07-01"
+    source_moment: "ch11-an-honest-coin-moment-11"
+    scene_id: "scn-11-07"
+    image_type: "symbol"
+    category:
+      - "symbol"
+      - "character"
+      - "moment"
+    scene_mood: "ethereal"
+    mood_rationale: "Artifact 'seeing' Veyra. Supernatural heart of the chapter. Luminous significance."
+    aspect_ratio: "4:5"
+    orientation: "portrait"
+    size: "1024x1280"
+    visual_description: |
+      The Bastion Lock in Veyra's hands, unwrapped from black silk. Masterwork dark metal. Firelight from distant burning warehouse absorbed. Veyra's eyes widened—moment of being 'seen'. Marcus visible in soft focus behind.
+    composition_notes: |
+      Close-medium portrait. Lock center. Veyra hands framing. Marcus over shoulder. Flickering firelight.
+    visual_hook: "Dark metal that seems to absorb firelight while Veyra's eyes widen with the sensation of being truly seen"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "marcus-heartbridge"
+    character_states:
+      veyra-thornwake: |
+        Hands raised holding lock. Eyes widened imperceptibly. Recognition.
+      marcus-heartbridge: |
+        Background. Knowing expression.
+    location: "croft-warehouse"
+    lighting:
+      primary_source: "distant fire + artifact glow"
+      quality: "luminous, flickering"
+      direction: "behind/side"
+      color_temperature: "orange vs pale silver"
+      shadow_depth: "soft"
+      atmospheric: "smoke haze"
+    palette:
+      dominant:
+        - "iron-black"
+        - "amber-orange"
+        - "earth-brown"
+      accent:
+        - "luminous silver"
+        - "black silk"
+      avoid:
+        - "mundane"
+    prompt_used: |
+      Portrait of scarred woman holding intricate dark metal lock in calloused hands,
+      black silk pooling around artifact,
+      dark eyes widened with spiritual shock,
+      distant burning building firelight in background,
+      man with goatee watching knowingly,
+      ethereal luminous quality,
+      classical oil painting, Pre-Raphaelite luminosity,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, ordinary lock
+    tags:
+      - "symbol"
+      - "artifact"
+      - "ethereal"
+      - "destiny"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch11-an-honest-coin-img-11-08-01"
+    source_moment: "ch11-an-honest-coin-moment-13"
+    scene_id: "scn-11-08"
+    image_type: "detail"
+    category:
+      - "character"
+      - "moment"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: "Quiet aftermath. Processing weight of purpose. Dual lighting tension."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Veyra sits by hearth in inn room. Bastion Lock on table. Firelight from right on scarred face. Cold gray pre-dawn from window at left. Company moving quietly in soft focus background.
+    composition_notes: |
+      Medium portrait. Two opposing light sources. Lock at Veyra's elbow. Background depth.
+    visual_hook: "Her burn-scarred face split between warm firelight and cold dawn—two lights, two futures"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "grimjaw-ironbeard"
+      - "quartermaster-fayne"
+    character_states:
+      veyra-thornwake: |
+        Seated, contemplative. Split lighting. Eyes on lock. Lantern at hip.
+      thorne-brightward: |
+        Background. Checking gear.
+      grimjaw-ironbeard: |
+        Background. Gathering supplies.
+      quartermaster-fayne: |
+        Background. Consulting papers.
+    location: "shepherds-rest-room"
+    lighting:
+      primary_source: "hearth vs window"
+      quality: "soft, warm, intimate"
+      direction: "right vs left"
+      color_temperature: "amber vs gray"
+      shadow_depth: "gentle"
+      atmospheric: "still"
+    palette:
+      dominant:
+        - "hearth amber"
+        - "pre-dawn gray"
+        - "wood brown"
+      accent:
+        - "iron black"
+        - "gold glow"
+      avoid:
+        - "harsh contrast"
+    prompt_used: |
+      Scarred woman sitting by hearth in simple room,
+      face split between warm firelight and cold gray dawn light,
+      intricate dark lock on table beside her,
+      companions preparing to leave in soft focus background,
+      contemplative atmosphere,
+      classical oil painting, Vermeer interior lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, urgency
+    tags:
+      - "character"
+      - "intimate"
+      - "contemplation"
+      - "aftermath"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch11-an-honest-coin-img-11-08-02"
+    source_moment: "ch11-an-honest-coin-moment-12"
+    scene_id: "scn-11-08"
+    image_type: "perspective"
+    category:
+      - "location"
+      - "moment"
+    scene_mood: "somber"
+    mood_rationale: "The 'Character's Witness.' Inn as silent accomplice. Weary humanity of the rescuers."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      POV from behind the bar. Innkeeper's weary hand with damp rag in foreground. Veyra and Thorne entering through front door in pre-dawn gray light. Dusted with limestone, smoke-scented. Composed but visibly tired.
+    composition_notes: |
+      First-person perspective. Bar horizontal anchor. Figures focal point in doorway. Cold window light vs warm dying hearth (off-frame).
+    visual_hook: "The view over an innkeeper's bar as weary, dust-covered heroes return from the dark in the first gray light of dawn."
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    character_states:
+      veyra-thornwake: |
+        Walking with measured stride. Pale with exhaustion.
+      thorne-brightward: |
+        Walking beside Veyra. Armor gray with dust.
+    location: "shepherds-rest-room"
+    lighting:
+      primary_source: "pre-dawn light"
+      secondary_source: "hearth embers"
+      quality: "cold, honest"
+      direction: "front"
+      color_temperature: "gray vs amber"
+      shadow_depth: "moderate"
+      atmospheric: "smoke/damp wool"
+    palette:
+      dominant:
+        - "stone gray"
+        - "wood brown"
+        - "shadow"
+      accent:
+        - "ember orange"
+      avoid:
+        - "bright sun"
+    prompt_used: |
+      First person perspective from behind inn bar looking at two weary travelers entering at dawn,
+      dusted with gray limestone and soot,
+      innkeeper's hand with rag in foreground,
+      cold morning light from windows,
+      atmosphere of quiet aftermath,
+      classical oil painting, Rembrandt lighting at dawn,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright sunlight
+    tags:
+      - "perspective"
+      - "aftermath"
+      - "somber"
+      - "inn"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

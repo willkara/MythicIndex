@@ -1,0 +1,576 @@
+location_identity:
+  slug: "salamander-hearth-tavern"
+  name: "Salamander's Hearth Tavern"
+  location_type: "building"
+  
+  narrative_soul: |
+    The Salamander's Hearth is where heroes become legends in the mouths of common people. It's not where deeds happen—it's where deeds are *remembered*, debated, and sanctified by the ordinary folk who benefit from them. This is the forge of reputation, where working hands lift cups in toast and skeptics test miracle stories against hard-won common sense.
+    
+  one_line_essence: "Where common folk transform deeds into legend"
+  
+  symbolic_weight:
+    primary_symbol: "The hearth as communal processing of the extraordinary"
+    supporting_symbols:
+      - "Warmth against the rain (shelter from dangerous world)"
+      - "Amber light on old wood (preservation of memory)"
+      - "Moon-elf music (beauty in humble places)"
+    thematic_tensions:
+      - "Skepticism vs. reverence"
+      - "Ordinary patrons discussing extraordinary events"
+      - "Individual heroism validated by collective witness"
+
+  transformation_arc: |
+    The tavern itself doesn't transform—it serves as a fixed point where transformation happens TO the Company's reputation. In this single scene, Veyra Thornwake's ordeal passes from rumor to accepted truth to toast-worthy legend. The Hearth witnesses the alchemy of hero-making.
+
+physical_truth:
+  construction_style: "Traditional Dock Ward timber-frame tavern"
+  primary_materials:
+    - "Timber frame with exposed ceiling beams"
+    - "Blackened/aged wood (smoke-darkened over years)"
+    - "Oil-lanterns in wall/beam brackets"
+    - "Stone or brick hearth (implied by name)"
+  scale_impression: "Moderate capacity; intimate enough for shared conversation, large enough for a crowd"
+  
+  visual_signature: |
+    The defining image is the ceiling—low blackened beams painted amber by oil-lantern light "like honey on old wood." This golden glow pools in warm islands around the room, with the hearth adding dancing firelight. The effect is both humble and beautiful, working-class materials transformed by light into something almost sacred.
+    
+  sound_signature: |
+    Moon-elf fiddle music threads through the room—not foreground entertainment but ambient texture. Beneath it: murmured conversation punctuated by emphatic declarations, the occasional collective hush before a toast, and the quiet acknowledgment of shared prayer.
+    
+  scent_signature: |
+    Wood smoke from the hearth, lamp oil, ale and simple food, the salt-and-tar undertone of Dock Ward workers. Possibly pipe tobacco. The warm smell of people gathered together.
+    
+  tactile_signature: |
+    Warmth radiating from the hearth against the chill of rainy evening outside. Worn smooth wood of tables and chairs. The close press of bodies in a half-full room. Moisture on windows from the contrast of warm interior and cold rain.
+    
+  canon_specifics:
+    - detail: "Oil-lanterns painting ceiling beams amber 'like honey on old wood'"
+      source: "ch2.5"
+      visual_importance: "high"
+    - detail: "Low blackened ceiling beams"
+      source: "ch2.5"
+      visual_importance: "high"
+    - detail: "Central hearth (namesake feature)"
+      source: "ch2.5 / establishment name"
+      visual_importance: "high"
+    - detail: "Trio of moon-elf fiddlers in corner"
+      source: "ch2.5"
+      visual_importance: "high"
+    - detail: "Half-full capacity during evening"
+      source: "ch2.5"
+      visual_importance: "medium"
+    - detail: "Rain outside during scene"
+      source: "ch2.5"
+      visual_importance: "medium"
+      
+  light_character: |
+    Warm amber dominates—oil-lanterns create pools of golden light, the hearth adds flickering warmth and dancing shadows. The "honey on old wood" quality suggests diffusion through slightly smoky air. No harsh edges; everything softened and aged by the glow. Dark corners exist but feel protective rather than threatening.
+    
+  weather_influence: |
+    Rain outside during the witnessed scene creates crucial contrast—the tavern becomes refuge, a dry warm pocket against the wet harbor night. Windows likely show rain streaks; entering patrons bring dampness with them before the hearth warms them.
+
+contextual_place:
+  region: "Dock Ward, Waterdeep"
+  neighborhood_character: "Working waterfront; near docks and warehouses. This is where sailors, caravan guards, and laborers drink after shifts. Not rough or dangerous—respectable working-class."
+  
+  approach_sequences:
+    - name: "From the harbor"
+      description: "Wet cobblestones, harbor smells, mast-lights visible in rain. The tavern's lit windows beckon through mist."
+      first_impression: "Warmth and light promising shelter"
+    - name: "From the street"
+      description: "A traditional Dock Ward facade, unremarkable except for the warm glow spilling from windows and the faint sound of fiddle music"
+      first_impression: "One of many taverns—but this one is alive tonight"
+      
+  visible_beyond:
+    - direction: "Through windows"
+      what_visible: "Rain-slicked streets, harbor district rooftops, possibly distant mast lights"
+    - direction: "From inside looking toward door"
+      what_visible: "The threshold between warmth and the wet night"
+      
+  spatial_relationship: "One working-class tavern among many in the Dock Ward, but distinguished by its character and the quality of conversation within"
+
+zones:
+  - slug: "the-hearth"
+    name: "The Hearth"
+    zone_type: "heart"
+    location_within: "Central feature of the common room"
+    
+    physical_description: |
+      The commanding fireplace that gives the establishment its name. A substantial hearth—likely stone or brick—with active fire providing both heat and light. The focal point around which the room orients.
+      
+    narrative_function: "Symbolic center where toasts are raised, where attention gathers during significant moments. The fire's warmth is literal refuge and metaphorical community."
+    
+    emotional_register: "Sacred-secular; a humble hearth elevated by the moments that happen around it"
+    
+    character_associations:
+      - character: "Collective patrons"
+        relationship: "The hearth draws their attention for toasts and significant moments"
+        typical_activities:
+          - "Raising cups in toast"
+          - "Gathering closer during stories"
+          - "Warming from the rain"
+        
+    signature_details:
+      - "Active fire providing warmth and dancing light"
+      - "Likely has salamander imagery or reference (namesake)"
+      - "Stone/brick construction amid timber surroundings"
+      - "Space around it for collective gathering"
+    
+    light_conditions:
+      natural: "None—interior feature"
+      artificial: "Firelight; warm, dancing, creates long shadows and highlights faces"
+      
+    mood_affinity:
+      - "intimate"
+      - "reverent"
+      - "warm"
+
+  - slug: "common-room"
+    name: "Common Room Floor"
+    zone_type: "commons"
+    location_within: "Main space of the tavern"
+    
+    physical_description: |
+      Tables and chairs arranged for group conversation, oriented generally toward the hearth. Low blackened ceiling beams catch oil-lantern light in amber pools. A working-class space worn smooth by years of use but well-maintained.
+      
+    narrative_function: "The theater where communal processing happens—where debates form, stories spread, and collective judgment emerges"
+    
+    emotional_register: "Convivial; reverent when topic demands; spirited during debate"
+    
+    character_associations:
+      - character: "Gillthorn"
+        relationship: "Resident skeptic; holds court from his usual spot"
+        typical_activities:
+          - "Voicing counterarguments"
+          - "Testing miracle claims against common sense"
+          - "Engaging in philosophical debate"
+      - character: "Sailors, guards, watchmen"
+        relationship: "Regular patrons; gather in groups"
+        typical_activities:
+          - "Sharing news and rumors"
+          - "Listening to stories"
+          - "Debating and processing events"
+        
+    signature_details:
+      - "Blackened beams overhead painted amber by lantern light"
+      - "Oil-lanterns creating warm pools"
+      - "Tables arranged for conversation"
+      - "Half-full occupancy (moderate crowd)"
+    
+    light_conditions:
+      natural: "Minimal—evening setting, rain outside"
+      artificial: "Oil-lanterns on walls and beams; hearth glow reaching throughout"
+      
+    mood_affinity:
+      - "intimate"
+      - "contemplative"
+      - "warm"
+
+  - slug: "corner-stage"
+    name: "Musicians' Corner"
+    zone_type: "forge"
+    location_within: "Corner alcove of the common room"
+    
+    physical_description: |
+      A corner space—possibly slightly raised or simply an acoustic-friendly alcove—where the trio of moon-elf fiddlers perform. Enough separation to be visible as performers while remaining part of the room's fabric.
+      
+    narrative_function: "Provides the ambient texture that elevates tavern conversation to something more; the music creates sacred space for secular talk"
+    
+    emotional_register: "Artistic; otherworldly (moon-elf performers); elevating"
+    
+    character_associations:
+      - character: "Moon-elf fiddler trio"
+        relationship: "Performers; they create the atmosphere"
+        typical_activities:
+          - "Playing continuous ambient music"
+          - "Responding to room's mood"
+          - "Creating sonic backdrop for storytelling"
+        
+    signature_details:
+      - "Three moon-elf musicians"
+      - "Fiddles as primary instruments"
+      - "Corner position—visible but not center-stage"
+      - "Elven grace in humble surroundings"
+    
+    light_conditions:
+      natural: "None"
+      artificial: "Lantern light reaching their corner; possibly their own lamp"
+      
+    mood_affinity:
+      - "ethereal"
+      - "intimate"
+      - "contemplative"
+
+  - slug: "threshold"
+    name: "Entrance/Doorway"
+    zone_type: "threshold"
+    location_within: "Street-facing entrance"
+    
+    physical_description: |
+      The transition point between wet Dock Ward streets and warm interior. Where patrons enter bringing rain-dampened cloaks, where the contrast between outside darkness and inside amber glow is most stark.
+      
+    narrative_function: "The boundary between the dangerous/cold outside world and the warm refuge within. Crossing it is entering community."
+    
+    emotional_register: "Relief; transition from exposure to shelter"
+    
+    character_associations:
+      - character: "Arriving patrons"
+        relationship: "Point of entry"
+        typical_activities:
+          - "Shedding wet weather gear"
+          - "First deep breath of warm air"
+          - "Scanning for friends"
+        
+    signature_details:
+      - "Contrast between rain-dark exterior and amber interior"
+      - "Possible cloak hooks or pegs nearby"
+      - "Draft of cold air when opened"
+    
+    light_conditions:
+      natural: "Rain-dark night outside"
+      artificial: "Amber glow spilling out; silhouettes of those entering"
+      
+    mood_affinity:
+      - "transitional"
+      - "welcoming"
+
+temporal_states:
+  daily_cycle:
+    - time: "daytime"
+      description: "Likely quiet; some midday meals for workers. The hearth may be lower. Windows admit gray harbor daylight."
+      activities:
+        - "Light traffic"
+        - "Staff preparation"
+      mood: "Mundane, functional"
+      light_quality: "Natural daylight through windows, hearth at low burn"
+      
+    - time: "evening"
+      description: "Primary social hours. Hearth blazing, lanterns lit, fiddlers playing. This is when the Salamander's Hearth becomes itself."
+      activities:
+        - "Workers arriving after shifts"
+        - "Stories being told"
+        - "Music and conversation"
+        - "Collective processing of news"
+      mood: "Convivial, reverent when warranted"
+      light_quality: "Full amber glow—'honey on old wood'"
+      
+    - time: "late-night"
+      description: "Crowd thins but conversations deepen. Hearth settling to coals. The most dedicated drinkers and the best stories."
+      activities:
+        - "Intimate conversation"
+        - "Last drinks"
+        - "Fiddlers winding down"
+      mood: "Intimate, confessional"
+      light_quality: "Dimmer; hearth coals; fewer lanterns"
+      
+  seasonal_variations:
+    - season: "Autumn/Winter"
+      changes: "Hearth burns hot and constant; patrons linger longer; the contrast with outside cold is more acute"
+      mood_shift: "More intimate, more communal—people drawn together by warmth"
+    - season: "Summer"
+      changes: "Hearth at low burn or unlit; doors/windows may open; the room feels larger"
+      mood_shift: "More casual, less centered on the hearth"
+      
+  story_timeline_states:
+    - state_name: "Night of the Canyon Legend"
+      chapter_range: "ch2.5"
+      description: "A rainy evening when ordinary patrons debate and ultimately affirm Veyra Thornwake's survival as genuine miracle. The moment when her legend crystallizes in public memory."
+      
+  weather_states:
+    - condition: "Rain (as in ch2.5)"
+      description: "Rain-slicked windows, patrons entering damp, hearth warmth especially precious. The tavern as island of comfort."
+      mood: "Refuge; the outside world held at bay"
+    - condition: "Clear night"
+      description: "Less acute contrast; still warm and welcoming but without the rain's drama"
+      mood: "Comfortable rather than urgent refuge"
+
+character_space_relationships:
+  - character_slug: "gillthorn"
+    character_name: "Gillthorn"
+    
+    primary_association: "Resident skeptic; regular patron who serves as philosophical counterweight"
+    
+    personal_zones:
+      - zone: "common-room"
+        relationship: "His stage for debate; where he tests claims against reason"
+        typical_use: "Holding court, challenging miracle stories, engaging fellow patrons"
+        
+    signature_moments:
+      - moment: "Questioning whether Veyra's survival is blessing or luck"
+        chapter: "ch2.5"
+        visual_potential: "A weathered face in lantern light, eyebrow raised, finger pointing—the voice of reasonable doubt"
+        
+    perspective_quote: |
+      "Aye, she survived three days in dragonfire. But I've seen men live through worse on nothing but stubborn meanness. Call it blessing if you like—I call it the kind of grit that doesn't need gods to explain it."
+
+  - character_slug: "moon-elf-fiddlers"
+    character_name: "Moon-Elf Fiddler Trio"
+    
+    primary_association: "Performers; they create the sonic atmosphere"
+    
+    personal_zones:
+      - zone: "corner-stage"
+        relationship: "Their domain; the corner is theirs by performance right"
+        typical_use: "Playing continuous ambient music through the evening"
+        
+    signature_moments:
+      - moment: "Playing while humans debate faith and survival around them"
+        chapter: "ch2.5"
+        visual_potential: "Elven grace in humble surroundings—long fingers on fiddle strings, otherworldly calm amid working-class debate"
+        
+    perspective_quote: |
+      "We play. They talk. Same music, different nights—but tonight their voices have weight to them. Something happened out there. We hear it in their silences."
+
+  - character_slug: "collective-patrons"
+    character_name: "Dock Ward Working Folk"
+    
+    primary_association: "The true inhabitants; sailors, guards, watchmen who give the tavern its character"
+    
+    personal_zones:
+      - zone: "common-room"
+        relationship: "Their gathering place; where they become community"
+        typical_use: "Drinking, debating, sharing news, processing the world"
+      - zone: "the-hearth"
+        relationship: "Focal point for collective moments—toasts, prayers"
+        typical_use: "Raising cups in honor; bowing heads in remembrance"
+        
+    signature_moments:
+      - moment: "Raising toast to Commander Thornwake"
+        chapter: "ch2.5"
+        visual_potential: "A forest of raised cups in amber light; weathered faces turned toward the hearth; collective reverence"
+      - moment: "Prayers for fallen souls"
+        chapter: "ch2.5"
+        visual_potential: "Bowed heads, hats removed, a moment of silence amid the warm glow"
+        
+    perspective_quote: |
+      "I don't know from miracles or gods' plans. What I know is there's folk out there putting themselves between us and fire. That's worth a prayer and a drink, whatever you call it."
+
+narrative_beats:
+  - beat_id: "legend-debate"
+    chapter: "ch2.5"
+    scene: "Echoes in the City"
+    
+    what_happens: "Patrons debate whether Veyra's survival was divine blessing or mortal grit. Gillthorn plays skeptic. Others offer witness accounts and reverent interpretation."
+    
+    zones_involved:
+      - "common-room"
+    characters_present:
+      - "Gillthorn"
+      - "Sailors"
+      - "Caravan guards"
+      - "Off-duty watchmen"
+      - "Veterans with battlefield knowledge"
+      
+    visual_potential:
+      description: "Working men leaning in across tables, faces lit by lantern glow, debating in earnest. Some gesticulating; others listening with the seriousness of people processing something beyond their experience."
+      key_visual_hook: "The 'honey on old wood' light quality; humble materials made golden by lamplight"
+      suggested_mood: "intimate"
+      
+    selection_score:
+      narrative_importance: 4
+      visual_distinctiveness: 5
+      emotional_resonance: 4
+      total: 13
+
+  - beat_id: "collective-toast"
+    chapter: "ch2.5"
+    scene: "Echoes in the City"
+    
+    what_happens: "Despite debate, the room unites in raising cups to Commander Thornwake. A moment of collective reverence."
+    
+    zones_involved:
+      - "common-room"
+      - "the-hearth"
+    characters_present:
+      - "All patrons"
+      - "Moon-elf fiddlers (observing)"
+      
+    visual_potential:
+      description: "The entire room turned toward the hearth, cups raised in amber light. Gillthorn included—even the skeptic honors courage. The fire illuminates lifted faces."
+      key_visual_hook: "Unity in diversity—different men, same gesture, hearth fire catching raised cups"
+      suggested_mood: "reverent"
+      
+    selection_score:
+      narrative_importance: 5
+      visual_distinctiveness: 5
+      emotional_resonance: 5
+      total: 15
+
+  - beat_id: "prayer-for-fallen"
+    chapter: "ch2.5"
+    scene: "Echoes in the City"
+    
+    what_happens: "Prayers offered for the souls of those who didn't survive. A moment of collective grief and honor."
+    
+    zones_involved:
+      - "common-room"
+    characters_present:
+      - "All patrons"
+      
+    visual_potential:
+      description: "Bowed heads and closed eyes; the room gone quiet except for fiddler music. Working men rendered solemn. Hats off. Hands on hearts or wrapped around cups."
+      key_visual_hook: "The stillness—a room of rough men made gentle by grief"
+      suggested_mood: "somber"
+      
+    selection_score:
+      narrative_importance: 4
+      visual_distinctiveness: 4
+      emotional_resonance: 5
+      total: 13
+
+  - beat_id: "moon-elf-music"
+    chapter: "ch2.5"
+    scene: "Echoes in the City"
+    
+    what_happens: "Throughout the scene, the moon-elf fiddlers play on—otherworldly grace providing soundtrack to human processing of trauma and heroism."
+    
+    zones_involved:
+      - "corner-stage"
+    characters_present:
+      - "Moon-elf fiddler trio"
+      
+    visual_potential:
+      description: "Three moon-elves in corner light, intent on their instruments while human debate flows around them. Elven stillness and grace against the rough-hewn surroundings."
+      key_visual_hook: "The contrast—ethereal performers in humble tavern"
+      suggested_mood: "ethereal"
+      
+    selection_score:
+      narrative_importance: 2
+      visual_distinctiveness: 5
+      emotional_resonance: 3
+      total: 10
+
+recommended_images:
+  - image_type: "essence"
+    priority: "primary"
+    
+    target: "The collective toast—cups raised in amber light around the hearth"
+    
+    rationale: "This captures everything the location means: ordinary people honoring extraordinary deeds, the 'honey on old wood' light quality, the hearth as gathering point, working-class reverence. This single image could define the location."
+    
+    suggested_mood: "reverent"
+    suggested_time: "Evening"
+    suggested_weather: "Rain outside (visible through window or implied)"
+    
+    characters_to_include:
+      - "Multiple anonymous patrons (sailors, guards, watchmen)"
+      - "Gillthorn visible among them (skeptic joining the toast)"
+    zone_focus: "common-room and the-hearth"
+    
+    key_elements:
+      - "Low blackened ceiling beams"
+      - "Oil-lantern amber glow—'like honey on old wood'"
+      - "Central hearth with fire"
+      - "Raised cups catching light"
+      - "Working-class patrons in maritime/guard attire"
+    
+    visual_hook: "The forest of raised cups in amber light—unity in reverence"
+    
+    composition_suggestion: "Medium-wide shot from slightly low angle, looking toward the hearth with patrons' backs partially visible, their raised cups and turned faces catching firelight. The ceiling beams prominent overhead. Depth achieved through layered figures."
+
+  - image_type: "establishing"
+    priority: "secondary"
+    
+    target: "The Salamander's Hearth from the threshold—a new arrival's first view"
+    
+    rationale: "Establishes the full atmosphere: the hearth as center, the amber light filling the room, the moon-elf fiddlers in their corner, the half-full crowd. A 'welcome' shot that invites the viewer in."
+    
+    suggested_mood: "intimate"
+    suggested_time: "Evening"
+    suggested_weather: "Rain implied (contrast with warm interior)"
+    
+    characters_to_include:
+      - "Multiple patrons in groups"
+      - "Moon-elf fiddlers visible in corner"
+    zone_focus: "Full common room from threshold perspective"
+    
+    key_elements:
+      - "Central hearth commanding the room"
+      - "Oil-lantern pools on blackened beams"
+      - "Moon-elf fiddlers in corner"
+      - "Half-full crowd at tables"
+      - "Warm amber color palette throughout"
+    
+    visual_hook: "The transition from dark/cold threshold to amber warmth—crossing into comfort"
+    
+    composition_suggestion: "Wide shot from just inside the entrance, looking in. Foreground slightly darker (threshold shadow), opening into the warm amber room. Eye drawn first to the hearth, then to the fiddlers in corner, then to the patrons."
+
+  - image_type: "zone"
+    priority: "secondary"
+    
+    target: "The moon-elf fiddler trio in their corner"
+    
+    rationale: "Captures the unique visual element of otherworldly performers in humble surroundings. The contrast between elven grace and working-class tavern is visually striking and thematically rich."
+    
+    suggested_mood: "ethereal"
+    suggested_time: "Evening"
+    suggested_weather: "N/A (interior focus)"
+    
+    characters_to_include:
+      - "Moon-elf fiddler trio"
+      - "Partial view of patrons in background"
+    zone_focus: "corner-stage"
+    
+    key_elements:
+      - "Three moon-elf musicians"
+      - "Fiddles as instruments"
+      - "Corner alcove setting"
+      - "Amber light catching elven features"
+      - "Contrast with rough surroundings"
+    
+    visual_hook: "Elven elegance in a human working-class space—beauty in unexpected places"
+    
+    composition_suggestion: "Medium shot focused on the trio, their corner slightly set apart but still part of the room. Warm lamp light catching silver-pale elven features. Fiddles prominent. Background shows blurred figures of patrons—the world they play for."
+
+  - image_type: "temporal"
+    priority: "optional"
+    
+    target: "The tavern exterior in rain—warmth glowing from windows"
+    
+    rationale: "Establishes the refuge quality—the contrast between wet, dark Dock Ward streets and the amber invitation of the lit windows. This contextualizes the tavern in its neighborhood and weather."
+    
+    suggested_mood: "anticipatory"
+    suggested_time: "Evening"
+    suggested_weather: "Rain"
+    
+    characters_to_include:
+      - "Possibly a figure approaching (optional)"
+    zone_focus: "Exterior/threshold"
+    
+    key_elements:
+      - "Traditional Dock Ward tavern facade"
+      - "Rain-slicked cobblestones"
+      - "Amber light spilling from windows"
+      - "Mist and wet atmosphere"
+      - "Sign or indication of establishment name"
+    
+    visual_hook: "The promise of warmth—a glowing haven in the dark rain"
+    
+    composition_suggestion: "Medium-wide exterior shot. Wet streets reflecting window light. Rain visible against the glow. The tavern as a beacon of warmth in the dark harbor district. Perhaps a silhouette approaching or the warm rectangle of a door opening."
+
+  - image_type: "beat"
+    priority: "optional"
+    
+    target: "The debate—Gillthorn the skeptic challenging belief"
+    
+    rationale: "Captures the intellectual life of the tavern—working men engaged in genuine philosophical debate. This grounds the location in character-driven discussion rather than just atmosphere."
+    
+    suggested_mood: "intimate"
+    suggested_time: "Evening"
+    suggested_weather: "Rain outside (implied)"
+    
+    characters_to_include:
+      - "Gillthorn (gesturing, challenging)"
+      - "2-3 other patrons (listening, responding)"
+    zone_focus: "common-room"
+    
+    key_elements:
+      - "Faces lit by lantern light"
+      - "Earnest expressions—not tavern brawl, real discussion"
+      - "Cups on table"
+      - "Blackened beams overhead"
+      - "Body language of debate"
+    
+    visual_hook: "Working men as philosophers—intelligence and dignity in humble setting"
+    
+    composition_suggestion: "Close-medium shot of a table group. Gillthorn prominent with skeptical expression. Others leaning in. Lantern light catching faces from the side. The intimacy of serious talk."

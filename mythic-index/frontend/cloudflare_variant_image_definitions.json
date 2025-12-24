@@ -1,0 +1,269 @@
+{
+  "variants": [
+    {
+      "name": "portraitThumb",
+      "description": "Square thumbnail used for navigation lists and compact portrait slots.",
+      "options": {
+        "width": 256,
+        "height": 256,
+        "fit": "cover",
+        "metadata": "none",
+        "quality": 85
+      },
+      "purpose": "Square navigation thumbnail for character lists and selectors.",
+      "entity_types": [
+        "character"
+      ]
+    },
+    {
+      "name": "portraitCard",
+      "description": "Primary square portrait for entity cards and selection grids.",
+      "options": {
+        "width": 512,
+        "height": 640,
+        "fit": "cover",
+        "metadata": "none",
+        "quality": 88
+      },
+      "purpose": "Primary character portrait for cards and pickers.",
+      "entity_types": [
+        "character"
+      ]
+    },
+    {
+      "name": "portraitDisplay",
+      "description": "Large portrait for gallery focus panes and detail dialogs.",
+      "options": {
+        "width": 768,
+        "height": 1024,
+        "fit": "contain",
+        "metadata": "none",
+        "quality": 90
+      },
+      "purpose": "Large character portrait for galleries and detail dialogs.",
+      "entity_types": [
+        "character"
+      ]
+    },
+    {
+      "name": "portraitFull",
+      "description": "Maximum portrait detail for modal lightboxes and hero placements.",
+      "options": {
+        "width": 1024,
+        "height": 1536,
+        "fit": "contain",
+        "metadata": "none",
+        "quality": 90
+      },
+      "purpose": "Maximum detail portrait for hero/lightbox layouts.",
+      "entity_types": [
+        "character"
+      ]
+    },
+    {
+      "name": "establishingThumb",
+      "description": "Square thumbnail for location galleries and carousel selectors.",
+      "options": {
+        "width": 256,
+        "height": 256,
+        "fit": "cover",
+        "metadata": "none",
+        "quality": 85
+      },
+      "purpose": "Location thumbnail for carousels and compact galleries.",
+      "entity_types": [
+        "location",
+        "chapter"
+      ]
+    },
+    {
+      "name": "establishingCard",
+      "description": "Mid-size establishing shot for content cards and list tiles.",
+      "options": {
+        "width": 512,
+        "height": 320,
+        "fit": "cover",
+        "metadata": "none",
+        "quality": 88
+      },
+      "purpose": "Card artwork for locations or chapter summaries.",
+      "entity_types": [
+        "location",
+        "chapter"
+      ]
+    },
+    {
+      "name": "establishingDisplay",
+      "description": "Primary establishing shot for detail pages and hero sections.",
+      "options": {
+        "width": 1024,
+        "height": 640,
+        "fit": "contain",
+        "metadata": "none",
+        "quality": 90
+      },
+      "purpose": "Default establishing shot for location detail views.",
+      "entity_types": [
+        "location",
+        "chapter"
+      ]
+    },
+    {
+      "name": "establishingHero",
+      "description": "Wide establishing variant for feature banners and large layouts.",
+      "options": {
+        "width": 1280,
+        "height": 768,
+        "fit": "contain",
+        "metadata": "none",
+        "quality": 88
+      },
+      "purpose": "Wide hero image for landing and banner sections.",
+      "entity_types": [
+        "location",
+        "chapter"
+      ]
+    },
+    {
+      "name": "establishingGallery",
+      "description": "High-resolution establishing shot for gallery lightboxes.",
+      "options": {
+        "width": 1536,
+        "height": 960,
+        "fit": "contain",
+        "metadata": "none",
+        "quality": 90
+      },
+      "purpose": "High-resolution establishing shot for gallery lightboxes.",
+      "entity_types": [
+        "location",
+        "chapter"
+      ]
+    },
+    {
+      "name": "inlineSmall",
+      "description": "Responsive inline illustration for narrow column layouts.",
+      "options": {
+        "width": 768,
+        "height": 512,
+        "fit": "contain",
+        "metadata": "none",
+        "quality": 88
+      },
+      "purpose": "Inline illustration for narrow chapter layout columns.",
+      "entity_types": [
+        "chapter"
+      ]
+    },
+    {
+      "name": "inlineMedium",
+      "description": "Default inline illustration for chapter body content.",
+      "options": {
+        "width": 960,
+        "height": 640,
+        "fit": "contain",
+        "metadata": "none",
+        "quality": 88
+      },
+      "purpose": "Default inline illustration for chapter body content.",
+      "entity_types": [
+        "chapter"
+      ]
+    },
+    {
+      "name": "inlineLarge",
+      "description": "Large inline illustration for wide layouts or feature callouts.",
+      "options": {
+        "width": 1280,
+        "height": 853,
+        "fit": "contain",
+        "metadata": "none",
+        "quality": 88
+      },
+      "purpose": "Large inline illustration for feature callouts.",
+      "entity_types": [
+        "chapter"
+      ]
+    }
+  ],
+  "usage_profiles": {
+    "portrait": {
+      "label": "Character Portraits",
+      "default_variant": "portraitCard",
+      "srcset": [
+        {
+          "variant": "portraitThumb",
+          "descriptor": "256w",
+          "width": 256
+        },
+        {
+          "variant": "portraitCard",
+          "descriptor": "512w",
+          "width": 512
+        },
+        {
+          "variant": "portraitDisplay",
+          "descriptor": "768w",
+          "width": 768
+        },
+        {
+          "variant": "portraitFull",
+          "descriptor": "1024w",
+          "width": 1024
+        }
+      ]
+    },
+    "establishing": {
+      "label": "Location Establishing Shots",
+      "default_variant": "establishingDisplay",
+      "srcset": [
+        {
+          "variant": "establishingThumb",
+          "descriptor": "256w",
+          "width": 256
+        },
+        {
+          "variant": "establishingCard",
+          "descriptor": "512w",
+          "width": 512
+        },
+        {
+          "variant": "establishingDisplay",
+          "descriptor": "1024w",
+          "width": 1024
+        },
+        {
+          "variant": "establishingHero",
+          "descriptor": "1280w",
+          "width": 1280
+        },
+        {
+          "variant": "establishingGallery",
+          "descriptor": "1536w",
+          "width": 1536
+        }
+      ]
+    },
+    "inline": {
+      "label": "Chapter Inline Illustrations",
+      "default_variant": "inlineMedium",
+      "srcset": [
+        {
+          "variant": "inlineSmall",
+          "descriptor": "768w",
+          "width": 768
+        },
+        {
+          "variant": "inlineMedium",
+          "descriptor": "960w",
+          "width": 960
+        },
+        {
+          "variant": "inlineLarge",
+          "descriptor": "1280w",
+          "width": 1280
+        }
+      ]
+    }
+  }
+}

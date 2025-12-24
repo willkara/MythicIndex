@@ -1,0 +1,465 @@
+chapter_analysis:
+  slug: "ch13-spring-thaw"
+  chapter_number: 13
+  chapter_title: "Spring Thaw"
+  visual_thesis: "Routine dissolves into threat—the patient watchers are themselves being watched, as spring reveals what winter kept frozen."
+  dominant_mood_progression:
+    - "winter rescue warmth"
+    - "bureaucratic tension"
+    - "innocent industry"
+    - "surveillance complexity"
+    - "defensive preparation"
+    - "resolute waiting"
+  color_story:
+    opening: "Morning mist, stubborn snow, pale sun struggling through clouds"
+    climax: "Rooftop twilight, workshop lamplight, moral gray"
+    closing: "Sunset battlements, raven-cry, spring twilight waiting"
+
+scene_zone_recommendations:
+  - scene_id: scn-13-01
+    location: thornwood-hills
+    recommended_zones:
+      - zone: hillside
+        label: "Winter Rescue"
+        rationale: "Rope rappel, ledge rescue, team coordination"
+        anchor_details:
+          - "Veyra rappelling down"
+          - "Merchant on narrow ledge"
+          - "Team above working pulley"
+    confidence: high
+
+  - scene_id: scn-13-02
+    location: city-watch-headquarters
+    recommended_zones:
+      - zone: watch-station
+        label: "Political Pressure"
+        rationale: "Thorne facing merchants, Grimsby watching"
+        anchor_details:
+          - "Two expensive men"
+          - "Captain's calculating eyes"
+          - "Thorne's neutral mask"
+    confidence: high
+
+  - scene_id: scn-13-03
+    location: castle-ward-vexweld-innovations
+    recommended_zones:
+      - zone: main-floor
+        label: "Inventor's Workshop"
+        rationale: "Cidrella at work, brass arm, engineering"
+        anchor_details:
+          - "Gnome with prosthetic arm"
+          - "Precision instruments"
+          - "Arcane blue streak in hair"
+    confidence: high
+
+  - scene_id: scn-13-04
+    location: castle-ward-vexweld-innovations
+    recommended_zones:
+      - zone: rooftop
+        label: "Rooftop Surveillance"
+        rationale: "Veyra and Vera watching the workshop"
+        anchor_details:
+          - "Spyglass trained"
+          - "Echo still as stone"
+          - "Workshop lights below"
+    confidence: high
+
+  - scene_id: scn-13-05
+    location: westwall-watchpost
+    recommended_zones:
+      - zone: parapet
+        label: "Spring Preparations"
+        rationale: "Dawn watch, defensive posture, waiting"
+        anchor_details:
+          - "Sunrise over thawing land"
+          - "Company in motion below"
+          - "Veyra watching from height"
+      - zone: forest-trail
+        label: "Discovery"
+        rationale: "Vera and Grimjaw finding observation posts"
+        anchor_details:
+          - "Hidden fire ring"
+          - "Flattened grass patterns"
+          - "Professional distance"
+    confidence: high
+
+candidate_moments:
+  - moment_id: "ch13-spring-thaw-moment-01"
+    scene_id: scn-13-01
+    title: "The Rappel"
+    narrative_beat: "Veyra adjusts her grip on the rope, feeling the familiar burn in her shoulders as she rappels down toward the merchant on the narrow ledge, his leg bent at an unnatural angle."
+    subtext: "Competence as compassion; the team's practiced rhythm."
+    scene_mood: kinetic
+    emotional_color: "rope-burn shoulders, pale-face pain, practiced efficiency"
+    location: thornwood-hills
+    zone: hillside
+    characters_present:
+      - veyra-thornwake
+      - aldwin-gentleheart
+      - grimjaw-ironbeard
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 5
+      narrative_pivot: 2
+      character_revelation: 3
+      symbolic_density: 3
+      total: 16
+    suggested_shot:
+      image_type: anchor
+      framing: wide
+      angle: "Veyra mid-rappel, ledge below, team above"
+      key_visual_hook: "Veyra on rope against rocky outcrop, merchant visible on ledge below, Aldwin and Grimjaw working pulley system above"
+      lighting_suggestion: "Morning mist, pale sun struggling through"
+      composition_notes: "Vertical rescue—competence in action"
+    source_excerpts:
+      - "Veyra adjusted her grip on the rope, feeling the familiar burn in her shoulders"
+      - "Twenty feet below, the merchant Harren Blackwater sat on a narrow ledge"
+    selection_rationale: "Action opening—the Company's routine competence."
+
+  - moment_id: "ch13-spring-thaw-moment-02"
+    scene_id: scn-13-01
+    title: "Echo's Agitation"
+    narrative_beat: "'Too quiet. No birdsong except for Echo, and he's staying close instead of ranging ahead like usual. It's like something's watching.'"
+    subtext: "Foreshadowing threat; the raven knows what humans miss."
+    scene_mood: ominous
+    emotional_color: "too-quiet woods, close-staying bird, watching presence"
+    location: thornwood-hills
+    zone: trail
+    characters_present:
+      - vera-moonwhisper
+      - echo-raven
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 3
+      narrative_pivot: 4
+      character_revelation: 3
+      symbolic_density: 4
+      total: 18
+    suggested_shot:
+      image_type: mood
+      framing: medium
+      angle: "Echo close to Vera, empty branches, silent woods"
+      key_visual_hook: "Echo perched tight on Vera's shoulder instead of ranging, empty branches around, unnatural silence visible in stillness"
+      lighting_suggestion: "Afternoon forest light, too quiet"
+      composition_notes: "Something watching—animal instinct as warning"
+    source_excerpts:
+      - "'Too quiet. No birdsong except for Echo, and he's staying close instead of ranging ahead'"
+      - "'It's like something's watching'"
+    selection_rationale: "Foreshadowing moment—threat introduced through animal instinct."
+
+  - moment_id: "ch13-spring-thaw-moment-03"
+    scene_id: scn-13-02
+    title: "Silk-Wrapped Threats"
+    narrative_beat: "'The Company provides valuable services, no one disputes that. But they need guidance. Proper oversight.' The words hung in the air like a threat wrapped in silk."
+    subtext: "Political pressure made tangible; the enemy's civilized face."
+    scene_mood: ominous
+    emotional_color: "expensive cloth, calculating eyes, silk-threat weight"
+    location: city-watch-headquarters
+    zone: watch-station
+    characters_present:
+      - thorne-brightward
+      - captain-grimsby
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 5
+      character_revelation: 4
+      symbolic_density: 4
+      total: 21
+    suggested_shot:
+      image_type: beat
+      framing: medium
+      angle: "Thorne facing two wealthy men, Grimsby watching"
+      key_visual_hook: "Thorne in Watch blue facing Vance and Hartwell in expensive clothing, Captain Grimsby watching from behind desk, threat visible in polite smiles"
+      lighting_suggestion: "Office lamplight, shadows on faces"
+      composition_notes: "Corruption civilized—the enemy in fine clothes"
+    source_excerpts:
+      - "'The Company provides valuable services, no one disputes that. But they need guidance. Proper oversight'"
+      - "The words hung in the air like a threat wrapped in silk"
+    selection_rationale: "Political pressure made visible—pivotal threat revelation."
+
+  - moment_id: "ch13-spring-thaw-moment-04"
+    scene_id: scn-13-02
+    title: "Choosing Sides"
+    narrative_beat: "'Time to choose which side of the line I'm really on.' Thorne rides back with the weight of competing loyalties heavy on his shoulders."
+    subtext: "Dual loyalty crisis; the Watch captain's impossible position."
+    scene_mood: somber
+    emotional_color: "heavy-shoulder weight, competing pull, watchpost distant"
+    location: city-watch-headquarters
+    zone: exterior
+    characters_present:
+      - thorne-brightward
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 3
+      narrative_pivot: 4
+      character_revelation: 5
+      symbolic_density: 4
+      total: 21
+    suggested_shot:
+      image_type: beat
+      framing: medium
+      angle: "Thorne on horseback, Watchpost visible in distance"
+      key_visual_hook: "Thorne in Watch blue riding away from city, Watchpost visible on distant hill, weight visible in posture, competing loyalties made physical"
+      lighting_suggestion: "Afternoon light, road between worlds"
+      composition_notes: "Between loyalties—the Watch captain's choice"
+    source_excerpts:
+      - "'Time to choose which side of the line I'm really on'"
+      - "the weight of competing loyalties heavy on his shoulders"
+    selection_rationale: "Character crisis—Thorne's defining choice."
+
+  - moment_id: "ch13-spring-thaw-moment-05"
+    scene_id: scn-13-03
+    title: "The Brass Arm"
+    narrative_beat: "Cidrella Vexweld stood barely four feet tall, but her presence commanded the entire space. Most striking was her left arm—a masterwork prosthetic of articulated brass and bronze plates, with glowing arcane conduits."
+    subtext: "Introduction of innocent caught in web; craft as identity."
+    scene_mood: intimate
+    emotional_color: "brass-glow warmth, precision-focus, arcane-blue pulse"
+    location: castle-ward-vexweld-innovations
+    zone: main-floor
+    characters_present:
+      - cidrella-vexweld
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 5
+      symbolic_density: 4
+      total: 21
+    suggested_shot:
+      image_type: anchor
+      framing: medium
+      angle: "Cidrella at workbench, brass arm prominent"
+      key_visual_hook: "Rock Gnome artificer at workbench, brass prosthetic arm with arcane conduits catching light, coppery hair with blue streak, precision instruments around"
+      lighting_suggestion: "Workshop lamplight, brass glow, arcane blue pulse"
+      composition_notes: "The innocent craftsman—unknowing accomplice introduced"
+    source_excerpts:
+      - "Cidrella Vexweld stood barely four feet tall, but her presence commanded the entire space"
+      - "her left arm—a masterwork prosthetic of articulated brass and bronze plates, with glowing arcane conduits"
+    selection_rationale: "New character introduction—visual distinctiveness and moral complexity."
+
+  - moment_id: "ch13-spring-thaw-moment-06"
+    scene_id: scn-13-04
+    title: "Watching the Watchers"
+    narrative_beat: "From their position on the rooftop across the street, they had maintained surveillance of Vexweld Innovations for three days—Echo perfectly still, understanding instinctively that motion drew attention."
+    subtext: "Surveillance as craft; the moral complexity of investigation."
+    scene_mood: intimate
+    emotional_color: "rooftop patience, still-raven discipline, workshop-glow below"
+    location: castle-ward-vexweld-innovations
+    zone: rooftop
+    characters_present:
+      - veyra-thornwake
+      - vera-moonwhisper
+      - echo-raven
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 3
+      symbolic_density: 4
+      total: 18
+    suggested_shot:
+      image_type: mood
+      framing: wide
+      angle: "Silhouettes on rooftop, workshop lights below"
+      key_visual_hook: "Veyra and Vera silhouetted on rooftop edge, Echo stone-still nearby, Vexweld workshop glowing below, twilight surveillance"
+      lighting_suggestion: "Evening twilight, workshop lamp-glow, silhouette dark"
+      composition_notes: "The watchers watching—moral complexity made visible"
+    source_excerpts:
+      - "From their position on the rooftop across the street, they had maintained surveillance"
+      - "Echo had learned to stay perfectly still during surveillance operations"
+    selection_rationale: "Visual surveillance moment—chapter title made literal."
+
+  - moment_id: "ch13-spring-thaw-moment-07"
+    scene_id: scn-13-04
+    title: "Completely Innocent"
+    narrative_beat: "'Completely innocent. Everything about her behavior suggests someone passionate about her work, running a legitimate business.' The moral complexity of their investigation was growing."
+    subtext: "Investigation revealing not criminals but victims."
+    scene_mood: somber
+    emotional_color: "frustrated certainty, innocent-target realization, moral gray"
+    location: castle-ward-vexweld-innovations
+    zone: rooftop
+    characters_present:
+      - vera-moonwhisper
+      - veyra-thornwake
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 3
+      narrative_pivot: 4
+      character_revelation: 3
+      symbolic_density: 5
+      total: 19
+    suggested_shot:
+      image_type: beat
+      framing: close
+      angle: "Vera's frustrated expression, workshop behind"
+      key_visual_hook: "Vera's face showing frustrated realization, Veyra beside her processing, workshop innocent below them, moral complexity visible"
+      lighting_suggestion: "Evening light, face half-lit"
+      composition_notes: "The wrong target—investigation's moral weight"
+    source_excerpts:
+      - "'Completely innocent. Everything about her behavior suggests someone passionate about her work'"
+      - "The moral complexity of their investigation was growing more apparent"
+    selection_rationale: "Moral complexity moment—innocent victims in criminal webs."
+
+  - moment_id: "ch13-spring-thaw-moment-08"
+    scene_id: scn-13-05
+    title: "Finding the Watchers"
+    narrative_beat: "'This grass here—it's been flattened, but not by deer or boar. Wrong pattern.' They spent twenty minutes examining the area, finding subtle signs of patient observation."
+    subtext: "Hunters becoming hunted; professional surveillance revealed."
+    scene_mood: ominous
+    emotional_color: "flattened-grass evidence, patient watching, roles reversed"
+    location: westwall-watchpost
+    zone: forest-trail
+    characters_present:
+      - grimjaw-ironbeard
+      - vera-moonwhisper
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 5
+      character_revelation: 3
+      symbolic_density: 4
+      total: 20
+    suggested_shot:
+      image_type: detail
+      framing: close
+      angle: "Grimjaw kneeling, flattened grass visible"
+      key_visual_hook: "Grimjaw's weathered hands brushing aside leaves, flattened grass beneath showing human pattern, Vera scanning treeline behind"
+      lighting_suggestion: "Morning forest light, evidence illuminated"
+      composition_notes: "The hunters hunted—surveillance discovered"
+    source_excerpts:
+      - "'This grass here—it's been flattened, but not by deer or boar. Wrong pattern'"
+      - "moss scraped from a tree trunk where someone had leaned against it"
+    selection_rationale: "Stakes raised—the Company being watched."
+
+  - moment_id: "ch13-spring-thaw-moment-09"
+    scene_id: scn-13-05
+    title: "Structural Analysis"
+    narrative_beat: "'Everything's got structure, lad. Bad arguments fail the same way bad buildings do—improper load distribution and weak foundations.' Grimjaw analyzes tactics like bridge engineering."
+    subtext: "Character voice; the dwarf's unique perspective."
+    scene_mood: intimate
+    emotional_color: "engineering-logic, structural-thinking, gruff wisdom"
+    location: westwall-watchpost
+    zone: main-hall
+    characters_present:
+      - grimjaw-ironbeard
+      - thorne-brightward
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 3
+      narrative_pivot: 2
+      character_revelation: 5
+      symbolic_density: 3
+      total: 16
+    suggested_shot:
+      image_type: beat
+      framing: medium
+      angle: "Grimjaw explaining, Thorne's surprised expression"
+      key_visual_hook: "Grimjaw gesturing as if describing load-bearing walls, Thorne's expression of surprised realization, maps spread between them"
+      lighting_suggestion: "Interior hall light, planning session"
+      composition_notes: "Engineering wisdom—tactics as structure"
+    source_excerpts:
+      - "'Everything's got structure, lad. Bad arguments fail the same way bad buildings do'"
+      - "'Did you just... analyze our threat assessment like it's a bridge?'"
+    selection_rationale: "Character moment—Grimjaw's unique worldview."
+
+  - moment_id: "ch13-spring-thaw-moment-10"
+    scene_id: scn-13-05
+    title: "Give Them Hell"
+    narrative_beat: "'Spring cleaning, she says. With enough weapons to outfit a mercenary company.' Mistress Elba fixed Veyra with a knowing look. 'We know how to duck when the arrows start flying. Give them hell.'"
+    subtext: "Community strength; the non-combatants choosing to stand."
+    scene_mood: intimate
+    emotional_color: "steaming-mug comfort, grandmother-steel, fierce blessing"
+    location: westwall-watchpost
+    zone: courtyard
+    characters_present:
+      - mistress-elba
+      - veyra-thornwake
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 3
+      narrative_pivot: 3
+      character_revelation: 4
+      symbolic_density: 4
+      total: 19
+    suggested_shot:
+      image_type: beat
+      framing: medium
+      angle: "Mistress Elba handing mug to Veyra, knowing look"
+      key_visual_hook: "Elderly woman pressing steaming mug into commander's hands, crossed arms, knowing look that sees through deflection, fierce blessing in grandmother's eyes"
+      lighting_suggestion: "Morning courtyard light, steam rising"
+      composition_notes: "Community choosing battle—blessing from the hearth"
+    source_excerpts:
+      - "'Spring cleaning, she says. With enough weapons to outfit a mercenary company'"
+      - "'We know how to duck when the arrows start flying. Give them hell.'"
+    selection_rationale: "Community moment—non-combatants claiming their role."
+
+  - moment_id: "ch13-spring-thaw-moment-11"
+    scene_id: scn-13-05
+    title: "Ready and Waiting"
+    narrative_beat: "'Come on then. We're ready.' In the gathering twilight, Echo let out a single, sharp cry that echoed across the courtyard. The Last Light Company waited."
+    subtext: "Resolve before storm; the chapter's culminating stance."
+    scene_mood: somber
+    emotional_color: "sunset-battlements, raven-cry echo, resolute waiting"
+    location: westwall-watchpost
+    zone: parapet
+    characters_present:
+      - veyra-thornwake
+      - echo-raven
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 5
+      narrative_pivot: 4
+      character_revelation: 4
+      symbolic_density: 5
+      total: 23
+    suggested_shot:
+      image_type: hero
+      framing: wide
+      angle: "Veyra on battlements, sunset, Echo crying"
+      key_visual_hook: "Veyra silhouetted on parapet against setting sun, Echo launching with sharp cry, Watchpost fortified below, spring twilight waiting"
+      lighting_suggestion: "Sunset gold fading, silhouette dramatic, raven dark"
+      composition_notes: "Resolve before storm—the Company ready"
+    source_excerpts:
+      - "'Come on then. We're ready'"
+      - "Echo perched on the battlements and let out a single, sharp cry"
+      - "The Last Light Company waited, prepared for whatever spring might bring"
+    selection_rationale: "Chapter's culminating image—resolve before coming storm."
+
+proposed_selection:
+  target_moments: 6
+  rules_used:
+    - "At least 1 hero or anchor"
+    - "No more than 2 moments with the same scene_mood"
+    - "Cover arc from routine rescue through political pressure to defensive resolve"
+    - "Balance action, character, and atmosphere"
+  selected_moments:
+    - moment_id: "ch13-spring-thaw-moment-11"
+      rank: 1
+      reason: "Highest score (23), culminating image, resolve before storm"
+    - moment_id: "ch13-spring-thaw-moment-03"
+      rank: 2
+      reason: "Strong score (21), political pressure visualized, pivotal threat"
+    - moment_id: "ch13-spring-thaw-moment-05"
+      rank: 3
+      reason: "Strong score (21), Cidrella introduction, visual distinctiveness"
+    - moment_id: "ch13-spring-thaw-moment-08"
+      rank: 4
+      reason: "Good score (20), discovery of surveillance, stakes raised"
+    - moment_id: "ch13-spring-thaw-moment-10"
+      rank: 5
+      reason: "Good score (19), community strength, Mistress Elba's blessing"
+    - moment_id: "ch13-spring-thaw-moment-02"
+      rank: 6
+      reason: "Good score (18), foreshadowing, Echo's instinct"
+  rejected_notes:
+    - moment_id: "ch13-spring-thaw-moment-04"
+      reason: "Strong moment but moment-03 captures political pressure better"
+    - moment_id: "ch13-spring-thaw-moment-07"
+      reason: "Good moral complexity but moment-05 introduces Cidrella more visually"
+    - moment_id: "ch13-spring-thaw-moment-06"
+      reason: "Good surveillance visual but too similar to moment-08's theme"
+    - moment_id: "ch13-spring-thaw-moment-09"
+      reason: "Fun character moment but lower priority than structural moments"
+    - moment_id: "ch13-spring-thaw-moment-01"
+      reason: "Good action but routine rescue less pivotal than other moments"

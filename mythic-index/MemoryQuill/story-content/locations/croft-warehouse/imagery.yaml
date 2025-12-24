@@ -1,0 +1,183 @@
+metadata:
+  entity_type: "location"
+  slug: "croft-warehouse"
+  name: "Croft Warehouse"
+  type: "building"
+
+location_visual_anchor:
+  signature_elements:
+    - Commercial storage with deceptive orderliness
+    - Merchant operations center (office with ledgers, scales, strongbox)
+    - Organized inventory masking fraudulent activity
+    - Ventilation hatches on roof (for infiltration)
+    - Large windows in office section (for dramatic escape)
+    - Loading dock area (for nighttime suspicious activity)
+  materials:
+    primary: "Timber frame, stone foundation, tarred roof"
+    accent: "Iron locks and hinges, brass merchant fixtures, glass windows"
+    deceptive: "Quality grain sacks mixed with inferior stock"
+  color_anchors:
+    dominant: "Weathered wood browns, gray stone, shadow blacks"
+    accent: "Brass merchant fixtures, amber lamplight, firelight orange"
+    suspicious: "Dark corners, concealed strongbox bronze"
+  characteristic_light:
+    day: "Filtered light through high windows, dusty air catches light shafts"
+    night: "Lantern light for inventory work (and covert operations)"
+    dramatic: "Firelight from burning warehouse (revelation scene)"
+
+overview:
+  name: "Croft Warehouse Overview"
+  slug: "croft-warehouse-overview"
+  title: "The Merchant's Facade"
+  image_type: "establishing"
+  category: ["Exterior", "Commercial", "Urban"]
+  scene_mood: "somber"
+  mood_rationale: "Legitimate appearance concealing corruption beneath"
+  visual_description: "A mid-sized commercial warehouse in Stonebridge's merchant district, timber-framed with stone foundation, appearing respectable and well-maintained. Merchant's sign displays 'S. Croft - Quality Grains' in brass letters. High windows suggest ventilation, loading dock visible at side. The structure exudes prosperous orderliness, masking the fraud within."
+  composition_notes: "Wide shot from street level, slightly elevated perspective, warehouse centered with merchant district context visible, late afternoon light casting long shadows"
+  narrative_significance: "This is where Veyra's team confronts merchant corruption - a facade of legitimacy hiding fraudulent operations"
+  symbolic_elements: "The respectable exterior vs. corrupt interior represents the broader theme of deceptive appearances in power structures"
+  time_of_day: "late afternoon"
+  lighting:
+    primary_source: "late afternoon sun from west"
+    quality: "warm golden light on facade, deep shadows on east side"
+    direction: "from left/west, creating dimensional depth"
+    color_temperature: "warm amber on wood, cool gray in shadows"
+    shadow_depth: "deep on east walls and under eaves"
+    atmospheric: "urban haze, slight dust from merchant district activity"
+  palette:
+    dominant: ["weathered wood brown", "gray stone", "shadow black"]
+    accent: ["brass sign", "amber sunlight", "dark blue twilight sky"]
+    avoid: ["bright primary colors", "pristine appearance"]
+  aspect_ratio: "16:9"
+  orientation: "landscape"
+  size: "2752x1536"
+
+zones:
+  - name: "Storage Floor"
+    slug: "croft-warehouse-storage"
+    title: "The Grain Vault"
+    image_type: "zone"
+    zone_type: "heart"
+    category: ["Interior", "Commercial"]
+    scene_mood: "somber"
+    mood_rationale: "Organized merchant inventory, deceptive orderliness hiding fraud"
+    visual_description: "Rows of shelving and crates stretch into shadow, goods organized by type with deceptive precision. Quality grain sacks sit alongside inferior stock, weights and measures nearby. Clear aisles for workers suggest legitimate operations, but subtle inconsistencies hint at manipulation. Mountains of crates and barrels create a labyrinthine interior. Dust hangs in air, catching filtered light from high windows."
+    composition_notes: "Deep perspective through storage rows, three-quarter angle emphasizing depth and scale, worker silhouettes for human scale"
+    narrative_significance: "Where the evidence of fraud lies hidden among legitimate goods - mixed quality, doctored weights"
+    symbolic_elements: "Order masking chaos, legitimate front concealing corruption"
+    location_within: "Main warehouse floor, central section"
+    time_of_day: "mid-afternoon"
+    lighting:
+      primary_source: "high clerestory windows"
+      quality: "dramatic diagonal shafts cutting through dusty air"
+      direction: "from upper windows, creating light bands and shadow zones"
+      color_temperature: "warm amber bands against cool shadow"
+      shadow_depth: "deep between light shafts, creating mystery"
+      atmospheric: "heavy dust suspended, visible in light shafts"
+    palette:
+      dominant: ["timber brown", "burlap tan", "shadow black", "golden light bands"]
+      accent: ["iron hardware black", "grain sack cream"]
+      avoid: ["bright colors", "modern materials", "pristine cleanliness"]
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "2752x1536"
+
+  - name: "Office"
+    slug: "croft-warehouse-office"
+    title: "The Ledger Room"
+    image_type: "essence"
+    zone_type: "sanctuary"
+    category: ["Interior", "Office"]
+    scene_mood: "intimate"
+    mood_rationale: "Where business is conducted and secrets are kept - the heart of corruption"
+    visual_description: "A small merchant's office with heavy desk bearing ledgers, brass scales for weighing goods, and a bronze strongbox (where true records hide). Quill and inkwell suggest recent work. Window overlooks loading dock. Oil lamp provides warm light. The space appears orderly and professional, but careful examination reveals inconsistencies in the ledgers - the evidence Veyra seeks."
+    composition_notes: "Medium shot from entrance angle, desk centered with strongbox visible, window as light source and narrative escape route, intimate framing"
+    narrative_significance: "Command center of Croft's fraudulent operations - where true records are kept separate from official books"
+    symbolic_elements: "The strongbox: secrets locked away from official scrutiny; the scales: ironic symbol of justice for merchant who manipulates weights"
+    location_within: "Upper level corner office, overlooking loading dock"
+    time_of_day: "evening"
+    lighting:
+      primary_source: "oil lamp on desk, window light"
+      quality: "warm intimate lamplight, cool window backlight creating rim"
+      direction: "lamp from desk center, window from left creating silhouette potential"
+      color_temperature: "warm amber from lamp, cool blue twilight from window"
+      shadow_depth: "moderate - warm shadows under furniture, sharper near lamp"
+      atmospheric: "slight smoke from lamp, intimate enclosed feeling"
+    palette:
+      dominant: ["dark oak brown", "amber lamplight", "shadow black", "cool window blue"]
+      accent: ["brass scales gold", "bronze strongbox", "parchment cream", "ink black"]
+      avoid: ["bright overhead light", "modern office elements"]
+    aspect_ratio: "4:3"
+    orientation: "landscape"
+    size: "1536x1152"
+
+  - name: "The Descent"
+    slug: "croft-warehouse-veyra-descent"
+    title: "Into the Void"
+    image_type: "essence"
+    zone_type: "threshold"
+    category: ["Interior", "Action", "Infiltration"]
+    scene_mood: "ominous"
+    mood_rationale: "Veyra commits to infiltration, descending into unknown danger in absolute darkness"
+    visual_description: "Veyra drops through rooftop ventilation hatch into the warehouse void. Her silhouette is framed against the dim rectangle of hatch light from above, descending into absolute blackness. Dust rises from grain sacks where she'll land, caught in the faint shaft of light. The warehouse below is a vast darkness filled with shadowy mountains of crates and barrels. The composition emphasizes vulnerability and commitment - the point of no return."
+    composition_notes: "Vertical portrait orientation with dramatic low-angle perspective from warehouse floor looking up. Veyra at center as descending silhouette, ventilation hatch as sole light source creating rim-lit outline, rising dust catching light. Deep negative space emphasizing void and danger."
+    narrative_significance: "The moment Veyra commits fully to the infiltration, leaving safety behind to expose Croft's corruption"
+    symbolic_elements: "Descent into darkness represents willingness to risk everything for truth; hatch light above as last connection to safety"
+    character_focus: "Veyra (descending, committed, vulnerable)"
+    depicts_characters: ["Veyra"]
+    character_states:
+      veyra: "Mid-descent through hatch, body compact for controlled fall, silhouetted against light from above, face shadowed but determined posture visible"
+    location_within: "Main warehouse floor, entry via rooftop ventilation hatch"
+    time_of_day: "night"
+    narrative_moment: "Ch11 moment-07, scn-11-05: infiltration entry"
+    lighting:
+      primary_source: "ventilation hatch opening above (dim exterior night light)"
+      quality: "dramatic single shaft creating rim-lit silhouette against void"
+      direction: "from above/behind Veyra, backlighting her descent"
+      color_temperature: "cool night blue from hatch, absolute black below"
+      shadow_depth: "absolute darkness except for narrow light shaft"
+      atmospheric: "rising dust catching light, creating visible shaft effect"
+    palette:
+      dominant: ["absolute void black", "cool night blue rim light", "rising dust gray"]
+      accent: ["Veyra's silhouette", "grain sack beige where light touches"]
+      avoid: ["bright colors", "multiple light sources", "visible detail in shadows"]
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1536x2048"
+
+  - name: "Explosive Escape"
+    slug: "croft-warehouse-window-escape"
+    title: "Shattered Exit"
+    image_type: "essence"
+    zone_type: "threshold"
+    category: ["Exterior", "Action", "Escape"]
+    scene_mood: "kinetic"
+    mood_rationale: "Pure explosive action - no subtlety, only survival and desperate momentum"
+    visual_description: "Glass explodes outward in frozen cascade as Veyra bursts shoulder-first through the office window. Shards suspend in air like frozen rain, catching harsh backlighting from the office interior. Her silhouette is mid-trajectory, body committed to the desperate leap toward the dark dock below. The composition captures the explosive instant - glass radiating outward from impact point, Veyra's determined form at center, void of dock beyond beckoning. Shouts erupt from warehouse behind her (just out of frame)."
+    composition_notes: "Landscape orientation with diagonal explosive composition. Veyra center-left moving right toward dock, glass fragments radiating outward in dynamic pattern. Harsh backlight from office creates dramatic rim on glass shards. Dark dock below emphasizes danger of fall. Freeze-frame dynamic composition."
+    narrative_significance: "The moment subtlety ends and survival begins - Veyra chooses explosive escape over capture with evidence"
+    symbolic_elements: "Shattered glass represents broken facade of Croft's legitimacy; leap of faith into darkness represents trust in team (Fayne waiting with boat)"
+    character_focus: "Veyra (escaping, explosive action, committed momentum)"
+    depicts_characters: ["Veyra"]
+    character_states:
+      veyra: "Mid-leap through exploding window, shoulder-first impact posture, body horizontal in committed trajectory, face grimly determined, surrounded by radiating glass shards"
+    location_within: "Office window facing loading dock, second story"
+    time_of_day: "night"
+    narrative_moment: "Ch11 moment-08, scn-11-05: explosive escape with evidence"
+    lighting:
+      primary_source: "harsh office interior light behind"
+      quality: "dramatic backlight creating rim effect on glass and Veyra"
+      direction: "from behind/left, backlighting the explosive action"
+      color_temperature: "warm amber office light vs cool night darkness ahead"
+      shadow_depth: "extreme contrast - bright explosion vs dark dock void"
+      atmospheric: "glass fragments catching light, suspended motion effect"
+    palette:
+      dominant: ["void black of dock", "warm office amber backlight", "glass shard silver"]
+      accent: ["Veyra's silhouette", "explosive glass pattern"]
+      avoid: ["soft lighting", "static composition", "visible dock detail"]
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "2752x1536"
+
+image_inventory: []

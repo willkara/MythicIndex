@@ -1,0 +1,405 @@
+chapter_analysis:
+  slug: "ch12-watchpost-whispers"
+  chapter_number: 12
+  chapter_title: "Watchpost Whispers"
+  
+  visual_thesis: "From the warmth of found family to the chill of distant threat, closing on the steady flame of shared resolve against the gathering dark."
+  
+  dominant_mood_progression:
+    - "raucous warmth"
+    - "focused investigation"
+    - "creeping threat"
+    - "quiet determination"
+  
+  color_story:
+    opening: "warm amber, candlelight gold, coffee brown"
+    climax: "pale winter light, parchment white, shadow gray"
+    closing: "twilight blue, city-glow amber, lantern gold against deep indigo"
+
+  key_locations:
+    - slug: "westwall-watchpost-mess-hall"
+      name: "Westwall Watchpost Mess Hall"
+      visual_character: "A converted barracks dominated by an enlarged social hearth, filled with the controlled chaos of breakfast service—steam rising from coffee pots, plates clattering, rough wooden tables pushed close together. Light filters through shuttered windows, catching flour dust and the occasional black feather."
+      time_of_day: "late morning"
+      weather_atmosphere: "interior warmth against early spring chill outside"
+      
+    - slug: "veyras-quarters"
+      name: "Veyra's Small Room"
+      visual_character: "A spartan space holding only a cot, a table, and the weight of command—documents spread like an uncharted map, shadows pooling in corners, and at the center, the warm amber glow of her lantern pushing back the dark."
+      time_of_day: "night"
+      weather_atmosphere: "still, quiet, intimate darkness"
+      
+    - slug: "westwall-main-hall"
+      name: "Westwall Main Hall"
+      visual_character: "A functional military space transformed by morning light streaming through tall windows, documents spread across the central table like terrain maps of intention. The lantern at its heart creates a focal point where all eyes gather."
+      time_of_day: "dawn"
+      weather_atmosphere: "cool morning light, thread-thin and golden"
+      
+    - slug: "westwall-highest-parapet"
+      name: "Westwall Parapet"
+      visual_character: "Stone battlements worn smooth by weather and watchful hands, offering a sweeping view of Waterdeep kindling its evening lights. The western sky bleeds from amber to indigo while the first stars emerge."
+      time_of_day: "late afternoon into evening"
+      weather_atmosphere: "clear, cooling air, city sounds distant below"
+
+  active_characters:
+    - slug: "veyra-thornwake"
+      name: "Veyra Thornwake"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "protagonist"
+      emotional_arc: "reflective warmth → strategic focus → resolute command"
+      arc_context: "Post-Stonebridge, Veyra has settled into her role as Commander with increasing authority. Her calm leadership during the briefing shows growth from survivor to established leader."
+      visual_identifiers: "Deep earth-brown skin with prominent mottled reddish-brown burn scar covering left face from jaw to temple. Jet black hair in spiky mohawk with shaved sides; long right-side braid with brown feathers and turquoise beads. Teal-blue swirling tattoos on neck and left arm. Dark, nearly black eyes with sharp focus. Worn leather cuirass over dark blue tunic, thick cowl, heavy leather bracers. Battered metal lantern at belt casting warm golden glow."
+      draft_warning: false
+      
+    - slug: "thorne-brightward"
+      name: "Thorne Brightward"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "steady anchor → tactical concern → shared resolve"
+      arc_context: "Thorne continues as the reliable second, though his mention of potentially being called back to the Watch hints at future tensions."
+      visual_identifiers: "Broad-shouldered human male, early forties. Steel-gray hair in short military crop with untamed bangs, thick gray mustache. Deep-set brown watchful eyes, weathered ruddy face. Faded deep blue wool cloak with golden sunburst sigil (Last Light Company), dull burnished steel breastplate over chainmail, dark brown leather. Often carries iron lantern."
+      draft_warning: false
+      
+    - slug: "vera-moonwhisper"
+      name: "Vera Moonwhisper"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "catalyst"
+      emotional_arc: "sardonic observer → exposed vulnerability → steeled determination"
+      arc_context: "Vera's seven-year hunt for her brother intersects directly with Company business for the first time. This chapter marks a pivotal shift from personal quest to shared mission."
+      visual_identifiers: "Lean, rangy half-elf, late 20s to early 30s. Fair, pale complexion with light freckling. Thick dark chestnut brown hair in single practical braid over right shoulder. Clear hazel eyes (shift to amber during magic). Pointed ear tips visible; faint green vine markings on right cheekbone and temple. Deep forest-green hooded cloak over fitted brown leather jerkin with front lacing. Vine-carved quarterstaff 'Whisperwind.' Brass locket on leather cord. Accompanied by Echo, a large black raven."
+      draft_warning: false
+      
+    - slug: "grimjaw-ironbeard"
+      name: "Grimjaw Ironbeard"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "boisterous warmth → protective anger → grounded practicality"
+      arc_context: "Grimjaw continues his role as the Company's paternal figure, his 'faced worse than slavers' comment showing protective instincts over the younger members."
+      visual_identifiers: "Elderly but robust dwarf with deeply lined, weathered face. Short, stocky, barrel-chested with broad shoulders. Ruddy, stone-tough skin. Voluminous iron-gray beard with massive central braid secured by metal bands, smaller side braids with metal charms and weighted beads. Dark deep-set eyes under bushy gray brows. Rounded nose, battered calloused hands. Dark brown layered leathers, copper-colored riveted pauldrons, thick bracers, heavy mud-stained boots. Massive sledgehammer 'Tremor' and often a wooden cask."
+      draft_warning: false
+      
+    - slug: "quartermaster-fayne"
+      name: "Quartermaster Fayne"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "organized chaos → analytical focus → pattern recognition"
+      arc_context: "Fayne's pattern-recognition abilities prove crucial to the investigation, demonstrating their value beyond simple logistics."
+      visual_identifiers: "Rock gnome, 3'4\", middle-aged with weathered skin and fine lines. Compact wiry frame, large prominent ears. Ruddy textured skin with freckling. Auburn hair in short practical tousled cut. Hazel eyes shifting green to brown. Right hand fingers heavily ink-stained, faint scar through left eyebrow. Custom brass spectacles with multiple swing-arm magnifying lenses. Worn high-collared leather coat (modified City Guard uniform), segmented leather pauldron on left shoulder with shield emblem, leather cross-body bandolier, tool handles at waist."
+      draft_warning: false
+      
+    - slug: "aldwin-gentleheart"
+      name: "Brother Aldwin Gentleheart"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "warm presence → gentle questioning → philosophical acceptance"
+      arc_context: "Aldwin offers quiet wisdom throughout, his 'even uncomfortable growth means we're alive' reflecting his role as moral anchor."
+      visual_identifiers: "Middle-aged halfling with compact sturdy build. Fair ruddy complexion, weathered by field work. Short thick curly dark charcoal-brown hair heavily frosted with silver and gray at temples and crown. Warm dark hazel eyes conveying kindness and weary wisdom. Gentle rounded nose, deep-set lines around eyes and mouth. Moss-green wool cloak and cowl over studded brown leather doublet/vest. Dark brown fingerless leather gloves, sturdy buckled boots. Multiple leather pouches on belt with round-bottomed flask. Often carries copper heating pan and herbal supplies."
+      draft_warning: false
+      
+    - slug: "mistress-elba"
+      name: "Mistress Elba"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "exasperated authority → practical complaint → grudging acceptance"
+      arc_context: "Elba's space concerns represent the Company's growing pains, her complaints delivered with the confidence of someone whose domain is essential."
+      visual_identifiers: "173-year-old dwarven matriarch, 4'2\" with solid blocky frame. Remarkably broad shoulders, thick muscular forearms. Warm ruddy tanned complexion. Iron-gray hair with thick copper-red braid over crown like headband and heavy plait over left shoulder. Deep sharp amber eyes. Faint burn scars and age spots on forearms. Dark earth-brown wool dress, heavy beige canvas apron stained with grease, soot, and flour. Small gold hoop earrings."
+      draft_warning: false
+      
+    - slug: "medic-halden"
+      name: "Medic Halden"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "mild complaint → practical suggestion"
+      arc_context: "Halden's brief appearances reinforce the medical needs driving expansion discussions."
+      visual_identifiers: "Human male, late 30s to early 40s. Average height, sturdy solid build. Tanned ruddy weathered complexion. Dark brown short hair, heavy stubble, dark sideburns. Dark brown heavy-lidded weary eyes. Nervous tic at corner of left eye under stress. Tarnished gray steel plate (breastplate, pauldrons, knee guards) over dark slate-blue gambeson. Heavy dark brown leather boots, belt, gloves. Round steel kettle hat. Large blocky brown leather medical satchel with red cross."
+      draft_warning: false
+      
+    - slug: "sarge"
+      name: "Lieutenant Tomaq (Sarge)"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "drill discipline → grudging humor"
+      arc_context: "Sarge maintains his role as training enforcer, the brief scene showing his relationship with Thorne."
+      visual_identifiers: "Massive towering orc who must duck and turn sideways for doorframes. Gray skin (unusual for orcs). One functional eye, left eye hidden behind leather patch. Left tusk broken halfway and capped with silver. City Watch uniform with Lieutenant chevrons sewn with precise stitches. Two-handed battle-axe that appears delicate in his massive grip."
+      draft_warning: false
+
+candidate_moments:
+  - moment_id: "ch12-watchpost-whispers-moment-01"
+    source_scene: "scn-12-01"
+    
+    narrative_beat: "Echo launches from the rafters in a blur of black feathers, swoops low over the breakfast table, snatches bacon directly from Grimjaw's plate, and returns to his perch—his caw-caw-caw sounding distinctly like laughter."
+    subtext: "The found family's comfort level on full display—a moment of pure absurdist joy that only works because these people have become family enough to have a trickster raven stealing their breakfast."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 2
+      character_revelation: 4
+      symbolic_density: 3
+      total: 18
+    
+    score_rationale:
+      character_revelation_note: "Vera's deadpan 'translation' reveals her dry wit and her bond with Echo; Grimjaw's bellowing outrage shows his boisterous nature; the whole Company's laughter demonstrates their evolution from strangers to family."
+      relationship_context: "Vera's relationship with Echo—her emotional anchor and constant companion—is showcased, while the group's acceptance of this chaos shows integration."
+    
+    suggested_type: "anchor"
+    primary_subject: "Echo mid-swoop with bacon in talons"
+    secondary_elements:
+      - "Grimjaw's bacon-less plate and outraged expression"
+      - "Vera's deadpan face on the rafters"
+      - "Laughing faces around the table"
+      - "Steam rising from coffee"
+      - "Mistress Elba with fresh pot"
+    
+    suggested_framing: "medium"
+    suggested_angle: "low-to-eye-level"
+    
+    key_visual_hook: "The black raven's wings fully spread in triumphant flight, strip of bacon dangling from his beak, caught against the warm amber light of the mess hall"
+    
+    lighting_suggestion: "Morning light through shuttered windows mixing with hearth glow—warm amber dominance with streaks of cooler daylight catching flour dust and steam"
+    
+    emotional_color: "raucous joy"
+    
+    characters_present:
+      - slug: "vera-moonwhisper"
+        has_canonical_visuals: true
+        role_in_moment: "Deadpan observer on rafters, Echo's straight-faced 'translator'"
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "Victim of the theft, bellowing in comic outrage"
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Watching with a small, unguarded smile"
+      - slug: "quartermaster-fayne"
+        has_canonical_visuals: true
+        role_in_moment: "Laughing so hard he nearly spills coffee"
+      - slug: "mistress-elba"
+        has_canonical_visuals: true
+        role_in_moment: "Coffee in hand, witnessing the chaos in her domain"
+    
+    source_excerpts:
+      - "Echo launched from the rafter in a blur of black feathers. He swooped low over the table, snatched a piece of bacon directly from Grimjaw's plate, and flapped back to his perch in one smooth motion."
+      - "The distinctive *caw-caw-caw* that followed sounded distinctly like laughter."
+      - "Echo fluffed his feathers, tilted his head, and made a series of soft clicking sounds while tearing into his prize."
+    
+    selection_rationale: "This moment is visually unique to THIS story—a trickster raven stealing a dwarf's breakfast while his ranger companion provides deadpan translation. It captures the found-family dynamic that defines the Company and provides a visual hook (raven in flight with stolen bacon) that is immediately arresting and tonally establishes the chapter's warmth."
+
+  - moment_id: "ch12-watchpost-whispers-moment-02"
+    source_scene: "scn-12-04"
+    
+    narrative_beat: "Alone in her small room at night, Veyra traces the burn scar on her cheek while studying documents by lantern light. As she adjusts the wick, her fingers brush warm brass and something brushes back—a distant awareness, curious rather than threatening, measuring her from across a gulf before vanishing."
+    subtext: "The weight of command and the mystery of her lantern converge in this intimate moment—Veyra processing the investigation while the object that defines her mission hints at deeper layers yet to be revealed."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 3
+      character_revelation: 5
+      symbolic_density: 5
+      total: 21
+    
+    score_rationale:
+      character_revelation_note: "This shows Veyra alone with her thoughts—a private moment where the burn scar she traces connects her past trauma to her present mission. Her 'record of weight' tattoo and the lantern at her hip define her visually; here we see her engaging with both symbols."
+      relationship_context: "The lantern—her signature item passed from the prologue—responds to her with mysterious awareness, suggesting a bond deeper than mere tool."
+    
+    suggested_type: "character"
+    primary_subject: "Veyra's scarred profile illuminated by lantern glow"
+    secondary_elements:
+      - "Fingers tracing the mottled burn scar on her left cheek"
+      - "Documents sprawled across the table like an uncharted map"
+      - "The lantern's warm amber light creating a pool of safety"
+      - "Teal tattoos visible on neck/arm"
+      - "Deep shadows pooling in corners"
+    
+    suggested_framing: "close"
+    suggested_angle: "three-quarter profile, low"
+    
+    key_visual_hook: "Her scarred fingers pausing at the brass lantern's rim, the metal catching warm light while shadows gather at her scarred profile's edge—the boundary between light and dark running through her face"
+    
+    lighting_suggestion: "Single lantern source—warm amber glow from below and to the side, creating strong chiaroscuro that emphasizes the texture of her burn scar and the depth of the surrounding darkness"
+    
+    emotional_color: "weighted contemplation"
+    
+    characters_present:
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Commander alone with her thoughts and her mysterious lantern, processing the weight of what comes next"
+    
+    source_excerpts:
+      - "She traced the scar on her cheek and murmured, 'A lock without a key... a fortress waiting. And a city that whispers of gold and shadows.'"
+      - "As she adjusted the wick, her fingers brushed warm brass and something else brushed back—a distant awareness, curious rather than threatening, like old eyes measuring her from across a gulf."
+      - "The lantern hummed softly in the quiet, and strategies began to stitch themselves together in Veyra's mind."
+    
+    selection_rationale: "This CHARACTER moment reveals Veyra in her most private state—not commanding, not rescuing, but processing. The visual of her scarred face half-lit by her signature lantern, fingers on the scar that defines her past while the lantern hints at mysterious future, captures both her vulnerability and her resolve. The symbolic density is exceptional—light against dark, hope as a tool, the leader alone."
+
+  - moment_id: "ch12-watchpost-whispers-moment-03"
+    source_scene: "scn-12-05"
+    
+    narrative_beat: "As Vera connects the ledger patterns to 'early spring shipments on northern routes,' the color drains from her face and she touches Echo's wing. 'That's the Silent Hand.' Seven years of solitary hunting crystallize into a single moment of recognition—and for the first time, she isn't alone."
+    subtext: "The chapter's PIVOT: Vera's personal quest intersects with Company business. Her seven years of obsessive hunting transform from private burden to shared mission in the space of a sentence."
+    
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 4
+      narrative_pivot: 5
+      character_revelation: 5
+      symbolic_density: 3
+      total: 22
+    
+    score_rationale:
+      character_revelation_note: "From development.md: 'Her search for her brother has defined her entire life.' This moment shows her wary isolation cracking—vulnerability appearing as she realizes she's no longer alone in the hunt. The touch to Echo's wing is grounding, connecting to her psychological profile."
+      relationship_context: "Echo serves as her emotional anchor (per development notes). The Company watching her, the way Veyra asks 'What do you need from us'—this represents the first time others have truly joined her cause."
+    
+    suggested_type: "anchor"
+    primary_subject: "Vera's pale face, hand touching Echo's black feathers"
+    secondary_elements:
+      - "Ledger pages spread on table catching dawn light"
+      - "Lantern at table's center"
+      - "Company members' faces showing various reactions"
+      - "Morning light threading through tall windows"
+    
+    suggested_framing: "medium-close"
+    suggested_angle: "eye-level, slightly low"
+    
+    key_visual_hook: "The color draining from Vera's freckled face as her fingers find Echo's wing—the black feathers stark against her pale skin, her hazel eyes suddenly haunted by seven years"
+    
+    lighting_suggestion: "Dawn light through tall windows—cool and thin, catching the paleness of her complexion, lantern at table providing warm counterpoint"
+    
+    emotional_color: "crystallized dread"
+    
+    characters_present:
+      - slug: "vera-moonwhisper"
+        has_canonical_visuals: true
+        role_in_moment: "The hunter recognizing her prey's trail—and realizing she's no longer hunting alone"
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Commander watching her scout's reaction, preparing to offer support"
+      - slug: "thorne-brightward"
+        has_canonical_visuals: true
+        role_in_moment: "Spreading ledger pages, providing tactical information"
+      - slug: "quartermaster-fayne"
+        has_canonical_visuals: true
+        role_in_moment: "Referencing notes, supporting the pattern analysis"
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "Jaw tightening in protective anger"
+      - slug: "aldwin-gentleheart"
+        has_canonical_visuals: true
+        role_in_moment: "Asking gentle questions, providing wisdom"
+    
+    source_excerpts:
+      - "Vera paled and touched Echo's wing. 'Early spring shipments. Northern routes.' Her whisper sharpened. 'That's the Silent Hand.'"
+      - "Seven years, Aldwin. I know their patterns better than my own heartbeat."
+      - "When you found me, I was dying because I followed a lead too far. But with this Company—with resources and backup—for the first time in seven years I'm not hunting alone."
+    
+    selection_rationale: "This is the chapter's PIVOT moment—the investigation becomes personal, the Company's mission expands, and Vera's isolated quest transforms into shared purpose. The visual of her paling, hand finding Echo's wing for grounding, captures both the horror of recognition and the vulnerability of finally having allies. Her admission 'for the first time in seven years I'm not hunting alone' is the emotional core."
+
+  - moment_id: "ch12-watchpost-whispers-moment-04"
+    source_scene: "scn-12-06"
+    
+    narrative_beat: "Echo's head snaps toward the window with a sudden caw—'We're being watched. Third time today I've seen movement in those trees.' Vera's hand instinctively brushes the bow at her shoulder as the room's analytical focus sharpens into threat awareness."
+    subtext: "The investigation has consequences—the watchers are now being watched. The comfortable distance of pattern analysis collapses into immediate danger."
+    
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 3
+      symbolic_density: 3
+      total: 17
+    
+    score_rationale:
+      character_revelation_note: "Vera's training shows in her instinctive bow-reach; her observational skills are proven by tracking the watchers. Echo's role as reconnaissance extends beyond comic bacon theft to genuine threat detection."
+      relationship_context: "The partnership between Vera and Echo as scout and sensor—her trust in his alert over her own eyes—demonstrates their bond."
+    
+    suggested_type: "mood"
+    primary_subject: "Echo's head snapped toward window, alert posture"
+    secondary_elements:
+      - "Vera's hand on bow at shoulder"
+      - "Fayne frozen mid-note"
+      - "Papers spread on table"
+      - "Window showing trees beyond"
+    
+    suggested_framing: "medium"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "Echo's sudden stillness—head snapped toward the window, one beady eye catching light, body rigid with alert, while Vera's hand finds her bow in a motion that requires no thought"
+    
+    lighting_suggestion: "Midmorning light through window—suddenly suspect, the trees outside now full of potential threat rather than ordinary shadow"
+    
+    emotional_color: "sudden tension"
+    
+    characters_present:
+      - slug: "vera-moonwhisper"
+        has_canonical_visuals: true
+        role_in_moment: "Tracker recognizing threat, instinctively reaching for weapon"
+      - slug: "quartermaster-fayne"
+        has_canonical_visuals: true
+        role_in_moment: "Pattern analysis interrupted by immediate danger"
+    
+    source_excerpts:
+      - "Echo gave a sudden caw, head snapping toward the window."
+      - "Vera followed his gaze. 'We're being watched. Third time today I've seen movement in those trees.'"
+      - "'With Echo that jumpy?' She rose, hand brushing the bow at her shoulder. 'Unlikely.'"
+    
+    selection_rationale: "This MOOD moment marks the shift from analytical investigation to active threat. The visual of Echo's sudden alert—head snapped toward window, Vera's hand finding her bow—breaks the chapter's reflective tone and establishes that the Silent Hand (or Black Hawks) are already watching. It provides necessary tension escalation between the vulnerability of the briefing and the resolve of the parapet scene."
+
+  - moment_id: "ch12-watchpost-whispers-moment-05"
+    source_scene: "scn-12-08"
+    
+    narrative_beat: "As night gathers, Veyra stands on the highest parapet with her lantern casting a small circle of warmth against the dusk. Thorne joins her as the city kindles its lights below. 'The Last Light Company,' she echoes, and the lantern's flame flickers, steadies, and burns bright against the night."
+    subtext: "The chapter's closing image crystallizes the Company's identity—last light against the dark, found family standing together, hope as both burden and purpose."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 4
+      symbolic_density: 5
+      total: 21
+    
+    score_rationale:
+      character_revelation_note: "Veyra's evolution from survivor to established leader completes in this image—not alone on the parapet but joined by her second, watching the city they serve. Her certainty ('we handle it anyway') shows growth from reactive survivor to proactive commander."
+      relationship_context: "Veyra and Thorne's partnership—leader and tactical support—is captured in this quiet moment of shared resolve. Their exchange shows mutual respect and aligned purpose."
+    
+    suggested_type: "hero"
+    primary_subject: "Veyra and Thorne silhouetted on parapet against city lights"
+    secondary_elements:
+      - "Lantern at Veyra's hip casting warm amber circle"
+      - "Waterdeep kindling evening lights below"
+      - "Western sky bleeding from amber to indigo"
+      - "First stars emerging"
+      - "Stone battlements worn smooth"
+    
+    suggested_framing: "wide"
+    suggested_angle: "low, looking up at silhouettes against sky"
+    
+    key_visual_hook: "The lantern's flame—small but unwavering—burning against the vast darkness of the gathering night, two silhouettes standing between it and the city lights below"
+    
+    lighting_suggestion: "Dusk transitioning to night—amber and rose bleeding to deep blue and purple, city lights warm amber below, the lantern creating a golden halo against the darker sky"
+    
+    emotional_color: "quiet resolve"
+    
+    characters_present:
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Commander surveying her domain, articulating the Company's expanded purpose"
+      - slug: "thorne-brightward"
+        has_canonical_visuals: true
+        role_in_moment: "Second-in-command standing with his leader, acknowledging both threat and duty"
+    
+    source_excerpts:
+      - "Veyra took the highest parapet and let the city settle beneath her. The lantern in her hand cast a small circle of warmth that held the dusk at bay."
+      - "'Then we handle it anyway,' she said. 'Because that's who we are now—the ones who step forward when others can't or won't.'"
+      - "The lantern's flame flickered, steadied, and burned bright against the night."
+    
+    selection_rationale: "This HERO moment provides the chapter's visual thesis statement—the Last Light Company as literal last light against the dark. The wide shot of two silhouettes on battlements, lantern burning against gathering night, city lights below, captures scale, symbol, and emotion. The flame that 'flickered, steadied, and burned bright' is the Company's visual identity made concrete."

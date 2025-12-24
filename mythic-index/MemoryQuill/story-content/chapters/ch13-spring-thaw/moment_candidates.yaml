@@ -1,0 +1,460 @@
+chapter_analysis:
+  slug: "ch13-spring-thaw"
+  chapter_number: 13
+  chapter_title: "Spring Thaw"
+  
+  visual_thesis: "From the competent warmth of routine rescue to the cold revelation of encirclement, ending in defiant vigil against an unseen threat"
+  
+  dominant_mood_progression:
+    - "professional competence"
+    - "political menace"
+    - "moral complexity"
+    - "hunted awareness"
+    - "resolute defiance"
+  
+  color_story:
+    opening: "pale winter light, warming amber, earthy browns of thawing hills"
+    climax: "cold stone grays, rich merchant fabrics, shadows in formal spaces"
+    closing: "sunset gold bleeding into twilight violet, steel-edged determination"
+
+  key_locations:
+    - slug: "thornwood-hills"
+      name: "Thornwood Hills"
+      visual_character: "Rocky outcrops emerging from patchy snow, morning mist clinging to hollows, the raw interface between winter and spring where stubborn ice surrenders to brown earth and first green"
+      time_of_day: "morning to midday"
+      weather_atmosphere: "pale sun through cloud cover, mist burning off, thaw-wet rocks"
+      
+    - slug: "north-ward-watch-station"
+      name: "North Ward Watch Station"
+      visual_character: "Solid stone civic authority—formal halls with polished floors, administrative warmth masking political coldness. The kind of respectable building where threats come wrapped in silk"
+      time_of_day: "midday"
+      weather_atmosphere: "interior, diffused light through mullioned windows"
+      
+    - slug: "castle-ward-vexweld-innovations"
+      name: "Vexweld Innovations Workshop"
+      visual_character: "Multi-story gnomish workshop crammed with precision instruments, articulated arms, and the warm chaos of active invention. Brass, copper, and glowing arcane conduits against practical wood and stone"
+      time_of_day: "late evening"
+      weather_atmosphere: "interior, workshop lamplight"
+      
+    - slug: "castle-ward-rooftop"
+      name: "Castle Ward Rooftop Surveillance Position"
+      visual_character: "Urban rooftop with weathered tiles and chimney shadows, offering lines of sight to the workshop below. The cold vantage point of watchers watching the innocent"
+      time_of_day: "dusk to night"
+      weather_atmosphere: "cooling evening air, city lights beginning to flicker"
+      
+    - slug: "westwall-watchpost"
+      name: "Westwall Watchpost"
+      visual_character: "Twin-towered military outpost of ashlar stone, parapets and crenellations silhouetted against changing sky. Functional, lived-in, preparing for siege with quiet determination"
+      time_of_day: "morning through sunset"
+      weather_atmosphere: "spring warmth, clear skies, golden evening light"
+
+  active_characters:
+    - slug: "veyra-thornwake"
+      name: "Veyra Thornwake"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "protagonist"
+      emotional_arc: "competent → concerned → determined"
+      arc_context: "Established commander navigating both field operations and emerging threats to the Company. Her philosophy of 'hope as a tool' being tested by encircling dangers."
+      visual_identifiers: "Deep earth-brown complexion with prominent burn scar on left side of face. Jet black spiky mohawk with shaved sides, braided lock with feathers and turquoise beads. Teal-blue swirling tattoos on neck and left arm. Worn leather cuirass over dark blue tunic. Battered lantern at hip casting warm golden glow."
+      draft_warning: false
+      
+    - slug: "thorne-brightward"
+      name: "Thorne Brightward"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "protagonist"
+      emotional_arc: "dutiful → pressured → conflicted → resolved"
+      arc_context: "Facing the collision of his Watch loyalty with his Company family. This chapter marks his confrontation with institutional corruption and his choice of where his true allegiance lies."
+      visual_identifiers: "Weathered, ruddy face with deep-set brown eyes. Steel-gray military-cropped hair with thick gray mustache. Faded blue Watch cloak with Last Light Company sunburst sigil. Steel breastplate over chainmail. Carries lit iron lantern."
+      draft_warning: false
+      
+    - slug: "vera-moonwhisper"
+      name: "Vera Moonwhisper"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "alert → frustrated → certain"
+      arc_context: "Scout and investigator role, using her tracking skills for urban surveillance. Echo's agitation throughout the chapter reflects her intuitive awareness of danger."
+      visual_identifiers: "Fair, pale complexion with light freckling. Thick dark chestnut brown hair in long practical braid. Clear hazel eyes. Forest-green hooded cloak over brown leather jerkin. Carries 'Whisperwind' quarterstaff with green vine carvings. Brass locket on leather cord. Accompanied by Echo, a large black raven."
+      draft_warning: false
+      
+    - slug: "grimjaw-ironbeard"
+      name: "Grimjaw Ironbeard"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "practical → investigative → protective"
+      arc_context: "Veteran presence providing both muscle for rescue operations and analytical perspective during threat assessment. His engineering mindset applied to tactical analysis."
+      visual_identifiers: "Elderly but robust dwarf with deeply lined face. Voluminous iron-gray beard with central thick braid secured by metal bands, smaller side braids with charms and beads. Dark brown layered leather tunic. Copper-colored riveted pauldrons. Carries 'Tremor' sledgehammer and wooden ale cask."
+      draft_warning: false
+      
+    - slug: "quartermaster-fayne"
+      name: "Quartermaster Fayne"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "analytical → alarmed"
+      arc_context: "Pattern-keeper role—connecting document analysis to operational intelligence about the Silent Hand's supply chains."
+      visual_identifiers: "Rock gnome, 3'4\", middle-aged appearance. Auburn short cropped hair. Hazel eyes, intense and observant. Ink-stained fingers. Custom brass spectacles with multiple swing-arm magnifying lenses. Dark brown leather coat with segmented leather pauldron bearing shield emblem."
+      draft_warning: false
+      
+    - slug: "aldwin-gentleheart"
+      name: "Aldwin Gentleheart"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "steady"
+      arc_context: "Company healer maintaining the team's physical and emotional wellbeing during routine operations."
+      visual_identifiers: "Compact sturdy halfling. Short curly dark charcoal-brown hair frosted with silver. Warm dark hazel eyes. Moss-green wool cloak and cowl over studded brown leather doublet. Fingerless leather gloves. Carries copper heating pan and herbal supplies."
+      draft_warning: false
+      
+    - slug: "cidrella-vexweld"
+      name: "Cidrella Vexweld"
+      source_status: "draft"
+      has_imagery_yaml: false
+      role_this_chapter: "catalyst"
+      emotional_arc: "unaware (tragic irony)"
+      arc_context: "Innocent artisan whose legitimate work is being exploited by criminal networks. Her existence represents the moral complexity of the investigation."
+      visual_identifiers: "Rock gnome sorcerer-artificer, barely four feet tall. Wild coppery-red hair in messy faux-hawk with streak of arcane blue. Sharp brown eyes. LEFT ARM IS MASTERWORK PROSTHETIC of articulated brass and bronze plates with glowing arcane conduits pulsing with sorcerous energy. Workshop attire."
+      draft_warning: true
+
+candidate_moments:
+  - moment_id: "ch13-spring-thaw-moment-01"
+    source_scene: "scn-13-01"
+    
+    narrative_beat: "Veyra rappels down a rocky outcrop through morning mist to reach the injured merchant Harren, her hands working the rope as she descends twenty feet to his narrow ledge."
+    subtext: "The Company's mission distilled to its essence—descending into danger to reach those who cannot save themselves. The vertical journey mirrors her life's work of going down into dark places to bring people up."
+    
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 4
+      narrative_pivot: 2
+      character_revelation: 4
+      symbolic_density: 4
+      total: 17
+    
+    score_rationale:
+      character_revelation_note: "Shows Veyra's 'Guardian's Stand' philosophy in action—deliberate, controlled descent to protect the vulnerable. Her profile notes she leads with calm gravity even in physical challenge."
+      relationship_context: "The team's voices calling down from above demonstrate the established rhythm of trust the chapter text notes has developed over months."
+    
+    suggested_type: "hero"
+    primary_subject: "Veyra Thornwake descending on rope"
+    secondary_elements:
+      - "Harren Blackwater on narrow ledge below, pale with pain"
+      - "Rocky outcrop with patches of stubborn snow"
+      - "Morning mist clinging to the gully"
+      - "Aldwin's figure visible above, calling down"
+    
+    suggested_framing: "wide"
+    suggested_angle: "high"
+    
+    key_visual_hook: "Veyra's burn-scarred face in profile, utterly focused, as her ink-tattooed arm grips the rope against the vertical stone"
+    
+    lighting_suggestion: "Pale morning sun struggling through clouds, mist diffusing light from above"
+    
+    emotional_color: "steady competence"
+    
+    characters_present:
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Primary focus—descending rescuer, controlled and deliberate"
+      - slug: "aldwin-gentleheart"
+        has_canonical_visuals: true
+        role_in_moment: "Background figure above, voice of reassurance"
+    
+    source_excerpts:
+      - "Veyra adjusted her grip on the rope, feeling the familiar burn in her shoulders as she rappelled down the rocky outcrop."
+      - "The morning mist clung to the Thornwood hills like a reluctant ghost, unwilling to yield to the pale sun struggling through the clouds."
+    
+    selection_rationale: "Opening HERO moment establishing the chapter's baseline of professional competence and the Company's rescue mission. The vertical composition and isolated focus on Veyra create a strong establishing image for a chapter about transitions and encroaching threat."
+
+  - moment_id: "ch13-spring-thaw-moment-02"
+    source_scene: "scn-13-02"
+    
+    narrative_beat: "Thorne stands in Captain Grimsby's office facing two well-dressed merchant princes—Vance and Hartwell—who deliver threats wrapped in reasonable language, their calculating eyes studying him for weakness."
+    subtext: "The moment when professional duty collides with corrupt power. The silken threats represent a different kind of danger than the Company usually faces—one that cannot be fought with sword or rescue rope."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 5
+      character_revelation: 4
+      symbolic_density: 4
+      total: 21
+    
+    score_rationale:
+      character_revelation_note: "Thorne's profile notes he 'struggles with moral ambiguity and bending the law' but will do so for greater justice. This moment tests that exact tension—official channels being used for corrupt purposes."
+      relationship_context: "Grimsby's presence as a fellow Watch officer who has been compromised adds weight to Thorne's isolation in this scene."
+    
+    suggested_type: "anchor"
+    primary_subject: "Thorne in formal Watch uniform facing the two merchant princes"
+    secondary_elements:
+      - "Captain Grimsby at his desk, complicit and uncomfortable"
+      - "Expensive clothing and jewelry on Vance and Hartwell"
+      - "Official Watch Station setting—stone walls, city crest"
+      - "The formal Watch cloak Thorne wears, symbol of divided loyalty"
+    
+    suggested_framing: "medium"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "Thorne's weathered, honest face absolutely still, his brown eyes revealing nothing as silk-clad wolves circle"
+    
+    lighting_suggestion: "Cold institutional light through mullioned windows, highlighting the contrast between Thorne's worn military gear and the merchants' finery"
+    
+    emotional_color: "coiled restraint"
+    
+    characters_present:
+      - slug: "thorne-brightward"
+        has_canonical_visuals: true
+        role_in_moment: "Primary focus—professional composure under political attack"
+    
+    source_excerpts:
+      - "Two men in expensive clothing waited in Grimsby's office, their bearing and manner suggesting wealth and influence."
+      - "Vance (studying Thorne with calculating eyes): 'Captain Brightward. We understand you've been... involved with some irregular activities recently.'"
+      - "The words hung in the air like a threat wrapped in silk."
+    
+    selection_rationale: "PIVOT moment where the chapter's tension crystallizes. This is where everything changes—the Company isn't just facing bandits or rescuing merchants, they're now targets of organized political pressure. The visual contrast between honest soldier and silk-wrapped corruption carries the chapter's thematic weight."
+
+  - moment_id: "ch13-spring-thaw-moment-03"
+    source_scene: "scn-13-02"
+    
+    narrative_beat: "Thorne rides alone back toward the Watchpost as afternoon shadows lengthen, the weight of competing loyalties visible in his rigid posture and distant gaze."
+    subtext: "The solitary journey represents his position between two worlds—the Watch he served for fifteen years and the Company that has become family. The question 'which side of the line I'm really on' given physical form."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 3
+      narrative_pivot: 3
+      character_revelation: 5
+      symbolic_density: 4
+      total: 19
+    
+    score_rationale:
+      character_revelation_note: "His development notes describe him as 'The Bulwark'—a man who finds meaning in structure and duty. This moment shows that structure fracturing as he's forced to choose between his old identity and his new family."
+      relationship_context: "The physical journey between Watch Station and Watchpost mirrors his psychological journey between identities."
+    
+    suggested_type: "detail"
+    primary_subject: "Thorne on horseback, riding through Waterdeep streets"
+    secondary_elements:
+      - "The faded blue Watch cloak with Company sigil"
+      - "City streets in late afternoon light"
+      - "His sword hilt visible at his side—the hand near it but not gripping"
+    
+    suggested_framing: "medium"
+    suggested_angle: "low"
+    
+    key_visual_hook: "Thorne's scarred hands loose on the reins, his gray mustache set in a hard line, eyes fixed on something beyond the road ahead"
+    
+    lighting_suggestion: "Late afternoon sun slanting through city streets, creating bars of light and shadow that the rider passes through"
+    
+    emotional_color: "weighted resolve"
+    
+    characters_present:
+      - slug: "thorne-brightward"
+        has_canonical_visuals: true
+        role_in_moment: "Sole focus—internal conflict externalized through posture and setting"
+    
+    source_excerpts:
+      - "As Thorne left the station an hour later, his mind was racing."
+      - "He rode back toward the Watchpost with the weight of competing loyalties heavy on his shoulders."
+      - "'Time to choose which side of the line I'm really on.'"
+    
+    selection_rationale: "CHARACTER moment capturing the chapter's emotional center through Thorne's internal conflict. The solitary rider between two destinations is a powerful image of a man at a crossroads, and his rigid military posture trying to contain turbulent emotion provides strong visual character work."
+
+  - moment_id: "ch13-spring-thaw-moment-04"
+    source_scene: "scn-13-03"
+    
+    narrative_beat: "Cidrella Vexweld moves through her workshop examining specifications, her masterwork brass-and-bronze prosthetic arm glowing with channeled sorcerous energy as she traces technical diagrams with articulated metal fingers."
+    subtext: "The innocent craftsperson whose brilliant work is being exploited without her knowledge. Her prosthetic arm—a triumph of adaptive engineering—mirrors how her legitimate creations are being weaponized by others. She embodies the chapter's theme of corruption reaching even pure things."
+    
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 3
+      symbolic_density: 4
+      total: 18
+    
+    score_rationale:
+      character_revelation_note: "Though she's unaware of the threat she represents, her passionate engagement with her work reveals someone who could be devastated to learn how her creations are being used."
+      relationship_context: "Her isolation in this scene—no awareness of being watched or investigated—heightens the tragic irony."
+    
+    suggested_type: "mood"
+    primary_subject: "Cidrella Vexweld with her glowing prosthetic arm"
+    secondary_elements:
+      - "Precision instruments and workstations surrounding her"
+      - "Technical diagrams spread across workbench"
+      - "Wild coppery-red hair with arcane blue streak"
+      - "Warm workshop lamplight reflecting off brass and copper"
+    
+    suggested_framing: "medium"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "The articulated brass fingers of her prosthetic arm tracing diagrams, arcane conduits pulsing with soft light, while her sharp brown eyes hold only innocent enthusiasm"
+    
+    lighting_suggestion: "Warm workshop lamplight—multiple sources creating golden pools across workbenches, the prosthetic's arcane glow adding ethereal blue highlights"
+    
+    emotional_color: "focused passion (tinged with dramatic irony)"
+    
+    characters_present:
+      - slug: "cidrella-vexweld"
+        has_canonical_visuals: false
+        role_in_moment: "Primary focus—innocent artisan unaware of exploitation"
+    
+    source_excerpts:
+      - "Inside, Cidrella Vexweld stood barely four feet tall, but her presence commanded the entire space."
+      - "Most striking was her left arm—a masterwork prosthetic of articulated brass and bronze plates, with glowing arcane conduits that pulsed with her own channeled sorcerous energy."
+      - "She was an inventor at the height of her professional success—completely unaware that her masterwork designs were being used for purposes that would horrify her."
+    
+    selection_rationale: "Visually unique introduction of a key story thread. The gnome artificer with her glowing prosthetic arm is unlike anything else in the chapter, and her innocent passion contrasted with the reader's knowledge of how her work is being exploited creates powerful dramatic tension. Flagged as draft character for Art Director attention."
+
+  - moment_id: "ch13-spring-thaw-moment-05"
+    source_scene: "scn-13-04"
+    
+    narrative_beat: "From their rooftop position, Veyra and Vera watch the small figure of Cidrella emerge from her workshop and carefully lock up for the night, her movements suggesting only exhaustion from honest labor."
+    subtext: "The watchers watching the innocent—a moral inversion of surveillance. The Company usually rescues people; here they observe someone who needs a different kind of saving, someone whose life they could destroy by investigating too aggressively."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 3
+      character_revelation: 4
+      symbolic_density: 5
+      total: 20
+    
+    score_rationale:
+      character_revelation_note: "Vera's frustration that 'this isn't matching any criminal operation profile I know' reflects her integrity—she wants to find guilt, not manufacture it. Her documented empathy for victims extends even to potential unknowing accomplices."
+      relationship_context: "Veyra and Vera's working partnership is displayed in their quiet observation and shared moral discomfort."
+    
+    suggested_type: "symbol"
+    primary_subject: "Veyra and Vera on darkened rooftop, looking down"
+    secondary_elements:
+      - "Echo perched nearby, alert"
+      - "Cidrella's small figure visible below on the street"
+      - "Workshop windows going dark"
+      - "Early evening city lights beginning to flicker"
+    
+    suggested_framing: "wide"
+    suggested_angle: "high"
+    
+    key_visual_hook: "Two shadowed figures on the rooftop edge, silhouetted against twilight sky, looking down at the small, innocent figure locking her door far below"
+    
+    lighting_suggestion: "Dusk transitioning to night—warm light spilling from the workshop windows that then goes dark, streetlamps beginning to glow, the watchers in shadow"
+    
+    emotional_color: "troubled vigilance"
+    
+    characters_present:
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Observer grappling with moral complexity of investigating innocent people"
+      - slug: "vera-moonwhisper"
+        has_canonical_visuals: true
+        role_in_moment: "Lead investigator, frustrated by finding innocence instead of guilt"
+      - slug: "cidrella-vexweld"
+        has_canonical_visuals: false
+        role_in_moment: "Distant figure below, object of surveillance, unaware victim"
+    
+    source_excerpts:
+      - "Vera: 'Someone's leaving late. The gnome woman—Cidrella.'"
+      - "They watched as the small figure emerged from the workshop's main entrance, carefully locking multiple mechanisms before heading down the street."
+      - "Vera: 'Completely innocent. Everything about her behavior suggests someone passionate about her work, running a legitimate business, with no knowledge of any criminal connections.'"
+    
+    selection_rationale: "SYMBOL moment capturing the chapter's moral complexity. The visual of watchers observing an innocent creates a powerful inversion of typical surveillance scenes—instead of catching criminals, they're documenting the exploitation of a victim. The vertical composition (high rooftop to street level) emphasizes their distance from the human cost of their investigation."
+
+  - moment_id: "ch13-spring-thaw-moment-06"
+    source_scene: "scn-13-05"
+    
+    narrative_beat: "Vera kneels to examine disturbed earth while Grimjaw points to evidence of concealed observation—the carefully scattered leaves that are too deliberate, the branch arrangement too perfect to be natural."
+    subtext: "The hunter becomes the hunted. The Company's surveillance of others is now revealed to be reciprocal—they've been watched with equal patience and professionalism, their patterns recorded, their weaknesses catalogued."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 4
+      symbolic_density: 4
+      total: 20
+    
+    score_rationale:
+      character_revelation_note: "Vera's tracking skills from her years of searching for her brother now applied to discovering who watches her family. Grimjaw's engineering analysis of the observation positions demonstrates his profile trait of seeing patterns in everything."
+      relationship_context: "The two-hour patrol and shared lunch mentioned in the text shows the comfortable working relationship between the veteran dwarf and the half-elf scout."
+    
+    suggested_type: "anchor"
+    primary_subject: "Vera crouching to examine ground, Grimjaw standing and pointing"
+    secondary_elements:
+      - "Echo perched nearby, agitated"
+      - "Forest setting with morning light filtering through trees"
+      - "Subtle signs of human presence—disturbed leaves, flattened grass"
+      - "Distant sightline back toward the Watchpost"
+    
+    suggested_framing: "medium"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "Vera's gloved fingers brushing aside too-perfectly-arranged leaves while Grimjaw's weathered hand points to a moss-scraped tree trunk where someone leaned"
+    
+    lighting_suggestion: "Morning forest light—dappled sun through spring canopy, the kind of soft green-gold light that reveals subtle disturbances in earth and moss"
+    
+    emotional_color: "dawning unease"
+    
+    characters_present:
+      - slug: "vera-moonwhisper"
+        has_canonical_visuals: true
+        role_in_moment: "Lead tracker discovering evidence of surveillance"
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "Engineering analyst identifying concealment patterns"
+    
+    source_excerpts:
+      - "Grimjaw (kneeling to examine the ground): 'Well now, that's interesting.' He brushed aside some leaves. 'This grass here—it's been flattened, but not by deer or boar. Wrong pattern.'"
+      - "Vera: 'Someone's been here. Recently.'"
+      - "Grimjaw: 'Aye, but they tried to hide it. See how they scattered leaves back over their tracks? Not bad work.'"
+    
+    selection_rationale: "ANCHOR moment reversing the surveillance theme—the Company discovers they are the watched, not just the watchers. The detailed tracking work provides strong visual action while the forest setting contrasts with the urban rooftop surveillance earlier. Two characters with complementary skills working together demonstrates Company teamwork at its best."
+
+  - moment_id: "ch13-spring-thaw-moment-07"
+    source_scene: "scn-13-05"
+    
+    narrative_beat: "Veyra stands alone on the Watchpost parapet as the sun sets, watching the gathering twilight while Echo's sharp cry echoes across the courtyard and distant ravens answer from the darkening sky."
+    subtext: "The guardian at the gate, waiting for the storm she knows is coming. Her defiant 'Come on then. We're ready.' is not bravado but earned confidence—the Company has prepared, the warnings are out, and whatever comes, they will face it together."
+    
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 5
+      narrative_pivot: 4
+      character_revelation: 5
+      symbolic_density: 5
+      total: 24
+    
+    score_rationale:
+      character_revelation_note: "Veyra's profile describes her as 'the light in dark places'—this image literalizes that, silhouetted against sunset as darkness gathers. Her psychological response matrix notes she 'becomes hypervigilant' in crisis while speaking in 'clipped commands.' Here she waits, alone and ready."
+      relationship_context: "Echo's cry answered by distant ravens represents the network of allies the Company has built—they are not truly alone even as Veyra stands solitary on the wall."
+    
+    suggested_type: "hero"
+    primary_subject: "Veyra Thornwake silhouetted on parapet"
+    secondary_elements:
+      - "Sunset sky bleeding gold into twilight violet"
+      - "Echo taking flight, wings spread"
+      - "Watchpost battlements framing the scene"
+      - "The last light of day catching her lantern"
+    
+    suggested_framing: "wide"
+    suggested_angle: "low"
+    
+    key_visual_hook: "Veyra's silhouette against the dying light, her mohawk and burn scar in sharp profile, one hand resting on the parapet stone as her lantern glows warm against the encroaching dark"
+    
+    lighting_suggestion: "Dramatic sunset—gold and crimson bleeding into deep purple, the last rays catching the warm amber of her lantern and the steel of the battlements"
+    
+    emotional_color: "defiant vigil"
+    
+    characters_present:
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Primary focus—guardian awaiting the storm, embodiment of Company resilience"
+    
+    source_excerpts:
+      - "Veyra (standing watch as the sun set): 'Come on then. We're ready.'"
+      - "In the gathering twilight, Echo perched on the battlements and let out a single, sharp cry that echoed across the courtyard. Somewhere in the distance, other ravens answered, their calls carrying messages through the growing night."
+      - "The Last Light Company waited, prepared for whatever spring might bring."
+    
+    selection_rationale: "Closing HERO moment that encapsulates the chapter's emotional arc. After a chapter of discovering threats from multiple directions—political pressure, surveillance, exploitation of innocents—this image shows Veyra and the Company choosing defiance over fear. The composition (low angle, silhouette, sunset) creates an iconic closing shot while the ravens' cries add auditory texture suggesting a network of warnings spreading through the night."

@@ -1,0 +1,426 @@
+chapter_analysis:
+  slug: "ch10-wayward-compass"
+  chapter_number: 10
+  chapter_title: "The Wayward Compass"
+  
+  visual_thesis: "From the warm dust of camaraderie through the vibrant chaos of rescue to the cold tension of a standoff, then pivoting into the shadowed realm where information becomes the true weapon."
+  
+  dominant_mood_progression:
+    - "road-weary camaraderie"
+    - "urgent rescue"
+    - "wary sanctuary"
+    - "frozen standoff"
+    - "calculated intrigue"
+  
+  color_story:
+    opening: "ochre dust, sun-bleached road, warm earthtones"
+    climax: "amber lamplight against shadow, steel gray, threat-black leather"
+    closing: "gold gleam of ancient coin, deep tavern shadow, smoke-gray uncertainty"
+
+  key_locations:
+    - slug: "trade-way"
+      name: "The Trade Way"
+      visual_character: "A neglected road more suggestion than path, choked with dust that coats everything in uniform grime. Potholes deep enough to swallow children, wooded verges pressing close for ambush."
+      time_of_day: "midday to afternoon"
+      weather_atmosphere: "unseasonably warm, dust clouds, swarms of insects, harsh sunlight"
+      
+    - slug: "wayward-compass"
+      name: "The Wayward Compass Inn"
+      visual_character: "A crossroads inn like a toad of timber and stone—squat, solid, unlovely. Low blackened beams, sawdust floors with dark stains, mismatched furniture, and deliberate shadow pockets. Three chimneys breathing smoke, a spinning compass needle on the peeling sign."
+      time_of_day: "afternoon into evening"
+      weather_atmosphere: "interior—smoky, close, lamp-lit, stale ale and roasting meat scent"
+
+  active_characters:
+    - slug: "veyra-thornwake"
+      name: "Veyra Thornwake"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "protagonist"
+      emotional_arc: "focused → decisive → defiant → wary"
+      arc_context: "Post-founding of Company, established as commander. Still carrying the weight of her mission—every rescue validates her survival."
+      visual_identifiers: "Deep earth-brown skin, mottled reddish-brown burn scar covering left face from jaw to temple, jet-black mohawk with shaved sides, long braided lock with brown feathers and turquoise beads, teal-blue spiral tattoos on neck and left arm, battered golden-glowing lantern at belt, worn leather cuirass over dark blue tunic, leather bracers."
+      draft_warning: false
+      
+    - slug: "thorne-brightward"
+      name: "Thorne Brightward"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "alert → protective → rigid → cautious"
+      arc_context: "Deputy Commander role established, comfortable in tactical leadership but still processing moral flexibility questions from earlier events."
+      visual_identifiers: "Early forties, weathered ruddy face, steel-gray short military-cut hair with receding hairline, thick gray mustache, deep-set brown watchful eyes, faded deep blue wool cloak with Last Light Company sunburst sigil, steel breastplate over chainmail, shield and longsword."
+      draft_warning: false
+      
+    - slug: "grimjaw-ironbeard"
+      name: "Grimjaw Ironbeard"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "grumbling → efficient → protective"
+      arc_context: "Established as the paternal anchor, applying lifetime of structural knowledge to Company operations."
+      visual_identifiers: "Elderly but robust dwarf, barrel-chested and stocky, voluminous iron-gray beard with massive central braid secured by metal bands and decorated with charms and weighted beads, deep-set dark eyes under bushy gray brows, ruddy weathered skin, copper-riveted metal pauldrons, dark brown leather tunic, heavy belt with pouches and tools."
+      draft_warning: false
+      
+    - slug: "quartermaster-fayne"
+      name: "Quartermaster Fayne"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "meticulous → adaptive → observant"
+      arc_context: "Quartermaster role fully operational, managing the logistics that make the Company function."
+      visual_identifiers: "Rock gnome, 3'4\", middle-aged with weathered face, short auburn hair slightly tousled, hazel observant eyes, ink-stained fingers on right hand, custom brass spectacles with multiple swing-arm magnifying lenses, high-collared dark brown leather coat with copper-riveted pauldron bearing shield emblem, cross-body bandolier."
+      draft_warning: false
+      
+    - slug: "durja"
+      name: "Durja"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "assessing → accommodating → warning"
+      arc_context: "Innkeeper who maintains neutral ground through presence and policy, observer of the shadows that pass through."
+      visual_identifiers: "Female orc, formidable and sturdy build with broad shoulders and thick muscled arms, mossy olive-green rough-textured skin, dark hair pulled back severely, dark intense eyes under heavy furrowed brow, prominent lower tusks, scarred brow ridge, rough-spun greyish-brown tunic, reddish-brown leather vest, wide worn leather belt, long brown apron."
+      draft_warning: false
+      
+    - slug: "marcus-heartbridge"
+      name: "Marcus Heartbridge"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "catalyst"
+      emotional_arc: "observing → intervening → recruiting"
+      arc_context: "First appearance. Arrives fully formed as information broker, immediately demonstrates his methodology and value."
+      visual_identifiers: "Human male mid-to-late 30s, average build with poised confident posture, dark brown hair swept back casually, neat mustache and small goatee, dark brown sharp observant eyes, prominent straight nose, high-collared charcoal doublet with vertical row of small buttons, heavy dark coat with wide lapels, ornate rapier with silver filigree basket hilt, gold signet ring on right pinky."
+      draft_warning: false
+      
+    - slug: "krag"
+      name: "Krag"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "antagonist"
+      emotional_arc: "aggressive → threatened → retreating"
+      arc_context: "First appearance as Black Hawks leader. Establishing his presence as a threat before later humiliation transforms him into personal enemy."
+      visual_identifiers: "Towering giant-kin heritage human, immense blocky frame with massive shoulders, dark brown-black short buzz cut with thick unkempt beard, dark brown eyes under heavy protruding brow ridge, broad flattened broken nose, tanned ruddy rough skin, darkened beaten full plate armor with bronze/rusted patina, massive unadorned broadsword."
+      draft_warning: false
+
+candidate_moments:
+  - moment_id: "ch10-wayward-compass-moment-01"
+    source_scene: "scn-10-02"
+    
+    narrative_beat: "The overturned cart lies skewed across the road, its cargo of dyed wool scattered in vibrant pools of color that look disturbingly like blood in the harsh sunlight—while the actual blood spreads darker beneath the wreckage."
+    subtext: "Commerce and violence intermingled, the mundane transformed into something terrible. The road's casual cruelty makes no distinction between valuable goods and valuable lives."
+    
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 5
+      narrative_pivot: 4
+      character_revelation: 2
+      symbolic_density: 5
+      total: 19
+    
+    score_rationale:
+      character_revelation_note: "Scene establishes what the Company responds to rather than revealing individual character."
+      relationship_context: "Team dynamic shown through immediate coordinated response without verbal communication."
+    
+    suggested_type: "hero"
+    primary_subject: "The overturned cart and scattered dyed wool"
+    secondary_elements:
+      - "vibrant wool pools in multiple colors spreading across dusty road"
+      - "darker blood spreading from beneath wreckage"
+      - "harsh midday sunlight making colors almost painful"
+      - "dust motes suspended in air"
+      - "approaching silhouettes of Company members"
+    
+    suggested_framing: "wide"
+    suggested_angle: "low"
+    
+    key_visual_hook: "Brilliant pools of crimson, azure, and gold wool scattered like gore, with actual darker blood creeping from beneath the splintered wood"
+    
+    lighting_suggestion: "harsh overhead midday sun creating stark shadows, making the colored wool pools almost luminescent against the dusty road"
+    
+    emotional_color: "visceral shock"
+    
+    characters_present:
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "approaching to assess, silhouette against sky"
+      - slug: "thorne-brightward"
+        has_canonical_visuals: true
+        role_in_moment: "already dismounting, hand on sword"
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "reading the structural damage"
+    
+    source_excerpts:
+      - "The overturned cart lay skewed across the road like a broken toy, its cargo of dyed wool scattered in vibrant pools of color that looked disturbingly like blood in the harsh sunlight."
+      - "The actual blood was there too, darker, spreading from beneath the wreckage where someone was trapped."
+    
+    selection_rationale: "Opens the chapter's action with an arresting visual paradox—beauty and horror intermingled. The scattered dyed wool creating false blood pools while real blood spreads beneath is visually distinctive to THIS story and establishes the chapter's theme of appearance versus reality."
+
+  - moment_id: "ch10-wayward-compass-moment-02"
+    source_scene: "scn-10-02"
+    
+    narrative_beat: "On Grimjaw's count, he and Thorne lift the crippled cart while Veyra guides the trapped woman clear—then the cart crashes back down in a cloud of dust."
+    subtext: "The Company's mission in microcosm: coordinated strength applied precisely to save one life. No glory, just practiced efficiency born from shared purpose."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 3
+      character_revelation: 4
+      symbolic_density: 3
+      total: 18
+    
+    score_rationale:
+      character_revelation_note: "Shows Veyra's documented fighting philosophy shift—from 'strike fast' to calculated protection. She guides rather than acts alone."
+      relationship_context: "Team functions as single unit—Grimjaw anchors, Thorne provides strength, Veyra directs the rescue. No wasted motion."
+    
+    suggested_type: "anchor"
+    primary_subject: "Veyra pulling the woman free as cart rises"
+    secondary_elements:
+      - "Grimjaw straining at cart corner, feet planted wide"
+      - "Thorne's shoulders squared under the weight"
+      - "woman's torn blue dress, dust-covered"
+      - "cart suspended at dangerous angle"
+      - "dust cloud beginning to billow"
+    
+    suggested_framing: "medium"
+    suggested_angle: "low"
+    
+    key_visual_hook: "Veyra's scarred face set in concentration as her hands guide the woman clear, the golden glow of her lantern catching suspended dust motes"
+    
+    lighting_suggestion: "harsh afternoon sun from above, Veyra's lantern providing warm counterpoint, dust catching both light sources"
+    
+    emotional_color: "urgent rescue"
+    
+    characters_present:
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "guiding the woman clear, hands steady despite urgency"
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "planted at cart corner providing anchor strength"
+      - slug: "thorne-brightward"
+        has_canonical_visuals: true
+        role_in_moment: "lifting opposite side, maintaining formation"
+    
+    source_excerpts:
+      - "On Grimjaw's count, he and Thorne lifted while Veyra guided the woman clear."
+      - "The cart crashed back down, sending up a cloud of dust that set everyone coughing."
+      - "'It's not just overturned,' Veyra observed, noting the axe marks on the wheels."
+    
+    selection_rationale: "Demonstrates the Company's core competency—rescue through coordination. Shows Veyra's evolved leadership style (directing rather than solo action) and the team's established dynamic. Physical action with clear visual stakes."
+
+  - moment_id: "ch10-wayward-compass-moment-03"
+    source_scene: "scn-10-03"
+    
+    narrative_beat: "Behind the bar, Durja the orc innkeeper—scarred arms, broken tusk, calculating eyes—takes in Veyra's burns, weapons, and blood-stained clothes. Something passes between them: recognition of a kindred spirit, another woman who earned her scars the hard way."
+    subtext: "Two survivors who've paid the price admission to rooms most never enter. The exchange of silver is almost secondary to the exchange of understanding."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 2
+      character_revelation: 5
+      symbolic_density: 4
+      total: 19
+    
+    score_rationale:
+      character_revelation_note: "Veyra's scars are her identity—her 'record of weight' made visible. This moment shows how that identity is recognized by others who carry similar marks."
+      relationship_context: "Establishes Durja as more than innkeeper—a neutral ally who respects earned strength."
+    
+    suggested_type: "detail"
+    primary_subject: "Durja and Veyra's exchanged assessment across the bar"
+    secondary_elements:
+      - "scarred forearms on oiled oak bartop"
+      - "silver coins sliding across wood"
+      - "lamp-lit smoke curling between them"
+      - "broken tusk and burned face"
+      - "pewter tankard mid-polish"
+    
+    suggested_framing: "close"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "Two pairs of hard-earned scars catching the same amber lamplight—Durja's crosshatched arms resting on the bar, Veyra's burned face reflected in the polished wood"
+    
+    lighting_suggestion: "warm amber from overhead tavern lamps, creating pools of light on the oiled bar surface, shadows filling the space between the two women"
+    
+    emotional_color: "silent recognition"
+    
+    characters_present:
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "meeting Durja's assessment with steady gaze, sliding coins"
+      - slug: "durja"
+        has_canonical_visuals: true
+        role_in_moment: "polishing tankard, eyes cataloguing every detail"
+    
+    source_excerpts:
+      - "Durja's eyes flicked to the coins, then back to Veyra's scarred face. Something passed between them—recognition of a kindred spirit, perhaps, another woman who'd earned her scars the hard way."
+      - "Scars crosshatched her arms, and one tusk was broken short. Her eyes—intelligent and calculating—took in the blood, the wounds, the weapons, and made a dozen assessments in the span of a breath."
+    
+    selection_rationale: "Intimate character moment that shows WHO Veyra is through external recognition rather than internal description. Two scarred women across a bar—visually striking contrast between orc innkeeper and half-elf commander united by earned survival."
+
+  - moment_id: "ch10-wayward-compass-moment-04"
+    source_scene: "scn-10-04"
+    
+    narrative_beat: "The Black Hawks enter like they own the place—four predators spreading out as conversations die to whispers and patrons press themselves against walls trying to become invisible."
+    subtext: "The inn's carefully maintained neutrality tested. Violence doesn't need to happen to change a room's temperature to freezing."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 4
+      character_revelation: 3
+      symbolic_density: 4
+      total: 20
+    
+    score_rationale:
+      character_revelation_note: "Shows Krag's documented dominance methodology—occupying space, commanding through presence before action."
+      relationship_context: "Company immediately shifts to protective formation around wounded civilians—priorities made visible."
+    
+    suggested_type: "mood"
+    primary_subject: "The Black Hawks spreading through the inn as patrons shrink away"
+    secondary_elements:
+      - "Krag's massive silhouette in doorway"
+      - "conversations dying mid-word"
+      - "patrons pressing to walls"
+      - "abandoned coins on tables"
+      - "lamp smoke suddenly visible in frozen air"
+      - "Company members' hands drifting to weapons"
+    
+    suggested_framing: "wide"
+    suggested_angle: "low"
+    
+    key_visual_hook: "Krag's hulking silhouette filling the doorway, afternoon light behind him turning him into a black shape while terrified patrons freeze mid-motion"
+    
+    lighting_suggestion: "bright exterior light behind the Hawks creating silhouettes, interior lamplight showing the fear on civilian faces"
+    
+    emotional_color: "frozen terror"
+    
+    characters_present:
+      - slug: "krag"
+        has_canonical_visuals: true
+        role_in_moment: "leading entry, scanning room with predator's deliberation"
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "in background, already assessing threat"
+      - slug: "thorne-brightward"
+        has_canonical_visuals: true
+        role_in_moment: "hand moving to sword pommel"
+    
+    source_excerpts:
+      - "The Black Hawks entered like they owned the place—which, in a way, they did."
+      - "The inn's atmosphere changed instantly. Conversations didn't stop but dropped to whispers. Several patrons found urgent business elsewhere, coins left on tables as they headed for other exits."
+      - "His gaze locked on Sliba and Mira, and his lips pulled back in what might generously be called a smile."
+    
+    selection_rationale: "Establishes the threat visually before any violence occurs—the room's transformation IS the story. Krag's documented giant-kin presence dominating the frame while civilians become furniture. Sets up the confrontation's stakes through atmosphere alone."
+
+  - moment_id: "ch10-wayward-compass-moment-05"
+    source_scene: "scn-10-04"
+    
+    narrative_beat: "Marcus Heartbridge decides to make his presence known. His voice cuts through the frozen tension as he rises from his shadowed booth and walks into the lamplight, past the Company as if they don't exist, his attention entirely on Krag."
+    subtext: "The pivot from physical threat to information warfare. Marcus demonstrates that knowledge is a weapon sharper than any blade—and he's been watching long enough to know exactly where to cut."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 5
+      character_revelation: 5
+      symbolic_density: 5
+      total: 24
+    
+    score_rationale:
+      character_revelation_note: "Perfect introduction for Marcus's documented archetype—the Fixer who treats every crisis like a negotiation. His theatrical emergence embodies 'information is my trade.'"
+      relationship_context: "First meeting between Marcus and the Company. His immediate display of competence establishes the partnership dynamic that will follow."
+    
+    suggested_type: "anchor"
+    primary_subject: "Marcus stepping from shadow booth into lamplight"
+    secondary_elements:
+      - "pipe smoke dispersing as he moves"
+      - "dark wine glass left behind in shadow"
+      - "charcoal doublet catching warm light"
+      - "rapier hilt gleaming at his side"
+      - "everyone's attention pivoting to him"
+      - "Krag's posture shifting from aggression to uncertainty"
+    
+    suggested_framing: "medium"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "The knowing smirk on Marcus's face as he walks through the frozen tableau, lamplight catching the silver filigree of his rapier hilt while pipe smoke trails behind him like a cloak"
+    
+    lighting_suggestion: "strong contrast between the dark shadow pocket of his booth and the warm amber lamplight he walks into—transformation made visible"
+    
+    emotional_color: "calculated confidence"
+    
+    characters_present:
+      - slug: "marcus-heartbridge"
+        has_canonical_visuals: true
+        role_in_moment: "rising from observation post, taking command of the moment through presence and positioning"
+      - slug: "krag"
+        has_canonical_visuals: true
+        role_in_moment: "turning to face this new variable, hand freezing mid-reach for weapon"
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "watching, assessing this unexpected intervention"
+    
+    source_excerpts:
+      - "When the door banged open again, admitting four new figures, Marcus set down his wine glass with a gentle click. This was about to become educational."
+      - "He'd been watching from the moment they'd entered, of course."
+      - "He rose from his booth with fluid grace, stepping into the light like an actor taking the stage."
+      - "'Gentlemen,' he said, his voice cutting through the tension like warm honey through ice."
+    
+    selection_rationale: "THE pivot moment of the chapter—physically and narratively. Marcus's documented theatrical nature combined with his information-as-weapon methodology on full display. The visual transition from shadow to light perfectly captures his role as someone who operates in both worlds."
+
+  - moment_id: "ch10-wayward-compass-moment-06"
+    source_scene: "scn-10-05"
+    
+    narrative_beat: "Marcus places a single ancient gold coin on the table—pre-Spellplague Netherese, gleaming with inner light that has nothing to do with the lamp's reflection. 'Consider this a retainer,' he says."
+    subtext: "Power condensed into an object. The coin represents not just wealth but ancient mysteries, future obligations, and the weight of accepting help from someone who trades in shadows."
+    
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 3
+      symbolic_density: 5
+      total: 19
+    
+    score_rationale:
+      character_revelation_note: "Shows Marcus's documented methodology—tangible hooks, plausible deniability, leaving targets wanting more."
+      relationship_context: "The coin establishes the transactional nature of what Marcus offers—nothing is free, but the exchange might be worth it."
+    
+    suggested_type: "symbol"
+    primary_subject: "The Netherese gold coin on the worn wooden table"
+    secondary_elements:
+      - "inner glow of ancient magic"
+      - "worn wood grain of tavern table"
+      - "empty wine glasses and bottle"
+      - "hands hesitating near but not touching"
+      - "shadows pressing close around the pool of lamplight"
+    
+    suggested_framing: "extreme-close"
+    suggested_angle: "high"
+    
+    key_visual_hook: "A single coin pulsing with inner golden light against scarred tavern wood, the fall of empire condensed into something that fits in a palm"
+    
+    lighting_suggestion: "the coin's own magical luminescence competing with warm tavern lamplight, creating a small halo effect on the dark table surface"
+    
+    emotional_color: "weighted promise"
+    
+    characters_present:
+      - slug: "marcus-heartbridge"
+        has_canonical_visuals: true
+        role_in_moment: "hand withdrawing after placing the coin, watching for reactions"
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "studying the coin, weighing implications"
+      - slug: "quartermaster-fayne"
+        has_canonical_visuals: true
+        role_in_moment: "examining with artist's/appraiser's eyes"
+    
+    source_excerpts:
+      - "He placed a single, heavy gold coin on the table. It was old, the kind of old that suggested empires long fallen, and it gleamed with inner light that had nothing to do with the lamp's reflection."
+      - "'Consider this a retainer,' he said."
+      - "'This is pre-Spellplague. The empire of Netheril, if I'm right. It's worth... considerably more than its weight in gold.'"
+      - "'Everything has a price,' Veyra murmured, but she pocketed the coin."
+    
+    selection_rationale: "A detail shot that carries enormous symbolic weight—ancient power, future obligation, the cost of information. The coin's inner glow makes it visually distinct while its historical significance deepens the narrative stakes. Perfect closing image that lingers."

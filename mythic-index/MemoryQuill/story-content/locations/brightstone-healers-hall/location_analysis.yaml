@@ -1,0 +1,685 @@
+location_identity:
+  slug: "brightstone-healers-hall"
+  name: "Brightstone Healers' Hall"
+  location_type: "building"
+  
+  narrative_soul: |
+    Brightstone Healers' Hall is where the wounded confront the question that defines them: do you erase the pain or carry it forward as proof of what you survived? This isn't merely a hospital—it's a threshold between the person trauma broke and the person healing might create. For Veyra, these pale stone walls witnessed the first choice that would shape the Last Light Company's entire philosophy: that scars are not failures to heal but evidence of battles won.
+    
+  one_line_essence: "Where the wounded choose who they become"
+  
+  symbolic_weight:
+    primary_symbol: "The choice between erasure and integration"
+    supporting_symbols:
+      - "Professional competence as a form of compassion"
+      - "Light filtered through gauze—clarity softened by mercy"
+      - "The body as archive of experience"
+    thematic_tensions:
+      - "magical solution vs. natural process"
+      - "sterile efficiency vs. human warmth"
+      - "forgetting as kindness vs. memory as identity"
+      - "institutional care vs. personal relationship"
+
+  transformation_arc: |
+    The Hall itself doesn't change, but the characters' relationship to it does. Initially it represents clinical distance—a place Veyra wakes disoriented, surrounded by strangers. Through Dokra Ironvein's wisdom, it transforms into a site of crucial understanding. By the time Veyra leaves, Brightstone has become a philosophical anchor point—proof that professional excellence and genuine care can coexist, a model the Company will later emulate in their own approach to trauma.
+
+physical_truth:
+  construction_style: "Functional civic-medical architecture—hygiene-first planning with clear circulation hierarchies"
+  primary_materials:
+    - "Pale limestone/white granite ashlar on rubble-core backing"
+    - "Oak joists, stair carriages, and sealed plank floors"
+    - "Leaded glass mullions with gauze screens"
+    - "Bronze handrails and copper instrument fittings"
+    - "Dwarven rune-lamp grids with copper conduits"
+    - "Slate tile and flagged stone in wet rooms"
+  scale_impression: "Substantial urban civic building—imposing enough to convey institutional competence, not so grand as to intimidate the injured"
+  
+  visual_signature: |
+    Pale bone-white walls meeting tall mullioned windows that lattice daylight into soft geometric patterns. The gauze screens transform harsh city sun into diffused warmth. Overhead, dwarven rune-lamp rails cast shadowless illumination—no flicker, no drama, just steady clarity. Every surface reads as scrubbed, ordered, purposeful.
+    
+  sound_signature: |
+    Muffled. The thick stone walls reduce Waterdeep's street noise to a distant wash. Inside: the soft percussion of footsteps on flagged stone, the gentle bubbling of sterilization apparatus, the clink of instruments being cleaned, low professional voices. Recovery wards are deliberately hushed—sound-absorbing hangings swallow conversation before it can carry.
+    
+  scent_signature: |
+    Thyme and antiseptic form the dominant chord—herbaceous sharpness over a clean alcohol base. Beneath it, fainter notes: laundered linen, limewash, boiled water steam. Near the cellar stairs or sterilization suite, a distinctive coppery-cinnamon edge from instrument baths and alchemical tinctures.
+    
+  tactile_signature: |
+    Smooth cool stone underfoot. Bronze handrails worn to warmth by countless hands. Linen sheets laundered to soft precision. The air itself feels filtered—stable temperature regardless of street weather, neither drafty nor stale, maintained by passive stack ventilation that moves without calling attention to itself.
+    
+  canon_specifics:
+    - detail: "Pale smooth stone construction"
+      source: "ch02 description, overview"
+      visual_importance: "high"
+    - detail: "Mullioned windows with white gauze curtains"
+      source: "ch02, overview, description"
+      visual_importance: "high"
+    - detail: "Dwarven rune-lamp grids providing shadowless illumination"
+      source: "ch02, overview, description"
+      visual_importance: "high"
+    - detail: "Thyme scent mixed with copper/cinnamon antiseptic undertone"
+      source: "ch04 sensory description"
+      visual_importance: "medium"
+    - detail: "Clean sterile warmth atmosphere"
+      source: "ch02"
+      visual_importance: "high"
+    - detail: "Antiseptic quiet professional environment"
+      source: "ch04"
+      visual_importance: "medium"
+      
+  light_character: |
+    Two complementary systems create the Hall's distinctive illumination. Daylight enters through tall mullioned windows, broken into geometric fragments by leading, softened by gauze into diffused warmth. In operating theatres and corridors, dwarven rune-lamp rails provide unwavering shadowless light—no flicker, no harsh edge, tuned cooler for precision work and warmer in recovery wards for patient comfort. The combination reads as both clinical and kind.
+    
+  weather_influence: |
+    The thick masonry buffers most weather effects—Waterdeep's sea dampness and seasonal swings barely penetrate. Storm shutters protect street-facing windows during severe weather. The real weather impact is logistical: storms drive emergency intake to the side sally, damp weather increases the load on drying lofts, winter protocols include draft baffles and distributed braziers.
+
+contextual_place:
+  region: "Trades Ward, Waterdeep—central urban location along a busy commercial artery"
+  neighborhood_character: "Working professional district—craftsmen, merchants, civic services. Street-level energy of cart traffic and commerce, but respectable enough that the Hall's presence feels natural rather than incongruous."
+  
+  approach_sequences:
+    - name: "Main street approach"
+      description: "Walking along the crowned cobbled street between commercial buildings and workshops. The Hall announces itself through its pale stone—cleaner and lighter than its neighbors—and the unusual height of its mullioned windows."
+      first_impression: "Institutional competence. This is a place that takes its work seriously."
+      
+    - name: "Emergency stretcher approach (side sally)"
+      description: "Down the service lane, past delivery mews and laundry carts, to a discrete door kept clear for urgent cases. No waiting room, no queue—straight into triage."
+      first_impression: "Practiced urgency. They've done this before."
+      
+    - name: "Service/delivery approach (rear mews)"
+      description: "From the back lanes: laundry carts, herb deliveries, fuel, waste removal. The Hall's functional infrastructure visible—the machinery that keeps the healing happening."
+      first_impression: "The unglamorous truth of care: someone has to scrub, boil, and haul."
+      
+  visible_beyond:
+    - direction: "From recovery ward windows"
+      what_visible: "Street trees, city rooflines, glimpses of sky—the world waiting for the patient to rejoin it"
+    - direction: "From attic/roof"
+      what_visible: "Waterdeep's urban sprawl, distant harbor masts, city walls on the horizon"
+      
+  spatial_relationship: "The Hall is an island of controlled order within the chaotic flow of urban commerce—its thick walls and professional protocols creating a bubble of calm amid street noise and city urgency."
+
+zones:
+  - slug: "main-vestibule-triage"
+    name: "Main Vestibule and Triage Bay"
+    zone_type: "threshold"
+    location_within: "Ground floor, immediately inside main entrance"
+    
+    physical_description: |
+      Benches line load-bearing stone piers in the waiting area, with privacy screens creating semi-enclosed alcoves. The triage bay sits adjacent—hand-washing basins with herb sluices, tool hooks, a rapid-assessment station visible through open archways. Flagged stone floor, limewashed walls, leaded windows filtering street light. A stretcher lane runs parallel to seated waiting, keeping emergency traffic separate from walking patients.
+      
+    narrative_function: "First contact with the institution—where the injured are sorted, assessed, and routed. The threshold between the chaotic outside world and the ordered interior."
+    
+    emotional_register: "Anxious efficiency. Hope mixed with fear. The forced patience of waiting."
+    
+    character_associations:
+      - character: "Intake clerks and triage healers"
+        relationship: "Gatekeepers determining priority and pathway"
+        typical_activities: ["assessment", "queue management", "initial stabilization"]
+        
+    signature_details:
+      - "Benches worn smooth by anxious waiting"
+      - "Bell and case-board for intake coordination"
+      - "Hand-wash basins at bay entries"
+      - "Stretcher lane with turn radius markings"
+      - "Leaded windows casting geometric light patterns on flagged stone"
+      
+    light_conditions:
+      natural: "Moderate—street-facing windows provide working illumination"
+      artificial: "Task-focused rune-lamps at triage stations"
+      
+    mood_affinity: ["tense", "somber"]
+
+  - slug: "operating-theatres"
+    name: "Operating Theatres"
+    zone_type: "forge"
+    location_within: "Ground floor, north-facing for optimal light"
+    
+    physical_description: |
+      Two or three surgical rooms arranged for north light supplemented by overhead dwarven rune-lamp grid rails providing shadowless illumination. Scrub anterooms with instrument pass-throughs. Floors flagged stone with guttered falls toward scrub drains. Polished stone worktops. A separate dirty exit leads to mezzanine sterilization—clean and contaminated paths never cross. Self-closing oak doors with soft-latch straps minimize noise and drafts.
+      
+    narrative_function: "The site of bodily transformation—where damage is repaired, where the physical work of healing happens. Dokra Ironvein's primary domain."
+    
+    emotional_register: "Focused intensity. Controlled precision. Life hanging in competent hands."
+    
+    character_associations:
+      - character: "Dokra Ironvein"
+        relationship: "Master of this space—her surgical suite is an extension of her expertise"
+        typical_activities: ["trauma surgery", "teaching", "consultation"]
+      - character: "Journey-Healer Loran"
+        relationship: "Apprentice observer, learning the practical application of theory"
+        typical_activities: ["assisting", "observing", "instrument handling"]
+        
+    signature_details:
+      - "Dwarven rune-lamp grids casting shadowless light"
+      - "Instrument pass-throughs to scrub anteroom"
+      - "Guttered floor falls toward scrub drains"
+      - "Polished stone worktops"
+      - "Dirty exit to sterilization—contamination flow never reverses"
+      
+    light_conditions:
+      natural: "North-facing windows for consistent, non-harsh daylight"
+      artificial: "Overhead rune-lamp grids—cool spectrum, no flicker, shadowless"
+      
+    mood_affinity: ["tense", "intimate"]
+
+  - slug: "mezzanine-service"
+    name: "Mezzanine Service Band"
+    zone_type: "forge"
+    location_within: "Between ground and upper floors—central corridor above theatre corridor"
+    
+    physical_description: |
+      A functional service level housing three critical operations: sterilization suite with copper boilers on raised plinths, drying racks, and instrument baths; linen rooms with sorted grades and hot-press cabinets; and apothecary/stillroom with stone mortar benches, herb racks, and small alembics. Red and white stripe markers designate sterile pathways. Dumbwaiters connect to theatres below and wards above. Hand traffic only—no wheels, no hooves.
+      
+    narrative_function: "The unseen infrastructure of healing—where instruments are purified, medicines compounded, linens prepared. The support system that makes the visible healing possible."
+    
+    emotional_register: "Methodical industry. Quiet competence. The rhythm of essential work."
+    
+    character_associations:
+      - character: "Sterilization lead and apothecary practitioner"
+        relationship: "Domain masters of essential support functions"
+        typical_activities: ["instrument processing", "compounding", "quality control"]
+        
+    signature_details:
+      - "Copper boilers with bubbling instrument baths"
+      - "Herb racks and alembics in the stillroom"
+      - "Red/white stripe sterile pathway markers"
+      - "Dumbwaiter hatches to theatres and wards"
+      - "The coppery-cinnamon scent strongest here"
+      
+    light_conditions:
+      natural: "Limited—borrowed light through transoms"
+      artificial: "Task-focused rune-lamps at work stations"
+      
+    mood_affinity: ["intimate", "somber"]
+
+  - slug: "recovery-wards"
+    name: "Recovery Wards"
+    zone_type: "sanctuary"
+    location_within: "Upper floors—double-loaded corridor with rooms on both sides"
+    
+    physical_description: |
+      Alternating single and small shared rooms, each with mullioned windows dressed in white gauze curtains. Slate tile hearth surrounds for winter braziers. Privacy maintained by curtain tracks and sound-absorbing hangings. Nurse stations every two bays with cross-corridor observation. Rune-lamps tuned to warmer spectrum for patient comfort. Linen pass-throughs from mezzanine lifts. Polished rail caps show steady but careful traffic.
+      
+    narrative_function: "The sanctuary of healing—where the body knits itself back together, where patients face the slow work of recovery. Site of Veyra's awakening and crucial conversations with Dokra."
+    
+    emotional_register: "Quiet hope. Patient endurance. The vulnerability of healing."
+    
+    character_associations:
+      - character: "Veyra Thornwake"
+        relationship: "Patient—this is where she wakes, recovers, and makes her choice about memory"
+        typical_activities: ["sleeping", "waking", "conversation", "decision-making"]
+      - character: "Dokra Ironvein"
+        relationship: "Visiting physician and philosophical guide"
+        typical_activities: ["rounds", "consultation", "the crucial conversation about scars"]
+        
+    signature_details:
+      - "Mullioned windows with white gauze curtains"
+      - "Warm-spectrum rune-lamp glow"
+      - "Privacy curtains on ceiling tracks"
+      - "Sound-absorbing hangings muffling corridor noise"
+      - "Laundered linen with that clean, slightly herbal scent"
+      - "Light latticed by mullions falling across bedclothes"
+      
+    light_conditions:
+      natural: "Soft—tall windows with gauze filtering sunlight into diffused warmth"
+      artificial: "Warmer-spectrum rune-lamps, gentler than theatre lights"
+      
+    mood_affinity: ["intimate", "somber", "tender"]
+
+  - slug: "isolation-stack"
+    name: "Isolation Stack"
+    zone_type: "sanctuary"
+    location_within: "Upper floor rear corner—segregated from main wards"
+    
+    physical_description: |
+      A vertical stack of rooms with independent ventilation—negative-draw flue keeps contaminated air from spreading. Each room has its own hand-wash and refuse staging niche. Doors fitted with wedges and sealable thresholds. Access restricted, flagged and locked. The most controlled, protected space in the building.
+      
+    narrative_function: "The ultimate sanctuary—where the most vulnerable patients are isolated from contagion and protected from the outside world."
+    
+    emotional_register: "Enforced stillness. Protective isolation. The loneliness of serious illness."
+    
+    signature_details:
+      - "Segregated vent flue with independent draw"
+      - "Sealable thresholds and door wedges"
+      - "Individual hand-wash stations per room"
+      - "Locked access—the quietest zone in the building"
+      
+    light_conditions:
+      natural: "Limited—corner positioning reduces direct sunlight"
+      artificial: "Warmer-spectrum rune-lamps, low intensity"
+      
+    mood_affinity: ["somber", "intimate"]
+
+  - slug: "day-room"
+    name: "Day Room"
+    zone_type: "commons"
+    location_within: "Upper floor—quiet corner with street-facing windows"
+    
+    physical_description: |
+      A low-stimulation recovery space with a reading corner lit by rune-lamps. View across street trees and city sky. Low conversation policy enforced. Ambulatory patients gather here for light mobility and quiet social contact. Chairs arranged for both solitude and gentle conversation.
+      
+    narrative_function: "The transition space—where patients practice rejoining the world, taking their first steps from bed-bound isolation toward normal life."
+    
+    emotional_register: "Quiet hope. Cautious optimism. The first taste of normalcy."
+    
+    character_associations:
+      - character: "Recovering patients"
+        relationship: "Users of the space during convalescence"
+        typical_activities: ["reading", "quiet conversation", "watching the world outside"]
+        
+    signature_details:
+      - "Reading corner with comfortable seating"
+      - "Windows offering view to street and sky"
+      - "Low conversation atmosphere"
+      - "The sense of transition—between illness and health"
+      
+    light_conditions:
+      natural: "Good—street-facing windows provide connection to outside world"
+      artificial: "Warm rune-lamps, comfortable reading light"
+      
+    mood_affinity: ["tender", "hopeful"]
+
+  - slug: "cellar-infrastructure"
+    name: "Cellar Infrastructure"
+    zone_type: "forge"
+    location_within: "Below ground level—accessed by service stairs"
+    
+    physical_description: |
+      The hidden machinery of healing: copper boilers for hot water and sterilization, covered cisterns fed from roof leaders, herb stills for distillates, sealed staging for infectious waste. Thyme and lime barrels for wash-downs. The coppery tang from instrument baths originates here. Safety overflows drain to floor trenches. Charcoal vault, spare lamp runes, copper fittings stored for maintenance.
+      
+    narrative_function: "The unglamorous truth—the essential infrastructure that makes the visible healing possible. Someone must boil, scrub, and haul."
+    
+    emotional_register: "Functional necessity. Honest labor. The unseen foundation."
+    
+    signature_details:
+      - "Copper boilers with safety overflow trenches"
+      - "Covered cisterns with hand-pump backup"
+      - "Herb stills producing the antiseptic tinctures"
+      - "Thyme and lime barrels for wash-downs"
+      - "The strongest concentration of that copper-cinnamon scent"
+      
+    light_conditions:
+      natural: "None—underground"
+      artificial: "Functional rune-lamps at work stations"
+      
+    mood_affinity: ["somber"]
+
+temporal_states:
+  daily_cycle:
+    - time: "pre-dawn"
+      description: "Skeleton night staff completing rounds. Boilers being stoked in the cellar. First light barely touching the mullioned windows. The quietest hour."
+      activities: ["isolation checks", "boiler stoking", "shift handover preparation"]
+      mood: "hushed vigilance"
+      light_quality: "Low rune-lamp trails, darkness beyond windows"
+      
+    - time: "morning"
+      description: "Sun shafts angle through mullioned windows. Linens being aired. Triage queue forming at the main entrance. Teaching rounds beginning in the wards. The building waking to its purpose."
+      activities: ["teaching rounds", "linen airing", "triage intake", "rune-lamp calibration"]
+      mood: "gathering purpose"
+      light_quality: "Warm morning light through gauze, mixing with steady rune-lamp glow"
+      
+    - time: "midday"
+      description: "Full clinical tempo. Operating theatres at peak activity. Sterilization cycle continuous. Wards active with meals and assessments. The building at maximum function."
+      activities: ["surgery", "sterilization peak", "patient meals", "ward assessments"]
+      mood: "focused industry"
+      light_quality: "Rune-lamps dimmed where daylight suffices; operating theatres fully lit"
+      
+    - time: "evening"
+      description: "Throughput tapering. Records being compiled. Wards quieting for night. Stillroom finishing final distillations. Rune-lamps warming to comfort spectrum."
+      activities: ["records compilation", "final stillroom runs", "ward settling", "visitor departure"]
+      mood: "settling calm"
+      light_quality: "Warmer rune-lamp spectrum as daylight fades; windows darkening"
+      
+    - time: "night"
+      description: "Skeleton staff maintaining watch. Isolation checks continuing. Low-level lamp trails marking corridors. Emergency intake readiness via side sally. The building breathing quietly."
+      activities: ["night rounds", "emergency readiness", "isolation monitoring"]
+      mood: "watchful rest"
+      light_quality: "Low rune-lamp trails; pools of light at nurse stations; darkness in empty spaces"
+      
+  seasonal_variations:
+    - season: "Spring"
+      changes: "Increased respiratory cases from seasonal allergies. Herb stocks refreshed with new growth. Gutters and roof screens cleared after winter debris."
+      mood_shift: "Renewal energy—fresh supplies, increased intake, building emerging from winter protocols"
+      
+    - season: "Summer"
+      changes: "Clerestories opened for stack cooling. Water discipline for boiled supply. Drying loft at maximum activity. Outdoor herb deliveries more frequent."
+      mood_shift: "Active ventilation—the building breathing more openly, lighter atmosphere"
+      
+    - season: "Autumn"
+      changes: "Fire and evacuation drills. Storm shutter inspection. Fuel stores increased for winter. Preparation protocols activated."
+      mood_shift: "Preparation tension—bracing for winter demands"
+      
+    - season: "Winter"
+      changes: "Draft baffles installed at entrances. Braziers distributed in wards with guards. Frost protocol for cistern lines. More patients staying longer due to weather."
+      mood_shift: "Cocooned warmth—the building as shelter against harsh weather"
+      
+  story_timeline_states:
+    - state_name: "Before Veyra's arrival"
+      chapter_range: "Pre-Chapter 2"
+      description: "The Hall as normal functioning medical facility—competent, professional, impersonal. Just another civic institution doing its work."
+      
+    - state_name: "During Veyra's recovery"
+      chapter_range: "Chapter 2-4"
+      description: "The Hall as site of crucial decisions. The recovery ward becomes a philosophical crucible. Dokra Ironvein's wisdom transforms institutional care into personal mentorship."
+      
+    - state_name: "After Veyra's departure"
+      chapter_range: "Post-Chapter 4"
+      description: "The Hall as ongoing resource and philosophical anchor. The Company maintains connection for medical support. The building now holds meaning beyond its function—it's where a crucial choice was made."
+      
+  weather_states:
+    - condition: "Fair weather"
+      description: "Windows cracked for fresh air circulation. Drying loft active with linens. Outdoor herb deliveries frequent. Light streaming clearly through mullioned glass."
+      mood: "Open, connected to the city"
+      
+    - condition: "Storm"
+      description: "Shutters drawn against wind and rain. Intake routed to side sally to keep main entrance clear. Additional towel lines for floor safety. The building sealed and self-contained."
+      mood: "Sheltered, defensive"
+      
+    - condition: "Fog"
+      description: "Light through windows diffused further by city murk. Interior rune-lamps carrying more of the illumination load. The outside world feeling more distant."
+      mood: "Isolated, intimate"
+
+character_space_relationships:
+  - character_slug: "veyra-thornwake"
+    character_name: "Veyra Thornwake"
+    
+    primary_association: "Patient undergoing physical and philosophical recovery—the Hall is where she makes the choice that defines her approach to trauma"
+    
+    personal_zones:
+      - zone: "recovery-wards"
+        relationship: "Site of awakening and decision—this is where she opens her eyes to a changed world and must decide who she'll be"
+        typical_use: "Recovery, consultation with Dokra, the crucial conversation about scars and memory"
+        
+    signature_moments:
+      - moment: "Waking in 'white-fire dreams'—consciousness returning amid pale stone and gauze"
+        chapter: "ch02"
+        visual_potential: "Veyra's eyes opening, light filtered through mullioned windows and gauze, the disorientation of returning to her body"
+      - moment: "The conversation with Dokra about magical vs. natural healing—choosing to keep her scars"
+        chapter: "ch02-04"
+        visual_potential: "Patient and healer in intimate conversation, the philosophical weight visible in faces and posture, warm rune-lamp light"
+        
+    perspective_quote: |
+      "I remember it as white. White stone, white light through white gauze—like waking inside a clean page. And Dokra's voice, asking me what I wanted to keep. Not what I wanted to forget. What I wanted to keep."
+
+  - character_slug: "dokra-ironvein"
+    character_name: "Dokra Ironvein"
+    
+    primary_association: "Master healer and philosophical guide—the Hall is her domain, where her expertise and wisdom intersect"
+    
+    personal_zones:
+      - zone: "operating-theatres"
+        relationship: "Her primary domain—where her surgical skill is exercised and apprentices learn"
+        typical_use: "Surgery, teaching, consultation"
+      - zone: "recovery-wards"
+        relationship: "Extension of care—where she follows up with patients and has the conversations that matter"
+        typical_use: "Rounds, patient consultation, philosophical guidance"
+        
+    signature_moments:
+      - moment: "Teaching Journey-Healer Loran while treating a patient—demonstrating the integration of skill and wisdom"
+        chapter: "ch04"
+        visual_potential: "Master and apprentice at work, the contrast between theoretical knowledge and practical wisdom"
+      - moment: "The 'some wounds are iron, some are ink' conversation—delivering the philosophy that shapes the Company"
+        chapter: "ch02-04"
+        visual_potential: "Close portrait of a healer who understands that medicine is more than fixing bodies"
+        
+    perspective_quote: |
+      "These walls have seen more pain than most battlefields. The difference is we choose what happens next. I can erase a scar or I can let it teach you something. That choice belongs to the patient, not the healer."
+
+  - character_slug: "journey-healer-loran"
+    character_name: "Journey-Healer Loran"
+    
+    primary_association: "Apprentice healer learning the gap between theory and practice—the Hall is his classroom"
+    
+    personal_zones:
+      - zone: "operating-theatres"
+        relationship: "Learning environment—where he observes and assists while Dokra teaches"
+        typical_use: "Observation, assistance, theoretical questions"
+      - zone: "mezzanine-service"
+        relationship: "Study and preparation—where he reviews texts and prepares instruments"
+        typical_use: "Research, instrument preparation, compounding practice"
+        
+    signature_moments:
+      - moment: "Asking theoretical questions while Dokra demonstrates practical application"
+        chapter: "ch04"
+        visual_potential: "Young healer with book knowledge meeting the reality of flesh and blood"
+        
+    perspective_quote: |
+      "The texts say one thing, but Dokra's hands say another. I'm beginning to understand that medicine isn't just knowledge—it's judgment. And judgment comes from watching, not reading."
+
+narrative_beats:
+  - beat_id: "veyra-awakening"
+    chapter: "ch02"
+    scene: "Waking in White-Fire Dreams"
+    
+    what_happens: "Veyra regains consciousness in the recovery ward, disoriented, surrounded by pale stone and filtered light"
+    
+    zones_involved: ["recovery-wards"]
+    characters_present: ["Veyra Thornwake"]
+    
+    visual_potential:
+      description: "First-person perspective of consciousness returning—the white stone, mullioned light through gauze, the confusion of waking in an unfamiliar body"
+      key_visual_hook: "Light latticed through mullioned windows falling across white bedclothes and Veyra's disoriented face"
+      suggested_mood: "dreamlike"
+      
+    selection_score:
+      narrative_importance: 5
+      visual_distinctiveness: 4
+      emotional_resonance: 5
+      total: 14
+
+  - beat_id: "philosophical-choice"
+    chapter: "ch02-04"
+    scene: "The conversation about scars"
+    
+    what_happens: "Dokra presents Veyra with the choice: magical healing that erases memory, or natural healing that preserves scars as teachers"
+    
+    zones_involved: ["recovery-wards"]
+    characters_present: ["Veyra Thornwake", "Dokra Ironvein"]
+    
+    visual_potential:
+      description: "Intimate dialogue between patient and healer—the weight of decision visible in faces and posture, warm rune-lamp light creating sanctuary atmosphere"
+      key_visual_hook: "Two figures in close conversation, one in bed, one seated beside, the mullioned window framing them like a choice between worlds"
+      suggested_mood: "intimate"
+      
+    selection_score:
+      narrative_importance: 5
+      visual_distinctiveness: 3
+      emotional_resonance: 5
+      total: 13
+
+  - beat_id: "teaching-round"
+    chapter: "ch04"
+    scene: "Dokra teaching Loran"
+    
+    what_happens: "Dokra demonstrates practical medicine while Loran asks theoretical questions—the gap between knowledge and wisdom made visible"
+    
+    zones_involved: ["operating-theatres"]
+    characters_present: ["Dokra Ironvein", "Journey-Healer Loran"]
+    
+    visual_potential:
+      description: "Master and apprentice in the operating theatre—shadowless rune-lamp light, precision instruments, the contrast between book learning and practical skill"
+      key_visual_hook: "Hands at work—Dokra's competent and sure, Loran's holding a text while watching"
+      suggested_mood: "contemplative"
+      
+    selection_score:
+      narrative_importance: 3
+      visual_distinctiveness: 4
+      emotional_resonance: 3
+      total: 10
+
+recommended_images:
+  - image_type: "establishing"
+    priority: "primary"
+    
+    target: "Brightstone Healers' Hall exterior and entry approach"
+    
+    rationale: "Establishes the institutional character—pale stone, tall mullioned windows, the sense of civic competence. Creates visual anchor for all interior scenes."
+    
+    suggested_mood: "contemplative"
+    suggested_time: "morning"
+    suggested_weather: "fair"
+    
+    characters_to_include: []
+    zone_focus: "exterior facade"
+    
+    key_elements:
+      - "Pale limestone/white granite ashlar construction"
+      - "Tall mullioned windows with gauze visible behind glass"
+      - "Urban setting—street traffic, neighboring buildings"
+      - "Main entrance visible"
+      - "The sense of clean order amid city bustle"
+      
+    visual_hook: "Morning light catching pale stone, the building standing out from its neighbors as a place of deliberate calm"
+    
+    composition_suggestion: "Three-quarter view showing facade and street context, medium-wide to establish scale and setting"
+
+  - image_type: "essence"
+    priority: "primary"
+    
+    target: "Recovery ward interior—the sanctuary atmosphere"
+    
+    rationale: "This is the narrative heart of the location—where Veyra wakes, recovers, and makes her crucial choice. The visual must capture both the clinical competence and the gentle warmth."
+    
+    suggested_mood: "intimate"
+    suggested_time: "morning"
+    suggested_weather: "fair"
+    
+    characters_to_include: []
+    zone_focus: "recovery-wards"
+    
+    key_elements:
+      - "Mullioned window with white gauze curtain"
+      - "Light latticed through leading, softened by gauze"
+      - "Warm-spectrum rune-lamp glow mixing with daylight"
+      - "Clean linen, simple furnishings"
+      - "Sound-absorbing hangings creating soft atmosphere"
+      - "The sense of sanctuary—professional care made personal"
+      
+    visual_hook: "Light filtered through gauze onto an empty bed—the sanctuary waiting for whoever needs it"
+    
+    composition_suggestion: "Interior view toward window, bed in foreground, light as primary subject, capturing the gentle sterility"
+
+  - image_type: "inhabited"
+    priority: "primary"
+    
+    target: "Veyra's awakening—consciousness returning"
+    
+    rationale: "The signature narrative beat of this location. Veyra opening her eyes in this space is the visual representation of the story beginning."
+    
+    suggested_mood: "dreamlike"
+    suggested_time: "morning"
+    suggested_weather: "fair"
+    
+    characters_to_include: ["Veyra Thornwake"]
+    zone_focus: "recovery-wards"
+    
+    key_elements:
+      - "Veyra in bed, eyes opening or just open"
+      - "Disorientation visible in expression"
+      - "Mullioned light falling across her"
+      - "White gauze, white stone, white linen—the 'clean page' feeling"
+      - "The moment of return to consciousness"
+      
+    visual_hook: "Eyes opening to fragmented light—the first moment of a new chapter"
+    
+    composition_suggestion: "Close or medium-close on Veyra, window light on her face, shallow focus creating dreamlike atmosphere"
+
+  - image_type: "beat"
+    priority: "secondary"
+    
+    target: "Dokra and Veyra in philosophical conversation"
+    
+    rationale: "The crucial dialogue that establishes the Company's philosophy on trauma and healing. The intimate scale of healer-patient connection."
+    
+    suggested_mood: "intimate"
+    suggested_time: "evening"
+    suggested_weather: "fair"
+    
+    characters_to_include: ["Veyra Thornwake", "Dokra Ironvein"]
+    zone_focus: "recovery-wards"
+    
+    key_elements:
+      - "Two figures in close proximity—one in bed, one seated beside"
+      - "Warm rune-lamp light (evening)"
+      - "Mullioned window as background framing"
+      - "The weight of decision in body language"
+      - "Professional expertise meeting personal care"
+      
+    visual_hook: "The choice made visible—two people and the question between them"
+    
+    composition_suggestion: "Medium shot capturing both figures, window light behind creating natural framing, warm interior lighting"
+
+  - image_type: "zone"
+    priority: "secondary"
+    
+    target: "Operating theatre—the forge of healing"
+    
+    rationale: "Establishes Dokra's domain and the level of medical sophistication. The shadowless rune-lamp grids are visually distinctive."
+    
+    suggested_mood: "tense"
+    suggested_time: "midday"
+    suggested_weather: "any"
+    
+    characters_to_include: []
+    zone_focus: "operating-theatres"
+    
+    key_elements:
+      - "Dwarven rune-lamp grid rails overhead"
+      - "Shadowless illumination—no flicker"
+      - "Polished stone worktops"
+      - "Instrument arrangement (clean, organized)"
+      - "North-facing window providing consistent light"
+      - "The precision of a place where life hangs on competence"
+      
+    visual_hook: "Shadowless light falling on an empty surgical table—ready for whatever comes"
+    
+    composition_suggestion: "Wide angle showing the grid lighting system and surgical workspace, emphasizing the technological sophistication"
+
+  - image_type: "temporal"
+    priority: "optional"
+    
+    target: "Night rounds—the Hall at rest"
+    
+    rationale: "Shows the location's 24-hour vigilance. The contrast between night stillness and the steady readiness of the skeleton staff."
+    
+    suggested_mood: "somber"
+    suggested_time: "night"
+    suggested_weather: "any"
+    
+    characters_to_include: []
+    zone_focus: "recovery-wards"
+    
+    key_elements:
+      - "Low rune-lamp trails marking corridors"
+      - "Pools of light at nurse stations"
+      - "Mullioned windows dark"
+      - "The sense of watchful rest"
+      - "Readiness underlying stillness"
+      
+    visual_hook: "Light trail down a quiet corridor—vigilance in the sleeping hours"
+    
+    composition_suggestion: "Corridor perspective, low lighting, emphasis on the pools and trails of illumination against darkness"
+
+  - image_type: "perspective"
+    priority: "optional"
+    
+    target: "Day room view—window looking out"
+    
+    rationale: "The transition space where patients practice rejoining the world. The view represents hope, recovery, the world waiting."
+    
+    suggested_mood: "hopeful"
+    suggested_time: "afternoon"
+    suggested_weather: "fair"
+    
+    characters_to_include: []
+    zone_focus: "day-room"
+    
+    key_elements:
+      - "Mullioned window from inside"
+      - "View to street trees and sky"
+      - "Reading corner visible"
+      - "The sense of looking outward—toward recovery"
+      - "Light streaming in, inviting"
+      
+    visual_hook: "A window as promise—the world beyond the walls, waiting"
+    
+    composition_suggestion: "From inside looking out through mullioned glass, street life visible, capturing the sense of return to normalcy"

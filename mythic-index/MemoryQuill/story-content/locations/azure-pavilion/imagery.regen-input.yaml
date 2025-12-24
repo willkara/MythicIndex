@@ -1,0 +1,85 @@
+location:
+  slug: azure-pavilion
+  name: Azure Pavilion
+  files:
+    overview:
+      path: locations/azure-pavilion/overview.md
+      excerpt: ''
+      exists: true
+    description:
+      path: locations/azure-pavilion/description.md
+      excerpt: ''
+      exists: true
+    inhabitants:
+      path: locations/azure-pavilion/inhabitants.md
+      excerpt: ''
+      exists: true
+zones_manifest:
+  path: locations/azure-pavilion/zones.yaml
+  zones:
+  - slug: balustrade-perimeter
+    name: Balustrade Promenade
+  - slug: central-nave
+    name: Central Nave and Dais
+    featured_in_chapters:
+    - ch34-the-azure-cage
+  - slug: colonnade
+    name: Colonnade
+    featured_in_chapters:
+    - ch34-the-azure-cage
+  - slug: entrance
+    name: Entrance
+    featured_in_chapters:
+    - ch19-an-olive-branch
+  - slug: essence
+    name: The Azure Hour
+  - slug: fog
+    name: The Pavilion in Fog
+  - slug: harbor-view
+    name: The View That Justifies Everything
+  - slug: lantern-detail
+    name: The Crystal Lantern
+  - slug: leeward-bays
+    name: Shelter Within the Spectacle
+  - slug: leeward-comfort-zone
+    name: Leeward Bays
+  - slug: main-floor
+    name: Main Floor
+    featured_in_chapters:
+    - ch19-an-olive-branch
+  - slug: pier
+    name: Pier
+    featured_in_chapters:
+    - ch34-the-azure-cage
+  - slug: pier-approach
+    name: The Processional Pier
+  - slug: pier-night
+    name: The Processional Pier
+  - slug: pierhead-gate
+    name: The Pierhead Gate
+  - slug: recognition-ceremony
+    name: Recognition Ceremony
+  - slug: side-aisles
+    name: Service Aisles
+chapter_evidence:
+- slug: ch19-an-olive-branch
+  files:
+    content:
+      path: chapters/ch19-an-olive-branch/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch19-an-olive-branch/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+- slug: ch34-the-azure-cage
+  files:
+    content:
+      path: chapters/ch34-the-azure-cage/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch34-the-azure-cage/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+intrinsic_characters: []

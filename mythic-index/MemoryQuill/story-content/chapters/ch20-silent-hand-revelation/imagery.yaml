@@ -1,0 +1,1004 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: Silent Hand Revelation
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch20-silent-hand-revelation"
+  chapter_number: 20
+  chapter_title: "Silent Hand Revelation"
+  visual_thesis: "From the warm amber of political theater through the cold stone of psychological warfare to the green-gold sanctuary of healing and renewal"
+  color_palette:
+    primary:
+      - "#8B6914"
+      - "#4A4A4A"
+      - "#2D4A2D"
+      - "#1C3D5A"
+    accent:
+      - "#C41E3A"
+      - "#D4AF37"
+      - "#00CED1"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 2
+    pastoral: 1
+    celebratory: 0
+    aquatic: 2
+    ethereal: 1
+    intimate: 1
+    kinetic: 0
+    ominous: 3
+
+characters:
+  - ref: "lady-moira-blackwater"
+    name: "Lady Moira Blackwater"
+    scene_variations: "Leaning forward, commanding office. Sharp gray-green eyes. Heavy dark coat. Institutional weight."
+    reference_images:
+      - "lady-moira-blackwater-war-room-portrait-01"
+
+  - ref: "marcus-heartbridge"
+    name: "Marcus Heartbridge"
+    scene_variations: "Cold predator persona in cells. Pressing prisoner's fist. Fastidious persona return in corridor. Charcoal doublet. Gold signet ring."
+    reference_images:
+      - "marcus-heartbridge-portrait-study-01"
+
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: "Guarded in office. Reassessing Marcus in corridor. Stoic in grove. Burn scar prominent. Lantern at hip."
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: "Military attention in office. Defensive stance in corridor. Respectful in symposium. Blue cloak with sunburst."
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "aldwin-gentleheart"
+    name: "Aldwin Gentleheart"
+    scene_variations: "Formal presentation in amphitheater. Moss-green robes. Healer's assessment in grove."
+    reference_images:
+      - "aldwin-gentleheart-official-portrait-01"
+
+  - ref: "vera-moonwhisper"
+    name: "Vera Moonwhisper"
+    scene_variations: "Pale, thin, recovering in grove. Silver healed scars catching light. Hazel eyes peaceful. Forest-green cloak."
+    reference_images:
+      - "vera-moonwhisper-portrait-01"
+
+  - ref: "rill-vossari"
+    name: "Rill Vossari"
+    scene_variations: "Aquamarine skin, turquoise bioluminescence. Rope-like dreadlocks with copper coils. Working with water plants. Intense recognition of documents."
+    reference_images:
+      - "rill-vossari-casting-portrait-01"
+
+locations:
+  - ref: "city-watch-headquarters"
+    zones:
+      - id: "office"
+        chapter_context: "Polished wood, brass fixtures. Sunlight through grimy windows. Classified portfolios and wax seals."
+      - id: "cells"
+        chapter_context: "Cold stone, iron bars. Harsh overhead light. Glistening damp condensation on floor and doors."
+  - ref: "spire-of-learning"
+    zones:
+      - id: "amphitheater"
+        chapter_context: "Grand marble theater. Luminous stone. Natural light from high windows. Tiered seating."
+  - ref: "druid-grove-waterdeep"
+    zones:
+      - id: "healing-pool"
+        chapter_context: "Crystalline pool, ancient roots below surface. Dappled forest light. Bioluminescent ripples."
+  - ref: "warehouse-complex"
+    zones:
+      - id: "briefing-room"
+        chapter_context: "The Company's headquarters. Tactical maps on walls, planning the next mission."
+
+moments:
+  - id: "ch20-silent-hand-revelation-moment-01"
+    scene_id: "scn-20-01"
+    title: "Classified Coercion"
+    narrative_beat: "Lady Blackwater spreading classifies documents with red wax seals, establishing the mission's weight."
+    visual_weight: "hero"
+    characters_present:
+      - "lady-moira-blackwater"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "marcus-heartbridge"
+    location_zone: "city-watch-headquarters/office"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch20-silent-hand-revelation-moment-02"
+    scene_id: "scn-20-01"
+    title: "Official Exit"
+    narrative_beat: "Grimsby leaving his own office under Blackwater's dismissal, leaving the covert actors behind."
+    visual_weight: "medium"
+    characters_present:
+      - "captain-grimsby"
+      - "lady-moira-blackwater"
+    location_zone: "city-watch-headquarters/office"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch20-silent-hand-revelation-moment-03"
+    scene_id: "scn-20-03"
+    title: "The Uncurling"
+    narrative_beat: "Marcus gently but inexorably flattening the prisoner's fist, psychological violation made tactile."
+    visual_weight: "critical"
+    characters_present:
+      - "marcus-heartbridge"
+    location_zone: "city-watch-headquarters/cells"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch20-silent-hand-revelation-moment-04"
+    scene_id: "scn-20-03"
+    title: "Cold Stone Damp"
+    narrative_beat: "Detail shot of the glistening condensation at the base of the cell door, the atmosphere of isolation."
+    visual_weight: "medium"
+    characters_present: []
+    location_zone: "city-watch-headquarters/cells"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch20-silent-hand-revelation-moment-05"
+    scene_id: "scn-20-03"
+    title: "The Persona Shift"
+    narrative_beat: "Marcus adjusting his cuffs in the corridor, the cold predator mask vanishing back into the diplomat."
+    visual_weight: "high"
+    characters_present:
+      - "marcus-heartbridge"
+      - "veyra-thornwake"
+    location_zone: "city-watch-headquarters/cells"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch20-silent-hand-revelation-moment-06"
+    scene_id: "scn-20-04"
+    title: "Luminous Witness"
+    narrative_beat: "Aldwin speaking to the amphitheater about hope, his presence warming the pale marble."
+    visual_weight: "high"
+    characters_present:
+      - "aldwin-gentleheart"
+      - "thorne-brightward"
+    location_zone: "spire-of-learning/amphitheater"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch20-silent-hand-revelation-moment-07"
+    scene_id: "scn-20-04"
+    title: "Scholarly Assessment"
+    narrative_beat: "Close up of a scholar taking notes on 'Tactical Innovation', the Company's methods recorded for history."
+    visual_weight: "medium"
+    characters_present: []
+    location_zone: "spire-of-learning/amphitheater"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch20-silent-hand-revelation-moment-08"
+    scene_id: "scn-20-05"
+    title: "Silver Scars in Sunlight"
+    narrative_beat: "Vera sitting by the healing pool, her silver transformation scars catching the dappled sunlight."
+    visual_weight: "high"
+    characters_present:
+      - "vera-moonwhisper"
+      - "rill-vossari"
+    location_zone: "druid-grove-waterdeep/healing-pool"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch20-silent-hand-revelation-moment-09"
+    scene_id: "scn-20-05"
+    title: "Magical Resonance"
+    narrative_beat: "Detail of the bioluminescent ripples forming around a silver drop in the healing pool."
+    visual_weight: "medium"
+    characters_present: []
+    location_zone: "druid-grove-waterdeep/healing-pool"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch20-silent-hand-revelation-moment-10"
+    scene_id: "scn-20-05"
+    title: "The Speaker's Recognition"
+    narrative_beat: "Rill studying the Silent Hand documents, her skin bioluminescence quickening as she sees the water patterns."
+    visual_weight: "high"
+    characters_present:
+      - "rill-vossari"
+    location_zone: "druid-grove-waterdeep/healing-pool"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch20-silent-hand-revelation-moment-11"
+    scene_id: "scn-20-06"
+    title: "Briefing Strategy"
+    narrative_beat: "The core team huddling over the map table in the warehouse, planning the methodical approach."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "marcus-heartbridge"
+      - "grimjaw-ironbeard"
+    location_zone: "warehouse-complex/interior"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch20-silent-hand-revelation-moment-12"
+    scene_id: "scn-20-06"
+    title: "Levity in Darkness"
+    narrative_beat: "Veyra and Marcus shaking hands over their bet, a brief moment of humor amidst the grim planning."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+      - "marcus-heartbridge"
+    location_zone: "warehouse-complex/interior"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch20-silent-hand-revelation-img-20-01-01"
+    source_moment: "ch20-silent-hand-revelation-moment-01"
+    scene_id: "scn-20-01"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "location"
+    scene_mood: "somber"
+    mood_rationale: "Institutional coercion. Formal weight of mission obligation. Portfolio seals as drops of blood and honey."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Lady Moira Blackwater commands Captain Grimsby's office, spreading classified documents across his desk. Red and gold wax seals catch morning light. Veyra and Thorne stand in guarded attention. Marcus is slightly apart, calculating. High shadows and administrative warmth.
+    composition_notes: |
+      Wide establishing shot. Blackwater center-left, hands on desk. Veyra and Thorne right. Grimsby background. Long shadows from windows.
+    visual_hook: "The leather portfolio spread open with red and gold wax seals catching the morning light like drops of blood and honey"
+    depicts_characters:
+      - "lady-moira-blackwater"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "marcus-heartbridge"
+    character_states:
+      lady-moira-blackwater: |
+        Leaning forward. Severe gray-green eyes. Auburn hair with silver. Dark coat.
+      veyra-thornwake: |
+        Guarded stillness. Burn scar prominent. Processing implications.
+      thorne-brightward: |
+        Military attention. Steel breastplate and blue cloak.
+      marcus-heartbridge: |
+        Leaning casually. Practiced interest. Charcoal doublet.
+    location: "city-watch-headquarters"
+    lighting:
+      primary_source: "morning sun"
+      quality: "hard, dramatic"
+      direction: "side"
+      color_temperature: "warm amber"
+      shadow_depth: "deep"
+      atmospheric: "dust motes"
+    palette:
+      dominant:
+        - "warm amber"
+        - "polished wood"
+        - "charcoal"
+      accent:
+        - "red/gold wax seals"
+      avoid:
+        - "bright colors"
+    prompt_used: |
+      Spymaster woman spreading classified documents with red wax seals on a desk,
+      adventurers in guarded attention opposite her,
+      morning sunlight through grimy windows casting long shadows in a formal office,
+      atmosphere of political theater and heavy obligation,
+      classical oil painting, Rembrandt lighting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smiling
+    tags:
+      - "hero"
+      - "politics"
+      - "briefing"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch20-silent-hand-revelation-img-20-01-02"
+    source_moment: "ch20-silent-hand-revelation-moment-02"
+    scene_id: "scn-20-01"
+    image_type: "beat"
+    category:
+      - "character"
+      - "moment"
+    scene_mood: "ominous"
+    mood_rationale: "The dismissal of the official host. The room shifting from order to covert operation. The closing of the door."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Captain Grimsby stepping toward the door of his own office, his posture stiff and uncomfortable. Lady Blackwater is already seated in his chair, watching him leave with calm dismissal. The door is half-open, framing Grimsby against the busy corridor outside. The shadows in the office seem to deepen as he exits.
+    composition_notes: |
+      Medium-wide shot. Grimsby at frame edge (leaving). Blackwater central (taking power). The door as a vertical divider.
+    visual_hook: "The stiff, military back of Grimsby as he is forced to leave his own sanctuary of rules."
+    depicts_characters:
+      - "captain-grimsby"
+      - "lady-moira-blackwater"
+    character_states:
+      captain-grimsby: |
+        Stiff back. Immaculate uniform. Expression of suppressed annoyance.
+      lady-moira-blackwater: |
+        Seated behind his desk. Hands clasped. Absolute control.
+    location: "city-watch-headquarters"
+    lighting:
+      primary_source: "Window light + corridor light"
+      quality: "Fragmented"
+      direction: "Backlit from corridor"
+      color_temperature: "Cool corridor vs warm office"
+      shadow_depth: "Deepening in office"
+      atmospheric: "Held breath"
+    palette:
+      dominant:
+        - "shadow brown"
+        - "slate blue"
+        - "amber"
+      accent:
+        - "gold uniform buttons"
+      avoid:
+        - "bright cheerful light"
+    prompt_used: |
+      Military officer leaving his own stone office while a woman in a dark coat sits in his chair,
+      dismissive expression,
+      door half-open to a busy corridor,
+      atmosphere of shifting power and secrets,
+      classical oil painting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "grimsby"
+      - "power-shift"
+      - "ominous"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch20-silent-hand-revelation-img-20-03-01"
+    source_moment: "ch20-silent-hand-revelation-moment-03"
+    scene_id: "scn-20-03"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "ominous"
+    mood_rationale: "Psychological violation. Marcus weaponizing intimacy. Cold predator revealed. Stark stone surroundings."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Marcus Heartbridge's manicured hand gently but firmly pressing a prisoner's clenched fist onto a rough table. Marcus leans close, whispering into the man's ear. The prisoner's face shows frozen violation. Single harsh light from above. Stone walls pressing inward.
+    composition_notes: |
+      Close framing on hands and faces. Marcus's hand dominant. Low angle. Deep shadows. Contrast between controlled calm and frozen terror.
+    visual_hook: "Marcus's well-manicured hand gently pressing the clenched fist flat—comfort made into weapon"
+    depicts_characters:
+      - "marcus-heartbridge"
+    character_states:
+      marcus-heartbridge: |
+        Cold predator. Flat Assessing eyes. Whispering. Charcoal doublet. Gold ring. Absolute clinical control.
+    location: "city-watch-headquarters"
+    lighting:
+      primary_source: "harsh overhead light"
+      quality: "harsh, clinical"
+      direction: "above"
+      color_temperature: "cold/sickly"
+      shadow_depth: "deep, distorted"
+      atmospheric: "damp stone"
+    palette:
+      dominant:
+        - "cold stone gray"
+        - "bruise purple"
+        - "pallid flesh"
+      accent:
+        - "gold signet ring"
+      avoid:
+        - "warm tones"
+    prompt_used: |
+      Man with neat goatee pressing another man's fist flat on a table in a dark cell,
+      whispering into his ear with a clinical expression,
+      harsh light from above casting deep shadows,
+      psychological violation and control,
+      classical oil painting, Symbolist unease, Böcklin dread,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, physical violence, blood
+    tags:
+      - "anchor"
+      - "interrogation"
+      - "marcus"
+      - "ominous"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch20-silent-hand-revelation-img-20-03-02"
+    source_moment: "ch20-silent-hand-revelation-moment-05"
+    scene_id: "scn-20-03"
+    image_type: "detail"
+    category:
+      - "character"
+      - "symbol"
+    scene_mood: "ominous"
+    mood_rationale: "Persona shift. Mundane gesture of adjusting cuffs after warfare. Cognitive dissonance. Which mask is real?"
+    aspect_ratio: "4:5"
+    orientation: "portrait"
+    size: "1024x1280"
+    visual_description: |
+      Marcus steps out of the cell, heavy door closing behind. He is adjusting his cuffs and tugging his collar with fastidious care. Charming smile returning. Veyra in background shows awe and terror at the seamless shift. Torchlit stone corridor.
+    composition_notes: |
+      Medium shot. Marcus in liminal space. Hands prominent adjusting cuffs. Veyra in partial shadow background. Torchlight failing to dispel deep shadows.
+    visual_hook: "Marcus's hands fastidiously adjusting his sleeve cuffs while the interrogation door closes on the horror"
+    depicts_characters:
+      - "marcus-heartbridge"
+      - "veyra-thornwake"
+    character_states:
+      marcus-heartbridge: |
+        Transformation back to charm. Adjusting charcoal doublet. Unfastening top button. Practiced warm smile.
+      veyra-thornwake: |
+        Background. Shocked expression. New understanding.
+    location: "city-watch-headquarters"
+    lighting:
+      primary_source: "torchlight corridor"
+      quality: "warm but failing"
+      direction: "side"
+      color_temperature: "orange vs cold stone"
+      shadow_depth: "deep, uncertain"
+      atmospheric: "damp stone"
+    palette:
+      dominant:
+        - "stone gray"
+        - "torch orange"
+        - "charcoal black"
+      accent:
+        - "gold signet ring"
+      avoid:
+        - "bright light"
+    prompt_used: |
+      Man with neat goatee adjusting his sleeve cuffs in a dark stone hallway,
+      charming smile returning,
+      heavy oak door closing behind him,
+      woman watching with realization in background shadows,
+      psychological tension and mask-shifting,
+      classical oil painting, Symbolist unease,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, blood, violence
+    tags:
+      - "detail"
+      - "marcus"
+      - "mask"
+      - "ominous"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch20-silent-hand-revelation-img-20-03-03"
+    source_moment: "ch20-silent-hand-revelation-moment-04"
+    scene_id: "scn-20-03"
+    image_type: "detail"
+    category:
+      - "location"
+      - "detail"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "The 'Character's Deep Damp.' Visualizing the isolation of the cells. Architecture designed to diminish. Damp, heavy, and silent."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Low-angle macro shot from the floor of a cell. Focus on the bottom of a heavy iron-banded door. Floor and lower walls glistening with damp condensation. Weak amber light from a low lantern illuminates the base. Rest of frame is oppressive black. Single drop of water mid-fall.
+    composition_notes: |
+      Tight square framing at floor level. Glistening floor texture. Shallow depth. Low-angle light creating long distorted shadows.
+    visual_hook: "A weak pool of amber light illuminating only the damp, glistening base of an iron-banded door in absolute darkness."
+    depicts_characters: []
+    character_states: {}
+    location: "city-watch-headquarters"
+    lighting:
+      primary_source: "low oil lantern"
+      quality: "weak, isolated"
+      direction: "floor level"
+      color_temperature: "pale amber vs cold gray"
+      shadow_depth: "absolute"
+      atmospheric: "thick dampness"
+    palette:
+      dominant:
+        - "cold stone gray"
+        - "iron black"
+        - "absolute shadow"
+      accent:
+        - "weak amber"
+        - "silver water glint"
+      avoid:
+        - "warmth"
+    prompt_used: |
+      Macro detail shot of the bottom of a heavy iron-banded prison door on a wet stone floor,
+      water dripping from the ceiling,
+      weak lantern light casting long shadows across the damp stone,
+      cold oppressive atmosphere,
+      classical oil painting, Rembrandt lighting at floor level,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, happy
+    tags:
+      - "detail"
+      - "cells"
+      - "damp"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch20-silent-hand-revelation-img-20-04-01"
+    source_moment: "ch20-silent-hand-revelation-moment-06"
+    scene_id: "scn-20-04"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "ethereal"
+    mood_rationale: "Hope transcends military categories. Wisdom made visible. Luminous marble amphitheater. Halfling healer commanding attention."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Aldwin Gentleheart stands at the podium of a grand marble amphitheater. Small figure commanding rows of officers and nobles. Moss-green robes against luminous pale stone. Natural light from high windows. Gesturing gently about hope. Thorne visible behind on stage with respect.
+    composition_notes: |
+      Low angle emphasizing Aldwin. Tiered seating background. Luminous marble. Rule of thirds: Aldwin's gestures center. Audience posture showing engagement.
+    visual_hook: "The small halfling healer commanding absolute attention from the grand amphitheater"
+    depicts_characters:
+      - "aldwin-gentleheart"
+      - "thorne-brightward"
+    character_states:
+      aldwin-gentleheart: |
+        Standing at podium. Moss-green robes. Benevolent wisdom. Gesturing gently.
+      thorne-brightward: |
+        Standing behind. Respectful posture. Steel breastplate and blue cloak.
+    location: "spire-of-learning"
+    lighting:
+      primary_source: "high windows"
+      quality: "soft, luminous"
+      direction: "overhead/ambient"
+      color_temperature: "warm gold/pale stone"
+      shadow_depth: "minimal"
+      atmospheric: "luminous marble"
+    palette:
+      dominant:
+        - "pale marble"
+        - "soft gold"
+        - "silver"
+      accent:
+        - "moss green"
+      avoid:
+        - "harsh shadows"
+    prompt_used: |
+      Halfling man in green robes speaking at a marble podium in a grand tiered theater,
+      audience of soldiers and nobles listening intently,
+      luminous pale stone and high window light,
+      atmosphere of wisdom and shared hope,
+      classical oil painting, Pre-Raphaelite luminosity,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, dark shadows
+    tags:
+      - "aldwin"
+      - "amphitheater"
+      - "hope"
+      - "ethereal"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch20-silent-hand-revelation-img-20-04-02"
+    source_moment: "ch20-silent-hand-revelation-moment-07"
+    scene_id: "scn-20-04"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "symbol"
+    scene_mood: "somber"
+    mood_rationale: "The 'Character's Record.' The weight of academic and military documentation. The Company being written into history."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Close-up of a scholar's hand scribbling in a thick leather-bound journal. The text "Tactical Innovation: Westwall Defense" is partially visible in elegant script. Beside the journal, a pair of brass spectacles and a small inkwell. In the background, the blurred figures of Thorne and Aldwin on the distant stage. The lighting is the cool, even light of the Spire.
+    composition_notes: |
+      Tight focus on the hand and journal. Journal as diagonal anchor. Shallow depth of field. Background stage provides context.
+    visual_hook: "The pen mid-stroke as the Company's exploits are officially translated into the city's academic record."
+    depicts_characters: []
+    character_states: {}
+    location: "spire-of-learning"
+    lighting:
+      primary_source: "High window light"
+      quality: "Even, clinical"
+      direction: "Overhead"
+      color_temperature: "Cool silver"
+      shadow_depth: "Soft"
+      atmospheric: "Still academic air"
+    palette:
+      dominant:
+        - "parchment cream"
+        - "leather brown"
+        - "ink black"
+      accent:
+        - "brass glint"
+      avoid:
+        - "harsh firelight"
+    prompt_used: |
+      Macro detail of a hand writing in a medieval journal,
+      words 'Tactical Innovation' visible,
+      inkwell and spectacles nearby,
+      blurred figures on a stage in the distant background,
+      luminous academic setting,
+      classical oil painting, realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "detail"
+      - "journal"
+      - "history"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch20-silent-hand-revelation-img-20-05-01"
+    source_moment: "ch20-silent-hand-revelation-moment-08"
+    scene_id: "scn-20-05"
+    image_type: "mood"
+    category:
+      - "character"
+      - "emotion"
+      - "location"
+    scene_mood: "pastoral"
+    mood_rationale: "Sanctuary and breathing room. Vera's recovery in the green-gold light. Silver scars as testament to survival. Natural relief after darkness."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Vera sits at the edge of a crystalline healing pool, legs dangling in water. Echo on her shoulder. Dappled sunlight through ancient oaks. Faint silver lines of healed transformation scars catch the gold and green light. Constant tension finally easing. Rill visible in distant background.
+    composition_notes: |
+      Medium portrait. Vera central at pool edge. Crystalline water reflection. Ancient oaks frame overhead. Rill soft focus background. Relief and peace.
+    visual_hook: "The faint silver lines across Vera's skin catching the dappled sunlight—transformation scars become marks of survival"
+    depicts_characters:
+      - "vera-moonwhisper"
+      - "rill-vossari"
+    character_states:
+      vera-moonwhisper: |
+        Seated at edge. Thinner/paler than normal. Clear hazel eyes. Healed silver scars visible. Forest-green cloak. Echo on shoulder.
+      rill-vossari: |
+        Background. Aquamarine skin. Working with plants.
+    location: "druid-grove-waterdeep"
+    lighting:
+      primary_source: "dappled afternoon sun"
+      quality: "soft, diffused"
+      direction: "above/leaves"
+      color_temperature: "warm gold/soft green"
+      shadow_depth: "gentle"
+      atmospheric: "light haze, peaceful"
+    palette:
+      dominant:
+        - "verdant green"
+        - "soft gold"
+        - "blue-green water"
+      accent:
+        - "silver scar lines"
+        - "black Echo"
+      avoid:
+        - "harsh shadows"
+    prompt_used: |
+      Woman with chestnut braid sitting at the edge of a forest pool,
+      silver healed scars visible on her arms in dappled sunlight,
+      raven on her shoulder,
+      ancient oak trees forming a canopy,
+      atmosphere of recovery and sanctuary,
+      classical oil painting, plein air naturalism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin, dark atmosphere
+    tags:
+      - "mood"
+      - "recovery"
+      - "sanctuary"
+      - "pastoral"
+      - "vera"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch20-silent-hand-revelation-img-20-05-02"
+    source_moment: "ch20-silent-hand-revelation-moment-10"
+    scene_id: "scn-20-05"
+    image_type: "symbol"
+    category:
+      - "character"
+      - "symbol"
+    scene_mood: "aquatic"
+    mood_rationale: "Rill's element made visible. Water genasi nature. Bioluminescence quickening in response to information. Cool blues and teals."
+    aspect_ratio: "4:5"
+    orientation: "portrait"
+    size: "1024x1280"
+    visual_description: |
+      Rill Vossari studies Silent Hand documents. Bioluminescent currents beneath sea-glass skin quickening. Pale gray eyes flood with intensity. Dappled grove light on aquamarine skin and copper coils in dreadlocks. Documents in strong hand. Iron trident nearby.
+    composition_notes: |
+      Medium portrait. Focus on skin bioluminescence. Documents in frame. Grove background context. Cool palette vs warm accents.
+    visual_hook: "The bioluminescent currents beneath Rill's skin quickening as she studies the water patterns"
+    depicts_characters:
+      - "rill-vossari"
+    character_states:
+      rill-vossari: |
+        Studying documents. Aquamarine sea-glass skin. Bioluminescence glowing across face/hands. Dreadlocks with copper. Intense focus.
+    location: "druid-grove-waterdeep"
+    lighting:
+      primary_source: "dappled light + skin glow"
+      quality: "diffused + internal"
+      direction: "ambient + internal"
+      color_temperature: "cool silver-blue vs warm gold"
+      shadow_depth: "soft, luminous"
+      atmospheric: "elemental presence"
+    palette:
+      dominant:
+        - "deep aquamarine"
+        - "teal"
+        - "sea-glass"
+      accent:
+        - "tarnished copper"
+        - "gray-white eyes"
+      avoid:
+        - "harsh reds"
+    prompt_used: |
+      Water genasi woman with aquamarine skin and glowing turquoise bioluminescent veins studying papers,
+      teal dreadlocks with copper coils,
+      dappled forest light reflecting off sea-glass skin,
+      intense scholarly recognition,
+      classical oil painting, maritime realism, Turner influence,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin, human skin tones
+    tags:
+      - "symbol"
+      - "rill-vossari"
+      - "bioluminescence"
+      - "aquatic"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch20-silent-hand-revelation-img-20-05-03"
+    source_moment: "ch20-silent-hand-revelation-moment-09"
+    scene_id: "scn-20-05"
+    image_type: "beat"
+    category:
+      - "location"
+      - "detail"
+      - "symbol"
+    scene_mood: "aquatic"
+    mood_rationale: "The 'Character's Voice.' Visualizing the magical resonance. Concentric ripples and ancient roots. Sentient witness."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Macro fantasy detail of crystalline pool surface. Single drop of silver liquid creates perfect concentric ripples. Ripples shimmer with bioluminescent turquoise geometric patterns. Gnarled ancient roots visible beneath the internal blue glow. Silver fish frozen mid-dart.
+    composition_notes: |
+      Tight square framing. Splash and ripples focal point. Gnarled roots background depth. Ethereal sourceless glow.
+    visual_hook: "Geometric bioluminescent ripples forming around a single silver drop, revealing ancient roots beneath"
+    depicts_characters: []
+    character_states: {}
+    location: "druid-grove-waterdeep"
+    lighting:
+      primary_source: "internal blue glow"
+      quality: "ethereal, magical"
+      direction: "from within water"
+      color_temperature: "aquamarine/silver-blue"
+      shadow_depth: "minimal"
+      atmospheric: "magical clarity"
+    palette:
+      dominant:
+        - "bioluminescent turquoise"
+        - "silver-iridescent"
+        - "deep aquamarine"
+      accent:
+        - "root dark brown"
+      avoid:
+        - "harsh shadows"
+    prompt_used: |
+      Macro detail of silver drop hitting a glowing blue forest pool,
+      unnatural geometric ripples in turquoise bioluminescence,
+      ancient roots visible beneath crystalline water,
+      tiny silver fish,
+      sacred elemental atmosphere,
+      classical oil painting, Pre-Raphaelite luminosity,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, murky water
+    tags:
+      - "detail"
+      - "water-magic"
+      - "bioluminescence"
+      - "aquatic"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch20-silent-hand-revelation-img-20-06-01"
+    source_moment: "ch20-silent-hand-revelation-moment-11"
+    scene_id: "scn-20-06"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "logistics"
+    scene_mood: "somber"
+    mood_rationale: "Planning the mission. Methodical approach. The weight of children's lives in the balance. Tense focus."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Veyra, Thorne, Marcus, and Grimjaw huddling around the map table in the warehouse. High windows cast long afternoon shadows. The table is covered in sketches of the Silent Hand facility and water system diagrams. Everyone is leaned in, focus absolute. A single lantern provides warm central light.
+    composition_notes: |
+      Ensemble shot. Tense forward-leaning postures. The map table as the center of gravity. Long shadows creating negative space.
+    visual_hook: "The cluster of commanders silhouetted against the vast, empty warehouse, focused entirely on a single points of light and maps."
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "marcus-heartbridge"
+      - "grimjaw-ironbeard"
+    character_states:
+      veyra-thornwake: |
+        Leaning on table. Sharp focus.
+      thorne-brightward: |
+        Pointing at map. Grim resolve.
+      marcus-heartbridge: |
+        Thoughtful posture. Mask of charm set aside.
+      grimjaw-ironbeard: |
+        Arms crossed. Analyzing structural diagrams.
+    location: "warehouse-complex"
+    lighting:
+      primary_source: "Central lantern + high windows"
+      quality: "Contrast-heavy"
+      direction: "Below and Side"
+      color_temperature: "Amber vs Gray"
+      shadow_depth: "Deep"
+      atmospheric: "Dust motes"
+    palette:
+      dominant:
+        - "wood brown"
+        - "stone gray"
+        - "amber"
+      accent:
+        - "ink black"
+      avoid:
+        - "vibrant colors"
+    prompt_used: |
+      Group of fantasy commanders huddling over maps in a dark warehouse,
+      long dramatic afternoon shadows from high windows,
+      single lantern illuminating the table,
+      expressions of intense focus and planning,
+      atmosphere of heavy responsibility,
+      classical oil painting, interior realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "planning"
+      - "strategy"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch20-silent-hand-revelation-img-20-06-02"
+    source_moment: "ch20-silent-hand-revelation-moment-12"
+    scene_id: "scn-20-06"
+    image_type: "beat"
+    category:
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: "Levity in darkness. Veyra and Marcus shaking on a bet. A rare human moment amidst the grim planning."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Veyra and Marcus shaking hands across the corner of the map table. Veyra has a slight, genuine smile. Marcus is smirking with a glint of mischief. The lantern light catches their hands and faces. Thorne is visible in the background, rolling his eyes.
+    composition_notes: |
+      Two-shot focus on the handshake and expressions. Maps and papers provide the base. Warm, tight framing.
+    visual_hook: "The handshake—a small bridge of trust and shared humanity between the scarred commander and the mysterious broker."
+    depicts_characters:
+      - "veyra-thornwake"
+      - "marcus-heartbridge"
+      - "thorne-brightward"
+    character_states:
+      veyra-thornwake: |
+        Shaking hands. Slight smile.
+      marcus-heartbridge: |
+        Smirking mischievously.
+      thorne-brightward: |
+        Rolling eyes in background.
+    location: "warehouse-complex"
+    lighting:
+      primary_source: "Lantern"
+      quality: "Warm, soft"
+      direction: "Side"
+      color_temperature: "Amber"
+      shadow_depth: "Soft"
+      atmospheric: "Close interior"
+    palette:
+      dominant:
+        - "warm amber"
+        - "brown"
+        - "skin tones"
+      accent:
+        - "teal tattoo glimpse"
+      avoid:
+        - "harshness"
+    prompt_used: |
+      Scarred woman and man with goatee shaking hands over a map-covered table,
+      slight smiles and mischievous expressions,
+      warm lantern light in a dark room,
+      moment of trust and shared levity,
+      classical oil painting, genre scene,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "marcus"
+      - "veyra"
+      - "intimate"
+      - "humor"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

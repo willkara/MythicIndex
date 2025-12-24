@@ -1,0 +1,26 @@
+# Storylint Action Plan
+
+## Must Fix
+{% for item in plan.must_fix %}
+- {{ item }}
+{% endfor %}
+
+## Should Fix
+{% for item in plan.should_fix %}
+- {{ item }}
+{% endfor %}
+
+## Optional
+{% for item in plan.optional %}
+- {{ item }}
+{% endfor %}
+
+## Open Questions
+{% for item in plan.open_questions %}
+- {{ item }}
+{% endfor %}
+
+## Quick Wins
+{% for item in plan.quick_wins %}
+- {{ item }}
+{% endfor %}

@@ -1,0 +1,68 @@
+entity_type: "character"
+slug: "krag"
+appearance: "Krag is a towering, immense figure of clear giant-kin heritage, possessing a thick neck and massive frame that dwarfs ordinary men. His weathered, ruddy face, appearing to be in its late thirties, is framed by a very short, dark crew cut and a dense, dark beard that shows the grit of the battlefield. His eyes are dark brown, shadowed beneath a heavy, prominent brow ridge, and his nose is noticeably broad and flattened, suggesting it has been broken previously. He is encased in a full suit of functional, heavy plate armor made of darkened, pitted iron or steel that shows significant signs of wear rather than polish. In his gauntleted right hand, he grips a huge, plain broadsword across his midsection, ready for use. The overall impression he leaves is one of overwhelming physical strength, brutality, and a dominating, somber presence."
+prompts: []
+image_inventory:
+  - id: "krag-portrait"
+    path: "images/portrait.png"
+    type: "imported"
+    is_reference_portrait: true
+    content:
+      title: "Reference Portrait"
+      description: "Canonical reference portrait for character consistency"
+      alt_text: "Reference portrait for character visual consistency"
+      tags:
+        - "portrait"
+        - "reference"
+    status: "approved"
+    provenance:
+      source: "manual"
+      created_at: "2025-12-22T14:38:50.426Z"
+      original_filename: "portrait.png"
+  - id: "krag-krag-04-01"
+    path: "images/krag-04.png"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "Krag Seated in Somber Reflection"
+      description: "A full-body seated portrait of the warrior Krag slumped on a bench, wearing worn partial plate armor over dark clothing. Dramatic top-down lighting highlights his furrowed brow, muscular forearms, and armored shoulder, casting the rest of his figure into deep shadow. The oil painting style emphasizes texture and a melancholic mood."
+      alt_text: "A painting of the warrior Krag sitting dejectedly in dark armor, looking downwards in a dimly lit, shadowed environment."
+      tags:
+        - "portrait"
+        - "canon"
+        - "oil-painting"
+        - "somber"
+        - "warrior"
+      suggested_filename: "seated-in-somber-reflection"
+      composition_notes: "A full-body seated portrait using strong chiaroscuro lighting to focus attention on the subject's weary expression and tense hands. The central figure is framed by encroaching darkness.\n"
+      narrative_significance: "This image captures Krag's deep weariness and the heavy emotional toll of his experiences as a warrior, showing him in a moment of vulnerability between battles.\n"
+      symbolic_elements: "The heavy, worn armor symbolizes his burdens, while the pervasive darkness suggests internal struggle or a bleak outlook.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "krag-04.png"
+    image_type: "portrait"
+    image_subtype: "dramatic"
+    lighting:
+      primary_source: "overhead directional light"
+      quality: "harsh and dramatic (chiaroscuro)"
+      direction: "top-down from front"
+      color_temperature: "warm golden"
+      shadow_depth: "deep and obscuring"
+      atmospheric: "clear but dark"
+    palette:
+      dominant:
+        - "deep umber shadow"
+        - "aged bronze armor"
+        - "dark leather brown"
+      accent:
+        - "warm skin tone highlight"
+        - "golden metallic sheen"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "rugged muscular build"
+        - "short cropped dark hair"
+        - "weathered facial features"
+        - "worn plate pauldrons and gauntlets"
+      notes: "The depiction establishes a rugged, weary warrior aesthetic consistent with the character's archetype."

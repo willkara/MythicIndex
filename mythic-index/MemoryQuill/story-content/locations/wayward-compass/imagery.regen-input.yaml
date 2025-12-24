@@ -1,0 +1,104 @@
+location:
+  slug: wayward-compass
+  name: The Wayward Compass Inn
+  files:
+    overview:
+      path: locations/wayward-compass/overview.md
+      excerpt: ''
+      exists: true
+    description:
+      path: locations/wayward-compass/description.md
+      excerpt: ''
+      exists: true
+    inhabitants:
+      path: locations/wayward-compass/inhabitants.md
+      excerpt: ''
+      exists: true
+zones_manifest:
+  path: locations/wayward-compass/zones.yaml
+  zones:
+  - slug: alcove
+    name: Alcove Near the Kitchen
+    featured_in_chapters:
+    - ch11.5-wayside-whispers
+  - slug: bar-run
+    name: The Bar Run
+  - slug: booth
+    name: The Shadowed Corner Booth
+  - slug: common-room
+    name: Common Room
+    featured_in_chapters:
+    - ch10-the-wayward-compass
+    - ch11.5-wayside-whispers
+    - ch17-the-long-road-home
+  - slug: confrontation
+    name: The Confrontation
+  - slug: durja-perspective
+    name: The Command Sightline
+  - slug: essence
+    name: Common Room at Evening Peak
+  - slug: for-fucks-sake
+    name: Durja's Resignation
+  - slug: inhabited
+    name: The Inn at Work
+  - slug: kitchen-alcove
+    name: Alcove Near the Kitchen
+  - slug: kitchen-pass
+    name: Kitchen Pass
+  - slug: marcus-watching
+    name: The Watcher in Shadow
+  - slug: morning
+    name: The Quiet Before
+  - slug: shadowed-corner-booth
+    name: The Shadowed Corner Booth
+  - slug: stairs-to-rooms
+    name: Stairs to Rooms
+  - slug: table-field
+    name: The Table Field
+  - slug: threshold-and-baffle
+    name: Threshold and Wind-Baffle
+  - slug: triage
+    name: Care Within the Tactical Shell
+chapter_evidence:
+- slug: ch10-the-wayward-compass
+  files:
+    content:
+      path: chapters/ch10-the-wayward-compass/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch10-the-wayward-compass/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+- slug: ch11.5-wayside-whispers
+  files:
+    content:
+      path: chapters/ch11.5-wayside-whispers/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch11.5-wayside-whispers/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+- slug: ch17-the-long-road-home
+  files:
+    content:
+      path: chapters/ch17-the-long-road-home/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch17-the-long-road-home/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+intrinsic_characters:
+- slug: durja
+  reason_intrinsic: Referenced in locations/wayward-compass/inhabitants.md
+  files:
+    profile:
+      path: characters/durja/profile.md
+      excerpt: ''
+      exists: true
+    imagery:
+      path: characters/durja/imagery.yaml
+      excerpt: ''
+      exists: true

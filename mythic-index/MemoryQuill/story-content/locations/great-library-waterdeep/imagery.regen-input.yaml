@@ -1,0 +1,83 @@
+location:
+  slug: great-library-waterdeep
+  name: The Great Library of Waterdeep
+  files:
+    overview:
+      path: locations/great-library-waterdeep/overview.md
+      excerpt: ''
+      exists: true
+    description:
+      path: locations/great-library-waterdeep/description.md
+      excerpt: ''
+      exists: true
+    inhabitants:
+      path: locations/great-library-waterdeep/inhabitants.md
+      excerpt: ''
+      exists: true
+zones_manifest:
+  path: locations/great-library-waterdeep/zones.yaml
+  zones:
+  - slug: breathing-wall
+    name: The Breathing Wall
+  - slug: debris-field
+    name: Debris Field
+    featured_in_chapters:
+    - ch23-the-library-rescue
+  - slug: entry-vestibule
+    name: Entry Screening & Vestibule
+  - slug: exterior
+    name: Exterior
+    featured_in_chapters:
+    - ch23-the-library-rescue
+  - slug: flood-crisis
+    name: Sub-Archives Flood Crisis
+  - slug: flooded-chamber
+    name: Flooded Chamber
+    featured_in_chapters:
+    - ch23-the-library-rescue
+  - slug: general-stacks
+    name: General Stacks (Open Access)
+  - slug: grand-reading-hall
+    name: Grand Reading Hall
+  - slug: medical-station
+    name: Medical Station
+    featured_in_chapters:
+    - ch23-the-library-rescue
+  - slug: pit-edge
+    name: Pit Edge
+    featured_in_chapters:
+    - ch23-the-library-rescue
+  - slug: reading-hall
+    name: Grand Reading Hall
+  - slug: reading-hall-night
+    name: Grand Reading Hall - Night
+  - slug: research-scriptorium
+    name: Research Rooms & Scriptorium
+  - slug: restricted-vault
+    name: Restricted Stacks Vault
+  - slug: roof-maintenance
+    name: Roof Lanterns & Maintenance Walks
+  - slug: security-chokepoints
+    name: Security Envelope & Chokepoints
+  - slug: service-quarantine
+    name: Service, Receiving & Quarantine
+  - slug: sub-archives
+    name: Sub-Archives (Below Grade)
+    featured_in_chapters:
+    - ch23-the-library-rescue
+  - slug: sub-archives-normal
+    name: Sub-Archives Corridor
+  - slug: watch-cordon
+    name: City Watch Cordon at Plaza
+chapter_evidence:
+- slug: ch23-the-library-rescue
+  files:
+    content:
+      path: chapters/ch23-the-library-rescue/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch23-the-library-rescue/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+intrinsic_characters: []

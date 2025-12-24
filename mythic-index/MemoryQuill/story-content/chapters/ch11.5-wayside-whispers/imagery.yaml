@@ -1,0 +1,591 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: Wayside Whispers
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch11-5-wayside-whispers"
+  chapter_number: 11.5
+  chapter_title: "Wayside Whispers"
+  visual_thesis: "Information ripples outward through smoke and ink, converging on two figures who hold a key to something yet unnamed."
+  color_palette:
+    primary:
+      - "warm amber"
+      - "smoke gray"
+      - "sepia"
+      - "ink black"
+    accent:
+      - "firelight gold"
+      - "cream"
+      - "ember orange"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 3
+    pastoral: 0
+    celebratory: 0
+    aquatic: 0
+    ethereal: 0
+    intimate: 3
+    kinetic: 0
+    ominous: 0
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: "Seated in alcove. Hand resting on pouch. Burn scar catching half-light. Contemplative."
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: "Armor partially covered by civilian cloak. Iron lantern dimmed. Patient partner."
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "marcus-heartbridge"
+    name: "Marcus Heartbridge"
+    scene_variations: "Folding a small note. Empty smile. Sharp eyes. Seated in shadowed alcove."
+    reference_images:
+      - "marcus-heartbridge-portrait-study-01"
+
+  - ref: "durja"
+    name: "Durja"
+    scene_variations: "Polishing tankard. Dry expression. Knowing observer."
+    reference_images:
+      - "durja-tavern-keep-01"
+
+  - ref: "tennison-quill"
+    name: "Tennison Quill"
+    scene_variations: "Ink-stained hands. Compositor's tools. Busy at layout."
+    reference_images: []
+
+  - ref: "clerk-dena"
+    name: "Clerk Dena"
+    scene_variations: "Ink-stained fingers. Tapping empty space on newsprint."
+    reference_images: []
+
+locations:
+  - ref: "wayward-compass"
+    zones:
+      - id: "overview"
+        chapter_context: "Low-beamed crossroads inn. Smoke and murmur. Islands of amber light amid shadow. Sawdust floors."
+      - id: "alcove"
+        chapter_context: "Booth-like recess. Small table, low lantern. Private bubble for decisions."
+
+  - ref: "waterdeep-chronicle"
+    zones:
+      - id: "overview"
+        chapter_context: "Ink-stained workspace. Type cases, layout frames. Drying broadsheets. Metallic tang of lead type."
+
+  - ref: "locksmiths-row"
+    zones:
+      - id: "overview"
+        chapter_context: "Craftsman's workbench. Scarred oak, precision tools, metal filings. Focused lamp."
+
+moments:
+  - id: "ch11-5-wayside-whispers-moment-01"
+    scene_id: "scn-11-5-01"
+    title: "The Hollow Note"
+    narrative_beat: "Marcus passing a folded note to a serving girl with a smile that means nothing."
+    visual_weight: "medium"
+    characters_present:
+      - "marcus-heartbridge"
+    location_zone: "wayward-compass/alcove"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch11-5-wayside-whispers-moment-02"
+    scene_id: "scn-11-5-01"
+    title: "Common Room Rumors"
+    narrative_beat: "Caravan drovers leaning in to whisper about the 'ledger that walked out of Stonebridge'."
+    visual_weight: "medium"
+    characters_present:
+      - "durja"
+    location_zone: "wayward-compass/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch11-5-wayside-whispers-moment-03"
+    scene_id: "scn-11-5-02"
+    title: "Strategic Blank"
+    narrative_beat: "Clerk Dena tapping the empty space on the newsprint where an official quote should be."
+    visual_weight: "medium"
+    characters_present:
+      - "clerk-dena"
+      - "tennison-quill"
+    location_zone: "waterdeep-chronicle/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch11-5-wayside-whispers-moment-04"
+    scene_id: "scn-11-5-02"
+    title: "The Printer's Work"
+    narrative_beat: "Tennison Quill setting type for the 'Small Notices', conduct of information through metal and ink."
+    visual_weight: "medium"
+    characters_present:
+      - "tennison-quill"
+    location_zone: "waterdeep-chronicle/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch11-5-wayside-whispers-moment-05"
+    scene_id: "scn-11-5-03"
+    title: "The Wards of the Void"
+    narrative_beat: "Close up of the mysterious cylinder on the locksmith's bench, ward patterns catching the light."
+    visual_weight: "medium"
+    characters_present: []
+    location_zone: "locksmiths-row/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch11-5-wayside-whispers-moment-06"
+    scene_id: "scn-11-5-04"
+    title: "Broker's Ledger"
+    narrative_beat: "Close up of the dockside ledger entries, documenting the traffic of Vexweld and the 'component'."
+    visual_weight: "medium"
+    characters_present: []
+    location_zone: "wayward-compass/alcove"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch11-5-wayside-whispers-moment-07"
+    scene_id: "scn-11-5-05"
+    title: "The Pouch Exchange"
+    narrative_beat: "Veyra resting her hand on the pouch Thorne has slid across the table, accepting the mystery."
+    visual_weight: "hero"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    location_zone: "wayward-compass/alcove"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch11-5-wayside-whispers-img-11-5-01-01"
+    source_moment: "ch11-5-wayside-whispers-moment-01"
+    scene_id: "scn-11-5-01"
+    image_type: "detail"
+    category:
+      - "character"
+      - "action"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: "Espionage intimacy. Marcus's 'smile that says nothing' captured in warm close lighting."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Marcus Heartbridge completes the final fold of a small paper note. A serving girl's hand enters from the right to receive it. Marcus's face holds an empty smile. His dark eyes remain sharp and watchful. Shadowed tavern alcove.
+    composition_notes: |
+      Medium shot favoring Marcus. Hands at center-frame. Note is focal point. Alcove's darkness creates natural vignetting.
+    visual_hook: "The folded paper mid-handoff, fingers precise, the smile utterly empty of meaning"
+    depicts_characters:
+      - "marcus-heartbridge"
+    character_states:
+      marcus-heartbridge: |
+        Leaning forward. Elegant fingers. Mask-like smile. High-collared slate doublet.
+    location: "wayward-compass"
+    lighting:
+      primary_source: "hanging lantern"
+      quality: "soft, warm, intimate"
+      direction: "above/front"
+      color_temperature: "warm amber"
+      shadow_depth: "moderate"
+      atmospheric: "pipe smoke haze"
+    palette:
+      dominant:
+        - "warm amber"
+        - "deep slate"
+        - "shadow brown"
+      accent:
+        - "gold ring"
+        - "cream paper"
+      avoid:
+        - "cold blues"
+    prompt_used: |
+      Man with dark brown hair and neat goatee passing folded paper note to serving girl in tavern alcove,
+      practiced empty smile, sharp observant eyes,
+      warm amber lamplight from above,
+      pipe smoke haze,
+      classical oil painting, Dutch Golden Age intimacy,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin
+    tags:
+      - "character-detail"
+      - "marcus-heartbridge"
+      - "espionage"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch11-5-wayside-whispers-img-11-5-01-02"
+    source_moment: "ch11-5-wayside-whispers-moment-02"
+    scene_id: "scn-11-5-01"
+    image_type: "beat"
+    category:
+      - "location"
+      - "moment"
+    scene_mood: "intimate"
+    mood_rationale: "Tavern rumors. Group leaning in. Warmth and shared secrets."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      A group of caravan drovers leaning in close around a scarred wooden table in the Wayward Compass. One man is whispering, hand shielding his mouth. The others listen with rapt attention. Durja is in the background, polishing a tankard and watching.
+    composition_notes: |
+      Group shot. Circular arrangement. Focus on the central whispering figure. Warm pools of light.
+    visual_hook: "The synchronized lean of the patrons toward the source of the secret."
+    depicts_characters:
+      - "durja"
+    character_states:
+      durja: |
+        Background. Polishing. Assessing.
+    location: "wayward-compass"
+    lighting:
+      primary_source: "Overhead lantern"
+      quality: "Warm, island of light"
+      direction: "Top-down"
+      color_temperature: "Amber"
+      shadow_depth: "Soft"
+      atmospheric: "Smoky"
+    palette:
+      dominant:
+        - "amber"
+        - "wood brown"
+        - "shadow"
+      accent:
+        - "metal glint"
+      avoid:
+        - "cold light"
+    prompt_used: |
+      Group of medieval travelers leaning in close at a tavern table whispering,
+      smoke filled room with low beams,
+      orc innkeeper in background,
+      atmosphere of rumors and secrets,
+      classical oil painting, genre scene,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "rumors"
+      - "intimate"
+      - "tavern"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch11-5-wayside-whispers-img-11-5-02-01"
+    source_moment: "ch11-5-wayside-whispers-moment-03"
+    scene_id: "scn-11-5-02"
+    image_type: "symbol"
+    category:
+      - "symbol"
+      - "moment"
+    scene_mood: "somber"
+    mood_rationale: "Strategic omission in layout. Intellectual gravity. The blank space speaks loudest."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Overhead view of a newspaper broadsheet in layout. Columns of text surrounding a conspicuous WHITE BLANK. An ink-stained finger taps the empty space. Printer's tools scattered on dark wood. Diffused daylight.
+    composition_notes: |
+      Overhead shot. Broadsheet fills frame. Blank center focal point. Pointing finger as vector.
+    visual_hook: "A finger tapping WHITE SPACE where words should be—the absence is the subject"
+    depicts_characters:
+      - "tennison-quill"
+      - "clerk-dena"
+    character_states:
+      tennison-quill: |
+        Only hands visible at edge.
+      clerk-dena: |
+        Only ink-stained hand/forearm visible. Tapping blank.
+    location: "waterdeep-chronicle"
+    lighting:
+      primary_source: "diffused daylight"
+      quality: "soft, clear"
+      direction: "above/side"
+      color_temperature: "neutral"
+      shadow_depth: "minimal"
+      atmospheric: "dust motes"
+    palette:
+      dominant:
+        - "cream paper"
+        - "sepia"
+        - "ink black"
+      accent:
+        - "skin tones"
+      avoid:
+        - "bright colors"
+    prompt_used: |
+      Overhead view of newspaper broadsheet in layout with a conspicuous empty white blank space,
+      ink-stained finger tapping the void,
+      printer tools on dark wood surface,
+      sepia and cream tones,
+      classical oil painting, documentary quality,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "symbol"
+      - "newspaper"
+      - "somber"
+      - "omission"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch11-5-wayside-whispers-img-11-5-02-02"
+    source_moment: "ch11-5-wayside-whispers-moment-04"
+    scene_id: "scn-11-5-02"
+    image_type: "beat"
+    category:
+      - "character"
+      - "action"
+    scene_mood: "somber"
+    mood_rationale: "The physical labor of news. Setting type. Precision and lead."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Tennison Quill standing at a compositor's bench, meticulously setting lead type into a frame. His face is focused, lit by clean window light. Stacks of paper nearby. The workshop is functional and ink-scented.
+    composition_notes: |
+      Medium shot. Side profile of Quill. Focus on the hands and the type tray.
+    visual_hook: "The metallic glint of the lead type against the dark ink on the compositor's fingers."
+    depicts_characters:
+      - "tennison-quill"
+    character_states:
+      tennison-quill: |
+        Focused. Setting type. Ink-stained apron.
+    location: "waterdeep-chronicle"
+    lighting:
+      primary_source: "Large window"
+      quality: "Clear, practical"
+      direction: "Side"
+      color_temperature: "Neutral"
+      shadow_depth: "Moderate"
+      atmospheric: "Ink/paper dust"
+    palette:
+      dominant:
+        - "ink black"
+        - "paper cream"
+        - "lead gray"
+      accent:
+        - "wood brown"
+      avoid:
+        - "warm amber"
+    prompt_used: |
+      Medieval printer setting lead type into a layout frame,
+      ink-stained hands and apron,
+      clear window light illuminating the workspace,
+      stacks of broadsheets in background,
+      classical oil painting, realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "printer"
+      - "action"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch11-5-wayside-whispers-img-11-5-03-01"
+    source_moment: "ch11-5-wayside-whispers-moment-05"
+    scene_id: "scn-11-5-03"
+    image_type: "detail"
+    category:
+      - "symbol"
+      - "moment"
+    scene_mood: "somber"
+    mood_rationale: "Cylinder as mystery. Old mountain work. Dramatic single-source lighting."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Metal cylinder with concentric ward patterns on a locksmith's workbench. Metal filings scattered around. Precision tools frame the scene. Corner of a letter visible with "old mountain work". Single focused lamp.
+    composition_notes: |
+      Close shot, slight low angle. Cylinder at upper-third. Tool scatter lower frame. Chiaroscuro.
+    visual_hook: "Concentric ward patterns catching focused lamplight, metal filings scattered like failed attempts"
+    depicts_characters: []
+    character_states: {}
+    location: "locksmiths-row"
+    lighting:
+      primary_source: "focused lamp"
+      quality: "hard, dramatic"
+      direction: "above/left"
+      color_temperature: "warm intense"
+      shadow_depth: "deep, rich"
+      atmospheric: "metal dust"
+    palette:
+      dominant:
+        - "burnished metal"
+        - "dark wood"
+        - "shadow"
+      accent:
+        - "lamp gold"
+      avoid:
+        - "bright colors"
+    prompt_used: |
+      Metal cylinder with precise ward patterns on a scarred wooden workbench,
+      metal filings and locksmith tools surrounding it,
+      single focused work lamp creating dramatic shadows,
+      handwritten letter corner visible,
+      classical oil painting, Rembrandt lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, magical glow
+    tags:
+      - "artifact"
+      - "mystery"
+      - "somber"
+      - "detail"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch11-5-wayside-whispers-img-11-5-04-01"
+    source_moment: "ch11-5-wayside-whispers-moment-06"
+    scene_id: "scn-11-5-04"
+    image_type: "detail"
+    category:
+      - "symbol"
+      - "moment"
+    scene_mood: "somber"
+    mood_rationale: "Broker traffic records. The weight of documentation. Shadow network made visible."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Close up of a ledger page. Neat ink entries: "Vexweld Innovations", "Hardware, oversized". A strange sigil in the margin. The ink is dark and permanent. A candle flickers off-frame, casting light across the grain of the paper.
+    composition_notes: |
+      Tight shot on the text. High contrast ink on cream paper. Marginalia focal point.
+    visual_hook: "The cryptic marginal sigil that changes from 'confidence' to 'danger'."
+    depicts_characters: []
+    character_states: {}
+    location: "wayward-compass"
+    lighting:
+      primary_source: "Candle"
+      quality: "Low, intimate"
+      direction: "Side"
+      color_temperature: "Amber"
+      shadow_depth: "Moderate"
+      atmospheric: "Still"
+    palette:
+      dominant:
+        - "ink black"
+        - "cream paper"
+        - "shadow"
+      accent:
+        - "amber light"
+      avoid:
+        - "bright daylight"
+    prompt_used: |
+      Close up of a handwritten medieval ledger page with ink entries,
+      cryptic symbols in the margins,
+      flickering candlelight across textured paper,
+      atmosphere of documentation and secrets,
+      classical oil painting, realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "detail"
+      - "ledger"
+      - "secrets"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch11-5-wayside-whispers-img-11-5-05-01"
+    source_moment: "ch11-5-wayside-whispers-moment-07"
+    scene_id: "scn-11-5-05"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: "Culmination of decision. Veyra's restraint and philosophy. Partnership in dying lantern light."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Veyra and Thorne in shadowed tavern alcove. Thorne has slid a cloth pouch across. Veyra's hand rests on it—palm flat, steadying. Lantern burns at lowest wick. Veyra's burn scar catches half-light. Thorne watches, patient.
+    composition_notes: |
+      Medium two-shot. Pouch at visual center. Lantern source between them. Rule of thirds: Veyra upper-left, Thorne upper-right.
+    visual_hook: "Veyra's scarred hand resting on the pouch—steadying it, claiming it, but not opening it"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    character_states:
+      veyra-thornwake: |
+        Leaning forward. Hand flat on pouch. Burn scar half-illuminated. Stoic resolve.
+      thorne-brightward: |
+        Seated back. Watchful, patient. Blue cloak sigil catching light.
+    location: "wayward-compass"
+    lighting:
+      primary_source: "low lantern"
+      quality: "soft, warm, dying"
+      direction: "center-low"
+      color_temperature: "deep amber"
+      shadow_depth: "soft gradients"
+      atmospheric: "still air"
+    palette:
+      dominant:
+        - "deep amber"
+        - "shadow brown"
+        - "sienna"
+      accent:
+        - "teal tattoos"
+        - "blue cloak"
+      avoid:
+        - "cold blues"
+    prompt_used: |
+      Veyra Thornwake and Thorne Brightward in a dark tavern alcove,
+      hand resting on a mysterious cloth pouch,
+      dimmed lantern light casting warm amber glow,
+      atmosphere of partnership and secret future,
+      classical oil painting, Vermeer lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright light
+    tags:
+      - "hero"
+      - "partnership"
+      - "decision"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

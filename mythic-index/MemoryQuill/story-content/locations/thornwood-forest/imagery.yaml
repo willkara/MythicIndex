@@ -1,0 +1,1979 @@
+metadata:
+  entity_type: "location-imagery"
+  slug: "thornwood-forest"
+  name: "Thornwood Forest"
+  location_type: "wilderness"
+  narrative_soul: "The Thornwood is nature stripped of comfort—ancient, indifferent, and hungry for the careless. It serves as the story's wilderness crucible, where the Company must rely on skill rather than walls, and where Veyra's expertise transforms from \"useful\" to \"essential.\" Near the Silent Hand facility, the forest becomes something worse: a natural space twisted into wrongness, its watchful quality turned predatory.\n"
+  one_line_essence: "Ancient indifference that punishes the unwary and hides corruption"
+  generation_defaults:
+    provider: "openai"
+    model: "gpt-image-1"
+    quality: "high"
+location_visual_anchor:
+  signature_elements:
+    - "ancient old-growth trees with massive trunk girths (two to three people to circle)"
+    - "interlocking branch canopy creating permanent twilight"
+    - "deep shadow corridors between pillar-trunks"
+    - "layered forest floor of leaf-mold, moss, and exposed root-webs"
+    - "dappled unreliable light—bright shafts through canopy breaks, swallowed shadow elsewhere"
+    - "clear cold streams over dark stone beds"
+    - "granite outcrops breaking through forest floor"
+    - "ancient trees with faintly face-like bark and rune-scars (old fey influence)"
+    - "motes of fey-light in deep shade (subtle, not neon)"
+    - "stone markers with worn druidic glyphs along game trails"
+  materials:
+    trees: "hardwood and conifer trunks, bark rough and weathered"
+    floor: "compressed leaf-mold, pine needles, moss carpets, exposed root systems"
+    stone: "gray granite outcrops, lichen-covered, slick with moisture"
+    water: "clear cold streams, dark stone beds, ice shelves in winter"
+    snow: "white blanket, uncertain crust, powder beneath"
+    mud: "dark brown-black, boot-sucking, churned channels"
+  color_anchors:
+    trunks: "dark brown-gray bark, weathered silver on ancient specimens"
+    canopy_summer: "deep forest green, dappled gold where light breaks"
+    canopy_winter: "white snow ceiling, dark bare branches"
+    floor_winter: "white snow, dark exposed roots and stones"
+    floor_thaw: "dark mud, gray-green new growth, fog-white"
+    water: "clear over dark stone, silver-white ice at edges"
+    granite: "gray stone, green-gray lichen, wet-dark when damp"
+  characteristic_light:
+    default: "permanent twilight under canopy; sudden shafts of pale gold through breaks"
+    winter: "gray-white from snow-laden canopy; eerie luminosity reflecting up from snow"
+    thaw: "gray and diffuse; fog scatters light into uniform murk"
+    storm: "near-total darkness; what light exists is cold and blue-gray"
+    corrupted: "same dappled pattern but shadows seem too deep, wrong quality"
+overview:
+  slug: "thornwood-forest-winter-cathedral"
+  title: "The Winter Cathedral"
+  image_type: "establishing"
+  category:
+    - "Epic Landscape"
+    - "Environmental"
+    - "Seasonal"
+  scene_mood: "somber"
+  mood_rationale: "Chapter 8 is titled \"The Tracker in the Snow\"—the Company's first encounter with the Thornwood is this hushed, reverent, dangerous winter state. The mood must capture both the terrible beauty and the implicit threat: a cathedral that can kill the careless.\n"
+  visual_description: "The Thornwood in its winter glory—an endless colonnade of massive dark trunks rising from knee-deep snow into a white ceiling of snow-laden boughs. The trees are ancient, their girths requiring two or three people to circle, their branches interlocking overhead to create that distinctive cathedral architecture. Pale morning light breaks through gaps in the canopy, casting diagonal shafts that illuminate falling snow motes and create pools of gold on the white floor. The silence is palpable—you can almost hear the weight of snow pressing down, the occasional crack of ice-stressed wood. No movement except the slow fall of snow from overburdened branches. The forest stretches beyond sight in every direction, its identical repetition disorienting. Beautiful. Deadly. Indifferent.\n"
+  composition_notes: "Wide vertical composition to emphasize the towering height of ancient trunks and the cathedral-like sense of enclosure. Camera angle slightly upward, as if standing in the forest looking toward where the trees disappear into the white canopy. Depth achieved through layered trunk silhouettes receding into atmospheric haze. Light shafts provide diagonal leading lines. No human figures, or if present, tiny in scale to emphasize the forest's dominance. The viewer should feel small.\n"
+  narrative_significance: "This is the Thornwood as the Company first experiences it—the world outside city walls, where skill matters more than rank and the forest doesn't care about your credentials. It's the crucible that transforms Veyra from \"the tracker\" to the essential guide without whom they'd die. This image should make the viewer understand why wilderness survival is not a casual affair.\n"
+  symbolic_elements: "The cathedral metaphor runs deep: this is a place of reverence and danger, beautiful and lethal. The white ceiling above and the way the trunks rise like pillars suggests a natural church—but one that offers no salvation, only indifference. The shafts of light breaking through are moments of grace in an otherwise merciless environment.\n"
+  time_of_day: "morning"
+  weather: "clear winter, recent snowfall"
+  season: "winter"
+  required_elements:
+    - "massive ancient tree trunks with weathered bark"
+    - "snow-laden branches forming white canopy ceiling overhead"
+    - "deep snow on forest floor (knee-depth)"
+    - "interlocking branch architecture creating enclosed space"
+    - "pale gold light shafts breaking through canopy gaps"
+    - "atmospheric haze suggesting depth and cold"
+    - "falling snow motes caught in light shafts"
+    - "dark bark contrast against white snow"
+    - "sense of vast scale and repetition"
+  visible_beyond:
+    - "more forest—identical trees receding into haze"
+    - "glimpses of gray sky through distant canopy breaks"
+  approach_from: "within the forest, ground level"
+  lighting:
+    primary_source: "diffuse daylight through snow-laden canopy"
+    quality: "cold, pale gold in shafts, gray-white elsewhere"
+    direction: "above and diagonal through canopy breaks"
+    color_temperature: "cool overall, warm gold in direct shafts"
+    shadow_depth: "deep in trunk shadows, soft elsewhere from snow reflection"
+    atmospheric: "mist/haze from cold air, snow motes in light"
+  palette:
+    dominant:
+      - "snow white"
+      - "bark dark brown and gray"
+      - "shadow blue-gray"
+    accent:
+      - "pale gold light shafts"
+      - "silver-gray atmospheric haze"
+    avoid:
+      - "bright greens"
+      - "warm browns"
+      - "any spring/summer coloration"
+  aspect_ratio: "9:16"
+  orientation: "portrait"
+  size: "1536x2752"
+  prompt_used: "Ancient winter forest cathedral, massive old-growth tree trunks rising from deep snow into snow-laden canopy ceiling, interlocking branches overhead creating enclosed space, pale gold morning light shafts breaking through canopy gaps, falling snow motes caught in light, dark weathered bark contrasting white snow, knee-deep snow floor, endless colonnade of pillar-trunks receding into atmospheric haze, vast scale, hushed reverent silence, dangerous beauty, no human figures or tiny distant for scale, cold breath of winter, muted earth palette (dark bark brown, snow white, shadow blue-gray, pale gold shafts), deep rich shadows, atmospheric haze, melancholy weight, grandeur, Caspar David Friedrich solitude\n"
+  negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth textures, stock photo, digital art gloss, concept art polish, AI artifacts, spring foliage, green leaves, summer colors, bright cheerful lighting, warm cozy atmosphere, fantasy castle, buildings, civilization, paths, trails, signs, cozy cabin, welcoming, safe, tropical, desert, modern elements\n"
+  references:
+    - placeholder: "Chapter 8 winter forest description"
+      file: "chapters/ch08.md"
+      section: "The Tracker in the Snow"
+    - placeholder: "Seasonal character - winter"
+      file: "locations/thornwood-forest/description.md"
+      section: "Winter: The Hushed Cathedral"
+  generated_images: []
+  image_inventory:
+    - id: "thornwood-forest-winter-cathedral-1766319293203-2025-12-21"
+      path: "images/thornwood-forest-winter-cathedral-1766319293203-2025-12-21.jpg"
+      type: "generated"
+      status: "approved"
+      image_type: "establishing"
+      content:
+        title: "The Winter Cathedral"
+        description: "The Winter Cathedral"
+        alt_text: "The Winter Cathedral"
+        tags:
+          - "thornwood-forest-winter-cathedral"
+          - "generated"
+          - "establishing"
+      provenance:
+        source: "google"
+        created_at: "2025-12-21T12:22:10.375Z"
+        original_filename: "thornwood-forest-winter-cathedral-1766319293203-2025-12-21.jpg"
+      generation:
+        target_id: "thornwood-forest-winter-cathedral"
+        ir_hash: "31e08cdf1765990d"
+        prompt_used: "SYSTEM INSTRUCTION: SCENE CONSISTENCY MODE
+
+
+          The images above are REFERENCE IMAGES for a scene. They may include:
+
+          - character portraits (identity references)
+
+          - a location overview (environment reference)
+
+          - style references (art direction)
+
+
+          Generate a NEW scene matching the scenario.
+
+
+          CRITICAL REQUIREMENTS:
+
+          1. CHARACTER IDENTITY: If portraits are present, keep each character distinct and consistent (face, hair, key identifiers). Do not merge identities.
+
+          2. LOCATION CONTINUITY: Preserve the location’s architectural identity and design language from any location references.
+
+          3. FANTASY TONE: High-fantasy (D&D / Faerûn vibe) with believable magical details integrated into the world.
+
+          4. AVOID GROUNDED HISTORY: Avoid “real-world medieval Europe” drift; keep fantasy species variety and magical infrastructure plausible and grounded-in-world (not neon).
+
+          5. PRIORITY: If scenario conflicts with references, follow the scenario for action/composition while keeping identity and location continuity.
+
+
+          SCENARIO: massive ancient tree trunks with weathered bark, snow-laden branches forming white canopy ceiling overhead, deep snow on forest floor (knee-depth), interlocking branch architecture creating enclosed space, pale gold light shafts breaking through canopy gaps, atmospheric haze suggesting depth and cold, falling snow motes caught in light shafts, dark bark contrast against white snow, sense of vast scale and repetition, ancient old-growth trees with massive trunk girths (two to three people to circle), interlocking branch canopy creating permanent twilight, deep shadow corridors between pillar-trunks, layered forest floor of leaf-mold, moss, and exposed root-webs, dappled unreliable light—bright shafts through canopy breaks, swallowed shadow elsewhere, clear cold streams over dark stone beds, granite outcrops breaking through forest floor, ancient trees with faintly face-like bark and rune-scars (old fey influence), motes of fey-light in deep shade (subtle, not neon), stone markers with worn druidic glyphs along game trails, The Thornwood in its winter glory—an endless colonnade of massive dark trunks rising from knee-deep snow into a white ceiling of snow-laden boughs. The trees are ancient, their girths requiring two or three people to circle, their branches interlocking overhead to create that distinctive cathedral architecture. Pale morning light breaks through gaps in the canopy, casting diagonal shafts that illuminate falling snow motes and create pools of gold on the white floor. The silence is palpable—you can almost hear the weight of snow pressing down, the occasional crack of ice-stressed wood. No movement except the slow fall of snow from overburdened branches. The forest stretches beyond sight in every direction, its identical repetition disorienting. Beautiful. Deadly. Indifferent., Faerûn high-fantasy worldbuilding cues (subtle, believable magic): ancient standing stones with worn runes, druidic wards, faint fey-lights in mist, slightly uncanny flora and leyline ambience, Narrative context: This is the Thornwood as the Company first experiences it—the world outside city walls, where skill matters more than rank and the forest doesn't care about your credentials. It's the crucible that transforms Veyra from \"the tracker\" to the essential guide without whom they'd die. This image should make the viewer understand why wilderness survival is not a casual affair., Wide vertical composition to emphasize the towering height of ancient trunks and the cathedral-like sense of enclosure. Camera angle slightly upward, as if standing in the forest looking toward where the trees disappear into the white canopy. Depth achieved through layered trunk silhouettes receding into atmospheric haze. Light shafts provide diagonal leading lines. No human figures, or if present, tiny in scale to emphasize the forest's dominance. The viewer should feel small., morning, clear winter, recent snowfall, winter, light from diffuse daylight through snow-laden canopy, cold, pale gold in shafts, gray-white elsewhere, above and diagonal through canopy breaks, cool overall, warm gold in direct shafts tones, deep in trunk shadows, soft elsewhere from snow reflection shadows, mist/haze from cold air, snow motes in light, dominant colors: snow white, bark dark brown and gray, shadow blue-gray; accent colors: pale gold light shafts, silver-gray atmospheric haze
+
+          , epic high-fantasy exterior, fantastical silhouettes and skyline, arcane lanterns and ward-lights, subtle magical phenomena integrated into the environment, dynamic skies, cinematic composition, atmospheric depth, Painterly cinematic high fantasy with grounded physicality.
+
+
+          We want images that feel like a premium illustrated novel: readable silhouettes, emotional
+
+          clarity, and rich material rendering (stone, timber, leather, metal) without drifting into:
+
+          - photoreal “camera” aesthetics
+
+          - slick, airbrushed game key art
+
+          - anime / CGI / plastic rendering\n"
+        negative_prompt_used: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth textures, stock photo, digital art gloss, concept art polish, AI artifacts, spring foliage, green leaves, summer colors, bright cheerful lighting, warm cozy atmosphere, fantasy castle, buildings, civilization, paths, trails, signs, cozy cabin, welcoming, safe, tropical, desert, modern elements, photorealistic, futuristic elements, sci-fi, firearms, real-world Europe, historical reenactment, Victorian, Tudor, Renaissance, Napoleonic, 14th century, flat lighting"
+        model: "gemini-3-pro-image-preview"
+        provider: "google"
+        constraints:
+          aspect_ratio: "9:16"
+          size: "1536x2752"
+          orientation: "portrait"
+          quality: "high"
+        provider_metadata:
+          batch_run_id: "2025-12-21T12-14-51-854"
+          task_key: "location/thornwood-forest/thornwood-forest-winter-cathedral@6c81669c8351fbda"
+        target_metadata:
+          entity_type: "location"
+          entity_slug: "thornwood-forest"
+          image_type: "establishing"
+          title: "The Winter Cathedral"
+          scene_mood: "somber"
+    - id: "thornwood-forest-winter-cathedral-1766358647432-2025-12-21"
+      path: "images/thornwood-forest-winter-cathedral-1766358647432-2025-12-21.jpg"
+      type: "generated"
+      status: "approved"
+      image_type: "establishing"
+      content:
+        title: "The Winter Cathedral"
+        description: "The Winter Cathedral"
+        alt_text: "The Winter Cathedral"
+        tags:
+          - "thornwood-forest-winter-cathedral"
+          - "generated"
+          - "establishing"
+      provenance:
+        source: "google"
+        created_at: "2025-12-21T23:55:54.341Z"
+        original_filename: "thornwood-forest-winter-cathedral-1766358647432-2025-12-21.jpg"
+      generation:
+        target_id: "thornwood-forest-winter-cathedral"
+        ir_hash: "31e08cdf1765990d"
+        prompt_used: "SYSTEM INSTRUCTION: LOCATION CONSISTENCY MODE
+
+
+          The images above are REFERENCE IMAGES for a specific LOCATION.
+
+          Generate a NEW image of this SAME location in the described scenario.
+
+
+          CRITICAL REQUIREMENTS:
+
+          1. LOCATION IDENTITY: Preserve architecture, materials, lighting language, and signature elements from the references.
+
+          2. FANTASY TONE: This is a high-fantasy world (D&D / Faerûn vibe). Include subtle magical infrastructure (runes, enchanted lanterns, ward-stones, guild sigils) where appropriate.
+
+          3. NO FACE CLONING: If people appear, keep them generic and varied—do not repeat an identical face across images unless explicitly required.
+
+          4. AVOID GROUNDED HISTORY: Do not drift into “historical reenactment” or real-world medieval Europe. Keep the design language unmistakably fantasy (Faerûn) even when the scene is gritty and practical.
+
+          5. PRIORITY: If the scenario conflicts with the references, follow the scenario for composition/mood while preserving the location’s identity.
+
+
+          SCENARIO: massive ancient tree trunks with weathered bark, snow-laden branches forming white canopy ceiling overhead, deep snow on forest floor (knee-depth), interlocking branch architecture creating enclosed space, pale gold light shafts breaking through canopy gaps, atmospheric haze suggesting depth and cold, falling snow motes caught in light shafts, dark bark contrast against white snow, sense of vast scale and repetition, ancient old-growth trees with massive trunk girths (two to three people to circle), interlocking branch canopy creating permanent twilight, deep shadow corridors between pillar-trunks, layered forest floor of leaf-mold, moss, and exposed root-webs, dappled unreliable light—bright shafts through canopy breaks, swallowed shadow elsewhere, clear cold streams over dark stone beds, granite outcrops breaking through forest floor, ancient trees with faintly face-like bark and rune-scars (old fey influence), motes of fey-light in deep shade (subtle, not neon), stone markers with worn druidic glyphs along game trails, The Thornwood in its winter glory—an endless colonnade of massive dark trunks rising from knee-deep snow into a white ceiling of snow-laden boughs. The trees are ancient, their girths requiring two or three people to circle, their branches interlocking overhead to create that distinctive cathedral architecture. Pale morning light breaks through gaps in the canopy, casting diagonal shafts that illuminate falling snow motes and create pools of gold on the white floor. The silence is palpable—you can almost hear the weight of snow pressing down, the occasional crack of ice-stressed wood. No movement except the slow fall of snow from overburdened branches. The forest stretches beyond sight in every direction, its identical repetition disorienting. Beautiful. Deadly. Indifferent., Faerûn high-fantasy worldbuilding cues (subtle, believable magic): ancient standing stones with worn runes, druidic wards, faint fey-lights in mist, slightly uncanny flora and leyline ambience, Narrative context: This is the Thornwood as the Company first experiences it—the world outside city walls, where skill matters more than rank and the forest doesn't care about your credentials. It's the crucible that transforms Veyra from \"the tracker\" to the essential guide without whom they'd die. This image should make the viewer understand why wilderness survival is not a casual affair., Wide vertical composition to emphasize the towering height of ancient trunks and the cathedral-like sense of enclosure. Camera angle slightly upward, as if standing in the forest looking toward where the trees disappear into the white canopy. Depth achieved through layered trunk silhouettes receding into atmospheric haze. Light shafts provide diagonal leading lines. No human figures, or if present, tiny in scale to emphasize the forest's dominance. The viewer should feel small., morning, clear winter, recent snowfall, winter, light from diffuse daylight through snow-laden canopy, cold, pale gold in shafts, gray-white elsewhere, above and diagonal through canopy breaks, cool overall, warm gold in direct shafts tones, deep in trunk shadows, soft elsewhere from snow reflection shadows, mist/haze from cold air, snow motes in light, dominant colors: snow white, bark dark brown and gray, shadow blue-gray; accent colors: pale gold light shafts, silver-gray atmospheric haze
+
+          , epic high-fantasy exterior, fantastical silhouettes and skyline, arcane lanterns and ward-lights, subtle magical phenomena integrated into the environment, dynamic skies, cinematic composition, atmospheric depth, Painterly cinematic high fantasy with grounded physicality.
+
+
+          We want images that feel like a premium illustrated novel: readable silhouettes, emotional
+
+          clarity, and rich material rendering (stone, timber, leather, metal) without drifting into:
+
+          - photoreal “camera” aesthetics
+
+          - slick, airbrushed game key art
+
+          - anime / CGI / plastic rendering\n"
+        negative_prompt_used: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth textures, stock photo, digital art gloss, concept art polish, AI artifacts, spring foliage, green leaves, summer colors, bright cheerful lighting, warm cozy atmosphere, fantasy castle, buildings, civilization, paths, trails, signs, cozy cabin, welcoming, safe, tropical, desert, modern elements, photorealistic, futuristic elements, sci-fi, firearms, real-world Europe, historical reenactment, Victorian, Tudor, Renaissance, Napoleonic, 14th century, flat lighting"
+        model: "gemini-3-pro-image-preview"
+        provider: "google"
+        constraints:
+          aspect_ratio: "9:16"
+          size: "1536x2752"
+          orientation: "portrait"
+          quality: "high"
+        provider_metadata:
+          batch_run_id: "2025-12-21T23-10-46-589"
+          task_key: "location/thornwood-forest/thornwood-forest-winter-cathedral@892c39af86a180d3"
+        target_metadata:
+          entity_type: "location"
+          entity_slug: "thornwood-forest"
+          image_type: "establishing"
+          title: "The Winter Cathedral"
+          scene_mood: "somber"
+zones:
+  - name: "The Guide and the Guided"
+    slug: "thornwood-forest-veyra-leading"
+    title: "The Tracker's Trail"
+    image_type: "inhabited"
+    zone: "game-trails"
+    category:
+      - "Character in Environment"
+      - "Group Travel"
+      - "Wilderness Survival"
+    scene_mood: "kinetic"
+    mood_rationale: "This is the moment that defines Veyra's value—purposeful movement through terrain that would defeat others. The mood is urgent but controlled: the Company moving with focused intent, Veyra's confidence contrasting with the caution of those following. Not panic, but determined forward motion against the forest's indifference.\n"
+    visual_description: "A game trail barely visible beneath the snow, threading between ancient trunks. Veyra Thornwake leads—her posture confident, reading the terrain ahead, one hand brushing a branch as she identifies the path invisible to others. Behind her, Company members follow in single file, stepping carefully in her footprints, breath visible in the cold air. The forest walls close in on either side—dense brush and interlocking branches that would trap anyone who left the trail. The difference between expert and amateur is written in body language: Veyra moves like she belongs here; the others move like they're being tolerated.\n"
+    composition_notes: "Medium depth shot following the line of travelers, camera positioned slightly ahead and to the side of Veyra. Emphasis on the narrow trail threading through impossible density—the forest \"closing\" on either side while the path ahead remains just visible. Depth achieved through layered figures receding into the winter haze. Veyra in sharper focus than those following, establishing her primacy.\n"
+    narrative_significance: "This is the core character-space relationship that defines Thornwood scenes: Veyra's expertise transforming dangerous terrain into navigable passage. Without her, they'd be lost within the hour, dead within the day. The image should make this dependency visible—the contrast between her ease and their effort.\n"
+    symbolic_elements: "The single-file formation speaks to trust and hierarchy: Veyra ahead, the Company following literally in her footsteps. The invisible trail that only she can see represents expertise as a form of magic more practical than any spell.\n"
+    location_within: "game trails threading through deep wood"
+    time_of_day: "morning"
+    weather: "clear winter, still air"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: "Leading the group with confident, economical movement. Her half-face dragon scars visible in profile as she turns to check the path. Wearing practical winter travel gear—layered wool and leather in muted earth tones, hood pushed back to keep peripheral vision clear. Her signature lantern secured at her belt (not lit in daylight). Bow and quiver accessible but not drawn. She moves like a native creature of this forest, completely at ease in terrain that frightens city-dwellers.\n"
+    character_sources:
+      veyra-thornwake: "canonical"
+    required_elements:
+      - "narrow game trail depression visible under snow"
+      - "single-file formation of travelers"
+      - "dense forest walls closing on either side"
+      - "visible breath in cold air"
+      - "footprints in snow behind the lead figure"
+      - "interlocking branches creating tunnel-like passage"
+      - "winter travel gear on all figures"
+      - "sense of purposeful forward movement"
+    lighting:
+      primary_source: "diffuse winter daylight through canopy"
+      quality: "cold, pale, scattered"
+      direction: "above through canopy breaks"
+      color_temperature: "cool blue-white overall"
+      shadow_depth: "moderate—snow reflects and fills shadows"
+      atmospheric: "cold breath vapor, some snow motes"
+    palette:
+      dominant:
+        - "snow white"
+        - "dark bark brown and gray"
+        - "muted earth-tone travel clothes"
+      accent:
+        - "breath vapor white"
+        - "pale skin tones against dark hoods"
+      avoid:
+        - "bright colors"
+        - "metal gleam"
+        - "fantasy costume elements"
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "2752x1536"
+    prompt_used: "Medieval fantasy wilderness travel scene, single-file group moving through ancient winter forest on narrow game trail, scarred woman tracker leading with confident expert posture, half-face burn scars visible in profile, practical earth-tone winter travel clothes, hood pushed back, reading terrain ahead, Company members following carefully in her footsteps, visible breath vapor in cold air, dense forest walls of interlocking branches closing on either side, snow-covered game trail barely visible, ancient massive tree trunks, deep snow, footprints trailing behind, purposeful forward movement through impossible terrain, the guide and the guided, diagonal composition leading eye along trail, harsh directional winter light, high contrast between figures and snow, motion and purpose, energy\n"
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, modern clothing, fantasy armor, glowing weapons, bright colors, summer forest, spring foliage, warm lighting, cozy atmosphere, easy terrain, wide open paths, casual stroll\n"
+    references:
+      - placeholder: "Chapter 8 tracking scene"
+        file: "chapters/ch08.md"
+        section: "The Tracker in the Snow"
+      - placeholder: "Veyra character imagery"
+        file: "characters/veyra-thornwake/imagery.yaml"
+        section: "canonical appearance"
+      - placeholder: "Game trails zone description"
+        file: "locations/thornwood-forest/location_analysis.yaml"
+        section: "zones - game-trails"
+    generated_images: []
+    image_inventory:
+      - id: "thornwood-forest-veyra-leading-1766319293208-2025-12-21"
+        path: "images/thornwood-forest-veyra-leading-1766319293208-2025-12-21.jpg"
+        type: "generated"
+        status: "approved"
+        image_type: "inhabited"
+        content:
+          title: "The Tracker's Trail"
+          description: "The Tracker's Trail"
+          alt_text: "The Tracker's Trail"
+          tags:
+            - "thornwood-forest-veyra-leading"
+            - "generated"
+            - "inhabited"
+        provenance:
+          source: "google"
+          created_at: "2025-12-21T12:22:10.392Z"
+          original_filename: "thornwood-forest-veyra-leading-1766319293208-2025-12-21.jpg"
+        generation:
+          target_id: "thornwood-forest-veyra-leading"
+          ir_hash: "eac6c700ebe1a615"
+          prompt_used: "SYSTEM INSTRUCTION: SCENE CONSISTENCY MODE
+
+
+            The images above are REFERENCE IMAGES for a scene. They may include:
+
+            - character portraits (identity references)
+
+            - a location overview (environment reference)
+
+            - style references (art direction)
+
+
+            Generate a NEW scene matching the scenario.
+
+
+            CRITICAL REQUIREMENTS:
+
+            1. CHARACTER IDENTITY: If portraits are present, keep each character distinct and consistent (face, hair, key identifiers). Do not merge identities.
+
+            2. LOCATION CONTINUITY: Preserve the location’s architectural identity and design language from any location references.
+
+            3. FANTASY TONE: High-fantasy (D&D / Faerûn vibe) with believable magical details integrated into the world.
+
+            4. AVOID GROUNDED HISTORY: Avoid “real-world medieval Europe” drift; keep fantasy species variety and magical infrastructure plausible and grounded-in-world (not neon).
+
+            5. PRIORITY: If scenario conflicts with references, follow the scenario for action/composition while keeping identity and location continuity.
+
+
+            SCENARIO: narrow game trail depression visible under snow, single-file formation of travelers, dense forest walls closing on either side, visible breath in cold air, footprints in snow behind the lead figure, interlocking branches creating tunnel-like passage, winter travel gear on all figures, sense of purposeful forward movement, ancient old-growth trees with massive trunk girths (two to three people to circle), interlocking branch canopy creating permanent twilight, deep shadow corridors between pillar-trunks, layered forest floor of leaf-mold, moss, and exposed root-webs, dappled unreliable light—bright shafts through canopy breaks, swallowed shadow elsewhere, clear cold streams over dark stone beds, granite outcrops breaking through forest floor, ancient trees with faintly face-like bark and rune-scars (old fey influence), motes of fey-light in deep shade (subtle, not neon), stone markers with worn druidic glyphs along game trails, A game trail barely visible beneath the snow, threading between ancient trunks. Veyra Thornwake leads—her posture confident, reading the terrain ahead, one hand brushing a branch as she identifies the path invisible to others. Behind her, Company members follow in single file, stepping carefully in her footprints, breath visible in the cold air. The forest walls close in on either side—dense brush and interlocking branches that would trap anyone who left the trail. The difference between expert and amateur is written in body language: Veyra moves like she belongs here; the others move like they're being tolerated., Faerûn high-fantasy worldbuilding cues (subtle, believable magic): ancient standing stones with worn runes, druidic wards, faint fey-lights in mist, slightly uncanny flora and leyline ambience, Narrative context: This is the core character-space relationship that defines Thornwood scenes: Veyra's expertise transforming dangerous terrain into navigable passage. Without her, they'd be lost within the hour, dead within the day. The image should make this dependency visible—the contrast between her ease and their effort., Medium depth shot following the line of travelers, camera positioned slightly ahead and to the side of Veyra. Emphasis on the narrow trail threading through impossible density—the forest \"closing\" on either side while the path ahead remains just visible. Depth achieved through layered figures receding into the winter haze. Veyra in sharper focus than those following, establishing her primacy., morning, clear winter, still air, light from diffuse winter daylight through canopy, cold, pale, scattered, above through canopy breaks, cool blue-white overall tones, moderate—snow reflects and fills shadows shadows, cold breath vapor, some snow motes, dominant colors: snow white, dark bark brown and gray, muted earth-tone travel clothes; accent colors: breath vapor white, pale skin tones against dark hoods, high fantasy, kinetic atmosphere, materials: hardwood and conifer trunks, bark rough and weathered, compressed leaf-mold, pine needles, moss carpets, exposed root systems, gray granite outcrops, lichen-covered, slick with moisture, Mood intent: This is the moment that defines Veyra's value—purposeful movement through terrain that would defeat others. The mood is urgent but controlled: the Company moving with focused intent, Veyra's confidence contrasting with the caution of those following. Not panic, but determined forward motion against the forest's indifference.
+
+            , storytelling moment, high-fantasy adventuring tone, emotional lighting, atmospheric depth, subtle spell effects, focus on character expressions, dramatic composition, Painterly cinematic high fantasy with grounded physicality.
+
+
+            We want images that feel like a premium illustrated novel: readable silhouettes, emotional
+
+            clarity, and rich material rendering (stone, timber, leather, metal) without drifting into:
+
+            - photoreal “camera” aesthetics
+
+            - slick, airbrushed game key art
+
+            - anime / CGI / plastic rendering\n"
+          negative_prompt_used: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, modern clothing, fantasy armor, glowing weapons, bright colors, summer forest, spring foliage, warm lighting, cozy atmosphere, easy terrain, wide open paths, casual stroll, smooth textures, concept art polish, green leaves, summer colors, bright cheerful lighting, warm cozy atmosphere, fantasy castle, buildings, civilization, paths, trails, signs, cozy cabin, welcoming, safe, tropical, desert, modern elements, photorealistic, futuristic elements, sci-fi, firearms, real-world Europe, historical reenactment, Victorian, Tudor, Renaissance, Napoleonic, 14th century, flat lighting"
+          model: "gemini-3-pro-image-preview"
+          provider: "google"
+          constraints:
+            aspect_ratio: "16:9"
+            size: "2752x1536"
+            orientation: "landscape"
+            quality: "high"
+          provider_metadata:
+            batch_run_id: "2025-12-21T12-14-51-854"
+            task_key: "location/thornwood-forest/thornwood-forest-veyra-leading@733dad0fe97d5882"
+          target_metadata:
+            entity_type: "location"
+            entity_slug: "thornwood-forest"
+            image_type: "inhabited"
+            title: "The Tracker's Trail"
+            scene_mood: "kinetic"
+      - id: "thornwood-forest-veyra-leading-1766358647435-2025-12-21"
+        path: "images/thornwood-forest-veyra-leading-1766358647435-2025-12-21.jpg"
+        type: "generated"
+        status: "approved"
+        image_type: "inhabited"
+        content:
+          title: "The Tracker's Trail"
+          description: "The Tracker's Trail"
+          alt_text: "The Tracker's Trail"
+          tags:
+            - "thornwood-forest-veyra-leading"
+            - "generated"
+            - "inhabited"
+        provenance:
+          source: "google"
+          created_at: "2025-12-21T23:55:54.361Z"
+          original_filename: "thornwood-forest-veyra-leading-1766358647435-2025-12-21.jpg"
+        generation:
+          target_id: "thornwood-forest-veyra-leading"
+          ir_hash: "eac6c700ebe1a615"
+          prompt_used: "SYSTEM INSTRUCTION: SCENE CONSISTENCY MODE
+
+
+            The images above are REFERENCE IMAGES for a scene. They may include:
+
+            - character portraits (identity references)
+
+            - a location overview (environment reference)
+
+            - style references (art direction)
+
+
+            Generate a NEW scene matching the scenario.
+
+
+            CRITICAL REQUIREMENTS:
+
+            1. CHARACTER IDENTITY: If portraits are present, keep each character distinct and consistent (face, hair, key identifiers). Do not merge identities.
+
+            2. LOCATION CONTINUITY: Preserve the location’s architectural identity and design language from any location references.
+
+            3. FANTASY TONE: High-fantasy (D&D / Faerûn vibe) with believable magical details integrated into the world.
+
+            4. AVOID GROUNDED HISTORY: Avoid “real-world medieval Europe” drift; keep fantasy species variety and magical infrastructure plausible and grounded-in-world (not neon).
+
+            5. PRIORITY: If scenario conflicts with references, follow the scenario for action/composition while keeping identity and location continuity.
+
+
+            SCENARIO: narrow game trail depression visible under snow, single-file formation of travelers, dense forest walls closing on either side, visible breath in cold air, footprints in snow behind the lead figure, interlocking branches creating tunnel-like passage, winter travel gear on all figures, sense of purposeful forward movement, ancient old-growth trees with massive trunk girths (two to three people to circle), interlocking branch canopy creating permanent twilight, deep shadow corridors between pillar-trunks, layered forest floor of leaf-mold, moss, and exposed root-webs, dappled unreliable light—bright shafts through canopy breaks, swallowed shadow elsewhere, clear cold streams over dark stone beds, granite outcrops breaking through forest floor, ancient trees with faintly face-like bark and rune-scars (old fey influence), motes of fey-light in deep shade (subtle, not neon), stone markers with worn druidic glyphs along game trails, A game trail barely visible beneath the snow, threading between ancient trunks. Veyra Thornwake leads—her posture confident, reading the terrain ahead, one hand brushing a branch as she identifies the path invisible to others. Behind her, Company members follow in single file, stepping carefully in her footprints, breath visible in the cold air. The forest walls close in on either side—dense brush and interlocking branches that would trap anyone who left the trail. The difference between expert and amateur is written in body language: Veyra moves like she belongs here; the others move like they're being tolerated., Faerûn high-fantasy worldbuilding cues (subtle, believable magic): ancient standing stones with worn runes, druidic wards, faint fey-lights in mist, slightly uncanny flora and leyline ambience, Narrative context: This is the core character-space relationship that defines Thornwood scenes: Veyra's expertise transforming dangerous terrain into navigable passage. Without her, they'd be lost within the hour, dead within the day. The image should make this dependency visible—the contrast between her ease and their effort., Medium depth shot following the line of travelers, camera positioned slightly ahead and to the side of Veyra. Emphasis on the narrow trail threading through impossible density—the forest \"closing\" on either side while the path ahead remains just visible. Depth achieved through layered figures receding into the winter haze. Veyra in sharper focus than those following, establishing her primacy., morning, clear winter, still air, light from diffuse winter daylight through canopy, cold, pale, scattered, above through canopy breaks, cool blue-white overall tones, moderate—snow reflects and fills shadows shadows, cold breath vapor, some snow motes, dominant colors: snow white, dark bark brown and gray, muted earth-tone travel clothes; accent colors: breath vapor white, pale skin tones against dark hoods, high fantasy, kinetic atmosphere, materials: hardwood and conifer trunks, bark rough and weathered, compressed leaf-mold, pine needles, moss carpets, exposed root systems, gray granite outcrops, lichen-covered, slick with moisture, Mood intent: This is the moment that defines Veyra's value—purposeful movement through terrain that would defeat others. The mood is urgent but controlled: the Company moving with focused intent, Veyra's confidence contrasting with the caution of those following. Not panic, but determined forward motion against the forest's indifference.
+
+            , storytelling moment, high-fantasy adventuring tone, emotional lighting, atmospheric depth, subtle spell effects, focus on character expressions, dramatic composition, Painterly cinematic high fantasy with grounded physicality.
+
+
+            We want images that feel like a premium illustrated novel: readable silhouettes, emotional
+
+            clarity, and rich material rendering (stone, timber, leather, metal) without drifting into:
+
+            - photoreal “camera” aesthetics
+
+            - slick, airbrushed game key art
+
+            - anime / CGI / plastic rendering\n"
+          negative_prompt_used: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, modern clothing, fantasy armor, glowing weapons, bright colors, summer forest, spring foliage, warm lighting, cozy atmosphere, easy terrain, wide open paths, casual stroll, smooth textures, concept art polish, green leaves, summer colors, bright cheerful lighting, warm cozy atmosphere, fantasy castle, buildings, civilization, paths, trails, signs, cozy cabin, welcoming, safe, tropical, desert, modern elements, photorealistic, futuristic elements, sci-fi, firearms, real-world Europe, historical reenactment, Victorian, Tudor, Renaissance, Napoleonic, 14th century, flat lighting"
+          model: "gemini-3-pro-image-preview"
+          provider: "google"
+          constraints:
+            aspect_ratio: "16:9"
+            size: "2752x1536"
+            orientation: "landscape"
+            quality: "high"
+          provider_metadata:
+            batch_run_id: "2025-12-21T23-10-46-589"
+            task_key: "location/thornwood-forest/thornwood-forest-veyra-leading@aa2d70d60f790037"
+          target_metadata:
+            entity_type: "location"
+            entity_slug: "thornwood-forest"
+            image_type: "inhabited"
+            title: "The Tracker's Trail"
+            scene_mood: "kinetic"
+  - name: "The Thaw Labyrinth"
+    slug: "thornwood-forest-spring-thaw"
+    title: "When the Forest Fights Back"
+    image_type: "temporal"
+    base_zone: "deep-wood"
+    temporal_state: "spring thaw"
+    category:
+      - "Environmental"
+      - "Seasonal Variant"
+      - "Atmospheric"
+    scene_mood: "ominous"
+    mood_rationale: "Spring thaw transforms the beautiful winter cathedral into something oppressive and hostile. The forest that merely ignored travelers in winter now actively resists them. The ominous mood captures the claustrophobic, exhausting quality of travel through terrain that grabs at every step and hides every landmark in fog.\n"
+    visual_description: "The same ancient forest, utterly transformed. Fog pools in every hollow, reducing visibility to a few dozen yards. The ground has become a quagmire—dark mud churned by previous passage, boot-sucking and treacherous. Water drips from every branch; the air itself seems saturated. New growth emerges from fallen logs—pale green shoots and clusters of mushrooms feeding on decay. The tree trunks are slick and dark with moisture, and where snow once reflected light, now only gray murk presses in from every direction. The paths that were clear in winter have become muddy channels or vanished entirely beneath standing water.\n"
+    mood_shift_from_base: "Winter's hushed reverence becomes spring's oppressive resistance. The cathedral has flooded. The silence that felt peaceful now feels suffocating. Where winter tested endurance, spring tests patience and sanity.\n"
+    activity_at_this_time:
+      - "Slow, exhausting travel through mud"
+      - "Constant navigation challenges as paths shift"
+      - "Equipment maintenance against perpetual damp"
+      - "Finding dry ground for camp becomes critical"
+    composition_notes: "Medium-wide shot at ground level, emphasizing the mud and low-lying fog. The horizon lost in gray murk. Trees emerge from fog like ghosts. Foreground detail of churned mud with boot prints filling with water. The oppressive weight of moisture in every visual element.\n"
+    time_of_day: "morning"
+    weather: "fog lifting, overcast"
+    required_elements:
+      - "thick fog pooling in hollows"
+      - "dark churned mud with visible boot prints"
+      - "dripping branches and saturated air"
+      - "pale new growth on fallen logs"
+      - "mushroom clusters on rotting wood"
+      - "standing water in low points"
+      - "slick dark tree trunks"
+      - "gray-green color palette"
+      - "limited visibility"
+    lighting:
+      primary_source: "diffuse overcast through fog"
+      quality: "flat, gray, directionless"
+      direction: "none—fog scatters all light"
+      color_temperature: "cold gray-green"
+      shadow_depth: "minimal—fog eliminates contrast"
+      atmospheric: "heavy—fog is the atmosphere"
+    palette:
+      dominant:
+        - "fog gray-white"
+        - "mud dark brown-black"
+        - "wet bark dark gray"
+      accent:
+        - "pale green new growth"
+        - "mushroom pale tan"
+      avoid:
+        - "bright colors"
+        - "warm tones"
+        - "clear skies"
+        - "dry surfaces"
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "2752x1536"
+    prompt_used: "Ancient forest in spring thaw, thick fog pooling in hollows reducing visibility, dark churned mud with boot prints filling with water, dripping branches saturating the air, moisture beading on every surface, pale green new growth and mushroom clusters on rotting fallen logs, slick dark tree trunks emerging from fog like ghosts, standing water in low points, gray-green color palette, oppressive claustrophobic atmosphere, the forest actively resisting passage, quagmire ground, decay-sweet air, no human figures, atmosphere, cold sickly palette (fog gray, mud brown-black, wet bark gray, pale new growth), oppressive stillness, psychological weight, Caspar David Friedrich fog studies\n"
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, winter snow, autumn leaves, summer brightness, clear visibility, blue sky, warm sunlight, dry ground, easy terrain, welcoming atmosphere\n"
+    references:
+      - placeholder: "Seasonal character - spring thaw"
+        file: "locations/thornwood-forest/description.md"
+        section: "Spring Thaw: The Mud Labyrinth"
+    generated_images: []
+    image_inventory:
+      - id: "thornwood-forest-spring-thaw-1766319293212-2025-12-21"
+        path: "images/thornwood-forest-spring-thaw-1766319293212-2025-12-21.jpg"
+        type: "generated"
+        status: "approved"
+        image_type: "temporal"
+        content:
+          title: "When the Forest Fights Back"
+          description: "When the Forest Fights Back"
+          alt_text: "When the Forest Fights Back"
+          tags:
+            - "thornwood-forest-spring-thaw"
+            - "generated"
+            - "temporal"
+        provenance:
+          source: "google"
+          created_at: "2025-12-21T12:22:10.405Z"
+          original_filename: "thornwood-forest-spring-thaw-1766319293212-2025-12-21.jpg"
+        generation:
+          target_id: "thornwood-forest-spring-thaw"
+          ir_hash: "70b40d0e5ad96d2e"
+          prompt_used: "SYSTEM INSTRUCTION: SCENE CONSISTENCY MODE
+
+
+            The images above are REFERENCE IMAGES for a scene. They may include:
+
+            - character portraits (identity references)
+
+            - a location overview (environment reference)
+
+            - style references (art direction)
+
+
+            Generate a NEW scene matching the scenario.
+
+
+            CRITICAL REQUIREMENTS:
+
+            1. CHARACTER IDENTITY: If portraits are present, keep each character distinct and consistent (face, hair, key identifiers). Do not merge identities.
+
+            2. LOCATION CONTINUITY: Preserve the location’s architectural identity and design language from any location references.
+
+            3. FANTASY TONE: High-fantasy (D&D / Faerûn vibe) with believable magical details integrated into the world.
+
+            4. AVOID GROUNDED HISTORY: Avoid “real-world medieval Europe” drift; keep fantasy species variety and magical infrastructure plausible and grounded-in-world (not neon).
+
+            5. PRIORITY: If scenario conflicts with references, follow the scenario for action/composition while keeping identity and location continuity.
+
+
+            SCENARIO: thick fog pooling in hollows, dark churned mud with visible boot prints, dripping branches and saturated air, pale new growth on fallen logs, mushroom clusters on rotting wood, standing water in low points, slick dark tree trunks, gray-green color palette, limited visibility, ancient old-growth trees with massive trunk girths (two to three people to circle), interlocking branch canopy creating permanent twilight, deep shadow corridors between pillar-trunks, layered forest floor of leaf-mold, moss, and exposed root-webs, dappled unreliable light—bright shafts through canopy breaks, swallowed shadow elsewhere, clear cold streams over dark stone beds, granite outcrops breaking through forest floor, ancient trees with faintly face-like bark and rune-scars (old fey influence), motes of fey-light in deep shade (subtle, not neon), stone markers with worn druidic glyphs along game trails, The same ancient forest, utterly transformed. Fog pools in every hollow, reducing visibility to a few dozen yards. The ground has become a quagmire—dark mud churned by previous passage, boot-sucking and treacherous. Water drips from every branch; the air itself seems saturated. New growth emerges from fallen logs—pale green shoots and clusters of mushrooms feeding on decay. The tree trunks are slick and dark with moisture, and where snow once reflected light, now only gray murk presses in from every direction. The paths that were clear in winter have become muddy channels or vanished entirely beneath standing water., Faerûn high-fantasy worldbuilding cues (subtle, believable magic): ancient standing stones with worn runes, druidic wards, faint fey-lights in mist, slightly uncanny flora and leyline ambience, Medium-wide shot at ground level, emphasizing the mud and low-lying fog. The horizon lost in gray murk. Trees emerge from fog like ghosts. Foreground detail of churned mud with boot prints filling with water. The oppressive weight of moisture in every visual element., morning, fog lifting, overcast, light from diffuse overcast through fog, flat, gray, directionless, none—fog scatters all light, cold gray-green tones, minimal—fog eliminates contrast shadows, heavy—fog is the atmosphere, dominant colors: fog gray-white, mud dark brown-black, wet bark dark gray; accent colors: pale green new growth, mushroom pale tan, high fantasy, ominous atmosphere, materials: hardwood and conifer trunks, bark rough and weathered, compressed leaf-mold, pine needles, moss carpets, exposed root systems, gray granite outcrops, lichen-covered, slick with moisture, Mood intent: Spring thaw transforms the beautiful winter cathedral into something oppressive and hostile. The forest that merely ignored travelers in winter now actively resists them. The ominous mood captures the claustrophobic, exhausting quality of travel through terrain that grabs at every step and hides every landmark in fog.
+
+            , epic high-fantasy exterior, fantastical silhouettes and skyline, arcane lanterns and ward-lights, subtle magical phenomena integrated into the environment, dynamic skies, cinematic composition, atmospheric depth, Painterly cinematic high fantasy with grounded physicality.
+
+
+            We want images that feel like a premium illustrated novel: readable silhouettes, emotional
+
+            clarity, and rich material rendering (stone, timber, leather, metal) without drifting into:
+
+            - photoreal “camera” aesthetics
+
+            - slick, airbrushed game key art
+
+            - anime / CGI / plastic rendering\n"
+          negative_prompt_used: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, winter snow, autumn leaves, summer brightness, clear visibility, blue sky, warm sunlight, dry ground, easy terrain, welcoming atmosphere, smooth textures, concept art polish, spring foliage, green leaves, summer colors, bright cheerful lighting, warm cozy atmosphere, fantasy castle, buildings, civilization, paths, trails, signs, cozy cabin, welcoming, safe, tropical, desert, modern elements, photorealistic, futuristic elements, sci-fi, firearms, real-world Europe, historical reenactment, Victorian, Tudor, Renaissance, Napoleonic, 14th century, flat lighting"
+          model: "gemini-3-pro-image-preview"
+          provider: "google"
+          constraints:
+            aspect_ratio: "16:9"
+            size: "2752x1536"
+            orientation: "landscape"
+            quality: "high"
+          provider_metadata:
+            batch_run_id: "2025-12-21T12-14-51-854"
+            task_key: "location/thornwood-forest/thornwood-forest-spring-thaw@60b40afc8ee4ada2"
+          target_metadata:
+            entity_type: "location"
+            entity_slug: "thornwood-forest"
+            image_type: "temporal"
+            title: "When the Forest Fights Back"
+            scene_mood: "ominous"
+      - id: "thornwood-forest-spring-thaw-1766358647436-2025-12-21"
+        path: "images/thornwood-forest-spring-thaw-1766358647436-2025-12-21.jpg"
+        type: "generated"
+        status: "approved"
+        image_type: "temporal"
+        content:
+          title: "When the Forest Fights Back"
+          description: "When the Forest Fights Back"
+          alt_text: "When the Forest Fights Back"
+          tags:
+            - "thornwood-forest-spring-thaw"
+            - "generated"
+            - "temporal"
+        provenance:
+          source: "google"
+          created_at: "2025-12-21T23:55:54.380Z"
+          original_filename: "thornwood-forest-spring-thaw-1766358647436-2025-12-21.jpg"
+        generation:
+          target_id: "thornwood-forest-spring-thaw"
+          ir_hash: "70b40d0e5ad96d2e"
+          prompt_used: "SYSTEM INSTRUCTION: LOCATION CONSISTENCY MODE
+
+
+            The images above are REFERENCE IMAGES for a specific LOCATION.
+
+            Generate a NEW image of this SAME location in the described scenario.
+
+
+            CRITICAL REQUIREMENTS:
+
+            1. LOCATION IDENTITY: Preserve architecture, materials, lighting language, and signature elements from the references.
+
+            2. FANTASY TONE: This is a high-fantasy world (D&D / Faerûn vibe). Include subtle magical infrastructure (runes, enchanted lanterns, ward-stones, guild sigils) where appropriate.
+
+            3. NO FACE CLONING: If people appear, keep them generic and varied—do not repeat an identical face across images unless explicitly required.
+
+            4. AVOID GROUNDED HISTORY: Do not drift into “historical reenactment” or real-world medieval Europe. Keep the design language unmistakably fantasy (Faerûn) even when the scene is gritty and practical.
+
+            5. PRIORITY: If the scenario conflicts with the references, follow the scenario for composition/mood while preserving the location’s identity.
+
+
+            SCENARIO: thick fog pooling in hollows, dark churned mud with visible boot prints, dripping branches and saturated air, pale new growth on fallen logs, mushroom clusters on rotting wood, standing water in low points, slick dark tree trunks, gray-green color palette, limited visibility, ancient old-growth trees with massive trunk girths (two to three people to circle), interlocking branch canopy creating permanent twilight, deep shadow corridors between pillar-trunks, layered forest floor of leaf-mold, moss, and exposed root-webs, dappled unreliable light—bright shafts through canopy breaks, swallowed shadow elsewhere, clear cold streams over dark stone beds, granite outcrops breaking through forest floor, ancient trees with faintly face-like bark and rune-scars (old fey influence), motes of fey-light in deep shade (subtle, not neon), stone markers with worn druidic glyphs along game trails, The same ancient forest, utterly transformed. Fog pools in every hollow, reducing visibility to a few dozen yards. The ground has become a quagmire—dark mud churned by previous passage, boot-sucking and treacherous. Water drips from every branch; the air itself seems saturated. New growth emerges from fallen logs—pale green shoots and clusters of mushrooms feeding on decay. The tree trunks are slick and dark with moisture, and where snow once reflected light, now only gray murk presses in from every direction. The paths that were clear in winter have become muddy channels or vanished entirely beneath standing water., Faerûn high-fantasy worldbuilding cues (subtle, believable magic): ancient standing stones with worn runes, druidic wards, faint fey-lights in mist, slightly uncanny flora and leyline ambience, Medium-wide shot at ground level, emphasizing the mud and low-lying fog. The horizon lost in gray murk. Trees emerge from fog like ghosts. Foreground detail of churned mud with boot prints filling with water. The oppressive weight of moisture in every visual element., morning, fog lifting, overcast, light from diffuse overcast through fog, flat, gray, directionless, none—fog scatters all light, cold gray-green tones, minimal—fog eliminates contrast shadows, heavy—fog is the atmosphere, dominant colors: fog gray-white, mud dark brown-black, wet bark dark gray; accent colors: pale green new growth, mushroom pale tan, high fantasy, ominous atmosphere, materials: hardwood and conifer trunks, bark rough and weathered, compressed leaf-mold, pine needles, moss carpets, exposed root systems, gray granite outcrops, lichen-covered, slick with moisture, Mood intent: Spring thaw transforms the beautiful winter cathedral into something oppressive and hostile. The forest that merely ignored travelers in winter now actively resists them. The ominous mood captures the claustrophobic, exhausting quality of travel through terrain that grabs at every step and hides every landmark in fog.
+
+            , epic high-fantasy exterior, fantastical silhouettes and skyline, arcane lanterns and ward-lights, subtle magical phenomena integrated into the environment, dynamic skies, cinematic composition, atmospheric depth, Painterly cinematic high fantasy with grounded physicality.
+
+
+            We want images that feel like a premium illustrated novel: readable silhouettes, emotional
+
+            clarity, and rich material rendering (stone, timber, leather, metal) without drifting into:
+
+            - photoreal “camera” aesthetics
+
+            - slick, airbrushed game key art
+
+            - anime / CGI / plastic rendering\n"
+          negative_prompt_used: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, winter snow, autumn leaves, summer brightness, clear visibility, blue sky, warm sunlight, dry ground, easy terrain, welcoming atmosphere, smooth textures, concept art polish, spring foliage, green leaves, summer colors, bright cheerful lighting, warm cozy atmosphere, fantasy castle, buildings, civilization, paths, trails, signs, cozy cabin, welcoming, safe, tropical, desert, modern elements, photorealistic, futuristic elements, sci-fi, firearms, real-world Europe, historical reenactment, Victorian, Tudor, Renaissance, Napoleonic, 14th century, flat lighting"
+          model: "gemini-3-pro-image-preview"
+          provider: "google"
+          constraints:
+            aspect_ratio: "16:9"
+            size: "2752x1536"
+            orientation: "landscape"
+            quality: "high"
+          provider_metadata:
+            batch_run_id: "2025-12-21T23-10-46-589"
+            task_key: "location/thornwood-forest/thornwood-forest-spring-thaw@fa3687c872f93c57"
+          target_metadata:
+            entity_type: "location"
+            entity_slug: "thornwood-forest"
+            image_type: "temporal"
+            title: "When the Forest Fights Back"
+            scene_mood: "ominous"
+  - name: "The Watching Wood"
+    slug: "thornwood-forest-corrupted"
+    title: "When the Forest Notices You"
+    image_type: "essence"
+    zone_type: "liminal"
+    category:
+      - "Atmospheric"
+      - "Arc-Specific"
+      - "Horror Adjacent"
+    scene_mood: "ominous"
+    mood_rationale: "This captures the forest's transformation near Silent Hand territory—the same ancient trees, the same deep shadows, but fundamentally wrong. The natural watchfulness that pervades the Thornwood becomes actively hostile, predatory, intelligent. The ominous mood with its Symbolist unease and \"wrongness\" perfectly captures this corruption.\n"
+    visual_description: "The ancient Thornwood, but something has changed. The same massive trunks, the same interlocking canopy—yet the trees seem to lean inward, their branches reaching toward the viewer rather than merely overhead. The shadows between trunks are too deep, too dark, swallowing light that should penetrate. No wildlife moves, no birds call—an unnatural silence that presses on the ears. The light has a faint metallic quality, as if filtered through something that shouldn't exist. The forest isn't just indifferent anymore. It's watching. And it knows you're here.\n"
+    location_within: "northern reaches, approaching Silent Hand territory"
+    narrative_significance: "This is the forest as barometer of corruption—the natural made unnatural by proximity to the Silent Hand's magical wrongness. It's not that the trees have physically changed; it's that something has infected the space between them, the quality of its attention. Veyra would feel this instantly: the rules she knows still apply, but they've been twisted.\n"
+    symbolic_elements: "The corruption of natural space by unnatural power. The forest that merely ignored travelers now regards them as prey or intruders. The same indifference that made the Thornwood dangerous has been replaced by active malice—or at least, the uncanny mimicry of it.\n"
+    composition_notes: "Point-of-view shot as if entering hostile territory. Trees should frame the composition like watchers, branches reaching toward the viewer. The path ahead visible but foreboding—not blocked, but clearly watched. Shadows should pool in ways that suggest depth and concealment. The viewer should feel observed.\n"
+    time_of_day: "midday"
+    weather: "overcast"
+    required_elements:
+      - "same ancient trees but subtly wrong—leaning toward viewer"
+      - "branches reaching rather than merely overhead"
+      - "shadows too deep, too dark"
+      - "unnatural absence of wildlife"
+      - "faint metallic quality to light"
+      - "sense of being observed"
+      - "path ahead visible but foreboding"
+      - "no movement except what shouldn't move"
+    lighting:
+      primary_source: "overcast daylight through canopy"
+      quality: "wrong—metallic tinge, unhealthy quality"
+      direction: "diffuse but shadows too deep for the light available"
+      color_temperature: "cold with sickly undertone"
+      shadow_depth: "unnaturally deep—darker than physics allows"
+      atmospheric: "subtle wrongness, air too still"
+    palette:
+      dominant:
+        - "shadow black-purple"
+        - "bark gray-brown (paler, more corpse-like)"
+        - "canopy dark green with sickly undertone"
+      accent:
+        - "metallic glints where there should be none"
+        - "pale sick light"
+      avoid:
+        - "warm comforting tones"
+        - "healthy greens"
+        - "golden light"
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "2752x1536"
+    prompt_used: "Ancient forest corrupted by magical wrongness, same massive old-growth trees but subtly malevolent, trunks and branches leaning toward viewer, reaching rather than merely growing, shadows between trees unnaturally deep and dark, swallowing light that should penetrate, no wildlife, no movement, unnatural oppressive silence, faint metallic quality to the light, sickly undertone to colors, the forest watching with intelligence rather than instinct, path ahead visible but foreboding, point-of-view entering hostile territory, trees framing composition like watchers, the natural made unnatural, same physical space fundamentally wrong, unease, unnatural lighting from unsettling source, cold sickly palette (shadow purple-black, corpse-gray bark, sick green canopy, metallic glints), oppressive stillness, psychological dread, atmosphere, Isle of the Dead\n"
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, healthy forest, warm sunlight, welcoming atmosphere, wildlife present, birds flying, cheerful, safe, cozy, giant monsters, dragons, demons, obvious monsters, glowing eyes, tentacles, overt horror elements\n"
+    references:
+      - placeholder: "Arc-specific alterations"
+        file: "locations/thornwood-forest/description.md"
+        section: "Arc-Specific Alterations (Silent Hand)"
+      - placeholder: "Corrupted zone analysis"
+        file: "locations/thornwood-forest/location_analysis.yaml"
+        section: "zones - contaminated-zone"
+    generated_images: []
+    image_inventory:
+      - id: "thornwood-forest-corrupted-1766319293216-2025-12-21"
+        path: "images/thornwood-forest-corrupted-1766319293216-2025-12-21.jpg"
+        type: "generated"
+        status: "approved"
+        image_type: "essence"
+        content:
+          title: "When the Forest Notices You"
+          description: "When the Forest Notices You"
+          alt_text: "When the Forest Notices You"
+          tags:
+            - "thornwood-forest-corrupted"
+            - "generated"
+            - "essence"
+        provenance:
+          source: "google"
+          created_at: "2025-12-21T12:22:10.420Z"
+          original_filename: "thornwood-forest-corrupted-1766319293216-2025-12-21.jpg"
+        generation:
+          target_id: "thornwood-forest-corrupted"
+          ir_hash: "1ee877ba6e9660f6"
+          prompt_used: "SYSTEM INSTRUCTION: SCENE CONSISTENCY MODE
+
+
+            The images above are REFERENCE IMAGES for a scene. They may include:
+
+            - character portraits (identity references)
+
+            - a location overview (environment reference)
+
+            - style references (art direction)
+
+
+            Generate a NEW scene matching the scenario.
+
+
+            CRITICAL REQUIREMENTS:
+
+            1. CHARACTER IDENTITY: If portraits are present, keep each character distinct and consistent (face, hair, key identifiers). Do not merge identities.
+
+            2. LOCATION CONTINUITY: Preserve the location’s architectural identity and design language from any location references.
+
+            3. FANTASY TONE: High-fantasy (D&D / Faerûn vibe) with believable magical details integrated into the world.
+
+            4. AVOID GROUNDED HISTORY: Avoid “real-world medieval Europe” drift; keep fantasy species variety and magical infrastructure plausible and grounded-in-world (not neon).
+
+            5. PRIORITY: If scenario conflicts with references, follow the scenario for action/composition while keeping identity and location continuity.
+
+
+            SCENARIO: same ancient trees but subtly wrong—leaning toward viewer, branches reaching rather than merely overhead, shadows too deep, too dark, unnatural absence of wildlife, faint metallic quality to light, sense of being observed, path ahead visible but foreboding, no movement except what shouldn't move, ancient old-growth trees with massive trunk girths (two to three people to circle), interlocking branch canopy creating permanent twilight, deep shadow corridors between pillar-trunks, layered forest floor of leaf-mold, moss, and exposed root-webs, dappled unreliable light—bright shafts through canopy breaks, swallowed shadow elsewhere, clear cold streams over dark stone beds, granite outcrops breaking through forest floor, ancient trees with faintly face-like bark and rune-scars (old fey influence), motes of fey-light in deep shade (subtle, not neon), stone markers with worn druidic glyphs along game trails, The ancient Thornwood, but something has changed. The same massive trunks, the same interlocking canopy—yet the trees seem to lean inward, their branches reaching toward the viewer rather than merely overhead. The shadows between trunks are too deep, too dark, swallowing light that should penetrate. No wildlife moves, no birds call—an unnatural silence that presses on the ears. The light has a faint metallic quality, as if filtered through something that shouldn't exist. The forest isn't just indifferent anymore. It's watching. And it knows you're here., Faerûn high-fantasy urban cues (subtle, believable magic): ward-lanterns/everburning lights, rune-carved signage and safety wards, alchemical-ink guild seals, mixed ancestries in the periphery (dwarf, tiefling, dragonborn, halfling) if people appear, Narrative context: This is the forest as barometer of corruption—the natural made unnatural by proximity to the Silent Hand's magical wrongness. It's not that the trees have physically changed; it's that something has infected the space between them, the quality of its attention. Veyra would feel this instantly: the rules she knows still apply, but they've been twisted., Point-of-view shot as if entering hostile territory. Trees should frame the composition like watchers, branches reaching toward the viewer. The path ahead visible but foreboding—not blocked, but clearly watched. Shadows should pool in ways that suggest depth and concealment. The viewer should feel observed., midday, overcast, light from overcast daylight through canopy, wrong—metallic tinge, unhealthy quality, diffuse but shadows too deep for the light available, cold with sickly undertone tones, unnaturally deep—darker than physics allows shadows, subtle wrongness, air too still, dominant colors: shadow black-purple, bark gray-brown (paler, more corpse-like), canopy dark green with sickly undertone; accent colors: metallic glints where there should be none, pale sick light, high fantasy, ominous atmosphere, materials: hardwood and conifer trunks, bark rough and weathered, compressed leaf-mold, pine needles, moss carpets, exposed root systems, gray granite outcrops, lichen-covered, slick with moisture, Mood intent: This captures the forest's transformation near Silent Hand territory—the same ancient trees, the same deep shadows, but fundamentally wrong. The natural watchfulness that pervades the Thornwood becomes actively hostile, predatory, intelligent. The ominous mood with its Symbolist unease and \"wrongness\" pe...
+
+            , epic high-fantasy exterior, fantastical silhouettes and skyline, arcane lanterns and ward-lights, subtle magical phenomena integrated into the environment, dynamic skies, cinematic composition, atmospheric depth, Painterly cinematic high fantasy with grounded physicality.
+
+
+            We want images that feel like a premium illustrated novel: readable silhouettes, emotional
+
+            clarity, and rich material rendering (stone, timber, leather, metal) without drifting into:
+
+            - photoreal “camera” aesthetics
+
+            - slick, airbrushed game key art
+
+            - anime / CGI / plastic rendering\n"
+          negative_prompt_used: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, healthy forest, warm sunlight, welcoming atmosphere, wildlife present, birds flying, cheerful, safe, cozy, giant monsters, dragons, demons, obvious monsters, glowing eyes, tentacles, overt horror elements, smooth textures, concept art polish, spring foliage, green leaves, summer colors, bright cheerful lighting, warm cozy atmosphere, fantasy castle, buildings, civilization, paths, trails, signs, cozy cabin, welcoming, tropical, desert, modern elements, photorealistic, futuristic elements, sci-fi, firearms, real-world Europe, historical reenactment, Victorian, Tudor, Renaissance, Napoleonic, 14th century, flat lighting"
+          model: "gemini-3-pro-image-preview"
+          provider: "google"
+          constraints:
+            aspect_ratio: "16:9"
+            size: "2752x1536"
+            orientation: "landscape"
+            quality: "high"
+          provider_metadata:
+            batch_run_id: "2025-12-21T12-14-51-854"
+            task_key: "location/thornwood-forest/thornwood-forest-corrupted@4a5872c0741c969f"
+          target_metadata:
+            entity_type: "location"
+            entity_slug: "thornwood-forest"
+            image_type: "essence"
+            title: "When the Forest Notices You"
+            scene_mood: "ominous"
+      - id: "thornwood-forest-corrupted-1766358647437-2025-12-21"
+        path: "images/thornwood-forest-corrupted-1766358647437-2025-12-21.jpg"
+        type: "generated"
+        status: "approved"
+        image_type: "essence"
+        content:
+          title: "When the Forest Notices You"
+          description: "When the Forest Notices You"
+          alt_text: "When the Forest Notices You"
+          tags:
+            - "thornwood-forest-corrupted"
+            - "generated"
+            - "essence"
+        provenance:
+          source: "google"
+          created_at: "2025-12-21T23:55:54.399Z"
+          original_filename: "thornwood-forest-corrupted-1766358647437-2025-12-21.jpg"
+        generation:
+          target_id: "thornwood-forest-corrupted"
+          ir_hash: "1ee877ba6e9660f6"
+          prompt_used: "SYSTEM INSTRUCTION: LOCATION CONSISTENCY MODE
+
+
+            The images above are REFERENCE IMAGES for a specific LOCATION.
+
+            Generate a NEW image of this SAME location in the described scenario.
+
+
+            CRITICAL REQUIREMENTS:
+
+            1. LOCATION IDENTITY: Preserve architecture, materials, lighting language, and signature elements from the references.
+
+            2. FANTASY TONE: This is a high-fantasy world (D&D / Faerûn vibe). Include subtle magical infrastructure (runes, enchanted lanterns, ward-stones, guild sigils) where appropriate.
+
+            3. NO FACE CLONING: If people appear, keep them generic and varied—do not repeat an identical face across images unless explicitly required.
+
+            4. AVOID GROUNDED HISTORY: Do not drift into “historical reenactment” or real-world medieval Europe. Keep the design language unmistakably fantasy (Faerûn) even when the scene is gritty and practical.
+
+            5. PRIORITY: If the scenario conflicts with the references, follow the scenario for composition/mood while preserving the location’s identity.
+
+
+            SCENARIO: same ancient trees but subtly wrong—leaning toward viewer, branches reaching rather than merely overhead, shadows too deep, too dark, unnatural absence of wildlife, faint metallic quality to light, sense of being observed, path ahead visible but foreboding, no movement except what shouldn't move, ancient old-growth trees with massive trunk girths (two to three people to circle), interlocking branch canopy creating permanent twilight, deep shadow corridors between pillar-trunks, layered forest floor of leaf-mold, moss, and exposed root-webs, dappled unreliable light—bright shafts through canopy breaks, swallowed shadow elsewhere, clear cold streams over dark stone beds, granite outcrops breaking through forest floor, ancient trees with faintly face-like bark and rune-scars (old fey influence), motes of fey-light in deep shade (subtle, not neon), stone markers with worn druidic glyphs along game trails, The ancient Thornwood, but something has changed. The same massive trunks, the same interlocking canopy—yet the trees seem to lean inward, their branches reaching toward the viewer rather than merely overhead. The shadows between trunks are too deep, too dark, swallowing light that should penetrate. No wildlife moves, no birds call—an unnatural silence that presses on the ears. The light has a faint metallic quality, as if filtered through something that shouldn't exist. The forest isn't just indifferent anymore. It's watching. And it knows you're here., Faerûn high-fantasy urban cues (subtle, believable magic): ward-lanterns/everburning lights, rune-carved signage and safety wards, alchemical-ink guild seals, mixed ancestries in the periphery (dwarf, tiefling, dragonborn, halfling) if people appear, Narrative context: This is the forest as barometer of corruption—the natural made unnatural by proximity to the Silent Hand's magical wrongness. It's not that the trees have physically changed; it's that something has infected the space between them, the quality of its attention. Veyra would feel this instantly: the rules she knows still apply, but they've been twisted., Point-of-view shot as if entering hostile territory. Trees should frame the composition like watchers, branches reaching toward the viewer. The path ahead visible but foreboding—not blocked, but clearly watched. Shadows should pool in ways that suggest depth and concealment. The viewer should feel observed., midday, overcast, light from overcast daylight through canopy, wrong—metallic tinge, unhealthy quality, diffuse but shadows too deep for the light available, cold with sickly undertone tones, unnaturally deep—darker than physics allows shadows, subtle wrongness, air too still, dominant colors: shadow black-purple, bark gray-brown (paler, more corpse-like), canopy dark green with sickly undertone; accent colors: metallic glints where there should be none, pale sick light, high fantasy, ominous atmosphere, materials: hardwood and conifer trunks, bark rough and weathered, compressed leaf-mold, pine needles, moss carpets, exposed root systems, gray granite outcrops, lichen-covered, slick with moisture, Mood intent: This captures the forest's transformation near Silent Hand territory—the same ancient trees, the same deep shadows, but fundamentally wrong. The natural watchfulness that pervades the Thornwood becomes actively hostile, predatory, intelligent. The ominous mood with its Symbolist unease and \"wrongness\" pe...
+
+            , epic high-fantasy exterior, fantastical silhouettes and skyline, arcane lanterns and ward-lights, subtle magical phenomena integrated into the environment, dynamic skies, cinematic composition, atmospheric depth, Painterly cinematic high fantasy with grounded physicality.
+
+
+            We want images that feel like a premium illustrated novel: readable silhouettes, emotional
+
+            clarity, and rich material rendering (stone, timber, leather, metal) without drifting into:
+
+            - photoreal “camera” aesthetics
+
+            - slick, airbrushed game key art
+
+            - anime / CGI / plastic rendering\n"
+          negative_prompt_used: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, healthy forest, warm sunlight, welcoming atmosphere, wildlife present, birds flying, cheerful, safe, cozy, giant monsters, dragons, demons, obvious monsters, glowing eyes, tentacles, overt horror elements, smooth textures, concept art polish, spring foliage, green leaves, summer colors, bright cheerful lighting, warm cozy atmosphere, fantasy castle, buildings, civilization, paths, trails, signs, cozy cabin, welcoming, tropical, desert, modern elements, photorealistic, futuristic elements, sci-fi, firearms, real-world Europe, historical reenactment, Victorian, Tudor, Renaissance, Napoleonic, 14th century, flat lighting"
+          model: "gemini-3-pro-image-preview"
+          provider: "google"
+          constraints:
+            aspect_ratio: "16:9"
+            size: "2752x1536"
+            orientation: "landscape"
+            quality: "high"
+          provider_metadata:
+            batch_run_id: "2025-12-21T23-10-46-589"
+            task_key: "location/thornwood-forest/thornwood-forest-corrupted@6965416976df4603"
+          target_metadata:
+            entity_type: "location"
+            entity_slug: "thornwood-forest"
+            image_type: "essence"
+            title: "When the Forest Notices You"
+            scene_mood: "ominous"
+  - name: "The Crossing"
+    slug: "thornwood-forest-stream-crossing"
+    title: "Ice and Clarity"
+    image_type: "zone"
+    zone_type: "threshold"
+    category:
+      - "Environmental"
+      - "Zone Detail"
+      - "Landscape"
+    scene_mood: "somber"
+    mood_rationale: "Stream crossings offer brief clarity in the confusion of dense forest—wider sightlines, a navigational landmark, a moment to breathe. But they're also hazard points: ice that may or may not hold, exposure while crossing, ambush risk at the obvious chokepoint. The somber mood captures both the beauty and the danger.\n"
+    visual_description: "A winter stream cutting through the Thornwood, clear water running over a dark stone bed where the current prevents freezing. Ice shelves extend from both banks, their edges crystalline and uncertain—would they hold weight? The stream corridor opens the canopy overhead, allowing pale light to reach the water and reflect upward. The banks are lined with concentrated animal tracks—this is where the forest's hidden population comes to drink. The sudden openness after dense forest feels like relief and exposure simultaneously.\n"
+    location_within: "threading through low points in the forest"
+    composition_notes: "Medium shot looking along the stream corridor, emphasizing the unusual openness and light. Shallow depth of field on foreground ice detail, with the corridor stretching into atmospheric distance. The contrast between dark surrounding forest and the light-filled corridor should be pronounced.\n"
+    narrative_significance: "Streams are navigation landmarks—the only reliable reference points in terrain where every direction looks the same. But they're also decision points: ford here, or find a better crossing? The image should capture both the relief of finding a landmark and the calculation of risk.\n"
+    time_of_day: "morning"
+    weather: "clear winter"
+    required_elements:
+      - "clear water flowing over dark stone bed"
+      - "ice shelves along both banks"
+      - "crystalline ice detail, uncertain thickness"
+      - "wider sightlines along stream corridor"
+      - "canopy opening overhead"
+      - "animal tracks concentrated at water's edge"
+      - "snow on banks contrasting with dark water"
+      - "reflected light off water surface"
+    lighting:
+      primary_source: "direct overhead through canopy gap"
+      quality: "brighter than surrounding forest, reflected off water"
+      direction: "above through corridor gap"
+      color_temperature: "cold but clearer than forest twilight"
+      shadow_depth: "deep at forest edges, soft along water"
+      atmospheric: "slight mist rising from warmer water"
+    palette:
+      dominant:
+        - "clear water over black stone"
+        - "snow white on banks"
+        - "ice crystal blue-white"
+      accent:
+        - "reflected sky light"
+        - "dark forest wall contrast"
+      avoid:
+        - "warm tones"
+        - "summer colors"
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "2752x1536"
+    prompt_used: "Winter forest stream crossing, clear cold water flowing over dark stone bed, ice shelves extending from snow-covered banks with crystalline uncertain edges, wider sightlines along stream corridor opening through ancient forest, canopy gap allowing pale light to reach water and reflect upward, animal tracks concentrated in snow at water's edge, sudden openness after dense forest, relief and exposure simultaneously, navigation landmark, the crossing point, dark forest walls framing the light corridor, mist rising slightly from water, no human figures, quality in the corridor, muted earth palette, deep shadows at forest edges, atmospheric clarity along water, landscape\n"
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, summer stream, warm lighting, green foliage, swimming, cheerful, bridge, structure, buildings\n"
+    references:
+      - placeholder: "Stream crossing zone"
+        file: "locations/thornwood-forest/location_analysis.yaml"
+        section: "zones - stream-crossings"
+      - placeholder: "Water description"
+        file: "locations/thornwood-forest/description.md"
+        section: "Geography & Terrain - Water"
+    generated_images: []
+    image_inventory:
+      - id: "thornwood-forest-stream-crossing-1766319293222-2025-12-21"
+        path: "images/thornwood-forest-stream-crossing-1766319293222-2025-12-21.jpg"
+        type: "generated"
+        status: "approved"
+        image_type: "zone"
+        content:
+          title: "Ice and Clarity"
+          description: "Ice and Clarity"
+          alt_text: "Ice and Clarity"
+          tags:
+            - "thornwood-forest-stream-crossing"
+            - "generated"
+            - "zone"
+        provenance:
+          source: "google"
+          created_at: "2025-12-21T12:22:10.433Z"
+          original_filename: "thornwood-forest-stream-crossing-1766319293222-2025-12-21.jpg"
+        generation:
+          target_id: "thornwood-forest-stream-crossing"
+          ir_hash: "c037562c28e0882f"
+          prompt_used: "SYSTEM INSTRUCTION: SCENE CONSISTENCY MODE
+
+
+            The images above are REFERENCE IMAGES for a scene. They may include:
+
+            - character portraits (identity references)
+
+            - a location overview (environment reference)
+
+            - style references (art direction)
+
+
+            Generate a NEW scene matching the scenario.
+
+
+            CRITICAL REQUIREMENTS:
+
+            1. CHARACTER IDENTITY: If portraits are present, keep each character distinct and consistent (face, hair, key identifiers). Do not merge identities.
+
+            2. LOCATION CONTINUITY: Preserve the location’s architectural identity and design language from any location references.
+
+            3. FANTASY TONE: High-fantasy (D&D / Faerûn vibe) with believable magical details integrated into the world.
+
+            4. AVOID GROUNDED HISTORY: Avoid “real-world medieval Europe” drift; keep fantasy species variety and magical infrastructure plausible and grounded-in-world (not neon).
+
+            5. PRIORITY: If scenario conflicts with references, follow the scenario for action/composition while keeping identity and location continuity.
+
+
+            SCENARIO: clear water flowing over dark stone bed, ice shelves along both banks, crystalline ice detail, uncertain thickness, wider sightlines along stream corridor, canopy opening overhead, animal tracks concentrated at water's edge, snow on banks contrasting with dark water, reflected light off water surface, ancient old-growth trees with massive trunk girths (two to three people to circle), interlocking branch canopy creating permanent twilight, deep shadow corridors between pillar-trunks, layered forest floor of leaf-mold, moss, and exposed root-webs, dappled unreliable light—bright shafts through canopy breaks, swallowed shadow elsewhere, clear cold streams over dark stone beds, granite outcrops breaking through forest floor, ancient trees with faintly face-like bark and rune-scars (old fey influence), motes of fey-light in deep shade (subtle, not neon), stone markers with worn druidic glyphs along game trails, A winter stream cutting through the Thornwood, clear water running over a dark stone bed where the current prevents freezing. Ice shelves extend from both banks, their edges crystalline and uncertain—would they hold weight? The stream corridor opens the canopy overhead, allowing pale light to reach the water and reflect upward. The banks are lined with concentrated animal tracks—this is where the forest's hidden population comes to drink. The sudden openness after dense forest feels like relief and exposure simultaneously., Faerûn high-fantasy worldbuilding cues (subtle, believable magic): ancient standing stones with worn runes, druidic wards, faint fey-lights in mist, slightly uncanny flora and leyline ambience, Narrative context: Streams are navigation landmarks—the only reliable reference points in terrain where every direction looks the same. But they're also decision points: ford here, or find a better crossing? The image should capture both the relief of finding a landmark and the calculation of risk., Medium shot looking along the stream corridor, emphasizing the unusual openness and light. Shallow depth of field on foreground ice detail, with the corridor stretching into atmospheric distance. The contrast between dark surrounding forest and the light-filled corridor should be pronounced., morning, clear winter, light from direct overhead through canopy gap, brighter than surrounding forest, reflected off water, above through corridor gap, cold but clearer than forest twilight tones, deep at forest edges, soft along water shadows, slight mist rising from warmer water, dominant colors: clear water over black stone, snow white on banks, ice crystal blue-white; accent colors: reflected sky light, dark forest wall contrast, high fantasy, somber atmosphere, materials: hardwood and conifer trunks, bark rough and weathered, compressed leaf-mold, pine needles, moss carpets, exposed root systems, gray granite outcrops, lichen-covered, slick with moisture, Mood intent: Stream crossings offer brief clarity in the confusion of dense forest—wider sightlines, a navigational landmark, a moment to breathe. But they're also hazard points: ice that may or may not hold, exposure while crossing, ambush risk at the obvious chokepoint. The somber mood captures both the beauty and the danger.
+
+            , epic high-fantasy exterior, fantastical silhouettes and skyline, arcane lanterns and ward-lights, subtle magical phenomena integrated into the environment, dynamic skies, cinematic composition, atmospheric depth, Painterly cinematic high fantasy with grounded physicality.
+
+
+            We want images that feel like a premium illustrated novel: readable silhouettes, emotional
+
+            clarity, and rich material rendering (stone, timber, leather, metal) without drifting into:
+
+            - photoreal “camera” aesthetics
+
+            - slick, airbrushed game key art
+
+            - anime / CGI / plastic rendering\n"
+          negative_prompt_used: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, summer stream, warm lighting, green foliage, swimming, cheerful, bridge, structure, buildings, smooth textures, concept art polish, spring foliage, green leaves, summer colors, bright cheerful lighting, warm cozy atmosphere, fantasy castle, civilization, paths, trails, signs, cozy cabin, welcoming, safe, tropical, desert, modern elements, photorealistic, futuristic elements, sci-fi, firearms, real-world Europe, historical reenactment, Victorian, Tudor, Renaissance, Napoleonic, 14th century, flat lighting"
+          model: "gemini-3-pro-image-preview"
+          provider: "google"
+          constraints:
+            aspect_ratio: "16:9"
+            size: "2752x1536"
+            orientation: "landscape"
+            quality: "high"
+          provider_metadata:
+            batch_run_id: "2025-12-21T12-14-51-854"
+            task_key: "location/thornwood-forest/thornwood-forest-stream-crossing@f398cfd9ab7ca9e7"
+          target_metadata:
+            entity_type: "location"
+            entity_slug: "thornwood-forest"
+            image_type: "zone"
+            title: "Ice and Clarity"
+            scene_mood: "somber"
+      - id: "thornwood-forest-stream-crossing-1766358647438-2025-12-21"
+        path: "images/thornwood-forest-stream-crossing-1766358647438-2025-12-21.jpg"
+        type: "generated"
+        status: "approved"
+        image_type: "zone"
+        content:
+          title: "Ice and Clarity"
+          description: "Ice and Clarity"
+          alt_text: "Ice and Clarity"
+          tags:
+            - "thornwood-forest-stream-crossing"
+            - "generated"
+            - "zone"
+        provenance:
+          source: "google"
+          created_at: "2025-12-21T23:55:54.420Z"
+          original_filename: "thornwood-forest-stream-crossing-1766358647438-2025-12-21.jpg"
+        generation:
+          target_id: "thornwood-forest-stream-crossing"
+          ir_hash: "c037562c28e0882f"
+          prompt_used: "SYSTEM INSTRUCTION: LOCATION CONSISTENCY MODE
+
+
+            The images above are REFERENCE IMAGES for a specific LOCATION.
+
+            Generate a NEW image of this SAME location in the described scenario.
+
+
+            CRITICAL REQUIREMENTS:
+
+            1. LOCATION IDENTITY: Preserve architecture, materials, lighting language, and signature elements from the references.
+
+            2. FANTASY TONE: This is a high-fantasy world (D&D / Faerûn vibe). Include subtle magical infrastructure (runes, enchanted lanterns, ward-stones, guild sigils) where appropriate.
+
+            3. NO FACE CLONING: If people appear, keep them generic and varied—do not repeat an identical face across images unless explicitly required.
+
+            4. AVOID GROUNDED HISTORY: Do not drift into “historical reenactment” or real-world medieval Europe. Keep the design language unmistakably fantasy (Faerûn) even when the scene is gritty and practical.
+
+            5. PRIORITY: If the scenario conflicts with the references, follow the scenario for composition/mood while preserving the location’s identity.
+
+
+            SCENARIO: clear water flowing over dark stone bed, ice shelves along both banks, crystalline ice detail, uncertain thickness, wider sightlines along stream corridor, canopy opening overhead, animal tracks concentrated at water's edge, snow on banks contrasting with dark water, reflected light off water surface, ancient old-growth trees with massive trunk girths (two to three people to circle), interlocking branch canopy creating permanent twilight, deep shadow corridors between pillar-trunks, layered forest floor of leaf-mold, moss, and exposed root-webs, dappled unreliable light—bright shafts through canopy breaks, swallowed shadow elsewhere, clear cold streams over dark stone beds, granite outcrops breaking through forest floor, ancient trees with faintly face-like bark and rune-scars (old fey influence), motes of fey-light in deep shade (subtle, not neon), stone markers with worn druidic glyphs along game trails, A winter stream cutting through the Thornwood, clear water running over a dark stone bed where the current prevents freezing. Ice shelves extend from both banks, their edges crystalline and uncertain—would they hold weight? The stream corridor opens the canopy overhead, allowing pale light to reach the water and reflect upward. The banks are lined with concentrated animal tracks—this is where the forest's hidden population comes to drink. The sudden openness after dense forest feels like relief and exposure simultaneously., Faerûn high-fantasy worldbuilding cues (subtle, believable magic): ancient standing stones with worn runes, druidic wards, faint fey-lights in mist, slightly uncanny flora and leyline ambience, Narrative context: Streams are navigation landmarks—the only reliable reference points in terrain where every direction looks the same. But they're also decision points: ford here, or find a better crossing? The image should capture both the relief of finding a landmark and the calculation of risk., Medium shot looking along the stream corridor, emphasizing the unusual openness and light. Shallow depth of field on foreground ice detail, with the corridor stretching into atmospheric distance. The contrast between dark surrounding forest and the light-filled corridor should be pronounced., morning, clear winter, light from direct overhead through canopy gap, brighter than surrounding forest, reflected off water, above through corridor gap, cold but clearer than forest twilight tones, deep at forest edges, soft along water shadows, slight mist rising from warmer water, dominant colors: clear water over black stone, snow white on banks, ice crystal blue-white; accent colors: reflected sky light, dark forest wall contrast, high fantasy, somber atmosphere, materials: hardwood and conifer trunks, bark rough and weathered, compressed leaf-mold, pine needles, moss carpets, exposed root systems, gray granite outcrops, lichen-covered, slick with moisture, Mood intent: Stream crossings offer brief clarity in the confusion of dense forest—wider sightlines, a navigational landmark, a moment to breathe. But they're also hazard points: ice that may or may not hold, exposure while crossing, ambush risk at the obvious chokepoint. The somber mood captures both the beauty and the danger.
+
+            , epic high-fantasy exterior, fantastical silhouettes and skyline, arcane lanterns and ward-lights, subtle magical phenomena integrated into the environment, dynamic skies, cinematic composition, atmospheric depth, Painterly cinematic high fantasy with grounded physicality.
+
+
+            We want images that feel like a premium illustrated novel: readable silhouettes, emotional
+
+            clarity, and rich material rendering (stone, timber, leather, metal) without drifting into:
+
+            - photoreal “camera” aesthetics
+
+            - slick, airbrushed game key art
+
+            - anime / CGI / plastic rendering\n"
+          negative_prompt_used: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, summer stream, warm lighting, green foliage, swimming, cheerful, bridge, structure, buildings, smooth textures, concept art polish, spring foliage, green leaves, summer colors, bright cheerful lighting, warm cozy atmosphere, fantasy castle, civilization, paths, trails, signs, cozy cabin, welcoming, safe, tropical, desert, modern elements, photorealistic, futuristic elements, sci-fi, firearms, real-world Europe, historical reenactment, Victorian, Tudor, Renaissance, Napoleonic, 14th century, flat lighting"
+          model: "gemini-3-pro-image-preview"
+          provider: "google"
+          constraints:
+            aspect_ratio: "16:9"
+            size: "2752x1536"
+            orientation: "landscape"
+            quality: "high"
+          provider_metadata:
+            batch_run_id: "2025-12-21T23-10-46-589"
+            task_key: "location/thornwood-forest/thornwood-forest-stream-crossing@3f647ed097098d50"
+          target_metadata:
+            entity_type: "location"
+            entity_slug: "thornwood-forest"
+            image_type: "zone"
+            title: "Ice and Clarity"
+            scene_mood: "somber"
+  - name: "The High Ground"
+    slug: "thornwood-forest-rocky-outcrop"
+    title: "Above the Green Sea"
+    image_type: "zone"
+    zone_type: "perimeter"
+    category:
+      - "Environmental"
+      - "Zone Detail"
+      - "Vista"
+    scene_mood: "ethereal"
+    mood_rationale: "After the claustrophobia of dense forest, reaching a rocky outcrop that breaks the canopy is a gift of perspective. The ethereal mood with its luminous quality and sense of dreamlike revelation captures the almost spiritual relief of finally being able to see—to orient, to understand where you are in relation to everything else.\n"
+    visual_description: "Gray granite pushing up through the forest floor, rising high enough to break the canopy and offer a view. From this height, the Thornwood spreads below like a textured green sea, the canopy an unbroken carpet stretching to distant hills. Evening light catches the rock face, turning lichen to gold and casting the climber's view into something almost sacred. The wind moves through the exposed height—a relief after the still air below. Up here, the forest's scale becomes comprehensible: vast, but not infinite. There are edges. There is a world beyond.\n"
+    location_within: "scattered throughout the forest, rising above canopy"
+    composition_notes: "High angle looking out from the outcrop across the forest canopy below. The rock formation prominent in foreground, with the \"green sea\" of canopy stretching to the horizon. Evening light creates depth through color temperature shifts. The sense of elevation and expanded sightlines should dominate.\n"
+    narrative_significance: "These outcrops are tactical assets—the only places in the Thornwood where you can see beyond the next tree. Veyra uses them for orientation and threat assessment. They're also moments of psychological relief: proof that the forest doesn't go on forever, that direction and distance exist.\n"
+    time_of_day: "evening"
+    weather: "clear"
+    required_elements:
+      - "gray granite formation breaking treeline"
+      - "lichen and moss on rock surfaces"
+      - "stunted vegetation at height"
+      - "forest canopy stretching below like textured carpet"
+      - "long sightlines to distant horizon"
+      - "evening light catching rock face"
+      - "sense of elevation and exposure"
+      - "wind-exposed quality"
+    lighting:
+      primary_source: "low evening sun"
+      quality: "warm gold on rock, cooler on distant forest"
+      direction: "side/back light from setting sun"
+      color_temperature: "warm foreground, cool distance"
+      shadow_depth: "long shadows on rock face"
+      atmospheric: "golden hour quality, slight haze at distance"
+    palette:
+      dominant:
+        - "granite gray"
+        - "forest canopy deep green"
+        - "sky pale gold fading to blue"
+      accent:
+        - "lichen yellow-green catching light"
+        - "warm rock where sun touches"
+      avoid:
+        - "cold harsh light"
+        - "claustrophobic framing"
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "2752x1178"
+    prompt_used: "Rocky outcrop rising above ancient forest, gray granite formation breaking through canopy, lichen and moss covering stone surfaces, stunted wind-exposed vegetation at height, forest canopy stretching below like textured green sea, long sightlines to distant hills on horizon, evening golden light catching rock face, warm illumination on stone contrasting cool green expanse below, sense of elevation and expanded perspective, the gift of seeing after claustrophobic forest, wind-exposed quality, no human figures, soft golden glow, luminous quality, pale golds and deep greens and soft purples at distance, vista, Maxfield Parrish color harmony\n"
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, enclosed space, dense forest, claustrophobic, no view, flat terrain, night darkness, harsh midday light\n"
+    references:
+      - placeholder: "Rocky outcrops zone"
+        file: "locations/thornwood-forest/location_analysis.yaml"
+        section: "zones - rocky-outcrops"
+      - placeholder: "Terrain description"
+        file: "locations/thornwood-forest/overview.md"
+        section: "Key Features - Notable Landmarks"
+    generated_images: []
+    image_inventory:
+      - id: "thornwood-forest-rocky-outcrop-1766319293226-2025-12-21"
+        path: "images/thornwood-forest-rocky-outcrop-1766319293226-2025-12-21.jpg"
+        type: "generated"
+        status: "approved"
+        image_type: "zone"
+        content:
+          title: "Above the Green Sea"
+          description: "Above the Green Sea"
+          alt_text: "Above the Green Sea"
+          tags:
+            - "thornwood-forest-rocky-outcrop"
+            - "generated"
+            - "zone"
+        provenance:
+          source: "google"
+          created_at: "2025-12-21T12:22:10.450Z"
+          original_filename: "thornwood-forest-rocky-outcrop-1766319293226-2025-12-21.jpg"
+        generation:
+          target_id: "thornwood-forest-rocky-outcrop"
+          ir_hash: "9602a944d5bf4377"
+          prompt_used: "SYSTEM INSTRUCTION: SCENE CONSISTENCY MODE
+
+
+            The images above are REFERENCE IMAGES for a scene. They may include:
+
+            - character portraits (identity references)
+
+            - a location overview (environment reference)
+
+            - style references (art direction)
+
+
+            Generate a NEW scene matching the scenario.
+
+
+            CRITICAL REQUIREMENTS:
+
+            1. CHARACTER IDENTITY: If portraits are present, keep each character distinct and consistent (face, hair, key identifiers). Do not merge identities.
+
+            2. LOCATION CONTINUITY: Preserve the location’s architectural identity and design language from any location references.
+
+            3. FANTASY TONE: High-fantasy (D&D / Faerûn vibe) with believable magical details integrated into the world.
+
+            4. AVOID GROUNDED HISTORY: Avoid “real-world medieval Europe” drift; keep fantasy species variety and magical infrastructure plausible and grounded-in-world (not neon).
+
+            5. PRIORITY: If scenario conflicts with references, follow the scenario for action/composition while keeping identity and location continuity.
+
+
+            SCENARIO: gray granite formation breaking treeline, lichen and moss on rock surfaces, stunted vegetation at height, forest canopy stretching below like textured carpet, long sightlines to distant horizon, evening light catching rock face, sense of elevation and exposure, wind-exposed quality, ancient old-growth trees with massive trunk girths (two to three people to circle), interlocking branch canopy creating permanent twilight, deep shadow corridors between pillar-trunks, layered forest floor of leaf-mold, moss, and exposed root-webs, dappled unreliable light—bright shafts through canopy breaks, swallowed shadow elsewhere, clear cold streams over dark stone beds, granite outcrops breaking through forest floor, ancient trees with faintly face-like bark and rune-scars (old fey influence), motes of fey-light in deep shade (subtle, not neon), stone markers with worn druidic glyphs along game trails, Gray granite pushing up through the forest floor, rising high enough to break the canopy and offer a view. From this height, the Thornwood spreads below like a textured green sea, the canopy an unbroken carpet stretching to distant hills. Evening light catches the rock face, turning lichen to gold and casting the climber's view into something almost sacred. The wind moves through the exposed height—a relief after the still air below. Up here, the forest's scale becomes comprehensible: vast, but not infinite. There are edges. There is a world beyond., Faerûn high-fantasy worldbuilding cues (subtle, believable magic): ancient standing stones with worn runes, druidic wards, faint fey-lights in mist, slightly uncanny flora and leyline ambience, Narrative context: These outcrops are tactical assets—the only places in the Thornwood where you can see beyond the next tree. Veyra uses them for orientation and threat assessment. They're also moments of psychological relief: proof that the forest doesn't go on forever, that direction and distance exist., High angle looking out from the outcrop across the forest canopy below. The rock formation prominent in foreground, with the \"green sea\" of canopy stretching to the horizon. Evening light creates depth through color temperature shifts. The sense of elevation and expanded sightlines should dominate., evening, clear, light from low evening sun, warm gold on rock, cooler on distant forest, side/back light from setting sun, warm foreground, cool distance tones, long shadows on rock face shadows, golden hour quality, slight haze at distance, dominant colors: granite gray, forest canopy deep green, sky pale gold fading to blue; accent colors: lichen yellow-green catching light, warm rock where sun touches, high fantasy, ethereal atmosphere, materials: hardwood and conifer trunks, bark rough and weathered, compressed leaf-mold, pine needles, moss carpets, exposed root systems, gray granite outcrops, lichen-covered, slick with moisture, Mood intent: After the claustrophobia of dense forest, reaching a rocky outcrop that breaks the canopy is a gift of perspective. The ethereal mood with its luminous quality and sense of dreamlike revelation captures the almost spiritual relief of finally being able to see—to orient, to understand where you are in relation to everything else.
+
+            , epic high-fantasy exterior, fantastical silhouettes and skyline, arcane lanterns and ward-lights, subtle magical phenomena integrated into the environment, dynamic skies, cinematic composition, atmospheric depth, Painterly cinematic high fantasy with grounded physicality.
+
+
+            We want images that feel like a premium illustrated novel: readable silhouettes, emotional
+
+            clarity, and rich material rendering (stone, timber, leather, metal) without drifting into:
+
+            - photoreal “camera” aesthetics
+
+            - slick, airbrushed game key art
+
+            - anime / CGI / plastic rendering\n"
+          negative_prompt_used: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, enclosed space, dense forest, claustrophobic, no view, flat terrain, night darkness, harsh midday light, smooth textures, concept art polish, spring foliage, green leaves, summer colors, bright cheerful lighting, warm cozy atmosphere, fantasy castle, buildings, civilization, paths, trails, signs, cozy cabin, welcoming, safe, tropical, desert, modern elements, photorealistic, futuristic elements, sci-fi, firearms, real-world Europe, historical reenactment, Victorian, Tudor, Renaissance, Napoleonic, 14th century, flat lighting"
+          model: "gemini-3-pro-image-preview"
+          provider: "google"
+          constraints:
+            aspect_ratio: "21:9"
+            size: "2752x1178"
+            orientation: "landscape"
+            quality: "high"
+          provider_metadata:
+            batch_run_id: "2025-12-21T12-14-51-854"
+            task_key: "location/thornwood-forest/thornwood-forest-rocky-outcrop@c00dab75751547e0"
+          target_metadata:
+            entity_type: "location"
+            entity_slug: "thornwood-forest"
+            image_type: "zone"
+            title: "Above the Green Sea"
+            scene_mood: "ethereal"
+      - id: "thornwood-forest-rocky-outcrop-1766358647439-2025-12-21"
+        path: "images/thornwood-forest-rocky-outcrop-1766358647439-2025-12-21.jpg"
+        type: "generated"
+        status: "approved"
+        image_type: "zone"
+        content:
+          title: "Above the Green Sea"
+          description: "Above the Green Sea"
+          alt_text: "Above the Green Sea"
+          tags:
+            - "thornwood-forest-rocky-outcrop"
+            - "generated"
+            - "zone"
+        provenance:
+          source: "google"
+          created_at: "2025-12-21T23:55:54.441Z"
+          original_filename: "thornwood-forest-rocky-outcrop-1766358647439-2025-12-21.jpg"
+        generation:
+          target_id: "thornwood-forest-rocky-outcrop"
+          ir_hash: "9602a944d5bf4377"
+          prompt_used: "SYSTEM INSTRUCTION: LOCATION CONSISTENCY MODE
+
+
+            The images above are REFERENCE IMAGES for a specific LOCATION.
+
+            Generate a NEW image of this SAME location in the described scenario.
+
+
+            CRITICAL REQUIREMENTS:
+
+            1. LOCATION IDENTITY: Preserve architecture, materials, lighting language, and signature elements from the references.
+
+            2. FANTASY TONE: This is a high-fantasy world (D&D / Faerûn vibe). Include subtle magical infrastructure (runes, enchanted lanterns, ward-stones, guild sigils) where appropriate.
+
+            3. NO FACE CLONING: If people appear, keep them generic and varied—do not repeat an identical face across images unless explicitly required.
+
+            4. AVOID GROUNDED HISTORY: Do not drift into “historical reenactment” or real-world medieval Europe. Keep the design language unmistakably fantasy (Faerûn) even when the scene is gritty and practical.
+
+            5. PRIORITY: If the scenario conflicts with the references, follow the scenario for composition/mood while preserving the location’s identity.
+
+
+            SCENARIO: gray granite formation breaking treeline, lichen and moss on rock surfaces, stunted vegetation at height, forest canopy stretching below like textured carpet, long sightlines to distant horizon, evening light catching rock face, sense of elevation and exposure, wind-exposed quality, ancient old-growth trees with massive trunk girths (two to three people to circle), interlocking branch canopy creating permanent twilight, deep shadow corridors between pillar-trunks, layered forest floor of leaf-mold, moss, and exposed root-webs, dappled unreliable light—bright shafts through canopy breaks, swallowed shadow elsewhere, clear cold streams over dark stone beds, granite outcrops breaking through forest floor, ancient trees with faintly face-like bark and rune-scars (old fey influence), motes of fey-light in deep shade (subtle, not neon), stone markers with worn druidic glyphs along game trails, Gray granite pushing up through the forest floor, rising high enough to break the canopy and offer a view. From this height, the Thornwood spreads below like a textured green sea, the canopy an unbroken carpet stretching to distant hills. Evening light catches the rock face, turning lichen to gold and casting the climber's view into something almost sacred. The wind moves through the exposed height—a relief after the still air below. Up here, the forest's scale becomes comprehensible: vast, but not infinite. There are edges. There is a world beyond., Faerûn high-fantasy worldbuilding cues (subtle, believable magic): ancient standing stones with worn runes, druidic wards, faint fey-lights in mist, slightly uncanny flora and leyline ambience, Narrative context: These outcrops are tactical assets—the only places in the Thornwood where you can see beyond the next tree. Veyra uses them for orientation and threat assessment. They're also moments of psychological relief: proof that the forest doesn't go on forever, that direction and distance exist., High angle looking out from the outcrop across the forest canopy below. The rock formation prominent in foreground, with the \"green sea\" of canopy stretching to the horizon. Evening light creates depth through color temperature shifts. The sense of elevation and expanded sightlines should dominate., evening, clear, light from low evening sun, warm gold on rock, cooler on distant forest, side/back light from setting sun, warm foreground, cool distance tones, long shadows on rock face shadows, golden hour quality, slight haze at distance, dominant colors: granite gray, forest canopy deep green, sky pale gold fading to blue; accent colors: lichen yellow-green catching light, warm rock where sun touches, high fantasy, ethereal atmosphere, materials: hardwood and conifer trunks, bark rough and weathered, compressed leaf-mold, pine needles, moss carpets, exposed root systems, gray granite outcrops, lichen-covered, slick with moisture, Mood intent: After the claustrophobia of dense forest, reaching a rocky outcrop that breaks the canopy is a gift of perspective. The ethereal mood with its luminous quality and sense of dreamlike revelation captures the almost spiritual relief of finally being able to see—to orient, to understand where you are in relation to everything else.
+
+            , epic high-fantasy exterior, fantastical silhouettes and skyline, arcane lanterns and ward-lights, subtle magical phenomena integrated into the environment, dynamic skies, cinematic composition, atmospheric depth, Painterly cinematic high fantasy with grounded physicality.
+
+
+            We want images that feel like a premium illustrated novel: readable silhouettes, emotional
+
+            clarity, and rich material rendering (stone, timber, leather, metal) without drifting into:
+
+            - photoreal “camera” aesthetics
+
+            - slick, airbrushed game key art
+
+            - anime / CGI / plastic rendering\n"
+          negative_prompt_used: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, enclosed space, dense forest, claustrophobic, no view, flat terrain, night darkness, harsh midday light, smooth textures, concept art polish, spring foliage, green leaves, summer colors, bright cheerful lighting, warm cozy atmosphere, fantasy castle, buildings, civilization, paths, trails, signs, cozy cabin, welcoming, safe, tropical, desert, modern elements, photorealistic, futuristic elements, sci-fi, firearms, real-world Europe, historical reenactment, Victorian, Tudor, Renaissance, Napoleonic, 14th century, flat lighting"
+          model: "gemini-3-pro-image-preview"
+          provider: "google"
+          constraints:
+            aspect_ratio: "21:9"
+            size: "2752x1178"
+            orientation: "landscape"
+            quality: "high"
+          provider_metadata:
+            batch_run_id: "2025-12-21T23-10-46-589"
+            task_key: "location/thornwood-forest/thornwood-forest-rocky-outcrop@824ecc89e51767df"
+          target_metadata:
+            entity_type: "location"
+            entity_slug: "thornwood-forest"
+            image_type: "zone"
+            title: "Above the Green Sea"
+            scene_mood: "ethereal"
+  - name: "What the Tracker Sees"
+    slug: "thornwood-forest-veyra-perspective"
+    title: "Reading the Conversation"
+    image_type: "perspective"
+    character: "veyra-thornwake"
+    zone: "game-trails"
+    category:
+      - "Character Perspective"
+      - "Environmental Detail"
+      - "Intimate"
+    scene_mood: "intimate"
+    mood_rationale: "This is Veyra's relationship with the forest made visible—the intimate knowledge of reading terrain, the quiet poetry of understanding what others miss. The intimate mood captures the personal nature of this expertise: the forest speaks to her in a language she's spent years learning.\n"
+    depicts_characters:
+      - "veyra-thornwake"
+    perspective_description: "The forest floor as Veyra reads it: not a random scatter of leaves and twigs, but a text of recent passage and hidden information. A broken branch at waist height speaks of deer movement yesterday. Disturbed leaf mold shows where a fox denned. The subtle compression of a game trail, invisible to untrained eyes, obvious to hers. Her lantern hangs at her belt, dark in daylight but ready. This is what she sees when others see only chaos—the conversation the forest has with those who know how to listen.\n"
+    character_signature_element: "Veyra's unlit lantern visible at belt edge, ready for when light fails"
+    composition_notes: "Low angle, almost ground-level perspective looking at forest floor detail in foreground with standing figure (Veyra's legs and belt with lantern) in middle ground. The focus on what she's reading—the sign, the track, the subtle trail marker—rather than a portrait. Her hand perhaps pointing or touching a relevant detail.\n"
+    time_of_day: "morning"
+    weather: "clear winter"
+    visual_description: "Close detail of winter forest floor as Veyra reads it: snow disturbed by animal passage, a broken twig at precise height, the almost-invisible compression of a game trail. Her gloved hand enters the frame, indicating a detail. Her lantern hangs at belt level, dark but present—her tool for when this conversation continues into night. The light is the dappled morning of the Thornwood, and every shadow and disturbance tells a story.\n"
+    required_elements:
+      - "forest floor detail showing tracks and sign"
+      - "game trail compression barely visible"
+      - "broken twig or disturbed snow as 'text'"
+      - "Veyra's hand indicating or touching detail"
+      - "her unlit lantern visible at belt"
+      - "winter forest context"
+      - "sense of reading meaning from chaos"
+    lighting:
+      primary_source: "diffuse morning light through canopy"
+      quality: "soft, revealing detail"
+      direction: "above, filtered through branches"
+      color_temperature: "cool morning light"
+      shadow_depth: "soft, detail-revealing"
+      atmospheric: "slight cold haze"
+    palette:
+      dominant:
+        - "snow white"
+        - "forest floor brown-gray"
+        - "Veyra's earth-tone gear"
+      accent:
+        - "her lantern's metal and glass"
+        - "subtle track shadows"
+      avoid:
+        - "harsh contrast"
+        - "bright colors"
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "2752x1536"
+    prompt_used: "Forest tracker's perspective of winter game trail, low angle view of forest floor detail, snow showing subtle animal tracks and passage signs, barely-visible game trail compression in snow, broken twig at waist height indicating deer movement, woman tracker's gloved hand entering frame pointing at subtle sign, her unlit lantern visible at belt level, earth-tone winter travel clothes, reading meaning from apparent chaos, the forest as text for those who can read it, morning light revealing detail, ancient forest background soft focus, Vermeer interior intimacy applied to exterior, single soft light source, amber and earth tones, gentle shadow gradients, quiet poetry of expertise\n"
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, obvious tracks, glowing trails, magical highlighting, fantasy effects, portrait focus, face visible, posed standing\n"
+    references:
+      - placeholder: "Veyra's perspective quote"
+        file: "locations/thornwood-forest/location_analysis.yaml"
+        section: "character_space_relationships - veyra-thornwake - perspective_quote"
+      - placeholder: "Game trails zone"
+        file: "locations/thornwood-forest/location_analysis.yaml"
+        section: "zones - game-trails"
+    generated_images: []
+    image_inventory:
+      - id: "thornwood-forest-veyra-perspective-1766319293230-2025-12-21"
+        path: "images/thornwood-forest-veyra-perspective-1766319293230-2025-12-21.jpg"
+        type: "generated"
+        status: "approved"
+        image_type: "perspective"
+        content:
+          title: "Reading the Conversation"
+          description: "Reading the Conversation"
+          alt_text: "Reading the Conversation"
+          tags:
+            - "thornwood-forest-veyra-perspective"
+            - "generated"
+            - "perspective"
+        provenance:
+          source: "google"
+          created_at: "2025-12-21T12:22:10.466Z"
+          original_filename: "thornwood-forest-veyra-perspective-1766319293230-2025-12-21.jpg"
+        generation:
+          target_id: "thornwood-forest-veyra-perspective"
+          ir_hash: "ac7a2f397a196413"
+          prompt_used: "SYSTEM INSTRUCTION: SCENE CONSISTENCY MODE
+
+
+            The images above are REFERENCE IMAGES for a scene. They may include:
+
+            - character portraits (identity references)
+
+            - a location overview (environment reference)
+
+            - style references (art direction)
+
+
+            Generate a NEW scene matching the scenario.
+
+
+            CRITICAL REQUIREMENTS:
+
+            1. CHARACTER IDENTITY: If portraits are present, keep each character distinct and consistent (face, hair, key identifiers). Do not merge identities.
+
+            2. LOCATION CONTINUITY: Preserve the location’s architectural identity and design language from any location references.
+
+            3. FANTASY TONE: High-fantasy (D&D / Faerûn vibe) with believable magical details integrated into the world.
+
+            4. AVOID GROUNDED HISTORY: Avoid “real-world medieval Europe” drift; keep fantasy species variety and magical infrastructure plausible and grounded-in-world (not neon).
+
+            5. PRIORITY: If scenario conflicts with references, follow the scenario for action/composition while keeping identity and location continuity.
+
+
+            SCENARIO: forest floor detail showing tracks and sign, game trail compression barely visible, broken twig or disturbed snow as 'text', Veyra's hand indicating or touching detail, her unlit lantern visible at belt, winter forest context, sense of reading meaning from chaos, ancient old-growth trees with massive trunk girths (two to three people to circle), interlocking branch canopy creating permanent twilight, deep shadow corridors between pillar-trunks, layered forest floor of leaf-mold, moss, and exposed root-webs, dappled unreliable light—bright shafts through canopy breaks, swallowed shadow elsewhere, clear cold streams over dark stone beds, granite outcrops breaking through forest floor, ancient trees with faintly face-like bark and rune-scars (old fey influence), motes of fey-light in deep shade (subtle, not neon), stone markers with worn druidic glyphs along game trails, Close detail of winter forest floor as Veyra reads it: snow disturbed by animal passage, a broken twig at precise height, the almost-invisible compression of a game trail. Her gloved hand enters the frame, indicating a detail. Her lantern hangs at belt level, dark but present—her tool for when this conversation continues into night. The light is the dappled morning of the Thornwood, and every shadow and disturbance tells a story., Faerûn high-fantasy worldbuilding cues (subtle, believable magic): ancient standing stones with worn runes, druidic wards, faint fey-lights in mist, slightly uncanny flora and leyline ambience, Low angle, almost ground-level perspective looking at forest floor detail in foreground with standing figure (Veyra's legs and belt with lantern) in middle ground. The focus on what she's reading—the sign, the track, the subtle trail marker—rather than a portrait. Her hand perhaps pointing or touching a relevant detail., morning, clear winter, light from diffuse morning light through canopy, soft, revealing detail, above, filtered through branches, cool morning light tones, soft, detail-revealing shadows, slight cold haze, dominant colors: snow white, forest floor brown-gray, Veyra's earth-tone gear; accent colors: her lantern's metal and glass, subtle track shadows, high fantasy, intimate atmosphere, materials: hardwood and conifer trunks, bark rough and weathered, compressed leaf-mold, pine needles, moss carpets, exposed root systems, gray granite outcrops, lichen-covered, slick with moisture, Mood intent: This is Veyra's relationship with the forest made visible—the intimate knowledge of reading terrain, the quiet poetry of understanding what others miss. The intimate mood captures the personal nature of this expertise: the forest speaks to her in a language she's spent years learning.
+
+            , storytelling moment, high-fantasy adventuring tone, emotional lighting, atmospheric depth, subtle spell effects, focus on character expressions, dramatic composition, Painterly cinematic high fantasy with grounded physicality.
+
+
+            We want images that feel like a premium illustrated novel: readable silhouettes, emotional
+
+            clarity, and rich material rendering (stone, timber, leather, metal) without drifting into:
+
+            - photoreal “camera” aesthetics
+
+            - slick, airbrushed game key art
+
+            - anime / CGI / plastic rendering\n"
+          negative_prompt_used: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, obvious tracks, glowing trails, magical highlighting, fantasy effects, portrait focus, face visible, posed standing, smooth textures, concept art polish, spring foliage, green leaves, summer colors, bright cheerful lighting, warm cozy atmosphere, fantasy castle, buildings, civilization, paths, trails, signs, cozy cabin, welcoming, safe, tropical, desert, modern elements, photorealistic, futuristic elements, sci-fi, firearms, real-world Europe, historical reenactment, Victorian, Tudor, Renaissance, Napoleonic, 14th century, flat lighting"
+          model: "gemini-3-pro-image-preview"
+          provider: "google"
+          constraints:
+            aspect_ratio: "16:9"
+            size: "2752x1536"
+            orientation: "landscape"
+            quality: "high"
+          provider_metadata:
+            batch_run_id: "2025-12-21T12-14-51-854"
+            task_key: "location/thornwood-forest/thornwood-forest-veyra-perspective@26c1562d87d38baf"
+          target_metadata:
+            entity_type: "location"
+            entity_slug: "thornwood-forest"
+            image_type: "perspective"
+            title: "Reading the Conversation"
+            scene_mood: "intimate"
+      - id: "thornwood-forest-veyra-perspective-1766358647442-2025-12-21"
+        path: "images/thornwood-forest-veyra-perspective-1766358647442-2025-12-21.jpg"
+        type: "generated"
+        status: "approved"
+        image_type: "perspective"
+        content:
+          title: "Reading the Conversation"
+          description: "Reading the Conversation"
+          alt_text: "Reading the Conversation"
+          tags:
+            - "thornwood-forest-veyra-perspective"
+            - "generated"
+            - "perspective"
+        provenance:
+          source: "google"
+          created_at: "2025-12-21T23:55:54.461Z"
+          original_filename: "thornwood-forest-veyra-perspective-1766358647442-2025-12-21.jpg"
+        generation:
+          target_id: "thornwood-forest-veyra-perspective"
+          ir_hash: "ac7a2f397a196413"
+          prompt_used: "SYSTEM INSTRUCTION: SCENE CONSISTENCY MODE
+
+
+            The images above are REFERENCE IMAGES for a scene. They may include:
+
+            - character portraits (identity references)
+
+            - a location overview (environment reference)
+
+            - style references (art direction)
+
+
+            Generate a NEW scene matching the scenario.
+
+
+            CRITICAL REQUIREMENTS:
+
+            1. CHARACTER IDENTITY: If portraits are present, keep each character distinct and consistent (face, hair, key identifiers). Do not merge identities.
+
+            2. LOCATION CONTINUITY: Preserve the location’s architectural identity and design language from any location references.
+
+            3. FANTASY TONE: High-fantasy (D&D / Faerûn vibe) with believable magical details integrated into the world.
+
+            4. AVOID GROUNDED HISTORY: Avoid “real-world medieval Europe” drift; keep fantasy species variety and magical infrastructure plausible and grounded-in-world (not neon).
+
+            5. PRIORITY: If scenario conflicts with references, follow the scenario for action/composition while keeping identity and location continuity.
+
+
+            SCENARIO: forest floor detail showing tracks and sign, game trail compression barely visible, broken twig or disturbed snow as 'text', Veyra's hand indicating or touching detail, her unlit lantern visible at belt, winter forest context, sense of reading meaning from chaos, ancient old-growth trees with massive trunk girths (two to three people to circle), interlocking branch canopy creating permanent twilight, deep shadow corridors between pillar-trunks, layered forest floor of leaf-mold, moss, and exposed root-webs, dappled unreliable light—bright shafts through canopy breaks, swallowed shadow elsewhere, clear cold streams over dark stone beds, granite outcrops breaking through forest floor, ancient trees with faintly face-like bark and rune-scars (old fey influence), motes of fey-light in deep shade (subtle, not neon), stone markers with worn druidic glyphs along game trails, Close detail of winter forest floor as Veyra reads it: snow disturbed by animal passage, a broken twig at precise height, the almost-invisible compression of a game trail. Her gloved hand enters the frame, indicating a detail. Her lantern hangs at belt level, dark but present—her tool for when this conversation continues into night. The light is the dappled morning of the Thornwood, and every shadow and disturbance tells a story., Faerûn high-fantasy worldbuilding cues (subtle, believable magic): ancient standing stones with worn runes, druidic wards, faint fey-lights in mist, slightly uncanny flora and leyline ambience, Low angle, almost ground-level perspective looking at forest floor detail in foreground with standing figure (Veyra's legs and belt with lantern) in middle ground. The focus on what she's reading—the sign, the track, the subtle trail marker—rather than a portrait. Her hand perhaps pointing or touching a relevant detail., morning, clear winter, light from diffuse morning light through canopy, soft, revealing detail, above, filtered through branches, cool morning light tones, soft, detail-revealing shadows, slight cold haze, dominant colors: snow white, forest floor brown-gray, Veyra's earth-tone gear; accent colors: her lantern's metal and glass, subtle track shadows, high fantasy, intimate atmosphere, materials: hardwood and conifer trunks, bark rough and weathered, compressed leaf-mold, pine needles, moss carpets, exposed root systems, gray granite outcrops, lichen-covered, slick with moisture, Mood intent: This is Veyra's relationship with the forest made visible—the intimate knowledge of reading terrain, the quiet poetry of understanding what others miss. The intimate mood captures the personal nature of this expertise: the forest speaks to her in a language she's spent years learning.
+
+            , storytelling moment, high-fantasy adventuring tone, emotional lighting, atmospheric depth, subtle spell effects, focus on character expressions, dramatic composition, Painterly cinematic high fantasy with grounded physicality.
+
+
+            We want images that feel like a premium illustrated novel: readable silhouettes, emotional
+
+            clarity, and rich material rendering (stone, timber, leather, metal) without drifting into:
+
+            - photoreal “camera” aesthetics
+
+            - slick, airbrushed game key art
+
+            - anime / CGI / plastic rendering\n"
+          negative_prompt_used: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, obvious tracks, glowing trails, magical highlighting, fantasy effects, portrait focus, face visible, posed standing, smooth textures, concept art polish, spring foliage, green leaves, summer colors, bright cheerful lighting, warm cozy atmosphere, fantasy castle, buildings, civilization, paths, trails, signs, cozy cabin, welcoming, safe, tropical, desert, modern elements, photorealistic, futuristic elements, sci-fi, firearms, real-world Europe, historical reenactment, Victorian, Tudor, Renaissance, Napoleonic, 14th century, flat lighting"
+          model: "gemini-3-pro-image-preview"
+          provider: "google"
+          constraints:
+            aspect_ratio: "16:9"
+            size: "2752x1536"
+            orientation: "landscape"
+            quality: "high"
+          provider_metadata:
+            batch_run_id: "2025-12-21T23-10-46-589"
+            task_key: "location/thornwood-forest/thornwood-forest-veyra-perspective@9d2af171ae22cfbc"
+          target_metadata:
+            entity_type: "location"
+            entity_slug: "thornwood-forest"
+            image_type: "perspective"
+            title: "Reading the Conversation"
+            scene_mood: "intimate"
+  - name: "The Tracker in the Snow"
+    slug: "thornwood-forest-ch08-first-encounter"
+    title: "Chapter 8: Into the White"
+    image_type: "beat"
+    source_chapter: "ch08"
+    source_scene: "The Tracker in the Snow"
+    what_happens: "The Company enters the winter Thornwood for the first time. The forest swallows them—the abrupt transition from open travel to enclosed, twilight, sound-dampened wilderness. Veyra's skills immediately become essential as she guides them along trails invisible to others.\n"
+    zone: "winter-cathedral"
+    category:
+      - "Narrative Beat"
+      - "Chapter Key Moment"
+      - "Group Scene"
+    scene_mood: "somber"
+    mood_rationale: "This is the moment of transition—from the known world to the unknown, from roads to wilderness, from confidence to wariness. The somber mood captures the weight of that threshold and the dawning realization of what they've entered.\n"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: "At the head of the group, already reading the forest, already at home. Her posture shifts from road-travel to forest-travel—lower, more alert, more in tune. Dragon-burn scars visible, practical winter gear, her expertise now visibly essential.\n"
+    visual_description: "The moment of entering: the Company at the threshold between open ground and the forest's embrace. Behind them, the last open sky. Ahead, the winter cathedral closes around them—massive trunks, snow-laden canopy, the twilight that will be their world until they emerge. Veyra already ahead, already reading, already essential. The others pausing at the threshold, the weight of what they're entering visible in their postures.\n"
+    key_visual_hook: "The threshold moment—open sky behind, endless white forest ahead, the Company committing to the crossing"
+    composition_notes: "Wide shot capturing both the threshold and the depth ahead. The group spread from the open ground (camera) into the forest (depth). Light contrast between the brighter open area and the forest twilight. Veyra furthest in, already part of the forest; others still transitioning.\n"
+    time_of_day: "morning"
+    weather: "clear winter"
+    required_elements:
+      - "threshold between open ground and forest edge"
+      - "open sky visible behind"
+      - "winter forest cathedral ahead"
+      - "Company at various stages of entering"
+      - "Veyra already ahead, at home"
+      - "snow on ground and canopy"
+      - "massive ancient trunks"
+      - "sense of commitment to the crossing"
+    lighting:
+      primary_source: "open sky behind, filtered forest light ahead"
+      quality: "bright open area transitioning to forest twilight"
+      direction: "behind camera (open), diffuse ahead (forest)"
+      color_temperature: "cooler as depth increases into forest"
+      shadow_depth: "increasing with forest depth"
+      atmospheric: "slight haze in forest distance"
+    palette:
+      dominant:
+        - "snow white throughout"
+        - "dark trunk brown-gray"
+        - "earth-tone travel gear"
+      accent:
+        - "pale open sky"
+        - "deep forest shadow"
+      avoid:
+        - "warm tones"
+        - "bright colors"
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "2752x1178"
+    prompt_used: "Medieval fantasy company entering winter forest, threshold moment between open snowy ground and ancient forest, group of travelers at various stages of entering, scarred woman tracker already ahead into the trees at home in the wilderness, others pausing at the forest edge, open gray sky visible behind, winter cathedral of massive snow-laden trees ahead, the commitment to crossing visible in their postures, light transitioning from open brightness to forest twilight, deep snow on ground, massive ancient trunks rising into white canopy, the forest swallowing them, on the threshold, increasing with forest depth, muted earth palette, atmospheric haze in forest distance, melancholy weight of entering the unknown\n"
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, summer forest, green leaves, warm lighting, easy cheerful journey, wide clear path, welcoming atmosphere\n"
+    references:
+      - placeholder: "Chapter 8 scene"
+        file: "chapters/ch08.md"
+        section: "The Tracker in the Snow - forest entry"
+      - placeholder: "Location analysis narrative beat"
+        file: "locations/thornwood-forest/location_analysis.yaml"
+        section: "narrative_beats - tracker-in-snow"
+    generated_images: []
+    image_inventory:
+      - id: "thornwood-forest-ch08-first-encounter-1766319293235-2025-12-21"
+        path: "images/thornwood-forest-ch08-first-encounter-1766319293235-2025-12-21.jpg"
+        type: "generated"
+        status: "approved"
+        image_type: "beat"
+        content:
+          title: "Chapter 8: Into the White"
+          description: "Chapter 8: Into the White"
+          alt_text: "Chapter 8: Into the White"
+          tags:
+            - "thornwood-forest-ch08-first-encounter"
+            - "generated"
+            - "beat"
+        provenance:
+          source: "google"
+          created_at: "2025-12-21T12:22:10.483Z"
+          original_filename: "thornwood-forest-ch08-first-encounter-1766319293235-2025-12-21.jpg"
+        generation:
+          target_id: "thornwood-forest-ch08-first-encounter"
+          ir_hash: "22e0da3d33b9d19d"
+          prompt_used: "SYSTEM INSTRUCTION: SCENE CONSISTENCY MODE
+
+
+            The images above are REFERENCE IMAGES for a scene. They may include:
+
+            - character portraits (identity references)
+
+            - a location overview (environment reference)
+
+            - style references (art direction)
+
+
+            Generate a NEW scene matching the scenario.
+
+
+            CRITICAL REQUIREMENTS:
+
+            1. CHARACTER IDENTITY: If portraits are present, keep each character distinct and consistent (face, hair, key identifiers). Do not merge identities.
+
+            2. LOCATION CONTINUITY: Preserve the location’s architectural identity and design language from any location references.
+
+            3. FANTASY TONE: High-fantasy (D&D / Faerûn vibe) with believable magical details integrated into the world.
+
+            4. AVOID GROUNDED HISTORY: Avoid “real-world medieval Europe” drift; keep fantasy species variety and magical infrastructure plausible and grounded-in-world (not neon).
+
+            5. PRIORITY: If scenario conflicts with references, follow the scenario for action/composition while keeping identity and location continuity.
+
+
+            SCENARIO: threshold between open ground and forest edge, open sky visible behind, winter forest cathedral ahead, Company at various stages of entering, Veyra already ahead, at home, snow on ground and canopy, massive ancient trunks, sense of commitment to the crossing, ancient old-growth trees with massive trunk girths (two to three people to circle), interlocking branch canopy creating permanent twilight, deep shadow corridors between pillar-trunks, layered forest floor of leaf-mold, moss, and exposed root-webs, dappled unreliable light—bright shafts through canopy breaks, swallowed shadow elsewhere, clear cold streams over dark stone beds, granite outcrops breaking through forest floor, ancient trees with faintly face-like bark and rune-scars (old fey influence), motes of fey-light in deep shade (subtle, not neon), stone markers with worn druidic glyphs along game trails, The moment of entering: the Company at the threshold between open ground and the forest's embrace. Behind them, the last open sky. Ahead, the winter cathedral closes around them—massive trunks, snow-laden canopy, the twilight that will be their world until they emerge. Veyra already ahead, already reading, already essential. The others pausing at the threshold, the weight of what they're entering visible in their postures., Faerûn high-fantasy worldbuilding cues (subtle, believable magic): ancient standing stones with worn runes, druidic wards, faint fey-lights in mist, slightly uncanny flora and leyline ambience, Wide shot capturing both the threshold and the depth ahead. The group spread from the open ground (camera) into the forest (depth). Light contrast between the brighter open area and the forest twilight. Veyra furthest in, already part of the forest; others still transitioning., morning, clear winter, light from open sky behind, filtered forest light ahead, bright open area transitioning to forest twilight, behind camera (open), diffuse ahead (forest), cooler as depth increases into forest tones, increasing with forest depth shadows, slight haze in forest distance, dominant colors: snow white throughout, dark trunk brown-gray, earth-tone travel gear; accent colors: pale open sky, deep forest shadow, high fantasy, somber atmosphere, materials: hardwood and conifer trunks, bark rough and weathered, compressed leaf-mold, pine needles, moss carpets, exposed root systems, gray granite outcrops, lichen-covered, slick with moisture, Mood intent: This is the moment of transition—from the known world to the unknown, from roads to wilderness, from confidence to wariness. The somber mood captures the weight of that threshold and the dawning realization of what they've entered.
+
+            , storytelling moment, high-fantasy adventuring tone, emotional lighting, atmospheric depth, subtle spell effects, focus on character expressions, dramatic composition, Painterly cinematic high fantasy with grounded physicality.
+
+
+            We want images that feel like a premium illustrated novel: readable silhouettes, emotional
+
+            clarity, and rich material rendering (stone, timber, leather, metal) without drifting into:
+
+            - photoreal “camera” aesthetics
+
+            - slick, airbrushed game key art
+
+            - anime / CGI / plastic rendering\n"
+          negative_prompt_used: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, summer forest, green leaves, warm lighting, easy cheerful journey, wide clear path, welcoming atmosphere, smooth textures, concept art polish, spring foliage, summer colors, bright cheerful lighting, warm cozy atmosphere, fantasy castle, buildings, civilization, paths, trails, signs, cozy cabin, welcoming, safe, tropical, desert, modern elements, photorealistic, futuristic elements, sci-fi, firearms, real-world Europe, historical reenactment, Victorian, Tudor, Renaissance, Napoleonic, 14th century, flat lighting"
+          model: "gemini-3-pro-image-preview"
+          provider: "google"
+          constraints:
+            aspect_ratio: "21:9"
+            size: "2752x1178"
+            orientation: "landscape"
+            quality: "high"
+          provider_metadata:
+            batch_run_id: "2025-12-21T12-14-51-854"
+            task_key: "location/thornwood-forest/thornwood-forest-ch08-first-encounter@f6ae2ef9bb5c1bd2"
+          target_metadata:
+            entity_type: "location"
+            entity_slug: "thornwood-forest"
+            image_type: "beat"
+            title: "Chapter 8: Into the White"
+            scene_mood: "somber"
+      - id: "thornwood-forest-ch08-first-encounter-1766358647445-2025-12-21"
+        path: "images/thornwood-forest-ch08-first-encounter-1766358647445-2025-12-21.jpg"
+        type: "generated"
+        status: "approved"
+        image_type: "beat"
+        content:
+          title: "Chapter 8: Into the White"
+          description: "Chapter 8: Into the White"
+          alt_text: "Chapter 8: Into the White"
+          tags:
+            - "thornwood-forest-ch08-first-encounter"
+            - "generated"
+            - "beat"
+        provenance:
+          source: "google"
+          created_at: "2025-12-21T23:55:54.484Z"
+          original_filename: "thornwood-forest-ch08-first-encounter-1766358647445-2025-12-21.jpg"
+        generation:
+          target_id: "thornwood-forest-ch08-first-encounter"
+          ir_hash: "22e0da3d33b9d19d"
+          prompt_used: "SYSTEM INSTRUCTION: SCENE CONSISTENCY MODE
+
+
+            The images above are REFERENCE IMAGES for a scene. They may include:
+
+            - character portraits (identity references)
+
+            - a location overview (environment reference)
+
+            - style references (art direction)
+
+
+            Generate a NEW scene matching the scenario.
+
+
+            CRITICAL REQUIREMENTS:
+
+            1. CHARACTER IDENTITY: If portraits are present, keep each character distinct and consistent (face, hair, key identifiers). Do not merge identities.
+
+            2. LOCATION CONTINUITY: Preserve the location’s architectural identity and design language from any location references.
+
+            3. FANTASY TONE: High-fantasy (D&D / Faerûn vibe) with believable magical details integrated into the world.
+
+            4. AVOID GROUNDED HISTORY: Avoid “real-world medieval Europe” drift; keep fantasy species variety and magical infrastructure plausible and grounded-in-world (not neon).
+
+            5. PRIORITY: If scenario conflicts with references, follow the scenario for action/composition while keeping identity and location continuity.
+
+
+            SCENARIO: threshold between open ground and forest edge, open sky visible behind, winter forest cathedral ahead, Company at various stages of entering, Veyra already ahead, at home, snow on ground and canopy, massive ancient trunks, sense of commitment to the crossing, ancient old-growth trees with massive trunk girths (two to three people to circle), interlocking branch canopy creating permanent twilight, deep shadow corridors between pillar-trunks, layered forest floor of leaf-mold, moss, and exposed root-webs, dappled unreliable light—bright shafts through canopy breaks, swallowed shadow elsewhere, clear cold streams over dark stone beds, granite outcrops breaking through forest floor, ancient trees with faintly face-like bark and rune-scars (old fey influence), motes of fey-light in deep shade (subtle, not neon), stone markers with worn druidic glyphs along game trails, The moment of entering: the Company at the threshold between open ground and the forest's embrace. Behind them, the last open sky. Ahead, the winter cathedral closes around them—massive trunks, snow-laden canopy, the twilight that will be their world until they emerge. Veyra already ahead, already reading, already essential. The others pausing at the threshold, the weight of what they're entering visible in their postures., Faerûn high-fantasy worldbuilding cues (subtle, believable magic): ancient standing stones with worn runes, druidic wards, faint fey-lights in mist, slightly uncanny flora and leyline ambience, Wide shot capturing both the threshold and the depth ahead. The group spread from the open ground (camera) into the forest (depth). Light contrast between the brighter open area and the forest twilight. Veyra furthest in, already part of the forest; others still transitioning., morning, clear winter, light from open sky behind, filtered forest light ahead, bright open area transitioning to forest twilight, behind camera (open), diffuse ahead (forest), cooler as depth increases into forest tones, increasing with forest depth shadows, slight haze in forest distance, dominant colors: snow white throughout, dark trunk brown-gray, earth-tone travel gear; accent colors: pale open sky, deep forest shadow, high fantasy, somber atmosphere, materials: hardwood and conifer trunks, bark rough and weathered, compressed leaf-mold, pine needles, moss carpets, exposed root systems, gray granite outcrops, lichen-covered, slick with moisture, Mood intent: This is the moment of transition—from the known world to the unknown, from roads to wilderness, from confidence to wariness. The somber mood captures the weight of that threshold and the dawning realization of what they've entered.
+
+            , storytelling moment, high-fantasy adventuring tone, emotional lighting, atmospheric depth, subtle spell effects, focus on character expressions, dramatic composition, Painterly cinematic high fantasy with grounded physicality.
+
+
+            We want images that feel like a premium illustrated novel: readable silhouettes, emotional
+
+            clarity, and rich material rendering (stone, timber, leather, metal) without drifting into:
+
+            - photoreal “camera” aesthetics
+
+            - slick, airbrushed game key art
+
+            - anime / CGI / plastic rendering\n"
+          negative_prompt_used: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, summer forest, green leaves, warm lighting, easy cheerful journey, wide clear path, welcoming atmosphere, smooth textures, concept art polish, spring foliage, summer colors, bright cheerful lighting, warm cozy atmosphere, fantasy castle, buildings, civilization, paths, trails, signs, cozy cabin, welcoming, safe, tropical, desert, modern elements, photorealistic, futuristic elements, sci-fi, firearms, real-world Europe, historical reenactment, Victorian, Tudor, Renaissance, Napoleonic, 14th century, flat lighting"
+          model: "gemini-3-pro-image-preview"
+          provider: "google"
+          constraints:
+            aspect_ratio: "21:9"
+            size: "2752x1178"
+            orientation: "landscape"
+            quality: "high"
+          provider_metadata:
+            batch_run_id: "2025-12-21T23-10-46-589"
+            task_key: "location/thornwood-forest/thornwood-forest-ch08-first-encounter@1d8f61d21923e5d7"
+          target_metadata:
+            entity_type: "location"
+            entity_slug: "thornwood-forest"
+            image_type: "beat"
+            title: "Chapter 8: Into the White"
+            scene_mood: "somber"
+  - name: "The Hidden Camp"
+    slug: "thornwood-forest-hidden-hollow"
+    title: "Sanctuary or Trap"
+    image_type: "zone"
+    zone_type: "sanctuary"
+    category:
+      - "Environmental"
+      - "Zone Detail"
+      - "Shelter"
+    scene_mood: "intimate"
+    mood_rationale: "A good hollow is survival in the Thornwood—shelter from wind, concealment from threat, a defensible position for rest. The intimate mood captures the relief of finding such a place and the close quarters of forest camping: the small fire, the shared warmth, the darkness pressed close beyond the light.\n"
+    visual_description: "A natural hollow in the forest floor, created by a fallen giant whose root ball now forms a windbreak. The depression is lined with thick moss, deep enough to shelter from wind, concealed enough to hide a small fire's glow. The fire itself burns low, its orange light creating a small island of warmth in the surrounding darkness. The hollow feels like a cupped hand—protective, but also enclosing. Above, the dark canopy blocks the stars. Beyond the fire's reach, the forest waits.\n"
+    location_within: "depressions throughout the forest, often at the base of fallen giants"
+    composition_notes: "Medium shot from within or just above the hollow, looking at the camp site. The fire as warm center, the root ball windbreak behind, the moss-lined depression as natural shelter. The surrounding darkness pressing in but held at bay. Intimate scale, human-sized refuge in forest vastness.\n"
+    time_of_day: "night"
+    weather: "clear winter"
+    required_elements:
+      - "natural depression in forest floor"
+      - "fallen tree's root ball as windbreak"
+      - "moss-lined hollow"
+      - "small low campfire creating orange light pool"
+      - "darkness beyond fire's reach"
+      - "sense of concealment and shelter"
+      - "winter context (breath visible, cold beyond fire)"
+      - "defensive/strategic camp setup"
+    lighting:
+      primary_source: "small campfire"
+      quality: "warm orange center, absolute darkness beyond"
+      direction: "central fire radiating outward"
+      color_temperature: "warm amber at fire, cold darkness beyond"
+      shadow_depth: "absolute beyond fire's reach"
+      atmospheric: "some smoke, breath vapor"
+    palette:
+      dominant:
+        - "fire orange and amber"
+        - "darkness black"
+        - "moss green-brown"
+      accent:
+        - "root wood gray-brown"
+        - "frost white at edges"
+      avoid:
+        - "daylight colors"
+        - "bright exposure"
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "2752x1536"
+    prompt_used: "Wilderness camp in hidden forest hollow, natural depression created by fallen giant's root ball forming windbreak, moss-lined shelter, small low campfire creating orange pool of warmth and light, darkness absolute beyond fire's reach, winter night in ancient forest, breath visible in cold air, strategic concealed position, the gamble of shelter in hostile terrain, defensive camp setup, sleeping rolls arranged, the forest waiting beyond the light, applied to exterior camp, single warm light source, amber and orange against absolute darkness, gentle shadow gradients, intimate scale of human refuge in vast wilderness, intimacy in unexpected setting\n"
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, daylight, bright exposure, modern camping equipment, tent, cheerful campfire scene, large group, standing figures\n"
+    references:
+      - placeholder: "Hidden hollows zone"
+        file: "locations/thornwood-forest/location_analysis.yaml"
+        section: "zones - hidden-hollows"
+      - placeholder: "Hazards and shelter"
+        file: "locations/thornwood-forest/description.md"
+        section: "Hazards"
+    generated_images: []
+    image_inventory:
+      - id: "thornwood-forest-hidden-hollow-1766319293239-2025-12-21"
+        path: "images/thornwood-forest-hidden-hollow-1766319293239-2025-12-21.jpg"
+        type: "generated"
+        status: "approved"
+        image_type: "zone"
+        content:
+          title: "Sanctuary or Trap"
+          description: "Sanctuary or Trap"
+          alt_text: "Sanctuary or Trap"
+          tags:
+            - "thornwood-forest-hidden-hollow"
+            - "generated"
+            - "zone"
+        provenance:
+          source: "google"
+          created_at: "2025-12-21T12:22:10.498Z"
+          original_filename: "thornwood-forest-hidden-hollow-1766319293239-2025-12-21.jpg"
+        generation:
+          target_id: "thornwood-forest-hidden-hollow"
+          ir_hash: "0726bd17035297c0"
+          prompt_used: "SYSTEM INSTRUCTION: SCENE CONSISTENCY MODE
+
+
+            The images above are REFERENCE IMAGES for a scene. They may include:
+
+            - character portraits (identity references)
+
+            - a location overview (environment reference)
+
+            - style references (art direction)
+
+
+            Generate a NEW scene matching the scenario.
+
+
+            CRITICAL REQUIREMENTS:
+
+            1. CHARACTER IDENTITY: If portraits are present, keep each character distinct and consistent (face, hair, key identifiers). Do not merge identities.
+
+            2. LOCATION CONTINUITY: Preserve the location’s architectural identity and design language from any location references.
+
+            3. FANTASY TONE: High-fantasy (D&D / Faerûn vibe) with believable magical details integrated into the world.
+
+            4. AVOID GROUNDED HISTORY: Avoid “real-world medieval Europe” drift; keep fantasy species variety and magical infrastructure plausible and grounded-in-world (not neon).
+
+            5. PRIORITY: If scenario conflicts with references, follow the scenario for action/composition while keeping identity and location continuity.
+
+
+            SCENARIO: natural depression in forest floor, fallen tree's root ball as windbreak, moss-lined hollow, small low campfire creating orange light pool, darkness beyond fire's reach, sense of concealment and shelter, winter context (breath visible, cold beyond fire), defensive/strategic camp setup, ancient old-growth trees with massive trunk girths (two to three people to circle), interlocking branch canopy creating permanent twilight, deep shadow corridors between pillar-trunks, layered forest floor of leaf-mold, moss, and exposed root-webs, dappled unreliable light—bright shafts through canopy breaks, swallowed shadow elsewhere, clear cold streams over dark stone beds, granite outcrops breaking through forest floor, ancient trees with faintly face-like bark and rune-scars (old fey influence), motes of fey-light in deep shade (subtle, not neon), stone markers with worn druidic glyphs along game trails, A natural hollow in the forest floor, created by a fallen giant whose root ball now forms a windbreak. The depression is lined with thick moss, deep enough to shelter from wind, concealed enough to hide a small fire's glow. The fire itself burns low, its orange light creating a small island of warmth in the surrounding darkness. The hollow feels like a cupped hand—protective, but also enclosing. Above, the dark canopy blocks the stars. Beyond the fire's reach, the forest waits., Faerûn high-fantasy worldbuilding cues (subtle, believable magic): ancient standing stones with worn runes, druidic wards, faint fey-lights in mist, slightly uncanny flora and leyline ambience, Medium shot from within or just above the hollow, looking at the camp site. The fire as warm center, the root ball windbreak behind, the moss-lined depression as natural shelter. The surrounding darkness pressing in but held at bay. Intimate scale, human-sized refuge in forest vastness., night, clear winter, light from small campfire, warm orange center, absolute darkness beyond, central fire radiating outward, warm amber at fire, cold darkness beyond tones, absolute beyond fire's reach shadows, some smoke, breath vapor, dominant colors: fire orange and amber, darkness black, moss green-brown; accent colors: root wood gray-brown, frost white at edges, high fantasy, intimate atmosphere, materials: hardwood and conifer trunks, bark rough and weathered, compressed leaf-mold, pine needles, moss carpets, exposed root systems, gray granite outcrops, lichen-covered, slick with moisture, Mood intent: A good hollow is survival in the Thornwood—shelter from wind, concealment from threat, a defensible position for rest. The intimate mood captures the relief of finding such a place and the close quarters of forest camping: the small fire, the shared warmth, the darkness pressed close beyond the light.
+
+            , epic high-fantasy exterior, fantastical silhouettes and skyline, arcane lanterns and ward-lights, subtle magical phenomena integrated into the environment, dynamic skies, cinematic composition, atmospheric depth, Painterly cinematic high fantasy with grounded physicality.
+
+
+            We want images that feel like a premium illustrated novel: readable silhouettes, emotional
+
+            clarity, and rich material rendering (stone, timber, leather, metal) without drifting into:
+
+            - photoreal “camera” aesthetics
+
+            - slick, airbrushed game key art
+
+            - anime / CGI / plastic rendering\n"
+          negative_prompt_used: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, daylight, bright exposure, modern camping equipment, tent, cheerful campfire scene, large group, standing figures, smooth textures, concept art polish, spring foliage, green leaves, summer colors, bright cheerful lighting, warm cozy atmosphere, fantasy castle, buildings, civilization, paths, trails, signs, cozy cabin, welcoming, safe, tropical, desert, modern elements, photorealistic, futuristic elements, sci-fi, firearms, real-world Europe, historical reenactment, Victorian, Tudor, Renaissance, Napoleonic, 14th century, flat lighting"
+          model: "gemini-3-pro-image-preview"
+          provider: "google"
+          constraints:
+            aspect_ratio: "16:9"
+            size: "2752x1536"
+            orientation: "landscape"
+            quality: "high"
+          provider_metadata:
+            batch_run_id: "2025-12-21T12-14-51-854"
+            task_key: "location/thornwood-forest/thornwood-forest-hidden-hollow@42eedef2c3a6b024"
+          target_metadata:
+            entity_type: "location"
+            entity_slug: "thornwood-forest"
+            image_type: "zone"
+            title: "Sanctuary or Trap"
+            scene_mood: "intimate"
+      - id: "thornwood-forest-hidden-hollow-1766358647446-2025-12-21"
+        path: "images/thornwood-forest-hidden-hollow-1766358647446-2025-12-21.jpg"
+        type: "generated"
+        status: "approved"
+        image_type: "zone"
+        content:
+          title: "Sanctuary or Trap"
+          description: "Sanctuary or Trap"
+          alt_text: "Sanctuary or Trap"
+          tags:
+            - "thornwood-forest-hidden-hollow"
+            - "generated"
+            - "zone"
+        provenance:
+          source: "google"
+          created_at: "2025-12-21T23:55:54.505Z"
+          original_filename: "thornwood-forest-hidden-hollow-1766358647446-2025-12-21.jpg"
+        generation:
+          target_id: "thornwood-forest-hidden-hollow"
+          ir_hash: "0726bd17035297c0"
+          prompt_used: "SYSTEM INSTRUCTION: LOCATION CONSISTENCY MODE
+
+
+            The images above are REFERENCE IMAGES for a specific LOCATION.
+
+            Generate a NEW image of this SAME location in the described scenario.
+
+
+            CRITICAL REQUIREMENTS:
+
+            1. LOCATION IDENTITY: Preserve architecture, materials, lighting language, and signature elements from the references.
+
+            2. FANTASY TONE: This is a high-fantasy world (D&D / Faerûn vibe). Include subtle magical infrastructure (runes, enchanted lanterns, ward-stones, guild sigils) where appropriate.
+
+            3. NO FACE CLONING: If people appear, keep them generic and varied—do not repeat an identical face across images unless explicitly required.
+
+            4. AVOID GROUNDED HISTORY: Do not drift into “historical reenactment” or real-world medieval Europe. Keep the design language unmistakably fantasy (Faerûn) even when the scene is gritty and practical.
+
+            5. PRIORITY: If the scenario conflicts with the references, follow the scenario for composition/mood while preserving the location’s identity.
+
+
+            SCENARIO: natural depression in forest floor, fallen tree's root ball as windbreak, moss-lined hollow, small low campfire creating orange light pool, darkness beyond fire's reach, sense of concealment and shelter, winter context (breath visible, cold beyond fire), defensive/strategic camp setup, ancient old-growth trees with massive trunk girths (two to three people to circle), interlocking branch canopy creating permanent twilight, deep shadow corridors between pillar-trunks, layered forest floor of leaf-mold, moss, and exposed root-webs, dappled unreliable light—bright shafts through canopy breaks, swallowed shadow elsewhere, clear cold streams over dark stone beds, granite outcrops breaking through forest floor, ancient trees with faintly face-like bark and rune-scars (old fey influence), motes of fey-light in deep shade (subtle, not neon), stone markers with worn druidic glyphs along game trails, A natural hollow in the forest floor, created by a fallen giant whose root ball now forms a windbreak. The depression is lined with thick moss, deep enough to shelter from wind, concealed enough to hide a small fire's glow. The fire itself burns low, its orange light creating a small island of warmth in the surrounding darkness. The hollow feels like a cupped hand—protective, but also enclosing. Above, the dark canopy blocks the stars. Beyond the fire's reach, the forest waits., Faerûn high-fantasy worldbuilding cues (subtle, believable magic): ancient standing stones with worn runes, druidic wards, faint fey-lights in mist, slightly uncanny flora and leyline ambience, Medium shot from within or just above the hollow, looking at the camp site. The fire as warm center, the root ball windbreak behind, the moss-lined depression as natural shelter. The surrounding darkness pressing in but held at bay. Intimate scale, human-sized refuge in forest vastness., night, clear winter, light from small campfire, warm orange center, absolute darkness beyond, central fire radiating outward, warm amber at fire, cold darkness beyond tones, absolute beyond fire's reach shadows, some smoke, breath vapor, dominant colors: fire orange and amber, darkness black, moss green-brown; accent colors: root wood gray-brown, frost white at edges, high fantasy, intimate atmosphere, materials: hardwood and conifer trunks, bark rough and weathered, compressed leaf-mold, pine needles, moss carpets, exposed root systems, gray granite outcrops, lichen-covered, slick with moisture, Mood intent: A good hollow is survival in the Thornwood—shelter from wind, concealment from threat, a defensible position for rest. The intimate mood captures the relief of finding such a place and the close quarters of forest camping: the small fire, the shared warmth, the darkness pressed close beyond the light.
+
+            , epic high-fantasy exterior, fantastical silhouettes and skyline, arcane lanterns and ward-lights, subtle magical phenomena integrated into the environment, dynamic skies, cinematic composition, atmospheric depth, Painterly cinematic high fantasy with grounded physicality.
+
+
+            We want images that feel like a premium illustrated novel: readable silhouettes, emotional
+
+            clarity, and rich material rendering (stone, timber, leather, metal) without drifting into:
+
+            - photoreal “camera” aesthetics
+
+            - slick, airbrushed game key art
+
+            - anime / CGI / plastic rendering\n"
+          negative_prompt_used: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stock photo, digital art gloss, AI artifacts, daylight, bright exposure, modern camping equipment, tent, cheerful campfire scene, large group, standing figures, smooth textures, concept art polish, spring foliage, green leaves, summer colors, bright cheerful lighting, warm cozy atmosphere, fantasy castle, buildings, civilization, paths, trails, signs, cozy cabin, welcoming, safe, tropical, desert, modern elements, photorealistic, futuristic elements, sci-fi, firearms, real-world Europe, historical reenactment, Victorian, Tudor, Renaissance, Napoleonic, 14th century, flat lighting"
+          model: "gemini-3-pro-image-preview"
+          provider: "google"
+          constraints:
+            aspect_ratio: "16:9"
+            size: "2752x1536"
+            orientation: "landscape"
+            quality: "high"
+          provider_metadata:
+            batch_run_id: "2025-12-21T23-10-46-589"
+            task_key: "location/thornwood-forest/thornwood-forest-hidden-hollow@102d9cf2f96a3a50"
+          target_metadata:
+            entity_type: "location"
+            entity_slug: "thornwood-forest"
+            image_type: "zone"
+            title: "Sanctuary or Trap"
+            scene_mood: "intimate"
+image_inventory: []

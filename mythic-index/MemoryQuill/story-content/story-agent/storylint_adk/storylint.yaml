@@ -1,0 +1,26 @@
+project_root: ..
+chapters_dir: chapters
+characters_dir: characters
+locations_dir: locations
+images_dir: chapters
+runs_dir: runs
+chapter_filename: content.md
+scene_start: "<!-- SCENE-START"
+scene_end: "<!-- SCENE-END"
+imagery_filenames:
+  - imagery.yaml
+  - chapter-imagery.yaml
+canon_snapshot_chars: 1200
+prompt:
+  max_scene_chars: 4000
+  max_paragraphs: 60
+concurrency:
+  chapter_audit: 6
+  adjacent: 6
+  arc: 3
+models:
+  orchestrator: gemini-3-flash-preview
+  chapter_audit: gemini-3-flash-preview
+  adjacent_flow: gemini-3-flash-preview
+  arc_window: gemini-3-pro-preview
+  synthesis: gemini-3-pro-preview

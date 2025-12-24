@@ -1,0 +1,80 @@
+name: Deploy App and Frontend
+
+on:
+  push:
+    branches: [ 'main' ]
+
+jobs:
+  deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Azure login (OIDC)
+        uses: azure/login@v1
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Set variables
+        id: vars
+        run: |
+          echo "IMAGE_NAME=memoryquill-backend" >> $GITHUB_ENV
+          echo "TAG=${GITHUB_SHA::8}" >> $GITHUB_ENV
+          echo "ACR_LOGIN_SERVER=${{ secrets.ACR_LOGIN_SERVER }}" >> $GITHUB_ENV
+          echo "RESOURCE_GROUP=${{ secrets.AZURE_RESOURCE_GROUP }}" >> $GITHUB_ENV
+          echo "CONTAINER_APP_NAME=${{ secrets.CONTAINER_APP_NAME }}" >> $GITHUB_ENV
+          echo "STORAGE_ACCOUNT_NAME=${{ secrets.STORAGE_ACCOUNT_NAME }}" >> $GITHUB_ENV
+
+      - name: Build and push backend image
+        env:
+          ACR_LOGIN_SERVER: ${{ env.ACR_LOGIN_SERVER }}
+          IMAGE_NAME: ${{ env.IMAGE_NAME }}
+          TAG: ${{ env.TAG }}
+        run: |
+          ACR_NAME=${ACR_LOGIN_SERVER%%.*}
+          echo "Logging into ACR $ACR_NAME"
+          az acr login --name "$ACR_NAME"
+          docker build -t $ACR_LOGIN_SERVER/$IMAGE_NAME:$TAG ./backend
+          docker push $ACR_LOGIN_SERVER/$IMAGE_NAME:$TAG
+
+      - name: Update Container App image
+        env:
+          RESOURCE_GROUP: ${{ env.RESOURCE_GROUP }}
+          CONTAINER_APP_NAME: ${{ env.CONTAINER_APP_NAME }}
+          ACR_LOGIN_SERVER: ${{ env.ACR_LOGIN_SERVER }}
+          IMAGE_NAME: ${{ env.IMAGE_NAME }}
+          TAG: ${{ env.TAG }}
+        run: |
+          IMAGE=$ACR_LOGIN_SERVER/$IMAGE_NAME:$TAG
+          echo "Updating container app $CONTAINER_APP_NAME to image $IMAGE"
+          az containerapp update --name "$CONTAINER_APP_NAME" --resource-group "$RESOURCE_GROUP" --image "$IMAGE"
+
+      - name: Build frontend
+        working-directory: ./frontend
+        run: |
+          npm ci
+          npm run build
+
+      - name: Upload frontend to $STORAGE_ACCOUNT_NAME
+        env:
+          RESOURCE_GROUP: ${{ env.RESOURCE_GROUP }}
+          STORAGE_ACCOUNT_NAME: ${{ env.STORAGE_ACCOUNT_NAME }}
+        run: |
+          # obtain storage account key
+          KEY=$(az storage account keys list -g "$RESOURCE_GROUP" -n "$STORAGE_ACCOUNT_NAME" --query '[0].value' -o tsv)
+          echo "Uploading built SPA to storage account $STORAGE_ACCOUNT_NAME"
+          az storage blob upload-batch --account-name "$STORAGE_ACCOUNT_NAME" --account-key "$KEY" --destination '$web' --source ./dist/browser --no-progress
+
+      - name: Purge CDN caches (optional)
+        if: ${{ secrets.CDN_PROFILE_NAME && secrets.CDN_ENDPOINT_NAME }}
+        env:
+          RESOURCE_GROUP: ${{ env.RESOURCE_GROUP }}
+        run: |
+          if [[ -n "${{ secrets.CDN_PROFILE_NAME }}" && -n "${{ secrets.CDN_ENDPOINT_NAME }}" ]]; then
+            az cdn endpoint purge --resource-group "$RESOURCE_GROUP" --profile-name "${{ secrets.CDN_PROFILE_NAME }}" --name "${{ secrets.CDN_ENDPOINT_NAME }}" --content-paths '/*'
+          fi

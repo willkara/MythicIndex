@@ -1,0 +1,16 @@
+project_root: ..
+chapters_dir: chapters
+characters_dir: characters
+locations_dir: locations
+images_dir: chapters
+scene_start: "<!-- SCENE-START"
+scene_end: "<!-- SCENE-END"
+chapter_filename: content.md
+imagery_filenames:
+  - imagery.yaml
+  - chapter-imagery.yaml
+output_dir: story-agent/runs
+canon_snapshot_chars: 1200
+prompt:
+  max_scene_chars: 4000
+  max_paragraphs: 40

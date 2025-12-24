@@ -1,0 +1,278 @@
+// =============================================================================
+// Layout Patterns - Shared Layout Mixins for MemoryQuill Components
+// =============================================================================
+
+// Base Shell Layout (for shell components like editor-shell, reader-shell)
+@mixin shell-layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+
+  .shell-layout {
+    flex: 1;
+    height: 100%;
+  }
+}
+
+// Sidebar Navigation Layout
+@mixin sidebar-navigation {
+  width: 280px;
+  background: var(--bg-elevated);
+  border-right: 1px solid var(--border-medium);
+
+  .nav-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: var(--bg-hover);
+    border-bottom: 1px solid var(--border-light);
+
+    .nav-icon {
+      color: var(--color-ancient-gold);
+      margin-right: 0.5rem;
+    }
+
+    .nav-title {
+      flex: 1;
+      margin: 0;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    button {
+      color: var(--text-secondary);
+    }
+  }
+
+  .nav-content {
+    padding: 0;
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+}
+
+// Tools Sidebar Layout (right sidebar)
+@mixin tools-sidebar {
+  width: 320px;
+  background: var(--bg-elevated);
+  border-left: 1px solid var(--border-medium);
+
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: var(--bg-hover);
+    border-bottom: 1px solid var(--border-light);
+
+    button {
+      color: var(--text-secondary);
+      margin-right: 0.5rem;
+    }
+
+    .sidebar-title {
+      flex: 1;
+      margin: 0;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .sidebar-icon {
+      color: var(--color-ancient-gold);
+    }
+  }
+}
+
+// Main Content Area Layout
+@mixin main-content-area {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+}
+
+// Panel Layout (for collapsible panels)
+@mixin collapsible-panel {
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .panel-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: var(--bg-hover);
+    border-bottom: 1px solid var(--border-light);
+
+    .panel-icon {
+      margin-right: 0.5rem;
+    }
+
+    .panel-title {
+      flex: 1;
+      margin: 0;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .panel-actions {
+      display: flex;
+      gap: 0.5rem;
+
+      button {
+        color: var(--text-secondary);
+
+        &:hover {
+          color: var(--color-ancient-gold);
+        }
+      }
+    }
+  }
+
+  .panel-content {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+}
+
+// Tab Panel Layout (for Material tabs)
+@mixin tab-panel-layout {
+  height: calc(100% - 4rem);
+
+  ::ng-deep .mat-mdc-tab-group {
+    height: 100%;
+  }
+
+  ::ng-deep .mat-mdc-tab-body-wrapper {
+    height: calc(100% - 48px);
+    flex: 1;
+  }
+
+  ::ng-deep .mat-mdc-tab-header {
+    background: var(--bg-hover);
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .tab-icon {
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .tab-text {
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .badge-icon {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    color: var(--color-ruby-garnet);
+  }
+}
+
+// Card Grid Layout
+@mixin card-grid {
+  display: grid;
+  gap: 1rem;
+
+  &.grid-auto {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  &.grid-2col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &.grid-3col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Flexbox Utilities
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// Centered Message Layout (for empty states)
+@mixin centered-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+  
+  .message-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+  }
+  
+  .message-text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+// Responsive Breakpoint Mixins
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 769px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+// Print Layout
+@mixin print-layout {
+  @media print {
+    height: auto;
+
+    .toolbar,
+    .status-bar,
+    .sidebar {
+      display: none;
+    }
+
+    .main-content {
+      flex: none;
+      height: auto;
+    }
+  }
+}

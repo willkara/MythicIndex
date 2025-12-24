@@ -1,0 +1,58 @@
+location:
+  slug: silken-siren
+  name: The Silken Siren
+  files:
+    overview:
+      path: locations/silken-siren/overview.md
+      excerpt: ''
+      exists: true
+    description:
+      path: locations/silken-siren/description.md
+      excerpt: ''
+      exists: true
+    inhabitants:
+      path: locations/silken-siren/inhabitants.md
+      excerpt: ''
+      exists: true
+zones_manifest:
+  path: locations/silken-siren/zones.yaml
+  zones:
+  - slug: alley
+    name: The Alley Entrance
+  - slug: exit-awareness-zone
+    name: Exit Sightlines
+  - slug: exit-watcher
+    name: Perpetual Vigilance
+  - slug: fence-refuses-payment
+    name: The Transaction That Cannot Happen
+  - slug: hand-exchange
+    name: The Hidden Hand
+  - slug: lantern
+    name: The Glamour-Warded Lantern
+  - slug: main-exchange-floor
+    name: Main Exchange Floor
+  - slug: marcus-pov
+    name: Entering the Silence
+  - slug: night-activity
+    name: Peak Hours
+  - slug: privacy-islands
+    name: Privacy Islands
+  - slug: private-alcove
+    name: Private Alcove
+  - slug: private-alcoves
+    name: Private Alcoves
+  - slug: service
+    name: The Silent Service
+chapter_evidence: []
+intrinsic_characters:
+- slug: korrath-threnx
+  reason_intrinsic: Referenced in locations/silken-siren/inhabitants.md
+  files:
+    profile:
+      path: characters/korrath-threnx/profile.md
+      excerpt: ''
+      exists: true
+    imagery:
+      path: characters/korrath-threnx/imagery.yaml
+      excerpt: ''
+      exists: true

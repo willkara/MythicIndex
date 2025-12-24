@@ -1,0 +1,580 @@
+# location_analysis.yaml
+
+location_identity:
+  slug: "merchants-rest-tavern"
+  name: "Merchant's Rest Tavern"
+  location_type: "building"
+  
+  narrative_soul: |
+    The Merchant's Rest is where legends are forged by calloused hands. It's not about the 
+    tavern itself—it's about what happens when working people witness something extraordinary 
+    and process it through the lens of their own values. Here, heroes aren't mysterious figures 
+    with arcane powers; they're craftspeople who "know their trade." The pipe smoke and packed 
+    bodies create a communal crucible where the Last Light Company's reputation transforms from 
+    news into folklore, one appreciative toast at a time.
+    
+  one_line_essence: "Where working folk turn competence into legend"
+  
+  symbolic_weight:
+    primary_symbol: "The forge of reputation—ordinary people making heroes"
+    supporting_symbols:
+      - "Communal validation through shared witness"
+      - "Working-class values as moral compass"
+      - "Oral tradition and story transmission"
+    thematic_tensions:
+      - "Extraordinary deeds appreciated through ordinary values"
+      - "Magic reframed as craft/technique"
+      - "Individual heroism becoming community property"
+
+  transformation_arc: |
+    The tavern itself doesn't change—but it represents a transformation happening to the 
+    Company. This is the moment their story escapes their control and becomes public 
+    property. By the time Jorik One-Eye and Tam finish their accounts, the Company's 
+    deeds have been translated into working-class language: not mysterious magic, but 
+    skill. Not power, but professionalism. The Company doesn't know it, but their 
+    legend is being built in this smoky room by people who will never meet them.
+
+physical_truth:
+  construction_style: "Traditional Dock Ward working-class establishment"
+  primary_materials:
+    - "Timber frame"
+    - "Worn plank flooring"
+    - "Functional stone hearth"
+  scale_impression: "Capacious but intimate when packed—bodies press together, conversations blend"
+  
+  visual_signature: |
+    The thick stratum of pipe smoke that hangs at head-height, turning lamplight into 
+    amber halos. Raised tankards catching that hazy glow. A sea of working hands—
+    rope-burned, sawdust-dusted, dock-weathered—wrapped around mugs.
+    
+  sound_signature: |
+    The roar of collective conversation punctuated by eruptions of laughter and unified 
+    cheers. The percussion of tankards striking tables. The momentary hush when a good 
+    storyteller reaches the crucial part, then the appreciative rumble when the point 
+    lands.
+    
+  scent_signature: |
+    Tobacco smoke dominant, layered over ale, honest sweat, sawdust traces, tar from 
+    longshoremen's clothes, the salt-and-fish undertone that permeates everything in 
+    the Dock Ward.
+    
+  tactile_signature: |
+    The warmth of packed bodies pressing close. The slight tackiness of worn tables. 
+    The cool weight of a tankard. Elbows brushing neighbors with every gesture.
+    
+  canon_specifics:
+    - detail: "Air thick with pipe smoke"
+      source: "ch23.5"
+      visual_importance: "high"
+      
+    - detail: "Packed with patrons—standing-room common"
+      source: "ch23.5"
+      visual_importance: "high"
+      
+    - detail: "Working folk gather here—longshoremen, barrel-makers, carters, carpenters"
+      source: "ch23.5"
+      visual_importance: "high"
+      
+    - detail: "Collective toast with raised tankards—'To a job well done!'"
+      source: "ch23.5"
+      visual_importance: "high"
+      
+  light_character: |
+    Standard tavern lamplight rendered atmospheric by pipe smoke—warm amber glow that 
+    doesn't fully penetrate the haze. Creates soft-edged figures, makes the crowded 
+    room feel like a single organism rather than discrete individuals. Raised tankards 
+    catch highlights; faces emerge from and recede into the murk.
+    
+  weather_influence: |
+    The Dock Ward weather exists outside these walls. Inside is its own climate—warm 
+    from bodies, smoky from pipes, sealed from the harbor winds. Rain or shine doesn't 
+    matter here; what matters is the ale and the company.
+
+contextual_place:
+  region: "Dock Ward, Waterdeep"
+  neighborhood_character: |
+    Working waterfront—salt air, ship timber, the constant presence of the harbor. 
+    A neighborhood where wealth is measured in calluses and competence. The Merchant's 
+    Rest sits where tradespeople naturally flow after shift: coopers from the barrel-yards, 
+    longshoremen from the wharves, carpenters from the shipyards.
+    
+  approach_sequences:
+    - name: "After the shift"
+      description: |
+        Workers stream from docks and yards, boots on cobbles, following the gravitational 
+        pull of familiar warmth. The tavern's glow spills from windows into the evening 
+        streets.
+      first_impression: "Coming home to company"
+      
+    - name: "During celebration"
+      description: |
+        The noise reaches you first—that unmistakable roar of a crowd with something to 
+        celebrate. Light and smoke leak from every opening. The street outside has its 
+        own overflow crowd sharing news.
+      first_impression: "Something's happened. Something good."
+      
+  visible_beyond:
+    - direction: "general surroundings"
+      what_visible: "Dock Ward streets, working wharves, warehouse silhouettes"
+      
+  spatial_relationship: |
+    Embedded in the Dock Ward's working fabric—not a destination but a natural gathering 
+    point. Close to wharves and yards, accessible to the tradespeople who make this 
+    district run.
+
+zones:
+  - slug: "common-room"
+    name: "The Common Room"
+    zone_type: "commons"
+    location_within: "Main floor, entirety of public space"
+    
+    physical_description: |
+      Open floor plan designed for maximum occupancy. Tables and benches arranged for 
+      group seating but clearable for standing-room during peaks. Low ceiling traps 
+      the pipe smoke in a visible stratum. Worn plank floors show decades of boot-traffic.
+      
+    narrative_function: |
+      This is where stories become legends. Not through formal recitation but organic 
+      transmission—one eyewitness tells another, details sharpen with repetition, the 
+      collective decides what matters. The Last Light Company's exploits get translated 
+      here into working-class values: not magic, but mastery.
+      
+    emotional_register: "Communal pride, celebratory warmth, working-class solidarity"
+    
+    character_associations:
+      - character: "Jorik One-Eye"
+        relationship: "Storyteller and witness"
+        typical_activities:
+          - "Recounting the Great Library rescue"
+          - "Describing Grimjaw's stone-listening with the appreciation of a fellow craftsman"
+          
+      - character: "Tam"
+        relationship: "Witness and narrator"
+        typical_activities:
+          - "Describing Rill's water manipulation"
+          - "Building suspense for the crowd"
+          
+      - character: "Older Carpenter"
+        relationship: "Professional observer"
+        typical_activities:
+          - "Providing measured professional assessment"
+          - "Noting Veyra's bearing as a fellow tradesperson recognizes quality"
+          
+    signature_details:
+      - "Pipe smoke stratum at head-height"
+      - "Forest of raised tankards during toasts"
+      - "Mix of trade-specific clothing—cooper's aprons, longshoremen's weathered gear"
+      - "Worn tables bearing rings from generations of mugs"
+      
+    light_conditions:
+      natural: "Minimal—small windows, Dock Ward crowds buildings close"
+      artificial: "Oil lamps creating amber glow filtered through perpetual smoke haze"
+      
+    mood_affinity:
+      - "Joyous"
+      - "Triumphant"
+      - "Intimate"
+
+temporal_states:
+  daily_cycle:
+    - time: "pre-dawn"
+      description: "Empty and dark; workers not yet stirring"
+      activities: []
+      mood: "Dormant"
+      light_quality: "None"
+      
+    - time: "morning"
+      description: "Closed or minimal activity; working folk at their trades"
+      activities: []
+      mood: "Waiting"
+      light_quality: "Dim natural light through small windows"
+      
+    - time: "midday"
+      description: "Light traffic; those between shifts, older regulars"
+      activities:
+        - "Quiet drinking"
+        - "Conversation in clusters"
+      mood: "Relaxed"
+      light_quality: "Daylight supplemented by lamps"
+      
+    - time: "evening"
+      description: "Peak hours—workers stream in after shift"
+      activities:
+        - "Heavy drinking"
+        - "Story exchange"
+        - "Unwinding from labor"
+      mood: "Convivial"
+      light_quality: "Lamplight building as daylight fades"
+      
+    - time: "night"
+      description: "Either winding down or, during celebrations, still packed"
+      activities:
+        - "Late-night storytelling"
+        - "Deep drinking"
+        - "Eventual dispersal"
+      mood: "Varies: either mellowing or sustained celebration"
+      light_quality: "Full lamplight, smoke-hazed"
+      
+  seasonal_variations:
+    - season: "Winter"
+      changes: "Hearth fire becomes focal point; crowd presses closer for warmth"
+      mood_shift: "More intimate, insular against cold outside"
+      
+    - season: "Summer"
+      changes: "Doors and windows open; overflow onto street"
+      mood_shift: "More expansive, porous boundary between inside and out"
+      
+  story_timeline_states:
+    - state_name: "Celebration of the Great Library Rescue"
+      chapter_range: "ch23.5"
+      description: |
+        Packed beyond capacity with working folk. Eyewitnesses share accounts. The 
+        Company's deeds are being translated into legend in real time. Pipe smoke 
+        thick, tankards raised, collective toasts punctuating the stories.
+        
+  weather_states:
+    - condition: "Irrelevant"
+      description: "Interior atmosphere dominates; weather exists only in the abstract"
+      mood: "Self-contained warmth regardless of exterior"
+
+character_space_relationships:
+  - character_slug: "jorik-one-eye"
+    character_name: "Jorik One-Eye"
+    
+    primary_association: "Featured storyteller during celebration"
+    
+    personal_zones:
+      - zone: "common-room"
+        relationship: "His stage during the celebration"
+        typical_use: "Commanding attention with eyewitness account"
+        
+    signature_moments:
+      - moment: "Describing Grimjaw's stone-listening technique to appreciative crowd"
+        chapter: "ch23.5"
+        visual_potential: |
+          A weathered dock worker with one eye, hands raised in demonstration, the 
+          crowd leaning in. The smoke parts around his gestures.
+          
+    perspective_quote: |
+      "You don't get it—I've seen masons my whole life. This dwarf? He put his ear 
+      to the stone like it was telling him secrets. And it WAS."
+
+  - character_slug: "tam"
+    character_name: "Tam"
+    
+    primary_association: "Eyewitness narrator"
+    
+    personal_zones:
+      - zone: "common-room"
+        relationship: "Sharing his piece of the story"
+        typical_use: "Recounting Rill's water manipulation"
+        
+    signature_moments:
+      - moment: "Describing Rill's water manipulation with wonder"
+        chapter: "ch23.5"
+        visual_potential: |
+          A tradesman's face lit with recalled amazement, hands shaping the air 
+          to show how the water moved.
+          
+    perspective_quote: |
+      "The way that halfling moved the water—not magic-like, not showy. Just... 
+      exactly where it needed to go. Like she knew its trade."
+
+  - character_slug: "older-carpenter"
+    character_name: "The Older Carpenter"
+    
+    primary_association: "Professional assessor"
+    
+    personal_zones:
+      - zone: "common-room"
+        relationship: "Voice of measured appreciation"
+        typical_use: "Providing grounded professional perspective"
+        
+    signature_moments:
+      - moment: "Noting Veyra's professional bearing"
+        chapter: "ch23.5"
+        visual_potential: |
+          An older man with sawdust in his beard, nodding slowly, recognizing 
+          quality the way only another professional can.
+          
+    perspective_quote: |
+      "That captain—you could see it in how she held herself. That's not flash. 
+      That's someone who knows her trade down to the bone."
+
+  - character_slug: "grimjaw-ironbeard"
+    character_name: "Grimjaw Ironbeard"
+    
+    primary_association: "Subject of admiring storytelling (not present)"
+    
+    personal_zones: []
+        
+    signature_moments:
+      - moment: "Being described by Jorik One-Eye"
+        chapter: "ch23.5"
+        visual_potential: |
+          Not Grimjaw himself, but his legend—the crowd imagining him based on 
+          Jorik's words, each listener constructing their own version.
+          
+    perspective_quote: |
+      (How the crowd imagines him): "A dwarf who listens to stone. Who fights 
+      like he's holding a conversation with the mountain."
+
+  - character_slug: "rill-whisperbrook"
+    character_name: "Rill Whisperbrook"
+    
+    primary_association: "Subject of wonder-struck recounting (not present)"
+    
+    personal_zones: []
+        
+    signature_moments:
+      - moment: "Being described by Tam"
+        chapter: "ch23.5"
+        visual_potential: |
+          The crowd's imagination at work—their vision of a halfling who moves 
+          water like it's her medium, her tool, her trade.
+          
+    perspective_quote: |
+      (How the crowd imagines her): "Small enough to miss if you weren't looking. 
+      But the water knew her. The water trusted her."
+
+  - character_slug: "veyra-thornwake"
+    character_name: "Veyra Thornwake"
+    
+    primary_association: "Subject of professional admiration (not present)"
+    
+    personal_zones: []
+        
+    signature_moments:
+      - moment: "Being assessed by the older carpenter"
+        chapter: "ch23.5"
+        visual_potential: |
+          The crowd nodding at the carpenter's assessment—professionals recognizing 
+          professional bearing, even secondhand.
+          
+    perspective_quote: |
+      (How the crowd imagines her): "The one in charge. You could tell. Not by her 
+      shouting, but by how everyone else moved around her."
+
+narrative_beats:
+  - beat_id: "collective-toast"
+    chapter: "ch23.5"
+    scene: "celebration-climax"
+    
+    what_happens: |
+      After the eyewitness accounts, the crowd raises their tankards in unified 
+      toast: "To a job well done!" The working people of the Dock Ward officially 
+      consecrate the Company's deeds in their own language.
+      
+    zones_involved:
+      - "common-room"
+      
+    characters_present:
+      - "Jorik One-Eye"
+      - "Tam"
+      - "Older Carpenter"
+      - "Packed crowd of longshoremen, barrel-makers, carters, carpenters"
+      
+    visual_potential:
+      description: |
+        A forest of raised tankards in the amber-hazed light. Working hands—scarred, 
+        calloused, rope-burned—unified in gesture. Faces emerging from pipe smoke, 
+        all turned toward the same invisible center. The moment a legend crystallizes.
+      key_visual_hook: "Dozens of work-worn hands raising tankards through pipe smoke"
+      suggested_mood: "Triumphant"
+      
+    selection_score:
+      narrative_importance: 5
+      visual_distinctiveness: 5
+      emotional_resonance: 5
+      total: 15
+
+  - beat_id: "jorik-stone-listening"
+    chapter: "ch23.5"
+    scene: "eyewitness-accounts"
+    
+    what_happens: |
+      Jorik One-Eye describes Grimjaw's stone-listening technique to the crowd, 
+      translating magic into craft language the tradespeople understand.
+      
+    zones_involved:
+      - "common-room"
+      
+    characters_present:
+      - "Jorik One-Eye"
+      - "Listening crowd"
+      
+    visual_potential:
+      description: |
+        Jorik at center of attention—one-eyed, weathered, hands raised in 
+        demonstration. The crowd leaning in, tankards forgotten mid-sip. 
+        The moment of story transmission.
+      key_visual_hook: "One-eyed storyteller commanding a smoke-hazed room"
+      suggested_mood: "Intimate"
+      
+    selection_score:
+      narrative_importance: 4
+      visual_distinctiveness: 4
+      emotional_resonance: 4
+      total: 12
+
+  - beat_id: "carpenter-assessment"
+    chapter: "ch23.5"
+    scene: "professional-recognition"
+    
+    what_happens: |
+      The older carpenter offers his measured assessment of Veyra's professional 
+      bearing—the highest compliment one tradesperson can pay another.
+      
+    zones_involved:
+      - "common-room"
+      
+    characters_present:
+      - "Older Carpenter"
+      - "Listening crowd"
+      
+    visual_potential:
+      description: |
+        An older man with the quiet authority of decades of craft. Sawdust in 
+        his beard. The crowd quiets for his words—they know this voice carries 
+        weight. Professional recognizing professional across trades.
+      key_visual_hook: "Sawdust-bearded elder whose nod is worth more than applause"
+      suggested_mood: "Reverent"
+      
+    selection_score:
+      narrative_importance: 3
+      visual_distinctiveness: 3
+      emotional_resonance: 4
+      total: 10
+
+recommended_images:
+  - image_type: "beat"
+    priority: "primary"
+    
+    target: "The collective toast—'To a job well done!'"
+    
+    rationale: |
+      This is the visual thesis of the scene: working people consecrating heroes 
+      in their own language. It captures the thematic heart of the location—
+      competence celebrated by those who understand it best. The raised tankards, 
+      smoke haze, and working hands tell the whole story.
+      
+    suggested_mood: "Triumphant"
+    suggested_time: "Evening"
+    suggested_weather: "Interior—irrelevant"
+    
+    characters_to_include:
+      - "Jorik One-Eye (visible in crowd)"
+      - "Tam (visible in crowd)"
+      - "Older Carpenter (visible in crowd)"
+      - "Anonymous working folk (longshoremen, barrel-makers, carters, carpenters)"
+    zone_focus: "common-room"
+    
+    key_elements:
+      - "Raised tankards—dozens of them"
+      - "Pipe smoke stratum at head-height"
+      - "Work-worn hands (calloused, scarred, rope-burned)"
+      - "Trade-specific clothing visible in crowd"
+      - "Amber lamplight filtering through haze"
+      
+    visual_hook: "A forest of working hands raising tankards through amber smoke-haze"
+    
+    composition_suggestion: |
+      Medium-wide shot from slightly below eye level, looking up into the raised 
+      tankards. The smoke layer creates depth separation. Faces should be visible 
+      but not the focus—the HANDS are the subject. The unified gesture is the story.
+
+  - image_type: "inhabited"
+    priority: "secondary"
+    
+    target: "Jorik One-Eye telling Grimjaw's story"
+    
+    rationale: |
+      Captures the moment of legend-making—an ordinary man translating extraordinary 
+      deeds into language his peers understand. The one-eyed storyteller is a 
+      distinctive visual hook, and the listening crowd contextualizes the scene.
+      
+    suggested_mood: "Intimate"
+    suggested_time: "Evening"
+    suggested_weather: "Interior"
+    
+    characters_to_include:
+      - "Jorik One-Eye (central)"
+      - "Listening crowd (background)"
+    zone_focus: "common-room"
+    
+    key_elements:
+      - "Jorik's single eye—the other scarred or patched"
+      - "His hands raised in demonstration"
+      - "Crowd leaning in, tankards forgotten"
+      - "Pipe smoke catching lamplight"
+      - "Working-class clothing and weathered faces"
+      
+    visual_hook: "One-eyed dock worker's hands shaping the air as he speaks"
+    
+    composition_suggestion: |
+      Medium shot with Jorik prominent but the listening crowd creating depth. 
+      His hands should be caught mid-gesture—showing HOW Grimjaw listened to 
+      stone. The crowd's rapt attention is as important as the storyteller.
+
+  - image_type: "establishing"
+    priority: "optional"
+    
+    target: "The packed celebration from outside"
+    
+    rationale: |
+      Shows the tavern in its context—light and noise spilling into the Dock 
+      Ward street, drawing people in. Establishes the building as a node in 
+      the working neighborhood.
+      
+    suggested_mood: "Anticipatory"
+    suggested_time: "Evening"
+    suggested_weather: "Clear or light rain—the weather should contrast with interior warmth"
+    
+    characters_to_include: []
+    zone_focus: "exterior approach"
+    
+    key_elements:
+      - "Warm light spilling from windows and door"
+      - "Silhouettes of packed crowd visible within"
+      - "Smoke seeping from openings"
+      - "Dock Ward street context—cobbles, warehouses"
+      - "Working folk approaching or gathered outside"
+      
+    visual_hook: "Warm glow and noise escaping into the cold Dock Ward night"
+    
+    composition_suggestion: |
+      Wide shot establishing the building in its environment. The tavern should 
+      be the warmest, brightest element—a magnet in the evening street. Some 
+      figures in silhouette approaching, drawn by the celebration.
+
+  - image_type: "essence"
+    priority: "optional"
+    
+    target: "Close on working hands around tankards"
+    
+    rationale: |
+      A detail shot that captures the thematic heart without showing the full 
+      scene. The hands tell the story: rope burns, sawdust, calluses, tar 
+      stains. These are the hands that recognize competence because they 
+      possess it themselves.
+      
+    suggested_mood: "Intimate"
+    suggested_time: "Evening"
+    suggested_weather: "Interior"
+    
+    characters_to_include: []
+    zone_focus: "common-room (detail)"
+    
+    key_elements:
+      - "Multiple hands of different trades"
+      - "Tankards in grip"
+      - "Trade markers: rope burns, sawdust, calluses, tool scars"
+      - "Worn table surface"
+      - "Pipe smoke in background"
+      
+    visual_hook: "The hands that build Waterdeep, at rest with ale"
+    
+    composition_suggestion: |
+      Close shot, perhaps at table level, focusing on 3-4 hands of different 
+      character. The rest of the scene exists only in soft focus background. 
+      The texture of the hands is the subject—each tells a working life.

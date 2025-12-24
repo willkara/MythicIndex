@@ -1,0 +1,388 @@
+name: Build and Deploy to Cloudflare
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'frontend/**'
+      - 'backend/**'
+      - 'Dockerfile'
+      - '.github/workflows/deploy-cloudflare.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'frontend/**'
+      - 'backend/**'
+      - 'Dockerfile'
+      - '.github/workflows/deploy-cloudflare.yml'
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Deployment target'
+        required: true
+        default: production
+        type: choice
+        options:
+          - production
+          - preview
+
+concurrency:
+  group: cloudflare-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  NODE_VERSION: '20'
+  PYTHON_VERSION: '3.11'
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}/backend
+  CLOUDFLARE_PAGES_PROJECT: mythicindex
+  API_HOSTNAME: api.mythicindex.com
+
+jobs:
+  frontend:
+    name: Build Angular frontend
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+      pull-requests: write
+    outputs:
+      environment: ${{ steps.branch.outputs.environment }}
+      branch: ${{ steps.branch.outputs.name }}
+      deployment-url: ${{ steps.publish.outputs.deployment-url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Lint frontend
+        working-directory: frontend
+        run: npm run lint
+
+      - name: Run unit tests
+        working-directory: frontend
+        run: npm run test -- --watch=false --browsers=ChromeHeadless --no-progress
+
+      - name: Build production bundle
+        working-directory: frontend
+        run: npm run build -- --configuration=production
+        env:
+          NODE_ENV: production
+
+      - name: Verify build output
+        run: |
+          if [ ! -d "frontend/dist/frontend/browser" ]; then
+            echo "::error::Expected Angular build output in frontend/dist/frontend/browser"
+            exit 1
+          fi
+          echo "### ✅ Angular build ready" >> "$GITHUB_STEP_SUMMARY"
+          echo "Artifacts generated in frontend/dist/frontend/browser" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Determine deployment target
+        id: branch
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          REF_NAME: ${{ github.ref_name }}
+          PR_HEAD: ${{ github.head_ref }}
+          RUN_ID: ${{ github.run_id }}
+          DISPATCH_ENV: ${{ github.event.inputs.environment || '' }}
+        run: |
+          branch="$REF_NAME"
+          environment="preview"
+
+          if [ "$EVENT_NAME" = "pull_request" ] && [ -n "$PR_HEAD" ]; then
+            branch="$PR_HEAD"
+          fi
+
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            if [ "$DISPATCH_ENV" = "production" ]; then
+              environment="production"
+              branch="${REF_NAME:-main}"
+            else
+              environment="preview"
+              branch="manual-preview-${RUN_ID}"
+            fi
+          elif [ "$REF_NAME" = "main" ]; then
+            environment="production"
+            branch="main"
+          fi
+
+          sanitized=$(echo "$branch" | tr '[:upper:]' '[:lower:]')
+          sanitized=$(echo "$sanitized" | sed -E 's#[^a-z0-9_-]#-#g')
+          sanitized=$(echo "$sanitized" | sed -E 's/-+/-/g' | sed -E 's/^-//' | sed -E 's/-$//')
+
+          if [ -z "$sanitized" ]; then
+            sanitized="preview-${RUN_ID}"
+          fi
+
+          echo "name=${sanitized}" >> "$GITHUB_OUTPUT"
+          echo "environment=${environment}" >> "$GITHUB_OUTPUT"
+
+      - name: Validate Cloudflare secrets
+        if: github.event_name != 'pull_request'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          missing=0
+          for var in CLOUDFLARE_API_TOKEN CLOUDFLARE_ACCOUNT_ID; do
+            if [ -z "${!var}" ]; then
+              echo "::error::Missing required secret: ${var}"
+              missing=1
+            fi
+          done
+          if [ "$missing" -eq 1 ]; then
+            echo "Cloudflare Pages deployment cannot continue until all required secrets are configured." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
+      - name: Publish to Cloudflare Pages
+        id: publish
+        if: github.event_name != 'pull_request'
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: ${{ env.CLOUDFLARE_PAGES_PROJECT }}
+          directory: frontend/dist/frontend/browser
+          branch: ${{ steps.branch.outputs.name }}
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Summarize frontend deployment
+        if: steps.publish.outputs.deployment-url
+        run: |
+          echo "### 🚀 Cloudflare Pages Deployment" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Environment: ${{ steps.branch.outputs.environment }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Branch: ${{ steps.branch.outputs.name }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "- URL: ${{ steps.publish.outputs.deployment-url }}" >> "$GITHUB_STEP_SUMMARY"
+
+  backend:
+    name: Test and package backend
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    env:
+      REGISTRY: ${{ env.REGISTRY }}
+      IMAGE_NAME: ${{ env.IMAGE_NAME }}
+    outputs:
+      image-tag: ${{ steps.image.outputs.tag }}
+      image-digest: ${{ steps.build.outputs.digest }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+          cache-dependency-path: backend/requirements.txt
+
+      - name: Install backend dependencies
+        working-directory: backend
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run backend tests
+        working-directory: backend
+        run: pytest
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GitHub Container Registry
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract Docker metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          tags: |
+            type=ref,event=branch
+            type=sha
+            type=raw,value=latest,enable={{is_default_branch}}
+
+      - name: Build and (optionally) push image
+        id: build
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          platforms: linux/amd64
+
+      - name: Determine primary image tag
+        id: image
+        run: |
+          first_tag="$(echo "${{ steps.meta.outputs.tags }}" | head -n 1)"
+          if [ -z "$first_tag" ]; then
+            echo "::error::Unable to determine image tag from metadata output"
+            exit 1
+          fi
+          echo "tag=$first_tag" >> "$GITHUB_OUTPUT"
+          echo "### 🐳 Backend image built" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Image: $first_tag" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Digest: ${{ steps.build.outputs.digest }}" >> "$GITHUB_STEP_SUMMARY"
+
+  deploy-backend:
+    name: Deploy backend to Cloudflare
+    needs: backend
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      IMAGE_TAG: ${{ needs.backend.outputs.image-tag }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Set up Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Determine deployment environment
+        id: deploy-env
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          REF_NAME: ${{ github.ref_name }}
+          DISPATCH_ENV: ${{ github.event.inputs.environment || '' }}
+        run: |
+          environment="preview"
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            if [ "$DISPATCH_ENV" = "production" ]; then
+              environment="production"
+            fi
+          elif [ "$REF_NAME" = "main" ]; then
+            environment="production"
+          fi
+          echo "environment=$environment" >> "$GITHUB_OUTPUT"
+
+      - name: Validate required secrets
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          missing=0
+          for var in CLOUDFLARE_API_TOKEN CLOUDFLARE_ACCOUNT_ID; do
+            if [ -z "${!var}" ]; then
+              echo "::error::Missing required secret: ${var}"
+              missing=1
+            fi
+          done
+          if [ "$missing" -eq 1 ]; then
+            echo "Cloudflare deployment aborted." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
+      - name: Install Wrangler CLI
+        run: npm install -g wrangler@3
+
+      - name: Generate wrangler configuration
+        working-directory: backend
+        env:
+          IMAGE_TAG: ${{ env.IMAGE_TAG }}
+          API_HOSTNAME: ${{ env.API_HOSTNAME }}
+        run: |
+          cat > wrangler.generated.toml <<EOT
+          name = "mythicindex-backend"
+          compatibility_date = "2024-09-01"
+
+          [containers]
+          image = "${IMAGE_TAG}"
+          port = 8000
+          memory = "2GB"
+          cpu_limit = 1.0
+
+          [autoscaling]
+          min_instances = 1
+          max_instances = 5
+
+          [health_check]
+          path = "/health"
+          interval = "30s"
+          timeout = "10s"
+          unhealthy_threshold = 3
+          healthy_threshold = 2
+
+          [[routes]]
+          pattern = "${API_HOSTNAME}/*"
+          zone_name = "mythicindex.com"
+
+          [env.production.vars]
+          ENVIRONMENT = "production"
+          LOG_LEVEL = "info"
+          EOT
+
+      - name: Deploy backend container
+        working-directory: backend
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          wrangler deploy --config wrangler.generated.toml
+
+      - name: Install Alembic tooling
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.production.txt
+
+      - name: Run database migrations
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          if [ -z "$DATABASE_URL" ]; then
+            echo "⚠️ DATABASE_URL not configured; skipping migrations" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          cd backend
+          alembic upgrade head
+
+      - name: Perform health check
+        env:
+          API_HOSTNAME: ${{ env.API_HOSTNAME }}
+          DEPLOY_ENV: ${{ steps.deploy-env.outputs.environment }}
+        run: |
+          echo "Waiting for backend to stabilize..."
+          sleep 30
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" "https://${API_HOSTNAME}/health" || echo "000")
+          if [ "$STATUS" != "200" ]; then
+            echo "::error::Health check failed with status $STATUS"
+            exit 1
+          fi
+          echo "### ✅ Backend deployment healthy" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Environment: ${DEPLOY_ENV}" >> "$GITHUB_STEP_SUMMARY"
+          echo "- URL: https://${API_HOSTNAME}/health" >> "$GITHUB_STEP_SUMMARY"

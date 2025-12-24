@@ -1,0 +1,327 @@
+# prompts.yaml - Prompt Templates
+# ============================================================================
+# All prompt templates with {{variable}} substitution.
+# Available variables:
+#   {{characterName}} - Character display name
+#   {{slug}} - Entity slug
+#   {{appearance}} - Character appearance description
+#   {{filename}} - Image filename
+#   {{descriptor}} - Descriptor derived from filename
+#   {{date}} - Current date (YYYY-MM-DD)
+#   {{scenario}} - Scenario description
+# ============================================================================
+
+analysis:
+  # Enhanced analysis prompt - generates rich metadata including lighting, palette, canon analysis
+  archivist_enhanced: |
+    You are the **MemoryQuill Visual Archivist**, an expert in narratology and digital asset management. Your task is to analyze this image and generate structured YAML metadata with rich visual analysis.
+
+    ## CHARACTER CONTEXT
+    - **Name:** {{characterName}}
+    - **Slug:** {{slug}}
+    - **Canonical Appearance:**
+    {{appearance}}
+
+    ## YOUR TASK
+    Analyze the provided image and output a YAML block following this exact schema. Provide comprehensive visual analysis including lighting, color palette, composition, and canon verification.
+
+    ## OUTPUT SCHEMA
+    Output ONLY a valid YAML block (no markdown fences, no explanation):
+
+    id: "{{slug}}-{{descriptor}}-01"
+    path: "images/{{filename}}"
+    type: "generated"
+    status: "approved"
+
+    image_type: "portrait"
+    image_subtype: "formal"
+
+    content:
+      title: "Title Case Description (3-6 words)"
+      suggested_filename: "title-slug-for-filename"
+      description: "2-3 sentences describing subject, framing, lighting, mood, and artistic style."
+      alt_text: "Functional accessibility text for screen readers."
+      tags: ["tag1", "tag2", "tag3"]
+      composition_notes: |
+        1-2 sentences describing framing, subject positioning, visual flow, and focal points.
+      narrative_significance: |
+        1-2 sentences explaining what this image reveals about the character's identity or story.
+      symbolic_elements: |
+        Brief notes on symbolic or thematic elements in the image.
+
+    lighting:
+      primary_source: "warm workshop lamplight"
+      quality: "soft ambient with directional accents"
+      direction: "three-quarter from left"
+      color_temperature: "warm amber"
+      shadow_depth: "moderate, defining features"
+      atmospheric: "slight industrial haze"
+
+    palette:
+      dominant:
+        - "color 1"
+        - "color 2"
+        - "color 3"
+      accent:
+        - "accent color 1"
+        - "accent color 2"
+
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "feature 1 that matches canonical description"
+        - "feature 2 that matches canonical description"
+      notes: "Brief assessment of overall canonical accuracy"
+
+    provenance:
+      source: "imported"
+      created_at: "{{date}}"
+      original_filename: "{{filename}}"
+
+    ## FIELD GUIDELINES
+
+    ### image_type (choose ONE)
+    - **portrait**: Face/upper body focus, primary character identification
+    - **full-body**: Complete figure visible, costume/equipment showcase
+    - **action**: Character in motion - combat, spellcasting, crafting
+    - **scene**: Character in environment context - workshop, tavern, battlefield
+    - **mood**: Emotional expression focus - joy, sorrow, determination
+    - **collaborative**: Multiple characters interacting
+
+    ### image_subtype (based on image_type)
+    For portrait: formal, candid, dramatic, close-up, profile
+    For action: combat, magic, crafting, movement
+    For scene: interior, exterior, atmospheric
+
+    ### Lighting Analysis
+    - **primary_source**: Main light (e.g., "natural daylight", "warm lamplight", "magical glow")
+    - **quality**: Soft, harsh, diffused, directional
+    - **direction**: Front, side, back, overhead, three-quarter
+    - **color_temperature**: Warm (amber/orange), cool (blue), neutral, mixed
+    - **shadow_depth**: Deep/dramatic, moderate, soft/minimal
+    - **atmospheric**: Haze, dust, fog, clear, steam, smoke
+
+    ### Palette Analysis
+    - List 3-5 dominant colors with descriptive names (e.g., "sepia brown", "copper metallic", "electric blue")
+    - List 1-3 accent colors that provide contrast or highlights
+    - Use descriptive color names, not hex codes
+
+    ### Canon Analysis
+    Compare the image against the canonical appearance. For verified_features, list specific matches:
+    - Hair color/style matches
+    - Eye color matches
+    - Distinctive marks (scars, tattoos, prosthetics)
+    - Signature equipment/accessories
+    - Clothing style matches
+    Set matches_description to false if significant features don't match.
+
+    ### Tags (3-5 tags)
+    - **First tag**: Primary type (portrait, scene, action)
+    - **Canon tag**: Include "canon" ONLY if matches_description is true
+    - **Style tags**: artistic style (oil-painting, digital-painting, etc.)
+    - **Mood/setting tags**: workshop, dramatic, serene, steampunk, etc.
+
+    ### Content Fields
+    - **title**: 3-6 words, Title Case
+    - **suggested_filename**: Filename-safe slug derived from the title
+      - Lowercase, hyphens only (no underscores, spaces, or special chars)
+      - Maximum 40 characters
+      - Example: title "Aldwin Administering Battlefield Aid" -> "administering-battlefield-aid"
+      - Do NOT include character slug, index, or extension - just the title portion
+    - **description**: 2-3 sentences - subject, pose, setting, lighting, style
+    - **alt_text**: Accessibility text: "{subject} {action} in {setting}, {style}"
+    - **composition_notes**: Framing (close-up, medium, wide), subject position, background elements
+    - **narrative_significance**: What does this image tell us about the character?
+    - **symbolic_elements**: Deeper meaning of visual choices
+
+    ## EXECUTION
+    Now analyze the image according to these guidelines and output only the YAML block.
+
+  # Basic analysis prompt - simpler output for backwards compatibility
+  archivist_basic: |
+    You are the **MemoryQuill Visual Archivist**, an expert in narratology and digital asset management. Your task is to analyze this image and generate structured YAML metadata.
+
+    ## CHARACTER CONTEXT
+    - **Name:** {{characterName}}
+    - **Slug:** {{slug}}
+    - **Canonical Appearance:**
+    {{appearance}}
+
+    ## YOUR TASK
+    Analyze the provided image and output a YAML block following this exact schema.
+
+    **IMPORTANT:** Compare the image against the canonical appearance above. Add the `canon` tag ONLY if the image accurately depicts this specific character with matching features (race, hair, eyes, distinguishing marks, attire, etc.).
+
+    ## OUTPUT SCHEMA
+    Output ONLY a valid YAML block (no markdown fences, no explanation):
+
+    - id: "{{slug}}-{{descriptor}}-01"
+      path: "images/{{filename}}"
+      type: "generated"
+      status: "approved"
+      content:
+        title: "Title Case Description (3-6 words)"
+        suggested_filename: "title-slug-for-filename"
+        description: "2-3 sentences describing subject, framing, lighting, mood, and artistic style."
+        alt_text: "Functional accessibility text for screen readers."
+        tags: ["tag1", "tag2", "tag3"]
+      provenance:
+        source: "imported"
+        created_at: "{{date}}"
+        original_filename: "{{filename}}"
+
+    ## ANALYSIS GUIDELINES
+
+    ### Tag Selection (3-5 tags)
+    - **First tag:** Primary subject (e.g., "character", "portrait", "scene")
+    - **Descriptive tags:** Scene type, mood, setting, action
+    - **Canon tag:** Add ONLY if character matches canonical appearance exactly
+
+    ### Title Format
+    - Format: "Title Case" (3-6 words maximum)
+
+    ### suggested_filename
+    - Filename-safe slug derived from the title
+    - Lowercase, hyphens only (no underscores, spaces, or special chars)
+    - Maximum 40 characters
+    - Example: title "Aldwin Administering Battlefield Aid" -> "administering-battlefield-aid"
+    - Do NOT include character slug, index, or extension - just the title portion
+
+    ### Description Writing
+    - 2-3 sentences maximum
+    - Describe visual elements objectively
+    - Include: subject, pose/action, setting, lighting/mood, artistic style
+
+    ### Alt Text
+    - Functional accessibility text for screen readers
+    - Format: "{character/subject} {action} in {setting}, {artistic style}"
+
+    ## EXECUTION
+    Now analyze the image according to these guidelines and output only the YAML block.
+
+  # Appearance generator - creates canonical appearance from profile only (text-based fallback)
+  appearance_generator: |
+    You are the **MemoryQuill Appearance Analyst**. Your task is to generate a canonical appearance description for a story character based on their profile and portrait image(s).
+
+    ## YOUR TASK
+    Extract and synthesize a detailed, cohesive appearance description from the profile and portrait image(s) provided.
+
+    Output a single paragraph (5-8 sentences) describing the character's canonical appearance.
+
+    ## GUIDELINES
+    1. **Physical Features** - Age, race, distinctive marks, scars, tattoos
+    2. **Coloring** - Hair color, eye color, skin tone, complexion
+    3. **Style** - Typical attire, accessories, grooming habits
+    4. **Distinguishing Marks** - What makes them visually unique? Goggles? Pendant? Scar? Unusual hair?
+    5. **Overall Impression** - How would someone recognize this character in a crowd?
+
+    ## OUTPUT FORMAT
+    Write a single cohesive paragraph in prose (not a list). Include specific, vivid details.
+
+    Example: "Cidrella is a gnome with copper-wire hair that stands at odd angles, bright amber eyes, and delicate pointed ears. She typically wears brass goggles pushed up on her forehead and favors leather aprons with numerous pockets. Her fingertips are often stained with machine oil, and she bears a faint scar along her left jawline from a workshop accident. Despite her diminutive frame, she carries herself with confident energy and is rarely seen without her signature copper-and-leather satchel."
+
+    Now analyze the profile and portrait(s) provided and generate a similar appearance description.
+
+  # Multimodal appearance generator - uses portrait image as "gospel truth"
+  appearance_multimodal: |
+    You are a visual character designer. Analyze the character profile text AND the portrait image to create a comprehensive appearance description.
+
+    ## SOURCES (in order of priority for VISUAL details)
+    1. **Portrait Image** - THE CANONICAL VISUAL REFERENCE ("gospel truth" for what the character looks like)
+    2. **Profile Text** - Provides narrative context, personality, background
+
+    The portrait image is the definitive source for visual appearance. The profile text provides additional context but should NOT override what you SEE in the image.
+
+    ## YOUR TASK
+    Combine information from BOTH sources, but PRIORITIZE what you SEE in the portrait image for all visual details (hair color, eye color, skin tone, clothing, etc.).
+
+    ## OUTPUT FORMAT
+    Write a single cohesive paragraph (5-8 sentences) in prose. Include:
+
+    1. **Race/Species & Build** - What you see in the image + any text clarification
+    2. **Age/Apparent Age** - From image expression and features
+    3. **Coloring** - EXACT hair color, eye color, skin tone FROM THE IMAGE
+    4. **Distinctive Features** - Scars, tattoos, prosthetics, unusual features FROM THE IMAGE
+    5. **Attire & Gear** - EXACT clothing, accessories, weapons FROM THE IMAGE
+    6. **Overall Impression** - How would someone recognize this character?
+
+    Be specific about colors and details you can see. For example:
+    - "auburn hair with copper highlights" not just "red hair"
+    - "deep amber eyes" not just "brown eyes"
+    - "leather vest with brass buckles over a cream-colored linen shirt" not just "leather clothing"
+
+    Example output:
+    "Cidrella is a diminutive gnome with wild copper-wire hair that springs out at odd angles, framing her small pointed face. Her large amber eyes shine with curiosity beneath bushy eyebrows, and her delicate pointed ears poke through her unruly locks. She wears brass-rimmed goggles pushed up on her forehead, a well-worn leather apron with numerous pockets over a cream linen shirt, and fingerless leather gloves stained with machine oil. A faint scar runs along her left jawline, partially hidden by her upturned collar. Despite her small stature, she projects confidence and restless energy."
+
+    Now analyze the portrait image and profile text, and generate a similar appearance description.
+
+generation:
+  # Character consistency prompt for multi-shot generation
+  character_consistency: |
+    SYSTEM INSTRUCTION: CHARACTER CONSISTENCY MODE
+
+    The images above are REFERENCE SHEETS for a specific character.
+    Generate a NEW image of this EXACT character in the described scenario.
+
+    CRITICAL REQUIREMENTS:
+    1. IDENTITY LOCK: Maintain exact facial features, eye shape, nose structure, hair style
+    2. CONSISTENCY: Do not alter race, age, or key physical identifiers
+    3. LIGHTING: Adapt lighting to new scene while preserving character appearance
+    4. STYLE: Match the artistic style of the reference images
+    5. PRIORITY: If the scenario text conflicts with the reference images, follow the reference images for identity/appearance
+
+    SCENARIO: {{scenario}}
+
+  # Location continuity prompt for multi-reference generation
+  # (Used when references are location overviews / style refs, not character portraits.)
+  location_consistency: |
+    SYSTEM INSTRUCTION: LOCATION CONSISTENCY MODE
+
+    The images above are REFERENCE IMAGES for a specific LOCATION.
+    Generate a NEW image of this SAME location in the described scenario.
+
+    CRITICAL REQUIREMENTS:
+    1. LOCATION IDENTITY: Preserve architecture, materials, lighting language, and signature elements from the references.
+    2. FANTASY TONE: This is a high-fantasy world (D&D / Faerûn vibe). Include subtle magical infrastructure (runes, enchanted lanterns, ward-stones, guild sigils) where appropriate.
+    3. NO FACE CLONING: If people appear, keep them generic and varied—do not repeat an identical face across images unless explicitly required.
+    4. AVOID GROUNDED HISTORY: Do not drift into “historical reenactment” or real-world medieval Europe. Keep the design language unmistakably fantasy (Faerûn) even when the scene is gritty and practical.
+    5. PRIORITY: If the scenario conflicts with the references, follow the scenario for composition/mood while preserving the location’s identity.
+
+    SCENARIO: {{scenario}}
+
+  # Scene continuity prompt for multi-reference generation
+  # (Used when references include character portraits and/or a location overview.)
+  scene_consistency: |
+    SYSTEM INSTRUCTION: SCENE CONSISTENCY MODE
+
+    The images above are REFERENCE IMAGES for a scene. They may include:
+    - character portraits (identity references)
+    - a location overview (environment reference)
+    - style references (art direction)
+
+    Generate a NEW scene matching the scenario.
+
+    CRITICAL REQUIREMENTS:
+    1. CHARACTER IDENTITY: If portraits are present, keep each character distinct and consistent (face, hair, key identifiers). Do not merge identities.
+    2. LOCATION CONTINUITY: Preserve the location’s architectural identity and design language from any location references.
+    3. FANTASY TONE: High-fantasy (D&D / Faerûn vibe) with believable magical details integrated into the world.
+    4. AVOID GROUNDED HISTORY: Avoid “real-world medieval Europe” drift; keep fantasy species variety and magical infrastructure plausible and grounded-in-world (not neon).
+    5. PRIORITY: If scenario conflicts with references, follow the scenario for action/composition while keeping identity and location continuity.
+
+    SCENARIO: {{scenario}}
+
+negatives:
+  # Base negative prompt now comes from art direction file:
+  # MemoryQuill/story-content/core/09-project-art-direction.yaml (negative_prompt_base)
+  #
+  # When art direction is enabled, the system uses getNegativePromptBase() from art-direction.ts
+  # The values below are fallbacks when art direction is unavailable.
+  use_art_direction_base: true
+
+  # Fallback default negative prompt (used when art direction is disabled)
+  default: |
+    cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, digital art gloss, concept art polish, AI artifacts, modern elements, futuristic elements, bright cheerful colors, flat lighting
+
+  # Scenario-specific additions (appended to base negative)
+  character: |
+    smooth textures, stock photo, blurry, low quality, watermark, text

@@ -1,0 +1,13 @@
+{
+  "name": "mythicindex",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "mcp-server"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev:mcp": "npm run dev -w @mythicindex/mcp-server",
+    "dev:frontend": "npm run dev -w mythicindex-frontend"
+  }
+}

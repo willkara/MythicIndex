@@ -1,0 +1,402 @@
+chapter_analysis:
+  slug: "ch27-official-channels"
+  chapter_number: 27
+  chapter_title: "Official Channels"
+  visual_thesis: "Authority and necessity collide—the Company navigates official channels to acquire a dangerous asset, Lyra Kestrel the Mockingbird, whose skills they need but whose nature challenges everything they stand for."
+  dominant_mood_progression:
+    - "official briefing"
+    - "descent into secrets"
+    - "dangerous revelation"
+    - "vulnerable truth"
+    - "reputation's walk"
+    - "uncomfortable acceptance"
+  color_story:
+    opening: "Polished mahogany, maps and pins, controlled efficiency"
+    climax: "Detention cell, golden eyes with held tears, children mentioned"
+    closing: "Pre-dawn darkness, wagons rolling, unlikely alliance departing"
+
+scene_zone_recommendations:
+  - scene_id: scn-27-01
+    location: city-watch-headquarters
+    recommended_zones:
+      - zone: office
+        label: "The Briefing"
+        rationale: "Intelligence shared, specialist proposed"
+        anchor_details:
+          - "Maps with colored pins"
+          - "Documents reviewed"
+          - "Blackwater's proposal"
+    confidence: high
+
+  - scene_id: scn-27-02
+    location: spire-of-inquiry
+    recommended_zones:
+      - zone: detention-block
+        label: "The Descent"
+        rationale: "Moving to high-security, Lyra revealed"
+        anchor_details:
+          - "Iron doors, magical wards"
+          - "Lyra's immaculate cell"
+          - "Thorne's recognition"
+    confidence: high
+
+  - scene_id: scn-27-03
+    location: spire-of-inquiry
+    recommended_zones:
+      - zone: detention-block
+        label: "The Negotiation"
+        rationale: "Terms negotiated, children revelation breaks Lyra"
+        anchor_details:
+          - "Dangerous flash"
+          - "Tattoos flickering violet"
+          - "Tears held back"
+    confidence: high
+
+  - scene_id: scn-27-05
+    location: city-watch-headquarters
+    recommended_zones:
+      - zone: corridors
+        label: "The Walk of the Mockingbird"
+        rationale: "Procession through headquarters, whispers following"
+        anchor_details:
+          - "Iron cuffs"
+          - "Clerks flattening against walls"
+          - "Legend walking"
+    confidence: high
+
+  - scene_id: scn-27-07
+    location: warehouse-complex
+    recommended_zones:
+      - zone: mess
+        label: "Uncomfortable Introductions"
+        rationale: "Lyra meets Company, demonstrates abilities"
+        anchor_details:
+          - "Voice mimicry"
+          - "Raven carving offered"
+          - "Purple shadows at throat"
+    confidence: high
+
+  - scene_id: scn-27-08
+    location: warehouse-complex
+    recommended_zones:
+      - zone: training-yard
+        label: "Preparations and Departures"
+        rationale: "Final prep, kukri practice, departure"
+        anchor_details:
+          - "Blade work"
+          - "Wagons loading"
+          - "Dawn departure"
+    confidence: high
+
+candidate_moments:
+  - moment_id: "ch27-official-channels-moment-01"
+    scene_id: scn-27-02
+    title: "Mockingbird"
+    narrative_beat: "Thorne stepped forward, his entire body going rigid as recognition hit. His voice came out tight, barely above a whisper. 'Mockingbird.'"
+    subtext: "Past collides with present; the hunter faces his quarry."
+    scene_mood: ominous
+    emotional_color: "body-rigid, whisper-tight, recognition-hitting"
+    location: spire-of-inquiry
+    zone: detention-block
+    characters_present:
+      - thorne-brightward
+      - lyra-kestrel
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 4
+      narrative_pivot: 5
+      character_revelation: 4
+      symbolic_density: 4
+      total: 22
+    suggested_shot:
+      image_type: beat
+      framing: medium
+      angle: "Thorne rigid, Lyra visible through bars beyond"
+      key_visual_hook: "Thorne's body going rigid as recognition hits, his voice barely a whisper—'Mockingbird'—Lyra visible through reinforced bars, golden eyes finding him with wry amusement"
+      lighting_suggestion: "Filtered detention block light, cell window beyond"
+      composition_notes: "Recognition—hunter meets quarry"
+    source_excerpts:
+      - "his entire body going rigid as recognition hit"
+      - "'Mockingbird'"
+    selection_rationale: "Key reveal—Thorne recognizes his nemesis."
+
+  - moment_id: "ch27-official-channels-moment-02"
+    scene_id: scn-27-02
+    title: "The Artist's Cell"
+    narrative_beat: "Through the reinforced bars, they could see an immaculate space. Books were stacked in precise formations. Delicate wood carvings lined another shelf—birds, animals, abstract designs, all carved with extraordinary detail."
+    subtext: "Humanity preserved in captivity; the killer's artistry."
+    scene_mood: intimate
+    emotional_color: "immaculate-precision, delicate-carvings, extraordinary-detail"
+    location: spire-of-inquiry
+    zone: detention-block
+    characters_present:
+      - lyra-kestrel
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 5
+      symbolic_density: 5
+      total: 22
+    suggested_shot:
+      image_type: anchor
+      framing: wide
+      angle: "Cell interior through bars, carvings and books visible"
+      key_visual_hook: "Lyra's immaculate cell through reinforced bars—books stacked in precise formations, delicate wood carvings of birds and animals arranged with obsessive care, the assassin revealed as artist"
+      lighting_suggestion: "Small window light, warm against stone"
+      composition_notes: "The artist's cage—humanity preserved in captivity"
+    source_excerpts:
+      - "an immaculate space that bore little resemblance to a typical prison cell"
+      - "Delicate wood carvings lined another shelf"
+    selection_rationale: "Visual character introduction—Lyra's complexity."
+
+  - moment_id: "ch27-official-channels-moment-03"
+    scene_id: scn-27-03
+    title: "Not a Killer"
+    narrative_beat: "'I have killed,' she said, the word carrying weight that made the air feel thinner. 'I am not a killer. There is a difference. One is an action. The other is an identity.' Her intricate tattoos along her arms flickered with violet light."
+    subtext: "Identity defended; the distinction that defines her."
+    scene_mood: ominous
+    emotional_color: "weight-carried, air-thinner, violet-flickering"
+    location: spire-of-inquiry
+    zone: detention-block
+    characters_present:
+      - lyra-kestrel
+      - thorne-brightward
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 5
+      narrative_pivot: 4
+      character_revelation: 5
+      symbolic_density: 5
+      total: 24
+    suggested_shot:
+      image_type: hero
+      framing: close
+      angle: "Lyra's face and arms, tattoos flickering violet"
+      key_visual_hook: "Lyra's golden eyes cold and dangerous as she speaks—'I am not a killer'—her intricate arm tattoos flickering with violet light like heat lightning, the Mockingbird showing her teeth"
+      lighting_suggestion: "Violet light from tattoos, shadows deepening"
+      composition_notes: "The distinction—identity defended with dangerous precision"
+    source_excerpts:
+      - "'I have killed. I am not a killer'"
+      - "intricate tattoos along her arms flickered with violet light"
+    selection_rationale: "Defining character moment—Lyra's core philosophy."
+
+  - moment_id: "ch27-official-channels-moment-04"
+    scene_id: scn-27-03
+    title: "Children Break Her"
+    narrative_beat: "This time, Lyra didn't crack. She broke. Her golden eyes went distant, as if she was seeing something far beyond the prison walls. When she opened them again, the tears she wouldn't let fall made her golden irises gleam like coins at the bottom of a wishing well."
+    subtext: "Vulnerability revealed; the wound that drives her."
+    scene_mood: intimate
+    emotional_color: "eyes-distant, tears-held, coins-gleaming"
+    location: spire-of-inquiry
+    zone: detention-block
+    characters_present:
+      - lyra-kestrel
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 5
+      narrative_pivot: 5
+      character_revelation: 5
+      symbolic_density: 5
+      total: 25
+    suggested_shot:
+      image_type: hero
+      framing: close
+      angle: "Lyra's face, tears held, golden eyes gleaming"
+      key_visual_hook: "Lyra's face transformed—the predator gone, replaced by something raw and wounded—tears she won't let fall making her golden irises gleam like coins at the bottom of a wishing well"
+      lighting_suggestion: "Soft light catching unshed tears"
+      composition_notes: "The breaking—vulnerability revealed"
+    source_excerpts:
+      - "This time, Lyra didn't crack. She broke"
+      - "tears she wouldn't let fall made her golden irises gleam like coins at the bottom of a wishing well"
+    selection_rationale: "Emotional peak—Lyra's true motivation revealed."
+
+  - moment_id: "ch27-official-channels-moment-05"
+    scene_id: scn-27-05
+    title: "Walk of Whispers"
+    narrative_beat: "Lyra walked in the center of their formation, her hands bound before her in heavy iron cuffs. Despite the restraints, she moved with an unnerving grace, her head held high. Clerks and off-duty guards would flatten themselves against the walls. 'Is that...?' '...the Mockingbird. Gods, I thought she was just a story.'"
+    subtext: "Legend walks among mortals; reputation made flesh."
+    scene_mood: ominous
+    emotional_color: "iron-cuffs, unnerving-grace, walls-flattening"
+    location: city-watch-headquarters
+    zone: corridors
+    characters_present:
+      - lyra-kestrel
+      - thorne-brightward
+      - veyra-thornwake
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 4
+      symbolic_density: 5
+      total: 21
+    suggested_shot:
+      image_type: anchor
+      framing: wide
+      angle: "Lyra walking in formation, clerks pressed against walls"
+      key_visual_hook: "Lyra walking in center of guard formation, iron cuffs on wrists, head held high with unnerving grace, clerks and guards flattening against walls as the Mockingbird passes, whispers trailing in her wake"
+      lighting_suggestion: "Corridor light, legend walking"
+      composition_notes: "Reputation made flesh—legend among mortals"
+    source_excerpts:
+      - "her hands bound before her in heavy iron cuffs"
+      - "Clerks and off-duty guards would flatten themselves against the walls"
+    selection_rationale: "Visual set piece—the Mockingbird's reputation."
+
+  - moment_id: "ch27-official-channels-moment-06"
+    scene_id: scn-27-07
+    title: "Voice of Shadows"
+    narrative_beat: "Lyra stepped forward, and when she spoke, her voice carried the exact tone and inflection Veyra had just used: 'She's been assigned by Lady Moira to accompany our reconnaissance mission.' As she spoke in Veyra's voice, wisps of darker purple shadow danced around her throat."
+    subtext: "Skill demonstrated; the unsettling power on display."
+    scene_mood: ominous
+    emotional_color: "exact-mimicry, purple-shadows, throat-dancing"
+    location: warehouse-complex
+    zone: mess
+    characters_present:
+      - lyra-kestrel
+      - veyra-thornwake
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 4
+      symbolic_density: 4
+      total: 20
+    suggested_shot:
+      image_type: beat
+      framing: medium
+      angle: "Lyra speaking, purple shadows at throat"
+      key_visual_hook: "Lyra speaking in Veyra's exact voice, wisps of darker purple shadow dancing around her throat—the tiefling-enhanced mimicry made visible, the Company watching with varied reactions"
+      lighting_suggestion: "Warehouse light, purple shadows glowing"
+      composition_notes: "Power displayed—skill made unsettling"
+    source_excerpts:
+      - "her voice carried the exact tone and inflection Veyra had just used"
+      - "wisps of darker purple shadow danced around her throat"
+    selection_rationale: "Ability demonstration—Lyra's core skill."
+
+  - moment_id: "ch27-official-channels-moment-07"
+    scene_id: scn-27-07
+    title: "Raven Carving"
+    narrative_beat: "She pulled out a small wooden carving from her pocket—a perfect miniature of a raven, carved with extraordinary detail. She offered it to Vera. 'I had time in my cell. Your companion is quite distinctive.'"
+    subtext: "Connection offered; the artist reaching out."
+    scene_mood: intimate
+    emotional_color: "miniature-perfect, extraordinary-detail, offered-gift"
+    location: warehouse-complex
+    zone: mess
+    characters_present:
+      - lyra-kestrel
+      - vera-moonwhisper
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 4
+      narrative_pivot: 3
+      character_revelation: 4
+      symbolic_density: 5
+      total: 21
+    suggested_shot:
+      image_type: detail
+      framing: close
+      angle: "Lyra offering raven carving to Vera"
+      key_visual_hook: "Lyra's hand extending a perfect miniature raven carved with extraordinary detail, each feather visible, offered to Vera as connection across suspicion—the assassin's art reaching out"
+      lighting_suggestion: "Warm warehouse light on wood"
+      composition_notes: "The offering—connection through craft"
+    source_excerpts:
+      - "a perfect miniature of a raven, carved with extraordinary detail"
+      - "'Your companion is quite distinctive'"
+    selection_rationale: "Character connection—Lyra reaching out."
+
+  - moment_id: "ch27-official-channels-moment-08"
+    scene_id: scn-27-08
+    title: "Kukri Practice"
+    narrative_beat: "In a quiet corner of the training yard, Lyra moved through a series of fluid, deadly forms. Her twin kukri blades were dark blurs in the fading light. Thorne, watching from a distance, noticed a faint stiffness—the long months of inactivity in a cell had left their mark."
+    subtext: "Skill returning; the master reclaiming her craft."
+    scene_mood: kinetic
+    emotional_color: "fluid-deadly, dark-blurs, stiffness-noticed"
+    location: warehouse-complex
+    zone: training-yard
+    characters_present:
+      - lyra-kestrel
+      - thorne-brightward
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 2
+      character_revelation: 4
+      symbolic_density: 4
+      total: 19
+    suggested_shot:
+      image_type: anchor
+      framing: medium
+      angle: "Lyra with kukri blades in motion"
+      key_visual_hook: "Lyra moving through deadly forms in the training yard, twin kukri blades dark blurs in fading light, the assassin reclaiming her craft after months of captivity, Thorne watching from shadows"
+      lighting_suggestion: "Fading light, blade edges catching"
+      composition_notes: "The reclaiming—master and blades reunited"
+    source_excerpts:
+      - "Lyra moved through a series of fluid, deadly forms"
+      - "Her twin kukri blades were dark blurs in the fading light"
+    selection_rationale: "Visual action—Lyra's physical mastery."
+
+  - moment_id: "ch27-official-channels-moment-09"
+    scene_id: scn-27-08
+    title: "Not on My Team"
+    narrative_beat: "'That includes you. You're part of this team for this mission. We protect each other.' Lyra straightened slightly, something flickering in her expression—surprise, perhaps even a touch of vulnerability before her careful mask reasserted itself."
+    subtext: "Inclusion offered; the outsider claimed."
+    scene_mood: intimate
+    emotional_color: "straightening-slight, surprise-flickering, mask-reasserting"
+    location: warehouse-complex
+    zone: training-yard
+    characters_present:
+      - veyra-thornwake
+      - lyra-kestrel
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 3
+      narrative_pivot: 4
+      character_revelation: 4
+      symbolic_density: 5
+      total: 21
+    suggested_shot:
+      image_type: beat
+      framing: medium
+      angle: "Veyra speaking to Lyra, inclusion offered"
+      key_visual_hook: "Veyra's direct eye contact as she claims Lyra for the team—'We protect each other'—Lyra straightening with surprise and vulnerability flickering before her mask returns"
+      lighting_suggestion: "Pre-dawn darkness, lantern light"
+      composition_notes: "The inclusion—outsider claimed as team"
+    source_excerpts:
+      - "'You're part of this team for this mission. We protect each other'"
+      - "something flickering in her expression—surprise, perhaps even a touch of vulnerability"
+    selection_rationale: "Thematic resolution—acceptance offered."
+
+proposed_selection:
+  target_moments: 6
+  rules_used:
+    - "At least 1 hero or anchor"
+    - "No more than 2 moments with the same scene_mood"
+    - "Cover arc from revelation through vulnerability to acceptance"
+    - "Balance threat with humanity"
+  selected_moments:
+    - moment_id: "ch27-official-channels-moment-04"
+      rank: 1
+      reason: "Highest score (25), children break her, emotional peak"
+    - moment_id: "ch27-official-channels-moment-03"
+      rank: 2
+      reason: "Strong score (24), 'I am not a killer', defining philosophy"
+    - moment_id: "ch27-official-channels-moment-01"
+      rank: 3
+      reason: "Strong score (22), 'Mockingbird' recognition, reveal"
+    - moment_id: "ch27-official-channels-moment-02"
+      rank: 4
+      reason: "Strong score (22), artist's cell, visual character intro"
+    - moment_id: "ch27-official-channels-moment-05"
+      rank: 5
+      reason: "Strong score (21), walk of whispers, reputation visual"
+    - moment_id: "ch27-official-channels-moment-09"
+      rank: 6
+      reason: "Strong score (21), 'not on my team', thematic resolution"
+  rejected_notes:
+    - moment_id: "ch27-official-channels-moment-07"
+      reason: "Lovely raven carving but moment-09 captures acceptance better"
+    - moment_id: "ch27-official-channels-moment-06"
+      reason: "Good voice demonstration but similar to moment-03's reveal"
+    - moment_id: "ch27-official-channels-moment-08"
+      reason: "Nice action but lower thematic weight"

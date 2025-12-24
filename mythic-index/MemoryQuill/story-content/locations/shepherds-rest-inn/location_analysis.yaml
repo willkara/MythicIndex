@@ -1,0 +1,526 @@
+location_identity:
+  slug: "shepherds-rest-inn"
+  name: "Shepherd's Rest Inn"
+  location_type: "building"
+  
+  narrative_soul: |
+    The Shepherd's Rest is anonymity made manifest—a place that exists precisely because 
+    it refuses to be memorable. It represents the operational reality of adventuring work: 
+    sometimes safety isn't a fortified position, but the ability to disappear into the 
+    unremarkable. Here, the extraordinary can conduct extraordinary business while hiding 
+    in plain sight among merchants and traders who ask no questions.
+    
+  one_line_essence: "Where the unremarkable becomes refuge"
+  
+  symbolic_weight:
+    primary_symbol: "Safety through anonymity"
+    supporting_symbols:
+      - "The gap between appearance and significance"
+      - "Professional discretion as service"
+      - "The hidden machinery of adventuring work"
+    thematic_tensions:
+      - "Forgettable exterior vs. significant interior events"
+      - "Commercial normalcy vs. dangerous work"
+      - "Indifference as both service and protection"
+
+  transformation_arc: |
+    The Shepherd's Rest doesn't transform—that's the point. It remains exactly what it 
+    advertises: unremarkable, functional, forgettable. The transformation happens to 
+    those within it. The Company arrives scattered with gathered intelligence and leaves 
+    unified with a plan to infiltrate Croft's warehouse. The inn is a chrysalis that 
+    doesn't change while its occupants do.
+
+physical_truth:
+  construction_style: "Standard Stonebridge commercial timber-and-stone"
+  primary_materials:
+    - "Timber framing"
+    - "Local stone foundation and lower walls"
+    - "Plaster interior walls"
+    - "Wood plank floors"
+  scale_impression: "Modest, unremarkable—deliberately sized to avoid notice"
+  
+  visual_signature: |
+    The defining visual characteristic is the absence of distinctive features. Where 
+    other inns might have carved signs, distinctive paint, or memorable architectural 
+    flourishes, the Shepherd's Rest offers only functional adequacy. The most 
+    distinctive element is the second-floor windows overlooking the street—the only 
+    feature that hints at the surveillance value hidden within mundane appearances.
+    
+  sound_signature: |
+    Quiet in the way of professional establishments. Footsteps on worn wooden stairs. 
+    The muffled sounds of Stonebridge commerce filtering through windows. No tavern 
+    revelry, no boisterous common room—just the businesslike hush of travelers who 
+    prefer not to be noticed.
+    
+  scent_signature: |
+    Clean but unremarkable. Aired linens, a hint of wood polish, perhaps cooking from 
+    a modest kitchen. Nothing memorable—no distinctive spices, no strong hearth smoke. 
+    The olfactory equivalent of the visual anonymity.
+    
+  tactile_signature: |
+    Adequate comfort without luxury. Beds that serve their purpose. Worn but maintained 
+    wood surfaces. The functional warmth of a commercial building that sees regular 
+    traffic but no particular care for ambiance.
+    
+  canon_specifics:
+    - detail: "Second-floor rooms with street-view windows"
+      source: "ch11 - FIRM"
+      visual_importance: "high"
+    - detail: "Exactly as advertised—unremarkable in every way that mattered"
+      source: "ch11 - FIRM"
+      visual_importance: "high"
+    - detail: "Located one street off the main market square"
+      source: "overview.md"
+      visual_importance: "medium"
+    - detail: "Innkeeper who barely looked at guests twice"
+      source: "ch11 - FIRM"
+      visual_importance: "medium"
+      
+  light_character: |
+    Natural light through street-facing windows. Interior spaces likely lit by 
+    functional oil lamps or candles—nothing elaborate. The light quality would be 
+    adequate for work without being particularly warm or atmospheric.
+    
+  weather_influence: |
+    Standard protection from elements. Windows allow street observation while 
+    providing shelter. During the Company's use, weather appears unremarkable—the 
+    inn simply functions as expected.
+
+contextual_place:
+  region: "Stonebridge, a market town on the Silver Rush river"
+  neighborhood_character: |
+    Commercial district adjacent to the main market square. Surrounded by merchant 
+    businesses, trade goods, the bustle of river commerce. The Shepherd's Rest sits 
+    just off the main thoroughfare—close enough for convenience, removed enough for 
+    discretion. The kind of street where travelers lodge without attracting attention.
+    
+  approach_sequences:
+    - name: "From the market square"
+      description: |
+        One street off the square, past merchant stalls and trade offices. The inn 
+        appears as just another commercial building among many.
+      first_impression: |
+        Unremarkable by design. You might walk past it without noticing. That's the 
+        point.
+        
+    - name: "From the five-arch bridge"
+      description: |
+        Through Stonebridge's commercial heart, the inn is one of many lodging options 
+        for traders crossing the Silver Rush.
+      first_impression: |
+        One option among several, distinguished only by its convenient anonymity.
+      
+  visible_beyond:
+    - direction: "From second-floor windows"
+      what_visible: "Street traffic, nearby buildings, approaches to the inn"
+    - direction: "Toward market square"
+      what_visible: "Commercial bustle, merchant activity, the flow of trade"
+      
+  spatial_relationship: |
+    The Shepherd's Rest exists in the commercial penumbra of Stonebridge's market 
+    square—close enough to benefit from the town's trade traffic, removed enough 
+    to avoid the constant scrutiny of the busiest areas. A perfect operational 
+    position.
+
+zones:
+  - slug: "street-exterior"
+    name: "Street Frontage"
+    zone_type: "threshold"
+    location_within: "Ground level, street-facing"
+    
+    physical_description: |
+      A modest facade on a commercial street. Standard inn signage, unremarkable 
+      door, nothing to distinguish it from surrounding establishments. The kind of 
+      building that serves as background in a busy town.
+      
+    narrative_function: |
+      First impression and last—the exterior establishes the inn's core promise: 
+      forgettability. It's the visual contract between establishment and guest.
+      
+    emotional_register: "Neutral, deliberately unmemorable, professionally anonymous"
+    
+    character_associations:
+      - character: "Arriving Company members"
+        relationship: "First contact with the safe house"
+        typical_activities:
+          - "Approaching without drawing attention"
+          - "Entering as unremarkable travelers"
+          
+    signature_details:
+      - "Lack of distinctive architectural features"
+      - "Standard commercial signage"
+      - "Blending with surrounding buildings"
+    
+    light_conditions:
+      natural: "Street light, unremarkable"
+      artificial: "Perhaps a single exterior lamp"
+      
+    mood_affinity:
+      - "intimate"
+      - "somber"
+
+  - slug: "second-floor-rooms"
+    name: "Second-Floor Guest Rooms"
+    zone_type: "sanctuary"
+    location_within: "Upper floor, street-facing"
+    
+    physical_description: |
+      Merchant-class accommodations—clean, functional, adequate. The key feature 
+      is the street-view windows, providing both natural light and observation 
+      capability. Rooms large enough for small group meetings, furnished with 
+      standard beds, a table, perhaps a washstand.
+      
+    narrative_function: |
+      The operational heart of the Company's Stonebridge work. Here intelligence 
+      is gathered, plans are made, the warehouse infiltration is organized. The 
+      mundane setting contrasts with the significance of the work conducted within.
+      
+    emotional_register: "Professional tension masked by ordinary surroundings"
+    
+    character_associations:
+      - character: "Last Light Company"
+        relationship: "Operational headquarters"
+        typical_activities:
+          - "Reviewing gathered intelligence"
+          - "Planning sessions"
+          - "Surveillance through windows"
+          - "Rest between operations"
+          
+    signature_details:
+      - "Street-view windows (surveillance capability)"
+      - "Adequate but unremarkable furnishings"
+      - "Space for small group meetings"
+      - "Work surfaces for planning"
+    
+    light_conditions:
+      natural: "Daylight through street windows; view of approaches"
+      artificial: "Oil lamps or candles for evening work"
+      
+    mood_affinity:
+      - "intimate"
+      - "tense"
+      - "somber"
+
+  - slug: "common-areas"
+    name: "Common Areas"
+    zone_type: "commons"
+    location_within: "Ground floor"
+    
+    physical_description: |
+      Functional rather than social. A place for transactions, not lingering. 
+      Minimal seating, efficient service area. The atmosphere discourages 
+      extended stays or casual conversation.
+      
+    narrative_function: |
+      The space where discretion is institutionalized. Guests pass through 
+      without connecting. The innkeeper's counter is a threshold where 
+      anonymity is purchased.
+      
+    emotional_register: "Transactional, businesslike, deliberately uninviting"
+    
+    character_associations:
+      - character: "The innkeeper"
+        relationship: "Professional indifference personified"
+        typical_activities:
+          - "Processing guests with minimal engagement"
+          - "Avoiding eye contact"
+          - "Maintaining the fiction of forgettability"
+          
+    signature_details:
+      - "Minimal, functional furnishing"
+      - "Service counter"
+      - "Absence of social warmth"
+    
+    light_conditions:
+      natural: "Adequate, functional"
+      artificial: "Practical illumination only"
+      
+    mood_affinity:
+      - "somber"
+      - "intimate"
+
+temporal_states:
+  daily_cycle:
+    - time: "morning"
+      description: "Quiet departures; merchants heading to business"
+      activities:
+        - "Guests leaving for commerce"
+        - "Minimal breakfast service"
+      mood: "businesslike"
+      light_quality: "Morning light through street windows"
+      
+    - time: "midday"
+      description: "Empty or nearly so; guests conducting business elsewhere"
+      activities:
+        - "Cleaning"
+        - "Minimal staffing"
+      mood: "vacant, waiting"
+      light_quality: "Full daylight; rooms bright and revealing"
+      
+    - time: "evening"
+      description: "Returns and arrivals; the brief moment of occupancy"
+      activities:
+        - "Guests returning"
+        - "Brief meals"
+        - "Retirement to rooms"
+      mood: "tired efficiency"
+      light_quality: "Fading daylight giving way to lamplight"
+      
+    - time: "night"
+      description: "Private hours behind closed doors"
+      activities:
+        - "Planning sessions in rooms"
+        - "Rest"
+        - "Surveillance through windows"
+      mood: "enclosed, focused"
+      light_quality: "Lamplight only; windows show darkened streets"
+      
+  seasonal_variations:
+    - season: "trade season"
+      changes: "Higher occupancy, more merchant traffic"
+      mood_shift: "Busier but equally anonymous"
+      
+  story_timeline_states:
+    - state_name: "During Company operations"
+      chapter_range: "Chapter 11"
+      description: |
+        The inn serves as headquarters for the Silas Croft investigation. 
+        Company members come and go, gather intelligence, plan the warehouse 
+        infiltration. The ordinary space contains extraordinary work.
+        
+  weather_states:
+    - condition: "Any"
+      description: "The inn's anonymity persists regardless of weather"
+      mood: "Unchanged—that's the service"
+
+character_space_relationships:
+  - character_slug: "last-light-company"
+    character_name: "The Last Light Company (collectively)"
+    
+    primary_association: |
+      Operational safe house. A place to regroup, plan, and hide in plain sight 
+      while conducting dangerous work against Silas Croft.
+    
+    personal_zones:
+      - zone: "second-floor-rooms"
+        relationship: "Temporary headquarters; the room becomes a planning center"
+        typical_use: "Intelligence review, tactical planning, brief rest"
+        
+    signature_moments:
+      - moment: "Company reconvenes with gathered intelligence"
+        chapter: "ch11"
+        visual_potential: |
+          Figures gathered in a modest room, perhaps around a table with notes 
+          or a rough map. The mundane surroundings contrast with the intensity 
+          of the discussion. Street light through windows.
+          
+      - moment: "Planning the warehouse infiltration"
+        chapter: "ch11"
+        visual_potential: |
+          Close focus on documents or a sketched plan, figures leaning in. 
+          Lamplight on serious faces. The work that happens before the action.
+        
+    perspective_quote: |
+      "Exactly as advertised—unremarkable in every way that mattered. Which was, 
+      of course, exactly what mattered."
+
+  - character_slug: "innkeeper"
+    character_name: "The Innkeeper (unnamed)"
+    
+    primary_association: |
+      Personification of institutional discretion. Professional indifference 
+      as service.
+    
+    personal_zones:
+      - zone: "common-areas"
+        relationship: "Domain of studied non-observation"
+        typical_use: "Processing guests without engaging them"
+        
+    signature_moments:
+      - moment: "Barely looking at the Company twice"
+        chapter: "ch11"
+        visual_potential: |
+          A figure behind a counter, eyes averted or focused elsewhere, while 
+          distinctive guests pass unremarked. The deliberate not-seeing.
+        
+    perspective_quote: |
+      "Don't know what they looked like. Don't remember their names. Don't recall 
+      how long they stayed. That's what you're paying for."
+
+narrative_beats:
+  - beat_id: "nb-shr-01"
+    chapter: "ch11"
+    scene: "Company arrives/reconvenes"
+    
+    what_happens: |
+      Company members gather at the safe house with intelligence about Silas 
+      Croft's operations, preparing to plan the warehouse infiltration.
+    
+    zones_involved:
+      - "street-exterior"
+      - "second-floor-rooms"
+    characters_present:
+      - "Last Light Company members"
+    
+    visual_potential:
+      description: |
+        The arrival at an unremarkable building that will become the site of 
+        significant planning. Or: the interior as operational space—figures 
+        gathered in a modest room, work spread before them.
+      key_visual_hook: "The contrast between mundane setting and significant work"
+      suggested_mood: "intimate"
+      
+    selection_score:
+      narrative_importance: 3
+      visual_distinctiveness: 2
+      emotional_resonance: 3
+      total: 8
+
+  - beat_id: "nb-shr-02"
+    chapter: "ch11"
+    scene: "Planning session"
+    
+    what_happens: |
+      The Company reviews intelligence and plans their approach to the Croft 
+      warehouse.
+    
+    zones_involved:
+      - "second-floor-rooms"
+    characters_present:
+      - "Last Light Company members"
+    
+    visual_potential:
+      description: |
+        Close collaboration over plans—figures clustered around a table, 
+        documents or sketches between them, lamplight casting shadows. The 
+        serious work before the dangerous work.
+      key_visual_hook: "Heads together over plans; the intimacy of shared purpose"
+      suggested_mood: "intimate"
+      
+    selection_score:
+      narrative_importance: 3
+      visual_distinctiveness: 2
+      emotional_resonance: 3
+      total: 8
+
+recommended_images:
+  - image_type: "establishing"
+    priority: "optional"
+    
+    target: "The Shepherd's Rest exterior—demonstrating deliberate anonymity"
+    
+    rationale: |
+      An image that captures the visual paradox: how do you illustrate 
+      forgettability? The answer might be showing the inn as nearly 
+      indistinguishable from its neighbors—a building that exists to not 
+      be noticed.
+    
+    suggested_mood: "somber"
+    suggested_time: "evening"
+    suggested_weather: "Unremarkable"
+    
+    characters_to_include: []
+    zone_focus: "street-exterior"
+    
+    key_elements:
+      - "Unremarkable facade"
+      - "Second-floor windows visible"
+      - "Commercial surroundings"
+      - "Standard signage"
+    
+    visual_hook: |
+      The challenge of showing 'nothing special'—perhaps through a street 
+      scene where the inn is just one building among several, the eye 
+      almost sliding past it.
+    
+    composition_suggestion: "Medium shot, street level, perhaps slightly elevated"
+
+  - image_type: "inhabited"
+    priority: "secondary"
+    
+    target: "Planning session in second-floor room"
+    
+    rationale: |
+      The heart of the location's narrative function: the Company at work 
+      in their temporary headquarters. This captures the soul of the 
+      Shepherd's Rest—ordinary space containing extraordinary purpose.
+    
+    suggested_mood: "intimate"
+    suggested_time: "evening/night"
+    suggested_weather: "Irrelevant (interior)"
+    
+    characters_to_include:
+      - "Last Light Company members (at least 2-3)"
+    zone_focus: "second-floor-rooms"
+    
+    key_elements:
+      - "Street-view windows"
+      - "Modest furnishings"
+      - "Work surface with documents/plans"
+      - "Functional rather than luxurious accommodations"
+    
+    visual_hook: |
+      Figures leaning over plans, lamplight on focused faces—the intimate 
+      intensity of the work that precedes action. The window in background 
+      showing dark streets.
+    
+    composition_suggestion: "Medium-close interior shot, warm lamplight"
+
+  - image_type: "perspective"
+    priority: "optional"
+    
+    target: "The innkeeper's studied indifference"
+    
+    rationale: |
+      The personification of the Shepherd's Rest philosophy: discretion 
+      through non-observation. This character moment encapsulates the 
+      location's meaning.
+    
+    suggested_mood: "somber"
+    suggested_time: "Any"
+    suggested_weather: "Any"
+    
+    characters_to_include:
+      - "The innkeeper"
+    zone_focus: "common-areas"
+    
+    key_elements:
+      - "Figure behind counter"
+      - "Averted eyes or occupied with other business"
+      - "Functional, unwelcoming common space"
+    
+    visual_hook: |
+      The deliberate not-seeing—a figure who has mastered the art of being 
+      present without observing. Perhaps guests visible at edge of frame, 
+      unacknowledged.
+    
+    composition_suggestion: "Medium shot, innkeeper as subject, professional distance"
+
+  - image_type: "zone"
+    priority: "optional"
+    
+    target: "View through second-floor window"
+    
+    rationale: |
+      The surveillance capability that makes these rooms valuable. Captures 
+      the operational perspective—what the Company sees as they watch for 
+      threats or opportunities.
+    
+    suggested_mood: "intimate"
+    suggested_time: "evening"
+    suggested_weather: "Clear"
+    
+    characters_to_include: []
+    zone_focus: "second-floor-rooms"
+    
+    key_elements:
+      - "Window frame"
+      - "Street below visible"
+      - "Commercial neighborhood beyond"
+      - "Observation angle"
+    
+    visual_hook: |
+      The watcher's view—looking down at the street through a window, the 
+      frame establishing position while showing what surveillance reveals.
+    
+    composition_suggestion: "POV through window, street and buildings visible below"

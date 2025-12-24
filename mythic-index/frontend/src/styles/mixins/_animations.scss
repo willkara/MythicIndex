@@ -1,0 +1,132 @@
+// =============================================================================
+// Animation Patterns - Shared Keyframes and Animation Mixins for MemoryQuill
+// =============================================================================
+
+// =============================================================================
+// Keyframe Animations
+// =============================================================================
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 5px var(--color-ancient-gold-alpha);
+  }
+  50% {
+    box-shadow: 0 0 15px var(--color-ancient-gold-alpha), 0 0 25px var(--color-ancient-gold-alpha);
+  }
+}
+
+@keyframes mysticalGlow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1) rotate(0deg);
+    filter: drop-shadow(0 0 10px var(--color-ancient-gold-alpha));
+  }
+  33% {
+    opacity: 0.8;
+    transform: scale(1.05) rotate(120deg);
+    filter: drop-shadow(0 0 20px var(--color-ancient-gold-alpha));
+  }
+  66% {
+    opacity: 1;
+    transform: scale(1.1) rotate(240deg);
+    filter: drop-shadow(0 0 25px var(--color-ancient-gold-alpha));
+  }
+}
+
+@keyframes gentleFade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes subtleSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// =============================================================================
+// Animation Mixins
+// =============================================================================
+
+// Hover Animation for Interactive Elements
+@mixin hover-lift {
+  transition: all var(--transition-fast) var(--ease-out);
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px var(--shadow-light);
+  }
+}
+
+// Card Hover Animation
+@mixin card-hover {
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    box-shadow: inset 0 0 10px rgba(212, 175, 55, 0.3);
+    transform: translateY(-2px);
+  }
+}
+
+// Glow Effect for Focus/Active States
+@mixin ancient-glow($intensity: 0.3) {
+  box-shadow: 0 0 15px rgba(212, 175, 55, $intensity);
+  border-color: var(--color-ancient-gold);
+}
+
+// Gentle Entrance Animation
+@mixin entrance-fade($duration: 0.3s, $delay: 0s) {
+  animation: gentleFade $duration ease-out $delay both;
+}
+
+// Slide In Animation
+@mixin entrance-slide($duration: 0.4s, $delay: 0s) {
+  animation: subtleSlide $duration ease-out $delay both;
+}
+
+// Pulsing Animation for Active States
+@mixin active-pulse {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+// Mystical Glow for Special Elements
+@mixin mystical-animation {
+  animation: mysticalGlow 3s ease-in-out infinite;
+}
+
+// Reduced Motion Respect
+@mixin respect-motion-preference {
+  @media (prefers-reduced-motion: reduce) {
+    animation: none !important;
+    transition: none !important;
+
+    &:hover {
+      transform: none !important;
+    }
+  }
+}
+
+// Loading Spinner Animation
+@mixin loading-spinner {
+  animation: spin 1s linear infinite;
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

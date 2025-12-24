@@ -1,0 +1,634 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: Hearth and Home
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch09-hearth-and-home"
+  chapter_number: 9
+  chapter_title: "Hearth and Home"
+  visual_thesis: "From the solitary cold of burden carried alone to the warm shared resolve of a family deciding to grow together."
+  color_palette:
+    primary:
+      - "#C4956A"
+      - "#8B5A2B"
+      - "#3A3A4A"
+      - "#D4A574"
+    accent:
+      - "#E8DCC8"
+      - "#FFD700"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 2
+    pastoral: 0
+    celebratory: 1
+    aquatic: 0
+    ethereal: 1
+    intimate: 2
+    kinetic: 1
+    ominous: 0
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: "Private pre-dawn contemplation. Scarred face in ember light. Unguarded expression watching family. Resolve at sunset."
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: "Providing quiet support at dawn. Pacing with a mug. Shared vision at sunset."
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "aldwin-gentleheart"
+    name: "Brother Aldwin Gentleheart"
+    scene_variations: "Cross-legged in meditation. Grinding herbs in a cramped corner. Benevolent focus."
+    reference_images:
+      - "aldwin-gentleheart-official-portrait-01"
+
+  - ref: "grimjaw-ironbeard"
+    name: "Grimjaw Ironbeard"
+    scene_variations: "Hammering anvil at dawn. Standing to eat due to space. Precise movements in combat demonstration."
+    reference_images:
+      - "grimjaw-ironbeard-portrait-01"
+
+  - ref: "vera-moonwhisper"
+    name: "Vera Moonwhisper"
+    scene_variations: "Moving like a ghost in the courtyard. Methodical apple dissection. Sharing woodcraft knowledge."
+    reference_images:
+      - "vera-moonwhisper-portrait-01"
+
+  - ref: "mistress-elba"
+    name: "Mistress Elba"
+    scene_variations: "Bustling whirlwind. Defensive of her turnip Bertha. Mothering the Company."
+    reference_images:
+      - "mistress-elba-kitchen-portrait-01"
+
+locations:
+  - ref: "westwall-watchpost"
+    zones:
+      - id: "mess-hall"
+        chapter_context: "Cramped stone chamber. Mismatched tables, dying hearth. Frost patterns on windows."
+      - id: "infirmary"
+        chapter_context: "Curtained corner of barracks. Improvised table, competing oil lamps. Crowded herb jars."
+      - id: "courtyard"
+        chapter_context: "Narrow square of uneven cobblestones. Forge door nearby. Training scuff marks on walls."
+      - id: "parapet"
+        chapter_context: "High stone battlements. Narrow walkway. View of sunset and future home."
+
+moments:
+  - id: "ch09-hearth-and-home-moment-01"
+    scene_id: "scn-09-01"
+    title: "The Pre-Dawn Map"
+    narrative_beat: "Veyra studying maps alone in the freezing mess hall, her back to the dying fire."
+    visual_weight: "hero"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "westwall-watchpost/mess-hall"
+    transformation_state: "before"
+    recommended_images: 1
+
+  - id: "ch09-hearth-and-home-moment-02"
+    scene_id: "scn-09-01"
+    title: "Quiet Tea"
+    narrative_beat: "Thorne bringing tea to Veyra, a moment of silent partnership before the day's chaos."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    location_zone: "westwall-watchpost/mess-hall"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch09-hearth-and-home-moment-03"
+    scene_id: "scn-09-02"
+    title: "The Heartbeat Strike"
+    narrative_beat: "Grimjaw's dawn ritual at the anvil, the ring of steel announcing the new day."
+    visual_weight: "high"
+    characters_present:
+      - "grimjaw-ironbeard"
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch09-hearth-and-home-moment-04"
+    scene_id: "scn-09-02"
+    title: "Cramped Breakfast"
+    narrative_beat: "The Company packed shoulder to shoulder at the breakfast table, abundance straining space."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+      - "grimjaw-ironbeard"
+      - "vera-moonwhisper"
+      - "quartermaster-fayne"
+    location_zone: "westwall-watchpost/mess-hall"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch09-hearth-and-home-moment-05"
+    scene_id: "scn-09-03"
+    title: "Constrained Care"
+    narrative_beat: "Aldwin and Halden working in the tiny infirmary corner, competing with shadows and dust."
+    visual_weight: "high"
+    characters_present:
+      - "aldwin-gentleheart"
+      - "medic-halden"
+    location_zone: "westwall-watchpost/infirmary"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch09-hearth-and-home-moment-06"
+    scene_id: "scn-09-04"
+    title: "The Six-Inch Sidestep"
+    narrative_beat: "Grimjaw demonstrating precise movement in the cramped practice yard, defeating younger soldiers with economy of motion."
+    visual_weight: "high"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "darric"
+      - "venn"
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch09-hearth-and-home-moment-07"
+    scene_id: "scn-09-05"
+    title: "Shared Vision"
+    narrative_beat: "Veyra and Thorne on the parapet at sunset, committing to build a proper home for the Company."
+    visual_weight: "hero"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    location_zone: "westwall-watchpost/parapet"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch09-hearth-and-home-moment-08"
+    scene_id: "scn-09-05"
+    title: "The Narrow Descent"
+    narrative_beat: "POV looking down the narrow spiral stairs as guards squeeze past each other under lantern light."
+    visual_weight: "medium"
+    characters_present: []
+    location_zone: "westwall-watchpost/stairs"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch09-hearth-and-home-img-09-01-01"
+    source_moment: "ch09-hearth-and-home-moment-01"
+    scene_id: "scn-09-01"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Solitary burden carried alone before dawn. Dying embers, frost patterns, and visible breath. Protective sacrifice."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Veyra sits alone at the head of a scarred table in the pre-dawn mess hall. Tactical maps spread before her. Her back is to the dying hearth. Ember-glow catches frost on windows. Her breath mists in the cold air. Scarred fingers trace routes. Warmth barely reaches her hunched shoulders.
+    composition_notes: |
+      Medium framing. Veyra left-third. Hearth right edge. Frosted windows background. Low angle. Deep depth.
+    visual_hook: "The frost on the windows catching ember-light while Veyra's breath mists visibly"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Seated, hunched over maps. Mohawk and braid visible. Burn scar catches ember-light. Focused, grave expression. Lantern at belt.
+    location: "westwall-watchpost"
+    zone: "mess-hall"
+    lighting:
+      primary_source: "Hearth embers"
+      quality: "Hard edges, dramatic chiaroscuro"
+      direction: "Side/back"
+      color_temperature: "Warm amber vs cold blue"
+      shadow_depth: "Deep, rich"
+      atmospheric: "Visible breath mist"
+    palette:
+      dominant:
+        - "ember gold"
+        - "frost gray"
+        - "indigo blue"
+      accent:
+        - "lantern gold"
+      avoid:
+        - "bright daylight"
+    prompt_used: |
+      Woman with mohawk sitting alone at a wooden table in a dark freezing room,
+      studying maps by the glow of dying fireplace embers,
+      frost on the windows,
+      breath misting in the air,
+      atmosphere of solitary duty and cold morning,
+      classical oil painting, Rembrandt lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright light
+    tags:
+      - "hero"
+      - "solitude"
+      - "dawn"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch09-hearth-and-home-img-09-02-01"
+    source_moment: "ch09-hearth-and-home-moment-03"
+    scene_id: "scn-09-02"
+    image_type: "mood"
+    category:
+      - "moment"
+      - "character"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: "Ritual of reliability. Forge-fire warmth. The heartbeat of the morning. Vermeer's domestic poetry."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Grimjaw stands at his anvil in the cramped forge. Sledgehammer Tremor at moment of impact. Sparks spray in a brief constellation. Ring of steel. Morning light through too-small doorway fights amber forge-glow. Heartbeat of the morning.
+    composition_notes: |
+      Medium-wide. Grimjaw center. Low angle. Doorway frames background. Spark-spray dynamic energy. Split lighting warm/cool.
+    visual_hook: "The spray of sparks at the exact moment of hammer-strike, forge-amber fighting cold dawn light"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+    character_states:
+      grimjaw-ironbeard: |
+        Full extension of swing. Silhouetted by competing lights. Braided beard. Solemn satisfied expression.
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "Forge fire"
+      quality: "Soft, warm, embracing"
+      direction: "Side + Backlit"
+      color_temperature: "Warm amber vs cool silver"
+      shadow_depth: "Soft gradients"
+      atmospheric: "Spark spray"
+    palette:
+      dominant:
+        - "forge amber"
+        - "iron gray"
+        - "copper"
+      accent:
+        - "spark white"
+      avoid:
+        - "harsh shadows"
+    prompt_used: |
+      Dwarf blacksmith striking an anvil at dawn,
+      sparks flying in a dark cramped forge,
+      warm orange fire light vs cold blue morning light through a door,
+      atmosphere of reliable ritual and morning work,
+      classical oil painting, Vermeer lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, aggressive
+    tags:
+      - "mood"
+      - "ritual"
+      - "forge"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch09-hearth-and-home-img-09-02-02"
+    source_moment: "ch09-hearth-and-home-moment-04"
+    scene_id: "scn-09-02"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "location"
+    scene_mood: "celebratory"
+    mood_rationale: "Cramped warmth. Tension between abundance of community and scarcity of space. Jan Steen's warm chaos. Found family breakfast."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Mess hall at breakfast. Bodies pressed shoulder to shoulder. Steam from too many bowls. Grimjaw stands because he doesn't fit on the bench. Vera dissecting an apple. Fayne's ink-stained fingers. Veyra watching with unguarded expression. Morning light and residual firelight. Constraint as price of community.
+    composition_notes: |
+      Wide cinematic. Captures full table length. Slightly elevated angle. Grimjaw vertical contrast. Steam depth. Multiple focal points.
+    visual_hook: "Grimjaw standing to eat while everyone else is crammed onto benches, his broad silhouette accepting limitation"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "grimjaw-ironbeard"
+      - "vera-moonwhisper"
+      - "quartermaster-fayne"
+    character_states:
+      veyra-thornwake: |
+        At head of table. Soft observation. Burn scar catching light.
+      grimjaw-ironbeard: |
+        Standing. Bowl in hand. Patient acceptance. Broad shoulders.
+      vera-moonwhisper: |
+        Methodical dissection. Chestnut braid. Watchful eyes.
+      quartermaster-fayne: |
+        Small, almost lost. Spectacles catching light. Ink-stained fingers.
+    location: "westwall-watchpost"
+    zone: "mess-hall"
+    lighting:
+      primary_source: "mixed morning light + firelight"
+      quality: "warm, flickering"
+      direction: "multiple"
+      color_temperature: "warm amber/gold"
+      shadow_depth: "soft"
+      atmospheric: "thick steam"
+    palette:
+      dominant:
+        - "warm brown"
+        - "gold"
+        - "amber"
+      accent:
+        - "green cloak"
+      avoid:
+        - "cold colors"
+    prompt_used: |
+      Crowded medieval hall at breakfast,
+      people shoulder to shoulder at long tables,
+      steam rising from many bowls,
+      dwarf standing to eat among seated people,
+      woman with mohawk watching with a soft expression,
+      warm morning sunlight and hearth light,
+      atmosphere of found family and cramped warmth,
+      classical oil painting, Dutch genre style,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, spacious
+    tags:
+      - "anchor"
+      - "breakfast"
+      - "community"
+      - "celebratory"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch09-hearth-and-home-img-09-03-01"
+    source_moment: "ch09-hearth-and-home-moment-05"
+    scene_id: "scn-09-03"
+    image_type: "detail"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Constrained dedication. Healing limited by space. Conflicting shadows and falling dust. Melancholy of limitation."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Aldwin and Halden in makeshift infirmary. Curtain corner so cramped they must coordinate. Aldwin grinding herbs in mortar. Halden organizing surgical instruments on a door-table. Three oil lamps at careful angles cast conflicting shadows. Dust motes filtering down from ceiling. Dedicated professionalism constrained.
+    composition_notes: |
+      Portrait orientation. Vertical compression. Medium framing. Visible lamps and dust motes. Improvised nature of everything.
+    visual_hook: "Dust motes filtering down through oil-lamp light, settling on clean surgical instruments"
+    depicts_characters:
+      - "aldwin-gentleheart"
+      - "medic-halden"
+    character_states:
+      aldwin-gentleheart: |
+        Standing at small table. Grinding herbs. Benevolent focus. Salt-and-pepper hair.
+      medic-halden: |
+        No helmet. Organizing tools. Weary eyes. Earnest expression.
+    location: "westwall-watchpost"
+    zone: "infirmary"
+    lighting:
+      primary_source: "three oil lamps"
+      quality: "hard, conflicting"
+      direction: "multiple"
+      color_temperature: "warm amber but insufficient"
+      shadow_depth: "deep, rich"
+      atmospheric: "lamp smoke, dust"
+    palette:
+      dominant:
+        - "amber"
+        - "shadow brown"
+        - "dust gray"
+      accent:
+        - "red cross"
+      avoid:
+        - "clean white"
+    prompt_used: |
+      Cramped medieval medical station behind a canvas curtain,
+      halfling and human medic working in very tight space,
+      dust motes falling through shafts of oil lamp light,
+      herbs and surgical tools on an improvised table,
+      atmosphere of professional dedication in poor conditions,
+      classical oil painting, Rembrandt lighting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, modern hospital
+    tags:
+      - "detail"
+      - "healing"
+      - "somber"
+      - "infirmary"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch09-hearth-and-home-img-09-04-01"
+    source_moment: "ch09-hearth-and-home-moment-06"
+    scene_id: "scn-09-04"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "action"
+    scene_mood: "kinetic"
+    mood_rationale: "Martial action. Precision over power. Six-inch sidestep. Visual tension between constraint and mastery."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Grimjaw's six-inch sidestep. Economy of motion. Two young soldiers caught off-balance in the narrow courtyard. Grimjaw centered and stable. Darric's strike finding air. Venn staggering. Walls close and dark. Precision in confined space. Pale winter sun.
+    composition_notes: |
+      Medium framing. Strong diagonal energy. Grimjaw stable center. Young soldiers diagonal off-balance. Low angle. Confining walls.
+    visual_hook: "The six-inch sidestep that seems almost lazy—Grimjaw utterly still while two soldiers flail past"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+    character_states:
+      grimjaw-ironbeard: |
+        Perfect balance. Feet wide. Still. Braided beard in winter light. Patient satisfaction. Grandfatherly warmth.
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "pale winter sun"
+      quality: "hard, dramatic"
+      direction: "high angle"
+      color_temperature: "cool pale"
+      shadow_depth: "harsh contrast"
+      atmospheric: "kicked-up dust"
+    palette:
+      dominant:
+        - "cobblestone gray"
+        - "pale gold"
+        - "shadow brown"
+      accent:
+        - "copper pauldrons"
+      avoid:
+        - "spaciousness"
+    prompt_used: |
+      Dwarf master teaching two young soldiers in a tiny stone courtyard,
+      dwarf making a small step to avoid a large sword swing,
+      younger men stumbling off balance,
+      pale winter sun casting long shadows from the walls,
+      atmosphere of mastery and precision,
+      classical oil painting, Romantic dynamism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, blood
+    tags:
+      - "anchor"
+      - "training"
+      - "grimjaw"
+      - "kinetic"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch09-hearth-and-home-img-09-05-01"
+    source_moment: "ch09-hearth-and-home-moment-07"
+    scene_id: "scn-09-05"
+    image_type: "pivot"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+      - "symbol"
+    scene_mood: "ethereal"
+    mood_rationale: "Commitment to build a future. Sunset gold to twilight purple. Transcendent hope of shared vision. Romantic beauty of partnership."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Veyra and Thorne on the watchtower parapet at sunset. Silhouetted between ancient merlons. Sunset blazes behind them. Stone battlements painted gold then bleeding into purple. First stars emerging. Veyra's hand on Thorne's arm. Shared vision. Horizon flames with dying light.
+    composition_notes: |
+      Ultra-wide cinematic. Veyra and Thorne center-left silhouettes. Sky upper half. Low angle looking up. symbolic territory. First stars visible.
+    visual_hook: "Two silhouettes framed between merlons against a sky transitioning from sunset gold to purple to blue"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    character_states:
+      veyra-thornwake: |
+        Profile against sunset. Mohawk silhouetted. Hand on Thorne's arm. Determined but soft.
+      thorne-brightward: |
+        Beside Veyra. Broad silhouette. Gray hair catching light. Protective warmth.
+    location: "westwall-watchpost"
+    zone: "parapet"
+    lighting:
+      primary_source: "Dying sunset sky"
+      quality: "soft, sourceless glow"
+      direction: "ambient"
+      color_temperature: "gold to purple to silver-blue"
+      shadow_depth: "minimal, rim-lit"
+      atmospheric: "clear winter air"
+    palette:
+      dominant:
+        - "sunset gold"
+        - "twilight purple"
+        - "deep blue"
+      accent:
+        - "lantern gold"
+      avoid:
+        - "dark shadows"
+    prompt_used: |
+      Two silhouettes on stone battlements against a vast sunset sky,
+      sky turning from gold to purple with stars appearing,
+      woman with mohawk touching the arm of a man in a cloak,
+      quiet and hopeful atmosphere of planning a future,
+      wide cinematic composition,
+      classical oil painting, Pre-Raphaelite luminosity,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, dark oppressive sky
+    tags:
+      - "pivot"
+      - "hope"
+      - "sunset"
+      - "ethereal"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch09-hearth-and-home-img-09-05-02"
+    source_moment: "ch09-hearth-and-home-moment-08"
+    scene_id: "scn-09-05"
+    image_type: "beat"
+    category:
+      - "location"
+      - "perspective"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Character's Constraint. Narrow stone stairs. Squeezing past each other. Stars as only escape."
+    aspect_ratio: "9:16"
+    orientation: "portrait"
+    size: "640x1136"
+    visual_description: |
+      Vertical shot down narrow stone stairs at night. Two guards squeezed past each other mid-flight. Worn stones and failing rope rail. Iron lantern held by one guard illuminates flickering amber. Rest lost in shadow. Sliver of cold infinite starry sky through a narrow arrow slit.
+    composition_notes: |
+      Extreme vertical looking down spiral. Vertical silhouettes. Arrow slit bright geometric break. High contrast amber vs indigo.
+    visual_hook: "Two guards squeezed shoulder-to-shoulder on a narrow spiral staircase, lantern light fighting shadows"
+    depicts_characters: []
+    character_states: {}
+    location: "westwall-watchpost"
+    lighting:
+      primary_source: "single iron lantern"
+      quality: "flickering, narrow"
+      direction: "up/out"
+      color_temperature: "warm amber vs silver-blue"
+      shadow_depth: "deep absolute shadows"
+      atmospheric: "cold stone air"
+    palette:
+      dominant:
+        - "stone gray"
+        - "shadow"
+        - "indigo"
+      accent:
+        - "starlight silver"
+      avoid:
+        - "open space"
+    prompt_used: |
+      Vertical shot looking down a narrow stone spiral staircase,
+      silhouettes of two people squeezing past each other,
+      single lantern casting warm light on worn steps,
+      sliver of starry sky through a thin arrow slit in the wall,
+      atmosphere of cramped duty and cold stone,
+      classical oil painting, Symbolist night atmosphere,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright light
+    tags:
+      - "beat"
+      - "stairs"
+      - "cramped"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

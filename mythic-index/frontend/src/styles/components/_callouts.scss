@@ -1,0 +1,500 @@
+// =============================================================================
+// Callouts - D&D Themed Information Blocks
+// =============================================================================
+
+// =============================================================================
+// Base Callout Styles
+// =============================================================================
+
+.callout {
+  margin: 1.5rem 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-base) var(--ease-out),
+  transform var(--transition-base) var(--ease-out);
+
+  &:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+  }
+
+  // Callout header with icon and title
+  .callout-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.25rem 0.75rem;
+    background: linear-gradient(
+        135deg,
+        var(--callout-bg-light) 0%,
+        var(--callout-bg-medium) 100%
+    );
+    border-bottom: 1px solid var(--callout-border);
+
+    .callout-icon {
+      font-size: 1.25rem;
+      margin-right: 0.75rem;
+      filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+    }
+
+    .callout-title {
+      font-family: var(--font-display);
+      font-size: var(--font-size-base);
+      font-weight: var(--font-weight-semibold);
+      color: var(--callout-title-color);
+      letter-spacing: var(--letter-spacing-wide);
+      text-transform: uppercase;
+      flex: 1;
+    }
+  }
+
+  // Callout content
+  .callout-content {
+    padding: 1rem 1.25rem;
+    color: var(--text-primary);
+
+    p {
+      margin: 0 0 0.75rem;
+      text-indent: 0;
+      text-align: left;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    ul, ol {
+      margin: 0.5rem 0;
+    }
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+
+    code {
+      background: var(--bg-primary);
+      border-color: var(--border-light);
+    }
+  }
+}
+
+// =============================================================================
+// Callout Type Definitions
+// =============================================================================
+
+// Info / Tome of Knowledge
+.callout-info {
+  --callout-primary: var(--color-arcane-amethyst);
+  --callout-bg-light: rgba(93, 63, 211, 0.05);
+  --callout-bg-medium: rgba(93, 63, 211, 0.08);
+  --callout-border: rgba(93, 63, 211, 0.2);
+  --callout-title-color: var(--color-arcane-amethyst);
+
+  border-left: 4px solid var(--callout-primary);
+}
+
+// Warning / Dire Warning
+.callout-warning {
+  --callout-primary: #F59E0B;
+  --callout-bg-light: rgba(245, 158, 11, 0.05);
+  --callout-bg-medium: rgba(245, 158, 11, 0.08);
+  --callout-border: rgba(245, 158, 11, 0.2);
+  --callout-title-color: #D97706;
+
+  border-left: 4px solid var(--callout-primary);
+}
+
+// Lore / Ancient Lore
+.callout-lore {
+  --callout-primary: var(--color-ancient-gold);
+  --callout-bg-light: var(--color-ancient-gold-alpha);
+  --callout-bg-medium: rgba(212, 175, 55, 0.12);
+  --callout-border: rgba(212, 175, 55, 0.25);
+  --callout-title-color: var(--color-deep-amber);
+
+  border-left: 4px solid var(--callout-primary);
+
+  // Special parchment texture for lore
+  .callout-content {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.02;
+      background-image: radial-gradient(circle at 1px 1px, var(--color-worn-leather) 1px, transparent 0);
+      background-size: 15px 15px;
+      pointer-events: none;
+    }
+  }
+}
+
+// Note / Scribe's Note
+.callout-note {
+  --callout-primary: var(--color-forged-iron);
+  --callout-bg-light: rgba(107, 114, 128, 0.05);
+  --callout-bg-medium: rgba(107, 114, 128, 0.08);
+  --callout-border: rgba(107, 114, 128, 0.2);
+  --callout-title-color: var(--color-charcoal-gray);
+
+  border-left: 4px solid var(--callout-primary);
+}
+
+// Tip / Sage's Wisdom
+.callout-tip {
+  --callout-primary: #10B981;
+  --callout-bg-light: rgba(16, 185, 129, 0.05);
+  --callout-bg-medium: rgba(16, 185, 129, 0.08);
+  --callout-border: rgba(16, 185, 129, 0.2);
+  --callout-title-color: #059669;
+
+  border-left: 4px solid var(--callout-primary);
+}
+
+// Danger / Mortal Peril
+.callout-danger {
+  --callout-primary: var(--color-ruby-garnet);
+  --callout-bg-light: var(--color-ruby-garnet-alpha);
+  --callout-bg-medium: rgba(224, 108, 117, 0.12);
+  --callout-border: rgba(224, 108, 117, 0.25);
+  --callout-title-color: #DC2626;
+
+  border-left: 4px solid var(--callout-primary);
+}
+
+// Character / Character Codex
+.callout-character {
+  --callout-primary: var(--entity-character);
+  --callout-bg-light: var(--entity-character-bg);
+  --callout-bg-medium: rgba(156, 39, 176, 0.12);
+  --callout-border: rgba(156, 39, 176, 0.2);
+  --callout-title-color: #7B1FA2;
+
+  border-left: 4px solid var(--callout-primary);
+}
+
+// Location / Realm Guide
+.callout-location {
+  --callout-primary: var(--entity-location);
+  --callout-bg-light: var(--entity-location-bg);
+  --callout-bg-medium: rgba(76, 175, 80, 0.12);
+  --callout-border: rgba(76, 175, 80, 0.2);
+  --callout-title-color: #388E3C;
+
+  border-left: 4px solid var(--callout-primary);
+}
+
+// Magic / Arcane Knowledge
+.callout-magic {
+  --callout-primary: #8B5CF6;
+  --callout-bg-light: rgba(139, 92, 246, 0.05);
+  --callout-bg-medium: rgba(139, 92, 246, 0.08);
+  --callout-border: rgba(139, 92, 246, 0.2);
+  --callout-title-color: #7C3AED;
+
+  border-left: 4px solid var(--callout-primary);
+
+  // Magical shimmer effect
+  .callout-header {
+    background: linear-gradient(
+        135deg,
+        var(--callout-bg-light) 0%,
+        var(--callout-bg-medium) 50%,
+        var(--callout-bg-light) 100%
+    );
+    background-size: 200% 200%;
+    animation: magical-shimmer 3s ease-in-out infinite;
+  }
+}
+
+// Timeline / Chronicle Entry
+.callout-timeline {
+  --callout-primary: #6366F1;
+  --callout-bg-light: rgba(99, 102, 241, 0.05);
+  --callout-bg-medium: rgba(99, 102, 241, 0.08);
+  --callout-border: rgba(99, 102, 241, 0.2);
+  --callout-title-color: #4F46E5;
+
+  border-left: 4px solid var(--callout-primary);
+}
+
+// Secret / Hidden Knowledge
+.callout-secret {
+  --callout-primary: #374151;
+  --callout-bg-light: rgba(55, 65, 81, 0.05);
+  --callout-bg-medium: rgba(55, 65, 81, 0.08);
+  --callout-border: rgba(55, 65, 81, 0.2);
+  --callout-title-color: #1F2937;
+
+  border-left: 4px solid var(--callout-primary);
+
+  // Subtle mystery effect
+  .callout-content {
+    font-style: italic;
+    opacity: 0.9;
+  }
+}
+
+// Journal / Journal Entry
+.callout-journal {
+  --callout-primary: var(--color-worn-leather);
+  --callout-bg-light: var(--color-worn-leather-alpha);
+  --callout-bg-medium: rgba(121, 85, 72, 0.12);
+  --callout-border: rgba(121, 85, 72, 0.25);
+  --callout-title-color: var(--color-worn-leather);
+
+  border-left: 4px solid var(--callout-primary);
+
+  // Journal paper texture
+  .callout-content {
+    font-family: var(--font-body);
+    line-height: 1.6;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.03;
+      background-image: repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 1.5rem,
+          var(--color-worn-leather) 1.5rem,
+          var(--color-worn-leather) calc(1.5rem + 1px)
+      );
+      pointer-events: none;
+    }
+  }
+}
+
+// =============================================================================
+// Callout Animations
+// =============================================================================
+
+@keyframes magical-shimmer {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+// Entrance animation
+.callout {
+  animation: callout-enter 0.3s ease-out;
+}
+
+@keyframes callout-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// =============================================================================
+// Responsive Design
+// =============================================================================
+
+@media (max-width: 768px) {
+  .callout {
+    margin: 1rem -1rem;
+    border-radius: 0;
+    border-left: none;
+    border-top: 3px solid var(--callout-primary);
+
+    .callout-header {
+      padding: 0.75rem 1rem 0.5rem;
+
+      .callout-icon {
+        font-size: 1.125rem;
+        margin-right: 0.5rem;
+      }
+
+      .callout-title {
+        font-size: var(--font-size-sm);
+      }
+    }
+
+    .callout-content {
+      padding: 0.75rem 1rem;
+    }
+  }
+}
+
+// =============================================================================
+// Dark Theme Adjustments
+// =============================================================================
+
+.theme-dark {
+  .callout {
+    background: var(--bg-elevated);
+    border-color: var(--border-medium);
+
+    .callout-header {
+      border-bottom-color: var(--border-light);
+    }
+
+    .callout-content {
+      color: var(--text-primary);
+
+      code {
+        background: var(--bg-primary);
+      }
+    }
+  }
+
+  // Adjust colors for better dark mode visibility
+  .callout-info {
+    --callout-title-color: #A78BFA;
+  }
+
+  .callout-warning {
+    --callout-title-color: #FBBF24;
+  }
+
+  .callout-lore {
+    --callout-title-color: var(--color-ancient-gold);
+  }
+
+  .callout-danger {
+    --callout-title-color: #F87171;
+  }
+
+  .callout-character {
+    --callout-title-color: #C084FC;
+  }
+
+  .callout-location {
+    --callout-title-color: #68D391;
+  }
+
+  .callout-magic {
+    --callout-title-color: #A78BFA;
+  }
+
+  .callout-timeline {
+    --callout-title-color: #818CF8;
+  }
+
+  .callout-secret {
+    --callout-title-color: #9CA3AF;
+  }
+}
+
+// =============================================================================
+// Print Styles
+// =============================================================================
+
+@media print {
+  .callout {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 2px solid var(--callout-primary);
+
+    .callout-header {
+      background: none;
+      border-bottom: 1px solid var(--callout-primary);
+    }
+
+    .callout-content {
+      &::before {
+        display: none; // Remove textures for print
+      }
+    }
+  }
+}
+
+// =============================================================================
+// Accessibility
+// =============================================================================
+
+// High contrast mode
+@media (prefers-contrast: high) {
+  .callout {
+    border-width: 2px;
+
+    .callout-header {
+      border-bottom-width: 2px;
+    }
+  }
+}
+
+// Reduced motion
+@media (prefers-reduced-motion: reduce) {
+  .callout {
+    animation: none;
+
+    &:hover {
+      transform: none;
+    }
+  }
+
+  .callout-magic .callout-header {
+    animation: none;
+  }
+}
+
+// Focus management for interactive callouts
+.callout[tabindex] {
+  &:focus {
+    outline: 2px solid var(--interactive-focus);
+    outline-offset: 2px;
+  }
+}
+
+// =============================================================================
+// Utility Classes
+// =============================================================================
+
+// Compact callout for smaller spaces
+.callout-compact {
+  margin: 1rem 0;
+
+  .callout-header {
+    padding: 0.5rem 0.75rem 0.25rem;
+
+    .callout-title {
+      font-size: var(--font-size-sm);
+    }
+  }
+
+  .callout-content {
+    padding: 0.5rem 0.75rem;
+    font-size: var(--font-size-sm);
+  }
+}
+
+// Borderless callout
+.callout-borderless {
+  border: none;
+  box-shadow: none;
+
+  .callout-header {
+    border-bottom: none;
+  }
+}
+
+// Full-width callout
+.callout-full-width {
+  margin-left: -1rem;
+  margin-right: -1rem;
+
+  @media (max-width: 768px) {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+}

@@ -1,0 +1,871 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: The Westwall Welcome
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch07-the-westwall-welcome"
+  chapter_number: 7
+  chapter_title: "The Westwall Welcome"
+  visual_thesis: "From the weary approach of survivors to the warm glow of a found family naming itself in firelight"
+  color_palette:
+    primary:
+      - "dusty ochre"
+      - "warm amber"
+      - "weathered stone gray"
+      - "hearth gold"
+    accent:
+      - "teal blue"
+      - "copper red"
+      - "lantern gold"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 2
+    pastoral: 2
+    celebratory: 1
+    aquatic: 0
+    ethereal: 1
+    intimate: 3
+    kinetic: 0
+    ominous: 0
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: "This chapter: Weary but proud. Slight softening of expression when showing Grimjaw the watchpost—a rare glimpse of satisfaction."
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "thorne-brightward"
+    name: "Captain Thorne Brightward"
+    scene_variations: "This chapter: Steady supportive presence. Expression softens during naming ceremony—rare visible pride."
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "grimjaw-ironbeard"
+    name: "Grimjaw Ironbeard"
+    scene_variations: "This chapter: First appearance in story context. Key transformation moment: his craggy face breaks into a REAL smile when meeting Elba."
+    reference_images:
+      - "grimjaw-ironbeard-portrait-01"
+
+  - ref: "aldwin-gentleheart"
+    name: "Brother Aldwin Gentleheart"
+    scene_variations: "Moss-green cloak. Blessing the naming ceremony."
+    reference_images:
+      - "aldwin-gentleheart-official-portrait-01"
+
+  - ref: "finn"
+    name: "Finn"
+    scene_variations: "This chapter: Pure joy at belonging. Eager, absorbed expression."
+    reference_images:
+      - "finn-stable-archer-01"
+
+  - ref: "mistress-elba"
+    name: "Mistress Elba"
+    scene_variations: "This chapter: Flour dusting her apron like snow. Arms crossed or hands on hips."
+    reference_images:
+      - "mistress-elba-kitchen-portrait-01"
+
+  - ref: "sarge"
+    name: "Sarge (Lieutenant Tomaq)"
+    scene_variations: "This chapter: The practiced sideways turn through doorways."
+    reference_images: []
+
+locations:
+  - ref: "westwall-watchpost"
+    zones:
+      - id: "exterior"
+        chapter_context: "A formerly stark military outpost transformed by signs of domestic life. Stone walls weathered to warm gray, three chimneys trailing smoke. Laundry lines strung between towers."
+      - id: "courtyard"
+        chapter_context: "Hardpacked earth courtyard. Stable doors hung with horse tack, kitchen smoke drifting. Mismatched conversions."
+      - id: "main-hall"
+        chapter_context: "Former barracks transformed into gathering heart. Tapestries, long scarred wooden table, central iron chandelier."
+      - id: "wall-walk"
+        chapter_context: "Stone walkway atop walls. Crenellations frame views of Waterdeep lights below."
+      - id: "office"
+        chapter_context: "Makeshift command space. Walls covered with map of Waterdeep and pins. Functional, lived-in."
+
+moments:
+  - id: "ch07-westwall-welcome-moment-01"
+    scene_id: "scn-07-01"
+    title: "The Return"
+    narrative_beat: "The company arrives at Westwall, seeing the transformation from outpost to home."
+    visual_weight: "hero"
+    characters_present:
+      - "veyra-thornwake"
+      - "grimjaw-ironbeard"
+      - "thorne-brightward"
+    location_zone: "westwall-watchpost/exterior"
+    transformation_state: "after"
+    recommended_images: 2
+
+  - id: "ch07-westwall-welcome-moment-02"
+    scene_id: "scn-07-01"
+    title: "Domestic Details"
+    narrative_beat: "Close up on the signs of life—flowers and laundry against stone."
+    visual_weight: "medium"
+    characters_present: []
+    location_zone: "westwall-watchpost/exterior"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch07-westwall-welcome-moment-03"
+    scene_id: "scn-07-02"
+    title: "The Standoff"
+    narrative_beat: "Grimjaw meets Mistress Elba in the courtyard—two stubborn forces recognizing kinship."
+    visual_weight: "high"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "mistress-elba"
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch07-westwall-welcome-moment-04"
+    scene_id: "scn-07-02"
+    title: "Sarge's Entrance"
+    narrative_beat: "Sarge emerging from the tower, demonstrating his size and gentleness."
+    visual_weight: "medium"
+    characters_present:
+      - "sarge"
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch07-westwall-welcome-moment-05"
+    scene_id: "scn-07-03"
+    title: "The Naming"
+    narrative_beat: "The company gathered around the table, the lantern responding to the name 'Last Light Company'."
+    visual_weight: "critical"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "grimjaw-ironbeard"
+      - "aldwin-gentleheart"
+      - "sarge"
+      - "finn"
+    location_zone: "westwall-watchpost/main-hall"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch07-westwall-welcome-moment-06"
+    scene_id: "scn-07-03"
+    title: "Mission Statement"
+    narrative_beat: "Veyra holding the lantern high, declaring their purpose to be the light for the lost."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "westwall-watchpost/main-hall"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch07-westwall-welcome-moment-07"
+    scene_id: "scn-07-04"
+    title: "The Song"
+    narrative_beat: "Grimjaw leading a song by the fire, the group joining in harmony."
+    visual_weight: "high"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "sarge"
+      - "mistress-elba"
+      - "finn"
+    location_zone: "westwall-watchpost/main-hall"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch07-westwall-welcome-moment-08"
+    scene_id: "scn-07-04"
+    title: "Wall Walk Reflection"
+    narrative_beat: "Veyra and Thorne looking out over the city lights, reflecting on what they've built."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    location_zone: "westwall-watchpost/wall-walk"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch07-westwall-welcome-moment-09"
+    scene_id: "scn-07-05"
+    title: "The Foundation Lesson"
+    narrative_beat: "Grimjaw teaching Finn about stone and structure in the morning light."
+    visual_weight: "medium"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "finn"
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch07-westwall-welcome-moment-10"
+    scene_id: "scn-07-05"
+    title: "Map of Hope"
+    narrative_beat: "Veyra studying the map with new green pins marking successes."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "westwall-watchpost/office"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch07-westwall-welcome-img-07-01-01"
+    source_moment: "ch07-westwall-welcome-moment-01"
+    scene_id: "scn-07-01"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "location"
+      - "symbol"
+    scene_mood: "pastoral"
+    mood_rationale: "The company arrives after journey—this is a moment of weary hope, relief, morning light revealing transformation."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The Westwall Watchpost revealed in morning light, transformed from stark military outpost to living home. Three chimneys trail smoke upward. Laundry lines strung between towers catch golden light. Herb racks line sun-warmed walls. Above the main gate, the freshly painted Last Light Company symbol gleams wet and golden. In the foreground, small figures of the arriving company: Veyra at center, Grimjaw beside her assessing foundations, Thorne steady at Veyra's shoulder.
+    composition_notes: |
+      Wide establishing shot from slightly below. Rule of thirds: watchpost upper two-thirds, company bottom third. Painted sigil focal point. Morning light from right.
+    visual_hook: "The fresh-painted lantern-and-stars sigil gleaming wet above the weathered gate—still drying, catching morning sun"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "grimjaw-ironbeard"
+      - "thorne-brightward"
+    character_states:
+      veyra-thornwake: |
+        Standing at head of group. Hand on belt near lantern. Expression of satisfaction.
+      grimjaw-ironbeard: |
+        Assessing foundations. Tremor over shoulder. Expression of surprised approval.
+      thorne-brightward: |
+        Steady presence. Watching Grimjaw.
+    location: "westwall-watchpost"
+    zone: "exterior"
+    lighting:
+      primary_source: "morning sun"
+      quality: "soft, warm"
+      direction: "side"
+      color_temperature: "warm gold"
+      shadow_depth: "gentle"
+      atmospheric: "morning haze"
+    palette:
+      dominant:
+        - "warm stone gray"
+        - "morning gold"
+        - "sky blue"
+      accent:
+        - "fresh paint gold"
+        - "teal tattoos"
+      avoid:
+        - "harsh reds"
+    prompt_used: |
+      Stone military watchpost transformed into home at sunrise,
+      laundry lines and flower boxes,
+      freshly painted golden lantern sigil above gate,
+      arriving adventurers in foreground including scarred woman and elderly dwarf,
+      morning light,
+      classical oil painting, landscape,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, grimdark
+    tags:
+      - "establishing-shot"
+      - "transformation"
+      - "pastoral"
+      - "arrival"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch07-westwall-welcome-img-07-01-02"
+    source_moment: "ch07-westwall-welcome-moment-02"
+    scene_id: "scn-07-01"
+    image_type: "beat"
+    category:
+      - "location"
+      - "detail"
+      - "symbol"
+    scene_mood: "pastoral"
+    mood_rationale: "The 'Character's Heart.' Visualizing the signs of domesticity taking root in the military base."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      A shot from the courtyard looking up at a watchtower. A laundry line with mismatched clothes is strung between tower and wall. Below, a flower box overflows with red and yellow blooms against gray stone. A stone lantern bracket sits nearby.
+    composition_notes: |
+      Tight square framing looking upward. Tower vertical anchor. Laundry line horizontal. Flower box focal point.
+    visual_hook: "A vibrant flower box overflowing against cold stone, while a laundry line of mismatched clothes catches the morning sun above."
+    depicts_characters: []
+    character_states: {}
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "morning sun"
+      quality: "soft, warm"
+      direction: "top-down diagonal"
+      color_temperature: "golden-amber"
+      shadow_depth: "gentle"
+      atmospheric: "clear"
+    palette:
+      dominant:
+        - "stone gray"
+        - "gold"
+        - "earthy brown"
+      accent:
+        - "flower red/yellow"
+        - "laundry white"
+      avoid:
+        - "harsh shadows"
+    prompt_used: |
+      Detail of stone castle wall with flower box and laundry line,
+      sunlight and blue sky,
+      domesticity meeting military architecture,
+      classical oil painting, realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "detail"
+      - "home"
+      - "pastoral"
+      - "still-life"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch07-westwall-welcome-img-07-02-01"
+    source_moment: "ch07-westwall-welcome-moment-03"
+    scene_id: "scn-07-02"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "celebratory"
+    mood_rationale: "Two dwarven forces meeting in combative warmth. Kitchen energy, flour dust like snow."
+    aspect_ratio: "3:2"
+    orientation: "landscape"
+    size: "1536x1024"
+    visual_description: |
+      Mistress Elba flour-dusted with hands on hips facing Grimjaw who has arms crossed. Grimjaw's face breaking into a real smile. Kitchen steam behind Elba. Courtyard light between them.
+    composition_notes: |
+      Medium shot. Figures dominate frame. Profile/Three-quarter. Grimjaw's expression focus. Flour dust catching light.
+    visual_hook: "Grimjaw's craggy face transforming from granite assessment to genuine smile—fifteen years of isolation cracking open"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "mistress-elba"
+    character_states:
+      grimjaw-ironbeard: |
+        Arms crossed. Transforming from gruff to smiling.
+      mistress-elba: |
+        Hands on hips. Flour-dusted. Sharp but recognizing kinship.
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "courtyard daylight + kitchen glow"
+      quality: "warm, convivial"
+      direction: "ambient"
+      color_temperature: "warm mixed"
+      shadow_depth: "soft"
+      atmospheric: "flour dust, steam"
+    palette:
+      dominant:
+        - "warm amber"
+        - "flour white"
+        - "iron gray"
+      accent:
+        - "copper red braid"
+      avoid:
+        - "cold tones"
+    prompt_used: |
+      Two elderly dwarves in friendly standoff,
+      female dwarf with flour-dusted apron hands on hips,
+      male dwarf with crossed arms smiling warmly,
+      kitchen steam and sunlight,
+      classical oil painting, Dutch Golden Age genre scene,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, angry expressions
+    tags:
+      - "anchor"
+      - "character"
+      - "celebratory"
+      - "meeting"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch07-westwall-welcome-img-07-02-02"
+    source_moment: "ch07-westwall-welcome-moment-04"
+    scene_id: "scn-07-02"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+    scene_mood: "somber"
+    mood_rationale: "Sarge's emergence carries weight—the practiced movement through too-small doorways speaks to a lifetime of not fitting."
+    aspect_ratio: "2:3"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      A massive gray-skinned orc emerges from the main tower, caught mid-motion in a practiced sideways turn to clear the doorframe. Silver-capped broken tusk. Eye patch. City Watch uniform. Battle-axe held easily. Tower shadow behind, light ahead.
+    composition_notes: |
+      Vertical composition. Low angle looking up. Doorframe framing him. Movement focal point.
+    visual_hook: "The practiced sideways turn and duck through the doorframe—a lifetime of not fitting compressed into one movement"
+    depicts_characters:
+      - "sarge"
+    character_states:
+      sarge: |
+        Mid-motion turning sideways. Gray skin. Eye patch. Uniform. Axe in hand. Disciplined expression.
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "courtyard light vs tower shadow"
+      quality: "dramatic"
+      direction: "front light"
+      color_temperature: "warm ahead, cool behind"
+      shadow_depth: "deep"
+      atmospheric: "dust motes"
+    palette:
+      dominant:
+        - "gray skin"
+        - "shadow black"
+        - "warm light"
+      accent:
+        - "silver tusk"
+        - "uniform blue"
+      avoid:
+        - "green skin"
+    prompt_used: |
+      Massive gray orc emerging from stone doorway turning sideways to fit,
+      silver capped tusk, eye patch, city watch uniform,
+      holding battle axe,
+      dramatic lighting,
+      classical oil painting, Rembrandt lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, green skin, aggressive pose
+    tags:
+      - "anchor"
+      - "sarge"
+      - "somber"
+      - "introduction"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch07-westwall-welcome-img-07-03-01"
+    source_moment: "ch07-westwall-welcome-moment-05"
+    scene_id: "scn-07-03"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: "The naming ceremony. Sacred recognition. Single warm source (lantern)."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The Company gathered around the scarred wooden table in the main hall. Veyra's lantern at center, flame burning brighter. Faces illuminated from center outward. Veyra hand on lantern. Thorne, Grimjaw, Aldwin, Sarge, Finn gathered.
+    composition_notes: |
+      Wide shot, slight high angle. Radial composition from lantern. Warm shadows edges.
+    visual_hook: "The lantern flame steadying and brightening at the exact moment of naming"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "grimjaw-ironbeard"
+      - "aldwin-gentleheart"
+      - "sarge"
+      - "finn"
+    character_states:
+      veyra-thornwake: |
+        Hand on lantern. Fierce tenderness.
+      thorne-brightward: |
+        Quiet pride.
+      grimjaw-ironbeard: |
+        Raising mug. Relaxed.
+      aldwin-gentleheart: |
+        Blessing.
+      sarge: |
+        Gentle expression.
+      finn: |
+        Leaning forward. Wonder.
+    location: "westwall-watchpost"
+    zone: "main-hall"
+    lighting:
+      primary_source: "central lantern"
+      quality: "soft, sacred"
+      direction: "radial"
+      color_temperature: "warm amber"
+      shadow_depth: "soft gradients"
+      atmospheric: "enclosed warmth"
+    palette:
+      dominant:
+        - "lantern gold"
+        - "amber"
+        - "shadow brown"
+      accent:
+        - "teal tattoos"
+        - "blue cloak"
+      avoid:
+        - "cold tones"
+    prompt_used: |
+      Group of fantasy adventurers gathered around a glowing lantern on a table in a stone hall,
+      faces illuminated by warm golden light,
+      moment of shared purpose and naming,
+      diverse group including orc dwarf halfling human elf,
+      classical oil painting, Vermeer interior lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, harsh lighting
+    tags:
+      - "anchor"
+      - "naming"
+      - "company"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch07-westwall-welcome-img-07-03-02"
+    source_moment: "ch07-westwall-welcome-moment-06"
+    scene_id: "scn-07-03"
+    image_type: "detail"
+    category:
+      - "character"
+      - "symbol"
+      - "emotion"
+    scene_mood: "ethereal"
+    mood_rationale: "Veyra lifting the lantern high. Transcending the intimate into something luminous. Visual thesis of the Company."
+    aspect_ratio: "2:3"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Veyra Thornwake in medium-close portrait, arm raised high holding the lantern. Light casts half her face in gold. Burn scar fully illuminated. Teal tattoos visible. Dark eyes burning with purpose.
+    composition_notes: |
+      Vertical portrait. Raised arm upper third. Face intersection. Low angle. Soft-edged luminous light.
+    visual_hook: "Veyra's burn scar illuminated by the lantern she holds—the light she carries touching the wound that made her who she is"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Arm raised high. Lantern aloft. Scar fully lit. Expression fiercely protective.
+    location: "westwall-watchpost"
+    zone: "main-hall"
+    lighting:
+      primary_source: "lantern"
+      quality: "luminous, soft-edged"
+      direction: "from above/hand"
+      color_temperature: "warm gold/ethereal"
+      shadow_depth: "minimal, dreamy"
+      atmospheric: "light has weight"
+    palette:
+      dominant:
+        - "pale gold"
+        - "amber"
+        - "soft shadow"
+      accent:
+        - "teal tattoos"
+        - "red scar"
+      avoid:
+        - "harsh shadows"
+    prompt_used: |
+      Portrait of dark-skinned woman with burn scar holding lantern high,
+      scar illuminated by lantern light,
+      intense purposeful expression,
+      luminous golden lighting,
+      classical oil painting, Pre-Raphaelite luminosity,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, hidden scar
+    tags:
+      - "detail"
+      - "veyra"
+      - "symbol"
+      - "ethereal"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch07-westwall-welcome-img-07-04-01"
+    source_moment: "ch07-westwall-welcome-moment-07"
+    scene_id: "scn-07-04"
+    image_type: "mood"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: "Grimjaw singing, others humming. Pure belonging. Intimate fireside warmth."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Grimjaw with eyes closed, singing. Beard charms catching firelight. Circle of listeners: Sarge humming, Elba smiling, Finn absorbed. Veyra and Thorne watching from above.
+    composition_notes: |
+      Medium shot centered on Grimjaw. Circle of faces. Firelight from right.
+    visual_hook: "Grimjaw's eyes closed as he sings, beard-charms catching firelight, surrounded by a circle of belonging."
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "sarge"
+      - "mistress-elba"
+      - "finn"
+    character_states:
+      grimjaw-ironbeard: |
+        Eyes closed. Singing. Relaxed.
+      sarge: |
+        Humming. Gentle expression.
+      mistress-elba: |
+        Smiling.
+      finn: |
+        Leaning forward. Absorbed.
+    location: "westwall-watchpost"
+    zone: "main-hall"
+    lighting:
+      primary_source: "hearth fire"
+      quality: "soft, warm"
+      direction: "side"
+      color_temperature: "amber"
+      shadow_depth: "soft gradients"
+      atmospheric: "settled"
+    palette:
+      dominant:
+        - "hearth amber"
+        - "shadow brown"
+        - "gold"
+      accent:
+        - "beard silver"
+      avoid:
+        - "cold tones"
+    prompt_used: |
+      Elderly dwarf singing with eyes closed by firelight,
+      surrounded by diverse group listening and humming,
+      orc, woman, boy,
+      warm intimate atmosphere of belonging,
+      classical oil painting, Vermeer lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, raucous party
+    tags:
+      - "mood"
+      - "singing"
+      - "intimate"
+      - "family"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch07-westwall-welcome-img-07-04-02"
+    source_moment: "ch07-westwall-welcome-moment-08"
+    scene_id: "scn-07-04"
+    image_type: "mood"
+    category:
+      - "character"
+      - "location"
+    scene_mood: "pastoral"
+    mood_rationale: "Reflection and scope. Veyra and Thorne looking over the city lights."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Veyra and Thorne standing on the stone wall walk at night. They are silhouetted against the sprawl of Waterdeep's city lights below. The sky is dark blue with stars. They lean on the crenellations, looking down. Quiet conversation.
+    composition_notes: |
+      Wide shot. Figures on wall foreground. City lights background/below.
+    visual_hook: "Two silhouettes watching over a sea of city lights, standing guard."
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    character_states:
+      veyra-thornwake: |
+        Leaning on wall. Looking down. Relaxed.
+      thorne-brightward: |
+        Standing beside her. Looking down.
+    location: "westwall-watchpost"
+    zone: "wall-walk"
+    lighting:
+      primary_source: "City lights below + Starlight"
+      quality: "Cool, distant"
+      direction: "Below/Above"
+      color_temperature: "Blue/Silver/City Gold"
+      shadow_depth: "Deep"
+      atmospheric: "Clear night"
+    palette:
+      dominant:
+        - "night blue"
+        - "stone gray"
+        - "city gold points"
+      accent:
+        - "stars"
+      avoid:
+        - "daylight"
+    prompt_used: |
+      Two fantasy figures standing on castle wall at night looking down at city lights,
+      silhouettes against starry sky and sprawling city,
+      quiet moment of reflection,
+      classical oil painting, landscape,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "mood"
+      - "reflection"
+      - "city-lights"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch07-westwall-welcome-img-07-05-01"
+    source_moment: "ch07-westwall-welcome-moment-10"
+    scene_id: "scn-07-05"
+    image_type: "detail"
+    category:
+      - "character"
+      - "symbol"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Veyra alone at dawn studying her map of lives. The private weight of command."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Veyra stands alone in her office at dawn, studying a map of Waterdeep covered in colored pins. Over-shoulder framing shows red, blue, black, and now green pins. A travel lantern glows on the desk. Her posture shows fatigue but resolve.
+    composition_notes: |
+      Over-shoulder. Veyra foreground left. Map center/right. Dawn light mixing with lantern.
+    visual_hook: "The green pins amid the red, blue, and black—new hope among established grief"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Standing. Studying map. Fatigue visible. Resolute. Hand on desk.
+    location: "westwall-watchpost"
+    zone: "office"
+    lighting:
+      primary_source: "dawn light + desk lantern"
+      quality: "soft, mixed"
+      direction: "side + below"
+      color_temperature: "cool dawn vs warm amber"
+      shadow_depth: "moderate"
+      atmospheric: "dust motes"
+    palette:
+      dominant:
+        - "dawn gray"
+        - "lantern amber"
+        - "shadow"
+      accent:
+        - "colored pins (green/red)"
+      avoid:
+        - "harsh shadows"
+    prompt_used: |
+      Scarred woman standing in office at dawn studying map with colored pins,
+      green pins representing hope,
+      lantern on desk mixing with dawn light,
+      atmosphere of quiet responsibility,
+      classical oil painting, Rembrandt lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "detail"
+      - "veyra"
+      - "map"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch07-westwall-welcome-img-07-05-02"
+    source_moment: "ch07-westwall-welcome-moment-09"
+    scene_id: "scn-07-05"
+    image_type: "beat"
+    category:
+      - "character"
+      - "action"
+    scene_mood: "pastoral"
+    mood_rationale: "Grimjaw teaching Finn. The future of the company being built. Morning light."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Grimjaw and Finn in the courtyard at dawn. Grimjaw is tapping a stone wall with a small hammer, listening. Finn is mimicking him, face scrunched in concentration. Grimjaw looks down at the boy with a patient, teaching expression.
+    composition_notes: |
+      Medium two-shot. Wall texture. Grimjaw and Finn interaction. Morning light.
+    visual_hook: "The master and the apprentice, the old dwarf passing knowledge to the young human."
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "finn"
+    character_states:
+      grimjaw-ironbeard: |
+        Tapping stone. Teaching.
+      finn: |
+        Listening. Concentrating.
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "Morning sun"
+      quality: "Bright, clear"
+      direction: "Side"
+      color_temperature: "Gold"
+      shadow_depth: "Sharp"
+      atmospheric: "Clear"
+    palette:
+      dominant:
+        - "stone gray"
+        - "sun gold"
+        - "brown"
+      accent:
+        - "copper pauldron"
+      avoid:
+        - "darkness"
+    prompt_used: |
+      Elderly dwarf teaching young boy about stone masonry in sunny courtyard,
+      dwarf tapping wall with hammer, boy listening intently,
+      mentorship moment,
+      classical oil painting, genre scene,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "mentorship"
+      - "pastoral"
+      - "morning"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

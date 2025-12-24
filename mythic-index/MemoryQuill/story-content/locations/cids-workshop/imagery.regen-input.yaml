@@ -1,0 +1,153 @@
+location:
+  slug: cids-workshop
+  name: Cidrella Vexweld's Workshop
+  files:
+    overview:
+      path: locations/cids-workshop/overview.md
+      excerpt: ''
+      exists: true
+    description:
+      path: locations/cids-workshop/description.md
+      excerpt: ''
+      exists: true
+    inhabitants:
+      path: locations/cids-workshop/inhabitants.md
+      excerpt: ''
+      exists: true
+zones_manifest:
+  path: locations/cids-workshop/zones.yaml
+  zones:
+  - slug: active-floor-no-cid
+    name: Workshop Floor (Owner Absent)
+  - slug: after-destruction
+    name: The Wound
+  - slug: annex-ground
+    name: The Annex (Ground Floor)
+  - slug: annex-loft
+    name: The Annex (Sleeping Loft)
+  - slug: blueprint-walls
+    name: Blueprint Surfaces
+  - slug: central-work-floor
+    name: Central Work Floor
+  - slug: cid-rest
+    name: The Artificer's Rest
+  - slug: cid-testing
+    name: The Spark of Discovery
+  - slug: conduit-infrastructure
+    name: The Arcane Arteries
+  - slug: conduit-runs
+    name: Power & Conduit Runs
+  - slug: consultation-nook
+    name: Waiting Nook
+  - slug: engineering-detail
+    name: The Mind of the Machine
+  - slug: entry-threshold
+    name: Entry / Client Threshold
+  - slug: first-visit
+    name: Warriors in Wonderland
+  - slug: front-counter-orders
+    name: Front Counter Orders
+  - slug: meeting-nook
+    name: Meeting / Meal Nook
+  - slug: mezzanine-refuge
+    name: Cid's Private Vantage
+  - slug: pickup-bench
+    name: Pickup Bench and Inventory Wall
+  - slug: prototype-menagerie
+    name: The Children
+  - slug: prototype-shelves
+    name: Prototype Shelves
+  - slug: purification-matrix
+    name: The Breathing Building
+  - slug: shipping-bay
+    name: Shipping and Receiving Bay
+  - slug: sympathetic-resonance
+    name: The Workshop Screams
+  - slug: test-yard
+    name: Outdoor Test Yard
+  - slug: tool-walls
+    name: Tool Walls
+  - slug: unit-7-station
+    name: Unit 7 Station / Domestic Corner
+  - slug: workshop
+    name: Workshop
+    featured_in_chapters:
+    - ch33-an-architects-honor
+chapter_evidence:
+- slug: ch33-an-architects-honor
+  files:
+    content:
+      path: chapters/ch33-an-architects-honor/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch33-an-architects-honor/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+intrinsic_characters:
+- slug: cidrella-vexweld
+  reason_intrinsic: Referenced in locations/cids-workshop/inhabitants.md
+  files:
+    profile:
+      path: characters/cidrella-vexweld/profile.md
+      excerpt: ''
+      exists: true
+    imagery:
+      path: characters/cidrella-vexweld/imagery.yaml
+      excerpt: ''
+      exists: true
+- slug: grimjaw-ironbeard
+  reason_intrinsic: Referenced in locations/cids-workshop/inhabitants.md
+  files:
+    profile:
+      path: characters/grimjaw-ironbeard/profile.md
+      excerpt: ''
+      exists: true
+    imagery:
+      path: characters/grimjaw-ironbeard/imagery.yaml
+      excerpt: ''
+      exists: true
+- slug: lyra-kestrel
+  reason_intrinsic: Referenced in locations/cids-workshop/inhabitants.md
+  files:
+    profile:
+      path: characters/lyra-kestrel/profile.md
+      excerpt: ''
+      exists: true
+    imagery:
+      path: characters/lyra-kestrel/imagery.yaml
+      excerpt: ''
+      exists: true
+- slug: marcus-heartbridge
+  reason_intrinsic: Referenced in locations/cids-workshop/inhabitants.md
+  files:
+    profile:
+      path: characters/marcus-heartbridge/profile.md
+      excerpt: ''
+      exists: true
+    imagery:
+      path: characters/marcus-heartbridge/imagery.yaml
+      excerpt: ''
+      exists: true
+- slug: thorne-brightward
+  reason_intrinsic: Referenced in locations/cids-workshop/inhabitants.md
+  files:
+    profile:
+      path: characters/thorne-brightward/profile.md
+      excerpt: ''
+      exists: true
+    imagery:
+      path: characters/thorne-brightward/imagery.yaml
+      excerpt: ''
+      exists: true
+- slug: veyra-thornwake
+  reason_intrinsic: Referenced in locations/cids-workshop/inhabitants.md
+  files:
+    profile:
+      path: characters/veyra-thornwake/profile.md
+      excerpt: ''
+      exists: true
+    imagery:
+      path: characters/veyra-thornwake/imagery.yaml
+      excerpt: ''
+      exists: true

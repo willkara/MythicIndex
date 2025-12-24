@@ -1,0 +1,935 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: The Weight of the World
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch05-the-weight-of-the-world"
+  chapter_number: 5
+  chapter_title: "The Weight of the World"
+  visual_thesis: "From desperate chaos to earned trust through the revelation that true strength lies in listening rather than forcing"
+  color_palette:
+    primary:
+      - "#8B7355"
+      - "#4A5568"
+      - "#D4A574"
+      - "#2D3748"
+    accent:
+      - "#B8860B"
+      - "#CD853F"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 2
+    pastoral: 2
+    celebratory: 1
+    aquatic: 0
+    ethereal: 1
+    intimate: 1
+    kinetic: 1
+    ominous: 1
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: "Full weathered leather armor. Burn scar prominent. Guardian stance at mine entrance."
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "grimjaw-ironbeard"
+    name: "Grimjaw Ironbeard"
+    scene_variations: "First appearance. No insignia yet. Dark mining leathers, copper pauldrons. Braided beard with metal bands."
+    reference_images:
+      - "grimjaw-ironbeard-portrait-01"
+
+  - ref: "aldwin-gentleheart"
+    name: "Brother Aldwin Gentleheart"
+    scene_variations: "Moss-green cowl against dust. Treating miners."
+    reference_images:
+      - "aldwin-gentleheart-official-portrait-01"
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: "Dust-coated armor. Grim resolve."
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "medic-halden"
+    name: "Medic Halden"
+    scene_variations: "Working triage. Dust-coated."
+    reference_images:
+      - "medic-halden-standing-portrait-01"
+
+  - ref: "corporal-darric"
+    name: "Corporal Darric"
+    scene_variations: "Part of search party. Climbing gear."
+    reference_images:
+      - "corporal-darric-portrait-01"
+
+  - ref: "quartermaster-fayne"
+    name: "Quartermaster Fayne"
+    scene_variations: "Part of search party. Spotting details."
+    reference_images:
+      - "quartermaster-fayne-standard-portrait-01"
+
+locations:
+  - ref: "blackvein-lode"
+    zones:
+      - id: "overview"
+        chapter_context: "Industrial wound in mountainside. Timber headframes groaning. Coal dust coating everything. Anxious families gathering."
+
+  - ref: "grimjaw-cliff"
+    zones:
+      - id: "overview"
+        chapter_context: "Sheer granite cliff face above shepherd's path. Treacherous trail with deliberate obstacles. Massive timber supports bracing overhang."
+
+  - ref: "westwall-watchpost"
+    zones:
+      - id: "exterior"
+        chapter_context: "Dawn at the watchpost. The messenger's exhausted horse arrives with desperate news of the mine collapse."
+
+moments:
+  - id: "ch05-the-weight-of-the-world-moment-01"
+    scene_id: "scn-05-01"
+    title: "The Messenger's Arrival"
+    narrative_beat: "A teenage messenger arrives at Westwall at dawn, exhausted horse, delivering news of the collapse."
+    visual_weight: "medium"
+    characters_present:
+      - "corporal-darric"
+    location_zone: "westwall-watchpost/exterior"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch05-the-weight-of-the-world-moment-02"
+    scene_id: "scn-05-01"
+    title: "Command at Chaos"
+    narrative_beat: "Veyra establishes command at the mine head amidst panic and dust."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "aldwin-gentleheart"
+      - "thorne-brightward"
+    location_zone: "blackvein-lode/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch05-the-weight-of-the-world-moment-03"
+    scene_id: "scn-05-02"
+    title: "The Discouraging Path"
+    narrative_beat: "The search party encounters Grimjaw's deliberately decayed trail and the 'Bugger Off' sign."
+    visual_weight: "medium"
+    characters_present:
+      - "quartermaster-fayne"
+      - "corporal-darric"
+      - "thorne-brightward"
+    location_zone: "grimjaw-cliff/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch05-the-weight-of-the-world-moment-04"
+    scene_id: "scn-05-02"
+    title: "The Ascent"
+    narrative_beat: "The team struggles up the treacherous mountain path, racing against time."
+    visual_weight: "medium"
+    characters_present:
+      - "thorne-brightward"
+      - "corporal-darric"
+      - "quartermaster-fayne"
+    location_zone: "grimjaw-cliff/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch05-the-weight-of-the-world-moment-05"
+    scene_id: "scn-05-03"
+    title: "The Solitary Master"
+    narrative_beat: "Grimjaw working alone on the cliff face, holding up the mountain with a single timber."
+    visual_weight: "hero"
+    characters_present:
+      - "grimjaw-ironbeard"
+    location_zone: "grimjaw-cliff/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch05-the-weight-of-the-world-moment-06"
+    scene_id: "scn-05-03"
+    title: "The Decision"
+    narrative_beat: "Grimjaw sets down his hammer, choosing to help."
+    visual_weight: "critical"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "veyra-thornwake"
+    location_zone: "grimjaw-cliff/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch05-the-weight-of-the-world-moment-07"
+    scene_id: "scn-05-04"
+    title: "Communion with Stone"
+    narrative_beat: "Grimjaw listening to the mountain, hand on stone, eyes closed."
+    visual_weight: "high"
+    characters_present:
+      - "grimjaw-ironbeard"
+    location_zone: "blackvein-lode/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch05-the-weight-of-the-world-moment-08"
+    scene_id: "scn-05-04"
+    title: "The Splintering Prop"
+    narrative_beat: "Detail shot of a wooden support failing under pressure, highlighting the danger."
+    visual_weight: "medium"
+    characters_present: []
+    location_zone: "blackvein-lode/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch05-the-weight-of-the-world-moment-09"
+    scene_id: "scn-05-04"
+    title: "Trapped in the Dark"
+    narrative_beat: "Perspective from inside the collapsed mine, looking up at faint light."
+    visual_weight: "high"
+    characters_present: []
+    location_zone: "blackvein-lode/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch05-the-weight-of-the-world-moment-10"
+    scene_id: "scn-05-05"
+    title: "The Emergence"
+    narrative_beat: "Miners emerging from the dust into golden afternoon light."
+    visual_weight: "high"
+    characters_present:
+      - "aldwin-gentleheart"
+      - "medic-halden"
+    location_zone: "blackvein-lode/overview"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch05-the-weight-of-the-world-moment-11"
+    scene_id: "scn-05-05"
+    title: "The Veteran's Connection"
+    narrative_beat: "Aldwin offering the rare bottle to Grimjaw, sealing their connection."
+    visual_weight: "high"
+    characters_present:
+      - "aldwin-gentleheart"
+      - "grimjaw-ironbeard"
+    location_zone: "blackvein-lode/overview"
+    transformation_state: "after"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch05-the-weight-of-the-world-img-05-01-01"
+    source_moment: "ch05-the-weight-of-the-world-moment-02"
+    scene_id: "scn-05-01"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "location"
+    scene_mood: "somber"
+    mood_rationale: "Lives hang in the balance. This scene establishes the stakes—weeping families, trapped miners, a commander confronting limits."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Veyra Thornwake stands behind a rough-hewn wooden table positioned at the mine head. Her scarred face is composed, unreadable. Behind her, the dark mouth of the mine exhales dust. Mining families cluster in the middle distance. Aldwin sets up triage; Thorne prepares assessment. The scene captures the terrible stillness of command.
+    composition_notes: |
+      Veyra at lower rule-of-thirds intersection. Mine entrance behind her forms dark focal void. Figures arranged in receding depth. Diagonal lines of timber supports.
+    visual_hook: "Her scarred fingers splayed on rough wood, the only stillness in a world of anxious motion"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "aldwin-gentleheart"
+      - "thorne-brightward"
+    character_states:
+      veyra-thornwake: |
+        Standing behind command table. Guardian's stand posture. Expression stoic. Lantern at hip.
+      aldwin-gentleheart: |
+        Crouched, unpacking medical supplies. Focused.
+      thorne-brightward: |
+        Standing at parade rest. Grim resolve.
+    location: "blackvein-lode"
+    lighting:
+      primary_source: "harsh midday sun"
+      quality: "hard, dramatic"
+      direction: "above"
+      color_temperature: "neutral to cool"
+      shadow_depth: "deep, rich"
+      atmospheric: "heavy coal dust haze"
+    palette:
+      dominant:
+        - "rust brown"
+        - "coal-dust gray"
+        - "weathered timber silver"
+      accent:
+        - "amber lantern glow"
+        - "teal-blue tattoos"
+      avoid:
+        - "bright greens"
+        - "cheerful colors"
+    prompt_used: |
+      Half-elf woman commander with burn scar standing behind rough wooden command table at mine entrance,
+      fingers resting on wood with controlled stillness,
+      mine entrance exhaling dust behind her,
+      grieving families clustered in background,
+      halfling medic setting up supplies, armored paladin standing guard,
+      classical oil painting, Rembrandt lighting, chiaroscuro,
+      deep rich shadows, atmospheric haze, melancholy weight,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright cheerful colors, smiling
+    tags:
+      - "anchor"
+      - "veyra"
+      - "command"
+      - "mine"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch05-the-weight-of-the-world-img-05-01-02"
+    source_moment: "ch05-the-weight-of-the-world-moment-01"
+    scene_id: "scn-05-01"
+    image_type: "action"
+    category:
+      - "action"
+      - "intro"
+    scene_mood: "kinetic"
+    mood_rationale: "The arrival of the messenger breaks the dawn calm. Urgency and desperation."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      A teenage boy half-falling from a lathered horse at the gates of Westwall Watchpost. It is dawn—blue light mixed with the first gold rays. Darric is rushing to catch him. The horse is exhausted, foam on its flanks. Sparks fly from hooves on cobblestones.
+    composition_notes: |
+      Dynamic composition. Horse and boy center. Darric rushing in from side. Low angle to emphasize the frantic arrival.
+    visual_hook: "The exhaustion of the horse and rider, steam rising from their bodies in the chill dawn air."
+    depicts_characters:
+      - "corporal-darric"
+    character_states:
+      corporal-darric: |
+        Rushing forward. Arms outstretched to catch the boy. Expression of alarm.
+    location: "westwall-watchpost"
+    lighting:
+      primary_source: "Dawn light"
+      quality: "Clear, cold"
+      direction: "Low angle"
+      color_temperature: "Blue/Gold"
+      shadow_depth: "Long shadows"
+      atmospheric: "Steam from horse"
+    palette:
+      dominant:
+        - "dawn blue"
+        - "cobblestone gray"
+        - "horse brown"
+      accent:
+        - "gold sun rays"
+      avoid:
+        - "stillness"
+    prompt_used: |
+      Teenage messenger falling from exhausted lathered horse at dawn,
+      dwarf soldier rushing to catch him,
+      medieval city gate background,
+      steam rising from horse in cold morning air,
+      dynamic action pose,
+      classical oil painting, kinetic energy,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, static pose
+    tags:
+      - "beat"
+      - "arrival"
+      - "messenger"
+      - "kinetic"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch05-the-weight-of-the-world-img-05-02-01"
+    source_moment: "ch05-the-weight-of-the-world-moment-03"
+    scene_id: "scn-05-02"
+    image_type: "beat"
+    category:
+      - "location"
+      - "humor"
+    scene_mood: "pastoral"
+    mood_rationale: "The 'Bugger Off' sign. Establishing Grimjaw's character through the environment. A moment of grim humor in the desperate search."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      A moss-covered stone marker on a mountain trail. Dwarven runes carved into it are blunt and deep. Fayne is squatting to read it, looking back at Darric and Thorne with a wry expression. The trail beyond is deliberately overgrown and blocked by a "careful" rockfall. The forest is dense and ancient.
+    composition_notes: |
+      Medium shot. Stone marker in foreground. Fayne reading it. Trail winding back into depth.
+    visual_hook: "The contrast between the ancient, majestic forest and the grumpy, exclusionary message on the stone."
+    depicts_characters:
+      - "quartermaster-fayne"
+      - "corporal-darric"
+      - "thorne-brightward"
+    character_states:
+      quartermaster-fayne: |
+        Squatting. Reading runes. Wry smile.
+      corporal-darric: |
+        Standing with hands on hips. Annoyed expression.
+      thorne-brightward: |
+        Looking at the blocked trail. Grim respect.
+    location: "grimjaw-cliff"
+    lighting:
+      primary_source: "Dappled forest sunlight"
+      quality: "Natural, textured"
+      direction: "Overhead through leaves"
+      color_temperature: "Green/Gold"
+      shadow_depth: "Dappled"
+      atmospheric: "Forest quiet"
+    palette:
+      dominant:
+        - "moss green"
+        - "stone gray"
+        - "forest brown"
+      accent:
+        - "sunlight patches"
+      avoid:
+        - "darkness"
+    prompt_used: |
+      Gnome examining mossy stone marker with dwarven runes on mountain trail,
+      dwarf and human companions waiting behind,
+      trail blocked by rockfall,
+      ancient forest background,
+      atmosphere of deliberate obstruction,
+      classical oil painting, landscape with figures,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "search"
+      - "humor"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch05-the-weight-of-the-world-img-05-02-02"
+    source_moment: "ch05-the-weight-of-the-world-moment-04"
+    scene_id: "scn-05-02"
+    image_type: "mood"
+    category:
+      - "action"
+      - "location"
+    scene_mood: "kinetic"
+    mood_rationale: "The physical struggle of the climb. Man against mountain. The urgency of time passing."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The search party climbing a steep, muddy slope where the trail has been washed away (deliberately). Darric is pulling his boot from mud. Thorne is helping Fayne up a ledge. The trees loom high and indifferent. The light is shifting, suggesting time is running out.
+    composition_notes: |
+      Low angle looking up the slope. The verticality of the challenge. Sweat and dirt on the characters.
+    visual_hook: "The physical effort of the climb, mud clinging to boots, the mountain resisting their progress."
+    depicts_characters:
+      - "thorne-brightward"
+      - "corporal-darric"
+      - "quartermaster-fayne"
+    character_states:
+      thorne-brightward: |
+        Climbing. Helping Fayne.
+      corporal-darric: |
+        Struggling with mud. Grumbling expression.
+      quartermaster-fayne: |
+        Being helped. Alert.
+    location: "grimjaw-cliff"
+    lighting:
+      primary_source: "Midday sun"
+      quality: "Bright but blocked by terrain"
+      direction: "Overhead"
+      color_temperature: "Natural"
+      shadow_depth: "Deep in ravines"
+      atmospheric: "Sweat, dust"
+    palette:
+      dominant:
+        - "mud brown"
+        - "rock gray"
+        - "leaf green"
+      accent:
+        - "sweat sheen"
+      avoid:
+        - "easy terrain"
+    prompt_used: |
+      Fantasy adventurers struggling up steep muddy mountain slope,
+      dwarf pulling boot from mud, human helping gnome up ledge,
+      dense forest terrain,
+      physical exertion and urgency,
+      classical oil painting, action composition,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "climb"
+      - "struggle"
+      - "kinetic"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch05-the-weight-of-the-world-img-05-03-01"
+    source_moment: "ch05-the-weight-of-the-world-moment-05"
+    scene_id: "scn-05-03"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "location"
+    scene_mood: "pastoral"
+    mood_rationale: "Awestruck discovery—Grimjaw's solitary heroism against the mountain's grandeur. Hudson River School majesty."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "2048x878"
+    visual_description: |
+      A single dwarf silhouetted against sky and stone, halfway up a sheer cliff face, holds a massive timber brace against thousands of tons of overhanging rock. He works without safety lines. His hammer is raised at the apex of its swing. Below him, the cliff drops away to a narrow path where tiny figures look upward. Afternoon sun backlights the scene.
+    composition_notes: |
+      Extreme wide shot. Vertical scale of cliff. Grimjaw small but commanding upper third. Shepherd's path bottom edge. Low angle looking up.
+    visual_hook: "A single figure against thousands of tons of stone, hammer raised at apex of swing, utterly alone with the weight of the world"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+    character_states:
+      grimjaw-ironbeard: |
+        Silhouetted against sky. Clinging to rock face. One hand steadies timber, other raises hammer. Beard streaming. No safety lines.
+    location: "grimjaw-cliff"
+    lighting:
+      primary_source: "afternoon sun behind mountain"
+      quality: "soft, golden, diffused"
+      direction: "backlighting"
+      color_temperature: "warm gold vs cool shadow"
+      shadow_depth: "gentle on cliff, strong rim light"
+      atmospheric: "light mountain haze"
+    palette:
+      dominant:
+        - "weathered granite gray"
+        - "sky blue"
+        - "warm gold backlight"
+      accent:
+        - "copper pauldrons"
+        - "dark brown leathers"
+      avoid:
+        - "harsh industrial colors"
+        - "darkness"
+    prompt_used: |
+      Robust elderly dwarf with flowing beard working alone halfway up sheer granite cliff face,
+      silhouetted against golden afternoon sky,
+      steadying timber support and raising sledgehammer,
+      vast mountain landscape, tiny figures watching from below,
+      classical oil painting, Hudson River School influence, Bierstadt mountain grandeur,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, dark oppressive atmosphere
+    tags:
+      - "hero"
+      - "grimjaw"
+      - "mountain"
+      - "solitude"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch05-the-weight-of-the-world-img-05-03-02"
+    source_moment: "ch05-the-weight-of-the-world-moment-06"
+    scene_id: "scn-05-03"
+    image_type: "pivot"
+    category:
+      - "moment"
+      - "character"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: "The pivotal choice—Grimjaw setting down his isolation along with his hammer. Quiet poetry of Vermeer."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Grimjaw's massive, battered hands releasing the handle of his sledgehammer with impossible gentleness, placing it down onto gray mountain stone. His calloused palms and scarred knuckles tell the story of decades. The hammer rests on the rock. Late afternoon golden light catches the iron. At the edge of the frame, Veyra Thornwake is visible—a presence rather than a focus.
+    composition_notes: |
+      Tight focus on hands and hammer. Grimjaw's profile visible at top edge. Hammer horizontal anchor. Centered composition.
+    visual_hook: "Massive, battered hands releasing the hammer's handle with impossible gentleness—the same hands that shape stone now choosing to shape something else"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "veyra-thornwake"
+    character_states:
+      grimjaw-ironbeard: |
+        Hands dominate frame. Releasing hammer handle. Profile visible at top showing contemplation.
+      veyra-thornwake: |
+        Present at frame edge. Scarred hands or lantern glow.
+    location: "grimjaw-cliff"
+    lighting:
+      primary_source: "late afternoon sun"
+      quality: "soft, warm, close"
+      direction: "side lighting"
+      color_temperature: "warm gold and amber"
+      shadow_depth: "soft gradients"
+      atmospheric: "still mountain air"
+    palette:
+      dominant:
+        - "warm amber"
+        - "iron gray"
+        - "weathered stone gray"
+      accent:
+        - "soft rose of sunset"
+        - "silver of beard"
+      avoid:
+        - "cold blues"
+        - "harsh contrasts"
+    prompt_used: |
+      Extreme close-up of massive battered dwarf hands releasing handle of sledgehammer onto stone,
+      careful deliberate precision,
+      dwarf profile with iron-gray beard visible at top,
+      golden afternoon light,
+      soft focus observer at edge,
+      classical oil painting, Vermeer interior lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, wide shot, action scene
+    tags:
+      - "pivot"
+      - "grimjaw"
+      - "decision"
+      - "intimate"
+      - "hands"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch05-the-weight-of-the-world-img-05-04-01"
+    source_moment: "ch05-the-weight-of-the-world-moment-07"
+    scene_id: "scn-05-04"
+    image_type: "symbol"
+    category:
+      - "moment"
+      - "character"
+      - "symbol"
+    scene_mood: "ethereal"
+    mood_rationale: "Grimjaw's communion with stone. Ethereal mood captures the luminous, otherworldly nature of this gift."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Grimjaw's calloused palm pressed flat against the rough stone of the mine face, fingers splayed like roots. His profile is shown in deep concentration, eyes closed, listening. Dust motes hang suspended in lamplight that seems to glow from the stone itself. Behind him, the chaos of the mine becomes soft, unfocused.
+    composition_notes: |
+      Tight portrait framing. Hand at intersection of thirds. Profile showing concentration. Background soft.
+    visual_hook: "His palm pressed flat against stone, fingers splayed like roots—the contact point between human will and geological time"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+    character_states:
+      grimjaw-ironbeard: |
+        Profile view. Eyes closed. Beard touching stone. Hand pressed flat. Expression reverent.
+    location: "blackvein-lode"
+    lighting:
+      primary_source: "lamplight + stone glow"
+      quality: "soft, luminous"
+      direction: "ambient/emanating"
+      color_temperature: "warm gold/pale"
+      shadow_depth: "minimal, dreamy"
+      atmospheric: "suspended dust, slowed time"
+    palette:
+      dominant:
+        - "pale gold"
+        - "silver-gray"
+        - "stone gray"
+      accent:
+        - "soft purple shadows"
+        - "copper warmth"
+      avoid:
+        - "harsh reds"
+        - "blacks"
+    prompt_used: |
+      Profile of elderly dwarf with eyes closed pressing palm against rough mine stone,
+      deep reverent concentration,
+      dust motes in soft luminous light,
+      ethereal atmosphere,
+      classical oil painting, Pre-Raphaelite luminosity,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, action scene, harsh lighting
+    tags:
+      - "symbol"
+      - "grimjaw"
+      - "stone-speaking"
+      - "ethereal"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch05-the-weight-of-the-world-img-05-04-02"
+    source_moment: "ch05-the-weight-of-the-world-moment-08"
+    scene_id: "scn-05-04"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "location"
+      - "symbol"
+    scene_mood: "ominous"
+    mood_rationale: "The 'Character's Challenge.' Highlighting the failure of traditional methods against the mountain's indifference."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      A macro-shot deep within the mine. A massive oak support prop is splintering violently under invisible weight. Jagged shards peeling away. In the foreground, out of focus, an abandoned brass compass and chisels lie in rock dust. Background is absolute black.
+    composition_notes: |
+      Macro close-up. Texture of tearing wood. Forced perspective. Dark background. Harsh directional light.
+    visual_hook: "The violent splintering of a massive oak prop, its grain tearing like a wound, while abandoned human tools lie forgotten"
+    depicts_characters: []
+    character_states: {}
+    location: "blackvein-lode"
+    lighting:
+      primary_source: "distant lamp"
+      quality: "harsh, high contrast"
+      direction: "low side-light"
+      color_temperature: "sickly pale amber"
+      shadow_depth: "extreme"
+      atmospheric: "rock dust"
+    palette:
+      dominant:
+        - "raw wood amber"
+        - "black shadow"
+        - "rock dust gray"
+      accent:
+        - "brass glint"
+      avoid:
+        - "balanced lighting"
+    prompt_used: |
+      Macro detail of splintering oak mine support beam under pressure,
+      jagged wood shards,
+      abandoned brass tools in foreground dust,
+      dark ominous background,
+      harsh chiaroscuro lighting,
+      classical oil painting, realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, balanced lighting
+    tags:
+      - "detail"
+      - "collapse"
+      - "failure"
+      - "ominous"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch05-the-weight-of-the-world-img-05-04-03"
+    source_moment: "ch05-the-weight-of-the-world-moment-09"
+    scene_id: "scn-05-04"
+    image_type: "perspective"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "The 'Location's Soul.' Seeing the rescue from the perspective of the trapped."
+    aspect_ratio: "9:16"
+    orientation: "portrait"
+    size: "640x1152"
+    visual_description: |
+      A POV shot from the bottom of the mine shaft looking up. The exit is a small, jagged constellation of light far above. A single, muddy, trembling hand is pressed against the damp rock wall in foreground. The darkness is a physical weight.
+    composition_notes: |
+      First-person vertical perspective. Hand in foreground. Eye led upward to distant light. Forced perspective.
+    visual_hook: "A muddy, trembling hand pressed against cold rock, looking up from the bottom of a dark pit toward a tiny sliver of sky."
+    depicts_characters:
+      - "trapped-miner"
+    character_states:
+      trapped-miner: "POV. Only hand visible."
+    location: "blackvein-lode"
+    lighting:
+      primary_source: "distant daylight"
+      quality: "tiny, distant"
+      direction: "top-down"
+      color_temperature: "cold silver"
+      shadow_depth: "total"
+      atmospheric: "stale air, dampness"
+    palette:
+      dominant:
+        - "absolute black"
+        - "rock gray"
+        - "muddy brown"
+      accent:
+        - "silver sky"
+      avoid:
+        - "internal light"
+    prompt_used: |
+      First person perspective looking up dark mine shaft to distant light,
+      muddy hand pressed against wet rock wall in foreground,
+      oppressive darkness and depth,
+      classical oil painting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright light
+    tags:
+      - "perspective"
+      - "trapped"
+      - "somber"
+      - "depth"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch05-the-weight-of-the-world-img-05-05-01"
+    source_moment: "ch05-the-weight-of-the-world-moment-10"
+    scene_id: "scn-05-05"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "emotion"
+      - "location"
+    scene_mood: "pastoral"
+    mood_rationale: "Miners emerging from darkness into light. Pastoral mood captures the diffused golden light of late afternoon and the promise of life renewed."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Miners emerge from the dark mine mouth into late afternoon golden light. Coated in dust, they appear ghost-like. The first man squints against the sun. Aldwin and Halden move toward them with water. Families strain forward at the edges.
+    composition_notes: |
+      Wide shot. Staggered procession. Backlighting. Leading lines toward survivors.
+    visual_hook: "Dust-coated miners appear ghostly against darkness, the first one's hand raised against light he didn't expect to see again"
+    depicts_characters:
+      - "aldwin-gentleheart"
+      - "medic-halden"
+    character_states:
+      aldwin-gentleheart: |
+        Moving toward miners. Compassionate expression. Silver-streaked hair catching light.
+      medic-halden: |
+        Approaching with satchel. Weary but alert.
+    location: "blackvein-lode"
+    lighting:
+      primary_source: "late afternoon sun"
+      quality: "soft, golden"
+      direction: "backlighting"
+      color_temperature: "warm gold"
+      shadow_depth: "gentle"
+      atmospheric: "dust in sunbeams"
+    palette:
+      dominant:
+        - "warm gold"
+        - "dust white-gray"
+        - "black void"
+      accent:
+        - "moss green"
+        - "red cross"
+      avoid:
+        - "harsh contrasts"
+        - "oppressive darkness"
+    prompt_used: |
+      Ghost-like dust-covered miners emerging from dark cave into golden afternoon light,
+      first man squinting and shielding eyes,
+      halfling and human medic approaching with aid,
+      families waiting in background,
+      classical oil painting, plein air naturalism, soft diffused daylight,
+      Constable influence, visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, dark mood
+    tags:
+      - "anchor"
+      - "rescue"
+      - "emergence"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch05-the-weight-of-the-world-img-05-05-02"
+    source_moment: "ch05-the-weight-of-the-world-moment-11"
+    scene_id: "scn-05-05"
+    image_type: "character"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "celebratory"
+    mood_rationale: "Two veterans recognizing each other. Grimjaw's laugh cracks his isolation. Dutch Golden Age energy."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Aldwin offers a small ceramic bottle to Grimjaw with a mischievous bow. Grimjaw has just tasted it and is throwing his head back in full-bodied laughter. Behind them, soft-focus reunion scene.
+    composition_notes: |
+      Two-character portrait. Aldwin offering up, Grimjaw laughing down. Bottle central. Background soft.
+    visual_hook: "Grimjaw's laugh transforming his entire face—deep lines becoming channels for joy"
+    depicts_characters:
+      - "aldwin-gentleheart"
+      - "grimjaw-ironbeard"
+    character_states:
+      aldwin-gentleheart: |
+        Smiling mischievously. Offering bottle with bow.
+      grimjaw-ironbeard: |
+        Head thrown back laughing. Beard shaking. Isolation melting.
+    location: "blackvein-lode"
+    lighting:
+      primary_source: "sunset light"
+      quality: "warm, flickering"
+      direction: "side"
+      color_temperature: "amber/copper"
+      shadow_depth: "warm"
+      atmospheric: "golden hour"
+    palette:
+      dominant:
+        - "sunset gold"
+        - "amber"
+        - "warm copper"
+      accent:
+        - "moss green"
+        - "iron gray"
+      avoid:
+        - "cold blues"
+    prompt_used: |
+      Halfling healer offering bottle to laughing elderly dwarf,
+      dwarf head thrown back in joy, beard shaking,
+      sunset light,
+      background of rescue aftermath,
+      atmosphere of connection and warmth,
+      classical oil painting, Dutch Golden Age genre painting, Jan Steen style,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, somber mood
+    tags:
+      - "character"
+      - "connection"
+      - "celebratory"
+      - "grimjaw"
+      - "aldwin"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

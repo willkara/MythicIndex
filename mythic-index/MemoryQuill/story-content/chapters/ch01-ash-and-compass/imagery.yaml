@@ -1,0 +1,1095 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: Ash and Compass
+# Generated: 2025-12-23
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch01-ash-and-compass"
+  chapter_number: 1
+  chapter_title: "Ash and Compass"
+  visual_thesis: "A descent from golden twilight into catastrophic fire, ending in a vigil that forges grief into purpose—the birth of the Last Light Company through sacrifice and unbreakable vows."
+  color_palette:
+    primary:
+      - "#B87333"  # molten brass
+      - "#CC7722"  # ochre
+      - "#FFD700"  # lantern gold
+      - "#50C878"  # emerald dragon-fire
+    accent:
+      - "#B87333"  # copper-red magic
+      - "#8B0000"  # blood-red carved names
+      - "#2F4F4F"  # ash-gray
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 3
+    pastoral: 0
+    celebratory: 0
+    aquatic: 0
+    ethereal: 0
+    intimate: 2
+    kinetic: 1
+    ominous: 1
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: |
+      CHAPTER 1 VARIATIONS (TRANSFORMATION ARC):
+      - SCENES 01-02 (Pre-fire): Unmarred face, standard scout gear—leather cuirass, dark tunic, lantern at belt
+      - SCENE 03 (During fire): Fresh burns forming on left face during dragon-fire attack
+      - SCENES 04-06 (Aftermath): Half face ruined with blistered/weeping burns, clothes in tatters
+        more ash than fabric, bloody hands wrapped in cloak strips, utter exhaustion
+      - Throughout: Jet black mohawk with single braided lock, deep earth-brown skin, teal tattoos visible
+      - Lantern is ALWAYS present—at belt, in hand, or on ground beside her
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "lysander-valerius"
+    name: "Lysander Valerius"
+    scene_variations: |
+      CHAPTER 1 (ORIGINAL TEAM CAPTAIN):
+      - Gilt-riveted leather jack transitioning to plate armor
+      - Shield that becomes cherry-red glowing in sacrifice scene
+      - Effortless smile for looming hazards, calm resolve in final moments
+      - Final appearance: Eyes calm, resolute, accepting through the narrowing gap
+    reference_images: []
+
+  - ref: "ignis-emberheart"
+    name: "Ignis Emberheart"
+    scene_variations: |
+      CHAPTER 1:
+      - Tiefling sorcerer with tail, conjures embers and sparks
+      - Red-gold aura when channeling magic
+      - Copper-red magic flares in final desperate spell
+      - VANISHES rather than dies—perfect circle of scorched floor, no body
+    reference_images: []
+
+  - ref: "elara-whisperwind"
+    name: "Elara Whisperwind"
+    scene_variations: |
+      CHAPTER 1:
+      - Rogue with daggers, slides through shadow
+      - Smooth voice like "stones in a silk purse"
+      - Final appearance: Daggers crossed on chest in death arrangement
+    reference_images: []
+
+  - ref: "borin-stonehand"
+    name: "Borin Stonehand"
+    scene_variations: |
+      CHAPTER 1:
+      - Dwarf cleric of Berronar Truesilver
+      - War-hammer, gravelly voice, silver-braided holy symbol
+      - Creates silver protective dome through divine hymn
+      - Breaks glass barrier with hammer—spider-web cracks, bloody hands
+      - Final appearance: Holy symbol clasped in hands in death arrangement
+    reference_images: []
+
+  - ref: "thorne-brightward"
+    name: "Captain Thorne Brightward"
+    scene_variations: |
+      CHAPTER 1 (RESCUE PATROL LEADER):
+      - Steel breastplate, iron helm (sometimes tucked under arm)
+      - Blue cloak with golden sunburst sigil
+      - Soot-streaked but commanding
+      - Gentle, steady manner with Veyra—"easy, soldier"
+      - Arms steady and sure when catching her collapse
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "sergeant-kelen"
+    name: "Sergeant Kelen"
+    scene_variations: "CHAPTER 1: Watch patrol, iron-gray hair, professional voice cracking through silence"
+    reference_images: []
+
+  - ref: "archer-venn"
+    name: "Archer Venn"
+    scene_variations: "CHAPTER 1: Watch patrol, discovers bloody name carvings on stone"
+    reference_images:
+      - "archer-venn-portrait-01"
+
+  - ref: "corporal-darric"
+    name: "Corporal Darric"
+    scene_variations: "CHAPTER 1: Watch patrol, notes she 'laid them out proper' with thick voice"
+    reference_images:
+      - "corporal-darric-portrait-01"
+
+  - ref: "medic-halden"
+    name: "Medic Halden"
+    scene_variations: "CHAPTER 1: Watch patrol, medical kit, 'she should be dead' incredulity"
+    reference_images:
+      - "medic-halden-standing-portrait-01"
+
+locations:
+  - ref: "undershade-canyon"
+    zones:
+      - id: "rim-overlook"
+        chapter_context: |
+          Canyon rim at golden twilight. Sun-warm shale underfoot, molten brass light pooling along the lip. Below, the canyon coils in ochre bands—a vast throat exhaling heat that doesn't belong to early autumn. The air tastes of sage and distant brimstone. Single-file descent visible on glazed switchbacks below—old fire scars, ritual burn-signs.
+
+      - id: "temple-nave"
+        chapter_context: |
+          Vine-strangled pillars at ancient threshold, dragon carvings sleeping beneath moss. Inside: vaulted nave with thick stale heat, feathers charred to ash-gray littering flagstones. Brass braziers in rows, now igniting with green-white flame. A scorched circle on the floor, fresh. At the far end: basalt plinth bearing ember-amber orb with living cinders.
+
+      - id: "antechamber"
+        chapter_context: |
+          Death trap. Where the team is sealed by cooling glass walls after the dragon-fire explosion. No other exit. Smoke seeping through cracks. Ceiling buckling from heat above. This is where Borin strikes the glass, where Elara dies, where Ignis vanishes in copper-red light.
+
+      - id: "glass-barrier"
+        chapter_context: |
+          Wall of fused glass—molten stone cooled to translucent rippled barrier. Distorted but clear enough to see through. The gap Borin broke with his hammer—narrow, barely wide enough for an arm. His blood on the glass edges. Through the barrier: bodies visible, rubble, the aftermath of sealed doom.
+
+      - id: "cairn-site"
+        chapter_context: |
+          Memorial site where Veyra builds cairns. Stone carried by shield, names carved in blood. Cairn for Lysander over collapsed arch. Empty/waiting cairn for Ignis—question mark. Blood-carved names on stone wall: LYSANDER. IGNIS. ELARA. BORIN. The obsidian shard still lies nearby.
+
+      - id: "transept"
+        chapter_context: |
+          Where Veyra arranges the recovered bodies for ceremony, and where the Watch patrol finds her. Glass-slick walls catching torchlight. Two shrouded forms laid on battered shield like an altar. Relics placed at lantern's base like a shrine. The space where six fists strike chestplates and the Company is born.
+
+moments:
+  - id: "ch01-ash-and-compass-moment-01"
+    scene_id: "scn-01-01"
+    title: "Twilight Sentinel"
+    narrative_beat: "Veyra kneels at the canyon's edge, lantern held aloft against dying light, assessing the descent while her companions gather behind."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "lysander-valerius"
+      - "ignis-emberheart"
+      - "elara-whisperwind"
+      - "borin-stonehand"
+    location_zone: "undershade-canyon/rim-overlook"
+    transformation_state: "before"
+    recommended_images: 2
+
+  - id: "ch01-ash-and-compass-moment-03"
+    scene_id: "scn-01-03"
+    title: "The Fire Serpent"
+    narrative_beat: "The dragon-fire serpent coils between escape and doom, emerald-white scales warping the air, as the team faces the cult's sacrifice trap."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "lysander-valerius"
+      - "ignis-emberheart"
+      - "elara-whisperwind"
+      - "borin-stonehand"
+    location_zone: "undershade-canyon/temple-nave"
+    transformation_state: "during"
+    recommended_images: 2
+
+  - id: "ch01-ash-and-compass-moment-04"
+    scene_id: "scn-01-03"
+    title: "Lysander's Sacrifice"
+    narrative_beat: "Lysander holds the narrowing gap as molten stone crushes inward, shield glowing cherry-red, roaring his final command: 'LIVE!'"
+    visual_weight: "critical"
+    characters_present:
+      - "veyra-thornwake"
+      - "lysander-valerius"
+      - "borin-stonehand"
+      - "elara-whisperwind"
+      - "ignis-emberheart"
+    location_zone: "undershade-canyon/antechamber"
+    transformation_state: "during"
+    recommended_images: 2
+
+  - id: "ch01-ash-and-compass-moment-07"
+    scene_id: "scn-01-04"
+    title: "Names in Blood"
+    narrative_beat: "Veyra carves four names in her own blood—on the shield's inner surface and on the stone wall—making memory permanent."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "undershade-canyon/cairn-site"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch01-ash-and-compass-moment-08"
+    scene_id: "scn-01-05"
+    title: "The Guardian of the Dead"
+    narrative_beat: "The Watch patrol stops short: a burned, ruined woman stands guard over two shrouded forms, naked blade in one hand, still-burning lantern in the other."
+    visual_weight: "critical"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "sergeant-kelen"
+      - "archer-venn"
+      - "corporal-darric"
+      - "medic-halden"
+    location_zone: "undershade-canyon/transept"
+    transformation_state: "after"
+    recommended_images: 2
+
+  - id: "ch01-ash-and-compass-moment-10"
+    scene_id: "scn-01-05"
+    title: "The Dam Breaks"
+    narrative_beat: "Veyra's legs give out, Thorne catches her, and against his breastplate the dam finally breaks—three days of horror pouring out in wracking sobs."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    location_zone: "undershade-canyon/transept"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch01-ash-and-compass-moment-09"
+    scene_id: "scn-01-06"
+    title: "Six Fists to Chestplate"
+    narrative_beat: "Thorne declares 'No soul should burn alone' and every guard slams a fist to chestplate—six resonant thuds echoing like a heartbeat through the ruin."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "sergeant-kelen"
+      - "archer-venn"
+      - "corporal-darric"
+      - "medic-halden"
+    location_zone: "undershade-canyon/transept"
+    transformation_state: "after"
+    recommended_images: 1
+
+images:
+  # ============================================================================
+  # MOMENT 01: TWILIGHT SENTINEL
+  # ============================================================================
+  - custom_id: "ch01-ash-and-compass-img-01-01-01"
+    source_moment: "ch01-ash-and-compass-moment-01"
+    scene_id: "scn-01-01"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "location"
+      - "symbol"
+    scene_mood: "ominous"
+    mood_rationale: "Cautious hope tinged with mounting dread. The golden light is deceptive—something is waking below. This establishes the visual thesis of descent into darkness."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Veyra kneels at the lip of Undershade Canyon, one boot braced against sun-warm shale, her battered lantern held aloft. The day's last gleam pools like molten brass along the canyon rim. Behind her, four silhouettes gather: Lysander with his easy confidence, Ignis trailing faint sparks, Elara half in shadow, Borin solid as stone. Below, the canyon coils in ochre bands, exhaling heat that warps the air.
+    composition_notes: |
+      Wide establishing shot. Low angle from canyon depth looking up at silhouetted figures on rim. Veyra dominant left with lantern creating golden halo. Canyon bands fill lower two-thirds. Team silhouettes against molten brass sky.
+    visual_hook: "Golden lantern glow against vast ochre canyon bands, team silhouettes at the threshold of descent"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "lysander-valerius"
+      - "ignis-emberheart"
+      - "elara-whisperwind"
+      - "borin-stonehand"
+    character_states:
+      veyra-thornwake: |
+        Kneeling at edge, lantern held aloft. Unmarred face in profile. Scout's focus. One boot braced.
+      lysander-valerius: |
+        Standing tall, easy smile, gilt rivets catching light.
+      ignis-emberheart: |
+        Faint conjured sparks trailing from tail.
+      elara-whisperwind: |
+        Half in shadow, dagger glinting.
+      borin-stonehand: |
+        Solid silhouette, wineskin offered.
+    location: "undershade-canyon"
+    zone: "rim-overlook"
+    lighting:
+      primary_source: "Setting sun (molten brass)"
+      quality: "warm, golden, backlit"
+      direction: "behind figures, creating silhouettes"
+      color_temperature: "warm brass-gold"
+      shadow_depth: "long evening shadows"
+      atmospheric: "heat shimmer rising from canyon"
+    palette:
+      dominant:
+        - "molten brass"
+        - "ochre canyon bands"
+        - "sage-scented dusk"
+      accent:
+        - "lantern gold halo"
+        - "spark orange from Ignis"
+      avoid:
+        - "cold blues"
+        - "harsh whites"
+    prompt_used: |
+      A half-elf woman with deep earth-brown skin and jet black mohawk kneeling at the edge of a vast desert canyon at sunset,
+      holding a battered lantern aloft casting golden halo,
+      four companions silhouetted behind her against molten brass sky,
+      canyon below in ochre and rust bands exhaling heat shimmer,
+      low angle looking up at figures on rim,
+      wide cinematic composition, epic fantasy landscape,
+      classical oil painting, Hudson River School grandeur, Turner luminosity,
+      warm brass and ochre palette, atmospheric depth,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, cold lighting,
+      daytime, blue sky, green vegetation
+    tags:
+      - "establishing-shot"
+      - "twilight"
+      - "canyon"
+      - "hero-image"
+      - "team"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch01-ash-and-compass-img-01-01-02"
+    source_moment: "ch01-ash-and-compass-moment-01"
+    scene_id: "scn-01-01"
+    image_type: "detail"
+    category:
+      - "symbol"
+      - "character"
+    scene_mood: "intimate"
+    mood_rationale: "The lantern as character—its clouded panes, immaculate interior, steady flame. This establishes the central symbol of the story."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      An extreme close-up of Veyra's battered lantern held in her earth-brown hand. The panes are clouded by long miles, but the interior is immaculate. The flame within casts a pale gold halo against the oncoming dusk. In the reflection of the glass, the faint distorted image of the canyon below.
+    composition_notes: |
+      Tight square framing. Lantern central. Hand grip visible showing deep brown skin and teal tattoo marks. Flame as focal point. Canyon reflected in glass.
+    visual_hook: "The steady flame within clouded glass—light kept immaculate against the coming dark"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Only hand visible, gripping lantern handle. Teal tattoo visible on wrist.
+    location: "undershade-canyon"
+    zone: "rim-overlook"
+    lighting:
+      primary_source: "Lantern flame"
+      quality: "soft, warm, intimate"
+      direction: "center-outward"
+      color_temperature: "pale gold"
+      shadow_depth: "soft gradients"
+      atmospheric: "dusk tones in background"
+    palette:
+      dominant:
+        - "pale gold"
+        - "brass patina"
+        - "deep brown skin"
+      accent:
+        - "teal tattoo"
+        - "clouded glass gray"
+      avoid:
+        - "harsh whites"
+        - "cold tones"
+    prompt_used: |
+      Extreme close-up of a battered brass lantern held in a dark brown hand with teal tattoo marks,
+      lantern panes clouded with travel but interior glass immaculate,
+      steady pale gold flame within casting soft glow,
+      faint reflection of desert canyon in the glass,
+      evening dusk tones in background,
+      classical oil painting, Vermeer interior lighting,
+      soft focus, intimate detail, warm amber tones,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, wide shot, full figure
+    tags:
+      - "lantern"
+      - "symbol"
+      - "detail"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  # ============================================================================
+  # MOMENT 03: THE FIRE SERPENT
+  # ============================================================================
+  - custom_id: "ch01-ash-and-compass-img-01-03-01"
+    source_moment: "ch01-ash-and-compass-moment-03"
+    scene_id: "scn-01-03"
+    image_type: "hero"
+    category:
+      - "action"
+      - "moment"
+      - "symbol"
+    scene_mood: "kinetic"
+    mood_rationale: "Peak supernatural action. The dragon-fire serpent demands Delacroix energy—diagonal composition, violent motion, the team small but defiant against impossible odds."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The dragon-fire serpent coils through the temple nave, its flames knitting scales of emerald and white that warp the air like ripples in molten glass. Runes carved in the floor blaze core-hot. Below the creature, the team braces: Lysander shield-high with leather bubbling, Borin roaring a hymn as silver light blossoms in a protective dome, Ignis channeling wild red-gold magic. The serpent's maw opens, vomiting white fire.
+    composition_notes: |
+      Dynamic diagonal from Veyra's elevated gallery position. Serpent forms S-curve through frame, scales catching green-white light. Team small but defiant at bottom. Silver dome flickering. Heat distortion throughout.
+    visual_hook: "Serpentine fire creature with emerald-white scales, silver divine dome flickering against impossible heat"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "lysander-valerius"
+      - "ignis-emberheart"
+      - "elara-whisperwind"
+      - "borin-stonehand"
+    character_states:
+      veyra-thornwake: |
+        On elevated gallery, bow drawn. Observer position.
+      lysander-valerius: |
+        Shield raised, leather bubbling and smoking. Commanding stance.
+      borin-stonehand: |
+        War-hammer planted like gatepost, mouth open in hymn, silver light emanating.
+      ignis-emberheart: |
+        Red-gold aura flaring, hands weaving desperate patterns.
+      elara-whisperwind: |
+        Cloak igniting in trailing ribbons, blood on lips.
+    location: "undershade-canyon"
+    zone: "temple-nave"
+    lighting:
+      primary_source: "Dragon-fire serpent (emerald-white)"
+      quality: "supernatural, violent, heat-distorted"
+      direction: "radiating from serpent"
+      color_temperature: "emerald-white core, orange-red radiating"
+      shadow_depth: "harsh, confused"
+      atmospheric: "heat shimmer, superheated air"
+    palette:
+      dominant:
+        - "emerald green"
+        - "white-hot flame"
+        - "silver divine light"
+      accent:
+        - "red-gold magic"
+        - "copper brazier glow"
+      avoid:
+        - "natural greens"
+        - "calm colors"
+    prompt_used: |
+      A massive serpent made of emerald and white dragon-fire coiling through a stone temple nave,
+      scales of flame warping the air with heat,
+      below the serpent a group of fantasy adventurers brace: armored captain with bubbling shield, dwarf with silver light emanating in protective dome, tiefling with red-gold magic flaring,
+      glowing runes on floor, brass braziers ignited,
+      dynamic diagonal composition, baroque energy,
+      classical oil painting, Romantic dynamism, Delacroix energy,
+      harsh supernatural lighting, high contrast,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, calm scene,
+      natural fire colors only, static poses
+    tags:
+      - "dragon-fire"
+      - "serpent"
+      - "action"
+      - "kinetic"
+      - "hero-image"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch01-ash-and-compass-img-01-03-02"
+    source_moment: "ch01-ash-and-compass-moment-03"
+    scene_id: "scn-01-03"
+    image_type: "anchor"
+    category:
+      - "symbol"
+      - "location"
+    scene_mood: "ominous"
+    mood_rationale: "The moment before catastrophe—Borin's silver dome flickering against the serpent's approach. Divine grace made manifest, about to fail."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Borin Stonehand stands like a mountain, war-hammer planted as a gatepost, mouth open in a hymn that makes the stones remember holiness. Silver light blossoms outward in a protective dome around the huddled team. Above them, the dragon-fire serpent coils, its emerald-white flames licking against the flickering barrier. Cracks of light appear where fire meets faith.
+    composition_notes: |
+      Vertical composition emphasizing the contrast between grounded dwarf and coiling serpent above. Silver dome forms visual boundary. Serpent pressing down. Team sheltered below.
+    visual_hook: "Silver divine dome flickering and cracking under emerald dragon-fire—faith versus flame"
+    depicts_characters:
+      - "borin-stonehand"
+      - "lysander-valerius"
+      - "elara-whisperwind"
+      - "ignis-emberheart"
+    character_states:
+      borin-stonehand: |
+        War-hammer planted, mouth open in hymn. Silver light emanating from holy symbol.
+      lysander-valerius: |
+        Crouched behind shield within dome.
+      elara-whisperwind: |
+        Pressed against wall within dome.
+      ignis-emberheart: |
+        Hands still weaving, trying to counter.
+    location: "undershade-canyon"
+    zone: "temple-nave"
+    lighting:
+      primary_source: "Divine silver light vs emerald fire"
+      quality: "flickering, contested"
+      direction: "silver from below, fire from above"
+      color_temperature: "cold silver vs hot emerald"
+      shadow_depth: "dramatic contrast"
+      atmospheric: "crackling energy at barrier edge"
+    palette:
+      dominant:
+        - "silver light"
+        - "emerald fire"
+        - "stone gray"
+      accent:
+        - "dwarf armor bronze"
+        - "holy symbol gleam"
+      avoid:
+        - "warm comforting tones"
+        - "natural light"
+    prompt_used: |
+      A dwarf cleric with war-hammer planted standing firm as silver divine light emanates in a protective dome,
+      above the dome a dragon-fire serpent of emerald and white flames presses down,
+      cracks of light where fire meets divine barrier,
+      companions huddled within the flickering dome,
+      vertical dramatic composition, faith versus flame,
+      classical oil painting, Pre-Raphaelite divine light,
+      cold silver versus hot emerald, crackling energy,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, calm scene,
+      stable barrier, victory pose
+    tags:
+      - "divine-magic"
+      - "protection"
+      - "serpent"
+      - "ominous"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  # ============================================================================
+  # MOMENT 04: LYSANDER'S SACRIFICE
+  # ============================================================================
+  - custom_id: "ch01-ash-and-compass-img-01-04-01"
+    source_moment: "ch01-ash-and-compass-moment-04"
+    scene_id: "scn-01-03"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "The emotional core of the chapter. Lysander's sacrifice defines everything—calm acceptance amid destruction, the shield becoming a door."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Lysander holds the narrowing gap between molten stone walls, his body a living wedge. His shield glows cherry-red against his arm, metal buckling inward. His face is calm, resolute, accepting—not afraid, but certain. Through the gap behind him, the blurred shapes of his team squeezing through to the antechamber. Stone crushes inward around him. His mouth forms his final word: LIVE.
+    composition_notes: |
+      Medium shot, Lysander framed by the narrowing gap. Stone pressing from sides creates natural vignette. Cherry-red glow illuminates his face from below. Expression is the focal point—calm amid destruction.
+    visual_hook: "Shield glowing cherry-red, Lysander's face calm amid destruction, stone crushing inward"
+    depicts_characters:
+      - "lysander-valerius"
+      - "borin-stonehand"
+      - "elara-whisperwind"
+      - "ignis-emberheart"
+    character_states:
+      lysander-valerius: |
+        Shield braced against narrowing walls. Face calm, resolute, accepting. Mouth forming final command.
+      borin-stonehand: |
+        Blurred shape behind, grabbing Elara.
+      elara-whisperwind: |
+        Being pushed through gap.
+      ignis-emberheart: |
+        Hands blistering from proximity to molten edges.
+    location: "undershade-canyon"
+    zone: "antechamber"
+    lighting:
+      primary_source: "Cherry-red glowing shield/molten stone"
+      quality: "hellish, from below"
+      direction: "radiating from heated metal"
+      color_temperature: "cherry-red to orange"
+      shadow_depth: "deep, dramatic"
+      atmospheric: "heat distortion, dust particles"
+    palette:
+      dominant:
+        - "cherry red"
+        - "molten orange"
+        - "stone gray"
+      accent:
+        - "steel armor gleam"
+        - "flesh tone warmth"
+      avoid:
+        - "cool colors"
+        - "green"
+    prompt_used: |
+      An armored captain holding a narrowing gap between crushing molten stone walls,
+      his shield glowing cherry-red and buckling inward against his arm,
+      face calm and resolute amid destruction, mouth forming a final command,
+      blurred figures escaping through the gap behind him,
+      stone pressing in from sides, hellish orange-red glow from below,
+      medium portrait framing, Rembrandt lighting,
+      classical oil painting, chiaroscuro, emotional weight,
+      cherry-red and molten orange palette, deep shadows,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, fear expression,
+      blue lighting, cool tones, victory
+    tags:
+      - "sacrifice"
+      - "lysander"
+      - "hero-image"
+      - "somber"
+      - "death"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch01-ash-and-compass-img-01-04-02"
+    source_moment: "ch01-ash-and-compass-moment-04"
+    scene_id: "scn-01-03"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Veyra's perspective through the glass—watching Lysander's final moment, the psychological wound that shapes everything."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Through a wall of rippled, cooling glass, Veyra watches Lysander. His eyes find hers through the barrier—calm, resolute, accepting. His mouth forms 'LIVE!' The glass distorts his image like a memory already fading. Her hand is pressed against the barrier, leaving a bloody print. The distance between them is insurmountable.
+    composition_notes: |
+      Over-Veyra's-shoulder shot. Glass barrier fills frame. Lysander visible through distortion. Her hand pressed flat leaving blood. His face the focal point through the ripples.
+    visual_hook: "Lysander's calm eyes through distorted glass, Veyra's bloody palm pressed against the barrier"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "lysander-valerius"
+    character_states:
+      veyra-thornwake: |
+        Back to viewer, hand pressed against glass. Bloody palm leaving print. Hair singed.
+      lysander-valerius: |
+        Visible through distorted glass. Eyes meeting hers. Mouth forming final command.
+    location: "undershade-canyon"
+    zone: "glass-barrier"
+    lighting:
+      primary_source: "Fire glow beyond glass"
+      quality: "diffused through glass, hellish"
+      direction: "from beyond barrier"
+      color_temperature: "orange-red filtered through translucent glass"
+      shadow_depth: "deep"
+      atmospheric: "heat distortion, glass ripples"
+    palette:
+      dominant:
+        - "translucent glass gray"
+        - "fire orange diffused"
+        - "blood red"
+      accent:
+        - "Lysander's face warmth"
+      avoid:
+        - "clear view"
+        - "cool tones"
+    prompt_used: |
+      Over-shoulder view of a half-elf woman pressing bloody palm against a rippled translucent glass wall,
+      through the distorted glass a man's face is visible, calm and resolute, mouth forming final words,
+      fire glow beyond casting orange light through the barrier,
+      hand leaving bloody print on glass,
+      emotional distance made physical,
+      classical oil painting, Symbolist emotion, chiaroscuro,
+      diffused orange light through translucent barrier,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, clear glass,
+      happy expressions, blue tones
+    tags:
+      - "glass-barrier"
+      - "separation"
+      - "final-words"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  # ============================================================================
+  # MOMENT 07: NAMES IN BLOOD
+  # ============================================================================
+  - custom_id: "ch01-ash-and-compass-img-01-07-01"
+    source_moment: "ch01-ash-and-compass-moment-07"
+    scene_id: "scn-01-04"
+    image_type: "detail"
+    category:
+      - "symbol"
+      - "emotion"
+      - "character"
+    scene_mood: "intimate"
+    mood_rationale: "Ritual moment of memorial. Intimate detail work—blood filling carved letters, the act of making memory permanent."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Extreme close-up of Veyra's ruined hand carving with an obsidian shard. Blood wells from her palm and fills the grooves of a letter—an L for Lysander. The stone wall is dark and rough. Her blood makes the marks permanent, mixing with ash. Three other names are already carved: IGNIS, ELARA, BORIN. The lantern casts amber light from below.
+    composition_notes: |
+      Tight square framing on hand, shard, and emerging letters. Shallow depth of field. Blood filling carved groove as focal point. Lantern light from bottom edge.
+    visual_hook: "Obsidian shard cutting stone, blood filling carved letters, four names emerging"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Only hand visible—ruined, bloody, bandaged with cloak strips. Gripping obsidian shard. Carving with deliberate pressure.
+    location: "undershade-canyon"
+    zone: "cairn-site"
+    lighting:
+      primary_source: "Lantern below frame"
+      quality: "warm, intimate"
+      direction: "from below/side"
+      color_temperature: "amber gold"
+      shadow_depth: "soft gradients"
+      atmospheric: "still, solemn"
+    palette:
+      dominant:
+        - "blood red"
+        - "stone gray"
+        - "amber light"
+      accent:
+        - "obsidian black"
+        - "ash gray"
+      avoid:
+        - "bright colors"
+        - "cold tones"
+    prompt_used: |
+      Extreme close-up of a ruined bloody hand carving letters into stone with an obsidian shard,
+      blood welling from palm and filling the carved groove of the letter L,
+      three other names already carved above: IGNIS ELARA BORIN,
+      amber lantern light from below casting warm glow on bloody stone,
+      ritualistic intimate atmosphere,
+      classical oil painting, Vermeer interior lighting,
+      blood red and stone gray palette, amber warmth,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, wide shot,
+      clean hands, bright lighting
+    tags:
+      - "memorial"
+      - "blood"
+      - "names"
+      - "detail"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  # ============================================================================
+  # MOMENT 08: THE GUARDIAN OF THE DEAD
+  # ============================================================================
+  - custom_id: "ch01-ash-and-compass-img-01-08-01"
+    source_moment: "ch01-ash-and-compass-moment-08"
+    scene_id: "scn-01-05"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "symbol"
+    scene_mood: "somber"
+    mood_rationale: "The payoff of all suffering. Veyra transformed into mythic figure—the guardian who kept faith despite everything. Awe and horror combined."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      From the patrol's perspective: a woman who barely deserves the name stands guard over two shrouded forms laid upon a battered shield. Half her face is a ruin of blistered flesh and weeping burns. Her clothes hang in tatters, more ash than fabric. But she stands—a naked blade in one hand, a still-burning lantern in the other. The shrouded forms behind her like an altar. The shield bearing her dead.
+    composition_notes: |
+      From patrol's POV looking at Veyra. Triangle composition: Veyra central figure, shield-altar forming base, patrol torches at edges. Lantern as brightest point. Her ruined face catching the light.
+    visual_hook: "Dragon-burned face, battered blade, burning lantern, shrouded forms on shield behind her"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Standing guard. Half face ruined with blistered/weeping burns. Clothes in tatters. Naked blade in right hand. Lantern in left. Expression fierce, protective, barely human.
+    location: "undershade-canyon"
+    zone: "transept"
+    lighting:
+      primary_source: "Veyra's lantern"
+      quality: "amber glow against darkness"
+      direction: "from lantern in her hand"
+      color_temperature: "warm amber"
+      shadow_depth: "deep darkness beyond"
+      atmospheric: "smoky haze, dust motes"
+    palette:
+      dominant:
+        - "amber lantern glow"
+        - "ash gray tatters"
+        - "darkness"
+      accent:
+        - "raw red burns"
+        - "steel blade gleam"
+      avoid:
+        - "clean surfaces"
+        - "bright colors"
+    prompt_used: |
+      A half-elf woman standing guard over two shrouded forms laid on a battered shield,
+      half her face is a ruin of blistered burns and weeping flesh,
+      clothes hang in tatters more ash than fabric,
+      she holds a naked blade in one hand and a still-burning lantern in the other,
+      shrouded bodies on shield behind her like an altar,
+      amber lantern light against deep darkness,
+      classical oil painting, Rembrandt lighting, chiaroscuro,
+      somber mythic quality, visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, clean face,
+      bright lighting, happy expression
+    tags:
+      - "guardian"
+      - "vigil"
+      - "hero-image"
+      - "somber"
+      - "veyra"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch01-ash-and-compass-img-01-08-02"
+    source_moment: "ch01-ash-and-compass-moment-08"
+    scene_id: "scn-01-05"
+    image_type: "anchor"
+    category:
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Close portrait of Veyra's ruined face—the cost made visible. Half destroyed, half intact. The lantern reflected in her remaining good eye."
+    aspect_ratio: "2:3"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Close portrait of Veyra's face, split composition. The right side shows her intact: deep earth-brown skin, dark focused eye, mohawk sharp. The left side is a ruin: blistered flesh, weeping burns, eye clouded by scar tissue. In her intact eye, the lantern flame reflects twice. Her expression is beyond exhaustion—something primal, protective, barely human.
+    composition_notes: |
+      Close portrait, split lighting. Intact side lit warmly, burned side in shadow. Flame reflected in good eye. Rule of thirds: eyes at upper intersection.
+    visual_hook: "Half-destroyed face, lantern flame reflected in the surviving eye—cost made visible"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Face fills frame. Right side intact. Left side ruined burns. Dark eye reflecting flame. Expression primal, protective.
+    location: "undershade-canyon"
+    zone: "transept"
+    lighting:
+      primary_source: "Lantern (implied below frame)"
+      quality: "warm on intact side, shadow on ruined"
+      direction: "side lighting"
+      color_temperature: "amber gold"
+      shadow_depth: "deep on burned side"
+      atmospheric: "still"
+    palette:
+      dominant:
+        - "deep earth brown skin"
+        - "raw red burns"
+        - "amber light"
+      accent:
+        - "flame reflection in eye"
+        - "jet black mohawk"
+      avoid:
+        - "beauty lighting"
+        - "soft focus on burns"
+    prompt_used: |
+      Close portrait of a half-elf woman's face split by lighting,
+      right side shows intact deep earth-brown skin and focused dark eye,
+      left side is ruined with blistered weeping burns,
+      lantern flame reflected double in her intact eye,
+      expression primal protective and beyond exhaustion,
+      split Rembrandt lighting warm and shadow,
+      classical oil painting, chiaroscuro, emotional intensity,
+      amber and shadow palette, unflinching detail on burns,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, beauty lighting,
+      soft focus, glamour portrait, blue tones
+    tags:
+      - "portrait"
+      - "burns"
+      - "veyra"
+      - "cost"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  # ============================================================================
+  # MOMENT 10: THE DAM BREAKS
+  # ============================================================================
+  - custom_id: "ch01-ash-and-compass-img-01-10-01"
+    source_moment: "ch01-ash-and-compass-moment-10"
+    scene_id: "scn-01-05"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: "The cathartic release. Raw vulnerability after three days of trauma. The contrast between her collapse and Thorne's steadiness. Survival becoming grief."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Veyra has collapsed against Thorne's breastplate, her ruined face pressed against cold steel. His arms are steady around her broken form. Her fingers clutch desperately at his armor, knuckles white. Her whole body shakes with wracking sobs. The lantern lies at their feet, still burning. Thorne's expression is gentle, protective. She is so small against his solid presence.
+    composition_notes: |
+      Medium-close shot from side angle. Veyra collapsed small against Thorne's solid form. Her ruined face visible against his armor. Her clutching hands focal point. Lantern on ground casting upward amber.
+    visual_hook: "Veyra collapsed against Thorne's breastplate, her ruined face against cold steel, his arms steady around her broken form"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    character_states:
+      veyra-thornwake: |
+        Collapsed against Thorne. Face pressed to breastplate. Fingers clutching armor. Body shaking with sobs. Utterly broken.
+      thorne-brightward: |
+        Arms steady around her. Expression gentle, protective. Solid as stone.
+    location: "undershade-canyon"
+    zone: "transept"
+    lighting:
+      primary_source: "Lantern at feet, torch glow from patrol"
+      quality: "warm rim light, amber upward glow"
+      direction: "from below and sides"
+      color_temperature: "amber gold"
+      shadow_depth: "soft, enveloping"
+      atmospheric: "intimate despite the ruin"
+    palette:
+      dominant:
+        - "steel armor gray"
+        - "amber lantern glow"
+        - "ash-gray tatters"
+      accent:
+        - "raw red burns"
+        - "torch warm orange"
+      avoid:
+        - "cold clinical light"
+        - "harsh shadows"
+    prompt_used: |
+      A half-elf woman with ruined burned face collapsed against an armored captain's breastplate,
+      her fingers clutching desperately at his armor,
+      his arms steady and protective around her broken shaking form,
+      she is so small against his solid presence,
+      a still-burning lantern lies at their feet casting amber glow upward,
+      wracking sobs visible in her posture,
+      side angle medium-close shot,
+      classical oil painting, Rembrandt warmth, emotional intimacy,
+      amber and steel palette, protective embrace,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, romantic pose,
+      clean face, bright lighting, happy expression
+    tags:
+      - "collapse"
+      - "grief"
+      - "thorne"
+      - "veyra"
+      - "intimate"
+      - "catharsis"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  # ============================================================================
+  # MOMENT 09: SIX FISTS TO CHESTPLATE
+  # ============================================================================
+  - custom_id: "ch01-ash-and-compass-img-01-09-01"
+    source_moment: "ch01-ash-and-compass-moment-09"
+    scene_id: "scn-01-06"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "symbol"
+      - "character"
+    scene_mood: "somber"
+    mood_rationale: "The founding moment. Collective oath transforming tragedy into purpose. The birth of the Last Light Company through shared vow."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The founding moment of the Last Light Company. Thorne holds the lantern aloft—its amber light painting halos on helms and ash alike. Six guards have struck fists to chestplates, the resonant thuds still echoing. Veyra stands supported by Thorne, her wild eyes meeting his. At the lantern's base, relics are arranged like a shrine: Lysander's warped shield boss, Borin's cracked holy symbol. The blood-carved names glow on the stone behind them.
+    composition_notes: |
+      Wide shot from low angle looking up at the circle of guards. Lantern at apex of composition. Circular arrangement with Veyra and Thorne at center. Fists to chestplates frozen in salute.
+    visual_hook: "Six armored figures with fists to chest, lantern held aloft, birth of the Company"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "sergeant-kelen"
+      - "archer-venn"
+      - "corporal-darric"
+      - "medic-halden"
+    character_states:
+      veyra-thornwake: |
+        Supported by Thorne. Wild eyes meeting his. Still ruined but now part of something.
+      thorne-brightward: |
+        Lantern held aloft. Fist to chest. Expression of solemn purpose.
+      sergeant-kelen: |
+        Fist to chestplate. Professional reverence.
+      archer-venn: |
+        Fist to chestplate.
+      corporal-darric: |
+        Fist to chestplate.
+      medic-halden: |
+        Fist to chestplate.
+    location: "undershade-canyon"
+    zone: "transept"
+    lighting:
+      primary_source: "Lantern held aloft"
+      quality: "amber warmth against ruin"
+      direction: "from central lantern outward"
+      color_temperature: "amber gold"
+      shadow_depth: "moderate, unifying"
+      atmospheric: "solemn, ritual"
+    palette:
+      dominant:
+        - "amber gold"
+        - "steel gray armor"
+        - "stone and ash"
+      accent:
+        - "blood-red carved names"
+        - "blue cloak sigil"
+      avoid:
+        - "cold harsh light"
+        - "chaotic colors"
+    prompt_used: |
+      Six armored fantasy guards striking fists to chestplates in solemn salute,
+      their captain holds a battered lantern aloft casting amber light on helms and faces,
+      a scarred half-elf woman stands supported in the center,
+      relics arranged at lantern's base like a shrine,
+      blood-carved names visible on stone wall behind,
+      circular composition low angle looking up, ritual atmosphere,
+      classical oil painting, Dutch Golden Age group portrait,
+      amber warmth unifying figures, solemn founding moment,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, chaotic arrangement,
+      bright daylight, celebratory poses
+    tags:
+      - "founding"
+      - "oath"
+      - "company"
+      - "anchor"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

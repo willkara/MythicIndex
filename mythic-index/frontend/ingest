@@ -1,0 +1,10 @@
+#!/bin/bash
+# MythicIndex Content Ingestion CLI Wrapper
+# Makes it easy to run the ingestion tool from anywhere in the frontend directory
+
+# Get the directory where this script lives
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Change to that directory and run the ingestion CLI
+cd "$SCRIPT_DIR"
+npx tsx src/lib/server/ingestion/cli/ingest.ts "$@"

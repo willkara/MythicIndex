@@ -1,0 +1,1121 @@
+entity_type: "character"
+slug: "young-bard"
+appearance: "This young human bard possesses a lean build and an expressive, upturned face framed by a mop of dark brown, unruly curls. His large, deep brown eyes are wide with a look of rapt wonder or surprise, complemented by his slightly parted lips as if catching a breath. He has a fair complexion with a slight, healthy flush on his cheeks. His attire consists of a textured, earthy reddish-brown hooded tunic worn over a rough, lighter-colored undergarment, secured with a simple leather strap across his chest. In his hands, he holds a wooden lute with an intricately carved rosette, his fingers positioned on the fretboard ready to play. His overall demeanor is one of eager observation, forever ready to translate the world around him into song."
+prompts: []
+image_inventory:
+  - id: "young-bard-portrait"
+    path: "images/portrait.png"
+    type: "imported"
+    is_reference_portrait: true
+    content:
+      title: "Reference Portrait"
+      description: "Canonical reference portrait for character consistency"
+      alt_text: "Reference portrait for character visual consistency"
+      tags:
+        - "portrait"
+        - "reference"
+    status: "approved"
+    provenance:
+      source: "manual"
+      created_at: "2025-12-22T14:38:58.845Z"
+      original_filename: "portrait.png"
+  - id: "young-bard-bard-composing-by-firelight-01"
+    path: "images/bard_composing_by_firelight.png"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "Bard Composing by Candlelight"
+      description: "A contemplative oil painting of the young bard, illuminated solely by the warm glow of a candle as he intently writes with a quill. He wears a rust-colored hooded tunic, and his lute rests in the shadowed background. The brushwork is rich and textured, emphasizing the dramatic contrast between light and dark."
+      alt_text: "Oil painting of a young man with dark curly hair writing with a quill pen at a table lit by a single candle. A lute leans against the dark wall behind him."
+      tags:
+        - "portrait"
+        - "canon"
+        - "oil-painting"
+        - "dramatic"
+        - "contemplative"
+      suggested_filename: "bard-composing-by-candlelight"
+      composition_notes: "A medium close-up framing focusing on the subject's face and hands. The composition relies heavily on chiaroscuro, using the single light source to create a strong focal point and leading the eye from the lute in the background down to the act of writing.\n"
+      narrative_significance: "Captures an intimate moment of creation, establishing the character's dedication to both the literary and musical aspects of his bardic craft. It reveals an introspective side to his personality.\n"
+      symbolic_elements: "The candle symbolizes creative inspiration and intellectual illumination within the surrounding darkness. The pairing of the lute and quill represents the dual tools of his trade: performance and composition.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "bard_composing_by_firelight.png"
+    image_type: "portrait"
+    image_subtype: "dramatic"
+    lighting:
+      primary_source: "single candle flame"
+      quality: "warm, directional, high-contrast (chiaroscuro)"
+      direction: "front-left, slightly low"
+      color_temperature: "warm amber/orange"
+      shadow_depth: "deep and dramatic"
+      atmospheric: "intimate warmth, slight ambient haze"
+    palette:
+      dominant:
+        - "burnt sienna"
+        - "deep umber brown"
+        - "warm ochre"
+        - "charcoal black"
+      accent:
+        - "candle flame yellow"
+        - "parchment cream"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "dark curly brown hair"
+        - "warm complexion"
+        - "rust-colored hooded tunic"
+        - "associated with lute"
+        - "uses quill and parchment"
+      notes: "This image establishes the canonical appearance and key accessories for the Young Bard."
+  - id: "young-bard-tavern-performance-01"
+    path: "images/young_bard_lute_performance.png"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "Young Bard's Tavern Performance"
+      description: "A medium portrait oil painting of a young bard with dark curly hair, playing a lute and looking upward with an inspired expression. He wears a rust-colored hooded tunic in a dimly lit, crowded tavern filled with warm, dramatic light."
+      alt_text: "Oil painting portrait of a young man with curly dark hair playing a lute in a dark, rustic tavern, looking upwards."
+      tags:
+        - "portrait"
+        - "canon"
+        - "oil-painting"
+        - "bard"
+        - "tavern"
+      suggested_filename: "tavern-performance"
+      composition_notes: "Medium portrait framing focusing on the bard from the waist up. His upward gaze and the angle of the instrument create strong diagonal lines, drawing the eye through the frame against the bustling, blurred background.\n"
+      narrative_significance: "Captures a defining moment of performance, highlighting his musical nature and perhaps a sense of idealism or inspiration contrasting with the rustic setting.\n"
+      symbolic_elements: "The dramatic lighting isolates him as a focal point of hope or artistry amidst the common crowd. The upward gaze suggests transcendental inspiration.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "image_0.png"
+    image_type: "portrait"
+    image_subtype: "dramatic"
+    lighting:
+      primary_source: "warm ambient candlelight"
+      quality: "soft but directional (chiaroscuro)"
+      direction: "three-quarter from upper left"
+      color_temperature: "warm amber"
+      shadow_depth: "deep/dramatic"
+      atmospheric: "hazy tavern smoke"
+    palette:
+      dominant:
+        - "burnt umber"
+        - "sepia brown"
+        - "rust orange"
+        - "deep gold"
+      accent:
+        - "warm cream"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "dark curly hair"
+        - "youthful appearance"
+        - "playing a lute"
+        - "rust-colored hooded tunic"
+      notes: "Establishes canonical appearance and performance attire."
+  - id: "young-bard-bard-on-the-road-01"
+    path: "images/bard_on_the_road.png"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "The Bard's Journey at Sunset"
+      description: "A painterly portrait of a young bard playing a lute, his face illuminated by the warm golden light of a dramatic sunset. He stands on a dusty roadside, looking upwards, as a caravan travels into the distance behind him. The style is an expressive oil painting with rich textures and visible brushwork."
+      alt_text: "A painting of a young bard with curly brown hair, wearing a brown hooded tunic, playing a lute. He looks up and to the right with a thoughtful expression, lit by a fiery sunset. A horse-drawn caravan with figures on horseback moves along a dirt road in the background. The brushstrokes are visible and textured."
+      tags:
+        - "portrait"
+        - "scene"
+        - "oil-painting"
+        - "dramatic"
+        - "sunset"
+      suggested_filename: "the-bards-journey-at-sunset"
+      composition_notes: "The young bard is positioned in the left foreground, filling a significant portion of the frame. His upward gaze and the diagonal line of the lute lead the eye towards the dramatic sky. The road in the background provides a leading line for the caravan.\n"
+      narrative_significance: "This image establishes the young bard as a traveling musician, captured in a moment of reflection during his journey. The sunset and caravan suggest a life on the road, full of stories and adventure.\n"
+      symbolic_elements: "The sunset symbolizes transition and the end of a day's travel. The lute is a symbol of his craft and identity. The caravan represents community and the shared journey.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "bard_on_the_road.png"
+    image_type: "portrait"
+    image_subtype: "dramatic"
+    lighting:
+      primary_source: "warm sunset light"
+      quality: "rich and directional"
+      direction: "three-quarter from right, back-lit"
+      color_temperature: "warm amber/orange"
+      shadow_depth: "dramatic"
+      atmospheric: "slight dust/haze"
+    palette:
+      dominant:
+        - "golden orange"
+        - "burnt sienna"
+        - "muted ochre"
+      accent:
+        - "deep brown"
+        - "charcoal grey"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "young man with curly brown hair"
+        - "plays a lute"
+        - "wears a hooded brown tunic"
+      notes: "A faithful depiction of the young bard as a traveling musician, aligning with his described identity."
+  - id: "young-bard-bard-sketching-heroes-01"
+    path: "images/bard_sketching_heroes.png"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "The Bard Sketching Heroes"
+      description: "A medium shot oil painting depicting a young bard with dark curly hair sitting at a rough wooden table in a dimly lit tavern. By the warm glow of a candle, he holds a lute in his lap and actively sketches three portraits into an open journal with charcoal. The atmosphere is quiet, focused, and steeped in historical texture."
+      alt_text: "Oil painting of a young bard with dark curly hair, sketching faces into a book by candlelight in a dark, crowded tavern with a lute resting on his lap."
+      tags:
+        - "scene"
+        - "canon"
+        - "oil-painting"
+        - "tavern"
+        - "contemplative"
+      suggested_filename: "bard-sketching-heroes"
+      composition_notes: "A medium shot framing the subject from the waist up, positioned slightly right of center. The strong directional light from the candle creates a visual path from the flame to the bard's face, down to his hands and the sketchbook, making the drawing action the central focal point.\n"
+      narrative_significance: "This image establishes the bard not just as a performer, but as a thoughtful chronicler and observer of the world around him. It suggests he documents the people he meets or the legends he learns.\n"
+      symbolic_elements: "The juxtaposition of the lute (public performance) and the sketchbook (private documentation) highlights his dual role as artist and historian. The sketches of the warrior, woman, and older man represent the subjects of his tales.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "bard_sketching_heroes.png"
+    image_type: "scene"
+    image_subtype: "interior"
+    lighting:
+      primary_source: "single tabletop candle"
+      quality: "soft directional with high contrast (chiaroscuro)"
+      direction: "front-left relative to subject"
+      color_temperature: "warm amber orange"
+      shadow_depth: "deep and dramatic"
+      atmospheric: "smoky tavern haze"
+    palette:
+      dominant:
+        - "burnt umber"
+        - "sepia brown"
+        - "rust orange"
+        - "deep ochre"
+      accent:
+        - "warm candlelight gold"
+        - "charcoal grey"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "dark brown curly hair"
+        - "youthful features"
+        - "rust-colored hooded tunic"
+        - "plays a lute"
+        - "maintains a sketchbook"
+      notes: "This image serves as a foundational visual reference for the Young Bard's appearance and equipment."
+  - id: "young-bard-young-bard-broadsides-and-ballads-08-1766251440766-01"
+    path: "images/young-bard-broadsides-and-ballads-08-1766251440766.png"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "Bard Receiving Payment in Market"
+      description: "A portrait of a young bard with a wide, engaging smile, holding his lute and a stack of broadsides as he receives a coin from a patron's hand. The setting is a bustling, sunlit medieval marketplace, rendered in a rich, detailed painterly style."
+      alt_text: "A painting of a smiling young bard with curly dark hair and a lute, holding papers and receiving a coin in a crowded medieval marketplace."
+      tags:
+        - "portrait"
+        - "canon"
+        - "digital-painting"
+        - "market"
+        - "bard"
+      suggested_filename: "bard-receiving-payment-in-market"
+      composition_notes: "A medium close-up shot focuses on the bard's expressive face and the physical exchange of the coin, with the busy market street providing a deep, detailed background. The framing emphasizes his direct engagement with the patron.\n"
+      narrative_significance: "This image captures the bard in his element, actively sharing his craft and earning his keep. It highlights his charismatic nature and his connection to the common folk in a public setting.\n"
+      symbolic_elements: "The coin being received symbolizes patronage and the value placed on his art. His open, joyful expression suggests an approachable and genuine character.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "young-bard-broadsides-and-ballads-08-1766251440766.png"
+    image_type: "portrait"
+    image_subtype: "candid"
+    lighting:
+      primary_source: "natural daylight"
+      quality: "soft, diffused golden hour light"
+      direction: "three-quarter from right"
+      color_temperature: "warm golden"
+      shadow_depth: "moderate, soft"
+      atmospheric: "clear with market dust"
+    palette:
+      dominant:
+        - "earthy brown"
+        - "terracotta orange"
+        - "ochre yellow"
+        - "cream paper"
+      accent:
+        - "copper coin"
+        - "deep green"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "curly dark brown hair"
+        - "engaging, wide smile"
+        - "carrying a lute"
+        - "wearing a simple brown hooded tunic"
+      notes: "This image serves as a foundational visual reference for the Young Bard's appearance and profession."
+  - id: "young-bard-young-bard-broadsides-and-ballads-1766317398220-2025-12-21-01"
+    path: "images/young-bard-broadsides-and-ballads-1766317398220-2025-12-21.jpg"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "Bard Selling Broadsides in Market"
+      description: "A candid medium close-up portrait of the Young Bard smiling broadly, looking off-camera in a bustling market. He holds his lute in one arm while handing a printed song sheet to a patron who is placing a coin in his palm. The warm, natural daylight highlights the rustic textures of his orange tunic and the busy background stalls."
+      alt_text: "A young male bard with curly brown hair smiles enthusiastically while holding a lute and exchanging a song sheet for a coin in a busy medieval market street."
+      tags:
+        - "portrait"
+        - "canon"
+        - "digital-painting"
+        - "market"
+        - "joyful"
+      suggested_filename: "selling-broadsides-in-market"
+      composition_notes: "A medium close-up shot framing the bard from the chest up, positioned centrally. His gaze directs the viewer's eye to the upper left, while the transaction of the coin and paper anchors the bottom right foreground.\n"
+      narrative_significance: "This image captures the bard in his element, actively plying his trade. It establishes his charismatic nature and his connection to the common folk through his music and stories.\n"
+      symbolic_elements: "The exchange of the broadside for a coin symbolizes the tangible value of art and storytelling in everyday life. His open expression suggests genuine passion for his craft.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-21"
+      original_filename: "young-bard-broadsides-and-ballads-1766317398220-2025-12-21.jpg"
+    image_type: "portrait"
+    image_subtype: "candid"
+    lighting:
+      primary_source: "natural daylight"
+      quality: "soft and diffused"
+      direction: "top-right"
+      color_temperature: "warm white"
+      shadow_depth: "moderate, defining facial features and fabric folds"
+      atmospheric: "clear"
+    palette:
+      dominant:
+        - "russet orange"
+        - "earthy brown"
+        - "parchment beige"
+        - "warm skin tones"
+      accent:
+        - "copper coin"
+        - "deep wood grain"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "curly dark brown hair"
+        - "expressive warm brown eyes"
+        - "rustic orange hooded tunic"
+        - "wooden lute"
+      notes: "This image serves as a foundational reference for the character's appearance and profession."
+  - id: "young-bard-young-bard-composing-by-firelight-1766317398214-2025-12-21-01"
+    path: "images/young-bard-composing-by-firelight-1766317398214-2025-12-21.jpg"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "The Bard's Late Night Composition"
+      description: "A young bard with dark curly hair sits at a rustic wooden table, pausing with a quill in hand while composing on a scroll. He is surrounded by crumpled drafts, his lute, and old books, illuminated by the warm glow of a candle and a small tabletop fire. The image is rendered in a classical oil painting style with rich, deep brushstrokes and dramatic contrast."
+      alt_text: "Oil painting of a young man with curly dark hair sitting at a wooden table lit by firelight, holding a quill and looking thoughtfully away from a scroll. A lute rests beside him, and crumpled papers are on the table."
+      tags:
+        - "scene"
+        - "canon"
+        - "oil-painting"
+        - "atmospheric"
+        - "writing"
+      suggested_filename: "bards-late-night-composition"
+      composition_notes: "A medium shot frames the subject centrally at the table, with lighting sources on the left (candle) and right (fire bowl) creating a warm vignette effect. The diagonal line of the lute neck leads the eye toward the subject's contemplative face and the central action of writing on the scroll.\n"
+      narrative_significance: "This image captures the creative struggle and dedication of the young bard, showing him working late into the night amidst failed attempts. It highlights his introspective nature and deep commitment to his craft.\n"
+      symbolic_elements: "The crumpled papers with crossed-out text symbolize the difficulty of the creative process and the pursuit of perfection. The dual light sources in the dark room represent inspiration burning against the surrounding darkness.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "young-bard-composing-by-firelight-1766317398214-2025-12-21.jpg"
+    image_type: "scene"
+    image_subtype: "interior"
+    lighting:
+      primary_source: "warm candlelight and small tabletop fire"
+      quality: "soft, flickering, high contrast"
+      direction: "dual sources from left and right"
+      color_temperature: "warm amber orange"
+      shadow_depth: "deep and dramatic (chiaroscuro)"
+      atmospheric: "slight warmth haze"
+    palette:
+      dominant:
+        - "deep umber brown"
+        - "warm amber orange"
+        - "muted sienna"
+        - "dark olive green"
+      accent:
+        - "flame yellow highlights"
+        - "cream parchment"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "dark curly brown hair"
+        - "young, pensive face"
+        - "rust-colored woolen vest over green tunic"
+        - "wooden lute with angled neck"
+        - "ink-stained fingers"
+      notes: "The image perfectly establishes the canonical look of the young bard in a moment of composition, consistent with his role and described features."
+  - id: "young-bard-young-bard-first-sight-of-heroes-00-1766251295580-01"
+    path: "images/young-bard-first-sight-of-heroes-00-1766251295580.png"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "Bard's First Sight Of Heroes"
+      description: "A young bard with curly brown hair, seated and playing a lute in a dimly lit tavern, looks up with a surprised expression towards three figures entering a bright doorway. The scene is rendered in a rich oil painting style with dramatic lighting from a candle and the entrance."
+      alt_text: "A portrait of a young bard with curly brown hair, looking surprised while playing a lute in a dimly lit tavern, with figures entering a bright doorway in the background, rendered in an oil painting style."
+      tags:
+        - "scene"
+        - "oil-painting"
+        - "tavern"
+        - "dramatic"
+        - "bard"
+      suggested_filename: "bards-first-sight-of-heroes"
+      composition_notes: "A medium shot frames the bard centrally, with his gaze leading the viewer's eye towards the bright doorway in the background, creating depth and a clear narrative focus.\n"
+      narrative_significance: "This image captures a pivotal moment of realization or discovery for the bard, suggesting the start of a journey or a significant encounter that will influence his stories.\n"
+      symbolic_elements: "The contrast between the dim tavern and the bright doorway symbolizes a new opportunity or adventure entering his world, while the lute represents his voice and craft.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "young-bard-first-sight-of-heroes-00-1766251295580.png"
+    image_type: "scene"
+    image_subtype: "interior"
+    lighting:
+      primary_source: "warm candlelight and bright doorway daylight"
+      quality: "soft ambient with strong directional backlight"
+      direction: "mixed; side from candle, back from doorway"
+      color_temperature: "warm amber and neutral white"
+      shadow_depth: "deep, dramatic shadows"
+      atmospheric: "slight tavern haze"
+    palette:
+      dominant:
+        - "deep browns"
+        - "amber orange"
+        - "muted earth tones"
+      accent:
+        - "bright white-yellow"
+        - "warm gold"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "young male appearance"
+        - "curly brown hair"
+        - "playing a lute"
+        - "appropriate period clothing"
+      notes: "The image aligns perfectly with the general description of a young bard in a tavern setting."
+  - id: "young-bard-young-bard-first-sight-of-heroes-1766292460186-2025-12-21-01"
+    path: "images/young-bard-first-sight-of-heroes-1766292460186-2025-12-21.jpg"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "First Sight of the Heroes"
+      description: "A young bard with a look of shock and awe clutches his lute in a dimly lit tavern interior. He gazes towards a brightly lit doorway in the background where powerful, silhouetted figures are entering. The image is rendered in a classical digital oil painting style with deep shadows and warm tones."
+      alt_text: "A young bard in a rust-red tunic holds a lute with a shocked expression, looking towards silhouetted figures entering a tavern doorway in the background, rendered as a digital oil painting."
+      tags:
+        - "scene"
+        - "canon"
+        - "digital-painting"
+        - "dramatic"
+        - "tavern"
+      suggested_filename: "first-sight-of-the-heroes"
+      composition_notes: "A medium shot focuses on the bard in the foreground left, whose upward gaze creates a strong diagonal leading line towards the bright focal point of the doorway in the background right. The framing uses depth to tell a story of intrusion.\n"
+      narrative_significance: "This moment captures a pivotal turning point for the bard, marking the interruption of his ordinary life by significant events or legendary figures. His expression reveals innocence confronting destiny.\n"
+      symbolic_elements: "The sharp contrast between the warm, dimly lit interior (safety, known world) and the blinding white light from the doorway (adventure, unknown danger) symbolizes the call to adventure. The silenced lute represents interrupted normalcy.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "young-bard-first-sight-of-heroes-1766292460186-2025-12-21.jpg"
+    image_type: "scene"
+    image_subtype: "dramatic"
+    lighting:
+      primary_source: "warm interior candlelight"
+      quality: "soft ambient with strong directional contrast from background"
+      direction: "mixed: interior from left, exterior from background right"
+      color_temperature: "warm amber dominating, bright white accent"
+      shadow_depth: "deep and dramatic"
+      atmospheric: "slight tavern haze"
+    palette:
+      dominant:
+        - "rust red"
+        - "deep wood brown"
+        - "warm amber"
+        - "shadow black"
+      accent:
+        - "bright doorway white"
+        - "candle flame yellow"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "dark curly brown hair"
+        - "expressive wide brown eyes"
+        - "rust-red hooded tunic over dark shirt"
+        - "standard wooden lute"
+      notes: "Image definitively establishes the canonical appearance and humble beginnings of the young bard."
+  - id: "young-bard-young-bard-following-the-story-03-1766251351449-01"
+    path: "images/young-bard-following-the-story-03-1766251351449.png"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "The Bard Watches The Soldiers"
+      description: "A medium shot oil painting of a young bard with curly brown hair and a rust-colored tunic, shading his eyes to gaze into the distance. He stands on a dirt road among rolling green hills, watching a group of armed soldiers march away in the background under a partly cloudy sky."
+      alt_text: "A young bard with a guitar on his back shades his eyes, looking down a country road towards a group of marching soldiers in an oil painting style."
+      tags:
+        - "scene"
+        - "canon"
+        - "oil-painting"
+        - "exterior"
+        - "narrative"
+      suggested_filename: "bard-watches-soldiers"
+      composition_notes: "A medium shot with the bard positioned as the primary subject in the left foreground. The winding dirt road serves as a strong leading line, connecting him visually to the smaller figures of the soldiers in the background right.\n"
+      narrative_significance: "This image captures a significant moment of observation, showing the bard's connection to, yet currently separation from, the conflict or journey represented by the soldiers. It highlights his potential role as a chronicler or follower of events.\n"
+      symbolic_elements: "The contrast between the lone, instrument-carrying bard in the foreground and the collective, armed group of soldiers in the background symbolizes the tension between individual artistry and collective action or warfare.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "young-bard-following-the-story-03-1766251351449.png"
+    image_type: "scene"
+    image_subtype: "exterior"
+    lighting:
+      primary_source: "natural daylight"
+      quality: "diffused with directional warmth"
+      direction: "front-left"
+      color_temperature: "warm neutral"
+      shadow_depth: "moderate, defining features"
+      atmospheric: "clear day with soft clouds"
+    palette:
+      dominant:
+        - "rust orange"
+        - "earthy brown"
+        - "grass green"
+        - "sky blue"
+      accent:
+        - "cream white"
+        - "metallic grey"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "curly brown hair"
+        - "rust-colored hooded tunic over brown shirt"
+        - "guitar/lute strapped to back"
+        - "youthful appearance with expressive features"
+      notes: "This image establishes the canonical look for the Young Bard in an exterior narrative setting."
+  - id: "young-bard-young-bard-following-the-story-1766292460189-2025-12-21-01"
+    path: "images/young-bard-following-the-story-1766292460189-2025-12-21.jpg"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "Young Bard Looking toward Horizon"
+      description: "A medium shot oil painting depicting a young traveling bard pausing on a dirt road alongside his brown horse. He shades his eyes to look towards the distant horizon under a warm, partly cloudy sky, with his lute strapped to his back."
+      alt_text: "An oil painting showing a young man with a lute strapped to his back, holding a horse's bridle and shading his eyes to look down a country road towards distant hills."
+      tags:
+        - "scene"
+        - "canon"
+        - "oil-painting"
+        - "travel"
+        - "adventure"
+      suggested_filename: "looking-toward-horizon"
+      composition_notes: "A medium shot framing the bard from the mid-thigh up, positioned slightly left of center. His gaze guides the viewer's eye towards the right background along the receding road.\n"
+      narrative_significance: "This image captures the bard mid-journey, emphasizing themes of travel, seeking, and the open road. His contemplative look suggests a search for inspiration or a destination.\n"
+      symbolic_elements: "The road symbolizes the journey of life or career. Shading the eyes represents searching or looking towards the future. The lute is his identity and tool.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "young-bard-following-the-story-1766292460189-2025-12-21.jpg"
+    image_type: "scene"
+    image_subtype: "exterior"
+    lighting:
+      primary_source: "natural daylight (late afternoon sun)"
+      quality: "warm and directional"
+      direction: "from the right"
+      color_temperature: "warm golden"
+      shadow_depth: "moderate, distinct shadows"
+      atmospheric: "clear rural air"
+    palette:
+      dominant:
+        - "rust orange"
+        - "earthy brown"
+        - "golden wheat"
+        - "muted green"
+      accent:
+        - "sky blue"
+        - "white (horse marking)"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "Curly dark brown hair"
+        - "Signature lute strapped to back"
+        - "Rust-colored hooded tunic"
+        - "Traveling companion horse"
+      notes: "The image establishes a clear visual baseline for the Young Bard, showing his attire, instrument, and general look in a travel context."
+  - id: "young-bard-young-bard-interviewing-witnesses-06-1766251404413-01"
+    path: "images/young-bard-interviewing-witnesses-06-1766251404413.png"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "Bard Recording Tavern Tales"
+      description: "A medium close-up in a painterly style shows the young bard seated at a rustic wooden table in a bustling tavern. With an eager, wide-eyed expression, he holds a lute and writes hurriedly in a leather journal with a quill, illuminated by warm candlelight and hearth fire. Two armored figures converse in the background."
+      alt_text: "A young bard with curly dark hair and an orange cloak sits at a wooden tavern table, holding a lute and writing with a quill in a journal, looking off-camera excitedly. Warm light from candles and a fireplace illuminates the scene, with guards in the background. The style is digital painting."
+      tags:
+        - "portrait"
+        - "canon"
+        - "digital-painting"
+        - "tavern"
+        - "candid"
+      suggested_filename: "bard-recording-tavern-tales"
+      composition_notes: "A medium close-up shot frames the bard slightly off-center, with his gaze directing the viewer's eye toward the right edge of the frame. The background elements, including the fireplace and guards, create depth and context without distracting from the primary subject.\n"
+      narrative_significance: "This image captures the bard's role as a chronicler, actively gathering stories in the field. His engaged expression suggests he is in the middle of hearing a compelling tale from an unseen source.\n"
+      symbolic_elements: "The juxtaposition of the artistic tools (lute, quill, journal) against the martial background (armored guards) highlights the bard's unique position as an observer and recorder of events rather than a direct combatant.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "young-bard-interviewing-witnesses-06-1766251404413.png"
+    image_type: "portrait"
+    image_subtype: "candid"
+    lighting:
+      primary_source: "warm candlelight and fireplace glow"
+      quality: "soft, warm, and flickering"
+      direction: "multi-directional ambient, mostly from right and rear"
+      color_temperature: "warm amber/orange"
+      shadow_depth: "moderate soft shadows"
+      atmospheric: "warm tavern haze and smoke"
+    palette:
+      dominant:
+        - "burnt orange"
+        - "warm brown"
+        - "deep umber"
+        - "creamy parchment"
+      accent:
+        - "glowing ember orange"
+        - "metallic steel grey"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "curly dark brown hair"
+        - "expressive brown eyes"
+        - "worn orange-brown hooded cloak"
+        - "holds lute and journal with quill"
+      notes: "The image is a flawless match for the canonical description, capturing every specified physical trait and accessory with high fidelity in a fitting environment."
+  - id: "young-bard-young-bard-interviewing-witnesses-1766292460192-2025-12-21-01"
+    path: "images/young-bard-interviewing-witnesses-1766292460192-2025-12-21.jpg"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "Bard Recording Tavern Stories"
+      description: "A medium shot capturing the Young Bard sitting at a rough wooden table in a busy, dimly lit tavern. He holds a quill, writing in an open journal with an inspired, upward-gazing expression, resting his arm on his lute. The background is filled with soldiers and patrons bathed in warm candlelight and torchlight, rendered in a rich digital painting style."
+      alt_text: "A young bard with curly brown hair sits at a table in a crowded medieval tavern, writing in a journal and holding a lute, looking up thoughtfully while armored soldiers and others converse in the background."
+      tags:
+        - "scene"
+        - "canon"
+        - "digital-painting"
+        - "tavern"
+        - "medieval"
+      suggested_filename: "recording-tavern-stories"
+      composition_notes: "A medium shot framed tightly on the bard, using the table edge to anchor the foreground. Diagonal lines from the instruments and architecture direct the eye to his expressive face and the act of writing.\n"
+      narrative_significance: "This image defines the character not just as a performer, but as a chronicler and observer of the world around him. His focused yet inspired expression suggests he is actively translating the tavern's reality into art or history.\n"
+      symbolic_elements: "The quill and journal symbolize history and record-keeping, balanced against the lute representing performance. The presence of armored soldiers nearby hints that the stories being recorded might be of serious consequence.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "young-bard-interviewing-witnesses-1766292460192-2025-12-21.jpg"
+    image_type: "scene"
+    image_subtype: "interior"
+    lighting:
+      primary_source: "candlelight on table and wall torches"
+      quality: "warm, flickering, localized"
+      direction: "mixed sources creating dramatic contrast"
+      color_temperature: "deep amber orange"
+      shadow_depth: "deep, creating strong chiaroscuro"
+      atmospheric: "hazy smoke from torches"
+    palette:
+      dominant:
+        - "rust orange"
+        - "deep oak brown"
+        - "shadow black"
+        - "warm umber"
+      accent:
+        - "candle flame yellow"
+        - "parchment cream"
+        - "burnished steel grey"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "curly dark brown hair"
+        - "large expressive brown eyes"
+        - "rust-colored hooded tunic"
+        - "wooden lute and leather journal"
+      notes: "The image perfectly establishes the character's core physical traits and signature equipment, serving as a strong baseline for his canonical appearance."
+  - id: "young-bard-young-bard-interviewing-witnesses-1766317398218-2025-12-21-01"
+    path: "images/young-bard-interviewing-witnesses-1766317398218-2025-12-21.jpg"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "Young Bard Collecting Stories in Tavern"
+      description: "A medium shot of a young bard with a surprised, eager expression, seated at a rustic wooden table in a bustling tavern. He holds a quill over an open journal, with a lute resting in his lap, all illuminated by the warm, flickering glow of a nearby fireplace and background lamps. The image is rendered in a rich, textured digital painting style."
+      alt_text: "A young bard with a lute and journal looks surprised while writing at a table in a warm, firelit tavern, rendered in a painterly style."
+      tags:
+        - "scene"
+        - "canon"
+        - "digital-painting"
+        - "tavern"
+        - "narrative"
+      suggested_filename: "young-bard-collecting-stories-tavern"
+      composition_notes: "A medium shot frames the bard centrally, with his gaze and body orientation directed towards the right, creating a narrative line towards an unseen interlocutor. The fireplace on the left provides a strong primary light source and visual anchor, while the background figures add depth and environmental context without distracting from the main subject.\n"
+      narrative_significance: "This image perfectly captures the bard's role as an active collector of tales, showing his wide-eyed curiosity and immediate engagement as he records a story, likely from a tavern patron. It visualizes his core function within a narrative.\n"
+      symbolic_elements: "The open book and quill are direct symbols of knowledge, history, and storytelling. The tavern setting represents the grounded, communal source of his stories. His surprised expression suggests the discovery of a particularly compelling or unexpected piece of information.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "young-bard-interviewing-witnesses-1766317398218-2025-12-21.jpg"
+    image_type: "scene"
+    image_subtype: "interior"
+    lighting:
+      primary_source: "fireplace and ambient tavern lamps"
+      quality: "warm, soft, and flickering"
+      direction: "dominant side lighting from left"
+      color_temperature: "warm orange-amber"
+      shadow_depth: "moderate, creating soft, defining contrasts"
+      atmospheric: "slight warm haze from the fire"
+    palette:
+      dominant:
+        - "warm russet brown"
+        - "deep wood tones"
+        - "earthy sepia"
+      accent:
+        - "golden firelight yellow"
+        - "creamy parchment white"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "youthful appearance with curly dark hair"
+        - "appropriate rustic traveler's clothing (hooded tunic)"
+        - "possession and use of a lute-like instrument"
+        - "active use of a journal and quill for writing"
+      notes: "The image is an excellent and accurate representation of the 'Young Bard' character archetype, showing him in his element. All visible features align with the expected canonical appearance and role."
+  - id: "young-bard-young-bard-listening-to-rain-1766292460199-2025-12-21-01"
+    path: "images/young-bard-listening-to-rain-1766292460199-2025-12-21.jpg"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "Pensive Bard By Rainy Window"
+      description: "A young bard with curly brown hair sits by a rain-streaked stone window, holding a lute and gazing contemplatively outside, hand to his chin. He wears a textured rust-orange hooded tunic, lit by cool daylight from the left and warm firelight from the background. The rendering is a detailed digital painting with a melancholic mood."
+      alt_text: "A young man with a lute sits by a rainy window looking out contemplatively, dressed in a rust tunic, with a fireplace in the background."
+      tags:
+        - "portrait"
+        - "canon"
+        - "digital-painting"
+        - "pensive"
+        - "rainy"
+      suggested_filename: "pensive-bard-by-rainy-window"
+      composition_notes: "A medium shot frames the bard centrally, holding a lute. His gaze directs the viewer's eye toward the window on the left, balancing the warm fireplace elements on the right.\n"
+      narrative_significance: "Reveals a thoughtful, perhaps melancholic side to the character, showing a moment of quiet introspection or inspiration gathering amidst the elements.\n"
+      symbolic_elements: "The juxtaposition of the cold, wet exterior world versus the warm interior hearth mirrors an internal emotional state. The lute held but not played suggests a pause in creativity.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "young-bard-listening-to-rain-1766292460199-2025-12-21.jpg"
+    image_type: "portrait"
+    image_subtype: "candid"
+    lighting:
+      primary_source: "cool diffused daylight from window"
+      quality: "soft and directional"
+      direction: "side from left"
+      color_temperature: "mixed cool and warm"
+      shadow_depth: "moderate, defining features"
+      atmospheric: "heavy rain blur outside window"
+    palette:
+      dominant:
+        - "rust orange"
+        - "stone grey"
+        - "muted earth brown"
+        - "rain-soaked green"
+      accent:
+        - "warm firelight amber"
+        - "pale skin tone"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "curly brown hair"
+        - "brown eyes"
+        - "rust-colored hooded tunic"
+        - "wooden lute instrument"
+      notes: "This image establishes the foundational visual identity for the Young Bard."
+  - id: "young-bard-young-bard-listening-to-rain-1766317398224-2025-12-21-01"
+    path: "images/young-bard-listening-to-rain-1766317398224-2025-12-21.jpg"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "Young Bard Contemplating Rain"
+      description: "A painterly medium portrait of a young bard with curly brown hair, wearing a rust-orange hooded tunic, seated by a rain-streaked window holding a cittern. He rests his chin on one hand, gazing upwards with a pensive, melancholy expression as soft natural light illuminates his face from the left. The style is that of classical realism with rich oil textures."
+      alt_text: "An oil painting of a young man with curly hair and a rust tunic, holding a lute by a rainy window and looking upwards pensively."
+      tags:
+        - "portrait"
+        - "canon"
+        - "oil-painting"
+        - "contemplative"
+        - "melancholic"
+      suggested_filename: "young-bard-contemplating-rain"
+      composition_notes: "A tight medium portrait where the subject is framed by the strong vertical lines of the window. His upward gaze creates a diagonal visual flow, drawing attention from his hands on the instrument to his expressive face.\n"
+      narrative_significance: "This captures the bard in a moment of quiet introspection, revealing a sensitive and thoughtful nature distinct from the typical performance-oriented persona. It suggests he draws inspiration from observation and mood.\n"
+      symbolic_elements: "The rain outside contrasts with the warmth inside, symbolizing melancholy or a barrier between the observer and the world. The silenced instrument suggests a pause in creativity or a search for a new melody.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "young-bard-listening-to-rain-1766317398224-2025-12-21.jpg"
+    image_type: "portrait"
+    image_subtype: "candid"
+    lighting:
+      primary_source: "natural diffused daylight from window"
+      quality: "soft and ambient"
+      direction: "side lighting from left"
+      color_temperature: "cool daylight contrasting with warm interior"
+      shadow_depth: "moderate, defining facial structure gently"
+      atmospheric: "rainy exterior haze viewed through glass"
+    palette:
+      dominant:
+        - "rust orange"
+        - "deep woody brown"
+        - "muted gold wall"
+        - "rainy grayish blue"
+      accent:
+        - "warm skin tones"
+        - "creamy window light"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "dense curly dark brown hair"
+        - "large expressive brown eyes"
+        - "rustic rust-colored hooded tunic"
+        - "holds a cittern/lute instrument"
+      notes: "Image serves as a foundational visual reference for the character's appearance and introspective demeanor."
+  - id: "young-bard-young-bard-naming-the-legend-10-1766251477395-01"
+    path: "images/young-bard-naming-the-legend-10-1766251477395.png"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "The Bard's Late Night Inspiration"
+      description: "A dramatic oil painting-style portrait of the Young Bard seated at a cluttered wooden table, quill poised over a parchment titled 'Last Light'. Illuminated by a single candle, he looks upwards with an expression of sudden revelation or anxiety, his lute resting in the shadows behind him."
+      alt_text: "A painting of a young man with curly brown hair in an orange tunic, writing by candlelight. He looks upwards intently, quill in hand. A lute stands in the dark background."
+      tags:
+        - "portrait"
+        - "canon"
+        - "oil-painting"
+        - "dramatic"
+        - "inspiration"
+      suggested_filename: "bards-late-night-inspiration"
+      composition_notes: "A medium close-up utilizing strong chiaroscuro. The compositional line draws the eye from the candle on the right, up to the bard's illuminated face and hands, following his gaze toward the upper left corner.\n"
+      narrative_significance: "This moment captures the bard's creative process, showing the intensity of inspiration striking him during solitude and emphasizing his dedication to his craft.\n"
+      symbolic_elements: "The single candle represents the light of inspiration amidst the darkness of the unknown. The crumpled papers symbolize previous failures leading to this moment of breakthrough.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "young-bard-naming-the-legend-10-1766251477395.png"
+    image_type: "portrait"
+    image_subtype: "dramatic"
+    lighting:
+      primary_source: "single wax candle"
+      quality: "harsh directional chiaroscuro"
+      direction: "side lighting from right"
+      color_temperature: "very warm amber"
+      shadow_depth: "deep and dramatic"
+      atmospheric: "clear with warm glow"
+    palette:
+      dominant:
+        - "burnt orange tunic"
+        - "deep sepia shadow"
+        - "warm ochre parchment"
+        - "rustic brown wood"
+      accent:
+        - "candle flame yellow"
+        - "creamy off-white collar"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "curly brown hair"
+        - "expressive wide brown eyes"
+        - "rough burnt-orange hooded tunic"
+        - "signature wooden lute"
+      notes: "Defining image for the character's visual canon, establishing key physical traits and attire."
+  - id: "young-bard-young-bard-naming-the-legend-1766292460197-2025-12-21-01"
+    path: "images/young-bard-naming-the-legend-1766292460197-2025-12-21.jpg"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "The Bard's Midnight Inspiration"
+      description: "A dramatic oil painting portrait of a young bard sitting at a rustic table, holding a quill and looking upwards with an intense, contemplative expression. A single candle illuminates his face and a manuscript titled 'LAST LIGHT', alongside his lute and scattered crumpled papers. The warm, directional lighting creates deep shadows in the textured background."
+      alt_text: "Oil painting of a young man with curly dark hair, holding a quill and looking up thoughtfully by candlelight, sitting at a table with a lute and a paper titled LAST LIGHT."
+      tags:
+        - "portrait"
+        - "oil-painting"
+        - "dramatic"
+        - "bard"
+        - "candlelight"
+      suggested_filename: "bards-midnight-inspiration"
+      composition_notes: "A medium portrait framing places the subject centrally, with his upward gaze creating a diagonal line of sight. The candle on the far left acts as the key light source, balancing the visual weight of the lute on the right, while the manuscript serves as a central anchor point.\n"
+      narrative_significance: "Captures a crucial moment of artistic struggle or breakthrough, indicating the character's dedication to his craft and potential involvement in recording significant events ('LAST LIGHT').\n"
+      symbolic_elements: "The single candle represents fleeting inspiration or time running out. The crumpled papers symbolize failed attempts and struggle. The title 'LAST LIGHT' suggests urgency or an impending end.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "young-bard-naming-the-legend-1766292460197-2025-12-21.jpg"
+    image_type: "portrait"
+    image_subtype: "dramatic"
+    lighting:
+      primary_source: "single candle flame"
+      quality: "harsh, directional source creating deep contrast"
+      direction: "from the left"
+      color_temperature: "warm amber"
+      shadow_depth: "deep, dramatic chiaroscuro"
+      atmospheric: "clear, warm interior air"
+    palette:
+      dominant:
+        - "deep umber"
+        - "burnt sienna"
+        - "warm ochre"
+        - "shadow black"
+      accent:
+        - "candle flame yellow"
+        - "aged parchment cream"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "dark, curly brown hair"
+        - "light stubble beard"
+        - "rust-colored hooded hooded jerkin"
+        - "plays a lute/mandolin type instrument"
+      notes: "Establishes the primary canonical appearance and profession of the character."
+  - id: "young-bard-young-bard-naming-the-legend-1766317398222-2025-12-21-01"
+    path: "images/young-bard-naming-the-legend-1766317398222-2025-12-21.jpg"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "The Bard Composing Last Light"
+      description: "A medium portrait oil painting shows the young bard sitting at a wooden desk, quill in hand, gazing upwards in contemplation. The scene is dimly lit by a single candle, casting warm light and deep shadows across his face, rust-colored tunic, and the lute resting beside him. The mood is pensive and dramatic, rendered with rich textures."
+      alt_text: "A portrait painting of a young bard with dark curly hair sitting at a desk by candlelight, holding a quill over paper titled 'Last Light' with a lute resting nearby."
+      tags:
+        - "portrait"
+        - "canon"
+        - "oil-painting"
+        - "cinematic-lighting"
+        - "contemplative"
+      suggested_filename: "composing-last-light"
+      composition_notes: "A medium portrait framing places the subject centrally, balancing the composition with the candle source on the left and the lute instrument on the right. The strong directional light guides the viewer's eye to his upward gaze and folded hands.\n"
+      narrative_significance: "This image captures the moment of creative genesis, showing the bard not just performing, but in the intellectual struggle of composition. It highlights the solitary, thoughtful aspect of his craft and the weight of the story he is writing.\n"
+      symbolic_elements: "The single candle represents inspiration amidst darkness. The text \"Last Light\" on the page suggests a somber or significant theme in his work. The juxtaposition of the quill (creation) and the lute (performance) defines his dual role.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "young-bard-naming-the-legend-1766317398222-2025-12-21.jpg"
+    image_type: "portrait"
+    image_subtype: "dramatic"
+    lighting:
+      primary_source: "single lit candle"
+      quality: "soft directional with high contrast"
+      direction: "three-quarter from left"
+      color_temperature: "warm amber"
+      shadow_depth: "deep, dramatic chiaroscuro"
+      atmospheric: "slight smoky haze"
+    palette:
+      dominant:
+        - "deep burnt umber"
+        - "warm rust orange"
+        - "dark walnut wood"
+        - "creamy parchment"
+      accent:
+        - "candle flame yellow"
+        - "deep charcoal shadow"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "dark curly brown hair"
+        - "youthful countenance"
+        - "rust-colored hooded tunic"
+        - "presence of a lute"
+      notes: "The visual representation perfectly matches the established canonical features of the young bard during a moment of composition."
+  - id: "young-bard-young-bard-performing-the-legend-02-1766251333152-01"
+    path: "images/young-bard-performing-the-legend-02-1766251333152.png"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "Joyful Tavern Performance"
+      description: "A medium shot depicting the young bard singing passionately while playing a lute in a crowded, warmly lit tavern. He is surrounded by engaged patrons holding tankards, bathed in the glow of torches and a large fireplace in the background, rendered in a rich oil painting style."
+      alt_text: "A painting of a young man with curly hair playing a lute and singing in a busy medieval tavern, surrounded by smiling listeners."
+      tags:
+        - "scene"
+        - "digital-painting"
+        - "tavern"
+        - "bard"
+        - "performance"
+      suggested_filename: "joyful-tavern-performance"
+      composition_notes: "The bard is centered in a medium shot, looking slightly upward, framed by listeners in the foreground and midground who direct attention toward him. The background hearth serves as a secondary focal point, balancing the composition.\n"
+      narrative_significance: "This image establishes the character's role as a charismatic performer, demonstrating his ability to captivate an audience and bring joy to a communal setting.\n"
+      symbolic_elements: "The lute and open-mouthed singing symbolize storytelling and the oral tradition. The warm hearth fire represents comfort, community, and the shared experience of the tavern.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "young-bard-performing-the-legend-02-1766251333152.png"
+    image_type: "scene"
+    image_subtype: "interior"
+    lighting:
+      primary_source: "fireplace and wall torches"
+      quality: "warm, flickering, directional"
+      direction: "multiple sources, primarily from right and above"
+      color_temperature: "warm amber/orange"
+      shadow_depth: "deep and dramatic"
+      atmospheric: "slight smoky haze from hearth"
+    palette:
+      dominant:
+        - "russet orange"
+        - "deep wood brown"
+        - "warm amber"
+      accent:
+        - "torchlight gold"
+        - "cream skin tone"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "curly dark hair"
+        - "playing a lute-style instrument"
+        - "rustic orange tunic"
+      notes: "Establishes initial visual base for the character as a performing bard."
+  - id: "young-bard-young-bard-performing-the-legend-1766292460188-2025-12-21-01"
+    path: "images/young-bard-performing-the-legend-1766292460188-2025-12-21.jpg"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "The Bard's Tavern Performance"
+      description: "A medium shot oil painting of the young bard passionately singing and playing a lute in a crowded, warmly lit tavern. Surrounding patrons listen with rapt attention, illuminated by firelight and ambient glow. The style is classical and painterly, emphasizing rich textures and a communal atmosphere."
+      alt_text: "Oil painting of a young bard singing and playing a lute in a crowded medieval tavern, surrounded by listening patrons and warm light from a fireplace."
+      tags:
+        - "scene"
+        - "canon"
+        - "oil-painting"
+        - "tavern"
+        - "performing"
+      suggested_filename: "the-bards-tavern-performance"
+      composition_notes: "A medium shot centered on the bard, who is elevated slightly above the seated crowd. Surrounding faces create a natural frame, drawing the eye to his passionate expression and instrument.\n"
+      narrative_significance: "Captures the bard in his element, demonstrating his charismatic ability to captivate an audience and his connection to the common folk through music.\n"
+      symbolic_elements: "The hearth fire in the background mirrors the passion of his performance, while the rapt audience symbolizes the unifying power of storytelling and music.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "young-bard-performing-the-legend-1766292460188-2025-12-21.jpg"
+    image_type: "scene"
+    image_subtype: "interior"
+    lighting:
+      primary_source: "fireplace and candlelight"
+      quality: "warm, soft, flickering glow"
+      direction: "primarily from right (hearth) and front"
+      color_temperature: "warm amber/orange"
+      shadow_depth: "deep, creating dramatic chiaroscuro on faces"
+      atmospheric: "smoky indoor haze"
+    palette:
+      dominant:
+        - "umber brown"
+        - "burnt sienna"
+        - "deep ochre"
+        - "charcoal grey"
+      accent:
+        - "firelight orange"
+        - "cream shirt"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "dark curly hair"
+        - "passionate singing expression"
+        - "rustic orange-brown tunic"
+        - "wooden lute-style instrument"
+        - "leather satchel"
+      notes: "The image perfectly establishes the character's canonical appearance as a performing bard in a rustic setting."
+  - id: "young-bard-young-bard-performing-the-legend-1766317398215-2025-12-21-01"
+    path: "images/young-bard-performing-the-legend-1766317398215-2025-12-21.jpg"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "The Bard's Captivating Performance"
+      description: "A medium shot of a young bard playing a lute with an enraptured upward gaze inside a crowded tavern. Warm light from a fireplace and lamps illuminates him and the captivated audience members holding tankards around him. The image is rendered in a rich, dramatic oil painting style."
+      alt_text: "A young bard in a rust-red tunic plays a lute in a warm tavern, looking up with wonder while patrons around him listen intently, rendered in an oil painting style."
+      tags:
+        - "scene"
+        - "canon"
+        - "oil-painting"
+        - "tavern"
+        - "dramatic"
+      suggested_filename: "bards-captivating-performance"
+      composition_notes: "A medium shot capturing the bard centrally, positioned slightly above the seated audience. The warm backlight from the fireplace frames him, while the gazes of the surrounding patrons direct focus to his face and instrument.\n"
+      narrative_significance: "This image captures the Bard in his primary element as a storyteller and performer, demonstrating his charismatic ability to hold the attention of a room.\n"
+      symbolic_elements: "The upward gaze suggests divine inspiration or a connection to the stories he tells; the central hearth emphasizes communal gathering and warmth.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "young-bard-performing-the-legend-1766317398215-2025-12-21.jpg"
+    image_type: "scene"
+    image_subtype: "interior"
+    lighting:
+      primary_source: "fireplace and warm lamps"
+      quality: "dramatic, directional, painterly glow"
+      direction: "backlighting (fireplace) with front-left fill"
+      color_temperature: "warm golden/amber"
+      shadow_depth: "deep and dramatic"
+      atmospheric: "warm haze from fire and smoke"
+    palette:
+      dominant:
+        - "rust red"
+        - "sepia brown"
+        - "warm gold"
+        - "deep charcoal shadow"
+      accent:
+        - "flame orange"
+        - "creamy off-white"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "young adult male appearance"
+        - "tousled brown hair"
+        - "proficiently playing a lute"
+        - "rustic traveling tunic"
+      notes: "The visual perfectly aligns with the archetypal presentation of a young tavern bard."
+  - id: "young-bard-young-bard-practicing-the-chorus-07-1766251422266-01"
+    path: "images/young-bard-practicing-the-chorus-07-1766251422266.png"
+    type: "generated"
+    status: "approved"
+    content:
+      title: "Young Bard Playing Lute In Tavern"
+      description: "A medium shot oil painting depicts a young bard with dark curly hair singing soulfully as he plays a lute. He is seated on wooden steps in a rustic tavern, bathed in warm light streaming through a large window behind him. The artistic style is rich and painterly, emphasizing texture and warm tones."
+      alt_text: "An oil painting of a young man in a rust-colored tunic playing a lute and singing while sitting on wooden steps inside a dimly lit tavern with a bright window background."
+      tags:
+        - "scene"
+        - "oil-painting"
+        - "bard"
+        - "tavern"
+        - "rustic"
+      suggested_filename: "young-bard-playing-lute-tavern"
+      composition_notes: "A medium shot frames the subject centrally, seated on diagonal steps that create leading lines. The bright window directly behind him provides strong backlighting, highlighting his silhouette and the instrument, creating a clear focal point.\n"
+      narrative_significance: "This image captures the bard in an intimate moment of practice or performance in a humble setting, establishing his dedication to his craft and his connection to common folk.\n"
+      symbolic_elements: "The intense light from the window frames his head like a halo, symbolizing musical inspiration or the transformative power of art in mundane settings.\n"
+    provenance:
+      source: "imported"
+      created_at: "2025-12-22"
+      original_filename: "young-bard-practicing-the-chorus-07-1766251422266.png"
+    image_type: "scene"
+    image_subtype: "interior"
+    lighting:
+      primary_source: "natural daylight through window"
+      quality: "strong directional backlighting with diffused ambient fill"
+      direction: "back"
+      color_temperature: "warm golden amber"
+      shadow_depth: "moderate, defining facial structure and fabric folds"
+      atmospheric: "slight interior dust haze"
+    palette:
+      dominant:
+        - "rust orange"
+        - "deep woody brown"
+        - "warm golden yellow"
+      accent:
+        - "dark charcoal grey"
+        - "creamy parchment white"
+    canon_analysis:
+      matches_description: true
+      verified_features:
+        - "young adult male definitive age"
+        - "appropriate bardic instrument (lute/oud type)"
+        - "rustic, travel-worn clothing style"
+      notes: "The image perfectly visualizes the archetype of a young bard in a period-appropriate setting, consistent with expected character traits."

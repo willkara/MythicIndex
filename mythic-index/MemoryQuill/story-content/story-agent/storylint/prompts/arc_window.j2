@@ -1,0 +1,12 @@
+You are an expert story-arc analyst.
+Return a JSON object ONLY that conforms to the provided schema.
+Do not include markdown or extra commentary.
+
+Schema:
+{{ schema | tojson }}
+
+Arc window chapters (ordered):
+{{ window | tojson }}
+
+Canon snapshots:
+{{ canon | tojson }}

@@ -1,0 +1,145 @@
+// =============================================================================
+// Status Bar Patterns - Shared Mixins for MemoryQuill Status Bars
+// =============================================================================
+
+// Base Status Bar Styling
+@mixin base-status-bar {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--border-light);
+  font-family: var(--font-ui);
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  min-height: 3rem;
+
+  // Add subtle texture
+  background-image: linear-gradient(45deg, var(--color-forged-iron-alpha) 0%, transparent 50%);
+}
+
+// Status Bar Layout Sections
+@mixin status-bar-layout {
+  .status-left,
+  .status-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .status-right {
+    justify-content: flex-end;
+  }
+
+  .status-center {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// Save Status Indicator
+@mixin save-status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--radius-md);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  transition: all var(--transition-fast) var(--ease-out);
+
+  &.unsaved {
+    color: var(--color-deep-amber);
+    border-color: var(--color-deep-amber);
+    background: var(--color-deep-amber-alpha);
+
+    .status-icon {
+      color: var(--color-deep-amber);
+    }
+  }
+
+  .status-icon {
+    font-size: 1rem !important;
+    width: 1rem !important;
+    height: 1rem !important;
+    color: var(--color-ancient-gold);
+  }
+
+  .status-text {
+    font-weight: var(--font-weight-medium);
+  }
+}
+
+// Consistency Status Indicator
+@mixin consistency-status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--radius-md);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  color: var(--text-secondary);
+
+  &.has-issues {
+    color: var(--status-warning);
+    border-color: var(--status-warning);
+    background: var(--status-warning-alpha);
+
+    .consistency-icon {
+      color: var(--status-warning);
+    }
+  }
+
+  .consistency-icon {
+    font-size: 1rem !important;
+    width: 1rem !important;
+    height: 1rem !important;
+    color: var(--status-success);
+  }
+
+  .consistency-text {
+    font-weight: var(--font-weight-medium);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+  }
+}
+
+// Selection Info Display
+@mixin selection-info {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+
+  .selection-icon,
+  .mode-icon {
+    font-size: 1rem !important;
+    width: 1rem !important;
+    height: 1rem !important;
+    color: var(--color-ancient-gold);
+  }
+
+  .selection-text,
+  .mode-text {
+    font-weight: var(--font-weight-medium);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+  }
+}
+
+// Mobile Status Bar
+@mixin status-bar-mobile {
+  padding: 0.5rem 0.75rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: stretch;
+
+  .status-left,
+  .status-center,
+  .status-right {
+    flex: none;
+    justify-content: center;
+  }
+}

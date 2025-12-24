@@ -1,0 +1,102 @@
+location:
+  slug: silent-hand-facility
+  name: Silent Hand Facility (Veridian Agronomics Research Center)
+  files:
+    overview:
+      path: locations/silent-hand-facility/overview.md
+      excerpt: ''
+      exists: true
+    description:
+      path: locations/silent-hand-facility/description.md
+      excerpt: ''
+      exists: true
+    inhabitants:
+      path: locations/silent-hand-facility/inhabitants.md
+      excerpt: ''
+      exists: true
+zones_manifest:
+  path: locations/silent-hand-facility/zones.yaml
+  zones:
+  - slug: blind-perspective
+    name: Reconnaissance Perspective
+  - slug: boathouse-egress
+    name: Boathouse and Lakeworks
+  - slug: confluence
+    name: Stream Confluence
+    featured_in_chapters:
+    - ch31-splintered-focus
+  - slug: conservatory-evening
+    name: Conservatory at Evening
+  - slug: conservatory-interior
+    name: Glass Conservatory Interior
+  - slug: detention-corridor
+    name: Sub-Basement Detention Corridor
+  - slug: exercise-period
+    name: Garden Exercise Period
+  - slug: gatehouse
+    name: Gatehouse
+    featured_in_chapters:
+    - ch31-splintered-focus
+  - slug: gatehouse-check
+    name: Gatehouse Security Check
+  - slug: gatehouse-threshold
+    name: Gatehouse and Arrival Court
+  - slug: glass-conservatory
+    name: Primary Research Conservatory (Glass Rotunda)
+  - slug: northern-hunter-blinds
+    name: Hunter's Blinds (Alpha & Beta)
+  - slug: observation-post
+    name: Observation Post
+    featured_in_chapters:
+    - ch28-the-road-north
+    - ch31-splintered-focus
+  - slug: perimeter
+    name: Perimeter
+    featured_in_chapters:
+    - ch28-the-road-north
+  - slug: stream-confluence
+    name: Stream Confluence and Grounds
+  - slug: sub-basement-detention
+    name: Sub-Basement Detention Complex
+  - slug: treeline
+    name: Treeline
+    featured_in_chapters:
+    - ch31-splintered-focus
+  - slug: tunnels
+    name: Tunnels
+    featured_in_chapters:
+    - ch28-the-road-north
+  - slug: underground-spine
+    name: Underground Utility Spine
+  - slug: valve-room
+    name: Water Treatment Master Valve Room
+  - slug: veridian-manor-public
+    name: Veridian Manor (Public Floors)
+  - slug: water-treatment-complex
+    name: Water Treatment Complex
+  - slug: waterworks
+    name: Waterworks
+    featured_in_chapters:
+    - ch31-splintered-focus
+chapter_evidence:
+- slug: ch28-the-road-north
+  files:
+    content:
+      path: chapters/ch28-the-road-north/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch28-the-road-north/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+- slug: ch31-splintered-focus
+  files:
+    content:
+      path: chapters/ch31-splintered-focus/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch31-splintered-focus/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+intrinsic_characters: []

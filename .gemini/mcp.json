@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "memoryquill": {
+      "command": "node",
+      "args": [
+        "/home/willkara/source/MemoryQuill/mythic-index/mcp-server/dist/index.js"
+      ],
+      "env": {
+        "CLOUDFLARE_ACCOUNT_ID": "669daa4955e836aa1b5765242447e624",
+        "CLOUDFLARE_D1_DATABASE_ID": "a3f97481-6340-44c7-ae75-06dcf0c76ac2",
+        "CLOUDFLARE_API_TOKEN": "${CLOUDFLARE_API_TOKEN}",
+        "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+        "GOOGLE_API_KEY": "${GOOGLE_API_KEY}"
+      }
+    }
+  }
+}

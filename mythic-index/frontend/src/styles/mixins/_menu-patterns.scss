@@ -1,0 +1,201 @@
+// =============================================================================
+// Menu Patterns - Shared Mixins for MemoryQuill Menus and Dropdowns
+// =============================================================================
+
+// Base Menu Styling (for Material menus and custom dropdowns)
+@mixin base-menu {
+  background: var(--bg-elevated) !important;
+  border: 1px solid var(--border-medium) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-lg) !important;
+}
+
+// Menu Item Styling
+@mixin menu-item {
+  color: var(--text-secondary) !important;
+  font-family: var(--font-ui) !important;
+  transition: all var(--transition-fast) var(--ease-out);
+
+  &:hover {
+    background: var(--interactive-hover) !important;
+    color: var(--text-primary) !important;
+  }
+
+  .mat-icon {
+    color: var(--color-ancient-gold) !important;
+    margin-right: 0.75rem !important;
+  }
+}
+
+// Menu Divider
+@mixin menu-divider {
+  border-color: var(--border-light) !important;
+  margin: 0.5rem 0 !important;
+}
+
+// Context Menu (Right-click menus)
+@mixin context-menu {
+  @include base-menu;
+  min-width: 200px;
+
+  .menu-item {
+    @include menu-item;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &.destructive {
+      color: var(--color-ruby-garnet) !important;
+
+      .mat-icon {
+        color: var(--color-ruby-garnet) !important;
+      }
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+
+      &:hover {
+        background: transparent !important;
+        color: var(--text-secondary) !important;
+      }
+    }
+  }
+}
+
+// Dropdown Menu Styling
+@mixin dropdown-menu {
+  @include base-menu;
+
+  .dropdown-header {
+    padding: 0.75rem 1rem;
+    background: var(--bg-hover);
+    border-bottom: 1px solid var(--border-light);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-primary);
+    font-size: var(--font-size-sm);
+  }
+
+  .dropdown-item {
+    @include menu-item;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .item-icon {
+      font-size: 1.1rem;
+      margin-right: 0.5rem;
+      color: var(--text-secondary);
+    }
+
+    .item-text {
+      flex: 1;
+    }
+
+    .item-shortcut {
+      font-size: var(--font-size-xs);
+      color: var(--text-muted);
+      margin-left: 1rem;
+    }
+  }
+}
+
+// Navigation Menu (for sidebars and navigation)
+@mixin navigation-menu {
+  .nav-section {
+    border-bottom: 1px solid var(--border-light);
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      padding: 0.75rem 1rem;
+      background: var(--bg-elevated);
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background: var(--bg-hover);
+      }
+
+      .section-icon {
+        color: var(--text-secondary);
+        margin-right: 0.5rem;
+        font-size: 1.1rem;
+        transition: transform 0.2s ease;
+      }
+
+      .section-title {
+        flex: 1;
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: var(--text-primary);
+      }
+
+      .section-count {
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+      }
+    }
+
+    .section-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+
+      &.expanded {
+        max-height: 500px;
+      }
+    }
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+
+    &:hover {
+      background: var(--bg-hover);
+    }
+
+    &.active {
+      background: var(--bg-hover);
+      border-left-color: var(--color-ancient-gold);
+
+      .nav-title {
+        color: var(--color-ancient-gold);
+        font-weight: 500;
+      }
+    }
+
+    .nav-icon {
+      color: var(--text-secondary);
+      margin-right: 0.75rem;
+      font-size: 1.1rem;
+    }
+
+    .nav-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+
+      .nav-title {
+        font-size: 0.85rem;
+        color: var(--text-primary);
+        font-weight: 400;
+        line-height: 1.2;
+      }
+
+      .nav-meta {
+        font-size: 0.75rem;
+        color: var(--text-secondary);
+      }
+    }
+  }
+}

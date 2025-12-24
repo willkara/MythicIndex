@@ -1,0 +1,434 @@
+chapter_analysis:
+  slug: "ch15-battle-for-westwall"
+  chapter_number: 15
+  chapter_title: "The Battle for Westwall"
+  
+  visual_thesis: "From the howling communion of the wild to the shattered silence of sacrifice—a guardian's power burns itself to ash for family."
+  
+  dominant_mood_progression:
+    - "tense anticipation"
+    - "coordinated resistance"
+    - "desperate fury"
+    - "agonized transformation"
+    - "exhausted relief"
+  
+  color_story:
+    opening: "pre-dawn indigo, amber torchlight, wolf-shadow gray"
+    climax: "blood crimson, silver fur, fire orange, bone white"
+    closing: "pale morning gold, bandage white, ash gray"
+
+  key_locations:
+    - slug: "westwall-watchpost-battlements"
+      name: "Westwall Watchpost - Eastern Tower and Walls"
+      visual_character: "Ashlar stone parapets catching the first light; crenellations create harsh geometric shadows; improvised ballistae and oil barrels mark human ingenuity against approaching death"
+      time_of_day: "dawn through mid-morning"
+      weather_atmosphere: "clear, cold spring morning; smoke begins to drift as battle progresses"
+      
+    - slug: "westwall-watchpost-courtyard"
+      name: "Westwall Watchpost - Central Courtyard"
+      visual_character: "Blood-soaked flagstones and churned mud; debris from crumbled east wall; bodies and broken weapons scattered; the breach a raw wound in the stone"
+      time_of_day: "mid-morning"
+      weather_atmosphere: "smoke-filled air, acrid smell of burning oil"
+      
+    - slug: "westwall-watchpost-medical-station"
+      name: "Medical Station (Converted Barracks)"
+      visual_character: "Low-ceilinged space transformed into triage; bandages and bloody rags; Aldwin's organized chaos of herbs and instruments; wounded laid in rows"
+      time_of_day: "during assault"
+      weather_atmosphere: "protected from elements but tension-thick"
+      
+    - slug: "westwall-watchpost-interior"
+      name: "Watchpost Keep Interior"
+      visual_character: "Stone walls blackened by smoke; barricaded doors; improvised stretchers; filtered light through arrow slits"
+      time_of_day: "late morning to aftermath"
+      weather_atmosphere: "smoke-filled, then clearing to soft daylight"
+
+  active_characters:
+    - slug: "vera-moonwhisper"
+      name: "Vera Moonwhisper"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "protagonist"
+      emotional_arc: "watchful guardian → unleashed fury → shattered vessel → fragile survivor"
+      arc_context: "This chapter marks her most extreme use of self-taught druidic magic—the transformation that nearly kills her and will require weeks of recovery. She chooses family over self-preservation."
+      visual_identifiers: "Lean, rangy build; thick dark chestnut brown hair in long practical braid; clear hazel eyes shifting to amber during magic use; pointed ear tips; faint green vine markings on right cheek; deep forest-green hooded cloak; brown leather jerkin; Whisperwind quarterstaff-bow; brass locket on leather cord; Echo the raven as constant companion"
+      draft_warning: false
+      
+    - slug: "veyra-thornwake"
+      name: "Veyra Thornwake"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "protagonist"
+      emotional_arc: "commanding calm → fighting fury → desperate hope → weary relief"
+      arc_context: "Demonstrates her evolution from sole survivor to leader who fights alongside her people, not above them. The near-loss of Vera tests her commitment to 'no one left behind.'"
+      visual_identifiers: "Wiry, muscular build; dark complexion; spiky dark mohawk with shaved sides, feathered braids; mottled burn scar from jaw to temple on left side; teal-blue swirling tattoos on neck and left arm; dark sharp eyes; weatherworn leather coat with mismatched armor plates; battered metal lantern at hip glowing soft gold"
+      draft_warning: false
+      
+    - slug: "grimjaw-ironbeard"
+      name: "Grimjaw Ironbeard"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "confident preparation → tactical engagement → grim satisfaction"
+      arc_context: "This battle validates his engineering expertise—his preparations save lives. His experience bridges three decades of siege warfare to this desperate defense."
+      visual_identifiers: "Short, stocky, barrel-chested; ruddy, weathered skin; iron-gray hair merging into magnificent chest-covering beard with thick central braid and metal bands/charms; deep-set dark eyes under bushy gray brows; heavy utilitarian mining gear as armor; copper-colored riveted pauldrons; 'Tremor' sledgehammer"
+      draft_warning: false
+      
+    - slug: "thorne-brightward"
+      name: "Thorne Brightward"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "disciplined command → mobile crisis response → exhausted resolve"
+      arc_context: "His patrol operates as the Company's rapid response force, demonstrating years of shared combat experience. This is his command style at its most tested."
+      visual_identifiers: "Broad-shouldered, sturdy build; short steel-gray military-cut hair with untamed bangs; thick groomed gray mustache; deep-set brown eyes; weathered but kind face; faded deep blue wool cloak with golden sunburst Last Light Company sigil; steel breastplate over chainmail; iron lantern; heavy shield"
+      draft_warning: false
+      
+    - slug: "mistress-elba"
+      name: "Mistress Elba"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "grim preparation → fierce protection → exhausted mothering"
+      arc_context: "Reveals the depth beneath her grandmother persona—she will kill to protect 'her boys and girls.' Her courage surprises everyone including herself."
+      visual_identifiers: "4'2\" solid blocky dwarven frame; broad shoulders, thick muscular forearms; iron-gray hair with copper-red braid wrapped like headband and plait over shoulder; deep amber sharp eyes; warm ruddy complexion; earth-brown wool dress with sleeves pushed up; heavy beige canvas apron stained with grease and flour; small gold hoop earrings"
+      draft_warning: false
+      
+    - slug: "finn"
+      name: "Finn"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "terrified nervousness → focused competence → near-death → protective courage"
+      arc_context: "His first real battle transforms him from stable boy to warrior. Being saved by Vera and then defending her creates a life-debt bond."
+      visual_identifiers: "Young adult, late teens/early twenties; lean wiry frame with forearm muscle; fair to light tan skin; dark brown short tousled hair; hazel eyes; humble earth-tone stable wear; dark brown wool/leather tunic with rolled sleeves; simple brown belt; curved wooden recurve bow"
+      draft_warning: false
+      
+    - slug: "aldwin-gentleheart"
+      name: "Brother Aldwin Gentleheart"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "clinical preparation → desperate efficiency → profound worry"
+      arc_context: "Operates triage under fire, embodying his 'first do no harm unless they harm my patients' philosophy. Vera's survival becomes his personal mission."
+      visual_identifiers: "Compact sturdy halfling; curly dark charcoal-brown hair frosted with silver; warm dark hazel eyes; rounded nose; weathered ruddy face; moss-green wool cloak/cowl; studded brown leather doublet; dark brown fingerless gloves; belt with leather pouches and round flask; copper heating pan and herbal supplies"
+      draft_warning: false
+      
+    - slug: "sergeant-kelen"
+      name: "Sergeant Kelen"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "steady discipline → fierce coordination → protective urgency"
+      arc_context: "Demonstrates why he's Thorne's trusted second—his leadership under fire anchors the patrol's effectiveness."
+      visual_identifiers: "5'10\" solid functional frame; iron-gray regulation-short hair thinning at temples; weathered brown eyes with crow's feet; old knife scar along left jawline; calloused hands with burns and nicks; immaculately maintained City Guard plate armor; polished steel, well-oiled leather straps; longsword, military dagger, heavy shield with Company emblem"
+      draft_warning: false
+
+candidate_moments:
+  - moment_id: "ch15-battle-for-westwall-moment-01"
+    source_scene: "scn-15-04"
+    
+    narrative_beat: "In the pre-dawn darkness, Vera stands atop the eastern tower with Echo on her shoulder, her eyes shifting from hazel to amber as she communes with the approaching wolf packs. She whispers 'They're coming' as the eastern sky begins to lighten."
+    subtext: "The moment when the wild recognizes one of its own—Vera bridges human civilization and primal nature, calling forth allies that exist outside human hierarchies of warfare."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 5
+      symbolic_density: 5
+      total: 22
+    
+    score_rationale:
+      character_revelation_note: "From development.md: Vera's self-taught druidic magic and animal partnerships are central to her identity. This moment shows her unique communion with the wild before the cost of that connection becomes horrifyingly clear."
+      relationship_context: "Her relationship with Echo (raven companion) is established as both practical and emotional anchor. The wolves answer her call, establishing the pack loyalty that defines her found family ethic."
+    
+    suggested_type: "mood"
+    primary_subject: "Vera Moonwhisper standing in silhouette"
+    secondary_elements:
+      - "Echo the raven perched on her shoulder"
+      - "Pre-dawn sky lightening to the east"
+      - "Tower battlements framing her figure"
+      - "Suggestion of forest darkness below with implied wolf shapes"
+    
+    suggested_framing: "medium"
+    suggested_angle: "low"
+    
+    key_visual_hook: "Her eyes glowing amber against the pre-dawn darkness, an unnatural light that marks her as something between worlds"
+    
+    lighting_suggestion: "Pre-dawn blue hour with first hints of gold on the horizon; her amber eyes provide internal light source"
+    
+    emotional_color: "watchful communion, pregnant anticipation"
+    
+    characters_present:
+      - slug: "vera-moonwhisper"
+        has_canonical_visuals: true
+        role_in_moment: "Standing vigil, her consciousness split between human awareness and wild communion; the last moment of control before chaos"
+    
+    source_excerpts:
+      - "Vera took the final watch with Echo, the one that would blend into dawn. She stood atop the eastern tower, her enhanced senses already picking up what others couldn't—the distant sound of armor, the smell of oil and steel carried on the wind."
+      - "The wolves were closer now. She could feel them moving through the darkness, taking positions in the forest."
+      - "As the eastern sky began to lighten, almost imperceptibly at first, Echo stirred on her shoulder. The raven's head cocked, listening to something beyond human hearing."
+      - "Vera's eyes shifted from hazel to amber in the pre-dawn darkness."
+    
+    selection_rationale: "This atmospheric beat establishes Vera's druidic nature before the transformation sequence, creating visual contrast between her controlled communion here and the violent unleashing to come. The amber eyes motif anchors her character visually throughout the chapter."
+
+  - moment_id: "ch15-battle-for-westwall-moment-02"
+    source_scene: "scn-15-15"
+    
+    narrative_beat: "Vera's body convulses on the battlements as uncontrolled transformation rips through her—armor straps snapping, bones breaking and reforming, spine elongating, ribcage cracking outward, gray-silver fur erupting as she becomes a dire wolf twice the size of any natural beast. She locks eyes on her prey with an unnervingly human smirk."
+    subtext: "The cost of love made flesh—Vera abandons all control, burns through her own life force, sheds her humanity to save the boy who has become family. This is desperation transmuted into terrible power."
+    
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 5
+      narrative_pivot: 5
+      character_revelation: 5
+      symbolic_density: 5
+      total: 25
+    
+    score_rationale:
+      character_revelation_note: "From development.md: 'Abandoned all control for a violent, full dire wolf transformation, proving the Company is a family worth dying for.' This is the moment that defines her relationship with the Company permanently."
+      relationship_context: "She transforms because Finn—the nervous young man she reassured hours earlier—is about to die. The mother-wolf protecting her pack."
+    
+    suggested_type: "hero"
+    primary_subject: "Vera mid-transformation on the battlements"
+    secondary_elements:
+      - "Armor fragments and torn leather falling away"
+      - "Silver-gray fur erupting across distorting flesh"
+      - "Battlements and stone beneath her claws"
+      - "Battle chaos visible below/behind"
+      - "Smoke and morning light"
+    
+    suggested_framing: "wide"
+    suggested_angle: "low"
+    
+    key_visual_hook: "The horrifying intersection of human expression (that deliberate smirk) on an emerging wolf face—amber eyes holding intelligent fury above lips peeling back from dagger-teeth"
+    
+    lighting_suggestion: "Morning sun filtered through battle smoke, catching the silver in her emerging fur; fire light from below casting orange highlights"
+    
+    emotional_color: "desperate sacrifice, primal emergence"
+    
+    characters_present:
+      - slug: "vera-moonwhisper"
+        has_canonical_visuals: true
+        role_in_moment: "Undergoing violent transformation—her human form literally breaking apart to become something more powerful and far more dangerous"
+    
+    source_excerpts:
+      - "Her body twisted on the wall, convulsing as if struck by lightning, the change ripping through her with violent speed."
+      - "The sound of her leather armor straps snapping like whip cracks mixed with something far more disturbing—bones breaking and reforming at impossible speed. Her spine elongated in a series of wet pops that seemed to echo off the stone walls"
+      - "Her ribcage cracked and expanded like a barrel bursting its hoops, forcing her forward as her hands darkened and extended into claws that scraped furrows in the ancient stone."
+      - "The transformation consumed her armor, her human form, her careful control—leaving something twice the size of any natural wolf crouched on the battlements. Silver-gray fur caught the smoke-filtered sunlight"
+      - "Her gaze found Serka. Locked onto her... a horrifying, utterly unnatural smirk twisted its features."
+    
+    selection_rationale: "This is the chapter's visual apex—the moment that transforms the battle and defines Vera's arc. The body horror of uncontrolled transformation combined with the deliberate, intelligent expression creates a uniquely disturbing and powerful image that no other scene in the chapter can match."
+
+  - moment_id: "ch15-battle-for-westwall-moment-03"
+    source_scene: "scn-15-12"
+    
+    narrative_beat: "When a mercenary breaks through and charges the medical station, Mistress Elba meets him with a kitchen cleaver to the neck. The dwarven grandmother stands over Aldwin's position like a mountain guardian, apron blood-splattered, eyes blazing with protective fury, snarling 'No one touches my boys!'"
+    subtext: "The domestic made lethal—the hearth-keeper becomes the hearth-defender. Grandmother love transmuted into killing force, revealing that her mothering instinct has always been protection at its core."
+    
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 5
+      symbolic_density: 4
+      total: 22
+    
+    score_rationale:
+      character_revelation_note: "From profile.md: 'Treats the Company like unruly children who need constant feeding and scolding, drawing on decades of grandmother experience.' This moment reveals that her grandmother love has teeth—literally."
+      relationship_context: "She protects Aldwin specifically—the gentle healer who needs defending while he saves lives. The contrast between them amplifies both characters."
+    
+    suggested_type: "anchor"
+    primary_subject: "Mistress Elba standing over the fallen mercenary with bloody cleaver"
+    secondary_elements:
+      - "Aldwin working on wounded behind her"
+      - "Medical supplies and bandages visible"
+      - "Blood splatter on her beige apron"
+      - "The mercenary's body at her feet"
+    
+    suggested_framing: "medium"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "The iron kitchen cleaver—a tool of nourishment—dripping with blood, held in a flour-dusted hand above a stained cooking apron"
+    
+    lighting_suggestion: "Interior lighting from medical station, warm but harsh; blood appearing dark against her beige apron"
+    
+    emotional_color: "fierce maternal fury, unexpected violence"
+    
+    characters_present:
+      - slug: "mistress-elba"
+        has_canonical_visuals: true
+        role_in_moment: "Standing as a blood-stained guardian, having just killed to protect 'her boys'—the grandmother transformed into warrior"
+      - slug: "aldwin-gentleheart"
+        has_canonical_visuals: true
+        role_in_moment: "Working on wounded behind her, the gentle healer she's protecting"
+    
+    source_excerpts:
+      - "Mistress Elba had abandoned all pretense of non-combatant status. When a mercenary broke through and charged the medical station, she met him with a kitchen cleaver to the neck."
+      - "The stout dwarf stood over Aldwin's position like a mountain guardian, her apron now splattered with blood that wasn't hers, her eyes blazing with protective fury."
+      - "'No one touches my boys! By stone and steel!' she snarled."
+    
+    selection_rationale: "This moment provides crucial character variety—a female dwarf as primary subject, different location (medical station), and a completely unexpected visual that subverts the 'cook' archetype while amplifying the found-family theme. The contrast between domestic imagery (apron, cleaver) and violence creates powerful cognitive dissonance."
+
+  - moment_id: "ch15-battle-for-westwall-moment-04"
+    source_scene: "scn-15-17"
+    
+    narrative_beat: "From the debris, a nightmare emerges—neither woman nor wolf but something horribly between. Vera, her body a twisted amalgam caught mid-transformation, lunges at Krag on all fours with broken, unnatural movements. Her clawed hands find his sword arm, her unnaturally powerful jaws clamp down, armor crumples, bones snap. Krag screams as his sword falls from a hand that will never hold one again."
+    subtext: "The cost of power made visceral. Vera's body is literally destroying itself to deliver this final blow—the hybrid form is not a choice but a failure of control, yet she uses even her own destruction as a weapon to break the breaker."
+    
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 5
+      narrative_pivot: 5
+      character_revelation: 5
+      symbolic_density: 5
+      total: 25
+    
+    score_rationale:
+      character_revelation_note: "From development.md: The transformation 'nearly destroyed her, causing a horrifying hybrid-state reversion.' This isn't power—it's power failing, her body caught between forms. She uses even her own destruction as a weapon."
+      relationship_context: "Krag represents the external threat to her found family. By destroying his ability to harm (his sword arm), she protects everyone even as she destroys herself."
+    
+    suggested_type: "anchor"
+    primary_subject: "Hybrid Vera attacking Krag"
+    secondary_elements:
+      - "Krag's massive armored form recoiling"
+      - "His ruined sword arm in her jaws"
+      - "Debris and rubble from her hiding spot"
+      - "His massive sword falling from nerveless fingers"
+    
+    suggested_framing: "medium"
+    suggested_angle: "dutch"
+    
+    key_visual_hook: "Her face—slick with blood, caught between human features and lupine snout, amber eyes holding human fury in an inhuman arrangement"
+    
+    lighting_suggestion: "Harsh morning light cutting through battle smoke, casting stark shadows across the hybrid form; fire light reflecting off Krag's armor"
+    
+    emotional_color: "horrifying triumph, body horror salvation"
+    
+    characters_present:
+      - slug: "vera-moonwhisper"
+        has_canonical_visuals: true
+        role_in_moment: "Hybrid form—human limbs and lupine features in nightmarish combination, using her own destruction as a weapon"
+    
+    source_excerpts:
+      - "From the rubble emerged a nightmare. Not a wolf, not a woman, but something horribly in between. On all fours, she moved with a broken, unnatural gait, her body a twisted amalgam of human limbs and lupine features."
+      - "Her eyes were amber pools of pure, feral rage, her face slick with fresh blood."
+      - "She didn't stalk; she lunged from the wreckage with the desperate, primal force of a predator making its last stand."
+      - "Her clawed hands found his exposed sword arm, and her jaws, still unnaturally powerful, clamped down."
+      - "Armor crumpled like tin. Bones snapped like twigs. Krag's scream was high and terrible as his sword fell from a hand that would never hold one again."
+    
+    selection_rationale: "This is the narrative pivot—the moment that breaks enemy morale and decides the battle. The hybrid form represents the ultimate cost of Vera's sacrifice, more visually disturbing than the full transformation because it shows failure and determination intertwined. The body horror combined with triumph creates an emotionally complex image."
+
+  - moment_id: "ch15-battle-for-westwall-moment-05"
+    source_scene: "scn-15-20"
+    
+    narrative_beat: "The surviving defenders form a ragged circle in the courtyard, shields locked around Vera's unconscious form. Veyra, Thorne, Grimjaw, Finn—all bloodied and exhausted—stand back to back as thirty mercenaries close in. This is the last stand, and they've chosen to die together rather than abandon their fallen."
+    subtext: "Found family made manifest in geometry—the circle that protects one of their own. They are not defending a position but a person, and the formation says everything about what the Company has become."
+    
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 4
+      symbolic_density: 5
+      total: 22
+    
+    score_rationale:
+      character_revelation_note: "Multiple characters unified in purpose—their individual development arcs (Thorne's duty, Grimjaw's protection, Finn's courage) all converge in this collective choice to die together."
+      relationship_context: "From Veyra's profile: 'No one left behind.' This formation literalizes her philosophy—they will not abandon Vera even if it means dying."
+    
+    suggested_type: "symbol"
+    primary_subject: "The defensive circle with Vera at center"
+    secondary_elements:
+      - "Multiple recognizable characters in formation"
+      - "Locked shields and raised weapons"
+      - "Vera's unconscious form on the ground"
+      - "Mercenaries closing in from all sides"
+      - "Smoke and debris of the ruined courtyard"
+    
+    suggested_framing: "wide"
+    suggested_angle: "high"
+    
+    key_visual_hook: "The geometric perfection of the circle against the chaos of the battlefield—order imposed by love against entropy of violence"
+    
+    lighting_suggestion: "Harsh mid-morning sun through smoke, creating dappled light; the circle of defenders casting converging shadows toward the center where Vera lies"
+    
+    emotional_color: "defiant unity, beautiful desperation"
+    
+    characters_present:
+      - slug: "vera-moonwhisper"
+        has_canonical_visuals: true
+        role_in_moment: "Unconscious at the center of the formation, reverted to human form, the reason for their last stand"
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Commanding the circle, embodying 'no one left behind' even unto death"
+      - slug: "thorne-brightward"
+        has_canonical_visuals: true
+        role_in_moment: "Anchoring the formation with his shield, military discipline holding the line"
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "Immovable presence in the circle, protecting his chosen family"
+      - slug: "finn"
+        has_canonical_visuals: true
+        role_in_moment: "Standing with the veterans, having earned his place through courage"
+    
+    source_excerpts:
+      - "They made their stand in the courtyard, a ragged circle of exhausted defenders around an unconscious woman."
+      - "'We are the Last Light!' Veyra declared, raising her sword. 'We hold!'"
+      - "The mercenaries charged. The first impact nearly shattered their line."
+      - "And they were. The shield wall bent, buckled, began to cave in three places at once. In moments, the circle around Vera would collapse entirely."
+    
+    selection_rationale: "This group moment crystallizes the chapter's theme of found family—individual heroes choosing collective sacrifice. The high angle allows capture of the protective geometry while showing the overwhelming odds. It provides visual variety from the close-quarters horror of other moments."
+
+  - moment_id: "ch15-battle-for-westwall-moment-06"
+    source_scene: "scn-15-24"
+    
+    narrative_beat: "Vera's eyes flutter open—unfocused, wrong, seeing things that aren't there. Her body trembles with fine tremors, and when she tries to speak only a rasping whine emerges. A tear slides from the corner of her eye as her hand, moving with agonizing slowness, finds Veyra's and squeezes with the strength of a newborn. Echo lands on the cot's edge, crooning sounds of comfort."
+    subtext: "The price of power revealed in fragility. The dire wolf who devastated armies is now unable to speak or grip. Her survival is a miracle, but the cost is written in every tremor, every unfocused moment. This is what protecting your family costs."
+    
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 5
+      symbolic_density: 4
+      total: 22
+    
+    score_rationale:
+      character_revelation_note: "From development.md: The transformation 'nearly destroyed her... requiring intervention from a Druid Circle to save her life.' This moment shows the aftermath—not heroic triumph but broken survival."
+      relationship_context: "Veyra finding Vera's hand mirrors their early relationship (Veyra rescuing Vera from the blizzard). Now Vera has saved others but needs saving herself. Echo's presence anchors her to identity."
+    
+    suggested_type: "detail"
+    primary_subject: "Vera's face and reaching hand"
+    secondary_elements:
+      - "Veyra's scarred hand clasping hers"
+      - "Echo on the cot's edge"
+      - "Makeshift medical bedding"
+      - "Soft morning light through window/door"
+    
+    suggested_framing: "close"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "The single tear tracking down her cheek, her eyes unfocused and wrong—alive but damaged, present but not entirely there"
+    
+    lighting_suggestion: "Soft, diffused morning light; intimate and quiet after the harsh battle lighting; warmth suggesting hope despite the damage"
+    
+    emotional_color: "fragile relief, beautiful cost"
+    
+    characters_present:
+      - slug: "vera-moonwhisper"
+        has_canonical_visuals: true
+        role_in_moment: "Waking from near-death, body broken, mind struggling to reconnect—the hero revealed as devastatingly vulnerable"
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Holding Vera's hand, commanding her to survive, the leader who almost lost her scout"
+    
+    source_excerpts:
+      - "Vera's eyes were open, but wrong—unfocused, darting, seeing things that weren't there. Her body trembled with fine tremors, and when she tried to speak, only a rasping whine emerged."
+      - "A tear slid from the corner of Vera's eye. Her hand, moving with agonizing slowness, found Veyra's and squeezed with the strength of a newborn kitten."
+      - "Echo landed on the cot's edge, making soft crooning sounds that Veyra had never heard from the raven before."
+      - "'Don't you dare call this worth it. You're going to recover, and you're going to yell at me for being dramatic, and we're going to have years of arguments about proper scouting protocols. That's an order.'"
+    
+    selection_rationale: "This intimate character moment provides essential emotional closure to the visual arc. After the horror of transformation and hybrid form, we need to see Vera as human—fragile, damaged, but alive. The close framing creates intimacy, and the single tear provides the key visual hook that anchors the emotional weight of her sacrifice."

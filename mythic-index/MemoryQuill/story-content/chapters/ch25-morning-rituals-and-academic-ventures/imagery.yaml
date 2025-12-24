@@ -1,0 +1,714 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: Morning Rituals and Academic Ventures
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch25-morning-rituals-and-academic-ventures"
+  chapter_number: 25
+  chapter_title: "Morning Rituals and Academic Ventures"
+  visual_thesis: "From the intimate warmth of pre-dawn domesticity to the imposing threshold of academic challenge, the Company's journey traces the distance between private rituals of care and public moments of courage."
+  color_palette:
+    primary:
+      - "#C4956A"
+      - "#8B6914"
+      - "#2C3E50"
+      - "#D4A574"
+    accent:
+      - "#E8DCC8"
+      - "#8B4513"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 1
+    pastoral: 3
+    celebratory: 1
+    aquatic: 0
+    ethereal: 0
+    intimate: 3
+    kinetic: 0
+    ominous: 0
+
+characters:
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: "Cooking bacon at predawn stove. Later, wearing a rose-embroidered apron and wielding a wooden spoon with military precision."
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "mistress-elba"
+    name: "Mistress Elba"
+    scene_variations: "In flannel nightgown, iron-gray hair loose and unbraided. Holding a meat cleaver in territorial defense."
+    reference_images:
+      - "mistress-elba-kitchen-portrait-01"
+
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: "Private morning ritual. Seated cross-legged, tending eternal flame and applying scar salve."
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "grimjaw-ironbeard"
+    name: "Grimjaw Ironbeard"
+    scene_variations: "Hunched at desk, frustrated by writing. Later, standing before the Spire, hand on compass pocket for reassurance."
+    reference_images:
+      - "grimjaw-ironbeard-portrait-01"
+
+  - ref: "aldwin-gentleheart"
+    name: "Aldwin Gentleheart"
+    scene_variations: "Sorting herbs for calm and clarity. Dapper plum tunic for the symposium."
+    reference_images:
+      - "aldwin-gentleheart-official-portrait-01"
+
+  - ref: "finn"
+    name: "Finn"
+    scene_variations: "Dusted with sawdust. Bringing tea to Grimjaw. Receiving bread in the market."
+    reference_images:
+      - "finn-stable-archer-01"
+
+  - ref: "marcus-heartbridge"
+    name: "Marcus Heartbridge"
+    scene_variations: "Impeccable charcoal doublet. Knowing smirk. Guiding the Company through academic territory."
+    reference_images:
+      - "marcus-heartbridge-portrait-study-01"
+
+locations:
+  - ref: "warehouse-complex"
+    zones:
+      - id: "kitchen"
+        chapter_context: "Pre-dawn workspace. Copper pans, single oil lamp glow. Steam and shadows."
+      - id: "mezzanine"
+        chapter_context: "Personal quarters. Spartan, functional. Lantern-lit sanctuary."
+      - id: "mess"
+        chapter_context: "Long communal tables. Clerestory light shafts. Convivial morning bustle."
+  - ref: "waterdeep-market"
+    zones:
+      - id: "overview"
+        chapter_context: "Awakening commerce. Scent of fresh bread. Narrow shop fronts and open squares."
+  - ref: "spire-of-learning"
+    zones:
+      - id: "entrance"
+        chapter_context: "Gleaming marble facade. Institutional grandeur. Threshold between practice and theory."
+
+moments:
+  - id: "ch25-morning-rituals-and-academic-ventures-moment-01"
+    scene_id: "scn-25-01"
+    title: "Territorial Cooking"
+    narrative_beat: "Mistress Elba confront Thorne in her predawn kitchen, a cleaver in hand and her hair wild."
+    visual_weight: "high"
+    characters_present:
+      - "thorne-brightward"
+      - "mistress-elba"
+    location_zone: "warehouse-complex/kitchen"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch25-morning-rituals-and-academic-ventures-moment-02"
+    scene_id: "scn-25-02"
+    title: "Ritual of the Flame"
+    narrative_beat: "Veyra tending her eternal lantern and applying salve to her scars in the pre-dawn quiet."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "warehouse-complex/mezzanine"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch25-morning-rituals-and-academic-ventures-moment-03"
+    scene_id: "scn-25-02"
+    title: "Scholarly Frustration"
+    narrative_beat: "Grimjaw hunched over his desk, surrounded by crumpled parchment, struggling with his lecture."
+    visual_weight: "medium"
+    characters_present:
+      - "grimjaw-ironbeard"
+    location_zone: "warehouse-complex/mezzanine"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch25-morning-rituals-and-academic-ventures-moment-04"
+    scene_id: "scn-25-03"
+    title: "Captain's Hash"
+    narrative_beat: "Thorne serving breakfast in a rose-embroidered apron, maintaining military dignity."
+    visual_weight: "hero"
+    characters_present:
+      - "thorne-brightward"
+      - "mistress-elba"
+      - "veyra-thornwake"
+      - "grimjaw-ironbeard"
+    location_zone: "warehouse-complex/mess"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch25-morning-rituals-and-academic-ventures-moment-05"
+    scene_id: "scn-25-04"
+    title: "Market Appreciation"
+    narrative_beat: "The Company receiving gifts of bread and tools as they walk through the market, recognized as neighbors."
+    visual_weight: "medium"
+    characters_present:
+      - "finn"
+      - "grimjaw-ironbeard"
+    location_zone: "waterdeep-market/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch25-morning-rituals-and-academic-ventures-moment-06"
+    scene_id: "scn-25-04"
+    title: "The Master's Compass"
+    narrative_beat: "Two sets of calloused dwarven hands meeting around a gleaming brass compass gift."
+    visual_weight: "high"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "jorik-thornfield"
+    location_zone: "waterdeep-market/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch25-morning-rituals-and-academic-ventures-moment-07"
+    scene_id: "scn-25-05"
+    title: "Threshold of Theory"
+    narrative_beat: "The Company standing before the grand marble doors of the Spire, supporting Grimjaw."
+    visual_weight: "hero"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "aldwin-gentleheart"
+      - "marcus-heartbridge"
+      - "finn"
+    location_zone: "spire-of-learning/entrance"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch25-morning-rituals-and-academic-ventures-moment-08"
+    scene_id: "scn-25-05"
+    title: "Children's Questions"
+    narrative_beat: "Grimjaw crouching to explain engineering to a group of curious marketplace children."
+    visual_weight: "medium"
+    characters_present:
+      - "grimjaw-ironbeard"
+    location_zone: "waterdeep-market/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch25-morning-rituals-img-25-01-01"
+    source_moment: "ch25-morning-rituals-and-academic-ventures-moment-01"
+    scene_id: "scn-25-01"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: "Protective love expressed through territorial fierceness. Single warm light source, two parental figures recognizing each other."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Pre-dawn kitchen split by light and shadow. Thorne at the stove, broad back partially turned, single oil lamp casting his shadow forward. Mistress Elba silhouetted in the doorway, flannel nightgown, hair loose and wild, meat cleaver in hand. At 4'2", she fills the doorway with presence. Steam rising. Copper pans catch the light.
+    composition_notes: |
+      Split composition. Thorne right third, Elba left third. Cleaver at rule-of-thirds intersection. Diagonal tension between them.
+    visual_hook: "The gleaming meat cleaver catching lamplight against the silhouette of a dwarf in flannel nightgown, hair wild like a storm"
+    depicts_characters:
+      - "mistress-elba"
+      - "thorne-brightward"
+    character_states:
+      mistress-elba: |
+        Silhouetted in doorway. Nightgown. Hair loose and unbraided. Holding cleaver. Fierce expression.
+      thorne-brightward: |
+        Calm at stove. Civilian clothes. Stirring bacon. Acceptance in posture.
+    location: "warehouse-complex"
+    zone: "kitchen"
+    lighting:
+      primary_source: "single oil lamp"
+      quality: "soft, warm, intimate"
+      direction: "side/behind Thorne"
+      color_temperature: "warm amber"
+      shadow_depth: "soft gradients"
+      atmospheric: "steam from cooking"
+    palette:
+      dominant:
+        - "amber gold"
+        - "soft rose"
+        - "honey brown"
+      accent:
+        - "steel cleaver"
+      avoid:
+        - "harsh whites"
+    prompt_used: |
+      Dwarf woman in nightgown with wild loose hair holding a meat cleaver in a doorway,
+      man at a stove cooking bacon in a dark kitchen,
+      single oil lamp casting long shadows and warm light,
+      steam rising from pans,
+      atmosphere of territorial domesticity,
+      classical oil painting, Vermeer lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, armor
+    tags:
+      - "hero"
+      - "domestic"
+      - "elba"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch25-morning-rituals-img-25-02-01"
+    source_moment: "ch25-morning-rituals-and-academic-ventures-moment-02"
+    scene_id: "scn-25-02"
+    image_type: "anchor"
+    category:
+      - "character"
+      - "emotion"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: "Veyra's ritual of acceptance. Tending flame and scars with equal reverence. Single warm source, meditative."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Veyra seated cross-legged on her cot in predawn darkness. Battered metal lantern on nightstand, eternal flame casting warm light. Small mirror propped against lantern. Veyra working salve into her starburst facial scar with circular motions. Dark eyes peaceful in the reflection. Teal tattoos visible.
+    composition_notes: |
+      Close framing. Veyra center-left. Lantern and mirror right edge. Triangle of Veyra-flame-reflection. Shallow depth.
+    visual_hook: "Her fingers working salve into the mottled starburst burn scar, the lantern's eternal flame reflected in the mirror"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Seated cross-legged. Meditative. Applying salve to left cheek scar. Peaceful eyes. Braid with feathers visible.
+    location: "warehouse-complex"
+    zone: "mezzanine"
+    lighting:
+      primary_source: "lantern eternal flame"
+      quality: "soft, warm, intimate"
+      direction: "side"
+      color_temperature: "warm amber-gold"
+      shadow_depth: "soft gradients"
+      atmospheric: "still, private"
+    palette:
+      dominant:
+        - "amber gold"
+        - "earth brown"
+        - "warm sienna"
+      accent:
+        - "teal-blue tattoo"
+        - "red-brown scar"
+      avoid:
+        - "harsh whites"
+    prompt_used: |
+      Scarred half-elf woman sitting on a cot tending to her facial burn with salve,
+      battered lantern with golden flame on nightstand,
+      small mirror reflecting her face,
+      peaceful meditative atmosphere,
+      warm amber light in dark room,
+      classical oil painting, Vermeer lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin, pain
+    tags:
+      - "anchor"
+      - "veyra"
+      - "scar"
+      - "ritual"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch25-morning-rituals-img-25-02-02"
+    source_moment: "ch25-morning-rituals-and-academic-ventures-moment-03"
+    scene_id: "scn-25-02"
+    image_type: "mood"
+    category:
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Struggle with academic expression. Master engineer reduced to uncertainty. Deep shadows isolate him."
+    aspect_ratio: "4:5"
+    orientation: "portrait"
+    size: "1024x1280"
+    visual_description: |
+      Grimjaw hunches over a small desk, surrounded by crumpled parchment discarded attempts. Single desk lamp casts a pool of light, rest of room in heavy shadow. Thick fingers grip quill too tightly. Page shows crossed-out lines. Braided beard catches light. Vulnerable posture.
+    composition_notes: |
+      High angle looking down. Grimjaw center. Chaos of crumpled paper surrounding. Dramatic vignette from lamp.
+    visual_hook: "Thick, scarred fingers gripping the quill too tightly, surrounded by the paper graveyard of rejected attempts"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+    character_states:
+      grimjaw-ironbeard: |
+        Hunched at desk. No armor. Frustrated expression. Deep set eyes. Quill gripped tight. Vulnerable.
+    location: "warehouse-complex"
+    zone: "mezzanine"
+    lighting:
+      primary_source: "desk lamp"
+      quality: "hard pool, dramatic vignette"
+      direction: "above/front"
+      color_temperature: "warm amber"
+      shadow_depth: "deep, heavy"
+      atmospheric: "isolated struggle"
+    palette:
+      dominant:
+        - "ochre"
+        - "sienna"
+        - "slate shadow"
+      accent:
+        - "parchment cream"
+      avoid:
+        - "bright colors"
+    prompt_used: |
+      Elderly dwarf hunched over a desk covered in crumpled paper,
+      gripping a quill with frustration,
+      single lamp creating a pool of light in a dark room,
+      magnificent gray beard,
+      atmosphere of self-doubt and struggle,
+      classical oil painting, Rembrandt lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, hammer, confident
+    tags:
+      - "mood"
+      - "grimjaw"
+      - "struggle"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch25-morning-rituals-img-25-03-01"
+    source_moment: "ch25-morning-rituals-and-academic-ventures-moment-04"
+    scene_id: "scn-25-03"
+    image_type: "anchor"
+    category:
+      - "character"
+      - "moment"
+      - "emotion"
+    scene_mood: "celebratory"
+    mood_rationale: "Communal warmth. Thorne in the rose apron. Convivial energy of family breakfast. Genre painting."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Mess hall filled with morning light through clerestory windows. Thorne at serving table wearing rose-embroidered apron over civilian clothes. Wielding wooden spoon with military precision. Geometric hash portions. Company members gathering, grinning at the spectacle. Warm, convivial energy.
+    composition_notes: |
+      Thorne center-left. Rose apron visible. Natural grouping of members creating depth. Golden light bars from high windows. Jan Steen tavern energy.
+    visual_hook: "Small embroidered roses along the apron trim contrasting with Thorne's steel-gray military bearing"
+    depicts_characters:
+      - "thorne-brightward"
+    character_states:
+      thorne-brightward: |
+        Serving breakfast. ROSE APRON visible. Military posture. Stoic, serious expression. Wooden spoon held like a baton.
+    location: "warehouse-complex"
+    zone: "mess"
+    lighting:
+      primary_source: "morning sun through high windows"
+      quality: "warm, multiple sources"
+      direction: "above/angled"
+      color_temperature: "warm gold"
+      shadow_depth: "soft, warm"
+      atmospheric: "warm cooking steam"
+    palette:
+      dominant:
+        - "gold"
+        - "burgundy wood"
+        - "warm amber"
+      accent:
+        - "rose pink trim"
+      avoid:
+        - "cold tones"
+    prompt_used: |
+      Military captain with gray mustache serving breakfast in a mess hall,
+      wearing a beige apron with embroidered roses,
+      holding a wooden spoon with dignity,
+      golden morning light streaming through high windows,
+      adventurers at long wooden tables laughing,
+      classical oil painting, Dutch genre warmth,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, armor
+    tags:
+      - "anchor"
+      - "thorne"
+      - "breakfast"
+      - "humor"
+      - "celebratory"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch25-morning-rituals-img-25-04-01"
+    source_moment: "ch25-morning-rituals-and-academic-ventures-moment-06"
+    scene_id: "scn-25-04"
+    image_type: "detail"
+    category:
+      - "moment"
+      - "symbol"
+    scene_mood: "pastoral"
+    mood_rationale: "Peer recognition. Compass gift representing direction and validation. Warm craft kinship."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Two sets of calloused dwarven hands meet around a brass compass. Jorik presses the tool into Grimjaw's palms. Compass face etched with measurements, catching morning light. Both hands scarred from lifetimes of work. Shop doorway soft in background.
+    composition_notes: |
+      Tight framing on hands and compass. Compass exact center. Shallow depth. Vertical anchor. Warm focal point on brass.
+    visual_hook: "Two sets of calloused dwarven hands meeting around the gleaming brass compass"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "jorik-thornfield"
+    character_states:
+      grimjaw-ironbeard: |
+        Hands only. Large, battered. Surprise and reverence.
+      jorik-thornfield: |
+        Hands only. Elderly, weathered. Deliberate care.
+    location: "waterdeep-market"
+    lighting:
+      primary_source: "natural morning sun"
+      quality: "soft, warm"
+      direction: "side"
+      color_temperature: "warm gold"
+      shadow_depth: "gentle"
+      atmospheric: "open street air"
+    palette:
+      dominant:
+        - "brass gold"
+        - "brown leather"
+        - "skin tones"
+      accent:
+        - "blue sky reflection"
+      avoid:
+        - "dark shadows"
+    prompt_used: |
+      Macro detail of two sets of calloused dwarven hands holding a gleaming brass compass,
+      etched measurements catching sunlight,
+      warm morning street light,
+      atmosphere of mutual respect and craft,
+      classical oil painting, high texture realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, faces
+    tags:
+      - "detail"
+      - "compass"
+      - "hands"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch25-morning-rituals-img-25-04-02"
+    source_moment: "ch25-morning-rituals-and-academic-ventures-moment-05"
+    scene_id: "scn-25-04"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: "The 'Character's Pride.' Neighborly bond. Simple sustenance as recognition. Warm and human."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Close-up of baker woman (Jenny) with flour-dusted hands pressing a paper-wrapped package of bread into Finn's hand. Bread is steaming. Background is sun-dappled market bustle. Focus on the exchange and Jenny's proud smile.
+    composition_notes: |
+      Centered square. Hands and package focal point. Baker face secondary focus. Shallow depth. Warm morning light.
+    visual_hook: "Flour-dusted hands pressing warm, steaming bread into a warrior's palm"
+    depicts_characters:
+      - "finn"
+    character_states:
+      finn: |
+        Receiving gift. Surprise and excitement.
+    location: "waterdeep-market"
+    lighting:
+      primary_source: "morning sun"
+      quality: "soft, warm"
+      direction: "side"
+      color_temperature: "warm golden"
+      shadow_depth: "gentle"
+      atmospheric: "fresh bread steam"
+    palette:
+      dominant:
+        - "bread brown"
+        - "paper tan"
+        - "flour white"
+      accent:
+        - "gold light"
+      avoid:
+        - "industrial tones"
+    prompt_used: |
+      Macro detail of flour-dusted hands giving a warm wrapped package of bread to a young man,
+      steaming fresh bread,
+      proud smiling baker woman,
+      sun-dappled market street background,
+      atmosphere of community and gratitude,
+      classical oil painting, Dutch genre influence,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "detail"
+      - "bread"
+      - "community"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch25-morning-rituals-img-25-05-01"
+    source_moment: "ch25-morning-rituals-and-academic-ventures-moment-07"
+    scene_id: "scn-25-05"
+    image_type: "symbol"
+    category:
+      - "moment"
+      - "symbol"
+      - "character"
+    scene_mood: "pastoral"
+    mood_rationale: "Threshold moment. Private prep complete, public challenge ahead. Supporting family. Contrast warm tones vs cool marble."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      The Company stands before imposing double doors of the Spire. Gleaming marble architecture. Grimjaw center, right hand pressed over vest pocket (compass). Resolute but nervous. Behind him: Veyra with lantern, Thorne in military stance, Aldwin, Marcus, Finn. Warm tones vs cool academic stone.
+    composition_notes: |
+      Ultra-wide cinematic. Grimjaw center forward. Hand on pocket focal point. Group in support formation. Low angle makes architecture imposing.
+    visual_hook: "Grimjaw's right hand pressed over his vest pocket where the compass rests, touching a talisman"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "aldwin-gentleheart"
+      - "marcus-heartbridge"
+      - "finn"
+    character_states:
+      grimjaw-ironbeard: |
+        Center forward. Hand on pocket. Resolute posture. Nervous expression.
+      veyra-thornwake: |
+        Steady support. Lantern glowing.
+      thorne-brightward: |
+        Military bearing. Travel gear.
+    location: "spire-of-learning"
+    lighting:
+      primary_source: "bright morning sun"
+      quality: "clear, natural"
+      direction: "above/behind"
+      color_temperature: "warm vs cool reflected"
+      shadow_depth: "gentle"
+      atmospheric: "clear spring morning"
+    palette:
+      dominant:
+        - "browns/leathers"
+        - "marble cream"
+        - "gold light"
+      accent:
+        - "lantern flame gold"
+      avoid:
+        - "dark shadows"
+    prompt_used: |
+      Group of adventurers standing before grand marble castle doors,
+      dwarf at center pressing hand to his pocket nervously but resolutely,
+      companions standing in support behind him,
+      gleaming white marble architecture in bright sunlight,
+      wide cinematic composition,
+      classical oil painting, plein air naturalism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, armor
+    tags:
+      - "symbol"
+      - "threshold"
+      - "support"
+      - "grimjaw"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch25-morning-rituals-img-25-05-02"
+    source_moment: "ch25-morning-rituals-and-academic-ventures-moment-08"
+    scene_id: "scn-25-05"
+    image_type: "beat"
+    category:
+      - "character"
+      - "emotion"
+    scene_mood: "pastoral"
+    mood_rationale: "Connection with the next generation. Honest teaching. Warmth and patience in the market."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Grimjaw crouching down to the level of a group of curious children in the market square. He is using his hands to show how blocks fit together. The children are wide-eyed and listening. Veyra is in the background, handing out meat pies to other children. Morning sun and soft shadows.
+    composition_notes: |
+      Medium shot. Grimjaw and children focal point. Low camera angle. Market bustle background. Warm, optimistic atmosphere.
+    visual_hook: "The massive, weathered dwarf rendered gentle and patient by the earnest curiosity of the children."
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "veyra-thornwake"
+    character_states:
+      grimjaw-ironbeard: |
+        Crouched. Patient expression. Gesturing with hands.
+      veyra-thornwake: |
+        Background. Handing out pies. Smiling.
+    location: "waterdeep-market"
+    lighting:
+      primary_source: "Natural sun"
+      quality: "Soft, morning"
+      direction: "Side"
+      color_temperature: "Golden"
+      shadow_depth: "Soft"
+      atmospheric: "Dust motes"
+    palette:
+      dominant:
+        - "stone gray"
+        - "warm brown"
+        - "gold light"
+      accent:
+        - "children's bright tunics"
+      avoid:
+        - "harshness"
+    prompt_used: |
+      Dwarf crouching to talk to a group of enchanted children in a marketplace,
+      explaining something with his hands,
+      woman in background sharing food with kids,
+      warm morning sunlight,
+      atmosphere of hope and mentorship,
+      classical oil painting, genre scene,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "mentorship"
+      - "community"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

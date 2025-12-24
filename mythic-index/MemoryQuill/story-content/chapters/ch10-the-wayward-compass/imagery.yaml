@@ -1,0 +1,880 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: The Wayward Compass
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch10-wayward-compass"
+  chapter_number: 10
+  chapter_title: "The Wayward Compass"
+  visual_thesis: "From the warm dust of camaraderie through the vibrant chaos of rescue to the cold tension of a standoff, then pivoting into the shadowed realm where information becomes the true weapon."
+  color_palette:
+    primary:
+      - "#8B7355"
+      - "#4A3728"
+      - "#D4A574"
+      - "#2F3640"
+    accent:
+      - "#C0392B"
+      - "#FFD700"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 2
+    pastoral: 1
+    celebratory: 1
+    aquatic: 0
+    ethereal: 1
+    intimate: 3
+    kinetic: 1
+    ominous: 1
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: "Full weathered leather armor. Burn scar prominent. Alert and calculating."
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: "Standard patrol gear. Blue cloak. Military urgency."
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "grimjaw-ironbeard"
+    name: "Grimjaw Ironbeard"
+    scene_variations: "Large pack. Copper pauldrons. Iron-gray beard."
+    reference_images:
+      - "grimjaw-ironbeard-portrait-01"
+
+  - ref: "quartermaster-fayne"
+    name: "Quartermaster Fayne"
+    scene_variations: "Holding scroll. Artist's hands. Practical calluses."
+    reference_images:
+      - "quartermaster-fayne-standard-portrait-01"
+
+  - ref: "marcus-heartbridge"
+    name: "Marcus Heartbridge"
+    scene_variations: "High-collared charcoal doublet. Neat mustache and goatee. Ornate rapier. Gold signet ring."
+    reference_images:
+      - "marcus-heartbridge-portrait-study-01"
+
+  - ref: "durja"
+    name: "Durja"
+    scene_variations: "Orc innkeeper. Crosshatched scars on arms. Broken tusk. Polishing tankard."
+    reference_images:
+      - "durja-tavern-keep-01"
+
+  - ref: "krag"
+    name: "Krag"
+    scene_variations: "Hulking orc. Flattened nose. Black hawk insignia on leather armor."
+    reference_images:
+      - "krag-reaper-portrait-01"
+
+locations:
+  - ref: "trade-way"
+    zones:
+      - id: "overview"
+        chapter_context: "Neglected road, rutted and cracked. Thick ochre dust. Wooded verges pressing close. Harsh midday sun."
+
+  - ref: "wayward-compass"
+    zones:
+      - id: "overview"
+        chapter_context: "Squat crossroads inn of timber and stone. Smoke from chimneys. Low beams, smoke-stained ceiling. Sawdust floors."
+
+moments:
+  - id: "ch10-wayward-compass-moment-01"
+    scene_id: "scn-10-01"
+    title: "The Dusty Column"
+    narrative_beat: "The small column of wagons and riders moving through the ochre dust of the neglected Trade Way."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "grimjaw-ironbeard"
+      - "quartermaster-fayne"
+    location_zone: "trade-way/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch10-wayward-compass-moment-02"
+    scene_id: "scn-10-01"
+    title: "The Logistics Check"
+    narrative_beat: "Fayne and Grimjaw discussing the road and supplies amidst the heat and insects."
+    visual_weight: "medium"
+    characters_present:
+      - "quartermaster-fayne"
+      - "grimjaw-ironbeard"
+    location_zone: "trade-way/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch10-wayward-compass-moment-03"
+    scene_id: "scn-10-02"
+    title: "The Broken Cart"
+    narrative_beat: "The discovery of the overturned cart and the scattered, colorful wool."
+    visual_weight: "hero"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "grimjaw-ironbeard"
+    location_zone: "trade-way/overview"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch10-wayward-compass-moment-04"
+    scene_id: "scn-10-02"
+    title: "Physical Rescue"
+    narrative_beat: "Grimjaw and Thorne lifting the cart while Veyra guides the woman to safety."
+    visual_weight: "critical"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "grimjaw-ironbeard"
+    location_zone: "trade-way/overview"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch10-wayward-compass-moment-05"
+    scene_id: "scn-10-03"
+    title: "Entering the Compass"
+    narrative_beat: "The company entering the Wayward Compass with the injured, causing a stir."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    location_zone: "wayward-compass/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch10-wayward-compass-moment-06"
+    scene_id: "scn-10-03"
+    title: "The Recognition"
+    narrative_beat: "Veyra and Durja recognizing each other as fellow survivors across the bar."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "durja"
+    location_zone: "wayward-compass/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch10-wayward-compass-moment-07"
+    scene_id: "scn-10-04"
+    title: "Black Hawk Silhouette"
+    narrative_beat: "Krag filling the doorway, his silhouette imposing threat on the room."
+    visual_weight: "high"
+    characters_present:
+      - "krag"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    location_zone: "wayward-compass/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch10-wayward-compass-moment-08"
+    scene_id: "scn-10-04"
+    title: "Theatrical Intervention"
+    narrative_beat: "Marcus stepping into the light to intercept Krag's aggression."
+    visual_weight: "high"
+    characters_present:
+      - "marcus-heartbridge"
+      - "krag"
+      - "veyra-thornwake"
+    location_zone: "wayward-compass/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch10-wayward-compass-moment-09"
+    scene_id: "scn-10-05"
+    title: "The Retainer"
+    narrative_beat: "Marcus offering the glowing Netherese coin as a gesture of 'goodwill'."
+    visual_weight: "high"
+    characters_present:
+      - "marcus-heartbridge"
+      - "veyra-thornwake"
+      - "quartermaster-fayne"
+    location_zone: "wayward-compass/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch10-wayward-compass-moment-10"
+    scene_id: "scn-10-05"
+    title: "The Shadow of Information"
+    narrative_beat: "The Company left with the coin, contemplating the cost of Marcus's secrets."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "grimjaw-ironbeard"
+    location_zone: "wayward-compass/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch10-wayward-compass-img-10-01-01"
+    source_moment: "ch10-wayward-compass-moment-01"
+    scene_id: "scn-10-01"
+    image_type: "establishing"
+    category:
+      - "location"
+      - "moment"
+    scene_mood: "pastoral"
+    mood_rationale: "The start of the journey. Harsh sun and dust, but also the open road and the beginning of a mission."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      A small column of heavy wagons and riders moves along the rutted, dusty Trade Way. Thick ochre dust rises in clouds from under wheels and hooves. The sun is high and harsh, bleaching the landscape. Wooded verges press close to the road. Veyra rides at the head, followed by Thorne, Fayne, and Grimjaw on his pony.
+    composition_notes: |
+      Wide cinematic shot. Perspective from side/front of column. Dust clouds create depth. Vanishing point of road in distance.
+    visual_hook: "The heavy ochre dust clouds engulfing the wagons, making the travelers look like they are emerging from the earth itself."
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "grimjaw-ironbeard"
+      - "quartermaster-fayne"
+    character_states:
+      veyra-thornwake: |
+        Leading column. Dust-coated armor. Focused expression.
+      thorne-brightward: |
+        Scanning wooded verges. Hand near sword.
+      grimjaw-ironbeard: |
+        Riding pony. Grumbling expression visible.
+      quartermaster-fayne: |
+        Consulting scroll.
+    location: "trade-way"
+    lighting:
+      primary_source: "High sun"
+      quality: "Hard, bleaching"
+      direction: "Top-down"
+      color_temperature: "Sun-baked yellow"
+      shadow_depth: "Sharp, short"
+      atmospheric: "Thick dust motes"
+    palette:
+      dominant:
+        - "ochre dust"
+        - "sun-baked tan"
+        - "faded wood brown"
+      accent:
+        - "blue cloak glimpses"
+      avoid:
+        - "lush greens"
+    prompt_used: |
+      Wide cinematic shot of medieval wagons and riders moving down a rutted dusty road,
+      thick clouds of ochre dust rising from wheels and hooves,
+      harsh midday sun bleaching the landscape,
+      forested edges pressing close to the road,
+      armored riders and heavy supply wagons,
+      classical oil painting, landscape realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, lush grass, blue sky
+    tags:
+      - "establishing"
+      - "trade-way"
+      - "journey"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch10-wayward-compass-img-10-01-02"
+    source_moment: "ch10-wayward-compass-moment-02"
+    scene_id: "scn-10-01"
+    image_type: "beat"
+    category:
+      - "character"
+      - "humor"
+    scene_mood: "intimate"
+    mood_rationale: "Character interaction on the road. The shared annoyance of the dust and insects. A moment of normalcy."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Close-up of Fayne and Grimjaw riding side-by-side. Fayne is swatting at a cloud of gnats with his scroll. Grimjaw is gesturing at a massive pothole with a thick thumb, his face a mask of dwarven indignation. Both are covered in a fine layer of ochre dust.
+    composition_notes: |
+      Two-shot. Focused on expressions. Dust texture visible on gear and beards.
+    visual_hook: "The contrast between the gnome's frantic swatting and the dwarf's grounded, structural grievance."
+    depicts_characters:
+      - "quartermaster-fayne"
+      - "grimjaw-ironbeard"
+    character_states:
+      quartermaster-fayne: |
+        Swatting gnats. Annoyed expression.
+      grimjaw-ironbeard: |
+        Gesturing at road. Grumbling.
+    location: "trade-way"
+    lighting:
+      primary_source: "Harsh sun"
+      quality: "Directional"
+      direction: "Side"
+      color_temperature: "Warm"
+      shadow_depth: "Moderate"
+      atmospheric: "Dust and insects"
+    palette:
+      dominant:
+        - "ochre dust"
+        - "brown leather"
+        - "iron gray"
+      accent:
+        - "brass spectacles"
+      avoid:
+        - "cool tones"
+    prompt_used: |
+      Two fantasy adventurers on the road covered in dust,
+      gnome swatting at insects with a scroll,
+      dwarf gesturing angrily at a pothole,
+      harsh sunlight highlighting grit and sweat,
+      character interaction,
+      classical oil painting, genre scene,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "character"
+      - "humor"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch10-wayward-compass-img-10-02-01"
+    source_moment: "ch10-wayward-compass-moment-03"
+    scene_id: "scn-10-02"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "symbol"
+      - "location"
+    scene_mood: "somber"
+    mood_rationale: "Discovery of violence. The visual paradox of beautiful colors masking tragedy."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The overturned merchant cart broken across the dusty road. Bundles of dyed wool burst open—pools of crimson, azure, and gold. Dark blood spreading beneath. Distant silhouettes of riders approaching.
+    composition_notes: |
+      Low angle. Wreckage foreground. Scattered colors center. Riders upper right. Chiaroscuro in daylight.
+    visual_hook: "Brilliant pools of crimson, azure, and gold wool scattered like gore across dust-choked road"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "grimjaw-ironbeard"
+    character_states:
+      veyra-thornwake: |
+        Distant silhouette.
+      thorne-brightward: |
+        Distant silhouette.
+      grimjaw-ironbeard: |
+        Distant silhouette.
+    location: "trade-way"
+    lighting:
+      primary_source: "harsh midday sun"
+      quality: "hard, dramatic"
+      direction: "above"
+      color_temperature: "sun-baked"
+      shadow_depth: "deep black beneath cart"
+      atmospheric: "dust motes"
+    palette:
+      dominant:
+        - "ochre dust"
+        - "sun-bleached tan"
+      accent:
+        - "crimson wool"
+        - "azure wool"
+        - "gold wool"
+        - "dark blood"
+      avoid:
+        - "lush greens"
+    prompt_used: |
+      Overturned merchant cart on dusty road,
+      bundles of bright colorful wool scattered like blood,
+      actual dark blood spreading beneath,
+      distant riders approaching,
+      low angle wide shot,
+      classical oil painting, Rembrandt lighting in daylight,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, lush grass
+    tags:
+      - "hero"
+      - "trade-way"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch10-wayward-compass-img-10-02-02"
+    source_moment: "ch10-wayward-compass-moment-04"
+    scene_id: "scn-10-02"
+    image_type: "anchor"
+    category:
+      - "action"
+      - "character"
+      - "moment"
+    scene_mood: "kinetic"
+    mood_rationale: "Active rescue with physical stakes. Straining muscles and diagonal lines of effort."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Grimjaw and Thorne lifting the heavy cart corner. Veyra guiding the woman clear. Dust billows around them. Veyra's lantern glows at her belt.
+    composition_notes: |
+      Diagonal composition. Low angle looking up at straining figures. Veyra center.
+    visual_hook: "Veyra's scarred face set in concentration as her hands guide the woman clear, golden lantern glow catching dust"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "grimjaw-ironbeard"
+      - "thorne-brightward"
+    character_states:
+      veyra-thornwake: |
+        Crouched, guiding woman. Focused command.
+      grimjaw-ironbeard: |
+        Feet planted wide, straining.
+      thorne-brightward: |
+        Supporting weight.
+    location: "trade-way"
+    lighting:
+      primary_source: "harsh sun + lantern"
+      quality: "hard, dramatic"
+      direction: "above/behind"
+      color_temperature: "warm gold/amber"
+      shadow_depth: "harsh contrast"
+      atmospheric: "thick dust cloud"
+    palette:
+      dominant:
+        - "ochre dust"
+        - "steel gray"
+        - "leather brown"
+      accent:
+        - "amber glow"
+        - "blue dress"
+      avoid:
+        - "clean surfaces"
+    prompt_used: |
+      Dwarf and man straining to lift overturned cart,
+      scarred woman guiding trapped victim to safety,
+      billowing dust clouds in harsh sunlight,
+      glowing lantern at belt,
+      intense physical effort,
+      classical oil painting, Romantic dynamism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, static pose
+    tags:
+      - "anchor"
+      - "rescue"
+      - "kinetic"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch10-wayward-compass-img-10-03-01"
+    source_moment: "ch10-wayward-compass-moment-06"
+    scene_id: "scn-10-03"
+    image_type: "detail"
+    category:
+      - "character"
+      - "emotion"
+      - "moment"
+    scene_mood: "intimate"
+    mood_rationale: "Two survivors recognizing each other across a bar. Quiet poetry of Vermeer."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Durja the orc innkeeper resting scarred arms on the bar. Veyra sliding silver coins across. Both have earned scars. Amber lamplight. Smoke curls.
+    composition_notes: |
+      Close framing across bar. Both women opposing thirds. Coins focal point.
+    visual_hook: "Two pairs of hard-earned scars catching the same amber lamplight—Durja's crosshatched arms, Veyra's burned face"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "durja"
+    character_states:
+      veyra-thornwake: |
+        Sliding coins. Steady gaze. Burn scar prominent.
+      durja: |
+        Resting on bar. Assessing detail. Broken tusk.
+    location: "wayward-compass"
+    lighting:
+      primary_source: "overhead lamp"
+      quality: "soft, warm"
+      direction: "above/behind"
+      color_temperature: "amber gold"
+      shadow_depth: "gentle"
+      atmospheric: "smoke curls"
+    palette:
+      dominant:
+        - "amber"
+        - "oiled wood"
+        - "olive/brown skin"
+      accent:
+        - "silver coins"
+      avoid:
+        - "bright colors"
+    prompt_used: |
+      Orc innkeeper and scarred half-elf woman facing each other across a bar,
+      scarred arms resting on wood,
+      sliding silver coins,
+      warm amber lamplight and smoke,
+      moment of silent recognition,
+      classical oil painting, Vermeer lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smiling
+    tags:
+      - "detail"
+      - "recognition"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch10-wayward-compass-img-10-03-02"
+    source_moment: "ch10-wayward-compass-moment-05"
+    scene_id: "scn-10-03"
+    image_type: "establishing"
+    category:
+      - "location"
+      - "moment"
+    scene_mood: "somber"
+    mood_rationale: "Establishing the Wayward Compass. A low-beamed, smoky crossroads inn. The atmosphere of a place where people pause but never stay."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Interior of the Wayward Compass. Low blackened beams, smoke-stained ceiling. Sawdust on the floor with dark stains. Mismatched furniture in shadow pockets. A mix of patrons in the gloom. The Company entering, silhouetted by the doorway light, carrying the injured.
+    composition_notes: |
+      Wide shot. Deep perspective. Entry doorway focal point of light. Low horizon to emphasize beams.
+    visual_hook: "The low, heavy beams framing the entrance of the Company, their dust and blood highlighted by the door's glare."
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    character_states:
+      veyra-thornwake: |
+        Entering. Silhouette against door.
+      thorne-brightward: |
+        Supporting injured merchant.
+    location: "wayward-compass"
+    lighting:
+      primary_source: "Open door + scattered lamps"
+      quality: "Smoky, high contrast"
+      direction: "Backlit from door"
+      color_temperature: "Daylight white vs interior amber"
+      shadow_depth: "Deep, messy"
+      atmospheric: "Thick smoke and sawdust"
+    palette:
+      dominant:
+        - "dark wood brown"
+        - "shadow black"
+        - "dusty gold"
+      accent:
+        - "blood red stains"
+      avoid:
+        - "cleanliness"
+    prompt_used: |
+      Interior of a dark smoky medieval tavern with low beams and sawdust on floor,
+      figures entering through a bright doorway carrying wounded,
+      high contrast between sunlight and interior gloom,
+      atmospheric smoke and mismatch furniture,
+      classical oil painting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, modern furniture
+    tags:
+      - "establishing"
+      - "tavern"
+      - "location"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch10-wayward-compass-img-10-04-01"
+    source_moment: "ch10-wayward-compass-moment-07"
+    scene_id: "scn-10-04"
+    image_type: "mood"
+    category:
+      - "atmosphere"
+      - "moment"
+    scene_mood: "ominous"
+    mood_rationale: "Krag filling the doorway. Threat made atmospheric. Cold light invading warm space."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Krag's massive silhouette filling the tavern doorway. Afternoon light behind him turning him into a black shape. Inside, patrons frozen mid-motion. Amber lamplight failing.
+    composition_notes: |
+      Wide shot. Doorway left third. Frozen patrons middle ground. Company right third. Low angle looking up at Krag.
+    visual_hook: "Krag's hulking silhouette filling the doorway, afternoon light behind him turning him into a black shape while patrons freeze"
+    depicts_characters:
+      - "krag"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    character_states:
+      krag: |
+        Silhouette only. Massive shoulders.
+      veyra-thornwake: |
+        Alert stance. Calculating.
+      thorne-brightward: |
+        Hand on sword. Protective.
+    location: "wayward-compass"
+    lighting:
+      primary_source: "exterior daylight behind Hawks"
+      quality: "unsettling contrast"
+      direction: "backlit"
+      color_temperature: "cold white vs warm amber"
+      shadow_depth: "deep silhouettes"
+      atmospheric: "tobacco smoke frozen"
+    palette:
+      dominant:
+        - "silhouette black"
+        - "cold white"
+        - "amber"
+      accent:
+        - "armor glint"
+      avoid:
+        - "cheerful colors"
+    prompt_used: |
+      Hulking silhouette of an orc filling a tavern doorway,
+      bright light behind creating a black shape,
+      inside patrons are frozen in terror,
+      warm interior light failing against cold exterior glare,
+      atmospheric dread,
+      classical oil painting, Symbolist unease,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, happy patrons
+    tags:
+      - "mood"
+      - "threat"
+      - "ominous"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch10-wayward-compass-img-10-04-02"
+    source_moment: "ch10-wayward-compass-moment-08"
+    scene_id: "scn-10-04"
+    image_type: "anchor"
+    category:
+      - "character"
+      - "moment"
+    scene_mood: "intimate"
+    mood_rationale: "Marcus's theatrical emergence. Command through presence. Vermeer interior lighting."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Marcus Heartbridge stepping from a shadowed booth into amber lamplight. High-collared charcoal doublet, rapier hilt gleaming. Knowing smirk. Dark eyes fixed on Krag (out of focus). Pipe smoke trailing.
+    composition_notes: |
+      Medium shot. Transition from shadow to light. Marcus sharp focus. Background tableau blurs.
+    visual_hook: "The knowing smirk on Marcus's face as he walks through the frozen tableau, lamplight catching his rapier hilt"
+    depicts_characters:
+      - "marcus-heartbridge"
+      - "krag"
+      - "veyra-thornwake"
+    character_states:
+      marcus-heartbridge: |
+        Stepping forward. Charcoal doublet. Rapier. Calculated smirk.
+      krag: |
+        Background blur. Posture shifting to uncertainty.
+      veyra-thornwake: |
+        Background. Assessing.
+    location: "wayward-compass"
+    lighting:
+      primary_source: "overhead lamp"
+      quality: "soft, theatrical"
+      direction: "above/forward"
+      color_temperature: "amber gold"
+      shadow_depth: "deep behind"
+      atmospheric: "pipe smoke"
+    palette:
+      dominant:
+        - "charcoal gray"
+        - "amber"
+        - "shadow"
+      accent:
+        - "silver rapier"
+        - "gold ring"
+      avoid:
+        - "bright colors"
+    prompt_used: |
+      Man in charcoal doublet stepping from shadow into amber lamplight in a tavern,
+      neat mustache and rapier at side,
+      knowing smirk,
+      theatrical grace,
+      atmosphere of controlled power and secrets,
+      classical oil painting, Vermeer lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, aggressive pose
+    tags:
+      - "anchor"
+      - "marcus"
+      - "introduction"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch10-wayward-compass-img-10-05-01"
+    source_moment: "ch10-wayward-compass-moment-09"
+    scene_id: "scn-10-05"
+    image_type: "symbol"
+    category:
+      - "symbol"
+      - "moment"
+    scene_mood: "ethereal"
+    mood_rationale: "Netherese coin's inner magical glow. Pre-Raphaelite luminosity."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Ancient gold coin on worn tavern wood, glowing from within. Thick, heavy, strange symbols. Halo of light on tabletop. Hands entering from edges, hesitating.
+    composition_notes: |
+      Extreme close-up. Coin center. High angle looking down. Radial light fall-off.
+    visual_hook: "A single coin pulsing with inner golden light against scarred tavern wood"
+    depicts_characters:
+      - "marcus-heartbridge"
+      - "veyra-thornwake"
+      - "quartermaster-fayne"
+    character_states:
+      marcus-heartbridge: |
+        Hand withdrawing.
+      veyra-thornwake: |
+        Hand hovering.
+      quartermaster-fayne: |
+        Hand examining.
+    location: "wayward-compass"
+    lighting:
+      primary_source: "coin's inner glow"
+      quality: "soft, luminous"
+      direction: "radiating"
+      color_temperature: "pale gold"
+      shadow_depth: "minimal"
+      atmospheric: "tabletop smoke"
+    palette:
+      dominant:
+        - "luminous gold"
+        - "wood brown"
+      accent:
+        - "amber lamp overlay"
+      avoid:
+        - "harsh shadows"
+    prompt_used: |
+      Close up of ancient gold coin glowing with inner magical light on a scarred wooden table,
+      strange symbols on coin surface,
+      hands at edges of frame,
+      ethereal golden luminescence,
+      classical oil painting, Pre-Raphaelite luminosity,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, modern coin
+    tags:
+      - "symbol"
+      - "netherese-coin"
+      - "ethereal"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch10-wayward-compass-img-10-05-02"
+    source_moment: "ch10-wayward-compass-moment-10"
+    scene_id: "scn-10-05"
+    image_type: "beat"
+    category:
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "The Company left with the coin. The weight of the secret and the potential cost. A moment of wary contemplation."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Veyra, Thorne, and Grimjaw around the table after Marcus has left. They are staring at the coin. Veyra's face is half-lit by the coin's glow. Thorne looks thoughtful, hand on chin. Grimjaw is suspicious, looking at the coin like a dangerous piece of architecture. The tavern noise has returned but they are isolated by their suspicion.
+    composition_notes: |
+      Medium ensemble shot. Grouping around the coin. Focus on the tension between them and the object.
+    visual_hook: "The way the coin's inner light models their faces, highlighting scars and suspicion."
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "grimjaw-ironbeard"
+    character_states:
+      veyra-thornwake: |
+        Staring at coin. Face half-lit by gold glow.
+      thorne-brightward: |
+        Thoughtful posture.
+      grimjaw-ironbeard: |
+        Suspicious expression.
+    location: "wayward-compass"
+    lighting:
+      primary_source: "Coin glow + Overhead lamp"
+      quality: "Mixed, eerie"
+      direction: "Bottom-up from coin"
+      color_temperature: "Pale gold vs Amber"
+      shadow_depth: "Deep"
+      atmospheric: "Settling smoke"
+    palette:
+      dominant:
+        - "shadow"
+        - "gold glow"
+        - "amber"
+      accent:
+        - "reddish-brown scars"
+      avoid:
+        - "bright light"
+    prompt_used: |
+      Three adventurers gathered around a glowing gold coin on a tavern table,
+      faces half-lit by eerie golden light from below,
+      expressions of suspicion and contemplation,
+      dark tavern interior,
+      classical oil painting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "suspicion"
+      - "coin"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

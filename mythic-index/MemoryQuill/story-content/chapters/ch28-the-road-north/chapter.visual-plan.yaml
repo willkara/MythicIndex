@@ -1,0 +1,339 @@
+chapter_analysis:
+  slug: "ch28-the-road-north"
+  chapter_number: 28
+  chapter_title: "The Road North"
+  visual_thesis: "Journey into danger—the reconnaissance team travels north through awakening spring, gathers intelligence at the waystation, and begins infiltrating the Silent Hand's hidden fortress."
+  dominant_mood_progression:
+    - "road travel"
+    - "waystation resupply"
+    - "water warning"
+    - "forest approach"
+    - "facility observation"
+    - "infiltration begins"
+  color_story:
+    opening: "Mud road, awakening spring, pine-scented air"
+    climax: "Rocky outcrop, facility spread below, guard towers and hidden dock"
+    closing: "Mist swirling, drainage grate, Lyra's coded signal"
+
+scene_zone_recommendations:
+  - scene_id: scn-28-01
+    location: northern-road
+    recommended_zones:
+      - zone: road
+        label: "The Road North"
+        rationale: "Team traveling through awakening spring landscape"
+        anchor_details:
+          - "Mud and thawing earth"
+          - "Disguised team riding"
+          - "Pine-scented air"
+    confidence: high
+
+  - scene_id: scn-28-02
+    location: windborne-roost
+    recommended_zones:
+      - zone: common-room
+        label: "The Windborne Roost"
+        rationale: "Waystation resupply, Quierk's assessment"
+        anchor_details:
+          - "Aarakocra proprietor"
+          - "Busy trading post"
+          - "Cover maintained"
+    confidence: high
+
+  - scene_id: scn-28-03
+    location: windborne-roost
+    recommended_zones:
+      - zone: stream
+        label: "The Tracker's Warning"
+        rationale: "Rill detects suppression compounds in water"
+        anchor_details:
+          - "Webbed fingers in current"
+          - "Tainted water"
+          - "Urgent warning"
+    confidence: high
+
+  - scene_id: scn-28-04
+    location: thornwood-forest
+    recommended_zones:
+      - zone: trail
+        label: "The Forest's Embrace"
+        rationale: "Silent approach through ancient trees"
+        anchor_details:
+          - "Labyrinth of trees"
+          - "Ghost-like movement"
+          - "Echo overhead"
+    confidence: high
+
+  - scene_id: scn-28-05
+    location: silent-hand-facility
+    recommended_zones:
+      - zone: observation-post
+        label: "The Facility"
+        rationale: "First view of target, intel gathering"
+        anchor_details:
+          - "Rocky outcrop observation"
+          - "Estate in hidden valley"
+          - "Guard towers, magical wards"
+    confidence: high
+
+  - scene_id: scn-28-06
+    location: silent-hand-facility
+    recommended_zones:
+      - zone: perimeter
+        label: "The Reconnaissance"
+        rationale: "Mist-covered approach, Lyra infiltrates"
+        anchor_details:
+          - "Enhanced mist"
+          - "Drainage grate"
+          - "Coded signal"
+    confidence: high
+
+candidate_moments:
+  - moment_id: "ch28-the-road-north-moment-01"
+    scene_id: scn-28-01
+    title: "Column Riding North"
+    narrative_beat: "The northern road stretched before them, a ribbon of mud and thawing earth winding through the awakening spring landscape. Veyra rode at the head of their small column, her gaze sweeping the treeline with the practiced vigilance of a ranger."
+    subtext: "Journey begun; the team moves toward danger."
+    scene_mood: pastoral
+    emotional_color: "mud-ribbon, spring-awakening, ranger-vigilance"
+    location: northern-road
+    zone: road
+    characters_present:
+      - veyra-thornwake
+      - thorne-brightward
+      - lyra-kestrel
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 4
+      narrative_pivot: 2
+      character_revelation: 3
+      symbolic_density: 4
+      total: 16
+    suggested_shot:
+      image_type: anchor
+      framing: wide
+      angle: "Column riding through spring landscape"
+      key_visual_hook: "Veyra at the head of their small column, riding through mud and thawing earth, pine-scented air, the awakening spring landscape stretching before them"
+      lighting_suggestion: "Morning light, crisp spring air"
+      composition_notes: "The journey—team moving toward danger"
+    source_excerpts:
+      - "The northern road stretched before them, a ribbon of mud and thawing earth"
+      - "Veyra rode at the head of their small column"
+    selection_rationale: "Opening image—the journey begins."
+
+  - moment_id: "ch28-the-road-north-moment-02"
+    scene_id: scn-28-02
+    title: "Quierk's Assessment"
+    narrative_beat: "Quierk, the aarakocra proprietor, met them at the door, his feathered head cocked to one side, his keen eyes assessing their group with a single glance. 'Welcome, travelers,' he chirped, his voice a melodic blend of birdcall and human speech."
+    subtext: "Cover tested; the asset who misses nothing."
+    scene_mood: intimate
+    emotional_color: "feathered-head, keen-assessment, melodic-chirp"
+    location: windborne-roost
+    zone: common-room
+    characters_present:
+      - quierk
+      - veyra-thornwake
+      - thorne-brightward
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 4
+      symbolic_density: 4
+      total: 19
+    suggested_shot:
+      image_type: anchor
+      framing: medium
+      angle: "Quierk at door, feathered head cocked"
+      key_visual_hook: "Quierk the aarakocra meeting them at the door, feathered head cocked, keen eyes assessing the disguised team with a single glance, voice a melodic blend of birdcall and human speech"
+      lighting_suggestion: "Warm inn light spilling out, dusk behind"
+      composition_notes: "The asset—cover tested by sharp eyes"
+    source_excerpts:
+      - "his feathered head cocked to one side, his keen eyes assessing their group"
+      - "his voice a melodic blend of birdcall and human speech"
+    selection_rationale: "Visual character introduction—Quierk."
+
+  - moment_id: "ch28-the-road-north-moment-03"
+    scene_id: scn-28-03
+    title: "Tainted Waters"
+    narrative_beat: "She knelt by the bank, her webbed fingers dipping into the current. The water hummed with a faint, almost imperceptible energy, a subtle distortion that spoke of unnatural forces at play. 'They're using the waterways to transport their captives,' she murmured."
+    subtext: "Horror discovered; the wilderness weaponized."
+    scene_mood: ominous
+    emotional_color: "webbed-fingers, faint-hum, unnatural-distortion"
+    location: windborne-roost
+    zone: stream
+    characters_present:
+      - rill-vossari
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 5
+      character_revelation: 4
+      symbolic_density: 5
+      total: 23
+    suggested_shot:
+      image_type: hero
+      framing: medium
+      angle: "Rill kneeling, webbed fingers in water"
+      key_visual_hook: "Rill Vossari kneeling by the stream bank, her webbed fingers dipping into the current, her sea-glass skin catching evening light as she detects the magical suppression compounds tainting the water"
+      lighting_suggestion: "Evening stream light, faint magical glow"
+      composition_notes: "The discovery—wilderness weaponized"
+    source_excerpts:
+      - "her webbed fingers dipping into the current"
+      - "'They're using the waterways to transport their captives'"
+    selection_rationale: "Key intelligence—the water is tainted."
+
+  - moment_id: "ch28-the-road-north-moment-04"
+    scene_id: scn-28-04
+    title: "Predator Grace"
+    narrative_beat: "She moved through the forest with the silent grace of a predator, her senses attuned to every subtle shift in the environment. Echo soared overhead, his keen eyes scanning the canopy for any sign of movement."
+    subtext: "The ranger in her element; tracker and familiar working as one."
+    scene_mood: kinetic
+    emotional_color: "silent-grace, predator-movement, echo-soaring"
+    location: thornwood-forest
+    zone: trail
+    characters_present:
+      - vera-moonwhisper
+      - echo-raven
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 2
+      character_revelation: 4
+      symbolic_density: 4
+      total: 18
+    suggested_shot:
+      image_type: beat
+      framing: medium
+      angle: "Vera moving through forest, Echo above"
+      key_visual_hook: "Vera Moonwhisper moving through the Thornwood with predator grace, Echo soaring above the canopy, tracker and familiar working as one in their element"
+      lighting_suggestion: "Dappled forest light, canopy shadows"
+      composition_notes: "In her element—the tracker hunting"
+    source_excerpts:
+      - "She moved through the forest with the silent grace of a predator"
+      - "Echo soared overhead, his keen eyes scanning the canopy"
+    selection_rationale: "Vera and Echo in their element."
+
+  - moment_id: "ch28-the-road-north-moment-05"
+    scene_id: scn-28-05
+    title: "The Target Revealed"
+    narrative_beat: "The Silent Hand facility was a sprawling estate nestled in a hidden valley, its buildings blending seamlessly with the natural landscape. From their concealed observation post on a rocky outcrop, Veyra and her team had a clear view of their target."
+    subtext: "Target sighted; the gilded cage revealed."
+    scene_mood: ominous
+    emotional_color: "sprawling-estate, hidden-valley, clear-view"
+    location: silent-hand-facility
+    zone: observation-post
+    characters_present:
+      - veyra-thornwake
+      - thorne-brightward
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 5
+      character_revelation: 3
+      symbolic_density: 5
+      total: 22
+    suggested_shot:
+      image_type: hero
+      framing: wide
+      angle: "Team on outcrop, facility spread below"
+      key_visual_hook: "The reconnaissance team on their rocky outcrop, looking down at the Silent Hand facility sprawled across the hidden valley—manor house, guard towers, lake with hidden dock, magical wards shimmering"
+      lighting_suggestion: "Late afternoon light, long shadows across valley"
+      composition_notes: "The target—the gilded cage revealed"
+    source_excerpts:
+      - "a sprawling estate nestled in a hidden valley"
+      - "From their concealed observation post on a rocky outcrop"
+    selection_rationale: "Key visual—first view of target."
+
+  - moment_id: "ch28-the-road-north-moment-06"
+    scene_id: scn-28-06
+    title: "Mist Approach"
+    narrative_beat: "Under the cover of Rill's magically enhanced mist, Veyra, Halden, and Venn moved toward the Silent Hand facility. The fog clung to the ground, obscuring their movements, muffling their footsteps."
+    subtext: "Silent approach; magic and skill combined."
+    scene_mood: ominous
+    emotional_color: "mist-clinging, movements-obscured, footsteps-muffled"
+    location: silent-hand-facility
+    zone: perimeter
+    characters_present:
+      - veyra-thornwake
+      - medic-halden
+      - archer-venn
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 4
+      character_revelation: 3
+      symbolic_density: 4
+      total: 20
+    suggested_shot:
+      image_type: mood
+      framing: wide
+      angle: "Figures moving through mist toward walls"
+      key_visual_hook: "Veyra, Halden, and Venn moving through Rill's magically enhanced mist, fog clinging to the ground and obscuring their approach toward the facility's reinforced walls"
+      lighting_suggestion: "Moonlight diffused through mist, ethereal glow"
+      composition_notes: "The approach—ghosts in the mist"
+    source_excerpts:
+      - "Under the cover of Rill's magically enhanced mist"
+      - "The fog clung to the ground, obscuring their movements"
+    selection_rationale: "Visual set piece—mist-covered infiltration."
+
+  - moment_id: "ch28-the-road-north-moment-07"
+    scene_id: scn-28-06
+    title: "Lyra's Signal"
+    narrative_beat: "As if on cue, Lyra's voice echoed from the grate, a perfect mimicry of a guard's bored whistle. 'All clear here. Just a few rats. Nothing to worry about.' They waited, the mist swirling around them. Then, a faint signal—a series of clicks and taps from within the grate. Lyra's code."
+    subtext: "The specialist at work; skills proving their worth."
+    scene_mood: ominous
+    emotional_color: "perfect-mimicry, clicks-tapping, code-received"
+    location: silent-hand-facility
+    zone: perimeter
+    characters_present:
+      - lyra-kestrel
+      - veyra-thornwake
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 4
+      symbolic_density: 4
+      total: 20
+    suggested_shot:
+      image_type: beat
+      framing: close
+      angle: "Drainage grate, Lyra's voice emerging"
+      key_visual_hook: "Small drainage grate near the wall base, Lyra's perfect mimicry of a guard echoing from within—'All clear here'—then the coded clicks and taps signaling her success, team waiting in swirling mist"
+      lighting_suggestion: "Moonlight on stone, mist dissipating"
+      composition_notes: "Skills proven—the specialist at work"
+    source_excerpts:
+      - "Lyra's voice echoed from the grate, a perfect mimicry of a guard's bored whistle"
+      - "a faint signal—a series of clicks and taps from within the grate"
+    selection_rationale: "Lyra proving her worth."
+
+proposed_selection:
+  target_moments: 6
+  rules_used:
+    - "At least 1 hero or anchor"
+    - "No more than 2 moments with the same scene_mood"
+    - "Cover arc from journey through discovery to infiltration"
+    - "Balance travel with intelligence gathering"
+  selected_moments:
+    - moment_id: "ch28-the-road-north-moment-03"
+      rank: 1
+      reason: "Highest score (23), tainted waters, key discovery"
+    - moment_id: "ch28-the-road-north-moment-05"
+      rank: 2
+      reason: "Strong score (22), facility revealed, hero visual"
+    - moment_id: "ch28-the-road-north-moment-06"
+      rank: 3
+      reason: "Good score (20), mist approach, visual set piece"
+    - moment_id: "ch28-the-road-north-moment-07"
+      rank: 4
+      reason: "Good score (20), Lyra's signal, skills proven"
+    - moment_id: "ch28-the-road-north-moment-02"
+      rank: 5
+      reason: "Good score (19), Quierk introduction, visual character"
+    - moment_id: "ch28-the-road-north-moment-04"
+      rank: 6
+      reason: "Good score (18), Vera and Echo, forest element"
+  rejected_notes:
+    - moment_id: "ch28-the-road-north-moment-01"
+      reason: "Good opening but lower visual distinctiveness"

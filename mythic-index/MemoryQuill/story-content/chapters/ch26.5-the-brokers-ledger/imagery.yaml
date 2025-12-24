@@ -1,0 +1,407 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: The Broker's Ledger
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch26-5-the-brokers-ledger"
+  chapter_number: 26.5
+  chapter_title: "The Broker's Ledger"
+  visual_thesis: "The banality of evil rendered in leather-bound ledgers and careful handwriting, where human lives become 'units' and complicity wears a satisfied smile."
+  color_palette:
+    primary:
+      - "#C4956A"
+      - "#2C1810"
+      - "#F5E6D3"
+      - "#1A1A1A"
+    accent:
+      - "#4A3728"
+      - "#2C3E50"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 0
+    pastoral: 0
+    celebratory: 0
+    aquatic: 0
+    ethereal: 0
+    intimate: 5
+    kinetic: 0
+    ominous: 0
+
+characters:
+  - ref: "aldric-thornweave"
+    name: "Aldric Thornweave"
+    scene_variations: "Fifty-two, silver hair neatly trimmed. Well-tailored but not ostentatious. Competent professional demeanor. Comfortable satisfied smile. Hands are precise, well-maintained."
+    reference_images: []
+
+locations:
+  - ref: "thornweave-shipping-concern-office"
+    zones:
+      - id: "overview"
+        chapter_context: "Third-floor corner office. Dark wood paneling, polished mahogany desk. Obsessive precision. Single brass desk lamp creating a warm amber pool."
+  - ref: "dock-ward"
+    zones:
+      - id: "exterior"
+        chapter_context: "Silent midnight streets. The single lit window of the Thornweave office visible against the darkness."
+
+moments:
+  - id: "ch26-5-the-brokers-ledger-moment-01"
+    scene_id: "scn-26-5-01"
+    title: "The Midnight Window"
+    narrative_beat: "The single lit window of the Thornweave office seen from the silent Dock Ward street at midnight."
+    visual_weight: "medium"
+    characters_present: []
+    location_zone: "dock-ward/exterior"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch26-5-the-brokers-ledger-moment-02"
+    scene_id: "scn-26-5-01"
+    title: "Tri-Color Ledger Alignment"
+    narrative_beat: "The Public, Private, and Special Contracts ledgers arranged with mathematical exactness on the mahogany desk."
+    visual_weight: "hero"
+    characters_present:
+      - "aldric-thornweave"
+    location_zone: "thornweave-shipping-concern-office/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch26-5-the-brokers-ledger-moment-03"
+    scene_id: "scn-26-5-01"
+    title: "Units of Inventory"
+    narrative_beat: "Aldric's finger tracing the 'Specialized Agricultural Supplies' entries, humanity reduced to bookkeeping."
+    visual_weight: "high"
+    characters_present:
+      - "aldric-thornweave"
+    location_zone: "thornweave-shipping-concern-office/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch26-5-the-brokers-ledger-moment-04"
+    scene_id: "scn-26-5-01"
+    title: "The Shepherd's Watermark"
+    narrative_beat: "Aldric holding the high-quality dispatch paper up to the lamp to reveal the ghostly watermark of his patron."
+    visual_weight: "high"
+    characters_present:
+      - "aldric-thornweave"
+    location_zone: "thornweave-shipping-concern-office/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch26-5-the-brokers-ledger-moment-05"
+    scene_id: "scn-26-5-01"
+    title: "A Profitable Quarter"
+    narrative_beat: "Aldric's genuine, comfortable smile as he contemplates the expanded contracts and higher fees."
+    visual_weight: "hero"
+    characters_present:
+      - "aldric-thornweave"
+    location_zone: "thornweave-shipping-concern-office/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch26-5-the-brokers-ledger-img-26-5-01-01"
+    source_moment: "ch26-5-the-brokers-ledger-moment-02"
+    scene_id: "scn-26-5-01"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: "Comfortable professional element. Color-coded moral compartmentalization. Warm lamplight and quiet presence."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Polished mahogany desk surface arranged with obsessive precision. Three ledgers in perfect parallel alignment: brown leather (Public), blue leather (Private), and unmarked black leather (Special). Brass desk lamp casts a warm amber pool from the upper left. Black ledger sits at the pool's edge. Desk is otherwise precisely empty.
+    composition_notes: |
+      Slightly elevated angle. Ledgers along lower third. Negative space emphasizes order. Eye follows color progression from warm brown to absolute black.
+    visual_hook: "The color progression of the three ledgers—warm brown, business blue, absolute black—arranged with unsettling perfection"
+    depicts_characters:
+      - "aldric-thornweave"
+    character_states:
+      aldric-thornweave: |
+        Hands only visible at edge. Well-groomed fingers adjusting alignment.
+    location: "thornweave-shipping-concern-office"
+    lighting:
+      primary_source: "brass desk lamp"
+      quality: "soft, warm, single source"
+      direction: "side"
+      color_temperature: "warm amber"
+      shadow_depth: "gentle gradients"
+      atmospheric: "still, clean air"
+    palette:
+      dominant:
+        - "mahogany brown"
+        - "brass amber"
+        - "cream paper"
+      accent:
+        - "ledger black"
+        - "blue leather"
+      avoid:
+        - "harsh shadows"
+    prompt_used: |
+      Three leather-bound ledgers in parallel alignment on a polished mahogany desk,
+      brown, blue, and black leather bindings,
+      warm brass desk lamp casting a pool of light,
+      obsessive precision and order,
+      classical oil painting, Vermeer interior lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, clutter, disorder
+    tags:
+      - "hero"
+      - "symbolic"
+      - "ledgers"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch26-5-the-brokers-ledger-img-26-5-01-02"
+    source_moment: "ch26-5-the-brokers-ledger-moment-03"
+    scene_id: "scn-26-5-01"
+    image_type: "detail"
+    category:
+      - "moment"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: "The 'banal horror.' Normal business records vs human cargo content. Comfortable lighting makes the words more disturbing."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Extreme close on open black ledger. Cream paper, warm light. Neat black ink handwriting. Entries: 'Agricultural Supplies (Specialized) - 47 units', etc. Clean, well-manicured finger traces down the column. Orderly and obscene penmanship.
+    composition_notes: |
+      Tight crop. Black leather frame edges. Finger entering from lower right. Viewer as complicit reader.
+    visual_hook: "The word 'units' repeated in neat handwriting—dehumanization as bookkeeping"
+    depicts_characters:
+      - "aldric-thornweave"
+    character_states:
+      aldric-thornweave: |
+        Only finger visible. Practiced, routine gesture.
+    location: "thornweave-shipping-concern-office"
+    lighting:
+      primary_source: "desk lamp"
+      quality: "soft, even"
+      direction: "above left"
+      color_temperature: "warm amber"
+      shadow_depth: "minimal on page"
+      atmospheric: "none"
+    palette:
+      dominant:
+        - "cream paper"
+        - "black ink"
+        - "black leather"
+      accent:
+        - "warm skin tone"
+      avoid:
+        - "blood red"
+    prompt_used: |
+      Extreme close up of an open ledger with entries for 'Specialized Agricultural Supplies',
+      the word 'units' repeated in beautiful handwriting,
+      cream paper under warm lamp light,
+      man's finger tracing the column,
+      classical oil painting, Vermeer lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, blood stains, violence
+    tags:
+      - "detail"
+      - "ledger"
+      - "euphemism"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch26-5-the-brokers-ledger-img-26-5-01-03"
+    source_moment: "ch26-5-the-brokers-ledger-moment-04"
+    scene_id: "scn-26-5-01"
+    image_type: "symbol"
+    category:
+      - "symbol"
+      - "moment"
+    scene_mood: "intimate"
+    mood_rationale: "Power through quality. Invisible infrastructure of power. Translucency and recognition."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Aldric holds high-quality cream paper to the lamp. Light passes through, revealing a ghostly, subtle watermark. Aldric's face partially visible beyond, focused, recognizing the mark. Thick, smooth, expensive paper. Leather message pouch open on desk behind.
+    composition_notes: |
+      Portrait. Letter dominates center. Translucency effect. Aldric's face upper third, slightly soft focus. Mark suggested, not detailed.
+    visual_hook: "Light passing through the paper reveals the ghostly watermark—power that prefers to remain invisible"
+    depicts_characters:
+      - "aldric-thornweave"
+    character_states:
+      aldric-thornweave: |
+        Holding letter to light. Recognition expression. Silver hair catching glow.
+    location: "thornweave-shipping-concern-office"
+    lighting:
+      primary_source: "brass lamp"
+      quality: "warm, passing through paper"
+      direction: "side"
+      color_temperature: "warm amber"
+      shadow_depth: "gentle on face"
+      atmospheric: "none"
+    palette:
+      dominant:
+        - "translucent cream paper"
+        - "warm amber light"
+        - "dark wood"
+      accent:
+        - "silver hair"
+      avoid:
+        - "harsh contrast"
+    prompt_used: |
+      Silver-haired man holding a sheet of expensive paper up to a lamp,
+      light shining through revealing a subtle watermark,
+      focused expression of recognition,
+      dark wood-paneled office,
+      classical oil painting, Vermeer interior lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, glowing runes
+    tags:
+      - "symbol"
+      - "watermark"
+      - "secrets"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch26-5-the-brokers-ledger-img-26-5-01-04"
+    source_moment: "ch26-5-the-brokers-ledger-moment-05"
+    scene_id: "scn-26-5-01"
+    image_type: "anchor"
+    category:
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: "The banality of evil. Contentment without horror. Compartmentalized businessman."
+    aspect_ratio: "2:3"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Aldric Thornweave in three-quarter profile. Comfortable, satisfied smile. businessman pleased with his prospects. Silver hair neat. Hands folding a letter. Black ledger open on desk. Warm pool of light from brass lamp. Evil that never acknowledges itself.
+    composition_notes: |
+      Portrait. Aldric right two-thirds. Profile shows smile clearly. Slightly low angle for comfort/authority. Ledger lower frame. Warm light on face.
+    visual_hook: "The satisfied smile—the comfortable expression of a man pleased with his business prospects"
+    depicts_characters:
+      - "aldric-thornweave"
+    character_states:
+      aldric-thornweave: |
+        Genuine satisfaction. Compartmentalized. Silver hair. Well-tailored coat. Casual precision.
+    location: "thornweave-shipping-concern-office"
+    lighting:
+      primary_source: "brass desk lamp"
+      quality: "soft, warm, flattering"
+      direction: "side"
+      color_temperature: "warm amber"
+      shadow_depth: "soft gradients"
+      atmospheric: "clear air"
+    palette:
+      dominant:
+        - "warm amber"
+        - "silver hair"
+        - "dark wool coat"
+      accent:
+        - "black ledger"
+      avoid:
+        - "sinister smile"
+    prompt_used: |
+      Portrait of a silver-haired businessman smiling contentedly at his desk,
+      folding a letter,
+      open black ledger in foreground,
+      warm amber lamplight,
+      atmosphere of professional satisfaction and hidden complicity,
+      classical oil painting, Dutch Golden Age portraiture,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, villainous expression
+    tags:
+      - "anchor"
+      - "character"
+      - "complicity"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch26-5-the-brokers-ledger-img-26-5-01-05"
+    source_moment: "ch26-5-the-brokers-ledger-moment-01"
+    scene_id: "scn-26-5-01"
+    image_type: "beat"
+    category:
+      - "location"
+      - "threshold"
+      - "mystery"
+    scene_mood: "intimate"
+    mood_rationale: "The 'Character's Secret.' Unremarkable neighbor beacon. Isolated light in nighttime quiet."
+    aspect_ratio: "9:16"
+    orientation: "portrait"
+    size: "640x1136"
+    visual_description: |
+      Vertical exterior shot of a narrow Dock Ward building at midnight. Ground floor dark and shuttered. Single lit window on third floor (Aldric's office). Warm amber light spills onto wet cobblestones, reflecting in a puddle. Squeezed between two dark shops.
+    composition_notes: |
+      Extreme vertical. Narrow building center. Ground floor in deep shadow. Lit window focal point. High contrast night vs amber.
+    visual_hook: "A single, warm, illuminated window on the third floor of an unremarkable building at midnight."
+    depicts_characters: []
+    character_states: {}
+    location: "dock-ward"
+    lighting:
+      primary_source: "lit office window"
+      quality: "isolated, warm, secretive"
+      direction: "outward"
+      color_temperature: "warm amber vs night blue"
+      shadow_depth: "absolute"
+      atmospheric: "midnight stillness"
+    palette:
+      dominant:
+        - "night blue-black"
+        - "amber glow"
+        - "weathered brown"
+      accent:
+        - "puddle reflection gold"
+      avoid:
+        - "street lamps"
+    prompt_used: |
+      Vertical shot of a narrow medieval building at midnight,
+      single lit window on the top floor,
+      dark shuttered shopfronts below,
+      wet cobblestone alley with reflecting puddle,
+      atmosphere of quiet nocturnal secrets,
+      classical oil painting, Symbolist night,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, street lights
+    tags:
+      - "location"
+      - "night"
+      - "mystery"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

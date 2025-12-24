@@ -1,0 +1,187 @@
+// =============================================================================
+// Accessibility Patterns - Shared Mixins for MemoryQuill A11y Features
+// =============================================================================
+
+// High Contrast Mode Support
+@mixin high-contrast-support {
+  @media (prefers-contrast: high) {
+    border-width: 3px !important;
+
+    button {
+      border: 1px solid transparent !important;
+
+      &:hover,
+      &:focus {
+        border-color: var(--color-ancient-gold) !important;
+      }
+
+      &.active {
+        border-color: var(--color-ancient-gold) !important;
+        border-width: 2px !important;
+      }
+    }
+  }
+}
+
+// Focus Management for Keyboard Navigation
+@mixin keyboard-focus {
+  &:focus-within {
+    button:focus {
+      outline: 2px solid var(--color-ancient-gold) !important;
+      outline-offset: 2px !important;
+      border-radius: var(--radius-md) !important;
+    }
+  }
+}
+
+// Skip Links for Screen Readers
+@mixin skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--color-ancient-gold);
+  color: var(--color-midnight-study);
+  padding: 8px;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  z-index: 1000;
+
+  &:focus {
+    top: 6px;
+  }
+}
+
+// Screen Reader Only Text
+@mixin sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+// High Contrast Support for Interactive Elements
+@mixin interactive-a11y {
+  // Ensure sufficient color contrast
+  &:focus {
+    outline: 2px solid var(--color-ancient-gold);
+    outline-offset: 2px;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-ancient-gold);
+    outline-offset: 2px;
+  }
+
+  // High contrast mode support
+  @media (prefers-contrast: high) {
+    border: 1px solid var(--text-primary);
+
+    &:hover,
+    &:focus {
+      border: 2px solid var(--color-ancient-gold);
+    }
+  }
+}
+
+// Status Indicators A11y
+@mixin status-a11y {
+  &.unsaved,
+  &.has-issues {
+    // High contrast mode support
+    @media (prefers-contrast: high) {
+      border-width: 3px !important;
+    }
+  }
+}
+
+// Reduced Motion Support
+@mixin respect-reduced-motion {
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+
+    &:hover {
+      transform: none !important;
+    }
+  }
+}
+
+// ARIA Live Region Support
+@mixin live-region {
+  &[aria-live="polite"] {
+    // Ensure screen readers announce changes
+    position: relative;
+  }
+
+  &[aria-live="assertive"] {
+    // For urgent announcements
+    position: relative;
+  }
+}
+
+// Color Blind Friendly Patterns
+@mixin color-blind-support {
+  // Never rely on color alone - always provide additional indicators
+  &.error {
+    border-left: 4px solid var(--color-ruby-garnet);
+
+    &::before {
+      content: "!";
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+  }
+
+  &.warning {
+    border-left: 4px solid var(--color-ancient-gold);
+
+    &::before {
+      content: "⚠";
+      margin-right: 0.5rem;
+    }
+  }
+
+  &.success {
+    border-left: 4px solid var(--status-success);
+
+    &::before {
+      content: "✓";
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+// Touch Target Sizing
+@mixin touch-target {
+  min-height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Print Accessibility
+@mixin print-friendly {
+  @media print {
+    // Hide non-essential elements
+    &.no-print {
+      display: none !important;
+    }
+
+    // Ensure sufficient contrast for print
+    color: #000 !important;
+    background: #fff !important;
+
+    // Show URLs for links
+    a:after {
+      content: " (" attr(href) ")";
+    }
+  }
+}

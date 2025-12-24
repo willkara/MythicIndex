@@ -1,0 +1,455 @@
+chapter_analysis:
+  slug: "ch04-the-healers-calling"
+  chapter_number: 4
+  chapter_title: "The Healer's Calling"
+  visual_thesis: "Mercy as the deepest healing—witnessing death transformed from defeat into peaceful passage, and finding the heart of compassion the Company needs."
+  dominant_mood_progression:
+    - "tactical concern"
+    - "gruff information"
+    - "journey through silence"
+    - "plague-weight arrival"
+    - "sacred witnessing"
+    - "acceptance and joining"
+  color_story:
+    opening: "Sara's yellow lantern drawing on scarred wood, evening amber, medical leather brown"
+    climax: "Plague-gray village, hospice lantern-warm, tea-steam bronze, peaceful passage"
+    closing: "Campfire orange, mint-tea steam, starlight hope, belonging warmth"
+
+scene_zone_recommendations:
+  - scene_id: scn-04-01
+    location: westwall-watchpost
+    recommended_zones:
+      - zone: barracks
+        label: "Barracks - Planning Table"
+        rationale: "The need identified, Halden's frustration, Thorne's memory of Aldwin"
+        anchor_details:
+          - "Child's drawing at table center"
+          - "Medical kit set down with force"
+          - "Candlelit faces in debrief"
+    confidence: high
+
+  - scene_id: scn-04-02
+    location: brightstone-healers-hall
+    recommended_zones:
+      - zone: main-hall
+        label: "Healers' Hall - Dispensary"
+        rationale: "Dokra's domain, information extraction, crude map handed over"
+        anchor_details:
+          - "Green poultice on Dokra's fingers"
+          - "Marble columns, stained floors"
+          - "Parchment map with skull warning"
+    confidence: high
+
+  - scene_id: scn-04-04
+    location: westwood-road
+    recommended_zones:
+      - zone: forest-trail
+        label: "Westwood Trail"
+        rationale: "Journey through dying forest, philosophical conversation, approaching wrongness"
+        anchor_details:
+          - "Gold and rust canopy"
+          - "Silent forest (no birds)"
+          - "Cloth masks on travelers"
+    confidence: high
+
+  - scene_id: scn-04-05
+    location: oakhaven
+    recommended_zones:
+      - zone: village-streets
+        label: "Plague Village Streets"
+        rationale: "The arrival at death's doorstep, wrapped bodies, red X windows"
+        anchor_details:
+          - "Quarantine barricade with skull sign"
+          - "Neat rows of wrapped dead"
+          - "Red X marked windows"
+    confidence: high
+
+  - scene_id: scn-04-06
+    location: oakhaven
+    recommended_zones:
+      - zone: barn-hospice
+        label: "Barn Hospice"
+        rationale: "Aldwin's domain, the mercy ritual, Mara's peaceful passage"
+        anchor_details:
+          - "Cots in neat rows with personal effects"
+          - "Lanterns on rafters"
+          - "Bronze brazier tea service"
+    confidence: high
+
+  - scene_id: scn-04-08
+    location: westwood-road
+    recommended_zones:
+      - zone: campsite
+        label: "Return Journey Camp"
+        rationale: "Welcome tea ceremony, Company bonding, Aldwin's humor revealed"
+        anchor_details:
+          - "Campfire warmth"
+          - "Tea service unpacked"
+          - "Stars emerging overhead"
+    confidence: high
+
+candidate_moments:
+  - moment_id: "ch04-the-healers-calling-moment-01"
+    scene_id: scn-04-01
+    title: "Halden's Limits"
+    narrative_beat: "Halden sets down his medical kit with force, confessing his inadequacy—'just patching holes in a sinking ship'—while Sara's drawing watches from the table."
+    subtext: "The honest admission that rescue isn't enough, that healing requires more than battlefield skills."
+    scene_mood: somber
+    emotional_color: "frustration-weight, medical leather, child's yellow hope"
+    location: westwall-watchpost
+    zone: barracks
+    characters_present:
+      - medic-halden
+      - veyra-thornwake
+      - thorne-brightward
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 3
+      narrative_pivot: 4
+      character_revelation: 4
+      symbolic_density: 4
+      total: 19
+    suggested_shot:
+      image_type: anchor
+      framing: medium
+      angle: "Halden at table, kit dropped, drawing visible"
+      key_visual_hook: "Halden's white-knuckled grip on table edge, medical kit sprawled, Sara's yellow lantern drawing at center, candlelight on frustrated face"
+      lighting_suggestion: "Warm candlelight, shadows emphasizing frustration"
+      composition_notes: "The inadequacy made physical, child's hope contrasting with adult limitation"
+    source_excerpts:
+      - "setting down his medical kit with more force than necessary"
+      - "'I was just patching holes in a sinking ship, watching good people drown in their own bodies'"
+      - "The child's drawing of the lantern lay in the center of the barracks table"
+    selection_rationale: "The catalyst moment—Halden's honest admission driving the search for a true healer."
+
+  - moment_id: "ch04-the-healers-calling-moment-02"
+    scene_id: scn-04-02
+    title: "The Plague Map"
+    narrative_beat: "Dokra presses the torn parchment into Thorne's hand—skull marker, 'DEATH TO THOSE WHO ENTER'—revealing where the fool Gentleheart walked into quarantine."
+    subtext: "Information as dangerous gift, the map leading to death or to healing."
+    scene_mood: ominous
+    emotional_color: "parchment-tan, skull-black, gruff concern"
+    location: brightstone-healers-hall
+    zone: main-hall
+    characters_present:
+      - dokra-ironvein
+      - thorne-brightward
+      - veyra-thornwake
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 3
+      symbolic_density: 4
+      total: 18
+    suggested_shot:
+      image_type: detail
+      framing: close
+      angle: "The map being pressed into hands"
+      key_visual_hook: "Dokra's weathered hands pressing torn parchment with skull marker into Thorne's palm, 'PLAGUE – DEATH' visible"
+      lighting_suggestion: "Clinical healer's hall light, grim shadows"
+      composition_notes: "The warning made physical, map as threshold to danger"
+    source_excerpts:
+      - "a scrap of parchment that looked like it had been torn from a larger map"
+      - "skull marker with 'PLAGUE – DEATH TO THOSE WHO ENTER' beneath it"
+      - "She pressed the parchment into Thorne's hand with unnecessary force"
+    selection_rationale: "The mission's danger made tangible in a simple prop—the skull warning."
+
+  - moment_id: "ch04-the-healers-calling-moment-03"
+    scene_id: scn-04-04
+    title: "The Silent Forest"
+    narrative_beat: "The wagon travels through Westwood as autumn beauty gives way to wrongness—birds silent, insects gone, only their breathing and wheels on leaves."
+    subtext: "Nature itself recoiling from plague, the approach to death's territory."
+    scene_mood: ominous
+    emotional_color: "gold-rust decay, unnatural silence, shallow-held breath"
+    location: westwood-road
+    zone: forest-trail
+    characters_present:
+      - veyra-thornwake
+      - thorne-brightward
+      - medic-halden
+      - archer-venn
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 2
+      symbolic_density: 4
+      total: 18
+    suggested_shot:
+      image_type: hero
+      framing: wide
+      angle: "Wagon on forest road, canopy above"
+      key_visual_hook: "Covered wagon on leaf-strewn path, gold-rust canopy overhead, masked figures aboard, the silence visible in empty branches"
+      lighting_suggestion: "Filtered autumn light, ominous beauty"
+      composition_notes: "Beauty and dread together, the wrongness in the silence"
+    source_excerpts:
+      - "autumn had already begun its work. The trees formed a canopy of gold and rust overhead, beautiful in its decay"
+      - "The birds fell silent first. Then the insects"
+      - "unconsciously held shallow as if the very air might carry contagion"
+    selection_rationale: "Atmospheric transition moment—the journey from safety to plague territory."
+
+  - moment_id: "ch04-the-healers-calling-moment-04"
+    scene_id: scn-04-05
+    title: "The Quarantine Barricade"
+    narrative_beat: "The team stands before Oakhaven's barricade—sharpened stakes, yellow flags, skull sign—a village holding its breath beyond."
+    subtext: "The threshold between life and death, choice made visible in stakes and warnings."
+    scene_mood: ominous
+    emotional_color: "stake-sharp, yellow warning, village-silence"
+    location: oakhaven
+    zone: village-streets
+    characters_present:
+      - veyra-thornwake
+      - thorne-brightward
+      - medic-halden
+      - archer-venn
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 4
+      character_revelation: 3
+      symbolic_density: 5
+      total: 21
+    suggested_shot:
+      image_type: hero
+      framing: wide
+      angle: "Team approaching barricade, village beyond"
+      key_visual_hook: "Sharpened stake barricade with yellow flags and tar skull-sign, four masked figures approaching, silent village chimneys beyond"
+      lighting_suggestion: "Late afternoon light, long shadows, grim"
+      composition_notes: "The threshold moment, stakes as boundary between worlds"
+    source_excerpts:
+      - "a hastily erected barricade of sharpened stakes and yellow warning flags"
+      - "'PLAGUE – DEATH TO THOSE WHO ENTER'"
+      - "no smoke rose from chimneys despite the evening chill"
+    selection_rationale: "The literal threshold—crossing into plague territory, the stakes as visual boundary."
+
+  - moment_id: "ch04-the-healers-calling-moment-05"
+    scene_id: scn-04-05
+    title: "The Rows of Wrapped Dead"
+    narrative_beat: "Inside the barricade—neat rows of sheet-wrapped bodies waiting for burning, red X windows marking the still-living infected."
+    subtext: "Death organized with care even in catastrophe, the village's dignity preserved."
+    scene_mood: somber
+    emotional_color: "stained-sheet white, red X warning, careful arrangement"
+    location: oakhaven
+    zone: village-streets
+    characters_present:
+      - veyra-thornwake
+      - thorne-brightward
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 2
+      symbolic_density: 4
+      total: 19
+    suggested_shot:
+      image_type: anchor
+      framing: wide
+      angle: "Street view with wrapped bodies in rows"
+      key_visual_hook: "Neat rows of sheet-wrapped bodies outside cottages, red X marked windows with faint candle-glow, team walking through"
+      lighting_suggestion: "Twilight gray, occasional window-glow"
+      composition_notes: "Order in catastrophe, the care taken even for the dead"
+    source_excerpts:
+      - "Bodies wrapped in stained sheets lay in neat rows outside homes"
+      - "waiting for a burning that might never come"
+      - "windows with candles were marked with red X's—houses of the infected"
+    selection_rationale: "The plague's toll made visible—organized death, care in catastrophe."
+
+  - moment_id: "ch04-the-healers-calling-moment-06"
+    scene_id: scn-04-06
+    title: "The Tea Ceremony Begins"
+    narrative_beat: "Aldwin kneels beside dying Mara, lighting his bronze brazier, adding herbs that cut through the hospice miasma—the ritual of mercy beginning."
+    subtext: "Sacred attention in the face of death, beauty insisted upon in suffering."
+    scene_mood: intimate
+    emotional_color: "bronze brazier glow, herb-smoke sweetness, unhurried grace"
+    location: oakhaven
+    zone: barn-hospice
+    characters_present:
+      - aldwin-gentleheart
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 5
+      narrative_pivot: 4
+      character_revelation: 5
+      symbolic_density: 5
+      total: 24
+    suggested_shot:
+      image_type: hero
+      framing: medium
+      angle: "Aldwin kneeling, brazier between him and patient"
+      key_visual_hook: "Halfling healer kneeling beside cot, bronze brazier glowing, herb-smoke rising, old woman's face watching with hope and fear"
+      lighting_suggestion: "Brazier glow and rafter lanterns, warm against gray plague"
+      composition_notes: "The ritual as focal point, care made visible in gesture"
+    source_excerpts:
+      - "withdrew a small bronze brazier, no larger than a teacup"
+      - "adding pinches of herbs that released a sweet, complex smoke"
+      - "The scent cut through the hospice's miasma like a blade of memory"
+    selection_rationale: "The heart of the chapter—Aldwin's mercy ritual introduced, sacred attention to the dying."
+
+  - moment_id: "ch04-the-healers-calling-moment-07"
+    scene_id: scn-04-06
+    title: "It Tastes Like Spring"
+    narrative_beat: "Mara sips the tea and wonder transforms her face—'It tastes like spring... like the morning Thomas proposed'—tension leaving as she finds peace."
+    subtext: "Memory reclaimed at the threshold, death transformed from ending to completion."
+    scene_mood: ethereal
+    emotional_color: "tea-warmth, wonder-softening, spring-memory"
+    location: oakhaven
+    zone: barn-hospice
+    characters_present:
+      - aldwin-gentleheart
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 4
+      narrative_pivot: 5
+      character_revelation: 4
+      symbolic_density: 5
+      total: 23
+    suggested_shot:
+      image_type: anchor
+      framing: close
+      angle: "Mara's face as she drinks, wonder visible"
+      key_visual_hook: "Old woman's face transformed by wonder, cup at lips, Aldwin's hand supporting, tension melting into peace"
+      lighting_suggestion: "Warm brazier glow, soft lantern light"
+      composition_notes: "The transformation in expression, death becoming passage"
+    source_excerpts:
+      - "'It tastes like... like spring,' she whispered, wonder in her voice"
+      - "'Like the morning Thomas proposed by the old oak. Like... like beginning'"
+      - "tension leaving her face like water from a broken dam"
+    selection_rationale: "The mercy made visible in a face—wonder replacing fear, death transformed."
+
+  - moment_id: "ch04-the-healers-calling-moment-08"
+    scene_id: scn-04-06
+    title: "Halden's Accusation"
+    narrative_beat: "Halden gasps 'You killed her' as Mara passes—shock and betrayal warring with what his eyes just witnessed."
+    subtext: "Medical training confronting mercy, the crisis of understanding."
+    scene_mood: kinetic
+    emotional_color: "shock-sharp, accusation-heat, understanding-dawning"
+    location: oakhaven
+    zone: barn-hospice
+    characters_present:
+      - medic-halden
+      - aldwin-gentleheart
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 3
+      narrative_pivot: 4
+      character_revelation: 4
+      symbolic_density: 3
+      total: 18
+    suggested_shot:
+      image_type: beat
+      framing: medium
+      angle: "Halden stepping forward, Aldwin rising"
+      key_visual_hook: "Halden's masked face contorted with shock, stepping toward Aldwin who rises from Mara's now-peaceful form"
+      lighting_suggestion: "Hospice lantern-light, shadows between them"
+      composition_notes: "Confrontation across the completed death, philosophies colliding"
+    source_excerpts:
+      - "'You... you killed her,' he whispered, his voice cracking with shock"
+      - "'I freed her,' he said quietly"
+      - "'That's not medicine!' Halden protested"
+    selection_rationale: "The philosophical crisis—Halden's training confronting mercy's reality."
+
+  - moment_id: "ch04-the-healers-calling-moment-09"
+    scene_id: scn-04-07
+    title: "The Night Vigil"
+    narrative_beat: "The Company spends the night in the plague village—Aldwin attending three more passages while Veyra sits with the living, her scars somehow comforting."
+    subtext: "Commitment made through presence, the full immersion in Aldwin's world."
+    scene_mood: somber
+    emotional_color: "vigil-quiet, lantern-warm, passage-peace"
+    location: oakhaven
+    zone: barn-hospice
+    characters_present:
+      - veyra-thornwake
+      - aldwin-gentleheart
+      - thorne-brightward
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 4
+      narrative_pivot: 3
+      character_revelation: 4
+      symbolic_density: 4
+      total: 20
+    suggested_shot:
+      image_type: anchor
+      framing: wide
+      angle: "Barn interior at night, multiple activities"
+      key_visual_hook: "Night vigil tableau—Aldwin attending a cot, Veyra sitting with the living, Thorne moving bodies with reverence, lanterns glowing"
+      lighting_suggestion: "Multiple lantern sources, warm pockets in darkness"
+      composition_notes: "The Company integrated into mercy work, different roles unified"
+    source_excerpts:
+      - "They spent that night in the plague village, against all sense and safety"
+      - "Through the night, they witnessed three more passages"
+      - "Veyra simply sat with the living, her scarred presence somehow comforting"
+    selection_rationale: "The commitment made physical—staying through the night, fully embracing Aldwin's work."
+
+  - moment_id: "ch04-the-healers-calling-moment-10"
+    scene_id: scn-04-08
+    title: "The Welcome Tea"
+    narrative_beat: "At camp, Aldwin unpacks his tea service—same ritual, different herbs—and smiles at their hesitation: 'Don't worry. This is simply for sharing.'"
+    subtext: "The ritual reclaimed for celebration, mercy's tools becoming welcome's."
+    scene_mood: pastoral
+    emotional_color: "campfire-warm, mint-steam, mischief-glint, starlight hope"
+    location: westwood-road
+    zone: campsite
+    characters_present:
+      - aldwin-gentleheart
+      - veyra-thornwake
+      - thorne-brightward
+      - medic-halden
+      - archer-venn
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 5
+      narrative_pivot: 4
+      character_revelation: 4
+      symbolic_density: 5
+      total: 23
+    suggested_shot:
+      image_type: hero
+      framing: medium
+      angle: "Circle around fire, Aldwin serving"
+      key_visual_hook: "Aldwin serving tea around campfire, bronze brazier glowing, faces lit with warmth and tentative smiles, stars emerging overhead"
+      lighting_suggestion: "Campfire and brazier warm glow, starlight above"
+      composition_notes: "Ritual transformed from death to welcome, circle of belonging"
+    source_excerpts:
+      - "Aldwin quietly unpacked his tea service"
+      - "'Don't worry... It's just mint. I save the special blends for special occasions'"
+      - "'This is simply for sharing, for marking the beginning of something new'"
+    selection_rationale: "The chapter's resolution—mercy's tools repurposed for welcome, the Company's heart found."
+
+proposed_selection:
+  target_moments: 6
+  rules_used:
+    - "At least 1 hero or anchor"
+    - "No more than 2 moments with the same scene_mood"
+    - "At least 1 intimate or somber beat if present"
+    - "Include the mercy ritual sequence as chapter's core"
+    - "Balance journey with arrival and resolution"
+  selected_moments:
+    - moment_id: "ch04-the-healers-calling-moment-06"
+      rank: 1
+      reason: "Highest score (24), the mercy ritual, Aldwin's philosophy made visible"
+    - moment_id: "ch04-the-healers-calling-moment-07"
+      rank: 2
+      reason: "High score (23), Mara's transformation, death becoming passage"
+    - moment_id: "ch04-the-healers-calling-moment-10"
+      rank: 3
+      reason: "High score (23), welcome tea, ritual repurposed, chapter resolution"
+    - moment_id: "ch04-the-healers-calling-moment-04"
+      rank: 4
+      reason: "Strong score (21), quarantine threshold, visual boundary"
+    - moment_id: "ch04-the-healers-calling-moment-09"
+      rank: 5
+      reason: "Good score (20), night vigil, commitment made through presence"
+    - moment_id: "ch04-the-healers-calling-moment-01"
+      rank: 6
+      reason: "Score (19), catalyst moment, need identified"
+  rejected_notes:
+    - moment_id: "ch04-the-healers-calling-moment-02"
+      reason: "Good prop but moment-04's barricade is more powerful"
+    - moment_id: "ch04-the-healers-calling-moment-03"
+      reason: "Atmospheric but less pivotal than arrival moments"
+    - moment_id: "ch04-the-healers-calling-moment-05"
+      reason: "Strong visual but moment-04's threshold carries more weight"
+    - moment_id: "ch04-the-healers-calling-moment-08"
+      reason: "Important beat but moment-07 captures the core transformation"

@@ -1,0 +1,53 @@
+location:
+  slug: croft-warehouse
+  name: Croft Warehouse
+  files:
+    overview:
+      path: locations/croft-warehouse/overview.md
+      excerpt: ''
+      exists: false
+    description:
+      path: locations/croft-warehouse/description.md
+      excerpt: ''
+      exists: false
+    inhabitants:
+      path: locations/croft-warehouse/inhabitants.md
+      excerpt: ''
+      exists: false
+zones_manifest:
+  path: locations/croft-warehouse/zones.yaml
+  zones:
+  - slug: office
+    name: Office
+    featured_in_chapters:
+    - ch11-an-honest-coin
+  - slug: rooftop
+    name: Rooftop
+    featured_in_chapters:
+    - ch11-an-honest-coin
+  - slug: storage
+    name: Storage Floor
+  - slug: veyra-descent
+    name: The Descent
+  - slug: warehouse-exterior
+    name: Warehouse Exterior
+    featured_in_chapters:
+    - ch11-an-honest-coin
+  - slug: warehouse-floor
+    name: Warehouse Floor
+    featured_in_chapters:
+    - ch11-an-honest-coin
+  - slug: window-escape
+    name: Explosive Escape
+chapter_evidence:
+- slug: ch11-an-honest-coin
+  files:
+    content:
+      path: chapters/ch11-an-honest-coin/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch11-an-honest-coin/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+intrinsic_characters: []

@@ -1,0 +1,27 @@
+# Storylint Adjacent Report: {{ report.left_slug }} -> {{ report.right_slug }}
+
+## Overall
+- Transition: {{ report.transition_rating }}
+- Confidence: {{ report.confidence }}
+
+## Diagnosis
+{{ report.diagnosis }}
+
+## Findings
+{% for item in report.findings %}
+- {{ item.severity | upper }} / {{ item.type }} @ {{ item.location }}
+  - {{ item.explanation }}
+  - Suggested action: {{ item.suggested_action }}
+{% if item.evidence_refs %}  - Evidence: {{ item.evidence_refs | join(", ") }}
+{% endif %}
+{% endfor %}
+
+## Missing Bridges
+{% for item in report.missing_bridges %}
+- {{ item }}
+{% endfor %}
+
+## Decisions To Confirm
+{% for item in report.decisions_to_confirm %}
+- {{ item }}
+{% endfor %}

@@ -1,0 +1,490 @@
+chapter_analysis:
+  slug: "ch11-an-honest-coin"
+  chapter_number: 11
+  chapter_title: "An Honest Coin"
+  visual_thesis: "Justice beyond law—a heist proves an ally's intelligence, corruption burns in controlled flames, and a mysterious lock opens futures unknown."
+  dominant_mood_progression:
+    - "cautious arrival"
+    - "investigation gathering"
+    - "planning tension"
+    - "shadow infiltration"
+    - "evidence delivery"
+    - "fire and consequence"
+  color_story:
+    opening: "Mist-gray approach, stone-bridge arches, market-bustle color"
+    climax: "Warehouse shadow, ledger-black ink, window-shatter glass"
+    closing: "Fire-orange chaos, Bastion Lock dark metal, dawn-bleed departure"
+
+scene_zone_recommendations:
+  - scene_id: scn-11-01
+    location: stonebridge
+    recommended_zones:
+      - zone: magistrates-office
+        label: "Magistrate's Study"
+        rationale: "Official channels, desperate magistrate"
+        anchor_details:
+          - "Cramped office, scrolls competing for space"
+          - "Bone-tired Vance"
+          - "Young clerk with rolled parchment"
+    confidence: high
+
+  - scene_id: scn-11-02
+    location: stonebridge
+    recommended_zones:
+      - zone: market-square
+        label: "Market Intelligence"
+        rationale: "Gathering information through commerce"
+        anchor_details:
+          - "Spice merchant with knowing eyes"
+          - "Grimjaw critiquing stew"
+          - "Dockworker's warning"
+    confidence: high
+
+  - scene_id: scn-11-05
+    location: croft-warehouse
+    recommended_zones:
+      - zone: rooftop
+        label: "Rooftop Approach"
+        rationale: "Veyra's infiltration route"
+        anchor_details:
+          - "Moonless night"
+          - "Guards smoking at corner"
+          - "Ventilation hatch"
+      - zone: office
+        label: "Croft's Office"
+        rationale: "Safe behind tapestry, ledger discovery"
+        anchor_details:
+          - "Hideous battle tapestry"
+          - "Portrait of mistress Mara"
+          - "Black leather ledger"
+    confidence: high
+
+  - scene_id: scn-11-06
+    location: stonebridge
+    recommended_zones:
+      - zone: magistrates-office
+        label: "Night Delivery"
+        rationale: "Evidence to magistrate, anonymous gift"
+        anchor_details:
+          - "Vance in robe, instantly alert"
+          - "Ledger pages by candlelight"
+          - "Clerk's urgent warning"
+    confidence: high
+
+  - scene_id: scn-11-07
+    location: croft-warehouse
+    recommended_zones:
+      - zone: warehouse-exterior
+        label: "Controlled Fire"
+        rationale: "Staged destruction, weapons revealed"
+        anchor_details:
+          - "Flames from office section"
+          - "Saved crates of weapons"
+          - "Marcus from shadows"
+    confidence: high
+
+  - scene_id: scn-11-08
+    location: shepherds-rest-inn
+    recommended_zones:
+      - zone: inn-room
+        label: "Dawn Departure"
+        rationale: "Aftermath reflection, complicated victory"
+        anchor_details:
+          - "Bastion Lock by hearth"
+          - "Supply contracts examined"
+          - "Pre-dawn light bleeding"
+    confidence: high
+
+candidate_moments:
+  - moment_id: "ch11-an-honest-coin-moment-01"
+    scene_id: scn-11-01
+    title: "Bone-Tired Justice"
+    narrative_beat: "Magistrate Vance's exhaustion is the kind that comes from fighting losing battles—'knowing and proving are different beasts entirely.'"
+    subtext: "The system's failure when corruption is connected."
+    scene_mood: somber
+    emotional_color: "cramped desperation, scroll-clutter frustration, bitter smile"
+    location: stonebridge
+    zone: magistrates-office
+    characters_present:
+      - magistrate-vance
+      - thorne-brightward
+      - veyra-thornwake
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 3
+      narrative_pivot: 3
+      character_revelation: 4
+      symbolic_density: 3
+      total: 17
+    suggested_shot:
+      image_type: beat
+      framing: medium
+      angle: "Vance at crowded desk, bone-tiredness visible"
+      key_visual_hook: "Vance surrounded by scrolls, exhaustion in every line, bitter smile as he speaks of disappearing evidence"
+      lighting_suggestion: "Gray office light, cramped shadows"
+      composition_notes: "The system's failure personified in one tired man"
+    source_excerpts:
+      - "a man who looked tired in his bones, the kind of exhaustion that came from fighting losing battles"
+      - "'Accusations have been made before. They tend to... disappear'"
+      - "'I know. But knowing and proving are different beasts entirely'"
+    selection_rationale: "Establishes the stakes and the system's failure."
+
+  - moment_id: "ch11-an-honest-coin-moment-02"
+    scene_id: scn-11-01
+    title: "The Clerk's Gift"
+    narrative_beat: "The young clerk presses rolled parchment into Thorne's hand—'The law serves justice, not the other way around. You said that.'"
+    subtext: "Conscience finding cracks in corruption's walls."
+    scene_mood: intimate
+    emotional_color: "whispered urgency, ink-stained fingers, earnest hope"
+    location: stonebridge
+    zone: magistrates-office
+    characters_present:
+      - thorne-brightward
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 3
+      narrative_pivot: 4
+      character_revelation: 3
+      symbolic_density: 4
+      total: 18
+    suggested_shot:
+      image_type: beat
+      framing: close
+      angle: "Ink-stained hands pressing parchment into calloused ones"
+      key_visual_hook: "Young clerk's nervous glance, ink-stained fingers pressing rolled parchment into Thorne's hand, then fleeing"
+      lighting_suggestion: "Shadow-corridor, furtive moment"
+      composition_notes: "Small act of conscience, paper passing between hands"
+    source_excerpts:
+      - "'You gave a lecture on tactical integrity. You said the law serves justice, not the other way around'"
+      - "'The warehouse registry. Public record, anyone can request it. But most don't know to ask'"
+      - "He fled before Thorne could respond"
+    selection_rationale: "The system's conscience acts through one brave clerk."
+
+  - moment_id: "ch11-an-honest-coin-moment-03"
+    scene_id: scn-11-02
+    title: "Grimjaw's Stew Critique"
+    narrative_beat: "Over stew, Grimjaw delivers expert analysis—'Mushrooms are soggy. Cook added them too early'—forty years of field cooking made him a critic."
+    subtext: "Expertise is transferable; attention to detail reveals character."
+    scene_mood: celebratory
+    emotional_color: "tavern-warm comfort, critical eye, fond exasperation"
+    location: stonebridge
+    zone: market-square
+    characters_present:
+      - grimjaw-ironbeard
+      - quartermaster-fayne
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 3
+      narrative_pivot: 2
+      character_revelation: 4
+      symbolic_density: 2
+      total: 14
+    suggested_shot:
+      image_type: beat
+      framing: medium
+      angle: "Grimjaw prodding stew, Fayne staring"
+      key_visual_hook: "Grimjaw prodding mushroom with spoon, professional disapproval, Fayne's expression of disbelief"
+      lighting_suggestion: "Tavern-warm lamplight"
+      composition_notes: "Character moment—unexpected expertise"
+    source_excerpts:
+      - "'Mushrooms in stew are different from mushrooms in hash. These are... soggy'"
+      - "'I've eaten field cooking for forty years. You learn to identify mistakes by texture alone'"
+      - "'When did you become a food critic?'"
+    selection_rationale: "Character humor showing Grimjaw's depth."
+
+  - moment_id: "ch11-an-honest-coin-moment-04"
+    scene_id: scn-11-05
+    title: "Drunk Merchant Pantomime"
+    narrative_beat: "Thorne and Grimjaw's elaborate drunk act—'Fifty bushels, not forty!'—pulls guards from their posts while Veyra sprints across rooftops."
+    subtext: "Trust in action; distraction as art form."
+    scene_mood: kinetic
+    emotional_color: "careful slur, watchful amusement, sprint-shadow urgency"
+    location: croft-warehouse
+    zone: rooftop
+    characters_present:
+      - thorne-brightward
+      - grimjaw-ironbeard
+      - veyra-thornwake
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 4
+      narrative_pivot: 3
+      character_revelation: 3
+      symbolic_density: 3
+      total: 16
+    suggested_shot:
+      image_type: beat
+      framing: wide
+      angle: "Split composition—drunk act below, shadow on roof above"
+      key_visual_hook: "Thorne and Grimjaw staggering toward guards, Veyra a shadow sprinting across tiles above, moonless night"
+      lighting_suggestion: "Guard-torch below, darkness above"
+      composition_notes: "Simultaneous action—distraction and infiltration"
+    source_excerpts:
+      - "their voices carrying the careful slur of men who'd had just enough to drink"
+      - "'PRIVATE? I'll show you private! I've got a contract!'"
+      - "Veyra didn't waste the opportunity. She sprinted across the roof"
+    selection_rationale: "Team coordination in action."
+
+  - moment_id: "ch11-an-honest-coin-moment-05"
+    scene_id: scn-11-05
+    title: "Behind the Hideous Tapestry"
+    narrative_beat: "The tapestry is indeed hideous—a glorified battle in clashing colors—but behind it waits the safe, and the mistress's portrait gives up the combination."
+    subtext: "Men's secrets hidden behind their vanities."
+    scene_mood: intimate
+    emotional_color: "obsessive order, clashing colors, portrait-revelation"
+    location: croft-warehouse
+    zone: office
+    characters_present:
+      - veyra-thornwake
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 5
+      narrative_pivot: 4
+      character_revelation: 3
+      symbolic_density: 4
+      total: 19
+    suggested_shot:
+      image_type: detail
+      framing: medium
+      angle: "Tapestry pulled aside, safe revealed, portrait on desk"
+      key_visual_hook: "Hideous battle tapestry pushed aside revealing dark safe, portrait of 'Beloved Mara' visible on desk, Veyra's hand on combination"
+      lighting_suggestion: "Single lamp-glow in obsessive office"
+      composition_notes: "The secret's hiding place—vanity concealing crime"
+    source_excerpts:
+      - "The tapestry Marcus had mentioned was indeed hideous—a glorified representation of some ancient battle rendered in clashing colors"
+      - "a painting on the desk... 'Beloved Mara'"
+      - "Not his daughter. His mistress"
+    selection_rationale: "Key heist moment—the secret revealed."
+
+  - moment_id: "ch11-an-honest-coin-moment-06"
+    scene_id: scn-11-05
+    title: "Window Exit"
+    narrative_beat: "Footsteps on stairs, no time for subtlety—Veyra goes shoulder-first through glass, hits dock rolling, comes up running."
+    subtext: "Escape through destruction; plans rarely survive contact."
+    scene_mood: kinetic
+    emotional_color: "glass-shatter urgency, dock-roll impact, pursuit-sprint"
+    location: croft-warehouse
+    zone: office
+    characters_present:
+      - veyra-thornwake
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 4
+      character_revelation: 4
+      symbolic_density: 3
+      total: 20
+    suggested_shot:
+      image_type: hero
+      framing: medium
+      angle: "Veyra mid-window-shatter, glass flying, dock below"
+      key_visual_hook: "Veyra shoulder-first through window in shower of glass, dock and water below, moonless night, escape in motion"
+      lighting_suggestion: "Glass catching what little light exists, silhouette against dark"
+      composition_notes: "Action peak—elegant plans become desperate exits"
+    source_excerpts:
+      - "She sprinted for the window, shoulder-first through the glass in a shower of shards"
+      - "she hit the dock rolling, coming up running"
+      - "Fayne had a boat ready, Grimjaw already at the oars"
+    selection_rationale: "Peak action moment of the heist."
+
+  - moment_id: "ch11-an-honest-coin-moment-07"
+    scene_id: scn-11-06
+    title: "Anonymous Delivery"
+    narrative_beat: "Vance in robe but instantly alert, face moving through surprise, satisfaction, grim determination—'These documents were delivered anonymously.'"
+    subtext: "Justice finding a way when law cannot act openly."
+    scene_mood: intimate
+    emotional_color: "night-wake alertness, candlelight revelation, determined satisfaction"
+    location: stonebridge
+    zone: magistrates-office
+    characters_present:
+      - magistrate-vance
+      - veyra-thornwake
+      - thorne-brightward
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 3
+      narrative_pivot: 5
+      character_revelation: 3
+      symbolic_density: 4
+      total: 19
+    suggested_shot:
+      image_type: beat
+      framing: medium
+      angle: "Vance examining ledger pages by candlelight"
+      key_visual_hook: "Vance in robe bent over ledger pages, candlelight on damning evidence, Veyra and Thorne watching, satisfaction on tired face"
+      lighting_suggestion: "Single candle, night-study intimacy"
+      composition_notes: "Justice delivered in darkness"
+    source_excerpts:
+      - "answering the door himself, wrapped in a robe but instantly alert"
+      - "His face went through a series of expressions—surprise, satisfaction, then grim determination"
+      - "'These documents were delivered anonymously'"
+    selection_rationale: "Evidence delivered, justice enabled."
+
+  - moment_id: "ch11-an-honest-coin-moment-08"
+    scene_id: scn-11-07
+    title: "Controlled Burn"
+    narrative_beat: "The fire is staged—concentrated on the office, while Croft's men evacuate certain crates. Weapons. Military grade. Silent Hand supply."
+    subtext: "Corruption burning its own evidence while protecting its true trade."
+    scene_mood: ominous
+    emotional_color: "fire-orange chaos, controlled destruction, weapons-gleam discovery"
+    location: croft-warehouse
+    zone: warehouse-exterior
+    characters_present:
+      - veyra-thornwake
+      - thorne-brightward
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 4
+      character_revelation: 3
+      symbolic_density: 4
+      total: 20
+    suggested_shot:
+      image_type: anchor
+      framing: wide
+      angle: "Controlled fire one side, saved weapons crates other"
+      key_visual_hook: "Office section ablaze, bucket brigades forming, while men evacuate crates of weapons visible in firelight"
+      lighting_suggestion: "Fire-orange chaos, weapon-steel gleam"
+      composition_notes: "Two truths revealed—what burns, what's saved"
+    source_excerpts:
+      - "the fire was controlled, concentrated on one section. The office section"
+      - "Croft's men were moving. They were evacuating certain crates while letting others burn"
+      - "Weapons. Good steel, military grade. Enough to arm a small company"
+    selection_rationale: "True scope of corruption revealed."
+
+  - moment_id: "ch11-an-honest-coin-moment-09"
+    scene_id: scn-11-07
+    title: "The Infinite Coat"
+    narrative_beat: "Marcus produces scroll, gold, wine, lockpicks from his coat—'Either you've violated spatial geometry, or that's magic.' 'Is there a difference?'"
+    subtext: "Mystery wrapped in charm; Marcus as puzzle they can't solve."
+    scene_mood: celebratory
+    emotional_color: "magician-flourish production, coat-curiosity, baffled amusement"
+    location: croft-warehouse
+    zone: warehouse-exterior
+    characters_present:
+      - marcus-heartbridge
+      - grimjaw-ironbeard
+      - quartermaster-fayne
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 4
+      narrative_pivot: 2
+      character_revelation: 4
+      symbolic_density: 3
+      total: 16
+    suggested_shot:
+      image_type: beat
+      framing: medium
+      angle: "Marcus producing object from coat, others staring"
+      key_visual_hook: "Marcus with magician's flourish pulling silk-wrapped object from coat, Grimjaw's professional envy, Fayne sketching frantically"
+      lighting_suggestion: "Fire-glow, object catching light"
+      composition_notes: "The mystery of Marcus—endless pockets, endless secrets"
+    source_excerpts:
+      - "'That coat's got enchantments on it. Has to'"
+      - "'I've seen you pull out scrolls, gold, a bottle of wine, lock-picks, and now apparently large metal artifacts'"
+      - "'Is there a difference when it comes to truly exceptional craftsmanship?'"
+    selection_rationale: "Marcus's mystery personified in his coat."
+
+  - moment_id: "ch11-an-honest-coin-moment-10"
+    scene_id: scn-11-07
+    title: "The Bastion Lock"
+    narrative_beat: "The lock is heavier than expected, dark metal warm against Veyra's palm—for a heartbeat, she has the sensation of being truly seen."
+    subtext: "Artifact with presence; future wrapped in ancient metal."
+    scene_mood: ethereal
+    emotional_color: "dark-metal weight, warm-palm contact, soul-seen moment"
+    location: croft-warehouse
+    zone: warehouse-exterior
+    characters_present:
+      - veyra-thornwake
+      - marcus-heartbridge
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 5
+      narrative_pivot: 5
+      character_revelation: 4
+      symbolic_density: 5
+      total: 24
+    suggested_shot:
+      image_type: hero
+      framing: close
+      angle: "Bastion Lock in Veyra's hands, fire-glow behind"
+      key_visual_hook: "Dark intricate lock in Veyra's scarred hands, warm against palm, fire chaos in background, moment of connection visible in her eyes"
+      lighting_suggestion: "Fire-glow catching dark metal, intimate focus"
+      composition_notes: "Artifact as destiny—the lock that will change everything"
+    source_excerpts:
+      - "The lock was heavier than expected when Veyra lifted it, its dark metal warm against her palm"
+      - "she had the strangest sensation of being seen. Not watched, but truly seen"
+      - "'whoever holds both the lock and its key controls access to something rather special'"
+    selection_rationale: "Chapter's culminating image—destiny in dark metal."
+
+  - moment_id: "ch11-an-honest-coin-moment-11"
+    scene_id: scn-11-08
+    title: "Complicated Victory"
+    narrative_beat: "By hearth, Bastion Lock on table, they count the cost—'He played us, but he delivered.' A victory tangled in schemes they don't understand."
+    subtext: "Trust remains uncertain; results speak louder than methods."
+    scene_mood: somber
+    emotional_color: "hearth-warm reflection, contract-paper rustle, dawn-bleed departure"
+    location: shepherds-rest-inn
+    zone: inn-room
+    characters_present:
+      - veyra-thornwake
+      - thorne-brightward
+      - grimjaw-ironbeard
+      - quartermaster-fayne
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 3
+      symbolic_density: 4
+      total: 19
+    suggested_shot:
+      image_type: anchor
+      framing: medium
+      angle: "Company around hearth, lock on table, dawn through window"
+      key_visual_hook: "Bastion Lock on table by dying hearth, Company around it in thoughtful exhaustion, pre-dawn light through window"
+      lighting_suggestion: "Hearth-ember glow, dawn-bleed through glass"
+      composition_notes: "The weight of complicated victory"
+    source_excerpts:
+      - "'He played us,' Fayne said quietly"
+      - "'But we walked out with what we needed'"
+      - "It was a complicated victory, tangled in the schemes of a man they didn't trust"
+    selection_rationale: "Chapter's closing reflection on what they've gained and lost."
+
+proposed_selection:
+  target_moments: 6
+  rules_used:
+    - "At least 1 hero or anchor"
+    - "No more than 2 moments with the same scene_mood"
+    - "Cover arc from investigation through heist to aftermath"
+    - "Balance action with character and theme"
+  selected_moments:
+    - moment_id: "ch11-an-honest-coin-moment-10"
+      rank: 1
+      reason: "Highest score (24), Bastion Lock as destiny artifact"
+    - moment_id: "ch11-an-honest-coin-moment-06"
+      rank: 2
+      reason: "Strong score (20), peak action, window exit"
+    - moment_id: "ch11-an-honest-coin-moment-08"
+      rank: 3
+      reason: "Strong score (20), controlled burn reveals weapons"
+    - moment_id: "ch11-an-honest-coin-moment-05"
+      rank: 4
+      reason: "Good score (19), key heist moment, safe revealed"
+    - moment_id: "ch11-an-honest-coin-moment-07"
+      rank: 5
+      reason: "Good score (19), evidence delivered to justice"
+    - moment_id: "ch11-an-honest-coin-moment-02"
+      rank: 6
+      reason: "Good score (18), conscience acting through clerk"
+  rejected_notes:
+    - moment_id: "ch11-an-honest-coin-moment-11"
+      reason: "Strong closing but moment-10 is more pivotal"
+    - moment_id: "ch11-an-honest-coin-moment-01"
+      reason: "Good setup but clerk moment more active"
+    - moment_id: "ch11-an-honest-coin-moment-04"
+      reason: "Fun distraction but window exit has more impact"
+    - moment_id: "ch11-an-honest-coin-moment-09"
+      reason: "Character humor but lower narrative weight"
+    - moment_id: "ch11-an-honest-coin-moment-03"
+      reason: "Delightful but tangential to main plot"

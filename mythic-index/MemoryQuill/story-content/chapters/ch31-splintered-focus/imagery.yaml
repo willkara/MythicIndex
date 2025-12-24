@@ -1,0 +1,729 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: Splintered Focus
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch31-splintered-focus"
+  chapter_number: 31
+  chapter_title: "Splintered Focus"
+  visual_thesis: "From moonlit determination through the beautiful lie of a hidden prison to the blood-price of necessary violence—light and water both become weapons."
+  color_palette:
+    primary:
+      - "#1a2633"
+      - "#3d5c6b"
+      - "#8b9faa"
+      - "#d4a574"
+    accent:
+      - "#7b5ea7"
+      - "#c9463d"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 2
+    pastoral: 1
+    celebratory: 0
+    aquatic: 2
+    ethereal: 2
+    intimate: 1
+    kinetic: 0
+    ominous: 2
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: "Lantern dark throughout. Mohawk and cowl prominent. Tactical lead. Mask cracking in private."
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "lyra-kestrel"
+    name: "Lyra Kestrel"
+    scene_variations: "Operative mode. Purple wisps active at throat. Embracing Darius. Closing eyes of fallen. Master of shadow."
+    reference_images:
+      - "lyra-kestrel-portrait-01"
+
+  - ref: "rill-vossari"
+    name: "Rill Vossari"
+    scene_variations: "Skin color shifts from aquamarine to storm-blue to sea-green. Bioluminescence writhing in pain or pulsing in rhythm. Sacrifice and atonement."
+    reference_images:
+      - "rill-vossari-casting-portrait-01"
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: "Under glamour disguise. Unremarkable appearance. Protective stance. Supporting Rill."
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "archer-venn"
+    name: "Archer Venn"
+    scene_variations: "Bandaged hand. Dusted armor. Concentration replacing smugness."
+    reference_images:
+      - "archer-venn-portrait-01"
+
+locations:
+  - ref: "thornwood-forest"
+    zones:
+      - id: "treeline"
+        chapter_context: "Ancient oaks, dense pines. Pools of deep darkness. Muffled footsteps on damp leaves."
+  - ref: "veridian-agronomics-exterior"
+    zones:
+      - id: "overview"
+        chapter_context: "Tudor gatehouse, limestone manor. Manicured gardens as funnel kill zones. Deceptive amber lamplight."
+  - ref: "water-confluence-point"
+    zones:
+      - id: "overview"
+        chapter_context: "Engineered streams, precision sluice gates. Moonlight on wet stone. Churning, corrupted water."
+
+moments:
+  - id: "ch31-splintered-focus-moment-01"
+    scene_id: "scn-31-01"
+    title: "The Splintered Focus"
+    narrative_beat: "Veyra and Thorne conferring in the forest camp, deciding to split the teams for maximum intelligence gathering."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "lyra-kestrel"
+    location_zone: "thornwood-forest/treeline"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch31-splintered-focus-moment-02"
+    scene_id: "scn-31-02"
+    title: "The Beautiful Lie"
+    narrative_beat: "The watchers observing the warmly-lit Tudor estate from the dark pine treeline."
+    visual_weight: "hero"
+    characters_present:
+      - "veyra-thornwake"
+      - "lyra-kestrel"
+      - "archer-venn"
+    location_zone: "veridian-agronomics-exterior/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch31-splintered-focus-moment-03"
+    scene_id: "scn-31-02"
+    title: "The Lover's Call"
+    narrative_beat: "Lyra embracing the guard while her throat wisps pulse with the stolen voice, a corrupted tenderness."
+    visual_weight: "high"
+    characters_present:
+      - "lyra-kestrel"
+    location_zone: "veridian-agronomics-exterior/overview"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch31-splintered-focus-moment-04"
+    scene_id: "scn-31-02"
+    title: "Silent Step"
+    narrative_beat: "Veyra's boot crossing the threshold into the perimeter as magical fog rolls forward."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "veridian-agronomics-exterior/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch31-splintered-focus-moment-05"
+    scene_id: "scn-31-03"
+    title: "Writhing Water"
+    narrative_beat: "Rill sensing the corruption at the confluence, her skin patterns writhing in elemental distress."
+    visual_weight: "high"
+    characters_present:
+      - "rill-vossari"
+      - "thorne-brightward"
+      - "sergeant-kelen"
+    location_zone: "water-confluence-point/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch31-splintered-focus-moment-06"
+    scene_id: "scn-31-03"
+    title: "Burial Shroud"
+    narrative_beat: "Water rising to wrap the fallen guard like a shroud, Rill's skin flushed deep storm-blue."
+    visual_weight: "hero"
+    characters_present:
+      - "rill-vossari"
+      - "medic-halden"
+      - "archer-venn"
+    location_zone: "water-confluence-point/overview"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch31-splintered-focus-moment-07"
+    scene_id: "scn-31-03"
+    title: "The Atonement Spiral"
+    narrative_beat: "Rill's bleeding palm over the water, her blood dispersing into a spiral as the river forgives the necessity."
+    visual_weight: "high"
+    characters_present:
+      - "rill-vossari"
+    location_zone: "water-confluence-point/overview"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch31-splintered-focus-moment-08"
+    scene_id: "scn-31-04"
+    title: "The Intelligence Table"
+    narrative_beat: "The team huddling over the stolen blueprints and rubbings at the camp, resolve replacing exhaustion."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "lyra-kestrel"
+      - "rill-vossari"
+    location_zone: "thornwood-forest/treeline"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch31-splintered-focus-moment-09"
+    scene_id: "scn-31-04"
+    title: "Dawn Withdrawal"
+    narrative_beat: "Seven mounted silhouettes riding away from the forest toward the first amber light of dawn."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "lyra-kestrel"
+      - "rill-vossari"
+      - "thorne-brightward"
+      - "archer-venn"
+      - "medic-halden"
+      - "sergeant-kelen"
+    location_zone: "thornwood-forest/treeline"
+    transformation_state: "after"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch31-splintered-focus-img-31-01-01"
+    source_moment: "ch31-splintered-focus-moment-01"
+    scene_id: "scn-31-01"
+    image_type: "beat"
+    category:
+      - "character"
+      - "emotion"
+      - "moment"
+    scene_mood: "somber"
+    mood_rationale: "Tense preparation under moonlight. The heavy responsibility of leadership splitting the team. Stillness before action."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Veyra and Thorne huddled together in the forest camp at night. Maps are spread on a log. Veyra's face is half-lit by moonlight, half in shadow. Thorne's disguised features are serious. Lyra stands apart, her silhouette dark and coiled. The forest around them is a wall of impenetrable shadow.
+    composition_notes: |
+      Two-shot focus on Veyra and Thorne. Lyra as a watchful third element in the background. Moonlight filtering through leaves. High contrast.
+    visual_hook: "The map on the log, illuminated by a sliver of moonlight, becoming the center of their split world."
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "lyra-kestrel"
+    character_states:
+      veyra-thornwake: |
+        Leaning over map. Serious expression. Hand near belt tokens.
+      thorne-brightward: |
+        Listening. Disguised features. Posture rigid.
+      lyra-kestrel: |
+        Apart. Watchful silhouette. Horns catching light.
+    location: "thornwood-forest"
+    lighting:
+      primary_source: "Moonlight"
+      quality: "Hard, high-contrast"
+      direction: "Side"
+      color_temperature: "Cool silver"
+      shadow_depth: "Deep"
+      atmospheric: "Forest chill"
+    palette:
+      dominant:
+        - "shadow black"
+        - "moonlight silver"
+        - "forest green"
+      accent:
+        - "parchment cream"
+      avoid:
+        - "warm firelight"
+    prompt_used: |
+      Two people huddling over a map on a fallen log in a dark forest at night,
+      cool silver moonlight filtering through trees,
+      shadowed silhouettes of adventurers preparing for a mission,
+      atmosphere of tension and split focus,
+      classical oil painting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, firelight
+    tags:
+      - "beat"
+      - "planning"
+      - "moonlight"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch31-splintered-focus-img-31-02-01"
+    source_moment: "ch31-splintered-focus-moment-02"
+    scene_id: "scn-31-02"
+    image_type: "hero"
+    category:
+      - "surveillance"
+      - "location"
+      - "ominous"
+    scene_mood: "ominous"
+    mood_rationale: "The 'beautiful lie.' Deception disguised as warmth. Cold watchers studying warm deception."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Through dark pine branches, the Veridian Agronomics estate glows with deceptive warmth. Tudor gatehouse windows cast amber diamonds of light onto hedges. Limestone manor rises beyond. In foreground shadows, three figures crouch at the treeline. Veyra's mohawk, Lyra's horns, Venn's bow. Utterly still silhouettes.
+    composition_notes: |
+      Wide cinematic shot. Treeline frames left and bottom. Watchers in left third shadow. Lit gatehouse center-right. Depth through layering.
+    visual_hook: "The warm golden glow of diamond-paned windows against the absolute black of the forest"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "lyra-kestrel"
+      - "archer-venn"
+    character_states:
+      veyra-thornwake: |
+        Crouched. Silhouette profile. Lantern dark. Tactical assessment.
+      lyra-kestrel: |
+        Beside Veyra. Horns catching moonlight. Predatory.
+      archer-venn: |
+        Lowered bow. Alert.
+    location: "veridian-agronomics-exterior"
+    lighting:
+      primary_source: "estate lamplight"
+      quality: "split—warm vs cold"
+      direction: "radiating from center-right"
+      color_temperature: "warm amber vs cold blue-black"
+      shadow_depth: "deep, consuming in foreground"
+      atmospheric: "ground mist in gardens"
+    palette:
+      dominant:
+        - "forest black"
+        - "amber lamplight"
+        - "limestone gray"
+      accent:
+        - "moonlight silver"
+      avoid:
+        - "friendly greens"
+    prompt_used: |
+      Shadowed figures crouching at a dark forest edge looking at a warmly lit manor house,
+      Tudor architecture with glowing windows,
+      contrast between warm lights and absolute dark forest,
+      surveillance mission atmosphere,
+      wide cinematic composition,
+      classical oil painting, Symbolist unease,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright happy colors
+    tags:
+      - "hero"
+      - "surveillance"
+      - "stronghold"
+      - "ominous"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch31-splintered-focus-img-31-02-02"
+    source_moment: "ch31-splintered-focus-moment-03"
+    scene_id: "scn-31-02"
+    image_type: "anchor"
+    category:
+      - "character"
+      - "action"
+      - "magic"
+    scene_mood: "intimate"
+    mood_rationale: "Intimacy weaponized into violence. Embrace and warmth used for assassination. Purple wisps of stolen voice."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Inside the gatehouse, Lyra Kestrel embraces a guard from behind. Her arms wrap around him, one hand pressing a cloth to his face. He is sagging against her. Purple wisps swirl around Lyra's throat—calligraphic patterns pulsing. Serene concentration on her face. Warm candlelight makes it look domestic.
+    composition_notes: |
+      Medium-close portrait. Lyra supports his weight. Face visible over shoulder. Purple glow from below. Doorframe frame-within-frame.
+    visual_hook: "The ethereal purple wisps pulsing at Lyra's throat—visible evidence of stolen voice"
+    depicts_characters:
+      - "lyra-kestrel"
+    character_states:
+      lyra-kestrel: |
+        Plum skin in warm light. Purple wisps at throat. Serene focus. Professional. Mechanical precision in embrace.
+    location: "veridian-agronomics-exterior"
+    lighting:
+      primary_source: "gatehouse candles"
+      quality: "soft, warm, intimate"
+      direction: "ambient"
+      color_temperature: "warm amber vs purple glow"
+      shadow_depth: "soft"
+      atmospheric: "domestic comfort"
+    palette:
+      dominant:
+        - "warm amber"
+        - "deep plum"
+        - "charcoal"
+      accent:
+        - "ethereal purple"
+      avoid:
+        - "obvious violence"
+    prompt_used: |
+      Plum-skinned woman in a gentle embrace with a collapsing man in a lamplit room,
+      glowing purple smoke wisps around her throat,
+      serene and focused expression,
+      warm candlelight and soft shadows,
+      the embrace hides a deadly intent,
+      classical oil painting, Vermeer interior lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, blood, struggle
+    tags:
+      - "anchor"
+      - "infiltration"
+      - "lyra"
+      - "magic"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch31-splintered-focus-img-31-02-03"
+    source_moment: "ch31-splintered-focus-moment-04"
+    scene_id: "scn-31-02"
+    image_type: "beat"
+    category:
+      - "location"
+      - "infiltration"
+      - "ethereal"
+    scene_mood: "ethereal"
+    mood_rationale: "The 'Character's Silent Approach.' Magical concealment. boundary between world and mission vanishes. Phantom-like."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Ground level shot at the estate edge. Thick magically enhanced fog rolling forward. Out of mist, the iron-banded stone base of a guard tower emerges. A single dark-booted foot is mid-step, silently crossing the threshold. Warm diamonds of windows visible far above the mist.
+    composition_notes: |
+      Extreme low-angle. Fog dominates lower two-thirds. Guard tower base vertical anchor right. Boot as human anchor. Silver-gray vs dark charcoal.
+    visual_hook: "A single dark boot caught mid-step as a wave of magical fog rolls over the base of a guard tower."
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Only dark boot and leg visible. Mid-step. Warrior's focus.
+    location: "veridian-agronomics-exterior"
+    lighting:
+      primary_source: "predawn gray"
+      quality: "diffused, soft, dreamlike"
+      direction: "ambient"
+      color_temperature: "silver-gray"
+      shadow_depth: "minimal"
+      atmospheric: "thick magical mist"
+    palette:
+      dominant:
+        - "mist gray"
+        - "stone blue-black"
+        - "earth brown"
+      accent:
+        - "amber window glow top"
+      avoid:
+        - "sharp edges"
+    prompt_used: |
+      Low angle shot of a boot stepping through thick ground mist toward a stone wall,
+      stone tower base emerging from fog,
+      ghostly and dreamlike atmosphere,
+      silver-gray light and soft focus,
+      classical oil painting, Pre-Raphaelite luminosity,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright sunlight
+    tags:
+      - "beat"
+      - "infiltration"
+      - "mist"
+      - "ethereal"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch31-splintered-focus-img-31-03-01"
+    source_moment: "ch31-splintered-focus-moment-05"
+    scene_id: "scn-31-03"
+    image_type: "mood"
+    category:
+      - "character"
+      - "emotion"
+      - "moment"
+    scene_mood: "ominous"
+    mood_rationale: "Corrupted water. Rill's physical reaction to elemental pain. Beautiful and terrible engineering. Elemental dread."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Rill kneels at engineered confluence. Hands hover above surface. Skin darkened to troubled grey-green. Bioluminescent patterns writhing convulsively. Dreadlocks sway without wind. Thorne (disguised) and Kelen background defensive. Sluice gates gleam with moonlight and brass.
+    composition_notes: |
+      Medium shot center. Rill kneeling profile. Sluice gates receding background. Bioluminescence irregular pulsing illumination. Watchers middle-distance silhouettes.
+    visual_hook: "The bioluminescent currents under Rill's skin writhing like distressed creatures"
+    depicts_characters:
+      - "rill-vossari"
+      - "thorne-brightward"
+      - "sergeant-kelen"
+    character_states:
+      rill-vossari: |
+        Sensing corruption. Grey-green skin. Writhing bioluminescence. Wide eyes. Revulsion.
+      thorne-brightward: |
+        Under glamour. Unremarkable man. Guard posture.
+      sergeant-kelen: |
+        Armored. Watchful. Slate tablet in hand.
+    location: "water-confluence-point"
+    lighting:
+      primary_source: "disturbed bioluminescence"
+      quality: "unsettling, organic"
+      direction: "from within outward"
+      color_temperature: "sickly blue-green"
+      shadow_depth: "deep beyond glow"
+      atmospheric: "humid, cold stillness"
+    palette:
+      dominant:
+        - "troubled grey-green"
+        - "sickly teal"
+        - "granite"
+      accent:
+        - "writhing blue"
+      avoid:
+        - "healthy aquamarine"
+    prompt_used: |
+      Water genasi woman with troubled grey-green skin sensing corruption at a stream,
+      bioluminescent veins writhing under her skin in pain,
+      hands hovering above water,
+      precision sluice gates and dark stone background,
+      two soldiers in shadows watching,
+      classical oil painting, Symbolist unease,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, peaceful
+    tags:
+      - "mood"
+      - "rill"
+      - "water-corruption"
+      - "ominous"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch31-splintered-focus-img-31-03-02"
+    source_moment: "ch31-splintered-focus-moment-06"
+    scene_id: "scn-31-03"
+    image_type: "anchor"
+    category:
+      - "action"
+      - "moment"
+      - "character"
+    scene_mood: "somber"
+    mood_rationale: "Killing as funeral. Burial shroud water. Sorrowful necessity and grief. Death as sacrament."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Water rises to wrap fallen guard's head like a burial shroud. Body in shallows. Rill stands in middle distance, hand outstretched in command. Skin flushed deep storm-blue. Face shows horror at the act. Behind, Halden over Venn, golden healing glow fading. Single bubble rises.
+    composition_notes: |
+      Low angle from water. Shrouded form dominates foreground. Rill middle distance anchor. Fading healing glow background right. Diagonal of consequence.
+    visual_hook: "The water wrapping the guard's head and shoulders 'like a burial shroud'—terrible and complete"
+    depicts_characters:
+      - "rill-vossari"
+      - "medic-halden"
+      - "archer-venn"
+    character_states:
+      rill-vossari: |
+        Deep storm-blue skin. Hand outstretched. Horror and grief. Soaked coat.
+      medic-halden: |
+        Healing glow fading. Realization.
+      archer-venn: |
+        On ground. Right hand smoking from burn. Watching grimly.
+    location: "water-confluence-point"
+    lighting:
+      primary_source: "storm-blue bioluminescence"
+      quality: "cold, intense"
+      direction: "radiating from Rill"
+      color_temperature: "cold storm-blue"
+      shadow_depth: "deep Rembrandt"
+      atmospheric: "mist rising"
+    palette:
+      dominant:
+        - "deep storm-blue"
+        - "cold silver water"
+        - "shadow"
+      accent:
+        - "fading gold glow"
+      avoid:
+        - "warm tones"
+    prompt_used: |
+      Water rising to wrap a fallen soldier's head like a burial shroud,
+      water genasi woman with deep blue skin standing in shallows with hand extended,
+      expression of horror and regret,
+      other people in background tending to a wounded man with fading light,
+      atmosphere of necessary but tragic violence,
+      classical oil painting, Rembrandt lighting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, heroic killing
+    tags:
+      - "anchor"
+      - "drowning"
+      - "rill"
+      - "moral-weight"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch31-splintered-focus-img-31-03-03"
+    source_moment: "ch31-splintered-focus-moment-07"
+    scene_id: "scn-31-03"
+    image_type: "detail"
+    category:
+      - "character"
+      - "emotion"
+      - "symbol"
+    scene_mood: "ethereal"
+    mood_rationale: "Sacred action. Ritual atonement. Transformation of grief into grace. Pulsing water heart."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Overhead view: Rill's bleeding palm over water. Blood drops in a spiral pattern in current. Driftwood with symbols, mint sprig, bone-handled knife on bank. Water glows faintly and pulses like a heart. Luminous circle where blood meets water. Skin deep sea-green.
+    composition_notes: |
+      Overhead close. Centered icon-like. Rill's palm focal point. Blood spiral anchor. Sacred objects at edge.
+    visual_hook: "Blood dispersing into current in a spiral pattern within a perfect luminous circle"
+    depicts_characters:
+      - "rill-vossari"
+    character_states:
+      rill-vossari: |
+        Palm/forearm only. Sea-green skin. Ritual cut. Steadily pulsing bioluminescence.
+    location: "water-confluence-point"
+    lighting:
+      primary_source: "bioluminescence + water glow"
+      quality: "soft, luminous, otherworldly"
+      direction: "internal/below"
+      color_temperature: "sea-green/silver-blue"
+      shadow_depth: "minimal"
+      atmospheric: "pre-dawn gray reflection"
+    palette:
+      dominant:
+        - "deep sea-green"
+        - "silver-blue"
+        - "blood crimson"
+      accent:
+        - "copper coils"
+      avoid:
+        - "harsh shadows"
+    prompt_used: |
+      Macro detail of a hand with deep green skin bleeding into a glowing stream,
+      blood drops forming a spiral in the water,
+      ritual wooden carvings and herbs on the bank nearby,
+      water pulsing with soft light,
+      atmosphere of sacred ritual and apology,
+      classical oil painting, Pre-Raphaelite luminosity,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, face visible
+    tags:
+      - "detail"
+      - "ritual"
+      - "blood"
+      - "rill"
+      - "ethereal"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch31-splintered-focus-img-31-04-01"
+    source_moment: "ch31-splintered-focus-moment-09"
+    scene_id: "scn-31-04"
+    image_type: "mood"
+    category:
+      - "moment"
+      - "emotion"
+    scene_mood: "pastoral"
+    mood_rationale: "Dawn release. First warm light after cold darkness. Promise of return. Respite after weight."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Seven mounted silhouettes against first amber dawn light. Withdrawing from forest. Horizon glows gold/amber. Sky deep blue to rose. Identifiable by silhouette: mohawk, horns, trident, bandaged hand, kettle hat. Shadows carrying weight returning to waking world.
+    composition_notes: |
+      Classic silhouette composition. Wide cinematic. Riders form loose column moving left-to-right. Forest frames edges.
+    visual_hook: "Seven figures becoming shadows-on-horseback against the first amber light"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "lyra-kestrel"
+      - "rill-vossari"
+      - "thorne-brightward"
+      - "archer-venn"
+      - "medic-halden"
+      - "sergeant-kelen"
+    character_states:
+      veyra-thornwake: |
+        Silhouette. Leading. Mohawk. Straight but weary.
+      lyra-kestrel: |
+        Silhouette. Horns. Composed.
+      rill-vossari: |
+        Silhouette. Trident secured.
+      thorne-brightward: |
+        Silhouette. Glamour fading. Mustache emerging.
+    location: "thornwood-forest"
+    lighting:
+      primary_source: "dawn horizon"
+      quality: "soft, warm, diffused"
+      direction: "backlighting"
+      color_temperature: "warm amber/gold"
+      shadow_depth: "figures in full shadow"
+      atmospheric: "morning mist catching light"
+    palette:
+      dominant:
+        - "silhouette black"
+        - "dawn amber"
+        - "pre-dawn rose"
+      accent:
+        - "gold horizon"
+      avoid:
+        - "harsh contrast"
+    prompt_used: |
+      Wide cinematic shot of seven mounted silhouettes against a golden dawn sky,
+      riders moving away through a forest,
+      identifiable shapes of a mohawk and horns against the sunrise,
+      sky transitioning from deep blue to amber and rose,
+      atmosphere of successful but heavy return,
+      classical oil painting, plein air naturalism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, full daylight, detailed faces
+    tags:
+      - "mood"
+      - "departure"
+      - "silhouette"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

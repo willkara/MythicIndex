@@ -1,0 +1,66 @@
+location:
+  slug: waterdeep-chronicle
+  name: The Waterdeep Chronicle
+  files:
+    overview:
+      path: locations/waterdeep-chronicle/overview.md
+      excerpt: ''
+      exists: false
+    description:
+      path: locations/waterdeep-chronicle/description.md
+      excerpt: ''
+      exists: false
+    inhabitants:
+      path: locations/waterdeep-chronicle/inhabitants.md
+      excerpt: ''
+      exists: false
+zones_manifest:
+  path: locations/waterdeep-chronicle/zones.yaml
+  zones:
+  - slug: editorial-desk
+    name: Editorial Desk
+  - slug: newsroom
+    name: The Newsroom
+  - slug: office
+    name: Office
+    featured_in_chapters:
+    - ch11.5-wayside-whispers
+    - ch15.5-what-the-city-heard
+  - slug: overview
+    name: Overview
+    featured_in_chapters:
+    - ch3.5-ripples-and-reports
+  - slug: printing-room
+    name: Printing Room
+chapter_evidence:
+- slug: ch11.5-wayside-whispers
+  files:
+    content:
+      path: chapters/ch11.5-wayside-whispers/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch11.5-wayside-whispers/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+- slug: ch15.5-what-the-city-heard
+  files:
+    content:
+      path: chapters/ch15.5-what-the-city-heard/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch15.5-what-the-city-heard/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+- slug: ch3.5-ripples-and-reports
+  files:
+    content:
+      path: chapters/ch3.5-ripples-and-reports/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch3.5-ripples-and-reports/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+intrinsic_characters: []

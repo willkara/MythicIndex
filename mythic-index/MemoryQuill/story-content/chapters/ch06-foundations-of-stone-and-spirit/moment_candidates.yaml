@@ -1,0 +1,531 @@
+chapter_analysis:
+  slug: "ch06-foundations-of-stone-and-spirit"
+  chapter_number: 6
+  chapter_title: "Foundations of Stone and Spirit"
+  
+  visual_thesis: "From the harsh industrial aftermath of rescue to the warmth of chosen family forming around firelight and ancient stone"
+  
+  dominant_mood_progression:
+    - "exhausted relief"
+    - "unexpected wonder"
+    - "tender grief"
+    - "contemplative bonding"
+    - "hopeful departure"
+  
+  color_story:
+    opening: "copper sunset, dusty gray, exhaustion brown"
+    climax: "amber lamplight, lavender memory, weathered wood warmth"
+    closing: "rose-gold dawn, ancient granite gray, promise white"
+
+  key_locations:
+    - slug: "blackvein-lode"
+      name: "Blackvein Lode"
+      visual_character: "Industrial mining site softened by golden hour light; timber headframes silhouetted against copper mountains, dust motes catching dying sun, families clutching reunited miners"
+      time_of_day: "sunset"
+      weather_atmosphere: "clear but dusty, warm dying light"
+      
+    - slug: "grimjaw-cabin"
+      name: "Grimjaw's Mountain Retreat"
+      visual_character: "Masterwork architecture seamlessly blending into mountainside; glass windows catching light, water wheel turning, interior revealing a scholar-craftsman's life through organized tools, philosophy books, and small preserved memories"
+      time_of_day: "evening to night"
+      weather_atmosphere: "clear mountain air, lamplight warmth against gathering dark"
+      
+    - slug: "mountain-campsite"
+      name: "Stone Circle Grove"
+      visual_character: "Ancient granite circle forming natural shelter; firelight dancing on weathered stone surfaces, clear spring reflecting stars, sense of timeless sanctuary"
+      time_of_day: "night through dawn"
+      weather_atmosphere: "clear night sky, crisp mountain air, golden sunrise"
+
+  active_characters:
+    - slug: "grimjaw-ironbeard"
+      name: "Grimjaw Ironbeard"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "catalyst"
+      emotional_arc: "guarded hermit → reluctantly impressed → oath-bound to new family"
+      arc_context: "First full chapter since recruitment; transitions from isolated retiree to Company foundation member"
+      visual_identifiers: "Elderly but robust dwarf with flowing iron-gray beard styled into massive central braid with metal bands and smaller side braids decorated with charms. Ruddy, weathered complexion. Wears dark brown layered leathers with copper-colored riveted metal pauldrons. Carries 'Tremor,' a massive block-headed sledgehammer. Often holds wooden cask. Barrel-chested, immovable stance."
+      draft_warning: false
+      
+    - slug: "veyra-thornwake"
+      name: "Veyra Thornwake"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "protagonist"
+      emotional_arc: "observant leader → respectful listener → student of stone wisdom"
+      arc_context: "Continues growth as commander; learning to recognize and recruit specialized expertise"
+      visual_identifiers: "Half-elf ranger/cleric with deep earth-brown skin, jet black spiky mohawk with shaved sides. Long braided lock with brown feathers and turquoise beads. Prominent mottled reddish-brown burn scar covering left side of face from jaw to temple. Teal-blue swirling tattoos on neck and left arm. Worn leather armor over dark blue tunic. Battered metal lantern with golden glow at belt."
+      draft_warning: false
+      
+    - slug: "thorne-brightward"
+      name: "Thorne Brightward"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "tired but satisfied → quietly supportive"
+      arc_context: "Post-mission exhaustion; supporting Veyra's recruitment efforts"
+      visual_identifiers: "Human paladin, early forties, weathered face with steel-gray hair in military cut and thick gray mustache. Deep-set brown eyes. Faded deep blue wool cloak with Last Light Company golden sunburst sigil. Steel breastplate over chainmail. New scrape across cheek, armor gray with rock dust."
+      draft_warning: false
+      
+    - slug: "aldwin-gentleheart"
+      name: "Aldwin Gentleheart"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "attentive healer → philosophical kindred spirit"
+      arc_context: "Building connection with Grimjaw through shared interest in ceremony and philosophy"
+      visual_identifiers: "Halfling cleric, middle-aged with weathered face. Compact, sturdy build. Dark charcoal-brown curly hair heavily frosted with silver. Warm dark hazel eyes. Moss-green wool cloak and cowl over studded brown leather doublet. Fingerless leather gloves. Carries copper heating pan, herbal supplies."
+      draft_warning: false
+      
+    - slug: "quartermaster-fayne"
+      name: "Quartermaster Fayne"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "professionally appreciative → engaged helper"
+      arc_context: "Recognizing Grimjaw's organizational mastery"
+      visual_identifiers: "Rock gnome artificer, 47, with short auburn hair and hazel eyes. Weathered ruddy complexion. Custom brass spectacles with multiple swing-arm magnifying lenses. Ink-stained fingers. Dark distressed brown leather coat with brass hardware and segmented pauldron featuring shield emblem."
+      draft_warning: false
+      
+    - slug: "corporal-darric"
+      name: "Corporal Darric"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "exhausted soldier → bemused listener"
+      arc_context: "Founding patrol member adapting to unconventional Company dynamics"
+      visual_identifiers: "Female shield dwarf, stout and broad-shouldered. Ruddy complexion, dark hair in twin braids. Deep frown lines. Dark steel armor with bronze trim, leather diagonal chest strap. Round metallic shield. Dented shin-guard."
+      draft_warning: false
+      
+    - slug: "archer-venn"
+      name: "Archer Venn"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "wise-cracking survivor → storytelling bond-builder"
+      arc_context: "Using humor and stories to build Company cohesion"
+      visual_identifiers: "Female wood elf ranger with athletic build, warm olive complexion. Dark brown hair with thick braid over right shoulder secured by tarnished silver clasp. Deep laugh lines. Perpetually smug grin. Dark burnished breastplate and pauldrons. Curved wooden bow."
+      draft_warning: false
+      
+    - slug: "medic-halden"
+      name: "Medic Halden"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "professionally curious → quietly absorbing wisdom"
+      arc_context: "Learning from both Grimjaw and Aldwin's different approaches"
+      visual_identifiers: "Human male field medic, late 30s-40s, weathered features. Tanned ruddy complexion, dark brown short hair, heavy stubble. Dark brown weary eyes. Tarnished grey steel plate over slate-blue gambeson. Round steel kettle hat. Large leather medical satchel with red cross."
+      draft_warning: false
+      
+    - slug: "sergeant-kelen"
+      name: "Sergeant Kelen"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "steady presence → thoughtful questioner"
+      arc_context: "Senior NCO absorbing lessons about Company philosophy"
+      visual_identifiers: "Human male fighter, 44, iron-gray regulation-short hair thinning at temples. Weathered brown eyes with crow's feet. Old knife scar along left jawline. Immaculate City Guard plate armor, longsword, military dagger, heavy shield with Company emblem."
+      draft_warning: false
+
+candidate_moments:
+  - moment_id: "ch06-foundations-of-stone-and-spirit-moment-01"
+    source_scene: "scn-06-02"
+    
+    narrative_beat: "The company crests the final rise and stops in collective surprise as Grimjaw's cabin comes into view—not a hermit's hovel but a masterwork of engineering built directly into the mountainside, with glass windows, slate roof, and a water wheel turning in a diverted stream."
+    subtext: "The physical proof that isolation doesn't mean stagnation; fifteen years of grief transformed into creation rather than destruction. This is who they're bringing into their family."
+    
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 5
+      symbolic_density: 4
+      total: 20
+    
+    score_rationale:
+      character_revelation_note: "Grimjaw's documented 'finding purpose in later years' manifests physically—his workshop is his autobiography, proving the profile's claim that he 'achieved everything he set out to do' wasn't idle boast."
+      relationship_context: "The group's surprised reaction mirrors their professional respect turning personal; Fayne's artist appreciation particularly noted in text."
+    
+    suggested_type: "hero"
+    primary_subject: "Grimjaw's cabin built into mountainside"
+    secondary_elements:
+      - "Company members silhouetted in foreground, paused in surprise"
+      - "Water wheel turning in diverted stream"
+      - "Glass windows catching evening light"
+      - "Slate roof with precise pattern"
+      - "Seamless blend of stonework and natural rock face"
+    
+    suggested_framing: "wide"
+    suggested_angle: "low"
+    
+    key_visual_hook: "The glass windows—unexpected luxury in wilderness—catching golden evening light like jewels set in stone"
+    
+    lighting_suggestion: "Late evening sun from behind viewers, illuminating the cabin's western face with warm amber glow against purple mountain shadow"
+    
+    emotional_color: "unexpected wonder"
+    
+    characters_present:
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "Leading the group, back to viewers, ownership pride in stance"
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Among those pausing in surprise, reassessing this 'hermit'"
+      - slug: "corporal-darric"
+        has_canonical_visuals: true
+        role_in_moment: "Breathing hard from climb, now stopped in amazement"
+      - slug: "aldwin-gentleheart"
+        has_canonical_visuals: true
+        role_in_moment: "Keeping pace with surprising ease, curious appreciation"
+    
+    source_excerpts:
+      - "As they crested the final rise, Grimjaw's cabin came into view, and several of them stopped in surprise. They'd expected a hermit's hovel, something rough and temporary. Instead, they found a masterwork of engineering."
+      - "The cabin was built directly into the mountainside, its walls seamlessly blending stonework with natural rock face. The roof was slate, laid in a pattern that would shed snow and rain while providing perfect insulation."
+      - "A water wheel turned slowly in a diverted mountain stream, providing power to what looked like a grinding wheel inside a attached workshop."
+    
+    selection_rationale: "This HERO moment establishes the chapter's visual thesis—that foundation and craft can emerge from isolation, that the 'broken' build beautiful things. It subverts expectation and visually introduces Grimjaw's true character before a word is spoken inside."
+
+  - moment_id: "ch06-foundations-of-stone-and-spirit-moment-02"
+    source_scene: "scn-06-03"
+    
+    narrative_beat: "As Grimjaw packs his tools with paternal care, Veyra notices the small touches that make this workshop into a home—a kettle on cold stove, a chair positioned to watch sunsets, and on the mantle, a small carved figure of a dwarf woman with a gentle smile."
+    subtext: "Fifteen years of solitary grief crystallized into preserved domestic rituals. The chair faces the window because he still watches sunsets for two. The figure on the mantle is both shrine and conversation partner."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 5
+      symbolic_density: 4
+      total: 21
+    
+    score_rationale:
+      character_revelation_note: "Profile notes wife 'Meya' was lost at Mithral Deep; this moment shows fifteen years of unspoken devotion. The 'small carved figure on the mantle' connects to his established habit of carving and his profound grief."
+      relationship_context: "Veyra—herself marked by loss—recognizing another survivor's coping mechanisms. Her 'record of weight' tattoo resonates with his preserved memorial."
+    
+    suggested_type: "detail"
+    primary_subject: "Workshop interior with carved figure of Meya visible on mantle"
+    secondary_elements:
+      - "Tools organized on walls by function and frequency"
+      - "Philosophy books on shelves (including 'Meditations on Stone and Spirit')"
+      - "Single chair positioned by window"
+      - "Cold forge in corner"
+      - "Kettle on cold stove"
+      - "Evening light through glass windows"
+    
+    suggested_framing: "medium"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "The carved figure on the mantle—small, simple, but clearly the emotional center of the entire space, everything else arranged around it like courtiers around a queen"
+    
+    lighting_suggestion: "Warm evening light through glass windows mixing with cold lamplight, creating zones of amber and blue"
+    
+    emotional_color: "preserved tenderness"
+    
+    characters_present:
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Noticing the domestic details, recognizing grief's architecture"
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "Packing tools with careful attention, not yet aware Veyra sees his shrine"
+      - slug: "aldwin-gentleheart"
+        has_canonical_visuals: true
+        role_in_moment: "Finding the tea service, kindred recognition"
+      - slug: "quartermaster-fayne"
+        has_canonical_visuals: true
+        role_in_moment: "Appreciating the functional aesthetics, wrapping delicate instruments"
+    
+    source_excerpts:
+      - "As Grimjaw began packing his tools with the careful attention of a parent handling children, Veyra noticed something else—the small touches that made this more than just a workshop."
+      - "A kettle on the cold stove, well-used but clean. A single chair by the window, positioned to watch the sunset. A small carved figure on the mantle, a dwarf woman with a gentle smile."
+      - "'Your wife?' she asked gently."
+    
+    selection_rationale: "This CHARACTER moment reveals Grimjaw through environment rather than exposition. The visual storytelling is pure—every object placement tells his emotional biography. Veyra's observation establishes her perceptiveness and connects two grieving souls."
+
+  - moment_id: "ch06-foundations-of-stone-and-spirit-moment-03"
+    source_scene: "scn-06-04"
+    
+    narrative_beat: "Grimjaw reaches up to the mantle and takes the carved figure of his wife. This he wraps personally, in soft cloth that smells of lavender—preserved all these years—handling it with infinite tenderness before placing it deep in his pack."
+    subtext: "The most profound departure ritual: taking her with him means truly leaving. The lavender—her scent, preserved across fifteen years—is the last sensory thread to their shared life. Wrapping it is both protection and goodbye."
+    
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 5
+      symbolic_density: 5
+      total: 23
+    
+    score_rationale:
+      character_revelation_note: "This is the physical manifestation of development.md's 'rejecting traditional retirement' milestone. He's not just packing—he's choosing living purpose over preserved grief. The lavender connects to his documented fifteen years of isolation."
+      relationship_context: "After his oath 'Meya would have wanted me to,' this action shows Meya's memory blessing his departure. The Company becomes her legacy continuing."
+    
+    suggested_type: "anchor"
+    primary_subject: "Grimjaw's weathered hands wrapping the carved figure in lavender-scented cloth"
+    secondary_elements:
+      - "Soft cloth pale against dark leather work gloves"
+      - "Carved figure's gentle smile visible before wrapping"
+      - "Grimjaw's face in profile, expression unreadable but body language tender"
+      - "Open pack with tools already carefully arranged"
+      - "Mantle now empty behind him"
+    
+    suggested_framing: "close"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "His massive, calloused hands—built for crushing stone—handling the small figure with the delicacy of a jeweler cradling a diamond"
+    
+    lighting_suggestion: "Warm lamplight from the side, catching the texture of cloth and the carved figure's smile, deep shadows beyond"
+    
+    emotional_color: "sacred grief"
+    
+    characters_present:
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "Primary subject; performing departure ritual with his wife's memory"
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Witnessing silently, understanding the weight of this moment"
+    
+    source_excerpts:
+      - "He reached up to the mantle, taking the carved figure of his wife. This he wrapped personally, in soft cloth that smelled of lavender—preserved all these years."
+      - "'She would have liked you,' he said to Veyra. 'Meya always said the broken ones were the strongest, because they knew where the weak points were and reinforced them.'"
+    
+    selection_rationale: "This is the chapter's PIVOT moment—the emotional apex where Grimjaw fully commits to leaving. The contrast between his powerful hands and tender action creates visual tension. The lavender detail anchors fifteen years of preserved love in a single sensory image."
+
+  - moment_id: "ch06-foundations-of-stone-and-spirit-moment-04"
+    source_scene: "scn-06-06"
+    
+    narrative_beat: "Grimjaw picks up a stone from the ground, turns it in his hands by firelight as he philosophizes about memory and permanence—how the stone is older than any kingdom, has seen everything rise and fall, yet is also just a stone."
+    subtext: "The physical embodiment of dwarven philosophy: holding eternity and immediacy simultaneously. The firelight on ancient granite mirrors his own position—ancient wisdom meeting new purpose."
+    
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 3
+      narrative_pivot: 2
+      character_revelation: 4
+      symbolic_density: 5
+      total: 17
+    
+    score_rationale:
+      character_revelation_note: "Profile notes his grandmother was a 'stone-singer' who taught him to 'be quiet, pay attention, feel the weight of things.' This moment shows that teaching alive in him."
+      relationship_context: "He's sharing his philosophy with his new family, teaching as he was taught. The Company listens as his grandmother's students once did."
+    
+    suggested_type: "mood"
+    primary_subject: "Grimjaw's hands turning a stone in firelight"
+    secondary_elements:
+      - "Firelight dancing on stone surface"
+      - "Ancient stone circle in background"
+      - "Listeners' faces partially visible in warm glow"
+      - "Night sky with stars beyond fire's reach"
+      - "His intent expression, eyes on the stone"
+    
+    suggested_framing: "medium"
+    suggested_angle: "low"
+    
+    key_visual_hook: "The stone in his palm catching firelight, glowing like held amber—ancient and warm at once"
+    
+    lighting_suggestion: "Warm campfire from below and right, casting upward shadows on faces, stone surface catching orange highlights"
+    
+    emotional_color: "contemplative wisdom"
+    
+    characters_present:
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "Teaching through demonstration, connecting new family to ancient wisdom"
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Listening, absorbing philosophy she'll apply later"
+      - slug: "thorne-brightward"
+        has_canonical_visuals: true
+        role_in_moment: "Smiling at the unexpected depth from their new engineer"
+      - slug: "archer-venn"
+        has_canonical_visuals: true
+        role_in_moment: "Recently finished storytelling, now listening to philosophy"
+      - slug: "quartermaster-fayne"
+        has_canonical_visuals: true
+        role_in_moment: "Artist's appreciation for the visual metaphor"
+      - slug: "corporal-darric"
+        has_canonical_visuals: true
+        role_in_moment: "Grinning at 'philosophy from a dwarf'"
+    
+    source_excerpts:
+      - "He picked up a stone from the ground, turned it in his hands. 'This stone's older than any kingdom. It's seen the rise and fall of everything we think matters. But it's also just a stone. The trick is holding both truths at once—the eternal and the immediate.'"
+      - "'Every dwarf's a philosopher,' Grimjaw retorted. 'We just express it through engineering.'"
+    
+    selection_rationale: "This MOOD moment captures the chapter's philosophical core—Grimjaw transmitting dwarven wisdom to his new family. The visual is deceptively simple but carries enormous symbolic weight: eternity held in mortal hands, firelight making ancient stone glow with new warmth."
+
+  - moment_id: "ch06-foundations-of-stone-and-spirit-moment-05"
+    source_scene: "scn-06-07"
+    
+    narrative_beat: "During first watch, Grimjaw maintains his tools with the same ceremonial attention Aldwin gives tea, speaking quietly to Veyra about building something new—and why he'll help: not for glory or gold, but because Meya would have wanted him to."
+    subtext: "The formal oath sworn not to Veyra but to his wife's memory. Tool maintenance as prayer, work as worship, service as memorial. His commitment is to Meya, through the Company."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 3
+      narrative_pivot: 5
+      character_revelation: 4
+      symbolic_density: 4
+      total: 20
+    
+    score_rationale:
+      character_revelation_note: "Development notes his arc as 'Rejecting Traditional Retirement' and 'using what I know to save others' as honoring Meya. This moment is the narrative pivot where that commitment becomes explicit oath."
+      relationship_context: "Parallel to Aldwin's tea ceremony—both find meaning in ritual. Veyra recognizes the moment's weight, speaks simply in response."
+    
+    suggested_type: "anchor"
+    primary_subject: "Grimjaw maintaining tools by starlight, Veyra listening nearby"
+    secondary_elements:
+      - "Whetstone in practiced hands"
+      - "Tools laid out in ritual arrangement"
+      - "Sleeping company forms in background"
+      - "Ancient stone circle surrounding them"
+      - "Stars wheeling overhead"
+      - "Banked fire's low glow"
+    
+    suggested_framing: "medium"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "His hands working automatically on the whetstone while his eyes look somewhere far away—into memory, into purpose"
+    
+    lighting_suggestion: "Low banked fire glow from left, starlight from above, creating rim light on both figures against dark stone circle"
+    
+    emotional_color: "quiet oath"
+    
+    characters_present:
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "Maintaining tools, speaking his oath to Meya through Veyra"
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Listening, receiving his commitment, understanding its true addressee"
+    
+    source_excerpts:
+      - "Grimjaw had produced a small whetstone and was maintaining his tools with the same careful attention Aldwin gave to his tea ceremonies."
+      - "'Then I'll help you build it,' Grimjaw said, and it had the weight of an oath. 'Not for glory or gold, but because Meya would have wanted me to. Because sitting alone on a mountain preserving my pain isn't honoring her memory—using what I know to save others is.'"
+    
+    selection_rationale: "This ANCHOR moment is the narrative pivot where Grimjaw formally commits to the Company—but the visual power is in showing WHO he's really swearing to. His hands work on tools while his oath goes to Meya. The parallel to Aldwin's ceremony creates visual rhyming with earlier scenes."
+
+  - moment_id: "ch06-foundations-of-stone-and-spirit-moment-06"
+    source_scene: "scn-06-07"
+    
+    narrative_beat: "As they prepare to leave, Veyra pauses at the ancient stone circle, places her hand on one of the standing stones, and quietly thanks it—learning Grimjaw's way of honoring the mountain. Grimjaw sees and nods approvingly."
+    subtext: "The student has learned. Veyra—marked by fire, keeper of the lantern—now adds stone wisdom to her philosophy. Gratitude given is strength received. She's becoming more than she was."
+    
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 4
+      narrative_pivot: 3
+      character_revelation: 4
+      symbolic_density: 5
+      total: 19
+    
+    score_rationale:
+      character_revelation_note: "Veyra's development arc notes 'learning to recognize and recruit specialized expertise.' This moment shows her going further—not just recruiting but LEARNING. She integrates Grimjaw's philosophy into her own."
+      relationship_context: "His approving nod completes the teacher-student dynamic. She's earned something from him beyond his labor."
+    
+    suggested_type: "symbol"
+    primary_subject: "Veyra's scarred hand pressed against ancient standing stone"
+    secondary_elements:
+      - "Rose-gold dawn light catching her burn scar"
+      - "Stone's weathered surface beneath her palm"
+      - "Grimjaw visible in background, nodding"
+      - "Company preparing to depart"
+      - "Morning mist around stone circle"
+    
+    suggested_framing: "close"
+    suggested_angle: "low"
+    
+    key_visual_hook: "Her scarred hand flat against the stone—two survivors touching, flesh and granite, both marked by time and fire"
+    
+    lighting_suggestion: "First light of dawn coming horizontal, catching her burn scar and the stone's texture, golden pink against gray granite"
+    
+    emotional_color: "earned wisdom"
+    
+    characters_present:
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Performing gratitude ritual, integrating new philosophy"
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "Witnessing, approving—teacher seeing student learn"
+    
+    source_excerpts:
+      - "As they prepared to leave, Veyra looked back at the grove, at the circle of ancient stones that had sheltered them. She placed her hand on one, feeling its cool surface, its incredible age."
+      - "'Thank you,' she said quietly, not sure if she was thanking the stones or something greater."
+      - "Grimjaw saw her do it and nodded approvingly. 'Now you're learning. Respect given is strength received. The mountain remembers everything, including gratitude.'"
+    
+    selection_rationale: "This SYMBOL moment shows Veyra's growth through action rather than dialogue. The visual of her scarred hand on ancient stone creates powerful symbolic density—fire-survivor touching time-survivor. It closes her arc in this chapter while opening her future development."
+
+  - moment_id: "ch06-foundations-of-stone-and-spirit-moment-07"
+    source_scene: "scn-06-07"
+    
+    narrative_beat: "The company sets off down the mountain path, morning sun striking the standing stones behind them, making the ancient granite glow like promises of permanence in a changing world."
+    subtext: "The visual thesis made manifest: foundation found, now they build. The stones—eternal witnesses—catching new light as the company walks toward their future. Behind them: memory. Before them: purpose."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 3
+      symbolic_density: 5
+      total: 20
+    
+    score_rationale:
+      character_revelation_note: "This is ensemble revelation—the Company as unified entity moving forward together. Grimjaw's addition has made them more than they were."
+      relationship_context: "The visual captures the chapter's final relationship state: chosen family with shared foundation, walking together toward shared purpose."
+    
+    suggested_type: "hero"
+    primary_subject: "Company in traveling formation descending mountain path"
+    secondary_elements:
+      - "Standing stone circle catching sunrise behind them"
+      - "Grimjaw's massive packs visible in group"
+      - "Veyra's lantern at belt"
+      - "Mountain vista opening before them"
+      - "Morning mist in valleys below"
+      - "Path winding downward toward future"
+    
+    suggested_framing: "wide"
+    suggested_angle: "high"
+    
+    key_visual_hook: "The glowing stones behind them like a benediction, golden light on gray granite saying 'go with our blessing'"
+    
+    lighting_suggestion: "Low morning sun from right-behind camera, backlighting the standing stones gold while the company walks into warmer forward light"
+    
+    emotional_color: "hopeful departure"
+    
+    characters_present:
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Leading or near front, lantern visible, commander's position"
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "Among group with distinctive massive packs, new member integrated"
+      - slug: "thorne-brightward"
+        has_canonical_visuals: true
+        role_in_moment: "Walking with group, strategic position"
+      - slug: "aldwin-gentleheart"
+        has_canonical_visuals: true
+        role_in_moment: "Small figure keeping pace, tea supplies packed"
+      - slug: "quartermaster-fayne"
+        has_canonical_visuals: true
+        role_in_moment: "Among group, compact gnome silhouette"
+      - slug: "corporal-darric"
+        has_canonical_visuals: true
+        role_in_moment: "Solid dwarven form in traveling position"
+      - slug: "archer-venn"
+        has_canonical_visuals: true
+        role_in_moment: "Bow visible on back, elven height distinctive"
+      - slug: "medic-halden"
+        has_canonical_visuals: true
+        role_in_moment: "Medical satchel visible, practical position"
+      - slug: "sergeant-kelen"
+        has_canonical_visuals: true
+        role_in_moment: "Military bearing, protective positioning"
+    
+    source_excerpts:
+      - "They set off down the path, the Last Light Company plus one—or perhaps plus the foundation they'd been missing."
+      - "Behind them, the morning sun struck the stones, making them glow like promises of permanence in a changing world."
+      - "The company had found its foundation. Now, as Grimjaw had said, they could truly begin to build."
+    
+    selection_rationale: "This closing HERO shot captures the chapter's entire thesis in a single image: chosen family with solid foundation walking toward purpose. The glowing stones behind them provide visual benediction while the path ahead suggests story continuation. Strong bookend to the opening cabin reveal."

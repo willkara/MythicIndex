@@ -1,0 +1,739 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: Debts and Truths
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch24-debts-and-truths"
+  chapter_number: 24
+  chapter_title: "Debts and Truths"
+  visual_thesis: "From the hollow weight of survival to the inherited strength of legacy, this chapter moves through exhaustion into purposeful resolve."
+  color_palette:
+    primary:
+      - "#8B7355"
+      - "#C9A66B"
+      - "#6B7B8C"
+      - "#F5F0E6"
+    accent:
+      - "#B8860B"
+      - "#C0C0C0"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 2
+    pastoral: 2
+    celebratory: 0
+    aquatic: 0
+    ethereal: 1
+    intimate: 3
+    kinetic: 0
+    ominous: 0
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: "Covered in limestone dust. Pale beneath dark skin. Clasping Lysander's ring. Resolve returning."
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: "Armor dusted with limestone. Maintaining composure. Administrative focus."
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "marcus-heartbridge"
+    name: "Marcus Heartbridge"
+    scene_variations: "Dusty but immaculate. Strategic observer. High-collared charcoal doublet."
+    reference_images:
+      - "marcus-heartbridge-portrait-study-01"
+
+  - ref: "grimjaw-ironbeard"
+    name: "Grimjaw Ironbeard"
+    scene_variations: "Stone chips in beard. Battered calloused hands. Handling stone relic with tenderness."
+    reference_images:
+      - "grimjaw-ironbeard-portrait-01"
+
+  - ref: "aldwin-gentleheart"
+    name: "Aldwin Gentleheart"
+    scene_variations: "Supporting wounded. Silent witness in temple. Compassionate presence."
+    reference_images:
+      - "aldwin-gentleheart-official-portrait-01"
+
+  - ref: "vera-moonwhisper"
+    name: "Vera Moonwhisper"
+    scene_variations: "Transformed by recovery. Straighter posture. Stillness of the grove. Healed silver scars."
+    reference_images:
+      - "vera-moonwhisper-portrait-01"
+
+  - ref: "rill-vossari"
+    name: "Rill Vossari"
+    scene_variations: "Aquamarine skin, turquoise bioluminescence. Accompanying Vera. Observant."
+    reference_images:
+      - "rill-vossari-casting-portrait-01"
+
+  - ref: "mistress-elba"
+    name: "Mistress Elba"
+    scene_variations: "Silhouetted in doorway. Grandmotherly concern. Protective expression."
+    reference_images:
+      - "mistress-elba-kitchen-portrait-01"
+
+  - ref: "cassius-valerius"
+    name: "Cassius Valerius"
+    scene_variations: "Scholar recovering in temple. Sad warmth in eyes. Handing over the silver ring."
+    reference_images:
+      - "cassius-valerius-scholar-library-01"
+
+locations:
+  - ref: "waterdeep-streets-night"
+    zones:
+      - id: "overview"
+        chapter_context: "Deserted cobblestones. Amber lamplight pools. Sleeping city architecture."
+  - ref: "warehouse-complex"
+    zones:
+      - id: "overview"
+        chapter_context: "Industrial bay. Clerestory windows, warm interior light. Round map table, scattered newspapers."
+  - ref: "temple-of-tyr"
+    zones:
+      - id: "overview"
+        chapter_context: "White stone recovery chamber. Morning sunlight, garden view. Sacred geometry and peace."
+
+moments:
+  - id: "ch24-debts-and-truths-moment-01"
+    scene_id: "scn-24-01"
+    title: "The Ghostly Walk"
+    narrative_beat: "The Company limping through empty night streets, covered in limestone dust like ghosts."
+    visual_weight: "hero"
+    characters_present:
+      - "veyra-thornwake"
+      - "grimjaw-ironbeard"
+      - "thorne-brightward"
+      - "aldwin-gentleheart"
+    location_zone: "waterdeep-streets-night/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch24-debts-and-truths-moment-02"
+    scene_id: "scn-24-01"
+    title: "Sanctuary Doorway"
+    narrative_beat: "Mistress Elba silhouetted in the warehouse doorway, relief and concern on her face."
+    visual_weight: "high"
+    characters_present:
+      - "mistress-elba"
+    location_zone: "warehouse-complex/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch24-debts-and-truths-moment-03"
+    scene_id: "scn-24-01"
+    title: "The Stone Relic"
+    narrative_beat: "Grimjaw's hands setting a fragment of carved library stone onto the table with reverence."
+    visual_weight: "medium"
+    characters_present:
+      - "grimjaw-ironbeard"
+    location_zone: "warehouse-complex/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch24-debts-and-truths-moment-04"
+    scene_id: "scn-24-02"
+    title: "Reputation in Print"
+    narrative_beat: "Newspapers scattered across the map table, headlines declaring the 'Miraculous Rescue'."
+    visual_weight: "medium"
+    characters_present: []
+    location_zone: "warehouse-complex/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch24-debts-and-truths-moment-05"
+    scene_id: "scn-24-02"
+    title: "The Persistent Press"
+    narrative_beat: "Marcus smoothly handling Tamsin the reporter, protecting the Company's privacy."
+    visual_weight: "medium"
+    characters_present:
+      - "marcus-heartbridge"
+      - "veyra-thornwake"
+    location_zone: "warehouse-complex/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch24-debts-and-truths-moment-06"
+    scene_id: "scn-24-03"
+    title: "The Transferred Legacy"
+    narrative_beat: "Cassius pressing Lysander's silver signet ring into Veyra's palm in the sunlit temple room."
+    visual_weight: "hero"
+    characters_present:
+      - "cassius-valerius"
+      - "veyra-thornwake"
+      - "aldwin-gentleheart"
+    location_zone: "temple-of-tyr/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch24-debts-and-truths-moment-07"
+    scene_id: "scn-24-03"
+    title: "The Tremor of Grief"
+    narrative_beat: "Close up of Veyra's trembling hand closing around the silver ring, the armor of command cracking."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "temple-of-tyr/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch24-debts-and-truths-moment-08"
+    scene_id: "scn-24-04"
+    title: "The Tracker's Return"
+    narrative_beat: "Vera entering the warehouse with a new stillness and health, Echo gleaming on her shoulder."
+    visual_weight: "high"
+    characters_present:
+      - "vera-moonwhisper"
+      - "rill-vossari"
+    location_zone: "warehouse-complex/overview"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch24-debts-and-truths-moment-09"
+    scene_id: "scn-24-04"
+    title: "Mirror of Peace"
+    narrative_beat: "Vera looking at her silver scars in the reflection of a still forest pool, internalizing her growth."
+    visual_weight: "medium"
+    characters_present:
+      - "vera-moonwhisper"
+    location_zone: "druid-grove-waterdeep"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch24-debts-and-truths-moment-10"
+    scene_id: "scn-24-05"
+    title: "Strategic Tension"
+    narrative_beat: "Veyra, Thorne, and Vera debating the approach to the Silent Hand facilities over lunch."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "vera-moonwhisper"
+    location_zone: "warehouse-complex/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch24-debts-and-truths-img-24-01-01"
+    source_moment: "ch24-debts-and-truths-moment-01"
+    scene_id: "scn-24-01"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Bone-weary triumph. Surviving a war no one else witnessed. Dust catching lamplight like ash."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      The Last Light Company walks through empty night streets covered in limestone dust. Hair, armor, and faces are gray with grime. They support each other, moving through pools of amber street lamp light against deep blue-black night. Veyra leads, her skin ashen gray, touching her chest. Grimjaw has stone chips in his beard. Thorne maintains military posture.
+    composition_notes: |
+      Wide 21:9 cinematic. Procession moves right to left. Dark buildings frame the canyon of shadow. Low camera angle. Sharp focus on Company, soft background.
+    visual_hook: "Limestone dust catching lamplight like ash from a battle no one else witnessed"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "grimjaw-ironbeard"
+      - "thorne-brightward"
+      - "aldwin-gentleheart"
+    character_states:
+      veyra-thornwake: |
+        Leading. Ashen gray skin. Mohawk flattened. Touching chest. Glowing lantern at hip.
+      grimjaw-ironbeard: |
+        Stone chips in beard. Sledgehammer across shoulders like a yoke.
+      thorne-brightward: |
+        Dusted armor. Rigid posture. Holding lantern.
+      aldwin-gentleheart: |
+        Supporting coughing soldier. Depleted medical bag.
+    location: "waterdeep-streets-night"
+    lighting:
+      primary_source: "Street lamps"
+      quality: "hard edge pools"
+      direction: "side/overhead"
+      color_temperature: "warm amber vs cool blue"
+      shadow_depth: "deep, rich"
+      atmospheric: "dust motes in light"
+    palette:
+      dominant:
+        - "limestone gray"
+        - "night blue-black"
+        - "amber"
+      accent:
+        - "lantern gold"
+      avoid:
+        - "bright colors"
+    prompt_used: |
+      Weary company of adventurers limping through empty city streets at night,
+      covered in pale limestone dust catching amber lamplight,
+      armor and hair gray with grime,
+      shadowy building facades,
+      moving as an unbroken but exhausted unit,
+      classical oil painting, Rembrandt lighting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, clean armor
+    tags:
+      - "hero"
+      - "aftermath"
+      - "somber"
+      - "night"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch24-debts-and-truths-img-24-01-02"
+    source_moment: "ch24-debts-and-truths-moment-02"
+    scene_id: "scn-24-01"
+    image_type: "mood"
+    category:
+      - "character"
+      - "emotion"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: "Fierce tenderness. The threshold between cold world and warm home. Elba as safety and found family."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Mistress Elba silhouetted in the warehouse doorway at night. Warm golden light spills around her from the interior. Stern expression softened by relief and concern. Amber eyes cataloging injuries. Boundary between wounded world and sanctuary.
+    composition_notes: |
+      Vertical portrait. Doorway as frame-within-frame. Elba center. Backlighting and silhouette edge. Low camera angle. Soft glowing background.
+    visual_hook: "Amber eyes cataloging each injury with grandmother's efficiency even as relief softens her stern expression"
+    depicts_characters:
+      - "mistress-elba"
+    character_states:
+      mistress-elba: |
+        Standing in doorway. Relief in amber eyes. Copper-red braid catching light. Clean apron. POised to receive.
+    location: "warehouse-complex"
+    lighting:
+      primary_source: "interior warehouse light"
+      quality: "soft, warm, enveloping"
+      direction: "backlit"
+      color_temperature: "warm amber vs cool dark"
+      shadow_depth: "soft gradients"
+      atmospheric: "warm glow bleeding out"
+    palette:
+      dominant:
+        - "warm amber gold"
+        - "honey tones"
+        - "night black"
+      accent:
+        - "gold earrings"
+      avoid:
+        - "harsh reds"
+    prompt_used: |
+      Elderly female dwarf standing silhouetted in a warm-lit doorway at night,
+      golden light catching copper braid,
+      expression of tender concern and relief,
+      warm interior light spilling around her like a halo,
+      classical oil painting, Vermeer interior lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, angry
+    tags:
+      - "mood"
+      - "elba"
+      - "threshold"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch24-debts-and-truths-img-24-01-03"
+    source_moment: "ch24-debts-and-truths-moment-03"
+    scene_id: "scn-24-01"
+    image_type: "detail"
+    category:
+      - "character"
+      - "symbol"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Dwarf's tribute to destroyed craftsmanship. Quiet grief through reverence for quality. Relic and memorial."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Grimjaw's weathered hands set a fragment of carved library stone onto a wooden table. Intricate carved detail visible. Warm lamplight catches surfaces. Hands dwarf the fragment but handle it with tenderness. Stone chips caught in gray arm hair.
+    composition_notes: |
+      Extreme close-up. Square format. Hands and stone occupy entire frame. Overhead angle. Stone center, hands framing.
+    visual_hook: "Weathered dwarven hands setting a fragment of carved beauty on rough wood with the delicacy of a priest"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+    character_states:
+      grimjaw-ironbeard: |
+        Hands only visible. Large, scarred, calloused. Stone chips in arm hair. Reverent gesture.
+    location: "warehouse-complex"
+    lighting:
+      primary_source: "single lamp"
+      quality: "warm, directional"
+      direction: "side"
+      color_temperature: "warm amber"
+      shadow_depth: "moderate, rich"
+      atmospheric: "dust haze"
+    palette:
+      dominant:
+        - "limestone gray"
+        - "wood brown"
+        - "ruddy skin"
+      accent:
+        - "shadows in carving"
+      avoid:
+        - "bright colors"
+    prompt_used: |
+      Extreme close-up of weathered dwarven hands placing a carved stone fragment on a wooden table,
+      delicate and reverent gesture,
+      carved stone catching warm lamplight,
+      stone chips in gray arm hair,
+      classical oil painting, Rembrandt lighting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, clean hands
+    tags:
+      - "detail"
+      - "relic"
+      - "grimjaw"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch24-debts-and-truths-img-24-02-01"
+    source_moment: "ch24-debts-and-truths-moment-04"
+    scene_id: "scn-24-02"
+    image_type: "beat"
+    category:
+      - "symbol"
+      - "location"
+    scene_mood: "pastoral"
+    mood_rationale: "Reputation in print. Public legend forged. Morning light and the 'sanctification' of deeds."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Close-up of a stack of fresh newspapers on the map table. Headline 'MIRACULOUS RESCUE' and drawing of the Company. Smudge of black soot across the drawing. Wet ink sheen under morning light. Background warehouse soft blur.
+    composition_notes: |
+      Tight square framing. Newspaper stack focal point. High contrast ink on cream. Shallow depth.
+    visual_hook: "A heroic artist's rendering of the Company on a fresh newspaper, smudged with actual Dock Ward soot."
+    depicts_characters: []
+    character_states: {}
+    location: "warehouse-complex"
+    lighting:
+      primary_source: "Morning sun from windows"
+      quality: "Soft, warm, golden"
+      direction: "Side"
+      color_temperature: "Warm gold"
+      shadow_depth: "Soft"
+      atmospheric: "Ink scented"
+    palette:
+      dominant:
+        - "newsprint cream"
+        - "ink black"
+        - "wood brown"
+      accent:
+        - "soot charcoal"
+      avoid:
+        - "bright colors"
+    prompt_used: |
+      Macro detail of a stack of fresh newspapers on a wooden table,
+      headline 'MIRACULOUS RESCUE' and drawing of warriors,
+      soot smudge on the paper,
+      warm morning sunlight,
+      classical oil painting, Dutch genre influence,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, modern newspaper
+    tags:
+      - "detail"
+      - "newspaper"
+      - "reputation"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch24-debts-and-truths-img-24-03-01"
+    source_moment: "ch24-debts-and-truths-moment-06"
+    scene_id: "scn-24-03"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "symbol"
+    scene_mood: "ethereal"
+    mood_rationale: "Guilt transforms into legacy. Brother who died speaking through brother who lived. Holy morning light and transferred trust."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Cassius Valerius sitting up in temple bed, pressing Lysander's silver signet ring into Veyra's palm. Ring catches morning light. Veyra stands at bedside, face in three-quarter profile, expression overwhelmed. White stone walls amplify the luminous quality. Aldwin in soft focus background witness.
+    composition_notes: |
+      Cassius lower left, Veyra center-right. Diagonal visual connection through ring. Window upper right. Triangle composition. Focal point on the ring.
+    visual_hook: "The simple silver ring bearing a family crest, pressed from one scarred hand to another"
+    depicts_characters:
+      - "cassius-valerius"
+      - "veyra-thornwake"
+      - "aldwin-gentleheart"
+    character_states:
+      cassius-valerius: |
+        Sitting up. Dark wavy hair. Gentle insistence. Extending hand with ring. Sad warmth in eyes.
+      veyra-thornwake: |
+        Three-quarter profile. Composure cracking. Hands open receiving. Teal tattoos catch light.
+      aldwin-gentleheart: |
+        Soft focus background. Quiet witness. Recognition of sacred weight.
+    location: "temple-of-tyr"
+    lighting:
+      primary_source: "morning sun from window"
+      quality: "soft, luminous, sourceless"
+      direction: "upper right"
+      color_temperature: "warm gold/white"
+      shadow_depth: "minimal, dreamy"
+      atmospheric: "golden dust motes"
+    palette:
+      dominant:
+        - "temple white"
+        - "morning gold"
+        - "wood tones"
+      accent:
+        - "silver ring"
+        - "teal tattoos"
+      avoid:
+        - "harsh shadows"
+    prompt_used: |
+      Scholar in bed pressing a silver ring into a woman's open palm,
+      sunlit white stone temple room,
+      woman with mohawk and burn scar looking overwhelmed,
+      luminous atmosphere,
+      silver ring catching morning light as focal point,
+      halfling witness in background,
+      classical oil painting, Pre-Raphaelite luminosity,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, clinical hospital
+    tags:
+      - "anchor"
+      - "legacy"
+      - "ring"
+      - "ethereal"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch24-debts-and-truths-img-24-03-02"
+    source_moment: "ch24-debts-and-truths-moment-07"
+    scene_id: "scn-24-03"
+    image_type: "detail"
+    category:
+      - "character"
+      - "emotion"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: "Warrior's armor cracking. Vulnerability in the smallest motion. Gripping the past."
+    aspect_ratio: "4:5"
+    orientation: "portrait"
+    size: "1024x1280"
+    visual_description: |
+      Extreme close-up of Veyra's scarred brown hands trembling slightly as fingers close around the silver ring. Soft morning light catches the silver and skin texture. Teal tattoos visible on wrist. Background soft warm temple light.
+    composition_notes: |
+      Hands occupy frame. Ring at center. Tremor suggested by soft edges. Overhead angle. Soft focus background.
+    visual_hook: "The slight tremor in battle-steady hands as scarred fingers close around the ring"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Hands only visible. Scarred texture. Teal tattoos. Gentle receiving grip. Slight tremor.
+    location: "temple-of-tyr"
+    lighting:
+      primary_source: "soft morning light"
+      quality: "soft, warm"
+      direction: "above-left"
+      color_temperature: "warm golden"
+      shadow_depth: "soft gradients"
+      atmospheric: "warm glow"
+    palette:
+      dominant:
+        - "deep brown skin"
+        - "warm light"
+      accent:
+        - "silver ring"
+        - "teal tattoos"
+      avoid:
+        - "harsh shadows"
+    prompt_used: |
+      Extreme close-up of scarred brown hands closing around a silver signet ring,
+      slight tremor in the fingers,
+      teal tattoos on wrist,
+      soft golden morning light,
+      atmosphere of grief and acceptance,
+      classical oil painting, Vermeer interior lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, face visible
+    tags:
+      - "detail"
+      - "hands"
+      - "ring"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch24-debts-and-truths-img-24-04-01"
+    source_moment: "ch24-debts-and-truths-moment-08"
+    scene_id: "scn-24-04"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "pastoral"
+    mood_rationale: "Vera's return transformed. Renewal after trauma. Daylight, open air, breathing room."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Vera Moonwhisper enters the warehouse with a measured stride and confidence. Posture straight. Echo on her shoulder, feathers gleaming. Halo of daylight from entrance behind her. Rill Vossari walks beside her. Warm interior candlelight ahead. Company turning to greet.
+    composition_notes: |
+      Entrance composition. Vera and Rill center-left walking toward camera. Backlit by daylight. Doorframe as frame-within-frame. Depth from exterior to interior.
+    visual_hook: "Echo's black feathers gleaming with health, eyes holding sharper intelligence"
+    depicts_characters:
+      - "vera-moonwhisper"
+      - "rill-vossari"
+    character_states:
+      vera-moonwhisper: |
+        Confident stride. Forest-green cloak. Chestnut braid. Calm hazel eyes. Whisperwind staff.
+      rill-vossari: |
+        Accompanying Vera. Aquamarine skin. Bioluminescent patterns. Oilskin coat. Iron trident.
+    location: "warehouse-complex"
+    lighting:
+      primary_source: "Daylight through entrance"
+      quality: "soft, diffused"
+      direction: "backlit"
+      color_temperature: "natural gold vs interior amber"
+      shadow_depth: "gentle"
+      atmospheric: "slight golden haze"
+    palette:
+      dominant:
+        - "soft daylight gold"
+        - "forest green"
+        - "warm wood"
+      accent:
+        - "aquamarine skin"
+        - "black feathers"
+      avoid:
+        - "harsh shadows"
+    prompt_used: |
+      Woman with chestnut braid and raven on shoulder entering a warm warehouse,
+      walking with confidence,
+      daylight streaming from doorway behind creating halo,
+      aquamarine-skinned companion beside her,
+      atmosphere of renewal and homecoming,
+      classical oil painting, plein air naturalism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, anxious expression
+    tags:
+      - "anchor"
+      - "homecoming"
+      - "vera"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch24-debts-and-truths-img-24-05-01"
+    source_moment: "ch24-debts-and-truths-moment-10"
+    scene_id: "scn-24-05"
+    image_type: "beat"
+    category:
+      - "character"
+      - "emotion"
+      - "logistics"
+    scene_mood: "intimate"
+    mood_rationale: "Strategic tension over lunch. Directness vs diplomacy. The 'beasts with signet rings' reality. Shared purpose."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Veyra, Thorne, and Vera around a small table in The Mess. Picking at a simple lunch. Scattered newspapers nearby. Veyra moves carefully (shoulder injury). Thorne flexes hand. Vera intense, pointing at a sketched map. Tense but focused discussion.
+    composition_notes: |
+      Tight ensemble shot. Leaning into the table. Contrast between the mundane food and the heavy maps. Warm, close framing.
+    visual_hook: "The cluster of leaders huddling over maps while newspapers in the background remind them of the city's gaze."
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "vera-moonwhisper"
+    character_states:
+      veyra-thornwake: |
+        Listening. Hand on shoulder. Resolve in eyes.
+      thorne-brightward: |
+        Strategic posture. Flexing hand.
+      vera-moonwhisper: |
+        Intense. Pointing at map. Knuckles white.
+    location: "warehouse-complex"
+    lighting:
+      primary_source: "Window light + nearby lantern"
+      quality: "Soft, realistic"
+      direction: "Side"
+      color_temperature: "Natural amber"
+      shadow_depth: "Soft"
+      atmospheric: "Settled lunchroom"
+    palette:
+      dominant:
+        - "wood brown"
+        - "earth tones"
+        - "paper cream"
+      accent:
+        - "newspaper headlines"
+      avoid:
+        - "harshness"
+    prompt_used: |
+      Three adventurers huddling over maps at a small wooden dining table,
+      bowls of food and mugs nearby,
+      serious intense discussion,
+      scattered newspapers on the table,
+      warm natural window light,
+      classical oil painting, interior realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "planning"
+      - "tension"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

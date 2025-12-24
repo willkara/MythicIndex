@@ -1,0 +1,36 @@
+# Storylint Dashboard
+
+## Run Overview
+- Run ID: {{ dashboard.run_id }}
+- Mode: {{ dashboard.mode }}
+- Arc window: {{ dashboard.window }}
+- Generated: {{ dashboard.generated_at }}
+
+## Counts
+- Chapters: {{ dashboard.counts.chapters_completed }}/{{ dashboard.counts.chapters_total }}
+- Adjacent pairs: {{ dashboard.counts.adjacent_completed }}/{{ dashboard.counts.adjacent_total }}
+- Arc windows: {{ dashboard.counts.arc_completed }}/{{ dashboard.counts.arc_total }}
+- Errors: {{ dashboard.counts.errors }}
+
+## Issue Totals
+- Total: {{ dashboard.issues.total }}
+
+### By Severity
+{% for key, value in dashboard.issues.by_severity.items() %}
+- {{ key }}: {{ value }}
+{% endfor %}
+
+### By Type
+{% for key, value in dashboard.issues.by_type.items() %}
+- {{ key }}: {{ value }}
+{% endfor %}
+
+## Most Flagged Chapters
+{% for item in dashboard.top_chapters %}
+- {{ item.chapter }}: {{ item.issue_count }}
+{% endfor %}
+
+## Recent Errors
+{% for item in dashboard.errors %}
+- {{ item }}
+{% endfor %}

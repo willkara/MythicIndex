@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 0 0% 100%;
+		--foreground: 222.2 84% 4.9%;
+		--card: 0 0% 100%;
+		--card-foreground: 222.2 84% 4.9%;
+		--popover: 0 0% 100%;
+		--popover-foreground: 222.2 84% 4.9%;
+		--primary: 221.2 83.2% 53.3%;
+		--primary-foreground: 210 40% 98%;
+		--secondary: 210 40% 96.1%;
+		--secondary-foreground: 222.2 47.4% 11.2%;
+		--muted: 210 40% 96.1%;
+		--muted-foreground: 215.4 16.3% 46.9%;
+		--accent: 210 40% 96.1%;
+		--accent-foreground: 222.2 47.4% 11.2%;
+		--destructive: 0 72.22% 50.59%;
+		--destructive-foreground: 210 40% 98%;
+		--border: 214.3 31.8% 91.4%;
+		--input: 214.3 31.8% 91.4%;
+		--ring: 221.2 83.2% 53.3%;
+		--radius: 0.5rem;
+	}
+
+	.dark {
+		--background: 222.2 84% 4.9%;
+		--foreground: 210 40% 98%;
+		--card: 222.2 84% 4.9%;
+		--card-foreground: 210 40% 98%;
+		--popover: 222.2 84% 4.9%;
+		--popover-foreground: 210 40% 98%;
+		--primary: 217.2 91.2% 59.8%;
+		--primary-foreground: 222.2 47.4% 11.2%;
+		--secondary: 217.2 32.6% 17.5%;
+		--secondary-foreground: 210 40% 98%;
+		--muted: 217.2 32.6% 17.5%;
+		--muted-foreground: 215 20.2% 65.1%;
+		--accent: 217.2 32.6% 17.5%;
+		--accent-foreground: 210 40% 98%;
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 210 40% 98%;
+		--border: 217.2 32.6% 17.5%;
+		--input: 217.2 32.6% 17.5%;
+		--ring: 224.3 76.3% 48%;
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+}
+
+@layer components {
+	/* Ink Wash Blend - soft vignette for scene images */
+	.story-image-blend {
+		mask-image: radial-gradient(ellipse 80% 70% at center, black 50%, transparent 100%);
+		-webkit-mask-image: radial-gradient(ellipse 80% 70% at center, black 50%, transparent 100%);
+	}
+
+	/* Float images for side-by-side layout with text */
+	.float-image {
+		width: 45%;
+		max-width: 300px;
+		margin-bottom: 1rem;
+	}
+
+	.float-image-left {
+		float: left;
+		margin-right: 1.5rem;
+	}
+
+	.float-image-right {
+		float: right;
+		margin-left: 1.5rem;
+	}
+
+	/* Stack floated images on mobile */
+	@media (max-width: 768px) {
+		.float-image {
+			float: none;
+			width: 100%;
+			max-width: none;
+			margin: 1.5rem auto;
+		}
+	}
+
+	/* Cinematic Break - full-bleed hero images */
+	.cinematic-image {
+		width: 100vw;
+		position: relative;
+		left: 50%;
+		margin-left: -50vw;
+		max-width: none;
+	}
+
+	.cinematic-image img {
+		width: 100%;
+		aspect-ratio: 21/9;
+		object-fit: cover;
+		object-position: center 20%; /* Keep faces/focal points visible */
+	}
+
+	/* Reading Surface - subtle panel behind chapter text */
+	.reading-surface {
+		@apply relative rounded-2xl p-6 md:p-8;
+		background: hsl(var(--card) / 0.3);
+		box-shadow:
+			0 1px 3px 0 rgb(0 0 0 / 0.2),
+			inset 0 1px 2px 0 rgb(255 255 255 / 0.02);
+	}
+}

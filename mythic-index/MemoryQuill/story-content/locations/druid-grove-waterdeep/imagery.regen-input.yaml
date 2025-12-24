@@ -1,0 +1,84 @@
+location:
+  slug: druid-grove-waterdeep
+  name: Druid Grove Healing Sanctuary
+  files:
+    overview:
+      path: locations/druid-grove-waterdeep/overview.md
+      excerpt: ''
+      exists: true
+    description:
+      path: locations/druid-grove-waterdeep/description.md
+      excerpt: ''
+      exists: true
+    inhabitants:
+      path: locations/druid-grove-waterdeep/inhabitants.md
+      excerpt: ''
+      exists: true
+zones_manifest:
+  path: locations/druid-grove-waterdeep/zones.yaml
+  zones:
+  - slug: approaches-thresholds
+    name: The Approaches and Thresholds
+  - slug: cleansing-pool
+    name: The Cleansing Pool
+  - slug: clearing
+    name: Clearing
+    featured_in_chapters:
+    - ch20-silent-hand-revelation
+  - slug: druid-grove-canopy-essence
+    name: The Living Vault
+  - slug: druid-grove-herbal-gardens
+    name: Where Medicine Grows
+  - slug: druid-grove-night-temporal
+    name: The Patient Dark
+  - slug: druid-grove-reflection-pool-night
+    name: The Mirror of Truth
+  - slug: druid-grove-rill-scrying
+    name: Water Speaks
+  - slug: druid-grove-vera-arrival
+    name: Crossing the Threshold
+  - slug: druid-grove-vera-reflection
+    name: Meeting the Wolf
+  - slug: druid-grove-vera-restoration
+    name: Surrender to the Water
+  - slug: druid-grove-vera-spiral
+    name: The Inward Path
+  - slug: healing-pool
+    name: Healing Pool
+    featured_in_chapters:
+    - ch20-silent-hand-revelation
+  - slug: herbal-gardens
+    name: The Herbal Gardens
+  - slug: meditation-spirals
+    name: The Meditation Spirals
+  - slug: oak-cathedral
+    name: The Oak Cathedral
+  - slug: perimeter-hedge
+    name: The Perimeter
+  - slug: reflection-pool
+    name: The Reflection Pool (Scry Pool)
+  - slug: restoration-pool
+    name: The Restoration Pool
+chapter_evidence:
+- slug: ch20-silent-hand-revelation
+  files:
+    content:
+      path: chapters/ch20-silent-hand-revelation/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch20-silent-hand-revelation/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+intrinsic_characters:
+- slug: rill-vossari
+  reason_intrinsic: Referenced in locations/druid-grove-waterdeep/inhabitants.md
+  files:
+    profile:
+      path: characters/rill-vossari/profile.md
+      excerpt: ''
+      exists: true
+    imagery:
+      path: characters/rill-vossari/imagery.yaml
+      excerpt: ''
+      exists: true

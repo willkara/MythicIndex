@@ -1,0 +1,213 @@
+chapter_analysis:
+  slug: "ch15-5-what-the-city-heard"
+  chapter_number: 15.5
+  chapter_title: "What the City Heard"
+  
+  visual_thesis: "A triptych of responses to battle—candlelit grief becoming shadow calculation becoming ruined hope—showing how light and darkness both move when walls fall."
+  
+  dominant_mood_progression:
+    - "somber remembrance"
+    - "calculating menace"
+    - "weary determination"
+  
+  color_story:
+    opening: "warm candlelight gold against cold temple stone gray"
+    climax: "chalk white, shadow black, knife-scored wood brown"
+    closing: "ash gray rubble, faded blue wool, faint lantern amber"
+
+  key_locations:
+    - slug: "temple-steps"
+      name: "Temple Steps"
+      visual_character: "Cold stone steps descending from a temple entrance, crowded with citizens holding candles. The architecture is civic-religious—broad steps meant for public gatherings, columns or archways framing the scene. The darkness of evening surrounds, punctuated only by hundreds of small flames."
+      time_of_day: "evening/night"
+      weather_atmosphere: "cold, still air that holds candlelight steady"
+      
+    - slug: "silent-hand-safehouse"
+      name: "Silent Hand Safehouse"
+      visual_character: "A cramped, shadowed room with a table scored by years of knife work. Chalk marks cover the surface like a tactical map. The space is utilitarian and menacing—no windows, low light, the kind of room that pretends not to exist."
+      time_of_day: "indeterminate (windowless)"
+      weather_atmosphere: "stale, enclosed, tense"
+      
+    - slug: "westwall-watchpost"
+      name: "Westwall Watchpost (Post-Battle)"
+      visual_character: "The familiar twin-towered outpost now shows battle damage—breached walls, scorched stone, debris in the courtyard. It stands wounded but not fallen, a military shell that absorbed tremendous punishment. The commander surveys what remains."
+      time_of_day: "day (implied by assessment activity)"
+      weather_atmosphere: "overcast, dust-laden air, the quiet after violence"
+
+  active_characters:
+    - slug: "commander-atlock"
+      name: "Commander Marcus Atlock"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "assessing → planning → committing to advocacy"
+      arc_context: "Chapter 17 arc positioning—this memo marks his transition from tactical ally to political advocate for the Company."
+      visual_identifiers: "Tall, broad-shouldered human male, 52 years old. Deeply weathered face with visible scarring, steel gray eyes, short gray military-cut hair. Navy blue high-collared tunic with crimson piping, gold epaulets with fringe, service ribbons and medals on chest. In field conditions: heavy dark field gear with leather shoulder protection."
+      draft_warning: false
+      
+    - slug: "acolyte"
+      name: "The Acolyte"
+      source_status: "not provided"
+      has_imagery_yaml: false
+      role_this_chapter: "catalyst"
+      emotional_arc: "grief → stumbling → steadying → leading"
+      arc_context: "Not documented"
+      visual_identifiers: "No canonical reference. Suggested: young temple servant in simple robes, likely female based on text ('she said'). Holding a lantern. Ordinary features made significant by the moment."
+      draft_warning: true
+      
+    - slug: "silent-hand-handler"
+      name: "Silent Hand Handler"
+      source_status: "not provided"
+      has_imagery_yaml: false
+      role_this_chapter: "antagonist"
+      emotional_arc: "calculating → adjusting → coldly decisive"
+      arc_context: "Not documented"
+      visual_identifiers: "No canonical reference. Suggested: nondescript figure whose hands are the focus—moving stones, swiping chalk. Face shadowed or partially obscured. The anonymity is the point."
+      draft_warning: true
+
+candidate_moments:
+  - moment_id: "ch15-5-what-the-city-heard-moment-01"
+    source_scene: "scn-15-5-03"
+    
+    narrative_beat: "An acolyte reads names of the fallen by candlelight on cold temple steps, her voice stumbling twice before steadying. She lifts a lantern high and speaks of those who hold until relief arrives. From the crowd, someone answers 'Light endures.'"
+    subtext: "The community transforms individual grief into collective resilience. The stumbling voice that steadies becomes a metaphor for the city itself—shaken but not broken. The response from the crowd shows the dead have seeded something living."
+    
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 3
+      symbolic_density: 5
+      total: 21
+    
+    score_rationale:
+      character_revelation_note: "The acolyte is anonymous but universally relatable—anyone who has had to speak through grief. Her stumbling and steadying embodies the chapter's thesis."
+      relationship_context: "The dead include Watch, Company, and volunteers—three groups that found common cause. The vigil unites their survivors."
+    
+    suggested_type: "hero"
+    primary_subject: "the acolyte with raised lantern"
+    secondary_elements:
+      - "candlelit crowd on temple steps"
+      - "temple architecture framing the scene"
+      - "cold stone contrasting with warm flame"
+      - "faces illuminated from below by candles"
+    
+    suggested_framing: "medium-wide"
+    suggested_angle: "low angle looking up at acolyte"
+    
+    key_visual_hook: "the single lantern raised high above the sea of smaller candles, its light stronger than any single flame around it"
+    
+    lighting_suggestion: "candlelight from below (crowd candles) and the acolyte's lantern casting warm amber light against blue-black evening sky"
+    
+    emotional_color: "grief transmuted into hope"
+    
+    characters_present:
+      - slug: "acolyte"
+        has_canonical_visuals: false
+        role_in_moment: "speaking the names, lifting the lantern, leading the ritual"
+    
+    source_excerpts:
+      - "Names were read by candlelight on the cold steps"
+      - "An acolyte's voice stumbled twice and steadied on the third"
+      - "lifting a lantern high"
+      - "From the street, someone answered, not loudly but with conviction: 'Light endures.'"
+      - "So did the crowd."
+    
+    selection_rationale: "This is the emotional and visual centerpiece of the chapter—the moment that crystallizes the 'what the city heard' premise into a single arresting image. The raised lantern directly echoes Veyra's signature item and the Company's core symbolism without requiring her presence."
+
+  - moment_id: "ch15-5-what-the-city-heard-moment-02"
+    source_scene: "scn-15-5-04"
+    
+    narrative_beat: "In a room scored by knife work and long habit, a Silent Hand handler moves small stones across a chalked map. He wipes away two markers with his sleeve—'Observers lost'—and taps a northern pass with a knuckle, instructing his people to avoid wherever the Company stands."
+    subtext: "The enemy recalibrates. Every candle lit at the vigil casts a shadow somewhere else. The stones moving 'like teeth' suggests the organization chewing on its losses, adapting. The Company's victory creates ripples in the underworld that will shape future conflicts."
+    
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 5
+      narrative_pivot: 4
+      character_revelation: 3
+      symbolic_density: 5
+      total: 20
+    
+    score_rationale:
+      character_revelation_note: "The handler is anonymous by design—what matters is the methodology, the cold calculus. His gestures reveal organizational character rather than personal depth."
+      relationship_context: "The Silent Hand has lost observers at Westwall. This is the antagonist's perspective on the battle the city celebrates."
+    
+    suggested_type: "mood"
+    primary_subject: "hands moving stones on chalked map"
+    secondary_elements:
+      - "knife-scored wooden table"
+      - "chalk marks and rings denoting locations"
+      - "shadowed room with no windows"
+      - "the emptiness where two markers were"
+    
+    suggested_framing: "close to medium-close"
+    suggested_angle: "overhead looking down at the map table, or eye-level focus on hands"
+    
+    key_visual_hook: "the sleeve-swipe that erases two stone markers, leaving chalk smears where lives used to be"
+    
+    lighting_suggestion: "single dim source from above or side—oil lamp or candle—casting sharp shadows across the chalked surface"
+    
+    emotional_color: "cold calculation"
+    
+    characters_present:
+      - slug: "silent-hand-handler"
+        has_canonical_visuals: false
+        role_in_moment: "adjusting operations, erasing losses, giving orders to an unseen room"
+    
+    source_excerpts:
+      - "On a table scored by knife work and long habit, a handler moved small stones across a chalked map"
+      - "A ring marked WESTWALL. Two smaller rings vanished with a swipe of a sleeve."
+      - "'Observers lost,' he said to the room that pretended not to listen"
+      - "He tapped a northern pass with a knuckle"
+      - "The stones clicked like teeth"
+    
+    selection_rationale: "This moment provides essential tonal counterweight—while the city lights candles, the darkness adjusts its plans. The tactile specificity (stones, chalk, knife-scarred wood) creates a visceral image of organized evil that feels distinct to this story's conspiracy elements."
+
+  - moment_id: "ch15-5-what-the-city-heard-moment-03"
+    source_scene: "scn-15-5-05"
+    
+    narrative_beat: "Commander Atlock surveys the damaged Westwall Watchpost—the walls that held, the wounds they carry. He composes a private memo recommending the Last Light Company be designated a civic partner and given a site 'built for endurance.' He notes: 'I have seen many units that could fight. Fewer that could hold.'"
+    subtext: "The military mind translates admiration into action. Atlock's memo is bureaucratic love—the form his respect takes. His assessment that the Company 'leaves a place better than they found it' acknowledges something beyond tactical competence: moral character. He's planning for a future where they matter more, not less."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 5
+      symbolic_density: 4
+      total: 21
+    
+    score_rationale:
+      character_revelation_note: "Per development notes, this chapter positions Atlock's transition from 'tactical rescue demonstrates his competence' to 'commits to political protection for the Company.' This moment shows him putting that commitment on paper."
+      relationship_context: "Atlock's documented respect for the Company and his role as 'bridge between Company and official recognition' culminates in this private act of advocacy."
+    
+    suggested_type: "character"
+    primary_subject: "Commander Atlock amid damaged fortifications"
+    secondary_elements:
+      - "breached wall or scorched stonework"
+      - "debris of battle still uncleared"
+      - "possibly a writing surface (field desk, makeshift table)"
+      - "his medals and uniform showing wear"
+    
+    suggested_framing: "medium"
+    suggested_angle: "eye-level or slightly low, giving him dignity amid ruin"
+    
+    key_visual_hook: "Atlock's weathered hand resting on damaged stonework—the old soldier touching what held and planning what comes next"
+    
+    lighting_suggestion: "overcast daylight filtering through dust—flat, honest light that shows both damage and determination"
+    
+    emotional_color: "weary hope"
+    
+    characters_present:
+      - slug: "commander-atlock"
+        has_canonical_visuals: true
+        role_in_moment: "assessing damage, composing a memo that could change the Company's future"
+    
+    source_excerpts:
+      - "Westwall cannot house a force that draws this much attention and this much goodwill"
+      - "Recommend formal designation of the Last Light Company as a civic partner"
+      - "Seek a site built for endurance rather than convenience"
+      - "I have seen many units that could fight. Fewer that could hold. Fewer still that could hold and leave a place better than they found it."
+    
+    selection_rationale: "This moment grounds the chapter's civic themes in a single character's quiet act. Atlock has existing canonical imagery (formal and field portraits), and this scene extends his visual identity into a new context: the veteran commander amid ruins, planning the next generation's fortress."

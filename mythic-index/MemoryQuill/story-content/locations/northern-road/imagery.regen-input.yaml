@@ -1,0 +1,92 @@
+location:
+  slug: northern-road
+  name: The Northern Road
+  files:
+    overview:
+      path: locations/northern-road/overview.md
+      excerpt: ''
+      exists: true
+    description:
+      path: locations/northern-road/description.md
+      excerpt: ''
+      exists: true
+    inhabitants:
+      path: locations/northern-road/inhabitants.md
+      excerpt: ''
+      exists: true
+zones_manifest:
+  path: locations/northern-road/zones.yaml
+  zones:
+  - slug: being-watched-beat
+    name: The Watching Wilderness
+  - slug: contaminated-water-beat
+    name: Contaminated Water Discovery
+  - slug: courtyard
+    name: Courtyard
+    featured_in_chapters:
+    - ch30-the-silent-approach
+  - slug: northern-wilderness
+    name: Northern Wilderness (Silent Hand Territory)
+  - slug: observation-post-zone
+    name: Observation Post Above the Facility
+  - slug: patrol-encounter-beat
+    name: Dusk Patrol Encounter
+  - slug: predawn-temporal
+    name: Pre-Dawn Movement
+  - slug: road
+    name: Road
+    featured_in_chapters:
+    - ch28-the-road-north
+  - slug: rocky-outcrop-observation
+    name: Rocky Outcrop Observation Post
+  - slug: silence-marker
+    name: The Silence Marker
+  - slug: southern-approach
+    name: Southern Section (Waterdeep to Forest Edge)
+  - slug: stables
+    name: Stables
+    featured_in_chapters:
+    - ch30-the-silent-approach
+  - slug: thornwood-corridor
+    name: The Thornwood Corridor
+  - slug: thornwood-corridor-zone
+    name: Thornwood Corridor Zone
+  - slug: watcher-perspective
+    name: The Watcher's View
+  - slug: windborne-roost-essence
+    name: The Windborne Roost at Forest's Edge
+  - slug: windborne-roost-waypoint
+    name: The Windborne Roost Clearing
+chapter_evidence:
+- slug: ch28-the-road-north
+  files:
+    content:
+      path: chapters/ch28-the-road-north/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch28-the-road-north/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+- slug: ch30-the-silent-approach
+  files:
+    content:
+      path: chapters/ch30-the-silent-approach/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch30-the-silent-approach/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+intrinsic_characters:
+- slug: quierk
+  reason_intrinsic: Referenced in locations/northern-road/inhabitants.md
+  files:
+    profile:
+      path: characters/quierk/profile.md
+      excerpt: ''
+      exists: true
+    imagery:
+      path: characters/quierk/imagery.yaml
+      excerpt: ''
+      exists: true

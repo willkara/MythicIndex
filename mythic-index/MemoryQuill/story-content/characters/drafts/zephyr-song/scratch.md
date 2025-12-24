@@ -1,0 +1,8 @@
+- The Couatl'''s gift is growing heavier.
+- Names in her morning book are appearing in different scripts.
+- Dreams of rainbow-feathered wings and ancient languages.
+- Glimpsing other possibilities/timelines when moving fast.
+- Is she unmoored from linear time?
+- Is she still becoming what the Couatl needed, or has she already become it?
+- Tiny, iridescent feathers are appearing where she'''s been. She has kept one.
+- The bargain with the celestial serpent may be evolving.

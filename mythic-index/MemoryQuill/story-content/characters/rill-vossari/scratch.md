@@ -1,0 +1,5 @@
+- The "Great Argument" prophecy.
+- Waters growing restless and forgetting old agreements.
+- Something stirring in the far ocean.
+- The city expansion controversy as a test case for the Temple's relevance.
+- Her greatest fear: the waters will stop listening.

@@ -1,0 +1,129 @@
+// =============================================================================
+// Subtle Arcana Theme - Design Tokens
+// =============================================================================
+// This file centralizes all design tokens for the MemoryQuill application,
+// based on the "Subtle Arcana" aesthetic defined in the designContext.md.
+// =============================================================================
+
+@use 'sass:map';
+
+// -----------------------------------------------------------------------------
+// Font Imports
+// -----------------------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@400;500&display=swap');
+
+// -----------------------------------------------------------------------------
+// Core Color Palette
+// -----------------------------------------------------------------------------
+$colors: (
+  // Primary Palette
+  "aged-parchment": #F8F1E4,
+  "midnight-study": #1E212B,
+  "worn-leather": #795548,
+  "ancient-gold": #D4AF37,
+  // Semantic Palette
+  "ruby-garnet": #E06C75,
+  "arcane-amethyst": #5D3FD3,
+  "forged-iron": #6B7280,
+  "obsidian-black": #1F2937,
+  "charcoal-gray": #374151,
+  // Accents & Variations
+  "deep-amber": #B38600, // Darker gold for hover states
+  "light-parchment": #FFFBF2,
+  "dark-iron": #4A4E5A
+);
+
+// -----------------------------------------------------------------------------
+// Design Tokens (CSS Custom Properties)
+// -----------------------------------------------------------------------------
+:root {
+  // -- Base Colors --
+  --color-aged-parchment: #{map.get($colors, "aged-parchment")};
+  --color-midnight-study: #{map.get($colors, "midnight-study")};
+  --color-worn-leather: #{map.get($colors, "worn-leather")};
+  --color-ancient-gold: #{map.get($colors, "ancient-gold")};
+  --color-ruby-garnet: #{map.get($colors, "ruby-garnet")};
+  --color-arcane-amethyst: #{map.get($colors, "arcane-amethyst")};
+  --color-forged-iron: #{map.get($colors, "forged-iron")};
+  --color-obsidian-black: #{map.get($colors, "obsidian-black")};
+  --color-charcoal-gray: #{map.get($colors, "charcoal-gray")};
+  --color-deep-amber: #{map.get($colors, "deep-amber")};
+  --color-light-parchment: #{map.get($colors, "light-parchment")};
+  --color-dark-iron: #{map.get($colors, "dark-iron")};
+
+  // -- Alpha Colors --
+  --color-ancient-gold-alpha: rgba(212, 175, 55, 0.15);
+
+  // -- Typography --
+  --font-display: 'IM Fell DW Pica', serif;
+  --font-body: 'Merriweather', serif;
+  --font-editor: 'Fira Code', monospace;
+  --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  // -- Font Sizes (from designContext.md) --
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 36px;
+  --font-size-4xl: 48px;
+
+  // -- Line Heights --
+  --line-height-base: 1.6;
+  --line-height-heading: 1.2;
+
+  // -- Spacing (from designContext.md) --
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+
+  // -- Borders & Radius --
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-full: 9999px;
+  --border-width-sm: 1px;
+  --border-width-md: 2px;
+
+  // -- Shadows & Elevation (Subtle Arcana Style) --
+  // We replace traditional box-shadows with borders and inner glows.
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --shadow-xl: none;
+  --inner-glow-hover: inset 0 0 10px rgba(212, 175, 55, 0.3);
+
+  // -- Transitions --
+  --transition-base: 250ms;
+  --ease-out: cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+// -----------------------------------------------------------------------------
+// Light & Dark Theme Definitions
+// -----------------------------------------------------------------------------
+body {
+  // -- Dark Theme (Default) --
+  --bg-primary: var(--color-midnight-study);
+  --bg-elevated: var(--color-obsidian-black);
+  --text-primary: var(--color-aged-parchment);
+  --text-secondary: var(--color-forged-iron);
+  --text-inverse: var(--color-midnight-study);
+  --border-light: var(--color-ancient-gold);
+  --border-medium: var(--color-charcoal-gray);
+
+  &.light-theme {
+    // -- Light Theme --
+    --bg-primary: var(--color-aged-parchment);
+    --bg-elevated: var(--color-light-parchment);
+    --text-primary: var(--color-charcoal-gray);
+    --text-secondary: var(--color-forged-iron);
+    --text-inverse: var(--color-light-parchment);
+    --border-light: var(--color-ancient-gold);
+    --border-medium: var(--color-worn-leather);
+  }
+}

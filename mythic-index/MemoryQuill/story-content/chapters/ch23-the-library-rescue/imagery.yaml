@@ -1,0 +1,756 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: The Library Rescue
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch23-the-library-rescue"
+  chapter_number: 23
+  chapter_title: "The Library Rescue"
+  visual_thesis: "From the precision of controlled expertise into the darkness of buried grief, then back into light—where professional triumph gives way to the private weight of survival."
+  color_palette:
+    primary:
+      - "#C4A35A"
+      - "#8B7355"
+      - "#4A4A4A"
+      - "#D4A574"
+    accent:
+      - "#2F4F4F"
+      - "#8B0000"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 3
+    pastoral: 1
+    celebratory: 0
+    aquatic: 2
+    ethereal: 0
+    intimate: 2
+    kinetic: 2
+    ominous: 0
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: "Dusted armor. Professional mask cracking in survivor pocket. Tears on dusty cheek behind pillar."
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "grimjaw-ironbeard"
+    name: "Grimjaw Ironbeard"
+    scene_variations: "Covered in stone dust. Pointing with authority. Swinging Tremor with a grin. Anchor for Veyra."
+    reference_images:
+      - "grimjaw-ironbeard-portrait-01"
+
+  - ref: "rill-vossari"
+    name: "Rill Vossari"
+    scene_variations: "Bioluminescent patterns intensified. Sweat on aquamarine brow. Palms open to water. Exhausted but determined."
+    reference_images:
+      - "rill-vossari-casting-portrait-01"
+
+  - ref: "cassius-valerius"
+    name: "Cassius Valerius"
+    scene_variations: "Dust-caked, pale. Torn slate robes. Matched jaw and eyes of Lysander. Trapped under shelving."
+    reference_images:
+      - "cassius-valerius-scholar-library-01"
+
+  - ref: "aldwin-gentleheart"
+    name: "Aldwin Gentleheart"
+    scene_variations: "Hands glowing gold. Kneeling in debris. Assessing fracture. Healer's focus."
+    reference_images:
+      - "aldwin-gentleheart-official-portrait-01"
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: "Coordinating with Watch. Steady presence. Recognizing professional trust."
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "vera-moonwhisper"
+    name: "Vera Moonwhisper"
+    scene_variations: "Leaning on staff. Supporting Rill. Alert and watchful."
+    reference_images:
+      - "vera-moonwhisper-portrait-01"
+
+locations:
+  - ref: "great-library-waterdeep"
+    zones:
+      - id: "cordon"
+        chapter_context: "Stone courtyard. Ragged hole in floor. Dust spirals. Crowds and Watch officers."
+      - id: "debris-tunnel"
+        chapter_context: "Narrow, dusty passage. Shattered columns, splintered shelves. Single lantern light."
+      - id: "flooded-chamber"
+        chapter_context: "Subterranean flood. Blue-white electrical sparks. Churning water responding to Rill."
+      - id: "survivor-pocket"
+        chapter_context: "Triangular lean-to of bookshelf and wall. Scattered scrolls. Intimate amber light."
+      - id: "exit-pillar"
+        chapter_context: "Thick stone pillar. Harsh contrast between shadow and brilliant afternoon sun."
+
+moments:
+  - id: "ch23-the-library-rescue-moment-01"
+    scene_id: "scn-23-01"
+    title: "The Archive Wound"
+    narrative_beat: "POV looking down into the dusty abyss of the sub-archives where scrolls are caught on broken beams."
+    visual_weight: "medium"
+    characters_present: []
+    location_zone: "great-library-waterdeep/cordon"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch23-the-library-rescue-moment-02"
+    scene_id: "scn-23-01"
+    title: "Professional Huddle"
+    narrative_beat: "Grimjaw, Veyra, and Thorne conferring with Grimsby at the edge of the pit, plans being formed."
+    visual_weight: "medium"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "captain-grimsby"
+    location_zone: "great-library-waterdeep/cordon"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch23-the-library-rescue-moment-03"
+    scene_id: "scn-23-02"
+    title: "The Surgeon of Stone"
+    narrative_beat: "Grimjaw pointing to the keystone rock that holds the entire collapse in place. Precision over power."
+    visual_weight: "hero"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "corporal-darric"
+      - "archer-venn"
+    location_zone: "great-library-waterdeep/debris-tunnel"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch23-the-library-rescue-moment-04"
+    scene_id: "scn-23-02"
+    title: "Precarious Bracing"
+    narrative_beat: "A massive marble pillar held back by Grimjaw's temporary timber supports in the flooded chamber."
+    visual_weight: "high"
+    characters_present:
+      - "grimjaw-ironbeard"
+    location_zone: "great-library-waterdeep/flooded-chamber"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch23-the-library-rescue-moment-05"
+    scene_id: "scn-23-02"
+    title: "Water Speaker's Path"
+    narrative_beat: "Rill opening her palms to the churning water, blue-white sparks dancing as she creates a path."
+    visual_weight: "high"
+    characters_present:
+      - "rill-vossari"
+    location_zone: "great-library-waterdeep/flooded-chamber"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch23-the-library-rescue-moment-06"
+    scene_id: "scn-23-03"
+    title: "The Ghost in the Dark"
+    narrative_beat: "Veyra's shock as Cassius looks up at her with Lysander's eyes, her hand moving to her throat."
+    visual_weight: "critical"
+    characters_present:
+      - "veyra-thornwake"
+      - "cassius-valerius"
+    location_zone: "great-library-waterdeep/survivor-pocket"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch23-the-library-rescue-moment-07"
+    scene_id: "scn-23-03"
+    title: "Healing Light"
+    narrative_beat: "Aldwin kneeling beside Cassius, hands glowing gold as he knits the shattered bone."
+    visual_weight: "medium"
+    characters_present:
+      - "aldwin-gentleheart"
+      - "cassius-valerius"
+      - "veyra-thornwake"
+    location_zone: "great-library-waterdeep/survivor-pocket"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch23-the-library-rescue-moment-08"
+    scene_id: "scn-23-04"
+    title: "The Breakthrough Grin"
+    narrative_beat: "Grimjaw swinging 'Tremor' to shatter the final obstruction, a grin of triumph on his face."
+    visual_weight: "hero"
+    characters_present:
+      - "grimjaw-ironbeard"
+    location_zone: "great-library-waterdeep/debris-tunnel"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch23-the-library-rescue-moment-09"
+    scene_id: "scn-23-05"
+    title: "Procession of Light"
+    narrative_beat: "The Company carrying Cassius out of the pit, figures appearing like statues come to life from the dust."
+    visual_weight: "high"
+    characters_present:
+      - "corporal-darric"
+      - "archer-venn"
+      - "aldwin-gentleheart"
+      - "veyra-thornwake"
+    location_zone: "great-library-waterdeep/cordon"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch23-the-library-rescue-moment-10"
+    scene_id: "scn-23-05"
+    title: "The Engineer's Salute"
+    narrative_beat: "The city engineer tipping his head in profound respect to Grimjaw, master acknowledging master."
+    visual_weight: "medium"
+    characters_present:
+      - "grimjaw-ironbeard"
+    location_zone: "great-library-waterdeep/cordon"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch23-the-library-rescue-moment-11"
+    scene_id: "scn-23-06"
+    title: "A Grip on the Sleeve"
+    narrative_beat: "Cassius reaching out to catch Veyra's sleeve as he's loaded into the wagon, asking about his brother."
+    visual_weight: "high"
+    characters_present:
+      - "cassius-valerius"
+      - "veyra-thornwake"
+    location_zone: "great-library-waterdeep/cordon"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch23-the-library-rescue-moment-12"
+    scene_id: "scn-23-06"
+    title: "The Three Breaths"
+    narrative_beat: "Veyra weeping silently behind a stone pillar, three breaths of grief before returning to command."
+    visual_weight: "critical"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "great-library-waterdeep/exit-pillar"
+    transformation_state: "after"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch23-the-library-rescue-img-23-01-01"
+    source_moment: "ch23-the-library-rescue-moment-01"
+    scene_id: "scn-15-01"
+    image_type: "beat"
+    category:
+      - "location"
+      - "detail"
+      - "symbol"
+    scene_mood: "somber"
+    mood_rationale: "The 'Character's Wound.' Library as archive of wounded history. Contrast between morning sun and ancient sunless dark."
+    aspect_ratio: "9:16"
+    orientation: "portrait"
+    size: "640x1136"
+    visual_description: |
+      POV shot looking straight down into a ragged hole in a marble floor. Shafts of morning sunlight illuminate torn ancient scrolls caught on broken stone beams. Below the light is a crushing dark void. Lazy spirals of gray dust rise like spectral smoke.
+    composition_notes: |
+      First-person vertical perspective. Ragged floor edge frames top. Vertical light shafts. High contrast sunlit vs absolute black.
+    visual_hook: "Torn, ancient scrolls caught mid-air on jagged stone beams, illuminated by shafts of sunlight"
+    depicts_characters: []
+    character_states: {}
+    location: "great-library-waterdeep"
+    lighting:
+      primary_source: "morning sun from above"
+      quality: "brilliant, directional shafts"
+      direction: "top-down"
+      color_temperature: "warm golden-white"
+      shadow_depth: "absolute"
+      atmospheric: "thick paper and stone dust"
+    palette:
+      dominant:
+        - "absolute black"
+        - "limestone white-gray"
+        - "parchment yellow"
+      accent:
+        - "morning gold"
+      avoid:
+        - "modern elements"
+    prompt_used: |
+      First-person fantasy shot looking down into a massive jagged hole in a marble floor,
+      shafts of morning sun beaming into a dark dusty archive,
+      torn ancient yellowed scrolls caught on broken beams,
+      depths below in absolute shadow,
+      lazy spirals of gray dust,
+      classical oil painting, Rembrandt lighting with dramatic light shafts,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, people, modern
+    tags:
+      - "location"
+      - "collapse"
+      - "somber"
+      - "archives"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch23-the-library-rescue-img-23-02-01"
+    source_moment: "ch23-the-library-rescue-moment-03"
+    scene_id: "scn-23-02"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "action"
+    scene_mood: "somber"
+    mood_rationale: "Surgical precision required. Rembrandt's surgeon operating on the patient. Life and death measured in millimeters."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Grimjaw pointing at a small granite block buried in debris. Massive marble slabs loom overhead. Darric and Venn hold pry bars, frozen in anticipation. Single lantern creates an amber pool. Dust motes suspended.
+    composition_notes: |
+      Low angle. Rule of thirds: Grimjaw left, keystone center, Darric/Venn right. Radial composition from lantern.
+    visual_hook: "Grimjaw's weathered finger pointing at a small insignificant rock while massive slabs loom overhead"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "corporal-darric"
+      - "archer-venn"
+    character_states:
+      grimjaw-ironbeard: |
+        Planted wide. Arm extended pointing. Face half-lit. Absolute certainty. Dust streaks.
+      corporal-darric: |
+        Crouched. Pry bar positioned. Dark plate armor dusty. Focused expression.
+      archer-venn: |
+        Opposite Darric. No bow. Concentration. Olive skin pale with dust.
+    location: "great-library-waterdeep"
+    zone: "debris-tunnel"
+    lighting:
+      primary_source: "single lantern"
+      quality: "hard, dramatic"
+      direction: "side/below"
+      color_temperature: "warm amber"
+      shadow_depth: "deep, rich"
+      atmospheric: "thick suspended dust"
+    palette:
+      dominant:
+        - "deep amber"
+        - "muted ochre"
+        - "slate gray"
+      accent:
+        - "copper pauldron gleam"
+      avoid:
+        - "bright colors"
+    prompt_used: |
+      Elderly dwarf engineer with magnificent beard pointing at a granite keystone in a collapsed tunnel,
+      dwarf and elf companions with pry bars ready,
+      massive marble slabs looming overhead,
+      single lantern creating amber pool of light,
+      dust motes suspended,
+      classical oil painting, Rembrandt lighting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright light
+    tags:
+      - "hero"
+      - "grimjaw"
+      - "engineering"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch23-the-library-rescue-img-23-02-02"
+    source_moment: "ch23-the-library-rescue-moment-05"
+    scene_id: "scn-23-02"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "magic"
+      - "action"
+    scene_mood: "aquatic"
+    mood_rationale: "Water as subject and medium. Communion not control. Bioluminescence answering external chaos."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Rill Vossari stands before a flooded chamber. Blue-white electrical sparks dance on the water. Arms extended, palms open. Bioluminescent patterns on skin pulse and mirror the water currents. Flood is settling and parting into channels.
+    composition_notes: |
+      Medium-wide. Rill left third. Hands reaching center. Leading lines from parting water. Internal light answering external chaos.
+    visual_hook: "The bioluminescent currents beneath Rill's skin Intensifying and mirroring the patterns in the water"
+    depicts_characters:
+      - "rill-vossari"
+    character_states:
+      rill-vossari: |
+        Braced. Palms open. Intense focus. Glow intensified. Sweat on brow. No trident.
+    location: "great-library-waterdeep"
+    zone: "flooded-chamber"
+    lighting:
+      primary_source: "electrical sparks + bioluminescence"
+      quality: "diffused, silvery, wet"
+      direction: "multiple"
+      color_temperature: "silver-blue vs warm amber glow"
+      shadow_depth: "soft, luminous"
+      atmospheric: "ozone mist, spray"
+    palette:
+      dominant:
+        - "deep teal"
+        - "silver-blue"
+        - "aquamarine"
+      accent:
+        - "blue-white sparks"
+        - "amber bioluminescence"
+      avoid:
+        - "warm earth tones"
+    prompt_used: |
+      Water genasi woman with glowing bioluminescent skin standing before a flooded chamber,
+      arms extended palms open toward churning water,
+      blue-white electrical sparks dancing on water surface,
+      water settling into channels,
+      skin patterns mirroring water currents,
+      classical oil painting, maritime realism, Turner influence,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, command pose
+    tags:
+      - "anchor"
+      - "rill-vossari"
+      - "water-magic"
+      - "aquatic"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch23-the-library-rescue-img-23-02-03"
+    source_moment: "ch23-the-library-rescue-moment-04"
+    scene_id: "scn-23-02"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "location"
+      - "action"
+    scene_mood: "kinetic"
+    mood_rationale: "Precarious engineering. Intersection of ancient weight and human leverage. Tense and unstable."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Massive carved marble pillar held back by temporary timber and iron braces. Braces groaning under strain. Grimjaw's silhouette directs from edges. Blue-white sparks from broken lights reflect in murky water on floor. Atmosphere of structural peril.
+    composition_notes: |
+      Low angle looking up. Pillar massive threatening diagonal. Timber supports as secondary diagonals. High contrast.
+    visual_hook: "A massive carved marble pillar held in mid-collapse by precarious timber braces"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+    character_states:
+      grimjaw-ironbeard: |
+        Silhouette. Command posture. Dusted with stone.
+    location: "great-library-waterdeep"
+    zone: "flooded-chamber"
+    lighting:
+      primary_source: "lanterns + sparks"
+      quality: "chaotic, flickering"
+      direction: "side/below"
+      color_temperature: "electric blue vs industrial amber"
+      shadow_depth: "deep, frantic"
+      atmospheric: "ozone mist, dust"
+    palette:
+      dominant:
+        - "marble gray"
+        - "timber brown"
+        - "black shadow"
+      accent:
+        - "blue-white spark"
+      avoid:
+        - "stable lighting"
+    prompt_used: |
+      Intricately carved marble pillar leaning dangerously, held up by temporary wooden braces,
+      flooded underground chamber,
+      blue-white magical sparks reflecting in water,
+      dwarf silhouette directing from the side,
+      atmosphere of immediate peril,
+      classical oil painting, Romantic dynamism, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stable building
+    tags:
+      - "beat"
+      - "engineering"
+      - "peril"
+      - "kinetic"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch23-the-library-rescue-img-23-03-01"
+    source_moment: "ch23-the-library-rescue-moment-06"
+    scene_id: "scn-23-03"
+    image_type: "pivot"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: "Emotional heart. Private reckoning in small space. Lantern creates amber pool. Recognition and fracture."
+    aspect_ratio: "2:3"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Veyra and Cassius in amber lantern light. Veyra's mask cracking, hand on throat, fingernails biting into palm. Cassius looking up from beneath debris with Lysander's jaw and eyes. Triangular pocket of space. Scattered scrolls.
+    composition_notes: |
+      Close two-shot. Tight framing. Veyra upper left, Cassius lower right. Diagonal tension. Dutch tilt. Hip-lantern light source.
+    visual_hook: "Veyra's fingernails biting into her own palm as her eyes fixate on a face she never expected to see again"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "cassius-valerius"
+    character_states:
+      veyra-thornwake: |
+        Rigid recognition. Burn scar prominent. Hand white-knuckled on palm. Stricken intensity.
+      cassius-valerius: |
+        Dust-caked. Looking up. Steady gaze (Lysander's eyes). Composed.
+    location: "great-library-waterdeep"
+    zone: "survivor-pocket"
+    lighting:
+      primary_source: "Lysander's lantern at hip"
+      quality: "soft, warm, intimate"
+      direction: "side/below"
+      color_temperature: "warm amber"
+      shadow_depth: "soft gradients"
+      atmospheric: "dust settled"
+    palette:
+      dominant:
+        - "warm amber"
+        - "earth brown"
+        - "slate shadow"
+      accent:
+        - "teal tattoo"
+        - "red-brown scar"
+      avoid:
+        - "bright colors"
+    prompt_used: |
+      Close portrait of scarred woman in shock looking down at a trapped man,
+      man has same eyes and jaw as her lost friend,
+      cramped pocket of debris with scattered scrolls,
+      warm golden lantern light from below,
+      fingernails digging into her own palm,
+      atmosphere of devastating recognition,
+      classical oil painting, Vermeer interior lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smiling
+    tags:
+      - "pivot"
+      - "recognition"
+      - "trauma"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch23-the-library-rescue-img-23-03-02"
+    source_moment: "ch23-the-library-rescue-moment-07"
+    scene_id: "scn-23-03"
+    image_type: "beat"
+    category:
+      - "character"
+      - "moment"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: "Healer's touch. Soft golden light of divine energy. Sanctuary within the ruins."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Aldwin kneeling beside Cassius in the debris pocket. His hands glow with a soft, golden light as they touch Cassius's leg. Veyra is in the background, a silent, shadowed witness. The space is small and intimate, filled with the warmth of the healing magic.
+    composition_notes: |
+      Tight square framing. Aldwin's glowing hands as focal point. Contrast between the bright healing light and the dusty shadows.
+    visual_hook: "The soft, warm gold light emanating from the halfling's hands, illuminating the gray dust of the ruins."
+    depicts_characters:
+      - "aldwin-gentleheart"
+      - "cassius-valerius"
+      - "veyra-thornwake"
+    character_states:
+      aldwin-gentleheart: |
+        Kneeling. Hands glowing. Focused, gentle expression.
+      cassius-valerius: |
+        Lying back. Expression of relief.
+      veyra-thornwake: |
+        Background silhouette. Watching.
+    location: "great-library-waterdeep"
+    zone: "survivor-pocket"
+    lighting:
+      primary_source: "Aldwin's glowing hands"
+      quality: "Luminous, soft"
+      direction: "Radial from hands"
+      color_temperature: "Warm gold"
+      shadow_depth: "Soft"
+      atmospheric: "Dusty"
+    palette:
+      dominant:
+        - "warm gold"
+        - "shadow brown"
+        - "dust gray"
+      accent:
+        - "moss green cloak"
+      avoid:
+        - "harsh light"
+    prompt_used: |
+      Halfling healer with glowing golden hands tending to an injured man in a dark debris pocket,
+      soft luminous light illuminating dusty surroundings and faces,
+      expression of focused compassion,
+      cramped intimate setting,
+      classical oil painting, Pre-Raphaelite luminosity,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "healing"
+      - "aldwin"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch23-the-library-rescue-img-23-04-01"
+    source_moment: "ch23-the-library-rescue-moment-08"
+    scene_id: "scn-23-04"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "action"
+    scene_mood: "kinetic"
+    mood_rationale: "Earned catharsis. Hammer swinging, daylight breakthrough. Transition from darkness to triumph."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Grimjaw's sledgehammer 'Tremor' descending toward obstruction. Satisfied grin on dwarf's face. Stone fragments scatter. Golden daylight streams through widening gap. Contrast between dark tunnel left and bright sun right.
+    composition_notes: |
+      Dynamic diagonal. Grimjaw left. Impact center-right. Low angle. Breakthrough daylight as dramatic contrast. Arrested motion.
+    visual_hook: "Grimjaw's satisfied grin in the instant before impact, massive hammer caught mid-arc"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+    character_states:
+      grimjaw-ironbeard: |
+        Full power stance. 'Tremor' high. Grinning. Iron-gray beard flying. Dust-covered but triumphant.
+    location: "great-library-waterdeep"
+    zone: "debris-tunnel"
+    lighting:
+      primary_source: "breakthrough daylight + lantern"
+      quality: "dramatic, high contrast"
+      direction: "front vs back"
+      color_temperature: "gold sun vs amber lantern"
+      shadow_depth: "harsh contrast"
+      atmospheric: "exploding dust"
+    palette:
+      dominant:
+        - "afternoon gold"
+        - "stone gray"
+        - "dust white"
+      accent:
+        - "iron hammer"
+      avoid:
+        - "cool colors"
+    prompt_used: |
+      Elderly dwarf swinging a massive sledgehammer to break through stone into bright sunlight,
+      triumphant grin on his face,
+      shattering rock and swirling dust,
+      high contrast between dark tunnel and brilliant daylight,
+      classical oil painting, Romantic dynamism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, darkness dominating
+    tags:
+      - "anchor"
+      - "grimjaw"
+      - "action"
+      - "breakthrough"
+      - "kinetic"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch23-the-library-rescue-img-23-06-01"
+    source_moment: "ch23-the-library-rescue-moment-12"
+    scene_id: "scn-23-06"
+    image_type: "detail"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Cost made visible. Private grief of commanders. Shadow vs bright square. Weeping where no one sees."
+    aspect_ratio: "2:3"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Veyra in shadow of a stone pillar, hidden from bright square. Hand pressed to mouth. Tears track through dust on scarred cheek. Spine beginning to straighten. Pillar creates absolute division shadow/light. Lantern glows at hip.
+    composition_notes: |
+      Profile/Three-quarter. Pillar vertical division. Shadow left, bright sun right. Tear track focal point. Vertical format.
+    visual_hook: "A single tear tracking through the dust on Veyra's burn-scarred cheek, hand pressed hard over her mouth"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Tear tracking through dust. Hand over mouth. Braced on stone. Spine straightening. Unguarded grief.
+    location: "great-library-waterdeep"
+    zone: "exit-pillar"
+    lighting:
+      primary_source: "brilliant afternoon sun"
+      quality: "harsh contrast"
+      direction: "side"
+      color_temperature: "cool shadow vs warm gold"
+      shadow_depth: "deep, enveloping"
+      atmospheric: "still"
+    palette:
+      dominant:
+        - "cool shadow"
+        - "earth brown skin"
+        - "dust gray"
+      accent:
+        - "brilliant gold beyond"
+        - "tear gleam"
+      avoid:
+        - "warmth dominating"
+    prompt_used: |
+      Close portrait of scarred woman weeping silently behind a stone pillar,
+      single tear cutting through stone dust on her face,
+      hand pressed to mouth,
+      harsh contrast between deep shadow and brilliant sunlight beyond,
+      atmosphere of private grief and relief,
+      classical oil painting, Rembrandt lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smiling, wide shot
+    tags:
+      - "detail"
+      - "resolution"
+      - "catharsis"
+      - "somber"
+      - "veyra"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

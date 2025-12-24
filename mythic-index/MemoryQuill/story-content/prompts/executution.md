@@ -1,0 +1,1 @@
+> Let's execute the prompt located at @prompts/location-imagery-regenerator.md for /home/willkara/source/MemoryQuill/mythic-index/MemoryQuill/story-content/locations/cids-workshop/imagery.regen-input.yaml

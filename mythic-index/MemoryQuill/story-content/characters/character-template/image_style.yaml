@@ -1,0 +1,28 @@
+metadata:
+  schema: "character-image-style"
+  version: 1
+  # Use the directory slug when copying this into a character folder
+  character_slug: "character-template"
+  updated_at: "2025-12-21"
+
+# Optional per-character overrides used by the generator.
+# Keep these practical and world-grounded; avoid neon/glossy magic.
+style_overrides:
+  # If present, the generator should treat these as required “world signifiers”.
+  fantasy_grounding:
+    - "practical-magic detail (ward, sigil, rune-lamp, everwarm stone, etc.)"
+    - "setting-specific material/patina (salt-stain, soot, bronze patina, worn leather, etc.)"
+
+  # Visual language unique to this character or their faction.
+  faction_or_guild_marks:
+    - "describe any sigil, patch, ring, seal, badge, embroidery motif"
+
+  # Props that help the image feel like your world even in mundane scenes.
+  signature_props:
+    - "one or two iconic items (lantern, charm, tools, weapon, satchel, etc.)"
+
+  # Things to explicitly avoid for this character (in addition to master negatives).
+  avoid:
+    - "modern fashion cues"
+    - "photography/camera language"
+

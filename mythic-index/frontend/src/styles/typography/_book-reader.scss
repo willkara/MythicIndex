@@ -1,0 +1,533 @@
+// =============================================================================
+// Book Reader Typography - Optimized for Long-form Reading
+// =============================================================================
+
+// =============================================================================
+// Base Reader Styles
+// =============================================================================
+
+.reader {
+  // Core reading container
+  max-width: 72ch; // Optimal reading measure
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: var(--font-body);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-reading);
+  color: var(--text-primary);
+
+  // Subtle texture for parchment feel
+  background: var(--bg-primary);
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.03;
+    background-image: radial-gradient(circle at 1px 1px, var(--color-worn-leather) 1px, transparent 0);
+    background-size: 20px 20px;
+    pointer-events: none;
+  }
+
+  // Enhanced readability on smaller screens
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 1.5rem;
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+  }
+}
+
+// =============================================================================
+// Headings - Chapter and Section Titles
+// =============================================================================
+
+.reader {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--letter-spacing-tight);
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+
+    // Prevent orphaned headings
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  // Chapter titles (H1)
+  h1 {
+    font-size: var(--font-size-4xl);
+    margin: 3rem 0 2rem;
+    text-align: center;
+    position: relative;
+
+    // Decorative chapter ornament
+    &::after {
+      content: '❦';
+      display: block;
+      font-size: 1.5rem;
+      color: var(--color-ancient-gold);
+      margin-top: 1rem;
+      letter-spacing: 0;
+    }
+
+    // Chapter numbering support
+    &[data-chapter-number]::before {
+      content: 'Chapter ' attr(data-chapter-number);
+      display: block;
+      font-size: var(--font-size-lg);
+      font-weight: var(--font-weight-light);
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+      letter-spacing: var(--letter-spacing-wide);
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 768px) {
+      font-size: var(--font-size-3xl);
+      margin: 2rem 0 1.5rem;
+    }
+  }
+
+  // Section headers (H2)
+  h2 {
+    font-size: var(--font-size-3xl);
+    margin: 2.5rem 0 1.5rem;
+    border-bottom: 2px solid var(--color-ancient-gold);
+    padding-bottom: 0.5rem;
+
+    @media (max-width: 768px) {
+      font-size: var(--font-size-2xl);
+      margin: 2rem 0 1rem;
+    }
+  }
+
+  // Subsection headers (H3-H6)
+  h3 {
+    font-size: var(--font-size-2xl);
+    margin: 2rem 0 1rem;
+  }
+
+  h4 {
+    font-size: var(--font-size-xl);
+    margin: 1.5rem 0 0.75rem;
+  }
+
+  h5, h6 {
+    font-size: var(--font-size-lg);
+    margin: 1rem 0 0.5rem;
+    font-weight: var(--font-weight-medium);
+  }
+}
+
+// =============================================================================
+// Body Text and Paragraphs
+// =============================================================================
+
+.reader {
+  p {
+    margin: 0 0 1.25rem;
+    text-align: justify;
+    hyphens: auto;
+    word-spacing: 0.1em;
+
+    // Prevent widows and orphans
+    widows: 2;
+    orphans: 2;
+
+    // First paragraph after headings
+    h1 + &, h2 + &, h3 + &, h4 + &, h5 + &, h6 + & {
+      margin-top: 0;
+
+      // Drop cap for chapter openings
+      &.drop-cap::first-letter {
+        float: left;
+        font-family: var(--font-display);
+        font-size: 3.5em;
+        line-height: 0.8;
+        margin: 0.2em 0.1em 0 0;
+        color: var(--color-ancient-gold);
+        text-shadow: 1px 1px 2px var(--shadow-light);
+      }
+    }
+
+    // Scene breaks
+    &.scene-break {
+      text-align: center;
+      margin: 2rem 0;
+      font-size: var(--font-size-xl);
+      color: var(--color-ancient-gold);
+
+      &::before {
+        content: '※ ※ ※';
+        letter-spacing: 0.5em;
+      }
+    }
+
+    @media (max-width: 768px) {
+      text-align: left; // Justify can be hard to read on small screens
+      hyphens: none;
+    }
+  }
+
+  // Enhanced spacing for readability
+  p + p {
+    text-indent: 1.5em;
+    margin-top: 0;
+  }
+
+  // Reset indent after non-paragraph elements
+  :not(p) + p {
+    text-indent: 0;
+  }
+}
+
+// =============================================================================
+// Blockquotes - Dialogue and Citations
+// =============================================================================
+
+.reader {
+  blockquote {
+    font-style: italic;
+    margin: 1.5rem 0;
+    padding: 1rem 1.5rem;
+    border-left: 4px solid var(--color-ancient-gold);
+    background: linear-gradient(
+        90deg,
+        var(--color-ancient-gold-alpha) 0%,
+        transparent 50%
+    );
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+
+    p {
+      margin-bottom: 0.75rem;
+      text-indent: 0; // No indent in blockquotes
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    // Epigraphs (chapter opening quotes)
+    &.epigraph {
+      text-align: center;
+      border: none;
+      background: none;
+      font-size: var(--font-size-base);
+      color: var(--text-muted);
+      margin: 2rem auto;
+      max-width: 80%;
+
+      &::before {
+        content: '"';
+        font-size: 2em;
+        color: var(--color-ancient-gold);
+        line-height: 0;
+        vertical-align: -0.3em;
+      }
+
+      &::after {
+        content: '"';
+        font-size: 2em;
+        color: var(--color-ancient-gold);
+        line-height: 0;
+        vertical-align: -0.3em;
+      }
+    }
+
+    // Dialogue formatting
+    &.dialogue {
+      border-left-color: var(--color-arcane-amethyst);
+      background: linear-gradient(
+          90deg,
+          var(--color-arcane-amethyst-alpha) 0%,
+          transparent 50%
+      );
+      font-style: normal;
+    }
+  }
+}
+
+// =============================================================================
+// Lists - Organized Information
+// =============================================================================
+
+.reader {
+  ul, ol {
+    margin: 1rem 0 1.5rem 1.5rem;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.5rem;
+      line-height: var(--line-height-base);
+
+      p {
+        margin: 0.25rem 0;
+      }
+    }
+
+    // Nested lists
+    ul, ol {
+      margin: 0.5rem 0 0.5rem 1.5rem;
+    }
+  }
+
+  // Custom bullet styles
+  ul {
+    list-style: none;
+
+    li::before {
+      content: '◆';
+      color: var(--color-ancient-gold);
+      margin-right: 0.5rem;
+      font-size: 0.8em;
+    }
+
+    // Nested bullets
+    ul li::before {
+      content: '▪';
+    }
+  }
+
+  // Definition lists for character/location info
+  dl {
+    margin: 1rem 0;
+
+    dt {
+      font-weight: var(--font-weight-semibold);
+      color: var(--text-primary);
+      margin-top: 1rem;
+      font-size: var(--font-size-base);
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    dd {
+      margin: 0.25rem 0 0 1rem;
+      color: var(--text-secondary);
+    }
+  }
+}
+
+// =============================================================================
+// Emphasis and Inline Formatting
+// =============================================================================
+
+.reader {
+  // Italic emphasis
+  em, i {
+    font-style: italic;
+    color: var(--text-primary);
+  }
+
+  // Strong emphasis
+  strong, b {
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-primary);
+  }
+
+  // Small text (annotations, metadata)
+  small {
+    font-size: var(--font-size-sm);
+    color: var(--text-muted);
+  }
+
+  // Superscript and subscript
+  sup, sub {
+    font-size: 0.75em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+
+  sup {
+    top: -0.5em;
+  }
+
+  sub {
+    bottom: -0.25em;
+  }
+
+  // Inline code
+  code:not([class*="language-"]) {
+    font-family: var(--font-code);
+    font-size: 0.875em;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    padding: 0.125rem 0.25rem;
+    color: var(--text-primary);
+  }
+
+  // Mark (highlighted text)
+  mark {
+    background: var(--color-ancient-gold-alpha);
+    color: var(--text-primary);
+    padding: 0.125rem 0.25rem;
+    border-radius: var(--radius-sm);
+  }
+}
+
+// =============================================================================
+// Links and Interactive Elements
+// =============================================================================
+
+.reader {
+  a {
+    color: var(--color-ancient-gold);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all var(--transition-fast) var(--ease-out);
+
+    &:hover {
+      color: var(--color-deep-amber);
+      border-bottom-color: currentColor;
+    }
+
+    &:focus {
+      outline: 2px solid var(--interactive-focus);
+      outline-offset: 2px;
+    }
+
+    // Visited links
+    &:visited {
+      color: var(--color-muted-bronze);
+    }
+
+    // External links
+    &[href^="http"]::after {
+      content: '↗';
+      font-size: 0.8em;
+      margin-left: 0.25rem;
+      opacity: 0.6;
+    }
+  }
+}
+
+// =============================================================================
+// Reading Modes
+// =============================================================================
+
+// Focus mode - minimal distractions
+.reader.focus-mode {
+  max-width: 65ch;
+
+  h1::after {
+    display: none; // Hide decorative elements
+  }
+
+  .scene-break::before {
+    content: '• • •';
+    letter-spacing: 0.5em;
+  }
+}
+
+// Print mode optimizations
+@media print {
+  .reader {
+    max-width: none;
+    font-size: 12pt;
+    line-height: 1.5;
+    color: black;
+    background: white;
+
+    &::before {
+      display: none; // Remove texture
+    }
+
+    h1 {
+      page-break-before: always;
+
+      &:first-child {
+        page-break-before: auto;
+      }
+    }
+
+    h1, h2, h3 {
+      page-break-after: avoid;
+    }
+
+    p {
+      text-align: left;
+      hyphens: auto;
+    }
+
+    blockquote {
+      page-break-inside: avoid;
+    }
+  }
+}
+
+// =============================================================================
+// Accessibility Enhancements
+// =============================================================================
+
+// High contrast adjustments
+@media (prefers-contrast: high) {
+  .reader {
+    p {
+      text-align: left; // Easier to read in high contrast
+    }
+
+    blockquote {
+      border-left-width: 6px;
+    }
+  }
+}
+
+// Reduced motion preferences
+@media (prefers-reduced-motion: reduce) {
+  .reader a {
+    transition: none;
+  }
+}
+
+// Font size user preferences
+.reader.font-small {
+  font-size: var(--font-size-base);
+}
+
+.reader.font-large {
+  font-size: var(--font-size-xl);
+}
+
+.reader.font-extra-large {
+  font-size: var(--font-size-2xl);
+  line-height: 1.8;
+}
+
+// =============================================================================
+// Reader Utilities
+// =============================================================================
+
+// Text selection styling
+.reader ::selection {
+  background: var(--color-ancient-gold-alpha);
+  color: var(--text-primary);
+}
+
+// Scroll margin for anchor navigation
+.reader h1, .reader h2, .reader h3, .reader h4, .reader h5, .reader h6 {
+  scroll-margin-top: 2rem;
+}
+
+// Reading progress indicator
+.reader-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--color-ancient-gold);
+  transform-origin: left center;
+  transform: scaleX(0);
+  transition: transform 0.15s ease-out;
+  z-index: 100;
+}

@@ -1,0 +1,406 @@
+chapter_analysis:
+  slug: "ch24-debts-and-truths"
+  chapter_number: 24
+  chapter_title: "Debts and Truths"
+  
+  visual_thesis: "From the hollow weight of survival to the inherited strength of legacy, this chapter moves through exhaustion into purposeful resolve."
+  
+  dominant_mood_progression:
+    - "bone-deep exhaustion"
+    - "uneasy celebrity"
+    - "cathartic grief"
+    - "renewed determination"
+  
+  color_story:
+    opening: "limestone gray, sepia dust, amber lamplight"
+    climax: "temple white, morning gold, silver gleam"
+    closing: "warm wood tones, parchment cream, steel resolve"
+
+  key_locations:
+    - slug: "waterdeep-streets-night"
+      name: "Empty Night Streets"
+      visual_character: "Deserted cobblestones catching lamplight, the Company's dust-covered forms stark against dark storefronts and the occasional drunk stumbling away"
+      time_of_day: "late night"
+      weather_atmosphere: "clear, still"
+    - slug: "warehouse-complex"
+      name: "Warehouse Complex (Main Building)"
+      visual_character: "High-bay space with clerestory lancets, round map table, warm light spilling from windows against pre-dawn darkness, newspapers scattered across every surface"
+      time_of_day: "dawn to morning"
+      weather_atmosphere: "interior warmth contrasting street cold"
+    - slug: "temple-of-tyr"
+      name: "Temple of Tyr Recovery Chamber"
+      visual_character: "Private chamber with garden view, white stone walls catching late morning sun, simple furnishings with religious gravity"
+      time_of_day: "late morning"
+      weather_atmosphere: "bright, peaceful"
+
+  active_characters:
+    - slug: "veyra-thornwake"
+      name: "Veyra Thornwake"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "protagonist"
+      emotional_arc: "exhausted survivor → guilt-laden visitor → heir to legacy → resolute commander"
+      arc_context: "Following the library rescue where she saved Cassius and was recognized as Lysander's comrade, she must confront the guilt of her past while accepting the burden of legacy"
+      visual_identifiers: "Dark mohawk with braided side-lock featuring brown feathers and turquoise beads, prominent burn scar covering left side of face from jaw to temple, teal-blue tattoos on neck and left arm, battered metal lantern at hip, weathered leather armor"
+      draft_warning: false
+    - slug: "cassius-valerius"
+      name: "Cassius Valerius"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "catalyst"
+      emotional_arc: "grateful survivor → perceptive questioner → generous benefactor"
+      arc_context: "Brother of the fallen Lysander, rescued from the library collapse, now provides closure and legacy transfer to Veyra"
+      visual_identifiers: "Late 20s to early 30s, dark brown wavy hair kept short and tousled, strong jawline, thin mustache with light stubble, dark brown intense eyes, slate-grey hooded outer robe over rust-brown tunic"
+      draft_warning: false
+    - slug: "vera-moonwhisper"
+      name: "Vera Moonwhisper"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "recovered but urgent → intensely focused → frustrated but accepting"
+      arc_context: "Returns from druidic healing with renewed strength but unchanged desperation about her brother; must balance personal stakes with tactical wisdom"
+      visual_identifiers: "Dark chestnut hair in long practical braid, hazel eyes that shift to amber, faded green vine markings on right cheekbone and temple, forest-green hooded cloak over brown leather jerkin with embossed paw print, Whisperwind quarterstaff, brass locket on leather cord, Echo the raven companion"
+      draft_warning: false
+    - slug: "grimjaw-ironbeard"
+      name: "Grimjaw Ironbeard"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "weary craftsman → quietly proud → steady anchor"
+      arc_context: "His engineering saved lives in the rescue; he honors the library's architecture even in its destruction"
+      visual_identifiers: "Elderly but robust dwarf, iron-gray hair and magnificent chest-covering beard with thick central braid and metal charms, deep-set dark eyes, ruddy weathered skin, copper-colored pauldrons, dark brown leather mining gear, Tremor sledgehammer"
+      draft_warning: false
+    - slug: "mistress-elba"
+      name: "Mistress Elba"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "worried grandmother → relieved caretaker → bustling morale officer"
+      arc_context: "Serves as the Company's emotional anchor, providing maternal care that grounds them after trauma"
+      visual_identifiers: "4'2\" dwarven woman, iron-gray hair with copper-red braid wrapped over crown and heavy plait over left shoulder, deep amber eyes, solid blocky frame with broad shoulders, dark brown wool dress with beige canvas apron, gold hoop earrings"
+      draft_warning: false
+    - slug: "aldwin-gentleheart"
+      name: "Aldwin Gentleheart"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "professional healer → quiet companion → supportive presence"
+      arc_context: "Accompanies Veyra to her emotional reckoning, providing steady presence without interference"
+      visual_identifiers: "Compact sturdy halfling, curly dark charcoal-brown hair frosted with silver, warm dark hazel eyes, ruddy fair complexion, moss-green wool cloak and cowl over studded brown leather doublet, fingerless leather gloves, copper heating pan and herbal supplies"
+      draft_warning: false
+    - slug: "thorne-brightward"
+      name: "Thorne Brightward"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "exhausted → concerned → strategically cautious"
+      arc_context: "Maintains professional focus while balancing urgency against consequences"
+      visual_identifiers: "Early forties, steel-gray cropped hair with receding hairline and thick gray mustache, deep-set watchful brown eyes, weathered ruddy face, faded deep blue heavy wool cloak with golden sunburst sigil, steel breastplate over chainmail"
+      draft_warning: false
+    - slug: "rill-vossari"
+      name: "Rill Vossari"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "caring guide → practical advisor"
+      arc_context: "Returns with Vera from the grove, providing practical support and establishing herself as an ally"
+      visual_identifiers: "5'10\" water genasi with deep luminous aquamarine skin, bioluminescent veins and patterns glowing beneath surface, thick teal-to-black dreadlocks with copper coils and beads, solid pale gray pupil-less eyes, dark oilskin longcoat, iron trident, braided rope harness"
+      draft_warning: false
+
+candidate_moments:
+  - moment_id: "ch24-debts-and-truths-moment-01"
+    source_scene: "scn-24-01"
+    
+    narrative_beat: "The Last Light Company limps through Waterdeep's empty streets at night, covered in limestone dust and carrying the weight of their rescue. Drunks stumble backward at the sight of them; the few awake citizens fall silent."
+    subtext: "They have fought a war that the sleeping city doesn't yet know exists. The dust that covers them is both badge of honor and shroud of trauma."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 3
+      character_revelation: 3
+      symbolic_density: 4
+      total: 18
+    
+    score_rationale:
+      character_revelation_note: "Shows the collective state of the Company—exhausted but still moving forward together"
+      relationship_context: "The group moves as a unit, supporting each other through the empty streets, demonstrating their bond as found family"
+    
+    suggested_type: "hero"
+    primary_subject: "The Company as collective"
+    secondary_elements:
+      - "Empty cobblestone streets"
+      - "Limestone dust coating everything"
+      - "Startled drunk nobleman"
+      - "Individual injuries visible"
+    
+    suggested_framing: "wide"
+    suggested_angle: "low"
+    
+    key_visual_hook: "Limestone dust coating every surface of their armor and hair, catching lamplight like ash from a battle no one else witnessed"
+    
+    lighting_suggestion: "Street lamps creating pools of amber light against deep shadows, dust particles catching the glow"
+    
+    emotional_color: "bone-weary triumph"
+    
+    characters_present:
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Leading the procession, voice hoarse, absently touching her chest where Cassius gripped her"
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "Walking with stone chips in beard, muttering calculations"
+      - slug: "thorne-brightward"
+        has_canonical_visuals: true
+        role_in_moment: "Armor lightly dusted, tiredly deflecting questions"
+      - slug: "aldwin-gentleheart"
+        has_canonical_visuals: true
+        role_in_moment: "Supporting Kelen who is coughing from smoke"
+    
+    source_excerpts:
+      - "The Last Light Company limped through Waterdeep's empty streets like the survivors of a war that no one else had fought yet."
+      - "Limestone dust clung to every surface—hair, clothes, the creases around their eyes where sweat had carved tracks through the grime."
+      - "A drunk nobleman in purple silk stumbled backwards at the sight of them, wine sloshing from his goblet."
+    
+    selection_rationale: "Opens the chapter with its defining visual thesis—the weight of survival—and establishes the Company's collective state after the rescue. Wide establishing shot that sets the emotional tone."
+
+  - moment_id: "ch24-debts-and-truths-moment-02"
+    source_scene: "scn-24-01"
+    
+    narrative_beat: "Mistress Elba stands silhouetted in the warehouse doorway as the Company approaches, warm light spilling around her small frame, her stern expression softened to relief and grandmother's concern as she catalogs their injuries with practiced efficiency."
+    subtext: "The threshold between the cold world and the warmth of home. She is both guardian and welcome, proof that someone was waiting, worried."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 3
+      narrative_pivot: 2
+      character_revelation: 4
+      symbolic_density: 4
+      total: 17
+    
+    score_rationale:
+      character_revelation_note: "Shows Elba's dual nature—stern exterior with deeply caring core—and her role as the Company's emotional anchor"
+      relationship_context: "Her maternal response demonstrates the warehouse complex has become home, and this found family is hers to protect"
+    
+    suggested_type: "mood"
+    primary_subject: "Mistress Elba"
+    secondary_elements:
+      - "Warm light from doorway"
+      - "Dark street behind approaching Company"
+      - "Threshold symbolism"
+    
+    suggested_framing: "medium"
+    suggested_angle: "low"
+    
+    key_visual_hook: "Her amber eyes cataloging each injury with grandmother's efficiency even as relief softens her stern expression"
+    
+    lighting_suggestion: "Interior warmth backlighting her silhouette, cold street darkness behind the Company"
+    
+    emotional_color: "fierce tenderness"
+    
+    characters_present:
+      - slug: "mistress-elba"
+        has_canonical_visuals: true
+        role_in_moment: "Standing in doorway, filling it despite her small stature, expression shifting from stern to soft"
+    
+    source_excerpts:
+      - "Warm light spilled from the windows of all three buildings, and as they approached the main entrance, the door swung open."
+      - "Mistress Elba stood silhouetted in the doorway, her dwarven frame filling the space despite her relatively small stature, her usual stern expression replaced by something softer—relief mixed with grandmother's concern."
+      - "\"About time, children,\" she said gruffly, but her amber eyes catalogued their injuries with the practiced efficiency of a grandmother."
+    
+    selection_rationale: "Powerful threshold moment that captures the Company's return to safety. The contrast between Elba's gruff words and visible relief encapsulates the chapter's theme of found family."
+
+  - moment_id: "ch24-debts-and-truths-moment-03"
+    source_scene: "scn-24-01"
+    
+    narrative_beat: "Grimjaw pulls a chunk of carved stone from his pocket—a piece of the library's facade—and sets it on the table with careful reverence, his simple observation 'Good architecture' speaking volumes about loss and respect."
+    subtext: "A dwarf's tribute to destroyed craftsmanship. He honors what was built even as he grieves its destruction, recognizing quality that outlasted the crisis."
+    
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 4
+      narrative_pivot: 2
+      character_revelation: 4
+      symbolic_density: 5
+      total: 18
+    
+    score_rationale:
+      character_revelation_note: "Per his development arc, Grimjaw's appreciation for 'proper foundations' manifests here as reverence for destroyed beauty—engineering as sacred trust"
+      relationship_context: "His quiet tribute parallels the Company's mission: preserving what matters from destruction"
+    
+    suggested_type: "detail"
+    primary_subject: "Grimjaw's hands placing the carved stone"
+    secondary_elements:
+      - "Map table surface"
+      - "Stone's carved detail"
+      - "Warm lamplight"
+    
+    suggested_framing: "close"
+    suggested_angle: "high"
+    
+    key_visual_hook: "Weathered dwarven hands setting a fragment of carved beauty on rough wood with the delicacy of a priest placing a relic"
+    
+    lighting_suggestion: "Warm golden lamp light catching the carved details in the stone fragment"
+    
+    emotional_color: "quiet reverence"
+    
+    characters_present:
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "Placing salvaged stone with ceremonial care, honoring what was lost"
+    
+    source_excerpts:
+      - "Grimjaw pulled a chunk of carved stone from his pocket—a piece of the library's facade that had broken off in his hands as he'd repositioned a crucial support beam."
+      - "He set it on the table with careful reverence."
+      - "\"Good architecture,\" he said simply. \"Built to last. Took something mighty to bring her down.\""
+    
+    selection_rationale: "Small but symbolically rich moment that encapsulates the chapter's theme of honoring what was lost while carrying forward. Grimjaw's character is revealed through this wordless tribute."
+
+  - moment_id: "ch24-debts-and-truths-moment-04"
+    source_scene: "scn-24-03"
+    
+    narrative_beat: "Cassius Valerius, sitting up in his temple recovery chamber with the morning sun through the garden window, presses his brother Lysander's silver ring bearing the family crest into Veyra's palm, his voice carrying weight as he speaks of inherited protection and partnership that transcends death."
+    subtext: "The guilt Veyra has carried transforms into legacy. The brother she couldn't save now blesses her through the brother she did save. Lysander's protective force passes to the one who still fights."
+    
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 5
+      narrative_pivot: 5
+      character_revelation: 5
+      symbolic_density: 5
+      total: 25
+    
+    score_rationale:
+      character_revelation_note: "This is Veyra's arc turning point—per her development, she carries survivor's guilt from the Gilded Compass disaster. Cassius's gift transforms that guilt into inherited purpose"
+      relationship_context: "Cassius recognized Veyra in the dark because Lysander wrote about her constantly. This gift acknowledges her as family through his brother's memory"
+    
+    suggested_type: "anchor"
+    primary_subject: "Cassius pressing the ring into Veyra's palm"
+    secondary_elements:
+      - "Temple recovery chamber"
+      - "Garden light through window"
+      - "Simple bedside table"
+      - "Valerius family crest on ring"
+    
+    suggested_framing: "medium"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "The simple silver ring bearing a family crest, pressed from one scarred hand to another, catching morning light like a transferred flame"
+    
+    lighting_suggestion: "Late morning sun streaming through the garden window, catching the silver and illuminating both faces"
+    
+    emotional_color: "sacred inheritance"
+    
+    characters_present:
+      - slug: "cassius-valerius"
+        has_canonical_visuals: true
+        role_in_moment: "Sitting up strong, pressing the ring forward with conviction and gentle insistence"
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Receiving the ring, overwhelmed, unable to refuse what is offered"
+      - slug: "aldwin-gentleheart"
+        has_canonical_visuals: true
+        role_in_moment: "Silent witness in background, recognizing the moment's weight"
+    
+    source_excerpts:
+      - "He reached for something on the bedside table—a simple silver ring bearing the Valerius family crest, its surface worn smooth by years of wear."
+      - "\"He would want you to have this. It was his shield, in a way.\""
+      - "\"Think of it not as a debt,\" Cassius added, his voice carrying the same sad warmth that had made his brother so easy to follow. \"But as a partnership that transcends death. His past, your future.\""
+    
+    selection_rationale: "THE pivot moment of the chapter and a crucial turning point in Veyra's arc. The physical transfer of Lysander's ring transforms abstract guilt into tangible legacy, reshaping her relationship with her past."
+
+  - moment_id: "ch24-debts-and-truths-moment-05"
+    source_scene: "scn-24-03"
+    
+    narrative_beat: "Veyra's hands tremble as she closes her fingers around the ring, her whispered 'I couldn't save him' meeting Cassius's quiet insistence that she didn't abandon him either. The tremor reveals vulnerability beneath her commander's composure."
+    subtext: "The warrior who has saved countless lives, whose hands are steady in chaos, cannot control this small tremor. The armor cracks, and what's beneath is human grief finally given permission to show."
+    
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 5
+      symbolic_density: 4
+      total: 22
+    
+    score_rationale:
+      character_revelation_note: "Per her psychological profile, Veyra compartmentalizes emotion and 'becomes hypervigilant' in crisis. This tremor breaks that pattern—rare visible vulnerability from the Commander"
+      relationship_context: "This is Cassius acknowledging what Lysander saw in her, validating both her survival and her grief"
+    
+    suggested_type: "detail"
+    primary_subject: "Veyra's trembling hands holding the ring"
+    secondary_elements:
+      - "The silver ring catching light"
+      - "Burn-scarred forearm visible"
+      - "Teal tattoo visible on wrist"
+    
+    suggested_framing: "extreme-close"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "The slight tremor in battle-steady hands as scarred fingers close around the ring—vulnerability made visible in the smallest motion"
+    
+    lighting_suggestion: "Soft morning light catching the silver and illuminating the texture of her hands"
+    
+    emotional_color: "shattered composure"
+    
+    characters_present:
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Hands trembling as she accepts what she never expected—forgiveness and inheritance"
+    
+    source_excerpts:
+      - "Veyra stared at the ring, its silver band catching the morning light."
+      - "\"I couldn't save him,\" she whispered, her voice barely audible."
+      - "She closed her fingers around the ring, feeling its warmth spread through her palm."
+      - "The weight of it in her palm felt enormous—not just the physical weight, but the weight of trust, of legacy, of a friendship that had ended in failure and was now being offered a chance at redemption."
+    
+    selection_rationale: "Character moment that reveals Veyra at her most vulnerable. The extreme close-up on her hands creates intimacy and shows what her face might hide—the human beneath the commander."
+
+  - moment_id: "ch24-debts-and-truths-moment-06"
+    source_scene: "scn-24-04"
+    
+    narrative_beat: "Vera Moonwhisper enters the warehouse with a measured stride that speaks of renewed confidence, Echo on her shoulder with sharper-than-before intelligence in his eyes. There's something different about her—a stillness that extends beyond her body, as if she carries a piece of the grove's ancient peace with her."
+    subtext: "The transformation that nearly killed her has become integration. The beast and the human are no longer at war. She returns not just healed, but evolved."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 5
+      symbolic_density: 4
+      total: 21
+    
+    score_rationale:
+      character_revelation_note: "Per her development notes, Vera's transformation trauma nearly destroyed her. This return shows the arc completion—'the tree that survives the storm grows stronger roots'"
+      relationship_context: "Her return marks the Company reunited at strength. Finn, who she saved and who stood for her, would see this transformation"
+    
+    suggested_type: "anchor"
+    primary_subject: "Vera entering with Echo"
+    secondary_elements:
+      - "Warehouse interior"
+      - "Company members looking up"
+      - "Rill Vossari beside her"
+    
+    suggested_framing: "medium"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "The raven's black feathers gleaming with health, but his eyes holding an intelligence that seems sharper than before, more connected to his companion"
+    
+    lighting_suggestion: "Daylight from the entrance behind her, the warehouse's warm interior light ahead"
+    
+    emotional_color: "grounded renewal"
+    
+    characters_present:
+      - slug: "vera-moonwhisper"
+        has_canonical_visuals: true
+        role_in_moment: "Entering with straighter posture, carrying something transformed within her, Echo on shoulder"
+      - slug: "rill-vossari"
+        has_canonical_visuals: true
+        role_in_moment: "Walking beside Vera, slightly awed by the change she's witnessed"
+    
+    source_excerpts:
+      - "Vera Moonwhisper entered with a measured stride that spoke of renewed confidence, her posture straighter than it had been since the transformation trauma."
+      - "There was something different about her—a stillness that seemed to extend beyond her own body, as if she carried a piece of the grove's ancient peace with her."
+      - "Echo cawed from Vera's shoulder, the raven's black feathers gleaming with health, but his eyes held an intelligence that seemed sharper than before, more connected to his companion."
+    
+    selection_rationale: "Marks Vera's return from near-death with visible evidence of transformation. The visual contrast between her former desperate self and this centered version anchors her healing arc."

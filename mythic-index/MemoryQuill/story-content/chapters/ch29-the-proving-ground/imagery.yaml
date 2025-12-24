@@ -1,0 +1,727 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: The Proving Ground
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch29-the-proving-ground"
+  chapter_number: 29
+  chapter_title: "The Proving Ground"
+  visual_thesis: "From methodical collaboration to crisis competence, the chapter traces the Company specialists' evolution from workshop tinkerers to emergency responders whose complementary expertise proves itself under fire."
+  color_palette:
+    primary:
+      - "#C4956A"
+      - "#8B6914"
+      - "#4A3728"
+      - "#2C3E50"
+    accent:
+      - "#00CED1"
+      - "#FFD700"
+      - "#8B0000"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 1
+    pastoral: 1
+    celebratory: 0
+    aquatic: 1
+    ethereal: 1
+    intimate: 2
+    kinetic: 2
+    ominous: 0
+
+characters:
+  - ref: "cidrella-vexweld"
+    name: "Cidrella 'Cid' Vexweld"
+    scene_variations: "Grease and grime accumulate through rescue. Covered in soot and chemical residue but triumphant by end."
+    reference_images:
+      - "cidrella-vexweld-portrait-01"
+
+  - ref: "grimjaw-ironbeard"
+    name: "Grimjaw Ironbeard"
+    scene_variations: "Directing massive steel housing. Bellowing orders at winch. Paternal smile and hand on Cid's head at end."
+    reference_images:
+      - "grimjaw-ironbeard-portrait-01"
+
+  - ref: "lieutenant-tomaq"
+    name: "Lieutenant Tomaq"
+    scene_variations: "Military precision in courtyard. Commanding rescue at pier. Standing alongside Kaelen."
+    reference_images:
+      - "lieutenant-tomaq-formal-portrait-01"
+
+  - ref: "finn"
+    name: "Finn"
+    scene_variations: "Straining with winch. Soaked through after diving. Proud warrior growth."
+    reference_images:
+      - "finn-stable-archer-01"
+
+  - ref: "vera-moonwhisper"
+    name: "Vera Moonwhisper"
+    scene_variations: "Lean form in green cloak. Releasing Echo for recon. Observation focus."
+    reference_images:
+      - "vera-moonwhisper-portrait-01"
+
+  - ref: "aldwin-gentleheart"
+    name: "Aldwin Gentleheart"
+    scene_variations: "Assessing filtration unit. Tending wounded on pier. Professional calm."
+    reference_images:
+      - "aldwin-gentleheart-official-portrait-01"
+
+  - ref: "marcus-heartbridge"
+    name: "Marcus Heartbridge"
+    scene_variations: "Security assessment. Organizing panicked crowd. Calm diplomat in chaos."
+    reference_images:
+      - "marcus-heartbridge-portrait-study-01"
+
+locations:
+  - ref: "warehouse-complex"
+    zones:
+      - id: "courtyard"
+        chapter_context: "Industrial courtyard. Steel housing units, winch systems. Morning light shafts."
+      - id: "interior"
+        chapter_context: "Forge and medical bay. Vents, iron grates, antiseptic scents. Collaborative project work."
+  - ref: "pier-three-disaster-site"
+    zones:
+      - id: "overview"
+        chapter_context: "Industrial ruin. Twisted crane boom, stacked containers. Chemical smoke, harbor water. Crowds and Watch cordons."
+
+moments:
+  - id: "ch29-the-proving-ground-moment-01"
+    scene_id: "scn-29-01"
+    title: "The Ventilation Anchor"
+    narrative_beat: "Grimjaw and Finn settling the massive steel housing into place under the warehouse wall."
+    visual_weight: "medium"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "finn"
+    location_zone: "warehouse-complex/courtyard"
+    transformation_state: "before"
+    recommended_images: 1
+
+  - id: "ch29-the-proving-ground-moment-02"
+    scene_id: "scn-29-01"
+    title: "Technical Spark"
+    narrative_beat: "Cid debating thermal redistribution matrices with Grimjaw, wild magic sparking from her fingers."
+    visual_weight: "high"
+    characters_present:
+      - "cidrella-vexweld"
+      - "grimjaw-ironbeard"
+    location_zone: "warehouse-complex/courtyard"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch29-the-proving-ground-moment-03"
+    scene_id: "scn-29-03"
+    title: "Arcane Unloading"
+    narrative_beat: "Mira using blue arcane energy to lift heavy crates from the Watch wagon while Finn watches."
+    visual_weight: "medium"
+    characters_present:
+      - "mira"
+      - "finn"
+      - "watch-lieutenant-kaelen"
+    location_zone: "warehouse-complex/courtyard"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch29-the-proving-ground-moment-04"
+    scene_id: "scn-29-03"
+    title: "Shattered Calm"
+    narrative_beat: "The gasping dockworker bursting into the warehouse, silhouette against the morning sun."
+    visual_weight: "high"
+    characters_present:
+      - "lieutenant-tomaq"
+      - "grimjaw-ironbeard"
+      - "cidrella-vexweld"
+    location_zone: "warehouse-complex/courtyard"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch29-the-proving-ground-moment-05"
+    scene_id: "scn-29-04"
+    title: "Catastrophic Scale"
+    narrative_beat: "Establishing the twisted ruin of the loading crane and the orange plumes of chemical smoke."
+    visual_weight: "hero"
+    characters_present:
+      - "lieutenant-tomaq"
+      - "vera-moonwhisper"
+    location_zone: "pier-three-disaster-site/overview"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch29-the-proving-ground-moment-06"
+    scene_id: "scn-29-04"
+    title: "Ice Knife Breakthrough"
+    narrative_beat: "Cid channeling wild magic through her technical armature to flash-freeze the chemical leak."
+    visual_weight: "critical"
+    characters_present:
+      - "cidrella-vexweld"
+    location_zone: "pier-three-disaster-site/overview"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch29-the-proving-ground-moment-07"
+    scene_id: "scn-29-05"
+    title: "Cold Water Heroism"
+    narrative_beat: "Finn treading water in the harbor, supporting the injured dockworker against the current."
+    visual_weight: "high"
+    characters_present:
+      - "finn"
+    location_zone: "pier-three-disaster-site/overview"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch29-the-proving-ground-moment-08"
+    scene_id: "scn-29-06"
+    title: "The Final Extraction"
+    narrative_beat: "The joint team using the winch to pull the workers from the metal tomb."
+    visual_weight: "high"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "lieutenant-tomaq"
+      - "corporal-darric"
+    location_zone: "pier-three-disaster-site/overview"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch29-the-proving-ground-moment-09"
+    scene_id: "scn-29-06"
+    title: "Paternal Pride"
+    narrative_beat: "Grimjaw resting his hand on Cid's head, the master and the innovator at peace."
+    visual_weight: "high"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "cidrella-vexweld"
+    location_zone: "pier-three-disaster-site/overview"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch29-the-proving-ground-moment-10"
+    scene_id: "scn-29-07"
+    title: "Joint Report"
+    narrative_beat: "Tomaq and Kaelen reviewing the incident report, professional boundaries respected."
+    visual_weight: "medium"
+    characters_present:
+      - "lieutenant-tomaq"
+      - "watch-lieutenant-kaelen"
+    location_zone: "warehouse-complex/courtyard"
+    transformation_state: "after"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch29-the-proving-ground-img-29-01-01"
+    source_moment: "ch29-the-proving-ground-moment-01"
+    scene_id: "scn-29-01"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "action"
+      - "logistics"
+    scene_mood: "pastoral"
+    mood_rationale: "Foundational work. Methodical, purposeful morning light. The quiet before the storm."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Grimjaw stands at the warehouse wall, hand extended in a signaling gesture. Finn is operating a heavy winch, face set in concentration. A massive steel housing unit is suspended by chains, settling into its bracket. Morning light shafts through the dust. The courtyard is full of building supplies.
+    composition_notes: |
+      Wide shot. Vertical lines of the warehouse wall. Diagonal of the winch chains. Grimjaw focal point in lower third. Finn background left.
+    visual_hook: "The heavy industrial scale of the ventilation unit contrasting with the precise gnomish winch system."
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "finn"
+    character_states:
+      grimjaw-ironbeard: |
+        Directing. Weathered face focused. Standing solid.
+      finn: |
+        Straining at winch. Lean frame. Determined.
+    location: "warehouse-complex"
+    lighting:
+      primary_source: "Morning sun"
+      quality: "Soft, golden, dusty"
+      direction: "Angled"
+      color_temperature: "Warm"
+      shadow_depth: "Moderate"
+      atmospheric: "Dusty air"
+    palette:
+      dominant:
+        - "steel gray"
+        - "wood brown"
+        - "amber gold"
+      accent:
+        - "brass fittings"
+      avoid:
+        - "chaos"
+    prompt_used: |
+      Dwarf engineer and young man installing heavy steel machinery in a courtyard,
+      chains and winches in action,
+      morning sunlight and dust motes,
+      atmosphere of organized construction,
+      classical oil painting, realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, crisis
+    tags:
+      - "beat"
+      - "construction"
+      - "grimjaw"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch29-the-proving-ground-img-29-03-01"
+    source_moment: "ch29-the-proving-ground-moment-04"
+    scene_id: "scn-29-03"
+    image_type: "pivot"
+    category:
+      - "moment"
+      - "action"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Instant of disruption. Dramatic chiaroscuro. Shattered calm before the rescue."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Gasping dockworker, pale and grime-streaked, clings to the warehouse doorframe. Silhouette against brilliant morning light from courtyard. Tomaq, Grimjaw, and Cid turning in arrested motion. Industrial shadows vs morning glare. Dust motes frozen.
+    composition_notes: |
+      Deep staging. Messenger foreground silhouette. Company middle ground. Doorframe leading lines. Rule of thirds: messenger left, Tomaq right.
+    visual_hook: "The dockworker's white-knuckled grip on the doorframe, gasping against the light"
+    depicts_characters:
+      - "lieutenant-tomaq"
+      - "grimjaw-ironbeard"
+      - "cidrella-vexweld"
+    character_states:
+      lieutenant-tomaq: |
+        Stepping forward. Military instincts engaging. Hand moving to sword.
+      grimjaw-ironbeard: |
+        Turning. Pawing mid-task. Bushy brows drawn.
+      cidrella-vexweld: |
+        Head snapping toward door. Brass arm catching light.
+    location: "warehouse-complex"
+    lighting:
+      primary_source: "morning sun through door"
+      quality: "dramatic, hard-edged silhouette"
+      direction: "backlight"
+      color_temperature: "warm gold vs cool shadow"
+      shadow_depth: "deep, Rembrandt style"
+      atmospheric: "dust motes"
+    palette:
+      dominant:
+        - "ochre gold"
+        - "sienna brown"
+        - "slate shadow"
+      accent:
+        - "moss green uniform"
+      avoid:
+        - "bright colors"
+    prompt_used: |
+      Gasping dockworker silhouetted in a bright warehouse doorway,
+      figures turning in shock in the shadowed interior,
+      high contrast morning light,
+      atmosphere of sudden emergency,
+      classical oil painting, Rembrandt lighting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin
+    tags:
+      - "pivot"
+      - "crisis"
+      - "lighting"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch29-the-proving-ground-img-29-04-01"
+    source_moment: "ch29-the-proving-ground-moment-05"
+    scene_id: "scn-29-04"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "location"
+      - "action"
+    scene_mood: "kinetic"
+    mood_rationale: "Industrial disaster. Catastrophic scale. Twisted metal and chemical smoke. Kinetic chaos."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "2048x878"
+    visual_description: |
+      Massive loading crane collapsed across Pier Three. Steel boom crumpled into cargo containers. One container venting thick orange-gray chemical smoke. Debris scattered. Watch officers on left, response team entering right. Harbor water dark and cold.
+    composition_notes: |
+      Ultra-wide vista. Dominant diagonal from crane. Smoke vertical counterpoint. Team enters right third. Low angle mass.
+    visual_hook: "Thick, oily chemical smoke pouring from the gashed container against overcast sky"
+    depicts_characters:
+      - "lieutenant-tomaq"
+      - "vera-moonwhisper"
+    character_states:
+      lieutenant-tomaq: |
+        Entering right. scaning chaos. Commanding posture.
+      vera-moonwhisper: |
+        Beside Tomaq. Releasing Echo. Green cloak.
+    location: "pier-three-disaster-site"
+    lighting:
+      primary_source: "overcast sky + smoke glow"
+      quality: "harsh, chaotic"
+      direction: "diffused overhead"
+      color_temperature: "cool gray vs warm orange"
+      shadow_depth: "harsh contrast"
+      atmospheric: "chemical smoke, dust"
+    palette:
+      dominant:
+        - "smoke gray"
+        - "chemical orange"
+        - "steel blue-gray"
+      accent:
+        - "olive uniform"
+      avoid:
+        - "cheerful colors"
+    prompt_used: |
+      Wide cinematic shot of a collapsed industrial crane on a pier,
+      thick orange chemical smoke rising from a container,
+      rescue team arriving,
+      atmosphere of disaster and chaos,
+      classical oil painting, Romantic dynamism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, clean scene
+    tags:
+      - "hero"
+      - "disaster"
+      - "crane"
+      - "kinetic"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch29-the-proving-ground-img-29-04-02"
+    source_moment: "ch29-the-proving-ground-moment-06"
+    scene_id: "scn-29-04"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "action"
+    scene_mood: "ethereal"
+    mood_rationale: "Magical breakthrough. Sorcerous power through technical systems. Luminous ice-blue magic. Innovation as wonder."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Cid stands in concentration, brass prosthetic arm extended, conduits blazing electric blue. Crystalline ice shard shooting from palm, trailing mist. cutting through orange-gray smoke. Starburst of ice shards. Goggles on forehead, brown eyes exhilarated. Back array humming.
+    composition_notes: |
+      Medium shot center. Leading line from arm. Radial ice starburst. Strong diagonal lower-left to upper-right. Blue magic light vs warm smoke.
+    visual_hook: "The brilliant ice-blue shard cutting through orange-gray smoke, brass conduits blazing"
+    depicts_characters:
+      - "cidrella-vexweld"
+    character_states:
+      cidrella-vexweld: |
+        Peak fusion moment. Arm extended. Conduits blazing. Exhilarated expression. Hair whipping.
+    location: "pier-three-disaster-site"
+    lighting:
+      primary_source: "spell light"
+      quality: "luminous, magical"
+      direction: "radial from arm"
+      color_temperature: "ice-blue vs warm orange"
+      shadow_depth: "minimal, soft ambient"
+      atmospheric: "frozen mist, ice particles"
+    palette:
+      dominant:
+        - "brilliant ice blue"
+        - "crystalline white"
+        - "orange-gray smoke"
+      accent:
+        - "copper hair"
+      avoid:
+        - "muddy browns"
+    prompt_used: |
+      Gnome woman with glowing brass prosthetic arm firing an ice shard,
+      brilliant blue magical energy cutting through thick smoke,
+      exhilarated and focused expression,
+      mechanical armature on shoulder,
+      frozen mist and sparks,
+      classical oil painting, Pre-Raphaelite luminosity,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, dark heavy shadows
+    tags:
+      - "anchor"
+      - "magic"
+      - "cid"
+      - "ethereal"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch29-the-proving-ground-img-29-05-01"
+    source_moment: "ch29-the-proving-ground-moment-07"
+    scene_id: "scn-29-05"
+    image_type: "character"
+    category:
+      - "moment"
+      - "character"
+      - "action"
+    scene_mood: "aquatic"
+    mood_rationale: "Selfless dive. Harbor as participant. Silvery reflected light, cold made visible. Heroism against the element."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Finn treading water in harbor, supporting injured dockworker. Finn's face pale from cold but WAvering determination. Hair plastered to forehead. worker's arm broken. Water churns with silvery overcast light. Floating debris. Cold visible in breath and skin.
+    composition_notes: |
+      Medium shot water level. Subjects center-right. Pier edge background left with shed gear. Water plane lower third. Human warmth vs cold element.
+    visual_hook: "Finn's white-knuckled grip on the worker's collar, faces just above churning silver-gray water"
+    depicts_characters:
+      - "finn"
+    character_states:
+      finn: |
+        In water. Soaked. Pale. Determination in eyes. Locked in rescue grip.
+    location: "pier-three-disaster-site"
+    lighting:
+      primary_source: "overcast sky reflection"
+      quality: "silvery, wet, cold"
+      direction: "above/below"
+      color_temperature: "cold silver-blue"
+      shadow_depth: "soft, luminous"
+      atmospheric: "spray, mist, visible breath"
+    palette:
+      dominant:
+        - "silver-gray"
+        - "teal depths"
+        - "foam white"
+      accent:
+        - "pale skin"
+      avoid:
+        - "warm tones"
+    prompt_used: |
+      Young man in cold harbor water supporting an injured man,
+      churning silver-gray water and spray,
+      determination on pale cold face,
+      overcast sky reflected on water,
+      atmosphere of desperate rescue,
+      classical oil painting, maritime realism, Turner influence,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, warm sunny water
+    tags:
+      - "character"
+      - "rescue"
+      - "finn"
+      - "aquatic"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch29-the-proving-ground-img-29-06-01"
+    source_moment: "ch29-the-proving-ground-moment-09"
+    scene_id: "scn-29-06"
+    image_type: "character"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: "Emotional resolution. Rare paternal warmth. Found family bonds. Tender poetry from gruff affection."
+    aspect_ratio: "4:5"
+    orientation: "portrait"
+    size: "1024x1280"
+    visual_description: |
+      Grimjaw stands over Cid, large weathered hand resting gently on her tousled copper curls. He has a warm, grandfatherly smile. Cid looks up with sparkling brown eyes, face streaked with grease and grime but lit with delight. Brass arm hangs at side. background smoke dispersing. Warm earned gold light.
+    composition_notes: |
+      Portrait orientation. Height differential as anchor. Faces middle third. Soft background. Warm light from left. Private moment.
+    visual_hook: "The massive dwarf's weathered hand, gentle despite its strength, resting atop the small gnome's curls"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "cidrella-vexweld"
+    character_states:
+      grimjaw-ironbeard: |
+        Grandfatherly smile. Soft eyes. Hand on Cid's head. Posture relaxed.
+      cidrella-vexweld: |
+        Unguarded joy. Grease-streaked face. Sparkling eyes. Proud.
+    location: "pier-three-disaster-site"
+    lighting:
+      primary_source: "sun breaking through smoke"
+      quality: "warm, gentle, intimate"
+      direction: "side"
+      color_temperature: "warm amber-gold"
+      shadow_depth: "gentle gradients"
+      atmospheric: "smoke dispersing, stillness"
+    palette:
+      dominant:
+        - "warm amber"
+        - "honey gold"
+        - "soft brown"
+      accent:
+        - "copper-red hair"
+      avoid:
+        - "cold grays"
+    prompt_used: |
+      Elderly dwarf with magnificent gray beard resting a hand on a small gnome woman's head,
+      dwarf smiling with grandfatherly warmth,
+      gnome looking up with joy, face streaked with soot,
+      warm morning sunlight breaking through smoke,
+      atmosphere of pride and belonging,
+      classical oil painting, Vermeer interior lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, harsh shadows
+    tags:
+      - "character"
+      - "family"
+      - "grimjaw"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch29-the-proving-ground-img-29-06-02"
+    source_moment: "ch29-the-proving-ground-moment-08"
+    scene_id: "scn-29-06"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "action"
+      - "logistics"
+    scene_mood: "kinetic"
+    mood_rationale: "The final pull. Mechanical force and human coordination. The tension of extracting lives from metal."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The joint team using the heavy winch to pull twisted metal beams. Tomaq and Marcus are guiding a trapped worker through a small gap. Grimjaw is bracing a support. Chains are under extreme tension. Dust and steam in the air. A moment of high-stakes precision.
+    composition_notes: |
+      Medium ensemble shot. Diagonal lines of chains and support beams. Winch central anchor. Focus on the coordination between Watch and Company.
+    visual_hook: "The physical strain of the pull, muscles and magic working together to open the 'metal tomb'."
+    depicts_characters:
+      - "lieutenant-tomaq"
+      - "marcus-heartbridge"
+      - "grimjaw-ironbeard"
+    character_states:
+      lieutenant-tomaq: |
+        Guiding worker. Command focus.
+      marcus-heartbridge: |
+        Helping with worker. Mask of charm gone.
+      grimjaw-ironbeard: |
+        Bracing support. Gritting teeth.
+    location: "pier-three-disaster-site"
+    lighting:
+      primary_source: "Overcast sky + nearby lanterns"
+      quality: "Hard, high-contrast"
+      direction: "Side"
+      color_temperature: "Cool/Amber mix"
+      shadow_depth: "Deep"
+      atmospheric: "Dust and exhaust"
+    palette:
+      dominant:
+        - "steel gray"
+        - "iron black"
+        - "shadow"
+      accent:
+        - "chain glint"
+      avoid:
+        - "softness"
+    prompt_used: |
+      Group of medieval soldiers and adventurers using a heavy winch to lift twisted metal,
+      extracting a person from wreckage,
+      intense coordination and physical effort,
+      smoke and dust in the air,
+      classical oil painting, Romantic dynamism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "extraction"
+      - "teamwork"
+      - "kinetic"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch29-the-proving-ground-img-29-07-01"
+    source_moment: "ch29-the-proving-ground-moment-10"
+    scene_id: "scn-29-07"
+    image_type: "beat"
+    category:
+      - "character"
+      - "location"
+    scene_mood: "intimate"
+    mood_rationale: "Professional debrief. Shared accomplishment. Respect across organizational boundaries."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Tomaq and Kaelen standing over a desk in the warehouse, reviewing a report. Kaelen is writing, Tomaq is pointing at a section. Their expressions are tired but respectful. In the background, the warehouse is returning to routine. Warm afternoon light.
+    composition_notes: |
+      Two-shot. Focus on the report and their shared focus. Respectful distance. Balanced composition.
+    visual_hook: "The formal exchange of the report—the official validation of the day's joint success."
+    depicts_characters:
+      - "lieutenant-tomaq"
+      - "watch-lieutenant-kaelen"
+    character_states:
+      lieutenant-tomaq: |
+        Professional. Collaborative.
+      watch-lieutenant-kaelen: |
+        Writing. Approving expression.
+    location: "warehouse-complex"
+    lighting:
+      primary_source: "Afternoon window light"
+      quality: "Even, soft"
+      direction: "Side"
+      color_temperature: "Natural"
+      shadow_depth: "Soft"
+      atmospheric: "Settled"
+    palette:
+      dominant:
+        - "wood brown"
+        - "stone gray"
+        - "slate blue"
+      accent:
+        - "ink black"
+      avoid:
+        - "chaos"
+    prompt_used: |
+      Two military officers, an orc and a human, reviewing an official document in a stone office,
+      respectful professional discussion,
+      afternoon sunbeams in the room,
+      atmosphere of mutual respect and success,
+      classical oil painting, interior realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "debrief"
+      - "respect"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

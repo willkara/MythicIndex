@@ -1,0 +1,79 @@
+metadata:
+  entity_type: "location"
+  slug: "oakhaven"
+  name: "Oakhaven"
+  type: "settlement"
+
+location_visual_anchor:
+  signature_elements:
+    - Rural village buildings
+    - Oak trees
+    - Pastoral farmland
+  materials:
+    primary: "Timber and thatch"
+    accent: "Fieldstone foundations"
+  color_anchors:
+    dominant: "Warm browns, weathered wood"
+    accent: "Green foliage, golden fields"
+  characteristic_light:
+    day: "Warm pastoral light"
+    night: "Firelight from windows"
+
+overview:
+  name: "Oakhaven Overview"
+  slug: "oakhaven-overview"
+  title: "A Rural Haven"
+  image_type: "establishing"
+  category: ["Exterior", "Rural", "Settlement"]
+  scene_mood: "pastoral"
+  mood_rationale: "Peaceful village life away from city dangers"
+  visual_description: "A small village nestled among ancient oaks, with thatched cottages, a central green, and surrounding farmland"
+  composition_notes: "Wide establishing shot showing village setting"
+  aspect_ratio: "16:9"
+  orientation: "landscape"
+  size: "2752x1536"
+
+zones:
+  - name: "The Approach"
+    slug: "oakhaven-approach"
+    title: "Road to Oakhaven"
+    image_type: "zone"
+    zone_type: "threshold"
+    category: ["Exterior", "Travel"]
+    scene_mood: "pastoral"
+    mood_rationale: "Transition from wilderness to civilization"
+    visual_description: "A dirt road winding through farmland, with Oakhaven visible ahead, oak trees lining the path"
+    composition_notes: "Road leading eye toward village"
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "2752x1536"
+
+  - name: "Barn Hospice"
+    slug: "oakhaven-barn-hospice"
+    title: "The Converted Barn"
+    image_type: "zone"
+    zone_type: "sanctuary"
+    category: ["Interior", "Medical"]
+    scene_mood: "intimate"
+    mood_rationale: "Makeshift healing space with limited resources"
+    visual_description: "A large barn converted to a field hospice, with cots arranged in rows, herbs hanging from rafters"
+    composition_notes: "Interior shot showing medical setup"
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "2752x1536"
+
+  - name: "Village Streets"
+    slug: "oakhaven-streets"
+    title: "Through the Village"
+    image_type: "zone"
+    zone_type: "heart"
+    category: ["Exterior", "Settlement"]
+    scene_mood: "pastoral"
+    mood_rationale: "Daily life in a rural community"
+    visual_description: "A muddy village street with cottages on either side, villagers going about their business, a well in the center"
+    composition_notes: "Street-level view through the village"
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "2752x1536"
+
+image_inventory: []

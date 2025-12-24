@@ -1,0 +1,693 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: Bonds of Community
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch16-bonds-of-community"
+  chapter_number: 16
+  chapter_title: "Bonds of Community"
+  visual_thesis: "From the ash of battle damage to the golden warmth of gathered family—destruction becomes the doorway through which love enters."
+  color_palette:
+    primary:
+      - "#C4A77D"
+      - "#8B7355"
+      - "#A0522D"
+      - "#556B2F"
+    accent:
+      - "#FFD700"
+      - "#CD853F"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 1
+    pastoral: 3
+    celebratory: 1
+    aquatic: 0
+    ethereal: 1
+    intimate: 3
+    kinetic: 0
+    ominous: 0
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: "Right arm in a sling. Burn scar visible. Stoic calm softened by gratitude."
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "commander-atlock"
+    name: "Commander Marcus Atlock"
+    scene_variations: "Formal navy tunic with gold epaulets. Expression of wonder and assessment."
+    reference_images:
+      - "commander-atlock-formal-portrait-01"
+
+  - ref: "archdruid-silvan"
+    name: "Archdruid Silvan Oakshield"
+    scene_variations: "Mid-transformation from eagle. Golden feathers still visible along arms. Moss-green robes."
+    reference_images:
+      - "archdruid-silvan-portrait-01"
+
+  - ref: "aldwin-gentleheart"
+    name: "Brother Aldwin Gentleheart"
+    scene_variations: "Weary but relieved. Silver-streaked hair. Moss-green cowl."
+    reference_images:
+      - "aldwin-gentleheart-official-portrait-01"
+
+  - ref: "mistress-elba"
+    name: "Mistress Elba"
+    scene_variations: |
+      4'2" dwarf. Stained beige apron. Face of protective maternal fury.
+    reference_images:
+      - "mistress-elba-kitchen-portrait-01"
+
+  - ref: "harriet-blackwood"
+    name: "Harriet Blackwood"
+    scene_variations: "Maternal organizer. Chocolate brown dress, flour-dusted apron."
+    reference_images:
+      - "harriet-blackwood-oil-portrait-01"
+
+  - ref: "vera-moonwhisper"
+    name: "Vera Moonwhisper"
+    scene_variations: "Pale and fragile. Under heavy blankets. Faint smile."
+    reference_images:
+      - "vera-moonwhisper-portrait-01"
+
+locations:
+  - ref: "westwall-watchpost"
+    zones:
+      - id: "courtyard"
+        chapter_context: "Battle-scarred stone. Damaged gates. Scorch marks. Wagons and community activity."
+      - id: "mess-hall"
+        chapter_context: "Partial roof damage. Transformed into field kitchen. Steam and warmth."
+      - id: "medical-area"
+        chapter_context: "Dim, herb-scented sanctuary. Canvas tenting within stone. Soft brazier light."
+
+moments:
+  - id: "ch16-bonds-of-community-moment-01"
+    scene_id: "scn-16-01"
+    title: "The Wounded Welcome"
+    narrative_beat: "Wagons of civilian aid stream through the twisted gates of Westwall at dawn."
+    visual_weight: "hero"
+    characters_present:
+      - "commander-atlock"
+      - "veyra-thornwake"
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch16-bonds-of-community-moment-02"
+    scene_id: "scn-16-01"
+    title: "Quartermaster's Order"
+    narrative_beat: "Fayne directing the arriving supplies with a list of lists, order emerging from chaos."
+    visual_weight: "medium"
+    characters_present:
+      - "quartermaster-fayne"
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch16-bonds-of-community-moment-03"
+    scene_id: "scn-16-02"
+    title: "Bertha's Honor"
+    narrative_beat: "Elba's fierce defense of her prize turnip Bertha, much to Harriet's amusement."
+    visual_weight: "medium"
+    characters_present:
+      - "mistress-elba"
+      - "harriet-blackwood"
+    location_zone: "westwall-watchpost/mess-hall"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch16-bonds-of-community-moment-04"
+    scene_id: "scn-16-03"
+    title: "The Druidic Arrival"
+    narrative_beat: "Archdruid Silvan and her circle arrive in wild form, transforming into healers."
+    visual_weight: "high"
+    characters_present:
+      - "archdruid-silvan"
+      - "aldwin-gentleheart"
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch16-bonds-of-community-moment-05"
+    scene_id: "scn-16-03"
+    title: "The Gift of Bread"
+    narrative_beat: "Harriet Blackwood mothering a wounded soldier, making him eat his stew."
+    visual_weight: "medium"
+    characters_present:
+      - "harriet-blackwood"
+    location_zone: "westwall-watchpost/mess-hall"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch16-bonds-of-community-moment-06"
+    scene_id: "scn-16-06"
+    title: "Sara's Hug"
+    narrative_beat: "Little Sara fiercely hugging Veyra's legs, the child's trust confirming the warrior's purpose."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch16-bonds-of-community-moment-07"
+    scene_id: "scn-16-06"
+    title: "Renewal Amidst Ruins"
+    narrative_beat: "Children playing with wooden blocks beside the fallen stones of the breached wall."
+    visual_weight: "medium"
+    characters_present: []
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch16-bonds-of-community-moment-08"
+    scene_id: "scn-16-07"
+    title: "Vera's Return"
+    narrative_beat: "Vera finally waking, meeting Aldwin's relieved gaze with a faint smile."
+    visual_weight: "high"
+    characters_present:
+      - "vera-moonwhisper"
+      - "aldwin-gentleheart"
+    location_zone: "westwall-watchpost/medical-area"
+    transformation_state: "after"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch16-bonds-of-community-img-16-01-01"
+    source_moment: "ch16-bonds-of-community-moment-01"
+    scene_id: "scn-16-01"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "location"
+      - "symbol"
+    scene_mood: "pastoral"
+    mood_rationale: "Destruction giving way to hope. Dawn light streaming through the wounded gate."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Through the twisted, battle-damaged gate frame of Westwall, a stream of civilian wagons enters at dawn. Morning light pours through the wounded threshold. Atlock stands in the foreground, his rigid military stance softening. Veyra is in the distance, arm in a sling, watching with wonder.
+    composition_notes: |
+      Wide cinematic framing. Gate creates frame-within-frame. Atlock foreground left. Wagons flow through center.
+    visual_hook: "The twisted metal of the destroyed gate frame silhouetted against the morning sun, framing the stream of families"
+    depicts_characters:
+      - "commander-atlock"
+      - "veyra-thornwake"
+    character_states:
+      commander-atlock: |
+        Formal military posture. Expression of quiet astonishment.
+      veyra-thornwake: |
+        Visible in distance. Arm in sling. Expression of open gratitude.
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "Dawn sun"
+      quality: "soft, diffused"
+      direction: "side-back"
+      color_temperature: "warm gold"
+      shadow_depth: "gentle"
+      atmospheric: "dust motes in rays"
+    palette:
+      dominant:
+        - "warm gold"
+        - "soft sky blue"
+        - "earth brown"
+      accent:
+        - "navy uniform"
+      avoid:
+        - "harsh reds"
+    prompt_used: |
+      Twisted battle-damaged iron gate frame silhouetted against morning sun,
+      god-rays streaming through as civilian wagons enter a military courtyard,
+      tall commander in navy uniform watching with wonder,
+      woman with mohawk and arm in sling in background,
+      soft diffused morning light, warm gold palette,
+      classical oil painting, Hudson River School influence,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, violence
+    tags:
+      - "hero"
+      - "arrival"
+      - "hope"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch16-bonds-of-community-img-16-01-02"
+    source_moment: "ch16-bonds-of-community-moment-02"
+    scene_id: "scn-16-01"
+    image_type: "beat"
+    category:
+      - "character"
+      - "action"
+    scene_mood: "pastoral"
+    mood_rationale: "Fayne at work. Order emerging from chaos. The busy energy of helpfulness."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Fayne the gnome darting between wagons, multiple ledgers tucked under one arm, quill in hand. He is pointing a merchant toward the medical area. The courtyard is a hive of helpful activity. People are unloading blankets and crates. Sunlight is clear and bright.
+    composition_notes: |
+      Action shot. Fayne center. Movement lines radiating from him. Busy but organized background.
+    visual_hook: "The small gnome's intense focus and multiple ledgers, commanding people twice his size with logistics."
+    depicts_characters:
+      - "quartermaster-fayne"
+    character_states:
+      quartermaster-fayne: |
+        Agile, purposeful. Ink-stained fingers. Spectacles glinting.
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "Midday sun"
+      quality: "Bright, clear"
+      direction: "Overhead"
+      color_temperature: "Natural"
+      shadow_depth: "Soft"
+      atmospheric: "Busy dust"
+    palette:
+      dominant:
+        - "stone gray"
+        - "wood brown"
+        - "canvas beige"
+      accent:
+        - "ink black"
+      avoid:
+        - "darkness"
+    prompt_used: |
+      Rock gnome quartermaster with brass spectacles and ledgers directing civilian wagons in a stone courtyard,
+      people unloading supplies,
+      order emerging from chaos,
+      bright morning sun,
+      classical oil painting, realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "fayne"
+      - "logistics"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch16-bonds-of-community-img-16-02-01"
+    source_moment: "ch16-bonds-of-community-moment-04"
+    scene_id: "scn-16-03"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "action"
+    scene_mood: "ethereal"
+    mood_rationale: "Shapeshifting druids arriving. Golden feathers becoming limbs. Nature's magic made manifest."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Archdruid Silvan mid-transformation from a golden eagle. Wings becoming arms draped in moss-green. Feathers shimmer along limbs. Ancient elven face emerging from eagle visage. In the background, a wolf flows into a man and a bear into a dwarf. Luminous wild magic.
+    composition_notes: |
+      Medium-wide. Silvan dominant center. Other transformations create triangle. Onlookers background. Luminous shimmer around figures.
+    visual_hook: "The moment between forms—golden feathers still visible along arms becoming cloth-draped limbs"
+    depicts_characters:
+      - "archdruid-silvan"
+      - "aldwin-gentleheart"
+    character_states:
+      archdruid-silvan: |
+        Mid-transformation. Ancient features. Silver hair. Moss-green robes materializing.
+      aldwin-gentleheart: |
+        Background. Surprised relief.
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "Magical luminosity"
+      quality: "soft, luminous"
+      direction: "ambient"
+      color_temperature: "warm shimmer"
+      shadow_depth: "minimal"
+      atmospheric: "magical haze"
+    palette:
+      dominant:
+        - "soft gold"
+        - "silver-white"
+        - "moss green"
+      accent:
+        - "amber glow"
+      avoid:
+        - "harsh shadows"
+    prompt_used: |
+      Golden eagle transforming into ancient elf woman,
+      feathers becoming moss-green robes,
+      wild magic luminous shimmer,
+      companions transforming in background (wolf, bear),
+      stunned onlookers,
+      classical oil painting, Pre-Raphaelite luminosity,
+      dreamy atmosphere, soft edges,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, grotesque
+    tags:
+      - "transformation"
+      - "druid"
+      - "magic"
+      - "ethereal"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch16-bonds-of-community-img-16-03-01"
+    source_moment: "ch16-bonds-of-community-moment-03"
+    scene_id: "scn-16-02"
+    image_type: "detail"
+    category:
+      - "character"
+      - "moment"
+      - "emotion"
+    scene_mood: "celebratory"
+    mood_rationale: "Comic beat within communal warmth. Elba's fury over Bertha the turnip. Dutch Golden Age genre energy."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Mistress Elba stands at 4'2" pointing a finger at a terrified grown man. He is reverently setting down a single turnip (Bertha). Elba's face is protective fury. Harriet Blackwood watches with fascination from the side. Busy field kitchen background.
+    composition_notes: |
+      Portrait orientation. Elba lower third (powerful). Cowering human above. Turnip at intersection. Warm firelit atmosphere.
+    visual_hook: |
+      The contrast between Elba's 4'2" stature and the grown man cowering before her over a single turnip
+    depicts_characters:
+      - "mistress-elba"
+      - "harriet-blackwood"
+    character_states:
+      mistress-elba: |
+        Protective fury. Power stance. 4'2" tall. Stained apron.
+      harriet-blackwood: |
+        Side view. Fascinated amusement. Flour-dusted apron.
+    location: "westwall-watchpost"
+    zone: "mess-hall"
+    lighting:
+      primary_source: "Cooking fires"
+      quality: "warm, flickering"
+      direction: "multiple"
+      color_temperature: "warm amber"
+      shadow_depth: "soft"
+      atmospheric: "steam, flour dust"
+    palette:
+      dominant:
+        - "rich amber"
+        - "burgundy"
+        - "brown"
+      accent:
+        - "copper-red hair"
+      avoid:
+        - "cold tones"
+    prompt_used: |
+      Tiny dwarven matriarch pointing accusingly at a terrified large man holding a turnip,
+      busy medieval field kitchen,
+      another woman watching with amusement,
+      steam and flour dust in the air,
+      warm firelight,
+      classical oil painting, Dutch Golden Age genre scene, Jan Steen style,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, serious drama
+    tags:
+      - "character"
+      - "comedy"
+      - "kitchen"
+      - "celebratory"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch16-bonds-of-community-img-16-03-02"
+    source_moment: "ch16-bonds-of-community-moment-05"
+    scene_id: "scn-16-03"
+    image_type: "beat"
+    category:
+      - "character"
+      - "emotion"
+    scene_mood: "pastoral"
+    mood_rationale: "Maternal care. Harriet feeding the wounded. Simple acts of service as foundation of community."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Harriet Blackwood sitting beside a wounded soldier, patiently feeding him stew. The soldier looks embarrassed but grateful. In the background, the mess hall is full of people eating and talking. The atmosphere is one of recovery and shared burden.
+    composition_notes: |
+      Medium two-shot. Focus on the bowl and the interaction. Soft background activity.
+    visual_hook: "The patient, experienced hands of the mother figures reclaiming the warriors back to humanity."
+    depicts_characters:
+      - "harriet-blackwood"
+    character_states:
+      harriet-blackwood: |
+        Sitting. Patient expression. Firm maternal authority.
+    location: "westwall-watchpost"
+    zone: "mess-hall"
+    lighting:
+      primary_source: "Hearth light + window"
+      quality: "Warm, soft"
+      direction: "Side"
+      color_temperature: "Amber"
+      shadow_depth: "Gentle"
+      atmospheric: "Steam"
+    palette:
+      dominant:
+        - "warm brown"
+        - "stew amber"
+        - "beige"
+      accent:
+        - "blue uniform"
+      avoid:
+        - "harshness"
+    prompt_used: |
+      Woman in medieval dress feeding stew to a wounded soldier in a large hall,
+      patient and kind expression,
+      busy background of people eating and resting,
+      atmosphere of care and community,
+      classical oil painting, genre scene,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "care"
+      - "harriet"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch16-bonds-of-community-img-16-04-01"
+    source_moment: "ch16-bonds-of-community-moment-06"
+    scene_id: "scn-16-06"
+    image_type: "anchor"
+    category:
+      - "character"
+      - "emotion"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: "A child's absolute trust. Emotional climax of the community theme. Warrior's realization."
+    aspect_ratio: "2:3"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Little Sara has wrapped herself around Veyra's legs in a fierce hug. Veyra stands still, looking down with complex emotion. Her good hand rests on Sara's head. Veyra's burn scar and mohawk visible. Golden sunset light warms the courtyard. Parents watch in background.
+    composition_notes: |
+      Portrait format. Veyra centered, Sara at feet. Low camera angle. Focus on faces. Soft background.
+    visual_hook: "The contrast between Veyra's battle-scarred face and Sara's unblemished face looking up with absolute trust"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Standing still. Hand on child's head. Burn scar visible. Arm in sling. Expression of wonder and vulnerability.
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "Sunset"
+      quality: "soft, warm"
+      direction: "side-back"
+      color_temperature: "warm honey gold"
+      shadow_depth: "soft gradients"
+      atmospheric: "dust motes"
+    palette:
+      dominant:
+        - "warm amber"
+        - "soft rose"
+        - "honey gold"
+      accent:
+        - "teal tattoos"
+      avoid:
+        - "harsh contrast"
+    prompt_used: |
+      Scarred warrior woman with mohawk and arm in sling standing still as a small child hugs her legs,
+      warrior looking down with wonder and tenderness,
+      golden sunset light in a stone courtyard,
+      parents watching in soft background,
+      classical oil painting, Vermeer lighting,
+      intimate emotional moment,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stoic expression
+    tags:
+      - "anchor"
+      - "trust"
+      - "veyra"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch16-bonds-of-community-img-16-05-01"
+    source_moment: "ch16-bonds-of-community-moment-07"
+    scene_id: "scn-16-06"
+    image_type: "mood"
+    category:
+      - "moment"
+      - "symbol"
+      - "location"
+    scene_mood: "pastoral"
+    mood_rationale: "Children's play amid ruins. Reclaiming wounded space. Innocent building vs adult destruction."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Battle-damaged courtyard. Sara teaches a boy to build with wooden blocks. The wooden block tower rises beside fallen stone blocks of the breached wall. Sunset light pours through the breach. Adults watch in background. Damaged space has become a gathering place.
+    composition_notes: |
+      Wide shot. Children focal point. Breach/sunset upper left. Parallel between wooden and stone blocks. Breathing room.
+    visual_hook: "The wooden blocks arranged in an innocent tower beside the fallen stone blocks of the damaged wall"
+    depicts_characters: []
+    character_states: {}
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "Sunset through breach"
+      quality: "soft, diffused"
+      direction: "side light"
+      color_temperature: "warm gold"
+      shadow_depth: "gentle"
+      atmospheric: "light haze"
+    palette:
+      dominant:
+        - "warm gold"
+        - "soft blue sky"
+        - "earth brown stone"
+      accent:
+        - "amber brazier light"
+      avoid:
+        - "blood red"
+    prompt_used: |
+      Children playing with wooden blocks in a battle-damaged stone courtyard at sunset,
+      wooden tower beside fallen castle stones,
+      golden light streaming through a hole in the wall,
+      adults watching in background,
+      atmosphere of renewal and peace,
+      classical oil painting, plein air naturalism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, violence, dark shadows
+    tags:
+      - "mood"
+      - "children"
+      - "renewal"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch16-bonds-of-community-img-16-06-01"
+    source_moment: "ch16-bonds-of-community-moment-08"
+    scene_id: "scn-16-07"
+    image_type: "anchor"
+    category:
+      - "character"
+      - "emotion"
+      - "moment"
+    scene_mood: "intimate"
+    mood_rationale: "Vera's eyes opening. Private moment of return. Relief rather than triumph."
+    aspect_ratio: "4:5"
+    orientation: "portrait"
+    size: "1024x1280"
+    visual_description: |
+      Vera's hazel eyes open. She lies under heavy blankets in a dim tent, paler than usual. Dark hair loose on pillow. Faint smile as she sees Aldwin. Aldwin entering frame with profound relief. Echo the raven perched watchful nearby.
+    composition_notes: |
+      Close intimate framing. Vera face center. Aldwin entering from side. Shallow depth. Single warm light source.
+    visual_hook: "Vera's hazel eyes—tired but present, alive—meeting Aldwin's gaze with that faint smile"
+    depicts_characters:
+      - "vera-moonwhisper"
+      - "aldwin-gentleheart"
+    character_states:
+      vera-moonwhisper: |
+        Pale, fragile. Hazel eyes open. Faint smile. Hair loose.
+      aldwin-gentleheart: |
+        Entering frame. Weary but relieved. Glistening eyes.
+    location: "westwall-watchpost"
+    zone: "infirmary"
+    lighting:
+      primary_source: "Brazier/Candle"
+      quality: "soft, warm"
+      direction: "side"
+      color_temperature: "warm amber"
+      shadow_depth: "soft gradients"
+      atmospheric: "still"
+    palette:
+      dominant:
+        - "amber"
+        - "soft rose"
+        - "honey tones"
+      accent:
+        - "black Echo"
+      avoid:
+        - "harsh shadows"
+    prompt_used: |
+      Close portrait of a woman waking in a dim tent,
+      hazel eyes open and tired, faint smile,
+      halfling healer approaching with relief on his face,
+      black raven perched nearby,
+      single warm amber light source,
+      atmosphere of relief and homecoming,
+      classical oil painting, Vermeer lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, death imagery
+    tags:
+      - "anchor"
+      - "vera"
+      - "relief"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

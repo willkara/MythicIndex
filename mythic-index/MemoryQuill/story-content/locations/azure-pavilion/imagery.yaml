@@ -1,0 +1,895 @@
+metadata:
+  entity_type: "location-imagery"
+  slug: "azure-pavilion"
+  name: "Azure Pavilion"
+  location_type: "civic-ceremonial"
+  narrative_soul: |
+    Where marble rises from the sea and lantern light crowns civic ambition. This open-air
+    pavilion on its slender pier is Waterdeep's stage for public triumph—the place where
+    power wears its finest clothes and congratulates itself beneath azure tiles that deepen
+    to twilight hues as the day surrenders. Here, the Last Light Company received its first
+    official recognition, stepping from shadows into the complicated light of legitimacy
+    while enemies watched and smiled with too many teeth.
+  one_line_essence: "Where legitimacy wears lantern light and the sea watches everything"
+  generation_defaults:
+    provider: "openai"
+    model: "gpt-image-1"
+    quality: "high"
+
+location_visual_anchor:
+  signature_elements:
+    - "White marble floor on granite stringers, polished to salt-satin finish"
+    - "Fluted columns with marble-clad timber cores on 20-foot grid"
+    - "Azure-glazed ceramic roof tiles deepening to twilight hues at dusk"
+    - "Copper ridge caps with verdigris kisses and lightning finials"
+    - "Enchanted crystal lanterns suspended at ring points, casting silver-white glow"
+    - "Perimeter marble balustrade with carved wave and knot motifs"
+    - "300-foot timber-and-stone pier approach with bollards and lantern posts"
+    - "Wrought-iron pierhead gate with midnight-blue wax seal aesthetic"
+  materials:
+    stone: "white marble pavers, granite plinths, polished to salt-satin finish near edges"
+    metalwork: "bronze straps and dowels, copper gutters and ridge caps, wrought-iron gates"
+    timber: "seasoned oak and larch beams, tarred oak pier decking, bronze-strapped joints"
+    ceramic: "azure-glazed double-lap roof tiles on oak battens"
+    fabric: "oiled canvas windbreaks and storm curtains, ceremonial banners"
+  color_anchors:
+    architecture: "white marble, deep azure tiles, polished bronze, weathered oak"
+    water: "sea greens and silvers, harbor reflections, mirror-calm or gentle swell"
+    light: "silver-white lantern glow, copper sunset, twilight azure deepening"
+    accents: "verdigris on copper, gold thread in banners, midnight-blue wax seals"
+  characteristic_light:
+    dawn: "pale grey to gold, dew catching on tiles, gulls claiming the balustrade"
+    midday: "marble dazzle, crisp lattice shadows from sun-sails, sea breezes at peak"
+    evening: "copper and rose sunset, azure tiles deepening, lanterns blooming silver"
+    night: "silver-white lantern halos reflected on water, city sparkle behind"
+
+overview:
+  slug: "azure-pavilion-overview"
+  title: "The Crown of the Harbor"
+  image_type: "establishing"
+  scene_mood: "prestigious"
+  mood_rationale: "The Azure Pavilion represents civic achievement and political theater—a stage for power dressed in elegance, where recognition ceremonies celebrate those the city wishes to acknowledge."
+  visual_description: |
+    The Azure Pavilion emerges from Waterdeep Harbor like a crown of white marble and deep blue tile,
+    suspended at the end of a slender pier that stretches 300 feet across the water. The evening light
+    transforms it into something from a painter's dream—sunset gilding the fluted columns while the
+    azure-glazed roof tiles deepen from day-sky blue to the color of twilight itself.
+
+    The open colonnade creates a forest of white pillars beneath the sweeping gables, each bay framing
+    a different view of the harbor and the city beyond. Enchanted crystal lanterns float at their
+    appointed stations, their silver-white glow beginning to compete with the fading sun. The marble
+    floor catches both lights—the warm copper of sunset and the cool silver of magic—creating pools
+    of color that shift as guests move through the space.
+
+    Beyond the balustrade, the harbor spreads in gentle swells, fishing boats and merchant vessels
+    at anchor, Mount Waterdeep rising in the distance. The copper ridge caps catch the last rays,
+    their verdigris patina glowing green-gold. Everything about the pavilion speaks of permanence
+    and prestige, of a city confident enough to build beauty over water.
+  composition_notes: "Wide establishing shot from harbor approach, pier leading eye toward the pavilion. Sunset lighting from left, lanterns just beginning to glow. Include water reflections and distant city silhouette."
+  narrative_significance: "Site of the Last Light Company's civic recognition—where they stepped from shadow operations into official legitimacy, under the watchful eyes of both allies and enemies."
+  symbolic_elements: "The pavilion over water represents legitimacy's precarious foundation; the azure tiles that deepen at dusk suggest how truth changes color under different light."
+  time_of_day: "evening"
+  weather: "clear, light sea breeze"
+  required_elements:
+    - "White marble pavilion with azure-tiled multi-gable roof"
+    - "Fluted columns in open colonnade formation"
+    - "300-foot pier approach with bollards and lantern posts"
+    - "Copper ridge caps with verdigris patina"
+    - "Enchanted crystal lanterns beginning to glow"
+    - "Harbor water with gentle swells"
+    - "Sunset colors - copper, rose, gold"
+    - "Distant city and Mount Waterdeep"
+  lighting:
+    primary_source: "setting sun from left/west"
+    quality: "warm golden hour, transitioning to twilight"
+    direction: "low angle from west, with lantern glow from above"
+    color_temperature: "warm copper-gold fading to cool silver"
+    shadow_depth: "long shadows from columns, softening"
+    atmospheric: "sea mist softening distant elements, lantern halos beginning"
+  palette:
+    dominant: ["white marble", "azure tile", "sunset copper", "sea silver"]
+    accent: ["verdigris green", "bronze warmth", "lantern silver-white"]
+    avoid: ["harsh artificial colors", "modern materials", "dark menace"]
+  aspect_ratio: "16:9"
+  orientation: "landscape"
+  size: "1792x1024"
+
+zones:
+  - name: "Central Nave"
+    slug: "azure-pavilion-central-nave"
+    title: "The Heart of Ceremony"
+    image_type: "zone"
+    zone_type: "gathering"
+    category: "interior-exterior"
+    scene_mood: "prestigious"
+    mood_rationale: "The central nave is the heart of the pavilion's ceremonial function—where guests circulate, where announcements are made, where power performs its public face."
+    visual_description: |
+      The central nave runs the full length of the pavilion, a grand processional space defined by
+      the rhythm of fluted columns on either side. The marble floor stretches in unbroken white,
+      anchor points for rope stanchions and dais platforms recessed flush with the surface. Overhead,
+      the azure-tiled gables create a cathedral of open air, the alternating bays allowing views of
+      the harbor on both sides.
+
+      Crystal lanterns float at measured intervals along the column lines, their silver glow competing
+      with the warm light that filters through the open colonnades. The central axis draws the eye
+      toward the leeward edge where the announcer's dais would stand, positioned for optimal projection
+      across the space. The floor shows the subtle wear of countless formal gatherings—not damage,
+      but the patina of purpose.
+    composition_notes: "Symmetrical composition along the central axis. Column rhythm leading to distant dais position. Lanterns creating vertical accents. Include guests in formal attire for scale."
+    narrative_significance: "Where the Company mingled with Waterdeep's elite, gathering intelligence while maintaining their cover as professional associates."
+    symbolic_elements: "The open columns suggest transparency that is actually selective—one can see through, but the view is always framed and controlled."
+    location_within: "Main pavilion floor, running lengthwise from pier entrance to leeward edge"
+    time_of_day: "evening"
+    weather: "clear, light breeze"
+    required_elements:
+      - "Fluted marble columns on 20-foot grid"
+      - "Polished white marble floor with anchor point recesses"
+      - "Floating crystal lanterns at regular intervals"
+      - "Azure-tiled gables visible above"
+      - "Harbor views through column openings"
+      - "Guests in formal attire circulating"
+    lighting:
+      primary_source: "enchanted crystal lanterns overhead"
+      quality: "soft silver-white with warm sunset undertones"
+      direction: "from above and sides through colonnade"
+      color_temperature: "cool silver with warm edge light"
+      shadow_depth: "moderate, softened by multiple light sources"
+      atmospheric: "lantern halos creating gentle ambient glow"
+    palette:
+      dominant: ["white marble", "azure tile", "silver lantern light"]
+      accent: ["sunset gold through columns", "bronze stanchion hardware"]
+      avoid: ["harsh shadows", "menacing tones"]
+    aspect_ratio: "3:2"
+    orientation: "landscape"
+    size: "1536x1024"
+    prompt_used: ""
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, digital art gloss, concept art polish, AI artifacts, modern elements"
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Dawn's First Light"
+    slug: "azure-pavilion-dawn-shimmer"
+    title: "Morning Grace on Marble"
+    image_type: "zone"
+    zone_type: "temporal"
+    category: "atmospheric"
+    scene_mood: "serene"
+    mood_rationale: "Dawn transforms the pavilion from a stage for power into a temple of quiet beauty—before the crowds, before the ceremony, when only maintenance crews and early gulls claim the space."
+    visual_description: |
+      The pavilion at first light is a study in pearl and gold. Dew glistens on the azure tiles,
+      each droplet catching the earliest rays as the sun climbs over Waterdeep. The marble floor
+      holds the night's coolness, its white surface blushing faintly pink where the light first
+      touches. Gulls have claimed the balustrade as their morning perch, their calls the only sound
+      above the gentle lap of harbor water.
+
+      The columns cast long shadows toward the city, their fluted surfaces catching the light in
+      vertical stripes of gold and shade. The crystal lanterns are dark now, their enchantment
+      dormant until evening calls them forth again. A maintenance worker moves quietly through
+      the far end of the space, checking the storm-curtain rigging, but otherwise the pavilion
+      belongs to the morning and the sea.
+    composition_notes: "Low angle to emphasize morning light on tiles. Dew visible on surfaces. Gulls on balustrade for life. Single figure for scale and atmosphere."
+    narrative_significance: "The pavilion before performance—a reminder that every stage has its quiet hours, every facade its unguarded moments."
+    symbolic_elements: "Dawn light on political architecture suggests truth before the day's deceptions begin."
+    location_within: "Full pavilion, exterior perspective from leeward side"
+    time_of_day: "dawn"
+    weather: "clear, light dew, calm"
+    required_elements:
+      - "Dew on azure tiles"
+      - "Early morning golden light"
+      - "Long column shadows"
+      - "Gulls on balustrade"
+      - "Dormant crystal lanterns"
+      - "Quiet, empty atmosphere"
+    lighting:
+      primary_source: "rising sun from east"
+      quality: "soft golden, pearl-like"
+      direction: "low angle from east, long horizontal rays"
+      color_temperature: "warm gold with cool shadow contrast"
+      shadow_depth: "long, soft shadows"
+      atmospheric: "slight morning mist on water"
+    palette:
+      dominant: ["pearl white", "sunrise gold", "azure blue"]
+      accent: ["gull grey", "dew shimmer", "shadow blue"]
+      avoid: ["harsh midday light", "busy crowds"]
+    aspect_ratio: "3:2"
+    orientation: "landscape"
+    size: "1536x1024"
+    prompt_used: ""
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, digital art gloss, concept art polish, AI artifacts, modern elements"
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Recognition Gallery"
+    slug: "azure-pavilion-gallery-wing"
+    title: "Where Names Are Made"
+    image_type: "zone"
+    zone_type: "functional"
+    category: "ceremonial"
+    scene_mood: "anticipatory"
+    mood_rationale: "The gallery wing is where honorees wait before recognition—a space of nervous energy and last-minute adjustments, where futures are about to change."
+    visual_description: |
+      A semi-enclosed bay along the leeward edge of the pavilion, the recognition gallery offers
+      a degree of shelter from the sea breeze while maintaining the open aesthetic. Canvas
+      windbreaks can be rigged here during inclement weather, their rope lacing to bronze rings
+      along the balustrade. The space is intimate compared to the central nave—a gathering
+      point for small groups before they're called to the dais.
+
+      Marble benches line one side, their surfaces worn smooth by generations of nervous hands.
+      The column spacing creates natural alcoves for private conversation, each framing a different
+      angle on the harbor. Tonight, crystal lanterns cluster more densely here, their light
+      focused on the faces of those about to step into public recognition.
+    composition_notes: "Semi-enclosed space with colonnade on one side, leeward shelter on other. Intimate scale. Lanterns creating warm pools. Include figures in formal attire, nervous energy."
+    narrative_significance: "Where the Company gathered before their recognition—the last private moments before public acknowledgment changed their relationship with Waterdeep forever."
+    symbolic_elements: "Waiting space before transformation—the threshold between anonymity and public identity."
+    location_within: "Leeward edge of pavilion, semi-sheltered bay"
+    time_of_day: "evening"
+    weather: "clear, sheltered from breeze"
+    required_elements:
+      - "Semi-enclosed gallery space"
+      - "Marble benches worn smooth"
+      - "Dense cluster of crystal lanterns"
+      - "Column alcoves for conversation"
+      - "Harbor view through openings"
+      - "Figures in formal attire"
+    lighting:
+      primary_source: "clustered crystal lanterns"
+      quality: "intimate, focused silver-white"
+      direction: "from above and sides"
+      color_temperature: "warm silver with sunset edge"
+      shadow_depth: "soft, flattering"
+      atmospheric: "lantern-lit warmth against evening coolness"
+    palette:
+      dominant: ["white marble", "silver lantern light", "evening blue"]
+      accent: ["formal attire colors", "bronze hardware"]
+      avoid: ["harsh shadows", "empty coldness"]
+    aspect_ratio: "3:2"
+    orientation: "portrait"
+    size: "1024x1536"
+    prompt_used: ""
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, digital art gloss, concept art polish, AI artifacts, modern elements"
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Harbor Approach"
+    slug: "azure-pavilion-harbor-approach"
+    title: "The Long Walk to Recognition"
+    image_type: "zone"
+    zone_type: "transition"
+    category: "threshold"
+    scene_mood: "anticipatory"
+    mood_rationale: "The 300-foot pier is both arrival and ordeal—a processional that exposes arrivals to scrutiny while building anticipation for what awaits at the end."
+    visual_description: |
+      Three hundred feet of tarred oak planking stretches between the harbor quay and the
+      floating pavilion, a processional of exposure and anticipation. The pier is wide enough
+      for paired processions—two lines of guests approaching, two lines departing—with bollards
+      and mooring rings marking the edges. Lantern posts rise at regular intervals, their oil
+      lamps (or enchanted crystals during formal events) creating pools of light that guide
+      the way forward.
+
+      The approach offers no cover, no side routes, no shortcuts. Security screeners staff
+      the first lay-by niche at one-third distance, checking invitations and assessing arrivals.
+      The chainable bollards can halt any approach instantly. Every step brings the pavilion
+      closer, its azure tiles catching the light, its columns promising shelter—but only for
+      those deemed worthy to enter.
+    composition_notes: "Long perspective down the pier toward the pavilion. Bollards and lantern posts creating rhythm. Include security checkpoint, approaching figures. Evening light."
+    narrative_significance: "The Company walked this gauntlet under enemy eyes—300 feet of vulnerability before reaching the stage where they would perform their cover."
+    symbolic_elements: "The exposed approach represents the transparency demanded of those seeking legitimacy—no shadows allowed on the path to recognition."
+    location_within: "300-foot pier connecting harbor quay to pavilion"
+    time_of_day: "evening"
+    weather: "clear, light wind"
+    required_elements:
+      - "Long oak pier with tarred planking"
+      - "Bollards and mooring rings at edges"
+      - "Lantern posts at regular intervals"
+      - "Security checkpoint at first lay-by"
+      - "Pavilion visible at end"
+      - "Approaching figures in formal attire"
+    lighting:
+      primary_source: "lantern posts and sunset glow"
+      quality: "directional pools along pier, pavilion glowing ahead"
+      direction: "from lantern posts and setting sun"
+      color_temperature: "warm copper sunset, cool lantern pools"
+      shadow_depth: "sharp shadows from vertical elements"
+      atmospheric: "sea mist softening distance"
+    palette:
+      dominant: ["weathered oak", "sunset copper", "white marble ahead"]
+      accent: ["lantern glow", "bronze bollard caps", "azure tiles"]
+      avoid: ["menacing darkness", "empty coldness"]
+    aspect_ratio: "3:2"
+    orientation: "landscape"
+    size: "1536x1024"
+    prompt_used: ""
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, digital art gloss, concept art polish, AI artifacts, modern elements"
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Harbor View Gallery"
+    slug: "azure-pavilion-harbor-view"
+    title: "Windows on the World"
+    image_type: "zone"
+    zone_type: "panoramic"
+    category: "viewing"
+    scene_mood: "contemplative"
+    mood_rationale: "The harbor view galleries are spaces for reflection and observation—where guests can step back from the social performance and simply watch the water."
+    visual_description: |
+      Between the columns on the windward side, the perimeter balustrade frames the harbor
+      in a series of natural viewing galleries. Each bay offers a slightly different
+      perspective—one toward Mount Waterdeep, another toward the merchant anchorage, a third
+      toward the open sea. The carved wave and knot motifs on the marble balustrade echo
+      the water they overlook.
+
+      Guests drift to these edges for quiet conversation, for fresh air, for a moment's
+      escape from the social theater of the central nave. Lifebuoys hang at interval posts,
+      their red-and-white stripes a practical reminder that beauty floats above dangerous
+      depths. At night, the harbor becomes a field of lantern reflections, the pavilion's
+      light joining the running lights of anchored vessels.
+    composition_notes: "Framed view through columns toward harbor. Balustrade in foreground with carved details. Include figure looking out for scale and atmosphere."
+    narrative_significance: "Rill cleansed poison from the water near these galleries—a quiet act of duty while others performed their social roles."
+    symbolic_elements: "The framed views represent selective perception—how architecture controls what we see and don't see."
+    location_within: "Windward perimeter of pavilion, between column bays"
+    time_of_day: "evening"
+    weather: "clear, gentle swell"
+    required_elements:
+      - "Fluted columns framing view"
+      - "Carved marble balustrade"
+      - "Harbor water with reflections"
+      - "Distant vessels at anchor"
+      - "Mount Waterdeep silhouette"
+      - "Contemplative figure at rail"
+    lighting:
+      primary_source: "sunset on water, lanterns from behind"
+      quality: "golden hour on harbor, silver backlight from pavilion"
+      direction: "front-lit by sunset, rim-lit by lanterns"
+      color_temperature: "warm gold on water, cool silver behind"
+      shadow_depth: "soft, romantic"
+      atmospheric: "sea shimmer, evening haze"
+    palette:
+      dominant: ["sunset gold", "sea silver", "white marble"]
+      accent: ["azure tile reflection", "vessel lights"]
+      avoid: ["harsh contrasts", "threatening atmosphere"]
+    aspect_ratio: "3:2"
+    orientation: "landscape"
+    size: "1536x1024"
+    prompt_used: ""
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, digital art gloss, concept art polish, AI artifacts, modern elements"
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "The Lantern Lighting"
+    slug: "azure-pavilion-lantern-lighting"
+    title: "When Magic Wakes"
+    image_type: "zone"
+    zone_type: "temporal"
+    category: "ceremonial"
+    scene_mood: "magical"
+    mood_rationale: "The moment the enchanted lanterns bloom is the transition from day to night, from ordinary venue to magical space—a transformation the pavilion performs every evening."
+    visual_description: |
+      The first lantern brightens with a soft pulse, its crystal heart catching fire with
+      silver-white light. Then another, and another, the enchantment cascading through the
+      pavilion like a wave of awakening stars. Within moments, the entire colonnade is crowned
+      with floating lights, each suspended from its bronze ring point, each casting a pool of
+      gentle radiance onto the marble below.
+
+      The timing is always the same—that precise moment when the sunset can no longer hold
+      its own against the gathering dark. The lanterns don't banish the night; they negotiate
+      with it, creating a space of managed illumination where shadows are softened rather than
+      eliminated. The effect is theatrical, intentional, the signature moment that transforms
+      the Azure Pavilion from architecture into experience.
+    composition_notes: "Mid-moment of lantern cascade. Some lanterns bright, others just kindling. Sunset still visible but fading. Include upward-gazing figure."
+    narrative_significance: "Under these lights, enemies and allies alike performed their roles—the enchanted glow rendering all faces equally beautiful, equally ambiguous."
+    symbolic_elements: "Manufactured magic replacing natural light—how institutions create their own versions of truth."
+    location_within: "Throughout the pavilion, viewed from central nave"
+    time_of_day: "twilight transition"
+    weather: "clear"
+    required_elements:
+      - "Crystal lanterns in various stages of brightening"
+      - "Cascade effect of enchantment spreading"
+      - "Bronze ring suspension points"
+      - "Sunset colors fading behind"
+      - "Marble floor catching new light"
+      - "Upward-gazing figures"
+    lighting:
+      primary_source: "awakening crystal lanterns"
+      quality: "soft silver-white with golden sunset undertone"
+      direction: "from above, spreading horizontally"
+      color_temperature: "transition from warm to cool"
+      shadow_depth: "shifting, multiple sources emerging"
+      atmospheric: "magical glow intensifying"
+    palette:
+      dominant: ["silver-white lantern glow", "fading sunset gold", "twilight blue"]
+      accent: ["crystal brilliance", "bronze ring warmth"]
+      avoid: ["harsh artificial light", "complete darkness"]
+    aspect_ratio: "3:2"
+    orientation: "portrait"
+    size: "1024x1536"
+    prompt_used: ""
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, digital art gloss, concept art polish, AI artifacts, modern elements"
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Leeward Conversation Bays"
+    slug: "azure-pavilion-leeward-bays"
+    title: "Where Secrets Are Traded"
+    image_type: "zone"
+    zone_type: "intimate"
+    category: "social"
+    scene_mood: "conspiratorial"
+    mood_rationale: "The leeward bays offer shelter from wind and observation—spaces where power brokers and conspirators alike conduct business too delicate for the central nave."
+    visual_description: |
+      On the city-facing side of the pavilion, the column bays create a series of semi-private
+      alcoves sheltered from the harbor wind. Canvas windbreaks can be rigged here during
+      weather, but even without them, these spaces feel more enclosed than the windward
+      galleries. The acoustics favor quiet conversation—voices don't carry across the marble
+      like they do in the central nave.
+
+      Small groups cluster in these bays, heads bent together, wine glasses in hand. The
+      lantern light is softer here, more flattering, designed for the negotiations that
+      happen in whispers. A skilled observer might notice how often powerful figures drift
+      toward these corners, how many deals are sealed with a handshake in the shadows of
+      the fluted columns.
+    composition_notes: "Semi-enclosed bay with column framing. Small group in hushed conversation. Softer lighting than central nave. Include wine glasses, conspiratorial body language."
+    narrative_significance: "Marcus overheard crucial intelligence in these bays—the name 'The Shepherd' spoken by merchants who thought their whispers private."
+    symbolic_elements: "Architecture creating privacy within public space—how power maintains its secrets even in transparent structures."
+    location_within: "Leeward (city-facing) edge of pavilion"
+    time_of_day: "evening"
+    weather: "sheltered from breeze"
+    required_elements:
+      - "Column-framed alcove space"
+      - "Softer, more intimate lighting"
+      - "Small group in whispered conversation"
+      - "Wine glasses and formal attire"
+      - "City lights visible beyond"
+      - "Conspiratorial atmosphere"
+    lighting:
+      primary_source: "single lantern in bay, city glow beyond"
+      quality: "soft, intimate, flattering"
+      direction: "from above and behind, faces partially shadowed"
+      color_temperature: "warm silver, amber edge from city"
+      shadow_depth: "deep but not menacing"
+      atmospheric: "intimate, enclosed feeling"
+    palette:
+      dominant: ["warm shadow", "silver lantern light", "city amber"]
+      accent: ["formal attire colors", "wine ruby"]
+      avoid: ["harsh exposure", "theatrical brightness"]
+    aspect_ratio: "3:2"
+    orientation: "portrait"
+    size: "1024x1536"
+    prompt_used: ""
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, digital art gloss, concept art polish, AI artifacts, modern elements"
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Main Hall"
+    slug: "azure-pavilion-main-hall"
+    title: "The Stage of Recognition"
+    image_type: "zone"
+    zone_type: "gathering"
+    category: "ceremonial"
+    scene_mood: "prestigious"
+    mood_rationale: "The main hall configuration transforms the pavilion for formal ceremonies—dais erected, rope stanchions creating the stage apron, all eyes drawn to a single focal point."
+    visual_description: |
+      When configured for ceremony, the pavilion's central nave becomes a formal hall. A low
+      dais rises mid-leeward, its temporary platform anchored to the floor's recessed points.
+      Rope stanchions on bronze posts create a shallow stage apron, separating performers from
+      audience while maintaining the sense of shared space. The announcer's position is carefully
+      chosen for acoustic projection—tested generations ago, marked on no official plan.
+
+      The crystal lanterns have been arranged for this configuration, denser above the dais,
+      softer in the audience space. Trestle tables along the side aisles hold refreshments
+      and conversation pieces. The column grid creates natural viewing lanes—no matter where
+      a guest stands, they have a clear sightline to the recognition stage.
+    composition_notes: "Formal hall configuration with dais as focal point. Rope stanchions visible. Lanterns concentrated over stage area. Include audience in formal attire."
+    narrative_significance: "Where the Last Light Company stood to receive Waterdeep's recognition—and where their enemies assessed them openly for the first time."
+    symbolic_elements: "The temporary dais represents how legitimacy is constructed—elevated by choice, not by nature."
+    location_within: "Central pavilion configured for formal ceremony"
+    time_of_day: "evening"
+    weather: "clear"
+    featured_in_chapters:
+      - "ch34-the-azure-cage"
+      - "ch35-the-serpent-strikes"
+    required_elements:
+      - "Low ceremonial dais"
+      - "Rope stanchions on bronze posts"
+      - "Dense lantern cluster over stage"
+      - "Column-framed viewing lanes"
+      - "Formal audience in attendance"
+      - "Side-aisle refreshment tables"
+    lighting:
+      primary_source: "concentrated lanterns over dais"
+      quality: "theatrical, focused on recognition space"
+      direction: "from above, brightest at stage"
+      color_temperature: "silver-white with warm floor reflections"
+      shadow_depth: "controlled, flattering to speakers"
+      atmospheric: "formal, ceremonial"
+    palette:
+      dominant: ["white marble", "silver stage light", "formal attire colors"]
+      accent: ["bronze stanchion posts", "azure tile above"]
+      avoid: ["harsh shadows on faces", "empty coldness"]
+    aspect_ratio: "3:2"
+    orientation: "landscape"
+    size: "1536x1024"
+    prompt_used: ""
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, digital art gloss, concept art polish, AI artifacts, modern elements"
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Pier Approach"
+    slug: "azure-pavilion-pier-approach"
+    title: "The Gauntlet of Arrival"
+    image_type: "zone"
+    zone_type: "transition"
+    category: "threshold"
+    scene_mood: "tense"
+    mood_rationale: "For Thorne and Veyra, the pier was a tactical nightmare—300 feet of exposure with no cover, a beautiful kill-zone disguised as a processional."
+    visual_description: |
+      The pier at night is a study in controlled vulnerability. Lantern posts mark the passage
+      at regular intervals, their light creating pools of visibility between stretches of
+      shadow. The tarred oak planking shows the wear of countless ceremonial processions,
+      but Thorne sees only the tactical truth: no cover, no side routes, no retreat except
+      back to the city or into the harbor.
+
+      The first security checkpoint appears at one-third distance—a lay-by niche where Watch
+      screeners check invitations and assess arrivals. Beyond them, the chainable bollards
+      wait, capable of halting any approach with a single command. The pavilion glows at the
+      end like a promise or a trap, depending on who is doing the walking.
+    composition_notes: "Night view of pier from arrival end. Lantern posts creating pools of light. Security checkpoint visible ahead. Include approaching figures, tension in posture."
+    narrative_significance: "The Company felt the tactical exposure immediately—this was ground chosen by others, indefensible if things went wrong."
+    symbolic_elements: "The controlled approach represents how institutions manage access to power—visibility in exchange for entry."
+    location_within: "Pier approach, first third from harbor quay"
+    time_of_day: "night"
+    weather: "clear, light wind"
+    required_elements:
+      - "Tarred oak pier planking"
+      - "Lantern posts creating light pools"
+      - "Security checkpoint in middle distance"
+      - "Bollards and mooring rings"
+      - "Pavilion glowing at end"
+      - "Approaching figures with tactical awareness"
+    lighting:
+      primary_source: "lantern posts at intervals"
+      quality: "pools of light between shadow"
+      direction: "from above at each post"
+      color_temperature: "warm lantern glow, cool moonlight between"
+      shadow_depth: "sharp between light pools"
+      atmospheric: "night harbor air, salt and breeze"
+    palette:
+      dominant: ["night blue", "lantern gold", "dark water"]
+      accent: ["pavilion glow ahead", "bronze bollard caps"]
+      avoid: ["total darkness", "daytime brightness"]
+    aspect_ratio: "3:2"
+    orientation: "landscape"
+    size: "1536x1024"
+    prompt_used: ""
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, digital art gloss, concept art polish, AI artifacts, modern elements"
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Night Watch on the Pier"
+    slug: "azure-pavilion-pier-night"
+    title: "Guardians of the Approach"
+    image_type: "zone"
+    zone_type: "functional"
+    category: "security"
+    scene_mood: "vigilant"
+    mood_rationale: "After the guests depart, the pier becomes a security zone—City Watch maintaining the chokepoint, protecting whatever interests the evening served."
+    visual_description: |
+      The pier at late night, after the lanterns have been extinguished. Only the pierhead
+      gate and the security checkpoint maintain their lights—pools of watchfulness in the
+      dark stretch between city and pavilion. A pair of City Watch officers patrol the length,
+      their footsteps echoing on the tarred planks, their presence a reminder that access is
+      never truly open.
+
+      The pavilion beyond is a ghost of its evening glory—lanterns dark, marble catching only
+      moonlight, the azure tiles invisible against the night sky. But the Watch remains,
+      bound by duty or payment to guard whatever needs guarding. Their lanterns bob as they
+      walk, creating moving pools of light that sweep the pier's edges.
+    composition_notes: "Late night pier with minimal lighting. Watch patrol with hand lanterns. Pavilion dark and ghostly beyond. Moon or stars for ambient light."
+    narrative_significance: "The security that protected the gala also protected its secrets—whatever moved through the night had Watch blessing."
+    symbolic_elements: "Night watch represents the constant maintenance of power—even empty stages require guarding."
+    location_within: "Pier approach, late night after event"
+    time_of_day: "late night"
+    weather: "clear, cool"
+    required_elements:
+      - "Darkened pier with minimal lighting"
+      - "City Watch patrol with hand lanterns"
+      - "Moving pools of light"
+      - "Dark pavilion in background"
+      - "Moonlight on water"
+      - "Vigilant atmosphere"
+    lighting:
+      primary_source: "patrol hand lanterns"
+      quality: "moving pools in darkness"
+      direction: "from patrol lanterns, moonlight from above"
+      color_temperature: "warm lantern, cool moonlight"
+      shadow_depth: "deep outside lantern range"
+      atmospheric: "late night quiet, sea sounds"
+    palette:
+      dominant: ["night blue", "lantern amber", "silver moonlight"]
+      accent: ["Watch uniform colors", "bronze fixtures"]
+      avoid: ["complete blackness", "daylight intrusion"]
+    aspect_ratio: "3:2"
+    orientation: "landscape"
+    size: "1536x1024"
+    prompt_used: ""
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, digital art gloss, concept art polish, AI artifacts, modern elements"
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Private Office"
+    slug: "azure-pavilion-private-office"
+    title: "Where Deals Are Sealed"
+    image_type: "zone"
+    zone_type: "intimate"
+    category: "functional"
+    scene_mood: "conspiratorial"
+    mood_rationale: "Though the pavilion has no permanent rooms, temporary private spaces can be created—canvas partitions and borrowed furniture creating offices for those who need them."
+    visual_description: |
+      A corner of the pavilion has been temporarily enclosed with canvas windbreaks and
+      borrowed furniture—a writing desk, a pair of chairs, a small table with refreshments.
+      The effect is an office floating in the open air, privacy achieved through arrangement
+      rather than walls. One canvas panel bears the seal of whatever organization claimed
+      this space for the evening.
+
+      The lantern light is carefully positioned—bright enough to read documents, soft enough
+      for confidential conversation. Through the gaps between canvas panels, the party
+      continues beyond, its sounds muffled by the improvised barriers. Whoever meets here
+      does so by design, their business too important for the public floor.
+    composition_notes: "Improvised private space within pavilion. Canvas partitions, desk and chairs. Intimate lighting. Include two figures in confidential discussion."
+    narrative_significance: "Spaces like this allowed both legitimate diplomacy and darker arrangements—privacy rented within the public stage."
+    symbolic_elements: "Temporary walls within permanent architecture—how power creates privacy when needed."
+    location_within: "Corner of pavilion, temporarily partitioned"
+    time_of_day: "evening"
+    weather: "clear"
+    featured_in_chapters:
+      - "ch34-the-azure-cage"
+      - "ch35-the-serpent-strikes"
+    required_elements:
+      - "Canvas partition walls"
+      - "Writing desk and chairs"
+      - "Focused lantern light"
+      - "Organizational seal on canvas"
+      - "Confidential meeting in progress"
+      - "Party sounds beyond"
+    lighting:
+      primary_source: "positioned lantern for reading"
+      quality: "focused, intimate"
+      direction: "from above and side"
+      color_temperature: "warm silver"
+      shadow_depth: "deep beyond the lit area"
+      atmospheric: "enclosed, confidential"
+    palette:
+      dominant: ["canvas cream", "silver lantern light", "warm wood"]
+      accent: ["seal colors", "document parchment"]
+      avoid: ["harsh exposure", "surveillance feeling"]
+    aspect_ratio: "3:2"
+    orientation: "portrait"
+    size: "1024x1536"
+    prompt_used: ""
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, digital art gloss, concept art polish, AI artifacts, modern elements"
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Recognition Ceremony"
+    slug: "azure-pavilion-recognition-ceremony"
+    title: "The Moment of Legitimacy"
+    image_type: "zone"
+    zone_type: "ceremonial"
+    category: "event"
+    scene_mood: "triumphant"
+    mood_rationale: "The recognition ceremony is the pavilion's purpose fulfilled—public acknowledgment of achievement, the machinery of legitimacy operating at full performance."
+    visual_description: |
+      The dais is occupied now, figures arranged for maximum theatrical impact. An announcer
+      in formal robes presents the honorees while the audience watches from their arranged
+      positions throughout the hall. The crystal lanterns blaze at their brightest, their
+      silver light making every face visible, every expression readable. This is the moment
+      the architecture was designed to create.
+
+      The Last Light Company stands on that platform, receiving the acknowledgment of
+      Waterdeep's officials. Their faces show the careful neutrality of professionals
+      accepting their due—but Veyra's lantern glows brighter at her side, responding to
+      emotions she won't display. Somewhere in the watching crowd, enemies smile and
+      calculate, their public praise hiding private assessment.
+    composition_notes: "Full ceremony in progress. Dais occupied by honorees and presenter. Audience arranged in viewing positions. Maximum lantern brightness. Include the Company receiving recognition."
+    narrative_significance: "The culmination of the Company's journey to legitimacy—and the moment their enemies got their first close look at them."
+    symbolic_elements: "Public recognition as both achievement and exposure—legitimacy comes with visibility."
+    location_within: "Central pavilion during ceremony"
+    time_of_day: "evening"
+    weather: "clear"
+    required_elements:
+      - "Occupied dais with honorees"
+      - "Formal presenter in robes"
+      - "Audience in arranged positions"
+      - "Maximum lantern brightness"
+      - "Company members on stage"
+      - "Watching crowd with mixed intentions"
+    lighting:
+      primary_source: "maximum lantern array"
+      quality: "bright, theatrical, exposing"
+      direction: "from all sides, focused on dais"
+      color_temperature: "bright silver-white"
+      shadow_depth: "minimal, all faces visible"
+      atmospheric: "formal, public, triumphant"
+    palette:
+      dominant: ["bright white", "silver light", "formal colors"]
+      accent: ["ceremonial robes", "Company attire"]
+      avoid: ["shadowed faces", "intimate atmosphere"]
+    aspect_ratio: "3:2"
+    orientation: "landscape"
+    size: "1536x1024"
+    prompt_used: ""
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, digital art gloss, concept art polish, AI artifacts, modern elements"
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Storm Preparation"
+    slug: "azure-pavilion-storm-curtains"
+    title: "Battening the Beauty"
+    image_type: "zone"
+    zone_type: "functional"
+    category: "maintenance"
+    scene_mood: "industrious"
+    mood_rationale: "When storms threaten, the pavilion transforms from ceremonial stage to maritime structure—riggers deploying canvas, chains securing loose elements, the machinery of survival overwhelming the aesthetics of prestige."
+    visual_description: |
+      Riggers work the eave lines, pulling canvas storm curtains into position as the wind
+      picks up. The azure tiles rattle in their brackets, tested by gusts that will soon
+      become gales. The enchanted lanterns have been struck and stored; oil lamps in
+      protective housings provide working light. The pavilion is preparing for battle
+      with the weather.
+
+      The oiled canvas snaps and billows as it's secured to balustrade rings and column
+      bases. Chains are laced through the copper gutters to prevent uplift. The transformation
+      is rapid and practiced—these workers have done this dozens of times, reading the
+      harbor sky with professional certainty. By the time the storm hits, the pavilion
+      will be a weathered turtle, not a floating stage.
+    composition_notes: "Workers securing storm curtains. Wind-whipped canvas. Dark sky building. Oil lamp working light. Include riggers on ladders and at balustrade."
+    narrative_significance: "Even beauty requires maintenance against nature—a reminder that the pavilion is engineering as much as artistry."
+    symbolic_elements: "The storm preparation reveals the infrastructure beneath the elegance—the work that keeps illusions intact."
+    location_within: "Full pavilion during storm preparation"
+    time_of_day: "afternoon, darkening"
+    weather: "storm approaching, strong wind"
+    required_elements:
+      - "Canvas storm curtains being deployed"
+      - "Riggers on ladders and at rails"
+      - "Darkening storm sky"
+      - "Oil lamp working light"
+      - "Wind-whipped elements"
+      - "Chains and tie-lines visible"
+    lighting:
+      primary_source: "oil lamps in protective housings"
+      quality: "working light, functional"
+      direction: "from multiple positioned lamps"
+      color_temperature: "warm amber against grey storm light"
+      shadow_depth: "moving, wind-affected"
+      atmospheric: "urgent, weather-threatened"
+    palette:
+      dominant: ["storm grey", "oiled canvas tan", "amber lamp light"]
+      accent: ["copper chain", "worker clothing"]
+      avoid: ["calm sunny day", "party atmosphere"]
+    aspect_ratio: "3:2"
+    orientation: "landscape"
+    size: "1536x1024"
+    prompt_used: ""
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, digital art gloss, concept art polish, AI artifacts, modern elements"
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Twilight Lanterns"
+    slug: "azure-pavilion-twilight-lanterns"
+    title: "The Threshold Hour"
+    image_type: "zone"
+    zone_type: "temporal"
+    category: "atmospheric"
+    scene_mood: "magical"
+    mood_rationale: "Twilight is the pavilion's signature hour—when azure tiles match the deepening sky, when lanterns compete with sunset, when the boundary between day and night dissolves into magic."
+    visual_description: |
+      The moment before full night, and the pavilion has achieved its perfect state. The
+      azure tiles have deepened to match the twilight sky above, as if the roof were dissolving
+      into the evening itself. The crystal lanterns pulse with silver-white light, their glow
+      now dominant over the last copper rays of sunset. The marble floor reflects both colors,
+      creating a surface of shifting warmth and coolness.
+
+      Guests move through this transformed space with heightened awareness—everyone looks
+      more beautiful in this light, every conversation feels more significant. The harbor
+      beyond has become a mirror, the pavilion's light reflected in still water. For this
+      brief hour, the architecture achieves something beyond function: it creates atmosphere.
+    composition_notes: "Peak twilight moment. Azure tiles matching sky. Lanterns dominant but sunset still present. Include guests in this magical lighting."
+    narrative_significance: "Under this light, the gala reached its height—enemies and allies equally transformed by the pavilion's engineered beauty."
+    symbolic_elements: "Twilight as liminal space—neither day nor night, neither truth nor lie, the hour of ambiguity."
+    location_within: "Full pavilion at peak twilight"
+    time_of_day: "twilight"
+    weather: "clear"
+    required_elements:
+      - "Azure tiles matching twilight sky"
+      - "Crystal lanterns at peak glow"
+      - "Last sunset copper in west"
+      - "Marble floor reflecting both colors"
+      - "Guests in transformed lighting"
+      - "Harbor mirror reflections"
+    lighting:
+      primary_source: "crystal lanterns and final sunset"
+      quality: "magical, transformative"
+      direction: "lanterns from above, sunset from west"
+      color_temperature: "perfect balance of warm and cool"
+      shadow_depth: "soft, romantic"
+      atmospheric: "threshold magic, heightened beauty"
+    palette:
+      dominant: ["twilight azure", "silver lantern", "sunset copper"]
+      accent: ["marble reflection", "formal attire"]
+      avoid: ["harsh midday", "complete darkness"]
+    aspect_ratio: "3:2"
+    orientation: "landscape"
+    size: "1536x1024"
+    prompt_used: ""
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, digital art gloss, concept art polish, AI artifacts, modern elements"
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Upper Balcony"
+    slug: "azure-pavilion-upper-balcony"
+    title: "The Watcher's Perch"
+    image_type: "zone"
+    zone_type: "panoramic"
+    category: "observation"
+    scene_mood: "observant"
+    mood_rationale: "The upper balcony—accessed through maintenance catwalks—offers a commanding view of the pavilion floor, the perfect position for those who need to see without being seen."
+    visual_description: |
+      High among the trusses, a narrow maintenance catwalk runs the length of the pavilion,
+      accessed through lockable hatches and intended for lamp maintenance and roof inspection.
+      But tonight, someone has claimed this perch for observation—a figure crouched where
+      lantern light doesn't reach, looking down at the party through the gaps between
+      azure tiles and timber beams.
+
+      From here, the entire social theater is visible: the dais with its recognition ceremony,
+      the leeward bays where secrets are traded, the approach pier where arrivals are screened.
+      The acoustics carry conversations upward, fragments of dialogue floating on currents
+      of warm air. Whoever watches from here sees patterns invisible from floor level—
+      who gravitates toward whom, who avoids whom, which servers move with too much purpose.
+    composition_notes: "High angle view down into pavilion. Truss beams and tile edges framing. Observer figure partially visible. Party scene below."
+    narrative_significance: "A position of surveillance—perhaps used by Veridian's security, perhaps by the Company's own observers."
+    symbolic_elements: "The hidden vantage point represents the asymmetry of power—those who watch versus those who are watched."
+    location_within: "Maintenance catwalk among the roof trusses"
+    time_of_day: "evening"
+    weather: "clear"
+    featured_in_chapters:
+      - "ch34-the-azure-cage"
+      - "ch35-the-serpent-strikes"
+    required_elements:
+      - "Narrow maintenance catwalk"
+      - "Truss beams and roof structure"
+      - "View down to party floor"
+      - "Partial observer figure"
+      - "Lantern light from below"
+      - "Azure tile edges framing view"
+    lighting:
+      primary_source: "lanterns from below, indirect"
+      quality: "upwash from party floor"
+      direction: "from below through gaps"
+      color_temperature: "silver with warm undertones"
+      shadow_depth: "deep at catwalk level"
+      atmospheric: "hidden, observational"
+    palette:
+      dominant: ["timber brown", "shadow", "lantern upwash"]
+      accent: ["azure tile glimpses", "party colors below"]
+      avoid: ["fully lit catwalk", "visible observer face"]
+    aspect_ratio: "3:2"
+    orientation: "portrait"
+    size: "1024x1536"
+    prompt_used: ""
+    negative_prompt: "cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, digital art gloss, concept art polish, AI artifacts, modern elements"
+    references: []
+    generated_images: []
+    image_inventory: []

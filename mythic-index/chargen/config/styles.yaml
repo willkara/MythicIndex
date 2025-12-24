@@ -1,0 +1,140 @@
+# styles.yaml - Style Configuration
+# ============================================================================
+# Operational style settings: scenario defaults, keywords, and global defaults.
+# Art direction philosophy is now loaded from the project art direction file.
+# ============================================================================
+
+# Art Direction Integration
+# When enabled, mood→style mapping and aesthetic philosophy are loaded from:
+# MemoryQuill/story-content/core/09-project-art-direction.yaml
+art_direction:
+  enabled: true
+  # Mood→style mapping is used for chapter imagery with scene_mood field
+  use_mood_style_mapping: true
+  # Inject per-mood artist references (e.g., somber → "Rembrandt chiaroscuro")
+  inject_artist_references: true
+
+# Master Style Configuration (Fallback)
+# Used when art direction is disabled or as base scenario styles
+master_style:
+  # Scenario-specific style additions (operational, not philosophical)
+  scenarios:
+    character: "heroic fantasy portrait, expressive face, distinct facial features, ornate fantasy attire, cinematic lighting, medium shot, warm golden tones, detailed texture on metal, leather, and cloth"
+
+    location: "high-fantasy interior architecture, wide establishing composition, enchanted lanternlight and arcane glow, subtle runes and warding motifs, intricate craftsmanship, detailed stone/wood/metal textures, storytelling composition"
+
+    exterior: "epic high-fantasy exterior, fantastical silhouettes and skyline, arcane lanterns and ward-lights, subtle magical phenomena integrated into the environment, dynamic skies, cinematic composition, atmospheric depth"
+
+    scene: "storytelling moment, high-fantasy adventuring tone, emotional lighting, atmospheric depth, subtle spell effects, focus on character expressions, dramatic composition"
+
+# Scenario-specific defaults for aspect ratio and image size
+# Tuned for natural composition per content type
+scenario_defaults:
+  character:
+    aspect_ratio: "4:5"    # Portrait framing
+    image_size: "1K"
+
+  location:
+    aspect_ratio: "4:3"    # Architectural balance
+    image_size: "1K"
+
+  exterior:
+    aspect_ratio: "16:9"   # Cinematic landscapes
+    image_size: "1K"
+
+  scene:
+    aspect_ratio: "16:9"   # Storytelling frames
+    image_size: "1K"
+
+  generic:
+    aspect_ratio: "1:1"    # Safe square default
+    image_size: "1K"
+
+# Keywords for location type detection
+keywords:
+  # Keywords indicating exterior locations
+  exterior:
+    # Natural features
+    - "forest"
+    - "mountain"
+    - "river"
+    - "lake"
+    - "ocean"
+    - "sea"
+    - "beach"
+    - "cliff"
+    - "valley"
+    - "plains"
+    - "desert"
+    - "swamp"
+    - "marsh"
+    - "wilderness"
+    - "woods"
+    # Urban exteriors
+    - "street"
+    - "square"
+    - "plaza"
+    - "market"
+    - "harbor"
+    - "port"
+    - "dock"
+    - "pier"
+    - "bridge"
+    - "gate"
+    - "wall"
+    - "road"
+    - "path"
+    - "garden"
+    - "courtyard"
+    - "ruins"
+    # Descriptors
+    - "outdoor"
+    - "outside"
+    - "open-air"
+    - "exterior"
+
+  # Keywords indicating interior locations
+  interior:
+    # Rooms
+    - "room"
+    - "hall"
+    - "chamber"
+    - "quarters"
+    - "study"
+    - "library"
+    - "kitchen"
+    - "bedroom"
+    - "throne room"
+    - "cellar"
+    - "basement"
+    - "attic"
+    - "dungeon"
+    # Buildings (interior context)
+    - "tavern"
+    - "inn"
+    - "shop"
+    - "temple"
+    - "church"
+    - "shrine"
+    - "guild"
+    - "warehouse"
+    - "prison"
+    - "tower interior"
+    - "keep"
+    - "vault"
+    # Descriptors
+    - "indoor"
+    - "inside"
+    - "interior"
+
+# Global defaults for generation
+global_defaults:
+  aspect_ratio: "16:9"
+  size: "1792x1024"
+  orientation: "landscape"
+  quality: "high"
+  max_prompt_length: 4000
+
+# Rate limiting configuration
+rate_limiting:
+  delay_ms: 2200

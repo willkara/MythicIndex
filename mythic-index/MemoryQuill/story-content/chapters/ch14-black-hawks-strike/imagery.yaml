@@ -1,0 +1,677 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: Black Hawks Strike
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch14-black-hawks-strike"
+  chapter_number: 14
+  chapter_title: "Black Hawks Strike"
+  visual_thesis: "From the amber sanctuary of found family to the primal howl of wild allies—a journey from hearth-warmth through conflict and crisis into the borderlands between human and beast."
+  color_palette:
+    primary:
+      - "#C9944A"
+      - "#4A5D3C"
+      - "#8B4513"
+      - "#5D4E6D"
+    accent:
+      - "#D4A017"
+      - "#8B0000"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 2
+    pastoral: 0
+    celebratory: 0
+    aquatic: 0
+    ethereal: 1
+    intimate: 2
+    kinetic: 3
+    ominous: 0
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "aldwin-gentleheart"
+    name: "Brother Aldwin Gentleheart"
+    scene_variations: "Demeanor transforms from gentle healer to clipped battlefield medic. Eyes shift from warm kindness to cold clinical assessment."
+    reference_images:
+      - "aldwin-gentleheart-official-portrait-01"
+
+  - ref: "thorne-brightward"
+    name: "Captain Thorne Brightward"
+    scene_variations: "Hand hovering near sword hilt. Voice tight with frustration. Standing in early morning light."
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "lieutenant-tomaq"
+    name: "Lieutenant Tomaq"
+    scene_variations: "One good eye unwavering. Defending his actions. Standing resolute with soldiers."
+    reference_images:
+      - "lieutenant-tomaq-formal-portrait-01"
+
+  - ref: "vera-moonwhisper"
+    name: "Vera Moonwhisper"
+    scene_variations: "Wounded—leather armor torn and dark with blood. TRANSFORMATION STATE—Eyes molten amber. Gray-silver fur patches. Features sharpen. Mouth open mid-howl."
+    reference_images:
+      - "vera-moonwhisper-portrait-01"
+
+  - ref: "corporal-hayes"
+    name: "Corporal Hayes"
+    scene_variations: "Arrow shaft protruding from left shoulder. Grimly staying upright. Prioritizing mission."
+    reference_images:
+      - "corporal-hayes-portrait-grim"
+
+  - ref: "private-mill"
+    name: "Private Mill"
+    scene_variations: "Long gash across forehead hastily bandaged. Riding wounded."
+    reference_images:
+      - "private-mill-lantern-portrait-01"
+
+  - ref: "trooper-carrick"
+    name: "Trooper Carrick"
+    scene_variations: "Slumped forward in saddle, clutching side. Most critical of the wounded riders."
+    reference_images:
+      - "trooper-carrick-lantern-portrait-01"
+
+  - ref: "medic-halden"
+    name: "Medic Halden"
+    scene_variations: "Running to respond to Aldwin's command. Coordinated triage partner."
+    reference_images:
+      - "medic-halden-standing-portrait-01"
+
+  - ref: "grimjaw-ironbeard"
+    name: "Grimjaw Ironbeard"
+    scene_variations: "Watching Vera's transformation with wide-eyed professional appreciation."
+    reference_images:
+      - "grimjaw-ironbeard-portrait-01"
+
+locations:
+  - ref: "aldwins-sanctuary"
+    zones:
+      - id: "overview"
+        chapter_context: "Circular room breathing with dried herbs. Ceramic jars line the curved walls. Soft lamplight catching warm gleam of tea service."
+  - ref: "westwall-courtyard"
+    zones:
+      - id: "overview"
+        chapter_context: "Functional military hardstand courtyard. Gates large enough for mounted riders. Transforms from dawn assembly ground to emergency triage station."
+
+moments:
+  - id: "ch14-black-hawks-strike-moment-01"
+    scene_id: "scn-14-01"
+    title: "Sanctuary Tea"
+    narrative_beat: "Aldwin presents a cup of tea to Veyra in his herb-scented sanctuary, a moment of profound calm."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+      - "aldwin-gentleheart"
+    location_zone: "aldwins-sanctuary/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch14-black-hawks-strike-moment-02"
+    scene_id: "scn-14-01"
+    title: "The Weight of Decisions"
+    narrative_beat: "Veyra contemplating the difference between heroes and family, her face softened by the lamplight."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "aldwins-sanctuary/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch14-black-hawks-strike-moment-03"
+    scene_id: "scn-14-02"
+    title: "The Hidden Report"
+    narrative_beat: "Thorne confronts Tomaq in the dawn courtyard about the secret reports to Atlock."
+    visual_weight: "high"
+    characters_present:
+      - "thorne-brightward"
+      - "lieutenant-tomaq"
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch14-black-hawks-strike-moment-04"
+    scene_id: "scn-14-02"
+    title: "Reinforcements Arrive"
+    narrative_beat: "Establishing the ten City Watch soldiers standing in perfect formation in the morning shadows."
+    visual_weight: "medium"
+    characters_present:
+      - "sergeant-kass"
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch14-black-hawks-strike-moment-05"
+    scene_id: "scn-14-03"
+    title: "Echo's Alert"
+    narrative_beat: "Echo lands on the parapet, her agitated calls signaling the arrival of the wounded riders."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "westwall-watchpost/parapet"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch14-black-hawks-strike-moment-06"
+    scene_id: "scn-14-03"
+    title: "The Blood-Dusted Entrance"
+    narrative_beat: "Four wounded riders thunder through the gates, a visceral image of coming conflict."
+    visual_weight: "critical"
+    characters_present:
+      - "vera-moonwhisper"
+      - "corporal-hayes"
+      - "private-mill"
+      - "trooper-carrick"
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch14-black-hawks-strike-moment-07"
+    scene_id: "scn-14-03"
+    title: "Battlefield Medic"
+    narrative_beat: "Aldwin's persona shifts as he begins emergency surgery in the courtyard."
+    visual_weight: "high"
+    characters_present:
+      - "aldwin-gentleheart"
+      - "corporal-hayes"
+      - "medic-halden"
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch14-black-hawks-strike-moment-08"
+    scene_id: "scn-14-04"
+    title: "The Wolf's Howl"
+    narrative_beat: "Vera's partial transformation as she calls the wild allies to the Watchpost's defense."
+    visual_weight: "hero"
+    characters_present:
+      - "vera-moonwhisper"
+      - "grimjaw-ironbeard"
+      - "thorne-brightward"
+      - "aldwin-gentleheart"
+      - "veyra-thornwake"
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "during"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch14-black-hawks-strike-img-14-01-01"
+    source_moment: "ch14-black-hawks-strike-moment-01"
+    scene_id: "scn-14-01"
+    image_type: "character"
+    category:
+      - "character"
+      - "emotion"
+      - "moment"
+    scene_mood: "intimate"
+    mood_rationale: "Therapeutic sanctuary—the soul-care ritual between healer and commander."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      In a circular room lined with ceramic herb jars, Aldwin presents a steaming cup with both hands to Veyra. Soft lamplight softens the mottled burn scar on her face. Her expression shows rare vulnerability. Receding shelves of ceramic vessels create depth.
+    composition_notes: |
+      Medium two-shot. Veyra in worn chair, Aldwin standing. Rule of thirds: scarred face left, presenting hands right. Curved walls create embrace.
+    visual_hook: "Aldwin's small, steady hands presenting a steaming cup with both hands—a gesture of respect—while lamplight softens Veyra's burn scar"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "aldwin-gentleheart"
+    character_states:
+      veyra-thornwake: |
+        Posture softened. Burn scar softened by lamp. Dark eyes showing rare vulnerability.
+      aldwin-gentleheart: |
+        Presenting cup with both hands. Benevolent smile. Silver-frosted curly hair.
+    location: "aldwins-sanctuary"
+    lighting:
+      primary_source: "oil lamp"
+      quality: "soft, warm"
+      direction: "side"
+      color_temperature: "warm amber gold"
+      shadow_depth: "soft gradients"
+      atmospheric: "steam from tea"
+    palette:
+      dominant:
+        - "amber gold"
+        - "herb green"
+        - "warm brown"
+      accent:
+        - "ceramic cream"
+      avoid:
+        - "harsh whites"
+    prompt_used: |
+      Half-elf woman with burn scar receiving a cup from a halfling healer in a circular herb-filled room,
+      healer presenting cup with both hands,
+      soft lamplight and rising steam,
+      atmosphere of profound calm and sanctuary,
+      classical oil painting, Vermeer interior lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin, action pose
+    tags:
+      - "intimate"
+      - "tea-ceremony"
+      - "sanctuary"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch14-black-hawks-strike-img-14-01-02"
+    source_moment: "ch14-black-hawks-strike-moment-02"
+    scene_id: "scn-14-01"
+    image_type: "detail"
+    category:
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: "Veyra's private reflection. The internal weight of command. Quiet psychological depth."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Close-up of Veyra's face in the herb room. She is looking into her tea cup, her expression thoughtful and burdened. The lamplight highlights the texture of her burn scar and the moisture in her eyes. The background is a warm blur of herb jars.
+    composition_notes: |
+      Extreme close-up. Focus on eyes and scar. Tea cup edge visible at bottom. Soft background bokeh.
+    visual_hook: "The reflection of the lamp in the dark surface of her tea, mirrored by the moisture in her eyes."
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Looking down. Expression of quiet responsibility. Tear tracing down scar.
+    location: "aldwins-sanctuary"
+    lighting:
+      primary_source: "Oil lamp"
+      quality: "Warm, intimate"
+      direction: "Side"
+      color_temperature: "Amber"
+      shadow_depth: "Soft"
+      atmospheric: "Scented steam"
+    palette:
+      dominant:
+        - "warm skin tones"
+        - "amber"
+        - "shadow"
+      accent:
+        - "reddish-brown scar"
+      avoid:
+        - "bright light"
+    prompt_used: |
+      Extreme close-up of a scarred woman's face by candlelight,
+      looking down into a cup of tea,
+      expression of quiet burden and reflection,
+      moisture in eyes,
+      warm intimate atmosphere,
+      classical oil painting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "detail"
+      - "veyra"
+      - "emotion"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch14-black-hawks-strike-img-14-02-01"
+    source_moment: "ch14-black-hawks-strike-moment-03"
+    scene_id: "scn-14-02"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "action"
+    scene_mood: "kinetic"
+    mood_rationale: "Military confrontation at dawn. Two concepts of loyalty colliding. Sharp dawn light and long shadows."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Thorne faces Tomaq in a stone courtyard at dawn. Long shadows across flagstones. Thorne's hand near his sword hilt. Tomaq's one good eye fixed on Thorne. City Watch soldiers in formation near the gate behind Tomaq.
+    composition_notes: |
+      Wide-medium shot. Thorne left, Tomaq right. Long shadows to left. Gate background. Diagonal energy.
+    visual_hook: "Thorne's scarred hand hovering inches from sword hilt while facing the towering one-eyed orc"
+    depicts_characters:
+      - "thorne-brightward"
+      - "lieutenant-tomaq"
+    character_states:
+      thorne-brightward: |
+        Rigid military bearing. Hand near sword. Steel breastplate gleaming. Blue cloak with sunburst.
+      lieutenant-tomaq: |
+        Resolute. Towering. Moss-green skin. Eye patch. High-collared olive tunic.
+    location: "westwall-courtyard"
+    lighting:
+      primary_source: "dawn sun"
+      quality: "hard, dramatic"
+      direction: "side/back"
+      color_temperature: "cool dawn/warm edge"
+      shadow_depth: "harsh contrast"
+      atmospheric: "morning haze"
+    palette:
+      dominant:
+        - "steel gray"
+        - "olive drab"
+        - "stone brown"
+      accent:
+        - "golden edge-light"
+        - "deep blue"
+      avoid:
+        - "bright greens"
+    prompt_used: |
+      Armored man with gray mustache in tense standoff with towering one-eyed orc in military uniform,
+      stone courtyard at dawn,
+      long dramatic shadows,
+      soldiers in formation in background,
+      classical oil painting, Romantic dynamism,
+      harsh directional light, high contrast,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin, friendly expressions
+    tags:
+      - "kinetic"
+      - "confrontation"
+      - "thorne"
+      - "tomaq"
+      - "dawn"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch14-black-hawks-strike-img-14-02-02"
+    source_moment: "ch14-black-hawks-strike-moment-04"
+    scene_id: "scn-14-02"
+    image_type: "establishing"
+    category:
+      - "location"
+      - "military"
+    scene_mood: "somber"
+    mood_rationale: "Establishing the arrival of the Watch reinforcements. Cold, professional readiness. The scale of the coming conflict."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Ten City Watch soldiers in perfect formation near the Watchpost gates at dawn. Spearmen, swordsmen, and archers. Their uniforms are crisp, their equipment gleaming. Shadows of the towers stretch across them. Sarge stands to one side, observing.
+    composition_notes: |
+      Extreme wide shot. Soldiers as a rhythmic block. Tower shadows creating vertical bars. Sense of order and preparation.
+    visual_hook: "The perfect geometric order of the Watch formation against the weathered, irregular stone of the Watchpost."
+    depicts_characters:
+      - "sarge"
+      - "sergeant-kass"
+    character_states:
+      sarge: |
+        Standing apart. Massive silhouette. Assessing the new troops.
+      sergeant-kass: |
+        Leading formation. Sharp salute.
+    location: "westwall-courtyard"
+    lighting:
+      primary_source: "Dawn sun"
+      quality: "Sharp, low"
+      direction: "Back-side"
+      color_temperature: "Cool/Gold"
+      shadow_depth: "Deep"
+      atmospheric: "Morning mist"
+    palette:
+      dominant:
+        - "stone gray"
+        - "watch blue"
+        - "shadow"
+      accent:
+        - "steel glint"
+      avoid:
+        - "chaos"
+    prompt_used: |
+      Squad of medieval guards in crisp blue and silver uniforms in formation,
+      standing near large timber gates of a stone fortress at dawn,
+      long shadows,
+      sense of professional readiness,
+      classical oil painting, military realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "establishing"
+      - "watch"
+      - "formation"
+      - "military"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch14-black-hawks-strike-img-14-03-01"
+    source_moment: "ch14-black-hawks-strike-moment-06"
+    scene_id: "scn-14-03"
+    image_type: "hero"
+    category:
+      - "action"
+      - "moment"
+    scene_mood: "kinetic"
+    mood_rationale: "Crisis breaking in—wounded riders thundering through gates. Maximum urgency, dust, and blood."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "2016x864"
+    visual_description: |
+      Four horses thunder into the courtyard as gates swing wide. Vera rides lead in torn, blood-stained armor. Behind her: Hayes with an arrow in his shoulder, Mill with a head bandage, Carrick slumped and bleeding. Swirling dust clouds in harsh afternoon sun. Exhausted horses.
+    composition_notes: |
+      Cinematic ultra-wide. Low angle. Gates framing edges. Vera center-left. Diagonal motion lines. Harsh light from above-right.
+    visual_hook: "Arrow shaft protruding from Corporal Hayes's shoulder, the broken point visible through torn leather"
+    depicts_characters:
+      - "vera-moonwhisper"
+      - "corporal-hayes"
+      - "private-mill"
+      - "trooper-carrick"
+    character_states:
+      vera-moonwhisper: |
+        Hunched forward. Torn blood-stained cloak. Disheveled braid.
+      corporal-hayes: |
+        Arrow in shoulder. Grimly upright. Heavy stubble.
+      private-mill: |
+        Bandaged forehead. Red-stained cloth.
+      trooper-carrick: |
+        Slumped forward. uniform soaked in blood.
+    location: "westwall-courtyard"
+    lighting:
+      primary_source: "harsh afternoon sun"
+      quality: "hard, dramatic"
+      direction: "above-right"
+      color_temperature: "warm/harsh"
+      shadow_depth: "harsh contrast"
+      atmospheric: "dust clouds"
+    palette:
+      dominant:
+        - "dust brown"
+        - "blood rust"
+        - "horse bay"
+      accent:
+        - "forest green"
+        - "steel gray"
+      avoid:
+        - "soft pastels"
+    prompt_used: |
+      Four horses thundering through wide timber gates into a stone military courtyard,
+      dust clouds swirling in harsh afternoon sun,
+      wounded riders including woman in green and man with arrow in shoulder,
+      blood stained armor and torn cloaks,
+      urgency and crisis,
+      classical oil painting, Romantic dynamism,
+      Delacroix energy, visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, peaceful expressions
+    tags:
+      - "kinetic"
+      - "wounded-riders"
+      - "crisis"
+      - "action"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch14-black-hawks-strike-img-14-03-02"
+    source_moment: "ch14-black-hawks-strike-moment-07"
+    scene_id: "scn-14-03"
+    image_type: "detail"
+    category:
+      - "character"
+      - "moment"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Gentle healer becomes battlefield medic. Clinical steel replaces warmth. Rembrandt lighting."
+    aspect_ratio: "4:5"
+    orientation: "portrait"
+    size: "1024x1280"
+    visual_description: |
+      Aldwin's small hands probe around the arrow wound in Hayes's shoulder. Clinical precision. Hazel eyes now cold assessment. Halden approaching with supplies. Triage station atmosphere. Harsh functional lighting.
+    composition_notes: |
+      Medium-close shot. Focus on hands and transformed expression. Hayes partially visible. Halden background. Rule of thirds: eyes upper, hands lower.
+    visual_hook: "Aldwin's small steady hands probing around the arrow wound with clinical efficiency"
+    depicts_characters:
+      - "aldwin-gentleheart"
+      - "corporal-hayes"
+      - "medic-halden"
+    character_states:
+      aldwin-gentleheart: |
+        Transformed demeanor. Rigid and efficient. Professional line of mouth. Probing wound.
+      corporal-hayes: |
+        Stoic determination. Armor partially removed. Exposing wound.
+      medic-halden: |
+        Running in background. Carrying medical bag.
+    location: "westwall-courtyard"
+    lighting:
+      primary_source: "harsh afternoon sun"
+      quality: "hard, clinical"
+      direction: "above"
+      color_temperature: "neutral/cool"
+      shadow_depth: "deep Rembrandt"
+      atmospheric: "dust settling"
+    palette:
+      dominant:
+        - "clinical gray"
+        - "blood rust"
+        - "stone brown"
+      accent:
+        - "moss green"
+        - "red cross"
+      avoid:
+        - "warm amber"
+    prompt_used: |
+      Halfling healer with silver-frosted hair now set in cold clinical assessment,
+      probing arrow wound in a soldier's shoulder with steady hands,
+      field triage in stone courtyard,
+      harsh afternoon light,
+      another medic running in background with bag,
+      classical oil painting, Rembrandt lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, gentle expression
+    tags:
+      - "somber"
+      - "battlefield-medicine"
+      - "aldwin"
+      - "detail"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch14-black-hawks-strike-img-14-04-01"
+    source_moment: "ch14-black-hawks-strike-moment-08"
+    scene_id: "scn-14-04"
+    image_type: "symbol"
+    category:
+      - "symbol"
+      - "character"
+      - "moment"
+      - "action"
+    scene_mood: "ethereal"
+    mood_rationale: "The boundary between human and beast dissolving. Terrifying and beautiful magic. Luminous quality."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Vera making the wolf call. Eyes molten amber. Gray-silver fur patches on arms and neck. Features sharpened: ears, canines, jaw. Inhuman fluidity. Howling at the sky. Circle of Company witnesses in background showing awe. Twilight sky gold and purple.
+    composition_notes: |
+      Square symbolic. Centered figure. Low angle looking up. Witnesses framing bottom. Rule of thirds: eyes upper, mouth center.
+    visual_hook: "Amber wolf eyes in a half-human face, mouth open in a howl that shows elongated canines"
+    depicts_characters:
+      - "vera-moonwhisper"
+      - "grimjaw-ironbeard"
+      - "thorne-brightward"
+      - "aldwin-gentleheart"
+      - "veyra-thornwake"
+    character_states:
+      vera-moonwhisper: |
+        Partial transformation. Amber eyes. Fur patches. Elongated canines. Inhuman fluidity.
+      grimjaw-ironbeard: |
+        Awed expression.
+      thorne-brightward: |
+        Steady but impressed.
+      aldwin-gentleheart: |
+        Staring with recognition.
+      veyra-thornwake: |
+        Measured assessment.
+    location: "westwall-courtyard"
+    lighting:
+      primary_source: "sunset + inner glow"
+      quality: "soft, luminous"
+      direction: "ambient/internal"
+      color_temperature: "gold/purple"
+      shadow_depth: "minimal, dreamy"
+      atmospheric: "otherworldly stillness"
+    palette:
+      dominant:
+        - "wolf amber"
+        - "twilight purple"
+        - "silver-gray"
+      accent:
+        - "golden edge-light"
+      avoid:
+        - "horror greens"
+    prompt_used: |
+      Lean half-elf woman in partial wolf transformation,
+      molten amber eyes, gray-silver fur patches on arms,
+      sharpened features and elongated canines,
+      howling in a stone military courtyard at twilight,
+      circle of awed witnesses in background,
+      purple and gold sunset sky,
+      classical oil painting, Pre-Raphaelite luminosity,
+      luminous quality, dreamy atmosphere,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, full werewolf, monster horror
+    tags:
+      - "ethereal"
+      - "symbol"
+      - "transformation"
+      - "vera"
+      - "wolf-call"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

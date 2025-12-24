@@ -1,0 +1,85 @@
+# chargen.yaml - Main Configuration
+# ============================================================================
+# This file contains API keys, provider settings, models, and batch config.
+# API keys can be overridden via environment variables:
+#   MYTHICINDEX_GOOGLE_API_KEY or GOOGLE_API_KEY
+#   MYTHICINDEX_OPENAI_API_KEY or OPENAI_API_KEY
+#   MYTHICINDEX_API_KEY (for remote sync)
+# ============================================================================
+
+# Workspace identification
+workspace:
+  id: "default"
+  name: "My Story"
+  slug: "my-story"
+
+# Remote sync configuration
+remote:
+  api_url: ""
+  api_key: ""  # Override with MYTHICINDEX_API_KEY
+  auto_sync: true
+  sync_interval_minutes: 5
+
+# AI Provider Configuration
+providers:
+  google:
+    api_key: ""  # Override with MYTHICINDEX_GOOGLE_API_KEY or GOOGLE_API_KEY
+    enabled: true
+    models:
+      # Model for analyzing existing images (vision API)
+      image_analysis: "gemini-3-pro-preview"
+      # Model for batch image analysis
+      batch_analysis: "gemini-2.0-flash"
+      # Model for batch image generation
+      batch_generation: "gemini-3-pro-image-preview"
+      # Model for single image generation
+      single_generation: "gemini-3-pro-image-preview"
+    defaults:
+      aspect_ratio: "1:1"
+      image_size: "1K"
+      response_mime_type: "image/png"
+      temperature: 1.0
+      top_p: 0.95
+      top_k: 64
+      candidate_count: 1
+    safety_settings: []
+
+  openai:
+    api_key: ""  # Override with MYTHICINDEX_OPENAI_API_KEY or OPENAI_API_KEY
+    enabled: true
+    models:
+      single_generation: "gpt-image-1.5"
+    defaults:
+      size: "1024x1024"
+      quality: "standard"
+
+# Default provider for image generation
+default_provider: "google"
+
+# Batch Processing Configuration
+batch:
+  model: "gemini-3-pro-image-preview"
+  poll_interval_ms: 30000
+  max_tasks_per_job: 500
+  upload_concurrency: 5
+  max_retries: 5
+  cleanup_after_success: true
+  artifact_dir: ".chargen/batch"
+
+# Path Configuration
+paths:
+  config_dir: "~/.mythicindex"
+  cache_db: "~/.mythicindex/cache.db"
+  drafts_dir: "~/.mythicindex/drafts"
+  images_dir: "~/.mythicindex/images"
+
+# Editor Configuration
+editor:
+  command: "code"
+  markdown_preview: true
+
+# Writing Configuration
+writing:
+  default_pov: "third-limited"
+  chapter_word_target: 3000
+  scene_separator: "* * *"

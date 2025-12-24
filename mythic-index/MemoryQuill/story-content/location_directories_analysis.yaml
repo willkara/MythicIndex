@@ -1,0 +1,237 @@
+analysis:
+  summary:
+    total_location_directories: 37
+    referenced: 25
+    unreferenced: 12
+    potential_duplicates: 6
+  unreferenced_directories:
+  - directory: bastion_DO_NOT_USE
+    reason: No chapter references found
+    has_imagery_yaml: false
+  - directory: dock-ward-warehouse-complex
+    reason: No chapter references found
+    has_imagery_yaml: true
+  - directory: druid-grove-healing-sanctuary
+    reason: No chapter references found
+    has_imagery_yaml: true
+  - directory: location-template
+    reason: No chapter references found
+    has_imagery_yaml: false
+  - directory: masons-guildhall
+    reason: No chapter references found
+    has_imagery_yaml: true
+  - directory: northern-sword-coast-wilderness
+    reason: No chapter references found
+    has_imagery_yaml: true
+  - directory: oakhaven
+    reason: No chapter references found
+    has_imagery_yaml: true
+  - directory: shepherds-rest-inn
+    reason: No chapter references found
+    has_imagery_yaml: true
+  - directory: silken-siren
+    reason: No chapter references found
+    has_imagery_yaml: true
+  - directory: the-spire-of-learning
+    reason: No chapter references found
+    has_imagery_yaml: true
+  - directory: the-wayward-compass
+    reason: No chapter references found
+    has_imagery_yaml: true
+  - directory: the-windborne-roost
+    reason: No chapter references found
+    has_imagery_yaml: true
+  potential_duplicates:
+  - locations:
+    - dock-ward
+    - dock-ward-warehouse-complex
+    similarity: 0.50 ratio
+    references:
+      dock-ward: 6
+      dock-ward-warehouse-complex: 0
+  - locations:
+    - dock-ward-warehouse-complex
+    - warehouse-complex
+    similarity: 0.77 ratio
+    references:
+      dock-ward-warehouse-complex: 0
+      warehouse-complex: 12
+  - locations:
+    - guildhall
+    - masons-guildhall
+    similarity: 0.72 ratio
+    references:
+      guildhall: 1
+      masons-guildhall: 0
+  - locations:
+    - spire-of-learning
+    - the-spire-of-learning
+    similarity: 0.89 ratio
+    references:
+      spire-of-learning: 4
+      the-spire-of-learning: 0
+  - locations:
+    - the-wayward-compass
+    - wayward-compass
+    similarity: 0.88 ratio
+    references:
+      the-wayward-compass: 0
+      wayward-compass: 3
+  - locations:
+    - the-windborne-roost
+    - windborne-roost
+    similarity: 0.88 ratio
+    references:
+      the-windborne-roost: 0
+      windborne-roost: 1
+  reference_counts:
+  - location: westwall-watchpost
+    chapter_count: 14
+    chapters:
+    - ch03-the-first-spark
+    - ch04-the-healers-calling
+    - ch05-the-weight-of-the-world
+    - ch07-the-westwall-welcome
+    - ch08-the-tracker-in-the-snow
+    - ch09-hearth-and-home
+    - ch12-watchpost-whispers
+    - ch13-spring-thaw
+    - ch14-black-hawks-strike
+    - ch15-battle-for-westwall
+    - ch15.5-what-the-city-heard
+    - ch16-bonds-of-community
+    - ch17-the-long-road-home
+    - ch3.5-ripples-and-reports
+  - location: warehouse-complex
+    chapter_count: 12
+    chapters:
+    - ch19-an-olive-branch
+    - ch20-silent-hand-revelation
+    - ch21-roots-and-reconnaissance
+    - ch22-the-citys-ledger
+    - ch24-debts-and-truths
+    - ch25-morning-rituals-and-academic-ventures
+    - ch26-the-weight-of-success
+    - ch27-official-channels
+    - ch29-the-proving-ground
+    - ch32-the-return-and-the-reckoning
+    - ch33-an-architects-honor
+    - ch34-the-azure-cage
+  - location: dock-ward
+    chapter_count: 6
+    chapters:
+    - ch03-the-first-spark
+    - ch18-the-gilded-cage
+    - ch19-an-olive-branch
+    - ch26.5-the-brokers-ledger
+    - ch3.5-ripples-and-reports
+    - ch33-an-architects-honor
+  - location: thornwood-forest
+    chapter_count: 5
+    chapters:
+    - ch04-the-healers-calling
+    - ch08-the-tracker-in-the-snow
+    - ch28-the-road-north
+    - ch30-the-silent-approach
+    - ch31-splintered-focus
+  - location: city-watch-headquarters
+    chapter_count: 4
+    chapters:
+    - ch20-silent-hand-revelation
+    - ch23.5-front-page-news
+    - ch27-official-channels
+    - ch32-the-return-and-the-reckoning
+  - location: spire-of-learning
+    chapter_count: 4
+    chapters:
+    - ch20-silent-hand-revelation
+    - ch23.5-front-page-news
+    - ch25-morning-rituals-and-academic-ventures
+    - ch26-the-weight-of-success
+  - location: waterdeep-chronicle
+    chapter_count: 3
+    chapters:
+    - ch11.5-wayside-whispers
+    - ch15.5-what-the-city-heard
+    - ch3.5-ripples-and-reports
+  - location: wayward-compass
+    chapter_count: 3
+    chapters:
+    - ch10-the-wayward-compass
+    - ch11.5-wayside-whispers
+    - ch17-the-long-road-home
+  - location: azure-pavilion
+    chapter_count: 2
+    chapters:
+    - ch19-an-olive-branch
+    - ch34-the-azure-cage
+  - location: blackvein-lode
+    chapter_count: 2
+    chapters:
+    - ch05-the-weight-of-the-world
+    - ch06-foundations-of-stone-and-spirit
+  - location: brightstone-healers-hall
+    chapter_count: 2
+    chapters:
+    - ch02-the-lantern-ward
+    - ch04-the-healers-calling
+  - location: castle-ward
+    chapter_count: 2
+    chapters:
+    - ch13-spring-thaw
+    - ch18-the-gilded-cage
+  - location: druid-grove-waterdeep
+    chapter_count: 2
+    chapters:
+    - ch18-the-gilded-cage
+    - ch20-silent-hand-revelation
+  - location: northern-road
+    chapter_count: 2
+    chapters:
+    - ch28-the-road-north
+    - ch30-the-silent-approach
+  - location: undershade-canyon
+    chapter_count: 2
+    chapters:
+    - ch01-ash-and-compass
+    - ch22-the-citys-ledger
+  - location: cids-workshop
+    chapter_count: 1
+    chapters:
+    - ch33-an-architects-honor
+  - location: croft-warehouse
+    chapter_count: 1
+    chapters:
+    - ch11-an-honest-coin
+  - location: great-library-waterdeep
+    chapter_count: 1
+    chapters:
+    - ch23-the-library-rescue
+  - location: guildhall
+    chapter_count: 1
+    chapters:
+    - ch15.5-what-the-city-heard
+  - location: korraths-office
+    chapter_count: 1
+    chapters:
+    - ch33-an-architects-honor
+  - location: merchants-rest-tavern
+    chapter_count: 1
+    chapters:
+    - ch23.5-front-page-news
+  - location: salamander-hearth-tavern
+    chapter_count: 1
+    chapters:
+    - ch2.5-echoes-in-the-city
+  - location: silent-hand-facility
+    chapter_count: 1
+    chapters:
+    - ch28-the-road-north
+  - location: stonebridge
+    chapter_count: 1
+    chapters:
+    - ch11-an-honest-coin
+  - location: windborne-roost
+    chapter_count: 1
+    chapters:
+    - ch28-the-road-north

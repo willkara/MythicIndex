@@ -1,0 +1,655 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: Echoes in the City
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch2.5-echoes-in-the-city"
+  chapter_number: 2.5
+  chapter_title: "Echoes in the City"
+  visual_thesis: "From firelit tavern warmth through gray stone debates to rain-dark intimacy, the legend spreads outward while the woman herself retreats inward—until shared purpose draws her back."
+  color_palette:
+    primary:
+      - "honey amber"
+      - "slate gray"
+      - "rain silver"
+      - "night blue"
+    accent:
+      - "chalk white"
+      - "torch orange"
+      - "teal"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 3
+    pastoral: 0
+    celebratory: 1
+    aquatic: 0
+    ethereal: 1
+    intimate: 2
+    kinetic: 0
+    ominous: 0
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: |
+      This chapter: Veyra is recovering from the Canyon Incident. She uses a WALKING STICK (new, wooden, plain) and moves with careful fragility rather than her usual grounded stillness. The burn scar is unchanged. Her gear is intact but she appears thinner, more exhausted—the survivor beneath the legend.
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: |
+      This chapter: Scene 2 (council chambers) - Thorne wears his faded blue cloak but NOT full armor; instead, a formal leather jerkin suitable for political meetings. His sword is at his hip. The gold sunburst sigil patch is prominent on his cloak. His hand rests on his sword hilt—not gripping, just present.
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+locations:
+  - ref: "salamander-hearth-tavern"
+    zones:
+      - id: "overview"
+        chapter_context: |
+          A working-class tavern with blackened timber beams aged to near-black, painted amber by hanging oil-lanterns. A commanding central hearthfire dominates the space, casting flickering warmth across scarred wooden tables and worn benches. The ceiling beams catch the light like honey on old wood. Smoke hangs in the upper air. The atmosphere is reverent despite the humble materials—a chapel built from ale and ash.
+
+  - ref: "council-chambers"
+    zones:
+      - id: "overview"
+        chapter_context: |
+          A cramped bureaucratic office drowning in parchment. Sepia light filters through unseen windows, illuminating dust motes over cluttered desks. Filing cabinets and document stacks frame the space. Political geometry in the desk arrangement—power expressed through furniture. Browns and tans dominate except for one jarring note: a small platinum purse sitting on the desk, catching light unnaturally bright against the dull surroundings.
+
+  - ref: "temple-steps"
+    zones:
+      - id: "overview"
+        chapter_context: |
+          Wide marble steps ascending into gray mist, grand buttresses looming overhead half-swallowed by dawn fog. The architecture is imposing—carved stone, religious grandeur—but the fog softens all edges. A crowd compressed between street level and divine architecture; common clay meeting sacred stone. Blank pillars wait for devotion to mark them.
+
+  - ref: "guard-barracks-mess"
+    zones:
+      - id: "overview"
+        chapter_context: |
+          A functional military mess hall: scarred wooden tables and benches, oil-lamps hanging from low beams, the smell of leather oil and bad stew made visible in the air. Watchmen's gear hangs on pegs. The space is utilitarian but warmed by camaraderie—soldiers at rest, sharing space and purpose.
+
+  - ref: "castle-balcony"
+    zones:
+      - id: "overview"
+        chapter_context: |
+          A liminal space between shelter and storm. Stone bench cold and hard, balustrade separating the viewer from the void beyond. Rain stitches silver lines between distant torch-pools in the city below. Fog rolls in from the harbor, swallowing lights one by one until only the brightest remain like fallen stars. The nearest torch creates a small island of amber warmth against vast rain-silver darkness.
+
+moments:
+  - id: "ch2.5-echoes-in-the-city-moment-01"
+    scene_id: "scn-02-5-01"
+    title: "Tavern Toast"
+    narrative_beat: "Working-class hands raising tankards in a shared toast to Veyra, the 'light that endured'."
+    visual_weight: "medium"
+    characters_present: []
+    location_zone: "salamander-hearth-tavern/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch2.5-echoes-in-the-city-moment-02"
+    scene_id: "scn-02-5-01"
+    title: "The Beacon in the Rain"
+    narrative_beat: "The tavern seen from the dark, rainy street, its amber windows reflecting in puddles like a sanctuary."
+    visual_weight: "medium"
+    characters_present: []
+    location_zone: "salamander-hearth-tavern/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch2.5-echoes-in-the-city-moment-03"
+    scene_id: "scn-02-5-02"
+    title: "The Moral Fulcrum"
+    narrative_beat: "Thorne standing firm against political spin, the platinum purse sitting between him and the fixer like a mine."
+    visual_weight: "high"
+    characters_present:
+      - "thorne-brightward"
+    location_zone: "council-chambers/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch2.5-echoes-in-the-city-moment-04"
+    scene_id: "scn-02-5-03"
+    title: "Drawing the Legend"
+    narrative_beat: "A priestess drawing the lantern-and-stars symbol in chalk on a temple pillar amidst the morning mist."
+    visual_weight: "high"
+    characters_present: []
+    location_zone: "temple-steps/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch2.5-echoes-in-the-city-moment-05"
+    scene_id: "scn-02-5-03"
+    title: "The Loaf of Life"
+    narrative_beat: "Mistress Dalra distributing bread at the temple steps, practical nourishment countering religious fervor."
+    visual_weight: "medium"
+    characters_present: []
+    location_zone: "temple-steps/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch2.5-echoes-in-the-city-moment-06"
+    scene_id: "scn-02-5-04"
+    title: "The First Heraldry"
+    narrative_beat: "The patrol gathered around Fayne's notebook, seeing the first rough sketch of the Company's symbol."
+    visual_weight: "medium"
+    characters_present:
+      - "thorne-brightward"
+    location_zone: "guard-barracks-mess/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch2.5-echoes-in-the-city-moment-07"
+    scene_id: "scn-02-5-05"
+    title: "Solitary Vigil"
+    narrative_beat: "Veyra alone on the balcony in the rain, walking stick across her knees, feeling the weight of the city's stories."
+    visual_weight: "hero"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "castle-balcony/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch2.5-echoes-in-the-city-moment-08"
+    scene_id: "scn-02-5-05"
+    title: "Tentative Connection"
+    narrative_beat: "Veyra's tattooed hand meeting Thorne's scarred sword-hand briefly over the lantern light."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    location_zone: "castle-balcony/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch2.5-echoes-in-the-city-img-02-5-01-01"
+    source_moment: "ch2.5-echoes-in-the-city-moment-01"
+    scene_id: "scn-02-5-01"
+    image_type: "mood"
+    category:
+      - "moment"
+      - "emotion"
+    scene_mood: "celebratory"
+    mood_rationale: "Communal moment of reverent gratitude. Warm firelight, multiple figures sharing space. The convivial made sacred."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      A half-full tavern at the moment of shared toast. Working-class hands raise foam-topped tankards throughout the frame. Oil-lanterns paint the blackened ceiling beams honey-amber. A central hearthfire crackles, its glow catching the faces of sailors and guards. Two moon-elf fiddlers have paused mid-song.
+    composition_notes: |
+      Medium-wide. Low angle looking up. Raised tankards against amber beams. Hearthfire left third. Depth through layered figures.
+    visual_hook: "Amber light catching the foam on raised tankards, held by scarred and calloused working hands"
+    depicts_characters: []
+    character_states: {}
+    location: "salamander-hearth-tavern"
+    lighting:
+      primary_source: "hearthfire + lanterns"
+      quality: "warm, flickering"
+      direction: "multiple"
+      color_temperature: "warm amber"
+      shadow_depth: "soft, warm"
+      atmospheric: "smoke haze"
+    palette:
+      dominant:
+        - "honey amber"
+        - "hearthfire orange"
+        - "aged wood brown"
+      accent:
+        - "pewter gray"
+        - "foam white"
+      avoid:
+        - "cool blues"
+    prompt_used: |
+      Medieval tavern at moment of communal toast,
+      rough hands raising foam-topped tankards,
+      blackened timber ceiling beams in amber light,
+      central hearthfire crackling warmly,
+      sailors and caravan guards in worn practical clothing,
+      classical oil painting, Dutch Golden Age warmth, Jan Steen style,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin
+    tags:
+      - "tavern"
+      - "toast"
+      - "celebratory"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch2.5-echoes-in-the-city-img-02-5-01-02"
+    source_moment: "ch2.5-echoes-in-the-city-moment-02"
+    scene_id: "scn-02-5-01"
+    image_type: "beat"
+    category:
+      - "location"
+      - "threshold"
+    scene_mood: "somber"
+    mood_rationale: "The 'Character's Sanctuary.' Highlighting the tavern as a beacon. Contrast between cold street and warm promise."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      A shot from the wet Dock Ward street at night. Steady rain slicking cobblestones that reflect honey-amber light from tavern windows. A large puddle captures a reflection of one glowing window and the fire within. Silhouetted figure about to cross the threshold.
+    composition_notes: |
+      Wide cinematic perspective. Puddle foreground left focal point. Tavern right half. Silhouette provides scale. High contrast rain-silver vs amber-gold.
+    visual_hook: "A rain-slicked street puddle reflecting the warm amber glow of a tavern window"
+    depicts_characters: []
+    character_states: {}
+    location: "salamander-hearth-tavern"
+    lighting:
+      primary_source: "tavern windows"
+      quality: "warm glow vs cold dark"
+      direction: "outward"
+      color_temperature: "warm amber vs rain-blue"
+      shadow_depth: "deep"
+      atmospheric: "rain, mist"
+    palette:
+      dominant:
+        - "amber window glow"
+        - "rain-dark gray"
+        - "wet stone charcoal"
+      accent:
+        - "puddle reflection gold"
+      avoid:
+        - "bright daylight"
+    prompt_used: |
+      Wide shot of a tavern exterior on a rainy night,
+      wet cobblestones reflecting warm amber light from windows,
+      puddle in foreground with reflection of firelight,
+      lone silhouette opening the door to enter,
+      atmosphere of refuge and sanctuary,
+      classical oil painting, chiaroscuro, maritime realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, sunny
+    tags:
+      - "location"
+      - "refuge"
+      - "rain"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch2.5-echoes-in-the-city-img-02-5-02-01"
+    source_moment: "ch2.5-echoes-in-the-city-moment-03"
+    scene_id: "scn-02-5-02"
+    image_type: "anchor"
+    category:
+      - "character"
+      - "moment"
+      - "action"
+    scene_mood: "somber"
+    mood_rationale: "Political confrontation. Cold fury restrained. The corruption made tangible. Rembrandt chiaroscuro."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Cramped bureaucratic office. Thorne Brightward broad-shouldered in faded blue cloak, hand resting on sword hilt. Leaning into the space of a thin fixer in dark robes. Between them on a cluttered desk: a small platinum purse catching light. Female clerk writing in shadows.
+    composition_notes: |
+      Thorne fills right two-thirds. Fixer shrinks left. Purse geometric center. Hard side-lighting right. Depth through paper haze.
+    visual_hook: "Thorne's scarred hand resting on sword hilt while the platinum purse sits between them like an unexploded mine."
+    depicts_characters:
+      - "thorne-brightward"
+    character_states:
+      thorne-brightward: |
+        Leaning forward. Hand on hilt. Cold fury. Blue cloak with sunburst. Steel-gray crop.
+    location: "council-chambers"
+    lighting:
+      primary_source: "harsh window light"
+      quality: "hard, dramatic"
+      direction: "side"
+      color_temperature: "cool, clinical"
+      shadow_depth: "deep, rich"
+      atmospheric: "dust motes"
+    palette:
+      dominant:
+        - "sepia brown"
+        - "parchment tan"
+        - "shadow"
+      accent:
+        - "platinum gleam"
+        - "blue cloak"
+      avoid:
+        - "warm reds"
+    prompt_used: |
+      Middle-aged soldier with gray mustache in blue cloak confronting a thin man in robes,
+      cramped office with stacks of paper,
+      small platinum purse on desk catching bright light,
+      clerk writing in shadows,
+      hard side lighting,
+      classical oil painting, Rembrandt lighting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin
+    tags:
+      - "thorne"
+      - "confrontation"
+      - "politics"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch2.5-echoes-in-the-city-img-02-5-03-01"
+    source_moment: "ch2.5-echoes-in-the-city-moment-04"
+    scene_id: "scn-02-5-03"
+    image_type: "symbol"
+    category:
+      - "symbol"
+      - "moment"
+    scene_mood: "ethereal"
+    mood_rationale: "Legend being drawn into existence. Chalk glowing against stone. Mist-diffused dawn light."
+    aspect_ratio: "2:3"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Gray temple pillar rising into dawn mist. Chalk-white lines forming a lantern shape surrounded by four stars. Letters beneath: "Hope endures the flame." Dusted hands of a priestess working the final strokes. Chalk glows faintly. Pilgrims watch from steps below.
+    composition_notes: |
+      Low angle looking up. Symbol upper third. Hands enter from right. Pillar recedes into mist. Faces blur bottom third.
+    visual_hook: "White chalk against gray stone—the lantern shape emerging line by line, the four stars around it"
+    depicts_characters: []
+    character_states: {}
+    location: "temple-steps"
+    lighting:
+      primary_source: "diffused dawn"
+      quality: "soft, luminous"
+      direction: "ambient"
+      color_temperature: "silver-gray"
+      shadow_depth: "minimal"
+      atmospheric: "mist"
+    palette:
+      dominant:
+        - "gray stone"
+        - "chalk white"
+        - "mist silver"
+      accent:
+        - "dawn gold"
+      avoid:
+        - "saturated colors"
+    prompt_used: |
+      Close view of a stone temple pillar in dawn mist,
+      chalk-white drawing of a lantern and four stars on the stone,
+      the words 'Hope endures the flame' written beneath,
+      old hands of a priestess finishing the drawing,
+      chalk glowing faintly,
+      pilgrims watching in wonder,
+      classical oil painting, Pre-Raphaelite luminosity,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, harsh lighting
+    tags:
+      - "symbol"
+      - "hope"
+      - "temple"
+      - "ethereal"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch2.5-echoes-in-the-city-img-02-5-03-02"
+    source_moment: "ch2.5-echoes-in-the-city-moment-05"
+    scene_id: "scn-02-5-03"
+    image_type: "beat"
+    category:
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Practical nourishment vs religious fervor. Mistress Dalra as a solid, warming presence in the gray morning."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Mistress Dalra standing at the foot of the temple steps, a basket of fresh bread in her arms. She is handing a warm roll to a young pilgrim. Behind her, the gray mist swallows the upper steps where the preacher is gesturing wildly. Dalra is a solid, warm figure in the silver-gray morning.
+    composition_notes: |
+      Medium shot. Dalra foreground center. Pilgrim right. Preacher background upper left. Contrast between the warm bread and the cold mist.
+    visual_hook: "The steam rising from the fresh bread, catching the weak morning light."
+    depicts_characters: []
+    character_states: {}
+    location: "temple-steps"
+    lighting:
+      primary_source: "Dawn sun (filtered)"
+      quality: "Soft, misty"
+      direction: "Above"
+      color_temperature: "Cool silver/Warm gold"
+      shadow_depth: "Soft"
+      atmospheric: "Thick mist"
+    palette:
+      dominant:
+        - "gray stone"
+        - "mist white"
+        - "bread amber"
+      accent:
+        - "pilgrim's blue cloak"
+      avoid:
+        - "harshness"
+    prompt_used: |
+      Woman in medieval baker's attire distributing warm bread to people at the foot of large stone steps,
+      misty morning atmosphere,
+      steam rising from the basket of bread,
+      shouting preacher visible in the background mist,
+      atmosphere of practical compassion,
+      classical oil painting, realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "compassion"
+      - "mist"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch2.5-echoes-in-the-city-img-02-5-04-01"
+    source_moment: "ch2.5-echoes-in-the-city-moment-06"
+    scene_id: "scn-02-5-04"
+    image_type: "detail"
+    category:
+      - "symbol"
+      - "moment"
+    scene_mood: "intimate"
+    mood_rationale: "Vermeer's domestic poetry. Single lamp illuminating the notebook page. Gathering around meaningful object."
+    aspect_ratio: "4:5"
+    orientation: "portrait"
+    size: "1024x1280"
+    visual_description: |
+      Charcoal notebook held open by rough hands. Detailed sketch: lantern surrounded by a shield with smoke rising into wings. Page catches lamp light, glowing. Weathered faces lean in to look from edges. Background mess hall details blur. Thorne's silhouette in doorway deep background.
+    composition_notes: |
+      Close focus on notebook center third. Hands hold pages bottom. Faces crowd edges—over-shoulder POV. Thorne silhouette deep background.
+    visual_hook: "The sketch itself—rough charcoal lines forming the lantern-and-shield, with smoke taking flight"
+    depicts_characters:
+      - "thorne-brightward"
+    character_states:
+      thorne-brightward: |
+        Deep background silhouette. Blue cloak. Watching.
+    location: "guard-barracks-mess"
+    lighting:
+      primary_source: "oil lamp"
+      quality: "soft, warm"
+      direction: "above"
+      color_temperature: "warm amber"
+      shadow_depth: "soft"
+      atmospheric: "warm but functional"
+    palette:
+      dominant:
+        - "warm amber"
+        - "paper cream"
+        - "charcoal gray"
+      accent:
+        - "faded blue"
+      avoid:
+        - "cool tones"
+    prompt_used: |
+      Notebook held open showing a charcoal sketch of a lantern and shield symbol,
+      guards leaning in to look,
+      warm lamplight illuminating the page,
+      shadowed barracks interior,
+      silhouette of commander in doorway background,
+      classical oil painting, Vermeer lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "symbol"
+      - "sketch"
+      - "intimate"
+      - "mess-hall"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch2.5-echoes-in-the-city-img-02-5-05-01"
+    source_moment: "ch2.5-echoes-in-the-city-moment-07"
+    scene_id: "scn-02-5-05"
+    image_type: "hero"
+    category:
+      - "character"
+      - "emotion"
+      - "moment"
+    scene_mood: "somber"
+    mood_rationale: "Survivor alone with her survival. Deep shadows, melancholy weight. Person beneath the legend. Rembrandt dignity."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Veyra Thornwake sits alone on a cold stone bench at a castle balcony. Small figure against vast dark. Walking stick across knees. Burn scar catches nearest torch-pool light. Beyond balustrade, fog swallows city lights. Rain silver lines. Lantern at hip glows warm but small.
+    composition_notes: |
+      Ultra-wide. Veyra left third. Fog/rain void right two-thirds. High angle emphasizes vulnerability. Torch creates amber rim light on profile.
+    visual_hook: "The walking stick—a detail that grounds her as recovering, not triumphant."
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Seated. Walking stick on knees. Bowed head. Exhausted. Burn scar catching light. Thinner than normal.
+    location: "castle-balcony"
+    lighting:
+      primary_source: "torch-pool"
+      quality: "hard edge to soft dissolution"
+      direction: "side"
+      color_temperature: "amber vs rain-silver"
+      shadow_depth: "deep, consuming"
+      atmospheric: "rain, fog"
+    palette:
+      dominant:
+        - "night blue"
+        - "rain silver"
+        - "fog gray"
+      accent:
+        - "torch amber"
+        - "lantern gold"
+      avoid:
+        - "bright colors"
+    prompt_used: |
+      Scarred woman with mohawk sitting alone on a castle balcony at night in the rain,
+      small figure against a vast dark foggy void,
+      wooden walking stick across her knees,
+      prominent burn scar on face catching amber light from a torch,
+      battered lantern at hip,
+      atmosphere of exhaustion and solitary burden,
+      ultra-wide cinematic shot,
+      classical oil painting, Rembrandt lighting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, triumphant
+    tags:
+      - "hero"
+      - "isolation"
+      - "somber"
+      - "veyra"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch2.5-echoes-in-the-city-img-02-5-05-02"
+    source_moment: "ch2.5-echoes-in-the-city-moment-08"
+    scene_id: "scn-02-5-05"
+    image_type: "detail"
+    category:
+      - "character"
+      - "emotion"
+      - "moment"
+    scene_mood: "intimate"
+    mood_rationale: "Tentative warmth against vast darkness. Vermeer's tender observation of meaningful gestures. Hands as carriers of character."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Extreme close focus on two hands meeting briefly. Veyra's hand (tattooed, lean) touches Thorne's hand (ruddy, broader, scarred). Touch is light. Between them, lantern glows warm amber on bench. Rain-mist darkness background. Walking stick and mugs nearby.
+    composition_notes: |
+      Square format. Hands center focal point. Lantern below center. Rule of thirds: hands meet at center. Background dissolves into dark.
+    visual_hook: "Her teal-tattooed hand against his scarred sword-hand—two different kinds of damage meeting"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    character_states:
+      veyra-thornwake: |
+        Only hand visible. Tattooed. Reaching.
+      thorne-brightward: |
+        Only hand visible. Scarred. Accepting.
+    location: "castle-balcony"
+    lighting:
+      primary_source: "lantern"
+      quality: "soft, warm, close"
+      direction: "below"
+      color_temperature: "warm amber"
+      shadow_depth: "soft"
+      atmospheric: "rain-mist darkness"
+    palette:
+      dominant:
+        - "warm amber"
+        - "skin tones"
+        - "soft shadow"
+      accent:
+        - "teal tattoos"
+      avoid:
+        - "harsh contrasts"
+    prompt_used: |
+      Extreme close-up of a tattooed hand touching a scarred hand,
+      fingertips meeting knuckles,
+      battered lantern glowing amber from below,
+      soft lighting against dark rainy background,
+      moment of tentative connection,
+      classical oil painting, Vermeer lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "detail"
+      - "touch"
+      - "connection"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

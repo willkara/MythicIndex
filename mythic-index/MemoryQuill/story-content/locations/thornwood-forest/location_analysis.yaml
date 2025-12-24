@@ -1,0 +1,740 @@
+location_identity:
+  slug: "thornwood-forest"
+  name: "Thornwood Forest"
+  location_type: "wilderness"
+  
+  narrative_soul: |
+    The Thornwood is nature stripped of comfort—ancient, indifferent, and hungry for the careless. It serves as the story's wilderness crucible, where the Company must rely on skill rather than walls, and where Veyra's expertise transforms from "useful" to "essential." Near the Silent Hand facility, the forest becomes something worse: a natural space twisted into wrongness, its watchful quality turned predatory.
+    
+  one_line_essence: "Ancient indifference that punishes the unwary and hides corruption"
+  
+  symbolic_weight:
+    primary_symbol: "Nature's indifference—the world outside city law and human order"
+    supporting_symbols:
+      - "Crucible of competence—where skill matters more than rank"
+      - "Corruption barometer—the forest reflects unnatural taint"
+      - "The hunter's domain—Veyra's element where she excels"
+    thematic_tensions:
+      - "Beauty vs. lethality"
+      - "Natural watchfulness vs. unnatural surveillance"
+      - "Sanctuary vs. threat"
+      - "Known trails vs. shifting terrain"
+
+  transformation_arc: |
+    The Thornwood doesn't change so much as reveal different faces. In early appearances (Chapter 8), it's a dangerous but comprehensible wilderness—respect it, and survive. As the Company approaches Silent Hand territory, the forest transitions from indifferent to actively hostile, reflecting magical corruption. The same ancient trees that offered shelter now seem to lean in with predatory interest.
+
+physical_truth:
+  construction_style: "Old-growth temperate forest, centuries of accumulated growth and decay"
+  primary_materials:
+    - "Ancient hardwood and conifer trunks"
+    - "Layered leaf-mold and needle carpet"
+    - "Exposed granite outcrops"
+    - "Clear cold streams"
+    - "Snow and ice (winter)"
+    - "Mud and standing water (spring)"
+  scale_impression: "Claustrophobic in the dense wood, cathedral-vast where canopy lifts; always feels larger than it should, easy to lose direction within a dozen steps"
+  
+  visual_signature: |
+    Interlocking branches that create a ceiling swallowing light, turning midday into twilight. Deep shadow corridors between massive trunks, broken only by sudden shafts of pale illumination. The forest "closes" visually—sightlines end in brush walls and root tangles, hiding what lies beyond each turn.
+    
+  sound_signature: |
+    Amplified small sounds—every footstep crunches, every branch scrapes against cloth. Wind moves through high canopy like distant surf. Bird calls and sudden coordinated silences that signal predator presence. The disconcerting hush under winter snow, where sound dampens to near-nothing.
+    
+  scent_signature: |
+    Pine resin and wet bark; mineral cold rising from streams. In thaw: rich rot, mushroom-earth, decay-sweet leaf mold. Near corrupted zones: a faint metallic tang, ozone-sharp, that doesn't belong to any natural process.
+    
+  tactile_signature: |
+    Cold that seeks every seam in clothing. Ground that shifts—root-webs catching boots, mud grabbing ankles, snow crusts breaking through to soft powder beneath. Bark rough under steadying hands, damp seeping through leather.
+    
+  canon_specifics:
+    - detail: "Interlocking branches that swallow sunlight, turning midday into twilight"
+      source: "description.md - Geography & Terrain"
+      visual_importance: "high"
+      
+    - detail: "Snow-laden boughs forming white ceiling in winter"
+      source: "description.md - Seasonal Character"
+      visual_importance: "high"
+      
+    - detail: "Brush walls and fallen logs creating natural blind corners"
+      source: "description.md - Geography & Terrain"
+      visual_importance: "high"
+      
+    - detail: "Clear streams carrying pine-scented breath, icing over in winter"
+      source: "description.md - Geography & Terrain"
+      visual_importance: "medium"
+      
+    - detail: "Old stonework and ruins appearing without warning, reclaimed by forest"
+      source: "description.md - Built Remnants"
+      visual_importance: "medium"
+      
+    - detail: "Dappled, unreliable light—bright shafts one moment, swallowed shadow the next"
+      source: "description.md - Sensory Environment"
+      visual_importance: "high"
+      
+    - detail: "Wildlife reacting as a 'single system' to disruption"
+      source: "inhabitants.md - Wildlife"
+      visual_importance: "medium"
+      
+    - detail: "Near Silent Hand: water with magical suppression, forest feels hostile and observing"
+      source: "description.md - Arc-Specific Alterations"
+      visual_importance: "high"
+    
+  light_character: |
+    Light in the Thornwood is treacherous and theatrical. The interlocking canopy creates a twilight default, with sudden shafts of pale gold breaking through where branches have fallen or growth patterns allow. These shafts move with wind and sun angle, making static light sources unreliable. Under winter snow, light reflects upward from the ground, creating an eerie luminosity. In thaw, fog diffuses everything into gray murk.
+    
+  weather_influence: |
+    Weather transforms the Thornwood entirely. Winter brings lethal cold and a hushed cathedral quality—beautiful and deadly. Spring thaw turns the same paths to quagmire, raises fog in hollows, and fills the air with decay-sweet rot. Storm conditions can erase trails entirely, and sudden rain transforms manageable streams into barriers.
+
+contextual_place:
+  region: "Northern Sword Coast, north of Waterdeep"
+  neighborhood_character: "Wild border territory between civilization and deeper wilderness; shelters settlements like Millbridge in its shadow while harboring ruins, predators, and—during the Silent Hand arc—organized hostile presence"
+  
+  approach_sequences:
+    - name: "From the south (Waterdeep road)"
+      description: "A day's ride through increasingly sparse farmland that gives way to dense treeline. The forest edge is abrupt—one moment open fields, the next a wall of trunks."
+      first_impression: "The world narrows and darkens. The sky closes overhead."
+      
+    - name: "From Windborne Roost"
+      description: "The Roost sits at the southern edge, a waystation before the deep wood. Beyond it, trails narrow and branch, requiring local knowledge or skilled tracking."
+      first_impression: "Leaving safety behind; the forest swallows you."
+      
+    - name: "Approaching Silent Hand territory"
+      description: "The forest changes character—wildlife grows agitated or vanishes, and a wrongness seeps into the air. The watchful quality of the wood turns predatory."
+      first_impression: "Something is off. The forest notices you and doesn't like what it sees."
+      
+  visible_beyond:
+    - direction: "Above/through canopy breaks"
+      what_visible: "Glimpses of gray sky, occasional mountain peaks to the north"
+      
+    - direction: "Clearings"
+      what_visible: "Brief openings revealing rocky outcrops, stream valleys, the disorienting similarity of tree-walls in every direction"
+      
+  spatial_relationship: "The Thornwood is transitional space—between the civilized coast and the true northern wild, between safety and threat. It must be crossed, not settled."
+
+zones:
+  - slug: "deep-wood"
+    name: "The Deep Wood"
+    zone_type: "heart"
+    location_within: "Central forest, far from any settlement edge"
+    
+    physical_description: |
+      The oldest part of the Thornwood, where trunks grow massive and the canopy is nearly complete. Light rarely reaches the forest floor, which is carpeted in decades of compressed leaves and moss. Sounds carry strangely—both dampened and amplified. The air is cold and still, heavy with pine resin and the mineral smell of deep earth.
+      
+    narrative_function: "The crucible—where travel becomes survival test, where tracking skill is essential, where the Company is truly beyond help"
+    
+    emotional_register: "Ancient, watching, indifferent; beautiful in a way that reminds you of your own smallness"
+    
+    character_associations:
+      - character: "Veyra Thornwake"
+        relationship: "Her element—where she is most capable and most herself"
+        typical_activities:
+          - "Leading the Company through game trails invisible to others"
+          - "Reading wildlife behavior as warning system"
+          - "Finding safe camp sites and defensible positions"
+          
+    signature_details:
+      - "Massive trunk girths requiring two or three people to circle"
+      - "Nearly complete canopy creating permanent twilight"
+      - "Moss-covered root systems rising like frozen waves"
+      - "Sudden silence when predators move nearby"
+      
+    light_conditions:
+      natural: "Permanent twilight; occasional shafts through canopy breaks"
+      artificial: "Torchlight swallowed quickly; campfires create islands of orange in overwhelming dark"
+      
+    mood_affinity:
+      - "somber"
+      - "tense"
+
+  - slug: "winter-cathedral"
+    name: "Winter Cathedral (Seasonal)"
+    zone_type: "heart"
+    location_within: "Any part of the Thornwood under winter conditions"
+    
+    physical_description: |
+      Snow-laden boughs transform the canopy into a white ceiling; branches crack under weight. The forest floor is buried under drifts that hide hazards. Sound dampens to an eerie quiet, broken only by the occasional snap of ice or sudden rush of startled wings. Wind seeks every seam in clothing, and stillness steals heat.
+      
+    narrative_function: "The Chapter 8 environment—the tracker-in-snow setting where the Company first encounters the Thornwood's lethal beauty"
+    
+    emotional_register: "Hushed reverence and creeping danger; beautiful enough to kill you"
+    
+    character_associations:
+      - character: "Veyra Thornwake"
+        relationship: "Reading snow for tracks, finding ridge spines above drifts"
+        typical_activities:
+          - "Breaking trail for the Company"
+          - "Identifying exposure risks and shelter needs"
+          - "Reading the forest's winter warnings"
+          
+    signature_details:
+      - "White canopy ceiling of snow-bowed branches"
+      - "Breath visible in cold air"
+      - "Boot-depth snow with uncertain crust"
+      - "Bare dark trunks against white"
+      - "Icicles on stream edges"
+      
+    light_conditions:
+      natural: "Bright reflection from snow below, gray-white from canopy above; eerie luminosity"
+      artificial: "Fire smoke rising straight in still air; warmth visible as steam"
+      
+    mood_affinity:
+      - "somber"
+      - "quiet power"
+
+  - slug: "thaw-labyrinth"
+    name: "Thaw Labyrinth (Seasonal)"
+    zone_type: "heart"
+    location_within: "Any part of the Thornwood during spring thaw"
+    
+    physical_description: |
+      The ground becomes a quagmire that grabs boots and hooves; paths widen into churned channels. Air thickens with damp earth and decay-sweet leaf rot; fog collects in low hollows at dawn. Trails shift as water reroutes; landmarks become the only reliable navigation. Everything drips; everything rots.
+      
+    narrative_function: "Later-arc travel difficulty; terrain that slows pursuit or approach, requiring different skills than winter"
+    
+    emotional_register: "Oppressive, claustrophobic, exhausting; the forest actively resisting passage"
+    
+    character_associations:
+      - character: "Veyra Thornwake"
+        relationship: "Finding dry ridge routes, identifying firm footing"
+        typical_activities:
+          - "Testing ground before weight commitment"
+          - "Reading fog patterns for navigation"
+          - "Selecting camp sites above mud level"
+          
+    signature_details:
+      - "Ankle-deep mud sucking at every step"
+      - "Fog filling hollows at dawn and dusk"
+      - "Dripping branches and saturated air"
+      - "Decay-sweet smell of rotting leaves"
+      - "Mushrooms and new growth on fallen logs"
+      
+    light_conditions:
+      natural: "Gray and diffuse; fog scatters light into uniform murk"
+      artificial: "Halos around any light source; dampness makes fires difficult"
+      
+    mood_affinity:
+      - "tense"
+      - "intimate"
+
+  - slug: "game-trails"
+    name: "Game Trails and Ridge Spines"
+    zone_type: "liminal"
+    location_within: "Threading through the forest, known to trackers and locals"
+    
+    physical_description: |
+      Narrow paths worn by deer and other wildlife, often following ridge spines that keep feet above mud and snow. Invisible to untrained eyes, obvious to those who know what to look for. They wind unpredictably but offer faster, safer passage than breaking through brush.
+      
+    narrative_function: "The difference between competent wilderness travel and disaster; Veyra's domain"
+    
+    emotional_register: "Hidden knowledge, earned passage; the forest rewarding skill"
+    
+    character_associations:
+      - character: "Veyra Thornwake"
+        relationship: "These are her highways—she reads them like others read city streets"
+        typical_activities:
+          - "Leading the Company along invisible routes"
+          - "Reading track signs for wildlife and hostile presence"
+          - "Choosing which trails to follow and when to leave them"
+          
+    signature_details:
+      - "Compressed leaf-mold from repeated passage"
+      - "Broken twigs and bark rubs at animal height"
+      - "Slight depression in otherwise level ground"
+      - "Ridge spines rising just above surrounding terrain"
+      
+    light_conditions:
+      natural: "Same as surrounding forest, but often following natural light channels"
+      artificial: "Avoided—light on trails attracts attention"
+      
+    mood_affinity:
+      - "tense"
+      - "intimate"
+
+  - slug: "stream-crossings"
+    name: "Streams and Seeps"
+    zone_type: "threshold"
+    location_within: "Threading through low points throughout the forest"
+    
+    physical_description: |
+      Clear, cold streams fed by snowmelt and underground seeps. In winter, they ice over into deceptive crossings that may hold weight or may break through to numbing water. In thaw, they swell into barriers. They carry the scent of pine and wet earth, and their banks are often the only open sightlines in dense wood.
+      
+    narrative_function: "Navigation landmarks, hazard points, and tactical considerations; places where the Company must make crossing decisions"
+    
+    emotional_register: "Brief clarity in confusion; danger disguised as beauty"
+    
+    character_associations:
+      - character: "Veyra Thornwake"
+        relationship: "Reading ice thickness, finding safe fords"
+        typical_activities:
+          - "Testing crossings before the Company commits"
+          - "Using streams as navigation references"
+          - "Identifying ambush risk at crossing points"
+          
+    signature_details:
+      - "Clear water over dark stone beds"
+      - "Ice shelves along edges in winter"
+      - "Wider sightlines along stream corridors"
+      - "Animal tracks concentrated at crossing points"
+      
+    light_conditions:
+      natural: "Brighter along stream corridors where canopy thins; water reflects light"
+      artificial: "Fire near water for camp sites (water source, but exposed)"
+      
+    mood_affinity:
+      - "tense"
+      - "somber"
+
+  - slug: "rocky-outcrops"
+    name: "Rocky Outcrops and Overwatch Points"
+    zone_type: "perimeter"
+    location_within: "Scattered throughout, rising above the canopy in places"
+    
+    physical_description: |
+      Granite formations pushing through the forest floor, some large enough to break the canopy and offer views of surrounding terrain. The stone is cold and slick with moisture or ice, but provides solid footing and defensible positions. They're the closest thing to tactical high ground in the dense wood.
+      
+    narrative_function: "Observation and defense points; where the Company can see and be seen; rest points with strategic value"
+    
+    emotional_register: "Brief relief from claustrophobia; cold clarity; tactical assessment"
+    
+    character_associations:
+      - character: "Veyra Thornwake"
+        relationship: "Uses for orientation and threat assessment"
+        typical_activities:
+          - "Climbing for overwatch on approach"
+          - "Identifying landmarks and route planning"
+          - "Signaling or observation duties"
+          
+    signature_details:
+      - "Gray granite pushing through leaf mold"
+      - "Lichen and moss on shaded faces"
+      - "Stunted growth and wind exposure at height"
+      - "Long sightlines when above canopy"
+      
+    light_conditions:
+      natural: "Full light above canopy; dappled on lower stones"
+      artificial: "Visible for great distance—avoided except for signaling"
+      
+    mood_affinity:
+      - "quiet power"
+      - "tense"
+
+  - slug: "hidden-hollows"
+    name: "Hidden Hollows"
+    zone_type: "sanctuary"
+    location_within: "Depressions throughout the forest, often at the base of fallen giants"
+    
+    physical_description: |
+      Natural depressions created by topography, root systems, or fallen trees. They offer concealment and shelter from wind, but can also trap cold air, collect water, and hide hazards. A skilled tracker knows which are safe camps and which are death traps.
+      
+    narrative_function: "Camp sites, ambush positions, or places to hide; safety and danger in the same form"
+    
+    emotional_register: "Shelter and vulnerability; the gamble of concealment"
+    
+    character_associations:
+      - character: "Veyra Thornwake"
+        relationship: "Selecting safe hollows, avoiding trap terrain"
+        typical_activities:
+          - "Identifying defensible overnight positions"
+          - "Recognizing hollows that collect cold/water"
+          - "Using hollows for concealment from patrols"
+          
+    signature_details:
+      - "Fallen logs creating natural windbreaks"
+      - "Moss-lined depressions"
+      - "Root caves at the base of tilted trees"
+      - "Fog pooling at dawn in low points"
+      
+    light_conditions:
+      natural: "Darker than surrounding forest; sheltered from overhead light"
+      artificial: "Fires concealed by terrain; smoke behavior varies"
+      
+    mood_affinity:
+      - "intimate"
+      - "tense"
+
+  - slug: "ruins-ground"
+    name: "Ruins Ground"
+    zone_type: "forge"
+    location_within: "Scattered throughout; the Old Thornwood Ruins are the most significant"
+    
+    physical_description: |
+      Ancient stonework appearing without warning where the forest has reclaimed it—collapsed foundations, broken walls, hidden pits. The ruins are hazards as much as landmarks, their stones slick with moss, their depths uncertain. They speak of people who lived here before and didn't survive.
+      
+    narrative_function: "Physical hazards and narrative weight; reminders of impermanence; the Thornwood's victory over civilization"
+    
+    emotional_register: "Melancholy, danger, mystery; the forest always wins"
+    
+    character_associations: []
+    
+    signature_details:
+      - "Moss-covered stone walls at knee height"
+      - "Foundation outlines visible in leaf cover"
+      - "Hidden pits where cellars collapsed"
+      - "Trees growing through and around stonework"
+      
+    light_conditions:
+      natural: "Often in slight clearings where stone prevented growth"
+      artificial: "Dangerous—uncertain footing in darkness"
+      
+    mood_affinity:
+      - "somber"
+      - "tense"
+
+  - slug: "contaminated-zone"
+    name: "Corrupted Forest (Silent Hand Territory)"
+    zone_type: "liminal"
+    location_within: "Northern reaches, approaching the Silent Hand facility"
+    
+    physical_description: |
+      The forest here feels fundamentally wrong. The watchful quality that pervades the Thornwood becomes actively hostile—the woods seem to observe intruders with intelligence rather than instinct. Wildlife is either agitated to the point of aggression or unnaturally absent. Water carries a magical suppression signature, and the air holds a faint metallic tang of ozone that doesn't belong to any natural process. Patrol traces, tripwires, and manufactured "natural" obstacles blend into the environment.
+      
+    narrative_function: "The approach to the Silent Hand facility; the forest as corrupted by magical wrongness; escalating tension before the infiltration"
+    
+    emotional_register: "Wrongness, predatory attention, the natural made unnatural"
+    
+    character_associations:
+      - character: "Veyra Thornwake"
+        relationship: "The forest she knows made hostile and strange; her skills still apply but the rules have changed"
+        typical_activities:
+          - "Identifying tripwires and manufactured obstacles"
+          - "Reading patrol patterns in sign and silence"
+          - "Navigating terrain designed to channel intruders"
+          
+    signature_details:
+      - "Same ancient trees but wrong somehow—leaning in, watching"
+      - "Unnatural silence where wildlife should be"
+      - "Subtle tripwires disguised as fallen branches"
+      - "Metallic ozone scent"
+      - "Water that tastes of suppression"
+      
+    light_conditions:
+      natural: "Same dappled twilight, but shadows seem to deepen when observed"
+      artificial: "Absolutely forbidden—reveals position to hostile watchers"
+      
+    mood_affinity:
+      - "tense"
+      - "somber"
+
+temporal_states:
+  daily_cycle:
+    - time: "pre-dawn"
+      description: "Fog pools in hollows; the forest is at its most disorienting. Sound carries strangely. First bird calls begin."
+      activities:
+        - "Breaking camp before light"
+        - "Veyra reading fog patterns for the day's route"
+      mood: "Tense, uncertain"
+      light_quality: "Near-total darkness under canopy; gray murk in clearings"
+      
+    - time: "morning"
+      description: "Fog burns off as sun rises; brief period of best light as shafts break through canopy. Wildlife most active."
+      activities:
+        - "Primary travel hours"
+        - "Hunting or foraging if needed"
+      mood: "Purposeful, alert"
+      light_quality: "Dappled gold through canopy breaks; best visibility of the day"
+      
+    - time: "midday"
+      description: "Light directly overhead creates strange effects—canopy blocks most, but what gets through is harsh and vertical."
+      activities:
+        - "Rest if possible; hardest time to read terrain"
+        - "Water refill at streams"
+      mood: "Disorienting, exposed"
+      light_quality: "Twilight under dense canopy; harsh vertical shafts elsewhere"
+      
+    - time: "evening"
+      description: "Light angles produce longest shadows; forest 'closes' as visibility drops. Critical time to find camp."
+      activities:
+        - "Final push to reach camp site"
+        - "Veyra scouting ahead for defensible position"
+      mood: "Urgent, vulnerable"
+      light_quality: "Long shadows, deepening twilight; gold tones in clearings"
+      
+    - time: "night"
+      description: "Near-total darkness under canopy. Forest sounds amplified. Cold settles in hollows."
+      activities:
+        - "Watch rotations"
+        - "Fire tending (if safe)"
+        - "Rest"
+      mood: "Watchful, contained"
+      light_quality: "Starlight in clearings only; fire-island against overwhelming dark"
+      
+  seasonal_variations:
+    - season: "Winter"
+      changes: "Snow cathedral—white canopy, hushed silence, lethal cold. Ground frozen but uncertain under snow. Streams ice over. Exposure becomes primary threat."
+      mood_shift: "Beautiful severity; reverent danger"
+      
+    - season: "Spring Thaw"
+      changes: "Mud labyrinth—quagmire ground, fog in hollows, decay-sweet air. Trails shift with water flow. Everything drips. Travel becomes exhausting."
+      mood_shift: "Oppressive, resistant; the forest fighting back"
+      
+    - season: "Summer" 
+      changes: "Densest canopy; near-total shade. Insects and humidity. Wildlife at peak population. Undergrowth at maximum."
+      mood_shift: "Thick, alive, watchful"
+      
+    - season: "Autumn"
+      changes: "Canopy thins as leaves fall; best sightlines of the year but ground slick with wet leaves. Animal activity high as creatures prepare for winter."
+      mood_shift: "Clarifying, transitional"
+      
+  story_timeline_states:
+    - state_name: "Chapter 8 - First Encounter"
+      chapter_range: "ch08"
+      description: "Winter conditions; the Company experiences the Thornwood as beautiful, dangerous wilderness. Veyra's skills prove essential."
+      
+    - state_name: "Silent Hand Arc - Approach"
+      chapter_range: "later arc"
+      description: "The forest becomes contaminated near hostile territory; natural watchfulness turns predatory. Same physical space, fundamentally different character."
+      
+  weather_states:
+    - condition: "Clear winter"
+      description: "Hushed cathedral; snow-laden boughs; dangerous beauty. Sound dampened, cold lethal."
+      mood: "Reverent tension"
+      
+    - condition: "Winter storm"
+      description: "Visibility drops to yards; wind-driven snow erases trails. Survival becomes immediate concern."
+      mood: "Crisis survival"
+      
+    - condition: "Spring fog"
+      description: "Ground-level visibility poor; landmarks essential. Disorienting, claustrophobic."
+      mood: "Lost, uncertain"
+      
+    - condition: "Spring rain"
+      description: "Everything drenched; streams become barriers. Mud deepens. Miserable travel."
+      mood: "Grinding endurance"
+      
+    - condition: "Clear summer"
+      description: "Hottest under canopy; still air, insects, humidity. Best season for overland travel despite discomfort."
+      mood: "Thick, watchful"
+
+character_space_relationships:
+  - character_slug: "veyra-thornwake"
+    character_name: "Veyra Thornwake"
+    
+    primary_association: "This is her element—the wilderness where her skills transform from 'useful' to 'essential.' The Thornwood is where Veyra is most herself and most capable."
+    
+    personal_zones:
+      - zone: "game-trails"
+        relationship: "These are her highways; she reads them like others read city streets"
+        typical_use: "Leading the Company along routes invisible to others"
+        
+      - zone: "rocky-outcrops"
+        relationship: "Observation and orientation points; where she gains tactical overview"
+        typical_use: "Scouting ahead, assessing threats, route planning"
+        
+      - zone: "hidden-hollows"
+        relationship: "She knows which offer shelter and which are traps"
+        typical_use: "Selecting camp sites, identifying ambush positions"
+        
+    signature_moments:
+      - moment: "First Chapter 8 tracking scene—reading the winter forest"
+        chapter: "ch08"
+        visual_potential: "Veyra ahead of the Company on a snow-covered game trail, reading sign that's invisible to others, the forest hushed and white around her"
+        
+      - moment: "Approaching Silent Hand territory—the forest becomes wrong"
+        chapter: "Silent Hand arc"
+        visual_potential: "Veyra's wariness as familiar terrain turns hostile; same skills, changed rules"
+        
+    perspective_quote: |
+      "City people think a forest is trees. It's not—it's a conversation happening too fast and too quiet for them to follow. Every broken twig, every bird call, every shift in the silence is telling you something. The Thornwood talks constantly. Most people just don't speak the language."
+
+narrative_beats:
+  - beat_id: "tracker-in-snow"
+    chapter: "ch08"
+    scene: "The Tracker in the Snow"
+    
+    what_happens: "The Company travels through the winter Thornwood; Veyra's tracking skills guide them through terrain that would defeat others"
+    
+    zones_involved:
+      - "winter-cathedral"
+      - "game-trails"
+      - "stream-crossings"
+    characters_present:
+      - "Veyra Thornwake"
+      - "Company members"
+    
+    visual_potential:
+      description: "The winter forest in its hushed cathedral state; figures moving through snow-laden trees; Veyra ahead reading invisible trails"
+      key_visual_hook: "White canopy overhead, dark trunks, small figures dwarfed by ancient forest"
+      suggested_mood: "somber"
+      
+    selection_score:
+      narrative_importance: 4
+      visual_distinctiveness: 5
+      emotional_resonance: 4
+      total: 13
+
+  - beat_id: "corrupted-approach"
+    chapter: "Silent Hand arc"
+    scene: "Approaching the facility"
+    
+    what_happens: "The Company enters territory where the forest has been magically contaminated; the natural watchfulness becomes predatory"
+    
+    zones_involved:
+      - "contaminated-zone"
+      - "game-trails"
+    characters_present:
+      - "Company members"
+      - "Veyra Thornwake"
+    
+    visual_potential:
+      description: "Same ancient forest but subtly wrong—trees leaning in, unnatural silence, the Company moving with heightened wariness"
+      key_visual_hook: "Familiar beauty twisted into wrongness; the forest watching with intelligence"
+      suggested_mood: "tense"
+      
+    selection_score:
+      narrative_importance: 5
+      visual_distinctiveness: 4
+      emotional_resonance: 4
+      total: 13
+
+recommended_images:
+  - image_type: "establishing"
+    priority: "primary"
+    
+    target: "The Thornwood in its winter cathedral state—the quintessential first impression"
+    
+    rationale: "Chapter 8 is titled 'The Tracker in the Snow'—the winter forest is the primary visual context for the Company's first Thornwood experience"
+    
+    suggested_mood: "somber"
+    suggested_time: "morning"
+    suggested_weather: "clear winter"
+    
+    characters_to_include: []
+    zone_focus: "winter-cathedral"
+    
+    key_elements:
+      - "Snow-laden boughs forming white canopy ceiling"
+      - "Massive dark trunks rising like cathedral columns"
+      - "Dappled light through canopy breaks"
+      - "Deep snow on forest floor"
+      - "Sense of scale—ancient trees dwarfing human presence"
+    
+    visual_hook: "White ceiling of snow-bowed branches over dark pillar-trunks; the hushed cathedral"
+    
+    composition_suggestion: "Wide vertical to emphasize tree height and canopy architecture; figures would be small or absent"
+
+  - image_type: "inhabited"
+    priority: "primary"
+    
+    target: "Veyra leading the Company through winter forest on an invisible game trail"
+    
+    rationale: "Captures the core character-space relationship that defines Thornwood scenes: Veyra's expertise transforming dangerous terrain into navigable passage"
+    
+    suggested_mood: "tense"
+    suggested_time: "morning"
+    suggested_weather: "clear winter"
+    
+    characters_to_include:
+      - "Veyra Thornwake"
+      - "Company members following"
+    zone_focus: "game-trails"
+    
+    key_elements:
+      - "Veyra ahead, confident posture, reading terrain"
+      - "Company following in single file"
+      - "Snow-covered game trail barely visible to untrained eye"
+      - "Dense forest walls on either side"
+      - "Breath visible in cold air"
+    
+    visual_hook: "The contrast between Veyra's confident navigation and the Company's careful following; the invisible trail made visible by their passage"
+    
+    composition_suggestion: "Medium shot following the line of travelers; depth emphasis showing forest closing behind and ahead"
+
+  - image_type: "temporal"
+    priority: "secondary"
+    
+    target: "The Thornwood in spring thaw—the mud labyrinth"
+    
+    rationale: "Provides visual contrast to winter scenes; demonstrates the forest's seasonal transformation and different challenges"
+    
+    suggested_mood: "tense"
+    suggested_time: "morning"
+    suggested_weather: "fog lifting"
+    
+    characters_to_include: []
+    zone_focus: "thaw-labyrinth"
+    
+    key_elements:
+      - "Fog pooling in hollows, beginning to lift"
+      - "Muddy ground with visible boot prints"
+      - "Dripping branches, saturated air"
+      - "New growth on fallen logs"
+      - "Gray-green color palette"
+    
+    visual_hook: "The oppressive closeness of fog-filled forest; the ground itself as obstacle"
+    
+    composition_suggestion: "Medium wide shot at ground-level perspective, emphasizing mud and low fog"
+
+  - image_type: "essence"
+    priority: "secondary"
+    
+    target: "The corrupted forest near Silent Hand territory—the same place made wrong"
+    
+    rationale: "Visualizes the critical arc-specific transformation; the natural becoming unnatural"
+    
+    suggested_mood: "tense"
+    suggested_time: "midday"
+    suggested_weather: "overcast"
+    
+    characters_to_include: []
+    zone_focus: "contaminated-zone"
+    
+    key_elements:
+      - "Same ancient trees but subtly wrong—leaning toward viewer"
+      - "Unnatural absence of wildlife"
+      - "Shadows that seem too deep"
+      - "Faint metallic quality to the light"
+      - "Sense of being observed"
+    
+    visual_hook: "Familiar forest elements made subtly threatening; the wrongness that Veyra would feel but might not be able to articulate"
+    
+    composition_suggestion: "Point-of-view shot as if entering hostile territory; trees framing like watchers"
+
+  - image_type: "zone"
+    priority: "optional"
+    
+    target: "A stream crossing in winter—ice-edged water, exposed sightlines"
+    
+    rationale: "Streams are critical navigation landmarks and hazard points; visually distinctive from dense forest"
+    
+    suggested_mood: "somber"
+    suggested_time: "morning"
+    suggested_weather: "clear winter"
+    
+    characters_to_include: []
+    zone_focus: "stream-crossings"
+    
+    key_elements:
+      - "Clear water over dark stone bed"
+      - "Ice shelves along stream edges"
+      - "Wider sightlines along stream corridor"
+      - "Canopy opening overhead"
+      - "Animal tracks concentrated at crossing"
+    
+    visual_hook: "The sudden openness of the stream corridor; clarity amid confusion"
+    
+    composition_suggestion: "Medium shot looking along stream corridor; emphasis on light breakthrough and water reflection"
+
+  - image_type: "zone"
+    priority: "optional"
+    
+    target: "Rocky outcrop breaking the canopy—the only high ground"
+    
+    rationale: "Provides visual contrast to forest claustrophobia; tactical importance to Company operations"
+    
+    suggested_mood: "quiet power"
+    suggested_time: "evening"
+    suggested_weather: "clear"
+    
+    characters_to_include: []
+    zone_focus: "rocky-outcrops"
+    
+    key_elements:
+      - "Gray granite rising above treeline"
+      - "Long sightlines to surrounding forest"
+      - "Lichen and stunted growth on stone"
+      - "Evening light catching the rock"
+      - "Forest canopy visible below as textured carpet"
+    
+    visual_hook: "The sudden gift of perspective after claustrophobic travel; the forest as a sea of green below"
+    
+    composition_suggestion: "High angle looking out from or toward outcrop; emphasis on elevation and sightlines"

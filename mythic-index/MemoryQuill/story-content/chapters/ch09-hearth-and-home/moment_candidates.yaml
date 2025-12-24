@@ -1,0 +1,428 @@
+chapter_analysis:
+  slug: "ch09-hearth-and-home"
+  chapter_number: 9
+  chapter_title: "Hearth and Home"
+  
+  visual_thesis: "From the solitary cold of burden carried alone to the warm shared resolve of a family deciding to grow together."
+  
+  dominant_mood_progression:
+    - "quiet vigilance"
+    - "cramped warmth"
+    - "affectionate strain"
+    - "determined hope"
+  
+  color_story:
+    opening: "dying ember gold against frost-gray stone, pre-dawn indigo"
+    climax: "amber forge-glow, warm brown leather, steam-white breath"
+    closing: "sunset gold bleeding to twilight purple, first starlight silver"
+
+  key_locations:
+    - slug: "westwall-watchpost-mess-hall"
+      name: "Westwall Watchpost - Mess Hall"
+      visual_character: "Stone walls exhaling visible cold, mismatched tables scarred by years of use, a dying hearth providing the only warm light against encroaching shadows. Frost patterns on interior windows. Every surface covered with something that doesn't quite fit."
+      time_of_day: "Pre-dawn to morning"
+      weather_atmosphere: "Winter cold, frost, visible breath"
+      
+    - slug: "westwall-watchpost-infirmary"
+      name: "Westwall Watchpost - Makeshift Infirmary"
+      visual_character: "A curtained corner carved from former storage space. An improvised table made from a door on sawhorses, three oil lamps casting conflicting shadows. Herbs in mismatched containers crowding every surface. The thin curtain doing nothing to block sound or provide dignity."
+      time_of_day: "Morning"
+      weather_atmosphere: "Close, damp air with smoke from oil lamps"
+      
+    - slug: "westwall-watchpost-courtyard"
+      name: "Westwall Watchpost - Training Yard"
+      visual_character: "A cramped thirty-foot square of uneven cobblestones hemmed by walls close enough to strike on a backswing. Muddy patches, worn stone, every inch memorized to avoid injury. The forge door barely clearing the practice space."
+      time_of_day: "Late morning"
+      weather_atmosphere: "Pale winter sun, dry cold"
+      
+    - slug: "westwall-watchpost-parapet"
+      name: "Westwall Watchpost - Watchtower Parapet"
+      visual_character: "Ancient battlements worn smooth by centuries, a narrow space between merlons barely wide enough for two. Forty-three steps up to solitude. The only place in the compound with an unobstructed view and room to breathe."
+      time_of_day: "Sunset"
+      weather_atmosphere: "Clear winter evening, first stars emerging"
+
+  active_characters:
+    - slug: "veyra-thornwake"
+      name: "Veyra Thornwake"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "protagonist"
+      emotional_arc: "vigilant burden → quiet concern → resolute determination"
+      arc_context: "Post-catalyst, established as Commander. This chapter shows her leadership maturing from reactive to proactive—recognizing problems before they become crises and beginning to plan for a future rather than just surviving the present."
+      visual_identifiers: "Jet black spiky mohawk with shaved sides, long braided lock with brown feathers and turquoise beads on right side. Prominent mottled reddish-brown burn scar covering left side of face from jaw to temple. Deep rich earth-brown complexion, intensely dark eyes. Teal-blue swirling tattoos on neck and left arm. Worn leather cuirass over dark blue tunic, battered golden-glowing lantern at belt."
+      draft_warning: false
+      
+    - slug: "thorne-brightward"
+      name: "Thorne Brightward"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "quiet support → tactical concern → partnership affirmation"
+      arc_context: "Established deputy commander. This chapter deepens his partnership with Veyra, showing their synchronized rhythms and shared vision. His military pragmatism complements her human-focused leadership."
+      visual_identifiers: "Steel-gray short military-cropped hair with receding hairline, thick groomed gray mustache. Ruddy weathered face, deep-set brown eyes. Steel breastplate over chainmail, faded deep blue wool cloak with golden sunburst sigil patch. Carries iron lantern and large shield."
+      draft_warning: false
+      
+    - slug: "aldwin-gentleheart"
+      name: "Brother Aldwin Gentleheart"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "quiet dedication → philosophical reflection → professional frustration"
+      arc_context: "Established company healer. This chapter shows him articulating his holistic healing philosophy while confronting the physical limitations that prevent him from practicing it properly."
+      visual_identifiers: "Compact sturdy halfling build. Short thick curly dark charcoal-brown hair heavily frosted with silver and gray at temples. Warm dark hazel eyes, weathered ruddy face. Moss-green wool cloak and cowl over studded brown leather doublet. Dark brown fingerless leather gloves, carries copper healing pan and herbal implements."
+      draft_warning: false
+      
+    - slug: "grimjaw-ironbeard"
+      name: "Grimjaw Ironbeard"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "steady anchor → masterful teacher → grandfatherly pride"
+      arc_context: "Established company engineer and mentor figure. This chapter showcases his adaptability—turning spatial constraints into teaching opportunities and demonstrating that wisdom transcends limitations."
+      visual_identifiers: "Elderly robust dwarf, barrel-chested with broad shoulders. Voluminous iron-gray hair and magnificent chest-covering beard with massive central braid secured by metal bands, smaller side braids with metal charms and weighted beads. Deep-set dark eyes beneath bushy gray eyebrows, rounded nose, battered calloused hands. Dark brown layered leathers, copper-colored riveted metal pauldrons. Carries 'Tremor' sledgehammer and small wooden cask."
+      draft_warning: false
+      
+    - slug: "vera-moonwhisper"
+      name: "Vera Moonwhisper"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "methodical routine → quiet concern → knowledge sharing"
+      arc_context: "Established scout, integrating into company life. This chapter shows her morning rituals and her growing role as teacher, sharing her ranger knowledge with others."
+      visual_identifiers: "Lean rangy half-elf build, pale fair complexion with light freckling. Thick dark chestnut brown hair in long practical single braid over right shoulder. Clear hazel eyes (shift to amber during magic), pointed ear tips visible. Faint green vine-patterned markings on right cheekbone and temple. Deep forest-green hooded cloak over fitted brown leather jerkin with front lacing. Carries 'Whisperwind' quarterstaff with green vine carvings, brass locket on leather cord. Echo the raven on shoulder or staff."
+      draft_warning: false
+      
+    - slug: "mistress-elba"
+      name: "Mistress Elba"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "frustrated efficiency → fond exasperation → determined complaint"
+      arc_context: "Established company cook and unofficial grandmother. This chapter centers her complaints as the voice of the space problem, her frustration laced with affection."
+      visual_identifiers: "173-year-old dwarven matriarch, 4'2\" with solid blocky frame, broad shoulders, thick muscular forearms. Warm ruddy complexion. Iron-gray hair pulled back with thick copper-red braid wrapped over crown like headband, heavy plait over left shoulder. Deep amber sharp eyes. Dark earth-brown wool dress with sleeves pushed up, heavy stained beige canvas apron. Small gold hoop earrings."
+      draft_warning: false
+      
+    - slug: "medic-halden"
+      name: "Medic Halden"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "professional focus → philosophical growth → quiet concern"
+      arc_context: "Learning to integrate his practical field medicine with Aldwin's holistic approach. This chapter deepens his understanding of healing beyond just closing wounds."
+      visual_identifiers: "Human male late 30s-early 40s, sturdy solid build. Tanned ruddy weathered complexion, dark brown short hair (mostly hidden by helmet), heavy stubble and dark sideburns. Dark brown weary heavy-lidded eyes, faint nervous tic at left eye corner. Tarnished grey steel plate armor over dark slate-blue padded gambeson, round steel kettle hat. Large brown leather medical satchel with red cross."
+      draft_warning: false
+      
+    - slug: "quartermaster-fayne"
+      name: "Quartermaster Fayne"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "observational → curious learner → pattern recognition"
+      arc_context: "Expanding skills beyond logistics, learning tracking from Vera. This chapter shows their appetite for knowledge and their role documenting everything."
+      visual_identifiers: "Rock gnome, 3'4\" with compact wiry frame and large prominent ears. Auburn short practical cropped hair, ruddy frecked complexion. Hazel intense observant eyes, faint scar through left eyebrow. Right hand fingers heavily stained with dark ink. Worn high-collared dark brown leather coat with heavy segmented leather pauldron bearing shield emblem on left shoulder. Signature brass spectacles with multiple swing-arm magnifying lenses."
+      draft_warning: false
+
+candidate_moments:
+  - moment_id: "ch09-hearth-and-home-moment-01"
+    source_scene: "scn-09-01"
+    
+    narrative_beat: "Veyra sits alone in the pre-dawn mess hall, maps spread before her weighted with whatever came to hand, tracing routes by the dying light of embers while frost patterns form on the windows and her breath still mists in the cold air."
+    subtext: "The burden of command carried in solitude. She absorbs the cold so others can wake to warmth. Her constant vigilance manifests as physical discomfort willingly borne."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 2
+      character_revelation: 5
+      symbolic_density: 4
+      total: 19
+    
+    score_rationale:
+      character_revelation_note: "Per development notes, Veyra's psychology is defined by trauma and purpose. This moment captures her 'guardian's stand' in its quietest form—the vigil before the day begins, carrying the weight so others don't have to."
+      relationship_context: "The maps represent her constant scanning for threats to her people, her refusal to be caught unprepared again after Undershade."
+    
+    suggested_type: "hero"
+    primary_subject: "Veyra Thornwake"
+    secondary_elements:
+      - "Tactical maps weighted with knife and salt cellar"
+      - "Dying hearth embers casting long shadows"
+      - "Delicate frost patterns on interior windows"
+      - "Cold stone walls exhaling visible breath"
+    
+    suggested_framing: "medium"
+    suggested_angle: "slightly-low"
+    
+    key_visual_hook: "The frost on the windows catching ember-light while Veyra's breath mists visibly in the dark—warmth barely reaching her despite sitting with her back to the fire."
+    
+    lighting_suggestion: "Dying hearth embers providing the only illumination—warm gold light fighting against cold pre-dawn darkness, casting long dancing shadows across the scarred tables."
+    
+    emotional_color: "Solitary vigilance"
+    
+    characters_present:
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Alone with her maps and her thoughts, planning routes and marking trouble spots, carrying the burden of leadership in the quiet hours before dawn."
+    
+    source_excerpts:
+      - "Veyra sat with her back to the fire, though its warmth barely reached her."
+      - "Her scarred fingers traced routes through the surrounding countryside, marking potential trouble spots with small notations, escape routes with dotted lines."
+      - "Frost had formed on the inside of the windows overnight, creating delicate patterns that would vanish with the first touch of morning sun."
+      - "Her breath still misted slightly in the cold air."
+    
+    selection_rationale: "This establishes the chapter's visual tone—the constraint of cold, the isolation of command, the constant planning. Veyra's choice to sit with her back to the fire despite the cold is a perfect physical manifestation of her protective nature: she doesn't seek comfort when there's work to be done."
+
+  - moment_id: "ch09-hearth-and-home-moment-02"
+    source_scene: "scn-09-02"
+    
+    narrative_beat: "Grimjaw's hammer strikes three measured times on the anvil at dawn, ringing clear through the stone corridors—his greeting to the day and the heartbeat that stirs the sleeping company into wakefulness."
+    subtext: "The rhythm of home. A community defined not by walls but by the sounds that mark their shared existence. The forge as both practical necessity and spiritual anchor."
+    
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 4
+      narrative_pivot: 2
+      character_revelation: 3
+      symbolic_density: 5
+      total: 17
+    
+    score_rationale:
+      character_revelation_note: "Per Grimjaw's profile, he is 'The Patriarch'—motivated by purpose and nurturing. His hammer strikes aren't just work; they're a gift of reliability to his found family."
+      relationship_context: "The text explicitly notes these strikes have 'become the heartbeat of their morning'—this is Grimjaw claiming his role as the company's anchor."
+    
+    suggested_type: "mood"
+    primary_subject: "Grimjaw Ironbeard"
+    secondary_elements:
+      - "Cramped forge space with ducked doorway"
+      - "Morning light cutting through forge-glow"
+      - "The silhouette of 'Tremor' hammer mid-strike"
+      - "Stone corridors carrying the sound"
+    
+    suggested_framing: "medium-wide"
+    suggested_angle: "low"
+    
+    key_visual_hook: "The moment of impact—hammer meeting anvil, the ring of steel visible in the cold air as a spray of sparks, first morning light streaming past Grimjaw's silhouette through the too-small doorway."
+    
+    lighting_suggestion: "Forge-fire amber from within the cramped space, competing with cold morning light streaming through the doorway—the visual of warmth emerging from constraint."
+    
+    emotional_color: "Steady reassurance"
+    
+    characters_present:
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "Greeting the dawn with his ritual hammer strikes, providing the reliable heartbeat that stirs the company to wakefulness."
+    
+    source_excerpts:
+      - "The first sound of the day was always Grimjaw's hammer. Three measured strikes on the anvil, each one ringing clear in the cold morning air—his way of greeting the dawn and announcing that the forge was lit."
+      - "The rhythm carried through the watchtower's stone corridors like a gentle bell, stirring the sleeping into wakefulness."
+      - "It had become the heartbeat of their morning, as reliable as sunrise itself."
+    
+    selection_rationale: "This is the visual manifestation of community rhythm—the sound that defines home. The cramped forge that forces Grimjaw to duck through the doorway paired with the massive symbolic action of his hammer creates visual tension between constraint and vitality."
+
+  - moment_id: "ch09-hearth-and-home-moment-03"
+    source_scene: "scn-09-02"
+    
+    narrative_beat: "The mess hall at breakfast—bodies pressed shoulder to shoulder on benches, mismatched bowls and repurposed measuring cups, Grimjaw standing to eat because he can't fit on the bench, people having to coordinate movements just to reach the salt."
+    subtext: "Abundance and scarcity simultaneously. The warmth of family made uncomfortable by physical limitation. Love cramped into a space that can't hold it."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 3
+      character_revelation: 3
+      symbolic_density: 4
+      total: 18
+    
+    score_rationale:
+      character_revelation_note: "This is an ensemble moment—but Veyra watching from the head of the table, cataloguing problems, shows her leadership mind at work even in domestic moments."
+      relationship_context: "The text notes 'the easy banter of her people' and 'a found family sharing breakfast'—this is what they're fighting to preserve and expand."
+    
+    suggested_type: "anchor"
+    primary_subject: "The assembled company"
+    secondary_elements:
+      - "Mismatched bowls and repurposed measuring cups"
+      - "Steam rising from porridge"
+      - "Grimjaw standing because he can't fit on the bench"
+      - "Veyra at the head watching with unguarded expression"
+      - "The wobbling extended table"
+    
+    suggested_framing: "wide"
+    suggested_angle: "slightly-elevated"
+    
+    key_visual_hook: "The contrast of Grimjaw's broad silhouette standing to eat while everyone else is crammed onto benches, elbows carefully coordinated, steam rising from too many bowls for the space."
+    
+    lighting_suggestion: "Morning light through narrow windows mixing with residual firelight, creating a warm but crowded atmosphere with steam catching the light."
+    
+    emotional_color: "Cramped warmth"
+    
+    characters_present:
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Watching from the head of the table with an unguarded expression, cataloguing the problems: crowding, shortage of proper bowls, people unable to move freely."
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "Standing to eat because his broad shoulders can't fit between the bench and wall, accepting the limitation with characteristic patience."
+      - slug: "vera-moonwhisper"
+        has_canonical_visuals: true
+        role_in_moment: "Carefully dissecting an apple—a habit from her solitary years—contributing intelligence about merchant routes."
+      - slug: "quartermaster-fayne"
+        has_canonical_visuals: true
+        role_in_moment: "Already awake and observant, contributing to conversation despite the crowded acoustics."
+    
+    source_excerpts:
+      - "Though the space that had once seemed ample now felt cramped with bodies pressed shoulder to shoulder on the benches."
+      - "She watched Halden accidentally knock over Venn's mug reaching for salt, saw Vera have to stand and squeeze against the wall to let Kelen pass, noticed how Grimjaw had given up trying to fit properly on the bench and now stood to eat."
+      - "Some were eating from repurposed measuring cups."
+      - "The table itself was a mismatched collection of boards that had been extended twice already and wobbled dangerously if anyone leaned too hard."
+    
+    selection_rationale: "This ensemble moment visualizes the chapter's central tension: community thriving despite—and constrained by—inadequate space. The specific details (repurposed cups, standing dwarf, wobbling table) tell the story more effectively than exposition."
+
+  - moment_id: "ch09-hearth-and-home-moment-04"
+    source_scene: "scn-09-03"
+    
+    narrative_beat: "Aldwin and Halden work in the makeshift infirmary—a curtained corner so cramped they must coordinate movements to avoid collision, improvised table made from a door on sawhorses, oil lamps casting conflicting shadows as dust filters down from footsteps above."
+    subtext: "The healing arts constrained by circumstance. Dedication persisting despite inadequate conditions. The gap between what they could do and what their space allows."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 2
+      character_revelation: 5
+      symbolic_density: 4
+      total: 19
+    
+    score_rationale:
+      character_revelation_note: "Aldwin's development notes describe him as 'The Witness' who responds to suffering with compassion. Here we see his philosophy articulated physically—his herbs in repurposed containers (a helmet!), his patient attention despite impossible conditions."
+      relationship_context: "The relationship between Aldwin and Halden is shown through their coordinated movements—two healing philosophies learning to work in the same cramped space."
+    
+    suggested_type: "detail"
+    primary_subject: "Aldwin Gentleheart and Medic Halden"
+    secondary_elements:
+      - "Curtain partition (repurposed tent wall)"
+      - "Door-on-sawhorses table with wooden strips nailed to edges"
+      - "Herbs in mismatched containers including a repurposed helmet"
+      - "Three oil lamps at careful angles"
+      - "Dust filtering down from ceiling"
+    
+    suggested_framing: "medium"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "Dust motes filtering down through oil-lamp light as footsteps pass above, settling on Halden's clean instruments while Aldwin's mortar grinds herbs in steady rhythm—the impossible attempt to maintain sterility in chaos."
+    
+    lighting_suggestion: "Three oil lamps providing inadequate, conflicting illumination—warm amber fighting against deep shadows, smoke making the close air visible."
+    
+    emotional_color: "Constrained dedication"
+    
+    characters_present:
+      - slug: "aldwin-gentleheart"
+        has_canonical_visuals: true
+        role_in_moment: "Grinding herbs with steady circular movements of the pestle, his weathered hands working despite the cramped conditions, articulating his philosophy of healing the person rather than just the wound."
+      - slug: "medic-halden"
+        has_canonical_visuals: true
+        role_in_moment: "Organizing surgical instruments with meticulous precision on the improvised table, absorbing Aldwin's wisdom while confronting the inadequacy of their workspace."
+    
+    source_excerpts:
+      - "The infirmary itself was little more than a curtained corner of the barracks, carved out of space that had once been storage. The curtain—a repurposed campaign tent wall—did nothing to muffle the sounds of daily life."
+      - "His surgical instruments lay in precise rows on a cloth-covered table—really a door balanced on two sawhorses."
+      - "The window box beside him overflowed with carefully tended herbs—what little pharmacy he could manage in the limited space. Some hung drying from nails he'd hammered into the wall, others crowded in small pots on every available surface."
+      - "As if to emphasize his point, someone walked past outside the curtain, their shadow falling across Halden's workspace and momentarily plunging it into darkness."
+    
+    selection_rationale: "This is the chapter's CHARACTER moment—two healers with different approaches finding common ground while constrained by inadequate space. The visual of dust settling on clean instruments perfectly captures the tension between aspiration and limitation."
+
+  - moment_id: "ch09-hearth-and-home-moment-05"
+    source_scene: "scn-09-04"
+    
+    narrative_beat: "Grimjaw outmaneuvers both Darric and Venn in the cramped thirty-foot courtyard, using the confined space and memorized cobblestones to his advantage—six inches of movement, knowledge of uneven ground, forty years of experience compressed into thirty seconds of mastery."
+    subtext: "Constraint as teacher. Experience transcending limitation. The old ways still have teeth, and wisdom grows sharper in tight spaces."
+    
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 5
+      symbolic_density: 3
+      total: 19
+    
+    score_rationale:
+      character_revelation_note: "Grimjaw's profile emphasizes he fights only to protect and teaches through action. This moment shows his 'Mountain's Judgment' philosophy—not aggression but mastery of space, using the limitation that frustrates others as his greatest advantage."
+      relationship_context: "The respect Darric and Venn show afterward mirrors the development note: 'His greatest fear is being seen as obsolete.' Here he proves he's anything but."
+    
+    suggested_type: "anchor"
+    primary_subject: "Grimjaw Ironbeard"
+    secondary_elements:
+      - "Darric and Venn in mid-defeat"
+      - "Cramped courtyard walls close enough to strike"
+      - "Uneven cobblestones with visible wear"
+      - "Fayne sketching from the sidelines"
+    
+    suggested_framing: "medium"
+    suggested_angle: "low"
+    
+    key_visual_hook: "The exact moment of Grimjaw's six-inch sidestep—economy of motion that seems almost lazy until you see both young soldiers off-balance and the dwarf standing centered on the one patch of cobblestone he memorized during forge work."
+    
+    lighting_suggestion: "Pale winter sun casting sharp shadows, the walls close enough to darken the edges of frame, emphasizing the confined nature of the space."
+    
+    emotional_color: "Earned mastery"
+    
+    characters_present:
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "Demonstrating that experience and spatial awareness defeat youth and speed, using the cramped quarters that frustrate everyone else as his greatest tactical advantage."
+    
+    source_excerpts:
+      - "Grimjaw moved with the economy of someone who had long ago learned that strength meant nothing without precision, that speed was worthless without timing."
+      - "When Darric came in with his overhead strike, the dwarf simply wasn't there anymore—a sidestep of perhaps six inches, all the space he had to work with."
+      - "The entire demonstration took place in a space barely large enough for three men to stand comfortably, which made it all the more impressive."
+      - "'The old ways still have teeth, lads,' he said, offering each a hand up. 'Experience counts for something. Especially when you don't have room to dance around like peacocks.'"
+    
+    selection_rationale: "This is the chapter's best action beat—but it's intimate action, not combat. The confined space that's a problem throughout the chapter becomes Grimjaw's advantage, visually reinforcing the theme that wisdom adapts to constraint."
+
+  - moment_id: "ch09-hearth-and-home-moment-06"
+    source_scene: "scn-09-05"
+    
+    narrative_beat: "Veyra and Thorne stand together on the watchtower parapet at sunset, overlooking the activity below—Finn with the horses, Elba shaking out dishcloths, Grimjaw banking his forge—as they commit to finding the company a proper home."
+    subtext: "Leadership as shared vision. The sunset marks an ending and a beginning. Two people who've learned to think as one, looking at what they've built and deciding it deserves room to grow."
+    
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 5
+      narrative_pivot: 5
+      character_revelation: 4
+      symbolic_density: 5
+      total: 24
+    
+    score_rationale:
+      character_revelation_note: "This moment shows the partnership Thorne's development notes describe: 'He is loyal to Veyra not just as a commander, but because her mission gives his tactical mind a higher purpose.' Their synchronized decision-making is visible in their shared stance."
+      relationship_context: "Per Veyra's profile, she touches Thorne's arm—'a rare gesture of connection'—acknowledging 'Our vision' rather than claiming sole ownership."
+    
+    suggested_type: "pivot"
+    primary_subject: "Veyra Thornwake and Thorne Brightward"
+    secondary_elements:
+      - "Sunset painting the stone battlements gold"
+      - "The activity below—Finn, Elba, Grimjaw, Aldwin"
+      - "First stars emerging"
+      - "Ancient worn battlements"
+    
+    suggested_framing: "wide"
+    suggested_angle: "slightly-low"
+    
+    key_visual_hook: "Two silhouettes framed between merlons, shoulders almost touching in the narrow space, looking down at their people while the sunset blazes behind them—the first stars appearing as they commit to building something worthy of what they've found."
+    
+    lighting_suggestion: "Golden hour light painting everything warm amber, long shadows stretching from the battlements, the first stars visible in the deepening blue above while the sunset flames orange and purple below."
+    
+    emotional_color: "Determined hope"
+    
+    characters_present:
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Articulating the vision of what they need—workshop, infirmary, library, training grounds—with the determination that defined her survival. Touching Thorne's arm in rare acknowledgment of partnership."
+      - slug: "thorne-brightward"
+        has_canonical_visuals: true
+        role_in_moment: "Standing beside Veyra as equal partner, recognizing that what they've built deserves more than borrowed space, committing to the search for a proper home."
+    
+    source_excerpts:
+      - "She touched his arm lightly, a rare gesture of connection. 'I couldn't have done any of this without you. Without all of you.'"
+      - "'When we find the right place,' Thorne agreed, understanding the weight of the commitment they were making, 'we'll build the Last Light Company a proper home.'"
+      - "In the distance, a lone wolf howled—not a sound of threat, but of territory being claimed, of a pack declaring its place in the world."
+      - "They weren't just planning a move—they were planning a future."
+    
+    selection_rationale: "This is the chapter's PIVOT moment—the decision that everything before has been building toward. The visual composition mirrors their partnership: two figures sharing the only space in the compound where they can breathe, looking at what they've built and committing to give it room to grow."

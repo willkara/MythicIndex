@@ -1,0 +1,1363 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: The Healer's Calling
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch04-the-healers-calling"
+  chapter_number: 4
+  chapter_title: "The Healer's Calling"
+  visual_thesis: "From the warm amber glow of inadequacy confessed to the shared firelight of mercy understood—a journey into death's kingdom to find life's meaning."
+  color_palette:
+    primary:
+      - "#C9A048"
+      - "#7A6851"
+      - "#4A4A5A"
+      - "#8B7355"
+    accent:
+      - "#E8D84C"
+      - "#6B8E7A"
+      - "#9B4F4F"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 3
+    pastoral: 1
+    celebratory: 1
+    aquatic: 0
+    ethereal: 1
+    intimate: 4
+    kinetic: 0
+    ominous: 2
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: "This chapter: Early recovery phase. Still using walking stick (healing injury). Forearm bandaged at start. Wearing standard gear throughout. Burn scar prominent."
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "aldwin-gentleheart"
+    name: "Brother Aldwin Gentleheart"
+    scene_variations: "Moss-green cloak, salt-and-pepper hair. Carrying tea service. Gentle, weathered expression."
+    reference_images:
+      - "aldwin-gentleheart-official-portrait-01"
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: "Standard patrol gear. Blue cloak."
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "medic-halden"
+    name: "Medic Halden"
+    scene_variations: "Helmet removed. Expression shifts from frustration to shock to understanding."
+    reference_images:
+      - "medic-halden-standing-portrait-01"
+
+  - ref: "archer-venn"
+    name: "Archer Venn"
+    scene_variations: "Subdued expression in plague village."
+    reference_images:
+      - "archer-venn-portrait-01"
+
+  - ref: "dokra-ironvein"
+    name: "Dokra Ironvein"
+    scene_variations: "Healer's apron, stained fingers. Gruff expression."
+    reference_images:
+      - "dokra-ironvein-portrait-full"
+
+locations:
+  - ref: "westwall-watchpost"
+    zones:
+      - id: "overview"
+        chapter_context: "Utilitarian military interior transformed by lived-in warmth. Scarred wooden table, amber candlelight."
+
+  - ref: "brightstone-healers-hall"
+    zones:
+      - id: "overview"
+        chapter_context: "Ancient apothecary preparation room. Stone arches, drying herbs, glass carboys. Shafts of dusty light."
+
+  - ref: "oakhaven-approach"
+    zones:
+      - id: "overview"
+        chapter_context: "Forested hilltop overlooking the quarantined village. Barricade of stakes. Black skull sign. Contrast between autumn warmth and village gray."
+
+  - ref: "oakhaven-streets"
+    zones:
+      - id: "overview"
+        chapter_context: "Village street given over to death. Bodies in neat rows. Red X marks on windows. Heavy, hazy atmosphere."
+
+  - ref: "oakhaven-barn-hospice"
+    zones:
+      - id: "overview"
+        chapter_context: "Barn transformed into sanctuary. Hanging lanterns, rows of cots. Warmth against the cold outside."
+
+  - ref: "westwood-campsite"
+    zones:
+      - id: "overview"
+        chapter_context: "Forest clearing at night. Campfire warmth against blue-black sky."
+
+moments:
+  - id: "ch04-the-healers-calling-moment-01"
+    scene_id: "scn-04-01"
+    title: "The Child's Lantern"
+    narrative_beat: "Veyra contemplates a child's drawing of a lantern, contrasting her scarred hands with the innocent hope."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "westwall-watchpost/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch04-the-healers-calling-moment-02"
+    scene_id: "scn-04-01"
+    title: "The Confession"
+    narrative_beat: "Halden admits his limits to the team, sparking the search for a true healer."
+    visual_weight: "medium"
+    characters_present:
+      - "medic-halden"
+      - "thorne-brightward"
+      - "veyra-thornwake"
+    location_zone: "westwall-watchpost/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch04-the-healers-calling-moment-03"
+    scene_id: "scn-04-02"
+    title: "Entering Brightstone"
+    narrative_beat: "The sensory transition from city noise to the hushed, antiseptic world of the Healers' Hall."
+    visual_weight: "medium"
+    characters_present: []
+    location_zone: "brightstone-healers-hall/overview"
+    transformation_state: "n/a"
+    recommended_images: 2
+
+  - id: "ch04-the-healers-calling-moment-04"
+    scene_id: "scn-04-02"
+    title: "Dokra's Warning"
+    narrative_beat: "Dokra treats Veyra's burns while warning them about the Gray Rot and Oakhaven."
+    visual_weight: "high"
+    characters_present:
+      - "dokra-ironvein"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    location_zone: "brightstone-healers-hall/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch04-the-healers-calling-moment-05"
+    scene_id: "scn-04-03"
+    title: "The Departure"
+    narrative_beat: "The team departs Westwall in a supply wagon, leaving the safety of the city behind."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    location_zone: "westwall-watchpost/exterior"
+    transformation_state: "n/a"
+    recommended_images: 2
+
+  - id: "ch04-the-healers-calling-moment-06"
+    scene_id: "scn-04-04"
+    title: "The Overlook"
+    narrative_beat: "The team sees Oakhaven from the hill, the quarantine sign and the stillness below."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    location_zone: "oakhaven-approach/overview"
+    transformation_state: "n/a"
+    recommended_images: 2
+
+  - id: "ch04-the-healers-calling-moment-07"
+    scene_id: "scn-04-05"
+    title: "Streets of the Dead"
+    narrative_beat: "Walking through the silent village, witnessing the neat rows of shrouded bodies."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "oakhaven-streets/overview"
+    transformation_state: "n/a"
+    recommended_images: 2
+
+  - id: "ch04-the-healers-calling-moment-08"
+    scene_id: "scn-04-06"
+    title: "The Mercy Ritual"
+    narrative_beat: "Aldwin administers the tea to Mara, transforming death into a gentle passage."
+    visual_weight: "critical"
+    characters_present:
+      - "aldwin-gentleheart"
+      - "veyra-thornwake"
+    location_zone: "oakhaven-barn-hospice/overview"
+    transformation_state: "n/a"
+    recommended_images: 2
+
+  - id: "ch04-the-healers-calling-moment-09"
+    scene_id: "scn-04-07"
+    title: "Veyra's Vigil"
+    narrative_beat: "Veyra sits with the living patients, her own survival becoming a source of hope."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "oakhaven-barn-hospice/overview"
+    transformation_state: "n/a"
+    recommended_images: 2
+
+  - id: "ch04-the-healers-calling-moment-10"
+    scene_id: "scn-04-08"
+    title: "The Welcome Tea"
+    narrative_beat: "The team shares tea around the campfire, accepting Aldwin and the concept of mercy."
+    visual_weight: "high"
+    characters_present:
+      - "aldwin-gentleheart"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    location_zone: "westwood-campsite/overview"
+    transformation_state: "n/a"
+    recommended_images: 2
+
+images:
+  - custom_id: "ch04-the-healers-calling-img-04-01-01"
+    source_moment: "ch04-the-healers-calling-moment-01"
+    scene_id: "scn-04-01"
+    image_type: "detail"
+    category:
+      - "moment"
+      - "character"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: "A tender moment of private reflection—Veyra's scarred hands touching a child's drawing of hope."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      A close study of hands and their object—Veyra's scarred fingers resting on the edge of a child's drawing. The mottled burn scars on her hands catch the candlelight. The drawing itself is simple but defiant: a child's interpretation of a rescue lantern on crinkled parchment. Behind her hands, the scarred wooden table surface shows honey-toned grain.
+    composition_notes: |
+      Tight framing on the hands and drawing. Child's drawing occupies lower center. Veyra's hands frame it. Shallow depth of field.
+    visual_hook: "Mottled burn scars on her fingers touching the bright yellow crayon lantern—destruction and hope in the same frame"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Only hands visible. Scarred, weathered. Fingers trace the drawing's edge with tenderness.
+    location: "westwall-watchpost"
+    lighting:
+      primary_source: "Candlelight"
+      quality: "Soft, warm"
+      direction: "Above and slightly behind"
+      color_temperature: "Warm amber"
+      shadow_depth: "Soft gradients"
+      atmospheric: "Faint smoke-haze"
+    palette:
+      dominant:
+        - "warm amber"
+        - "honey wood-tone"
+        - "sepia brown"
+      accent:
+        - "defiant yellow (drawing)"
+        - "mottled reddish-brown (scars)"
+      avoid:
+        - "cool blues"
+    prompt_used: |
+      Close-up of weathered hands with mottled reddish-brown burn scars resting on a child's crayon drawing of a yellow lantern,
+      hands positioned with gentle reverence,
+      honey-toned scarred wooden table surface beneath,
+      warm amber candlelight from above,
+      classical oil painting, Vermeer interior lighting,
+      single warm light source, gentle shadow gradients,
+      amber and soft rose and honey tones,
+      Dutch Golden Age intimacy, visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, cold colors
+    tags:
+      - "detail"
+      - "hands"
+      - "hope"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch04-the-healers-calling-img-04-01-02"
+    source_moment: "ch04-the-healers-calling-moment-02"
+    scene_id: "scn-04-01"
+    image_type: "beat"
+    category:
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Halden's confession of limits. The weight of professional failure driving the plot."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Halden stands at the barracks table, hands gripping the edge until knuckles are white. His medical kit sits open but useless before him. He looks at Thorne and Veyra with an expression of frustrated inadequacy. The candlelight casts deep shadows on his face, emphasizing his exhaustion. Veyra and Thorne listen with grave attention.
+    composition_notes: |
+      Medium shot. Halden dominant in foreground. Thorne and Veyra in background. Focus on Halden's hands and face.
+    visual_hook: "The white-knuckled grip on the table edge, the open but insufficient medical kit."
+    depicts_characters:
+      - "medic-halden"
+      - "thorne-brightward"
+      - "veyra-thornwake"
+    character_states:
+      medic-halden: |
+        Gripping table. Expression of frustration and honesty. Helmet removed.
+      thorne-brightward: |
+        Listening intently. Shadowed face.
+      veyra-thornwake: |
+        Listening. Touching the child's drawing.
+    location: "westwall-watchpost"
+    lighting:
+      primary_source: "Candlelight"
+      quality: "Warm, shadowed"
+      direction: "Side"
+      color_temperature: "Amber"
+      shadow_depth: "Deep"
+      atmospheric: "Smoke haze"
+    palette:
+      dominant:
+        - "shadow brown"
+        - "amber"
+        - "leather"
+      accent:
+        - "white knuckles"
+      avoid:
+        - "bright light"
+    prompt_used: |
+      A medieval medic gripping a wooden table in frustration, medical kit open before him,
+      speaking to an armored captain and a scarred woman in a barracks,
+      candlelight casting deep shadows,
+      expression of inadequacy and determination,
+      classical oil painting, Rembrandt lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "halden"
+      - "conflict"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch04-the-healers-calling-img-04-02-01"
+    source_moment: "ch04-the-healers-calling-moment-03"
+    scene_id: "scn-04-02"
+    image_type: "zone"
+    category:
+      - "location"
+      - "detail"
+      - "sensory"
+    scene_mood: "intimate"
+    mood_rationale: "The 'Character's Scent.' Visualizing the antiseptic quiet of Brightstone."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      A wide-angle shot of a preparation area within Brightstone Healer's Hall. Bundles of medicinal herbs hang from a low stone arch. Large, heavy glass carboys sit on a granite counter, filled with copper-colored liquids. Sunlight from a high window cuts across the scene in thick, dusty shafts.
+    composition_notes: |
+      Horizontal composition. Bundles of herbs frame left. Glass carboys right. Shafts of light create diagonals.
+    visual_hook: "Shafts of morning light illuminating fine 'herb-dust' between bundles of drying cinnamon and glowing glass carboys."
+    depicts_characters: []
+    character_states: {}
+    location: "brightstone-healers-hall"
+    lighting:
+      primary_source: "morning sun"
+      quality: "thick, dusty shafts"
+      direction: "top-down diagonal"
+      color_temperature: "warm golden vs cool stone"
+      shadow_depth: "moderate"
+      atmospheric: "dust and herb particles"
+    palette:
+      dominant:
+        - "marble white"
+        - "herb green"
+        - "copper amber"
+      accent:
+        - "lavender purple"
+      avoid:
+        - "busy motion"
+    prompt_used: |
+      Interior shot of ancient apothecary preparation room in marble hospital,
+      bundles of dried herbs hanging from stone arch,
+      glass carboys with copper liquid on counter,
+      thick shafts of dusty morning light,
+      hushed antiseptic atmosphere,
+      classical oil painting, Rembrandt lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "location"
+      - "brightstone"
+      - "sensory"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch04-the-healers-calling-img-04-02-02"
+    source_moment: "ch04-the-healers-calling-moment-03"
+    scene_id: "scn-04-02"
+    image_type: "perspective"
+    category:
+      - "location"
+      - "threshold"
+    scene_mood: "somber"
+    mood_rationale: "The 'Character's Boundary.' The contrast between the city and the sanctuary."
+    aspect_ratio: "9:16"
+    orientation: "portrait"
+    size: "640x1136"
+    visual_description: |
+      A POV shot from just inside the massive, iron-strapped oak front doors of Brightstone Healer's Hall. The heavy doors are slightly ajar, framing a narrow, vertical 'sliver' of the bustling Trades Ward outside. Inside, the cool, silent white marble dominates.
+    composition_notes: |
+      Vertical perspective. Door dominates foreground. Sliver of bright city outside. Gate steward's shoulder in foreground.
+    visual_hook: "A narrow, vertical sliver of a bustling, sunlit city framed by the massive, cool shadows of the hospital doors."
+    depicts_characters:
+      - "gate-steward"
+    character_states:
+      gate-steward: "Seen from behind/profile. Light robes. Patient posture."
+    location: "brightstone-healers-hall"
+    lighting:
+      primary_source: "exterior sun"
+      quality: "blinding sliver"
+      direction: "front-facing"
+      color_temperature: "warm exterior vs cool interior"
+      shadow_depth: "extreme"
+      atmospheric: "city haze vs interior clarity"
+    palette:
+      dominant:
+        - "dark oak"
+        - "marble white"
+        - "shadow blue"
+      accent:
+        - "exterior gold"
+      avoid:
+        - "balanced lighting"
+    prompt_used: |
+      First-person perspective from inside dark hospital doors looking out at sliver of bright medieval city street,
+      contrast between cool interior shadows and blinding exterior sun,
+      heavy oak doors framing the view,
+      back of robed steward in foreground,
+      classical oil painting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "perspective"
+      - "threshold"
+      - "brightstone"
+      - "contrast"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch04-the-healers-calling-img-04-02-03"
+    source_moment: "ch04-the-healers-calling-moment-04"
+    scene_id: "scn-04-02"
+    image_type: "character"
+    category:
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: "Dokra's tough love. Treating the burns while delivering the warning. Intimacy of care mixed with sternness."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Dokra Ironvein applies a pungent green salve to Veyra's fresh burns. Her hands are thick and stained but gentle. Veyra sits stoically, wincing slightly but not pulling away. Thorne stands nearby, holding the scrap of parchment map Dokra has just given them. The background is the busy but quiet hospital ward.
+    composition_notes: |
+      Medium shot. Dokra and Veyra central. Thorne slightly behind. Focus on the interaction of hands and arm.
+    visual_hook: "Dokra's stained, strong hands tending the raw burn with surprising gentleness."
+    depicts_characters:
+      - "dokra-ironvein"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    character_states:
+      dokra-ironvein: |
+        Applying salve. Expression gruff but caring.
+      veyra-thornwake: |
+        Seated. Sleeve rolled up. Stoic expression.
+      thorne-brightward: |
+        Holding map. Serious expression.
+    location: "brightstone-healers-hall"
+    lighting:
+      primary_source: "Ward lanterns"
+      quality: "Clean, amber"
+      direction: "Overhead"
+      color_temperature: "Neutral/Warm"
+      shadow_depth: "Moderate"
+      atmospheric: "Clean"
+    palette:
+      dominant:
+        - "stone gray"
+        - "healer green"
+        - "skin tones"
+      accent:
+        - "raw red burn"
+      avoid:
+        - "darkness"
+    prompt_used: |
+      A stout dwarven healer applying green salve to a woman's arm burns,
+      the woman sits stoically,
+      a man stands nearby holding a map,
+      hospital ward background,
+      atmosphere of tough care,
+      classical oil painting, realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "healing"
+      - "dokra"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch04-the-healers-calling-img-04-03-01"
+    source_moment: "ch04-the-healers-calling-moment-05"
+    scene_id: "scn-04-03"
+    image_type: "action"
+    category:
+      - "action"
+      - "preparation"
+    scene_mood: "kinetic"
+    mood_rationale: "The urgency of preparation. Loading the wagon. Movement and purpose."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Halden and Venn loading crates of supplies into a covered wagon in the Westwall courtyard. The afternoon sun casts long shadows. Veyra is checking the harness of the draft horses. Thorne is speaking to Darric who looks disappointed to be left behind. Dust motes dance in the late sun.
+    composition_notes: |
+      Wide shot of the courtyard. Activity around the wagon. Veyra and horses foreground left. Loading action mid-ground right.
+    visual_hook: "The covered wagon being loaded, signifying the start of a journey."
+    depicts_characters:
+      - "medic-halden"
+      - "archer-venn"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "corporal-darric"
+    character_states:
+      medic-halden: |
+        Carrying crate.
+      archer-venn: |
+        Securing canvas cover.
+      veyra-thornwake: |
+        Checking horse harness.
+      thorne-brightward: |
+        Giving orders to Darric.
+      corporal-darric: |
+        Standing at attention, disappointed.
+    location: "westwall-watchpost"
+    lighting:
+      primary_source: "Late afternoon sun"
+      quality: "Warm, directional"
+      direction: "Low angle"
+      color_temperature: "Gold"
+      shadow_depth: "Long shadows"
+      atmospheric: "Dusty"
+    palette:
+      dominant:
+        - "courtyard stone"
+        - "wood brown"
+        - "sun gold"
+      accent:
+        - "blue tunics"
+      avoid:
+        - "night"
+    prompt_used: |
+      Fantasy soldiers loading a covered wagon in a courtyard,
+      afternoon sunlight casting long shadows,
+      checking horses and securing supplies,
+      sense of departure and purpose,
+      classical oil painting, realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "preparation"
+      - "departure"
+      - "wagon"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch04-the-healers-calling-img-04-03-02"
+    source_moment: "ch04-the-healers-calling-moment-05"
+    scene_id: "scn-04-03"
+    image_type: "transition"
+    category:
+      - "location"
+      - "mood"
+    scene_mood: "pastoral"
+    mood_rationale: "The wagon leaving the city gates. The transition from civilization to the wild/unknown."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      The covered supply wagon rolling out through the massive stone gates of Waterdeep. The city walls rise high on either side. Ahead lies the Westwood road, bathed in golden late-afternoon light. The wagon is small against the scale of the world.
+    composition_notes: |
+      Extreme wide shot. Wagon leaving frame center. Walls framing the sides. Road leading into distance.
+    visual_hook: "The small wagon leaving the safety of the massive gates, heading into the golden unknown."
+    depicts_characters: []
+    character_states: {}
+    location: "westwall-watchpost"
+    lighting:
+      primary_source: "Setting sun"
+      quality: "Golden, hazy"
+      direction: "Front-lit"
+      color_temperature: "Gold"
+      shadow_depth: "Deep in gate arch"
+      atmospheric: "Road dust"
+    palette:
+      dominant:
+        - "stone gray"
+        - "road dust"
+        - "gold"
+      accent:
+        - "wagon canvas"
+      avoid:
+        - "night"
+    prompt_used: |
+      A covered wagon leaving a massive medieval city gate,
+      heading down a dusty road into golden afternoon light,
+      high stone walls framing the exit,
+      sense of journey beginning,
+      classical oil painting, landscape,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "transition"
+      - "departure"
+      - "gates"
+      - "journey"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch04-the-healers-calling-img-04-04-01"
+    source_moment: "ch04-the-healers-calling-moment-06"
+    scene_id: "scn-04-04"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "location"
+      - "emotion"
+    scene_mood: "ominous"
+    mood_rationale: "The threshold to death's kingdom. The skull-marked sign and the lifeless village create visual dread."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      A cinematic establishing shot from a hilltop overlooking Oakhaven. Four figures stand silhouetted at the hill's crest in the middle-ground. The village occupies the lower portion—surrounded by a barricade of sharpened stakes and yellow warning flags. Dominant in the middle-ground: a massive sign with a tar-black skull and "PLAGUE – DEATH TO THOSE WHO ENTER." Behind the figures: warm autumn light. Ahead: cold gray-purple shadow.
+    composition_notes: |
+      Wide cinematic framing. Four silhouettes break the horizon. Rule of thirds: figures upper-left, village lower-thirds. Skull sign near lower-right intersection.
+    visual_hook: "The tar-black skull marker stark against pale wood, the village utterly still beyond—and four small figures who've chosen to enter anyway"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "medic-halden"
+      - "archer-venn"
+    character_states:
+      veyra-thornwake: |
+        Silhouette. Standing forward. Lantern at belt.
+      thorne-brightward: |
+        Silhouette. Broad shoulders. Shield shape.
+      medic-halden: |
+        Silhouette. Medical satchel visible.
+      archer-venn: |
+        Silhouette. Elven ears and braid.
+    location: "oakhaven-approach"
+    lighting:
+      primary_source: "Late afternoon sun from behind viewer"
+      quality: "Split palette—warm behind, cold ahead"
+      direction: "Backlighting figures"
+      color_temperature: "Warm golden vs cold gray-green"
+      shadow_depth: "Deep in village"
+      atmospheric: "Clear at hilltop, hazy below"
+    palette:
+      dominant:
+        - "cold gray"
+        - "sickly gray-green"
+        - "bruise purple"
+      accent:
+        - "warm rust-gold autumn"
+        - "tar-black skull"
+        - "pale yellow flags"
+      avoid:
+        - "bright cheerful colors"
+    prompt_used: |
+      Four silhouetted figures standing at a forested hilltop overlooking a quarantined plague village at dusk,
+      backs to viewer facing the horror ahead,
+      golden autumn light behind them contrasting with cold gray-purple shadow over village,
+      wooden stake barricade and yellow flags,
+      prominent sign with tar-black skull symbol,
+      no smoke or movement in village,
+      cinematic wide shot, Symbolist unease,
+      classical oil painting, Böcklin dread,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, movement in village, smoke
+    tags:
+      - "anchor"
+      - "establishing"
+      - "ominous"
+      - "quarantine"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch04-the-healers-calling-img-04-04-02"
+    source_moment: "ch04-the-healers-calling-moment-06"
+    scene_id: "scn-04-04"
+    image_type: "mood"
+    category:
+      - "character"
+      - "mood"
+    scene_mood: "somber"
+    mood_rationale: "The conversation about death on the road. The encroaching wrongness of the forest."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The view from the wagon driver's seat as it moves through the darkening Westwood. Veyra drives, Thorne beside her. The forest is beautiful but silent—"birds fell silent first." Brambles encroach on the path. The lighting is dimming, the trees forming a tunnel. Focus on their faces, masking anxiety with resolve.
+    composition_notes: |
+      Two-shot of Veyra and Thorne on the wagon bench. Road stretching ahead into darkness. Trees framing tightly.
+    visual_hook: "The narrowing tunnel of the road, the silence made visual by the stillness of the trees."
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    character_states:
+      veyra-thornwake: |
+        Driving. Eyes scanning the trees. Expression grim.
+      thorne-brightward: |
+        Looking ahead. Expression contemplative.
+    location: "thornwood-forest"
+    zone: "trail"
+    lighting:
+      primary_source: "Dusk"
+      quality: "Dim, cool"
+      direction: "Overhead/filtered"
+      color_temperature: "Blue-gray"
+      shadow_depth: "Deepening"
+      atmospheric: "Mist starting"
+    palette:
+      dominant:
+        - "forest green"
+        - "twilight blue"
+        - "road brown"
+      accent:
+        - "wagon wood"
+      avoid:
+        - "sunlight"
+    prompt_used: |
+      Two figures driving a wagon through a darkening forest tunnel,
+      trees crowding the road,
+      twilight atmosphere,
+      expressions of grim resolve,
+      classical oil painting, somber mood,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, sunlight
+    tags:
+      - "beat"
+      - "travel"
+      - "somber"
+      - "forest"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch04-the-healers-calling-img-04-05-01"
+    source_moment: "ch04-the-healers-calling-moment-08"
+    scene_id: "scn-04-05"
+    image_type: "action"
+    category:
+      - "action"
+      - "threshold"
+    scene_mood: "ominous"
+    mood_rationale: "Crossing the line. The physical act of entering the quarantine."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The party stepping over/through the wooden stake barricade. Thorne goes first, pushing aside a loose timber. Veyra follows, lantern held high though it's day (symbolic/habit). Halden and Venn follow. The barrier is sharp, threatening. Beyond lies the silent village.
+    composition_notes: |
+      Low angle. The stakes loom in foreground. The party is crossing the threshold. Focus on boots hitting the ground on the "other side."
+    visual_hook: "The sharp wooden stakes framing the figures as they voluntarily step into the forbidden zone."
+    depicts_characters:
+      - "thorne-brightward"
+      - "veyra-thornwake"
+      - "medic-halden"
+      - "archer-venn"
+    character_states:
+      thorne-brightward: |
+        Stepping through. Shield ready.
+      veyra-thornwake: |
+        Holding lantern. Alert.
+      medic-halden: |
+        Hesitant but moving.
+      archer-venn: |
+        Rear guard. Hand on sword.
+    location: "oakhaven-approach"
+    lighting:
+      primary_source: "Overcast evening light"
+      quality: "Flat, gray"
+      direction: "Ambient"
+      color_temperature: "Cool"
+      shadow_depth: "Soft"
+      atmospheric: "Stillness"
+    palette:
+      dominant:
+        - "wood brown"
+        - "gray sky"
+        - "dark cloaks"
+      accent:
+        - "yellow warning flags"
+      avoid:
+        - "sunshine"
+    prompt_used: |
+      Fantasy adventurers stepping through a barricade of sharpened wooden stakes,
+      entering a quarantined village,
+      grim expressions,
+      yellow warning flags,
+      overcast evening light,
+      classical oil painting, ominous atmosphere,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, sunshine
+    tags:
+      - "beat"
+      - "threshold"
+      - "action"
+      - "quarantine"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch04-the-healers-calling-img-04-05-02"
+    source_moment: "ch04-the-healers-calling-moment-09"
+    scene_id: "scn-04-05"
+    image_type: "mood"
+    category:
+      - "moment"
+      - "location"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "The devastation made real—bodies wrapped with desperate dignity. The neat rows speak to human dignity persisting even in abandonment."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      A village street-level view showing Oakhaven's careful arrangement of its dead. Bodies wrapped in stained sheets laid in parallel rows outside cottage doors. Cottage windows marked with red X's glow faintly. In the far background, Veyra enters the frame. A dry fountain stands silent.
+    composition_notes: |
+      Street-level perspective. Rows of wrapped dead create leading lines. Low horizon. Muted palette with red X accents.
+    visual_hook: "The terrible neatness—bodies arranged with desperate dignity, order imposed on death by the dying"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Distant silhouette entering village.
+    location: "oakhaven-streets"
+    lighting:
+      primary_source: "Evening ambient light"
+      quality: "Diffused, heavy"
+      direction: "Soft directionless"
+      color_temperature: "Cool gray-blue"
+      shadow_depth: "Deep but soft"
+      atmospheric: "Heavy haze"
+    palette:
+      dominant:
+        - "slate gray"
+        - "desaturated blue"
+        - "cream-white shrouds"
+      accent:
+        - "warm amber window-glow"
+        - "red X marks"
+      avoid:
+        - "bright colors"
+        - "cheerful warmth"
+    prompt_used: |
+      Plague village street with rows of shrouded bodies arranged neatly outside cottages,
+      windows marked with red X glowing with candlelight,
+      distant figure entering street,
+      dry fountain,
+      heavy gray-blue atmosphere,
+      classical oil painting, Rembrandt lighting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright colors, movement
+    tags:
+      - "mood"
+      - "plague"
+      - "death"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch04-the-healers-calling-img-04-06-01"
+    source_moment: "ch04-the-healers-calling-moment-10"
+    scene_id: "scn-04-06"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+      - "symbol"
+    scene_mood: "ethereal"
+    mood_rationale: "The chapter's thesis made visible—mercy as active compassion. Aldwin's tea ceremony transforms a death-bed into sacred space."
+    aspect_ratio: "2:3"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      A medium-shot centered on Aldwin Gentleheart kneeling beside a dying woman's cot in the barn hospice. His weathered hands lift a small cup toward her lips. Before him sits a small bronze brazier producing sweet-scented smoke that spirals upward catching the light. The woman lies peaceful. Background cots and observers visible but soft.
+    composition_notes: |
+      Portrait orientation. Aldwin fills lower two-thirds. Brazier at center. Rule of thirds: Aldwin upper-left, patient lower-right. Low angle.
+    visual_hook: "The small bronze brazier catching lanternlight, sweet smoke spiraling upward like prayer, steady healer's hands lifting mercy"
+    depicts_characters:
+      - "aldwin-gentleheart"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "medic-halden"
+    character_states:
+      aldwin-gentleheart: |
+        Kneeling. Moss-green cloak. Gentle expression. Hands steady.
+      veyra-thornwake: |
+        Background observer. Soft-focused.
+      thorne-brightward: |
+        Background observer.
+      medic-halden: |
+        Background observer. Expression of shock.
+    location: "oakhaven-barn-hospice"
+    lighting:
+      primary_source: "Hanging lanterns"
+      quality: "Luminous, soft"
+      direction: "Above and around"
+      color_temperature: "Warm amber/gold"
+      shadow_depth: "Minimal, dreamy"
+      atmospheric: "Herb-smoke haze"
+    palette:
+      dominant:
+        - "warm amber"
+        - "moss green"
+        - "pale gold"
+        - "soft cream"
+      accent:
+        - "bronze of brazier"
+        - "silver in hair"
+      avoid:
+        - "sickly greens"
+        - "harsh shadows"
+    prompt_used: |
+      Halfling healer with curly graying hair kneeling beside dying woman in barn hospice,
+      lifting tea cup to her lips,
+      small bronze brazier with smoke spiraling up,
+      warm amber lantern light,
+      ethereal peaceful atmosphere,
+      observers in background,
+      classical oil painting, Pre-Raphaelite luminosity,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, magic sparkles, gore
+    tags:
+      - "hero"
+      - "aldwin"
+      - "tea-ceremony"
+      - "mercy"
+      - "ethereal"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch04-the-healers-calling-img-04-06-02"
+    source_moment: "ch04-the-healers-calling-moment-11"
+    scene_id: "scn-04-06"
+    image_type: "reaction"
+    category:
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Halden's worldview shaking. The shock of witnessing mercy that looks like death."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Close up on Halden's face. He has taken a step forward, hand raised as if to intervene, then frozen. His eyes are wide, conflicted. Tears standing in them? The warm light of the barn illuminates his shock. Aldwin is out of focus in the foreground, turning to look at him.
+    composition_notes: |
+      Halden in sharp focus. Aldwin's shoulder/profile in soft foreground.
+    visual_hook: "The raw conflict on the medic's face—training warring with witnessing."
+    depicts_characters:
+      - "medic-halden"
+      - "aldwin-gentleheart"
+    character_states:
+      medic-halden: |
+        Shocked expression. Mouth slightly open. Hand raised.
+      aldwin-gentleheart: |
+        Turning. Calm.
+    location: "oakhaven-barn-hospice"
+    lighting:
+      primary_source: "Lanterns"
+      quality: "Warm"
+      direction: "Front"
+      color_temperature: "Amber"
+      shadow_depth: "Soft"
+      atmospheric: "Haze"
+    palette:
+      dominant:
+        - "warm skin tones"
+        - "amber"
+        - "brown"
+      accent:
+        - "Halden's eyes"
+      avoid:
+        - "darkness"
+    prompt_used: |
+      Close up of medieval medic with shocked conflicted expression,
+      hand half-raised,
+      watching a healer in foreground,
+      warm barn interior lighting,
+      emotional moment,
+      classical oil painting, realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "halden"
+      - "reaction"
+      - "conflict"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch04-the-healers-calling-img-04-07-01"
+    source_moment: "ch04-the-healers-calling-moment-12"
+    scene_id: "scn-04-07"
+    image_type: "detail"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: "Veyra's parallel to Aldwin—she heals through presence. Her lantern illuminating her own wound creates the central visual irony."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Veyra seated on a low stool beside occupied cots. She is simply present. The visual center: her burn scar illuminated by her own belt lantern. Patients nearby are turned toward her. Her teal-blue tattoos on neck and arm are visible. In the far background, soft-focused, Aldwin moves between other cots.
+    composition_notes: |
+      Portrait framing. Veyra right two-thirds. Patient faces left edge. Eye-level. Rule of thirds: scarred face upper-right.
+    visual_hook: "Her burn scar illuminated by her own lantern—the wound that is now proof of survival"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "aldwin-gentleheart"
+    character_states:
+      veyra-thornwake: |
+        Seated. Relaxed. Burn scar prominently lit by belt lantern. Expression stoic calm.
+      aldwin-gentleheart: |
+        Far background figure.
+    location: "oakhaven-barn-hospice"
+    lighting:
+      primary_source: "Belt lantern"
+      quality: "Soft, intimate"
+      direction: "Below/side"
+      color_temperature: "Warm amber/gold"
+      shadow_depth: "Soft gradients"
+      atmospheric: "Haze"
+    palette:
+      dominant:
+        - "amber gold"
+        - "warm brown"
+        - "cream cots"
+      accent:
+        - "teal-blue tattoos"
+        - "reddish-brown scar"
+      avoid:
+        - "cold blues"
+    prompt_used: |
+      Scarred half-elf woman seated on stool in hospice,
+      burn scar on face illuminated by lantern at belt,
+      patients looking at her,
+      teal tattoos visible,
+      calm stoic expression,
+      warm amber lighting,
+      classical oil painting, Vermeer interior lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smiling broadly
+    tags:
+      - "detail"
+      - "veyra"
+      - "vigil"
+      - "intimate"
+      - "scar"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch04-the-healers-calling-img-04-07-02"
+    source_moment: "ch04-the-healers-calling-moment-13"
+    scene_id: "scn-04-07"
+    image_type: "mood"
+    category:
+      - "mood"
+      - "action"
+    scene_mood: "somber"
+    mood_rationale: "The shared work of the night. Halden and Aldwin working together."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      A wide shot of the barn interior late at night. Aldwin and Halden are working together at a table mixing herbs/medicines. Veyra sits with a patient. Venn stands guard at the door. Thorne carries a bucket of water. The activity is hushed, respectful. The barn is a beacon of care in the dark.
+    composition_notes: |
+      Ensemble shot. Multiple focal points of care. Warm pools of light in darkness.
+    visual_hook: "The team working as a unit of care, each finding their place in the ritual of mercy."
+    depicts_characters:
+      - "aldwin-gentleheart"
+      - "medic-halden"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "archer-venn"
+    character_states:
+      aldwin-gentleheart: |
+        Mixing herbs.
+      medic-halden: |
+        Assisting Aldwin.
+      veyra-thornwake: |
+        Sitting with patient.
+      thorne-brightward: |
+        Carrying water.
+      archer-venn: |
+        Guarding door.
+    location: "oakhaven-barn-hospice"
+    lighting:
+      primary_source: "Lanterns"
+      quality: "Warm, quiet"
+      direction: "Multiple sources"
+      color_temperature: "Amber"
+      shadow_depth: "Deep corners"
+      atmospheric: "Haze"
+    palette:
+      dominant:
+        - "amber"
+        - "wood brown"
+        - "shadow"
+      accent:
+        - "white bandages"
+      avoid:
+        - "bright daylight"
+    prompt_used: |
+      Interior of barn hospice at night with multiple figures caring for patients,
+      halfling and human medic mixing herbs at table,
+      scarred woman sitting with patient,
+      elf guarding door,
+      warm lantern light and deep shadows,
+      atmosphere of hushed care,
+      classical oil painting, group composition,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "teamwork"
+      - "hospice"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch04-the-healers-calling-img-04-08-01"
+    source_moment: "ch04-the-healers-calling-moment-14"
+    scene_id: "scn-04-08"
+    image_type: "transition"
+    category:
+      - "location"
+      - "mood"
+    scene_mood: "pastoral"
+    mood_rationale: "The return journey. Morning light clearing the mist. Lightness after dark."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      The party traveling back through the Westwood in morning light. The mist is burning off. Aldwin rides a sturdy pony, his small frame dwarfed by packs but sitting gracefully. The wagon follows. Veyra drives. The mood is lighter, the air sweet.
+    composition_notes: |
+      Wide shot. Movement left to right. Sun filtering through trees. Aldwin prominent.
+    visual_hook: "Aldwin on his pony, leading the way back to life, bathed in fresh morning light."
+    depicts_characters:
+      - "aldwin-gentleheart"
+      - "veyra-thornwake"
+    character_states:
+      aldwin-gentleheart: |
+        Riding pony. Calm.
+      veyra-thornwake: |
+        Driving wagon. Relaxed.
+    location: "thornwood-forest"
+    zone: "trail"
+    lighting:
+      primary_source: "Morning sun"
+      quality: "Fresh, clear"
+      direction: "Side/Back"
+      color_temperature: "Pale gold"
+      shadow_depth: "Long morning shadows"
+      atmospheric: "Mist clearing"
+    palette:
+      dominant:
+        - "green"
+        - "gold"
+        - "mist white"
+      accent:
+        - "moss green cloak"
+      avoid:
+        - "dark shadows"
+    prompt_used: |
+      Fantasy travelers on a forest road in morning mist,
+      halfling riding a pony leading a covered wagon,
+      sunbeams cutting through trees,
+      peaceful hopeful atmosphere,
+      classical oil painting, landscape,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, dark, gloomy
+    tags:
+      - "transition"
+      - "return"
+      - "pastoral"
+      - "morning"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch04-the-healers-calling-img-04-08-02"
+    source_moment: "ch04-the-healers-calling-moment-15"
+    scene_id: "scn-04-08"
+    image_type: "symbol"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+      - "symbol"
+    scene_mood: "celebratory"
+    mood_rationale: "The mercy tea transformed into welcome tea. The company forms around shared warmth."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The company gathered around a campfire in a forest clearing at nightfall. Cups raised in toast. The fire burns bright orange-gold. Aldwin's bronze brazier is visible beside him. Aldwin is central, smiling. Veyra, Thorne, Halden, Venn raise cups. Stars above.
+    composition_notes: |
+      Medium-wide shot. Circle of figures. Fire center. Low angle to include stars.
+    visual_hook: "The same bronze tea service from the death-bed scene, now dispensing life and fellowship"
+    depicts_characters:
+      - "aldwin-gentleheart"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "medic-halden"
+      - "archer-venn"
+    character_states:
+      aldwin-gentleheart: |
+        Smiling. Moss-green cloak.
+      veyra-thornwake: |
+        Raising cup. Peaceful.
+      thorne-brightward: |
+        Raising cup.
+      medic-halden: |
+        Raising cup. Transformed expression.
+      archer-venn: |
+        Raising cup. Smirking.
+    location: "westwood-campsite"
+    lighting:
+      primary_source: "Campfire"
+      quality: "Warm, convivial"
+      direction: "Uplighting"
+      color_temperature: "Orange-amber"
+      shadow_depth: "Warm"
+      atmospheric: "Woodsmoke"
+    palette:
+      dominant:
+        - "fire orange"
+        - "gold"
+        - "warm brown"
+      accent:
+        - "silver stars"
+      avoid:
+        - "cold palette"
+    prompt_used: |
+      Five fantasy companions toasting with cups around a campfire at night,
+      halfling healer center with bronze brazier,
+      scarred woman, armored man, medic, elf,
+      warm firelight on faces,
+      starry sky above,
+      atmosphere of fellowship and belonging,
+      classical oil painting, Dutch Golden Age warmth,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, gloomy
+    tags:
+      - "symbol"
+      - "toast"
+      - "celebratory"
+      - "fellowship"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

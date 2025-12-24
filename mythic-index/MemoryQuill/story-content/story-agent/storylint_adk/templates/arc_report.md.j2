@@ -1,0 +1,27 @@
+# Storylint Arc Report: {{ report.window_slug }}
+
+## Overall
+- Momentum: {{ report.momentum }}
+- Emotional Trajectory: {{ report.emotional_trajectory }}
+- Structural Clarity: {{ report.structural_clarity }}
+- Confidence: {{ report.confidence }}
+
+## Observations
+{% for item in report.observations %}
+- {{ item }}
+{% endfor %}
+
+## Risks
+{% for item in report.risks %}
+- {{ item }}
+{% endfor %}
+
+## Opportunities
+{% for item in report.opportunities %}
+- {{ item }}
+{% endfor %}
+
+## Chapters To Rework
+{% for item in report.chapters_to_rework %}
+- {{ item }}
+{% endfor %}

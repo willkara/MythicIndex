@@ -1,0 +1,734 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: The First Spark
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch03-the-first-spark"
+  chapter_number: 3
+  chapter_title: "The First Spark"
+  visual_thesis: "From the warm amber sanctuary of found family to the white-green hell of chemical fire, ending in the solemn glow of purpose forged from failure."
+  color_palette:
+    primary:
+      - "warm amber"
+      - "honey gold"
+      - "worn leather brown"
+      - "white-green chemical"
+      - "oily black"
+    accent:
+      - "blood red"
+      - "sepia shadow"
+      - "flask-glint silver"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 2
+    pastoral: 0
+    celebratory: 1
+    aquatic: 0
+    ethereal: 0
+    intimate: 3
+    kinetic: 1
+    ominous: 1
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: |
+      This chapter: Early recovery phase. Still using walking stick (healing injury).
+      Forearm bandaged at start (pink healing skin exposed after removal).
+      Wearing standard gear throughout—leather cuirass, dark blue tunic, lantern at belt.
+      Burn scar prominent on left face.
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: "Standard patrol gear: steel breastplate, blue cloak with sunburst sigil."
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "sergeant-kelen"
+    name: "Sergeant Kelen"
+    scene_variations: "Standard watch armor. Iron-gray hair."
+    reference_images: []
+
+  - ref: "quartermaster-fayne"
+    name: "Quartermaster Fayne"
+    scene_variations: "Rock gnome, brass spectacles (folded up/down), ink-stained hands."
+    reference_images:
+      - "quartermaster-fayne-standard-portrait-01"
+
+  - ref: "archer-venn"
+    name: "Archer Venn"
+    scene_variations: "Elf, tall, braided hair. Leather armor."
+    reference_images:
+      - "archer-venn-portrait-01"
+
+  - ref: "corporal-darric"
+    name: "Corporal Darric"
+    scene_variations: "Dwarf, twin braids, heavy armor."
+    reference_images:
+      - "corporal-darric-portrait-01"
+
+  - ref: "medic-halden"
+    name: "Medic Halden"
+    scene_variations: "Human, kettle hat, medical satchel."
+    reference_images:
+      - "medic-halden-standing-portrait-01"
+
+locations:
+  - ref: "westwall-watchpost"
+    zones:
+      - id: "overview"
+        chapter_context: |
+          A utilitarian military interior transformed by lived-in warmth. Worn wooden tables scarred by knife marks and mug rings. A central stone hearth providing amber firelight that softens the hard edges of weapon racks and armor stands. The smell of leather, whetstone dust, and old woodsmoke. Practical—no decoration except company banners and functional equipment—but made home by the patina of daily use.
+
+  - ref: "dock-ward"
+    zones:
+      - id: "tenement"
+        chapter_context: |
+          A three-story wooden tenement structure actively dying by fire. One wall has partially collapsed, revealing the building's timber frame skeleton like a split carcass. The fire burns wrong—white-green at the base where the alchemical accelerant burns, transitioning to normal orange-red above. Oily black smoke boils upward, thick and acrid. The street below is chaotic: bucket brigades forming uselessly, Watch establishing perimeter. Cobblestones slick with thrown water.
+
+moments:
+  - id: "ch03-the-first-spark-moment-01"
+    scene_id: "scn-03-01"
+    title: "The Lantern Ritual"
+    narrative_beat: "Veyra cleaning her lantern in the barracks, finding anchor in routine."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "westwall-watchpost/overview"
+    transformation_state: "before"
+    recommended_images: 1
+
+  - id: "ch03-the-first-spark-moment-02"
+    scene_id: "scn-03-01"
+    title: "The Pivot"
+    narrative_beat: "Veyra ripping off her bandage and standing to face the fire. Agency reclaimed."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    location_zone: "westwall-watchpost/overview"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch03-the-first-spark-moment-03"
+    scene_id: "scn-03-02"
+    title: "The Chemical Fire"
+    narrative_beat: "Establishing the white-green chemical fire consuming the tenement."
+    visual_weight: "high"
+    characters_present:
+      - "thorne-brightward"
+    location_zone: "dock-ward/tenement"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch03-the-first-spark-moment-04"
+    scene_id: "scn-03-02"
+    title: "The Eruption"
+    narrative_beat: "Water hits the phosphorus, causing a massive white-hot eruption that vindicates Veyra's warning."
+    visual_weight: "critical"
+    characters_present:
+      - "veyra-thornwake"
+      - "sergeant-kelen"
+    location_zone: "dock-ward/tenement"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch03-the-first-spark-moment-05"
+    scene_id: "scn-03-02"
+    title: "The Collapse"
+    narrative_beat: "The building collapses, sealing the basement and marking the failure of standard methods."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "sergeant-kelen"
+    location_zone: "dock-ward/tenement"
+    transformation_state: "after"
+    recommended_images: 2
+
+  - id: "ch03-the-first-spark-moment-06"
+    scene_id: "scn-03-03"
+    title: "The Toast"
+    narrative_beat: "The patrol raising a toast to Veyra and the 'light that shows us where the line needs to be crossed'."
+    visual_weight: "high"
+    characters_present:
+      - "thorne-brightward"
+      - "veyra-thornwake"
+      - "sergeant-kelen"
+      - "archer-venn"
+      - "corporal-darric"
+    location_zone: "westwall-watchpost/overview"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch03-the-first-spark-moment-07"
+    scene_id: "scn-03-03"
+    title: "The Symbol"
+    narrative_beat: "Fayne showing the sketch of the lantern sigil, the birth of the Last Light Company's identity."
+    visual_weight: "medium"
+    characters_present:
+      - "quartermaster-fayne"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    location_zone: "westwall-watchpost/overview"
+    transformation_state: "after"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch03-the-first-spark-img-03-01-01"
+    source_moment: "ch03-the-first-spark-moment-01"
+    scene_id: "scn-03-01"
+    image_type: "detail"
+    category:
+      - "character"
+      - "emotion"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: "This is a quiet, private ritual—Veyra's anchor against internal chaos. Vermeer-like intimacy captures the fragile comfort before the storm."
+    aspect_ratio: "4:5"
+    orientation: "portrait"
+    size: "1024x1280"
+    visual_description: |
+      A study in quiet ritual. Veyra sits at a small wooden table apart from the main group, her scarred hands methodically cleaning the glass of her battered lantern with a soft cloth. Her dark eyes are focused but distant. The burn scar on her face catches the lantern's amber glow. In the soft background blur, the shapes of patrol members gather near the hearth.
+    composition_notes: |
+      Close framing on Veyra's hands and face. Rule of thirds: hands with lantern lower-left, face upper-right. Shallow depth of field. Lantern illuminates face from below/side.
+    visual_hook: "The reflection of steady flame in the glass she cleans, mirrored in the sharp focus of her dark eyes"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Seated, shoulders slightly hunched. Expression calm, focused. Burn scar visible. Mohawk and braided lock visible. Walking stick leaning against table.
+    location: "westwall-watchpost"
+    lighting:
+      primary_source: "lantern in her hands"
+      quality: "soft, warm, intimate"
+      direction: "below and side"
+      color_temperature: "warm amber-gold"
+      shadow_depth: "soft gradients"
+      atmospheric: "clean interior"
+    palette:
+      dominant:
+        - "warm amber"
+        - "honey gold"
+        - "dark leather brown"
+      accent:
+        - "teal-blue (tattoos)"
+        - "soft rose (healing skin)"
+      avoid:
+        - "cold blues"
+        - "harsh whites"
+    prompt_used: |
+      A half-elf woman with deep earth-brown skin and prominent burn scar cleaning a battered lantern with a soft cloth,
+      intensely dark eyes focused on work,
+      lantern casting warm golden glow upward onto face,
+      small military barracks interior with soft blur of figures in background,
+      close intimate framing,
+      classical oil painting, Vermeer interior lighting, single warm light source,
+      gentle shadow gradients, amber and soft rose tones,
+      Dutch Golden Age intimacy, visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth skin,
+      harsh lighting, cold colors, action poses
+    tags:
+      - "veyra-thornwake"
+      - "lantern-ritual"
+      - "intimate"
+      - "opening"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch03-the-first-spark-img-03-01-02"
+    source_moment: "ch03-the-first-spark-moment-02"
+    scene_id: "scn-03-01"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "A moment of weighted decision. The split lighting—warm barracks against the orange glow of distant fire—creates chiaroscuro drama befitting Rembrandt."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      The pivot point. Veyra stands with only a slight wobble, the torn bandage falling from her scarred hand, revealing pink raw healing skin on her forearm. Her jaw is set. Behind her, through a small window, the orange-red glow of distant fire paints the night sky. The warmth of the barracks lights one side of her face; the approaching fire colors the other. Thorne watches from the background with resigned understanding.
+    composition_notes: |
+      Medium shot, Veyra dominant. Split lighting: warm interior left, fire-glow right. Bandage falling creates visual anchor. Thorne in background third.
+    visual_hook: "The bandage falling away in her scarred hand, revealing raw pink skin beneath—a wound becoming a choice"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    character_states:
+      veyra-thornwake: |
+        Standing with slight wobble. Right hand releasing bandage. Left arm exposed showing pink skin. Jaw set. Expression defiant resolve.
+      thorne-brightward: |
+        Background figure. Expression of resigned understanding. Protective posture.
+    location: "westwall-watchpost"
+    lighting:
+      primary_source: "split: hearth vs window fire-glow"
+      quality: "dramatic, chiaroscuro"
+      direction: "side lighting from both directions"
+      color_temperature: "mixed: amber vs orange-red"
+      shadow_depth: "deep, rich"
+      atmospheric: "slight smoky haze"
+    palette:
+      dominant:
+        - "warm amber"
+        - "fire orange"
+        - "deep shadow brown"
+      accent:
+        - "pink healing skin"
+        - "teal tattoos"
+      avoid:
+        - "bright greens"
+        - "cool blues"
+    prompt_used: |
+      A half-elf woman with deep earth-brown skin standing with slight wobble releasing a torn white bandage from her arm,
+      revealing raw pink healing skin, prominent burn scar on face,
+      intensely dark eyes with immovable determination,
+      military barracks interior with window showing orange-red fire glow,
+      broad-shouldered man in background with resigned expression,
+      split Rembrandt lighting warm amber and fire-orange,
+      classical oil painting, chiaroscuro, muted earth palette,
+      atmospheric weight, visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth skin,
+      happy expressions, bright even lighting, flat composition
+    tags:
+      - "pivot-moment"
+      - "defiance"
+      - "somber"
+      - "bandage"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch03-the-first-spark-img-03-02-01"
+    source_moment: "ch03-the-first-spark-moment-03"
+    scene_id: "scn-03-02"
+    image_type: "hero"
+    category:
+      - "location"
+      - "moment"
+      - "symbol"
+    scene_mood: "ominous"
+    mood_rationale: "The white-green chemical fire is explicitly WRONG. Ominous mood captures this wrongness with its sickly palette and psychological dread."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      The tenement writhes in dying agony. Three stories of wooden construction, one wall collapsed. At the base, the fire burns WRONG—white-green chemical flames licking upward, casting sickly pallid light. Above, normal orange-red. Oily black smoke boils upward. On the street below, chaotic response. A single figure in blue cloak (Thorne) directs the perimeter.
+    composition_notes: |
+      Wide cinematic establishing shot. Low angle looking up. White-green flames draw eye. Smoke column rising. Thorne provides scale.
+    visual_hook: "The unnatural white-green flames licking at the base, casting everything in sickly light against the oily blackness above"
+    depicts_characters:
+      - "thorne-brightward"
+    character_states:
+      thorne-brightward: |
+        Small figure at street level. Blue cloak and armor. Directing perimeter.
+    location: "dock-ward"
+    zone: "tenement"
+    lighting:
+      primary_source: "chemical fire (white-green)"
+      quality: "unsettling, sickly"
+      direction: "from below"
+      color_temperature: "cold sickly green vs hot orange"
+      shadow_depth: "deep, confused"
+      atmospheric: "thick oily smoke, acrid haze"
+    palette:
+      dominant:
+        - "white-green chemical flame"
+        - "oily black smoke"
+        - "sickly pallid"
+      accent:
+        - "normal fire orange"
+        - "Thorne's blue cloak"
+      avoid:
+        - "clean colors"
+        - "pastoral greens"
+    prompt_used: |
+      A three-story wooden tenement building burning in the night with unnatural white-green chemical flames at the base,
+      thick oily black smoke boiling upward,
+      chaotic street scene below with City Watch,
+      figure in blue cloak directing efforts providing scale,
+      low angle wide shot, heat distortion,
+      classical oil painting, Symbolist unease, unnatural lighting,
+      cold sickly palette bile green, oppressive dread,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, daytime, blue sky,
+      natural fire colors only, clean smoke
+    tags:
+      - "tenement-fire"
+      - "chemical-fire"
+      - "ominous"
+      - "hero-image"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch03-the-first-spark-img-03-02-02"
+    source_moment: "ch03-the-first-spark-moment-04"
+    scene_id: "scn-03-02"
+    image_type: "anchor"
+    category:
+      - "action"
+      - "moment"
+    scene_mood: "kinetic"
+    mood_rationale: "Pure violent reaction. The moment water hits white phosphorus. This demands Delacroix energy: diagonal composition, harsh dramatic light, urgent brushwork."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The moment of violent vindication. A bucket of water impacts the chemical fire. A vertical geyser of white-hot flame erupts like a screaming beast. Guards scramble backward, some thrown off their feet. Veyra's figure is visible in the chaos—not fleeing, watching with grim confirmation.
+    composition_notes: |
+      Diagonal energy dominates. Geyser creates vertical thrust. Figures thrown backward. Low angle. Veyra in mid-ground stillness.
+    visual_hook: "The vertical column of white-hot flame erupting like a screaming beast, silhouetting guards thrown backward"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "sergeant-kelen"
+    character_states:
+      veyra-thornwake: |
+        Standing still amidst chaos. Expression of grim confirmation. Burn scar stark. Lantern at belt.
+      sergeant-kelen: |
+        Scrambling back. Arm raised. Professional retreat.
+    location: "dock-ward"
+    zone: "tenement"
+    lighting:
+      primary_source: "explosive geyser of white-hot flame"
+      quality: "harsh, violent, blinding"
+      direction: "radiating outward"
+      color_temperature: "white-hot center, fire orange radiating"
+      shadow_depth: "harsh contrast"
+      atmospheric: "sparks, debris, heat distortion"
+    palette:
+      dominant:
+        - "white-hot flame"
+        - "fire orange"
+        - "deep black shadow"
+      accent:
+        - "blood red reflections"
+        - "steel gray armor"
+      avoid:
+        - "cool colors"
+        - "soft tones"
+    prompt_used: |
+      A violent geyser of white-hot flame erupting upward from a chemical fire,
+      guards in armor scrambling backward thrown by the blast,
+      half-elf woman with burn scar standing still amidst chaos watching with grim confirmation,
+      diagonal dynamic composition, urgent violent energy,
+      classical oil painting, Romantic dynamism, dramatic diagonal composition,
+      harsh directional light, high contrast,
+      Delacroix energy, baroque drama, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, calm scene, static composition,
+      soft lighting
+    tags:
+      - "fire-eruption"
+      - "kinetic"
+      - "action"
+      - "vindication"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch03-the-first-spark-img-03-02-03"
+    source_moment: "ch03-the-first-spark-moment-05"
+    scene_id: "scn-03-02"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "emotion"
+      - "action"
+    scene_mood: "somber"
+    mood_rationale: "The collapse is not kinetic—it is WEIGHT. The building falls like a closing door. Somber captures the emotional gravity and failure."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The moment of crushing defeat. The building's facade collapses inward with the finality of a closing tomb. Dust billows outward in a choking cloud. Veyra is mid-roar, arm raised in warning—"BACK!" Soldiers drag victims away. The basement entrance disappears beneath tons of rubble.
+    composition_notes: |
+      Dutch angle emphasizing chaos. Falling facade creates diagonal. Dust cloud obscures. Veyra mid-ground commanding. Figures scrambling foreground.
+    visual_hook: "The wall of stone and timber coming down like a closing door, dust exploding outward to consume the figures"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "sergeant-kelen"
+    character_states:
+      veyra-thornwake: |
+        Mid-roar, arm raised. Fierce authority. Burn scar catching firelight.
+      thorne-brightward: |
+        Echoing retreat. Shield raised. Blue cloak whipping.
+      sergeant-kelen: |
+        Scrambling back dragging victim.
+    location: "dock-ward"
+    zone: "tenement"
+    lighting:
+      primary_source: "fire behind collapse"
+      quality: "diffused by dust, heavy"
+      direction: "backlit"
+      color_temperature: "fire orange filtered through gray"
+      shadow_depth: "deep, consuming"
+      atmospheric: "thick choking dust cloud"
+    palette:
+      dominant:
+        - "dust gray-brown"
+        - "fire-backlit orange"
+        - "deep shadow"
+      accent:
+        - "Thorne's blue cloak"
+      avoid:
+        - "bright clear colors"
+        - "clean air"
+    prompt_used: |
+      A building facade collapsing inward with tons of stone and timber,
+      massive dust cloud billowing outward,
+      half-elf woman with burn scar mid-shout arm raised in urgent warning,
+      soldiers dragging victims away,
+      fire burning behind the collapsing structure backlighting the disaster,
+      dutch angle tilted composition,
+      classical oil painting, Rembrandt lighting, chiaroscuro,
+      deep rich shadows, atmospheric dust and smoke, melancholy weight,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, clear air, clean scene,
+      triumphant poses
+    tags:
+      - "collapse"
+      - "defeat"
+      - "somber"
+      - "retreat"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch03-the-first-spark-img-03-02-04"
+    source_moment: "ch03-the-first-spark-moment-06"
+    scene_id: "scn-03-02"
+    image_type: "beat"
+    category:
+      - "location"
+      - "emotion"
+      - "symbol"
+    scene_mood: "somber"
+    mood_rationale: "The 'Character's Fragility.' Visualizing the Ward as a carcass split open. The contrast between destruction and a single small miracle."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      A close-up shot of the partially collapsed tenement wall. The timber frame is exposed like a skeletal carcass, blackened and soot-covered. Caught in the jagged splinters is a single, small, clean wooden toy horse, perfectly preserved. Weak morning light filters through acrid smoke haze.
+    composition_notes: |
+      Tight square framing. Charred timber frame creates jagged lines. Unburnt toy is focal point. Shallow depth of field.
+    visual_hook: "A single, clean, unburnt wooden toy caught in the center of a charred 'carcass' of blackened tenement beams."
+    depicts_characters: []
+    character_states: {}
+    location: "dock-ward"
+    zone: "tenement"
+    lighting:
+      primary_source: "weak morning light"
+      quality: "diffused, pale"
+      direction: "top-down diagonal"
+      color_temperature: "cool gray-blue"
+      shadow_depth: "deep black"
+      atmospheric: "acrid smoke haze"
+    palette:
+      dominant:
+        - "charred wood black"
+        - "smoke gray"
+        - "soot charcoal"
+      accent:
+        - "natural wood amber (toy)"
+      avoid:
+        - "active flames"
+        - "warm inviting tones"
+    prompt_used: |
+      A macro fantasy detail shot of a charred partially collapsed wooden building wall,
+      exposed timber frame blackened and soot-covered,
+      single small clean wooden toy horse caught in jagged splinters,
+      weak morning light filtering through smoke,
+      somber visceral atmosphere,
+      classical oil painting, Rembrandt lighting, high texture realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, active fire, happy people
+    tags:
+      - "detail"
+      - "aftermath"
+      - "somber"
+      - "toy"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch03-the-first-spark-img-03-03-01"
+    source_moment: "ch03-the-first-spark-moment-06"
+    scene_id: "scn-03-03"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: "The toast is a moment of shared professional pride and acceptance. The group unity forged in failure."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The patrol gathered in the barracks, cleaning gear, now pausing to raise flasks. Thorne stands central, raising his flask to Veyra. Veyra stands slightly apart but included, holding her own cup. The hearth fire casts warm light on their faces, highlighting soot streaks and exhaustion, but also a new resolve. Kelen, Venn, Darric, and Fayne are all present, raising their cups.
+    composition_notes: |
+      Group shot. Thorne central. Veyra prominent. Circle of figures. Hearth fire backlighting/side-lighting.
+    visual_hook: "The glint of firelight on raised metal flasks, a circle of unity forged in smoke"
+    depicts_characters:
+      - "thorne-brightward"
+      - "veyra-thornwake"
+      - "sergeant-kelen"
+      - "archer-venn"
+      - "corporal-darric"
+      - "quartermaster-fayne"
+    character_states:
+      thorne-brightward: |
+        Raising flask. Serious expression.
+      veyra-thornwake: |
+        Holding cup. Expression steady, accepting. Burn scar visible.
+      sergeant-kelen: |
+        Raising cup. Looking at Veyra with reverence.
+    location: "westwall-watchpost"
+    lighting:
+      primary_source: "Hearth fire"
+      quality: "warm, unifying"
+      direction: "side"
+      color_temperature: "amber"
+      shadow_depth: "moderate"
+      atmospheric: "smoke/haze"
+    palette:
+      dominant:
+        - "warm amber"
+        - "leather brown"
+        - "metal glint"
+      accent:
+        - "soot black"
+      avoid:
+        - "cold light"
+    prompt_used: |
+      Group of fantasy soldiers in barracks raising flasks in a toast,
+      armored captain central raising flask to a scarred half-elf woman,
+      hearth fire casting warm amber light on faces,
+      soot-streaked faces showing exhaustion and resolve,
+      diverse group including dwarf elf gnome human,
+      classical oil painting, Dutch Golden Age group portrait,
+      warmth and solidarity,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright daylight
+    tags:
+      - "toast"
+      - "solidarity"
+      - "founding"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch03-the-first-spark-img-03-03-02"
+    source_moment: "ch03-the-first-spark-moment-07"
+    scene_id: "scn-03-03"
+    image_type: "symbol"
+    category:
+      - "symbol"
+      - "moment"
+      - "character"
+    scene_mood: "intimate"
+    mood_rationale: "From the ashes, identity emerges. Fayne's sketch becoming the Company's visual soul demands intimate warmth."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Vision crystallizes into symbol. Fayne's ink-stained hands hold a worn notebook open, revealing rough charcoal lines: a lantern surrounded by reaching hands, with "No One Left Behind" written beneath. Fayne's brass spectacles catch the firelight. In the soft background, patrol members lean in to see.
+    composition_notes: |
+      Close framing on the sketch. Over-shoulder angle. Sketch clearly legible. Fayne's hands prominent. Background figures soft-focused.
+    visual_hook: "The rough charcoal lines of a lantern surrounded by desperate hands, 'No One Left Behind' written in careful script beneath"
+    depicts_characters:
+      - "quartermaster-fayne"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    character_states:
+      quartermaster-fayne: |
+        Holding notebook. Ink-stained fingers. Spectacles folded up.
+      veyra-thornwake: |
+        Background figure leaning in. Expression of recognition.
+      thorne-brightward: |
+        Background figure leaning in. Proud recognition.
+    location: "westwall-watchpost"
+    lighting:
+      primary_source: "hearth fire"
+      quality: "soft, warm, intimate"
+      direction: "side lighting"
+      color_temperature: "warm amber-gold"
+      shadow_depth: "soft gradients"
+      atmospheric: "still interior"
+    palette:
+      dominant:
+        - "warm amber"
+        - "cream paper"
+        - "charcoal gray"
+      accent:
+        - "brass spectacle gleam"
+      avoid:
+        - "cold colors"
+        - "harsh contrasts"
+    prompt_used: |
+      Close view of worn notebook showing charcoal sketch of lantern surrounded by reaching hands with words No One Left Behind,
+      held by ink-stained hands of rock gnome with brass spectacles,
+      soft-focused figures leaning in to see including scarred half-elf woman,
+      warm barracks interior lit by hearth fire,
+      classical oil painting, Vermeer interior lighting,
+      warm amber and cream palette,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, harsh lighting
+    tags:
+      - "fayne-sketch"
+      - "symbol"
+      - "founding-moment"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

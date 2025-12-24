@@ -1,0 +1,79 @@
+location:
+  slug: dock-ward
+  name: Dock Ward
+  files:
+    overview:
+      path: locations/dock-ward/overview.md
+      excerpt: ''
+      exists: true
+    description:
+      path: locations/dock-ward/description.md
+      excerpt: ''
+      exists: true
+    inhabitants:
+      path: locations/dock-ward/inhabitants.md
+      excerpt: ''
+      exists: true
+zones_manifest:
+  path: locations/dock-ward/zones.yaml
+  zones:
+  - slug: company-adjacent
+    name: Company-Adjacent Blocks
+  - slug: company-adjacent-blocks
+    name: Company-Adjacent Blocks
+  - slug: dockside
+    name: Dockside
+    featured_in_chapters:
+    - ch11.5-wayside-whispers
+  - slug: essence
+    name: Essence
+  - slug: fire-scene
+    name: Fire Scene
+    featured_in_chapters:
+    - ch03-the-first-spark
+  - slug: market-square
+    name: Market Square
+  - slug: markets-and-taverns
+    name: Markets & Taverns
+  - slug: night-rain
+    name: Night Rain
+  - slug: pier-underwalks
+    name: Pier Underwalks
+  - slug: storm-wharves
+    name: Storm Wharves
+  - slug: tenement-exterior
+    name: Tenement Exterior
+    featured_in_chapters:
+    - ch03-the-first-spark
+  - slug: tenement-fire
+    name: Tenement Fire
+  - slug: tenements-and-back-lanes
+    name: Tenements & Back Lanes
+  - slug: warehouse-lane
+    name: Warehouse Lane
+  - slug: warehouse-lanes
+    name: Warehouse Lanes
+  - slug: working-wharves
+    name: Working Wharves & Piers
+chapter_evidence:
+- slug: ch03-the-first-spark
+  files:
+    content:
+      path: chapters/ch03-the-first-spark/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch03-the-first-spark/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+- slug: ch11.5-wayside-whispers
+  files:
+    content:
+      path: chapters/ch11.5-wayside-whispers/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch11.5-wayside-whispers/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+intrinsic_characters: []

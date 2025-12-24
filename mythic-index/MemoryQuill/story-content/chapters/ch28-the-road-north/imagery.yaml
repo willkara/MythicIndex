@@ -1,0 +1,570 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: The Road North
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch28-the-road-north"
+  chapter_number: 28
+  chapter_title: "The Road North"
+  visual_thesis: "From the open vulnerability of the road to the suffocating clasp of corrupted wilderness, ending with shapes dissolving into protective mist at the threshold of evil."
+  color_palette:
+    primary:
+      - "#4A5D4A"
+      - "#8B7355"
+      - "#2F4F4F"
+      - "#708090"
+    accent:
+      - "#20B2AA"
+      - "#DAA520"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 1
+    pastoral: 2
+    celebratory: 1
+    aquatic: 2
+    ethereal: 1
+    intimate: 0
+    kinetic: 0
+    ominous: 2
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: "Riding gear, mounted. Alert and watchful. Hand on knife hilt in mist. Burn scar prominent. Lantern unlit."
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: "Disguised as sellsword. Neutral browns/grays. Military bearing. Spyglass sweep."
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "lyra-kestrel"
+    name: "Lyra Kestrel"
+    scene_variations: "Glamoured features. Bored noblewoman persona. Golden eyes still sharp. Analyzing structures."
+    reference_images:
+      - "lyra-kestrel-portrait-01"
+
+  - ref: "rill-vossari"
+    name: "Rill Vossari"
+    scene_variations: "Heavy cloak travel. Full bioluminescence during water communion. Accelerated patterns showing alarm."
+    reference_images:
+      - "rill-vossari-casting-portrait-01"
+
+  - ref: "quierk"
+    name: "Quierk"
+    scene_variations: "Aarakocra innkeeper. Owl features. Leather apron. Talon holding tankard. Keen assessment."
+    reference_images:
+      - "quierk-innkeeper-portrait-01"
+
+  - ref: "vera-moonwhisper"
+    name: "Vera Moonwhisper"
+    scene_variations: "Predatory grace in forest. Hand on bow. ReportingDiscovery of contamination."
+    reference_images:
+      - "vera-moonwhisper-portrait-01"
+
+locations:
+  - ref: "northern-road"
+    zones:
+      - id: "overview"
+        chapter_context: "Muddy road, snowmelt ruts. Dense pine forest pressing close. Gaps of shadow."
+  - ref: "windborne-roost"
+    zones:
+      - id: "overview"
+        chapter_context: "Timber inn at forest edge. Multiple chimneys, smoke. Warm amber light vs cooling dusk."
+  - ref: "thornwood-forest"
+    zones:
+      - id: "stream"
+        chapter_context: "Clear cold water, mossy banks. Overhanging branches. Hidden corruption ripples."
+      - id: "labyrinth"
+        chapter_context: "Gnarled tree roots, muddy quagmire. Labyrinth of ancient oaks."
+  - ref: "silent-hand-facility"
+    zones:
+      - id: "observation"
+        chapter_context: "Rocky outcrop overlooking valley. Elegant manor vs prison walls. Sunset watching eyes."
+      - id: "perimeter"
+        chapter_context: "Reinforced stone walls. Thick magical ground-mist. Pre-dawn gray."
+
+moments:
+  - id: "ch28-the-road-north-moment-01"
+    scene_id: "scn-28-01"
+    title: "The Vulnerable Column"
+    narrative_beat: "The reconnaissance team riding along the muddy northern road, scanned by the silent forest."
+    visual_weight: "hero"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "lyra-kestrel"
+      - "rill-vossari"
+    location_zone: "northern-road/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch28-the-road-north-moment-02"
+    scene_id: "scn-28-02"
+    title: "The Watcher at the Roost"
+    narrative_beat: "Quierk the aarakocra assessing the team at the threshold of the Windborne Roost."
+    visual_weight: "high"
+    characters_present:
+      - "quierk"
+      - "veyra-thornwake"
+      - "lyra-kestrel"
+    location_zone: "windborne-roost/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch28-the-road-north-moment-03"
+    scene_id: "scn-28-03"
+    title: "Poison in the Clear"
+    narrative_beat: "Rill sensing the suppression compounds in the pristine-looking forest stream."
+    visual_weight: "critical"
+    characters_present:
+      - "rill-vossari"
+      - "vera-moonwhisper"
+    location_zone: "thornwood-forest/stream"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch28-the-road-north-moment-04"
+    scene_id: "scn-28-04"
+    title: "Grasping Labyrinth"
+    narrative_beat: "Detail of the ancient gnarled roots and muddy quagmire the team must navigate."
+    visual_weight: "medium"
+    characters_present: []
+    location_zone: "thornwood-forest/labyrinth"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch28-the-road-north-moment-05"
+    scene_id: "scn-28-05"
+    title: "The Beautiful Lie"
+    narrative_beat: "First sight of the Silent Hand facility from the outcrop, elegant manor framed by prison walls."
+    visual_weight: "hero"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "rill-vossari"
+      - "lyra-kestrel"
+    location_zone: "silent-hand-facility/observation"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch28-the-road-north-moment-06"
+    scene_id: "scn-28-06"
+    title: "Phantoms in the Mist"
+    narrative_beat: "The team approaching the perimeter wall under cover of the magically enhanced ground-fog."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "medic-halden"
+      - "archer-venn"
+    location_zone: "silent-hand-facility/perimeter"
+    transformation_state: "during"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch28-the-road-north-img-28-01-01"
+    source_moment: "ch28-the-road-north-moment-01"
+    scene_id: "scn-28-01"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "location"
+    scene_mood: "pastoral"
+    mood_rationale: "Journey through awakening spring. Open vulnerability of the road. Soft morning light."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Column of mounted travelers winding through an awakening spring forest on a muddy northern road. Veyra leads, her spiky mohawk and burn scar visible. Battered lantern dark at her hip. Behind her, Thorne in sellsword disguise. Thick ancient pines press close. Thawing brown earth and patches of snow. Soft morning light through canopy.
+    composition_notes: |
+      Ultra-wide cinematic. Veyra left third. Column creates diagonal. Low horizon line. Depth from atmospheric haze.
+    visual_hook: "Veyra's battered lantern, cold and dark in daylight, swaying at her hip"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "lyra-kestrel"
+      - "rill-vossari"
+    character_states:
+      veyra-thornwake: |
+        Mounted at head. Alert and scanning. Lantern unlit. Cowl loose.
+      thorne-brightward: |
+        Alongside Veyra. Disguised. Watchful.
+      lyra-kestrel: |
+        Following. Bored noblewoman affect. Glamoured.
+      rill-vossari: |
+        Cloaked. Quiet intensity.
+    location: "thornwood-forest"
+    zone: "trail"
+    lighting:
+      primary_source: "morning sun"
+      quality: "soft, dappled"
+      direction: "above/side"
+      color_temperature: "warm gold/cool green"
+      shadow_depth: "gentle"
+      atmospheric: "light haze"
+    palette:
+      dominant:
+        - "pine green"
+        - "thawing brown"
+        - "soft gold"
+      accent:
+        - "teal tattoos"
+      avoid:
+        - "harsh shadows"
+    prompt_used: |
+      Wide cinematic shot of mounted adventurers on a muddy forest road at dawn,
+      woman with mohawk and burn scar leading,
+      thick pine trees and patches of melting snow,
+      unlit lantern at belt,
+      soft morning light filtering through trees,
+      classical oil painting, plein air naturalism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin
+    tags:
+      - "hero"
+      - "journey"
+      - "forest"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch28-the-road-north-img-28-02-01"
+    source_moment: "ch28-the-road-north-moment-02"
+    scene_id: "scn-28-02"
+    image_type: "character"
+    category:
+      - "character"
+      - "moment"
+      - "location"
+    scene_mood: "celebratory"
+    mood_rationale: "Inn as sanctuary. Warm light and hospitality. Recognition of intelligence assets."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Quierk the aarakocra stands in the doorway of the Windborne Roost. Great horned owl features, mottled russet plumage. Golden-amber eye catching warm light. Holding wooden tankard. Hearth-light behind creates rim lighting. Veyra at threshold meeting his gaze.
+    composition_notes: |
+      Vertical portrait. Quierk center-right. Doorframe framing. Temperature contrast warm interior vs cool dusk exterior.
+    visual_hook: "Quierk's golden-amber eye catching the warm inn-light while fixing on the travelers"
+    depicts_characters:
+      - "quierk"
+      - "veyra-thornwake"
+      - "lyra-kestrel"
+    character_states:
+      quierk: |
+        Standing in doorway. Head cocked. Talon-tipped hands. Leather apron. Professional assessment.
+      veyra-thornwake: |
+        At threshold. Neutral expression. Accepting recognition.
+    location: "windborne-roost"
+    lighting:
+      primary_source: "hearth fire"
+      quality: "warm, flickering"
+      direction: "backlit"
+      color_temperature: "warm amber vs cool dusk"
+      shadow_depth: "soft"
+      atmospheric: "warm glow"
+    palette:
+      dominant:
+        - "amber"
+        - "warm gold"
+        - "russet plumage"
+      accent:
+        - "moss green"
+      avoid:
+        - "dark shadows"
+    prompt_used: |
+      Aarakocra with owl features standing in a tavern doorway,
+      mottled brown and cream feathers,
+      piercing golden eyes,
+      warm amber light spilling from behind,
+      talon hands holding a mug,
+      adventurers at the threshold in the dusk,
+      classical oil painting, Dutch genre warmth,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, threatening
+    tags:
+      - "character"
+      - "aarakocra"
+      - "inn"
+      - "celebratory"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch28-the-road-north-img-28-03-01"
+    source_moment: "ch28-the-road-north-moment-03"
+    scene_id: "scn-28-03"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "magic"
+    scene_mood: "aquatic"
+    mood_rationale: "Water as medium of discovery. Rill's bioluminescence revealing poison. Wrongness beneath clean surfaces."
+    aspect_ratio: "2:3"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Rill Vossari kneels at stream bank in twilight. Cloak thrown back, full bioluminescence visible. Webbed fingers submerged. Bioluminescent currents beneath skin quickening toward hands. Pupil-less eyes wide with horror. Stream appears pristine but carries invisible poison. Trident planted nearby.
+    composition_notes: |
+      Vertical portrait. Low angle from water level. Bioluminescence primary illumination. Trident vertical anchor. Overhanging branches frame top.
+    visual_hook: "The glowing aquamarine veins beneath Rill's skin accelerating their movement toward her submerged fingers"
+    depicts_characters:
+      - "rill-vossari"
+    character_states:
+      rill-vossari: |
+        Kneeling. Full bioluminescence. Webbed fingers submerged. Horror in expression.
+    location: "thornwood-forest"
+    lighting:
+      primary_source: "internal bioluminescence"
+      quality: "ethereal, luminous"
+      direction: "internal + reflected"
+      color_temperature: "cool aquamarine"
+      shadow_depth: "soft"
+      atmospheric: "twilight mist"
+    palette:
+      dominant:
+        - "aquamarine"
+        - "teal"
+        - "silver-gray"
+      accent:
+        - "copper coils"
+      avoid:
+        - "warm tones"
+    prompt_used: |
+      Water genasi woman with glowing aquamarine skin kneeling at a pristine forest stream,
+      webbed fingers submerged in water,
+      glowing turquoise veins pulsing and flowing toward hands,
+      horror on her face,
+      twilight forest setting with rising mist,
+      classical oil painting, maritime realism, Turner influence,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, murky water
+    tags:
+      - "anchor"
+      - "magic"
+      - "discovery"
+      - "rill-vossari"
+      - "aquatic"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch28-the-road-north-img-28-04-01"
+    source_moment: "ch28-the-road-north-moment-04"
+    scene_id: "scn-28-04"
+    image_type: "beat"
+    category:
+      - "location"
+      - "detail"
+    scene_mood: "somber"
+    mood_rationale: "The 'Character's Hunger.' Forest as active, consuming force. Gnarled age and muddy quagmire."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Macro shot of a hidden hollow. Ancient gnarled tree roots snake across early spring mud and decaying leaves. Roots look like massive arthritic fingers. Ground is a muddy quagmire. Background massive oaks swallow the sky. Dim green-filtered light.
+    composition_notes: |
+      Tight square framing on forest floor. Roots as grasping diagonals. Shallow depth.
+    visual_hook: "Ancient, arthritic tree roots reaching through black mud and decaying leaves like giant fingers"
+    depicts_characters: []
+    character_states: {}
+    location: "thornwood-forest"
+    lighting:
+      primary_source: "filtered daylight"
+      quality: "dim, green-gray"
+      direction: "top-down"
+      color_temperature: "cold forest green"
+      shadow_depth: "absolute black in hollows"
+      atmospheric: "thick dampness"
+    palette:
+      dominant:
+        - "forest green-black"
+        - "mud brown"
+        - "leaf ochre"
+      accent:
+        - "moss green"
+      avoid:
+        - "bright sun"
+    prompt_used: |
+      Macro detail of gnarled tree roots snaking through dark mud and dead leaves,
+      roots look like giant hands reaching out,
+      dark claustrophobic forest background,
+      damp primeval atmosphere,
+      classical oil painting, Symbolist unease,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, sunny
+    tags:
+      - "detail"
+      - "forest"
+      - "roots"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch28-the-road-north-img-28-05-01"
+    source_moment: "ch28-the-road-north-moment-05"
+    scene_id: "scn-28-05"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "location"
+      - "symbol"
+    scene_mood: "ominous"
+    mood_rationale: "Stronghold first sight. Elegant manor vs prison reality. Gilded architecture hiding horror. Watching eyes."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      View from concealed outcrop looking down into valley. Elegant manor house with wings, windows catching golden sunset like watching eyes. Surrounded by guard towers, reinforced walls. Streams converge on central lake. Team prone on lichen-covered granite in foreground. Darkening green forest.
+    composition_notes: |
+      Ultra-wide vista. Team silhouettes foreground anchor. High angle over shoulders. Manor center-right. Silver stream ribbons. Cold shadow in forest.
+    visual_hook: "The manor's windows catching golden sunset light like watching eyes, while the surrounding forest lies in deep shadow"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "rill-vossari"
+      - "lyra-kestrel"
+    character_states:
+      veyra-thornwake: |
+        Prone on outcrop. Assessing.
+      thorne-brightward: |
+        Spyglass raised. Methodical sweep.
+      rill-vossari: |
+        Grim confirmation. Fixed on water.
+      lyra-kestrel: |
+        Identifying entry points.
+    location: "silent-hand-facility"
+    lighting:
+      primary_source: "low western sun"
+      quality: "unsettling contrast"
+      direction: "side"
+      color_temperature: "sickly gold vs cold purple"
+      shadow_depth: "deep in valley"
+      atmospheric: "oppressive stillness"
+    palette:
+      dominant:
+        - "purple shadow"
+        - "pallid stone gold"
+        - "forest black-green"
+      accent:
+        - "silver streams"
+      avoid:
+        - "inviting warmth"
+    prompt_used: |
+      Wide cinematic vista of an elegant white manor house in a hidden valley at sunset,
+      manor windows catch golden light like eyes,
+      surrounded by high walls and guard towers,
+      team of silhouetted figures watching from a rocky cliff in foreground,
+      surrounding forest in deep shadow,
+      atmosphere of a 'gilded cage',
+      classical oil painting, Symbolist unease,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, inviting
+    tags:
+      - "anchor"
+      - "stronghold"
+      - "surveillance"
+      - "ominous"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch28-the-road-north-img-28-06-01"
+    source_moment: "ch28-the-road-north-moment-06"
+    scene_id: "scn-28-06"
+    image_type: "mood"
+    category:
+      - "moment"
+      - "action"
+      - "emotion"
+    scene_mood: "ethereal"
+    mood_rationale: "Mist infiltration. Dreamlike, ghostly. Shapes dissolving into protective mist. Liminal boundary."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Under magical mist, three figures approach facility perimeter. Fog clings to ground in thick banks, obscuring from waist down. Veyra leads, hand on knife. Halden with medical kit. Venn covers with bow. Stone wall materializes from fog. Guard tower lost in mist above.
+    composition_notes: |
+      Low ground-level perspective. Partial silhouettes emerging. Perimeter wall right third. Sourceless luminosity. Mist as character.
+    visual_hook: "Veyra's lantern, still dark, visible only as a shape at her hip—light withheld"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "medic-halden"
+      - "archer-venn"
+    character_states:
+      veyra-thornwake: |
+        Leading. hand on knife. Upper body clear, lower body fog. Lantern dark. Focused.
+      medic-halden: |
+        Close behind. Kit secured. Scanning for traps. Tense.
+      archer-venn: |
+        Covering side. Bow ready. Alert.
+    location: "silent-hand-facility"
+    lighting:
+      primary_source: "predawn gray"
+      quality: "soft, dreamlike"
+      direction: "ambient"
+      color_temperature: "silver-gray/blue"
+      shadow_depth: "minimal"
+      atmospheric: "thick magical mist"
+    palette:
+      dominant:
+        - "mist gray"
+        - "stone blue"
+        - "silver"
+      accent:
+        - "dark gear shapes"
+      avoid:
+        - "warm tones"
+    prompt_used: |
+      Three ghostly figures emerging from thick ground mist toward a stone wall,
+      figures obscured from the waist down by swirling fog,
+      woman with mohawk leading,
+      predawn gray light and moisture in the air,
+      atmosphere of silent infiltration and magical concealment,
+      classical oil painting, Pre-Raphaelite luminosity,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, clear visibility, lit lanterns
+    tags:
+      - "mood"
+      - "infiltration"
+      - "mist"
+      - "ethereal"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

@@ -1,0 +1,483 @@
+chapter_analysis:
+  slug: "ch17-the-long-road-home"
+  chapter_number: 17
+  chapter_title: "The Long Road Home"
+  
+  visual_thesis: "From the ash of a broken home to scattered campfire lights—the journey from devastation to fragile hope, told through weary bodies, tender gestures, and the quiet preparation for wars yet to come."
+  
+  dominant_mood_progression:
+    - "hollow grief"
+    - "exhausted procession"
+    - "wry resilience"
+    - "quiet communion"
+    - "watchful preparation"
+  
+  color_story:
+    opening: "cold gray stone, wet ash black, pale morning light"
+    climax: "warm amber lamplight, dusty road brown, faded blue cloaks"
+    closing: "firelight orange against deep night blue, sending stone pulse of pale violet"
+
+  key_locations:
+    - slug: "westwall-watchpost"
+      name: "Westwall Watchpost (Ruined)"
+      visual_character: "A broken fortification—gate hanging from a single hinge like a dislocated jaw, eastern wall a jagged wound of splintered timber, northern tower listing dangerously. Wet ash and ozone hang in the still air. What was home is now a corpse."
+      time_of_day: "early morning"
+      weather_atmosphere: "cold, damp, the wind whispering through broken timbers"
+      
+    - slug: "road-to-waterdeep"
+      name: "Road South to Waterdeep"
+      visual_character: "A slow column on a rutted road—elite cavalry in bright blue and silver escorting wagons of wounded. The landscape is early spring drab, the procession a strange and tragic sight against the muted countryside."
+      time_of_day: "daytime progression"
+      weather_atmosphere: "overcast, chill spring air"
+      
+    - slug: "wayward-compass"
+      name: "The Wayward Compass (Interior)"
+      visual_character: "Low-beamed common room, smoke-hazed air, sawdust-strewn floors dark with old stains. Lamplight pools on scarred wood. The solid, squat presence of a working inn—a toad of timber and stone at the crossroads."
+      time_of_day: "dusk"
+      weather_atmosphere: "warm interior against cold evening"
+      
+    - slug: "wayward-compass-fields"
+      name: "Fields Beside the Wayward Compass"
+      visual_character: "An organized military camp under starlight—small fires dotting the darkness like a scattered constellation, cavalry forming defensive perimeter around the Company's wounded. The inn glows in the background."
+      time_of_day: "night"
+      weather_atmosphere: "clear, cold, stars emerging"
+
+  active_characters:
+    - slug: "veyra-thornwake"
+      name: "Veyra Thornwake"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "protagonist"
+      emotional_arc: "grief → grim acceptance → mentorship → watchful hope"
+      arc_context: "Post-Battle for Westwall. She has just led her Company through a siege that cost them their home. This chapter marks her transition from 'defending a place' to 'leading a people.' The weight of command is no longer theoretical."
+      visual_identifiers: "Deep earth-brown skin, jet-black mohawk with shaved sides, long braided lock with brown feathers and turquoise beads. Prominent mottled reddish-brown burn scar covering left side of face from jaw to temple. Teal-blue swirling tattoos on neck and left arm. Arm currently in a sling. Weathered leather cuirass over dark blue tunic. Battered magic lantern at hip casting warm golden glow."
+      draft_warning: false
+      
+    - slug: "commander-atlock"
+      name: "Commander Marcus Atlock"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "pragmatic assessment → grudging admiration → commitment"
+      arc_context: "Just witnessed the Company defend the Watchpost. Moving from skeptical military commander to active advocate for their legitimacy."
+      visual_identifiers: "Tall human male, 52, deeply weathered face carved from granite. Short gray military-cut hair. Piercing steel-gray eyes. High-collared navy blue dress tunic with crimson piping, gold fringed epaulets, service ribbons and medals. Rigid, disciplined posture."
+      draft_warning: false
+      
+    - slug: "thorne-brightward"
+      name: "Captain Thorne Brightward"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "exhausted duty → quiet camaraderie"
+      arc_context: "Served as tactical anchor during the battle. Now handling logistics of retreat with characteristic discipline."
+      visual_identifiers: "Broad-shouldered human male, early forties. Steel-gray hair in short military cut, thick groomed gray mustache. Deep-set brown watchful eyes. Faded deep blue wool cloak with golden sunburst sigil patch. Steel breastplate over chainmail, travel-worn."
+      draft_warning: false
+      
+    - slug: "grimjaw-ironbeard"
+      name: "Grimjaw Ironbeard"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "practical assessment → wry humor → dreaming forward"
+      arc_context: "Led engineering defense during siege. Now physically ill looking at the structural damage he couldn't prevent, but already planning the next stronghold."
+      visual_identifiers: "Short, stocky elderly dwarf with barrel chest. Voluminous iron-gray beard with massive central braid secured by metal bands, smaller side braids with charms and beads. Ruddy weathered skin, deep-set eyes under bushy brows. Heavy leather mining gear with copper pauldrons. Massive sledgehammer 'Tremor.'"
+      draft_warning: false
+      
+    - slug: "vera-moonwhisper"
+      name: "Vera Moonwhisper"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "unconscious/dying → fragile survival"
+      arc_context: "Nearly died from dire wolf transformation saving Finn's life. Currently a 'flickering candle in a high wind,' stabilized but unconscious."
+      visual_identifiers: "Lean half-elf, pale and thinner than usual. Dark chestnut brown hair in practical braid. Normally hazel eyes (closed). Deep forest-green hooded cloak, brown leather jerkin. Currently lying still in wagon, shallow breathing."
+      draft_warning: false
+      
+    - slug: "finn"
+      name: "Finn"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "wounded devotion → processing trauma → accepting wisdom"
+      arc_context: "Was saved from certain death by Vera's transformation. Now carrying that life-debt and his own near-death experience. Transitioning from 'boy' to proven warrior."
+      visual_identifiers: "Lean, wiry young human male, late teens/early twenties. Short tousled dark brown hair. Hazel eyes. Simple dark brown tunic, sleeves rolled to elbows. Ribs tightly bound. Carries recurve bow."
+      draft_warning: false
+      
+    - slug: "aldwin-gentleheart"
+      name: "Brother Aldwin Gentleheart"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "quiet competence → professional recognition"
+      arc_context: "Operated triage under siege conditions. Now working in seamless partnership with Halden, philosophical differences burned away by shared trauma."
+      visual_identifiers: "Compact, sturdy halfling. Curly dark charcoal-brown hair heavily frosted with silver. Warm hazel eyes. Moss-green hooded cowl over studded brown leather doublet. Dark fingerless leather gloves. Carries copper heating pan and herbal supplies."
+      draft_warning: false
+      
+    - slug: "medic-halden"
+      name: "Medic Halden"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "competent service → mutual respect"
+      arc_context: "Worked alongside Aldwin through the battle. The crucible forged them into equals."
+      visual_identifiers: "Human male, late 30s/early 40s, weathered features. Short dark brown hair (under kettle helmet), heavy stubble. Dark brown weary eyes, nervous tic at left eye corner. Tarnished gray steel plate over dark slate-blue gambeson. Blocky leather medical satchel with red cross."
+      draft_warning: false
+      
+    - slug: "marcus-heartbridge"
+      name: "Marcus Heartbridge"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "charming practicality → preparing for political war"
+      arc_context: "Just financed their inn stay. Now preparing to fight the 'next battlefield'—the political one in Waterdeep."
+      visual_identifiers: "Human male, mid-to-late 30s. Dark brown hair swept back, neat mustache and goatee. Sharp dark brown observant eyes. High-collared charcoal doublet with many small buttons, heavy dark coat. Ornate rapier with silver filigree basket hilt. Gold signet ring on right pinky."
+      draft_warning: false
+      
+    - slug: "quartermaster-fayne"
+      name: "Quartermaster Fayne"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "imposing order on chaos"
+      arc_context: "Their role is to document, organize, and prepare. Amidst catastrophe, neat columns in a ledger are their defiance."
+      visual_identifiers: "Short rock gnome (3'4\"), wiry. Auburn short cropped hair, hazel eyes. Ruddy textured skin, ink-stained fingers. Custom brass spectacles with multiple swing-arm magnifying lenses. Worn high-collared leather coat with segmented pauldron bearing shield emblem. Cross-body bandolier."
+      draft_warning: false
+      
+    - slug: "durja"
+      name: "Durja"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "resigned exasperation → grumbling efficiency"
+      arc_context: "Runs the Wayward Compass. Her inn is about to be overwhelmed by eighty people, and her reaction is pure, weary pragmatism."
+      visual_identifiers: "Formidable orc female. Mossy olive-green rough skin. Dark hair pulled back severely. Prominent lower tusks, scarred brow ridge. Dark intense eyes. Rough-spun greyish-brown tunic, reddish-brown leather vest, wide worn leather belt, long brown apron."
+      draft_warning: false
+      
+    - slug: "lieutenant-tomaq"
+      name: "Lieutenant Tomaq"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "professional participation"
+      arc_context: "Present at leadership table. His by-the-books demeanor now exists alongside proven respect for the Company."
+      visual_identifiers: "Towering stocky orc male. Bald/shaven head, muted moss-green rough skin. One dark piercing eye, black eye patch over left. Two prominent white tusks. Olive-green City Watch uniform with high collar, brass buttons, epaulettes."
+      draft_warning: false
+
+candidate_moments:
+  - moment_id: "ch17-the-long-road-home-moment-01"
+    source_scene: "scn-17-01"
+    
+    narrative_beat: "Veyra stands alone in the center of the ruined courtyard, arm in a sling, her one good eye taking in the full scope of their loss—the gate hanging from a single hinge, the eastern wall a jagged wound, the tower leaning at a sickening angle. The smell of ash transports her to Undershade Canyon, but this time she is not the sole survivor. She is the commander of survivors."
+    subtext: "The transformation from victim to leader is complete. She carries her past trauma but is no longer defined by it. The weight she bears now is not of ghosts, but of the living who depend on her."
+    
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 5
+      symbolic_density: 5
+      total: 23
+    
+    score_rationale:
+      character_revelation_note: "Development.md establishes her arc from 'sole survivor' to 'commander of survivors.' This moment visualizes that transformation explicitly. She sees 'not the wreckage, but the ghosts of what they had built.'"
+      relationship_context: "She stands apart from Atlock, Thorne, and Grimjaw who approach to join her—the leader surveyed by those she leads and those who support her."
+    
+    suggested_type: "hero"
+    primary_subject: "veyra-thornwake"
+    secondary_elements:
+      - "ruined gate hanging from single hinge"
+      - "jagged wound of eastern wall"
+      - "leaning northern tower"
+      - "scattered personal effects in rubble"
+      - "cold morning light"
+    
+    suggested_framing: "wide"
+    suggested_angle: "low"
+    
+    key_visual_hook: "Her arm in a sling, lantern at her hip casting its eternal golden glow against the gray devastation—the only warm light in a landscape of cold ruin."
+    
+    lighting_suggestion: "Pale morning light filtering through broken timbers, creating shafts that cut through lingering smoke and ash. Her lantern provides the only warm accent."
+    
+    emotional_color: "hollow grief, determined acceptance"
+    
+    characters_present:
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Central figure surveying the destruction of her home, processing loss while carrying the weight of leadership."
+    
+    source_excerpts:
+      - "Veyra stood in the center of the courtyard, her arm in a sling, her good eye taking in the full scope of their loss."
+      - "The gate hung from a single hinge like a broken jaw. The eastern wall was a jagged wound of splintered timber and fractured stone. The northern tower leaned at an angle that made Grimjaw physically ill to look at."
+      - "For a fleeting, terrifying moment, the scent of the ash transported her back to the suffocating heat of Undershade Canyon."
+      - "But this time was different. Last time, she had been the sole survivor. This time, she was the commander of survivors."
+      - "She saw not the wreckage, but the ghosts of what they had built."
+    
+    selection_rationale: "This is the definitive HERO shot for the chapter—wide, establishing, and setting the visual and emotional tone of aftermath and transformation. Veyra framed against the destruction she has led her people through encapsulates the chapter's theme of leaving a broken home while carrying its meaning forward."
+
+  - moment_id: "ch17-the-long-road-home-moment-02"
+    source_scene: "scn-17-02"
+    
+    narrative_beat: "The column moves south—forty of Atlock's elite cavalry in bright blue and silver acting as honor guard for a ragged band of wounded rescuers. The contrast is stark and tragic: professional soldiers escorting broken heroes, the wounded pale and drawn in their wagons."
+    subtext: "The Company has earned recognition they never sought. The formal military acknowledges them not as competitors or irregulars, but as something worth protecting. Legitimacy arrives in the form of an escort, not a commission."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 3
+      symbolic_density: 4
+      total: 19
+    
+    score_rationale:
+      character_revelation_note: "Less about individual character and more about the Company's collective identity—'a company of the broken, leaving a broken home.'"
+      relationship_context: "The cavalry escort represents Atlock's commitment from development.md—he's moving from 'skeptical commander' to 'advocate.'"
+    
+    suggested_type: "anchor"
+    primary_subject: "the-column"
+    secondary_elements:
+      - "forty cavalry in blue and silver"
+      - "wagons with wounded"
+      - "Company members walking alongside"
+      - "early spring drab landscape"
+      - "rutted road"
+    
+    suggested_framing: "wide"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "The bright blue and silver cloaks of elite cavalry surrounding the earth-toned, dust-covered wagons of the wounded—formal precision protecting ragged resilience."
+    
+    lighting_suggestion: "Overcast daylight, flat and honest. The cavalry cloaks provide the only color against the muted browns and grays of the road."
+    
+    emotional_color: "somber dignity, exhausted movement"
+    
+    characters_present:
+      - slug: "commander-atlock"
+        has_canonical_visuals: true
+        role_in_moment: "Leading the escort, visible at the head of the cavalry formation."
+      - slug: "thorne-brightward"
+        has_canonical_visuals: true
+        role_in_moment: "Walking or riding near the Company's core, maintaining discipline."
+      - slug: "vera-moonwhisper"
+        has_canonical_visuals: true
+        role_in_moment: "Lying still as death in one of the wagons, breathing shallow."
+    
+    source_excerpts:
+      - "The road south was a slow, somber procession."
+      - "The column was a strange and tragic sight: forty of Atlock's elite cavalry, their blue and silver cloaks bright against the drab landscape, acting as an honor guard for a ragged band of rescuers."
+      - "The Last Light Company's wounded rode in wagons, their faces pale and drawn."
+      - "They were a company of the broken, leaving a broken home, with no clear destination but the cold comfort of the city."
+    
+    selection_rationale: "This ANCHOR shot captures the chapter's central image—the journey itself. The visual contrast between elite military precision and wounded irregulars tells the story of earned respect and hard-won recognition without a word of dialogue."
+
+  - moment_id: "ch17-the-long-road-home-moment-03"
+    source_scene: "scn-17-02"
+    
+    narrative_beat: "Finn walks alongside Vera's wagon, his own ribs tightly bound, his hand resting on the worn wood. He murmurs to her unconscious form—'You're safe now, Vera... Echo's safe too. Just come back.'"
+    subtext: "The life-debt created when Vera transformed to save him is now expressed in the simplest terms—physical presence and quiet devotion. This is found family made visible in a gesture."
+    
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 4
+      narrative_pivot: 2
+      character_revelation: 5
+      symbolic_density: 3
+      total: 19
+    
+    score_rationale:
+      character_revelation_note: "Finn's development.md notes he 'repaid this life-debt moments later by being the first to stand and form a protective circle around her.' This moment continues that arc—the boy who proved his courage now proving his devotion."
+      relationship_context: "Vera nearly died saving Finn. His vigil by her wagon inverts their roles—now he protects her in the only way he can."
+    
+    suggested_type: "detail"
+    primary_subject: "finn"
+    secondary_elements:
+      - "Vera lying still in wagon"
+      - "worn wagon wood"
+      - "Finn's bound ribs visible under tunic"
+      - "column moving in background"
+    
+    suggested_framing: "medium"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "Finn's young hand resting on the weathered wagon wood—the point of contact between the walking wounded and the unconscious savior."
+    
+    lighting_suggestion: "Overcast diffused light, no harsh shadows. Focus on the intimacy of the gesture against the larger movement of the column."
+    
+    emotional_color: "tender devotion, quiet fear"
+    
+    characters_present:
+      - slug: "finn"
+        has_canonical_visuals: true
+        role_in_moment: "Walking vigil, hand on wagon, speaking to unconscious Vera."
+      - slug: "vera-moonwhisper"
+        has_canonical_visuals: true
+        role_in_moment: "Lying still in the wagon, breathing shallow, face pale."
+    
+    source_excerpts:
+      - "In one wagon, Vera Moonwhisper lay still as death, her breathing shallow."
+      - "The Archdruid and his aides had stabilized her, but she was a flickering candle in a high wind."
+      - "Finn, his own ribs tightly bound, walked alongside her wagon, his hand resting on the worn wood."
+      - "'You're safe now, Vera,' he murmured, his voice for her ears only. 'We've got you. Echo's safe, too. He's flying escort. Just... just come back.'"
+    
+    selection_rationale: "This CHARACTER moment captures the bond forged in battle through a simple, paintable gesture. Finn's vigil beside the woman who nearly died saving him visualizes the found-family theme central to the Company's identity."
+
+  - moment_id: "ch17-the-long-road-home-moment-04"
+    source_scene: "scn-17-03"
+    
+    narrative_beat: "Durja, wiping down her bar, looks up to see Thorne in the doorway backed by an army—forty cavalry, wounded rescuers, the unmistakable shapes of Grimjaw and Commander Atlock. She puts down her rag with deliberate slowness, places both massive hands on the bar, and sighs. 'For fuck's sake.'"
+    subtext: "The orc innkeeper's response is the chapter's only moment of levity—and it works precisely because of her absolute lack of sentimentality. War-weary survivors have arrived at a sanctuary, and the sanctuary's keeper is simply, magnificently tired of this."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 2
+      character_revelation: 4
+      symbolic_density: 2
+      total: 16
+    
+    score_rationale:
+      character_revelation_note: "Profile.md captures Durja as 'gruff, no-nonsense... values peace and payment above all else.' This moment is her essence—practical resignation married to competent hospitality."
+      relationship_context: "Her reaction acknowledges the Company without sentiment. They're a problem to be managed, but she'll manage it well."
+    
+    suggested_type: "mood"
+    primary_subject: "durja"
+    secondary_elements:
+      - "bar with rag set down"
+      - "Thorne in doorway"
+      - "sea of armed soldiers visible behind"
+      - "other patrons at windows"
+      - "smoke curling from chimneys"
+    
+    suggested_framing: "medium"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "Durja's massive green hands flat on the oiled oak bar, her expression of profound, bone-deep weariness—the posture of someone who sees exactly what's about to happen to her evening."
+    
+    lighting_suggestion: "Warm interior lamplight against the fading dusk outside. The doorway frames the cavalry column, letting cold blue evening light mix with amber interior glow."
+    
+    emotional_color: "wry exhaustion, resigned competence"
+    
+    characters_present:
+      - slug: "durja"
+        has_canonical_visuals: true
+        role_in_moment: "Behind her bar, reacting to the arrival of an army at her inn."
+      - slug: "thorne-brightward"
+        has_canonical_visuals: true
+        role_in_moment: "Standing in doorway, road dust and fatigue visible."
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "Visible behind Thorne, unmistakable silhouette."
+      - slug: "commander-atlock"
+        has_canonical_visuals: true
+        role_in_moment: "Uniformed presence visible in the twilight behind Thorne."
+    
+    source_excerpts:
+      - "Durja, the orc innkeeper, was wiping down the bar with a rag."
+      - "She looked up, her scarred face taking in Thorne, then Veyra behind him, then the unmistakable form of Grimjaw, and finally the uniformed presence of Commander Atlock."
+      - "She paused, her gaze sweeping over the forty cavalrymen visible in the twilight."
+      - "She put down her rag with deliberate slowness, placed both massive hands on the bar, and sighed. The sound was a low rumble of profound, bone-deep weariness."
+      - "'For fuck's sake,' she said, her voice carrying across the silent room."
+    
+    selection_rationale: "This MOOD moment provides essential tonal relief and changes the chapter's visual setting from road to interior. Durja's reaction is visually specific, character-perfect, and captures the 'wry resilience' phase of the chapter's emotional progression."
+
+  - moment_id: "ch17-the-long-road-home-moment-05"
+    source_scene: "scn-17-04"
+    
+    narrative_beat: "Veyra sits apart on a low stone wall, away from the main fires. Finn finds her there with two cups of hot cider. He confesses he thought he was going to die—'When that orc was standing over me. I saw the axes coming down.' Veyra looks at him, her expression softening just a fraction: 'The trick isn't to avoid it. It's to decide what you're going to do in the single breath you have before it happens.'"
+    subtext: "The mentor passes wisdom to the emerging hero. Veyra's philosophy—forged in Undershade Canyon—now becomes Finn's inheritance. This is how survivors teach other survivors to keep surviving."
+    
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 4
+      narrative_pivot: 3
+      character_revelation: 5
+      symbolic_density: 4
+      total: 21
+    
+    score_rationale:
+      character_revelation_note: "Veyra's development.md establishes her core philosophy: 'Hope is a tool. Use it.' Her advice to Finn is the combat application of that principle. Finn's development shows his arc from 'nervous' to 'proven courage'—this conversation bridges that journey."
+      relationship_context: "Both nearly died. Both survived. Veyra's 'expression softening just a fraction' is significant per her profile—she maintains stoic demeanor, so this small tell carries weight."
+    
+    suggested_type: "character"
+    primary_subject: "veyra-thornwake"
+    secondary_elements:
+      - "Finn with two cups of cider"
+      - "low stone wall"
+      - "campfires in background distance"
+      - "night sky"
+    
+    suggested_framing: "medium"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "Veyra's expression softening just a fraction as she looks at Finn—the mentor acknowledging the student who has proven himself, captured in the small relax of her scarred features."
+    
+    lighting_suggestion: "Distant campfire glow provides rim lighting. The two figures are partially in shadow, their faces illuminated by warm light from the fires behind the camera. Stars visible in cold clear sky."
+    
+    emotional_color: "quiet communion, hard-won wisdom"
+    
+    characters_present:
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Seated on wall, holding cider, delivering the chapter's thematic statement about survival."
+      - slug: "finn"
+        has_canonical_visuals: true
+        role_in_moment: "Standing or seated near Veyra, processing his near-death experience, receiving mentorship."
+    
+    source_excerpts:
+      - "Veyra had found a spot on a low stone wall, away from the main fires, needing a moment of quiet."
+      - "'I thought I was going to die,' Finn said suddenly, his voice barely a whisper. 'When that orc... Serka... was standing over me. I saw the axes coming down.'"
+      - "'We all have that moment, Finn,' Veyra said, her gaze distant. 'The one where you see the end. The trick isn't to avoid it. It's to decide what you're going to do in the single breath you have before it happens.'"
+      - "She looked at him, her expression softening just a fraction. 'You did good, Finn. You held your ground. That's more than most can say.'"
+    
+    selection_rationale: "This CHARACTER moment is the emotional heart of the chapter—the mentor and the student processing shared trauma and exchanging philosophy. Veyra's face softening 'just a fraction' is the visual key, and the composition (two figures apart from the camp fires) reinforces the intimacy."
+
+  - moment_id: "ch17-the-long-road-home-moment-06"
+    source_scene: "scn-17-04"
+    
+    narrative_beat: "Marcus stands alone near the road, bathed in the faint, pulsating light of a sending stone as he finishes a message. Veyra approaches. He explains: 'The physical fight is over. Now comes the political one... it's a different kind of war, and it's the one I fight.' They stand together under the stars, two commanders of two different kinds of war."
+    subtext: "The chapter transitions from aftermath to preparation. Marcus's sending stone—pulsing with magical light—is a beacon signaling the battles to come. The camp behind them is 'a small constellation of lights in a vast darkness,' a temporary home on the road to an uncertain future."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 4
+      character_revelation: 5
+      symbolic_density: 4
+      total: 22
+    
+    score_rationale:
+      character_revelation_note: "Marcus's profile establishes him as fighting 'two kinds of war'—the social/political one. This moment visualizes that role. Development.md notes he's preparing for 'political interference' and 'budgets, jurisdictions, formal complaints.'"
+      relationship_context: "Veyra leads the Company in the field. Marcus leads the fight they can't see. Their partnership is visualized as two figures facing the same darkness with different weapons."
+    
+    suggested_type: "symbol"
+    primary_subject: "marcus-heartbridge"
+    secondary_elements:
+      - "pulsating sending stone light"
+      - "Veyra approaching"
+      - "camp fires behind"
+      - "stars emerging"
+      - "road stretching into darkness"
+    
+    suggested_framing: "medium"
+    suggested_angle: "low"
+    
+    key_visual_hook: "The pale violet-white pulse of the sending stone illuminating Marcus's face from below—a different kind of light than the warm campfires, signaling a different kind of war."
+    
+    lighting_suggestion: "The sending stone provides pulsating magical light (pale violet/white) that creates an otherworldly glow on Marcus's features. Distant campfires provide warm orange-amber rim light. Stars sharp in clear night sky."
+    
+    emotional_color: "watchful preparation, parallel purpose"
+    
+    characters_present:
+      - slug: "marcus-heartbridge"
+        has_canonical_visuals: true
+        role_in_moment: "Finishing a message on his sending stone, preparing for the political war ahead."
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Approaching Marcus, recognizing his different battlefield."
+    
+    source_excerpts:
+      - "Later, as the camp settled into a low murmur, Veyra saw a lone figure near the road, bathed in the faint, pulsating light of a sending stone. Marcus."
+      - "'The next battlefield,' he corrected, his smile not quite reaching his eyes. 'The physical fight is over, Veyra. Now comes the political one. The Lords' Committee will be sharpening their knives. Budgets, jurisdictions, formal complaints from Grimsby... it's a different kind of war, and it's the one I fight.'"
+      - "They stood in silence for a moment, the two commanders of two different kinds of war, watching the stars emerge."
+      - "The camp was a small constellation of lights in a vast darkness, a temporary home on the long road to somewhere else."
+    
+    selection_rationale: "This SYMBOL moment closes the chapter's visual arc with forward-looking imagery. The sending stone's magical light is visually unique and specific to this story, while the composition of two different warriors facing the darkness together captures the chapter's transition from 'what we survived' to 'what comes next.'"

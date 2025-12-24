@@ -1,0 +1,290 @@
+chapter_analysis:
+  slug: "ch23-5-front-page-news"
+  chapter_number: 23.5
+  chapter_title: "Front Page News"
+  
+  visual_thesis: "The ripples of competence spreading through a city—from wet ink and warm tavern light to the cold shadows where enemies take notice."
+  
+  dominant_mood_progression:
+    - "professional pride"
+    - "communal celebration"
+    - "institutional respect"
+    - "lurking threat"
+  
+  color_story:
+    opening: "warm amber lamplight, sepia ink tones, brass and oak"
+    climax: "golden tankard-glow, hearth warmth, working-class honesty"
+    closing: "single candle flicker, deep shadow, cold stone"
+
+  key_locations:
+    - slug: "chronicle-printing-room"
+      name: "The Waterdeep Daily Chronicle Printing Room"
+      visual_character: "Industrial newspaper workshop—mechanical presses, typeset trays, broadsheets drying on lines, the controlled chaos of breaking news. Ink-stained surfaces, brass fittings, oil lamps casting warm pools over fresh paper."
+      time_of_day: "evening"
+      weather_atmosphere: "interior, warm lamplight, humid from wet ink"
+      
+    - slug: "merchants-rest-tavern"
+      name: "The Merchant's Rest"
+      visual_character: "Dense Dock Ward establishment packed with laborers—thick pipe smoke hazing the air, worn wooden tables, standing-room crowds. Honest faces weathered by salt air and manual work. Functional rather than fancy."
+      time_of_day: "evening"
+      weather_atmosphere: "interior, smoky, warm from body heat and hearth"
+      
+    - slug: "city-watch-headquarters"
+      name: "City Watch Tactical Briefing Room"
+      visual_character: "Military efficiency—polished wood tables, maps pinned to walls, standing lanterns, brass fixtures. The serious architecture of institutional authority. Shield Hall's upper floors, professional and spartan."
+      time_of_day: "evening"
+      weather_atmosphere: "interior, controlled lamplight, formal atmosphere"
+      
+    - slug: "silent-hand-chamber"
+      name: "Silent Hand Chamber"
+      visual_character: "Windowless and unremarkable—a scarred wooden table, bare stone walls, deliberate anonymity. The kind of room that could be anywhere, designed to be forgotten. Single light source casting dramatic shadows."
+      time_of_day: "indeterminate"
+      weather_atmosphere: "interior, single candle, oppressive stillness"
+
+  active_characters:
+    - slug: "captain-grimsby"
+      name: "Captain Grimsby"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "skeptical professional → grudging respect → advocate for cooperation"
+      arc_context: "Previously antagonistic toward unconventional methods; this chapter marks his evolution toward recognizing specialized competence"
+      visual_identifiers: "Late 50s-60s human, broad-shouldered, thick grey walrus mustache, ruddy weathered face with deep furrows. Dark slate-blue Watch uniform with stiff red standing collar, gold leaf embroidery, burgundy sash, polished black helmet with gold crest. Officer's saber with gold basket hilt."
+      draft_warning: false
+      
+    - slug: "commander-atlock"
+      name: "Commander Marcus Atlock"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "evaluative observer → decisive commander"
+      arc_context: "Already an advocate for the Company from previous chapters; here exercises his authority to institutionalize cooperation"
+      visual_identifiers: "52 years old human, tall with broad-shouldered rigid posture. Short neat gray hair, piercing steel gray eyes, deeply weathered face appearing carved from granite. Navy blue formal high-collared tunic with crimson red piping, heavy gold fringed epaulets, service ribbons and hanging medals."
+      draft_warning: false
+      
+    - slug: "tamsin"
+      name: "Tamsin"
+      source_status: "draft"
+      has_imagery_yaml: false
+      role_this_chapter: "supporting"
+      emotional_arc: "professional engagement"
+      arc_context: "Not documented"
+      visual_identifiers: "Sharp-eyed woman with ink-stained cuffs; senior reporter"
+      draft_warning: true
+      
+    - slug: "aldrich-quillworth"
+      name: "Master Aldrich Quillworth"
+      source_status: "draft"
+      has_imagery_yaml: false
+      role_this_chapter: "supporting"
+      emotional_arc: "editorial satisfaction → civic pride"
+      arc_context: "Not documented"
+      visual_identifiers: "Weathered fingers, careful with fresh ink; editor/publisher presence"
+      draft_warning: true
+      
+    - slug: "silent-hand-operatives"
+      name: "Silent Hand Operatives (Three Figures)"
+      source_status: "draft"
+      has_imagery_yaml: false
+      role_this_chapter: "antagonist"
+      emotional_arc: "analytical observation → strategic planning"
+      arc_context: "Not documented; first significant appearance of organized threat"
+      visual_identifiers: "Faces obscured by deep hoods; one with low whisper voice, one woman with cultured accent; deliberately anonymous"
+      draft_warning: true
+
+candidate_moments:
+  - moment_id: "ch23-5-front-page-news-moment-01"
+    source_scene: "scn-23-5-01"
+    
+    narrative_beat: "Master Aldrich Quillworth holds up the freshly printed broadsheet, wet ink still gleaming, as Tamsin reads the headline aloud over the mechanical sounds of the printing room."
+    subtext: "Reputation becomes tangible—the power of narrative to shape reality. What was action yesterday becomes legend today, printed four thousand times over."
+    
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 4
+      narrative_pivot: 2
+      character_revelation: 2
+      symbolic_density: 4
+      total: 15
+    
+    score_rationale:
+      character_revelation_note: "Shows professional pride in craft rather than deep character exploration"
+      relationship_context: "Editor-reporter dynamic; institutional voice of the city"
+    
+    suggested_type: "hero"
+    primary_subject: "Aldrich Quillworth holding the broadsheet"
+    secondary_elements:
+      - "Tamsin in background, ink-stained cuffs visible"
+      - "Printing press machinery"
+      - "Stacks of fresh broadsheets"
+      - "Wet ink gleaming under lamplight"
+    
+    suggested_framing: "medium"
+    suggested_angle: "low"
+    
+    key_visual_hook: "Wet ink catching lamplight on fresh newsprint, Quillworth's weathered fingers careful not to smudge the bold headline"
+    
+    lighting_suggestion: "Oil lamps in printing room, warm amber glow on paper and brass machinery"
+    
+    emotional_color: "professional satisfaction"
+    
+    characters_present:
+      - slug: "aldrich-quillworth"
+        has_canonical_visuals: false
+        role_in_moment: "Holding up the paper with editorial pride, evaluating the story that will shape public perception"
+      - slug: "tamsin"
+        has_canonical_visuals: false
+        role_in_moment: "Reading aloud, professional engagement with the material"
+    
+    source_excerpts:
+      - "The ink was still wet when Master Aldrich Quillworth held up the broadsheet, his weathered fingers careful not to smudge the urgent typeset."
+      - "Around him, the Chronicle's printing room hummed with the controlled chaos of breaking news."
+      - "'Make it four thousand. This is the kind of good news the city needs. Competence is a story worth telling.'"
+    
+    selection_rationale: "Opens the chapter's visual journey with a tangible artifact of reputation. The printing room setting is visually distinctive—industrial, warm, filled with purpose. The wet broadsheet serves as a symbolic object: yesterday's action becoming today's legend, multiplied four thousand times."
+
+  - moment_id: "ch23-5-front-page-news-moment-02"
+    source_scene: "scn-23-5-02"
+    
+    narrative_beat: "The packed tavern erupts in a collective toast—tankards raised high by longshoremen, barrel-makers, carters, and carpenters as they honor the Company's rescue with 'To a job well done!'"
+    subtext: "The Company's reputation has reached the people who matter most—those who know what competence looks like because they live it daily. This isn't magic worship; it's professional respect from fellow tradespeople."
+    
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 3
+      narrative_pivot: 2
+      character_revelation: 3
+      symbolic_density: 4
+      total: 17
+    
+    score_rationale:
+      character_revelation_note: "Reveals working class values—they admire technique over spectacle, trade skill over mysterious power"
+      relationship_context: "Community validation; the Company has earned respect from ordinary citizens"
+    
+    suggested_type: "anchor"
+    primary_subject: "Crowd of working folk with raised tankards"
+    secondary_elements:
+      - "Jorik One-Eye prominent in foreground"
+      - "Pipe smoke hazing the air"
+      - "Weathered faces lit by warm tavern light"
+      - "Ink-stained, salt-crusted, sawdust-dusted working hands"
+    
+    suggested_framing: "wide"
+    suggested_angle: "low"
+    
+    key_visual_hook: "Dozens of raised tankards catching firelight through pipe smoke, the communal gesture of honest respect"
+    
+    lighting_suggestion: "Hearth fire and hanging lanterns, warm golden light diffused through pipe smoke"
+    
+    emotional_color: "communal joy, earned pride"
+    
+    characters_present:
+      - slug: "jorik-one-eye"
+        has_canonical_visuals: false
+        role_in_moment: "Leading the eyewitness accounts, tankard raised in celebration"
+    
+    source_excerpts:
+      - "The Merchant's Rest was packed, the air thick with pipe smoke and the excited buzz of the day's events."
+      - "'To a job well done!' called someone, raising a tankard."
+      - "'To a job well done!' the tavern roared back."
+      - "'That's what makes it impressive, ain't it?' nodded Jorik sagely. 'It ain't about gods and monsters. It's about knowing your trade.'"
+    
+    selection_rationale: "The emotional peak of the chapter's positive arc. A wide shot capturing the communal celebration grounds the Company's success in something tangible—not noble approval or political calculation, but the honest respect of people who know good work when they see it. The raised tankards create a powerful unified visual gesture."
+
+  - moment_id: "ch23-5-front-page-news-moment-03"
+    source_scene: "scn-23-5-04"
+    
+    narrative_beat: "Captain Grimsby stands before the tactical map of the library collapse, delivering his professional assessment to Commander Atlock and the briefing room—acknowledging the Company as 'the scalpel to our sword.'"
+    subtext: "The institutional skeptic becomes an advocate. Grimsby's evolution from antagonist to grudging ally is marked not by warmth but by the highest compliment a professional can give: an honest assessment of competence."
+    
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 4
+      narrative_pivot: 3
+      character_revelation: 4
+      symbolic_density: 3
+      total: 17
+    
+    score_rationale:
+      character_revelation_note: "Grimsby previously dismissed unconventional methods; his documented arc as 'professional antagonist' evolves here toward institutional acceptance. The grudging respect is significant given his by-the-book nature."
+      relationship_context: "Watch command hierarchy; Grimsby reporting up to Atlock, both men united in professional assessment"
+    
+    suggested_type: "detail"
+    primary_subject: "Captain Grimsby in formal briefing stance"
+    secondary_elements:
+      - "Tactical map of the library collapse behind him"
+      - "Commander Atlock at the head of the table"
+      - "Military briefing room formality"
+      - "Other officers in attendance"
+    
+    suggested_framing: "medium"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "Grimsby's thick walrus mustache set above a tight-lipped expression of grudging professional respect, his rigid posture slightly less defensive than before"
+    
+    lighting_suggestion: "Standing lanterns in briefing room, even institutional lighting, map illuminated for presentation"
+    
+    emotional_color: "grudging respect, professional acknowledgment"
+    
+    characters_present:
+      - slug: "captain-grimsby"
+        has_canonical_visuals: true
+        role_in_moment: "Delivering his assessment with professional bearing; the skeptic acknowledging what works"
+      - slug: "commander-atlock"
+        has_canonical_visuals: true
+        role_in_moment: "At head of table, listening and preparing to give orders for cross-training"
+    
+    source_excerpts:
+      - "'It was the right call,' Captain Grimsby stated, his tone leaving no room for argument. He stood before a map of the library collapse in the tactical briefing room."
+      - "'They are not a replacement for the Watch,' Grimsby said firmly. 'They are a specialized tool that we must learn how and when to deploy. They are the scalpel to our sword.'"
+      - "'I want cross-training exercises scheduled. If they have techniques that can save lives, I want our people learning them.'"
+    
+    selection_rationale: "The institutional validation moment, featuring two characters with full canonical imagery. Grimsby's character arc moves from documented antagonism to professional respect—a significant development. The military briefing room provides clear visual staging, and the 'scalpel to our sword' line gives the moment thematic weight."
+
+  - moment_id: "ch23-5-front-page-news-moment-04"
+    source_scene: "scn-23-5-06"
+    
+    narrative_beat: "In a windowless chamber, three hooded figures sit around a scarred table as one slides a map forward, marking a district to create a 'diversion' that will draw the Company's attention—while the single candle casts their shadows long across the walls."
+    subtext: "Success has made the Company a target. Their very competence makes them predictable, exploitable. The chapter's celebratory warmth freezes into the cold calculus of enemies who see efficiency as vulnerability."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 5
+      character_revelation: 3
+      symbolic_density: 5
+      total: 22
+    
+    score_rationale:
+      character_revelation_note: "Introduces the enemy's methodology—analytical, patient, willing to 'guide' rather than confront directly"
+      relationship_context: "New threat dynamic; the Company has earned 'focused, analytical attention of its most dangerous enemies'"
+    
+    suggested_type: "mood"
+    primary_subject: "Three hooded figures around a scarred table"
+    secondary_elements:
+      - "Map being slid across the table"
+      - "Single candle as sole light source"
+      - "Long shadows cast on bare walls"
+      - "The circled district on the map"
+    
+    suggested_framing: "medium"
+    suggested_angle: "low"
+    
+    key_visual_hook: "A pale hand sliding a map across scarred wood, the circled district catching candlelight while three faceless hoods lean inward from shadow"
+    
+    lighting_suggestion: "Single candle on table, dramatic chiaroscuro, faces lost in hood shadow, only hands and map illuminated"
+    
+    emotional_color: "cold threat, patient malice"
+    
+    characters_present:
+      - slug: "silent-hand-operatives"
+        has_canonical_visuals: false
+        role_in_moment: "Plotting against the Company—analytical, strategic, anonymous"
+    
+    source_excerpts:
+      - "The chamber was windowless and unremarkable. Three figures sat around a scarred wooden table, their faces obscured by deep hoods."
+      - "She slid a map across the table, circling a district far from their current operations. 'If a new crisis were to emerge, something that demands their unique talents, it would draw their attention. And their resources.'"
+      - "The candle flickered, casting their shadows long across the walls."
+      - "The Last Light Company had earned the city's respect today. But in doing so, they had also earned the focused, analytical attention of its most dangerous enemies."
+    
+    selection_rationale: "The narrative pivot that transforms celebration into threat. Visually the strongest moment—single candle chiaroscuro, anonymous hooded figures, the map as prop, long shadows as metaphor. This image would carry the entire chapter's conclusion, turning the warmth of earned reputation into the chill of earned enemies."

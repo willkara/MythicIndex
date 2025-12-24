@@ -1,0 +1,665 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: The Tracker in the Snow
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch08-the-tracker-in-the-snow"
+  chapter_number: 8
+  chapter_title: "The Tracker in the Snow"
+  visual_thesis: "From the frozen comedy of miscommunication to the cold violence of justice, winter reveals both the warmth of found family and the lethal fury of those who protect the innocent."
+  color_palette:
+    primary:
+      - "#4A5568"
+      - "#F6E05E"
+      - "#2D3748"
+      - "#9B2C2C"
+    accent:
+      - "#319795"
+      - "#E2E8F0"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 2
+    pastoral: 0
+    celebratory: 1
+    aquatic: 0
+    ethereal: 1
+    intimate: 1
+    kinetic: 0
+    ominous: 2
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: "Winter conditions. Frost on cheeks and gear. Breath visible as steam. Thick scarf wrapped around neck. Rare genuine smile in Scene 02."
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "vera-moonwhisper"
+    name: "Vera Moonwhisper"
+    scene_variations: "Discovery: Near-death hypothermia. Lips purple, skin translucent-pale. Sight-sharing: Eyes pure white. Execution: Merciless, frost-thorns erupting from staff."
+    reference_images:
+      - "vera-moonwhisper-portrait-01"
+
+  - ref: "echo-raven"
+    name: "Echo"
+    scene_variations: "Frost-glittering feathers. Vigilant guardian. Intelligent eyes reflecting shared sight."
+    reference_images: []
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: "Winter gear, frost on armor, breath visible. Managing perimeter."
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "grimjaw-ironbeard"
+    name: "Grimjaw Ironbeard"
+    scene_variations: "Ice in beard, frost on pauldrons. Grumbling about cold. Skeptical about young love."
+    reference_images:
+      - "grimjaw-ironbeard-portrait-01"
+
+  - ref: "aldwin-gentleheart"
+    name: "Aldwin Gentleheart"
+    scene_variations: "Winter gear. Wool-wrapped medicines. Warming stones. Compassionate care."
+    reference_images:
+      - "aldwin-gentleheart-official-portrait-01"
+
+locations:
+  - ref: "westwall-watchpost"
+    zones:
+      - id: "common-room"
+        chapter_context: "Stone room with roaring fire. Shivering courier in doorway. Winter gear being checked."
+  - ref: "millbridge"
+    zones:
+      - id: "street"
+        chapter_context: "Timber buildings in snow. straight smoke from chimneys. Rosy-cheeked Thomas and Lily."
+  - ref: "thornwood-forest"
+    zones:
+      - id: "frozen-sentinels"
+        chapter_context: "Snow-laden ancient trees. Oppressive silence. Pristine white canvas. Swarm of fleeing birds."
+  - ref: "thornwood-ruins"
+    zones:
+      - id: "ruins-clearing"
+        chapter_context: "Stone foundations in drifts. Animal offerings in a circle. Raven's vigil."
+      - id: "cellar"
+        chapter_context: "Frost-slick stone walls. Dark underground space. Frightened children in shadows."
+
+moments:
+  - id: "ch08-the-tracker-in-the-snow-moment-01"
+    scene_id: "scn-08-01"
+    title: "Winter Mobilization"
+    narrative_beat: "The Company preparing gear in the Watchpost common room as a shivering courier delivers the plea."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "grimjaw-ironbeard"
+      - "aldwin-gentleheart"
+    location_zone: "westwall-watchpost/common-room"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch08-the-tracker-in-the-snow-moment-02"
+    scene_id: "scn-08-02"
+    title: "The Laughing Scar"
+    narrative_beat: "Veyra's rare genuine laughter upon realizing the rescue mission was for a boy visiting his girl."
+    visual_weight: "hero"
+    characters_present:
+      - "veyra-thornwake"
+      - "thomas-blackwood"
+      - "harriet-blackwood"
+    location_zone: "millbridge/street"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch08-the-tracker-in-the-snow-moment-03"
+    scene_id: "scn-08-03"
+    title: "The Bird Exodus"
+    narrative_beat: "Hundreds of birds bursting from the frozen trees, fleeing an unseen wrongness."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    location_zone: "thornwood-forest/frozen-sentinels"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch08-the-tracker-in-the-snow-moment-04"
+    scene_id: "scn-08-04"
+    title: "Animal Sanctuary"
+    narrative_beat: "The discovery of Vera half-buried in snow, protected by a circle of animal offerings and a raven's vigil."
+    visual_weight: "hero"
+    characters_present:
+      - "vera-moonwhisper"
+      - "echo-raven"
+    location_zone: "thornwood-ruins/ruins-clearing"
+    transformation_state: "before"
+    recommended_images: 1
+
+  - id: "ch08-the-tracker-in-the-snow-moment-05"
+    scene_id: "scn-08-05"
+    title: "Warming the Ice"
+    narrative_beat: "Aldwin and Halden carefully arranging warming stones around Vera in the wagon's tent."
+    visual_weight: "medium"
+    characters_present:
+      - "aldwin-gentleheart"
+      - "vera-moonwhisper"
+      - "medic-halden"
+    location_zone: "thornwood-forest/road"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch08-the-tracker-in-the-snow-moment-06"
+    scene_id: "scn-08-08"
+    title: "Mystic Sight"
+    narrative_beat: "Vera's eyes rolling white as she shares Echo's vision to find the missing girl."
+    visual_weight: "high"
+    characters_present:
+      - "vera-moonwhisper"
+      - "echo-raven"
+    location_zone: "thornwood-forest/frozen-sentinels"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch08-the-tracker-in-the-snow-moment-07"
+    scene_id: "scn-08-09"
+    title: "Frost Execution"
+    narrative_beat: "Vera's frost-thorns wrapping the trafficker's throat, winter justice delivered without expression."
+    visual_weight: "high"
+    characters_present:
+      - "vera-moonwhisper"
+      - "veyra-thornwake"
+      - "grimjaw-ironbeard"
+    location_zone: "thornwood-ruins/celler"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch08-the-tracker-in-the-snow-moment-08"
+    scene_id: "scn-08-10"
+    title: "Winter Belonging"
+    narrative_beat: "The Company gathered around the hearth, sharing stories and bread, Vera's first taste of acceptance."
+    visual_weight: "medium"
+    characters_present:
+      - "vera-moonwhisper"
+      - "veyra-thornwake"
+      - "grimjaw-ironbeard"
+      - "aldwin-gentleheart"
+    location_zone: "westwall-watchpost/common-room"
+    transformation_state: "after"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch08-the-tracker-in-the-snow-img-08-01-01"
+    source_moment: "ch08-the-tracker-in-the-snow-moment-01"
+    scene_id: "scn-08-01"
+    image_type: "establishing"
+    category:
+      - "location"
+      - "moment"
+    scene_mood: "somber"
+    mood_rationale: "Establishing the winter setting and the urgency of the mission. Cold, pre-dawn atmosphere. The weight of winter's grip."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Interior of the Watchpost common room at pre-dawn. A roaring fire in the hearth struggles against the cold. A courier stands in the doorway, cloak covered in ice, horse steaming outside. Veyra is reading a note by the light of her lantern. Thorne and Grimjaw are checking their winter gear—thick furs and wool-lined gloves.
+    composition_notes: |
+      Wide shot. Hearth on one side, open doorway on the other. High contrast between firelight and cold morning blue. Cluttered with winter equipment.
+    visual_hook: "The steam rising from the courier's horse in the doorway, a ghost of warmth in the killing cold."
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "grimjaw-ironbeard"
+    character_states:
+      veyra-thornwake: |
+        Reading note. Breath misting. Grave expression.
+      thorne-brightward: |
+        Fastening cloak. Frost on armor.
+      grimjaw-ironbeard: |
+        Grumpy. Fumbling with frozen buckles.
+    location: "westwall-watchpost"
+    lighting:
+      primary_source: "Hearth + Morning blue through door"
+      quality: "High contrast, smoky"
+      direction: "Side lighting"
+      color_temperature: "Orange vs Blue"
+      shadow_depth: "Deep"
+      atmospheric: "Thick mist and smoke"
+    palette:
+      dominant:
+        - "fire orange"
+        - "winter blue"
+        - "stone gray"
+      accent:
+        - "ice white"
+      avoid:
+        - "vibrant greens"
+    prompt_used: |
+      Interior of a stone fortress room with a large fireplace at dawn,
+      shivering courier in an icy cloak at the open door,
+      adventurers putting on heavy winter furs and checking equipment,
+      steam from breath and horses,
+      high contrast between warm fire and cold blue morning,
+      classical oil painting, Rembrandt lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright sunlight
+    tags:
+      - "establishing"
+      - "winter"
+      - "mobilization"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch08-the-tracker-in-the-snow-img-08-02-01"
+    source_moment: "ch08-the-tracker-in-the-snow-moment-02"
+    scene_id: "scn-08-02"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "celebratory"
+    mood_rationale: "Veyra's rare laughter. Lightness breaking through. Human warmth against the cold."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Veyra Thornwake laughing surprisedly. Scarf pulled down to reveal a full smile. Face transformed, younger. Frost on cheeks cracking. Large steam cloud from breath. Background stunned Company members. Cold village street setting.
+    composition_notes: |
+      Medium-close on Veyra's face. Eye-level. Burn scar visible but softened by expression. Steam creates a leading line. Rule of thirds: face at intersection.
+    visual_hook: "The mottled burn scar lifted by an actual smile, frost on her cheeks cracking with the unfamiliar expression"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "archer-venn"
+      - "grimjaw-ironbeard"
+    character_states:
+      veyra-thornwake: |
+        Laughing. Smile clear. Eyes bright. Frost-touched.
+      archer-venn: |
+        Shocked expression background.
+      grimjaw-ironbeard: |
+        Amused background.
+    location: "millbridge"
+    lighting:
+      primary_source: "diffused winter daylight"
+      quality: "soft, cold ambient"
+      direction: "above"
+      color_temperature: "warm gold vs cold blue"
+      shadow_depth: "soft"
+      atmospheric: "visible steam breath"
+    palette:
+      dominant:
+        - "warm gold"
+        - "amber"
+        - "burgundy"
+      accent:
+        - "frost white"
+      avoid:
+        - "harsh blues"
+    prompt_used: |
+      Portrait of a scarred woman with a mohawk laughing in the cold,
+      mottled burn scar on her face lifted by a smile,
+      large cloud of steam from her breath,
+      frost on her cheeks,
+      stunned companions in the background,
+      medieval winter village setting,
+      classical oil painting, Dutch genre warmth,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin, sad
+    tags:
+      - "hero"
+      - "emotion"
+      - "veyra"
+      - "celebratory"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch08-the-tracker-in-the-snow-img-08-03-01"
+    source_moment: "ch08-the-tracker-in-the-snow-moment-03"
+    scene_id: "scn-08-03"
+    image_type: "mood"
+    category:
+      - "moment"
+      - "symbol"
+    scene_mood: "ominous"
+    mood_rationale: "Primal wrongness. Nature's alarm. Fleeing birds against a pale sky. Oppressive silence."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Hundreds of birds—ravens, wrens, cardinals—streaming across the frame in a chaotic swirl. Dark wings against pale winter sky. Snow cascades from branches in white curtains. Below, forest in oppressive silence. Company figures small, faces upturned.
+    composition_notes: |
+      Wide cinematic framing. Low angle looking up through branches. Birds create diagonal motion. Forest forms dark base.
+    visual_hook: "The chaotic swirl of dark wings against pale winter sky, snow falling in curtains from tree branches"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    character_states:
+      veyra-thornwake: |
+        Small figure. Looking up. Alert.
+      thorne-brightward: |
+        Beside Veyra. Hand on sword.
+    location: "thornwood-forest"
+    lighting:
+      primary_source: "weak sun behind clouds"
+      quality: "flat, gray, unsettling"
+      direction: "diffused"
+      color_temperature: "cold, pale"
+      shadow_depth: "deep, directionless"
+      atmospheric: "panicked flight"
+    palette:
+      dominant:
+        - "slate gray"
+        - "bruise purple"
+        - "white"
+      accent:
+        - "cardinal red"
+      avoid:
+        - "warm tones"
+    prompt_used: |
+      Panicked flock of birds flying across a pale winter sky,
+      swirl of dark wings against gray-white clouds,
+      snow falling from branches in white curtains,
+      frozen dark forest below,
+      small silhouettes of riders looking up,
+      classical oil painting, Symbolist unease,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, sunny
+    tags:
+      - "mood"
+      - "nature"
+      - "warning"
+      - "ominous"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch08-the-tracker-in-the-snow-img-08-04-01"
+    source_moment: "ch08-the-tracker-in-the-snow-moment-04"
+    scene_id: "scn-08-04"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "symbol"
+    scene_mood: "somber"
+    mood_rationale: "Discovery of Vera. Fragile hope. Black raven against white snow. Ritual circle of offerings."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Single black raven sitting still amid pristine snow. Maintain vigil over a prone figure. Vera lies unconscious, lips purple, skin translucent. Ritual circle of offerings: berries, acorns, bark, fur. Snow-laden branches frame the scene.
+    composition_notes: |
+      Wide framing. Slightly high angle discovering the scene. Raven vertical element. Vera horizontal mass. offerings in a ring.
+    visual_hook: "The single black raven sitting absolutely still amid the white, frost glittering on its feathers like diamonds"
+    depicts_characters:
+      - "vera-moonwhisper"
+      - "echo-raven"
+    character_states:
+      vera-moonwhisper: |
+        Unconscious. Half-buried. Pale as ice. Purple lips.
+      echo-raven: |
+        Still vigil. Frost on feathers. Watchful eyes.
+    location: "thornwood-ruins"
+    lighting:
+      primary_source: "weak sun through branches"
+      quality: "soft, cold"
+      direction: "above"
+      color_temperature: "blue-gray"
+      shadow_depth: "deep, rich"
+      atmospheric: "still, heavy"
+    palette:
+      dominant:
+        - "white"
+        - "slate gray"
+        - "blue"
+      accent:
+        - "raven black"
+        - "red berries"
+      avoid:
+        - "warm tones"
+    prompt_used: |
+      Black raven sitting in white snow watching over a pale unconscious woman,
+      woman half-buried in a circle of berries and moss,
+      frost glittering on the raven's feathers,
+      pale gray winter daylight,
+      atmosphere of mystical protection and cold desperation,
+      classical oil painting, Rembrandt lighting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, happy, green foliage
+    tags:
+      - "hero"
+      - "discovery"
+      - "vera"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch08-the-tracker-in-the-snow-img-08-05-01"
+    source_moment: "ch08-the-tracker-in-the-snow-moment-05"
+    scene_id: "scn-08-05"
+    image_type: "beat"
+    category:
+      - "character"
+      - "action"
+    scene_mood: "intimate"
+    mood_rationale: "Care and survival. Arranging warming stones. The tactile effort of keeping someone alive in the cold."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Inside the wagon's warming tent. Aldwin and Halden are carefully placing glowing warming stones around Vera. They are bundled in thick furs. Vera is beginning to stir, eyes half-open. Veyra is looking in from the tent flap, face tight with concern. Warm steam rises in the enclosed space.
+    composition_notes: |
+      Tight shot inside the tent. Focus on the glowing stones and the faces. Intimate framing. Contrast between the warm interior and the cold blue beyond the flap.
+    visual_hook: "The soft, rhythmic pulse of the glowing warming stones against the pale, frozen skin of the survivor."
+    depicts_characters:
+      - "aldwin-gentleheart"
+      - "vera-moonwhisper"
+      - "medic-halden"
+      - "veyra-thornwake"
+    character_states:
+      aldwin-gentleheart: |
+        Kneeling. Steady hands. Gentle expression.
+      vera-moonwhisper: |
+        Stirring. Pale. Eyes focusing.
+      veyra-thornwake: |
+        Looking in. Tense.
+    location: "thornwood-forest"
+    lighting:
+      primary_source: "Glowing stones"
+      quality: "Warm, radial"
+      direction: "Below"
+      color_temperature: "Amber"
+      shadow_depth: "Soft"
+      atmospheric: "Thick steam"
+    palette:
+      dominant:
+        - "warm amber"
+        - "fur brown"
+        - "pale flesh"
+      accent:
+        - "golden glow"
+      avoid:
+        - "harsh blue"
+    prompt_used: |
+      Interior of a winter tent with people arranging glowing warm stones around an injured woman,
+      thick furs and rising steam,
+      faces lit from below by amber light,
+      adventurers tending to their friend,
+      atmosphere of rescue and relief,
+      classical oil painting, Vermeer lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "care"
+      - "rescue"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch08-the-tracker-in-the-snow-img-08-08-01"
+    source_moment: "ch08-the-tracker-in-the-snow-moment-06"
+    scene_id: "scn-08-08"
+    image_type: "detail"
+    category:
+      - "character"
+      - "magic"
+    scene_mood: "ethereal"
+    mood_rationale: "Supernatural sight-sharing. White eyes and magical connection. Borrowed power and wonder."
+    aspect_ratio: "2:3"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Vera braced against a tree. Hazel eyes rolled back to pure white. Face slack and distant. Echo on her shoulder, dark eyes reflecting shared sight. Frost forms where her hand touches bark. Company in background awed and frozen. Winter forest backdrop soft-focus.
+    composition_notes: |
+      Medium-close. Low angle. White eyes focal point. Hand braced against tree with frost. Vertical composition.
+    visual_hook: "Her hazel eyes rolled back to pure snow-white, her face slack and distant"
+    depicts_characters:
+      - "vera-moonwhisper"
+      - "echo-raven"
+      - "archer-venn"
+    character_states:
+      vera-moonwhisper: |
+        Eyes pure white. Slack expression. Dreamlike. Hand forming frost.
+      echo-raven: |
+        Perched on shoulder. Feathers ruffled. Reflective eyes.
+      archer-venn: |
+        Awed background.
+    location: "thornwood-forest"
+    lighting:
+      primary_source: "sourceless soft glow"
+      quality: "ethereal, luminous"
+      direction: "ambient"
+      color_temperature: "pale gold/silver"
+      shadow_depth: "minimal"
+      atmospheric: "dreamlike"
+    palette:
+      dominant:
+        - "silver"
+        - "gold"
+        - "frost white"
+      accent:
+        - "raven black"
+      avoid:
+        - "harsh shadows"
+    prompt_used: |
+      Close portrait of a woman with her eyes rolled completely white in a magical trance,
+      raven on her shoulder with intelligent eyes,
+      frost forming on the tree she is touching,
+      magical glow around her face,
+      winter forest background,
+      classical oil painting, Pre-Raphaelite luminosity,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, pupils visible, horror
+    tags:
+      - "detail"
+      - "magic"
+      - "sight"
+      - "ethereal"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch08-the-tracker-in-the-snow-img-08-09-01"
+    source_moment: "ch08-the-tracker-in-the-snow-moment-07"
+    scene_id: "scn-08-09"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "action"
+    scene_mood: "ominous"
+    mood_rationale: "Cold justice. Frost-thorns as unnatural weapon. Psychological dread and inexorable violence."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Black thorny vines erupt from Vera's staff, glistening with frost. Wrapped around trafficker's throat. Blood drops freeze instantly to red ice. Frost spreads across his skin. Vera watches without expression. Grimjaw in background frustrated. Huddled children in shadows.
+    composition_notes: |
+      Medium framing. Eye-level. Thorns create diagonal of violence. Vera still vs dying trafficker. Blood frozen mid-fall.
+    visual_hook: "The black thorny vines glistening with unnatural frost, drops of blood crystallizing into red ice"
+    depicts_characters:
+      - "vera-moonwhisper"
+      - "grimjaw-ironbeard"
+      - "veyra-thornwake"
+    character_states:
+      vera-moonwhisper: |
+        Staff pressed forward. Expressionless. Merciless. Seven years of searching found focus.
+      grimjaw-ironbeard: |
+        Frustrated background. Not intervening.
+      veyra-thornwake: |
+        Observing. Calculating.
+    location: "thornwood-forest"
+    zone: "ruins"
+    lighting:
+      primary_source: "dim cellar light"
+      quality: "unsettling, cold"
+      direction: "above/behind"
+      color_temperature: "sickly blue-gray"
+      shadow_depth: "deep, harsh"
+      atmospheric: "underground cold"
+    palette:
+      dominant:
+        - "frost blue"
+        - "bile green"
+        - "shadow black"
+      accent:
+        - "red ice"
+      avoid:
+        - "warm tones"
+    prompt_used: |
+      Thorny vines made of ice erupting from a wooden staff and wrapping a man's neck,
+      blood freezing into red crystals,
+      woman with cold expression holding the staff,
+      dim frozen underground cellar,
+      atmosphere of ruthless winter justice,
+      classical oil painting, Symbolist unease,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, hot rage, mercy
+    tags:
+      - "anchor"
+      - "justice"
+      - "magic"
+      - "ominous"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

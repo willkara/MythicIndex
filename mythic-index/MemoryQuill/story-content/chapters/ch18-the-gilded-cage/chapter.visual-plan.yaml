@@ -1,0 +1,405 @@
+chapter_analysis:
+  slug: "ch18-the-gilded-cage"
+  chapter_number: 18
+  chapter_title: "The Gilded Cage"
+  visual_thesis: "Victory becomes bureaucracy—the Company enters Waterdeep's gilded halls and shadowed warehouses, discovering that legitimacy comes with strings and debts."
+  dominant_mood_progression:
+    - "somber arrival"
+    - "warehouse grimness"
+    - "political tension"
+    - "debt revealed"
+    - "healing mystery"
+    - "supply integration"
+  color_story:
+    opening: "Street-silence watching, cavalry blue and silver, wounded procession"
+    climax: "Committee marble, Marcus's sharp smile, leverage revealed"
+    closing: "Druid grove green, pool shimmer, warehouse fires kindling"
+
+scene_zone_recommendations:
+  - scene_id: scn-18-01
+    location: waterdeep-streets
+    recommended_zones:
+      - zone: streets
+        label: "Somber Procession"
+        rationale: "Company arriving, citizens watching"
+        anchor_details:
+          - "Cavalry honor guard"
+          - "Wounded on stretchers"
+          - "Whispers rising"
+    confidence: high
+
+  - scene_id: scn-18-02
+    location: dock-ward-warehouse
+    recommended_zones:
+      - zone: main-floor
+        label: "Warehouse Assignment"
+        rationale: "Cavernous space, cage-like atmosphere"
+        anchor_details:
+          - "High narrow windows"
+          - "Oppressive shadows"
+          - "Echoing emptiness"
+    confidence: high
+
+  - scene_id: scn-18-03
+    location: castle-waterdeep-committee-chamber
+    recommended_zones:
+      - zone: committee-chamber
+        label: "Political Gauntlet"
+        rationale: "Formal hearing, Lady Aridith's questions"
+        anchor_details:
+          - "Polished marble"
+          - "High vaulted ceilings"
+          - "Three powerful figures"
+    confidence: high
+
+  - scene_id: scn-18-04
+    location: dock-ward-warehouse
+    recommended_zones:
+      - zone: courtyard
+        label: "Marcus's Price"
+        rationale: "Debt revealed in private"
+        anchor_details:
+          - "Immaculate clothes"
+          - "Sharpening smile"
+          - "Cold realization"
+    confidence: high
+
+  - scene_id: scn-18-05
+    location: druid-grove-waterdeep
+    recommended_zones:
+      - zone: pool
+        label: "Water Cleansing"
+        rationale: "Rill Vossari's ritual for Vera"
+        anchor_details:
+          - "Clear pool"
+          - "Water genasi"
+          - "Silver liquid"
+    confidence: high
+
+candidate_moments:
+  - moment_id: "ch18-the-gilded-cage-moment-01"
+    scene_id: scn-18-01
+    title: "The Ash-Marked"
+    narrative_beat: "Citizens lined the streets, watching in hushed silence. 'Is that the commander? The Ash-Marked?' 'They say she commanded a dire wolf in the battle...'"
+    subtext: "Legend being written in public; reputation solidifying."
+    scene_mood: somber
+    emotional_color: "hushed-watching, whisper-rising, legend-forming"
+    location: waterdeep-streets
+    zone: streets
+    characters_present:
+      - veyra-thornwake
+      - thorne-brightward
+      - commander-atlock
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 4
+      character_revelation: 3
+      symbolic_density: 4
+      total: 20
+    suggested_shot:
+      image_type: hero
+      framing: wide
+      angle: "Procession through street, citizens watching"
+      key_visual_hook: "Cavalry in blue and silver escorting battered Company through silent streets, Veyra arm-in-sling riding at center, citizens lining route, whispers visible in turning heads"
+      lighting_suggestion: "Morning street light, somber procession"
+      composition_notes: "Legend in the making—public witness to survival"
+    source_excerpts:
+      - "Citizens lined the streets, their morning commerce forgotten"
+      - "'Is that the commander? The Ash-Marked?'"
+      - "'They say she commanded a dire wolf in the battle...'"
+    selection_rationale: "Arrival visual—legend entering public consciousness."
+
+  - moment_id: "ch18-the-gilded-cage-moment-02"
+    scene_id: scn-18-02
+    title: "A Bloody Tomb With a Roof"
+    narrative_beat: "'It's a bloody tomb with a roof,' Grimjaw muttered, his engineer's eye already cataloging the flaws. 'Poor ventilation, damp in the corners, and the acoustics will drive a man mad.'"
+    subtext: "Home assigned, not chosen; the cage becoming reality."
+    scene_mood: somber
+    emotional_color: "echoing-tomb, damp-corners, voice-small"
+    location: dock-ward-warehouse
+    zone: main-floor
+    characters_present:
+      - grimjaw-ironbeard
+      - quartermaster-fayne
+      - commander-atlock
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 3
+      symbolic_density: 4
+      total: 19
+    suggested_shot:
+      image_type: anchor
+      framing: wide
+      angle: "Figures dwarfed by cavernous warehouse"
+      key_visual_hook: "Grimjaw, Fayne, and Atlock standing small in massive warehouse space, high narrow windows casting slivers of light, oppressive shadows around them, cage of stone and timber"
+      lighting_suggestion: "Slivers of light, oppressive shadow"
+      composition_notes: "The cage—space becoming prison"
+    source_excerpts:
+      - "'It's a bloody tomb with a roof'"
+      - "The high, narrow windows let in slivers of light"
+      - "It was a cage of stone and timber"
+    selection_rationale: "New home revealed—the gilded cage made visible."
+
+  - moment_id: "ch18-the-gilded-cage-moment-03"
+    scene_id: scn-18-03
+    title: "Discretionary Acquisitions"
+    narrative_beat: "'There's a recurring line item for 'discretionary acquisitions'. A polite term for looting, some might say.' Lady Aridith's sharp eyes fixed on Thorne as political knives came out."
+    subtext: "Bureaucracy weaponized; victory questioned in polished chambers."
+    scene_mood: ominous
+    emotional_color: "marble-intimidation, sharp-eyes questioning, hot-flush anger"
+    location: castle-waterdeep-committee-chamber
+    zone: committee-chamber
+    characters_present:
+      - thorne-brightward
+      - commander-atlock
+      - lady-aridith
+      - captain-grimsby
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 5
+      character_revelation: 4
+      symbolic_density: 4
+      total: 21
+    suggested_shot:
+      image_type: anchor
+      framing: wide
+      angle: "Thorne at lectern, Committee above"
+      key_visual_hook: "Thorne in best uniform at polished lectern, three powerful figures above at long table, Lady Aridith's sharp eyes fixed on him, Atlock supportive beside him, marble and vaulted ceilings designed to intimidate"
+      lighting_suggestion: "Formal chamber light, intimidation architecture"
+      composition_notes: "Political gauntlet—soldier facing bureaucrats"
+    source_excerpts:
+      - "The chamber in Castle Waterdeep was designed to intimidate"
+      - "'A polite term for looting, some might say'"
+      - "A hot flush of anger rose up Thorne's neck"
+    selection_rationale: "Political tension—the hearing's hostile core."
+
+  - moment_id: "ch18-the-gilded-cage-moment-04"
+    scene_id: scn-18-03
+    title: "Provisional Status"
+    narrative_beat: "'The Last Light Company is hereby granted the status of Provisional Civic Asset.' They had a home, but it came with a leash. A partial victory that felt dangerously like a defeat."
+    subtext: "Recognition with strings; victory compromised."
+    scene_mood: somber
+    emotional_color: "verdict-weight, partial-victory, leash-feeling"
+    location: castle-waterdeep-committee-chamber
+    zone: committee-chamber
+    characters_present:
+      - thorne-brightward
+      - commander-atlock
+      - lady-aridith
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 3
+      narrative_pivot: 5
+      character_revelation: 3
+      symbolic_density: 4
+      total: 19
+    suggested_shot:
+      image_type: beat
+      framing: medium
+      angle: "Thorne and Atlock receiving verdict"
+      key_visual_hook: "Lady Aridith announcing verdict, Thorne and Atlock's faces showing partial relief mixed with concern, formal chamber around them, victory that feels like defeat"
+      lighting_suggestion: "Formal light, political compromise"
+      composition_notes: "Verdict moment—recognition with strings"
+    source_excerpts:
+      - "'Provisional Civic Asset'"
+      - "a partial victory that felt dangerously like a defeat"
+      - "They had a home, but it came with a leash"
+    selection_rationale: "Plot turning point—legitimacy granted with conditions."
+
+  - moment_id: "ch18-the-gilded-cage-moment-05"
+    scene_id: scn-18-04
+    title: "The Bill Will Come Due"
+    narrative_beat: "'Consider it a gift. Of course, such gifts often create opportunities for future collaboration. I'm sure we'll find a way for you to repay the favor.' Marcus's smile sharpened as Veyra realized their home had been bought."
+    subtext: "Marcus's leverage revealed; debt created without consent."
+    scene_mood: ominous
+    emotional_color: "sharpening-smile, cold-realization, debt-created"
+    location: dock-ward-warehouse
+    zone: courtyard
+    characters_present:
+      - marcus-heartbridge
+      - veyra-thornwake
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 5
+      character_revelation: 5
+      symbolic_density: 5
+      total: 23
+    suggested_shot:
+      image_type: beat
+      framing: medium
+      angle: "Marcus's sharp smile, Veyra's realization"
+      key_visual_hook: "Marcus in immaculate clothes, smile sharpening as he delivers the truth, Veyra's scarred face showing cold realization, warehouse shadows around them"
+      lighting_suggestion: "Evening warehouse light, shadows significant"
+      composition_notes: "Debt revealed—the price of the cage"
+    source_excerpts:
+      - "'Consider it a gift'"
+      - "'I'm sure we'll find a way for you to repay the favor'"
+      - "their new home had been bought at a price"
+    selection_rationale: "Chapter's thematic core—Marcus's leverage revealed."
+
+  - moment_id: "ch18-the-gilded-cage-moment-06"
+    scene_id: scn-18-05
+    title: "Hammer on Steel"
+    narrative_beat: "The new rhythm of their lives was set by the comforting ring of hammer on steel. Grimjaw was showing Finn how to properly brace a bunk bed. 'A good dwarf builds a bed he could shelter under in a rockfall.'"
+    subtext: "Mentorship continuing; making home from cage."
+    scene_mood: intimate
+    emotional_color: "hammer-ring comfort, sawdust-covered learning, shelter-building"
+    location: dock-ward-warehouse
+    zone: workshop
+    characters_present:
+      - grimjaw-ironbeard
+      - finn
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 2
+      character_revelation: 4
+      symbolic_density: 3
+      total: 17
+    suggested_shot:
+      image_type: anchor
+      framing: medium
+      angle: "Grimjaw teaching Finn at forge"
+      key_visual_hook: "Grimjaw showing Finn proper joinery, forge-warmth behind them, Finn sawdust-covered and attentive, hammer ring echoing, making home from warehouse"
+      lighting_suggestion: "Forge-glow warmth, building light"
+      composition_notes: "Making home—mentorship in the cage"
+    source_excerpts:
+      - "the comforting ring of hammer on steel"
+      - "'A good dwarf builds a bed he could shelter under in a rockfall'"
+      - "Finn, covered in sawdust, listened with rapt attention"
+    selection_rationale: "Hope visual—making home despite circumstances."
+
+  - moment_id: "ch18-the-gilded-cage-moment-07"
+    scene_id: scn-18-05
+    title: "Water Remembering"
+    narrative_beat: "Rill Vossari, a water genasi with sea-glass skin and currents swirling beneath her surface, poured silver liquid into the pool. 'I can ask the water to remember its true nature.'"
+    subtext: "Exotic healing; the spiritual side of recovery."
+    scene_mood: ethereal
+    emotional_color: "sea-glass presence, pool-shimmer, water-memory"
+    location: druid-grove-waterdeep
+    zone: pool
+    characters_present:
+      - rill-vossari
+      - vera-moonwhisper
+      - veyra-thornwake
+      - aldwin-gentleheart
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 4
+      symbolic_density: 5
+      total: 21
+    suggested_shot:
+      image_type: detail
+      framing: medium
+      angle: "Rill at pool's edge, silver liquid"
+      key_visual_hook: "Rill Vossari kneeling at pool edge, sea-glass skin with turquoise currents visible beneath, pouring silver liquid that makes pool shimmer blue, Vera resting on moss nearby"
+      lighting_suggestion: "Grove-filtered light, pool-shimmer, ethereal glow"
+      composition_notes: "Exotic healing—water genasi ritual"
+    source_excerpts:
+      - "her skin had a pale, translucent blue-green quality, like sea-glass"
+      - "darker turquoise currents swirling gently beneath the surface"
+      - "'I can ask the water to remember its true nature'"
+    selection_rationale: "Visual novelty—water genasi healing ritual."
+
+  - moment_id: "ch18-the-gilded-cage-moment-08"
+    scene_id: scn-18-05
+    title: "First, You Heal"
+    narrative_beat: "'My brother...' 'Is still out there. And we will find him. Together. But first, you heal. That's an order.' Vera managed a weak smile. 'Yes, Commander.'"
+    subtext: "Commander's care; hope sustained through recovery."
+    scene_mood: intimate
+    emotional_color: "weak-voice hope, commander-softness, heal-order care"
+    location: druid-grove-waterdeep
+    zone: pool
+    characters_present:
+      - veyra-thornwake
+      - vera-moonwhisper
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 3
+      narrative_pivot: 3
+      character_revelation: 4
+      symbolic_density: 4
+      total: 19
+    suggested_shot:
+      image_type: beat
+      framing: close
+      angle: "Veyra beside Vera, grove setting"
+      key_visual_hook: "Veyra sitting beside Vera's moss bed, voice softer than usual, Vera's weak smile at the 'order' to heal, grove greenery and pool visible behind"
+      lighting_suggestion: "Grove-filtered afternoon, gentle light"
+      composition_notes: "Care as command—leader's tenderness"
+    source_excerpts:
+      - "'My brother...' 'Is still out there. And we will find him. Together. But first, you heal'"
+      - "'That's an order.' Vera managed a weak smile. 'Yes, Commander'"
+    selection_rationale: "Character care—Veyra's tenderness with Vera."
+
+  - moment_id: "ch18-the-gilded-cage-moment-09"
+    scene_id: scn-18-06
+    title: "Now We're Even"
+    narrative_beat: "'Considering my cousin's crane is still in one piece thanks to you, I'll see what I can do. Have it delivered by nightfall. No charge.' 'No. Now we're even.'"
+    subtext: "City integration; favors earned paying off."
+    scene_mood: intimate
+    emotional_color: "oak-arm handshake, favor-repaying, city-weaving"
+    location: dock-ward-market
+    zone: market
+    characters_present:
+      - sergeant-kelen
+      - master-tegan
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 3
+      narrative_pivot: 2
+      character_revelation: 3
+      symbolic_density: 3
+      total: 15
+    suggested_shot:
+      image_type: beat
+      framing: medium
+      angle: "Kelen and Tegan shaking hands"
+      key_visual_hook: "Kelen and Master Tegan with oak-branch arms shaking hands in Woodworkers' Guild, sawdust in air, favor being repaid, city connections being woven"
+      lighting_suggestion: "Guild workshop light, sawdust motes"
+      composition_notes: "City roots—favors earned paying off"
+    source_excerpts:
+      - "'Considering my cousin's crane is still in one piece thanks to you'"
+      - "'No. Now we're even. Stay safe out there'"
+    selection_rationale: "Integration moment—city connections paying off."
+
+proposed_selection:
+  target_moments: 6
+  rules_used:
+    - "At least 1 hero or anchor"
+    - "No more than 2 moments with the same scene_mood"
+    - "Cover arc from arrival through politics to settling"
+    - "Balance political tension with hope"
+  selected_moments:
+    - moment_id: "ch18-the-gilded-cage-moment-05"
+      rank: 1
+      reason: "Highest score (23), Marcus's debt revealed, thematic core"
+    - moment_id: "ch18-the-gilded-cage-moment-03"
+      rank: 2
+      reason: "Strong score (21), political hearing, Lady Aridith's attack"
+    - moment_id: "ch18-the-gilded-cage-moment-07"
+      rank: 3
+      reason: "Strong score (21), Rill Vossari, water genasi ritual"
+    - moment_id: "ch18-the-gilded-cage-moment-01"
+      rank: 4
+      reason: "Good score (20), arrival procession, legend forming"
+    - moment_id: "ch18-the-gilded-cage-moment-02"
+      rank: 5
+      reason: "Good score (19), warehouse cage, 'bloody tomb'"
+    - moment_id: "ch18-the-gilded-cage-moment-08"
+      rank: 6
+      reason: "Good score (19), Veyra with Vera, 'first you heal'"
+  rejected_notes:
+    - moment_id: "ch18-the-gilded-cage-moment-04"
+      reason: "Important plot point but moment-03 captures hearing better"
+    - moment_id: "ch18-the-gilded-cage-moment-06"
+      reason: "Nice forge moment but less pivotal than selected"
+    - moment_id: "ch18-the-gilded-cage-moment-09"
+      reason: "Good city integration but lower visual impact"

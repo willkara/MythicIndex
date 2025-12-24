@@ -1,0 +1,393 @@
+chapter_analysis:
+  slug: "ch2.5-echoes-in-the-city"
+  chapter_number: 2.5
+  chapter_title: "Echoes in the City"
+  visual_thesis: "Legend-making in motion—how a survivor's story ripples through city spaces, transformed by each teller into weapon, comfort, or cage."
+  dominant_mood_progression:
+    - "tavern-warm reverence"
+    - "political tension"
+    - "theological debate"
+    - "military camaraderie"
+    - "intimate resolve"
+  color_story:
+    opening: "Amber lantern-light on honey-wood beams, pewter tankards, evening rain"
+    climax: "Gray morning mist on marble steps, chalk white on stone, bread-gold warmth"
+    closing: "Rain-silver and torch-pool gold, fog-wrapped city lights, two figures in contemplation"
+
+scene_zone_recommendations:
+  - scene_id: scn-02-5-01
+    location: salamander-hearth-tavern
+    recommended_zones:
+      - zone: common-room
+        label: "Common Room"
+        rationale: "Warm tavern space where stories grow in the retelling"
+        anchor_details:
+          - "Oil-lanterns on ceiling beams"
+          - "Scarred round table near hearth"
+          - "Moon-elf fiddlers in corner"
+    confidence: high
+
+  - scene_id: scn-02-5-02
+    location: council-chambers
+    recommended_zones:
+      - zone: clerks-office
+        label: "Clerk's Office"
+        rationale: "Bureaucratic space where truth and politics collide"
+        anchor_details:
+          - "Desk with official vellum"
+          - "Platinum purse (silent coins)"
+          - "Tall stack of documents"
+    confidence: high
+
+  - scene_id: scn-02-5-03
+    location: temple-steps
+    recommended_zones:
+      - zone: temple-steps
+        label: "Temple Steps"
+        rationale: "Public forum where faith meets skepticism"
+        anchor_details:
+          - "Wide marble steps"
+          - "Gray mist on buttresses"
+          - "Chalk drawing: lantern and four stars"
+    confidence: high
+
+  - scene_id: scn-02-5-04
+    location: westwall-watchpost
+    recommended_zones:
+      - zone: mess-hall
+        label: "Mess Hall"
+        rationale: "Military informality where loyalty forms"
+        anchor_details:
+          - "Bad stew and leather oil smell"
+          - "Sketch notebook with lantern heraldry"
+          - "Patrol gathered at usual table"
+    confidence: high
+
+  - scene_id: scn-02-5-05
+    location: castle-balcony
+    recommended_zones:
+      - zone: balcony
+        label: "Castle Balcony"
+        rationale: "Private overlook where city becomes responsibility"
+        anchor_details:
+          - "Rain stitching silver between torch-pools"
+          - "Stone bench, walking stick"
+          - "Fog rolling in from harbor"
+    confidence: high
+
+candidate_moments:
+  - moment_id: "ch2.5-echoes-in-the-city-moment-01"
+    scene_id: scn-02-5-01
+    title: "Tankards to the Ash-Marked"
+    narrative_beat: "The Salamander's Hearth raises mugs in solemn unity—not just one table but across the room—toasting the survivor and her fallen companions."
+    subtext: "Legend crystallizing in real-time, ordinary people finding hope in extraordinary survival."
+    scene_mood: somber
+    emotional_color: "amber glow, pewter gleam, solemn reverence, communal hope"
+    location: salamander-hearth-tavern
+    zone: common-room
+    characters_present: []
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 4
+      narrative_pivot: 3
+      character_revelation: 2
+      symbolic_density: 4
+      total: 18
+    suggested_shot:
+      image_type: hero
+      framing: wide
+      angle: "Low angle from hearth, looking across raised tankards"
+      key_visual_hook: "Multiple tables raising tankards in lamplight, hearth-glow behind, fiddlers paused mid-song"
+      lighting_suggestion: "Warm amber from oil-lanterns and hearth, faces lit from below by firelight"
+      composition_notes: "Communal gesture, many hands united in tribute"
+    source_excerpts:
+      - "Mugs lifted throughout the tavern—not just at their table, but across the room"
+      - "'To the fallen,' the patrol echoed quietly"
+      - "under every jest and wild theory pulsed a current of genuine gratitude"
+    selection_rationale: "Captures the communal response to legend—the city finding hope in one woman's survival."
+
+  - moment_id: "ch2.5-echoes-in-the-city-moment-02"
+    scene_id: scn-02-5-01
+    title: "The Courier's Report"
+    narrative_beat: "Rain-soaked courier bursts in with news—'She's awake'—describing Veyra's burning eyes and face 'like a map of the Hells.'"
+    subtext: "The transformation of fact into legend, the messenger as story-carrier."
+    scene_mood: kinetic
+    emotional_color: "rain-fresh urgency, door-burst energy, breathless wonder"
+    location: salamander-hearth-tavern
+    zone: common-room
+    characters_present: []
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 2
+      symbolic_density: 3
+      total: 17
+    suggested_shot:
+      image_type: beat
+      framing: medium
+      angle: "Courier in doorway, tavern attention turning"
+      key_visual_hook: "Young courier shaking water from cloak, door flung open, all faces turning toward news"
+      lighting_suggestion: "Cold rain-light from door meeting warm interior amber"
+      composition_notes: "Threshold moment, news entering communal space"
+    source_excerpts:
+      - "The tavern door burst open, bringing a gust of rain-scented air"
+      - "'She's awake,' he announced. 'The Ash-Marked'"
+      - "'Like she fought death to a standstill and negotiated terms'"
+    selection_rationale: "Dynamic moment of news arriving, the legend spreading from mouth to mouth."
+
+  - moment_id: "ch2.5-echoes-in-the-city-moment-03"
+    scene_id: scn-02-5-02
+    title: "The Silent Purse"
+    narrative_beat: "Therin places a platinum purse on Clerk Dena's desk—silent because heavy—attempting to buy a false narrative about the canyon deaths."
+    subtext: "Political corruption confronting bureaucratic integrity, truth versus convenience."
+    scene_mood: ominous
+    emotional_color: "old parchment tension, silent platinum, oily manipulation"
+    location: council-chambers
+    zone: clerks-office
+    characters_present:
+      - clerk-dena
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 3
+      symbolic_density: 4
+      total: 18
+    suggested_shot:
+      image_type: detail
+      framing: close
+      angle: "Down at desk—purse, quill, vellum"
+      key_visual_hook: "Oily hand placing silent purse beside Dena's moving quill, official vellum beneath"
+      lighting_suggestion: "Cold morning light through bureaucratic windows"
+      composition_notes: "The bribe made physical, integrity under pressure"
+    source_excerpts:
+      - "Therin placed a small purse on her desk—it made no sound, meaning it held platinum, not gold"
+      - "'Facts can be... interpreted'"
+      - "Dena didn't look up from her ledger"
+    selection_rationale: "Visual shorthand for political corruption—the silent platinum against moving quill of truth."
+
+  - moment_id: "ch2.5-echoes-in-the-city-moment-04"
+    scene_id: scn-02-5-02
+    title: "Thorne's Cold Fury"
+    narrative_beat: "Captain Thorne confronts Therin, hand on sword hilt—not a threat, just a reminder—demanding truth over political convenience."
+    subtext: "Military honor versus noble manipulation, the Watch's integrity on the line."
+    scene_mood: kinetic
+    emotional_color: "frozen flame, soot-stained determination, controlled rage"
+    location: council-chambers
+    zone: clerks-office
+    characters_present:
+      - thorne-brightward
+      - clerk-dena
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 4
+      symbolic_density: 3
+      total: 19
+    suggested_shot:
+      image_type: anchor
+      framing: medium
+      angle: "Thorne looming, hand on hilt, Therin backing"
+      key_visual_hook: "Thorne in soot-stained patrol gear, hand on sword hilt, using height to confront oily clerk"
+      lighting_suggestion: "Cold window light, tension in shadows"
+      composition_notes: "Power dynamic shift, soldier versus politician"
+    source_excerpts:
+      - "Thorne's voice could have frozen flame"
+      - "Thorne's hand moved to his sword hilt—not a threat, just a reminder"
+      - "'You want to call that misadventure?'"
+    selection_rationale: "Thorne's character revealed through controlled confrontation, defending truth."
+
+  - moment_id: "ch2.5-echoes-in-the-city-moment-05"
+    scene_id: scn-02-5-03
+    title: "Bread Against Brimstone"
+    narrative_beat: "Mistress Dalra distributes bread to pilgrims while countering Preacher Amdir's claims of divine punishment—practical compassion vs. fear-mongering."
+    subtext: "Two responses to crisis: exploiting fear or meeting need. Competing narratives of faith."
+    scene_mood: pastoral
+    emotional_color: "bread-warm defiance, marble-gray morning, steady compassion"
+    location: temple-steps
+    zone: temple-steps
+    characters_present:
+      - preacher-amdir
+      - mistress-dalra
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 4
+      symbolic_density: 5
+      total: 21
+    suggested_shot:
+      image_type: hero
+      framing: wide
+      angle: "Temple steps with two figures in opposition"
+      key_visual_hook: "Dalra at step-bottom distributing bread, Amdir above with charred wood raised, pilgrims between them"
+      lighting_suggestion: "Gray morning mist diffusing light, bread-basket catching what warmth exists"
+      composition_notes: "Vertical tension—Amdir elevated but Dalra grounded in service"
+    source_excerpts:
+      - "'The white fire is divine punishment!' he bellowed"
+      - "'I dare feed the hungry while you feed their fears'"
+      - "beginning to distribute bread to the pilgrims"
+    selection_rationale: "Visually striking opposition—the preacher's fire versus the baker's bread, fear versus service."
+
+  - moment_id: "ch2.5-echoes-in-the-city-moment-06"
+    scene_id: scn-02-5-03
+    title: "Hope Endures the Flame"
+    narrative_beat: "A snow-haired priestess sketches a lantern surrounded by four stars in chalk on a blank pillar—folk iconography being born."
+    subtext: "Legend crystallizing into symbol, grassroots devotion creating new imagery."
+    scene_mood: ethereal
+    emotional_color: "chalk-white on gray stone, silver hair, quiet creation"
+    location: temple-steps
+    zone: temple-steps
+    characters_present: []
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 2
+      symbolic_density: 5
+      total: 19
+    suggested_shot:
+      image_type: detail
+      framing: close
+      angle: "Focus on chalk drawing, priestess's hand completing it"
+      key_visual_hook: "Aged hand drawing lantern with four stars in chalk, 'Hope endures the flame' beneath"
+      lighting_suggestion: "Soft morning light on gray stone, chalk bright white"
+      composition_notes: "Birth of iconography, the symbol becoming permanent"
+    source_excerpts:
+      - "a snow-haired priestess had been sketching on a blank pillar with chalk"
+      - "a lantern surrounded by four stars, with the words beneath: Hope endures the flame"
+      - "'light doesn't always come from heaven. Sometimes it comes from someone too stubborn to let it die'"
+    selection_rationale: "Symbol-making captured in action—the visual birth of the Last Light iconography."
+
+  - moment_id: "ch2.5-echoes-in-the-city-moment-07"
+    scene_id: scn-02-5-04
+    title: "Fayne's Heraldry"
+    narrative_beat: "Fayne holds up his sketch—lantern surrounded by shield, smoke rising into wings—proposing heraldry for the yet-unformed Company."
+    subtext: "Identity forming before organization, art anticipating institution."
+    scene_mood: intimate
+    emotional_color: "notebook paper, charcoal sketch, hopeful creation"
+    location: westwall-watchpost
+    zone: mess-hall
+    characters_present:
+      - quartermaster-fayne
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 3
+      symbolic_density: 4
+      total: 19
+    suggested_shot:
+      image_type: detail
+      framing: close
+      angle: "Notebook held up, sketch visible, faces around it"
+      key_visual_hook: "Fayne's weathered notebook showing lantern-shield-wings sketch, patrol faces gathered around"
+      lighting_suggestion: "Warm mess-hall lamplight on paper"
+      composition_notes: "The design as focal point, community forming around symbol"
+    source_excerpts:
+      - "Fayne held up his notebook, showing a detailed sketch: a lantern surrounded by a shield, with smoke rising to form the shape of wings"
+      - "'Thought if the Commander—if Veyra—ever gets her own outfit running, they'll need heraldry'"
+    selection_rationale: "The Company's identity crystallizing through art before the organization exists."
+
+  - moment_id: "ch2.5-echoes-in-the-city-moment-08"
+    scene_id: scn-02-5-04
+    title: "To Impossible Things"
+    narrative_beat: "The patrol raises cups of terrible watchpost ale in toast—'To impossible things'—committing to an idea that doesn't yet exist."
+    subtext: "Military brotherhood choosing purpose over protocol, the Company's first volunteers."
+    scene_mood: celebratory
+    emotional_color: "bad ale made precious, shared purpose, quiet determination"
+    location: westwall-watchpost
+    zone: mess-hall
+    characters_present:
+      - thorne-brightward
+      - sergeant-kelen
+      - corporal-darric
+      - archer-venn
+      - medic-halden
+      - quartermaster-fayne
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 3
+      narrative_pivot: 4
+      character_revelation: 4
+      symbolic_density: 4
+      total: 20
+    suggested_shot:
+      image_type: anchor
+      framing: medium
+      angle: "Cups raised across mess table"
+      key_visual_hook: "Patrol raising dented cups in mess hall, Thorne among them, bad ale become sacrament"
+      lighting_suggestion: "Warm lamp-glow, the intimacy of shared commitment"
+      composition_notes: "Brotherhood visible in gesture, the toast sealing intent"
+    source_excerpts:
+      - "Venn raised his cup of terrible watchpost ale. 'To impossible things.'"
+      - "'To impossible things,' they echoed, and somehow the bad ale tasted better than usual"
+    selection_rationale: "Communal commitment made visible—the toast as oath, the patrol becoming founding members."
+
+  - moment_id: "ch2.5-echoes-in-the-city-moment-09"
+    scene_id: scn-02-5-05
+    title: "Rain-Silver Planning"
+    narrative_beat: "Veyra and Thorne sit on the castle balcony at night, lantern between them, rain stitching silver lines between torch-pools as they commit to the Company."
+    subtext: "Leadership partnership forming, the view from above becoming responsibility below."
+    scene_mood: intimate
+    emotional_color: "rain-silver, torch-gold, fog-wrapped city, quiet determination"
+    location: castle-balcony
+    zone: balcony
+    characters_present:
+      - veyra-thornwake
+      - thorne-brightward
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 5
+      narrative_pivot: 5
+      character_revelation: 5
+      symbolic_density: 5
+      total: 25
+    suggested_shot:
+      image_type: hero
+      framing: wide
+      angle: "Two figures on balcony, city lights dimming in fog below"
+      key_visual_hook: "Veyra and Thorne on stone bench, lantern between them, rain-veiled city spread below, fog obscuring all but brightest lights"
+      lighting_suggestion: "Torch-pool warmth on figures, rain catching light, city-glow through fog"
+      composition_notes: "Partnership framing, city as their shared charge, lantern as constant"
+    source_excerpts:
+      - "Rain stitched silver lines between the torch-pools"
+      - "they sat together as the rain softened to mist, two soldiers planning a revolution of compassion"
+      - "The lantern, sitting between them on the bench, burned steady and sure"
+    selection_rationale: "Chapter's emotional and thematic climax—the partnership formalized, the city laid out before them as responsibility."
+
+proposed_selection:
+  target_moments: 6
+  rules_used:
+    - "At least 1 hero or anchor"
+    - "No more than 2 moments with the same scene_mood"
+    - "Cover the five vignette spaces across the city"
+    - "Include the founding moments of Company identity"
+  selected_moments:
+    - moment_id: "ch2.5-echoes-in-the-city-moment-09"
+      rank: 1
+      reason: "Highest score (25), chapter climax, partnership and commitment crystallized"
+    - moment_id: "ch2.5-echoes-in-the-city-moment-05"
+      rank: 2
+      reason: "High score (21), visually distinctive opposition, faith vs. service"
+    - moment_id: "ch2.5-echoes-in-the-city-moment-08"
+      rank: 3
+      reason: "Strong score (20), the patrol's commitment toast, Company's first members"
+    - moment_id: "ch2.5-echoes-in-the-city-moment-01"
+      rank: 4
+      reason: "Communal reverence, tavern legend-making, city response visible"
+    - moment_id: "ch2.5-echoes-in-the-city-moment-06"
+      rank: 5
+      reason: "Symbol creation, the lantern-and-stars iconography being born"
+    - moment_id: "ch2.5-echoes-in-the-city-moment-04"
+      rank: 6
+      reason: "Thorne's character reveal, truth vs. politics confrontation"
+  rejected_notes:
+    - moment_id: "ch2.5-echoes-in-the-city-moment-02"
+      reason: "Dynamic but moment-01's toast carries more weight"
+    - moment_id: "ch2.5-echoes-in-the-city-moment-03"
+      reason: "Strong visual but moment-04's confrontation has more character"
+    - moment_id: "ch2.5-echoes-in-the-city-moment-07"
+      reason: "Good detail but moment-06's chalk drawing is more iconic"

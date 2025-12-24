@@ -1,0 +1,762 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: The Silent Approach
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch30-the-silent-approach"
+  chapter_number: 30
+  chapter_title: "The Silent Approach"
+  visual_thesis: "From the warmth of false safety into shadow-swallowed wilderness, where the team becomes prey and their deadliest member reveals both her monstrous efficiency and her unexpected humanity."
+  color_palette:
+    primary:
+      - "#3d4a3c"
+      - "#5c4033"
+      - "#2a3d2a"
+      - "#8b7355"
+    accent:
+      - "#d4a574"
+      - "#4a6670"
+      - "#c4a882"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 2
+    pastoral: 1
+    celebratory: 0
+    aquatic: 1
+    ethereal: 1
+    intimate: 2
+    kinetic: 0
+    ominous: 3
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: "Riding gear, mounted. Alert and watchful. Hand on knife hilt in camp. Burn scar prominent. Lantern dark."
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "lyra-kestrel"
+    name: "Lyra Kestrel"
+    scene_variations: "Operative mode: deep plum skin absorbing shadows. Golden eyes dilated. Kukri blades visible. Dissolving into darkness. Closing dead man's eyes."
+    reference_images:
+      - "lyra-kestrel-portrait-01"
+
+  - ref: "rill-vossari"
+    name: "Rill Vossari"
+    scene_variations: "Traveling gear. Sea-glass skin brightens during water communion. Kneeling at stream edge. Expressing concern about Lyra."
+    reference_images:
+      - "rill-vossari-casting-portrait-01"
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: "Disguised as merchant guard. Features grim. Assessing perimeter. Respectful nod to Lyra."
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "medic-halden"
+    name: "Medic Halden"
+    scene_variations: "Checking for injuries. Offering liniment. Maintaining camp normalcy."
+    reference_images:
+      - "medic-halden-standing-portrait-01"
+
+locations:
+  - ref: "thornwood-forest"
+    zones:
+      - id: "shadow-corridor"
+        chapter_context: "Dense pines, narrow funnel path. Sickly emerald-gray light. Oppressive stillness."
+      - id: "camp"
+        chapter_context: "Rocky overhang, shallow hollow. Smokeless fire, amber glow. Nearby stream."
+
+moments:
+  - id: "ch30-the-silent-approach-moment-01"
+    scene_id: "scn-30-01"
+    title: "Dawn Departure"
+    narrative_beat: "The reconnaissance team departing the Windborne Roost at dawn, disguised as agricultural consultants."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "lyra-kestrel"
+      - "rill-vossari"
+    location_zone: "northern-road/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch30-the-silent-approach-moment-02"
+    scene_id: "scn-30-02"
+    title: "The Predatory Funnel"
+    narrative_beat: "The team riding through the shadow corridor, trees pressing close like walls."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "lyra-kestrel"
+    location_zone: "thornwood-forest/shadow-corridor"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch30-the-silent-approach-moment-03"
+    scene_id: "scn-30-02"
+    title: "The Operative's Mask"
+    narrative_beat: "Lyra's internal transformation from companion to predator, her skin drinking the shadows."
+    visual_weight: "high"
+    characters_present:
+      - "lyra-kestrel"
+    location_zone: "thornwood-forest/shadow-corridor"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch30-the-silent-approach-moment-04"
+    scene_id: "scn-30-02"
+    title: "Reading the Earth"
+    narrative_beat: "Veyra kneeling to read tracks invisible to the others, the burden of leadership making her grave."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "thornwood-forest/shadow-corridor"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch30-the-silent-approach-moment-05"
+    scene_id: "scn-30-03"
+    title: "Sister-Stream's Gift"
+    narrative_beat: "Rill kneeling at the water's edge, bioluminescence swirling as she coaxes trout from the shallows."
+    visual_weight: "high"
+    characters_present:
+      - "rill-vossari"
+    location_zone: "thornwood-forest/camp"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch30-the-silent-approach-moment-06"
+    scene_id: "scn-30-03"
+    title: "Wilderness Feast"
+    narrative_beat: "The team sharing fresh fish around a small fire under the rocky overhang, a moment of hard-won respite."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "rill-vossari"
+      - "lyra-kestrel"
+    location_zone: "thornwood-forest/camp"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch30-the-silent-approach-moment-07"
+    scene_id: "scn-30-04"
+    title: "Dissolving into Night"
+    narrative_beat: "Lyra standing at the edge of the firelight, weaving shadow around herself like a cloak."
+    visual_weight: "critical"
+    characters_present:
+      - "lyra-kestrel"
+      - "veyra-thornwake"
+      - "medic-halden"
+    location_zone: "thornwood-forest/camp"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch30-the-silent-approach-moment-08"
+    scene_id: "scn-30-04"
+    title: "Act of Mercy"
+    narrative_beat: "Lyra kneeling to close the eyelids of a man she just killed, a gesture of solemn recognition."
+    visual_weight: "high"
+    characters_present:
+      - "lyra-kestrel"
+    location_zone: "thornwood-forest/camp"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch30-the-silent-approach-moment-09"
+    scene_id: "scn-30-05"
+    title: "Selective Focus"
+    narrative_beat: "Rill and Lyra at the stream refilling waterskins, debating the separation of the heart and the mission."
+    visual_weight: "medium"
+    characters_present:
+      - "rill-vossari"
+      - "lyra-kestrel"
+    location_zone: "thornwood-forest/camp"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch30-the-silent-approach-img-30-01-01"
+    source_moment: "ch30-the-silent-approach-moment-01"
+    scene_id: "scn-30-01"
+    image_type: "establishing"
+    category:
+      - "location"
+      - "moment"
+    scene_mood: "pastoral"
+    mood_rationale: "Departure from the Roost. Open vulnerability of the road. Soft morning light and the beginning of the journey."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      The reconnaissance team rides out of the Windborne Roost courtyard at dawn. They are dressed as agricultural consultants, horses loaded with survey gear. Quierk the aarakocra watches from the inn porch. The road stretches into an awakening spring forest. Thawing earth and patches of snow.
+    composition_notes: |
+      Wide cinematic shot. Column of riders moving from left to right. Inn building frames the left. Forest depth ahead. Morning sun at low angle.
+    visual_hook: "The survey equipment—brass instruments and collection cases—strapped to the saddles, hiding the team's true purpose."
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "quierk"
+    character_states:
+      veyra-thornwake: |
+        Leading column. Alert.
+      thorne-brightward: |
+        Riding beside Veyra. Disguised.
+      quierk: |
+        Standing on porch. Watchful.
+    location: "thornwood-forest"
+    zone: "trail"
+    lighting:
+      primary_source: "Dawn sun"
+      quality: "Soft, golden"
+      direction: "Side"
+      color_temperature: "Warm"
+      shadow_depth: "Moderate"
+      atmospheric: "Morning mist"
+    palette:
+      dominant:
+        - "warm gold"
+        - "pine green"
+        - "wood brown"
+      accent:
+        - "brass glints"
+      avoid:
+        - "darkness"
+    prompt_used: |
+      Group of mounted travelers leaving a medieval timber inn at dawn,
+      dressed as scholars and merchants,
+      horses loaded with brass scientific instruments,
+      road winding into a spring forest,
+      a bird-like innkeeper watching from the porch,
+      wide cinematic composition,
+      classical oil painting, plein air naturalism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "establishing"
+      - "departure"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch30-the-silent-approach-img-30-02-01"
+    source_moment: "ch30-the-silent-approach-moment-02"
+    scene_id: "scn-30-02"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "location"
+    scene_mood: "ominous"
+    mood_rationale: "The predatory funnel. Oppressive stillness and the sense of being herded. Wrongness made landscape."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      The team rides in tight formation along a narrow game trail. Massive trees tower on either side like walls. Canopy creates a tunnel of shadow. Riders becoming silhouettes. Veyra's lantern at belt is the only warm light in a world of gray-green. Stillness is wrong.
+    composition_notes: |
+      Extreme wide shot. Low angle looking up. Tree trunks as strong vertical lines. Riders diagonal receding into gloom. Rule of thirds: riders lower third.
+    visual_hook: "The forest canopy forms a tunnel of shadow that swallows the riders, Veyra's lantern the only warm light"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "lyra-kestrel"
+      - "thorne-brightward"
+    character_states:
+      veyra-thornwake: |
+        Center of formation. hand raised in caution. Alert.
+      lyra-kestrel: |
+        Predatory stillness. Coiled readiness.
+      thorne-brightward: |
+        Armor glinting dully. Grim features.
+    location: "thornwood-forest"
+    lighting:
+      primary_source: "filtered forest light"
+      quality: "unsettling, flat"
+      direction: "overhead/blocked"
+      color_temperature: "cold greenish-gray"
+      shadow_depth: "deep, directionless"
+      atmospheric: "dead air"
+    palette:
+      dominant:
+        - "shadow gray-green"
+        - "dead pine brown"
+        - "slate bark"
+      accent:
+        - "amber lantern glow"
+      avoid:
+        - "bright colors"
+    prompt_used: |
+      Mounted team in tight formation moving through an ancient dark forest,
+      massive trees forming a tunnel of shadow,
+      unlit forest floor with gray-green light,
+      woman with mohawk leading,
+      atmosphere of being watched and herded,
+      ultra-wide cinematic shot,
+      classical oil painting, Symbolist unease,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, cheerful woodland
+    tags:
+      - "hero"
+      - "forest"
+      - "ominous"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch30-the-silent-approach-img-30-02-02"
+    source_moment: "ch30-the-silent-approach-moment-03"
+    scene_id: "scn-30-02"
+    image_type: "anchor"
+    category:
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Lyra's transformation into operative mode. Melancholic weight of becoming a weapon. Rembrandt's chiaroscuro."
+    aspect_ratio: "2:3"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Close portrait of Lyra Kestrel. Plum skin drinking in shadows, edges indistinct. Golden eyes dilated and calculating. Curved horns catch glints of light. Expression shifted from companion to predator. Half her face lost to darkness.
+    composition_notes: |
+      Medium-close portrait. Single light source upper left (Rembrandt triangle). Face and horns focal point. Soft-focus background.
+    visual_hook: "Her deep plum skin seems to drink in the shadows around her, making her edges indistinct"
+    depicts_characters:
+      - "lyra-kestrel"
+    character_states:
+      lyra-kestrel: |
+        Operative mode. Neutral, cold expression. Body coiling for violence. Auburn hair in severe bun.
+    location: "thornwood-forest"
+    lighting:
+      primary_source: "filtered forest light"
+      quality: "hard, dramatic"
+      direction: "side"
+      color_temperature: "cool greenish"
+      shadow_depth: "deep, rich"
+      atmospheric: "shadow claiming edges"
+    palette:
+      dominant:
+        - "deep plum"
+        - "forest gray-green"
+        - "charcoal"
+      accent:
+        - "amber-gold eyes"
+      avoid:
+        - "warm skin tones"
+    prompt_used: |
+      Close portrait of a tiefling woman with deep plum skin and curved horns,
+      amber-gold eyes dilated and calculating,
+      half her face lost in deep shadow,
+      wearing black leather,
+      atmosphere of a predator emerging,
+      classical oil painting, Rembrandt lighting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, friendly
+    tags:
+      - "anchor"
+      - "character"
+      - "lyra"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch30-the-silent-approach-img-30-02-03"
+    source_moment: "ch30-the-silent-approach-moment-04"
+    scene_id: "scn-30-02"
+    image_type: "detail"
+    category:
+      - "character"
+      - "action"
+    scene_mood: "somber"
+    mood_rationale: "The loneliness of expertise. Reading danger others cannot perceive. Weight of command. Fingers on empty earth."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Veyra kneels on the forest floor, fingers pressed against disturbed earth. Face grave, burn scar catching light. Lantern at hip creates a circle of amber warmth on dark earth. Behind her, team waits on horseback as dark shapes.
+    composition_notes: |
+      High angle looking down. Veyra small against forest floor. Triangle: face, tattooed hand, lantern glow. Background blurred vertical shapes.
+    visual_hook: "Her fingers trace patterns in the earth that only she can read, her scarred face grave with the knowledge of pursuit"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Kneeling low. Hand on earth. Processing information. Burn scar prominent. Lantern casting amber.
+    location: "thornwood-forest"
+    lighting:
+      primary_source: "filtered light + lantern"
+      quality: "soft overhead, warm focal"
+      direction: "down + side"
+      color_temperature: "cold gray vs warm amber"
+      shadow_depth: "moderate"
+      atmospheric: "still, oppressive"
+    palette:
+      dominant:
+        - "earth brown"
+        - "deep blue"
+        - "gray-green"
+      accent:
+        - "amber lantern glow"
+        - "teal tattoos"
+      avoid:
+        - "cheerful lighting"
+    prompt_used: |
+      Woman with mohawk and burn scar kneeling on forest floor touching the dirt,
+      reading invisible tracks,
+      golden lantern at belt casting light on the ground,
+      companions waiting on horseback in soft focus background,
+      atmosphere of grim certainty and tracking,
+      classical oil painting, Rembrandt lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, visible tracks
+    tags:
+      - "detail"
+      - "tracking"
+      - "veyra"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch30-the-silent-approach-img-30-03-01"
+    source_moment: "ch30-the-silent-approach-moment-05"
+    scene_id: "scn-30-03"
+    image_type: "mood"
+    category:
+      - "character"
+      - "magic"
+    scene_mood: "ethereal"
+    mood_rationale: "Water communion as wonder. Magic as partnership. Bioluminescence and rising water. Romantic beauty."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Rill kneels at stream edge at dusk. Fingertips touching water. Sea-glass skin brightens, bioluminescent patterns swirl toward her hands. Water rises to meet her palms in defiance of gravity. Fish swim calmly in shallows she has shaped. Camp recedes in soft focus behind.
+    composition_notes: |
+      Medium shot, low angle. Rill fills lower two-thirds. Upward movement from rising water. Internal light vs dusk light. Background soft-focus camp.
+    visual_hook: "Her aquamarine skin glows from within as darker bioluminescent currents swirl toward her fingertips"
+    depicts_characters:
+      - "rill-vossari"
+    character_states:
+      rill-vossari: |
+        Kneeling. Fingertips touching water. Peaceful expression. Bioluminescence glowing. Teal-to-black dreadlocks.
+    location: "thornwood-forest"
+    zone: "camp"
+    lighting:
+      primary_source: "internal bioluminescence + dusk"
+      quality: "soft, luminous, ethereal"
+      direction: "internal + above + below"
+      color_temperature: "cool blue-green vs warm amber"
+      shadow_depth: "minimal, dreamy"
+      atmospheric: "peaceful, wonder"
+    palette:
+      dominant:
+        - "luminous aquamarine"
+        - "teal-blue"
+        - "dusk amber"
+      accent:
+        - "copper hair coils"
+      avoid:
+        - "harsh shadows"
+    prompt_used: |
+      Water genasi woman with glowing aquamarine skin kneeling at a stream,
+      water rising to meet her hands,
+      swirling bioluminescent veins under her skin,
+      fish swimming in the water near her,
+      dusk light and forest background,
+      classical oil painting, Pre-Raphaelite luminosity,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, murky water
+    tags:
+      - "mood"
+      - "water-magic"
+      - "rill-vossari"
+      - "ethereal"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch30-the-silent-approach-img-30-03-02"
+    source_moment: "ch30-the-silent-approach-moment-06"
+    scene_id: "scn-30-03"
+    image_type: "beat"
+    category:
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: "The 'Character's Hearth.' Respite around the fire. Contrast between precarious situation and good meal. Simple reality of tired soldiers."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The team gathered around a small fire under a rocky overhang. Fresh trout is being roasted on sticks. Thorne is accepting a portion with a tired smile. Veyra is staring into the fire. Lyra is apart, leaning against the rock face, cleaning her blades. The warm firelight creates a small circle of safety against the forest darkness.
+    composition_notes: |
+      Medium ensemble shot. Circle of faces around fire. Steam from food. Focus on the momentary relief and the shared space.
+    visual_hook: "The cluster of weary adventurers silhouetted against the firelight, the warmth of the meal cutting through the forest chill."
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "lyra-kestrel"
+      - "aldwin-gentleheart"
+    character_states:
+      veyra-thornwake: |
+        Staring into fire. Pensive.
+      thorne-brightward: |
+        Accepting food. Tired smile. Disguised.
+      lyra-kestrel: |
+        Apart. Cleaning kukri blades. Watchful.
+    location: "thornwood-forest"
+    zone: "camp"
+    lighting:
+      primary_source: "Campfire"
+      quality: "Warm, flickering"
+      direction: "Below/Center"
+      color_temperature: "Amber"
+      shadow_depth: "Soft"
+      atmospheric: "Woodsmoke"
+    palette:
+      dominant:
+        - "warm amber"
+        - "wood brown"
+        - "shadow black"
+      accent:
+        - "fish silver"
+      avoid:
+        - "harsh light"
+    prompt_used: |
+      Group of adventurers around a small campfire under a rock ledge at night,
+      roasting fish on sticks,
+      warm firelight on tired faces,
+      woman apart cleaning her daggers,
+      atmosphere of quiet respite and camaraderie,
+      classical oil painting, interior realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "respite"
+      - "campfire"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch30-the-silent-approach-img-30-04-01"
+    source_moment: "ch30-the-silent-approach-moment-07"
+    scene_id: "scn-30-04"
+    image_type: "anchor"
+    category:
+      - "character"
+      - "moment"
+      - "action"
+    scene_mood: "ominous"
+    mood_rationale: "Pivot moment. Threshold between warmth and violence. Lyra dissolving into darkness. Shadow as a cloak."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Campfire in foreground casts amber light on team members talking (Veyra, Halden). At the edge of firelight, Lyra stands mid-dissolution into shadow. Form becoming indistinct, edges blurring into night. Plum skin merging with darkness. Golden eyes visible for one heartbeat before vanishing.
+    composition_notes: |
+      Wide shot. Team around fire left third. Boundary middle third. Absolute darkness right third where Lyra dissolves. Low angle from fire. Half-there form.
+    visual_hook: "Her form becomes indistinct at the edges, deep plum skin blending into shadow until only her golden eyes remain"
+    depicts_characters:
+      - "lyra-kestrel"
+      - "veyra-thornwake"
+      - "medic-halden"
+    character_states:
+      lyra-kestrel: |
+        Threshold standing. Mid-dissolution. Horns visible. Shadow cloak wrapping. Golden eyes points of amber.
+      veyra-thornwake: |
+        Background. Speaking cover. casual body language masking tension.
+      medic-halden: |
+        Background. Asking questions. Maintaining fiction.
+    location: "thornwood-forest"
+    zone: "camp"
+    lighting:
+      primary_source: "campfire + absolute dark"
+      quality: "harsh boundary"
+      direction: "side-lighting from fire"
+      color_temperature: "warm amber vs cold dark"
+      shadow_depth: "extreme contrast"
+      atmospheric: "oppressive stillness"
+    palette:
+      dominant:
+        - "amber firelight"
+        - "absolute black"
+        - "plum skin"
+      accent:
+        - "golden eyes"
+      avoid:
+        - "soft transitions"
+    prompt_used: |
+      Tiefling woman at the edge of a campfire dissolving into absolute darkness,
+      weaving shadow around herself like a cloak,
+      indistinct edges and glowing golden eyes,
+      people talking around the fire in the background oblivious,
+      atmosphere of sudden lethal intent,
+      classical oil painting, Symbolist unease, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, complete visibility
+    tags:
+      - "anchor"
+      - "shadow-weaving"
+      - "lyra"
+      - "ominous"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch30-the-silent-approach-img-30-04-02"
+    source_moment: "ch30-the-silent-approach-moment-08"
+    scene_id: "scn-30-04"
+    image_type: "detail"
+    category:
+      - "character"
+      - "emotion"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: "Unexpected mercy. Killer honoring the slain. Solemn recognition of took life. Vermeer-like illumination."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Lyra kneels beside a dead man. Plum fingers with blood smear pressed gently to his eyelids, closing them. Moonlight through canopy silver on her face. Expression of solemn recognition. Body slumped against tree. Precise wound at throat not focal.
+    composition_notes: |
+      Close composition. Triangle: Lyra face, hand, dead face. Single light from above. Shallow depth. Dark blur background.
+    visual_hook: "Her deep plum fingers, still bearing the faintest smear of blood, press gently against a dead man's eyelids"
+    depicts_characters:
+      - "lyra-kestrel"
+    character_states:
+      lyra-kestrel: |
+        Kneeling. Fingers closing eyes. Solemn expression. Plum skin catching moonlight. Kukri at side.
+    location: "thornwood-forest"
+    lighting:
+      primary_source: "moonlight shaft"
+      quality: "soft, silver, intimate"
+      direction: "overhead"
+      color_temperature: "cool silver vs skin warmth"
+      shadow_depth: "soft gradients"
+      atmospheric: "still, quiet"
+    palette:
+      dominant:
+        - "silver moonlight"
+        - "deep plum"
+        - "forest shadow"
+      accent:
+        - "blood trace"
+      avoid:
+        - "harsh red blood"
+    prompt_used: |
+      Tiefling woman with plum skin kneeling in moonlight forest closing the eyes of a fallen soldier,
+      gentle and solemn expression,
+      single shaft of silver light from above,
+      atmosphere of unexpected mercy and finality,
+      classical oil painting, Vermeer lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, graphic violence, bright red blood
+    tags:
+      - "detail"
+      - "lyra"
+      - "mercy"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch30-the-silent-approach-img-30-02-04"
+    source_moment: "ch30-the-silent-approach-moment-02"
+    scene_id: "scn-30-02"
+    image_type: "beat"
+    category:
+      - "location"
+      - "mystery"
+    scene_mood: "ominous"
+    mood_rationale: "The 'Character's Predation.' Forest as weaponized geography. Creeping dread of being herded. Unnatural stillness."
+    aspect_ratio: "9:16"
+    orientation: "portrait"
+    size: "640x1136"
+    visual_description: |
+      Vertical shot down a shadow corridor in the Thornwood. Massive tree trunks like pillars of a predatory space. Sickly emerald-gray light. Damp leaves and exposed roots. Single snapped branch in foreground. Absolute silence. Forest as active observer.
+    composition_notes: |
+      Extreme vertical. Corridor axis. Tree trunks parallel lines receding to dark center. Snapped branch bottom foreground. High contrast emerald vs absolute shadow. No human figures.
+    visual_hook: "A single snapped branch in the center of an unnaturally silent, vertical 'shadow corridor'"
+    depicts_characters: []
+    character_states: {}
+    location: "thornwood-forest"
+    lighting:
+      primary_source: "filtered sourceless daylight"
+      quality: "flat, sickly, oppressive"
+      direction: "ambient above"
+      color_temperature: "cold emerald-gray"
+      shadow_depth: "deep"
+      atmospheric: "dead air"
+    palette:
+      dominant:
+        - "gray-green"
+        - "shadow black"
+        - "leaf brown"
+      accent:
+        - "fresh wood white"
+      avoid:
+        - "bright sun"
+    prompt_used: |
+      Vertical shot of a narrow tunnel of ancient trees in a dark forest,
+      sickly emerald-gray light filtering through,
+      a single freshly snapped branch on the dark forest floor,
+      atmosphere of being hunted and watched,
+      classical oil painting, Symbolist unease, Böcklin dread,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, happy woodland
+    tags:
+      - "location"
+      - "forest"
+      - "mystery"
+      - "ominous"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

@@ -1,0 +1,2643 @@
+metadata:
+  entity_type: "location-imagery"
+  slug: "undershade-canyon"
+  name: "Undershade Canyon"
+  location_type: "wilderness-complex"
+  narrative_soul: |
+    Where stone became glass and heroes became ghosts behind crystal. This ancient ritual
+    site was transformed by catastrophic dragon-fire into a crystalline tomb that preserves
+    the exact moment of sacrifice—making survivors into permanent witnesses who can see
+    their fallen comrades but never reach them. The glass doesn't just seal the dead;
+    it displays them. Every vitrified surface is a window into loss, every frozen ripple
+    a reminder that stone can become transparent but grief only hardens.
+  one_line_essence: "Where stone became glass and heroes became memory"
+  generation_defaults:
+    provider: "openai"
+    model: "gpt-image-1"
+    quality: "high"
+
+location_visual_anchor:
+  signature_elements:
+    - "Ochre-banded sedimentary walls with darker igneous ribs cutting through"
+    - "Shale caprock at rim catching light like hammered copper"
+    - "Vitrified glass surfaces—rippled, translucent, with trapped bubbles and flow striae"
+    - "The transformation boundary where natural stone meets frozen glass"
+    - "Flour-fine ash deposits over everything in the depths"
+    - "Vine-strangled threshold pillars with coiled dragon carvings"
+    - "Brass brazier rows now fused to vitrified floor"
+    - "Basalt plinth with runic drainage grooves"
+  materials:
+    stone: "ochre sedimentary layers, darker basalt intrusions, shale caprock"
+    metalwork: "brass braziers (now fused to vitrified floor), tarnished gold and heat-darkened bronze"
+    glass: "rippled translucent vitrified stone, trapped bubbles, flow patterns frozen mid-wave"
+    organic: "vine and moss on ancient pillars, root intrusions displacing stone"
+    debris: "flour-fine ash, glass spall, rubble talus"
+  color_anchors:
+    geology: "ochre bands, rust-red iron staining, basalt black, shale grey-brown"
+    glass: "translucent pale grey with amber-grey trapped bubbles, occasional greenish tint"
+    brass: "tarnished gold, heat-darkened bronze"
+    fire_memory: "green-white ghost shimmer in glass refractions"
+    blood: "rust-brown staining on glass surfaces at breach"
+    copper_glints: "metallic copper flashes at Ignis locus"
+  characteristic_light:
+    rim_evening: "molten-brass light on ochre walls, long shadows in depths"
+    rim_dawn: "grey pre-light shifting to gold, shale edges catching first rays"
+    interior_day: "dramatic light shafts through fissures and lost roof stones"
+    interior_glass: "lantern light multiplied and distorted, false depths, prismatic refractions"
+    night: "darkness with glass surfaces reflecting any light unpredictably"
+
+overview:
+  slug: "undershade-canyon-overview"
+  title: "The Wound in the Earth"
+  image_type: "establishing"
+  category:
+    - "Epic Landscape"
+    - "Geological Drama"
+    - "Supernatural Transformation"
+  scene_mood: "somber"
+  mood_rationale: |
+    The canyon must feel like a wound—beautiful in its geological drama but
+    wrong where the glass begins. Somber captures the weight of what happened
+    here without tipping into pure horror. This is a place of grief, not just danger.
+  visual_description: |
+    A vast geological throat descending through ochre-banded sedimentary walls,
+    the strata spanning millennia visible as horizontal bands of rust and amber
+    cut by darker igneous ribs of basalt thrusting through at angles. Shale caprock
+    at the rim catches the last evening light like hammered copper. The south wall
+    shows the treacherous switchback descent, patches of old vitrification glinting
+    treacherously where ancient fires glazed the stone.
+
+    But in the depths—wrongness. Where there should be more natural stone, surfaces
+    shine too smoothly, too translucent. The glass begins gradually then consumes
+    whole sections: rippled planes that were walls, frozen mid-flow. The transformation
+    boundary is visible—a line where the canyon stopped being merely ancient and became
+    something else entirely.
+
+    Tiny figures at the rim—barely visible—provide scale that makes the geological
+    and magical forces feel overwhelming. This is a place where humans are insignificant
+    against the powers that shaped it.
+  composition_notes: |
+    Wide vertical composition emphasizing the descent from rim to depths. The eye
+    should travel down through geological layers (natural) toward the glass (unnatural).
+    The rim occupies the top third with sky and caprock silhouette. The middle third
+    shows the switchback descent and natural stone. The bottom third reveals the
+    glassed depths where the transformation occurred. Evening light enters from
+    screen left, casting long shadows that emphasize the vertical relief.
+  narrative_significance: |
+    This is the first impression of the place where the story's foundational trauma
+    occurred. The reader must understand immediately that this is both a geological
+    wonder and a site of supernatural catastrophe. The beauty makes the wrongness
+    worse—this should have been just a canyon, just stone, just time made visible
+    in sedimentary bands. Instead, it became a tomb.
+  symbolic_elements: |
+    The vertical descent mirrors the narrative descent into the past. The geological
+    layers represent accumulated time (the canyon's natural history) while the glass
+    represents a single catastrophic moment that froze everything. The transformation
+    boundary is the literal line between before and after—between what the canyon was
+    and what it became, between who the Company was and who they must now be.
+  time_of_day: "evening"
+  weather: "clear, thermal updrafts visible as heat shimmer"
+  season: "autumn"
+  required_elements:
+    - "Ochre-banded sedimentary walls with darker igneous ribs"
+    - "Shale caprock at rim catching molten-brass evening light"
+    - "South switchback descent with patches of vitrified glaze"
+    - "Glassed sections in depths—surfaces shining too smoothly"
+    - "Visible transformation boundary between natural stone and glass"
+    - "Tiny human figures at rim for scale"
+    - "Thermal updraft effects in atmosphere"
+    - "Long shadows emphasizing vertical relief"
+  visible_beyond:
+    - "Sky with evening colors above rim"
+    - "Surrounding badlands terrain (distant)"
+    - "The depths continue below frame—we don't see the bottom"
+  approach_from: "High oblique view from above and to one side of the rim"
+  lighting:
+    primary_source: "setting sun from screen left"
+    quality: "golden hour warmth on exposed surfaces, deep shadow in recesses"
+    direction: "low angle from west, raking across geological features"
+    color_temperature: "warm gold on rim and upper walls, cooler in shadowed depths"
+    shadow_depth: "extreme—the canyon creates its own darkness"
+    atmospheric: "thermal shimmer rising from depths, haze softening distance"
+  palette:
+    dominant:
+      - "ochre and rust (sedimentary bands)"
+      - "basalt black (igneous intrusions)"
+      - "shale grey-brown (caprock)"
+    accent:
+      - "molten brass (evening light on shale)"
+      - "translucent grey-green (vitrified sections)"
+    avoid:
+      - "bright greens"
+      - "water blues"
+      - "modern materials"
+  aspect_ratio: "16:9"
+  orientation: "landscape"
+  size: "1792x1024"
+  prompt_used: ""
+  negative_prompt: |
+    cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+    video game screenshot, neon colors, airbrushed, digital art gloss,
+    concept art polish, AI artifacts, modern elements, pristine clean stone,
+    bright lighting, cheerful atmosphere, lush vegetation, water features
+  references: []
+  generated_images: []
+  image_inventory: []
+
+zones:
+  - name: "Antechamber"
+    slug: "undershade-canyon-antechamber"
+    title: "The Waiting Dark"
+    image_type: "zone"
+    zone_type: "transition"
+    category:
+      - "Interior Space"
+      - "Architectural Ruin"
+      - "Death Site"
+    scene_mood: "ominous"
+    mood_rationale: |
+      This narrow space beyond the load-bearing pillar became a death trap when
+      the keystone collapsed. The antechamber holds the weight of final moments—
+      where the team was sealed and where some drew their last breaths.
+    visual_description: |
+      A cramped passage beyond the collapsed archway, its walls now fused glass
+      and tumbled stone. The ceiling sags where heat weakened ancient supports.
+      Rubble chokes the far end where the keystone brought down tons of masonry.
+
+      The air here is still and close, carrying the memory of smoke and panic.
+      Glass surfaces preserve distorted reflections—shadows of those who were
+      trapped here, frozen in translucent amber. A gap in the debris shows where
+      desperate hands tried to claw through.
+    composition_notes: |
+      Tight framing emphasizing the claustrophobic space. Low angle looking up
+      at the sagging ceiling and rubble pile. The gap in the debris should be
+      visible as a focal point—the place where hope and despair met.
+    narrative_significance: |
+      This is where Elara and Borin made their final stand, where Ignis cast
+      his desperate spell, where the glass barrier separated Veyra from her
+      dying friends. Every surface here witnessed death.
+    symbolic_elements: |
+      The collapsed ceiling represents the crushing weight of fate. The gap in
+      the rubble represents desperate hope that came too late. The fused glass
+      walls are the barrier between witness and victim.
+    location_within: "Beyond the load-bearing pillar, accessed through the heat-shadow gap"
+    time_of_day: "interior (artificial light only)"
+    weather: "enclosed, still air"
+    required_elements:
+      - "Cramped passage with fused glass walls"
+      - "Sagging ceiling showing heat damage"
+      - "Rubble pile from collapsed keystone"
+      - "Gap in debris where hands tried to break through"
+      - "Distorted reflections in glass surfaces"
+      - "Close, oppressive atmosphere"
+    lighting:
+      primary_source: "lantern or torch light"
+      quality: "flickering, uncertain, casting moving shadows"
+      direction: "from viewer's position, illuminating the space ahead"
+      color_temperature: "warm gold against cold glass"
+      shadow_depth: "deep shadows in corners and behind rubble"
+      atmospheric: "dust motes visible in light beam, smoke-stained air"
+    palette:
+      dominant:
+        - "ash grey"
+        - "glass translucent"
+        - "rubble brown"
+      accent:
+        - "lantern gold"
+        - "rust staining"
+      avoid:
+        - "bright colors"
+        - "green vegetation"
+    aspect_ratio: "3:2"
+    orientation: "portrait"
+    size: "1024x1536"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Borin's Breach"
+    slug: "undershade-canyon-borin-breach"
+    title: "The Hammer's Last Strike"
+    image_type: "zone"
+    zone_type: "memorial"
+    category:
+      - "Architectural Detail"
+      - "Sacrifice Site"
+      - "Glass Damage"
+    scene_mood: "somber"
+    mood_rationale: |
+      This is where Borin Stonehand broke himself against the glass trying to
+      free his companions. The spiderweb fractures and blood staining make this
+      a shrine to desperate love and futile heroism.
+    visual_description: |
+      A section of the glass barrier bearing the unmistakable marks of violence—
+      spiderweb fractures radiating from impact points where Borin's hammer struck
+      again and again. Dried blood stains the edges of the gap he managed to create,
+      too narrow for rescue, wide enough only for reaching hands.
+
+      Glass chips litter the floor like broken prayers. The fracture pattern tells
+      the story of mounting desperation—each strike harder than the last, the final
+      blows leaving bloody handprints on the crystalline surface.
+    composition_notes: |
+      Close-up focus on the fractured glass panel with the gap at center frame.
+      The blood staining should be visible but not gratuitous. The fracture pattern
+      radiates outward like frozen lightning. Through the gap, hint at the space
+      beyond where bodies lay.
+    narrative_significance: |
+      Borin broke his hands trying to save Elara. This gap represents the terrible
+      mathematics of sacrifice—all his divine strength could open only a passage
+      too small to matter. Yet he kept striking.
+    symbolic_elements: |
+      The spiderweb fractures represent faith shattering against immovable reality.
+      The blood on glass represents the cost of love. The too-small gap represents
+      the cruelty of almost—of being so close yet impossibly far.
+    location_within: "Glass barrier between main chamber and antechamber"
+    time_of_day: "interior (artificial light only)"
+    weather: "enclosed"
+    required_elements:
+      - "Spiderweb fractures radiating from impact points"
+      - "Narrow gap in the glass (arm-width)"
+      - "Blood staining on glass edges"
+      - "Glass chips on floor"
+      - "Handprints visible on glass surface"
+      - "Glimpse of space beyond through gap"
+    lighting:
+      primary_source: "lantern light from viewer's side"
+      quality: "harsh shadows emphasizing fracture depth"
+      direction: "angled to catch fracture lines"
+      color_temperature: "warm light on cold glass"
+      shadow_depth: "moderate, showing texture of damage"
+      atmospheric: "dust settling in still air"
+    palette:
+      dominant:
+        - "translucent glass grey"
+        - "fracture white"
+      accent:
+        - "rust-brown blood staining"
+        - "lantern gold"
+      avoid:
+        - "bright colors"
+        - "fresh blood red"
+    aspect_ratio: "3:2"
+    orientation: "portrait"
+    size: "1024x1536"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements, gore, horror
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Cairn Site"
+    slug: "undershade-canyon-cairn-site"
+    title: "Stones for the Fallen"
+    image_type: "zone"
+    zone_type: "sacred"
+    category:
+      - "Memorial"
+      - "Ritual Space"
+      - "Grief Site"
+    scene_mood: "somber"
+    mood_rationale: |
+      The cairns represent the only physical markers for those lost in the canyon.
+      Built by survivors over three days of desperate recovery, each stone was
+      placed with love and grief in equal measure.
+    visual_description: |
+      A gathering of stone cairns in a cleared area near the transept, each pile
+      carefully constructed from canyon stone. Names have been carved into the
+      largest rocks—some in Common, some in Dwarvish, one in the flowing script
+      of the elves. Offerings rest at their bases: a silver-braided holy symbol,
+      a scorched feather, a shield boss.
+
+      The glass walls here are less distorted, creating windows that look into
+      the sealed chambers beyond. Those who visit can see where the dead rest
+      even if they cannot reach them.
+    composition_notes: |
+      Medium-wide shot showing multiple cairns in relation to the glass walls.
+      Morning light should fall across the stones, creating long shadows. The
+      carved names should be partially legible. The offerings should be visible
+      as small details.
+    narrative_significance: |
+      Built during the three-day recovery operation, these cairns represent the
+      transition from rescue to remembrance. They mark the moment when hope
+      finally died and grief began its longer work.
+    symbolic_elements: |
+      Stone piled on stone represents accumulated grief. The carved names represent
+      the human need to mark loss. The offerings represent the things left behind
+      when loved ones are taken. The glass windows represent being able to see
+      but never touch.
+    location_within: "Cleared area near the transept, accessible from main chamber"
+    time_of_day: "dawn"
+    weather: "clear, filtered light"
+    required_elements:
+      - "Multiple stone cairns of varying sizes"
+      - "Carved names on largest stones"
+      - "Offerings at cairn bases"
+      - "Glass walls visible in background"
+      - "Dawn light creating long shadows"
+      - "Ash-dusted floor around cairns"
+    lighting:
+      primary_source: "early morning light through roof gaps"
+      quality: "soft, diffused, gentle"
+      direction: "low angle from east"
+      color_temperature: "warm gold on grey stone"
+      shadow_depth: "long shadows, soft edges"
+      atmospheric: "slight haze from residual dust"
+    palette:
+      dominant:
+        - "grey canyon stone"
+        - "ochre dust"
+      accent:
+        - "silver (holy symbol)"
+        - "gold (dawn light)"
+        - "rust (scorched offerings)"
+      avoid:
+        - "bright colors"
+        - "green growth"
+    aspect_ratio: "3:2"
+    orientation: "landscape"
+    size: "1536x1024"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Escarpment Gallery"
+    slug: "undershade-canyon-escarpment-gallery"
+    title: "The High Witness"
+    image_type: "zone"
+    zone_type: "panoramic"
+    category:
+      - "Overlook"
+      - "Tactical Position"
+      - "Witness Point"
+    scene_mood: "tense"
+    mood_rationale: |
+      From this high ledge, Veyra watched the ritual unfold and the dragon-fire
+      transform the nave below. It is a place of terrible clarity—where she saw
+      everything and could stop nothing.
+    visual_description: |
+      A narrow ledge running along the outer wall of the fissured gallery, rising
+      to a high escarpment that overlooks the entire vaulted nave below. The view
+      is commanding but exposed—anyone standing here can see the brazier rows,
+      the basalt plinth, the now-glassed floors stretching out below.
+
+      Broken roof-stones let shafts of light angle down into the depths. The ledge
+      itself shows signs of recent use—scrape marks from boots, ash disturbed by
+      movement, a dropped arrow still lodged in a crack.
+    composition_notes: |
+      Wide shot from the ledge looking down into the nave. The viewer should feel
+      the height and the exposure. The dropped arrow provides human scale and
+      narrative context. The light shafts create dramatic contrast.
+    narrative_significance: |
+      This is where Veyra launched arrows at the chanters, where she watched the
+      serpent of fire take shape, where she was blown back by the explosion that
+      started the transformation. It is a place of action and helplessness.
+    symbolic_elements: |
+      The height represents clarity of vision but inability to intervene. The
+      dropped arrow represents interrupted action, incomplete defense. The view
+      down into the transformed nave represents bearing witness to irreversible
+      change.
+    location_within: "High ledge accessed via fissured gallery, overlooking the nave"
+    time_of_day: "midday"
+    weather: "clear, light shafts visible"
+    required_elements:
+      - "Narrow ledge with commanding view"
+      - "Dramatic drop to nave floor below"
+      - "Light shafts through broken roof-stones"
+      - "Glassed nave visible below"
+      - "Dropped arrow in crack"
+      - "Boot scrapes on stone"
+    lighting:
+      primary_source: "natural light through roof gaps"
+      quality: "dramatic contrast, light shafts in dusty air"
+      direction: "from above, angled"
+      color_temperature: "warm gold shafts against cool shadows"
+      shadow_depth: "extreme contrast between lit and unlit areas"
+      atmospheric: "dust visible in light beams"
+    palette:
+      dominant:
+        - "ochre stone"
+        - "shadow black"
+      accent:
+        - "gold light shafts"
+        - "glass glint below"
+      avoid:
+        - "bright colors"
+        - "modern materials"
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Evening Vigil"
+    slug: "undershade-canyon-evening"
+    title: "The Watch That Never Ends"
+    image_type: "zone"
+    zone_type: "intimate"
+    category:
+      - "Character Moment"
+      - "Atmospheric"
+      - "Grief Scene"
+    scene_mood: "somber"
+    mood_rationale: |
+      The evening vigil captures the quiet after the horror—when survivors sit
+      with what they've lost and the canyon settles into its new reality as tomb.
+    visual_description: |
+      A single figure silhouetted against the evening sky at the canyon rim, the
+      last light catching the edges of their form while shadows claim everything
+      else. Below, the glassed depths catch and hold the fading light in strange
+      patterns—reflections where none should be, glimmers in the wrong places.
+
+      The figure holds a lantern that seems impossibly bright against the gathering
+      dark. Thermal updrafts carry the scent of sage and something acrid—the memory
+      of fire that will never quite fade.
+    composition_notes: |
+      Silhouette composition with figure at rim edge, framed against evening sky.
+      The canyon depths should be visible below, showing the glass transformation.
+      The lantern provides the only warm light in the frame.
+    narrative_significance: |
+      This represents the ongoing vigil kept by survivors and those who remember.
+      The canyon does not forget, and neither do those who witnessed what happened
+      here.
+    symbolic_elements: |
+      The lone figure represents the survivor's burden. The lantern represents
+      defiant memory against encroaching darkness. The evening light represents
+      endings and the persistence of grief into night.
+    location_within: "Canyon rim, overlooking the transformed depths"
+    time_of_day: "evening (golden hour to dusk)"
+    weather: "clear, thermal updrafts"
+    required_elements:
+      - "Silhouetted figure at rim edge"
+      - "Lantern held aloft, glowing"
+      - "Evening sky with warm colors"
+      - "Glassed depths visible below"
+      - "Strange reflections in glass"
+      - "Thermal shimmer in air"
+    lighting:
+      primary_source: "setting sun behind figure"
+      quality: "rim lighting, silhouette"
+      direction: "backlit from west"
+      color_temperature: "warm gold and amber in sky"
+      shadow_depth: "figure in full shadow against bright sky"
+      atmospheric: "thermal shimmer, sage-scented air"
+    palette:
+      dominant:
+        - "silhouette black"
+        - "amber sky"
+        - "gold sunset"
+      accent:
+        - "lantern warm glow"
+        - "glass glint below"
+      avoid:
+        - "cool colors"
+        - "bright daylight"
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "The Three-Day Vigil"
+    slug: "undershade-canyon-excavation"
+    title: "The Work of Grief"
+    image_type: "zone"
+    zone_type: "functional"
+    category:
+      - "Recovery Operation"
+      - "Labor Scene"
+      - "Grief Work"
+    scene_mood: "somber"
+    mood_rationale: |
+      The excavation represents the physical work of grief—the endless hours
+      of moving stone and glass, of searching for bodies, of refusing to abandon
+      the dead even when rescue became recovery.
+    visual_description: |
+      The aftermath of desperate labor: a shield used as shovel lies against
+      tumbled glass, its edge dulled and dented. Cloth wrappings torn from cloaks
+      pad the grip where blood soaked through. Stone and glass debris have been
+      moved, creating a narrow passage toward the sealed chamber.
+
+      Three days of work have left their mark—handprints in ash, knee-worn spots
+      in the dust, the careful piling of debris that speaks of methodical determination
+      rather than panic.
+    composition_notes: |
+      Ground-level shot showing the tools of excavation—the shield, the wrapped
+      grip, the cleared passage. The glass barrier should be visible ahead,
+      with the gap that was eventually created. Dawn light suggests a new day
+      of work beginning.
+    narrative_significance: |
+      Veyra spent three days using Lysander's shield as her only tool, breaking
+      her hands to reach her fallen friends. This represents love expressed
+      through labor when words are no longer possible.
+    symbolic_elements: |
+      The shield-as-shovel represents protection transformed into recovery.
+      The blood on cloth represents the cost of devotion. The methodical debris
+      piles represent the discipline of grief.
+    location_within: "Near the glass barrier and collapsed archway"
+    time_of_day: "dawn"
+    weather: "enclosed, stale air"
+    required_elements:
+      - "Shield lying against debris, used as tool"
+      - "Cloth-wrapped grip stained with blood"
+      - "Cleared passage through rubble"
+      - "Glass barrier visible ahead"
+      - "Handprints in ash"
+      - "Dawn light entering from above"
+    lighting:
+      primary_source: "dawn light through gaps"
+      quality: "soft, growing, hopeful despite setting"
+      direction: "from above and east"
+      color_temperature: "grey pre-dawn shifting to gold"
+      shadow_depth: "long shadows, soft edges"
+      atmospheric: "dust settling, air clearing"
+    palette:
+      dominant:
+        - "ash grey"
+        - "stone brown"
+        - "glass translucent"
+      accent:
+        - "shield metal"
+        - "blood rust"
+        - "dawn gold"
+      avoid:
+        - "bright colors"
+        - "fresh blood"
+    aspect_ratio: "3:2"
+    orientation: "landscape"
+    size: "1536x1024"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Exterior Ritual Circle"
+    slug: "undershade-canyon-exterior-ritual-circle"
+    title: "The Hungry Geometry"
+    image_type: "zone"
+    zone_type: "sacred"
+    category:
+      - "Ritual Space"
+      - "Magical Site"
+      - "Danger Zone"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The ritual circle on the canyon floor fed the dragon-fire serpent with
+      stolen power. Even now, the runes carry residual energy and an air of
+      malevolent purpose.
+    visual_description: |
+      A complex pattern of runic stelae and incised channels carved into the
+      canyon floor, arranged in spiral intake geometry that once fed power to
+      the temple above. The channels slope toward a circumferential ring,
+      designed to collect and direct energy.
+
+      Scorch marks blacken the stone where runes blazed core-hot during the
+      ritual. Mineral residues glint in certain light—metal salts that enhanced
+      heat conduction. The air above the circle feels wrong, heavy with potential
+      energy that hasn't fully dissipated.
+    composition_notes: |
+      Overhead or high-angle shot showing the spiral pattern of the ritual circle.
+      The scorch marks should emphasize the rune shapes. The circumferential ring
+      should be visible as the focal point where power collected.
+    narrative_significance: |
+      This is where the cultists channeled power to create the dragon-fire serpent.
+      The circle's geometry allowed them to draw on the life force of their own
+      dead when arrows felled chanters—the ritual feeding on death.
+    symbolic_elements: |
+      The spiral represents power drawn inward. The scorch marks represent the
+      permanent cost of wielding such forces. The residual heaviness represents
+      power that doesn't simply go away.
+    location_within: "Canyon floor beyond the temple, aligned to temple axis"
+    time_of_day: "twilight"
+    weather: "clear, thermal updrafts"
+    required_elements:
+      - "Runic stelae arranged in pattern"
+      - "Incised channels in stone floor"
+      - "Spiral intake geometry"
+      - "Circumferential collection ring"
+      - "Scorch marks where runes blazed"
+      - "Mineral residue glinting"
+      - "Heavy, oppressive atmosphere"
+    lighting:
+      primary_source: "twilight from above"
+      quality: "dramatic, shadows lengthening"
+      direction: "low angle from west"
+      color_temperature: "warm gold fading to purple"
+      shadow_depth: "deep shadows in channels"
+      atmospheric: "thermal distortion, heavy air"
+    palette:
+      dominant:
+        - "stone grey"
+        - "scorch black"
+      accent:
+        - "mineral glint"
+        - "twilight purple"
+        - "residual green-white"
+      avoid:
+        - "bright daylight"
+        - "cheerful colors"
+    aspect_ratio: "3:2"
+    orientation: "landscape"
+    size: "1536x1024"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "The Light That Stayed"
+    slug: "undershade-canyon-first-vigil"
+    title: "Defiance in the Dark"
+    image_type: "zone"
+    zone_type: "intimate"
+    category:
+      - "Character Moment"
+      - "Symbolic Image"
+      - "Hope Element"
+    scene_mood: "hopeful"
+    mood_rationale: |
+      Against all the horror of the canyon, the lantern persists. This image
+      captures the moment when Veyra's light refused to die—the symbol that
+      would become the Company's identity.
+    visual_description: |
+      A battered lantern held in a scorched hand, its panes clouded by long miles
+      yet somehow still casting a pale gold halo. The flame within burns steady
+      despite the oppressive darkness around it. The hand that holds it shows
+      fresh burns, the skin blistered but the grip firm.
+
+      Behind the lantern, glass walls reflect and multiply the light into a
+      constellation of small defiances. The darkness presses in from all sides,
+      but cannot quite reach the center.
+    composition_notes: |
+      Close-up on the lantern and hand, with glass reflections visible in the
+      background. The lantern should be the brightest point in the frame, with
+      everything else fading into shadow at the edges. The burns on the hand
+      should be visible but not the focus.
+    narrative_significance: |
+      Veyra's lantern became the symbol of Last Light Company—the light that
+      stayed when everything else was consumed. This moment represents the birth
+      of that identity, when grief became purpose.
+    symbolic_elements: |
+      The persistent flame represents hope that refuses to die. The burned hand
+      represents the cost of carrying that hope. The reflections represent how
+      one light can multiply in darkness.
+    location_within: "Interior, near glass barriers"
+    time_of_day: "night"
+    weather: "enclosed, oppressive"
+    required_elements:
+      - "Battered lantern with clouded panes"
+      - "Steady flame within"
+      - "Burned hand gripping lantern"
+      - "Glass reflections multiplying light"
+      - "Pressing darkness at edges"
+      - "Pale gold halo around flame"
+    lighting:
+      primary_source: "lantern flame"
+      quality: "warm, steady, defiant"
+      direction: "radiating outward from center"
+      color_temperature: "warm gold against cold darkness"
+      shadow_depth: "extreme darkness at edges"
+      atmospheric: "glass reflections creating secondary lights"
+    palette:
+      dominant:
+        - "darkness black"
+        - "glass grey"
+      accent:
+        - "lantern gold"
+        - "burn red on skin"
+      avoid:
+        - "cool colors"
+        - "bright lighting"
+    aspect_ratio: "3:2"
+    orientation: "portrait"
+    size: "1024x1536"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Fissured Gallery and High Escarpment"
+    slug: "undershade-canyon-fissured-gallery"
+    title: "The Hidden Way"
+    image_type: "zone"
+    zone_type: "transition"
+    category:
+      - "Passage"
+      - "Tactical Route"
+      - "Dramatic Setting"
+    scene_mood: "tense"
+    mood_rationale: |
+      The fissured gallery is the alternate route—the flanking path that allowed
+      Veyra to reach the high escarpment. It represents the scout's way, the
+      path less obvious but more revealing.
+    visual_description: |
+      A narrow corridor carved by ancient water through the outer wall of the
+      complex, rising at a steep angle toward the escarpment above. Broken
+      roof-stones create irregular gaps that let shafts of light penetrate.
+      The footing is treacherous—ankle-trap fissures and loose scree.
+
+      Chalk marks on the walls indicate the return path. Glaze flakes from
+      overhead overhangs litter the floor, warning of hazards above. The
+      corridor opens onto a ledge with a commanding view of the nave below.
+    composition_notes: |
+      View up the rising corridor toward the light at the top. The narrowness
+      should be emphasized—walls close on either side. Light shafts create
+      dramatic contrast. The escarpment ledge should be visible as the goal.
+    narrative_significance: |
+      This is the path Veyra took to reach the overwatch position. It represents
+      her role as scout—finding the way others cannot see, moving where others
+      cannot follow.
+    symbolic_elements: |
+      The rising path represents ascent to clarity. The narrow walls represent
+      constraint and focus. The light at the top represents understanding gained
+      through difficult passage.
+    location_within: "Outer wall of temple complex, connecting to high escarpment"
+    time_of_day: "midday"
+    weather: "enclosed, light through gaps"
+    required_elements:
+      - "Narrow rising corridor"
+      - "Broken roof-stones creating light gaps"
+      - "Ankle-trap fissures"
+      - "Chalk marks on walls"
+      - "Glaze flakes on floor"
+      - "Ledge visible at top"
+    lighting:
+      primary_source: "natural light through roof gaps"
+      quality: "dramatic contrast, pools of light in darkness"
+      direction: "from above at angles"
+      color_temperature: "warm gold where lit, cool shadow elsewhere"
+      shadow_depth: "extreme contrast"
+      atmospheric: "dust in light beams"
+    palette:
+      dominant:
+        - "shadow black"
+        - "stone grey"
+      accent:
+        - "light shaft gold"
+        - "chalk white marks"
+      avoid:
+        - "even lighting"
+        - "bright colors"
+    aspect_ratio: "3:2"
+    orientation: "portrait"
+    size: "1024x1536"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Glass Barrier"
+    slug: "undershade-canyon-glass-barrier"
+    title: "The Transparent Prison"
+    image_type: "zone"
+    zone_type: "threshold"
+    category:
+      - "Supernatural Element"
+      - "Barrier"
+      - "Tragedy Site"
+    scene_mood: "somber"
+    mood_rationale: |
+      The glass barrier is the cruelest element of the transformation—it lets
+      you see what you cannot reach. Veyra watched her friends die through
+      glass that showed everything and permitted nothing.
+    visual_description: |
+      A wall of rippled translucent glass where stone should be, its surface
+      frozen mid-flow like a vertical wave that never broke. Trapped bubbles
+      and flow striae create strange optical effects—distortion and false
+      depths that confuse the eye.
+
+      Through the glass, shapes are visible: the outlines of the antechamber,
+      the suggestion of fallen stone, the dark forms that might be bodies
+      or might be shadow. The barrier reflects lantern light unpredictably,
+      sometimes showing the viewer's own face superimposed on the horrors beyond.
+    composition_notes: |
+      Direct view of the glass barrier, showing both its surface detail and
+      what lies beyond. The viewer should feel the horror of seeing without
+      being able to act. Reflections and the view through should compete for
+      attention.
+    narrative_significance: |
+      This barrier made Veyra a witness to her team's death. She pounded against
+      it, pressed her palms to it, watched through it as hope died. It is the
+      physical manifestation of helplessness.
+    symbolic_elements: |
+      The transparent prison represents the cruelty of clarity without agency.
+      The distortion represents how trauma warps memory. The reflection shows
+      how witnesses become haunted by what they saw.
+    location_within: "Between main chamber and sealed antechamber"
+    time_of_day: "interior (artificial light only)"
+    weather: "enclosed"
+    required_elements:
+      - "Rippled translucent glass wall"
+      - "Trapped bubbles and flow striae"
+      - "Visible shapes beyond (distorted)"
+      - "Lantern reflections on surface"
+      - "Viewer's reflection superimposed"
+      - "Optical distortion effects"
+    lighting:
+      primary_source: "lantern from viewer's side"
+      quality: "harsh, revealing, unforgiving"
+      direction: "from viewer's position"
+      color_temperature: "warm light on cold glass"
+      shadow_depth: "reflections competing with view through"
+      atmospheric: "glass creating false depths"
+    palette:
+      dominant:
+        - "translucent grey-green glass"
+        - "distorted shadow"
+      accent:
+        - "lantern gold reflection"
+        - "bubble amber"
+      avoid:
+        - "bright colors"
+        - "clear visibility"
+    aspect_ratio: "3:2"
+    orientation: "portrait"
+    size: "1024x1536"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "The Glass Sealing"
+    slug: "undershade-canyon-glass-transformation"
+    title: "Stone Becoming Memory"
+    image_type: "zone"
+    zone_type: "panoramic"
+    category:
+      - "Transformation Scene"
+      - "Supernatural Event"
+      - "Epic Moment"
+    scene_mood: "epic"
+    mood_rationale: |
+      The moment of transformation—when dragon-fire turned stone to glass—is
+      the defining instant of the canyon's history. Epic captures the scale
+      of forces that reshaped reality itself.
+    visual_description: |
+      The transformation boundary made visible: where natural ochre stone gives
+      way to rippled translucent glass, the change frozen mid-process. Tendrils
+      of vitrification reach into unaffected stone like frozen lightning.
+      The glass surface shows flow patterns as if liquid stone was caught in
+      the instant of movement.
+
+      Light behaves strangely at this boundary—natural on one side, multiplied
+      and distorted on the other. The contrast makes the impossibility concrete:
+      this should not exist, yet here it is.
+    composition_notes: |
+      Focus on the boundary line between stone and glass. The viewer should be
+      able to trace where transformation started and stopped. The scale should
+      be evident—this affected entire walls and floors, not just small areas.
+    narrative_significance: |
+      This boundary represents the moment everything changed—when an ancient
+      ritual site became a crystalline tomb, when a rescue mission became
+      a tragedy, when the Company lost its heart.
+    symbolic_elements: |
+      The transformation boundary represents the line between before and after.
+      The frozen flow patterns represent time stopped. The tendrils represent
+      how catastrophe spreads before it can be contained.
+    location_within: "Throughout the transformed areas of the complex"
+    time_of_day: "midday (for visibility)"
+    weather: "enclosed"
+    required_elements:
+      - "Visible boundary between stone and glass"
+      - "Tendrils of vitrification reaching into stone"
+      - "Frozen flow patterns in glass"
+      - "Light behaving differently on each side"
+      - "Scale-indicating elements"
+      - "Impossibility made concrete"
+    lighting:
+      primary_source: "natural light from above"
+      quality: "revealing, clinical, documentary"
+      direction: "overhead for even illumination"
+      color_temperature: "neutral to show true colors"
+      shadow_depth: "moderate, showing texture"
+      atmospheric: "clear to show detail"
+    palette:
+      dominant:
+        - "ochre stone"
+        - "translucent grey-green glass"
+      accent:
+        - "transition zone colors"
+        - "light effects at boundary"
+      avoid:
+        - "artistic blur"
+        - "mood lighting"
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Heat-Shadow Corridor (Collapsed)"
+    slug: "undershade-canyon-heat-shadow-corridor"
+    title: "The Path of Last Resort"
+    image_type: "zone"
+    zone_type: "threshold"
+    category:
+      - "Structural Element"
+      - "Sacrifice Site"
+      - "Collapsed Passage"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The heat-shadow corridor was the narrow window of escape—the gap behind
+      the load-bearing pillar where the dragon-fire serpent's heat momentarily
+      abated. Lysander used it to save his team, then destroyed it to seal
+      the fire behind them.
+    visual_description: |
+      The collapsed remains of what was once a narrow passage, now choked with
+      rubble from the deliberate keystone collapse. The load-bearing pillar
+      still stands, but the arch above it has fallen, sealing the way completely.
+      Lysander's shield lies nearby, warped and blackened, thrown clear when
+      the stone fell.
+
+      Scorch marks on the pillar show where the dragon-fire passed closest.
+      The timing of this gap's existence was measured in heartbeats.
+    composition_notes: |
+      Show the collapsed arch with the pillar still standing. The shield should
+      be visible as a focal point—evidence of who was last here. The rubble
+      should convey the violence of the collapse.
+    narrative_significance: |
+      Lysander deliberately collapsed this arch to seal the dragon-fire behind
+      them, sacrificing himself to save his team. This is where he died—not
+      in battle, but in protection.
+    symbolic_elements: |
+      The standing pillar represents what endures. The fallen arch represents
+      deliberate sacrifice. The shield represents protection that outlives
+      the protector.
+    location_within: "Between nave and antechamber, near load-bearing pillar"
+    time_of_day: "interior (artificial light only)"
+    weather: "enclosed, still"
+    required_elements:
+      - "Standing load-bearing pillar"
+      - "Collapsed arch overhead"
+      - "Rubble choking passage"
+      - "Warped, blackened shield"
+      - "Scorch marks on pillar"
+      - "Evidence of violent collapse"
+    lighting:
+      primary_source: "lantern or ambient light"
+      quality: "dim, uncertain"
+      direction: "from viewer's position"
+      color_temperature: "warm light on cold stone"
+      shadow_depth: "deep shadows in rubble"
+      atmospheric: "dust still settling"
+    palette:
+      dominant:
+        - "rubble grey"
+        - "scorch black"
+        - "stone ochre"
+      accent:
+        - "shield metal"
+        - "heat discoloration"
+      avoid:
+        - "bright colors"
+        - "clean surfaces"
+    aspect_ratio: "3:2"
+    orientation: "landscape"
+    size: "1536x1024"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Ignis Vanishing Locus"
+    slug: "undershade-canyon-ignis-locus"
+    title: "The Absence"
+    image_type: "zone"
+    zone_type: "sacred"
+    category:
+      - "Mystery Site"
+      - "Magical Residue"
+      - "Disappearance"
+    scene_mood: "ominous"
+    mood_rationale: |
+      Where Ignis vanished, only absence remains—but an absence that hums with
+      wrongness. The perfect scorched circle and strange residual energy suggest
+      something happened here that reality itself hasn't fully processed.
+    visual_description: |
+      A perfect circle of scorched floor, the stone melted to glass in a precise
+      radius. Unlike the chaos of the transformation elsewhere, this circle is
+      geometrically exact—as if drawn by compass. The glass within shows a strange
+      ripple pattern, as if something immensely hot passed through it.
+
+      No body, no ash, no remains. Just the circle and the lingering scent of
+      copper and ozone. In dim light, intermittent copper glints appear like
+      afterimages, there and gone. The barrier wall nearby has a corresponding
+      ripple—as if whatever happened here affected the glass across the room.
+    composition_notes: |
+      Overhead view of the scorched circle, showing its geometric perfection.
+      The ripple in the nearby glass should be visible in the background. The
+      empty center should be the focal point—the absence more significant than
+      anything present.
+    narrative_significance: |
+      Ignis's final spell did... something. Whether it transported him, vaporized
+      him, or shunted him to another plane remains unknown. This circle is the
+      only evidence that he was ever here.
+    symbolic_elements: |
+      The perfect circle represents magic's cold precision. The absence represents
+      mysteries that may never be answered. The copper glints represent memories
+      that refuse to quite fade.
+    location_within: "In the sealed antechamber, visible through glass barrier"
+    time_of_day: "any (the effects are ambient)"
+    weather: "enclosed"
+    required_elements:
+      - "Perfect scorched circle on floor"
+      - "Glass melted to geometric precision"
+      - "Ripple pattern in glass within circle"
+      - "Corresponding ripple in barrier wall"
+      - "Complete absence of remains"
+      - "Copper-ozone scent (implied)"
+      - "Intermittent copper glints"
+    lighting:
+      primary_source: "dim ambient or lantern"
+      quality: "uncertain, revealing strangeness"
+      direction: "overhead for circle visibility"
+      color_temperature: "neutral with copper flashes"
+      shadow_depth: "minimal to show circle clearly"
+      atmospheric: "residual energy distortion"
+    palette:
+      dominant:
+        - "scorched black"
+        - "glass grey"
+      accent:
+        - "copper flash"
+        - "residual glow"
+      avoid:
+        - "bright lighting"
+        - "warm colors"
+    aspect_ratio: "3:2"
+    orientation: "landscape"
+    size: "1536x1024"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements, body, remains
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "The Chosen Death"
+    slug: "undershade-canyon-keystone-sacrifice"
+    title: "The Captain's Choice"
+    image_type: "zone"
+    zone_type: "threshold"
+    category:
+      - "Sacrifice Scene"
+      - "Structural Collapse"
+      - "Heroic Moment"
+    scene_mood: "epic"
+    mood_rationale: |
+      Lysander's choice to bring down the keystone represents the defining
+      moment of heroic sacrifice—one life given to save many, with full
+      knowledge of what it would cost.
+    visual_description: |
+      The moment frozen in aftermath: a collapsed archway where a keystone was
+      deliberately struck upward, bringing down tons of stone. The gap that once
+      existed—where the team escaped—is now sealed forever. Cherry-red heat
+      discoloration marks where a shield was pressed against molten stone.
+
+      Beyond the collapse, dragon-fire still glows through cracks—the sealed
+      fury that Lysander died to contain. The violence of the structural failure
+      is evident in the scattered masonry and the dust still settling.
+    composition_notes: |
+      Show the collapsed arch from the survivor's side—looking at where the
+      escape route was. The cherry-red discoloration should be prominent.
+      The dragon-fire glow through cracks should be visible but contained.
+    narrative_significance: |
+      This is where Lysander died. Not in battle with an enemy, but holding
+      a gap open for his team and then sealing it behind them. His final
+      command—LIVE!—echoes in the silence.
+    symbolic_elements: |
+      The collapsed keystone represents deliberate sacrifice. The contained
+      fire represents threats neutralized at ultimate cost. The escape route
+      sealed represents the irreversibility of certain choices.
+    location_within: "At the heat-shadow corridor, where arch met pillar"
+    time_of_day: "interior (artificial light + fire glow)"
+    weather: "enclosed, residual heat"
+    required_elements:
+      - "Collapsed archway"
+      - "Keystone visible in rubble"
+      - "Cherry-red heat discoloration"
+      - "Dragon-fire glow through cracks"
+      - "Scattered masonry"
+      - "Sealed escape route"
+      - "Settling dust"
+    lighting:
+      primary_source: "dragon-fire glow through cracks"
+      quality: "ominous, contained fury"
+      direction: "from beyond the collapse"
+      color_temperature: "warm fire against cool stone"
+      shadow_depth: "dramatic shadows from glow"
+      atmospheric: "heat distortion near cracks"
+    palette:
+      dominant:
+        - "rubble grey"
+        - "stone brown"
+      accent:
+        - "cherry-red heat"
+        - "dragon-fire green-white"
+      avoid:
+        - "cool blues"
+        - "cheerful colors"
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Memorial Wall and Cairns"
+    slug: "undershade-canyon-memorial"
+    title: "Names in Stone"
+    image_type: "zone"
+    zone_type: "sacred"
+    category:
+      - "Memorial"
+      - "Sacred Space"
+      - "Grief Site"
+    scene_mood: "somber"
+    mood_rationale: |
+      The memorial wall represents the formalization of grief—the transition
+      from raw loss to structured remembrance. Somber honors the dead without
+      wallowing in despair.
+    visual_description: |
+      A section of wall near the transept where names have been carved into
+      stone—not with tools, but with something sharper. Blood stained the
+      inscriptions when they were made. The names are legible but rough,
+      carved by hands that shook with grief.
+
+      Cairns cluster nearby, each one representing someone lost. Small offerings
+      rest at their bases: a silver-braided symbol of Berronar, a charred feather,
+      a folded letter sealed with wax. The glass walls here create windows to
+      the sealed chambers, so mourners can see where the bodies rest.
+    composition_notes: |
+      Focus on the carved names with cairns visible in the middle ground and
+      glass windows in the background. The light should be soft and reverent.
+      Individual offerings should be visible as details.
+    narrative_significance: |
+      These names were carved by Veyra during or after the three-day vigil.
+      They represent her refusal to let the dead be forgotten, her insistence
+      on marking loss even in a place meant to be a tomb.
+    symbolic_elements: |
+      Names carved in stone represent memory made permanent. Blood in the
+      inscriptions represents the cost of remembrance. The offerings represent
+      love that outlasts death.
+    location_within: "Near the transept, accessible from main chamber"
+    time_of_day: "dawn"
+    weather: "enclosed, filtered light"
+    required_elements:
+      - "Names carved into stone wall"
+      - "Rough, grief-carved letters"
+      - "Blood staining in inscription grooves"
+      - "Cairns with offerings"
+      - "Glass windows to sealed chambers"
+      - "Soft, reverent light"
+    lighting:
+      primary_source: "dawn light through gaps"
+      quality: "soft, diffused, respectful"
+      direction: "from above and east"
+      color_temperature: "warm gold on grey stone"
+      shadow_depth: "soft shadows in carved letters"
+      atmospheric: "slight haze, peaceful"
+    palette:
+      dominant:
+        - "stone grey"
+        - "ochre dust"
+      accent:
+        - "silver offerings"
+        - "dawn gold"
+        - "rust-brown blood staining"
+      avoid:
+        - "bright colors"
+        - "harsh lighting"
+    aspect_ratio: "3:2"
+    orientation: "portrait"
+    size: "1024x1536"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Memorial Wall and Cairns"
+    slug: "undershade-canyon-memorial-cairns"
+    title: "The Weight of Names"
+    image_type: "zone"
+    zone_type: "sacred"
+    category:
+      - "Memorial"
+      - "Sacred Space"
+      - "Detail Shot"
+    scene_mood: "somber"
+    mood_rationale: |
+      A closer view of the cairns and offerings, focusing on the personal
+      details that transform stone piles into shrines.
+    visual_description: |
+      Close detail of the cairn offerings: Borin's silver-braided holy symbol
+      of Berronar Truesilver, its braiding now blackened. Ignis's copper-red
+      tokens, though no body was found to mourn. Lysander's shield boss,
+      removed from the warped shield and placed with honor.
+
+      Each cairn has a slightly different character—some more carefully built,
+      some clearly added to over time. Wax-sealed letters rest at bases,
+      never to be read.
+    composition_notes: |
+      Close-up on offerings with cairns visible behind. The details should be
+      clear enough to identify: the holy symbol, the shield boss, the sealed
+      letters. Soft focus on background.
+    narrative_significance: |
+      These offerings represent what the survivors kept—and what they chose
+      to give back. Each item was held, considered, and consciously placed
+      as tribute.
+    symbolic_elements: |
+      The holy symbol represents faith beyond death. The shield boss represents
+      protection honored. The sealed letters represent words that will never
+      be spoken.
+    location_within: "At the cairns near the transept"
+    time_of_day: "morning"
+    weather: "enclosed, soft light"
+    required_elements:
+      - "Silver-braided holy symbol"
+      - "Shield boss (detached)"
+      - "Wax-sealed letters"
+      - "Cairn stones visible"
+      - "Ash dust on offerings"
+      - "Soft reverent light"
+    lighting:
+      primary_source: "filtered morning light"
+      quality: "soft, intimate"
+      direction: "from above"
+      color_temperature: "warm gold"
+      shadow_depth: "soft, minimal"
+      atmospheric: "peaceful stillness"
+    palette:
+      dominant:
+        - "stone grey"
+        - "metal silver"
+      accent:
+        - "copper tarnish"
+        - "wax red-brown"
+      avoid:
+        - "harsh contrast"
+        - "bright colors"
+    aspect_ratio: "3:2"
+    orientation: "landscape"
+    size: "1536x1024"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Twilight on the Rim"
+    slug: "undershade-canyon-rim-descent"
+    title: "The Last Light Before Dark"
+    image_type: "zone"
+    zone_type: "transition"
+    category:
+      - "Approach Scene"
+      - "Atmospheric"
+      - "Pre-Catastrophe"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The twilight descent captures the moment before everything went wrong—
+      when there was still hope, still a mission, still a team that expected
+      to return. The ominous undertone foreshadows what's to come.
+    visual_description: |
+      Figures descending single-file along the south switchbacks, the day's
+      last gleam pooling like molten brass on the rim above them. One figure
+      holds a lantern that casts a pale gold halo against the oncoming dusk.
+
+      The canyon coils below in ochre bands, exhaling heat that doesn't belong
+      to early autumn. Thread-thin chanting rises from the depths—the ancient
+      tongue of dragons, barely audible but wrong.
+    composition_notes: |
+      View from above/behind the descending party, showing the switchbacks
+      below and the dark depths beyond. The lantern should be visible as a
+      warm point of light. The evening sky should show the last warm colors.
+    narrative_significance: |
+      This is the approach—the last moments of normalcy before the ritual
+      activated. The team still believed this was a retrieval mission, not
+      a death trap.
+    symbolic_elements: |
+      The descent represents the narrative's plunge into tragedy. The last
+      light represents fleeting normalcy. The rising chant represents danger
+      becoming aware of prey.
+    location_within: "South switchbacks, descending from rim"
+    time_of_day: "twilight"
+    weather: "clear, thermal updrafts"
+    required_elements:
+      - "Figures descending switchbacks"
+      - "Molten brass evening light"
+      - "Lantern glowing in leader's hand"
+      - "Ochre canyon walls"
+      - "Dark depths below"
+      - "Thermal shimmer in air"
+    lighting:
+      primary_source: "setting sun from west"
+      quality: "golden hour, dramatic shadows"
+      direction: "low angle from behind/above"
+      color_temperature: "warm gold on upper surfaces, cool shadow below"
+      shadow_depth: "extreme as canyon creates darkness"
+      atmospheric: "thermal shimmer, last warmth"
+    palette:
+      dominant:
+        - "molten brass"
+        - "ochre walls"
+        - "shadow purple"
+      accent:
+        - "lantern gold"
+        - "amber sky"
+      avoid:
+        - "cool daylight"
+        - "bright colors"
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Rim Overlook"
+    slug: "undershade-canyon-rim-overlook"
+    title: "Edge of the Wound"
+    image_type: "zone"
+    zone_type: "panoramic"
+    category:
+      - "Establishing Shot"
+      - "Overlook"
+      - "Approach Point"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The rim overlook is where the story begins—where the team first saw
+      the canyon and sensed something wrong below. Ominous captures the
+      moment before knowledge becomes tragedy.
+    visual_description: |
+      A figure kneeling at the canyon's edge, one boot braced against sun-warm
+      shale, holding a battered lantern aloft. Its panes catch the last light.
+      The canyon coils below in ochre bands cut by darker igneous ribs.
+      Heat that doesn't belong to autumn rises on thermal updrafts.
+
+      The shale caprock catches molten-brass evening light, creating a rim of
+      gold against the gathering dark below. The view extends down into depths
+      where surfaces shine wrong—too smooth, too translucent.
+    composition_notes: |
+      Viewer at rim level, looking down into the canyon with a figure in
+      foreground for scale. The rim should catch the last light while the
+      depths darken. The glassed sections in the depths should be barely visible.
+    narrative_significance: |
+      This is where Veyra knelt and sensed something waking below. It is the
+      first glimpse of the canyon and the last moment before commitment to
+      the descent.
+    symbolic_elements: |
+      The edge represents the threshold of choice. The light below represents
+      knowledge of danger. The lantern represents the guide that will survive
+      when all else is consumed.
+    location_within: "Canyon rim, primary observation point"
+    time_of_day: "evening"
+    weather: "clear, thermal updrafts"
+    required_elements:
+      - "Figure kneeling at edge"
+      - "Lantern held aloft"
+      - "Shale caprock catching evening light"
+      - "Ochre canyon walls descending"
+      - "Darker igneous ribs visible"
+      - "Wrong-shining surfaces in depths"
+      - "Thermal shimmer"
+    lighting:
+      primary_source: "setting sun"
+      quality: "rim lighting on figure, warmth on shale"
+      direction: "from west, low angle"
+      color_temperature: "warm gold on rim, cooling in depths"
+      shadow_depth: "canyon creating its own darkness"
+      atmospheric: "thermal shimmer, sage-scented air implied"
+    palette:
+      dominant:
+        - "molten brass (rim)"
+        - "ochre (walls)"
+        - "shadow purple (depths)"
+      accent:
+        - "lantern gold"
+        - "glass glint (depths)"
+      avoid:
+        - "cool overall tone"
+        - "bright midday"
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Rim Stations and Staging Ledges"
+    slug: "undershade-canyon-rim-stations"
+    title: "The Watch Above"
+    image_type: "zone"
+    zone_type: "functional"
+    category:
+      - "Operations Area"
+      - "Safety Infrastructure"
+      - "Staging Ground"
+    scene_mood: "tense"
+    mood_rationale: |
+      The rim stations are where operations begin and end—where safety teams
+      stage, where ropes are anchored, where the living prepare to descend
+      into a place of the dead.
+    visual_description: |
+      Staging ledges carved or worn into the rim, fitted with belay anchors
+      and rope-issue points. Marker flags indicate established paths. A
+      briefing board (portable) leans against the caprock. Signal flag poles
+      are driven into cracks.
+
+      The professional nature of the setup contrasts with the raw canyon
+      below—evidence of human attempt to impose order on a place of chaos.
+      Windward positioning keeps the staging area clear of canyon updrafts.
+    composition_notes: |
+      Show the staging infrastructure with the canyon visible beyond/below.
+      The contrast between organized equipment and wild geology should be
+      evident. Morning light suggests the start of operations.
+    narrative_significance: |
+      These stations represent the ongoing commitment to the canyon—the regular
+      patrols, the memorial visits, the continued watch over a place that
+      refuses to be forgotten.
+    symbolic_elements: |
+      The anchors represent humanity's attempt to secure itself against
+      overwhelming forces. The briefing board represents knowledge codified.
+      The signal flags represent communication across the threshold.
+    location_within: "Canyon rim, established staging points"
+    time_of_day: "dawn"
+    weather: "clear, morning calm"
+    required_elements:
+      - "Staging ledges at rim"
+      - "Belay anchors (iron pins)"
+      - "Rope coils and issue points"
+      - "Marker flags indicating paths"
+      - "Briefing board"
+      - "Signal flag poles"
+      - "Canyon depths visible beyond"
+    lighting:
+      primary_source: "dawn light from east"
+      quality: "clear, operational, revealing"
+      direction: "low angle from east"
+      color_temperature: "warm gold on stone"
+      shadow_depth: "long shadows, clear definition"
+      atmospheric: "morning clarity, calm air"
+    palette:
+      dominant:
+        - "shale grey-brown"
+        - "rope tan"
+        - "iron rust"
+      accent:
+        - "flag colors"
+        - "dawn gold"
+      avoid:
+        - "dramatic shadows"
+        - "ominous atmosphere"
+    aspect_ratio: "3:2"
+    orientation: "landscape"
+    size: "1536x1024"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Exterior Ritual Circle"
+    slug: "undershade-canyon-ritual-circle"
+    title: "The Dragon's Hunger"
+    image_type: "zone"
+    zone_type: "sacred"
+    category:
+      - "Ritual Site"
+      - "Power Focus"
+      - "Danger Zone"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The ritual circle during activation—when runes blazed core-hot and fed
+      the dragon-fire serpent with stolen power. The imagery should capture
+      the moment of terrible awakening.
+    visual_description: |
+      Runes carved into the canyon floor now blazing with core-hot light,
+      channels of power running like liquid fire toward the temple above.
+      Cultists kneel at the perimeter, their chanting shaping the dragon-tongue
+      into a physical force. The spiral intake geometry pulls energy inward
+      like a whirlpool of flame.
+
+      Above the circle, heat distortion makes the air itself seem to burn.
+      The serpent construct is forming in the temple beyond, fed by this
+      hungry geometry.
+    composition_notes: |
+      Overhead or high-angle view showing the spiral pattern with active runes.
+      The temple should be visible in the background. The scale of the circle
+      should be evident—large enough to require many chanters.
+    narrative_significance: |
+      This is the engine of the catastrophe—the power source that fed the
+      dragon-fire and ultimately led to the transformation of stone to glass.
+    symbolic_elements: |
+      The spiral represents power drawn inward. The blazing runes represent
+      ancient forces awakened. The kneeling cultists represent willing
+      sacrifice to dark purpose.
+    location_within: "Canyon floor beyond the temple"
+    time_of_day: "evening into night"
+    weather: "clear, heat distortion"
+    required_elements:
+      - "Blazing runes in spiral pattern"
+      - "Channels of liquid fire"
+      - "Kneeling cultists at perimeter"
+      - "Spiral intake geometry"
+      - "Heat distortion in air"
+      - "Temple visible in background"
+      - "Core-hot glow"
+    lighting:
+      primary_source: "blazing runes from below"
+      quality: "supernatural, core-hot"
+      direction: "from ground upward"
+      color_temperature: "green-white fire core"
+      shadow_depth: "extreme shadows cast upward"
+      atmospheric: "heat distortion, warped air"
+    palette:
+      dominant:
+        - "core-hot white"
+        - "green-white flame"
+        - "shadow black"
+      accent:
+        - "cultist robes (dark)"
+        - "stone grey"
+      avoid:
+        - "cool colors"
+        - "natural lighting"
+    aspect_ratio: "3:2"
+    orientation: "landscape"
+    size: "1536x1024"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Ritual Plinth"
+    slug: "undershade-canyon-ritual-plinth"
+    title: "The Dragon's Heart"
+    image_type: "zone"
+    zone_type: "sacred"
+    category:
+      - "Ritual Focus"
+      - "Architectural Element"
+      - "Power Nexus"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The basalt plinth at the center of the nave was designed for sacrifice
+      and power channeling. Even after the transformation, it carries the
+      weight of ancient purpose.
+    visual_description: |
+      A massive basalt plinth at the center of the vaulted nave, its surface
+      grooved with runic channels meant to drain and direct power. A
+      circumferential collection ring encircles it. The ember-amber orb
+      rests (or rested) at its apex, pulsing with inner fire.
+
+      The floor around the plinth shows the worst of the vitrification—
+      where the dragon-fire concentrated, the glass is thickest and most
+      distorted. Brass brazier rows line the path of approach.
+    composition_notes: |
+      Central focus on the plinth with braziers visible in periphery. The
+      runic grooves should be clearly defined. The orb (if shown) should
+      pulse with inner light. The vitrified floor should show concentric
+      patterns.
+    narrative_significance: |
+      This is where Ignis first touched the heirloom orb and triggered the
+      ritual's awakening. The plinth represents the lure that drew the team
+      into the trap.
+    symbolic_elements: |
+      The plinth represents the altar of sacrifice. The drainage grooves
+      represent power designed to flow in one direction. The orb represents
+      the bait that concealed the trap.
+    location_within: "Center of the vaulted nave"
+    time_of_day: "interior (artificial light)"
+    weather: "enclosed"
+    required_elements:
+      - "Massive basalt plinth"
+      - "Runic drainage grooves"
+      - "Circumferential collection ring"
+      - "Ember-amber orb (pulsing)"
+      - "Brass brazier rows"
+      - "Vitrified floor (concentric)"
+    lighting:
+      primary_source: "orb's inner glow + brazier light"
+      quality: "ritual, focused on plinth"
+      direction: "from above and orb"
+      color_temperature: "amber-red from orb, brass from braziers"
+      shadow_depth: "dramatic shadows radiating out"
+      atmospheric: "dense, expectant"
+    palette:
+      dominant:
+        - "basalt black"
+        - "glass grey"
+        - "brass gold"
+      accent:
+        - "ember amber"
+        - "inner fire red-gold"
+      avoid:
+        - "cool colors"
+        - "bright even light"
+    aspect_ratio: "3:2"
+    orientation: "portrait"
+    size: "1024x1536"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "The Serpent of Fire"
+    slug: "undershade-canyon-serpent-construct"
+    title: "Dragon-Fire Given Form"
+    image_type: "zone"
+    zone_type: "panoramic"
+    category:
+      - "Supernatural Entity"
+      - "Combat Scene"
+      - "Epic Threat"
+    scene_mood: "epic"
+    mood_rationale: |
+      The fire serpent is the manifestation of the ritual's power—dragon-fire
+      given scaled form and terrible purpose. Epic captures the overwhelming
+      nature of the threat.
+    visual_description: |
+      A serpentine silhouette of emerald and white flame coiling through
+      the nave, its scales knitting from pure fire. The heat-veil convulses
+      as it moves, warping the air like ripples in molten glass. Green-white
+      tongues of flame leap and return, forming the lattice that trapped
+      the team.
+
+      Where it passes, stone begins to flow. Architecture sags under
+      impossible heat. The serpent's maw opens to vomit cones of white
+      fire that shear through ancient stone.
+    composition_notes: |
+      Dynamic composition showing the serpent coiling through the nave.
+      The scale should be overwhelming—dwarfing human figures. The heat
+      distortion should make everything behind it waver. The destruction
+      in its wake should be visible.
+    narrative_significance: |
+      This is what the ritual summoned—the force that killed most of the
+      team and transformed the canyon forever. It represents power that
+      humans sought to control and utterly failed to contain.
+    symbolic_elements: |
+      The serpent represents ancient draconic power. The emerald-white
+      flames represent the unnatural nature of summoned fire. The warping
+      architecture represents reality bending under forces it wasn't
+      designed to contain.
+    location_within: "Within the vaulted nave during the ritual"
+    time_of_day: "night (ritual timing)"
+    weather: "enclosed, heat vortex"
+    required_elements:
+      - "Serpentine fire construct"
+      - "Emerald and white flame scales"
+      - "Heat-veil distortion"
+      - "Green-white flame lattice"
+      - "Stone flowing/sagging"
+      - "White fire cones"
+      - "Human figures for scale"
+    lighting:
+      primary_source: "serpent's own fire"
+      quality: "supernatural, blinding in places"
+      direction: "radiating from serpent"
+      color_temperature: "green-white core, amber edges"
+      shadow_depth: "extreme, fleeing shadows"
+      atmospheric: "heat distortion, warped air"
+    palette:
+      dominant:
+        - "emerald fire"
+        - "white flame"
+        - "molten stone orange"
+      accent:
+        - "shadow black"
+        - "terrified flesh tones"
+      avoid:
+        - "cool colors"
+        - "stable lighting"
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "South Switchbacks"
+    slug: "undershade-canyon-south-switchbacks"
+    title: "The Treacherous Descent"
+    image_type: "zone"
+    zone_type: "transition"
+    category:
+      - "Path"
+      - "Hazard Zone"
+      - "Approach Route"
+    scene_mood: "tense"
+    mood_rationale: |
+      The south switchbacks are the fastest way down but also the most
+      dangerous—glazed by old fire, treacherous with vitrified scree. The
+      tension comes from necessary risk.
+    visual_description: |
+      Steep hairpin turns cutting down the south canyon wall, the path
+      switching back and forth across treacherous terrain. Patches of old
+      vitrification glint where ancient fire glazed the stone—a thin glass
+      skin over friable scree that crumbles under point loads.
+
+      Belay points mark where safety lines should anchor. The path is
+      barely wide enough for single file. Looking down, the depths seem
+      impossibly far; looking up, the rim offers false promise of safety.
+    composition_notes: |
+      Vertiginous view down the switchbacks, emphasizing the hairpin turns
+      and the glazed patches. The depth should be dizzying. Small figures
+      on the path provide scale and narrative context.
+    narrative_significance: |
+      This is the path the team descended on their last mission—where
+      Veyra warned about the glazed patches, where they moved single-file
+      into darkness.
+    symbolic_elements: |
+      The switchbacks represent the indirect path to truth. The glazed
+      patches represent hidden danger from past catastrophe. The depth
+      represents the commitment once descent begins.
+    location_within: "South wall of canyon, primary descent route"
+    time_of_day: "twilight"
+    weather: "clear, thermal updrafts"
+    required_elements:
+      - "Steep hairpin switchbacks"
+      - "Vitrified patches on stone"
+      - "Friable scree sections"
+      - "Belay anchor points"
+      - "Narrow single-file path"
+      - "Extreme vertical depth"
+      - "Figures for scale"
+    lighting:
+      primary_source: "twilight from above"
+      quality: "fading, dramatic"
+      direction: "from west and above"
+      color_temperature: "warm gold on upper sections, cool shadow below"
+      shadow_depth: "increasing with depth"
+      atmospheric: "thermal shimmer"
+    palette:
+      dominant:
+        - "ochre stone"
+        - "shadow grey"
+      accent:
+        - "vitrified glint"
+        - "twilight gold"
+      avoid:
+        - "bright daylight"
+        - "even lighting"
+    aspect_ratio: "3:2"
+    orientation: "portrait"
+    size: "1024x1536"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Switchback Descent"
+    slug: "undershade-canyon-switchback-descent"
+    title: "Single File into Dark"
+    image_type: "zone"
+    zone_type: "transition"
+    category:
+      - "Character Scene"
+      - "Movement"
+      - "Pre-Catastrophe"
+    scene_mood: "tense"
+    mood_rationale: |
+      The descent captures the team in motion—still together, still hopeful,
+      moving toward danger they don't yet fully understand. Tension builds
+      with every step lower.
+    visual_description: |
+      Five figures descending single-file on the treacherous switchbacks:
+      Veyra ghosting ahead, lantern casting pale gold; Lysander with
+      measured tread; Borin humming a hearth-song; Elara half-in shadow;
+      Ignis whistling sparks. The formations speaks of practiced trust.
+
+      Below, the canyon exhales heat that brushes past them. Above, the
+      last light of day paints the rim in molten brass. They are suspended
+      between—no longer safe, not yet doomed.
+    composition_notes: |
+      View of the party on the switchbacks, showing their formation and
+      the terrain. The lantern in front should provide warm light. The
+      contrast between rim light above and canyon dark below should be
+      dramatic.
+    narrative_significance: |
+      This is the last moment the team was whole and moving together with
+      purpose. The descent represents their shared commitment and practiced
+      cooperation.
+    symbolic_elements: |
+      The single-file formation represents the chain of trust. The leading
+      lantern represents the guide. The divided light—warmth above, dark
+      below—represents the threshold being crossed.
+    location_within: "South switchbacks, mid-descent"
+    time_of_day: "twilight"
+    weather: "clear, heat rising from below"
+    required_elements:
+      - "Five figures in single file"
+      - "Lead figure with lantern"
+      - "Switchback terrain visible"
+      - "Molten-brass light on rim above"
+      - "Dark depths below"
+      - "Heat shimmer rising"
+    lighting:
+      primary_source: "twilight sky + lantern"
+      quality: "transitional, dramatic"
+      direction: "from above and lantern in front"
+      color_temperature: "warm gold above, cool shadow below"
+      shadow_depth: "increasing toward bottom"
+      atmospheric: "heat shimmer, sage scent implied"
+    palette:
+      dominant:
+        - "molten brass (rim)"
+        - "ochre (walls)"
+        - "shadow grey-purple"
+      accent:
+        - "lantern gold"
+        - "spark hints from rear figure"
+      avoid:
+        - "bright even light"
+        - "cold colors"
+    aspect_ratio: "3:2"
+    orientation: "portrait"
+    size: "1024x1536"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Temple Nave"
+    slug: "undershade-canyon-temple-nave"
+    title: "Cathedral of Flame"
+    image_type: "zone"
+    zone_type: "gathering"
+    category:
+      - "Interior Space"
+      - "Ritual Chamber"
+      - "Epic Setting"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The vaulted nave before transformation was already oppressive—thick
+      with stale heat, designed for rituals that channeled dragon-power.
+      The ominous mood acknowledges what this space was built for.
+    visual_description: |
+      A high-ceilinged vaulted hall, its stone ribs arching overhead like
+      the bones of some massive creature. Brass brazier rows line the walls,
+      cold and dark before activation but positioned with ritual precision.
+      The central aisle leads to the basalt plinth with its runic drainage
+      grooves.
+
+      The air is thick, stale, hot—breathing feels like swallowing something
+      solid. Ash-gray feathers litter the flagstones. A fresh scorch circle
+      (no more than a week old) marks recent cult activity. This is a space
+      designed for spectacular immolation.
+    composition_notes: |
+      Long view down the nave toward the plinth, showing the brazier rows
+      and vaulted ceiling. The scale should be grand but oppressive. The
+      scorch circle should be visible in the floor.
+    narrative_significance: |
+      This is where the team discovered the heirloom, where the ritual
+      activated, where the fire serpent first formed. It is the heart of
+      the story's catastrophe.
+    symbolic_elements: |
+      The vaulted ceiling represents ambition reaching for power. The
+      brazier rows represent the infrastructure of ritual. The drainage
+      grooves represent power designed to flow.
+    location_within: "Interior of the temple complex"
+    time_of_day: "interior (before braziers lit)"
+    weather: "enclosed, stale heat"
+    required_elements:
+      - "Vaulted stone ceiling with ribs"
+      - "Brass brazier rows (unlit)"
+      - "Central aisle to plinth"
+      - "Basalt plinth with runic grooves"
+      - "Ash-gray feathers on floor"
+      - "Fresh scorch circle"
+      - "Oppressive atmosphere"
+    lighting:
+      primary_source: "filtered light from entrance"
+      quality: "dim, revealing but not bright"
+      direction: "from behind viewer"
+      color_temperature: "cool shadows, warm where light touches brass"
+      shadow_depth: "deep shadows in corners and ceiling"
+      atmospheric: "thick air, dust visible in light"
+    palette:
+      dominant:
+        - "stone grey"
+        - "shadow black"
+      accent:
+        - "brass gold"
+        - "scorch black"
+        - "ash grey feathers"
+      avoid:
+        - "bright light"
+        - "cheerful colors"
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Temple Threshold"
+    slug: "undershade-canyon-temple-threshold"
+    title: "The Dragon's Gate"
+    image_type: "zone"
+    zone_type: "threshold"
+    category:
+      - "Entrance"
+      - "Boundary"
+      - "Ritual Space"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The temple threshold marks the boundary between the natural canyon
+      and the constructed ritual space. Crossing it means committing to
+      whatever waits within.
+    visual_description: |
+      The narrow gorge pinch where vine-strangled pillars mark the entrance
+      to the vaulted nave. Dragon carvings—coiled serpentine forms—spiral
+      up the pillar surfaces, their eroded eyes seeming to watch. Root
+      intrusions have displaced the lintel fragments overhead.
+
+      Beyond the threshold, the nave's darkness waits. The pillars create
+      an acoustic pinch point designed to amplify chanting into the space
+      beyond. The threshold itself is worn smooth by centuries of passage.
+    composition_notes: |
+      View through the threshold pillars into the nave beyond. The dragon
+      carvings should be visible on at least one pillar. The acoustic
+      compression of the space should be evident in the narrowness.
+    narrative_significance: |
+      This is where the team crossed into the ritual space—the last moment
+      before they were truly committed. The dragon carvings should have
+      been warning enough.
+    symbolic_elements: |
+      The pillars represent guardians that failed (or succeeded too well).
+      The dragon carvings represent the power channeled through this space.
+      The vine intrusion represents time's patient reclamation.
+    location_within: "Entrance to the temple complex from the gorge"
+    time_of_day: "morning (filtered light)"
+    weather: "enclosed at threshold"
+    required_elements:
+      - "Paired stone pillars"
+      - "Coiled dragon carvings"
+      - "Vine and moss on capitals"
+      - "Root-displaced lintel fragments"
+      - "Gorge pinch creating narrow threshold"
+      - "Darkness of nave beyond"
+      - "Worn threshold stone"
+    lighting:
+      primary_source: "filtered daylight from gorge above"
+      quality: "dramatic contrast between lit and dark"
+      direction: "from above through gorge"
+      color_temperature: "cool shadow with warm touches on stone"
+      shadow_depth: "deep shadows beyond threshold"
+      atmospheric: "slight haze where light penetrates"
+    palette:
+      dominant:
+        - "weathered ochre-grey stone"
+        - "moss green on capitals"
+        - "shadow black beyond"
+      accent:
+        - "warm light on carved scales"
+        - "vine brown"
+      avoid:
+        - "bright lighting"
+        - "modern materials"
+    aspect_ratio: "3:2"
+    orientation: "portrait"
+    size: "1024x1536"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Dragon Threshold Pillars"
+    slug: "undershade-canyon-threshold-pillars"
+    title: "The Gate That Failed to Guard"
+    image_type: "zone"
+    zone_type: "threshold"
+    category:
+      - "Architectural Detail"
+      - "Ancient Ruin"
+      - "Threshold Space"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The pillars represent the boundary between mundane and sacred/profane—
+      the moment before entering the site of catastrophe. Ominous captures
+      the dread of crossing a threshold into a place where ancient evil was
+      channeled and modern heroes died.
+    visual_description: |
+      Paired stone pillars rising from a narrow gorge pinch, their surfaces
+      carved with coiled dragon forms that spiral upward toward capitals now
+      claimed by vine and moss. The reliefs are ancient—scales and muscular
+      coils eroded by centuries but still legible, still watching.
+
+      Root intrusions have displaced the lintel fragments that once connected
+      the pillars overhead. Morning light filters through the gorge, catching
+      the dragon carvings in partial illumination. Through the gap, a glimpse
+      of what waits: surfaces that shine wrong.
+    composition_notes: |
+      Medium shot framing the pillars as a gateway. The viewer positioned as
+      one about to enter. Dragon carvings clearly visible on at least one
+      pillar. The compressed threshold draws the eye toward what lies beyond.
+    narrative_significance: |
+      This is the boundary between the everyday world and the wounded place.
+      Crossing between these pillars means committing to enter the site of
+      catastrophe. For survivors, walking between these pillars is walking
+      into memory.
+    symbolic_elements: |
+      The dragons that should have protected now merely watch—ancient power
+      made irrelevant. The vine and moss suggest time's patient reclamation.
+      The root-displaced lintels show that even stone gates fall eventually.
+    location_within: "Narrow gorge pinch at base of descent, entrance to ritual complex"
+    time_of_day: "morning"
+    weather: "clear, filtered light"
+    required_elements:
+      - "Paired stone pillars with coiled dragon carvings"
+      - "Eroded but legible scale and coil reliefs"
+      - "Vine and moss claiming soft-stone capitals"
+      - "Root-displaced lintel fragments overhead"
+      - "Gorge pinch creating ceremonial threshold compression"
+      - "Glimpse of transformed nave beyond"
+    lighting:
+      primary_source: "filtered daylight from above through gorge"
+      quality: "dramatic contrast between illuminated carvings and shadowed depths"
+      direction: "overhead with some penetration between pillars"
+      color_temperature: "cool shadow with warmer light on stone surfaces"
+      shadow_depth: "deep shadows in the gorge, partial illumination on dragon reliefs"
+      atmospheric: "slight haze where light penetrates, darkness swallowing the far end"
+    palette:
+      dominant:
+        - "weathered ochre-grey stone"
+        - "moss green and vine brown on capitals"
+        - "shadow purple-brown in depths"
+      accent:
+        - "pale wrong-glint of glass beyond"
+        - "warm gold where light catches carved scales"
+      avoid:
+        - "bright green lush vegetation"
+        - "water"
+        - "modern materials"
+    aspect_ratio: "3:2"
+    orientation: "portrait"
+    size: "1024x1536"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements, pristine clean stone,
+      bright lighting, cheerful atmosphere, lush vegetation, water features
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "The Barrier"
+    slug: "undershade-canyon-through-glass"
+    title: "Witness to the End"
+    image_type: "zone"
+    zone_type: "intimate"
+    category:
+      - "Character Moment"
+      - "Tragedy Scene"
+      - "Emotional Peak"
+    scene_mood: "somber"
+    mood_rationale: |
+      Through the glass, Veyra watched her friends die. This image captures
+      the horror of perfect clarity without agency—seeing everything, able
+      to do nothing.
+    visual_description: |
+      A figure pressed against a glass barrier, hands leaving bloody prints
+      on the translucent surface. Through the distorted glass, shapes move
+      in the antechamber beyond—the silhouettes of people trapped, fighting,
+      dying. The glass shows everything and permits nothing.
+
+      The viewer's reflection superimposes on the horror beyond, making
+      witness and witnessed merge in the distortion. Light from both sides
+      creates impossible refractions.
+    composition_notes: |
+      Close on the figure at the glass, showing both their posture and the
+      distorted view beyond. The bloody handprints should be fresh. The
+      silhouettes beyond should be recognizable as people in distress.
+    narrative_significance: |
+      This is Veyra's defining trauma—watching her friends die through glass
+      that showed everything but permitted nothing. This moment created the
+      survivor who would found Last Light Company.
+    symbolic_elements: |
+      The glass barrier represents the cruelty of helplessness. The bloody
+      handprints represent the physical cost of attempted intervention. The
+      merged reflections represent how trauma superimposes past on present.
+    location_within: "At the glass barrier during or immediately after the catastrophe"
+    time_of_day: "during the event (fire glow)"
+    weather: "enclosed, smoke"
+    required_elements:
+      - "Figure pressed against glass"
+      - "Bloody handprints on barrier"
+      - "Distorted view of antechamber"
+      - "Silhouettes in distress beyond"
+      - "Reflection superimposed on view"
+      - "Impossible light refractions"
+      - "Smoke or fire glow beyond"
+    lighting:
+      primary_source: "fire glow from beyond + lantern from viewer's side"
+      quality: "chaotic, competing sources"
+      direction: "from both sides of glass"
+      color_temperature: "warm fire beyond, lantern gold this side"
+      shadow_depth: "complex, shifting"
+      atmospheric: "smoke visible beyond glass"
+    palette:
+      dominant:
+        - "glass grey-green"
+        - "fire amber beyond"
+        - "shadow black"
+      accent:
+        - "blood rust on glass"
+        - "lantern gold"
+      avoid:
+        - "cool calm colors"
+        - "clarity"
+    aspect_ratio: "3:2"
+    orientation: "portrait"
+    size: "1024x1536"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Transept"
+    slug: "undershade-canyon-transept"
+    title: "The Crossing Place"
+    image_type: "zone"
+    zone_type: "transition"
+    category:
+      - "Architectural Element"
+      - "Junction"
+      - "Memorial Adjacent"
+    scene_mood: "somber"
+    mood_rationale: |
+      The transept is where paths cross—where the memorial wall meets the
+      approach to the sealed chambers. It is a place of decision and
+      remembrance.
+    visual_description: |
+      A crossing point in the temple complex where the main nave intersects
+      with side passages. The memorial wall and cairns are visible nearby.
+      Glass walls in one direction show sealed chambers; natural stone in
+      another direction leads toward escape routes.
+
+      The architecture here shows the contrast between transformed and
+      untransformed areas—where the fire's reach stopped and natural stone
+      survived.
+    composition_notes: |
+      Wide view of the intersection, showing the multiple paths available.
+      The memorial wall and cairns should be visible in one direction. The
+      contrast between glass and stone should be evident.
+    narrative_significance: |
+      The transept is where survivors pause—between the memorial and the
+      sealed chambers, between remembrance and the work of recovery. It
+      represents the ongoing negotiation between grief and function.
+    symbolic_elements: |
+      The crossing paths represent choices. The visible memorial represents
+      the past that informs the present. The contrast of materials represents
+      the boundary between transformed and surviving.
+    location_within: "Intersection in the temple complex"
+    time_of_day: "morning (filtered light)"
+    weather: "enclosed"
+    required_elements:
+      - "Intersection of passages"
+      - "Memorial wall visible in one direction"
+      - "Glass walls in another direction"
+      - "Natural stone in third direction"
+      - "Transformation boundary visible"
+      - "Morning light entering"
+    lighting:
+      primary_source: "morning light through gaps"
+      quality: "soft, directional"
+      direction: "from above and one side"
+      color_temperature: "warm gold on stone"
+      shadow_depth: "moderate, showing architectural depth"
+      atmospheric: "slight haze, dust in air"
+    palette:
+      dominant:
+        - "stone grey"
+        - "glass grey-green"
+      accent:
+        - "morning gold"
+        - "memorial stone (lighter)"
+      avoid:
+        - "bright colors"
+        - "harsh contrast"
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Trapped Arch and Chokepoint"
+    slug: "undershade-canyon-trapped-arch"
+    title: "The Needle's Eye"
+    image_type: "zone"
+    zone_type: "threshold"
+    category:
+      - "Hazard"
+      - "Architectural Element"
+      - "Tactical Point"
+    scene_mood: "tense"
+    mood_rationale: |
+      The trapped arch was designed to kill intruders while preserving them
+      whole for burning. The needle trap that Elara disarmed represents the
+      cult's cold calculation.
+    visual_description: |
+      A cracked arch forming a chokepoint in the temple, its stones showing
+      the stress of ancient settlement. Hidden in the crack, a needle trap
+      mechanism—now disarmed, its poisoned spike snapped against stone.
+      The trap's housing shows careful craftsmanship.
+
+      Beyond the arch, the path continues toward the nave. The chokepoint
+      is barely wide enough for one person at a time—perfect for controlled
+      elimination.
+    composition_notes: |
+      Close view of the arch with the trap mechanism visible in the crack.
+      The narrowness of the passage should be evident. The disarmed spike
+      should be visible as evidence of successful counter.
+    narrative_significance: |
+      Elara's detection and disabling of this trap saved the team initially.
+      It represents the cult's preparation and the team's competence that
+      still wasn't enough to save them.
+    symbolic_elements: |
+      The hidden trap represents concealed malice. The chokepoint represents
+      controlled vulnerability. The disarmed mechanism represents skill that
+      delayed but couldn't prevent disaster.
+    location_within: "Passage between threshold and nave"
+    time_of_day: "interior (artificial light)"
+    weather: "enclosed"
+    required_elements:
+      - "Cracked stone arch"
+      - "Visible trap mechanism in crack"
+      - "Snapped poisoned spike"
+      - "Narrow chokepoint passage"
+      - "Craftwork quality of trap housing"
+      - "Path continuing beyond"
+    lighting:
+      primary_source: "lantern or torch"
+      quality: "revealing, searching"
+      direction: "from viewer's position"
+      color_temperature: "warm light on cool stone"
+      shadow_depth: "deep shadows in crack"
+      atmospheric: "still air, dust"
+    palette:
+      dominant:
+        - "stone grey"
+        - "crack shadow"
+      accent:
+        - "metal gleam of trap"
+        - "lantern gold"
+      avoid:
+        - "bright colors"
+        - "even lighting"
+    aspect_ratio: "3:2"
+    orientation: "portrait"
+    size: "1024x1536"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Vaulted Nave"
+    slug: "undershade-canyon-vaulted-nave"
+    title: "Bones of Stone"
+    image_type: "zone"
+    zone_type: "gathering"
+    category:
+      - "Architectural Detail"
+      - "Interior Space"
+      - "Scale Reference"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The vaulted ceiling represents the ambition of the temple's builders—
+      reaching upward toward power. The bone-like ribs suggest something
+      organic, alive, breathing.
+    visual_description: |
+      Looking up into the vaulted ceiling of the nave, the stone ribs arching
+      overhead like the bones of some vast creature. The craftsmanship is
+      ancient but sophisticated—keystone techniques that have held for
+      centuries. Light filters through gaps where roof-stones have fallen.
+
+      The perspective emphasizes height and the weight of stone overhead.
+      Soot staining marks where brazier smoke rose over generations of use.
+    composition_notes: |
+      Upward view into the vault, showing the rib pattern and the weight of
+      stone. Light shafts through gaps should provide drama. The human
+      scale should be implied by the architecture's immensity.
+    narrative_significance: |
+      The vaulted ceiling represents both the architectural achievement and
+      the hubris of the temple's builders. It survived the transformation
+      in part—some sections intact, others collapsed.
+    symbolic_elements: |
+      The stone ribs represent the skeleton of ambition. The height represents
+      reaching toward power. The surviving structure represents persistence
+      despite catastrophe.
+    location_within: "Interior of the temple nave, looking upward"
+    time_of_day: "midday (for best light)"
+    weather: "enclosed"
+    required_elements:
+      - "Stone rib vaulting overhead"
+      - "Ancient keystone construction"
+      - "Light through roof gaps"
+      - "Soot staining on stone"
+      - "Extreme vertical perspective"
+      - "Sense of immense scale"
+    lighting:
+      primary_source: "natural light through roof gaps"
+      quality: "dramatic shafts in dusty air"
+      direction: "from above"
+      color_temperature: "warm gold shafts in cool shadow"
+      shadow_depth: "extreme contrast"
+      atmospheric: "dust visible in light beams"
+    palette:
+      dominant:
+        - "stone grey"
+        - "shadow black"
+      accent:
+        - "gold light shafts"
+        - "soot staining"
+      avoid:
+        - "even lighting"
+        - "bright colors"
+    aspect_ratio: "3:2"
+    orientation: "portrait"
+    size: "1024x1536"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "Vitrified Nave - Crystalline Tomb"
+    slug: "undershade-canyon-vitrified-nave"
+    title: "Where Stone Became Memory"
+    image_type: "zone"
+    zone_type: "panoramic"
+    category:
+      - "Transformation Scene"
+      - "Post-Catastrophe"
+      - "Tomb"
+    scene_mood: "somber"
+    mood_rationale: |
+      The vitrified nave represents the permanent transformation—stone
+      turned to glass, a temple turned to tomb. Somber acknowledges the
+      loss without descending into horror.
+    visual_description: |
+      The nave after transformation: walls that were stone now rippled
+      translucent glass. Floors frozen mid-flow, their surfaces showing
+      wave patterns like water that never crashed. Braziers fused to
+      glassed floor, their brass permanently bonded to crystalline stone.
+
+      Light behaves strangely here—multiplied by reflections, distorted
+      by uneven surfaces, creating false depths and phantom images. The
+      vitrification boundary is visible where natural stone gives way
+      to impossible glass.
+    composition_notes: |
+      Wide view of the transformed nave, showing the extent of vitrification.
+      The contrast between glass and surviving stone should be clear. Light
+      effects should emphasize the strangeness of the space.
+    narrative_significance: |
+      This is what the dragon-fire created—a crystalline tomb that preserves
+      everything in frozen distortion. The nave is no longer a temple but
+      a memorial to catastrophic power.
+    symbolic_elements: |
+      The vitrified stone represents transformation that cannot be undone.
+      The frozen waves represent time stopped at the moment of catastrophe.
+      The strange light represents how trauma distorts perception.
+    location_within: "The temple nave after the transformation"
+    time_of_day: "any (effects are ambient)"
+    weather: "enclosed"
+    required_elements:
+      - "Walls of rippled translucent glass"
+      - "Floor with frozen wave patterns"
+      - "Braziers fused to glassed floor"
+      - "Strange light multiplications"
+      - "Vitrification boundary visible"
+      - "Phantom images in reflections"
+    lighting:
+      primary_source: "lantern + ambient reflection"
+      quality: "strange, multiplied, distorted"
+      direction: "from multiple angles via reflection"
+      color_temperature: "warm lantern fractured into cold reflections"
+      shadow_depth: "confusing—false depths"
+      atmospheric: "prismatic effects, optical confusion"
+    palette:
+      dominant:
+        - "translucent grey-green glass"
+        - "frozen wave patterns"
+      accent:
+        - "brass fused to glass"
+        - "lantern gold fractured"
+      avoid:
+        - "natural stone colors"
+        - "warm overall tone"
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []
+
+  - name: "The Discovery"
+    slug: "undershade-canyon-watch-arrival"
+    title: "First Responders"
+    image_type: "zone"
+    zone_type: "functional"
+    category:
+      - "Rescue Scene"
+      - "Watch Arrival"
+      - "Post-Catastrophe"
+    scene_mood: "tense"
+    mood_rationale: |
+      The Watch's arrival represents the transition from private tragedy
+      to public knowledge. Tense captures the urgency and uncertainty
+      of first response.
+    visual_description: |
+      City Watch patrol members at the canyon rim, looking down at smoke
+      still rising from the depths. Signal flags are being raised. A runner
+      is departing at speed. The lead patrol member's face shows the moment
+      of recognition—this is not a normal scene.
+
+      Below, the glass surfaces are visible, catching light in ways that
+      signal something has gone terribly wrong. The patrol's professional
+      demeanor is tested by what they're seeing.
+    composition_notes: |
+      View of the patrol at the rim with the canyon visible behind/below.
+      The signal flags should be in motion. The contrast between professional
+      response and unprecedented scene should be evident in body language.
+    narrative_significance: |
+      This is when the canyon incident stopped being private tragedy and
+      became public record. The Watch's arrival marks the beginning of
+      official response.
+    symbolic_elements: |
+      The signal flags represent communication of crisis. The running
+      messenger represents urgency. The patrol's posture represents the
+      inadequacy of normal response to abnormal events.
+    location_within: "Canyon rim, arrival point for Watch patrol"
+    time_of_day: "morning after"
+    weather: "clear, smoke from below"
+    required_elements:
+      - "Watch patrol members at rim"
+      - "Signal flags being raised"
+      - "Runner departing"
+      - "Smoke rising from depths"
+      - "Glass surfaces visible below"
+      - "Professional concern on faces"
+    lighting:
+      primary_source: "morning sun"
+      quality: "clear, revealing"
+      direction: "from east"
+      color_temperature: "warm morning light"
+      shadow_depth: "long morning shadows"
+      atmospheric: "smoke from below, clear air at rim"
+    palette:
+      dominant:
+        - "Watch uniform colors"
+        - "shale rim stone"
+        - "smoke grey"
+      accent:
+        - "flag colors"
+        - "glass glint below"
+      avoid:
+        - "dramatic shadows"
+        - "fire colors"
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    prompt_used: ""
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, digital art gloss,
+      concept art polish, AI artifacts, modern elements
+    references: []
+    generated_images: []
+    image_inventory: []

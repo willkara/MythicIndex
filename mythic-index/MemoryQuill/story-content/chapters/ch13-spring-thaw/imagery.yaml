@@ -1,0 +1,703 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: Spring Thaw
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch13-spring-thaw"
+  chapter_number: 13
+  chapter_title: "Spring Thaw"
+  visual_thesis: "From the competent warmth of routine rescue to the cold revelation of encirclement, ending in defiant vigil against an unseen threat"
+  color_palette:
+    primary:
+      - "#8B7355"
+      - "#4A5568"
+      - "#D4A574"
+      - "#2D3748"
+    accent:
+      - "#B8860B"
+      - "#7B8B6F"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 2
+    pastoral: 3
+    celebratory: 0
+    aquatic: 0
+    ethereal: 0
+    intimate: 1
+    kinetic: 1
+    ominous: 2
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: "Full weathered leather armor. Burn scar prominent. Rappelling in forest. Crouching on rooftop. Defiant on parapet."
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: "Standard patrol gear. Blue cloak. Rigid in Grimsby's office. Introspective on horseback."
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "vera-moonwhisper"
+    name: "Vera Moonwhisper"
+    scene_variations: "Forest-green cloak. Chestnut braid. Tracking in forest. Crouching on rooftop. Echo present and alert."
+    reference_images:
+      - "vera-moonwhisper-portrait-01"
+
+  - ref: "grimjaw-ironbeard"
+    name: "Grimjaw Ironbeard"
+    scene_variations: "Iron-gray beard. Copper pauldrons. Field gear. Analytical during tracking."
+    reference_images:
+      - "grimjaw-ironbeard-portrait-01"
+
+  - ref: "aldwin-gentleheart"
+    name: "Brother Aldwin Gentleheart"
+    scene_variations: "Moss-green cloak. Silver-streaked hair. Assisting in rescue."
+    reference_images:
+      - "aldwin-gentleheart-official-portrait-01"
+
+  - ref: "cidrella-vexweld"
+    name: "Cidrella Vexweld"
+    scene_variations: "Rock gnome artificer. Red hair. Prosthetic left arm with glowing conduits. Focused on craft."
+    reference_images:
+      - "cidrella-vexweld-portrait-01"
+
+locations:
+  - ref: "thornwood-hills"
+    zones:
+      - id: "overview"
+        chapter_context: "Rocky outcrops, patchy snow. Morning mist. Vertical and treacherous."
+  - ref: "north-ward-watch-station"
+    zones:
+      - id: "overview"
+        chapter_context: "Solid stone civic building. Formal halls. Cold institutional light."
+  - ref: "vexweld-innovations-workshop"
+    zones:
+      - id: "overview"
+        chapter_context: "Gnomish workshop. Precision instruments, glowing conduits. Warm lamplight."
+  - ref: "castle-ward-rooftop"
+    zones:
+      id: "overview"
+      chapter_context: "Weathered tiles, chimney shadows. Vantage point for watchers. Transition from sunset to dark."
+  - ref: "westwall-watchpost"
+    zones:
+      - id: "parapet"
+        chapter_context: "Defensive stone battlements. Iconic silhouette. Dramatic sunset background."
+
+moments:
+  - id: "ch13-spring-thaw-moment-01"
+    scene_id: "scn-13-01"
+    title: "The Gully Rescue"
+    narrative_beat: "Veyra rappelling into the mist-shrouded gully to reach the injured merchant."
+    visual_weight: "hero"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "thornwood-hills/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch13-spring-thaw-moment-02"
+    scene_id: "scn-13-01"
+    title: "Field Triage"
+    narrative_beat: "Halden and Aldwin splinting the merchant's leg by the trail as the sun breaks through."
+    visual_weight: "medium"
+    characters_present:
+      - "medic-halden"
+      - "aldwin-gentleheart"
+      - "veyra-thornwake"
+    location_zone: "thornwood-hills/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch13-spring-thaw-moment-03"
+    scene_id: "scn-13-02"
+    title: "Political Encirclement"
+    narrative_beat: "Thorne standing rigid in Grimsby's office, flanked by merchant princes."
+    visual_weight: "high"
+    characters_present:
+      - "thorne-brightward"
+    location_zone: "north-ward-watch-station/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch13-spring-thaw-moment-04"
+    scene_id: "scn-13-02"
+    title: "Divided Loyalty"
+    narrative_beat: "Thorne's solitary ride through city light and shadow, processing the threat."
+    visual_weight: "medium"
+    characters_present:
+      - "thorne-brightward"
+    location_zone: "waterdeep-streets"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch13-spring-thaw-moment-05"
+    scene_id: "scn-13-03"
+    title: "Artisanal Passion"
+    narrative_beat: "Cidrella in her warm workshop, absorbed in technical diagrams and her own prosthesis."
+    visual_weight: "high"
+    characters_present:
+      - "cidrella-vexweld"
+    location_zone: "vexweld-innovations-workshop/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch13-spring-thaw-moment-06"
+    scene_id: "scn-13-04"
+    title: "The Watchers"
+    narrative_beat: "Veyra and Vera on the rooftop, watching the innocent Cidrella far below."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "vera-moonwhisper"
+      - "cidrella-vexweld"
+    location_zone: "castle-ward-rooftop/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch13-spring-thaw-moment-07"
+    scene_id: "scn-13-05"
+    title: "Discovery of Surveillance"
+    narrative_beat: "Vera and Grimjaw uncovering evidence of watchers in the beautiful morning forest."
+    visual_weight: "high"
+    characters_present:
+      - "vera-moonwhisper"
+      - "grimjaw-ironbeard"
+    location_zone: "watchpost-perimeter-forest"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch13-spring-thaw-moment-08"
+    scene_id: "scn-13-05"
+    title: "The Defiant Vigil"
+    narrative_beat: "Veyra standing alone on the parapet at sunset, ready for the coming storm."
+    visual_weight: "hero"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "westwall-watchpost/parapet"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch13-spring-thaw-img-13-01-01"
+    source_moment: "ch13-spring-thaw-moment-01"
+    scene_id: "scn-13-01"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "action"
+    scene_mood: "pastoral"
+    mood_rationale: "Opening rescue scene establishes professional competence. Morning light breaking through mist."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Veyra Thornwake mid-rappel down a rocky cliff face, her burn-scarred profile sharp with focus as she descends through morning mist. Below her on a narrow ledge lies the injured merchant looking up with hope. Patches of ice and brown rock.
+    composition_notes: |
+      Strong vertical composition. Rope as leading line. Veyra in upper third. Mist thickening toward bottom.
+    visual_hook: "Veyra's burn-scarred face in sharp profile against the soft mist, her teal-tattooed arm gripping the rope"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Mid-rappel. Braced against stone. Tattooed arm gripping rope. Focused expression. Lantern glowing at hip.
+    location: "thornwood-hills"
+    lighting:
+      primary_source: "pale morning sun"
+      quality: "soft, diffused"
+      direction: "above/behind"
+      color_temperature: "cool to warm gold"
+      shadow_depth: "gentle"
+      atmospheric: "morning mist"
+    palette:
+      dominant:
+        - "slate gray"
+        - "mist white"
+        - "brown earth"
+      accent:
+        - "teal tattoo"
+        - "amber lantern"
+      avoid:
+        - "harsh shadows"
+    prompt_used: |
+      Half-elf woman with burn scar rappelling down cliff into morning mist,
+      mohawk and teal arm tattoos visible,
+      wearing leather armor with glowing lantern,
+      injured man on ledge below,
+      soft diffused daylight through clouds,
+      classical oil painting, plein air naturalism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, harsh shadows
+    tags:
+      - "hero"
+      - "rescue"
+      - "pastoral"
+      - "veyra"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch13-spring-thaw-img-13-01-02"
+    source_moment: "ch13-spring-thaw-moment-02"
+    scene_id: "scn-13-01"
+    image_type: "beat"
+    category:
+      - "character"
+      - "action"
+    scene_mood: "pastoral"
+    mood_rationale: "Teamwork and care. The successful ascent and medical treatment in the morning sun."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Halden and Aldwin kneeling on the trail, splinting the merchant's leg. Veyra stands nearby, wiping sweat from her brow. The travois is ready. Sunbeams break through the trees, warming the scene. Patchy snow on the ground.
+    composition_notes: |
+      Medium shot. Focal point on the medical care. Leading lines of the trail. Sunbeams creating a hopeful atmosphere.
+    visual_hook: "The focused, gentle hands of the two healers working in unison against the rugged mountain backdrop."
+    depicts_characters:
+      - "medic-halden"
+      - "aldwin-gentleheart"
+      - "veyra-thornwake"
+    character_states:
+      medic-halden: |
+        Kneeling. Hands steady on splint. Focused expression.
+      aldwin-gentleheart: |
+        Handing herbs to Halden. Benevolent smile.
+      veyra-thornwake: |
+        Standing. Watchful. Rock dust on gear.
+    location: "thornwood-hills"
+    lighting:
+      primary_source: "Sunlight breaking through trees"
+      quality: "Warm, dappled"
+      direction: "Side"
+      color_temperature: "Golden"
+      shadow_depth: "Soft"
+      atmospheric: "Steam/Haze"
+    palette:
+      dominant:
+        - "forest green"
+        - "earth brown"
+        - "gold light"
+      accent:
+        - "white bandage"
+      avoid:
+        - "darkness"
+    prompt_used: |
+      Medieval medic and halfling healer tending to an injured man on a mountain trail,
+      splinting a broken leg,
+      sunbeams cutting through trees,
+      patchy snow and early spring growth,
+      atmosphere of teamwork and relief,
+      classical oil painting, realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "teamwork"
+      - "healing"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch13-spring-thaw-img-13-02-01"
+    source_moment: "ch13-spring-thaw-moment-03"
+    scene_id: "scn-13-02"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "ominous"
+    mood_rationale: "Political threat crystallizes. Predators in silk. Cold institutional light."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Thorne Brightward stands rigid in Grimsby's office, flanked by two merchant princes in expensive silk. Calculating assessive eyes. Grimsby sits uncomfortable behind his desk. Visual trap: Thorne centered but surrounded. Formal stone architecture.
+    composition_notes: |
+      Three-point composition. Thorne center. Merchants flanking. Grimsby background. Formal authority frame.
+    visual_hook: "Thorne's weathered face absolutely still, deep-set brown eyes revealing nothing as silk-clad wolves circle"
+    depicts_characters:
+      - "thorne-brightward"
+    character_states:
+      thorne-brightward: |
+        Standing at attention. Stone expression. Blue cloak with sunburst sigil visible. Mustache hard line.
+    location: "north-ward-watch-station"
+    lighting:
+      primary_source: "cold window light"
+      quality: "flat, institutional"
+      direction: "side"
+      color_temperature: "greenish-gray"
+      shadow_depth: "deep corners"
+      atmospheric: "oppressive stillness"
+    palette:
+      dominant:
+        - "cold stone gray"
+        - "shadow"
+        - "pallid skin"
+      accent:
+        - "silk burgundy/blue"
+        - "gold jewelry"
+      avoid:
+        - "warm tones"
+    prompt_used: |
+      Armored man with gray mustache standing at attention in formal stone office,
+      flanked by two wealthy merchants in silk with gold chains,
+      cold institutional light from windows,
+      threatening political atmosphere,
+      classical oil painting, Symbolist unease,
+      cold sickly palette, deep shadows,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, friendly expressions
+    tags:
+      - "anchor"
+      - "threat"
+      - "politics"
+      - "ominous"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch13-spring-thaw-img-13-02-02"
+    source_moment: "ch13-spring-thaw-moment-04"
+    scene_id: "scn-13-02"
+    image_type: "detail"
+    category:
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Thorne's divided loyalties. Passage between two worlds represented by bars of light and shadow."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Thorne Brightward on horseback riding through Waterdeep. Afternoon light slants between buildings. Military rigid but distant gaze. Reins loose in scarred hands. Passing through alternating bands of illumination and shadow.
+    composition_notes: |
+      Portrait orientation. Low angle. Street architecture leading lines. Bars of light across the frame.
+    visual_hook: "Thorne's scarred hands loose on the reins, eyes fixed on something beyond the road ahead"
+    depicts_characters:
+      - "thorne-brightward"
+    character_states:
+      thorne-brightward: |
+        Mounted. Straight saddle posture. Distant expression. Scarred hands. Blue cloak draped.
+    location: "castle-ward"
+    zone: "streets"
+    lighting:
+      primary_source: "slanting afternoon sun"
+      quality: "hard, directional"
+      direction: "side"
+      color_temperature: "warm gold/cool shadow"
+      shadow_depth: "deep, rich"
+      atmospheric: "dust motes"
+    palette:
+      dominant:
+        - "stone ochre"
+        - "deep shadow"
+        - "dusty brown"
+      accent:
+        - "faded blue"
+        - "gold light"
+      avoid:
+        - "bright colors"
+    prompt_used: |
+      Man with gray mustache on horseback in city street,
+      afternoon sun creating bars of light and shadow,
+      rigid posture but introspective gaze,
+      scarred hands on reins,
+      atmosphere of divided loyalty,
+      classical oil painting, Rembrandt lighting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, happy expression
+    tags:
+      - "detail"
+      - "thorne"
+      - "somber"
+      - "journey"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch13-spring-thaw-img-13-03-01"
+    source_moment: "ch13-spring-thaw-moment-05"
+    scene_id: "scn-13-03"
+    image_type: "mood"
+    category:
+      - "character"
+      - "location"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: "Innocent creative passion. Warm sanctuary being watched. Unawareness of misuse."
+    aspect_ratio: "4:5"
+    orientation: "portrait"
+    size: "1024x1280"
+    visual_description: |
+      Cidrella Vexweld at her workbench. Masterwork prosthetic arm tracing diagrams. Arcane conduits pulse blue-white. Wild red hair with blue streak. Surrounded by precision instruments. Cluttered but organized workshop. Warm amber lamplight.
+    composition_notes: |
+      Portrait orientation. Cidrella off-center. Workbench horizontal anchor. Focus on prosthetic arm. Warm and enclosed.
+    visual_hook: "The articulated brass fingers of her prosthetic tracing diagrams, arcane conduits pulsing with soft light"
+    depicts_characters:
+      - "cidrella-vexweld"
+    character_states:
+      cidrella-vexweld: |
+        Leaning forward. Prosthetic arm extended. Focused, absorbed expression. Disheveled hair. Leather apron.
+    location: "vexweld-innovations-workshop"
+    lighting:
+      primary_source: "oil lamp + prosthetic glow"
+      quality: "soft, warm"
+      direction: "side"
+      color_temperature: "warm amber/cool blue-white"
+      shadow_depth: "gentle gradients"
+      atmospheric: "still interior"
+    palette:
+      dominant:
+        - "warm amber"
+        - "brass/copper"
+        - "rich brown"
+      accent:
+        - "arcane blue glow"
+        - "red hair"
+      avoid:
+        - "cold tones"
+    prompt_used: |
+      Rock gnome artificer with red hair and brass prosthetic arm working at bench,
+      arcane conduits glowing blue in arm,
+      surrounded by precision tools and clocks,
+      warm amber oil lamp light,
+      intimate workshop atmosphere,
+      classical oil painting, Vermeer lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin, sinister lighting
+    tags:
+      - "mood"
+      - "cidrella"
+      - "workshop"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch13-spring-thaw-img-13-04-01"
+    source_moment: "ch13-spring-thaw-moment-06"
+    scene_id: "scn-13-04"
+    image_type: "symbol"
+    category:
+      - "moment"
+      - "character"
+      - "symbol"
+    scene_mood: "ominous"
+    mood_rationale: "Watchers watching the innocent. Vertical distance and power dynamic. Cold rooftop vs warm street."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Veyra and Vera crouched in shadow on a weathered rooftop. Silhouettes against twilight. Small warm figure of Cidrella locking her door far below. Echo perched nearby. City spreads beyond. Street lamps flickering.
+    composition_notes: |
+      Extreme wide aspect. Watchers upper left, target lower right. Strong diagonal. Cidrella small but visible. Tension between dark/light.
+    visual_hook: "Two shadowed figures on the rooftop edge looking down at the small, innocent figure far below"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "vera-moonwhisper"
+      - "cidrella-vexweld"
+    character_states:
+      veyra-thornwake: |
+        Crouched. Silhouette against twilight. Tense body language.
+      vera-moonwhisper: |
+        Beside Veyra. Hooded form. Echo nearby.
+      cidrella-vexweld: |
+        Distant, small. Locking door. Unaware.
+    location: "castle-ward-rooftop"
+    lighting:
+      primary_source: "dying daylight + street lamps"
+      quality: "transitional, fading"
+      direction: "low western"
+      color_temperature: "cool twilight vs warm lamps"
+      shadow_depth: "deep on roof"
+      atmospheric: "dusk stillness"
+    palette:
+      dominant:
+        - "twilight violet"
+        - "rooftop shadow"
+        - "warm streetlight"
+      accent:
+        - "dying gold"
+      avoid:
+        - "bright colors"
+    prompt_used: |
+      Shadowed figures on a rooftop watching a small gnome woman locking her shop far below,
+      twilight city rooftops,
+      silhouettes against purple and gold sky,
+      raven perched on shoulder,
+      atmosphere of surveillance and moral weight,
+      classical oil painting, Symbolist unease,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, comfortable atmosphere
+    tags:
+      - "symbol"
+      - "surveillance"
+      - "ominous"
+      - "twilight"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch13-spring-thaw-img-13-05-01"
+    source_moment: "ch13-spring-thaw-moment-07"
+    scene_id: "scn-13-05"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "action"
+    scene_mood: "pastoral"
+    mood_rationale: "Unsettling contrast—discovery of danger in beautiful morning light. Disconnect between setting and discovery."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Vera kneels on the forest floor, brushing aside deliberately scattered leaves. Grimjaw points to a moss-scraped tree trunk. Echo alert on a branch. Spring forest—dappled sunlight, soft green-gold. Evidence of observation posts.
+    composition_notes: |
+      Vera lower third. Grimjaw vertical element. Forest depth with haze. Echo high point of alertness.
+    visual_hook: "Vera's gloved fingers brushing aside too-perfectly-arranged leaves while Grimjaw points to the moss-scraped trunk"
+    depicts_characters:
+      - "vera-moonwhisper"
+      - "grimjaw-ironbeard"
+    character_states:
+      vera-moonwhisper: |
+        Kneeling. Professional focus. Forest-green cloak.
+      grimjaw-ironbeard: |
+        Standing solid. Pointing at tree. Grim expression.
+    location: "westwall-watchpost"
+    zone: "perimeter"
+    lighting:
+      primary_source: "morning sun through canopy"
+      quality: "soft, dappled"
+      direction: "above/leaves"
+      color_temperature: "warm gold/green"
+      shadow_depth: "gentle"
+      atmospheric: "spring mist"
+    palette:
+      dominant:
+        - "verdant green"
+        - "gold light"
+        - "brown bark"
+      accent:
+        - "copper pauldrons"
+      avoid:
+        - "dark shadows"
+    prompt_used: |
+      Woman kneeling in sun-dappled forest floor examining disturbed leaves,
+      dwarf pointing at scraped tree bark,
+      raven on branch alert,
+      soft early spring forest atmosphere,
+      evidence of hidden watchers,
+      classical oil painting, plein air naturalism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, dark forest
+    tags:
+      - "anchor"
+      - "discovery"
+      - "surveillance"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch13-spring-thaw-img-13-05-02"
+    source_moment: "ch13-spring-thaw-moment-08"
+    scene_id: "scn-13-05"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "symbol"
+    scene_mood: "kinetic"
+    mood_rationale: "Defiant vigil. Urgent energy despite stillness. Sunset bleeding into darkness."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Veyra Thornwake alone on the Watchpost parapet. Silhouetted against dramatic gold/crimson sunset. Hand on stone. Lantern glows warm. Echo wheels overhead. Battlements frame her. Iconic statement of defiance.
+    composition_notes: |
+      Low angle looking up. Rule-of-thirds silhouette. Parapet horizontal base. Echo adds diagonal movement.
+    visual_hook: "Veyra's silhouette against dying light, her mohawk and burn scar in sharp profile, lantern glowing warm"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Guardian's stand. Profile silhouette. Mohawk and scar sharp. Ready posture.
+    location: "westwall-watchpost"
+    lighting:
+      primary_source: "dramatic sunset"
+      quality: "hard, directional backlighting"
+      direction: "behind/below"
+      color_temperature: "gold/crimson/violet"
+      shadow_depth: "deep silhouette"
+      atmospheric: "crystalline sky"
+    palette:
+      dominant:
+        - "sunset gold"
+        - "crimson"
+        - "twilight violet"
+      accent:
+        - "warm amber lantern"
+      avoid:
+        - "flat light"
+    prompt_used: |
+      Silhouette of woman with mohawk and burn scar on stone battlements at dramatic sunset,
+      hand on parapet, glowing lantern at belt,
+      gold and crimson sky,
+      raven flying overhead,
+      heroic defiant composition,
+      classical oil painting, Romantic dynamism,
+      Delacroix energy, visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin
+    tags:
+      - "hero"
+      - "defiance"
+      - "vigil"
+      - "kinetic"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

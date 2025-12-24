@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Character Image Ideas",
+  "description": "Schema for character image_ideas.yaml files - defines visual scenes for AI image generation",
+  "type": "object",
+  "required": ["character", "scenes"],
+  "additionalProperties": false,
+  "properties": {
+    "character": {
+      "type": "object",
+      "description": "Character identification and summary",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Character's display name (e.g., 'Cidrella \"Cid\" Vexweld')",
+          "minLength": 1
+        },
+        "summary": {
+          "type": "string",
+          "description": "Brief character description for AI context - physical traits, role, key features"
+        }
+      }
+    },
+    "visual_consistency": {
+      "type": "array",
+      "description": "Visual traits to maintain across all generated images for this character",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "examples": [
+        ["Adult gnome female", "Copper-red hair with blue streak", "Mechanical left arm"]
+      ]
+    },
+    "scenes": {
+      "type": "array",
+      "description": "List of scene definitions for image generation",
+      "items": {
+        "$ref": "#/$defs/scene"
+      },
+      "minItems": 1
+    }
+  },
+  "$defs": {
+    "scene": {
+      "type": "object",
+      "description": "A single scene/image definition",
+      "required": ["title"],
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Scene name - used in generated filenames (e.g., 'Partnership with Threnx')",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "scene": {
+          "type": "string",
+          "description": "What's happening in the image - the narrative moment"
+        },
+        "pose": {
+          "type": "string",
+          "description": "Character positioning, body language, gestures"
+        },
+        "setting": {
+          "type": "string",
+          "description": "Environment, background, location context"
+        },
+        "mood": {
+          "type": "string",
+          "description": "Emotional tone, atmosphere, lighting mood"
+        },
+        "depicts_characters": {
+          "type": "array",
+          "description": "Slugs of other characters appearing in this scene (for multi-character images)",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "Character directory slug (e.g., 'korrath-threnx')"
+          }
+        },
+        "tags": {
+          "type": "array",
+          "description": "Categorical tags for filtering and organization",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "examples": [
+            ["portrait", "action", "two-character", "backstory"]
+          ]
+        }
+      }
+    }
+  }
+}

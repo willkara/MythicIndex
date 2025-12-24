@@ -1,0 +1,43 @@
+location:
+  slug: oakhaven
+  name: Oakhaven
+  files:
+    overview:
+      path: locations/oakhaven/overview.md
+      excerpt: ''
+      exists: false
+    description:
+      path: locations/oakhaven/description.md
+      excerpt: ''
+      exists: false
+    inhabitants:
+      path: locations/oakhaven/inhabitants.md
+      excerpt: ''
+      exists: false
+zones_manifest:
+  path: locations/oakhaven/zones.yaml
+  zones:
+  - slug: approach
+    name: The Approach
+  - slug: barn-hospice
+    name: Barn Hospice
+    featured_in_chapters:
+    - ch04-the-healers-calling
+  - slug: streets
+    name: Village Streets
+  - slug: village-streets
+    name: Village Streets
+    featured_in_chapters:
+    - ch04-the-healers-calling
+chapter_evidence:
+- slug: ch04-the-healers-calling
+  files:
+    content:
+      path: chapters/ch04-the-healers-calling/content.md
+      excerpt: ''
+      exists: true
+    visual_plan:
+      path: chapters/ch04-the-healers-calling/chapter.visual-plan.yaml
+      excerpt: ''
+      exists: true
+intrinsic_characters: []

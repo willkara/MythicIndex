@@ -1,0 +1,397 @@
+chapter_analysis:
+  slug: "ch08-the-tracker-in-the-snow"
+  chapter_number: 8
+  chapter_title: "The Tracker in the Snow"
+  
+  visual_thesis: "From the frozen comedy of miscommunication to the cold violence of justice, winter reveals both the warmth of found family and the lethal fury of those who protect the innocent."
+  
+  dominant_mood_progression:
+    - "urgent preparation"
+    - "absurd relief"
+    - "creeping dread"
+    - "awed discovery"
+    - "cold vengeance"
+    - "warm belonging"
+  
+  color_story:
+    opening: "steel gray dawn, amber firelight struggling against frost"
+    climax: "black raven on pristine white, blood-red crystallizing to frost-blue"
+    closing: "hearth gold, warm brown wood, the soft amber of acceptance"
+
+  key_locations:
+    - slug: "westwall-watchpost"
+      name: "Westwall Watchpost"
+      visual_character: "Stone walls fighting the cold with roaring fires, steam rising from breath and warming stones, frost clinging to metal buckles and armor plates."
+      time_of_day: "pre-dawn to evening"
+      weather_atmosphere: "deep winter, fires struggling against pervasive cold"
+      
+    - slug: "millbridge"
+      name: "Millbridge"
+      visual_character: "A village huddled against winter wind, smoke rising straight up in still frozen air, the warmth of the inn's doorway a stark contrast to the blue-lipped cold outside."
+      time_of_day: "evening"
+      weather_atmosphere: "bitter cold, aftermath of snowstorm"
+      
+    - slug: "thornwood-forest"
+      name: "Thornwood Forest"
+      visual_character: "Ancient frozen sentinels laden with snow, branches cracked under white weight, a hushed cathedral of ice and shadow where sound itself seems swallowed."
+      time_of_day: "afternoon fading to dusk"
+      weather_atmosphere: "oppressive silence, unnatural stillness, fresh snowfall"
+      
+    - slug: "thornwood-ruins"
+      name: "Thornwood Ruins"
+      visual_character: "Snow-blanketed stone foundations, frost-covered clearings where nature has arranged itself in ritual patterns around a single prone figure."
+      time_of_day: "late afternoon"
+      weather_atmosphere: "killing cold, frost crystallizing on every surface"
+
+  active_characters:
+    - slug: "veyra-thornwake"
+      name: "Veyra Thornwake"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "protagonist"
+      emotional_arc: "commanding urgency → surprised laughter → grim determination → recognition of kindred spirit → extending family"
+      arc_context: "Continues to demonstrate her leadership philosophy while revealing rare vulnerability through genuine laughter—a glimpse of who she might have been before the fire."
+      visual_identifiers: "Deep earth-brown complexion with prominent mottled burn scar from jaw to temple on left side of face. Jet black hair in aggressive mohawk with sides shaved, long braided lock on right with brown feathers and turquoise beads. Dark, nearly black irises. Teal-blue spiral tattoos on neck and left arm. Worn leather cuirass over dark blue tunic, battered metal lantern at belt casting warm gold glow."
+      draft_warning: false
+
+    - slug: "vera-moonwhisper"
+      name: "Vera Moonwhisper"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "catalyst"
+      emotional_arc: "near-death → fragile awakening → guarded recognition → cold fury → hopeful acceptance"
+      arc_context: "Introduction chapter establishing her seven-year search for her brother, her connection to animals, and her capacity for lethal violence. This is her starting point before she learns to channel desperate obsession into methodical skill."
+      visual_identifiers: "Fair, pale complexion with light freckling. Thick dark chestnut brown hair in long practical single braid over right shoulder. Clear hazel eyes that shift to amber during magic use, and roll to pure white during sight-sharing. Faint green vine-patterned markings on right cheekbone and temple. Deep forest-green hooded cloak, brown leather jerkin with front lacing. Wooden quarterstaff 'Whisperwind' with green vine carvings. Round brass locket on leather cord."
+      draft_warning: false
+
+    - slug: "thorne-brightward"
+      name: "Thorne Brightward"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "professional concern → suppressed amusement → tactical focus"
+      arc_context: "Continues steady role as tactical coordinator, demonstrating the partnership dynamic with Veyra."
+      visual_identifiers: "Steel-gray hair in short military crop with receding hairline, thick groomed gray mustache. Deep-set brown eyes, weathered ruddy face. Faded deep blue wool cloak with golden sunburst sigil, steel breastplate over chainmail. Large shield, lit iron lantern."
+      draft_warning: false
+
+    - slug: "grimjaw-ironbeard"
+      name: "Grimjaw Ironbeard"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "grumbling competence → storytelling warmth → pragmatic frustration"
+      arc_context: "Provides both engineering expertise for winter hazards and emotional anchor through storytelling and practical wisdom."
+      visual_identifiers: "Elderly but robust, barrel-chested dwarf with voluminous iron-gray hair and magnificent chest-covering beard styled into massive center braid with metal bands, smaller side braids with metal charms and weighted beads. Deep-set dark eyes under bushy gray eyebrows. Dark brown leather tunic and trousers, copper-colored riveted metal pauldrons. Massive block-headed sledgehammer 'Tremor'."
+      draft_warning: false
+
+    - slug: "aldwin-gentleheart"
+      name: "Aldwin Gentleheart"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "methodical preparation → awed wonder → compassionate care"
+      arc_context: "Demonstrates his holistic healing philosophy through treatment of Vera's hypothermia and emotional wounds alike."
+      visual_identifiers: "Compact, sturdy halfling physique. Short, thick, curly charcoal-brown hair heavily frosted with silver at temples and crown. Warm dark hazel eyes. Moss-green wool cloak and cowl over studded brown leather doublet. Fingerless leather gloves. Shallow copper heating pan and herbal sack. Multiple leather pouches at belt."
+      draft_warning: false
+
+    - slug: "echo-raven"
+      name: "Echo"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "vigilant guardian → messenger → comic trickster"
+      arc_context: "Vera's raven companion serves as her partner in sight-sharing and as symbol of her animal bonds. Plays key role in rescue tracking and provides comic relief at chapter's end."
+      visual_identifiers: "Large black raven with dark intelligent eyes, ice crystals glittering on feathers in cold. Perches attentively on Vera's staff or shoulder."
+      draft_warning: false
+
+    - slug: "harriet-blackwood"
+      name: "Harriet Blackwood"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "terrified desperation → explosive relief → maternal fury"
+      arc_context: "The worried mother whose panic launched the false alarm mission, creating unexpected comedy and humanizing the Company."
+      visual_identifiers: "Stout, full-figured farm woman build. Dark brown hair heavily streaked with gray, wavy texture pinned up practically with loose strands at temples. Warm dark brown eyes crinkled with expression. Deep chocolate brown wool dress, stained beige linen apron. Work-worn hands."
+      draft_warning: false
+
+    - slug: "thomas-blackwood"
+      name: "Thomas Blackwood"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "blissful ignorance → mortified horror"
+      arc_context: "Young man whose mumbled announcement about visiting his sweetheart triggered the false alarm rescue."
+      visual_identifiers: "19 years old, lean workmanlike build with vascular forearms. Short reddish-brown hair swept casually to side. Dark brown eyes like his mother's. Dark chestnut-brown leather apron over dark grey-blue work shirt. Black-rimmed jeweler's loupe clipped to shoulder strap."
+      draft_warning: false
+
+    - slug: "archer-venn"
+      name: "Venn"
+      source_status: "published"
+      has_imagery_yaml: true
+      role_this_chapter: "supporting"
+      emotional_arc: "eagerness → awe → acceptance"
+      arc_context: "Provides both sharp observation skills and comic reactions to the chapter's revelations."
+      visual_identifiers: "Wood elf with warm tanned olive complexion, weathered vitality. Dark brown hair swept back into thick prominent braid over right shoulder with tarnished silver clasp. Perpetually smug grin. Long pointed ears. Dark burnished metal breastplate, brown leather straps. Simple curved wooden bow, quiver with dark fletching."
+      draft_warning: false
+
+candidate_moments:
+  - moment_id: "ch08-the-tracker-in-the-snow-moment-01"
+    source_scene: "scn-08-04"
+    
+    narrative_beat: "The Company discovers Vera half-buried in snow, near death, with a single black raven maintaining silent vigil over her while small offerings of winter berries, acorns, and carefully arranged insulation surround her body—evidence of animals working together to keep her alive."
+    subtext: "Nature itself has chosen to protect this woman, revealing her extraordinary bond with the wild before she speaks a single word. The animals sacrificed precious winter resources and risked their own survival for a human—an act of love that transcends species."
+    
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 5
+      narrative_pivot: 5
+      character_revelation: 4
+      symbolic_density: 5
+      total: 24
+    
+    score_rationale:
+      character_revelation_note: "Vera's documented deep connection with animals is demonstrated through action rather than words—the animals' protective arrangement reveals her nature before she can speak."
+      relationship_context: "This moment establishes the bond between Vera and Echo that will define their partnership, and creates immediate respect/curiosity from the Company."
+    
+    suggested_type: "hero"
+    primary_subject: "Vera Moonwhisper, prone and frost-covered, with Echo the raven"
+    secondary_elements:
+      - "ritual arrangement of leaves, berries, and moss around her body"
+      - "small animal offerings placed like devotional tokens"
+      - "the pristine white snow as stark canvas"
+      - "steam from distant Company members' breath"
+    
+    suggested_framing: "wide"
+    suggested_angle: "slightly high"
+    
+    key_visual_hook: "The single black raven sitting absolutely still amid the white, frost glittering on its feathers like diamonds, watching over the pale form below with patient, knowing eyes."
+    
+    lighting_suggestion: "Weak winter afternoon sun filtering through snow-laden branches, creating soft diffused light that makes the raven's black feathers and the woman's pale face stand out against the white."
+    
+    emotional_color: "sacred stillness, desperate hope"
+    
+    characters_present:
+      - slug: "vera-moonwhisper"
+        has_canonical_visuals: true
+        role_in_moment: "Unconscious, frost-covered, lips purple with cold, partially buried in snow with animal-gathered insulation"
+      - slug: "echo-raven"
+        has_canonical_visuals: true
+        role_in_moment: "Maintaining absolute vigil, unmoving despite cold, ice crystallized on feathers"
+    
+    source_excerpts:
+      - "The raven didn't move. Not when they first spotted the dark shape against the pristine snow, a splash of midnight on white canvas."
+      - "Her lips had gone past blue to nearly purple, her skin so pale it seemed translucent, like ice itself."
+      - "Around her, in a rough circle, were small offerings that seemed almost ritual in nature—winter berries still on their stems, acorns that must have been cached from autumn, bits of bark arranged in small piles, even what looked like fur that some creature had shed to add to her warmth."
+    
+    selection_rationale: "This moment establishes the chapter's visual thesis—life persisting against winter's deadly embrace—while introducing Vera through pure visual storytelling. The single dark raven against the white snow is instantly iconic, and the ritual arrangement transforms a rescue scene into something approaching the sacred."
+
+  - moment_id: "ch08-the-tracker-in-the-snow-moment-02"
+    source_scene: "scn-08-02"
+    
+    narrative_beat: "Veyra laughs—a genuine, surprised bark of sound that transforms her scarred face, lifting the weight of leadership and loss for a single transcendent moment as she realizes they mobilized a full winter rescue mission for a boy too shy to tell his mother about his sweetheart."
+    subtext: "The Company needs moments like this to survive. Veyra's rare laughter reveals the person she was before the fire—and could still be, when allowed. It humanizes the legend and binds the team tighter through shared absurdity."
+    
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 5
+      symbolic_density: 4
+      total: 22
+    
+    score_rationale:
+      character_revelation_note: "Per Veyra's development notes, she is defined by survivor's guilt and grave responsibility. This moment of genuine levity is unprecedented and transformative—showing who she might have been without the trauma."
+      relationship_context: "The Company members' stunned reactions ('Did the Commander just make a joke?') reveal how rare this is and how much it matters to them."
+    
+    suggested_type: "anchor"
+    primary_subject: "Veyra Thornwake, scarf pulled down, actually smiling"
+    secondary_elements:
+      - "her breath creating a large puff of steam in the cold air"
+      - "frost on her cheeks cracking with the expression"
+      - "stunned Company members in background"
+      - "mortified Thomas visible at edge of frame"
+    
+    suggested_framing: "medium-close"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "The mottled burn scar on her face lifted by an actual smile, thin frost on her cheeks cracking with the unfamiliar expression, her dark eyes holding genuine light for the first time."
+    
+    lighting_suggestion: "Weak winter daylight on village street, breath creating visible clouds, the cold making every face flushed but Veyra's transformed by unexpected warmth."
+    
+    emotional_color: "startled joy, lightness breaking through"
+    
+    characters_present:
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Laughing genuinely, scarf pulled down revealing smile, visibly lighter"
+      - slug: "archer-venn"
+        has_canonical_visuals: true
+        role_in_moment: "Mouth fallen open in shock at Commander's laughter"
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "Background, processing the absurdity with gruff amusement"
+    
+    source_excerpts:
+      - "Then something unprecedented happened. Veyra laughed."
+      - "It wasn't much—just a short, surprised bark of sound that sent a large puff of steam into the winter air—but it transformed her face completely."
+      - "For a moment, the weight of loss and responsibility lifted like morning frost in sudden sunlight, and she looked younger, lighter, almost carefree."
+      - "'Did... did the Commander just make a joke?' he whispered to Darric, his breath forming a small cloud between them."
+    
+    selection_rationale: "This is the chapter's essential character moment—Veyra's documented grave demeanor cracking open to reveal unexpected lightness. The visual contrast between her burn-scarred, frost-covered face and a genuine smile is powerful, and the Company's shock reinforces how rare and precious this moment is."
+
+  - moment_id: "ch08-the-tracker-in-the-snow-moment-03"
+    source_scene: "scn-08-03"
+    
+    narrative_beat: "Every bird in the forest suddenly takes flight—ravens, winter wrens, cardinals—streaming overhead in a cacophony of cries, fleeing from something wrong deeper in the woods as snow cascades from disturbed branches."
+    subtext: "Nature's alarm system signals that something unnatural waits ahead. The birds' unified exodus, normally impossible across species in winter, marks the transition from comedy to danger and foreshadows the discovery to come."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 3
+      symbolic_density: 4
+      total: 19
+    
+    score_rationale:
+      character_revelation_note: "Veyra's instinct to investigate rather than flee shows her protective nature per her documented response matrix—'immediately shifts to threat assessment.'"
+      relationship_context: "The Company's unified response to danger, horses sensing wrongness, demonstrates the team cohesion built over earlier chapters."
+    
+    suggested_type: "mood"
+    primary_subject: "Hundreds of birds streaming across the frame against gray winter sky"
+    secondary_elements:
+      - "snow cascading from branches in localized blizzards"
+      - "the Company's upturned faces, breath hanging visible"
+      - "horses with ears swiveling, nostrils flaring"
+      - "the silent, oppressive forest below"
+    
+    suggested_framing: "wide"
+    suggested_angle: "low angle looking up"
+    
+    key_visual_hook: "The chaotic swirl of dark wings against pale winter sky, snow falling in curtains from tree branches, as every creature in the forest flees in the same direction at once."
+    
+    lighting_suggestion: "Weak afternoon winter sun filtering through low clouds, creating flat gray light that makes the birds' dark shapes dramatic against the white-gray sky."
+    
+    emotional_color: "creeping dread, primal alarm"
+    
+    characters_present:
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Face upturned, reading the warning, already turning her horse toward what the birds fled from"
+      - slug: "thorne-brightward"
+        has_canonical_visuals: true
+        role_in_moment: "Hand moving to sword hilt, scanning for threats"
+    
+    source_excerpts:
+      - "Then, as if triggered by her words, every bird in the forest suddenly took flight—ravens, winter wrens, even the hardy cardinals that usually weathered any storm."
+      - "They burst from the trees in a cacophony of cries, streaming overhead in the same direction, their wings beating desperately against the cold air."
+      - "Snow cascaded from disturbed branches, creating a localized blizzard around them."
+    
+    selection_rationale: "This moment provides essential tonal shift from the earlier comedy beat, signaling the transition to the chapter's darker elements. The visual of hundreds of birds fleeing as one is instantly striking and creates visceral unease that prepares readers for what follows."
+
+  - moment_id: "ch08-the-tracker-in-the-snow-moment-04"
+    source_scene: "scn-08-08"
+    
+    narrative_beat: "Vera's eyes roll back to become completely white like fresh snow, and she speaks with a hollow, distant voice as she shares Echo's sight—seeing the hidden entrance, the blue mitten caught on iron, the heat rising from underground where the children are held."
+    subtext: "Vera's power is not magic learned but magic earned through desperate years of searching—her bond with Echo transcends normal animal companionship. The cost is visible: every moment connected burns energy she needs to survive the cold."
+    
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 5
+      symbolic_density: 4
+      total: 21
+    
+    score_rationale:
+      character_revelation_note: "Per Vera's profile, her self-taught druidic magic was learned through 'dangerous, unorthodox methods.' This sight-sharing demonstrates her unique abilities while showing the physical cost—she sways and catches herself after."
+      relationship_context: "The Company witnesses her power for the first time; Venn's 'What was that?' and the awed silence establish her as something beyond an ordinary tracker."
+    
+    suggested_type: "detail"
+    primary_subject: "Vera with eyes rolled completely white, Echo perched on her shoulder"
+    secondary_elements:
+      - "frost forming where her hand touches the tree for support"
+      - "her breath visible but distant, dreamlike"
+      - "the Company frozen in awed silence around her"
+      - "the winter forest as backdrop"
+    
+    suggested_framing: "medium-close"
+    suggested_angle: "slightly low"
+    
+    key_visual_hook: "Her hazel eyes rolled back to pure snow-white, her face slack and distant as if seeing through another's sight, while the black raven on her shoulder caws softly, its own dark eyes reflecting what she sees."
+    
+    lighting_suggestion: "Weak winter light filtered through bare branches, emphasizing the unsettling whiteness of her eyes against her pale, frost-touched face."
+    
+    emotional_color: "eerie wonder, borrowed sight"
+    
+    characters_present:
+      - slug: "vera-moonwhisper"
+        has_canonical_visuals: true
+        role_in_moment: "Eyes completely white, speaking with hollow distant voice, swaying slightly with exhaustion after"
+      - slug: "echo-raven"
+        has_canonical_visuals: true
+        role_in_moment: "Perched on shoulder, eyes reflecting the shared sight, feathers ruffled with concentration"
+      - slug: "archer-venn"
+        has_canonical_visuals: true
+        role_in_moment: "Watching with awed whisper: 'What was that?'"
+    
+    source_excerpts:
+      - "Vera's eyes rolled back, becoming completely white like fresh snow, and when she spoke, her voice was distant, hollow, as if coming from very far away."
+      - "'Echo sees... old foundation, walls of stone half-buried in drifts, collapsed roof beams crossed like broken bones. Blue mitten caught on rusty iron.'"
+      - "Her eyes returned to normal, green and hazel again, and she swayed slightly, catching herself on a tree. Frost immediately formed where her hand touched the bark."
+    
+    selection_rationale: "This moment distinctly visualizes Vera's unique abilities in a way that sets her apart from any other tracker or druid. The white eyes are viscerally striking, and the immediate physical cost—frost forming where she touches the tree, needing support—grounds her magic in physical consequence."
+
+  - moment_id: "ch08-the-tracker-in-the-snow-moment-05"
+    source_scene: "scn-08-09"
+    
+    narrative_beat: "Vera executes the trafficker with frost-thorns that erupt from her staff—black vines glistening with unnatural cold, wrapping slowly around his throat, each thorn piercing skin and drawing drops of blood that freeze instantly while frost spreads from the contact, consuming him with the patience of winter itself."
+    subtext: "Seven years of searching, of hearing her brother's captors mock his fate, crystallize into this act of cold justice. Vera reveals herself as capable of lethal violence—not hot rage, but patient, deliberate winter death. The Company must accept this darkness to gain her as family."
+    
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 5
+      narrative_pivot: 5
+      character_revelation: 5
+      symbolic_density: 5
+      total: 25
+    
+    score_rationale:
+      character_revelation_note: "Per Vera's profile, she was introduced in a near-fatal state being cared for by animals. This moment reveals the other side—her capacity for lethal violence when protecting the innocent or confronting her brother's captors. The frost-thorn execution establishes her as dangerous."
+      relationship_context: "Grimjaw's reaction ('Dead men don't answer questions, lass') is practical frustration, not moral judgment—the Company processes her violence as excessive but understandable. Veyra's later acceptance depends on this moment."
+    
+    suggested_type: "anchor"
+    primary_subject: "Black thorny vines erupting from Vera's staff, wrapped around the trafficker's throat"
+    secondary_elements:
+      - "drops of blood freezing instantly as they fall"
+      - "frost spreading across the trafficker's skin from the contact"
+      - "Vera's expressionless face watching without flinching"
+      - "huddled, shivering rescued children visible in background shadows"
+    
+    suggested_framing: "medium"
+    suggested_angle: "eye-level"
+    
+    key_visual_hook: "The black thorny vines glistening with unnatural frost, drops of blood crystallizing into red ice the moment they leave the wounds, the trafficker's skin going from white to blue to black where the winter death spreads."
+    
+    lighting_suggestion: "Dim underground cellar light, cold and blue-gray, with the frost on the thorns catching what little light exists to create an eerie gleam."
+    
+    emotional_color: "cold fury, winter's patience"
+    
+    characters_present:
+      - slug: "vera-moonwhisper"
+        has_canonical_visuals: true
+        role_in_moment: "Staff pressed to throat, watching without expression as frost-thorns do their work, face utterly still"
+      - slug: "grimjaw-ironbeard"
+        has_canonical_visuals: true
+        role_in_moment: "Sighing heavily with practical frustration at lost intelligence opportunity"
+      - slug: "veyra-thornwake"
+        has_canonical_visuals: true
+        role_in_moment: "Observing, processing, already planning how to integrate this darkness into the Company"
+    
+    source_excerpts:
+      - "Vera's staff, still pressed against his throat, suddenly transformed. Black thorns erupted from the wood—not normal thorns but ones that glistened with frost, dripping with an unnatural cold that seemed to burn."
+      - "They wrapped around his neck with deliberate slowness, each thorn piercing skin, drawing drops of blood that froze instantly."
+      - "The vines constricted with the patience of winter itself, inexorable and without mercy."
+      - "Vera watched without expression as the life left his eyes, as his body went rigid with cold as much as death."
+    
+    selection_rationale: "This is the chapter's pivot moment—everything changes here. The audience learns Vera is capable of cold, deliberate killing. The Silent Hand becomes a concrete enemy. The visual of frost-thorns and freezing blood is uniquely horrifying and establishes winter itself as Vera's weapon. No other moment in the chapter has this combination of visual power and narrative consequence."

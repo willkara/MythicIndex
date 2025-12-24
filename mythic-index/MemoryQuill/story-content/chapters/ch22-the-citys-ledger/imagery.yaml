@@ -1,0 +1,649 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: The City's Ledger
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch22-the-citys-ledger"
+  chapter_number: 22
+  chapter_title: "The City's Ledger"
+  visual_thesis: "From the warmth of reunion to the shattering of composure to the forging of family around shared wounds."
+  color_palette:
+    primary:
+      - "#C4956A"
+      - "#2C2520"
+      - "#D4A84B"
+      - "#4A3728"
+    accent:
+      - "#E87C3F"
+      - "#8B9FAA"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 2
+    pastoral: 1
+    celebratory: 0
+    aquatic: 0
+    ethereal: 0
+    intimate: 3
+    kinetic: 1
+    ominous: 0
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: "Composed commander to shattered survivor. Pale skin beneath brown. Hand pressed to forehead."
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "vera-moonwhisper"
+    name: "Vera Moonwhisper"
+    scene_variations: "Thinner and paler. Leaning on staff. Clear hazel eyes."
+    reference_images:
+      - "vera-moonwhisper-portrait-01"
+
+  - ref: "rill-vossari"
+    name: "Rill Vossari"
+    scene_variations: "Supporting Vera. Aquamarine skin, bioluminescent patterns. Observant."
+    reference_images:
+      - "rill-vossari-casting-portrait-01"
+
+  - ref: "grimjaw-ironbeard"
+    name: "Grimjaw Ironbeard"
+    scene_variations: "Catching and steadying Veyra. Protective concern. Iron-gray beard."
+    reference_images:
+      - "grimjaw-ironbeard-portrait-01"
+
+  - ref: "lysander-valerius"
+    name: "Lysander Valerius"
+    scene_variations: "Flashback: streaked with blood and dust. Bracing shield against collapse. Impossibly calm smile."
+    reference_images:
+      - "lysander-valerius-formal-portrait-01"
+
+  - ref: "aldwin-gentleheart"
+    name: "Aldwin Gentleheart"
+    scene_variations: "Cross-legged beside Veyra. Calming draught ready. Compassionate wisdom."
+    reference_images:
+      - "aldwin-gentleheart-official-portrait-01"
+
+  - ref: "finn"
+    name: "Finn"
+    scene_variations: "Wide concerned eyes. Lean frame. Learning the truth."
+    reference_images:
+      - "finn-stable-archer-01"
+
+locations:
+  - ref: "warehouse-complex"
+    zones:
+      - id: "overview"
+        chapter_context: "Industrial space. Clerestory windows casting long shadows. Large round briefing table."
+  - ref: "undershade-canyon"
+    zones:
+      - id: "memory"
+        chapter_context: "Subterranean catastrophe. Molten glass barrier, collapsing ceiling. Traumatic clarity."
+
+moments:
+  - id: "ch22-the-citys-ledger-moment-01"
+    scene_id: "scn-22-01"
+    title: "Vera's Threshold"
+    narrative_beat: "Vera Moonwhisper returns to the warehouse, supported by Rill, leaning on her staff."
+    visual_weight: "high"
+    characters_present:
+      - "vera-moonwhisper"
+      - "rill-vossari"
+    location_zone: "warehouse-complex/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch22-the-citys-ledger-moment-02"
+    scene_id: "scn-22-01"
+    title: "Joyful Shout"
+    narrative_beat: "Finn's unrestrained joy at seeing Vera return, the room erupting in reunion."
+    visual_weight: "medium"
+    characters_present:
+      - "finn"
+      - "vera-moonwhisper"
+      - "mistress-elba"
+    location_zone: "warehouse-complex/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch22-the-citys-ledger-moment-03"
+    scene_id: "scn-22-02"
+    title: "Stricken Recognition"
+    narrative_beat: "Veyra's composure shatters as she hears the name Cassius Valerius, papers scattering from her hand."
+    visual_weight: "critical"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "warehouse-complex/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch22-the-citys-ledger-moment-04"
+    scene_id: "scn-22-02"
+    title: "Memory: The Last Smile"
+    narrative_beat: "Lysander's sacrifice in the canyon, holding up the ceiling with a smile and the command to 'Live'."
+    visual_weight: "hero"
+    characters_present:
+      - "lysander-valerius"
+    location_zone: "undershade-canyon/memory"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch22-the-citys-ledger-moment-05"
+    scene_id: "scn-22-02"
+    title: "Anchor in the Storm"
+    narrative_beat: "Grimjaw catching and steadying Veyra as she collapses under the weight of the past."
+    visual_weight: "high"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "veyra-thornwake"
+    location_zone: "warehouse-complex/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch22-the-citys-ledger-moment-06"
+    scene_id: "scn-22-03"
+    title: "Protective Circle"
+    narrative_beat: "The Company forming a tight circle around their commander, shared wounds becoming bonds."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "aldwin-gentleheart"
+      - "vera-moonwhisper"
+      - "grimjaw-ironbeard"
+      - "finn"
+      - "mistress-elba"
+    location_zone: "warehouse-complex/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch22-the-citys-ledger-moment-07"
+    scene_id: "scn-22-04"
+    title: "Resolve Returns"
+    narrative_beat: "Veyra clenching her fists, forcing her spine straight as she reclaims command for the mission."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "warehouse-complex/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch22-the-citys-ledger-moment-08"
+    scene_id: "scn-22-04"
+    title: "The Steady Flame"
+    narrative_beat: "Veyra's hand on her lantern, the magical flame pulsing with resolve as they prepare for the rescue."
+    visual_weight: "hero"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "warehouse-complex/overview"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch22-the-citys-ledger-img-22-01-01"
+    source_moment: "ch22-the-citys-ledger-moment-01"
+    scene_id: "scn-22-01"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "pastoral"
+    mood_rationale: "Vera's return. Afternoon light flooding through the doorway. Hope returning from the threshold of death."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Vera Moonwhisper appears in the warehouse doorway, silhouetted against afternoon light. She leans heavily on her staff. Rill Vossari's aquamarine hand steadies her elbow. Echo the raven swoops down from rafters. Vera is thin and pale but her eyes are sharp. Halo effect from light behind.
+    composition_notes: |
+      Two figures framed in entrance. Dark industrial interior vs bright exterior. Vera central. Rill at side. Echo descending.
+    visual_hook: "Vera's staff used as a crutch, knuckles white with effort, while Rill's aquamarine hand steadies her"
+    depicts_characters:
+      - "vera-moonwhisper"
+      - "rill-vossari"
+    character_states:
+      vera-moonwhisper: |
+        Leaning on staff. Pale and thin. Intelligent eyes. Forest-green cloak.
+      rill-vossari: |
+        Supporting Vera. Bioluminescent patterns glowing. Pupil-less eyes. Oilskin longcoat.
+    location: "warehouse-complex"
+    lighting:
+      primary_source: "afternoon sun"
+      quality: "soft, diffused"
+      direction: "backlighting"
+      color_temperature: "warm gold"
+      shadow_depth: "gentle"
+      atmospheric: "dust motes in shafts"
+    palette:
+      dominant:
+        - "soft gold"
+        - "forest green"
+        - "aquamarine"
+      accent:
+        - "copper hair coils"
+      avoid:
+        - "harsh reds"
+    prompt_used: |
+      Two women in a warehouse doorway, afternoon sunlight flooding behind them,
+      one woman thin and pale leaning heavily on a wooden staff,
+      another woman with aquamarine skin steadying her elbow,
+      raven descending from rafters,
+      warm gold light and dust motes,
+      classical oil painting, plein air naturalism, soft diffused daylight,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin, action pose
+    tags:
+      - "reunion"
+      - "recovery"
+      - "hope"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch22-the-citys-ledger-img-22-01-02"
+    source_moment: "ch22-the-citys-ledger-moment-02"
+    scene_id: "scn-22-01"
+    image_type: "beat"
+    category:
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: "The joy of reunion. Finn's unrestrained enthusiasm. A moment of shared relief and belonging."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Finn rushing toward Vera in the warehouse. His face is a picture of pure joy. Vera is sitting in a chair, looking up at him with a weak but genuine smile. Mistress Elba is in the background, bustling over with a blanket. The scene is full of human warmth amidst the industrial setting.
+    composition_notes: |
+      Two-shot focus on Finn and Vera. Finn's momentum captured in posture. Vera as the stable center. Warm background activity.
+    visual_hook: "Finn's joyous, youthful energy meeting Vera's weary but relieved smile."
+    depicts_characters:
+      - "finn"
+      - "vera-moonwhisper"
+      - "mistress-elba"
+    character_states:
+      finn: |
+        Rushing forward. Joyful expression. Hands reaching out.
+      vera-moonwhisper: |
+        Seated. Faint smile. Tired eyes.
+      mistress-elba: |
+        Bustling. Holding blanket. Protective expression.
+    location: "warehouse-complex"
+    lighting:
+      primary_source: "Overhead lanterns"
+      quality: "Warm, pools of light"
+      direction: "Top-down"
+      color_temperature: "Amber"
+      shadow_depth: "Soft"
+      atmospheric: "Close interior"
+    palette:
+      dominant:
+        - "warm amber"
+        - "wood brown"
+        - "green cloak"
+      accent:
+        - "joyful expressions"
+      avoid:
+        - "cold tones"
+    prompt_used: |
+      Young man with joyful expression rushing toward a pale woman sitting in a chair,
+      warehouse interior with lanterns,
+      adventurers reuniting with their friend,
+      atmosphere of shared relief and home,
+      classical oil painting, genre scene,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "reunion"
+      - "joy"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch22-the-citys-ledger-img-22-02-01"
+    source_moment: "ch22-the-citys-ledger-moment-03"
+    scene_id: "scn-22-02"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "The instant of impact. Devastating recognition. The composed commander shatters."
+    aspect_ratio: "2:3"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Veyra Thornwake frozen as papers scatter from her open hand. Dark eyes wide with shock. Burn scar stark against pale skin. Shaft of light from high window catches falling papers. Background Company members soft and turning.
+    composition_notes: |
+      Vertical. Veyra central axis. Papers scattering diagonal. Shaft of light catching papers. Lantern at hip warm glow.
+    visual_hook: "Papers frozen mid-scatter, Veyra's scarred hand still open where they slipped through"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Frozen. Shocked expression. Burn scar prominent. Pale beneath brown skin. Mouth open in gasp.
+    location: "warehouse-complex"
+    lighting:
+      primary_source: "clerestory light shaft"
+      quality: "hard, dramatic"
+      direction: "side"
+      color_temperature: "neutral/cool"
+      shadow_depth: "deep, rich"
+      atmospheric: "dust motes"
+    palette:
+      dominant:
+        - "muted ochre"
+        - "sienna"
+        - "slate gray"
+      accent:
+        - "paper white"
+        - "lantern gold"
+      avoid:
+        - "bright colors"
+    prompt_used: |
+      Scarred half-elf woman standing frozen in shock as papers fall from her hand,
+      wide dark eyes and pale complexion,
+      shaft of light from high window catching the scattered papers,
+      dark warehouse interior background,
+      devastating recognition on her face,
+      classical oil painting, Rembrandt lighting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, happy
+    tags:
+      - "anchor"
+      - "shock"
+      - "veyra"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch22-the-citys-ledger-img-22-02-02"
+    source_moment: "ch22-the-citys-ledger-moment-04"
+    scene_id: "scn-22-02"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "symbol"
+    scene_mood: "kinetic"
+    mood_rationale: "Flashback: volcanic sacrifice. Chaos of collapse vs transcendent calm. Traumatic clarity."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Lysander Valerius braces a cracking shield against a buckling stone ceiling. Molten glass barrier blazes amber-orange behind. Face streaked with blood and dust. Impossible smile of peace. Lips form "Live". Stone chunks falling.
+    composition_notes: |
+      Cinematic ultra-wide. Lysander left of center. Shield cracking upper-left. Backlit by molten glass.
+    visual_hook: "Lysander's impossible smile through streaked blood and dust, eyes meeting the viewer with peace"
+    depicts_characters:
+      - "lysander-valerius"
+    character_states:
+      lysander-valerius: |
+        Covered in blood/dust.Wild hair. Calm smile. Braced under cracking shield. Mouth forming "Live".
+    location: "undershade-canyon"
+    lighting:
+      primary_source: "Molten glass barrier"
+      quality: "harsh, volcanic"
+      direction: "back and below"
+      color_temperature: "hot amber-orange"
+      shadow_depth: "harsh contrast"
+      atmospheric: "smoke, sulfur haze"
+    palette:
+      dominant:
+        - "volcanic amber"
+        - "molten orange"
+        - "stone gray"
+      accent:
+        - "blood red"
+      avoid:
+        - "cool tones"
+    prompt_used: |
+      Man bracing a cracking shield against a collapsing stone ceiling in a volcanic tunnel,
+      blood-streaked face with impossibly calm smile,
+      molten glass glowing amber-orange behind him creating silhouette,
+      smoke and sulfur haze,
+      intense moment of sacrifice,
+      classical oil painting, Delacroix energy, Romantic dynamism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, panic, fear
+    tags:
+      - "hero"
+      - "flashback"
+      - "sacrifice"
+      - "kinetic"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch22-the-citys-ledger-img-22-02-03"
+    source_moment: "ch22-the-citys-ledger-moment-05"
+    scene_id: "scn-22-02"
+    image_type: "detail"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: "Physical tenderness. Protective instinct. Grandpa role crystallizes. Holding family together."
+    aspect_ratio: "4:5"
+    orientation: "portrait"
+    size: "1024x1280"
+    visual_description: |
+      Grimjaw's massive hands grip Veyra's shoulders, steadying her. Dwarf as immovable anchor. Iron-gray beard against her armor. Veyra pale and distant, eyes unfocused. Lantern at hip casts upward glow on both faces.
+    composition_notes: |
+      Tight framing. Grimjaw fills lower frame. Veyra upper portion. Upward illumination from lantern. Background soft shadow.
+    visual_hook: "Grimjaw's massive weathered hands steadying Veyra's shoulders, his iron-gray beard pressed against her armor"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "veyra-thornwake"
+    character_states:
+      grimjaw-ironbeard: |
+        Planted stance. Protective concern. Massive calloused hands. Braided beard.
+      veyra-thornwake: |
+        Pale face. Unfocused eyes. Supported by Grimjaw.
+    location: "warehouse-complex"
+    lighting:
+      primary_source: "Belt lantern"
+      quality: "soft, warm, intimate"
+      direction: "below"
+      color_temperature: "warm amber-gold"
+      shadow_depth: "soft gradients"
+      atmospheric: "still"
+    palette:
+      dominant:
+        - "warm amber"
+        - "honey brown"
+        - "iron gray"
+      accent:
+        - "copper pauldrons"
+      avoid:
+        - "cold colors"
+    prompt_used: |
+      Elderly dwarf catching a collapsing woman in a dark warehouse,
+      massive calloused hands on her shoulders,
+      his magnificent iron-gray beard against her leather armor,
+      warm lantern light from below illuminating both faces,
+      protective fatherly expression on dwarf,
+      woman in shock with distant eyes,
+      classical oil painting, Vermeer interior lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, combat
+    tags:
+      - "detail"
+      - "support"
+      - "grimjaw"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch22-the-citys-ledger-img-22-03-01"
+    source_moment: "ch22-the-citys-ledger-moment-06"
+    scene_id: "scn-22-03"
+    image_type: "mood"
+    category:
+      - "moment"
+      - "emotion"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: "The CHARACTER moment. Warm cluster of family against industrial emptiness. Shared wounds creating bonds."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Loose protective circle around Veyra. Veyra slumped in chair. Aldwin on floor beside her. Vera reaching to squeeze her hand. Grimjaw standing guard. Finn concerned. High windows cast long diagonal shadows. Warm lantern light pools at center.
+    composition_notes: |
+      Ultra-wide cinematic. Circle fills center third. Vast emptiness to sides. Long shadows cross floor. Campfire circle effect.
+    visual_hook: "The small, warm cluster of figures forming a protective ring against the enormous industrial emptiness"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "aldwin-gentleheart"
+      - "vera-moonwhisper"
+      - "grimjaw-ironbeard"
+      - "finn"
+      - "mistress-elba"
+    character_states:
+      veyra-thornwake: |
+        Seated, speaking. Lantern at hip.
+      aldwin-gentleheart: |
+        Cross-legged on floor. Moss-green cloak.
+      vera-moonwhisper: |
+        Reaching to hold hand. Compassionate eyes.
+      grimjaw-ironbeard: |
+        Standing guard. Immovable.
+      finn: |
+        Concerned expression.
+      mistress-elba: |
+        Bustling near. Stained apron.
+    location: "warehouse-complex"
+    lighting:
+      primary_source: "Lantern + window shadows"
+      quality: "soft, warm center vs cold edges"
+      direction: "center + above-left"
+      color_temperature: "warm amber vs cool gray"
+      shadow_depth: "deep industrial beyond"
+      atmospheric: "dust motes"
+    palette:
+      dominant:
+        - "warm amber"
+        - "industrial gray"
+        - "shadow"
+      accent:
+        - "forest green"
+      avoid:
+        - "bright saturated colors"
+    prompt_used: |
+      Wide cinematic shot of a group of adventurers gathered in a tight circle around a woman in a vast empty warehouse,
+      woman sitting in a chair center,
+      companions leaning in or sitting on floor,
+      long diagonal shadows from high windows crossing the floor,
+      warm golden lantern light at the center of the circle,
+      atmosphere of shared vulnerability and found family,
+      classical oil painting, interior realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, combat
+    tags:
+      - "mood"
+      - "circle"
+      - "family"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch22-the-citys-ledger-img-22-04-01"
+    source_moment: "ch22-the-citys-ledger-moment-08"
+    scene_id: "scn-22-04"
+    image_type: "symbol"
+    category:
+      - "character"
+      - "symbol"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Closing symbol shot. Private resolve. Choosing to rise. Drawing strength from memory."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Veyra's scarred hand rests on her battered lantern. Trembling stopped. Close on weathered brown fingers and teal tattoos. Inside, magical flame pulses warm gold. Suggestion of straightening spine. Commander returning.
+    composition_notes: |
+      Square format, icon-like. Extreme close up. Hand enters from upper-left. Lantern fills frame. Soft dark background.
+    visual_hook: "Her scarred hand resting on the battered metal lantern, resolve forming in the grip"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Only hand/wrist visible. Fingers steady. Teal tattoo. Gripping handle. Lantern flame pulsing.
+    location: "warehouse-complex"
+    lighting:
+      primary_source: "internal lantern flame"
+      quality: "soft, warm, pulsing"
+      direction: "outward from lantern"
+      color_temperature: "warm gold"
+      shadow_depth: "deep/soft edges"
+      atmospheric: "intimate"
+    palette:
+      dominant:
+        - "warm gold"
+        - "brown leather"
+        - "iron black"
+      accent:
+        - "teal tattoos"
+      avoid:
+        - "cool colors"
+    prompt_used: |
+      Extreme close-up of a scarred brown hand gripping the handle of a battered metal lantern,
+      magical golden flame inside pulsing,
+      teal tattoos on wrist,
+      resolve and strength in the posture of the hand,
+      dark shadowed background,
+      symbolic composition of found purpose,
+      classical oil painting, Rembrandt lighting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, trembling
+    tags:
+      - "symbol"
+      - "resolve"
+      - "lantern"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

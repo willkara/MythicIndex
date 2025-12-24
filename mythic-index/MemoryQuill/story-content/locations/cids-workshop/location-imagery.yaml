@@ -1,0 +1,476 @@
+metadata:
+  entity_type: location-imagery
+  slug: cids-workshop
+  name: Cidrella Vexweld's Workshop
+  location_type: artificer_workshop
+  narrative_soul: "Cidrella's workshop is a 'contained explosion of creativity'—a rock-gnome's mind \nexternalized into a vertical archaeology of vellum and bronze. It's a massive, \nnave-like stone hall where the smell of ozone and hot metal is as constant \nas the rhythmic clicking of half-finished miracles. Here, wild magic is \nchanneled through silver-solder alloy and charged quartz into devices that \nhum with good intentions.\n"
+  one_line_essence: A contained explosion of rock-gnome ingenuity and wild-magic engineering on an epic scale
+  generation_defaults:
+    provider: google
+    model: gemini-3-pro-image-preview
+    quality: high
+location_visual_anchor:
+  signature_elements:
+  - 'archeological walls: layers of vellum blueprints and architectural schematics pinned over every massive stone surface'
+  - 'arcane vines: thick, trunk-like bundles of copper wire and leather snaking along 30ft rafters like ivy'
+  - 'Unit 7: a massive multi-jointed arm of polished weirwood and etched bronze with glowing violet runic joints'
+  - 'the prosthetic: Cid''s own arm as a masterpiece of arcane conduits and silver-solder alloy'
+  - 'harmonic dampeners: small spinning bronze disks that create a constant, soothing hum'
+  - 'charged quartz filters: crystalline structures integrated into high ventilation ducts, glowing with static fields'
+  - 'lightning-lime fizz station: condensation-beaded ceramic carafes and mismatched clay mugs'
+  - 'rock-gnome scale: furniture and stools sized for gnomes, making the massive hall feel even larger'
+  materials:
+    wood: living weirwood, dark polished mahogany, and singed oak
+    metal: silver-solder alloy, rose copper, etched bronze, and cold iron
+    stone: damp granite walls of a massive warehouse nave
+    paper: heavy cream vellum, indigo-inked blueprints, and yellow-chalked stone surfaces
+  color_anchors:
+    conduit_glow: pulsing arcane violet and warm amber sparks
+    hair: escaping copper-red braids
+    magic: wild-magic sparks of multi-colored brilliance (channeled into violet)
+    fizz: effervescent citrus-lime green
+    metal: the warm gleam of polished bronze and the soft sheen of silver-solder
+  characteristic_light:
+    normal: golden magelight from floating crystals, rhythmic violet pulses from the rafters
+    active: intense flickering from channeled wild magic, arcs of energy leap between conduits
+    twilight: cool blue window light from high clerestories mixing with the sleepy amber of the 'fizz' station
+overview:
+  slug: cids-workshop-establishing
+  title: The Great Hall of Invention
+  image_type: establishing
+  category:
+  - Interior Architectural
+  - Industrial Fantasy
+  - Rock-Gnome Artificer
+  scene_mood: celebratory
+  mood_rationale: "The workshop is a site of creative JOY on an epic scale. It is a 'contained \nexplosion' within a massive stone hall. The scale emphasizes the power of \nthe intellect housed within—a small gnome commanding a vast kingdom of craft.\n"
+  visual_description: "A soaring, wide-angle establishing shot of Cid's workshop, housed in a \nmassive, nave-like stone warehouse. The ceiling rises over thirty feet to \nheavy queen-post timber trusses, where thick 'vines' of copper and leather \nconduits pulse with a constant arcane violet heartbeat. \n\nThe expansive floor is a labyrinth of industry: several large-scale work \nbenches are spaced across the wide timber planks, each surrounded by a \n'beautiful mess' of crates, copper coils, and discarded vellum. The walls \nare an immense archaeology of blueprints, reaching up toward the high, \nnarrow clerestory windows. \n\nCidrella Vexweld, her copper-red braids bright against the stone, is a \ndynamic spark of motion at the central weirwood workbench. Assistants move \nbetween the distant side-stations, their small forms emphasizing the \nhall's cathedral-like volume. The air is hazy with ozone and the golden \nglow of floating magelight crystals.\n"
+  composition_notes: "Extreme wide shot from a slightly elevated position near the entrance. \nUse the receding lines of the floorboards and the overhead trusses to \nemphasize the immense depth and height of the hall. The central bench \nshould feel like a significant island in a sea of creative activity. \nContrast the small gnomish scale of the furniture with the massive \narchitectural 'bones' of the building.\n"
+  depicts_characters:
+  - cidrella-vexweld
+  time_of_day: midday
+  weather: clear
+  season: any
+  required_elements:
+  - nave-like stone hall with 30ft+ ceilings
+  - heavy timber trusses laced with pulsing violet conduits
+  - expansive timber floor with multiple work islands
+  - high clerestory windows casting narrow light shafts
+  - 'Cidrella: rock-gnome, small in the vast space'
+  - archaeological layers of blueprints covering massive walls
+  - floating magelight crystals providing localized pools of gold
+  - no robots—large-scale mechanisms of bronze and wood
+  lighting:
+    primary_source: high clerestory windows and floating crystals
+    quality: dramatic light shafts in a voluminous space
+    atmospheric: volumetric ozone haze and metallic dust
+  palette:
+    dominant:
+    - stone grey (walls)
+    - arcane violet (conduits)
+    - warm timber amber
+    accent:
+    - copper-red (hair)
+    - citrus green (fizz)
+    - ink indigo
+    avoid:
+    - small-room feel, low ceilings, domestic scale
+  aspect_ratio: '21:9'
+  orientation: landscape
+  size: 1792x768
+  prompt_used:"Massive high-fantasy industrial workshop interior, a 'contained explosion' within a nave-like stone hall, 30-foot ceilings with heavy timber trusses, thick bundles of copper and leather arcane conduits snaking like ivy overhead pulsing violet, walls covered in immense archaeological layers of vellum blueprints, expansive floor with multiple work benches and creative clutter, small rock-gnome woman with copper-red braids at the center, high clerestory windows with dramatic light shafts, floating magelight crystals, ozone haze, epic scale, rich textures"
+  negative_prompt: small room, shed, low ceiling, domestic interior, robot, sci-fi, modern factory, 3D render, CGI.
+  generated_images: []
+parts:
+- name: Cid's Private Vantage
+  slug: cids-workshop-mezzanine-refuge
+  title: The Mezzanine Sanctuary
+  image_type: zone
+  zone_type: sanctuary
+  category:
+  - Interior Perspective
+  - Lived-in Space
+  - Character Refuge
+  scene_mood: peaceful
+  mood_rationale: This is her semi-private retreat within the chaos. It shows the softer, contemplative side of the inventor—a place to watch her world breathe.
+  visual_description: "A medium-wide shot of Cid's private mezzanine, a raised wooden platform \noverlooking the vast workshop hall. The space is scaled for a gnome: a \nsmall, overstuffed velvet armchair, a low table with a ceramic jug of \nchilled lime fizz, and stacks of non-technical books (poetry and \nhistory) alongside hand-carved wooden toys. \n\nA simple bed-roll is neatly tucked against the railing. Her heavy leather \napron is hung on a post, looking like a discarded skin. From here, the \nview captures the sweeping vista of the workshop below—the glowing \nconduits and the distant islands of work benches. A single floating \ncrystal magelight casts a warm, soft glow over the armchair, while the \nrest of the platform is in gentle shadow.\n"
+  composition_notes: "POV from the mezzanine level looking slightly down and across. The \narmchair and table are in the foreground, with the railing leading the \neye to the vast, voluminous hall in the background. The contrast between \nthe intimate, cozy sanctuary and the epic industrial scale of the \nworkshop below is key.\n"
+  depicts_characters:
+  - cidrella-vexweld
+  visual_hook: The small velvet chair overlooking a cathedral of gears.
+  location_within: raised mezzanine level
+  lighting:
+    primary_source: localized magelight crystal
+    quality: intimate, warm, soft
+  palette:
+    dominant:
+    - velvet burgundy
+    - warm timber amber
+    - shadow umber
+    accent:
+    - lime green (fizz)
+    - distant violet pulse
+  aspect_ratio: '16:9'
+  orientation: landscape
+  size: 1792x1024
+  prompt_used:"A medieval fantasy mezzanine level overlooking a massive industrial workshop, gnomish scale overstuffed armchair and a small table with a ceramic jug, stacks of books and small wooden toys, a view of a vast nave-like hall below with glowing violet conduits and work benches, intimate and peaceful sanctuary, warm localized magelight, rich velvet and wood textures, no modern technology, everything made of wood and bronze"
+  negative_prompt: robot, machine, sci-fi, modern furniture, bright lights, computer, 3D render.
+  generated_images: []
+- name: The Arcane Arteries
+  slug: cids-workshop-conduit-infrastructure
+  title: Overhead Infrastructure
+  image_type: zone
+  zone_type: heart
+  category:
+  - Architectural Detail
+  - Engineering
+  scene_mood: kinetic
+  mood_rationale: Shows the building itself as a living machine. The scale of the conduits feeding the workshop emphasizes the power required for Cid's miracles.
+  visual_description: "A low-angle shot looking straight up into the rafters of the workshop. \nThe massive queen-post trusses span the thirty-foot width of the hall, \ndripping with thick, trunk-like bundles of copper wire and embossed \nleather. \n\nThese arcane 'vines' are pulsing with a rhythmic violet light that \nilluminates the dark, cobwebbed stone of the upper walls. At the \nintersections, heavy bronze junction boxes—etched with cooling runes— \nspit occasional amber sparks. High above, a narrow clerestory window \nlets in a single, sharp blade of blue daylight that cuts through the \nviolet pulse.\n"
+  composition_notes: "Extreme low-angle perspective looking up. Use the symmetry of the \ntrusses to create a powerful, structured composition. The conduits \nshould feel heavy and overwhelming, like the roots of a giant tree.\n"
+  visual_hook: The rhythmic violet pulse moving through the copper 'vines' against the dark stone.
+  location_within: upper rafters
+  lighting:
+    primary_source: pulsing violet conduits
+    quality: rhythmic, low-key, dramatic
+  palette:
+    dominant:
+    - shadow black
+    - arcane violet
+    - tarnished copper
+    accent:
+    - amber sparks
+    - daylight blue (shaft)
+  aspect_ratio: '16:9'
+  orientation: landscape
+  size: 1792x1024
+  prompt_used:"Low-angle shot of massive medieval rafters in a stone hall, thirty-foot ceilings, heavy timber trusses laced with thick bundles of copper and leather arcane conduits, rhythmic violet pulsing light moving through the wires, heavy bronze runic junction boxes, dark stone boxes in background, a single sharp shaft of blue daylight from a high narrow window, high-fantasy engineering scale, no sci-fi, dramatic, rich textures of wood and metal"
+  negative_prompt: small room, modern wiring, sci-fi, hydraulics, plastic, 3D render.
+  generated_images: []
+- name: The Hospitality Protocol
+  slug: cids-workshop-unit-7-station
+  title: Unit 7 — The Living Mechanism
+  image_type: zone
+  zone_type: sanctuary
+  category:
+  - Character Detail
+  - Magic Construct
+  - High Fantasy Interior
+  scene_mood: intimate
+  mood_rationale: "Unit 7 is not a machine; it's a companion of wood and spirit. This scene \ncaptures the domestic warmth of the workshop, showing how Cid's genius \nserves her friends.\n"
+  visual_description: "A close-up of Unit 7's arm in the domestic corner. The construct is \na masterpiece of gnomish engineering: dark, polished mahogany segments \nbound together by etched bronze plates and reinforced leather straps. \nViolet runes glow at the joints, pulsing with the soft rhythm of a heartbeat. \n\nThe bronze-fingered hand is mid-pour, delicately tilting a ceramic carafe \nof lightning-lime fizz. The vibrant green liquid is effervescent, \nsending up tiny glowing bubbles. A tray of mismatched clay mugs, \nsome bearing hand-painted Company sigils, sits on a nearby stool. \nThe background features soft-focus vellum plans and the warm glow of \na floating crystal.\n"
+  composition_notes: "Tight shot on the arm and the carafe. Emphasize the tactile contrast \nbetween the rough leather, the cold bronze, and the warm polished wood. \nThe violet runic glow should provide the edge lighting.\n"
+  depicts_characters:
+  - cidrella-vexweld
+  location_within: domestic corner
+  required_elements:
+  - 'Unit 7: arm of mahogany, etched bronze, and leather'
+  - glowing violet runes at the joints
+  - ceramic carafe pouring glowing green fizz
+  - mismatched clay mugs on a stained tray
+  - no sci-fi/robot elements
+  lighting:
+    primary_source: nearby magelight crystal
+    quality: warm, localized, intimate
+    direction: side-lit to emphasize texture
+  palette:
+    dominant:
+    - polished mahogany
+    - etched bronze
+    - arcane violet (runes)
+    accent:
+    - lime green (fizz)
+    - terracotta (mugs)
+  aspect_ratio: '4:3'
+  orientation: landscape
+  size: 1024x768
+  prompt_used:"Close-up detail of a magical construct arm of etched bronze and mahogany wood, leather straps at the joints, glowing violet runes pulsing with life, no hydraulics or pistons, the hand pouring effervescent green liquid from a ceramic carafe into mismatched mugs, fantasy workshop background, warm magelight, intimate domestic atmosphere, rich textures"
+  negative_prompt: robot, android, hydraulics, sci-fi, chrome, computer, wires, 3D render.
+  generated_images: []
+- name: The Spark of Discovery
+  slug: cids-workshop-cid-testing
+  title: Channeling the Wild Magic
+  image_type: mood
+  category:
+  - Character Interaction
+  - Creative Energy
+  scene_mood: kinetic
+  mood_rationale: "Captures the 'force of nature' energy described in the chapters. The \nmoment wild magic is harnessed through silver-solder and quartz—it's \ndangerous, beautiful, and exciting.\n"
+  visual_description: "Cidrella and her apprentices are huddled around a central mechanism in the \nvast hall. Cid's prosthetic arm is the focal point, its silver-solder \njoints glowing white-hot as she channels a surge of wild magic—a chaotic \nswirl of multi-colored sparks—into a charged quartz crystal. \n\nCid's face is a mask of joyful concentration, her copper-red hair \nwhipping around her face from the magical wind. The assistants are \nleaning in, one shielding their eyes, another frantically recording the \nharmonic dampener's frequency on a piece of vellum. The workbench is \na disaster of copper coils, spilled ink, and broken magnifying lenses.\n"
+  composition_notes: "Dynamic, radial composition centered on the sparking quartz. Use the \nmulti-colored wild magic to create a vibrant light story that \nilluminates the expressive gnomish faces. The background is a blur \nof creative clutter and massive, blueprint-covered stone walls.\n"
+  depicts_characters:
+  - cidrella-vexweld
+  visual_hook: Wild magic sparks reflected in Cid's magnifying goggles.
+  location_within: central workbench
+  lighting:
+    primary_source: sparking wild magic
+    quality: intense, multi-colored, flickering
+  palette:
+    dominant:
+    - multi-colored magic sparks
+    - white-hot silver-solder
+    - copper-red hair
+    accent:
+    - ink black
+    - vellum gold
+  aspect_ratio: '16:9'
+  orientation: landscape
+  size: 1792x1024
+  prompt_used:"A group of medieval gnomish artificers huddling around a sparking crystal, the leader is a rock-gnome woman with wild copper-red hair and a glowing prosthetic arm, swirling multi-colored wild magic sparks being channeled into a quartz lens, intense joyful concentration, messy workbench with copper coils and ink stains, vertical archaeology of blueprints on stone walls, kinetic energy, no robots or modern tech, high contrast"
+  negative_prompt: robot, sci-fi, computer, clean lab, modern clothes, 3D render, CGI.
+  generated_images: []
+- name: The Breathing Building
+  slug: cids-workshop-purification-matrix
+  title: Cid's Arcane Filter
+  image_type: detail
+  category:
+  - Engineering Detail
+  - Artifact
+  scene_mood: focused
+  mood_rationale: Shows the intersection of architectural engineering and arcane magic. The 'subtle ozone scent' made visible through charged quartz and silver joints.
+  visual_description: "A close-up of a section of the workshop's ventilation system. The duct \nis made of hammered copper and lead, joined by thick, sloppy-but-strong \nsilver-solder welds. Integrated into the center is a crystalline \n'arcane purification matrix'—a cluster of charged quartz shards held \nin a bronze cage. \n\nThe quartz is humming with a faint static field, capturing motes of \ndust in a violet-blue web. Small bronze harmonic dampeners spin slowly \non the side of the duct. A vellum tag, covered in Cid's frantic \nscribbles, is tied to a joint with a leather thong. The lighting is \nthe cool violet of the static field mixed with the warm amber of a \nnearby magelight.\n"
+  composition_notes: "Extreme detail on the silver-solder joins and the glowing quartz. \nShallow depth of field. Use the static 'web' to create delicate \nlight patterns on the copper surfaces.\n"
+  visual_hook: The tiny dust motes trapped in the violet static field.
+  location_within: upper ventilation duct
+  lighting:
+    primary_source: charged quartz static field
+    quality: violet, humming, electrical
+  palette:
+    dominant:
+    - hammered copper
+    - violet-blue static
+    - silver-solder
+    accent:
+    - bronze patina
+    - vellum cream
+  aspect_ratio: '1:1'
+  orientation: square
+  size: 1024x1024
+  prompt_used:"Macro detail of a high-fantasy arcane filter, charged quartz shards in a bronze cage within a copper ventilation duct, glowing violet static field trapping dust motes, sloppy silver-solder joints on hammered copper, small spinning bronze harmonic dampeners, vellum notes tied with leather, no modern tech, high texture, metal and crystal"
+  negative_prompt: modern filter, computer parts, plastic, LED, robot, 3D render.
+  generated_images: []
+  depicts_characters:
+  - cidrella-vexweld
+- name: The Artificer's Rest
+  slug: cids-workshop-cid-rest
+  title: Barefoot in the Beautiful Mess
+  image_type: mood
+  category:
+  - Character Interaction
+  - Lived-in Space
+  scene_mood: peaceful
+  mood_rationale: Humanizes the genius. After the whirlwind of motion, the quiet stillness of a rock-gnome at home in her disaster.
+  visual_description: "Cidrella Vexweld is curled up in a massive, high-backed gnomish wooden chair \nin the corner of her mezzanine sanctuary. She is barefoot, her gnomish \ntoes resting on a pile of discarded parchment. Her copper-red braids are \nloose and messy. \n\nShe is holding a chipped clay mug of steaming fizz, staring \nthoughtfully over the railing at the vast workshop below—a silent \nforest of conduits and mechanisms in shadow. The only light is the \ndeep blue twilight from the high clerestory windows and the soft, \nfading amber glow of the fizz station. The air is quiet, the \n'rhythmic clicking' slowed to a drowsy crawl.\n"
+  composition_notes: "Cid in profile, tucked into her chair on the mezzanine. The background \nshould suggest the vastness of the hall through layers of silhouette \nand distant violet pulses. Low-key, moody lighting emphasizing the \ntransition from work to rest.\n"
+  depicts_characters:
+  - cidrella-vexweld
+  visual_hook: The contrast between the energetic artificer and this moment of barefoot stillness overlooking her domain.
+  location_within: mezzanine level
+  time_of_day: twilight
+  lighting:
+    primary_source: twilight and fading amber glow
+    quality: cool blue mixed with warm drowsy amber
+  palette:
+    dominant:
+    - twilight blue
+    - deep mahogany
+    - copper-red hair
+    accent:
+    - steam white
+    - amber ember
+  aspect_ratio: '16:9'
+  orientation: landscape
+  size: 1792x1024
+  prompt_used:"A rock-gnome woman with copper-red hair resting in a massive wooden armchair, barefoot on ink-stained floorboards at twilight, holding a steaming clay mug, on a raised wooden mezzanine overlooking a massive high-fantasy workshop in soft silhouette, forest of copper conduits and vellum plans below, soft blue twilight light from high windows, drowsy amber glow, peace, intimate and cozy, rich textures"
+  negative_prompt: robot, modern chair, sci-fi, bright light, 3D render, CGI.
+  generated_images: []
+- name: The Workshop Screams
+  slug: cids-workshop-sympathetic-resonance
+  title: Sympathetic Resonance — Creation Turns Violent
+  image_type: beat
+  source_chapter: Chapter 33
+  source_scene: Crisis peak - emotional spike triggers workshop response
+  what_happens: 'Cid''s emotional spike—learning her work has been weaponized—triggers
+
+    sympathetic resonance throughout the workshop. Tools vibrate off pegboards,
+
+    conduits flare with electrical arcs, Unit 7 snaps from hospitality to attack
+
+    configuration, prototypes react noisily. The space that is her soul made
+
+    physical now expresses her anguish as physical danger.
+
+    '
+  category:
+  - Narrative Beat
+  - Action/Crisis
+  - Environmental Drama
+  scene_mood: kinetic
+  mood_rationale: 'This is urgent, violent, dynamic—the workshop in crisis mode. Kinetic
+
+    mood captures the chaos, the motion, the danger. Everything moves, sparks,
+
+    threatens. The space itself is having a breakdown.
+
+    '
+  depicts_characters:
+  - cidrella-vexweld
+  visual_description: "The workshop in crisis. Cid at center frame, her anguish the source of\neverything that's happening. Radiating from her: tools vibrating off\npegboards—wrenches falling, implements rattling free. Arcane conduits\nflaring with electrical arcs, harsh violet light strobing through\nthe space. Unit 7 visible in its corner, already snapped from hospitality\nto attack configuration—joints angled for violence, protective protocols\nengaged.\n\nSmall prototypes rattle and spark. Blueprints flutter on their pins. \nEverything that was warm chaos is now dangerous chaos. The space that IS\nCid is expressing her violation through physical violence.\n"
+  composition_notes: 'Wide shot with Cid as focal point, chaos radiating outward. Dynamic
+
+    diagonal composition—nothing stable, nothing at rest. Multiple light
+
+    sources competing: harsh conduit flares, strobing electrical arcs, amber
+
+    task light overwhelmed. Motion blur on falling tools. Cid in sharp focus
+
+    at the center of the storm she''s causing.
+
+    '
+  aspect_ratio: '16:9'
+  orientation: landscape
+  size: 1536x1024
+  prompt_used:'Fantasy workshop in crisis, rock-gnome woman with copper-red hair at center of chaos
+    anguished expression, emotional breakdown triggering sympathetic resonance
+    tools vibrating and falling off pegboard walls
+    arcane conduits flaring with electrical arcs across ceiling beams
+    mechanical arm snapped into aggressive attack configuration
+    prototypes sparking and rattling throughout space
+    blueprints fluttering on pins
+    chaos radiating outward from central figure
+    harsh violet strobe lighting from electrical arcs
+    the space itself screaming with its maker
+    dramatic diagonal composition, high contrast, urgent brushwork
+    '
+  negative_prompt: robot, calm peaceful scene, stable composition, soft lighting, 3D render.
+  generated_images: []
+- name: The Wound
+  slug: cids-workshop-after-destruction
+  title: The Scar Where the Heart Was
+  image_type: temporal
+  base_zone: central-work-floor
+  temporal_state: post-destruction (after Chapter 33)
+  category:
+  - Temporal State
+  - Aftermath
+  - Environmental Narrative
+  scene_mood: somber
+  mood_rationale: 'The aftermath of violation. The chaos has passed, but the wound remains.
+
+    Somber mood captures the melancholy, the weight of what''s been lost, the
+
+    scar where the heart was.
+
+    '
+  visual_description: "The workshop in aftermath stillness. Where the heavy weirwood workbench stood,\nnow: shattered wood, scattered debris, an empty wound in the center of\nthe space. Projects lie displaced, damaged, scattered across the floor. \nWood splinters catch dim light.\n\nThe conduits have returned to their normal hum—the crisis passed, but\nthe damage remains. Tool pegboards show gaps where implements fell and\nweren't replaced. Blueprints hang askew. Unit 7 is back in standby, but\nthe attack configuration is recent memory in its posture.\n"
+  aspect_ratio: '16:9'
+  orientation: landscape
+  size: 1536x1024
+  prompt_used:'Fantasy artificer workshop aftermath, shattered heavy weirwood workbench debris
+    empty void at center where work surface stood
+    displaced clockwork projects scattered on worn wood floor
+    wood splinters catching dim peripheral light
+    blueprints hanging askew on walls
+    arcane conduits at low hum along ceiling beams
+    the stillness of aftermath, no active work
+    the weight of what was lost
+    muted earth palette, deep rich shadows
+    '
+  negative_prompt: robot, active chaos, motion, bright lighting, characters present, complete destruction.
+  generated_images: []
+  depicts_characters:
+  - cidrella-vexweld
+- name: The Archaeology of Invention
+  slug: cids-workshop-blueprint-walls
+  title: The archaeology of Invention
+  image_type: zone
+  zone_type: forge
+  category:
+  - Environmental Detail
+  - Texture Study
+  - Fantasy Interior
+  scene_mood: intimate
+  mood_rationale: "The blueprints are Cid's mind externalized. Intimate mood captures \nthe personal nature of this archive.\n"
+  visual_description: "Close study of the blueprint-layered walls. Plans pinned over plans,\nsome yellowed with age, some fresh and crisp. Chalk annotations in\nmargins—corrections, alternatives, excited notes in Cid's hand. \nThe layering tells a story: ideas in process, not finished work.\n"
+  aspect_ratio: '4:3'
+  orientation: landscape
+  size: 1024x768
+  prompt_used:'Fantasy workshop detail study, layered vellum blueprints pinned to wall
+    plans over plans in archaeological accumulation
+    chalk annotations visible in margins
+    varying age of papers from yellowed to fresh
+    the texture of ideas accumulating over time
+    blueprint pale lighting, cool and diffused
+    '
+  negative_prompt: robot, computer, modern paper, 3D render, CGI.
+  generated_images: []
+  depicts_characters:
+  - cidrella-vexweld
+- name: The Children
+  slug: cids-workshop-prototype-menagerie
+  title: Mechanical Creatures Waiting to Become
+  image_type: essence
+  category:
+  - Environmental Detail
+  - Character Objects
+  - Fantasy Still Life
+  scene_mood: intimate
+  mood_rationale: "These prototypes are Cid's children. Intimate mood captures the \ntender relationship between maker and creation.\n"
+  visual_description: "A cluttered perch of prototypes—the clockwork crab mid-assembly,\nlacking a leg, gears visible through open housing. The half-assembled\nclockwork bird on its stand, beak parted as if about to chirp. \nDust patterns reveal which have been touched recently. \n"
+  aspect_ratio: '3:2'
+  orientation: landscape
+  size: 1024x683
+  prompt_used:'Fantasy artificer prototypes still life, clockwork creatures on shelf
+    clockwork crab mid-assembly, half-assembled clockwork bird
+    visible brass gears and copper innards
+    dust patterns showing varying attention
+    the personality of unfinished creations
+    warm amber light giving impression of life in stillness
+    still life
+    '
+  negative_prompt: robot, electronics, threatening, cold clinical, 3D render.
+  generated_images: []
+  depicts_characters:
+  - cidrella-vexweld
+- name: Warriors in Wonderland
+  slug: cids-workshop-first-visit
+  title: The Company Enters a Maker's Soul
+  image_type: inhabited
+  category:
+  - Narrative Beat
+  - Group Scene
+  scene_mood: celebratory
+  mood_rationale: First impressions of creative chaos should have energy and wonder.
+  activity: Last Light Company members entering and reacting to Cid's workshop
+  depicts_characters:
+  - veyra-thornwake
+  - grimjaw-ironbeard
+  - cidrella-vexweld
+  visual_description: "The Last Light Company enters Cid's workshop—armored warriors navigating \na space made for creation, not combat. Veyra near the threshold,\nher lantern adding to the warm light. Grimjaw deeper in, hands hovering \nnear a mechanism with obvious respect. Unit 7 visible moving to serve— \nhospitality protocols activating for guests.\n"
+  aspect_ratio: '16:9'
+  orientation: landscape
+  size: 1536x1024
+  prompt_used:"Fantasy warriors entering massive artificer workshop, scarred female commander with lantern, stout dwarf craftsman examining mechanism with respect, gnome woman artificer welcoming them, workshop chaos surrounding: blueprints gears mechanisms, warm welcoming atmosphere, task lighting and lantern combining, warmth"
+  negative_prompt: robot, sci-fi, threatening atmosphere, weapons drawn, 3D render.
+  generated_images: []
+- name: The Mind of the Machine
+  slug: cids-workshop-engineering-detail
+  title: Design Before the Forge
+  image_type: detail
+  category:
+  - Engineering Detail
+  - Close-up
+  scene_mood: determined
+  mood_rationale: Shows the precision and planning that underlies the creative chaos.
+  visual_description: "Close-up of Cid's drafting table. Large sheets of parchment covered \nin intricate charcoal and ink diagrams. A heavy brass compass, \nslide rule, and fine-tipped pens arranged with precision. \nThe cool steady light on focused work.\n"
+  aspect_ratio: '4:3'
+  orientation: landscape
+  size: 1536x1152
+  prompt_used:"Close-up of a medieval drafting table, detailed engineering sketches on parchment, brass compass and drafting tools, ink stains, focused magelight, high-fantasy artificer background, rich textures"
+  negative_prompt: robot, computer, modern paper, 3D render, CGI.
+  generated_images: []
+  depicts_characters:
+  - cidrella-vexweld
+image_inventory: []
+reference_defaults:
+  overview: cids-workshop-establishing-01

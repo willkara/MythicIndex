@@ -1,0 +1,272 @@
+chapter_analysis:
+  slug: "ch23.5-front-page-news"
+  chapter_number: 23.5
+  chapter_title: "Front Page News"
+  visual_thesis: "Reputation ripples outward—from printing press to tavern to salon to shadows, the Company's success echoes through every layer of Waterdeep, earning respect and drawing dangerous attention."
+  dominant_mood_progression:
+    - "press enthusiasm"
+    - "tavern celebration"
+    - "noble calculation"
+    - "professional respect"
+    - "academic curiosity"
+    - "shadowed threat"
+  color_story:
+    opening: "Ink-wet broadsheet, printing room chaos, news spreading"
+    climax: "Brandy-lit salon, political calculation, power assessed"
+    closing: "Windowless chamber, hooded figures, shadows lengthening"
+
+scene_zone_recommendations:
+  - scene_id: scn-23-5-01
+    location: chronicle-printing-room
+    recommended_zones:
+      - zone: printing-room
+        label: "The Chronicle"
+        rationale: "News being set, ink still wet"
+        anchor_details:
+          - "Wet broadsheet"
+          - "Printing chaos"
+          - "Aldrich approving"
+    confidence: high
+
+  - scene_id: scn-23-5-02
+    location: merchants-rest-tavern
+    recommended_zones:
+      - zone: common-room
+        label: "Tavern Reaction"
+        rationale: "Working folk celebrating"
+        anchor_details:
+          - "Pipe smoke thick"
+          - "Tankards raised"
+          - "Stories shared"
+    confidence: high
+
+  - scene_id: scn-23-5-03
+    location: lady-argenthorne-salon
+    recommended_zones:
+      - zone: salon
+        label: "Noble Politics"
+        rationale: "Aristocracy calculating"
+        anchor_details:
+          - "Brandy swirling"
+          - "Knowing glances"
+          - "Power assessed"
+    confidence: high
+
+  - scene_id: scn-23-5-06
+    location: silent-hand-chamber
+    recommended_zones:
+      - zone: safehouse
+        label: "Shadows Notice"
+        rationale: "Enemies planning"
+        anchor_details:
+          - "Windowless chamber"
+          - "Three hooded figures"
+          - "Map circled"
+    confidence: high
+
+candidate_moments:
+  - moment_id: "ch23.5-front-page-news-moment-01"
+    scene_id: scn-23-5-01
+    title: "Ink Still Wet"
+    narrative_beat: "The ink was still wet when Master Aldrich Quillworth held up the broadsheet, his weathered fingers careful not to smudge the urgent typeset. 'Competence is a story worth telling.'"
+    subtext: "News becoming history; narrative being shaped."
+    scene_mood: celebratory
+    emotional_color: "ink-wet urgency, typeset-approval, story-power"
+    location: chronicle-printing-room
+    zone: printing-room
+    characters_present:
+      - tamsin
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 4
+      narrative_pivot: 3
+      character_revelation: 3
+      symbolic_density: 4
+      total: 17
+    suggested_shot:
+      image_type: anchor
+      framing: medium
+      angle: "Aldrich holding wet broadsheet, printing room behind"
+      key_visual_hook: "Master Aldrich Quillworth holding up the fresh broadsheet, ink still wet, headline visible, the controlled chaos of the printing room humming behind him"
+      lighting_suggestion: "Printing room lamplight, ink and paper"
+      composition_notes: "News in the making—reputation being built"
+    source_excerpts:
+      - "The ink was still wet when Master Aldrich Quillworth held up the broadsheet"
+      - "'Competence is a story worth telling'"
+    selection_rationale: "Opening image—news spreading."
+
+  - moment_id: "ch23.5-front-page-news-moment-02"
+    scene_id: scn-23-5-02
+    title: "To a Job Well Done"
+    narrative_beat: "'It ain't about gods and monsters. It's about knowing your trade. And their trade is bringing people home.' 'To a job well done!' called someone, raising a tankard. 'To a job well done!' the tavern roared back."
+    subtext: "Common folk claiming heroes; professionalism valued."
+    scene_mood: celebratory
+    emotional_color: "tankard-raised, tavern-roar, trade-respected"
+    location: merchants-rest-tavern
+    zone: common-room
+    characters_present: []
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 4
+      narrative_pivot: 2
+      character_revelation: 3
+      symbolic_density: 4
+      total: 18
+    suggested_shot:
+      image_type: beat
+      framing: wide
+      angle: "Tankards raised in smoky tavern"
+      key_visual_hook: "Packed tavern thick with pipe smoke, tankards raised in toast, working folk celebrating the rescue with 'To a job well done!' echoing off the walls"
+      lighting_suggestion: "Warm tavern light, smoke-hazed"
+      composition_notes: "Popular acclaim—the common folk's verdict"
+    source_excerpts:
+      - "'It's about knowing your trade. And their trade is bringing people home'"
+      - "'To a job well done!' the tavern roared back"
+    selection_rationale: "Public reaction—the people's voice."
+
+  - moment_id: "ch23.5-front-page-news-moment-03"
+    scene_id: scn-23-5-03
+    title: "A New Piece on the Board"
+    narrative_beat: "The group exchanged knowing glances. The Last Light Company wasn't a threat, not yet. But they were a new and influential piece on the great board of Waterdeep politics, and their every move would be watched."
+    subtext: "Power calculating power; political assessment."
+    scene_mood: ominous
+    emotional_color: "brandy-swirling, knowing-glances, piece-moved"
+    location: lady-argenthorne-salon
+    zone: salon
+    characters_present:
+      - lady-argenthorne
+      - lord-caelynn-ravenshollow
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 3
+      symbolic_density: 5
+      total: 19
+    suggested_shot:
+      image_type: beat
+      framing: medium
+      angle: "Nobles exchanging knowing glances over brandy"
+      key_visual_hook: "Aristocrats in Lady Argenthorne's salon, brandy glasses in hand, exchanging knowing glances as they assess the Company's new position on the political board"
+      lighting_suggestion: "Candlelit salon, wealth visible"
+      composition_notes: "Political calculation—power assessing power"
+    source_excerpts:
+      - "The group exchanged knowing glances"
+      - "they were a new and influential piece on the great board of Waterdeep politics"
+    selection_rationale: "Noble perspective—political calculation."
+
+  - moment_id: "ch23.5-front-page-news-moment-04"
+    scene_id: scn-23-5-04
+    title: "Scalpel to Our Sword"
+    narrative_beat: "'They are not a replacement for the Watch. They are a specialized tool that we must learn how and when to deploy. They are the scalpel to our sword. Today, we needed a surgeon, and we made the right call.'"
+    subtext: "Professional respect earned; expertise acknowledged."
+    scene_mood: intimate
+    emotional_color: "grudging-respect, scalpel-metaphor, right-call"
+    location: city-watch-headquarters
+    zone: briefing-room
+    characters_present:
+      - captain-grimsby
+      - commander-atlock
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 3
+      narrative_pivot: 4
+      character_revelation: 4
+      symbolic_density: 4
+      total: 19
+    suggested_shot:
+      image_type: beat
+      framing: medium
+      angle: "Grimsby before map, officers listening"
+      key_visual_hook: "Captain Grimsby standing before the collapse map, officers listening as he delivers his assessment—'They are the scalpel to our sword'—grudging professional respect visible"
+      lighting_suggestion: "Briefing room lamplight, official atmosphere"
+      composition_notes: "Professional verdict—respect earned"
+    source_excerpts:
+      - "'They are the scalpel to our sword'"
+      - "'Today, we needed a surgeon, and we made the right call'"
+    selection_rationale: "Watch perspective—professional acknowledgment."
+
+  - moment_id: "ch23.5-front-page-news-moment-05"
+    scene_id: scn-23-5-05
+    title: "Theory Meets Practice"
+    narrative_beat: "'The practical application of keystone theory in a chaotic debris field is what's so fascinating. It suggests a level of intuitive structural analysis that goes beyond our standard models.'"
+    subtext: "Academia seeking to learn; practice teaching theory."
+    scene_mood: intimate
+    emotional_color: "academic-fascination, theory-exceeded, case-study"
+    location: spire-of-learning
+    zone: faculty-room
+    characters_present:
+      - professor-aldara-stoneforge
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 3
+      narrative_pivot: 2
+      character_revelation: 3
+      symbolic_density: 3
+      total: 14
+    suggested_shot:
+      image_type: detail
+      framing: medium
+      angle: "Professors in discussion, notes being taken"
+      key_visual_hook: "Spire faculty leaning forward in discussion, Professor Stoneforge's hands gesturing as she describes the keystone technique, academic excitement visible"
+      lighting_suggestion: "Evening faculty room, scholarly warmth"
+      composition_notes: "Academic interest—theory learning from practice"
+    source_excerpts:
+      - "'The practical application of keystone theory in a chaotic debris field is what's so fascinating'"
+    selection_rationale: "Academic perspective—scholarly interest."
+
+  - moment_id: "ch23.5-front-page-news-moment-06"
+    scene_id: scn-23-5-06
+    title: "Shadows Take Notice"
+    narrative_beat: "The candle flickered, casting their shadows long across the walls. The Last Light Company had earned the city's respect today. But in doing so, they had also earned the focused, analytical attention of its most dangerous enemies."
+    subtext: "Success attracts danger; enemies planning."
+    scene_mood: ominous
+    emotional_color: "candle-flicker, shadows-long, focused-attention"
+    location: silent-hand-chamber
+    zone: safehouse
+    characters_present:
+      - silent-hand-operative
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 5
+      character_revelation: 3
+      symbolic_density: 5
+      total: 22
+    suggested_shot:
+      image_type: mood
+      framing: wide
+      angle: "Three hooded figures, shadows stretching"
+      key_visual_hook: "Windowless chamber, three hooded figures around scarred table, candle flickering, their shadows cast long across bare walls as they plan against the Company"
+      lighting_suggestion: "Single candle, deep shadows, threat atmosphere"
+      composition_notes: "The cost of success—dangerous eyes turn toward them"
+    source_excerpts:
+      - "The candle flickered, casting their shadows long across the walls"
+      - "they had also earned the focused, analytical attention of its most dangerous enemies"
+    selection_rationale: "Ominous closing—danger awakened."
+
+proposed_selection:
+  target_moments: 5
+  rules_used:
+    - "Short interlude—fewer but representative moments"
+    - "Cover all major perspectives: press, public, nobles, Watch, enemies"
+    - "Build from celebration to threat"
+  selected_moments:
+    - moment_id: "ch23.5-front-page-news-moment-06"
+      rank: 1
+      reason: "Highest score (22), shadows take notice, ominous closing"
+    - moment_id: "ch23.5-front-page-news-moment-03"
+      rank: 2
+      reason: "Good score (19), noble calculation, political board"
+    - moment_id: "ch23.5-front-page-news-moment-04"
+      rank: 3
+      reason: "Good score (19), 'scalpel to our sword', Watch respect"
+    - moment_id: "ch23.5-front-page-news-moment-02"
+      rank: 4
+      reason: "Good score (18), tavern toast, public acclaim"
+    - moment_id: "ch23.5-front-page-news-moment-01"
+      rank: 5
+      reason: "Good score (17), ink-wet broadsheet, news spreading"
+  rejected_notes:
+    - moment_id: "ch23.5-front-page-news-moment-05"
+      reason: "Academic perspective interesting but less visually distinctive"

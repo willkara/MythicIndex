@@ -1,0 +1,802 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: The Return and the Reckoning
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch32-the-return-and-the-reckoning"
+  chapter_number: 32
+  chapter_title: "The Return and the Reckoning"
+  visual_thesis: "From the exhausted relief of emergence to the cold clarity of confrontation, culminating in the weight of official mandate."
+  color_palette:
+    primary:
+      - "#8B7355"
+      - "#4A5568"
+      - "#D4A574"
+      - "#2D3748"
+    accent:
+      - "#5B8A72"
+      - "#C9A227"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 3
+    pastoral: 2
+    celebratory: 0
+    aquatic: 1
+    ethereal: 0
+    intimate: 2
+    kinetic: 0
+    ominous: 0
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: "Leading emergence at dawn. Accusing Marcus in private. Presenting intelligence in office. Resolve returning."
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: "Riding at Veyra's side. Steady support. Validating intelligence in office."
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "lyra-kestrel"
+    name: "Lyra Kestrel"
+    scene_variations: "Expression softened by warmth during Elba's meal. rare smile. Handing over intelligence roll."
+    reference_images:
+      - "lyra-kestrel-portrait-01"
+
+  - ref: "rill-vossari"
+    name: "Rill Vossari"
+    scene_variations: "Notably pale. Seeking communion at stream. Bioluminescence flowing toward water."
+    reference_images:
+      - "rill-vossari-casting-portrait-01"
+
+  - ref: "marcus-heartbridge"
+    name: "Marcus Heartbridge"
+    scene_variations: "Composure cracking during private confrontation. Hand through hair. Restored to professional mask in office."
+    reference_images:
+      - "marcus-heartbridge-portrait-study-01"
+
+  - ref: "lady-moira-blackwater"
+    name: "Lady Moira Blackwater"
+    scene_variations: "Severe in harsh window light. Assessing evidence with clinical detachment. Silhouette against city dusk."
+    reference_images:
+      - "lady-moira-blackwater-war-room-portrait-01"
+
+  - ref: "mistress-elba"
+    name: "Mistress Elba"
+    scene_variations: "Knowing smirk. Bustling Whirlwind. Providing personalized comfort."
+    reference_images:
+      - "mistress-elba-kitchen-portrait-01"
+
+locations:
+  - ref: "thornwood-edge-at-dawn"
+    zones:
+      - id: "overview"
+        chapter_context: "Ragged treeline, pale watery sky. Hilltop inn catching first light. Rising mist."
+  - ref: "windborne-roost-stream"
+    zones:
+      - id: "overview"
+        chapter_context: "Clear mountain stream, smooth river stones. Crystalline water reflecting silver sky."
+  - ref: "warehouse-complex"
+    zones:
+      - id: "mess-hall"
+        chapter_context: "Heavy timber beams, stone hearth. Warm amber light. Sanctuary earned through family."
+      - id: "private-corner"
+        chapter_context: "Shadowed alcove. Single oil lamp, island of light. Contested ground of conflict."
+  - ref: "city-watch-headquarters"
+    zones:
+      - id: "blackwater-office"
+        chapter_context: "High-ceilinged corner office. Shafts of morning light. Scrutiny and judgment."
+
+moments:
+  - id: "ch32-the-return-and-the-reckoning-moment-01"
+    scene_id: "scn-32-01"
+    title: "Threshold of Hope"
+    narrative_beat: "The team emerging from the dark Thornwood into the pale sunrise, the forest 'exhaling' relief."
+    visual_weight: "hero"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "lyra-kestrel"
+      - "rill-vossari"
+    location_zone: "thornwood-edge-at-dawn/overview"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch32-the-return-and-the-reckoning-moment-02"
+    scene_id: "scn-32-01"
+    title: "Elemental Restoration"
+    narrative_beat: "Rill kneeling at the mountain stream, bioluminescence flowing toward the pure water."
+    visual_weight: "high"
+    characters_present:
+      - "rill-vossari"
+    location_zone: "windborne-roost-stream/overview"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch32-the-return-and-the-reckoning-moment-03"
+    scene_id: "scn-32-01b"
+    title: "The Spy's Smile"
+    narrative_beat: "Lyra's rare unguarded smile as Mistress Elba provides the precisely right comfort."
+    visual_weight: "high"
+    characters_present:
+      - "lyra-kestrel"
+      - "mistress-elba"
+    location_zone: "warehouse-complex/mess-hall"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch32-the-return-and-the-reckoning-moment-04"
+    scene_id: "scn-32-01b"
+    title: "Found Family Feast"
+    narrative_beat: "Establishing the warm mess hall scene, the team sharing a meal after the harrowing mission."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "grimjaw-ironbeard"
+      - "marcus-heartbridge"
+    location_zone: "warehouse-complex/mess-hall"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch32-the-return-and-the-reckoning-moment-05"
+    scene_id: "scn-32-02"
+    title: "The Accusation"
+    narrative_beat: "Veyra confronting Marcus in the shadowed alcove, trust breaking against his calculated pragmatism."
+    visual_weight: "hero"
+    characters_present:
+      - "veyra-thornwake"
+      - "marcus-heartbridge"
+    location_zone: "warehouse-complex/private-corner"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch32-the-return-and-the-reckoning-moment-06"
+    scene_id: "scn-32-03"
+    title: "Judgment by Sunlight"
+    narrative_beat: "Veyra presenting the evidence in Blackwater's sun-drenched office, light acting as a scrutinizer."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "lady-moira-blackwater"
+      - "marcus-heartbridge"
+    location_zone: "city-watch-headquarters/blackwater-office"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch32-the-return-and-the-reckoning-moment-07"
+    scene_id: "scn-32-03"
+    title: "The Spymaster's View"
+    narrative_beat: "Lady Blackwater silhouetted against the city dusk, the constellation of responsibility below."
+    visual_weight: "medium"
+    characters_present:
+      - "lady-moira-blackwater"
+    location_zone: "city-watch-headquarters/blackwater-office"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch32-the-return-and-the-reckoning-moment-08"
+    scene_id: "scn-32-04"
+    title: "Forging the Breach"
+    narrative_beat: "Grimjaw at his forge, crafting specialized tools for the rescue, the heartbeat of the mission."
+    visual_weight: "medium"
+    characters_present:
+      - "grimjaw-ironbeard"
+    location_zone: "warehouse-complex/interior"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch32-the-return-and-the-reckoning-moment-09"
+    scene_id: "scn-32-04"
+    title: "Briefing the Assault"
+    narrative_beat: "The Company gathered around the Briefing Circle, final plans being set for the Silent Hand shattering."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "lyra-kestrel"
+      - "rill-vossari"
+    location_zone: "warehouse-complex/interior"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch32-the-return-and-the-reckoning-img-32-01-01"
+    source_moment: "ch32-the-return-and-the-reckoning-moment-01"
+    scene_id: "scn-32-01"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "location"
+      - "emotion"
+    scene_mood: "pastoral"
+    mood_rationale: "Relief and transition. Forest 'exhaling' at the threshold of hope. Soft sunrise light."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      The team emerges from the dark Thornwood treeline at a pale, watery dawn. They are silhouetted against the light, exhausted but unbroken. Behind them, a dark wall of twisted trees. Ahead, the first rays of sun touch the distant hilltop Roost. Mist rises from the ground like an exhale.
+    composition_notes: |
+      Ultra-wide cinematic. Team center-left third. Emergence from dark to light. Roost on distant hilltop. Low angle heroic silhouettes.
+    visual_hook: "The contrast between the dark wall of forest behind and the pale golden sunrise ahead"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "lyra-kestrel"
+      - "rill-vossari"
+    character_states:
+      veyra-thornwake: |
+        Leading on horseback. Lantern glowing warm gold. Mohawk silhouette.
+      thorne-brightward: |
+        Riding alongside. Broad-shouldered. Blue cloak catching light.
+      lyra-kestrel: |
+        Horns distinctive against sky. Composed.
+      rill-vossari: |
+        Pale skin. Muted glow. Holding trident.
+    location: "thornwood-edge-at-dawn"
+    lighting:
+      primary_source: "pale sunrise"
+      quality: "soft, diffused"
+      direction: "backlit"
+      color_temperature: "warm gold vs pre-dawn blue"
+      shadow_depth: "gentle"
+      atmospheric: "rising mist"
+    palette:
+      dominant:
+        - "forest shadow"
+        - "sunrise gold"
+        - "blue-gray sky"
+      accent:
+        - "lantern amber"
+      avoid:
+        - "harsh midday colors"
+    prompt_used: |
+      Group of mounted adventurers emerging from a dark forest into a pale golden dawn,
+      silhouettes against the rising sun,
+      mist rising from muddy ground,
+      distant hilltop building catching first light,
+      atmosphere of relief and hard-won survival,
+      wide cinematic composition,
+      classical oil painting, Hudson River School style,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin
+    tags:
+      - "hero"
+      - "dawn"
+      - "pastoral"
+      - "emergence"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch32-the-return-and-the-reckoning-img-32-01-02"
+    source_moment: "ch32-the-return-and-the-reckoning-moment-02"
+    scene_id: "scn-32-01"
+    image_type: "symbol"
+    category:
+      - "character"
+      - "symbol"
+      - "emotion"
+    scene_mood: "aquatic"
+    mood_rationale: "Water as healer and kin. Genasi seeking communion. Silver-teal palette, reflected light."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Rill Vossari kneels at the edge of a clear mountain stream. Hands hover above water. Pale, exhausted skin. Bioluminescent patterns glow and flow toward her fingertips like a magnetic pull. Stream ripples toward her. Trident lies on the bank. Silver and gold morning reflections.
+    composition_notes: |
+      Vertical portrait. Rill lower two-thirds. Hands focal point. Trident foreground left. Depth from stream perspective.
+    visual_hook: "The bioluminescent patterns on her skin flowing toward her fingertips like light being pulled by water's gravity"
+    depicts_characters:
+      - "rill-vossari"
+    character_states:
+      rill-vossari: |
+        Kneeling. Face turned down. Solemn seeking. Paler than usual. active bioluminescence. Dreadlocks hanging forward.
+    location: "windborne-roost-stream"
+    lighting:
+      primary_source: "morning sky + water reflection"
+      quality: "silvery, wet"
+      direction: "above + below"
+      color_temperature: "silver-blue vs pale morning gold"
+      shadow_depth: "soft, luminous"
+      atmospheric: "clean morning air"
+    palette:
+      dominant:
+        - "aquamarine"
+        - "clear silver"
+        - "teal depths"
+      accent:
+        - "blue-white bioluminescence"
+      avoid:
+        - "warm earth tones"
+    prompt_used: |
+      Water genasi woman with glowing aquamarine skin kneeling at a clear stream,
+      hands hovering above water,
+      bioluminescent patterns flowing toward her fingers,
+      morning sunlight reflecting off the ripples,
+      trident lying on the bank,
+      atmosphere of elemental healing,
+      classical oil painting, maritime realism, Turner influence,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, murky water
+    tags:
+      - "symbol"
+      - "aquatic"
+      - "healing"
+      - "rill-vossari"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch32-the-return-and-the-reckoning-img-32-01b-01"
+    source_moment: "ch32-the-return-and-the-reckoning-moment-03"
+    scene_id: "scn-32-01b"
+    image_type: "character"
+    category:
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: "Tender emotional breakthrough. A spy's armor cracking through kindness. Warm amber tones of hearth and whiskey."
+    aspect_ratio: "4:5"
+    orientation: "portrait"
+    size: "1024x1280"
+    visual_description: |
+      Lyra Kestrel sits at the mess hall table. Genuine, unforced smile. Amber-gold eyes catch hearth-light, matching the whiskey in her glass. Elba visible in soft background moving away with a smirk. Purple wisps at throat are calm. Warm, private moment.
+    composition_notes: |
+      Close portrait. Lyra center. Whiskey glass shared focus. Elba background right anchor. Shallow depth. Single warm light source.
+    visual_hook: "The genuine softening in her amber eyes—the same color as the whiskey she holds"
+    depicts_characters:
+      - "lyra-kestrel"
+      - "mistress-elba"
+    character_states:
+      lyra-kestrel: |
+        Seated. Jacket unbuttoned. Rare warm smile. Amber eyes glowing. Calm purple wisps.
+      mistress-elba: |
+        Background. Moving away. Satisfied smirk.
+    location: "warehouse-complex"
+    lighting:
+      primary_source: "hearth fire + candles"
+      quality: "soft, warm"
+      direction: "side"
+      color_temperature: "warm amber"
+      shadow_depth: "soft gradients"
+      atmospheric: "still air"
+    palette:
+      dominant:
+        - "amber gold"
+        - "deep plum"
+        - "wood brown"
+      accent:
+        - "burgundy leather"
+      avoid:
+        - "cold blues"
+    prompt_used: |
+      Close portrait of a tiefling woman with plum skin sitting at a wooden table,
+      rare warm genuine smile,
+      holding a glass of amber whiskey,
+      glowing golden eyes,
+      warm hearth light casting soft shadows,
+      dwarf woman smirking in background,
+      classical oil painting, Vermeer lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, calculating expression
+    tags:
+      - "character"
+      - "intimate"
+      - "lyra"
+      - "warmth"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch32-the-return-and-the-reckoning-img-32-01b-02"
+    source_moment: "ch24-debts-and-truths-moment-04"
+    scene_id: "scn-32-01b"
+    image_type: "establishing"
+    category:
+      - "location"
+      - "moment"
+    scene_mood: "intimate"
+    mood_rationale: "Found family feast. Warm refuge heart. Industrial bones made domestic by life and food."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Interior of the warehouse mess hall. Heavy beams, stone hearth with blazing fire. Long tables with steaming platters of food. Company members gathered, eating and talking in low voices. Warm amber light across the space. The atmosphere is one of sanctuary and shared bonds.
+    composition_notes: |
+      Wide shot. Deep perspective through tables. Hearth as focal point of warmth. Balanced human activity.
+    visual_hook: "The long wooden table laden with steam-rising food, bringing the warriors back to humanity."
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "grimjaw-ironbeard"
+      - "marcus-heartbridge"
+    character_states:
+      veyra-thornwake: |
+        Seated. Sipping tea. Sigh of contentment.
+      thorne-brightward: |
+        Appreciative nod to Elba. Savory pie.
+      grimjaw-ironbeard: |
+        Laughing. Tankard of ale. Boar meat.
+      marcus-heartbridge: |
+        Raising an eyebrow in amused surprise.
+    location: "warehouse-complex"
+    lighting:
+      primary_source: "Hearth + Oil lamps"
+      quality: "Warm, flickering, convivial"
+      direction: "Multiple"
+      color_temperature: "Warm amber"
+      shadow_depth: "Soft, warm"
+      atmospheric: "Cooking aromas made visual"
+    palette:
+      dominant:
+        - "warm amber"
+        - "wood brown"
+        - "hearth orange"
+      accent:
+        - "Company blue banner"
+      avoid:
+        - "cold industrial tones"
+    prompt_used: |
+      Wide shot of a group of adventurers sharing a large meal in a stone hall,
+      long wooden tables with steaming food,
+      blazing hearth fire casting warm light,
+      atmosphere of sanctuary and family,
+      classical oil painting, Dutch genre warmth,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, cold lighting
+    tags:
+      - "establishing"
+      - "family"
+      - "mess-hall"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch32-the-return-and-the-reckoning-img-32-02-01"
+    source_moment: "ch32-the-return-and-the-reckoning-moment-05"
+    scene_id: "scn-32-02"
+    image_type: "pivot"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Emotional pivot. Betrayal and accusation. Single lamp dividing shadows. trust breaking."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Veyra and Marcus face each other in a shadowed warehouse alcove. Single oil lamp on table splits the space. Veyra rigid, burn-scarred face catching light, eyes burning with protective fury. Marcus composure cracking, hand through hair. Intelligence documents between them as evidence.
+    composition_notes: |
+      Medium shot center. Figures opposite thirds. Lamp/documents center. Veyra left catching light. Marcus right partially in shadow. Dutch angle creates unease.
+    visual_hook: "Veyra's mottled burn scar catching the harsh lamplight while Marcus's practiced calm visibly cracks"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "marcus-heartbridge"
+    character_states:
+      veyra-thornwake: |
+        Rigid fury. Jaw tight. Hand near lantern. Accusing.
+      marcus-heartbridge: |
+        Frustrated posture. Hand through hair. Mask slipped. Defending choices.
+    location: "warehouse-complex"
+    lighting:
+      primary_source: "oil lamp"
+      quality: "hard, dividing"
+      direction: "below/center"
+      color_temperature: "warm amber vs cold shadow"
+      shadow_depth: "deep, rich"
+      atmospheric: "oppressive"
+    palette:
+      dominant:
+        - "amber"
+        - "shadow black"
+        - "brown"
+      accent:
+        - "red-brown scar"
+      avoid:
+        - "soft lighting"
+    prompt_used: |
+      Two people in a tense confrontation in a dark room,
+      single oil lamp on a table between them casting dramatic shadows,
+      scarred woman looking furious and accusing,
+      man with goatee looking frustrated and running a hand through his hair,
+      scattered documents on the table,
+      classical oil painting, Rembrandt lighting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, friendly expressions
+    tags:
+      - "pivot"
+      - "confrontation"
+      - "trust"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch32-the-return-and-the-reckoning-img-32-03-01"
+    source_moment: "ch32-the-return-and-the-reckoning-moment-06"
+    scene_id: "scn-32-03"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "location"
+      - "action"
+    scene_mood: "somber"
+    mood_rationale: "Judgment by sunlight. Evidence of evil illuminated. Official scrutiny. institutional gravity."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Morning sun through tall windows of Blackwater's office. defined shafts of light across mahogany desk with evidence. Veyra stands presenting intelligence, scarred face illuminated. Thorne, Grimjaw, Marcus flanking. Blackwater listens in silence, severe. Evidence catching light as judgment.
+    composition_notes: |
+      Wide shot, elevated angle. Blackwater frame left. Company frame right. Evidence focal point center. Defined light shafts. High angle emphasizes institutional weight.
+    visual_hook: "Sunlight catching the wax seals on intelligence documents as evidence is illuminated under scrutiny"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "marcus-heartbridge"
+      - "lady-moira-blackwater"
+      - "grimjaw-ironbeard"
+    character_states:
+      veyra-thornwake: |
+        Standing at attention. Presenting evidence. Clear, authoritative.
+      thorne-brightward: |
+        Supportive. Grave expression.
+      marcus-heartbridge: |
+        Restored mask. assessing response.
+      lady-moira-blackwater: |
+        Clinically detached. Sharp gray-green eyes.
+      grimjaw-ironbeard: |
+        Gruff determination. Braided beard.
+    location: "city-watch-headquarters"
+    lighting:
+      primary_source: "morning windows"
+      quality: "hard, clear, scrutinizing"
+      direction: "side shafts"
+      color_temperature: "cool white vs warm wood"
+      shadow_depth: "deep where light misses"
+      atmospheric: "clear air"
+    palette:
+      dominant:
+        - "mahogany brown"
+        - "white-gold light"
+        - "parchment cream"
+      accent:
+        - "red wax seals"
+      avoid:
+        - "cheerful tones"
+    prompt_used: |
+      Formal meeting in a grand office with shafts of morning light,
+      group of adventurers presenting documents to a severe official,
+      polished wood desk and high windows,
+      atmosphere of institutional judgment and grave decisions,
+      classical oil painting, Rembrandt lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smiling
+    tags:
+      - "anchor"
+      - "briefing"
+      - "authorization"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch32-the-return-and-the-reckoning-img-32-03-02"
+    source_moment: "ch32-the-return-and-the-reckoning-moment-07"
+    scene_id: "scn-32-03"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "location"
+    scene_mood: "somber"
+    mood_rationale: "The 'Character's Calculation.' Panoramic power. Spymaster viewing her domain. Contrast between cold dusk and warm lamp-lit calculation."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Blackwater as sharp silhouette against massive corner windows at dusk. Looking over glittering tapestry of Waterdeep. Still posture, hands behind back. Mahogany desk foreground, lamp illuminates ledger and red wax seals. City lights as constellation of responsibility.
+    composition_notes: |
+      Medium-wide. Blackwater right third silhouette. Desk foreground left. City view right/background scale. Island of light on desk secondary focal point.
+    visual_hook: "Lady Blackwater as a dark silhouette against a panoramic city dusk, with a single lamp illuminating the 'ledger'"
+    depicts_characters:
+      - "lady-moira-blackwater"
+    character_states:
+      lady-moira-blackwater: |
+        Silhouette only. Clinical detachment. Rigid command.
+    location: "city-watch-headquarters"
+    lighting:
+      primary_source: "task lamp + dusk sky"
+      quality: "high-contrast, moody"
+      direction: "backlight + pool"
+      color_temperature: "blue-purple vs amber"
+      shadow_depth: "deep shadow interior"
+      atmospheric: "clear night beyond"
+    palette:
+      dominant:
+        - "twilight blue"
+        - "mahogany brown"
+        - "amber lamp"
+      accent:
+        - "red wax seal"
+      avoid:
+        - "morning brightness"
+    prompt_used: |
+      Woman silhouetted against a large window looking over a city at dusk,
+      dark office interior with a single lamp on a desk,
+      desk has a ledger and red wax seals,
+      city lights like stars below,
+      atmosphere of absolute command and calculation,
+      classical oil painting, Vermeer lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, sunny
+    tags:
+      - "beat"
+      - "blackwater"
+      - "command"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch32-the-return-and-the-reckoning-img-32-01-03"
+    source_moment: "ch32-the-return-and-the-reckoning-moment-01"
+    scene_id: "scn-32-01"
+    image_type: "beat"
+    category:
+      - "location"
+      - "temporal"
+      - "atmospheric"
+    scene_mood: "pastoral"
+    mood_rationale: "The 'Character's Relief.' Forest 'exhale.' Transition from hostile territory to sanctuary."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Wide shot from forest edge at dawn. Ragged treeline silhouetted against pale watery sky of gold and indigo. Mud and leaf litter steaming, thick mist rising. Windborne Roost on distant hilltop catching first light. Single green shoot in mud.
+    composition_notes: |
+      Ultra-wide. Dark treeline left/upper. Horizon of hope right. Roost secondary focal point distant. Mist volume. No human figures.
+    visual_hook: "A dark, ragged treeline silhouetted against a pale watery dawn, with thick mist rising like an exhale"
+    depicts_characters: []
+    character_states: {}
+    location: "thornwood-edge-at-dawn"
+    lighting:
+      primary_source: "golden sunrise"
+      quality: "soft, diffused"
+      direction: "backlit from horizon"
+      color_temperature: "warm amber vs cool indigo"
+      shadow_depth: "moderate"
+      atmospheric: "thick rising mist"
+    palette:
+      dominant:
+        - "sunrise gold"
+        - "indigo sky"
+        - "charcoal trees"
+      accent:
+        - "mist silver"
+      avoid:
+        - "harsh midday"
+    prompt_used: |
+      Wide cinematic shot of a forest edge at sunrise,
+      mist rising from the ground,
+      dark treeline against a pale gold and purple sky,
+      distant hilltop building catching first rays,
+      atmosphere of profound relief and new day,
+      classical oil painting, Hudson River School style,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, scary forest
+    tags:
+      - "beat"
+      - "dawn"
+      - "relief"
+      - "pastoral"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch32-the-return-and-the-reckoning-img-32-04-01"
+    source_moment: "ch32-the-return-and-the-reckoning-moment-08"
+    scene_id: "scn-32-04"
+    image_type: "beat"
+    category:
+      - "character"
+      - "action"
+      - "moment"
+    scene_mood: "intimate"
+    mood_rationale: "Engineering the rescue. Heartbeat of the mission. Grimjaw's expertise translated to tools."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Grimjaw at his forge, crafting specialized tools. Massive hands using a smaller hammer for precision work. Red-hot metal on the anvil. His face is lit by the fire's glow, soot-streaked but calm. Specialized chains and anchor plates nearby. The heartbeat of preparation.
+    composition_notes: |
+      Tight square framing. Focus on the anvil and hands. Warm radial firelight. Depth through workshop tools in background.
+    visual_hook: "The sparks flying from the anvil, caught in the warm amber glow of the forge, as rescue tools take shape."
+    depicts_characters:
+      - "grimjaw-ironbeard"
+    character_states:
+      grimjaw-ironbeard: |
+        Focused. Working. Soot-streaked.
+    location: "warehouse-complex"
+    lighting:
+      primary_source: "Forge fire"
+      quality: "Warm, flickering"
+      direction: "Side/Below"
+      color_temperature: "Orange/Gold"
+      shadow_depth: "Soft"
+      atmospheric: "Hazy forge smoke"
+    palette:
+      dominant:
+        - "forge amber"
+        - "iron gray"
+        - "shadow"
+      accent:
+        - "red-hot metal"
+      avoid:
+        - "cold light"
+    prompt_used: |
+      Dwarf blacksmith working at a forge at night,
+      hammering glowing red metal on an anvil,
+      sparks flying,
+      warm firelight on a weathered face with magnificent beard,
+      atmosphere of intense purposeful creation,
+      classical oil painting, Vermeer lighting quality,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "grimjaw"
+      - "forge"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

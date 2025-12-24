@@ -1,0 +1,753 @@
+# ============================================================================
+# CHAPTER IMAGERY SPECIFICATION
+# Chapter: Watchpost Whispers
+# Generated: 2025-12-21
+# ============================================================================
+
+metadata:
+  entity_type: "chapter-imagery"
+  slug: "ch12-watchpost-whispers"
+  chapter_number: 12
+  chapter_title: "Watchpost Whispers"
+  visual_thesis: "From the warmth of found family to the chill of distant threat, closing on the steady flame of shared resolve against the gathering dark."
+  color_palette:
+    primary:
+      - "#C17F4E"
+      - "#3A4D5C"
+      - "#8B5A2B"
+      - "#2C3E50"
+    accent:
+      - "#4DB6AC"
+      - "#FFD54F"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "hd"
+  mood_distribution:
+    somber: 2
+    pastoral: 1
+    celebratory: 1
+    aquatic: 0
+    ethereal: 0
+    intimate: 4
+    kinetic: 0
+    ominous: 1
+
+characters:
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: "Full weathered leather armor. Burn scar prominent. Rare unguarded smile in mess hall. Contemplative in private."
+    reference_images:
+      - "veyra-thornwake-official-portrait-01"
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: "Standard patrol gear. Blue cloak. Watchful partner."
+    reference_images:
+      - "thorne-brightward-portrait-01"
+
+  - ref: "vera-moonwhisper"
+    name: "Vera Moonwhisper"
+    scene_variations: "Forest-green cloak. Chestnut braid. Deadpan translator for Echo. Haunted expression during briefing."
+    reference_images:
+      - "vera-moonwhisper-portrait-01"
+
+  - ref: "grimjaw-ironbeard"
+    name: "Grimjaw Ironbeard"
+    scene_variations: "Iron-gray beard. Bellowing in comic outrage. Seated at table."
+    reference_images:
+      - "grimjaw-ironbeard-portrait-01"
+
+  - ref: "quartermaster-fayne"
+    name: "Quartermaster Fayne"
+    scene_variations: "Brass spectacles. Ink-stained fingers. Crowded by logistics."
+    reference_images:
+      - "quartermaster-fayne-standard-portrait-01"
+
+  - ref: "mistress-elba"
+    name: "Mistress Elba"
+    scene_variations: "Stained apron. Pushed-up sleeves. Exasperated but amused."
+    reference_images:
+      - "mistress-elba-kitchen-portrait-01"
+
+  - ref: "aldwin-gentleheart"
+    name: "Brother Aldwin Gentleheart"
+    scene_variations: "Moss-green cloak. Silver-streaked hair. Gentle presence."
+    reference_images:
+      - "aldwin-gentleheart-official-portrait-01"
+
+  - ref: "sarge"
+    name: "Sarge"
+    scene_variations: "Massive gray orc. Eye patch. Watch uniform. Barking orders."
+    reference_images: []
+
+locations:
+  - ref: "westwall-watchpost"
+    zones:
+      - id: "mess-hall"
+        chapter_context: "Converted barracks. Large social hearth. Rough wooden tables. Steam and morning light. Raven perch in rafters."
+      - id: "barracks-corner"
+        chapter_context: "Quartermaster's workspace. Precarious stacks of crates, canvas, and tools. Overflowing ledgers."
+      - id: "training-yard"
+        chapter_context: "Narrow stone courtyard. Shadows stretching long. Recruits practicing forms."
+      - id: "veyras-quarters"
+        chapter_context: "Spartan room. Cot, small table. Piles of documents. Battered brass lantern light."
+      - id: "highest-parapet"
+        chapter_context: "Stone battlements. Sweeping view of Waterdeep lights. Sunset to deep indigo sky."
+
+moments:
+  - id: "ch12-watchpost-whispers-moment-01"
+    scene_id: "scn-12-01"
+    title: "Echo's Bacon Heist"
+    narrative_beat: "The raven swoops across the mess hall, stealing bacon from a shouting Grimjaw."
+    visual_weight: "medium"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "vera-moonwhisper"
+      - "veyra-thornwake"
+      - "quartermaster-fayne"
+      - "mistress-elba"
+    location_zone: "westwall-watchpost/mess-hall"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch12-watchpost-whispers-moment-02"
+    scene_id: "scn-12-02"
+    title: "Quartermaster Chaos"
+    narrative_beat: "Fayne hunched over his ledger in a corner buried by Stonebridge supplies."
+    visual_weight: "medium"
+    characters_present:
+      - "quartermaster-fayne"
+      - "medic-halden"
+    location_zone: "westwall-watchpost/barracks-corner"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch12-watchpost-whispers-moment-03"
+    scene_id: "scn-12-03"
+    title: "Training Discipline"
+    narrative_beat: "Sarge barking orders at recruits in the long evening shadows of the yard."
+    visual_weight: "medium"
+    characters_present:
+      - "sarge"
+      - "thorne-brightward"
+    location_zone: "westwall-watchpost/training-yard"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch12-watchpost-whispers-moment-04"
+    scene_id: "scn-12-04"
+    title: "Lantern Processing"
+    narrative_beat: "Veyra alone at night, tracing her scar and the documents, the lantern humming with presence."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "westwall-watchpost/veyras-quarters"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch12-watchpost-whispers-moment-05"
+    scene_id: "scn-12-05"
+    title: "Vera's Recognition"
+    narrative_beat: "The moment the briefing turns heavy as Vera recognizes the Silent Hand's patterns."
+    visual_weight: "high"
+    characters_present:
+      - "vera-moonwhisper"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "grimjaw-ironbeard"
+      - "quartermaster-fayne"
+      - "aldwin-gentleheart"
+    location_zone: "westwall-watchpost/mess-hall"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch12-watchpost-whispers-moment-06"
+    scene_id: "scn-12-06"
+    title: "Being Watched"
+    narrative_beat: "Echo alerts the room to movement in the trees outside the window."
+    visual_weight: "high"
+    characters_present:
+      - "vera-moonwhisper"
+      - "quartermaster-fayne"
+    location_zone: "westwall-watchpost/mess-hall"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch12-watchpost-whispers-moment-07"
+    scene_id: "scn-12-07"
+    title: "Headquarters Planning"
+    narrative_beat: "The core team discussing the need for a larger, more permanent base."
+    visual_weight: "medium"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "mistress-elba"
+      - "grimjaw-ironbeard"
+      - "quartermaster-fayne"
+    location_zone: "westwall-watchpost/mess-hall"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+  - id: "ch12-watchpost-whispers-moment-08"
+    scene_id: "scn-12-08"
+    title: "Parapet Destiny"
+    narrative_beat: "Veyra and Thorne looking over the city, accepting the Company's growing role."
+    visual_weight: "hero"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    location_zone: "westwall-watchpost/highest-parapet"
+    transformation_state: "n/a"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch12-watchpost-whispers-img-12-01-01"
+    source_moment: "ch12-watchpost-whispers-moment-01"
+    scene_id: "scn-12-01"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "celebratory"
+    mood_rationale: "Found-family joy. Raucous warmth interrupted by a trickster raven's heist."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Echo the raven swoops across the mess hall with a strip of bacon. Grimjaw bellows in comic outrage, his plate empty. The Company laughs around the table. Veyra has a rare unguarded smile. Steam rises, flour dust catches light.
+    composition_notes: |
+      Diagonal movement from Echo. Grimjaw left anchor. Vera in rafters upper right. Radial warmth from hearth.
+    visual_hook: "The black raven's wings fully spread in triumphant flight, strip of bacon dangling from his beak"
+    depicts_characters:
+      - "vera-moonwhisper"
+      - "grimjaw-ironbeard"
+      - "veyra-thornwake"
+      - "quartermaster-fayne"
+      - "mistress-elba"
+    character_states:
+      vera-moonwhisper: |
+        Perched in rafters. Deadpan expression. Forest-green cloak.
+      grimjaw-ironbeard: |
+        Half-risen. Bellowing. Bacon-less plate.
+      veyra-thornwake: |
+        Seated. rare smile. Burn scar softened by light.
+      quartermaster-fayne: |
+        Laughing hard. Spectacles slipping.
+      mistress-elba: |
+        Holding coffee pot. Warring exasperation and amusement.
+    location: "westwall-watchpost"
+    zone: "mess-hall"
+    lighting:
+      primary_source: "Hearth + Morning light"
+      quality: "Warm, multiple sources"
+      direction: "Radial"
+      color_temperature: "Warm amber"
+      shadow_depth: "Soft"
+      atmospheric: "Steam, flour dust"
+    palette:
+      dominant:
+        - "warm amber"
+        - "gold"
+        - "wood brown"
+      accent:
+        - "forest green"
+        - "bacon red"
+      avoid:
+        - "cold tones"
+    prompt_used: |
+      Large black raven swooping across medieval mess hall with bacon in beak,
+      robust dwarf shouting in comic outrage at empty plate,
+      group of adventurers laughing around wooden table,
+      woman with burn scar smiling,
+      warm hearth light and morning window light,
+      classical oil painting, Dutch Golden Age warmth, Jan Steen style,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, cold lighting
+    tags:
+      - "anchor"
+      - "comedy"
+      - "family"
+      - "celebratory"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch12-watchpost-whispers-img-12-02-01"
+    source_moment: "ch12-watchpost-whispers-moment-02"
+    scene_id: "scn-12-02"
+    image_type: "beat"
+    category:
+      - "character"
+      - "location"
+    scene_mood: "intimate"
+    mood_rationale: "Fayne's crowded corner. The pressure of logistics in a small space. Close, busy atmosphere."
+    aspect_ratio: "1:1"
+    orientation: "square"
+    size: "1024x1024"
+    visual_description: |
+      Fayne hunched over his ledger in a corner buried under crates, bundles of canvas, and new tools. A new cauldron sits precariously on a stack. Halden is looking over his shoulder. The space is extremely cramped, every surface covered.
+    composition_notes: |
+      Tight framing. Fayne center. Crates framing him. Vertical stacks. Focus on the overwhelming volume of gear.
+    visual_hook: "The small gnome nearly swallowed by the teetering towers of supplies he's trying to organize."
+    depicts_characters:
+      - "quartermaster-fayne"
+      - "medic-halden"
+    character_states:
+      quartermaster-fayne: |
+        Hunched. Squinting. Ink-stained fingers. Stressed but focused.
+      medic-halden: |
+        Leaning in. Curious.
+    location: "westwall-watchpost"
+    zone: "barracks-corner"
+    lighting:
+      primary_source: "Single lamp"
+      quality: "Narrow, dusty"
+      direction: "Overhead"
+      color_temperature: "Warm"
+      shadow_depth: "Deep corners"
+      atmospheric: "Dusty"
+    palette:
+      dominant:
+        - "wood brown"
+        - "canvas beige"
+        - "shadow"
+      accent:
+        - "brass glint"
+      avoid:
+        - "open space"
+    prompt_used: |
+      Gnome hunched over ledger in very cramped corner filled with crates and gear,
+      teetering stacks of supplies,
+      another man looking over his shoulder,
+      dusty interior light,
+      atmosphere of organizational chaos,
+      classical oil painting, interior realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, spacious room
+    tags:
+      - "beat"
+      - "logistics"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch12-watchpost-whispers-img-12-03-01"
+    source_moment: "ch12-watchpost-whispers-moment-03"
+    scene_id: "scn-12-03"
+    image_type: "beat"
+    category:
+      - "character"
+      - "action"
+    scene_mood: "somber"
+    mood_rationale: "Evening drill. Long shadows and military discipline. The transition from family warmth to tactical readiness."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Sarge barking at recruits in the training yard at dusk. Thorne stands beside him, observing. Long shadows stretch across the cobblestones. The recruits are in various states of exertion. The walls of the watchpost frame the scene.
+    composition_notes: |
+      Wide shot. Sarge and Thorne mid-ground. Recruits in action. Long shadows as leading lines.
+    visual_hook: "The imposing silhouette of the gray orc against the stretching evening shadows."
+    depicts_characters:
+      - "sarge"
+      - "thorne-brightward"
+    character_states:
+      sarge: |
+        Barking orders. Authoritative. Eye patch prominent.
+      thorne-brightward: |
+        Pacing. Watchful. Armor catching late light.
+    location: "westwall-watchpost"
+    zone: "training-yard"
+    lighting:
+      primary_source: "Low sun"
+      quality: "Dramatic, horizontal"
+      direction: "Side"
+      color_temperature: "Orange/Purple"
+      shadow_depth: "Deep, long"
+      atmospheric: "Dusty"
+    palette:
+      dominant:
+        - "shadow blue"
+        - "evening orange"
+        - "stone gray"
+      accent:
+        - "steel glints"
+      avoid:
+        - "bright midday light"
+    prompt_used: |
+      Massive orc sergeant shouting at recruits in a stone courtyard at dusk,
+      long dramatic shadows,
+      armored captain standing beside him,
+      atmosphere of discipline and evening chill,
+      classical oil painting, chiaroscuro,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "training"
+      - "somber"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch12-watchpost-whispers-img-12-04-01"
+    source_moment: "ch12-watchpost-whispers-moment-04"
+    scene_id: "scn-12-04"
+    image_type: "character"
+    category:
+      - "character"
+      - "emotion"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: "Veyra at her most private. Processing command and the mystery of the lantern."
+    aspect_ratio: "2:3"
+    orientation: "portrait"
+    size: "1024x1536"
+    visual_description: |
+      Veyra sitting alone at night in her quarters. Fingers tracing the burn scar on her cheek. Table covered in Stonebridge documents. Battered brass lantern is the primary light source, illuminating her scarred profile. Deep shadows in corners.
+    composition_notes: |
+      Three-quarter profile. Hand on scar. Diagonal from shadow to lantern glow.
+    visual_hook: "The boundary between light and dark running through her face as she touches her scar."
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Seated. Leaning forward. Distant expression. Burn scar prominent. Lantern at hip level.
+    location: "westwall-watchpost"
+    zone: "veyras-quarters"
+    lighting:
+      primary_source: "Battered lantern"
+      quality: "Soft, warm, intimate"
+      direction: "Below/side"
+      color_temperature: "Amber gold"
+      shadow_depth: "Deep gradients"
+      atmospheric: "Still"
+    palette:
+      dominant:
+        - "warm amber"
+        - "shadow brown"
+        - "earth brown"
+      accent:
+        - "teal-blue tattoos"
+      avoid:
+        - "harsh whites"
+    prompt_used: |
+      Scarred woman sitting at rough table at night tracing facial burn scar,
+      surrounded by documents,
+      single glowing lantern casting warm amber light on her profile,
+      deep shadows in room,
+      contemplative atmosphere,
+      classical oil painting, Vermeer lighting,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "character"
+      - "contemplation"
+      - "intimate"
+      - "lantern"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch12-watchpost-whispers-img-12-05-01"
+    source_moment: "ch12-watchpost-whispers-moment-05"
+    scene_id: "scn-12-05"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: "Vera's shock and recognition. The weight of seven years shared. Cool dawn light reinforces weight."
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1152x1536"
+    visual_description: |
+      Vera's face drained of color as she recognizes the Silent Hand's patterns in the ledger. Her hand reaches for Echo's wing. Haunted eyes. Company members watch with concern. Dawn light through tall windows. Lantern on table.
+    composition_notes: |
+      Vera focal point left of center. Layered characters. Dawn light behind/right. Ledger pages on table.
+    visual_hook: "The color draining from Vera's freckled face as her fingers find Echo's black feathers"
+    depicts_characters:
+      - "vera-moonwhisper"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "quartermaster-fayne"
+      - "grimjaw-ironbeard"
+      - "aldwin-gentleheart"
+    character_states:
+      vera-moonwhisper: |
+        Pale. Haunted eyes. Hand on Echo.
+      veyra-thornwake: |
+        Sharp focus. Posture forward.
+      thorne-brightward: |
+        Tactical assessment.
+      quartermaster-fayne: |
+        Frozen mid-note.
+      grimjaw-ironbeard: |
+        Jaw tightened.
+      aldwin-gentleheart: |
+        Gentle concern.
+    location: "westwall-watchpost"
+    zone: "main-hall"
+    lighting:
+      primary_source: "Dawn light + Lantern"
+      quality: "Diffused, cool"
+      direction: "Right/behind"
+      color_temperature: "Cool dawn vs warm amber"
+      shadow_depth: "Moderate"
+      atmospheric: "Morning air"
+    palette:
+      dominant:
+        - "pale dawn gray"
+        - "parchment"
+        - "muted blue"
+      accent:
+        - "warm amber"
+        - "forest green"
+      avoid:
+        - "saturated colors"
+    prompt_used: |
+      Woman with chestnut braid drained of color in shock, hand touching black raven on shoulder,
+      haunted eyes,
+      surrounded by companions at wooden table with papers,
+      cool dawn light through tall windows,
+      classical oil painting, Rembrandt lighting,
+      muted earth palette, deep shadows,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smiling
+    tags:
+      - "recognition"
+      - "somber"
+      - "vera"
+      - "briefing"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch12-watchpost-whispers-img-12-06-01"
+    source_moment: "ch12-watchpost-whispers-moment-06"
+    scene_id: "scn-12-06"
+    image_type: "mood"
+    category:
+      - "moment"
+      - "action"
+      - "symbol"
+    scene_mood: "ominous"
+    mood_rationale: "Active threat. Something watches from the trees. Sudden shift from analysis to alert."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Echo's head snapped toward the window, body rigid. Vera following his gaze, hand reaching for bow. Window frame suspect. Trees beyond full of shadows. Fayne frozen. Harsh exposing light through window.
+    composition_notes: |
+      Triangle of tension: Echo, Vera, Window. Window dominates right third. Papers foreground.
+    visual_hook: "Echo's sudden stillness—head snapped toward the window, body rigid with alert"
+    depicts_characters:
+      - "vera-moonwhisper"
+      - "quartermaster-fayne"
+    character_states:
+      vera-moonwhisper: |
+        Alert. Hand on bow. Narrowed eyes.
+      quartermaster-fayne: |
+        Frozen. Spectacles reflecting window light.
+    location: "westwall-watchpost"
+    zone: "main-hall"
+    lighting:
+      primary_source: "Window light"
+      quality: "Flat, exposing"
+      direction: "Right"
+      color_temperature: "Cold, sickly"
+      shadow_depth: "Deep, wrong"
+      atmospheric: "Held breath"
+    palette:
+      dominant:
+        - "sickly pale"
+        - "shadow gray"
+        - "cold green"
+      accent:
+        - "black Echo"
+      avoid:
+        - "warm tones"
+    prompt_used: |
+      Black raven head snapped toward window alert,
+      woman with braid reaching for bow at shoulder,
+      rock gnome frozen in background,
+      harsh light through window, trees beyond,
+      atmosphere of sudden threat and being watched,
+      classical oil painting, Symbolist unease,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, cozy atmosphere
+    tags:
+      - "threat"
+      - "alert"
+      - "ominous"
+      - "window"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch12-watchpost-whispers-img-12-07-01"
+    source_moment: "ch12-watchpost-whispers-moment-07"
+    scene_id: "scn-12-07"
+    image_type: "beat"
+    category:
+      - "character"
+      - "dialogue"
+    scene_mood: "intimate"
+    mood_rationale: "Planning the move. Core team gathered. Shared recognition of growth and limitation."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Veyra, Thorne, Grimjaw, and Fayne huddling over sketches at the mess hall table. Elba stands nearby, arms crossed with a ledger. The mood is serious but collaborative. Fayne is pointing at a drawing of a modular build.
+    composition_notes: |
+      Tight ensemble shot. Focus on the sketches and the shared focus. Warm interior lighting.
+    visual_hook: "The cluster of different specialists leaning in to solve the problem of their own success."
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "grimjaw-ironbeard"
+      - "quartermaster-fayne"
+      - "mistress-elba"
+    character_states:
+      veyra-thornwake: |
+        Listening. Assessing.
+      thorne-brightward: |
+        Nodding in agreement.
+      grimjaw-ironbeard: |
+        Studying sketches with critical eye.
+      quartermaster-fayne: |
+        Explaining with a spark in his eyes.
+      mistress-elba: |
+        Demanding but helpful.
+    location: "westwall-watchpost"
+    zone: "mess-hall"
+    lighting:
+      primary_source: "Hearth"
+      quality: "Warm, grounding"
+      direction: "Side"
+      color_temperature: "Amber"
+      shadow_depth: "Soft"
+      atmospheric: "Busy interior"
+    palette:
+      dominant:
+        - "warm amber"
+        - "wood brown"
+        - "stone"
+      accent:
+        - "sketch charcoal"
+      avoid:
+        - "cold light"
+    prompt_used: |
+      Group of adventurers huddling over architectural sketches on a tavern table,
+      dwarf, woman, man, gnome,
+      serious planning discussion,
+      warm firelight,
+      classical oil painting, interior realism,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+    tags:
+      - "beat"
+      - "planning"
+      - "intimate"
+      - "hq"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch12-watchpost-whispers-img-12-08-01"
+    source_moment: "ch12-watchpost-whispers-moment-08"
+    scene_id: "scn-12-08"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: "Two leaders sharing resolve. Lantern warmth against vast night. Twilight palette adds ethereal color."
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Two silhouettes on the highest parapet. Sky gradient from amber to indigo. Veyra's lantern burns bright at her hip, warm halo. Waterdeep kindling lights below. Stars emerging. Worn stone battlements foreground.
+    composition_notes: |
+      Ultra-wide cinematic. Figures right of center. City lights left. Low angle. Lantern brightest point.
+    visual_hook: "The lantern's flame—small but unwavering—burning against the vast darkness"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    character_states:
+      veyra-thornwake: |
+        Grounded stance. Mohawk silhouette. Lantern casting halo.
+      thorne-brightward: |
+        Beside her. Military brace. Blue cloak visible.
+    location: "westwall-watchpost"
+    zone: "parapet"
+    lighting:
+      primary_source: "Lantern + Dusk sky + City lights"
+      quality: "Soft, transitional"
+      direction: "Ambient/Radial"
+      color_temperature: "Warm amber vs deep blue"
+      shadow_depth: "Deep but soft"
+      atmospheric: "Clear night"
+    palette:
+      dominant:
+        - "deep indigo"
+        - "amber gold"
+        - "rose"
+      accent:
+        - "silver stars"
+      avoid:
+        - "harsh contrast"
+    prompt_used: |
+      Two silhouettes standing on castle battlements at dusk looking over city lights,
+      glowing lantern at hip casting warm halo,
+      sky transitioning from rose to deep indigo, stars appearing,
+      medieval city constellation of lights below,
+      classical oil painting, Pre-Raphaelite luminosity,
+      visible brushwork, matte finish
+    negative_prompt: |
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, faces clearly visible
+    tags:
+      - "hero"
+      - "resolve"
+      - "parapet"
+      - "dusk"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}

@@ -1,0 +1,249 @@
+chapter_analysis:
+  slug: "ch15.5-what-the-city-heard"
+  chapter_number: 15.5
+  chapter_title: "What the City Heard"
+  visual_thesis: "News echoes through Waterdeep—paper editorials, guild minutes, candlelight vigils, and enemy recalculations all responding to what the walls held."
+  dominant_mood_progression:
+    - "editorial conviction"
+    - "civic pragmatism"
+    - "communal grief and hope"
+    - "shadow recalibration"
+    - "private assessment"
+  color_story:
+    opening: "Ink-black columns, paper-bright urgency"
+    climax: "Candlelight gold, temple-step gathering, lantern-raised high"
+    closing: "Chalk-map gray, ruin-walking assessment, future-planning quiet"
+
+scene_zone_recommendations:
+  - scene_id: scn-15-5-01
+    location: waterdeep-chronicle
+    recommended_zones:
+      - zone: office
+        label: "Editorial Desk"
+        rationale: "Opinion piece being written"
+        anchor_details:
+          - "Ink drying on page"
+          - "Conviction in words"
+          - "Press deadline"
+    confidence: high
+
+  - scene_id: scn-15-5-02
+    location: guildhall
+    recommended_zones:
+      - zone: main-hall
+        label: "Guild Vote"
+        rationale: "Resolution being recorded"
+        anchor_details:
+          - "Timber ledger"
+          - "Laughter noted"
+          - "Cauldrons amendment"
+    confidence: high
+
+  - scene_id: scn-15-5-03
+    location: temple-steps
+    recommended_zones:
+      - zone: steps
+        label: "Candlelight Vigil"
+        rationale: "Names read by candlelight"
+        anchor_details:
+          - "Acolyte with stumbling voice"
+          - "Lantern raised high"
+          - "Crowd answering"
+    confidence: high
+
+  - scene_id: scn-15-5-04
+    location: silent_hand_safehouse
+    recommended_zones:
+      - zone: safehouse
+        label: "Chalk Map"
+        rationale: "Stones moved, routes recalculated"
+        anchor_details:
+          - "Knife-scored table"
+          - "Chalked map"
+          - "Small stones clicking"
+    confidence: high
+
+  - scene_id: scn-15-5-05
+    location: westwall-watchpost
+    recommended_zones:
+      - zone: courtyard
+        label: "Atlock Among Ruins"
+        rationale: "Private assessment of future"
+        anchor_details:
+          - "Walking through rubble"
+          - "Memo forming"
+          - "Long view forward"
+    confidence: high
+
+candidate_moments:
+  - moment_id: "ch15.5-what-the-city-heard-moment-01"
+    scene_id: scn-15-5-01
+    title: "Who Holds the Walls?"
+    narrative_beat: "'If the law cannot recognize such facts swiftly, perhaps the citizens can—with supplies, with influence, with insistence that those who act with integrity are not left to shoulder the weight alone.'"
+    subtext: "Press as civic conscience; words demanding action."
+    scene_mood: intimate
+    emotional_color: "ink-wet urgency, editorial-conviction, civic-demand"
+    location: waterdeep-chronicle
+    zone: office
+    characters_present:
+      - tennison-quill
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 3
+      narrative_pivot: 3
+      character_revelation: 3
+      symbolic_density: 4
+      total: 17
+    suggested_shot:
+      image_type: detail
+      framing: close
+      angle: "Editorial page, ink drying"
+      key_visual_hook: "Close on editorial column with 'Who Holds the Walls?' headline, ink still wet, quill set aside, words demanding civic response visible"
+      lighting_suggestion: "Print shop lamp, paper-bright"
+      composition_notes: "Words as action—journalism as conscience"
+    source_excerpts:
+      - "'If the law cannot recognize such facts swiftly, perhaps the citizens can'"
+      - "'The walls held. Let us decide, while we have time, who holds them tomorrow'"
+    selection_rationale: "Press response to battle—civic pressure beginning."
+
+  - moment_id: "ch15.5-what-the-city-heard-moment-02"
+    scene_id: scn-15-5-02
+    title: "Laughter Recorded"
+    narrative_beat: "'Debate entered: Whether the Company's symbol may be affixed (small) to repaired structures. Motion tabled; laughter recorded.'"
+    subtext: "Bureaucracy with warmth; the guilds choosing to help."
+    scene_mood: intimate
+    emotional_color: "ledger-humor, civic-aid, practical-affection"
+    location: guildhall
+    zone: main-hall
+    characters_present: []
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 3
+      narrative_pivot: 2
+      character_revelation: 2
+      symbolic_density: 3
+      total: 13
+    suggested_shot:
+      image_type: detail
+      framing: close
+      angle: "Guild minutes page, notation"
+      key_visual_hook: "Minutes page with formal resolutions and the note 'laughter recorded' amid serious timber allocations, Elba's cauldrons amendment visible"
+      lighting_suggestion: "Guildhall lamplight, formal document"
+      composition_notes: "Bureaucracy as affection—aid through proper channels"
+    source_excerpts:
+      - "'Motion tabled; laughter recorded'"
+      - "Include two cauldrons for the kitchen. Mistress Elba's representative made a persuasive case"
+    selection_rationale: "Civic support formalizing—warmth in bureaucracy."
+
+  - moment_id: "ch15.5-what-the-city-heard-moment-03"
+    scene_id: scn-15-5-03
+    title: "Light Endures"
+    narrative_beat: "An acolyte lifted a lantern high: 'For those who hold until relief arrives. For those who go when the road is bad. For those who bring the wounded all the way home.' From the street, someone answered: 'Light endures.'"
+    subtext: "Communal grief becoming shared conviction."
+    scene_mood: somber
+    emotional_color: "candlelight-gold gathering, voice-stumbling steadying, crowd-answering"
+    location: temple-steps
+    zone: steps
+    characters_present: []
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 5
+      narrative_pivot: 3
+      character_revelation: 3
+      symbolic_density: 5
+      total: 21
+    suggested_shot:
+      image_type: anchor
+      framing: wide
+      angle: "Temple steps, acolyte with lantern, crowd below"
+      key_visual_hook: "Acolyte on cold temple steps, lantern raised high against night, crowd gathered below with individual candles, 'Light endures' rising from the street"
+      lighting_suggestion: "Candlelight hundreds, lantern focal, night cold"
+      composition_notes: "Vigil as community—grief becoming resolve"
+    source_excerpts:
+      - "'For those who hold until relief arrives'"
+      - "'Light endures'"
+      - "So did the crowd"
+    selection_rationale: "Chapter's visual and emotional peak—community claiming the symbol."
+
+  - moment_id: "ch15.5-what-the-city-heard-moment-04"
+    scene_id: scn-15-5-04
+    title: "Stones Like Teeth"
+    narrative_beat: "A handler moved small stones across a chalked map. 'Advance the early-spring schedule by a week. Split consignments; use second routes.' The stones clicked like teeth."
+    subtext: "Enemy adapting; the shadow response to light."
+    scene_mood: ominous
+    emotional_color: "stone-click menace, chalk-map planning, shadow-recalibration"
+    location: silent_hand_safehouse
+    zone: safehouse
+    characters_present:
+      - silent-hand-handler
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 5
+      narrative_pivot: 4
+      character_revelation: 3
+      symbolic_density: 4
+      total: 19
+    suggested_shot:
+      image_type: detail
+      framing: close
+      angle: "Hand moving stones on chalk map"
+      key_visual_hook: "Knife-scored table with chalked map, handler's hand moving small stones, ring marked WESTWALL, two smaller rings being wiped away, stones clicking like teeth"
+      lighting_suggestion: "Low lamplight, shadow-heavy, menace visible"
+      composition_notes: "Enemy perspective—recalculating around the light"
+    source_excerpts:
+      - "'Advance the early-spring schedule by a week. Split consignments; use second routes'"
+      - "The stones clicked like teeth"
+    selection_rationale: "Counter-perspective—Silent Hand adapting to new threat."
+
+  - moment_id: "ch15.5-what-the-city-heard-moment-05"
+    scene_id: scn-15-5-05
+    title: "I Have Seen Many Units"
+    narrative_beat: "'I have seen many units that could fight. Fewer that could hold. Fewer still that could hold and leave a place better than they found it. We should plan as if this one will.'"
+    subtext: "Professional recognition; the veteran seeing something rare."
+    scene_mood: intimate
+    emotional_color: "ruin-walking assessment, rare-recognition, future-planning"
+    location: westwall-watchpost
+    zone: courtyard
+    characters_present:
+      - commander-atlock
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 4
+      symbolic_density: 4
+      total: 20
+    suggested_shot:
+      image_type: anchor
+      framing: wide
+      angle: "Atlock walking through ruined Watchpost"
+      key_visual_hook: "Commander Atlock walking through smoke-stained ruins, taking private assessment, scarred face showing something like respect, memo forming in his mind"
+      lighting_suggestion: "Afternoon light through damaged walls, dust motes"
+      composition_notes: "Professional assessment—planning for something lasting"
+    source_excerpts:
+      - "'I have seen many units that could fight. Fewer that could hold'"
+      - "'Fewer still that could hold and leave a place better than they found it'"
+    selection_rationale: "Institutional recognition—Atlock seeing the Company's value."
+
+proposed_selection:
+  target_moments: 4
+  rules_used:
+    - "Vignette chapter—representative moments from each perspective"
+    - "Cover civic, communal, shadow, and military responses"
+    - "Balance hope with threat"
+  selected_moments:
+    - moment_id: "ch15.5-what-the-city-heard-moment-03"
+      rank: 1
+      reason: "Highest score (21), vigil lantern, community claiming symbol"
+    - moment_id: "ch15.5-what-the-city-heard-moment-05"
+      rank: 2
+      reason: "Good score (20), Atlock's recognition, institutional respect"
+    - moment_id: "ch15.5-what-the-city-heard-moment-04"
+      rank: 3
+      reason: "Good score (19), Silent Hand recalculating, threat persisting"
+    - moment_id: "ch15.5-what-the-city-heard-moment-01"
+      rank: 4
+      reason: "Good score (17), editorial pressure, civic demand"
+  rejected_notes:
+    - moment_id: "ch15.5-what-the-city-heard-moment-02"
+      reason: "Charming detail but less visually distinctive than others"

@@ -1,0 +1,323 @@
+chapter_analysis:
+  slug: "ch11.5-wayside-whispers"
+  chapter_number: 11.5
+  chapter_title: "Wayside Whispers"
+  visual_thesis: "Between report and rumor lies the market where truth is bartered—vignettes of information ecology spreading through inn, print, craft, and commerce."
+  dominant_mood_progression:
+    - "murmured edge"
+    - "printed silence"
+    - "craftsman's analysis"
+    - "coded commerce"
+    - "patient waiting"
+  color_story:
+    opening: "Tavern-amber murmur, alcove-shadow, steady lantern-flame"
+    climax: "Ink-black columns, metal-hum analysis, dock-ledger entries"
+    closing: "Low-wick patience, future-shaped silence"
+
+scene_zone_recommendations:
+  - scene_id: scn-11-5-01
+    location: wayward-compass
+    recommended_zones:
+      - zone: common-room
+        label: "Inn Murmurs"
+        rationale: "Rumor spreading through travelers"
+        anchor_details:
+          - "Drover leaning to tablemates"
+          - "Durja polishing tankard"
+          - "Marcus folding paper"
+          - "Two silhouettes in alcove"
+    confidence: high
+
+  - scene_id: scn-11-5-02
+    location: waterdeep-chronicle
+    recommended_zones:
+      - zone: office
+        label: "Print Shop"
+        rationale: "What's not printed is the story"
+        anchor_details:
+          - "Thin line of ink drying"
+          - "Small Notices column"
+          - "Empty space where quote should be"
+    confidence: high
+
+  - scene_id: scn-11-5-03
+    location: locksmiths-row
+    recommended_zones:
+      - zone: workshop
+        label: "Third Bench"
+        rationale: "Craftsman analyzing Bastion Lock"
+        anchor_details:
+          - "Lock cylinder on workbench"
+          - "Filing tools, magnifier"
+          - "Handwritten letter"
+    confidence: high
+
+  - scene_id: scn-11-5-04
+    location: dock-ward
+    recommended_zones:
+      - zone: dockside
+        label: "Broker's Ledger"
+        rationale: "Coded commerce, northbound traffic"
+        anchor_details:
+          - "Ledger with entries"
+          - "Margin sigils"
+          - "Expensive ink"
+    confidence: high
+
+  - scene_id: scn-11-5-05
+    location: wayward-compass
+    recommended_zones:
+      - zone: alcove
+        label: "Low Lantern"
+        rationale: "Private strategy, patient waiting"
+        anchor_details:
+          - "Wick trimmed low"
+          - "Cloth pouch with lock"
+          - "Two silhouettes"
+    confidence: high
+
+candidate_moments:
+  - moment_id: "ch11.5-wayside-whispers-moment-01"
+    scene_id: scn-11-5-01
+    title: "The Murmur's Edge"
+    narrative_beat: "The Wayward Compass keeps its murmur even when roads go quiet—tonight the murmur has an edge, travelers leaning close over stories of walking ledgers."
+    subtext: "Information spreading through the road's nervous system."
+    scene_mood: intimate
+    emotional_color: "tavern-amber murmur, lean-in secrecy, edge of knowing"
+    location: wayward-compass
+    zone: common-room
+    characters_present:
+      - durja
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 3
+      character_revelation: 2
+      symbolic_density: 4
+      total: 17
+    suggested_shot:
+      image_type: anchor
+      framing: wide
+      angle: "Common room, multiple conversations, lanterns"
+      key_visual_hook: "Tavern murmur made visible—table leaning in, Durja polishing tankard, alcove shadows, steady lantern-flame"
+      lighting_suggestion: "Warm amber, multiple lamp sources, shadow-pools"
+      composition_notes: "Information ecosystem—many conversations, one current"
+    source_excerpts:
+      - "The Wayward Compass kept a steady murmur even when the road went quiet"
+      - "Tonight, the murmur had an edge"
+      - "'Word is, a ledger walked out of Stonebridge on two feet and a prayer'"
+    selection_rationale: "Establishes rumor ecology, information spreading."
+
+  - moment_id: "ch11.5-wayside-whispers-moment-02"
+    scene_id: scn-11-5-01
+    title: "The Folded Note"
+    narrative_beat: "Marcus folds paper once, twice, passes it to serving girl with a smile that says nothing at all—the note vanishes like steam."
+    subtext: "Information brokerage as art form, secrets in motion."
+    scene_mood: ominous
+    emotional_color: "paper-fold precision, nothing-smile, steam-vanish"
+    location: wayward-compass
+    zone: common-room
+    characters_present:
+      - marcus-heartbridge
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 4
+      narrative_pivot: 3
+      character_revelation: 4
+      symbolic_density: 4
+      total: 18
+    suggested_shot:
+      image_type: detail
+      framing: close
+      angle: "Hands folding paper, smile visible"
+      key_visual_hook: "Marcus's fingers folding paper once, twice, passing to serving girl, smile that says nothing, note vanishing"
+      lighting_suggestion: "Alcove shadow, paper catching light briefly"
+      composition_notes: "The broker at work—information as currency"
+    source_excerpts:
+      - "a man with too many pockets folded a square of paper once, twice"
+      - "passed it to the serving girl with a smile that said nothing at all"
+      - "The note vanished like steam"
+    selection_rationale: "Marcus's methods made visible—charm as cover."
+
+  - moment_id: "ch11.5-wayside-whispers-moment-03"
+    scene_id: scn-11-5-01
+    title: "Steady Flame"
+    narrative_beat: "Two silhouettes in the corner—one scarred, one straight-backed—their lantern burning steadily no matter who opens the door."
+    subtext: "The Last Light burning constant amid chaos."
+    scene_mood: intimate
+    emotional_color: "shadow-silhouette, steady flame, unflickering presence"
+    location: wayward-compass
+    zone: common-room
+    characters_present:
+      - veyra-thornwake
+      - thorne-brightward
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 5
+      narrative_pivot: 2
+      character_revelation: 3
+      symbolic_density: 5
+      total: 19
+    suggested_shot:
+      image_type: anchor
+      framing: medium
+      angle: "Corner booth, silhouettes, steady lantern"
+      key_visual_hook: "Two silhouettes—one scarred, one straight-backed—lantern between them burning absolutely steady despite door-drafts"
+      lighting_suggestion: "Lantern-gold steady, surrounding flickers"
+      composition_notes: "Constancy amid chaos—the lantern as symbol"
+    source_excerpts:
+      - "two silhouettes could have been shadows arranged to look like people"
+      - "one scarred, one straight-backed"
+      - "the lantern on their table burned steadily, the flame barely flickering no matter who opened the door"
+    selection_rationale: "Visual signature—the Last Light burning steady."
+
+  - moment_id: "ch11.5-wayside-whispers-moment-04"
+    scene_id: scn-11-5-02
+    title: "Small Notices"
+    narrative_beat: "Page three, beneath cloak ads—'Trade Irregularities,' 'Misfiling,' 'Missing Pages.' What we don't print is the story."
+    subtext: "Truth in negative space; journalism as selective silence."
+    scene_mood: intimate
+    emotional_color: "ink-drying patience, column-white silence, readable absence"
+    location: waterdeep-chronicle
+    zone: office
+    characters_present:
+      - tennison-quill
+      - clerk-dena
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 4
+      narrative_pivot: 3
+      character_revelation: 3
+      symbolic_density: 5
+      total: 18
+    suggested_shot:
+      image_type: detail
+      framing: close
+      angle: "Broadsheet column, finger tapping empty space"
+      key_visual_hook: "Small Notices column with thin ink drying, Dena's finger tapping the empty space where official quote should be"
+      lighting_suggestion: "Print shop lamp, paper-bright"
+      composition_notes: "Story in what's missing—blank as meaning"
+    source_excerpts:
+      - "a column of 'Small Notices' carried more weight than most headlines"
+      - "'Sometimes what we don't print is the story'"
+      - "'Sometimes it's the blank we leave for someone else to fill'"
+    selection_rationale: "Media as curated silence—truth in absence."
+
+  - moment_id: "ch11.5-wayside-whispers-moment-05"
+    scene_id: scn-11-5-03
+    title: "Strange Hum"
+    narrative_beat: "The locksmith's analysis: 'The alloy resists ordinary filings and holds a strange hum when struck. Not arcane—at least not only.'"
+    subtext: "Craft recognizing something beyond itself."
+    scene_mood: ethereal
+    emotional_color: "metal-hum mystery, filing-resist, craft-wonder"
+    location: locksmiths-row
+    zone: workshop
+    characters_present: []
+    scores:
+      emotional_resonance: 4
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 2
+      symbolic_density: 5
+      total: 19
+    suggested_shot:
+      image_type: detail
+      framing: close
+      angle: "Lock cylinder on bench, letter beside it"
+      key_visual_hook: "Dark metal cylinder on worn workbench, filing marks that didn't take, handwritten letter visible, craftsman's tools around"
+      lighting_suggestion: "Workshop lamplight, metal catching glow strangely"
+      composition_notes: "Mystery in metal—the lock that resists understanding"
+    source_excerpts:
+      - "The alloy resists ordinary filings and holds a strange hum when struck"
+      - "Not arcane—at least not only"
+      - "the cylinder is a lock without a door yet found"
+    selection_rationale: "Bastion Lock's mystery confirmed through craft."
+
+  - moment_id: "ch11.5-wayside-whispers-moment-06"
+    scene_id: scn-11-5-04
+    title: "Margin Sigils"
+    narrative_beat: "In the margin, a neat sigil indicated confidence. Later, a different sigil—when a job became more interesting and less safe."
+    subtext: "Coded commerce; danger marked in professional notation."
+    scene_mood: ominous
+    emotional_color: "ledger-neat entries, sigil-shift warning, expensive ink"
+    location: dock-ward
+    zone: dockside
+    characters_present: []
+    scores:
+      emotional_resonance: 3
+      visual_distinctiveness: 4
+      narrative_pivot: 3
+      character_revelation: 2
+      symbolic_density: 4
+      total: 16
+    suggested_shot:
+      image_type: detail
+      framing: close
+      angle: "Ledger page, margin sigils visible"
+      key_visual_hook: "Broker's ledger open, neat entries about northbound shipments, two different margin sigils—one confident, one warning"
+      lighting_suggestion: "Dock-office lamplight, paper-glow"
+      composition_notes: "Professional notation—danger in symbols"
+    source_excerpts:
+      - "In the margin, a neat sigil indicated confidence"
+      - "a different sigil replaced it—a mark brokers made when a job had suddenly become more interesting and less safe"
+    selection_rationale: "Commerce as coded communication."
+
+  - moment_id: "ch11.5-wayside-whispers-moment-07"
+    scene_id: scn-11-5-05
+    title: "Lock Without a Door"
+    narrative_beat: "Lantern trimmed low, Veyra's palm on cloth pouch—'A lock without a door.' 'Or a door that finally remembered its lock.'"
+    subtext: "Future taking shape in patient waiting."
+    scene_mood: intimate
+    emotional_color: "low-wick patience, palm-steady, future-shaped silence"
+    location: wayward-compass
+    zone: alcove
+    characters_present:
+      - veyra-thornwake
+      - thorne-brightward
+    scores:
+      emotional_resonance: 5
+      visual_distinctiveness: 4
+      narrative_pivot: 4
+      character_revelation: 4
+      symbolic_density: 5
+      total: 22
+    suggested_shot:
+      image_type: anchor
+      framing: medium
+      angle: "Veyra's palm on pouch, low lantern, Thorne opposite"
+      key_visual_hook: "Veyra's scarred hand resting on cloth pouch, lantern trimmed to patient glow, Thorne across table, silence holding shape"
+      lighting_suggestion: "Low-wick amber, intimate glow"
+      composition_notes: "Future not yet named—patient waiting made visible"
+    source_excerpts:
+      - "The alcove's lantern burned lower now, wick trimmed to a patient glow"
+      - "'A lock without a door,' she said softly"
+      - "let the silence make room for a future that had shape but not yet a name"
+    selection_rationale: "Chapter's culminating image—patient strategy."
+
+proposed_selection:
+  target_moments: 5
+  rules_used:
+    - "Vignette chapter—fewer but representative moments"
+    - "Cover all five vignette locations"
+    - "Balance atmospheric with symbolic"
+  selected_moments:
+    - moment_id: "ch11.5-wayside-whispers-moment-07"
+      rank: 1
+      reason: "Highest score (22), culminating image, patient strategy"
+    - moment_id: "ch11.5-wayside-whispers-moment-03"
+      rank: 2
+      reason: "Strong score (19), steady flame signature visual"
+    - moment_id: "ch11.5-wayside-whispers-moment-05"
+      rank: 3
+      reason: "Strong score (19), Bastion Lock mystery confirmed"
+    - moment_id: "ch11.5-wayside-whispers-moment-02"
+      rank: 4
+      reason: "Good score (18), Marcus's methods visualized"
+    - moment_id: "ch11.5-wayside-whispers-moment-04"
+      rank: 5
+      reason: "Good score (18), media silence as meaning"
+  rejected_notes:
+    - moment_id: "ch11.5-wayside-whispers-moment-01"
+      reason: "Good atmosphere but moment-03 captures inn better"
+    - moment_id: "ch11.5-wayside-whispers-moment-06"
+      reason: "Interesting detail but lower visual impact"
