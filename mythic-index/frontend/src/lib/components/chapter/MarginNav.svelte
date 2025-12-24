@@ -1,11 +1,14 @@
 <script lang="ts">
-	import { Clapperboard, List, ChevronDown } from 'lucide-svelte';
+	import { Clapperboard, List, ChevronDown, MapPin, User } from 'lucide-svelte';
 
 	interface Scene {
 		id: string;
 		slug: string;
 		title: string | null;
 		sequenceOrder: number;
+		primaryLocation?: { id: string; slug: string; name: string } | null;
+		povCharacter?: { id: string; slug: string; name: string } | null;
+		characters?: Array<{ id: string; slug: string; name: string; role: string | null }>;
 	}
 
 	interface TOCItem {
@@ -68,15 +71,40 @@
 				<ul class="nav-list">
 					{#each scenes as scene, i}
 						{@const isCurrent = currentSceneId === scene.id}
+						{@const majorChars = scene.characters?.filter(c => c.role === 'pov' || c.role === 'major').slice(0, 2) || []}
 						<li>
 							<button
 								onclick={() => handleSceneClick(scene.id)}
-								class="nav-item"
+								class="nav-item scene-nav-item"
 								class:active={isCurrent}
 								aria-current={isCurrent ? 'location' : undefined}
 							>
 								<span class="item-number">{i + 1}</span>
-								<span class="item-text">{scene.title || `Scene ${i + 1}`}</span>
+								<div class="scene-content">
+									<span class="item-text">{scene.title || `Scene ${i + 1}`}</span>
+
+									<!-- Contextual info: Location and Characters -->
+									<div class="scene-meta">
+										{#if scene.primaryLocation}
+											<span class="meta-tag location-tag" title="Location: {scene.primaryLocation.name}">
+												<MapPin class="h-2.5 w-2.5" aria-hidden="true" />
+												<span class="meta-text">{scene.primaryLocation.name}</span>
+											</span>
+										{/if}
+
+										{#if scene.povCharacter}
+											<span class="meta-tag pov-tag" title="POV: {scene.povCharacter.name}">
+												<User class="h-2.5 w-2.5" aria-hidden="true" />
+												<span class="meta-text">{scene.povCharacter.name}</span>
+											</span>
+										{:else if majorChars.length > 0}
+											<span class="meta-tag char-tag" title="Characters: {majorChars.map(c => c.name).join(', ')}">
+												<User class="h-2.5 w-2.5" aria-hidden="true" />
+												<span class="meta-text">{majorChars[0].name}{majorChars.length > 1 ? ` +${majorChars.length - 1}` : ''}</span>
+											</span>
+										{/if}
+									</div>
+								</div>
 							</button>
 						</li>
 					{/each}
@@ -213,6 +241,64 @@
 	.nav-item.active {
 		background: hsl(var(--primary) / 0.1);
 		color: hsl(var(--primary));
+	}
+
+	/* Enhanced scene nav items with contextual info */
+	.scene-nav-item {
+		align-items: center;
+	}
+
+	.scene-content {
+		flex: 1;
+		min-width: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.375rem;
+	}
+
+	.scene-meta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.25rem;
+		font-size: 0.625rem;
+	}
+
+	.meta-tag {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.25rem;
+		padding: 0.125rem 0.375rem;
+		border-radius: 0.25rem;
+		background: hsl(var(--muted) / 0.5);
+		color: hsl(var(--muted-foreground));
+		max-width: 100%;
+	}
+
+	.nav-item:hover .meta-tag {
+		background: hsl(var(--muted) / 0.8);
+	}
+
+	.nav-item.active .meta-tag {
+		background: hsl(var(--primary) / 0.15);
+		color: hsl(var(--primary));
+	}
+
+	.location-tag {
+		border-left: 2px solid hsl(var(--chart-2));
+	}
+
+	.pov-tag {
+		border-left: 2px solid hsl(var(--chart-1));
+	}
+
+	.char-tag {
+		border-left: 2px solid hsl(var(--chart-3));
+	}
+
+	.meta-text {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
 
 	.nav-item.indent-1 {
