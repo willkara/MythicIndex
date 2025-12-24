@@ -32,13 +32,14 @@
 		/>
 	</div>
 
-	{#if caption || sceneTitle}
+	{#if caption || alt || sceneTitle}
+		{@const displayText = caption || alt}
 		<figcaption class="image-caption">
 			{#if sceneTitle}
 				<span class="scene-title">{sceneTitle}</span>
 			{/if}
-			{#if caption}
-				<span class="caption-text">{caption}</span>
+			{#if displayText}
+				<span class="caption-text">{displayText}</span>
 			{/if}
 		</figcaption>
 	{/if}

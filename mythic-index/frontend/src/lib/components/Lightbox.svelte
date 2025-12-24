@@ -87,13 +87,14 @@
 			alt={currentImage.alt}
 			class="max-w-full max-h-[80vh] object-contain rounded-lg"
 		/>
-		{#if currentImage.caption || images.length > 1}
-			<figcaption class="mt-4 text-white/80 text-center">
-				{#if currentImage.caption}
-					<p>{currentImage.caption}</p>
+		{#if currentImage.caption || currentImage.alt || images.length > 1}
+			{@const displayText = currentImage.caption || currentImage.alt}
+			<figcaption class="mt-4 text-white/80 text-center max-w-2xl">
+				{#if displayText}
+					<p class="leading-relaxed">{displayText}</p>
 				{/if}
 				{#if images.length > 1}
-					<p class="text-sm mt-1 text-white/60">{currentIndex + 1} / {images.length}</p>
+					<p class="text-sm mt-2 text-white/60">{currentIndex + 1} / {images.length}</p>
 				{/if}
 			</figcaption>
 		{/if}

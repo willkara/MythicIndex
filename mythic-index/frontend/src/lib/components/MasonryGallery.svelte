@@ -63,6 +63,7 @@
 >
 	{#each images as image, i}
 		{@const size = getImageSize(i, image.role)}
+		{@const displayText = image.caption || image.alt}
 		<button
 			class={cn(
 				'relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer group',
@@ -81,10 +82,10 @@
 				class="w-full h-full"
 			/>
 
-			<!-- Hover overlay with caption -->
-			{#if image.caption}
-				<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
-					<p class="text-white text-xs leading-tight">{image.caption}</p>
+			<!-- Hover overlay with caption or alt text -->
+			{#if displayText}
+				<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+					<p class="text-white text-xs leading-snug line-clamp-3">{displayText}</p>
 				</div>
 			{/if}
 
