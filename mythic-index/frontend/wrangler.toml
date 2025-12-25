@@ -15,6 +15,11 @@ index_name = "mythicindex-content-embeddings"
 [ai]
 binding = "AI"
 
+[[workflows]]
+binding = "BATCH_IMAGE_WORKFLOW"
+name = "batch-image-generation"
+class_name = "BatchImageGenerationWorkflow"
+
 [vars]
 # WARNING: These values are deployment-specific and safe to commit
 # The Account Hash is public in image URLs anyway
