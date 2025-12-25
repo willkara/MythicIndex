@@ -4,57 +4,48 @@ import type { Actions } from './$types';
 
 /**
  * Server actions for search page
- * Handles vector search queries using Cloudflare Vectorize and Workers AI
+ * Handles semantic search queries using entity-level embeddings (chapters, characters, locations)
  */
 export const actions = {
   /**
    * Default search action
-   * Generates embeddings for the query and searches the vector database
-   * @param request - Form request with query parameter
-   * @param platform - SvelteKit platform with VECTORIZE and AI bindings
-   * @returns Search results with matching content blocks
+   * Searches across entire chapters, characters, and locations using BGE-M3 embeddings
+   * @param request - Form request with query and optional kind filter
+   * @param platform - SvelteKit platform with VECTORIZE_INDEX and AI bindings
+   * @returns Search results with matching entities
    */
   default: async ({ request, platform }) => {
-    if (!platform?.env?.VECTORIZE || !platform?.env?.AI) {
-      // Mock response for dev without bindings
+    if (!platform?.env?.VECTORIZE_INDEX || !platform?.env?.AI) {
       return fail(500, {
-        results: [] as any[], // Typing bypass for PoC
-        error: 'Vector Search bindings not available',
+        results: [],
+        error: 'Semantic search not available (Vectorize or AI binding missing)',
       });
     }
 
     const formData = await request.formData();
     const query = formData.get('query') as string;
+    const kindFilter = formData.get('kind') as 'chapter' | 'character' | 'location' | null;
 
-    if (!query) {
-      return fail(400, { results: [], error: 'Missing query' });
+    if (!query?.trim()) {
+      return fail(400, { results: [], error: 'Search query is required' });
     }
 
     try {
       const embeddingService = new EmbeddingService(platform.env.AI);
-      const queryVector = await embeddingService.generateEmbedding(query);
 
-      if (queryVector.length === 0) {
-        return { results: [] };
-      }
-
-      const matches = await platform.env.VECTORIZE.query(queryVector, {
-        topK: 5,
-        returnMetadata: true,
-      });
-
-      const results = matches.matches.map(match => ({
-        id: match.id,
-        score: match.score,
-        slug: match.metadata?.slug as string,
-        title: match.metadata?.title as string,
-        textPreview: match.metadata?.textPreview as string,
-        blockType: match.metadata?.blockType as string,
-      }));
+      // Use the searchSimilar method which handles embedding generation + Vectorize query
+      const results = await embeddingService.searchSimilar(
+        query,
+        platform.env.VECTORIZE_INDEX,
+        {
+          limit: 10,
+          filter: kindFilter ? { kind: kindFilter } : undefined,
+        }
+      );
 
       return { results };
     } catch (e) {
-      console.error('Search failed:', e);
+      console.error('Semantic search failed:', e);
       return fail(500, { results: [], error: 'Search operation failed' });
     }
   },

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
-	import { Search, Sparkles, ExternalLink, FileText } from 'lucide-svelte';
+	import { Search, Sparkles, ExternalLink, FileText, User, MapPin, BookOpen } from 'lucide-svelte';
 	import { Button } from '$lib/components/ui/button';
 	import { Input } from '$lib/components/ui/input';
 	import { Skeleton } from '$lib/components/ui/skeleton';
@@ -13,13 +13,26 @@
 	let { form }: Props = $props();
 	let searching = $state(false);
 	let query = $state('');
+	let kindFilter = $state<'chapter' | 'character' | 'location' | ''>('');
 
-	const blockTypeLabels: Record<string, string> = {
-		paragraph: 'Narrative',
-		dialogue: 'Dialogue',
-		heading: 'Section',
-		scene_marker: 'Scene'
+	const kindLabels: Record<string, string> = {
+		chapter: 'Chapter',
+		character: 'Character',
+		location: 'Location'
 	};
+
+	const kindIcons = {
+		chapter: BookOpen,
+		character: User,
+		location: MapPin
+	};
+
+	function getEntityRoute(kind: string, slug: string): string {
+		if (kind === 'chapter') return `/chapters/${slug}`;
+		if (kind === 'character') return `/characters/${slug}`;
+		if (kind === 'location') return `/locations/${slug}`;
+		return `/canon/${slug}`;
+	}
 </script>
 
 <svelte:head>
@@ -59,7 +72,7 @@
 					type="text"
 					name="query"
 					bind:value={query}
-					placeholder="What happens when the hero confronts their past?"
+					placeholder="Search for chapters, characters, or locations..."
 					class="pl-10 h-12 text-base"
 					required
 					aria-label="Search query"
@@ -76,8 +89,42 @@
 				{/if}
 			</Button>
 		</div>
+
+		<!-- Filter Buttons -->
+		<div class="flex gap-2 mt-3">
+			<input type="hidden" name="kind" bind:value={kindFilter} />
+			<button
+				type="button"
+				onclick={() => kindFilter = ''}
+				class="px-3 py-1 rounded-full text-sm transition-colors {kindFilter === '' ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground hover:bg-muted/80'}"
+			>
+				All
+			</button>
+			<button
+				type="button"
+				onclick={() => kindFilter = 'chapter'}
+				class="px-3 py-1 rounded-full text-sm transition-colors {kindFilter === 'chapter' ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground hover:bg-muted/80'}"
+			>
+				Chapters
+			</button>
+			<button
+				type="button"
+				onclick={() => kindFilter = 'character'}
+				class="px-3 py-1 rounded-full text-sm transition-colors {kindFilter === 'character' ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground hover:bg-muted/80'}"
+			>
+				Characters
+			</button>
+			<button
+				type="button"
+				onclick={() => kindFilter = 'location'}
+				class="px-3 py-1 rounded-full text-sm transition-colors {kindFilter === 'location' ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground hover:bg-muted/80'}"
+			>
+				Locations
+			</button>
+		</div>
+
 		<p class="text-sm text-muted-foreground mt-2">
-			Try: "moments of betrayal", "romantic scenes", or "character motivations"
+			Try: "dragon battle", "character development", or "mysterious locations"
 		</p>
 	</form>
 
@@ -105,13 +152,14 @@
 			</p>
 
 			{#each form.results as result, i}
+				{@const Icon = kindIcons[result.contentKind as keyof typeof kindIcons] || FileText}
 				<article class="group p-6 rounded-xl border bg-card hover:border-primary/50 hover:shadow-md transition-all">
 					<div class="flex justify-between items-start gap-4 mb-3">
 						<a
-							href="/reader/{result.slug}"
+							href={getEntityRoute(result.contentKind, result.contentSlug)}
 							class="text-xl font-semibold hover:text-primary transition-colors flex items-center gap-2"
 						>
-							{result.title}
+							{result.contentTitle}
 							<ExternalLink class="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true" />
 						</a>
 						<span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary whitespace-nowrap">
@@ -120,13 +168,13 @@
 					</div>
 
 					<p class="text-muted-foreground leading-relaxed mb-3">
-						...{result.textPreview}...
+						{result.text}
 					</p>
 
 					<div class="flex items-center gap-3 text-xs text-muted-foreground">
 						<span class="inline-flex items-center gap-1.5 px-2 py-1 rounded bg-muted">
-							<FileText class="h-3 w-3" aria-hidden="true" />
-							{blockTypeLabels[result.blockType] || result.blockType}
+							<Icon class="h-3 w-3" aria-hidden="true" />
+							{kindLabels[result.contentKind] || result.contentKind}
 						</span>
 					</div>
 				</article>
