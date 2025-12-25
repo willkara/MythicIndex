@@ -46,18 +46,8 @@ export const actions = {
 			// Update chapter in database
 			await updateChapter(platform.env.DB, params.slug, validated, WORKSPACE_ID);
 
-			// Regenerate embedding for chapter
-			if (platform.env.AI && platform.env.VECTORIZE_INDEX) {
-				const chapter = await getChapterBySlug(platform.env.DB, params.slug, WORKSPACE_ID);
-				if (chapter) {
-					const { EntityEmbeddingService } = await import('$lib/server/writer/embedding-entity');
-					const embeddingService = new EntityEmbeddingService(
-						platform.env.AI,
-						platform.env.VECTORIZE_INDEX
-					);
-					await embeddingService.embedChapter(chapter.id, platform.env.DB);
-				}
-			}
+			// NOTE: Embeddings are only regenerated when chapter is re-published
+			// Not on every update to avoid unnecessary AI calls during editing
 
 			return {
 				success: true,
@@ -160,6 +150,118 @@ export const actions = {
 			}
 
 			return fail(500, { error: 'Failed to create scene' });
+		}
+	},
+
+	publish: async ({ params, platform }) => {
+		if (!platform?.env?.DB) {
+			return fail(500, { error: 'Database not available' });
+		}
+
+		try {
+			// Get chapter
+			const chapter = await getChapterBySlug(platform.env.DB, params.slug, WORKSPACE_ID);
+
+			if (!chapter) {
+				return fail(404, { error: 'Chapter not found' });
+			}
+
+			// Get all scenes for validation
+			const scenes = await listScenesForChapter(platform.env.DB, chapter.id, WORKSPACE_ID);
+
+			// Validation: All scenes must be "done" before publishing
+			const draftScenes = scenes.filter((s: any) => s.status === 'draft');
+			if (draftScenes.length > 0) {
+				return fail(400, {
+					error: `Cannot publish: ${draftScenes.length} scene(s) are still in draft status. All scenes must be marked as "done" before publishing.`
+				});
+			}
+
+			// Update chapter status to published
+			await updateChapter(
+				platform.env.DB,
+				params.slug,
+				{ status: 'published' },
+				WORKSPACE_ID
+			);
+
+			// Generate embedding with all scene content
+			if (platform.env.AI && platform.env.VECTORIZE_INDEX) {
+				const { EntityEmbeddingService } = await import('$lib/server/writer/embedding-entity');
+				const embeddingService = new EntityEmbeddingService(
+					platform.env.AI,
+					platform.env.VECTORIZE_INDEX
+				);
+				await embeddingService.embedChapter(chapter.id, platform.env.DB);
+			}
+
+			return {
+				success: true,
+				message: 'Chapter published successfully'
+			};
+		} catch (error) {
+			console.error('Error publishing chapter:', error);
+
+			if (error instanceof Error) {
+				return fail(400, { error: error.message });
+			}
+
+			return fail(500, { error: 'Failed to publish chapter' });
+		}
+	},
+
+	unpublish: async ({ params, platform }) => {
+		if (!platform?.env?.DB) {
+			return fail(500, { error: 'Database not available' });
+		}
+
+		try {
+			// Get chapter
+			const chapter = await getChapterBySlug(platform.env.DB, params.slug, WORKSPACE_ID);
+
+			if (!chapter) {
+				return fail(404, { error: 'Chapter not found' });
+			}
+
+			// Get all scenes to unpublish them
+			const scenes = await listScenesForChapter(platform.env.DB, chapter.id, WORKSPACE_ID);
+
+			// Unpublish all scenes (set status to draft)
+			const { updateScene } = await import('$lib/server/writer/crud');
+			for (const scene of scenes) {
+				await updateScene(platform.env.DB, scene.id, { status: 'draft' }, WORKSPACE_ID);
+			}
+
+			// Update chapter status to draft
+			await updateChapter(
+				platform.env.DB,
+				params.slug,
+				{ status: 'draft' },
+				WORKSPACE_ID
+			);
+
+			// Delete embedding from Vectorize
+			if (platform.env.AI && platform.env.VECTORIZE_INDEX) {
+				const { EntityEmbeddingService } = await import('$lib/server/writer/embedding-entity');
+				const embeddingService = new EntityEmbeddingService(
+					platform.env.AI,
+					platform.env.VECTORIZE_INDEX
+				);
+				await embeddingService.deleteEmbedding(chapter.id);
+			}
+
+			return {
+				success: true,
+				message: 'Chapter unpublished successfully (all scenes reverted to draft)'
+			};
+		} catch (error) {
+			console.error('Error unpublishing chapter:', error);
+
+			if (error instanceof Error) {
+				return fail(400, { error: error.message });
+			}
+
+			return fail(500, { error: 'Failed to unpublish chapter' });
 		}
 	}
 } satisfies Actions;

@@ -26,15 +26,8 @@ export const actions = {
 			// Create chapter in database
 			const { id, slug } = await createChapter(platform.env.DB, validated, WORKSPACE_ID);
 
-			// Generate embedding for chapter
-			if (platform.env.AI && platform.env.VECTORIZE_INDEX) {
-				const { EntityEmbeddingService } = await import('$lib/server/writer/embedding-entity');
-				const embeddingService = new EntityEmbeddingService(
-					platform.env.AI,
-					platform.env.VECTORIZE_INDEX
-				);
-				await embeddingService.embedChapter(id, platform.env.DB);
-			}
+			// NOTE: Embeddings are only generated when chapter is published
+			// Not on creation to avoid unnecessary AI calls during drafting
 
 			// Redirect to chapter edit page for scene management
 			throw redirect(303, `/writer/chapters/${slug}`);

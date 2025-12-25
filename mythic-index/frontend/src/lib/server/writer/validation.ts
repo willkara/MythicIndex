@@ -192,6 +192,7 @@ export const sceneCreateSchema = z.object({
 	title: z.string().max(300).optional(),
 	synopsis: z.string().max(2000).optional(),
 	content: z.string().optional(), // Rich text HTML content from Tiptap
+	status: z.enum(['draft', 'done']).default('draft'),
 	sceneWhen: z.string().max(200).optional(),
 	primaryLocationId: z.string().uuid().optional(),
 	povEntityId: z.string().uuid().optional(),

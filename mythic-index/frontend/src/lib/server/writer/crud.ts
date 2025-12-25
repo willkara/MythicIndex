@@ -968,6 +968,7 @@ export async function createScene(
 		sequenceOrder: data.sequenceOrder,
 		synopsis: data.synopsis || null,
 		content: (data as any).content || null,
+		status: data.status || 'draft',
 		sceneWhen: data.sceneWhen || null,
 		primaryLocationId: data.primaryLocationId || null,
 		povEntityId: data.povEntityId || null,
@@ -1055,6 +1056,7 @@ export async function updateScene(
 	if (data.sequenceOrder !== undefined) updateData.sequenceOrder = data.sequenceOrder;
 	if (data.synopsis !== undefined) updateData.synopsis = data.synopsis;
 	if ((data as any).content !== undefined) updateData.content = (data as any).content;
+	if (data.status !== undefined) updateData.status = data.status;
 	if (data.sceneWhen !== undefined) updateData.sceneWhen = data.sceneWhen;
 	if (data.primaryLocationId !== undefined) updateData.primaryLocationId = data.primaryLocationId;
 	if (data.povEntityId !== undefined) updateData.povEntityId = data.povEntityId;
@@ -1105,6 +1107,7 @@ export async function listScenesForChapter(
 			title: scene.title,
 			sequenceOrder: scene.sequenceOrder,
 			synopsis: scene.synopsis,
+			status: scene.status,
 			wordCount: scene.wordCount,
 			createdAt: scene.createdAt,
 			updatedAt: scene.updatedAt

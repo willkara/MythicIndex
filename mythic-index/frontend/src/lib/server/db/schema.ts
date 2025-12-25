@@ -163,6 +163,7 @@ export const scene = sqliteTable(
     sequenceOrder: integer('sequence_order').notNull(),
     synopsis: text('synopsis'),
     content: text('content'), // Rich text HTML content from Tiptap
+    status: text('status').notNull().default('draft'), // draft or done
     sceneWhen: text('scene_when'),
     primaryLocationId: text('primary_location_id'),
     povEntityId: text('pov_entity_id'),

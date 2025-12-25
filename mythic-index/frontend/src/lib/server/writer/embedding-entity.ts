@@ -13,8 +13,8 @@
  */
 
 import { drizzle } from 'drizzle-orm/d1';
-import { eq } from 'drizzle-orm';
-import { character, location, contentItem, locationZone } from '../db/schema';
+import { eq, and } from 'drizzle-orm';
+import { character, location, contentItem, locationZone, scene } from '../db/schema';
 
 // ============================================================================
 // Types
@@ -257,7 +257,7 @@ export class EntityEmbeddingService {
 
 	/**
 	 * Generate embedding for a chapter entity
-	 * Concatenates title, summary, and HTML content (stripped to plain text)
+	 * Concatenates title, summary, chapter content, and ALL scene content
 	 */
 	async embedChapter(
 		chapterId: string,
@@ -279,19 +279,17 @@ export class EntityEmbeddingService {
 
 			const chapter = chapters[0];
 
-			// Build comprehensive text representation
-			const textParts: string[] = [];
+			// Load all scenes for this chapter, ordered by sequence
+			const scenes = await drizzleDb
+				.select()
+				.from(scene)
+				.where(eq(scene.chapterId, chapterId))
+				.orderBy(scene.sequenceOrder)
+				.all();
 
-			textParts.push(`Title: ${chapter.title}`);
-
-			if (chapter.summary) {
-				textParts.push(`Summary: ${chapter.summary}`);
-			}
-
-			// Strip HTML tags from content and add as main body
-			if (chapter.content) {
-				// Simple HTML tag stripping (for more robust parsing, could use a library)
-				const plainText = chapter.content
+			// Helper function to strip HTML tags
+			const stripHtml = (html: string): string => {
+				return html
 					.replace(/<[^>]*>/g, '') // Remove HTML tags
 					.replace(/&nbsp;/g, ' ') // Replace &nbsp; with space
 					.replace(/&amp;/g, '&') // Replace common entities
@@ -301,13 +299,42 @@ export class EntityEmbeddingService {
 					.replace(/&#39;/g, "'")
 					.replace(/\s+/g, ' ') // Normalize whitespace
 					.trim();
+			};
 
+			// Build comprehensive text representation
+			const textParts: string[] = [];
+
+			textParts.push(`Title: ${chapter.title}`);
+
+			if (chapter.summary) {
+				textParts.push(`Summary: ${chapter.summary}`);
+			}
+
+			// Add chapter-level content if present
+			if (chapter.content) {
+				const plainText = stripHtml(chapter.content);
 				if (plainText) {
-					textParts.push(`Content: ${plainText}`);
+					textParts.push(`Chapter Content: ${plainText}`);
 				}
 			}
 
-			const fullText = textParts.join('\n');
+			// Add all scene content concatenated
+			if (scenes.length > 0) {
+				const sceneContents = scenes
+					.filter(s => s.content) // Only include scenes with content
+					.map(s => {
+						const sceneText = stripHtml(s.content);
+						// Optionally include scene title for context
+						return s.title ? `Scene: ${s.title}\n${sceneText}` : sceneText;
+					})
+					.join('\n\n');
+
+				if (sceneContents) {
+					textParts.push(`Scenes:\n${sceneContents}`);
+				}
+			}
+
+			const fullText = textParts.join('\n\n');
 
 			// Create metadata for Vectorize
 			const metadata: VectorMetadata = {
