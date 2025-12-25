@@ -1,7 +1,7 @@
 import { error, fail, redirect } from '@sveltejs/kit';
 import type { PageServerLoad, Actions } from './$types';
-import { chapterUpdateSchema } from '$lib/server/writer/validation';
-import { getChapterBySlug, updateChapter, deleteChapter } from '$lib/server/writer/crud';
+import { chapterUpdateSchema, sceneCreateSchema } from '$lib/server/writer/validation';
+import { getChapterBySlug, updateChapter, deleteChapter, listScenesForChapter, createScene } from '$lib/server/writer/crud';
 
 const WORKSPACE_ID = 'default'; // TODO: Get from user session or env
 
@@ -16,12 +16,12 @@ export const load: PageServerLoad = async ({ params, platform }) => {
 		throw error(404, `Chapter not found: ${params.slug}`);
 	}
 
-	// TODO: Load scenes for this chapter
-	// const scenes = await listScenesForChapter(platform.env.DB, chapter.id, WORKSPACE_ID);
+	// Load scenes for this chapter
+	const scenes = await listScenesForChapter(platform.env.DB, chapter.id, WORKSPACE_ID);
 
 	return {
-		chapter
-		// scenes
+		chapter,
+		scenes
 	};
 };
 
@@ -113,6 +113,53 @@ export const actions = {
 			}
 
 			return fail(500, { error: 'Failed to delete chapter' });
+		}
+	},
+
+	createScene: async ({ params, request, platform }) => {
+		if (!platform?.env?.DB) {
+			return fail(500, { error: 'Database not available' });
+		}
+
+		try {
+			// Get chapter to find its ID
+			const chapter = await getChapterBySlug(platform.env.DB, params.slug, WORKSPACE_ID);
+
+			if (!chapter) {
+				return fail(404, { error: 'Chapter not found' });
+			}
+
+			const formData = await request.formData();
+			const data = Object.fromEntries(formData);
+
+			// Validate data
+			const validated = sceneCreateSchema.parse({
+				...data,
+				chapterId: chapter.id,
+				workspaceId: WORKSPACE_ID,
+				// Convert numeric fields
+				sequenceOrder: data.sequenceOrder ? parseInt(data.sequenceOrder as string) : 0,
+				wordCount: data.wordCount ? parseInt(data.wordCount as string) : undefined,
+				// Content is passed as HTML string
+				content: data.content || undefined
+			});
+
+			// Create scene in database
+			const { id } = await createScene(platform.env.DB, validated, WORKSPACE_ID);
+
+			// Redirect to scene edit page
+			throw redirect(303, `/writer/scenes/${id}`);
+		} catch (error) {
+			console.error('Error creating scene:', error);
+
+			if (error instanceof Error) {
+				return fail(400, {
+					error: error.message,
+					fields: Object.fromEntries(await request.formData())
+				});
+			}
+
+			return fail(500, { error: 'Failed to create scene' });
 		}
 	}
 } satisfies Actions;
