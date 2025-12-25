@@ -24,7 +24,7 @@ export const actions = {
 			});
 
 			// Create chapter in database
-			const { id, slug } = await createChapter(platform.env.DB, validated, WORKSPACE_ID);
+			const { slug } = await createChapter(platform.env.DB, validated, WORKSPACE_ID);
 
 			// NOTE: Embeddings are only generated when chapter is published
 			// Not on creation to avoid unnecessary AI calls during drafting

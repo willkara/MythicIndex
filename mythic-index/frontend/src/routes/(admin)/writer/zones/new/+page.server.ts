@@ -35,7 +35,7 @@ export const actions = {
 			});
 
 			// Create zone in database
-			const { id, slug } = await createZone(platform.env.DB, validated, WORKSPACE_ID);
+			const { id } = await createZone(platform.env.DB, validated, WORKSPACE_ID);
 
 			// Generate embedding for zone (entity-level)
 			if (platform.env.AI && platform.env.VECTORIZE_INDEX) {

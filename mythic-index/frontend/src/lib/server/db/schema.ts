@@ -861,7 +861,7 @@ export const sceneTagRelations = relations(sceneTag, ({ one }) => ({
  */
 export const sceneRelations = relations(scene, ({ one, many }) => ({
   content: one(contentItem, {
-    fields: [scene.contentId],
+    fields: [scene.chapterId],
     references: [contentItem.id],
   }),
   primaryLocation: one(location, {

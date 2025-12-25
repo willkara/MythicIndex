@@ -91,7 +91,7 @@ export class MarkdownBlockParser {
 
       // First heading becomes title
       const titleMatch = trimmed.match(/^#\s+(.+)$/);
-      if (titleMatch && !title) {
+      if (titleMatch && titleMatch[1] && !title) {
         title = titleMatch[1];
         continue;
       }
@@ -121,7 +121,7 @@ export class MarkdownBlockParser {
 
       // Heading
       const headingMatch = trimmed.match(/^(#{1,6})\s+(.+)$/);
-      if (headingMatch) {
+      if (headingMatch && headingMatch[1] && headingMatch[2]) {
         if (currentParagraph) {
           const words = countWords(currentParagraph);
           totalWordCount += words;
@@ -185,7 +185,7 @@ export class MarkdownBlockParser {
 
       // Image
       const imageMatch = trimmed.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
-      if (imageMatch) {
+      if (imageMatch && imageMatch[1] !== undefined && imageMatch[2]) {
         if (currentParagraph) {
           const words = countWords(currentParagraph);
           totalWordCount += words;
@@ -226,9 +226,11 @@ export class MarkdownBlockParser {
       // Extract mentions (e.g., [[character-name]])
       const mentionMatches = trimmed.matchAll(/\[\[([^\]]+)\]\]/g);
       for (const match of mentionMatches) {
-        const slug = match[1].toLowerCase().replace(/\s+/g, '-');
-        if (!mentions.includes(slug)) {
-          mentions.push(slug);
+        if (match[1]) {
+          const slug = match[1].toLowerCase().replace(/\s+/g, '-');
+          if (!mentions.includes(slug)) {
+            mentions.push(slug);
+          }
         }
       }
 
@@ -247,7 +249,7 @@ export class MarkdownBlockParser {
     }
 
     // First paragraph can be summary
-    if (blocks.length > 0 && blocks[0].type === 'paragraph') {
+    if (blocks.length > 0 && blocks[0] && blocks[0].type === 'paragraph' && blocks[0].text) {
       summary = blocks[0].text.substring(0, 200);
     }
 
