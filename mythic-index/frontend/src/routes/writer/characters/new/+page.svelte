@@ -1,26 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import CharacterForm from '$lib/components/writer/forms/CharacterForm.svelte';
-	import type { CharacterCreate } from '$lib/server/writer/validation';
-
-	async function handleSubmit(data: Partial<CharacterCreate>) {
-		try {
-			// TODO: Implement actual server action
-			console.log('Character data:', data);
-
-			// For now, just show alert
-			alert('Character creation coming soon! Check console for form data.');
-
-			// Later: submit to server action and redirect
-			// const response = await fetch('?/create', { method: 'POST', body: JSON.stringify(data) });
-			// if (response.ok) {
-			//   goto('/writer');
-			// }
-		} catch (error) {
-			console.error('Error creating character:', error);
-			alert('Error creating character. See console for details.');
-		}
-	}
 
 	function handleCancel() {
 		goto('/writer');
@@ -39,5 +19,5 @@
 		</p>
 	</div>
 
-	<CharacterForm mode="create" onSubmit={handleSubmit} onCancel={handleCancel} />
+	<CharacterForm mode="create" action="?/create" onCancel={handleCancel} />
 </div>

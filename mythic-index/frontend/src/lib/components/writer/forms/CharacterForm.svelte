@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { enhance } from '$app/forms';
 	import { Button } from '$lib/components/ui';
 	import { FormSection, TagInput, EntityAutocomplete } from '../inputs';
 	import type { CharacterCreate } from '$lib/server/writer/validation';
@@ -8,7 +9,7 @@
 	 */
 	export let character: Partial<CharacterCreate> = {};
 	export let mode: 'create' | 'edit' = 'create';
-	export let onSubmit: (data: Partial<CharacterCreate>) => void = () => {};
+	export let action: string = '?/create'; // Form action URL
 	export let onCancel: () => void = () => {};
 
 	// Form state
@@ -60,13 +61,34 @@
 		notes: character.notes || ''
 	});
 
-	function handleSubmit(event: Event) {
-		event.preventDefault();
-		onSubmit(formData);
-	}
 </script>
 
-<form {onsubmit}={handleSubmit} class="space-y-6">
+<form method="POST" {action} use:enhance class="space-y-6">
+	<!-- Hidden fields for array data (serialized as JSON) -->
+	<input type="hidden" name="aliases" value={JSON.stringify(formData.aliases)} />
+	<input
+		type="hidden"
+		name="appearanceDistinguishingFeatures"
+		value={JSON.stringify(formData.appearanceDistinguishingFeatures)}
+	/>
+	<input
+		type="hidden"
+		name="personalityPositiveTraits"
+		value={JSON.stringify(formData.personalityPositiveTraits)}
+	/>
+	<input
+		type="hidden"
+		name="personalityNegativeTraits"
+		value={JSON.stringify(formData.personalityNegativeTraits)}
+	/>
+	<input type="hidden" name="motivations" value={JSON.stringify(formData.motivations)} />
+	<input type="hidden" name="fears" value={JSON.stringify(formData.fears)} />
+	<input type="hidden" name="secrets" value={JSON.stringify(formData.secrets)} />
+	<input
+		type="hidden"
+		name="signaturePhrases"
+		value={JSON.stringify(formData.signaturePhrases)}
+	/>
 	<!-- Basic Info Section -->
 	<FormSection title="Basic Information" icon="ℹ️" defaultOpen={true}>
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -76,6 +98,7 @@
 				</label>
 				<input
 					type="text"
+					name="name"
 					bind:value={formData.name}
 					required
 					placeholder="Character name"
@@ -91,6 +114,7 @@
 				<label class="block text-sm font-medium mb-2">Race</label>
 				<input
 					type="text"
+					name="race"
 					bind:value={formData.race}
 					placeholder="e.g., Human, Elf, Dwarf"
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
@@ -101,6 +125,7 @@
 				<label class="block text-sm font-medium mb-2">Class</label>
 				<input
 					type="text"
+					name="characterClass"
 					bind:value={formData.characterClass}
 					placeholder="e.g., Warrior, Mage, Rogue"
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
@@ -110,6 +135,7 @@
 			<div>
 				<label class="block text-sm font-medium mb-2">Role</label>
 				<select
+					name="role"
 					bind:value={formData.role}
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
 				>
@@ -124,6 +150,7 @@
 			<div>
 				<label class="block text-sm font-medium mb-2">Status</label>
 				<select
+					name="status"
 					bind:value={formData.status}
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
 				>
@@ -137,6 +164,7 @@
 				<label class="block text-sm font-medium mb-2">First Appearance</label>
 				<input
 					type="text"
+					name="firstAppearance"
 					bind:value={formData.firstAppearance}
 					placeholder="Chapter slug"
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
@@ -147,6 +175,7 @@
 				<label class="block text-sm font-medium mb-2">Faction</label>
 				<input
 					type="text"
+					name="faction"
 					bind:value={formData.faction}
 					placeholder="e.g., The Order, Rebellion"
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
@@ -157,6 +186,7 @@
 				<label class="block text-sm font-medium mb-2">Occupation</label>
 				<input
 					type="text"
+					name="occupation"
 					bind:value={formData.occupation}
 					placeholder="e.g., Blacksmith, Scholar"
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
@@ -172,6 +202,7 @@
 				<label class="block text-sm font-medium mb-2">Age</label>
 				<input
 					type="text"
+					name="appearanceAge"
 					bind:value={formData.appearanceAge}
 					placeholder="e.g., Early 30s, Ancient"
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
@@ -182,6 +213,7 @@
 				<label class="block text-sm font-medium mb-2">Height</label>
 				<input
 					type="text"
+					name="appearanceHeight"
 					bind:value={formData.appearanceHeight}
 					placeholder="e.g., Tall, 6'2\""
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
@@ -192,6 +224,7 @@
 				<label class="block text-sm font-medium mb-2">Build</label>
 				<input
 					type="text"
+					name="appearanceBuild"
 					bind:value={formData.appearanceBuild}
 					placeholder="e.g., Muscular, Slender"
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
@@ -202,6 +235,7 @@
 				<label class="block text-sm font-medium mb-2">Hair</label>
 				<input
 					type="text"
+					name="appearanceHair"
 					bind:value={formData.appearanceHair}
 					placeholder="e.g., Long black hair"
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
@@ -212,6 +246,7 @@
 				<label class="block text-sm font-medium mb-2">Eyes</label>
 				<input
 					type="text"
+					name="appearanceEyes"
 					bind:value={formData.appearanceEyes}
 					placeholder="e.g., Piercing blue"
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
@@ -222,6 +257,7 @@
 				<label class="block text-sm font-medium mb-2">Clothing</label>
 				<input
 					type="text"
+					name="appearanceClothing"
 					bind:value={formData.appearanceClothing}
 					placeholder="Typical attire"
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
@@ -239,7 +275,8 @@
 			<div class="md:col-span-3">
 				<label class="block text-sm font-medium mb-2">Visual Summary</label>
 				<textarea
-					bind:value={formData.visualSummary}
+					name="visualSummary"
+				bind:value={formData.visualSummary}
 					rows="3"
 					placeholder="Overall visual description for image generation"
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
@@ -255,6 +292,7 @@
 				<label class="block text-sm font-medium mb-2">Archetype</label>
 				<input
 					type="text"
+					name="personalityArchetype"
 					bind:value={formData.personalityArchetype}
 					placeholder="e.g., The Hero, The Mentor"
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
@@ -265,6 +303,7 @@
 				<label class="block text-sm font-medium mb-2">Temperament</label>
 				<input
 					type="text"
+					name="personalityTemperament"
 					bind:value={formData.personalityTemperament}
 					placeholder="e.g., Hot-headed, Calm"
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
@@ -275,6 +314,7 @@
 				<label class="block text-sm font-medium mb-2">Moral Alignment</label>
 				<input
 					type="text"
+					name="personalityMoralAlignment"
 					bind:value={formData.personalityMoralAlignment}
 					placeholder="e.g., Lawful Good, Chaotic Neutral"
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
@@ -305,7 +345,8 @@
 			<div>
 				<label class="block text-sm font-medium mb-2">Background</label>
 				<textarea
-					bind:value={formData.background}
+					name="background"
+				bind:value={formData.background}
 					rows="4"
 					placeholder="Character's history, upbringing, and formative experiences"
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
@@ -337,6 +378,7 @@
 				<label class="block text-sm font-medium mb-2">Primary Weapons</label>
 				<input
 					type="text"
+					name="primaryWeapons"
 					bind:value={formData.primaryWeapons}
 					placeholder="e.g., Longsword, Bow"
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
@@ -347,6 +389,7 @@
 				<label class="block text-sm font-medium mb-2">Fighting Style</label>
 				<input
 					type="text"
+					name="fightingStyle"
 					bind:value={formData.fightingStyle}
 					placeholder="e.g., Aggressive, Defensive"
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
@@ -357,6 +400,7 @@
 				<label class="block text-sm font-medium mb-2">Tactical Role</label>
 				<input
 					type="text"
+					name="tacticalRole"
 					bind:value={formData.tacticalRole}
 					placeholder="e.g., Front-line fighter, Ranged support"
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
@@ -372,6 +416,7 @@
 				<label class="block text-sm font-medium mb-2">Speech Style</label>
 				<input
 					type="text"
+					name="speechStyle"
 					bind:value={formData.speechStyle}
 					placeholder="e.g., Eloquent, Gruff, Playful"
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
@@ -393,6 +438,7 @@
 		<div>
 			<label class="block text-sm font-medium mb-2">Notes</label>
 			<textarea
+				name="notes"
 				bind:value={formData.notes}
 				rows="4"
 				placeholder="Any additional notes, ideas, or reminders"
