@@ -1,7 +1,7 @@
 import { error, fail, redirect } from '@sveltejs/kit';
 import type { PageServerLoad, Actions } from './$types';
 import { sceneUpdateSchema } from '$lib/server/writer/validation';
-import { getSceneById, updateScene, deleteScene } from '$lib/server/writer/crud';
+import { getSceneById, updateScene, deleteScene, getChapterById } from '$lib/server/writer/crud';
 
 const WORKSPACE_ID = 'default'; // TODO: Get from user session or env
 
@@ -43,11 +43,25 @@ export const actions = {
 				content: data.content || undefined
 			});
 
+			// Get scene to find parent chapter
+			const scene = await getSceneById(platform.env.DB, params.id, WORKSPACE_ID);
+			if (!scene) {
+				return fail(404, { error: 'Scene not found' });
+			}
+
 			// Update scene in database
 			await updateScene(platform.env.DB, params.id, validated, WORKSPACE_ID);
 
-			// TODO: Regenerate chapter embedding when scene content changes
-			// This would require getting the parent chapter and re-embedding it
+			// Auto-republish if parent chapter is published
+			const chapter = await getChapterById(platform.env.DB, scene.chapterId, WORKSPACE_ID);
+			if (chapter?.status === 'published' && platform.env.AI && platform.env.VECTORIZE_INDEX) {
+				const { EntityEmbeddingService } = await import('$lib/server/writer/embedding-entity');
+				const embeddingService = new EntityEmbeddingService(
+					platform.env.AI,
+					platform.env.VECTORIZE_INDEX
+				);
+				await embeddingService.embedChapter(chapter.id, platform.env.DB);
+			}
 
 			return {
 				success: true,
@@ -80,15 +94,27 @@ export const actions = {
 				return fail(404, { error: 'Scene not found' });
 			}
 
-			const chapterId = scene.chapterId;
+			// Get parent chapter for redirect and auto-republish
+			const chapter = await getChapterById(platform.env.DB, scene.chapterId, WORKSPACE_ID);
+			if (!chapter) {
+				return fail(404, { error: 'Parent chapter not found' });
+			}
 
 			// Delete scene from database
 			await deleteScene(platform.env.DB, params.id, WORKSPACE_ID);
 
-			// TODO: Regenerate chapter embedding after scene deletion
+			// Auto-republish if parent chapter is published
+			if (chapter.status === 'published' && platform.env.AI && platform.env.VECTORIZE_INDEX) {
+				const { EntityEmbeddingService } = await import('$lib/server/writer/embedding-entity');
+				const embeddingService = new EntityEmbeddingService(
+					platform.env.AI,
+					platform.env.VECTORIZE_INDEX
+				);
+				await embeddingService.embedChapter(chapter.id, platform.env.DB);
+			}
 
 			// Redirect back to chapter edit page
-			throw redirect(303, `/writer/chapters/${chapterId}`);
+			throw redirect(303, `/writer/chapters/${chapter.slug}`);
 		} catch (error) {
 			console.error('Error deleting scene:', error);
 

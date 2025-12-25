@@ -825,6 +825,34 @@ export async function getChapterBySlug(
 }
 
 /**
+ * Get a chapter by ID
+ */
+export async function getChapterById(
+	db: D1Database,
+	id: string,
+	workspaceId: string
+): Promise<any | null> {
+	const drizzleDb = drizzle(db);
+
+	const results = await drizzleDb
+		.select()
+		.from(contentItem)
+		.where(
+			and(
+				eq(contentItem.id, id),
+				eq(contentItem.kind, 'chapter'),
+				eq(contentItem.workspaceId, workspaceId)
+			)
+		)
+		.limit(1)
+		.all();
+
+	if (results.length === 0) return null;
+
+	return results[0];
+}
+
+/**
  * Update an existing chapter
  */
 export async function updateChapter(

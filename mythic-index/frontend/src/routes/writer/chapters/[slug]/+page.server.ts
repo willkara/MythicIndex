@@ -137,6 +137,16 @@ export const actions = {
 			// Create scene in database
 			const { id } = await createScene(platform.env.DB, validated, WORKSPACE_ID);
 
+			// Auto-republish if parent chapter is published
+			if (chapter.status === 'published' && platform.env.AI && platform.env.VECTORIZE_INDEX) {
+				const { EntityEmbeddingService } = await import('$lib/server/writer/embedding-entity');
+				const embeddingService = new EntityEmbeddingService(
+					platform.env.AI,
+					platform.env.VECTORIZE_INDEX
+				);
+				await embeddingService.embedChapter(chapter.id, platform.env.DB);
+			}
+
 			// Redirect to scene edit page
 			throw redirect(303, `/writer/scenes/${id}`);
 		} catch (error) {
