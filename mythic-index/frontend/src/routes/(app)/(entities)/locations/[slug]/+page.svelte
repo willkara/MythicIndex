@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
+	import { page as pageStore } from '$app/stores';
 	import { ChevronLeft, ChevronRight, Calendar, ArrowUp, MapPin } from 'lucide-svelte';
 	import { Button } from '$lib/components/ui/button';
 	import BlockParagraph from '$lib/components/blocks/BlockParagraph.svelte';
@@ -28,11 +30,42 @@
 	function openLightbox(index: number) {
 		lightboxIndex = index;
 		lightboxOpen = true;
+
+		// Update URL with shallow routing
+		const url = new URL($pageStore.url);
+		url.searchParams.set('image', String(index));
+		goto(url.toString(), {
+			replaceState: false,
+			noScroll: true,
+			keepFocus: true
+		});
 	}
 
 	function openLightboxForImage(src: string, index: number) {
 		lightboxIndex = index;
 		lightboxOpen = true;
+
+		// Update URL with shallow routing
+		const url = new URL($pageStore.url);
+		url.searchParams.set('image', String(index));
+		goto(url.toString(), {
+			replaceState: false,
+			noScroll: true,
+			keepFocus: true
+		});
+	}
+
+	function closeLightbox() {
+		lightboxOpen = false;
+
+		// Remove image param from URL
+		const url = new URL($pageStore.url);
+		url.searchParams.delete('image');
+		goto(url.toString(), {
+			replaceState: false,
+			noScroll: true,
+			keepFocus: true
+		});
 	}
 
 	// Lazy load marked for legacy content
@@ -105,6 +138,16 @@
 	});
 
 	onMount(() => {
+		// Check for image query parameter (shallow routing)
+		const imageParam = $pageStore.url.searchParams.get('image');
+		if (imageParam) {
+			const imageIndex = parseInt(imageParam, 10);
+			if (!isNaN(imageIndex) && imageIndex >= 0 && imageIndex < allImages().length) {
+				lightboxIndex = imageIndex;
+				lightboxOpen = true;
+			}
+		}
+
 		const handleScroll = () => {
 			showBackToTop = window.scrollY > 500;
 		};
@@ -489,7 +532,8 @@
 		<Lightbox
 			images={allImages()}
 			initialIndex={lightboxIndex}
-			onclose={() => lightboxOpen = false}
+			onclose={closeLightbox}
+			shallowRouting={true}
 		/>
 	{/if}
 

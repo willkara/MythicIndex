@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
+	import { page } from '$app/stores';
 	import { X, ChevronLeft, ChevronRight } from 'lucide-svelte';
 
 	interface ImageItem {
@@ -11,15 +13,37 @@
 		images: ImageItem[];
 		initialIndex?: number;
 		onclose: () => void;
+		/** Enable shallow routing (URL updates without navigation) */
+		shallowRouting?: boolean;
 	}
 
-	let { images, initialIndex = 0, onclose }: Props = $props();
+	let { images, initialIndex = 0, onclose, shallowRouting = false }: Props = $props();
 
 	let currentIndex = $state(initialIndex);
 
 	const currentImage = $derived(images[currentIndex]);
 	const hasPrev = $derived(currentIndex > 0);
 	const hasNext = $derived(currentIndex < images.length - 1);
+
+	// Sync currentIndex with URL when it changes
+	$effect(() => {
+		if (shallowRouting) {
+			updateUrl(currentIndex, false);
+		}
+	});
+
+	function updateUrl(index: number, replaceState: boolean = true) {
+		if (!shallowRouting) return;
+
+		const url = new URL($page.url);
+		url.searchParams.set('image', String(index));
+
+		goto(url.toString(), {
+			replaceState,
+			noScroll: true,
+			keepFocus: true
+		});
+	}
 
 	function prev() {
 		if (hasPrev) currentIndex--;

@@ -8,7 +8,16 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+			// Cloudflare Pages configuration
+			routes: {
+				include: ['/*'],
+				exclude: ['<build>', '<files>', '<prerendered>']
+			}
+		}),
+
+		// Inline critical CSS for faster first paint
+		inlineStyleThreshold: 2048
 	}
 };
 

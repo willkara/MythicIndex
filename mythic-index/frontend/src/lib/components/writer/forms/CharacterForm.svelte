@@ -7,10 +7,19 @@
 	/**
 	 * Comprehensive character editor form with all schema fields
 	 */
-	export let character: Partial<CharacterCreate> = {};
-	export let mode: 'create' | 'edit' = 'create';
-	export let action: string = '?/create'; // Form action URL
-	export let onCancel: () => void = () => {};
+	interface Props {
+		character?: Partial<CharacterCreate>;
+		mode?: 'create' | 'edit';
+		action?: string; // Form action URL
+		onCancel?: () => void;
+	}
+
+	let {
+		character = {},
+		mode = 'create',
+		action = '?/create',
+		onCancel = () => {}
+	}: Props = $props();
 
 	// Form state
 	let formData = $state({
@@ -215,7 +224,7 @@
 					type="text"
 					name="appearanceHeight"
 					bind:value={formData.appearanceHeight}
-					placeholder="e.g., Tall, 6'2\""
+					placeholder="e.g., Tall, 6'2&quot;"
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
 				/>
 			</div>

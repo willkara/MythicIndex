@@ -1,10 +1,17 @@
 <script lang="ts">
+	import type { Snippet } from 'svelte';
+
 	/**
 	 * Collapsible form section component for organizing complex forms
 	 */
-	export let title: string;
-	export let defaultOpen: boolean = true;
-	export let icon: string = '';
+	interface Props {
+		title: string;
+		defaultOpen?: boolean;
+		icon?: string;
+		children: Snippet;
+	}
+
+	let { title, defaultOpen = true, icon = '', children }: Props = $props();
 
 	let isOpen = $state(defaultOpen);
 
@@ -37,7 +44,7 @@
 
 	{#if isOpen}
 		<div class="px-4 py-4 space-y-4 border-t border-gray-200 dark:border-gray-700">
-			<slot />
+			{@render children()}
 		</div>
 	{/if}
 </div>

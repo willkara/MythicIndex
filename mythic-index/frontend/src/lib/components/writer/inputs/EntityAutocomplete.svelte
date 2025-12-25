@@ -3,11 +3,21 @@
 	 * Autocomplete input for selecting entities (characters, locations, chapters)
 	 * TODO: Implement actual search/fetch from API
 	 */
-	export let label: string;
-	export let entityType: 'character' | 'location' | 'chapter';
-	export let value: string = $bindable('');
-	export let placeholder: string = `Select ${entityType}...`;
-	export let required: boolean = false;
+	interface Props {
+		label: string;
+		entityType: 'character' | 'location' | 'chapter';
+		value?: string;
+		placeholder?: string;
+		required?: boolean;
+	}
+
+	let {
+		label,
+		entityType,
+		value = $bindable(''),
+		placeholder = `Select ${entityType}...`,
+		required = false
+	}: Props = $props();
 
 	// Mock data - will be replaced with actual API calls
 	let entities = $state<Array<{ id: string; slug: string; name: string }>>([]);

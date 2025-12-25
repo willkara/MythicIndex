@@ -15,6 +15,12 @@
 		objectPosition?: string;
 		/** Use intersection observer for lazy loading (default: true for lazy, false for eager) */
 		observeLazy?: boolean;
+		/** Priority hint for image loading (high for above-the-fold images) */
+		priority?: boolean;
+		/** Srcset for responsive images */
+		srcset?: string;
+		/** Sizes attribute for responsive images */
+		sizes?: string;
 	}
 
 	let {
@@ -26,7 +32,10 @@
 		lqip,
 		objectFit = 'cover',
 		objectPosition,
-		observeLazy
+		observeLazy,
+		priority = false,
+		srcset,
+		sizes
 	}: Props = $props();
 
 	// Default observeLazy based on loading prop
@@ -107,7 +116,11 @@
 			<img
 				{src}
 				{alt}
+				{srcset}
+				{sizes}
 				loading={loading}
+				decoding="async"
+				fetchpriority={priority ? 'high' : 'auto'}
 				class={cn(
 					'w-full h-full transition-opacity duration-300',
 					objectFitClasses[objectFit],

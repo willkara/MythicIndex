@@ -1,12 +1,23 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui';
+	import type { scene } from '$lib/server/db/schema';
+	import type { InferSelectModel } from 'drizzle-orm';
+
+	/**
+	 * Scene type inferred from database schema
+	 */
+	type Scene = InferSelectModel<typeof scene>;
 
 	/**
 	 * Scene list component for managing scenes within a chapter
 	 */
-	export let scenes: any[] = [];
-	export let chapterId: string;
-	export let onAddScene: () => void = () => {};
+	interface Props {
+		scenes?: Scene[];
+		chapterId: string;
+		onAddScene?: () => void;
+	}
+
+	let { scenes = [], chapterId, onAddScene = () => {} }: Props = $props();
 
 	function formatDate(dateString: string): string {
 		return new Date(dateString).toLocaleDateString();

@@ -10,7 +10,12 @@
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true,
-		"moduleResolution": "bundler"
+		"moduleResolution": "bundler",
+		// Additional type safety
+		"noUncheckedIndexedAccess": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"exactOptionalPropertyTypes": false // Too strict for SvelteKit
 	},
 	"exclude": [
 		"src/app/**/*",

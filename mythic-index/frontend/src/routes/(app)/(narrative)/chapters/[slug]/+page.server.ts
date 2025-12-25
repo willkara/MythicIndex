@@ -136,50 +136,57 @@ export const load: PageServerLoad = async ({ params, platform }) => {
             .get(),
         ]);
 
-        // Load enriched scenes for chapter (includes characters, tags, location, POV)
-        let scenes: ReturnType<typeof buildEnrichedSceneResponses> = [];
-        try {
-          const chapterScenes = await getEnrichedChapterScenes(db, item.slug);
-          scenes = buildEnrichedSceneResponses(chapterScenes);
-        } catch (sceneError) {
-          log.warn('Failed to load scenes, continuing without them', {
-            slug: item.slug,
-            error: sceneError,
-          });
-        }
+        // STREAMING PATTERN: Return core content immediately, stream supplementary data
+        // This loads the text content fast, while images/scenes load progressively
 
-        // Load images for this chapter (with LQIP from derivatives)
-        const rawImages = await db
-          .select({
-            assetId: imageAsset.id,
-            cloudflareId: imageAsset.cloudflareImageId,
-            baseUrl: imageAsset.cloudflareBaseUrl,
-            variants: imageAsset.cloudflareVariantNames,
-            role: imageLink.role,
-            altText: imageLink.altText,
-            caption: imageLink.caption,
-            sortOrder: imageLink.sortOrder,
-            sceneId: imageLink.sceneId,
-            displayStyle: imageLink.displayStyle,
-            lqip: imageDerivative.lqip,
-          })
-          .from(imageLink)
-          .innerJoin(imageAsset, eq(imageLink.assetId, imageAsset.id))
-          .leftJoin(imageDerivative, eq(imageDerivative.assetId, imageAsset.id))
-          .where(eq(imageLink.contentId, item.id))
-          .orderBy(asc(imageLink.sortOrder));
-
-        // Deduplicate (multiple derivatives per asset may cause duplicates)
-        const imageMap = new Map<string, (typeof rawImages)[0]>();
-        for (const img of rawImages) {
-          const existing = imageMap.get(img.assetId);
-          if (!existing) {
-            imageMap.set(img.assetId, img);
-          } else if (img.lqip && !existing.lqip) {
-            imageMap.set(img.assetId, { ...existing, lqip: img.lqip });
+        // Stream 1: Enriched scenes (can be slow with complex relationships)
+        const scenesPromise = (async () => {
+          try {
+            const chapterScenes = await getEnrichedChapterScenes(db, item.slug);
+            return buildEnrichedSceneResponses(chapterScenes);
+          } catch (sceneError) {
+            log.warn('Failed to load scenes, continuing without them', {
+              slug: item.slug,
+              error: sceneError,
+            });
+            return [];
           }
-        }
-        const images = Array.from(imageMap.values());
+        })();
+
+        // Stream 2: Images (can be slow with multiple joins)
+        const imagesPromise = (async () => {
+          const rawImages = await db
+            .select({
+              assetId: imageAsset.id,
+              cloudflareId: imageAsset.cloudflareImageId,
+              baseUrl: imageAsset.cloudflareBaseUrl,
+              variants: imageAsset.cloudflareVariantNames,
+              role: imageLink.role,
+              altText: imageLink.altText,
+              caption: imageLink.caption,
+              sortOrder: imageLink.sortOrder,
+              sceneId: imageLink.sceneId,
+              displayStyle: imageLink.displayStyle,
+              lqip: imageDerivative.lqip,
+            })
+            .from(imageLink)
+            .innerJoin(imageAsset, eq(imageLink.assetId, imageAsset.id))
+            .leftJoin(imageDerivative, eq(imageDerivative.assetId, imageAsset.id))
+            .where(eq(imageLink.contentId, item.id))
+            .orderBy(asc(imageLink.sortOrder));
+
+          // Deduplicate (multiple derivatives per asset may cause duplicates)
+          const imageMap = new Map<string, (typeof rawImages)[0]>();
+          for (const img of rawImages) {
+            const existing = imageMap.get(img.assetId);
+            if (!existing) {
+              imageMap.set(img.assetId, img);
+            } else if (img.lqip && !existing.lqip) {
+              imageMap.set(img.assetId, { ...existing, lqip: img.lqip });
+            }
+          }
+          return Array.from(imageMap.values());
+        })();
 
         return {
           mode: 'blocks' as const,
@@ -210,8 +217,9 @@ export const load: PageServerLoad = async ({ params, platform }) => {
               richPayload: Object.keys(richPayload).length > 0 ? richPayload : null,
             };
           }),
-          scenes,
-          images: images.map(img => ({
+          // Return promises for streaming data
+          scenes: scenesPromise,
+          images: imagesPromise.then(images => images.map(img => ({
             src: img.baseUrl ? `${img.baseUrl}/public` : '',
             alt: img.altText || '',
             role: img.role,
@@ -219,7 +227,7 @@ export const load: PageServerLoad = async ({ params, platform }) => {
             sceneId: img.sceneId,
             displayStyle: img.displayStyle || 'float',
             lqip: img.lqip,
-          })),
+          }))),
           navigation: {
             prev: prevItem ? { slug: prevItem.slug, title: prevItem.title } : null,
             next: nextItem ? { slug: nextItem.slug, title: nextItem.title } : null,
