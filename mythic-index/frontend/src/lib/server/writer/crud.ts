@@ -5,9 +5,9 @@
 
 import { drizzle } from 'drizzle-orm/d1';
 import { eq, and } from 'drizzle-orm';
-import { character, location, locationZone, contentItem } from '../db/schema';
+import { character, location, locationZone, contentItem, scene } from '../db/schema';
 import { generateSlug, makeSlugUnique } from './slug-generator';
-import type { CharacterCreate, CharacterUpdate, LocationCreate, LocationUpdate, ZoneCreate, ZoneUpdate, ChapterCreate, ChapterUpdate } from './validation';
+import type { CharacterCreate, CharacterUpdate, LocationCreate, LocationUpdate, ZoneCreate, ZoneUpdate, ChapterCreate, ChapterUpdate, SceneCreate, SceneUpdate } from './validation';
 
 // ============================================================================
 // Character CRUD Operations
@@ -917,6 +917,201 @@ export async function listChapters(
 	if (options?.status) {
 		query = query.where(eq(contentItem.status, options.status));
 	}
+
+	// Apply pagination
+	if (options?.limit) {
+		query = query.limit(options.limit);
+	}
+	if (options?.offset) {
+		query = query.offset(options.offset);
+	}
+
+	return await query.all();
+}
+
+// ============================================================================
+// Scene CRUD Operations
+// ============================================================================
+
+/**
+ * Create a new scene within a chapter
+ */
+export async function createScene(
+	db: D1Database,
+	data: SceneCreate,
+	workspaceId: string
+): Promise<{ id: string; slug: string }> {
+	const drizzleDb = drizzle(db);
+
+	const id = crypto.randomUUID();
+	const now = new Date().toISOString();
+
+	// Generate slug from title if provided, otherwise use default pattern
+	let slug = data.slug || (data.title ? generateSlug(data.title) : `scene-${data.sequenceOrder}`);
+
+	// Check for slug uniqueness within the chapter
+	const existingSlugs = await drizzleDb
+		.select({ slug: scene.slug })
+		.from(scene)
+		.where(and(eq(scene.chapterId, data.chapterId), eq(scene.workspaceId, workspaceId)))
+		.all();
+
+	slug = makeSlugUnique(slug, existingSlugs.map((r) => r.slug));
+
+	// Create scene
+	const sceneData = {
+		id,
+		chapterId: data.chapterId,
+		workspaceId,
+		slug,
+		title: data.title || null,
+		sequenceOrder: data.sequenceOrder,
+		synopsis: data.synopsis || null,
+		content: (data as any).content || null,
+		sceneWhen: data.sceneWhen || null,
+		primaryLocationId: data.primaryLocationId || null,
+		povEntityId: data.povEntityId || null,
+		wordCount: data.wordCount || null,
+		estReadSeconds: data.estReadSeconds || null,
+		createdAt: now,
+		updatedAt: now
+	};
+
+	await drizzleDb.insert(scene).values(sceneData).execute();
+
+	return { id, slug };
+}
+
+/**
+ * Get a scene by ID
+ */
+export async function getSceneById(
+	db: D1Database,
+	sceneId: string,
+	workspaceId: string
+): Promise<any | null> {
+	const drizzleDb = drizzle(db);
+
+	const results = await drizzleDb
+		.select()
+		.from(scene)
+		.where(and(eq(scene.id, sceneId), eq(scene.workspaceId, workspaceId)))
+		.limit(1)
+		.all();
+
+	if (results.length === 0) return null;
+
+	return results[0];
+}
+
+/**
+ * Get a scene by slug within a chapter
+ */
+export async function getSceneBySlug(
+	db: D1Database,
+	chapterId: string,
+	slug: string,
+	workspaceId: string
+): Promise<any | null> {
+	const drizzleDb = drizzle(db);
+
+	const results = await drizzleDb
+		.select()
+		.from(scene)
+		.where(
+			and(
+				eq(scene.chapterId, chapterId),
+				eq(scene.slug, slug),
+				eq(scene.workspaceId, workspaceId)
+			)
+		)
+		.limit(1)
+		.all();
+
+	if (results.length === 0) return null;
+
+	return results[0];
+}
+
+/**
+ * Update an existing scene
+ */
+export async function updateScene(
+	db: D1Database,
+	sceneId: string,
+	data: SceneUpdate,
+	workspaceId: string
+): Promise<void> {
+	const drizzleDb = drizzle(db);
+
+	const now = new Date().toISOString();
+
+	const updateData: any = {
+		updatedAt: now
+	};
+
+	// Only update provided fields
+	if (data.title !== undefined) updateData.title = data.title;
+	if (data.sequenceOrder !== undefined) updateData.sequenceOrder = data.sequenceOrder;
+	if (data.synopsis !== undefined) updateData.synopsis = data.synopsis;
+	if ((data as any).content !== undefined) updateData.content = (data as any).content;
+	if (data.sceneWhen !== undefined) updateData.sceneWhen = data.sceneWhen;
+	if (data.primaryLocationId !== undefined) updateData.primaryLocationId = data.primaryLocationId;
+	if (data.povEntityId !== undefined) updateData.povEntityId = data.povEntityId;
+	if (data.wordCount !== undefined) updateData.wordCount = data.wordCount;
+	if (data.estReadSeconds !== undefined) updateData.estReadSeconds = data.estReadSeconds;
+
+	await drizzleDb
+		.update(scene)
+		.set(updateData)
+		.where(and(eq(scene.id, sceneId), eq(scene.workspaceId, workspaceId)))
+		.execute();
+}
+
+/**
+ * Delete a scene by ID
+ */
+export async function deleteScene(
+	db: D1Database,
+	sceneId: string,
+	workspaceId: string
+): Promise<void> {
+	const drizzleDb = drizzle(db);
+
+	await drizzleDb
+		.delete(scene)
+		.where(and(eq(scene.id, sceneId), eq(scene.workspaceId, workspaceId)))
+		.execute();
+}
+
+/**
+ * List all scenes for a chapter
+ */
+export async function listScenesForChapter(
+	db: D1Database,
+	chapterId: string,
+	workspaceId: string,
+	options?: {
+		limit?: number;
+		offset?: number;
+	}
+): Promise<any[]> {
+	const drizzleDb = drizzle(db);
+
+	let query = drizzleDb
+		.select({
+			id: scene.id,
+			slug: scene.slug,
+			title: scene.title,
+			sequenceOrder: scene.sequenceOrder,
+			synopsis: scene.synopsis,
+			wordCount: scene.wordCount,
+			createdAt: scene.createdAt,
+			updatedAt: scene.updatedAt
+		})
+		.from(scene)
+		.where(and(eq(scene.chapterId, chapterId), eq(scene.workspaceId, workspaceId)))
+		.orderBy(scene.sequenceOrder);
 
 	// Apply pagination
 	if (options?.limit) {

@@ -149,30 +149,31 @@ export const contentBlock = sqliteTable(
  * Scene table - Scene-level metadata and organization for narrative content.
  *
  * Scenes represent narrative units within chapters, containing metadata like
- * title, synopsis, location, POV character, and temporal information. Each scene
- * is linked to specific content blocks through scene_segment. Scenes enable
- * navigation, search, and analysis at the scene level.
+ * title, synopsis, location, POV character, and temporal information. Scenes now
+ * store rich text content directly via Tiptap editor, enabling in-browser editing.
  */
 export const scene = sqliteTable(
   'scene',
   {
     id: text('id').primaryKey(),
-    contentId: text('content_id').notNull(),
-    revisionId: text('revision_id').notNull(),
+    chapterId: text('chapter_id').notNull(), // Reference to parent chapter (content_item)
+    workspaceId: text('workspace_id').notNull(),
     slug: text('slug').notNull(),
     title: text('title'),
     sequenceOrder: integer('sequence_order').notNull(),
     synopsis: text('synopsis'),
+    content: text('content'), // Rich text HTML content from Tiptap
     sceneWhen: text('scene_when'),
     primaryLocationId: text('primary_location_id'),
     povEntityId: text('pov_entity_id'),
+    wordCount: integer('word_count'),
     estReadSeconds: integer('est_read_seconds'),
     createdAt: text('created_at').notNull(),
     updatedAt: text('updated_at').notNull(),
   },
   table => [
-    index('ix_scene_revision').on(table.revisionId),
-    index('ix_scene_sequence').on(table.contentId, table.sequenceOrder),
+    index('ix_scene_chapter').on(table.chapterId),
+    index('ix_scene_sequence').on(table.chapterId, table.sequenceOrder),
   ]
 );
 
