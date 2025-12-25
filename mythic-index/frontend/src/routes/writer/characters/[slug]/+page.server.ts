@@ -2,6 +2,7 @@ import { error, fail, redirect } from '@sveltejs/kit';
 import type { PageServerLoad, Actions } from './$types';
 import { characterUpdateSchema } from '$lib/server/writer/validation';
 import { getCharacterBySlug, updateCharacter, deleteCharacter } from '$lib/server/writer/crud';
+import { EntityEmbeddingService } from '$lib/server/writer/embedding-entity';
 
 const WORKSPACE_ID = 'default'; // TODO: Get from user session or env
 
@@ -59,11 +60,22 @@ export const actions = {
 			// Update character in database
 			await updateCharacter(platform.env.DB, params.slug, validated, WORKSPACE_ID);
 
-			// TODO: Regenerate embedding for character
-			// if (platform.env.AI && platform.env.VECTORIZE_INDEX) {
-			//   const char = await getCharacterBySlug(platform.env.DB, params.slug, WORKSPACE_ID);
-			//   await embedCharacter(char.id, platform.env.DB, platform.env.AI, platform.env.VECTORIZE_INDEX);
-			// }
+			// Regenerate embedding for character (entity-level)
+			if (platform.env.AI && platform.env.VECTORIZE_INDEX) {
+				const char = await getCharacterBySlug(platform.env.DB, params.slug, WORKSPACE_ID);
+				if (char) {
+					const embeddingService = new EntityEmbeddingService(
+						platform.env.AI,
+						platform.env.VECTORIZE_INDEX
+					);
+					const result = await embeddingService.embedCharacter(char.id, platform.env.DB);
+
+					if (!result.success) {
+						console.warn('Failed to regenerate embedding for character:', result.error);
+						// Don't fail the request, just log the warning
+					}
+				}
+			}
 
 			return {
 				success: true,
@@ -96,13 +108,22 @@ export const actions = {
 				return fail(404, { error: 'Character not found' });
 			}
 
+			// Delete embedding from Vectorize first
+			if (platform.env.AI && platform.env.VECTORIZE_INDEX) {
+				const embeddingService = new EntityEmbeddingService(
+					platform.env.AI,
+					platform.env.VECTORIZE_INDEX
+				);
+				const result = await embeddingService.deleteEmbedding(char.id);
+
+				if (!result.success) {
+					console.warn('Failed to delete embedding for character:', result.error);
+					// Continue with deletion anyway
+				}
+			}
+
 			// Delete character from database
 			await deleteCharacter(platform.env.DB, params.slug, WORKSPACE_ID);
-
-			// TODO: Delete embedding from Vectorize
-			// if (platform.env.VECTORIZE_INDEX) {
-			//   await platform.env.VECTORIZE_INDEX.deleteByIds([char.id]);
-			// }
 
 			// Redirect to writer home
 			throw redirect(303, '/writer');

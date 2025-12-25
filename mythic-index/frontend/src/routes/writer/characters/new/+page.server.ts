@@ -2,6 +2,7 @@ import { fail, redirect } from '@sveltejs/kit';
 import type { Actions } from './$types';
 import { characterCreateSchema } from '$lib/server/writer/validation';
 import { createCharacter } from '$lib/server/writer/crud';
+import { EntityEmbeddingService } from '$lib/server/writer/embedding-entity';
 
 const WORKSPACE_ID = 'default'; // TODO: Get from user session or env
 
@@ -43,10 +44,19 @@ export const actions = {
 			// Create character in database
 			const { id, slug } = await createCharacter(platform.env.DB, validated, WORKSPACE_ID);
 
-			// TODO: Generate embedding for character
-			// if (platform.env.AI && platform.env.VECTORIZE_INDEX) {
-			//   await embedCharacter(id, platform.env.DB, platform.env.AI, platform.env.VECTORIZE_INDEX);
-			// }
+			// Generate embedding for character (entity-level)
+			if (platform.env.AI && platform.env.VECTORIZE_INDEX) {
+				const embeddingService = new EntityEmbeddingService(
+					platform.env.AI,
+					platform.env.VECTORIZE_INDEX
+				);
+				const result = await embeddingService.embedCharacter(id, platform.env.DB);
+
+				if (!result.success) {
+					console.warn('Failed to generate embedding for character:', result.error);
+					// Don't fail the request, just log the warning
+				}
+			}
 
 			// Redirect to character view or edit page
 			throw redirect(303, `/characters/${slug}`);
