@@ -18,15 +18,6 @@ npm run build        # Production build
 npm run check        # TypeScript and Svelte checks
 ```
 
-### MCP Server
-```bash
-cd mythic-index/mcp-server
-npm install
-npm run build        # Compile TypeScript
-npm run dev          # Watch mode
-npm run inspector    # Test with MCP Inspector
-```
-
 ### Content Ingestion (Python)
 ```bash
 cd mythic-index/tools/ingestion
@@ -85,7 +76,6 @@ mythic-index/
 │   ├── src/ingestion/services/vectorize.ts  # Vectorize REST API client
 │   ├── src/ingestion/services/workers-ai.ts # Workers AI embedding generation
 │   └── src/menus/ingestion/            # Interactive ingestion menus
-├── mcp-server/         # Model Context Protocol server for AI integration
 ├── tools/ingestion/    # Legacy Python content ingestion pipeline
 └── MemoryQuill/story-content/  # Source markdown content
     ├── chapters/       # Chapter content.md files
@@ -213,5 +203,4 @@ Copy `.env.example` to `.env`. Required variables:
 
 - The chargen CLI is the **primary content writer** - use it for ingestion, not admin upload
 - Vectorize integration uses **entity-level chunking** (whole chapters/characters/locations)
-- The MCP server (`memoryquill`) is pre-configured in `.mcp.json` for Claude Code integration
 - Python ingestion pipeline in `tools/ingestion/` is legacy, chargen CLI is preferred

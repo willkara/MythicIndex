@@ -758,4 +758,3 @@ Part of the MythicIndex project. See parent directory for license information.
 For more information on the MythicIndex project structure, see:
 - Parent: `mythic-index/README.md`
 - Frontend: `mythic-index/frontend/README.md`
-- MCP Server: `mythic-index/mcp-server/README.md`

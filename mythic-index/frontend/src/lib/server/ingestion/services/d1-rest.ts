@@ -3,7 +3,6 @@
  *
  * Connects to Cloudflare D1 database via REST API for CLI ingestion.
  * Provides functions for querying, executing statements, and managing tables.
- * Modeled after mcp-server/src/services/d1.ts
  */
 
 import { config as loadEnv } from 'dotenv';

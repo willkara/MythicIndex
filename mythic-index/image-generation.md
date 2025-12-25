@@ -1,5 +1,7 @@
 # Character Imagery Generation Guide
 
+> **⚠️ DEPRECATED**: This document describes the legacy MCP server image generation workflow. The MCP server has been removed. For current image generation workflows, see the chargen CLI documentation.
+
 ## Overview
 
 MemoryQuill provides multiple tools and workflows for generating character imagery through the MCP server. The system supports:
