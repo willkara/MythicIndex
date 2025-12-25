@@ -160,7 +160,17 @@ export const actions = {
 
       // 5. Insert Blocks & Generate Embeddings
       let position = 1;
-      const vectorsToInsert: any[] = [];
+      const vectorsToInsert: Array<{
+        id: string;
+        values: number[];
+        metadata: {
+          contentId: string;
+          blockType: string;
+          slug: string;
+          title: string;
+          textPreview: string;
+        };
+      }> = [];
 
       for (const block of parsed.blocks) {
         const blockId = uuidv4();

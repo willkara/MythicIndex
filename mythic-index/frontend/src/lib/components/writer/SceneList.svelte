@@ -1,11 +1,18 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui';
+	import type { scene } from '$lib/server/db/schema';
+	import type { InferSelectModel } from 'drizzle-orm';
+
+	/**
+	 * Scene type inferred from database schema
+	 */
+	type Scene = InferSelectModel<typeof scene>;
 
 	/**
 	 * Scene list component for managing scenes within a chapter
 	 */
 	interface Props {
-		scenes?: any[];
+		scenes?: Scene[];
 		chapterId: string;
 		onAddScene?: () => void;
 	}
