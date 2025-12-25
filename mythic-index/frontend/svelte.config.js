@@ -13,6 +13,11 @@ const config = {
 			routes: {
 				include: ['/*'],
 				exclude: ['<build>', '<files>', '<prerendered>']
+			},
+			// Use local platform proxy during build to avoid Wrangler auth issues
+			// This allows prerendering to work without authentication
+			platformProxy: {
+				persist: true
 			}
 		}),
 
