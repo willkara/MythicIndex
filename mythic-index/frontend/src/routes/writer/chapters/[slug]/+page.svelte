@@ -1,26 +1,44 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { goto } from '$app/navigation';
 	import { Button } from '$lib/components/ui';
+	import ChapterForm from '$lib/components/writer/forms/ChapterForm.svelte';
+	import type { PageData } from './$types';
+
+	let { data }: { data: PageData } = $props();
 
 	const slug = $page.params.slug;
+
+	function handleCancel() {
+		goto('/writer');
+	}
+
+	async function handleDelete() {
+		if (!confirm(`Are you sure you want to delete "${data.chapter.title}"? This cannot be undone.`)) {
+			return;
+		}
+
+		const formData = new FormData();
+		const response = await fetch('?/delete', { method: 'POST', body: formData });
+
+		if (response.ok) {
+			goto('/writer');
+		} else {
+			alert('Failed to delete chapter');
+		}
+	}
 </script>
 
-<div class="container mx-auto px-4 py-8 max-w-4xl">
-	<div class="mb-6">
+<div class="container mx-auto px-4 py-8 max-w-5xl">
+	<div class="mb-6 flex items-center justify-between">
 		<a href="/writer" class="text-blue-600 hover:underline">← Back to Writer</a>
+		<Button variant="destructive" onclick={handleDelete}>Delete Chapter</Button>
 	</div>
 
-	<h1 class="text-3xl font-bold mb-6">Edit Chapter: {slug}</h1>
-
-	<div class="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4 mb-6">
-		<p class="text-sm text-yellow-800 dark:text-yellow-200">
-			Chapter editor coming soon!
-		</p>
+	<div class="mb-6">
+		<h1 class="text-3xl font-bold mb-2">Edit Chapter: {data.chapter.title}</h1>
+		<p class="text-gray-600 dark:text-gray-400">Slug: {slug}</p>
 	</div>
 
-	<div class="flex gap-3 pt-4">
-		<Button type="submit" disabled>Update Chapter</Button>
-		<Button variant="outline" href="/writer">Cancel</Button>
-		<Button variant="destructive" disabled class="ml-auto">Delete</Button>
-	</div>
+	<ChapterForm mode="edit" action="?/update" chapter={data.chapter} onCancel={handleCancel} />
 </div>

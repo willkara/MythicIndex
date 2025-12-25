@@ -5,9 +5,9 @@
 
 import { drizzle } from 'drizzle-orm/d1';
 import { eq, and } from 'drizzle-orm';
-import { character, location, locationZone } from '../db/schema';
+import { character, location, locationZone, contentItem } from '../db/schema';
 import { generateSlug, makeSlugUnique } from './slug-generator';
-import type { CharacterCreate, CharacterUpdate, LocationCreate, LocationUpdate, ZoneCreate, ZoneUpdate } from './validation';
+import type { CharacterCreate, CharacterUpdate, LocationCreate, LocationUpdate, ZoneCreate, ZoneUpdate, ChapterCreate, ChapterUpdate } from './validation';
 
 // ============================================================================
 // Character CRUD Operations
@@ -729,6 +729,192 @@ export async function listZones(
 	// Apply filters
 	if (options?.zoneType) {
 		query = query.where(eq(locationZone.zoneType, options.zoneType));
+	}
+
+	// Apply pagination
+	if (options?.limit) {
+		query = query.limit(options.limit);
+	}
+	if (options?.offset) {
+		query = query.offset(options.offset);
+	}
+
+	return await query.all();
+}
+
+// ============================================================================
+// Chapter CRUD Operations
+// ============================================================================
+
+/**
+ * Create a new chapter (content_item with kind='chapter')
+ * Simplified - focuses on metadata only
+ * Full content ingestion handled by chargen CLI or admin upload
+ */
+export async function createChapter(
+	db: D1Database,
+	data: ChapterCreate,
+	workspaceId: string
+): Promise<{ id: string; slug: string }> {
+	const drizzleDb = drizzle(db);
+
+	const id = crypto.randomUUID();
+	const now = new Date().toISOString();
+
+	// Generate slug from title if not provided
+	let slug = data.slug || generateSlug(data.title);
+
+	// Check for slug uniqueness
+	const existingSlugs = await drizzleDb
+		.select({ slug: contentItem.slug })
+		.from(contentItem)
+		.where(and(eq(contentItem.kind, 'chapter'), eq(contentItem.workspaceId, workspaceId)))
+		.all();
+
+	slug = makeSlugUnique(slug, existingSlugs.map((r) => r.slug));
+
+	// Create content item
+	const chapterData = {
+		id,
+		workspaceId,
+		kind: 'chapter',
+		slug,
+		title: data.title,
+		summary: data.summary || null,
+		status: data.status || 'draft',
+		wordCount: data.wordCount || null,
+		defaultRevisionId: null, // TODO: Create revision when content is ingested
+		metadataJson: data.metadataJson || '{}',
+		createdBy: 'system', // TODO: Get from user session
+		updatedBy: 'system',
+		createdAt: now,
+		updatedAt: now
+	};
+
+	await drizzleDb.insert(contentItem).values(chapterData).execute();
+
+	return { id, slug };
+}
+
+/**
+ * Get a chapter by slug
+ */
+export async function getChapterBySlug(
+	db: D1Database,
+	slug: string,
+	workspaceId: string
+): Promise<any | null> {
+	const drizzleDb = drizzle(db);
+
+	const results = await drizzleDb
+		.select()
+		.from(contentItem)
+		.where(
+			and(
+				eq(contentItem.slug, slug),
+				eq(contentItem.kind, 'chapter'),
+				eq(contentItem.workspaceId, workspaceId)
+			)
+		)
+		.limit(1)
+		.all();
+
+	if (results.length === 0) return null;
+
+	return results[0];
+}
+
+/**
+ * Update an existing chapter
+ */
+export async function updateChapter(
+	db: D1Database,
+	slug: string,
+	data: ChapterUpdate,
+	workspaceId: string
+): Promise<void> {
+	const drizzleDb = drizzle(db);
+
+	const now = new Date().toISOString();
+
+	const updateData: any = {
+		updatedBy: 'system', // TODO: Get from user session
+		updatedAt: now
+	};
+
+	// Only update provided fields
+	if (data.title !== undefined) updateData.title = data.title;
+	if (data.summary !== undefined) updateData.summary = data.summary;
+	if (data.status !== undefined) updateData.status = data.status;
+	if (data.wordCount !== undefined) updateData.wordCount = data.wordCount;
+	if (data.metadataJson !== undefined) updateData.metadataJson = data.metadataJson;
+
+	await drizzleDb
+		.update(contentItem)
+		.set(updateData)
+		.where(
+			and(
+				eq(contentItem.slug, slug),
+				eq(contentItem.kind, 'chapter'),
+				eq(contentItem.workspaceId, workspaceId)
+			)
+		)
+		.execute();
+}
+
+/**
+ * Delete a chapter by slug
+ */
+export async function deleteChapter(
+	db: D1Database,
+	slug: string,
+	workspaceId: string
+): Promise<void> {
+	const drizzleDb = drizzle(db);
+
+	await drizzleDb
+		.delete(contentItem)
+		.where(
+			and(
+				eq(contentItem.slug, slug),
+				eq(contentItem.kind, 'chapter'),
+				eq(contentItem.workspaceId, workspaceId)
+			)
+		)
+		.execute();
+}
+
+/**
+ * List all chapters in a workspace
+ */
+export async function listChapters(
+	db: D1Database,
+	workspaceId: string,
+	options?: {
+		limit?: number;
+		offset?: number;
+		status?: string;
+	}
+): Promise<any[]> {
+	const drizzleDb = drizzle(db);
+
+	let query = drizzleDb
+		.select({
+			id: contentItem.id,
+			slug: contentItem.slug,
+			title: contentItem.title,
+			summary: contentItem.summary,
+			status: contentItem.status,
+			wordCount: contentItem.wordCount,
+			createdAt: contentItem.createdAt,
+			updatedAt: contentItem.updatedAt
+		})
+		.from(contentItem)
+		.where(and(eq(contentItem.kind, 'chapter'), eq(contentItem.workspaceId, workspaceId)));
+
+	// Apply filters
+	if (options?.status) {
+		query = query.where(eq(contentItem.status, options.status));
 	}
 
 	// Apply pagination
