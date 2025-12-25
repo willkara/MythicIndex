@@ -8,9 +8,11 @@ binding = "DB"
 database_name = "mythicindex-db"
 database_id = "a3f97481-6340-44c7-ae75-06dcf0c76ac2"
 
-[[vectorize]]
-binding = "VECTORIZE_INDEX"
-index_name = "mythicindex-content-embeddings"
+# Vectorize binding commented out - create the index first before enabling:
+# npx wrangler vectorize create mythicindex-content-embeddings --dimensions=1024 --metric=cosine
+# [[vectorize]]
+# binding = "VECTORIZE_INDEX"
+# index_name = "mythicindex-content-embeddings"
 
 [ai]
 binding = "AI"
