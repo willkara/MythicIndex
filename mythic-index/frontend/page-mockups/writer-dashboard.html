@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Content Writer | Mythic Index</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        border: 'hsl(240 3.7% 15.9%)',
+                        background: 'hsl(240 10% 3.9%)',
+                        foreground: 'hsl(0 0% 98%)',
+                        primary: {
+                            DEFAULT: 'hsl(263 70% 50%)',
+                            foreground: 'hsl(0 0% 100%)'
+                        },
+                        secondary: {
+                            DEFAULT: 'hsl(240 3.7% 15.9%)',
+                            foreground: 'hsl(0 0% 98%)'
+                        },
+                        muted: {
+                            DEFAULT: 'hsl(240 3.7% 15.9%)',
+                            foreground: 'hsl(240 5% 64.9%)'
+                        },
+                        accent: {
+                            DEFAULT: 'hsl(240 3.7% 15.9%)',
+                            foreground: 'hsl(0 0% 98%)'
+                        },
+                        card: {
+                            DEFAULT: 'hsl(240 10% 3.9%)',
+                            foreground: 'hsl(0 0% 98%)'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-foreground antialiased">
+
+        <div class="container mx-auto px-4 py-8 max-w-6xl">
+            <h1 class="text-4xl font-bold mb-2">Story Content Writer</h1>
+            <p class="text-muted-foreground mb-8">
+                Create and edit chapters, characters, locations, scenes, and zones
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="block p-6 border border-border rounded-lg hover:shadow-lg transition-shadow bg-card cursor-pointer">
+                    <div class="flex items-start justify-between mb-4">
+                        <h2 class="text-2xl font-semibold">Characters</h2>
+                        <span class="text-3xl">👤</span>
+                    </div>
+                    <p class="text-muted-foreground mb-4">
+                        Create detailed character profiles with appearance, personality, relationships, and more
+                    </p>
+                    <button class="w-full px-4 py-2 rounded-lg border border-border hover:bg-accent transition-colors">Create Character</button>
+                </div>
+
+                <div class="block p-6 border border-border rounded-lg hover:shadow-lg transition-shadow bg-card cursor-pointer">
+                    <div class="flex items-start justify-between mb-4">
+                        <h2 class="text-2xl font-semibold">Locations</h2>
+                        <span class="text-3xl">🏛️</span>
+                    </div>
+                    <p class="text-muted-foreground mb-4">
+                        Design locations with atmosphere, history, zones, and narrative significance
+                    </p>
+                    <button class="w-full px-4 py-2 rounded-lg border border-border hover:bg-accent transition-colors">Create Location</button>
+                </div>
+
+                <div class="block p-6 border border-border rounded-lg hover:shadow-lg transition-shadow bg-card cursor-pointer">
+                    <div class="flex items-start justify-between mb-4">
+                        <h2 class="text-2xl font-semibold">Chapters</h2>
+                        <span class="text-3xl">📖</span>
+                    </div>
+                    <p class="text-muted-foreground mb-4">
+                        Write chapters with structured sections, blocks, and scene organization
+                    </p>
+                    <button class="w-full px-4 py-2 rounded-lg border border-border hover:bg-accent transition-colors">Create Chapter</button>
+                </div>
+
+                <div class="block p-6 border border-border rounded-lg hover:shadow-lg transition-shadow bg-card cursor-pointer">
+                    <div class="flex items-start justify-between mb-4">
+                        <h2 class="text-2xl font-semibold">Scenes</h2>
+                        <span class="text-3xl">🎬</span>
+                    </div>
+                    <p class="text-muted-foreground mb-4">
+                        Manage scene metadata, character appearances, locations, and narrative tags
+                    </p>
+                    <button class="w-full px-4 py-2 rounded-lg border border-border hover:bg-accent transition-colors">Create Scene</button>
+                </div>
+
+                <div class="block p-6 border border-border rounded-lg hover:shadow-lg transition-shadow bg-card cursor-pointer">
+                    <div class="flex items-start justify-between mb-4">
+                        <h2 class="text-2xl font-semibold">Zones</h2>
+                        <span class="text-3xl">📍</span>
+                    </div>
+                    <p class="text-muted-foreground mb-4">
+                        Define zones within locations with physical descriptions and narrative functions
+                    </p>
+                    <button class="w-full px-4 py-2 rounded-lg border border-border hover:bg-accent transition-colors">Create Zone</button>
+                </div>
+
+                <div class="block p-6 border border-border rounded-lg hover:shadow-lg transition-shadow bg-card cursor-pointer">
+                    <div class="flex items-start justify-between mb-4">
+                        <h2 class="text-2xl font-semibold">Browse Content</h2>
+                        <span class="text-3xl">📚</span>
+                    </div>
+                    <p class="text-muted-foreground mb-4">
+                        View and edit existing chapters, characters, locations, and more
+                    </p>
+                    <button class="w-full px-4 py-2 rounded-lg border border-border hover:bg-accent transition-colors">Browse Canon</button>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>
