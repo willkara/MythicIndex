@@ -5,9 +5,9 @@
 
 import { drizzle } from 'drizzle-orm/d1';
 import { eq, and } from 'drizzle-orm';
-import { character, location } from '../db/schema';
+import { character, location, locationZone } from '../db/schema';
 import { generateSlug, makeSlugUnique } from './slug-generator';
-import type { CharacterCreate, CharacterUpdate, LocationCreate, LocationUpdate } from './validation';
+import type { CharacterCreate, CharacterUpdate, LocationCreate, LocationUpdate, ZoneCreate, ZoneUpdate } from './validation';
 
 // ============================================================================
 // Character CRUD Operations
@@ -500,6 +500,235 @@ export async function listLocations(
 	}
 	if (options?.significanceLevel) {
 		query = query.where(eq(location.significanceLevel, options.significanceLevel));
+	}
+
+	// Apply pagination
+	if (options?.limit) {
+		query = query.limit(options.limit);
+	}
+	if (options?.offset) {
+		query = query.offset(options.offset);
+	}
+
+	return await query.all();
+}
+
+// ============================================================================
+// Zone CRUD Operations
+// ============================================================================
+
+/**
+ * Create a new zone in the database
+ */
+export async function createZone(
+	db: D1Database,
+	data: ZoneCreate,
+	workspaceId: string
+): Promise<{ id: string; slug: string }> {
+	const drizzleDb = drizzle(db);
+
+	const id = crypto.randomUUID();
+	const now = new Date().toISOString();
+
+	// Generate slug from name if not provided
+	let slug = data.slug || generateSlug(data.name);
+
+	// Check for slug uniqueness within the location
+	const existingSlugs = await drizzleDb
+		.select({ slug: locationZone.slug })
+		.from(locationZone)
+		.where(and(eq(locationZone.locationId, data.locationId), eq(locationZone.workspaceId, workspaceId)))
+		.all();
+
+	slug = makeSlugUnique(slug, existingSlugs.map((r) => r.slug));
+
+	// Convert array fields to JSON strings
+	const zoneData = {
+		id,
+		workspaceId,
+		locationId: data.locationId,
+		slug,
+		name: data.name,
+
+		// Basic Info
+		zoneType: data.zoneType || null,
+		locationWithin: data.locationWithin || null,
+		parentZoneId: data.parentZoneId || null,
+		firstAppearance: data.firstAppearance || null,
+		storySignificance: data.storySignificance || null,
+
+		// Descriptions
+		physicalDescription: data.physicalDescription || null,
+		narrativeFunction: data.narrativeFunction || null,
+		emotionalRegister: data.emotionalRegister || null,
+
+		// Details (arrays)
+		signatureDetails: data.signatureDetails ? JSON.stringify(data.signatureDetails) : null,
+		moodAffinity: data.moodAffinity ? JSON.stringify(data.moodAffinity) : null,
+		characterAssociations: data.characterAssociations
+			? JSON.stringify(data.characterAssociations)
+			: null,
+
+		// TODO: lightConditions (JSON object)
+		lightConditions: null,
+
+		createdAt: now,
+		updatedAt: now
+	};
+
+	await drizzleDb.insert(locationZone).values(zoneData).execute();
+
+	return { id, slug };
+}
+
+/**
+ * Get a zone by slug (within a specific location)
+ */
+export async function getZoneBySlug(
+	db: D1Database,
+	locationId: string,
+	slug: string,
+	workspaceId: string
+): Promise<any | null> {
+	const drizzleDb = drizzle(db);
+
+	const results = await drizzleDb
+		.select()
+		.from(locationZone)
+		.where(
+			and(
+				eq(locationZone.slug, slug),
+				eq(locationZone.locationId, locationId),
+				eq(locationZone.workspaceId, workspaceId)
+			)
+		)
+		.limit(1)
+		.all();
+
+	if (results.length === 0) return null;
+
+	// Parse JSON fields back to arrays
+	const zone = results[0];
+	return {
+		...zone,
+		signatureDetails: zone.signatureDetails ? JSON.parse(zone.signatureDetails) : [],
+		moodAffinity: zone.moodAffinity ? JSON.parse(zone.moodAffinity) : [],
+		characterAssociations: zone.characterAssociations
+			? JSON.parse(zone.characterAssociations)
+			: []
+	};
+}
+
+/**
+ * Update an existing zone
+ */
+export async function updateZone(
+	db: D1Database,
+	locationId: string,
+	slug: string,
+	data: ZoneUpdate,
+	workspaceId: string
+): Promise<void> {
+	const drizzleDb = drizzle(db);
+
+	const now = new Date().toISOString();
+
+	const updateData: any = {
+		updatedAt: now
+	};
+
+	// Only update provided fields
+	if (data.name !== undefined) updateData.name = data.name;
+	if (data.zoneType !== undefined) updateData.zoneType = data.zoneType;
+	if (data.locationWithin !== undefined) updateData.locationWithin = data.locationWithin;
+	if (data.parentZoneId !== undefined) updateData.parentZoneId = data.parentZoneId;
+	if (data.firstAppearance !== undefined) updateData.firstAppearance = data.firstAppearance;
+	if (data.storySignificance !== undefined)
+		updateData.storySignificance = data.storySignificance;
+
+	// Descriptions
+	if (data.physicalDescription !== undefined)
+		updateData.physicalDescription = data.physicalDescription;
+	if (data.narrativeFunction !== undefined)
+		updateData.narrativeFunction = data.narrativeFunction;
+	if (data.emotionalRegister !== undefined)
+		updateData.emotionalRegister = data.emotionalRegister;
+
+	// Details (arrays)
+	if (data.signatureDetails !== undefined)
+		updateData.signatureDetails = JSON.stringify(data.signatureDetails);
+	if (data.moodAffinity !== undefined)
+		updateData.moodAffinity = JSON.stringify(data.moodAffinity);
+	if (data.characterAssociations !== undefined)
+		updateData.characterAssociations = JSON.stringify(data.characterAssociations);
+
+	await drizzleDb
+		.update(locationZone)
+		.set(updateData)
+		.where(
+			and(
+				eq(locationZone.slug, slug),
+				eq(locationZone.locationId, locationId),
+				eq(locationZone.workspaceId, workspaceId)
+			)
+		)
+		.execute();
+}
+
+/**
+ * Delete a zone by slug
+ */
+export async function deleteZone(
+	db: D1Database,
+	locationId: string,
+	slug: string,
+	workspaceId: string
+): Promise<void> {
+	const drizzleDb = drizzle(db);
+
+	await drizzleDb
+		.delete(locationZone)
+		.where(
+			and(
+				eq(locationZone.slug, slug),
+				eq(locationZone.locationId, locationId),
+				eq(locationZone.workspaceId, workspaceId)
+			)
+		)
+		.execute();
+}
+
+/**
+ * List all zones for a location
+ */
+export async function listZones(
+	db: D1Database,
+	locationId: string,
+	workspaceId: string,
+	options?: {
+		limit?: number;
+		offset?: number;
+		zoneType?: string;
+	}
+): Promise<any[]> {
+	const drizzleDb = drizzle(db);
+
+	let query = drizzleDb
+		.select({
+			id: locationZone.id,
+			slug: locationZone.slug,
+			name: locationZone.name,
+			zoneType: locationZone.zoneType,
+			storySignificance: locationZone.storySignificance,
+			createdAt: locationZone.createdAt,
+			updatedAt: locationZone.updatedAt
+		})
+		.from(locationZone)
+		.where(and(eq(locationZone.locationId, locationId), eq(locationZone.workspaceId, workspaceId)));
+
+	// Apply filters
+	if (options?.zoneType) {
+		query = query.where(eq(locationZone.zoneType, options.zoneType));
 	}
 
 	// Apply pagination
