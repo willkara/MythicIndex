@@ -41,6 +41,21 @@ export {
   testConnection as testImagesConnection,
   isCloudflareImagesAvailable,
 } from './services/cloudflare-images.js';
+export {
+  initVectorize,
+  resetVectorize,
+  getVectorize,
+  isVectorizeAvailable,
+  testConnection as testVectorizeConnection,
+  type VectorRecord,
+} from './services/vectorize.js';
+export {
+  initWorkersAI,
+  resetWorkersAI,
+  getWorkersAI,
+  isWorkersAIAvailable,
+  testConnection as testWorkersAIConnection,
+} from './services/workers-ai.js';
 export { setLogger } from './services/d1-inserts.js';
 export {
   insertCharacter,
@@ -161,12 +176,20 @@ export async function discoverChapters(contentDir: string): Promise<string[]> {
 
 /**
  * Ingest a single character (content + imagery)
+ *
+ * @param slug - Character slug
+ * @param contentDir - Path to story content directory
+ * @param workspaceId - Workspace ID
+ * @param onProgress - Optional progress callback
+ * @param options - Ingestion options
+ * @param options.generateEmbedding - If true, generate and store vector embedding
  */
 export async function ingestSingleCharacter(
   slug: string,
   contentDir: string,
   workspaceId: string,
-  onProgress?: ProgressCallback
+  onProgress?: ProgressCallback,
+  options?: { generateEmbedding?: boolean }
 ): Promise<{ success: boolean; errors: string[]; imagesUploaded: number }> {
   const errors: string[] = [];
   let imagesUploaded = 0;
@@ -183,8 +206,10 @@ export async function ingestSingleCharacter(
     const profileContent = await readFile(profilePath, 'utf-8');
     const character = parseCharacterProfile(slug, profileContent);
 
-    // Insert character
-    await insertCharacter(workspaceId, character);
+    // Insert character (with optional embedding generation)
+    await insertCharacter(workspaceId, character, undefined, {
+      generateEmbedding: options?.generateEmbedding,
+    });
 
     // Parse and insert relationships if file exists
     const relationshipsPath = join(contentDir, 'characters', slug, 'relationships.md');
@@ -226,12 +251,20 @@ export async function ingestSingleCharacter(
 
 /**
  * Ingest a single location (content + imagery)
+ *
+ * @param slug - Location slug
+ * @param contentDir - Path to story content directory
+ * @param workspaceId - Workspace ID
+ * @param onProgress - Optional progress callback
+ * @param options - Ingestion options
+ * @param options.generateEmbedding - If true, generate and store vector embedding
  */
 export async function ingestSingleLocation(
   slug: string,
   contentDir: string,
   workspaceId: string,
-  onProgress?: ProgressCallback
+  onProgress?: ProgressCallback,
+  options?: { generateEmbedding?: boolean }
 ): Promise<{ success: boolean; errors: string[]; imagesUploaded: number }> {
   const errors: string[] = [];
   let imagesUploaded = 0;
@@ -248,8 +281,10 @@ export async function ingestSingleLocation(
     const overviewContent = await readFile(overviewPath, 'utf-8');
     const location = parseLocationOverview(slug, overviewContent);
 
-    // Insert location
-    await insertLocation(workspaceId, location);
+    // Insert location (with optional embedding generation)
+    await insertLocation(workspaceId, location, undefined, undefined, {
+      generateEmbedding: options?.generateEmbedding,
+    });
 
     // Ingest imagery
     onProgress?.({
@@ -274,12 +309,20 @@ export async function ingestSingleLocation(
 
 /**
  * Ingest a single chapter (content + imagery)
+ *
+ * @param slug - Chapter slug
+ * @param contentDir - Path to story content directory
+ * @param workspaceId - Workspace ID
+ * @param onProgress - Optional progress callback
+ * @param options - Ingestion options
+ * @param options.generateEmbedding - If true, generate and store vector embedding
  */
 export async function ingestSingleChapter(
   slug: string,
   contentDir: string,
   workspaceId: string,
-  onProgress?: ProgressCallback
+  onProgress?: ProgressCallback,
+  options?: { generateEmbedding?: boolean }
 ): Promise<{ success: boolean; errors: string[]; imagesUploaded: number }> {
   const errors: string[] = [];
   let imagesUploaded = 0;
@@ -296,8 +339,10 @@ export async function ingestSingleChapter(
     const chapterContent = await readFile(contentPath, 'utf-8');
     const chapter = parseChapterContent(slug, chapterContent);
 
-    // Insert chapter
-    await insertChapter(workspaceId, chapter);
+    // Insert chapter (with optional embedding generation)
+    await insertChapter(workspaceId, chapter, 'ingestion', {
+      generateEmbedding: options?.generateEmbedding,
+    });
 
     // Ingest imagery
     onProgress?.({
@@ -465,12 +510,21 @@ export async function ingestChapters(
 
 /**
  * Ingest all content (characters, locations, chapters) with imagery
+ *
+ * @param contentDir - Path to story content directory
+ * @param workspaceId - Workspace ID
+ * @param onProgress - Optional progress callback
+ * @param options - Ingestion options
+ * @param options.generateEmbedding - If true, generate vector embeddings (default: true)
  */
 export async function ingestAllContent(
   contentDir: string,
   workspaceId: string,
-  onProgress?: ProgressCallback
+  onProgress?: ProgressCallback,
+  options?: { generateEmbedding?: boolean }
 ): Promise<IngestionResult> {
+  // Default to generating embeddings
+  const generateEmbedding = options?.generateEmbedding !== false;
   const result: IngestionResult = {
     success: true,
     stats: {
@@ -512,7 +566,9 @@ export async function ingestAllContent(
       message: `Character: ${slug}`,
     });
 
-    const charResult = await ingestSingleCharacter(slug, contentDir, workspaceId);
+    const charResult = await ingestSingleCharacter(slug, contentDir, workspaceId, undefined, {
+      generateEmbedding,
+    });
     if (charResult.success) {
       result.stats.characters++;
       result.stats.imagesUploaded += charResult.imagesUploaded;
@@ -537,7 +593,9 @@ export async function ingestAllContent(
       message: `Location: ${slug}`,
     });
 
-    const locResult = await ingestSingleLocation(slug, contentDir, workspaceId);
+    const locResult = await ingestSingleLocation(slug, contentDir, workspaceId, undefined, {
+      generateEmbedding,
+    });
     if (locResult.success) {
       result.stats.locations++;
       result.stats.imagesUploaded += locResult.imagesUploaded;
@@ -562,7 +620,9 @@ export async function ingestAllContent(
       message: `Chapter: ${slug}`,
     });
 
-    const chapResult = await ingestSingleChapter(slug, contentDir, workspaceId);
+    const chapResult = await ingestSingleChapter(slug, contentDir, workspaceId, undefined, {
+      generateEmbedding,
+    });
     if (chapResult.success) {
       result.stats.chapters++;
       result.stats.imagesUploaded += chapResult.imagesUploaded;

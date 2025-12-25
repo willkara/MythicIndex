@@ -1,4 +1,4 @@
-import type { Ai } from '@cloudflare/workers-types';
+import type { Ai, VectorizeIndex } from '@cloudflare/workers-types';
 
 /**
  * Result of generating an embedding for a content block.
@@ -38,8 +38,9 @@ export interface SearchResult {
  * Service for generating and searching vector embeddings.
  *
  * Provides semantic search capabilities using Cloudflare Workers AI
- * and the BGE-base-en-v1.5 embedding model. Generates vector embeddings
- * from text for similarity matching and search.
+ * and the BGE-M3 embedding model. Generates 1024-dimensional vector embeddings
+ * from text for similarity matching and search. Supports up to 8,192 tokens
+ * of context, enabling entity-level chunking (entire chapters/characters/locations).
  */
 export class EmbeddingService {
   private ai: Ai | null;
@@ -57,18 +58,19 @@ export class EmbeddingService {
   /**
    * Generates a vector embedding for the given text.
    *
-   * Uses Cloudflare Workers AI with the BGE-base-en-v1.5 model to generate
-   * a semantic vector embedding of the input text. Returns an empty array
-   * if the AI binding is unavailable or if generation fails.
+   * Uses Cloudflare Workers AI with the BGE-M3 model to generate
+   * a 1024-dimensional semantic vector embedding of the input text.
+   * Supports up to 8,192 tokens (~32,768 characters), allowing entire
+   * chapters, character profiles, or locations to be embedded as single vectors.
    *
-   * @param text - The text to generate an embedding for
-   * @returns Vector embedding as an array of numbers, or empty array on failure
+   * @param text - The text to generate an embedding for (max 8,192 tokens)
+   * @returns 1024-dimensional vector embedding, or empty array on failure
    *
    * @example
    * ```typescript
    * const service = new EmbeddingService(platform.env.AI);
    * const embedding = await service.generateEmbedding('Sample text');
-   * console.log(`Generated ${embedding.length}-dimensional embedding`);
+   * console.log(`Generated ${embedding.length}-dimensional embedding`); // 1024
    * ```
    */
   async generateEmbedding(text: string): Promise<number[]> {
@@ -78,7 +80,7 @@ export class EmbeddingService {
     }
 
     try {
-      const response = (await this.ai.run('@cf/baai/bge-base-en-v1.5', {
+      const response = (await this.ai.run('@cf/baai/bge-m3', {
         text: [text],
       })) as { data: number[][] };
 
@@ -94,27 +96,69 @@ export class EmbeddingService {
   }
 
   /**
-   * Searches for content blocks similar to the query text.
+   * Searches for content similar to the query text using Vectorize.
    *
-   * This is a placeholder implementation that would typically use a vector
-   * database like Cloudflare Vectorize to find semantically similar content
-   * blocks based on embedding similarity.
+   * Generates an embedding for the query text and searches the Vectorize
+   * index for semantically similar content entities (chapters, characters, locations).
+   * Returns results ranked by cosine similarity score.
    *
    * @param query - The search query text
-   * @param limit - Maximum number of results to return (default: 10)
-   * @returns Array of search results (currently returns empty array)
+   * @param vectorize - Cloudflare Vectorize index binding
+   * @param options - Search options (limit, filter by kind)
+   * @returns Array of search results with similarity scores
    *
    * @example
    * ```typescript
-   * const results = await service.searchSimilar('dragon battle', 5);
-   * results.forEach(r => console.log(`${r.contentTitle}: ${r.score}`));
+   * const results = await service.searchSimilar(
+   *   'dragon battle aftermath',
+   *   platform.env.VECTORIZE_INDEX,
+   *   { limit: 10, filter: { kind: 'chapter' } }
+   * );
+   * results.forEach(r => console.log(`${r.contentTitle}: ${r.score.toFixed(3)}`));
    * ```
    */
-  async searchSimilar(query: string, limit: number = 10): Promise<SearchResult[]> {
-    // This would normally use a vector database like Vectorize
-    // For now, return empty results
-    console.log('Search query:', query, 'limit:', limit);
-    return [];
+  async searchSimilar(
+    query: string,
+    vectorize: VectorizeIndex,
+    options?: {
+      limit?: number;
+      filter?: { kind?: 'chapter' | 'character' | 'location' };
+    }
+  ): Promise<SearchResult[]> {
+    if (!this.ai) {
+      console.warn('AI binding not available, cannot perform search');
+      return [];
+    }
+
+    try {
+      // Generate embedding for query
+      const queryEmbedding = await this.generateEmbedding(query);
+
+      if (queryEmbedding.length === 0) {
+        console.warn('Failed to generate query embedding');
+        return [];
+      }
+
+      // Query Vectorize index
+      const matches = await vectorize.query(queryEmbedding, {
+        topK: options?.limit || 10,
+        returnMetadata: true,
+        filter: options?.filter,
+      });
+
+      // Transform Vectorize results to SearchResult format
+      return matches.matches.map((match) => ({
+        blockId: match.id,
+        score: match.score,
+        text: (match.metadata?.textPreview as string) || '',
+        contentTitle: (match.metadata?.title as string) || '',
+        contentSlug: (match.metadata?.slug as string) || '',
+        contentKind: (match.metadata?.kind as string) || '',
+      }));
+    } catch (error) {
+      console.error('Failed to search similar content:', error);
+      return [];
+    }
   }
 
   /**

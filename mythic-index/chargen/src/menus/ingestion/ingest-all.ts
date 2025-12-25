@@ -9,10 +9,15 @@ import { showSection, showSuccess, showError, showWarning, newLine } from '../..
 import {
   getIngestionConfig,
   checkIngestionConfig,
+  getConfigStatus,
   initD1,
   initCloudflareImages,
+  initWorkersAI,
+  initVectorize,
   testD1Connection,
   testImagesConnection,
+  testWorkersAIConnection,
+  testVectorizeConnection,
   ingestAllContent,
   discoverCharacters,
   discoverLocations,
@@ -35,11 +40,13 @@ export async function runIngestAllMenu(): Promise<void> {
   }
 
   const config = getIngestionConfig();
+  const configStatus = getConfigStatus();
 
   // Initialize services
   const spinner = startSpinner('Initializing services...');
 
   try {
+    // Core services (required)
     initD1({
       accountId: config.cloudflareAccountId,
       databaseId: config.cloudflareD1DatabaseId,
@@ -49,6 +56,21 @@ export async function runIngestAllMenu(): Promise<void> {
       accountId: config.cloudflareAccountId,
       apiToken: config.cloudflareApiToken,
     });
+
+    // Embedding services (optional - for semantic search)
+    let embeddingsAvailable = false;
+    if (configStatus.vectorizeConfigured) {
+      initWorkersAI({
+        accountId: config.cloudflareAccountId,
+        apiToken: config.cloudflareApiToken,
+      });
+      initVectorize({
+        accountId: config.cloudflareAccountId,
+        indexId: config.cloudflareVectorizeIndexId!,
+        apiToken: config.cloudflareApiToken,
+      });
+      embeddingsAvailable = true;
+    }
 
     // Test connections
     spinner.text = 'Testing D1 connection...';
@@ -65,7 +87,33 @@ export async function runIngestAllMenu(): Promise<void> {
       return;
     }
 
-    succeedSpinner('Services initialized');
+    // Test embedding services if available
+    if (embeddingsAvailable) {
+      spinner.text = 'Testing Workers AI connection...';
+      const aiOk = await testWorkersAIConnection();
+      if (!aiOk) {
+        showWarning('Workers AI connection failed - embeddings will be skipped');
+        embeddingsAvailable = false;
+      }
+
+      if (embeddingsAvailable) {
+        spinner.text = 'Testing Vectorize connection...';
+        const vectorizeOk = await testVectorizeConnection();
+        if (!vectorizeOk) {
+          showWarning('Vectorize connection failed - embeddings will be skipped');
+          embeddingsAvailable = false;
+        }
+      }
+    }
+
+    if (embeddingsAvailable) {
+      succeedSpinner('All services initialized (including semantic search)');
+    } else {
+      succeedSpinner('Core services initialized (embeddings disabled)');
+    }
+
+    // Store for later use
+    config.embeddingsAvailable = embeddingsAvailable;
   } catch (err) {
     failSpinner(`Failed to initialize services: ${err}`);
     return;
@@ -97,6 +145,11 @@ export async function runIngestAllMenu(): Promise<void> {
     console.log(chalk.dim('  - Insert/update all content in D1 database'));
     console.log(chalk.dim('  - Upload all images to Cloudflare Images'));
     console.log(chalk.dim('  - Link images to their entities'));
+    if ((config as any).embeddingsAvailable) {
+      console.log(chalk.dim('  - Generate BGE-M3 embeddings for semantic search'));
+    } else {
+      console.log(chalk.dim('  - Skip embeddings (Vectorize not configured)'));
+    }
     newLine();
 
     const proceed = await confirm({
@@ -113,9 +166,16 @@ export async function runIngestAllMenu(): Promise<void> {
     newLine();
     const ingestSpinner = startSpinner('Starting ingestion...');
 
-    const result = await ingestAllContent(config.contentDir, config.workspaceId, (progress) => {
-      ingestSpinner.text = `[${progress.current}/${progress.total}] ${progress.message}`;
-    });
+    const result = await ingestAllContent(
+      config.contentDir,
+      config.workspaceId,
+      (progress) => {
+        ingestSpinner.text = `[${progress.current}/${progress.total}] ${progress.message}`;
+      },
+      {
+        generateEmbedding: (config as any).embeddingsAvailable,
+      }
+    );
 
     if (result.success) {
       succeedSpinner('Ingestion complete');

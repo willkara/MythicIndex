@@ -7,6 +7,8 @@
 
 import { execute, query, batch as _batch } from './d1-rest.js';
 import { MarkdownBlockParser } from '../parsers/markdown-blocks.js';
+import { getWorkersAI, isWorkersAIAvailable } from './workers-ai.js';
+import { getVectorize, isVectorizeAvailable } from './vectorize.js';
 import type {
   ParsedCharacter,
   ParsedRelationship,
@@ -14,6 +16,7 @@ import type {
   ParsedChapter,
   SceneMarker,
 } from '../parsers/types.js';
+import type { VectorRecord } from './vectorize.js';
 
 // ============================================================================
 // Logging
@@ -54,6 +57,252 @@ function toJsonString(value: unknown): string | null {
 }
 
 // ============================================================================
+// Entity Text Builders (for Embeddings)
+// ============================================================================
+
+/**
+ * Build comprehensive text representation of a character for embedding.
+ *
+ * Constructs a narrative-rich text that captures all aspects of the character
+ * for semantic search. Takes advantage of BGE-M3's 8,192 token context window.
+ *
+ * @param char - Parsed character data
+ * @returns Full text representation (~500-2,000 words)
+ */
+function buildCharacterText(char: ParsedCharacter): string {
+  const parts: string[] = [];
+
+  // Header
+  parts.push(`Character: ${char.name}`);
+
+  // Basic info
+  if (char.aliases?.length) parts.push(`Also known as: ${char.aliases.join(', ')}`);
+  if (char.race) parts.push(`Race: ${char.race}`);
+  if (char.characterClass) parts.push(`Class: ${char.characterClass}`);
+  if (char.role) parts.push(`Role in story: ${char.role}`);
+  if (char.status) parts.push(`Status: ${char.status}`);
+  if (char.firstAppearance) parts.push(`First appeared in: ${char.firstAppearance}`);
+
+  // Visual summary (key for search)
+  if (char.visualSummary) {
+    parts.push(`\nVisual Summary:\n${char.visualSummary}`);
+  }
+
+  // Detailed appearance
+  if (
+    char.appearance.age ||
+    char.appearance.height ||
+    char.appearance.build ||
+    char.appearance.hair ||
+    char.appearance.eyes
+  ) {
+    parts.push('\nPhysical Appearance:');
+    if (char.appearance.age) parts.push(`Age: ${char.appearance.age}`);
+    if (char.appearance.height) parts.push(`Height: ${char.appearance.height}`);
+    if (char.appearance.build) parts.push(`Build: ${char.appearance.build}`);
+    if (char.appearance.hair) parts.push(`Hair: ${char.appearance.hair}`);
+    if (char.appearance.eyes) parts.push(`Eyes: ${char.appearance.eyes}`);
+    if (char.appearance.distinguishingFeatures?.length) {
+      parts.push(`Distinguishing features: ${char.appearance.distinguishingFeatures.join(', ')}`);
+    }
+    if (char.appearance.clothing) parts.push(`Clothing: ${char.appearance.clothing}`);
+  }
+
+  // Personality
+  if (char.personality.archetype || char.personality.temperament) {
+    parts.push('\nPersonality:');
+    if (char.personality.archetype) parts.push(`Archetype: ${char.personality.archetype}`);
+    if (char.personality.temperament) parts.push(`Temperament: ${char.personality.temperament}`);
+    if (char.personality.moralAlignment) parts.push(`Moral alignment: ${char.personality.moralAlignment}`);
+    if (char.personality.positiveTraits?.length) {
+      parts.push(`Positive traits: ${char.personality.positiveTraits.join(', ')}`);
+    }
+    if (char.personality.negativeTraits?.length) {
+      parts.push(`Negative traits: ${char.personality.negativeTraits.join(', ')}`);
+    }
+  }
+
+  // Background and psychology
+  if (char.background) parts.push(`\nBackground:\n${char.background}`);
+  if (char.motivations?.length) parts.push(`\nMotivations: ${char.motivations.join('; ')}`);
+  if (char.fears?.length) parts.push(`Fears: ${char.fears.join('; ')}`);
+  if (char.secrets?.length) parts.push(`Secrets: ${char.secrets.join('; ')}`);
+
+  // Combat abilities
+  if (char.combat.primaryWeapons || char.combat.fightingStyle || char.combat.tacticalRole) {
+    parts.push('\nCombat:');
+    if (char.combat.primaryWeapons) parts.push(`Primary weapons: ${char.combat.primaryWeapons}`);
+    if (char.combat.fightingStyle) parts.push(`Fighting style: ${char.combat.fightingStyle}`);
+    if (char.combat.tacticalRole) parts.push(`Tactical role: ${char.combat.tacticalRole}`);
+  }
+
+  // Voice and speech
+  if (char.voice.speechStyle) parts.push(`\nSpeech style: ${char.voice.speechStyle}`);
+  if (char.voice.signaturePhrases?.length) {
+    parts.push(`Signature phrases: "${char.voice.signaturePhrases.join('", "')}"`);
+  }
+
+  // Story context
+  if (char.faction) parts.push(`\nFaction: ${char.faction}`);
+  if (char.occupation) parts.push(`Occupation: ${char.occupation}`);
+  if (char.notes) parts.push(`\nAdditional notes:\n${char.notes}`);
+
+  return parts.join('\n');
+}
+
+/**
+ * Build comprehensive text representation of a location for embedding.
+ *
+ * @param loc - Parsed location data
+ * @returns Full text representation (~400-1,500 words)
+ */
+function buildLocationText(loc: ParsedLocation): string {
+  const parts: string[] = [];
+
+  // Header
+  parts.push(`Location: ${loc.name}`);
+
+  // Basic info
+  if (loc.locationType) parts.push(`Type: ${loc.locationType}`);
+  if (loc.region) parts.push(`Region: ${loc.region}`);
+
+  // Descriptions
+  if (loc.quickDescription) parts.push(`\n${loc.quickDescription}`);
+  if (loc.visualSummary) parts.push(`\nVisual Summary:\n${loc.visualSummary}`);
+  if (loc.atmosphere) parts.push(`\nAtmosphere:\n${loc.atmosphere}`);
+  if (loc.history) parts.push(`\nHistory:\n${loc.history}`);
+
+  // Details
+  if (loc.notableLandmarks?.length) {
+    parts.push(`\nNotable landmarks: ${loc.notableLandmarks.join(', ')}`);
+  }
+  if (loc.keyPersonnel?.length) {
+    parts.push(`Key personnel: ${loc.keyPersonnel.join(', ')}`);
+  }
+
+  // Story context
+  if (loc.storyRole) parts.push(`\nStory role:\n${loc.storyRole}`);
+  if (loc.hazardsDangers?.length) {
+    parts.push(`\nHazards and dangers: ${loc.hazardsDangers.join('; ')}`);
+  }
+  if (loc.connections?.length) {
+    parts.push(`\nConnections: ${loc.connections.join(', ')}`);
+  }
+  if (loc.accessibility) parts.push(`\nAccessibility:\n${loc.accessibility}`);
+  if (loc.significanceLevel) parts.push(`\nSignificance: ${loc.significanceLevel}`);
+  if (loc.firstAppearance) parts.push(`First appeared in: ${loc.firstAppearance}`);
+
+  return parts.join('\n');
+}
+
+/**
+ * Build comprehensive text representation of a chapter for embedding.
+ *
+ * Aggregates all content blocks into a single narrative text, preserving
+ * scene structure and full context. Average chapter is ~3,700 words,
+ * well within BGE-M3's 8,192 token (~32K character) limit.
+ *
+ * @param chapter - Parsed chapter data
+ * @returns Full chapter text (~2,000-6,000 words)
+ */
+function buildChapterText(chapter: ParsedChapter): string {
+  const parts: string[] = [];
+
+  // Header
+  parts.push(`Chapter: ${chapter.title}`);
+
+  // Metadata context
+  if (chapter.povCharacter) parts.push(`POV: ${chapter.povCharacter}`);
+  if (chapter.keyCharacters?.length) {
+    parts.push(`Key characters: ${chapter.keyCharacters.join(', ')}`);
+  }
+  if (chapter.keyLocations?.length) {
+    parts.push(`Key locations: ${chapter.keyLocations.join(', ')}`);
+  }
+  if (chapter.majorEvents?.length) {
+    parts.push(`Major events: ${chapter.majorEvents.join('; ')}`);
+  }
+  if (chapter.motifs?.length) {
+    parts.push(`Motifs: ${chapter.motifs.join(', ')}`);
+  }
+
+  parts.push('\n--- Content ---\n');
+
+  // Full chapter content
+  // The fullContent property contains the complete markdown text
+  parts.push(chapter.fullContent);
+
+  return parts.join('\n');
+}
+
+/**
+ * Generate and store embedding for an entity (character, location, or chapter).
+ *
+ * This is a helper function that handles the entire embedding workflow:
+ * 1. Build comprehensive text representation
+ * 2. Generate embedding via Workers AI (BGE-M3)
+ * 3. Upsert to Vectorize with metadata
+ *
+ * @param entityId - Entity ID (used as vector ID)
+ * @param entityText - Full text representation of entity
+ * @param metadata - Metadata for Vectorize (kind, slug, title, textPreview)
+ */
+async function generateAndStoreEmbedding(
+  entityId: string,
+  entityText: string,
+  metadata: { kind: 'chapter' | 'character' | 'location'; slug: string; title: string }
+): Promise<void> {
+  if (!isWorkersAIAvailable() || !isVectorizeAvailable()) {
+    log('warn', 'Skipping embedding: Workers AI or Vectorize not initialized', {
+      entityId,
+      slug: metadata.slug,
+    });
+    return;
+  }
+
+  try {
+    const ai = getWorkersAI();
+    const vectorize = getVectorize();
+
+    // Generate embedding
+    log('debug', 'Generating embedding', { entityId, slug: metadata.slug, textLength: entityText.length });
+    const embedding = await ai.generateEmbedding(entityText);
+
+    if (embedding.length !== 1024) {
+      throw new Error(`Expected 1024-dimensional embedding, got ${embedding.length}`);
+    }
+
+    // Prepare vector record
+    const vectorRecord: VectorRecord = {
+      id: entityId,
+      values: embedding,
+      metadata: {
+        kind: metadata.kind,
+        slug: metadata.slug,
+        title: metadata.title,
+        textPreview: entityText.substring(0, 100),
+      },
+    };
+
+    // Upsert to Vectorize
+    await vectorize.upsertBatch([vectorRecord]);
+
+    log('info', 'Embedding generated and stored', {
+      entityId,
+      slug: metadata.slug,
+      dimensions: embedding.length,
+    });
+  } catch (error) {
+    log('warn', 'Failed to generate/store embedding', {
+      entityId,
+      slug: metadata.slug,
+      error: String(error),
+    });
+    // Don't throw - embedding failure shouldn't block content ingestion
+  }
+}
+
+// ============================================================================
 // Character Operations
 // ============================================================================
 
@@ -64,11 +313,18 @@ export interface InsertCharacterResult {
 
 /**
  * Insert a parsed character into the character table
+ *
+ * @param workspaceId - Workspace ID for multi-tenancy
+ * @param char - Parsed character data
+ * @param contentItemId - Optional content item ID (for linking to content blocks)
+ * @param options - Optional settings
+ * @param options.generateEmbedding - If true, generate and store vector embedding
  */
 export async function insertCharacter(
   workspaceId: string,
   char: ParsedCharacter,
-  contentItemId?: string
+  contentItemId?: string,
+  options?: { generateEmbedding?: boolean }
 ): Promise<InsertCharacterResult> {
   log('info', 'Inserting character', { name: char.name, slug: char.slug });
   const id = generateId();
@@ -192,6 +448,16 @@ export async function insertCharacter(
   const finalId = result[0]?.id || id;
   log('info', 'Character upserted', { id: finalId, slug: char.slug });
 
+  // Generate and store embedding if requested
+  if (options?.generateEmbedding) {
+    const characterText = buildCharacterText(char);
+    await generateAndStoreEmbedding(finalId, characterText, {
+      kind: 'character',
+      slug: char.slug,
+      title: char.name,
+    });
+  }
+
   return {
     id: finalId,
     slug: char.slug,
@@ -224,12 +490,20 @@ export interface InsertLocationResult {
 
 /**
  * Insert a parsed location into the location table
+ *
+ * @param workspaceId - Workspace ID for multi-tenancy
+ * @param loc - Parsed location data
+ * @param contentItemId - Optional content item ID (for linking to content blocks)
+ * @param parentLocationId - Optional parent location for hierarchical relationships
+ * @param options - Optional settings
+ * @param options.generateEmbedding - If true, generate and store vector embedding
  */
 export async function insertLocation(
   workspaceId: string,
   loc: ParsedLocation,
   contentItemId?: string,
-  parentLocationId?: string
+  parentLocationId?: string,
+  options?: { generateEmbedding?: boolean }
 ): Promise<InsertLocationResult> {
   log('info', 'Inserting location', { name: loc.name, slug: loc.slug, type: loc.locationType });
   const id = generateId();
@@ -305,6 +579,16 @@ export async function insertLocation(
 
   const finalId = result[0]?.id || id;
   log('info', 'Location upserted', { id: finalId, slug: loc.slug });
+
+  // Generate and store embedding if requested
+  if (options?.generateEmbedding) {
+    const locationText = buildLocationText(loc);
+    await generateAndStoreEmbedding(finalId, locationText, {
+      kind: 'location',
+      slug: loc.slug,
+      title: loc.name,
+    });
+  }
 
   return {
     id: finalId,
@@ -400,11 +684,18 @@ export interface InsertChapterResult {
 /**
  * Insert a chapter into content_item and its scenes
  * Updates metadata_json with parsed chapter metadata
+ *
+ * @param workspaceId - Workspace ID for multi-tenancy
+ * @param chapter - Parsed chapter data
+ * @param authorId - Author ID for tracking (default: 'ingestion')
+ * @param options - Optional settings
+ * @param options.generateEmbedding - If true, generate and store vector embedding
  */
 export async function insertChapter(
   workspaceId: string,
   chapter: ParsedChapter,
-  authorId: string = 'ingestion'
+  authorId: string = 'ingestion',
+  options?: { generateEmbedding?: boolean }
 ): Promise<InsertChapterResult> {
   log('info', 'Inserting chapter', {
     title: chapter.title,
@@ -484,6 +775,16 @@ export async function insertChapter(
       blockTypes: blockStats.blockTypes,
     });
 
+    // Generate and store embedding if requested
+    if (options?.generateEmbedding) {
+      const chapterText = buildChapterText(chapter);
+      await generateAndStoreEmbedding(existingId, chapterText, {
+        kind: 'chapter',
+        slug: chapter.slug,
+        title: chapter.title,
+      });
+    }
+
     return {
       contentItemId: existingId,
       revisionId: existingRevisionId,
@@ -538,6 +839,16 @@ export async function insertChapter(
     blocks: blockStats.totalBlocks,
     blockTypes: blockStats.blockTypes,
   });
+
+  // Generate and store embedding if requested
+  if (options?.generateEmbedding) {
+    const chapterText = buildChapterText(chapter);
+    await generateAndStoreEmbedding(contentItemId, chapterText, {
+      kind: 'chapter',
+      slug: chapter.slug,
+      title: chapter.title,
+    });
+  }
 
   return {
     contentItemId,

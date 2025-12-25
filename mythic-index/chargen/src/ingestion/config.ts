@@ -28,6 +28,7 @@ export interface IngestionConfig {
   cloudflareD1DatabaseId: string;
   cloudflareApiToken: string;
   cloudflareAccountHash?: string;
+  cloudflareVectorizeIndexId?: string;
   contentDir: string;
   workspaceId: string;
 }
@@ -91,6 +92,7 @@ export function getIngestionConfig(): IngestionConfig {
     cloudflareD1DatabaseId: process.env.CLOUDFLARE_D1_DATABASE_ID!,
     cloudflareApiToken: process.env.CLOUDFLARE_API_TOKEN!,
     cloudflareAccountHash: process.env.CLOUDFLARE_ACCOUNT_HASH,
+    cloudflareVectorizeIndexId: process.env.CLOUDFLARE_VECTORIZE_INDEX_ID,
     contentDir: getContentDir(),
     workspaceId: process.env.WORKSPACE_ID || 'default',
   };
@@ -102,6 +104,7 @@ export function getIngestionConfig(): IngestionConfig {
 export function getConfigStatus(): {
   d1Configured: boolean;
   imagesConfigured: boolean;
+  vectorizeConfigured: boolean;
   contentDirExists: boolean;
   contentDir: string;
 } {
@@ -115,12 +118,19 @@ export function getConfigStatus(): {
     process.env.CLOUDFLARE_ACCOUNT_ID && process.env.CLOUDFLARE_API_TOKEN
   );
 
+  const vectorizeConfigured = !!(
+    process.env.CLOUDFLARE_ACCOUNT_ID &&
+    process.env.CLOUDFLARE_API_TOKEN &&
+    process.env.CLOUDFLARE_VECTORIZE_INDEX_ID
+  );
+
   const contentDir = getContentDir();
   const contentDirExists = existsSync(contentDir);
 
   return {
     d1Configured,
     imagesConfigured,
+    vectorizeConfigured,
     contentDirExists,
     contentDir,
   };
