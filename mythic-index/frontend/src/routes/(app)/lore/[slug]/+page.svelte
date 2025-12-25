@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { ChevronLeft, ChevronRight, Calendar, ArrowUp, Globe } from 'lucide-svelte';
+	import { goto } from '$app/navigation';
+	import { page as pageStore } from '$app/stores';
+	import { ChevronLeft, ChevronRight, Calendar, ArrowUp, Scroll } from 'lucide-svelte';
 	import { Button } from '$lib/components/ui/button';
 	import BlockParagraph from '$lib/components/blocks/BlockParagraph.svelte';
 	import BlockDialogue from '$lib/components/blocks/BlockDialogue.svelte';
@@ -25,6 +27,28 @@
 	function openLightbox(index: number) {
 		lightboxIndex = index;
 		lightboxOpen = true;
+
+		// Update URL with shallow routing
+		const url = new URL($pageStore.url);
+		url.searchParams.set('image', String(index));
+		goto(url.toString(), {
+			replaceState: false,
+			noScroll: true,
+			keepFocus: true
+		});
+	}
+
+	function closeLightbox() {
+		lightboxOpen = false;
+
+		// Remove image param from URL
+		const url = new URL($pageStore.url);
+		url.searchParams.delete('image');
+		goto(url.toString(), {
+			replaceState: false,
+			noScroll: true,
+			keepFocus: true
+		});
 	}
 
 	const formattedDate = $derived(
@@ -45,6 +69,16 @@
 	);
 
 	onMount(() => {
+		// Check for image query parameter (shallow routing)
+		const imageParam = $pageStore.url.searchParams.get('image');
+		if (imageParam) {
+			const imageIndex = parseInt(imageParam, 10);
+			if (!isNaN(imageIndex) && imageIndex >= 0 && imageIndex < data.images.length) {
+				lightboxIndex = imageIndex;
+				lightboxOpen = true;
+			}
+		}
+
 		const handleScroll = () => {
 			showBackToTop = window.scrollY > 500;
 		};
@@ -67,7 +101,7 @@
 
 <svelte:head>
 	<title>{data.item.title} | Mythic Index</title>
-	<meta name="description" content="Worldbuilding: {data.item.title} on Mythic Index" />
+	<meta name="description" content="Lore: {data.item.title} on Mythic Index" />
 </svelte:head>
 
 <article class="container py-8 px-4 max-w-3xl">
@@ -75,7 +109,7 @@
 		<nav class="flex items-center gap-2 text-sm text-muted-foreground mb-6" aria-label="Breadcrumb">
 			<a href="/canon" class="hover:text-foreground transition-colors">Canon</a>
 			<ChevronRight class="h-4 w-4" aria-hidden="true" />
-			<a href="/canon#worldbuilding" class="hover:text-foreground transition-colors">Worldbuilding</a>
+			<a href="/canon#lore" class="hover:text-foreground transition-colors">Lore</a>
 		</nav>
 
 		<h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4 leading-tight">
@@ -91,8 +125,8 @@
 
 		<div class="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-8">
 			<span class="inline-flex items-center gap-1.5">
-				<Globe class="h-4 w-4" aria-hidden="true" />
-				Worldbuilding
+				<Scroll class="h-4 w-4" aria-hidden="true" />
+				Lore
 			</span>
 			<span class="inline-flex items-center gap-1.5">
 				<span class="text-muted-foreground/50" aria-hidden="true">•</span>
@@ -176,14 +210,15 @@
 		<Lightbox
 			images={galleryImages}
 			initialIndex={lightboxIndex}
-			onclose={() => lightboxOpen = false}
+			onclose={closeLightbox}
+			shallowRouting={true}
 		/>
 	{/if}
 
 	<footer class="mt-16 pt-8 border-t">
 		<nav class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
 			{#if data.navigation?.prev}
-				<a href="/worldbuilding/{data.navigation.prev.slug}" class="group flex items-center gap-3 p-4 rounded-xl border hover:bg-muted/50 flex-1">
+				<a href="/lore/{data.navigation.prev.slug}" class="group flex items-center gap-3 p-4 rounded-xl border hover:bg-muted/50 flex-1">
 					<ChevronLeft class="h-5 w-5 text-muted-foreground group-hover:text-primary" />
 					<div class="min-w-0">
 						<p class="text-xs text-muted-foreground mb-1">Previous</p>
@@ -195,7 +230,7 @@
 			{/if}
 
 			{#if data.navigation?.next}
-				<a href="/worldbuilding/{data.navigation.next.slug}" class="group flex items-center justify-end gap-3 p-4 rounded-xl border hover:bg-muted/50 flex-1 text-right">
+				<a href="/lore/{data.navigation.next.slug}" class="group flex items-center justify-end gap-3 p-4 rounded-xl border hover:bg-muted/50 flex-1 text-right">
 					<div class="min-w-0">
 						<p class="text-xs text-muted-foreground mb-1">Next</p>
 						<p class="font-medium truncate group-hover:text-primary">{data.navigation.next.title}</p>
@@ -208,9 +243,9 @@
 		</nav>
 
 		<div class="mt-8 text-center">
-			<a href="/canon#worldbuilding" class="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground">
+			<a href="/canon#lore" class="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground">
 				<ChevronLeft class="h-4 w-4" />
-				Back to Worldbuilding
+				Back to Lore
 			</a>
 		</div>
 	</footer>

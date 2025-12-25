@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
+	import { page as pageStore } from '$app/stores';
 	import { ChevronLeft, ChevronRight, Clock, Calendar, ArrowUp, BookOpen } from 'lucide-svelte';
 	import { Button } from '$lib/components/ui/button';
 	import BlockParagraph from '$lib/components/blocks/BlockParagraph.svelte';
@@ -168,6 +169,16 @@
 	);
 
 	onMount(() => {
+		// Check for image query parameter (shallow routing)
+		const imageParam = $pageStore.url.searchParams.get('image');
+		if (imageParam) {
+			const imageIndex = parseInt(imageParam, 10);
+			if (!isNaN(imageIndex) && imageIndex >= 0 && imageIndex < lightboxImages().length) {
+				lightboxIndex = imageIndex;
+				lightboxOpen = true;
+			}
+		}
+
 		// Check responsive breakpoints
 		const checkBreakpoints = () => {
 			isMobile = window.innerWidth < 768;
@@ -289,7 +300,29 @@
 		if (idx >= 0) {
 			lightboxIndex = idx;
 			lightboxOpen = true;
+
+			// Update URL with shallow routing
+			const url = new URL($pageStore.url);
+			url.searchParams.set('image', String(idx));
+			goto(url.toString(), {
+				replaceState: false,
+				noScroll: true,
+				keepFocus: true
+			});
 		}
+	}
+
+	function closeLightbox() {
+		lightboxOpen = false;
+
+		// Remove image param from URL
+		const url = new URL($pageStore.url);
+		url.searchParams.delete('image');
+		goto(url.toString(), {
+			replaceState: false,
+			noScroll: true,
+			keepFocus: true
+		});
 	}
 
 	// Keyboard navigation
@@ -620,6 +653,7 @@
 	<Lightbox
 		images={lightboxImages()}
 		initialIndex={lightboxIndex}
-		onclose={() => lightboxOpen = false}
+		onclose={closeLightbox}
+		shallowRouting={true}
 	/>
 {/if}
