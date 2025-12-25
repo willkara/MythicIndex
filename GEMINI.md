@@ -3,7 +3,7 @@
 ## Project Overview
 **MemoryQuill** (active development in `mythic-index/`) is a full-stack web application designed for managing and exploring mythological narratives and character relationships. It is built on a serverless architecture using **Cloudflare Pages**, **D1 (SQLite)**, **Cloudflare Images**, and **SvelteKit**.
 
-The project also includes a custom **Model Context Protocol (MCP) Server** to integrate AI tools and a robust suite of **Python/PowerShell scripts** for content ingestion, validation, and image management.
+The project also includes a **TypeScript CLI (chargen)** for content ingestion and embeddings generation, plus a robust suite of **Python/PowerShell scripts** for content validation and image management.
 
 ## Project Structure (`mythic-index/`)
 
@@ -12,8 +12,8 @@ All active development occurs within the `mythic-index/` directory.
 | Directory | Type | Description |
 |-----------|------|-------------|
 | **`frontend/`** | Web App | **SvelteKit** application deployed to Cloudflare Pages. Handles UI and API (via Pages Functions/Actions). Uses **Drizzle ORM** for database interaction. |
-| **`mcp-server/`** | Service | **TypeScript** MCP server. exposes tools for AI integration (using Anthropic/Google/OpenAI SDKs). |
-| **`tools/`** | Utilities | **Python** & **PowerShell** scripts for content ingestion, image synchronization, slug validation, and database seeding. |
+| **`chargen/`** | CLI Tool | **TypeScript** CLI for content ingestion and embeddings generation. Handles markdown parsing, D1 insertion, and Vectorize integration. |
+| **`tools/`** | Utilities | **Python** & **PowerShell** scripts for content validation, image synchronization, slug validation, and database seeding. |
 | **`MemoryQuill/`** | Data | The "Source of Truth" for story content, character definitions, and image metadata (YAML/JSON format). |
 | **`narratology/`** | Docs | Documentation regarding narrative structure and ontology. |
 
@@ -37,15 +37,15 @@ All active development occurs within the `mythic-index/` directory.
     *   Config: `drizzle.config.ts`
     *   Migrations: Located in `drizzle/`
 
-### MCP Server (`mythic-index/mcp-server`)
+### Chargen CLI (`mythic-index/chargen`)
 
-*   **Stack:** Node.js, TypeScript, `@modelcontextprotocol/sdk`.
-*   **Run Local:**
+*   **Stack:** Node.js, TypeScript, interactive CLI menus.
+*   **Purpose:** Content ingestion, embeddings generation, image workflows.
+*   **Run:**
     ```bash
     npm install
-    npm run dev # tsc --watch
-    # OR
-    npm run start
+    npm run build
+    npm start # Interactive menu
     ```
 
 ### Tools & Scripts (`mythic-index/tools`)

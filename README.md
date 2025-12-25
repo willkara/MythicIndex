@@ -9,10 +9,9 @@ All active development happens in the `mythic-index/` directory. The application
 ```
 mythic-index/
 ├── frontend/              # SvelteKit frontend (deployed to Cloudflare Pages)
-├── backend-worker/        # Hono API server (deployed to Cloudflare Workers)
+├── chargen/              # TypeScript CLI for content ingestion and embeddings
 ├── MemoryQuill/          # Story content, character data, and imagery metadata
 ├── narratology/          # Documentation and narrative analysis
-├── mcp-server/           # MCP server for AI tool integration
 ├── tools/                # Utility scripts and tools
 └── docs/                 # Project documentation
 ```
@@ -24,10 +23,9 @@ mythic-index/
 | Directory | Purpose | Technology |
 |-----------|---------|-----------|
 | `mythic-index/frontend/` | Web UI for browsing mythology content | SvelteKit, Tailwind CSS, Vite |
-| `mythic-index/backend-worker/` | REST API and business logic | Hono, Cloudflare D1 (SQLite) |
+| `mythic-index/chargen/` | CLI for content ingestion and embeddings generation | TypeScript, Node.js |
 | `mythic-index/MemoryQuill/` | Story content, character definitions, image metadata | YAML, JSON |
-| `mythic-index/mcp-server/` | Model Context Protocol server for AI tool integration | TypeScript |
-| `mythic-index/tools/` | Build scripts and utility tools | Node.js, shell scripts |
+| `mythic-index/tools/` | Build scripts and utility tools | Python, PowerShell, shell scripts |
 | `mythic-index/narratology/` | Documentation on mythological structure and narrative theory | Markdown, docs |
 
 ### Legacy / Reference Only
@@ -39,10 +37,7 @@ mythic-index/
 
 ### Root Configuration & Documentation
 
-- `.mcp.json` - MCP server configuration
 - `.env.example` - Environment variables template
-- `.github/workflows/` - CI/CD pipelines
-- `scripts/` - Deployment and utility scripts
 - `CLOUDFLARE_DEPLOYMENT.md` - Complete deployment guide and infrastructure details
 - `CLOUDFLARE_MIGRATION_ANALYSIS.md` - Notes on migration from legacy stack
 
@@ -99,9 +94,9 @@ Story content, character definitions, and image metadata are managed in:
 
 ## Project Configuration
 
-- `.mcp.json` - Model Context Protocol server pointing to `mythic-index/mcp-server`
 - `package.json` files in each subdirectory for dependency management
 - `wrangler.toml` files for Cloudflare-specific configuration
+- `.env.example` - Environment variables template
 
 ## Documentation
 
