@@ -5,9 +5,9 @@
 
 import { drizzle } from 'drizzle-orm/d1';
 import { eq, and } from 'drizzle-orm';
-import { character } from '../db/schema';
+import { character, location } from '../db/schema';
 import { generateSlug, makeSlugUnique } from './slug-generator';
-import type { CharacterCreate, CharacterUpdate } from './validation';
+import type { CharacterCreate, CharacterUpdate, LocationCreate, LocationUpdate } from './validation';
 
 // ============================================================================
 // Character CRUD Operations
@@ -289,6 +289,217 @@ export async function listCharacters(
 	}
 	if (options?.status) {
 		query = query.where(eq(character.status, options.status));
+	}
+
+	// Apply pagination
+	if (options?.limit) {
+		query = query.limit(options.limit);
+	}
+	if (options?.offset) {
+		query = query.offset(options.offset);
+	}
+
+	return await query.all();
+}
+
+// ============================================================================
+// Location CRUD Operations
+// ============================================================================
+
+/**
+ * Create a new location in the database
+ */
+export async function createLocation(
+	db: D1Database,
+	data: LocationCreate,
+	workspaceId: string
+): Promise<{ id: string; slug: string }> {
+	const drizzleDb = drizzle(db);
+
+	const id = crypto.randomUUID();
+	const now = new Date().toISOString();
+
+	// Generate slug from name if not provided
+	let slug = data.slug || generateSlug(data.name);
+
+	// Check for slug uniqueness
+	const existingSlugs = await drizzleDb
+		.select({ slug: location.slug })
+		.from(location)
+		.where(eq(location.workspaceId, workspaceId))
+		.all();
+
+	slug = makeSlugUnique(slug, existingSlugs.map((r) => r.slug));
+
+	// Convert array fields to JSON strings
+	const locationData = {
+		id,
+		workspaceId,
+		slug,
+		name: data.name,
+
+		// Basic Info
+		locationType: data.locationType || null,
+		region: data.region || null,
+		parentLocationId: data.parentLocationId || null,
+		significanceLevel: data.significanceLevel || null,
+		firstAppearance: data.firstAppearance || null,
+
+		// Descriptions
+		quickDescription: data.quickDescription || null,
+		visualSummary: data.visualSummary || null,
+		atmosphere: data.atmosphere || null,
+		history: data.history || null,
+		storyRole: data.storyRole || null,
+		accessibility: data.accessibility || null,
+
+		// Content (arrays)
+		notableLandmarks: data.notableLandmarks ? JSON.stringify(data.notableLandmarks) : null,
+		keyPersonnel: data.keyPersonnel ? JSON.stringify(data.keyPersonnel) : null,
+		hazardsDangers: data.hazardsDangers ? JSON.stringify(data.hazardsDangers) : null,
+		connections: data.connections ? JSON.stringify(data.connections) : null,
+
+		contentItemId: null, // TODO: Create content_item for prose description
+
+		createdAt: now,
+		updatedAt: now
+	};
+
+	await drizzleDb.insert(location).values(locationData).execute();
+
+	return { id, slug };
+}
+
+/**
+ * Get a location by slug
+ */
+export async function getLocationBySlug(
+	db: D1Database,
+	slug: string,
+	workspaceId: string
+): Promise<any | null> {
+	const drizzleDb = drizzle(db);
+
+	const results = await drizzleDb
+		.select()
+		.from(location)
+		.where(and(eq(location.slug, slug), eq(location.workspaceId, workspaceId)))
+		.limit(1)
+		.all();
+
+	if (results.length === 0) return null;
+
+	// Parse JSON fields back to arrays
+	const loc = results[0];
+	return {
+		...loc,
+		notableLandmarks: loc.notableLandmarks ? JSON.parse(loc.notableLandmarks) : [],
+		keyPersonnel: loc.keyPersonnel ? JSON.parse(loc.keyPersonnel) : [],
+		hazardsDangers: loc.hazardsDangers ? JSON.parse(loc.hazardsDangers) : [],
+		connections: loc.connections ? JSON.parse(loc.connections) : []
+	};
+}
+
+/**
+ * Update an existing location
+ */
+export async function updateLocation(
+	db: D1Database,
+	slug: string,
+	data: LocationUpdate,
+	workspaceId: string
+): Promise<void> {
+	const drizzleDb = drizzle(db);
+
+	const now = new Date().toISOString();
+
+	const updateData: any = {
+		updatedAt: now
+	};
+
+	// Only update provided fields
+	if (data.name !== undefined) updateData.name = data.name;
+	if (data.locationType !== undefined) updateData.locationType = data.locationType;
+	if (data.region !== undefined) updateData.region = data.region;
+	if (data.parentLocationId !== undefined) updateData.parentLocationId = data.parentLocationId;
+	if (data.significanceLevel !== undefined) updateData.significanceLevel = data.significanceLevel;
+	if (data.firstAppearance !== undefined) updateData.firstAppearance = data.firstAppearance;
+
+	// Descriptions
+	if (data.quickDescription !== undefined) updateData.quickDescription = data.quickDescription;
+	if (data.visualSummary !== undefined) updateData.visualSummary = data.visualSummary;
+	if (data.atmosphere !== undefined) updateData.atmosphere = data.atmosphere;
+	if (data.history !== undefined) updateData.history = data.history;
+	if (data.storyRole !== undefined) updateData.storyRole = data.storyRole;
+	if (data.accessibility !== undefined) updateData.accessibility = data.accessibility;
+
+	// Content (arrays)
+	if (data.notableLandmarks !== undefined)
+		updateData.notableLandmarks = JSON.stringify(data.notableLandmarks);
+	if (data.keyPersonnel !== undefined)
+		updateData.keyPersonnel = JSON.stringify(data.keyPersonnel);
+	if (data.hazardsDangers !== undefined)
+		updateData.hazardsDangers = JSON.stringify(data.hazardsDangers);
+	if (data.connections !== undefined) updateData.connections = JSON.stringify(data.connections);
+
+	await drizzleDb
+		.update(location)
+		.set(updateData)
+		.where(and(eq(location.slug, slug), eq(location.workspaceId, workspaceId)))
+		.execute();
+}
+
+/**
+ * Delete a location by slug
+ */
+export async function deleteLocation(
+	db: D1Database,
+	slug: string,
+	workspaceId: string
+): Promise<void> {
+	const drizzleDb = drizzle(db);
+
+	await drizzleDb
+		.delete(location)
+		.where(and(eq(location.slug, slug), eq(location.workspaceId, workspaceId)))
+		.execute();
+}
+
+/**
+ * List all locations in a workspace
+ */
+export async function listLocations(
+	db: D1Database,
+	workspaceId: string,
+	options?: {
+		limit?: number;
+		offset?: number;
+		locationType?: string;
+		significanceLevel?: string;
+	}
+): Promise<any[]> {
+	const drizzleDb = drizzle(db);
+
+	let query = drizzleDb
+		.select({
+			id: location.id,
+			slug: location.slug,
+			name: location.name,
+			locationType: location.locationType,
+			region: location.region,
+			significanceLevel: location.significanceLevel,
+			createdAt: location.createdAt,
+			updatedAt: location.updatedAt
+		})
+		.from(location)
+		.where(eq(location.workspaceId, workspaceId));
+
+	// Apply filters
+	if (options?.locationType) {
+		query = query.where(eq(location.locationType, options.locationType));
+	}
+	if (options?.significanceLevel) {
+		query = query.where(eq(location.significanceLevel, options.significanceLevel));
 	}
 
 	// Apply pagination
