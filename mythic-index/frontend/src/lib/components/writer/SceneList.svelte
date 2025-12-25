@@ -4,9 +4,13 @@
 	/**
 	 * Scene list component for managing scenes within a chapter
 	 */
-	export let scenes: any[] = [];
-	export let chapterId: string;
-	export let onAddScene: () => void = () => {};
+	interface Props {
+		scenes?: any[];
+		chapterId: string;
+		onAddScene?: () => void;
+	}
+
+	let { scenes = [], chapterId, onAddScene = () => {} }: Props = $props();
 
 	function formatDate(dateString: string): string {
 		return new Date(dateString).toLocaleDateString();
