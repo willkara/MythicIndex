@@ -510,12 +510,21 @@ export async function ingestChapters(
 
 /**
  * Ingest all content (characters, locations, chapters) with imagery
+ *
+ * @param contentDir - Path to story content directory
+ * @param workspaceId - Workspace ID
+ * @param onProgress - Optional progress callback
+ * @param options - Ingestion options
+ * @param options.generateEmbedding - If true, generate vector embeddings (default: true)
  */
 export async function ingestAllContent(
   contentDir: string,
   workspaceId: string,
-  onProgress?: ProgressCallback
+  onProgress?: ProgressCallback,
+  options?: { generateEmbedding?: boolean }
 ): Promise<IngestionResult> {
+  // Default to generating embeddings
+  const generateEmbedding = options?.generateEmbedding !== false;
   const result: IngestionResult = {
     success: true,
     stats: {
@@ -557,7 +566,9 @@ export async function ingestAllContent(
       message: `Character: ${slug}`,
     });
 
-    const charResult = await ingestSingleCharacter(slug, contentDir, workspaceId);
+    const charResult = await ingestSingleCharacter(slug, contentDir, workspaceId, undefined, {
+      generateEmbedding,
+    });
     if (charResult.success) {
       result.stats.characters++;
       result.stats.imagesUploaded += charResult.imagesUploaded;
@@ -582,7 +593,9 @@ export async function ingestAllContent(
       message: `Location: ${slug}`,
     });
 
-    const locResult = await ingestSingleLocation(slug, contentDir, workspaceId);
+    const locResult = await ingestSingleLocation(slug, contentDir, workspaceId, undefined, {
+      generateEmbedding,
+    });
     if (locResult.success) {
       result.stats.locations++;
       result.stats.imagesUploaded += locResult.imagesUploaded;
@@ -607,7 +620,9 @@ export async function ingestAllContent(
       message: `Chapter: ${slug}`,
     });
 
-    const chapResult = await ingestSingleChapter(slug, contentDir, workspaceId);
+    const chapResult = await ingestSingleChapter(slug, contentDir, workspaceId, undefined, {
+      generateEmbedding,
+    });
     if (chapResult.success) {
       result.stats.chapters++;
       result.stats.imagesUploaded += chapResult.imagesUploaded;
