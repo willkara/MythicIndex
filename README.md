@@ -37,10 +37,7 @@ mythic-index/
 
 ### Root Configuration & Documentation
 
-- `.mcp.json` - MCP server configuration
 - `.env.example` - Environment variables template
-- `.github/workflows/` - CI/CD pipelines
-- `scripts/` - Deployment and utility scripts
 - `CLOUDFLARE_DEPLOYMENT.md` - Complete deployment guide and infrastructure details
 - `CLOUDFLARE_MIGRATION_ANALYSIS.md` - Notes on migration from legacy stack
 

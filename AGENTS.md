@@ -6,11 +6,10 @@
 - `mythic-index/chargen/`: TypeScript CLI for content ingestion and embeddings generation (`src/` → compiled `dist/`).
 - `mythic-index/MemoryQuill/`: Story content and metadata (used by ingestion and canon tooling).
 - `mythic-index/tools/`: Maintenance scripts (imagery linking, ingestion pipeline under `tools/ingestion/`).
-- `.github/workflows/`: CI and deploy workflows.
 
 ## Build, Test, and Development Commands
 
-Use Node.js 20+ (matches CI engines).
+Use Node.js 20+.
 
 Frontend (local Pages + D1 emulator via Wrangler):
 ```bash
@@ -41,7 +40,7 @@ Content/imagery tooling examples:
 
 ## Testing Guidelines
 
-- CI runs `npm run check` + `npm run build` for `mythic-index/frontend/` and `npm run build` for `mythic-index/chargen/` (`.github/workflows/ci.yml`).
+- Manually run `npm run check` + `npm run build` for `mythic-index/frontend/` and `npm run build` for `mythic-index/chargen/` before pushing changes.
 - Ingestion validation is script-based: `cd mythic-index/tools/ingestion && python validate.py`.
 
 ## Commit & Pull Request Guidelines

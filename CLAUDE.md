@@ -139,13 +139,9 @@ https://imagedelivery.net/{account_hash}/{image_id}/{variant}
 ### Content Blocks
 The frontend renders different block types (prose, dialogue, scene headers) via components in `src/lib/components/blocks/`.
 
-## CI/CD
+## Deployment
 
-GitHub Actions runs on push/PR to main/master:
-- `npm run check` - Type checking
-- `npm run build` - Build verification
-
-Deployment workflows exist for Cloudflare (see `.github/workflows/deploy-cloudflare*.yml`).
+Manual deployment to Cloudflare is handled through Wrangler CLI. See Cloudflare Pages and Workers documentation for deployment details.
 
 ## Environment Variables
 
