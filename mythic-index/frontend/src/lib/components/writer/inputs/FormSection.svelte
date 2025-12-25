@@ -2,9 +2,13 @@
 	/**
 	 * Collapsible form section component for organizing complex forms
 	 */
-	export let title: string;
-	export let defaultOpen: boolean = true;
-	export let icon: string = '';
+	interface Props {
+		title: string;
+		defaultOpen?: boolean;
+		icon?: string;
+	}
+
+	let { title, defaultOpen = true, icon = '' }: Props = $props();
 
 	let isOpen = $state(defaultOpen);
 

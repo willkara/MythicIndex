@@ -4,10 +4,19 @@
 	/**
 	 * Tag input component for managing string arrays
 	 */
-	export let label: string;
-	export let placeholder: string = 'Add item...';
-	export let tags: string[] = $bindable([]);
-	export let maxTags: number | undefined = undefined;
+	interface Props {
+		label: string;
+		placeholder?: string;
+		tags?: string[];
+		maxTags?: number | undefined;
+	}
+
+	let {
+		label,
+		placeholder = 'Add item...',
+		tags = $bindable([]),
+		maxTags = undefined
+	}: Props = $props();
 
 	let inputValue = $state('');
 

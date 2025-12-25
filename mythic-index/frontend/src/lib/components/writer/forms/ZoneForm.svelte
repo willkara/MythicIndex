@@ -7,10 +7,19 @@
 	/**
 	 * Zone editor form for creating zones within locations
 	 */
-	export let zone: Partial<ZoneCreate> = {};
-	export let mode: 'create' | 'edit' = 'create';
-	export let action: string = '?/create';
-	export let onCancel: () => void = () => {};
+	interface Props {
+		zone?: Partial<ZoneCreate>;
+		mode?: 'create' | 'edit';
+		action?: string;
+		onCancel?: () => void;
+	}
+
+	let {
+		zone = {},
+		mode = 'create',
+		action = '?/create',
+		onCancel = () => {}
+	}: Props = $props();
 
 	// Form state
 	let formData = $state({

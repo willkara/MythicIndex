@@ -9,10 +9,19 @@
 	 * Uses Tiptap for rich text editing with bold, italic, quotes, etc.
 	 * Supports scene metadata management
 	 */
-	export let chapter: Partial<ChapterCreate> = {};
-	export let mode: 'create' | 'edit' = 'create';
-	export let action: string = '?/create';
-	export let onCancel: () => void = () => {};
+	interface Props {
+		chapter?: Partial<ChapterCreate>;
+		mode?: 'create' | 'edit';
+		action?: string;
+		onCancel?: () => void;
+	}
+
+	let {
+		chapter = {},
+		mode = 'create',
+		action = '?/create',
+		onCancel = () => {}
+	}: Props = $props();
 
 	// Form state
 	let formData = $state({

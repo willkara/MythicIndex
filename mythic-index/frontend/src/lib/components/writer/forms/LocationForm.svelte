@@ -7,10 +7,19 @@
 	/**
 	 * Comprehensive location editor form with all schema fields
 	 */
-	export let location: Partial<LocationCreate> = {};
-	export let mode: 'create' | 'edit' = 'create';
-	export let action: string = '?/create';
-	export let onCancel: () => void = () => {};
+	interface Props {
+		location?: Partial<LocationCreate>;
+		mode?: 'create' | 'edit';
+		action?: string;
+		onCancel?: () => void;
+	}
+
+	let {
+		location = {},
+		mode = 'create',
+		action = '?/create',
+		onCancel = () => {}
+	}: Props = $props();
 
 	// Form state
 	let formData = $state({

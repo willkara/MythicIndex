@@ -8,12 +8,23 @@
 	 * Scene editor form with rich text content
 	 * Used for creating/editing scenes within chapters
 	 */
-	export let scene: Partial<SceneCreate> = {};
-	export let chapterId: string;
-	export let mode: 'create' | 'edit' = 'create';
-	export let action: string = '?/createScene';
-	export let onCancel: () => void = () => {};
-	export let nextSequenceOrder: number = 1;
+	interface Props {
+		scene?: Partial<SceneCreate>;
+		chapterId: string;
+		mode?: 'create' | 'edit';
+		action?: string;
+		onCancel?: () => void;
+		nextSequenceOrder?: number;
+	}
+
+	let {
+		scene = {},
+		chapterId,
+		mode = 'create',
+		action = '?/createScene',
+		onCancel = () => {},
+		nextSequenceOrder = 1
+	}: Props = $props();
 
 	// Form state
 	let formData = $state({

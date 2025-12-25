@@ -8,10 +8,19 @@
 	 * Rich text editor component using Tiptap
 	 * Supports bold, italic, quotes, headings, lists, and more
 	 */
-	export let content: string = $bindable('');
-	export let placeholder: string = 'Start writing your chapter...';
-	export let label: string = '';
-	export let required: boolean = false;
+	interface Props {
+		content?: string;
+		placeholder?: string;
+		label?: string;
+		required?: boolean;
+	}
+
+	let {
+		content = $bindable(''),
+		placeholder = 'Start writing your chapter...',
+		label = '',
+		required = false
+	}: Props = $props();
 
 	let editorElement: HTMLDivElement;
 	let editor: Editor | null = null;
