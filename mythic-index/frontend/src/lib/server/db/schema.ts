@@ -42,6 +42,7 @@ export const contentItem = sqliteTable(
     slug: text('slug').notNull(),
     title: text('title').notNull(),
     summary: text('summary'),
+    content: text('content'), // Rich text HTML content (for chapters and scenes)
     status: text('status').notNull().default('draft'),
     defaultRevisionId: text('default_revision_id'),
     metadataJson: text('metadata_json').notNull().default('{}'),

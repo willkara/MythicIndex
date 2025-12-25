@@ -748,8 +748,7 @@ export async function listZones(
 
 /**
  * Create a new chapter (content_item with kind='chapter')
- * Simplified - focuses on metadata only
- * Full content ingestion handled by chargen CLI or admin upload
+ * Supports rich text content via Tiptap editor
  */
 export async function createChapter(
 	db: D1Database,
@@ -781,9 +780,10 @@ export async function createChapter(
 		slug,
 		title: data.title,
 		summary: data.summary || null,
+		content: (data as any).content || null, // Rich text HTML from Tiptap
 		status: data.status || 'draft',
 		wordCount: data.wordCount || null,
-		defaultRevisionId: null, // TODO: Create revision when content is ingested
+		defaultRevisionId: null, // Not used with direct content storage
 		metadataJson: data.metadataJson || '{}',
 		createdBy: 'system', // TODO: Get from user session
 		updatedBy: 'system',
@@ -845,6 +845,7 @@ export async function updateChapter(
 	// Only update provided fields
 	if (data.title !== undefined) updateData.title = data.title;
 	if (data.summary !== undefined) updateData.summary = data.summary;
+	if ((data as any).content !== undefined) updateData.content = (data as any).content;
 	if (data.status !== undefined) updateData.status = data.status;
 	if (data.wordCount !== undefined) updateData.wordCount = data.wordCount;
 	if (data.metadataJson !== undefined) updateData.metadataJson = data.metadataJson;

@@ -161,6 +161,7 @@ export const chapterCreateSchema = z.object({
 
 	// Content fields
 	summary: z.string().max(2000).optional(),
+	content: z.string().optional(), // Rich text HTML content from Tiptap
 	status: z.enum(['draft', 'published']).default('draft'),
 	wordCount: z.number().int().nonnegative().optional(),
 	metadataJson: z.string().optional()

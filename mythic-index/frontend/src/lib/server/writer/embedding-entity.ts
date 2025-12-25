@@ -257,17 +257,75 @@ export class EntityEmbeddingService {
 
 	/**
 	 * Generate embedding for a chapter entity
-	 * TODO: Implement once chapter content structure is finalized
+	 * Concatenates title, summary, and HTML content (stripped to plain text)
 	 */
 	async embedChapter(
 		chapterId: string,
 		db: D1Database
 	): Promise<EmbeddingResult> {
-		// TODO: Concatenate chapter content from content_item → content_revision → content_section → content_block
-		return {
-			success: false,
-			error: 'Chapter embedding not yet implemented'
-		};
+		try {
+			const drizzleDb = drizzle(db);
+
+			const chapters = await drizzleDb
+				.select()
+				.from(contentItem)
+				.where(and(eq(contentItem.id, chapterId), eq(contentItem.kind, 'chapter')))
+				.limit(1)
+				.all();
+
+			if (chapters.length === 0) {
+				return { success: false, error: 'Chapter not found' };
+			}
+
+			const chapter = chapters[0];
+
+			// Build comprehensive text representation
+			const textParts: string[] = [];
+
+			textParts.push(`Title: ${chapter.title}`);
+
+			if (chapter.summary) {
+				textParts.push(`Summary: ${chapter.summary}`);
+			}
+
+			// Strip HTML tags from content and add as main body
+			if (chapter.content) {
+				// Simple HTML tag stripping (for more robust parsing, could use a library)
+				const plainText = chapter.content
+					.replace(/<[^>]*>/g, '') // Remove HTML tags
+					.replace(/&nbsp;/g, ' ') // Replace &nbsp; with space
+					.replace(/&amp;/g, '&') // Replace common entities
+					.replace(/&lt;/g, '<')
+					.replace(/&gt;/g, '>')
+					.replace(/&quot;/g, '"')
+					.replace(/&#39;/g, "'")
+					.replace(/\s+/g, ' ') // Normalize whitespace
+					.trim();
+
+				if (plainText) {
+					textParts.push(`Content: ${plainText}`);
+				}
+			}
+
+			const fullText = textParts.join('\n');
+
+			// Create metadata for Vectorize
+			const metadata: VectorMetadata = {
+				kind: 'chapter',
+				slug: chapter.slug,
+				title: chapter.title,
+				textPreview: fullText.substring(0, 200)
+			};
+
+			return await this.generateAndUpsert(chapterId, fullText, metadata);
+
+		} catch (error) {
+			console.error('Error embedding chapter:', error);
+			return {
+				success: false,
+				error: error instanceof Error ? error.message : 'Unknown error'
+			};
+		}
 	}
 
 	/**

@@ -46,14 +46,18 @@ export const actions = {
 			// Update chapter in database
 			await updateChapter(platform.env.DB, params.slug, validated, WORKSPACE_ID);
 
-			// TODO: Regenerate embedding for chapter
-			// if (platform.env.AI && platform.env.VECTORIZE_INDEX) {
-			//   const chapter = await getChapterBySlug(platform.env.DB, params.slug, WORKSPACE_ID);
-			//   if (chapter) {
-			//     const embeddingService = new EntityEmbeddingService(platform.env.AI, platform.env.VECTORIZE_INDEX);
-			//     const result = await embeddingService.embedChapter(chapter.id, platform.env.DB);
-			//   }
-			// }
+			// Regenerate embedding for chapter
+			if (platform.env.AI && platform.env.VECTORIZE_INDEX) {
+				const chapter = await getChapterBySlug(platform.env.DB, params.slug, WORKSPACE_ID);
+				if (chapter) {
+					const { EntityEmbeddingService } = await import('$lib/server/writer/embedding-entity');
+					const embeddingService = new EntityEmbeddingService(
+						platform.env.AI,
+						platform.env.VECTORIZE_INDEX
+					);
+					await embeddingService.embedChapter(chapter.id, platform.env.DB);
+				}
+			}
 
 			return {
 				success: true,
@@ -86,11 +90,15 @@ export const actions = {
 				return fail(404, { error: 'Chapter not found' });
 			}
 
-			// TODO: Delete embedding from Vectorize
-			// if (platform.env.AI && platform.env.VECTORIZE_INDEX) {
-			//   const embeddingService = new EntityEmbeddingService(platform.env.AI, platform.env.VECTORIZE_INDEX);
-			//   const result = await embeddingService.deleteEmbedding(chapter.id);
-			// }
+			// Delete embedding from Vectorize
+			if (platform.env.AI && platform.env.VECTORIZE_INDEX) {
+				const { EntityEmbeddingService } = await import('$lib/server/writer/embedding-entity');
+				const embeddingService = new EntityEmbeddingService(
+					platform.env.AI,
+					platform.env.VECTORIZE_INDEX
+				);
+				await embeddingService.deleteEmbedding(chapter.id);
+			}
 
 			// Delete chapter from database
 			await deleteChapter(platform.env.DB, params.slug, WORKSPACE_ID);

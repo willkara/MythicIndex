@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
 	import { Button } from '$lib/components/ui';
-	import { FormSection } from '../inputs';
+	import { FormSection, RichTextEditor } from '../inputs';
 	import type { ChapterCreate } from '$lib/server/writer/validation';
 
 	/**
-	 * Simplified chapter editor focusing on metadata
-	 * Content ingestion happens via chargen CLI or markdown upload
-	 * This editor is for chapter-level metadata and scene organization
+	 * Full-featured chapter editor with rich text content
+	 * Uses Tiptap for rich text editing with bold, italic, quotes, etc.
+	 * Supports scene metadata management
 	 */
 	export let chapter: Partial<ChapterCreate> = {};
 	export let mode: 'create' | 'edit' = 'create';
@@ -19,11 +19,24 @@
 		title: chapter.title || '',
 		summary: chapter.summary || '',
 		status: chapter.status || 'draft',
-		wordCount: chapter.wordCount || 0
+		wordCount: chapter.wordCount || 0,
+		content: (chapter as any).content || '' // Rich text HTML content
+	});
+
+	// Auto-calculate word count from content
+	$effect(() => {
+		if (formData.content) {
+			const text = formData.content.replace(/<[^>]*>/g, ''); // Strip HTML tags
+			const words = text.trim().split(/\s+/).filter(Boolean);
+			formData.wordCount = words.length;
+		}
 	});
 </script>
 
 <form method="POST" {action} use:enhance class="space-y-6">
+	<!-- Hidden field for rich text content -->
+	<input type="hidden" name="content" value={formData.content} />
+
 	<!-- Chapter Metadata Section -->
 	<FormSection title="Chapter Information" icon="📖" defaultOpen={true}>
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -75,25 +88,28 @@
 					bind:value={formData.wordCount}
 					min="0"
 					placeholder="0"
-					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
+					readonly
+					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-400"
 				/>
-				<p class="text-xs text-gray-500 mt-1">Optional - auto-calculated from content</p>
+				<p class="text-xs text-gray-500 mt-1">Auto-calculated from content</p>
 			</div>
 		</div>
 	</FormSection>
 
-	<!-- Information Section -->
-	<div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-		<h3 class="font-medium text-blue-900 dark:text-blue-100 mb-2">💡 Content Management</h3>
-		<p class="text-sm text-blue-800 dark:text-blue-200 mb-2">
-			This editor focuses on chapter-level metadata. For full content ingestion:
-		</p>
-		<ul class="text-sm text-blue-800 dark:text-blue-200 space-y-1 ml-4 list-disc">
-			<li>Use the <strong>Chargen CLI</strong> to ingest markdown files with full content</li>
-			<li>Use <strong>/admin/upload</strong> to upload markdown files</li>
-			<li>After creating the chapter here, add scenes with metadata below</li>
-		</ul>
-	</div>
+	<!-- Rich Text Content Section -->
+	<FormSection title="Chapter Content" icon="✍️" defaultOpen={true}>
+		<div class="space-y-4">
+			<RichTextEditor
+				bind:content={formData.content}
+				placeholder="Write your chapter content here... Use the toolbar for formatting."
+				label="Content"
+			/>
+			<p class="text-xs text-gray-500">
+				Use the rich text editor to write your chapter. Supports bold, italic, headings,
+				blockquotes, lists, and more.
+			</p>
+		</div>
+	</FormSection>
 
 	<!-- Form Actions -->
 	<div class="flex gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">
