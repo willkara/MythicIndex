@@ -20,6 +20,7 @@
 		title: scene.title || '',
 		synopsis: scene.synopsis || '',
 		content: (scene as any).content || '',
+		status: (scene as any).status || 'draft',
 		sceneWhen: scene.sceneWhen || '',
 		primaryLocationId: scene.primaryLocationId || '',
 		povEntityId: scene.povEntityId || '',
@@ -82,6 +83,21 @@
 					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
 				/>
 				<p class="text-xs text-gray-500 mt-1">Order within chapter</p>
+			</div>
+
+			<div>
+				<label class="block text-sm font-medium mb-2">Status</label>
+				<select
+					name="status"
+					bind:value={formData.status}
+					class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800"
+				>
+					<option value="draft">Draft</option>
+					<option value="done">Done</option>
+				</select>
+				<p class="text-xs text-gray-500 mt-1">
+					Mark as "Done" when ready for chapter publishing
+				</p>
 			</div>
 
 			<div>

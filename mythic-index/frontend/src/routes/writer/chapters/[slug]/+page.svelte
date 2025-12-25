@@ -44,16 +44,74 @@
 	const nextSequenceOrder = data.scenes.length > 0
 		? Math.max(...data.scenes.map((s: any) => s.sequenceOrder)) + 1
 		: 0;
+
+	async function handlePublish() {
+		const formData = new FormData();
+		const response = await fetch('?/publish', { method: 'POST', body: formData });
+
+		if (response.ok) {
+			const result = await response.json();
+			alert(result.data?.message || 'Chapter published successfully!');
+			location.reload(); // Reload to show updated status
+		} else {
+			const result = await response.json();
+			alert(result.error || 'Failed to publish chapter');
+		}
+	}
+
+	async function handleUnpublish() {
+		if (
+			!confirm(
+				'Are you sure you want to unpublish this chapter? All scenes will be reverted to draft status.'
+			)
+		) {
+			return;
+		}
+
+		const formData = new FormData();
+		const response = await fetch('?/unpublish', { method: 'POST', body: formData });
+
+		if (response.ok) {
+			const result = await response.json();
+			alert(result.data?.message || 'Chapter unpublished successfully');
+			location.reload(); // Reload to show updated status
+		} else {
+			const result = await response.json();
+			alert(result.error || 'Failed to unpublish chapter');
+		}
+	}
 </script>
 
 <div class="container mx-auto px-4 py-8 max-w-5xl">
 	<div class="mb-6 flex items-center justify-between">
 		<a href="/writer" class="text-blue-600 hover:underline">← Back to Writer</a>
-		<Button variant="destructive" onclick={handleDelete}>Delete Chapter</Button>
+		<div class="flex gap-2">
+			{#if data.chapter.status === 'published'}
+				<Button onclick={handleUnpublish} variant="outline">Unpublish</Button>
+			{:else}
+				<Button onclick={handlePublish}>Publish Chapter</Button>
+			{/if}
+			<Button variant="destructive" onclick={handleDelete}>Delete</Button>
+		</div>
 	</div>
 
 	<div class="mb-6">
-		<h1 class="text-3xl font-bold mb-2">Edit Chapter: {data.chapter.title}</h1>
+		<div class="flex items-center gap-3 mb-2">
+			<h1 class="text-3xl font-bold">Edit Chapter: {data.chapter.title}</h1>
+			{#if data.chapter.status === 'published'}
+				<span
+					class="text-sm font-medium px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full"
+				>
+					✓ Published
+				</span>
+			{:else}
+				<span
+					class="text-sm font-medium px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full"
+				>
+					✎ Draft
+				</span>
+			{/if}
+		</div>
 		<p class="text-gray-600 dark:text-gray-400">Slug: {slug}</p>
 	</div>
 
