@@ -84,7 +84,7 @@ export class EmbeddingService {
         text: [text],
       })) as { data: number[][] };
 
-      if (response.data && response.data.length > 0) {
+      if (response.data && response.data.length > 0 && response.data[0]) {
         return response.data[0];
       }
 

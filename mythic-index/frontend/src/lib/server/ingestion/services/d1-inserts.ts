@@ -944,8 +944,6 @@ export async function insertSceneZoneLinks(
   locationZones: string[] | undefined,
   zoneIdMap: Map<string, string>
 ): Promise<void> {
-  const now = nowISO();
-
   // Insert primary zone with role='primary'
   if (primaryZoneSlug) {
     const zoneId = zoneIdMap.get(primaryZoneSlug);

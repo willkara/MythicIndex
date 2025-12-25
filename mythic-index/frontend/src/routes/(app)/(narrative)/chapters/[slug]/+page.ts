@@ -1,13 +1,13 @@
 /**
  * Page configuration for chapter detail pages
  *
- * Enables automatic prerendering for static content generation.
- * Chapters are mostly static content, so prerendering improves:
- * - Initial page load performance
- * - SEO (fully rendered HTML)
- * - Reduced server load on Cloudflare Workers
+ * Prerendering is disabled because chapters require database access.
+ * SSR provides similar benefits:
+ * - Fast initial page load via Cloudflare Workers (edge rendering)
+ * - SEO-friendly fully rendered HTML
+ * - Dynamic content updates without rebuild
  */
-export const prerender = 'auto';
+export const prerender = false;
 
 /**
  * Enable SSR for dynamic data (e.g., user-specific features in future)

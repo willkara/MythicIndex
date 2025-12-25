@@ -1,9 +1,9 @@
 /**
  * Page configuration for canon content browser
  *
- * Enable automatic prerendering when possible.
- * Note: Set to false in CI/local if Cloudflare auth not available.
+ * Prerendering disabled - requires database access.
+ * SSR provides edge rendering via Cloudflare Workers.
  */
-export const prerender = 'auto';
+export const prerender = false;
 export const ssr = true;
 export const csr = true;

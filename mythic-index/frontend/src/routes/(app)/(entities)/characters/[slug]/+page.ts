@@ -1,8 +1,9 @@
 /**
  * Page configuration for character detail pages
  *
- * Enables automatic prerendering for static character profiles.
+ * Prerendering disabled - requires database access.
+ * SSR provides edge rendering via Cloudflare Workers.
  */
-export const prerender = 'auto';
+export const prerender = false;
 export const ssr = true;
 export const csr = true;

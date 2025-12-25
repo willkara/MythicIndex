@@ -285,7 +285,7 @@ export function normalizeLocationImagery(data: any): NormalizedImage[] {
 		overviewInventory.forEach((item: any, index: number) => {
 			const normalized = normalizeInventoryEntry(item, sort + index, 'overview', data?.metadata?.generation_defaults);
 			if (normalized) {
-				if (normalized.roleHint == null && normalized.tags?.some((tag) => tag.toLowerCase() === 'overview')) {
+				if (normalized.roleHint === null && normalized.tags?.some((tag) => tag.toLowerCase() === 'overview')) {
 					normalized.roleHint = 'overview';
 				}
 				normalized.isPrimary = index === 0;
