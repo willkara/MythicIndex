@@ -41,6 +41,21 @@ export {
   testConnection as testImagesConnection,
   isCloudflareImagesAvailable,
 } from './services/cloudflare-images.js';
+export {
+  initVectorize,
+  resetVectorize,
+  getVectorize,
+  isVectorizeAvailable,
+  testConnection as testVectorizeConnection,
+  type VectorRecord,
+} from './services/vectorize.js';
+export {
+  initWorkersAI,
+  resetWorkersAI,
+  getWorkersAI,
+  isWorkersAIAvailable,
+  testConnection as testWorkersAIConnection,
+} from './services/workers-ai.js';
 export { setLogger } from './services/d1-inserts.js';
 export {
   insertCharacter,

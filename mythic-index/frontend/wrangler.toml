@@ -8,6 +8,13 @@ binding = "DB"
 database_name = "mythicindex-db"
 database_id = "a3f97481-6340-44c7-ae75-06dcf0c76ac2"
 
+[[vectorize]]
+binding = "VECTORIZE_INDEX"
+index_name = "mythicindex-content-embeddings"
+
+[[ai]]
+binding = "AI"
+
 [vars]
 # WARNING: These values are deployment-specific and safe to commit
 # The Account Hash is public in image URLs anyway
