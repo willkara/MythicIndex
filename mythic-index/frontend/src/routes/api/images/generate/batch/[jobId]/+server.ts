@@ -10,7 +10,7 @@
  */
 
 import { json, type RequestHandler } from '@sveltejs/kit';
-import { BatchImageGenerationService } from '$lib/server/ai/batch-workflow';
+import { BatchImageGenerationService } from '$lib/server/ai/batch-service';
 
 export const GET: RequestHandler = async ({ params, platform }) => {
 	try {

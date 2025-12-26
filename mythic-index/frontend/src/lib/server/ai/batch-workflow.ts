@@ -1,6 +1,20 @@
 /**
  * Batch Image Generation Workflow - Cloudflare Workflows
  *
+ * NOTE: This file contains Cloudflare Workers-specific code that only runs in the
+ * Cloudflare runtime. It should NOT be imported during the Vite build process.
+ *
+ * For types and interfaces, import from './batch-types' instead.
+ * For the service class, import from './batch-service' instead.
+ */
+
+import { WorkflowEntrypoint, WorkflowStep, WorkflowEvent } from 'cloudflare:workers';
+import type { BatchJobParams, BatchJobStatus } from './batch-types';
+import type { ImageGenerationRequest } from './image-generation-service';
+
+/**
+ * Batch Image Generation Workflow
+ *
  * Durable workflow for batch image generation with:
  * - Automatic retry on failure
  * - Status polling via instance.status()
@@ -8,41 +22,6 @@
  * - 30-day result retention
  *
  * Handles 6-100 images optimally. For 100+ images, consider Google Batch API.
- */
-
-import { WorkflowEntrypoint, WorkflowStep, WorkflowEvent } from 'cloudflare:workers';
-import type { ImageGenerationRequest } from './image-generation-service';
-
-/**
- * Batch job parameters
- */
-export interface BatchJobParams {
-	requests: ImageGenerationRequest[];
-	userId: string;
-	concurrency?: number; // How many images to generate in parallel
-}
-
-/**
- * Batch job status
- */
-export interface BatchJobStatus {
-	jobId: string;
-	status: 'queued' | 'running' | 'completed' | 'failed';
-	totalImages: number;
-	completedImages: number;
-	failedImages: number;
-	results: Array<{
-		entitySlug: string;
-		success: boolean;
-		assetId?: string;
-		error?: string;
-	}>;
-	startedAt?: string;
-	completedAt?: string;
-}
-
-/**
- * Batch Image Generation Workflow
  */
 export class BatchImageGenerationWorkflow extends WorkflowEntrypoint<Env, BatchJobParams> {
 	async run(event: WorkflowEvent<BatchJobParams>, step: WorkflowStep) {
@@ -138,109 +117,5 @@ export class BatchImageGenerationWorkflow extends WorkflowEntrypoint<Env, BatchJ
 			chunks.push(array.slice(i, i + size));
 		}
 		return chunks;
-	}
-}
-
-/**
- * Batch Service - Manages batch jobs
- */
-export class BatchImageGenerationService {
-	private workflowBinding: Workflow;
-
-	constructor(workflowBinding: Workflow) {
-		this.workflowBinding = workflowBinding;
-	}
-
-	/**
-	 * Start a batch generation job
-	 */
-	async startBatchJob(params: BatchJobParams): Promise<{ jobId: string }> {
-		const instance = await this.workflowBinding.create({
-			params,
-		});
-
-		return { jobId: instance.id };
-	}
-
-	/**
-	 * Get batch job status
-	 */
-	async getJobStatus(jobId: string): Promise<BatchJobStatus | null> {
-		try {
-			const instance = await this.workflowBinding.get(jobId);
-			const status = await instance.status();
-
-			if (status.status === 'complete') {
-				// Workflow completed - return final status
-				return status.output as BatchJobStatus;
-			} else if (status.status === 'running' || status.status === 'queued') {
-				// Workflow still running - return partial status
-				return {
-					jobId,
-					status: status.status === 'running' ? 'running' : 'queued',
-					totalImages: 0, // Would need to be tracked in workflow state
-					completedImages: 0,
-					failedImages: 0,
-					results: [],
-				};
-			} else if (status.status === 'errored' || status.status === 'terminated') {
-				return {
-					jobId,
-					status: 'failed',
-					totalImages: 0,
-					completedImages: 0,
-					failedImages: 0,
-					results: [],
-					completedAt: new Date().toISOString(),
-				};
-			}
-
-			return null;
-		} catch (error) {
-			console.error('Failed to get job status:', error);
-			return null;
-		}
-	}
-
-	/**
-	 * Cancel a batch job
-	 */
-	async cancelJob(jobId: string): Promise<boolean> {
-		try {
-			const instance = await this.workflowBinding.get(jobId);
-			await instance.terminate();
-			return true;
-		} catch (error) {
-			console.error('Failed to cancel job:', error);
-			return false;
-		}
-	}
-
-	/**
-	 * Pause a batch job
-	 */
-	async pauseJob(jobId: string): Promise<boolean> {
-		try {
-			const instance = await this.workflowBinding.get(jobId);
-			await instance.pause();
-			return true;
-		} catch (error) {
-			console.error('Failed to pause job:', error);
-			return false;
-		}
-	}
-
-	/**
-	 * Resume a paused batch job
-	 */
-	async resumeJob(jobId: string): Promise<boolean> {
-		try {
-			const instance = await this.workflowBinding.get(jobId);
-			await instance.resume();
-			return true;
-		} catch (error) {
-			console.error('Failed to resume job:', error);
-			return false;
-		}
 	}
 }

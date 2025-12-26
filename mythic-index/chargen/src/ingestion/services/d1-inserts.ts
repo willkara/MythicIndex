@@ -623,6 +623,7 @@ export interface InsertRelationshipResult {
 
 /**
  * Insert a character relationship
+ * Note: No ON CONFLICT - caller should delete existing relationships before re-inserting
  */
 export async function insertRelationship(
   sourceCharacterId: string,
@@ -638,10 +639,6 @@ export async function insertRelationship(
 			relationship_type, description, strength,
 			created_at, updated_at
 		) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-		ON CONFLICT(source_character_id, target_character_id, relationship_type) DO UPDATE SET
-			description = excluded.description,
-			strength = excluded.strength,
-			updated_at = excluded.updated_at
 	`;
 
   const params = [
@@ -744,7 +741,7 @@ export async function insertChapter(
     // Delete existing blocks, sections, and scene segments before recreating
     log('debug', 'Deleting old content blocks and sections');
     await execute(
-      `DELETE FROM scene_segment WHERE scene_id IN (SELECT id FROM scene WHERE content_id = ?)`,
+      `DELETE FROM scene_segment WHERE scene_id IN (SELECT id FROM scene WHERE chapter_id = ?)`,
       [existingId]
     );
     await execute(
@@ -753,12 +750,12 @@ export async function insertChapter(
     );
     await execute('DELETE FROM content_section WHERE revision_id = ?', [existingRevisionId]);
 
-    // Delete existing scenes for this content
-    await execute('DELETE FROM scene WHERE content_id = ?', [existingId]);
+    // Delete existing scenes for this chapter
+    await execute('DELETE FROM scene WHERE chapter_id = ?', [existingId]);
     log('debug', 'Old content cleared');
 
     // Insert scenes
-    const sceneIds = await insertScenes(existingId, existingRevisionId, chapter.scenes);
+    const sceneIds = await insertScenes(existingId, workspaceId, chapter.scenes);
     log('info', 'Scenes inserted', { count: sceneIds.length });
 
     // Parse and insert content blocks
@@ -828,7 +825,7 @@ export async function insertChapter(
   log('debug', 'Inserted content_revision', { id: revisionId });
 
   // Insert scenes
-  const sceneIds = await insertScenes(contentItemId, revisionId, chapter.scenes);
+  const sceneIds = await insertScenes(contentItemId, workspaceId, chapter.scenes);
   log('info', 'Scenes inserted', { count: sceneIds.length });
 
   // Parse and insert content blocks
@@ -861,8 +858,8 @@ export async function insertChapter(
  * Insert scenes for a chapter
  */
 async function insertScenes(
-  contentId: string,
-  revisionId: string,
+  chapterId: string,
+  workspaceId: string,
   scenes: SceneMarker[]
 ): Promise<string[]> {
   const now = nowISO();
@@ -878,15 +875,15 @@ async function insertScenes(
 
     await execute(
       `INSERT INTO scene (
-				id, content_id, revision_id, slug, title,
+				id, chapter_id, workspace_id, slug, title,
 				sequence_order, synopsis, scene_when,
 				primary_location_id, pov_entity_id, est_read_seconds,
 				created_at, updated_at
 			) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
       [
         sceneId,
-        contentId,
-        revisionId,
+        chapterId,
+        workspaceId,
         scene.id,
         scene.title,
         i + 1,
@@ -1121,12 +1118,12 @@ export async function getAllChapterSlugs(): Promise<string[]> {
  * Get scene ID by slug within a chapter
  */
 export async function getSceneIdBySlug(
-  contentId: string,
+  chapterId: string,
   sceneSlug: string
 ): Promise<string | null> {
   const results = await query<{ id: string }>(
-    'SELECT id FROM scene WHERE content_id = ? AND slug = ?',
-    [contentId, sceneSlug]
+    'SELECT id FROM scene WHERE chapter_id = ? AND slug = ?',
+    [chapterId, sceneSlug]
   );
   return results[0]?.id || null;
 }
@@ -1134,7 +1131,7 @@ export async function getSceneIdBySlug(
 /**
  * Get all scenes for a chapter
  */
-export async function getScenesByContentId(contentId: string): Promise<
+export async function getScenesByChapterId(chapterId: string): Promise<
   Array<{
     id: string;
     slug: string;
@@ -1143,8 +1140,8 @@ export async function getScenesByContentId(contentId: string): Promise<
   }>
 > {
   return query(
-    'SELECT id, slug, title, sequence_order as sequenceOrder FROM scene WHERE content_id = ? ORDER BY sequence_order',
-    [contentId]
+    'SELECT id, slug, title, sequence_order as sequenceOrder FROM scene WHERE chapter_id = ? ORDER BY sequence_order',
+    [chapterId]
   );
 }
 

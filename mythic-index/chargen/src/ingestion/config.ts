@@ -37,12 +37,25 @@ export interface IngestionConfig {
  * Get the content directory path (story-content)
  */
 export function getContentDir(): string {
-  // Try to find content directory relative to chargen
+  // Check env var first (highest priority)
+  if (process.env.CONTENT_DIR) {
+    const envPath = process.env.CONTENT_DIR;
+    if (existsSync(envPath)) {
+      return envPath;
+    }
+  }
+
+  // Get the chargen project root (this file is in src/ingestion/)
+  const chargenRoot = join(import.meta.dirname, '..', '..');
+
+  // Try to find content directory relative to various locations
   const possiblePaths = [
+    // Relative to chargen install location (works when running globally)
+    join(chargenRoot, '..', 'MemoryQuill', 'story-content'),
+    // Relative to cwd (works when running from project)
     join(process.cwd(), '..', 'MemoryQuill', 'story-content'),
     join(process.cwd(), 'MemoryQuill', 'story-content'),
     join(process.cwd(), '..', '..', 'MemoryQuill', 'story-content'),
-    process.env.CONTENT_DIR || '',
   ];
 
   for (const p of possiblePaths) {
@@ -51,8 +64,8 @@ export function getContentDir(): string {
     }
   }
 
-  // Default path
-  return join(process.cwd(), '..', 'MemoryQuill', 'story-content');
+  // Default path relative to chargen
+  return join(chargenRoot, '..', 'MemoryQuill', 'story-content');
 }
 
 /**

@@ -5,6 +5,7 @@
 import { select } from '@inquirer/prompts';
 import chalk from 'chalk';
 import { runIngestAllMenu } from './ingest-all.js';
+import { runContentOnlyMenu } from './content-only.js';
 import { runIngestCharactersMenu } from './ingest-characters.js';
 import { runIngestLocationsMenu } from './ingest-locations.js';
 import { runIngestChaptersMenu } from './ingest-chapters.js';
@@ -13,6 +14,7 @@ import { runStatusMenu } from './status.js';
 
 type IngestionMenuChoice =
   | 'all'
+  | 'content-only'
   | 'characters'
   | 'locations'
   | 'chapters'
@@ -34,6 +36,11 @@ export async function runIngestionMenu(): Promise<void> {
           name: 'Ingest All Content + Imagery',
           value: 'all',
           description: 'Full ingestion: characters, locations, chapters with all images',
+        },
+        {
+          name: 'Ingest Content Only (no imagery)',
+          value: 'content-only',
+          description: 'Ingest text content only, skip all image uploads',
         },
         {
           name: 'Ingest Characters',
@@ -70,6 +77,10 @@ export async function runIngestionMenu(): Promise<void> {
     switch (choice) {
       case 'all':
         await runIngestAllMenu();
+        break;
+
+      case 'content-only':
+        await runContentOnlyMenu();
         break;
 
       case 'characters':

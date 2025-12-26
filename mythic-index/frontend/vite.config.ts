@@ -32,6 +32,8 @@ export default defineConfig({
 		chunkSizeWarningLimit: 500,
 
 		rollupOptions: {
+			// Externalize Cloudflare-specific imports (only available at runtime)
+			external: ['cloudflare:workers'],
 			output: {
 				// Manual chunk splitting for better long-term caching
 				manualChunks: (id) => {
@@ -89,6 +91,8 @@ export default defineConfig({
 
 	ssr: {
 		// Don't externalize these for SSR (keep in bundle)
-		noExternal: ['lucide-svelte']
+		noExternal: ['lucide-svelte'],
+		// Externalize Cloudflare-specific imports (only available at runtime)
+		external: ['cloudflare:workers']
 	}
 });

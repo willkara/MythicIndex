@@ -10,7 +10,7 @@
 import { json, type RequestHandler } from '@sveltejs/kit';
 import { drizzle } from 'drizzle-orm/d1';
 import * as schema from '$lib/server/db/schema';
-import { BatchImageGenerationService, type BatchJobParams } from '$lib/server/ai/batch-workflow';
+import { BatchImageGenerationService, type BatchJobParams } from '$lib/server/ai/batch-service';
 import { GoogleBatchService, createImageBatchJob } from '$lib/server/ai/google-batch';
 import { ImageGenerationService } from '$lib/server/ai/image-generation-service';
 

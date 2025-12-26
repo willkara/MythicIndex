@@ -4,11 +4,11 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"dev": "wrangler pages dev --d1=DB -- vite dev",
+		"dev": "vite dev",
 		"dev:vite": "vite dev",
 		"build": "vite build",
 		"deploy": "npm run build && npx wrangler pages deploy .svelte-kit/cloudflare --project-name mythicindex",
-		"preview": "wrangler pages dev --d1=DB -- vite preview",
+		"preview": "wrangler pages dev -- vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -44,6 +44,7 @@
 	},
 	"dependencies": {
 		"@clack/prompts": "^0.11.0",
+		"@rollup/rollup-win32-x64-msvc": "^4.53.3",
 		"@sveltejs/adapter-cloudflare": "^7.2.4",
 		"@tiptap/core": "^3.14.0",
 		"@tiptap/extension-placeholder": "^3.14.0",

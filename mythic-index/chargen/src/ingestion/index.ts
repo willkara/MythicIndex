@@ -87,6 +87,7 @@ import {
   insertLocation,
   insertChapter,
   insertRelationship,
+  deleteCharacterRelationships,
   getCharacterIdBySlug,
 } from './services/d1-inserts.js';
 import {
@@ -183,13 +184,14 @@ export async function discoverChapters(contentDir: string): Promise<string[]> {
  * @param onProgress - Optional progress callback
  * @param options - Ingestion options
  * @param options.generateEmbedding - If true, generate and store vector embedding
+ * @param options.skipImagery - If true, skip imagery ingestion (content only)
  */
 export async function ingestSingleCharacter(
   slug: string,
   contentDir: string,
   workspaceId: string,
   onProgress?: ProgressCallback,
-  options?: { generateEmbedding?: boolean }
+  options?: { generateEmbedding?: boolean; skipImagery?: boolean }
 ): Promise<{ success: boolean; errors: string[]; imagesUploaded: number }> {
   const errors: string[] = [];
   let imagesUploaded = 0;
@@ -219,6 +221,9 @@ export async function ingestSingleCharacter(
 
       const sourceCharId = await getCharacterIdBySlug(slug);
       if (sourceCharId) {
+        // Delete existing relationships before re-inserting
+        await deleteCharacterRelationships(sourceCharId);
+
         for (const rel of relationships) {
           const targetCharId = await getCharacterIdBySlug(rel.targetSlug);
           if (targetCharId) {
@@ -228,17 +233,19 @@ export async function ingestSingleCharacter(
       }
     }
 
-    // Ingest imagery
-    onProgress?.({
-      phase: 'character',
-      current: 1,
-      total: 2,
-      message: `Uploading imagery for ${slug}`,
-    });
+    // Ingest imagery (unless skipImagery is set)
+    if (!options?.skipImagery) {
+      onProgress?.({
+        phase: 'character',
+        current: 1,
+        total: 2,
+        message: `Uploading imagery for ${slug}`,
+      });
 
-    const imgResult = await ingestCharacterImagery(slug, contentDir);
-    imagesUploaded = imgResult.uploaded;
-    errors.push(...imgResult.errors);
+      const imgResult = await ingestCharacterImagery(slug, contentDir);
+      imagesUploaded = imgResult.uploaded;
+      errors.push(...imgResult.errors);
+    }
 
     onProgress?.({ phase: 'character', current: 2, total: 2, message: `Completed ${slug}` });
 
@@ -258,13 +265,14 @@ export async function ingestSingleCharacter(
  * @param onProgress - Optional progress callback
  * @param options - Ingestion options
  * @param options.generateEmbedding - If true, generate and store vector embedding
+ * @param options.skipImagery - If true, skip imagery ingestion (content only)
  */
 export async function ingestSingleLocation(
   slug: string,
   contentDir: string,
   workspaceId: string,
   onProgress?: ProgressCallback,
-  options?: { generateEmbedding?: boolean }
+  options?: { generateEmbedding?: boolean; skipImagery?: boolean }
 ): Promise<{ success: boolean; errors: string[]; imagesUploaded: number }> {
   const errors: string[] = [];
   let imagesUploaded = 0;
@@ -286,17 +294,19 @@ export async function ingestSingleLocation(
       generateEmbedding: options?.generateEmbedding,
     });
 
-    // Ingest imagery
-    onProgress?.({
-      phase: 'location',
-      current: 1,
-      total: 2,
-      message: `Uploading imagery for ${slug}`,
-    });
+    // Ingest imagery (unless skipImagery is set)
+    if (!options?.skipImagery) {
+      onProgress?.({
+        phase: 'location',
+        current: 1,
+        total: 2,
+        message: `Uploading imagery for ${slug}`,
+      });
 
-    const imgResult = await ingestLocationImagery(slug, contentDir);
-    imagesUploaded = imgResult.uploaded;
-    errors.push(...imgResult.errors);
+      const imgResult = await ingestLocationImagery(slug, contentDir);
+      imagesUploaded = imgResult.uploaded;
+      errors.push(...imgResult.errors);
+    }
 
     onProgress?.({ phase: 'location', current: 2, total: 2, message: `Completed ${slug}` });
 
@@ -316,13 +326,14 @@ export async function ingestSingleLocation(
  * @param onProgress - Optional progress callback
  * @param options - Ingestion options
  * @param options.generateEmbedding - If true, generate and store vector embedding
+ * @param options.skipImagery - If true, skip imagery ingestion (content only)
  */
 export async function ingestSingleChapter(
   slug: string,
   contentDir: string,
   workspaceId: string,
   onProgress?: ProgressCallback,
-  options?: { generateEmbedding?: boolean }
+  options?: { generateEmbedding?: boolean; skipImagery?: boolean }
 ): Promise<{ success: boolean; errors: string[]; imagesUploaded: number }> {
   const errors: string[] = [];
   let imagesUploaded = 0;
@@ -344,17 +355,19 @@ export async function ingestSingleChapter(
       generateEmbedding: options?.generateEmbedding,
     });
 
-    // Ingest imagery
-    onProgress?.({
-      phase: 'chapter',
-      current: 1,
-      total: 2,
-      message: `Uploading imagery for ${slug}`,
-    });
+    // Ingest imagery (unless skipImagery is set)
+    if (!options?.skipImagery) {
+      onProgress?.({
+        phase: 'chapter',
+        current: 1,
+        total: 2,
+        message: `Uploading imagery for ${slug}`,
+      });
 
-    const imgResult = await ingestChapterImagery(slug, contentDir);
-    imagesUploaded = imgResult.uploaded;
-    errors.push(...imgResult.errors);
+      const imgResult = await ingestChapterImagery(slug, contentDir);
+      imagesUploaded = imgResult.uploaded;
+      errors.push(...imgResult.errors);
+    }
 
     onProgress?.({ phase: 'chapter', current: 2, total: 2, message: `Completed ${slug}` });
 
@@ -376,7 +389,8 @@ export async function ingestCharacters(
   slugs: string[],
   contentDir: string,
   workspaceId: string,
-  onProgress?: ProgressCallback
+  onProgress?: ProgressCallback,
+  options?: { generateEmbedding?: boolean; skipImagery?: boolean }
 ): Promise<IngestionResult> {
   const result: IngestionResult = {
     success: true,
@@ -401,7 +415,7 @@ export async function ingestCharacters(
       message: `Processing ${slug}`,
     });
 
-    const charResult = await ingestSingleCharacter(slug, contentDir, workspaceId);
+    const charResult = await ingestSingleCharacter(slug, contentDir, workspaceId, undefined, options);
     if (charResult.success) {
       result.stats.characters++;
       result.stats.imagesUploaded += charResult.imagesUploaded;
@@ -421,7 +435,8 @@ export async function ingestLocations(
   slugs: string[],
   contentDir: string,
   workspaceId: string,
-  onProgress?: ProgressCallback
+  onProgress?: ProgressCallback,
+  options?: { generateEmbedding?: boolean; skipImagery?: boolean }
 ): Promise<IngestionResult> {
   const result: IngestionResult = {
     success: true,
@@ -446,7 +461,7 @@ export async function ingestLocations(
       message: `Processing ${slug}`,
     });
 
-    const locResult = await ingestSingleLocation(slug, contentDir, workspaceId);
+    const locResult = await ingestSingleLocation(slug, contentDir, workspaceId, undefined, options);
     if (locResult.success) {
       result.stats.locations++;
       result.stats.imagesUploaded += locResult.imagesUploaded;
@@ -466,7 +481,8 @@ export async function ingestChapters(
   slugs: string[],
   contentDir: string,
   workspaceId: string,
-  onProgress?: ProgressCallback
+  onProgress?: ProgressCallback,
+  options?: { generateEmbedding?: boolean; skipImagery?: boolean }
 ): Promise<IngestionResult> {
   const result: IngestionResult = {
     success: true,
@@ -491,7 +507,7 @@ export async function ingestChapters(
       message: `Processing ${slug}`,
     });
 
-    const chapResult = await ingestSingleChapter(slug, contentDir, workspaceId);
+    const chapResult = await ingestSingleChapter(slug, contentDir, workspaceId, undefined, options);
     if (chapResult.success) {
       result.stats.chapters++;
       result.stats.imagesUploaded += chapResult.imagesUploaded;
@@ -516,15 +532,17 @@ export async function ingestChapters(
  * @param onProgress - Optional progress callback
  * @param options - Ingestion options
  * @param options.generateEmbedding - If true, generate vector embeddings (default: true)
+ * @param options.skipImagery - If true, skip imagery ingestion (content only)
  */
 export async function ingestAllContent(
   contentDir: string,
   workspaceId: string,
   onProgress?: ProgressCallback,
-  options?: { generateEmbedding?: boolean }
+  options?: { generateEmbedding?: boolean; skipImagery?: boolean }
 ): Promise<IngestionResult> {
   // Default to generating embeddings
   const generateEmbedding = options?.generateEmbedding !== false;
+  const skipImagery = options?.skipImagery === true;
   const result: IngestionResult = {
     success: true,
     stats: {
@@ -568,6 +586,7 @@ export async function ingestAllContent(
 
     const charResult = await ingestSingleCharacter(slug, contentDir, workspaceId, undefined, {
       generateEmbedding,
+      skipImagery,
     });
     if (charResult.success) {
       result.stats.characters++;
@@ -595,6 +614,7 @@ export async function ingestAllContent(
 
     const locResult = await ingestSingleLocation(slug, contentDir, workspaceId, undefined, {
       generateEmbedding,
+      skipImagery,
     });
     if (locResult.success) {
       result.stats.locations++;
@@ -622,6 +642,7 @@ export async function ingestAllContent(
 
     const chapResult = await ingestSingleChapter(slug, contentDir, workspaceId, undefined, {
       generateEmbedding,
+      skipImagery,
     });
     if (chapResult.success) {
       result.stats.chapters++;

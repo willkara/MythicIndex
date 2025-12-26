@@ -7,18 +7,13 @@ import { readFile, writeFile, mkdir, rename, readdir, stat, copyFile } from 'fs/
 import { join, dirname, relative, sep } from 'path';
 import { parse as parseYaml, stringify as stringifyYaml } from 'yaml';
 import { existsSync, readFileSync } from 'fs';
+import { getContentDir } from '../ingestion/config.js';
+
 /** Local image type for character imagery (different from prompt-ir's location-focused ImageType) */
 type CharacterImageType = 'portrait' | 'full-body' | 'action' | 'scene' | 'mood' | 'collaborative';
 
-// Base path for story content - derived from script location
-const STORY_CONTENT_BASE = join(
-  dirname(new URL(import.meta.url).pathname),
-  '..',
-  '..',
-  '..',
-  'MemoryQuill',
-  'story-content'
-);
+// Use centralized content directory from config
+const getStoryContentBase = () => getContentDir();
 
 export type EntityType = 'character' | 'location' | 'chapter';
 
@@ -216,7 +211,7 @@ export function getImageryPath(entityType: EntityType, slug: string): string {
       : entityType === 'location'
         ? 'locations'
         : 'chapters';
-  return join(STORY_CONTENT_BASE, typeDir, slug, 'imagery.yaml');
+  return join(getStoryContentBase(), typeDir, slug, 'imagery.yaml');
 }
 
 /**
@@ -229,7 +224,7 @@ export function getImageIdeasPath(entityType: EntityType, slug: string): string 
       : entityType === 'location'
         ? 'locations'
         : 'chapters';
-  return join(STORY_CONTENT_BASE, typeDir, slug, 'image-ideas.yaml');
+  return join(getStoryContentBase(), typeDir, slug, 'image-ideas.yaml');
 }
 
 /**
@@ -242,7 +237,7 @@ export function getImagesDir(entityType: EntityType, slug: string): string {
       : entityType === 'location'
         ? 'locations'
         : 'chapters';
-  return join(STORY_CONTENT_BASE, typeDir, slug, 'images');
+  return join(getStoryContentBase(), typeDir, slug, 'images');
 }
 
 /**
@@ -255,7 +250,7 @@ export function getEntityDir(entityType: EntityType, slug: string): string {
       : entityType === 'location'
         ? 'locations'
         : 'chapters';
-  return join(STORY_CONTENT_BASE, typeDir, slug);
+  return join(getStoryContentBase(), typeDir, slug);
 }
 
 /**
@@ -654,7 +649,7 @@ export async function listEntitiesWithImageIdeas(entityType: EntityType): Promis
       : entityType === 'location'
         ? 'locations'
         : 'chapters';
-  const basePath = join(STORY_CONTENT_BASE, typeDir);
+  const basePath = join(getStoryContentBase(), typeDir);
 
   try {
     const dirs = await readdir(basePath);
@@ -677,7 +672,7 @@ export async function listEntitiesWithImageIdeas(entityType: EntityType): Promis
  * List all character directories
  */
 export async function listCharacterDirs(): Promise<string[]> {
-  const basePath = join(STORY_CONTENT_BASE, 'characters');
+  const basePath = join(getStoryContentBase(), 'characters');
 
   try {
     const dirs = await readdir(basePath);
@@ -708,7 +703,7 @@ export function getRunsPath(entityType: EntityType, slug: string): string {
       : entityType === 'location'
         ? 'locations'
         : 'chapters';
-  return join(STORY_CONTENT_BASE, typeDir, slug, 'imagery.runs.yaml');
+  return join(getStoryContentBase(), typeDir, slug, 'imagery.runs.yaml');
 }
 
 /**

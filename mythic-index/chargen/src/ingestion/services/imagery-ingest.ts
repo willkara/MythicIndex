@@ -178,7 +178,7 @@ export async function ingestChapterImagery(
 
   // Preload scene slug -> scene id for this chapter
   const scenes = await query<{ id: string; slug: string }>(
-    'SELECT id, slug FROM scene WHERE content_id = ?',
+    'SELECT id, slug FROM scene WHERE chapter_id = ?',
     [contentId]
   );
   const sceneIdBySlug = new Map<string, string>();

@@ -14,6 +14,7 @@ import {
   getImageryPath,
   getEntityDir,
 } from './imagery-yaml.js';
+import { getContentDir } from '../ingestion/config.js';
 import type {
   CharacterCacheEntry,
   LocationCacheEntry,
@@ -21,15 +22,8 @@ import type {
   EntityCache,
 } from '../types/entity-cache.js';
 
-// Base path for story content - same as imagery-yaml.ts
-const STORY_CONTENT_BASE = join(
-  dirname(new URL(import.meta.url).pathname),
-  '..',
-  '..',
-  '..',
-  'MemoryQuill',
-  'story-content'
-);
+// Use centralized content directory from config
+const getStoryContentBase = () => getContentDir();
 
 // Singleton instance
 let cacheInstance: EntityCache | null = null;
@@ -133,7 +127,7 @@ async function scanCharacters(): Promise<CharacterCacheEntry[]> {
  * Scan all locations and extract metadata
  */
 async function scanLocations(): Promise<LocationCacheEntry[]> {
-  const basePath = join(STORY_CONTENT_BASE, 'locations');
+  const basePath = join(getStoryContentBase(), 'locations');
   const slugs = await scanEntityDirectory(basePath);
 
   return Promise.all(
@@ -172,7 +166,7 @@ async function scanLocations(): Promise<LocationCacheEntry[]> {
  * Scan all chapters and extract metadata
  */
 async function scanChapters(): Promise<ChapterCacheEntry[]> {
-  const basePath = join(STORY_CONTENT_BASE, 'chapters');
+  const basePath = join(getStoryContentBase(), 'chapters');
   const slugs = await scanEntityDirectory(basePath);
 
   return Promise.all(
