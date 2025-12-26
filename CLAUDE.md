@@ -587,11 +587,79 @@ The service account needs permissions for:
 - `batch.jobs.delete`
 - `storage.objects.create` (for results)
 
+### Style Preset Manager
+
+A web interface for managing master styles is available at `/admin/templates/styles`.
+
+**Features:**
+- View all style presets with category badges and priority levels
+- Master style indicators (one per category: character/location/scene)
+- Inline editing with live updates
+- Create new presets with modal dialog
+- Negative prompts integrated into each preset
+- Statistics dashboard (total presets, master styles, active count)
+
+**Fields:**
+- Name, slug, category (character/location/scene)
+- Style description (applied to all prompts in category as weight-5 suffix)
+- Negative prompts (array, merged with global negatives)
+- Master style flag (isMasterStyle boolean)
+- Priority ordering (determines application sequence)
+- Status (active/draft/deprecated)
+
+**Usage:**
+```bash
+Navigate to: http://localhost:5173/admin/templates/styles
+```
+
+### Negative Prompt Library
+
+A comprehensive library for managing reusable negative prompts at `/admin/templates/negatives`.
+
+**Features:**
+- View all negative prompt presets by category
+- Display prompt count and individual prompts with badges
+- Inline editing with textarea
+- Create new presets with modal dialog
+- Statistics dashboard (total presets, active, total prompts)
+- Best practices help text
+
+**Categories:**
+- **base**: Universal quality filters (always applied)
+- **character**: Character-specific (anatomy, proportions, costume)
+- **location**: Location-specific (perspective, scale, architecture)
+- **scene**: Scene-specific (composition, staging, clarity)
+
+**Pre-Seeded Data:**
+
+Run the seed script to load 9 negative prompt presets with 95+ prompts from chargen's art direction:
+```bash
+cd mythic-index/frontend
+npx wrangler d1 execute memoryquill-dev --local --file=drizzle/seed_negative_prompts.sql
+```
+
+**Preset Breakdown:**
+1. **Base Quality** (10 prompts) - Low quality, blurry, AI artifacts, watermarks
+2. **Character Anatomy** (11 prompts) - Extra fingers, malformed hands, duplicated faces
+3. **Style & Rendering** (14 prompts) - Cartoon, anime, CGI, photorealistic
+4. **Modern Elements** (10 prompts) - Guns, modern architecture, technology
+5. **Color & Lighting** (14 prompts) - Neon, sparkles, oversaturation, rainbow bokeh
+6. **Character Costume** (10 prompts) - Pristine cosplay, fashion model, glamour
+7. **Location Perspective** (10 prompts) - Warped perspective, incorrect scale
+8. **Scene Composition** (10 prompts) - Cluttered, no focal point, visual noise
+9. **Horror/Gore** (9 prompts) - Excessive gore, body horror, disturbing imagery
+
+**Integration:**
+
+The PromptCompiler automatically merges negative prompts based on:
+- Entity type (character/location/scene)
+- Priority order (lower number = higher priority)
+- Category (base filters always included)
+- Deduplication across all sources
+
 ### Future Enhancements (Not Yet Implemented)
 
 - **Component manager UI** for Handlebars partials
-- **Style preset manager UI** for master styles
-- **Negative prompt library UI** for negative prompts
 - **Template version control** and rollback
 - **A/B testing** for prompt variations
 - **Template usage analytics** and cost tracking per provider
