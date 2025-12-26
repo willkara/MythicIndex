@@ -476,13 +476,125 @@ curl -X POST http://localhost:5173/api/images/generate/batch \
 **Configuration:**
 - `wrangler.toml:18-21` - Workflow binding configuration
 
+### Admin UI for Template Management
+
+A comprehensive web interface for managing prompt templates is available at `/admin/templates`.
+
+**Template List (`/admin/templates`):**
+- View all templates with metadata (category, status, version, section count)
+- Statistics dashboard showing total, active, and default templates
+- Filter templates by category and status
+- Create new templates
+- Quick navigation to editor and tester
+
+**Template Editor (`/admin/templates/[id]`):**
+- Edit template metadata (name, description, status)
+- Section management with weight-based ordering (1-5 priority scale)
+- Add/edit/delete template sections with Handlebars content
+- Conditional section rendering with JavaScript expressions
+- View available components (partials) for reference
+- Delete templates with confirmation
+
+**Template Tester (`/admin/templates/[id]/test`):**
+- Test templates with real entity data (characters, locations)
+- Preview compiled prompts before generation
+- View intermediate representation (IR) with section weights
+- Character count validation
+- Formatted prompt display
+- Error handling and debugging output
+
+**Server Actions:**
+- `updateTemplate` - Update template metadata
+- `addSection` - Add new section to template
+- `updateSection` - Update existing section
+- `deleteSection` - Remove section from template
+- `deleteTemplate` - Delete template and all sections
+
+### Google Batch API Integration
+
+For large-scale image generation (100+ images), the system integrates with Google Cloud Batch API for optimal cost and performance.
+
+**Smart Batch Routing (`POST /api/images/generate/batch-smart`):**
+
+Automatically routes batch requests to the optimal backend:
+1. **1-5 images**: Direct synchronous generation
+2. **6-100 images**: Cloudflare Workflows
+3. **100+ images**: Google Batch API
+
+Request format:
+```bash
+POST /api/images/generate/batch-smart
+{
+  "requests": [...],  # Array of ImageGenerationRequest
+  "userId": "user-123",
+  "concurrency": 20  # Optional, default varies by backend
+}
+
+Response (Google Batch):
+{
+  "success": true,
+  "method": "google-batch",
+  "jobName": "projects/.../jobs/...",
+  "totalImages": 250,
+  "estimatedCost": 7.50,
+  "statusUrl": "/api/images/generate/google-batch/...",
+  "message": "Batch job created with Google Batch API"
+}
+```
+
+**Google Batch Job Status (`GET /api/images/generate/google-batch/[jobName]`):**
+```bash
+Response:
+{
+  "jobName": "projects/.../jobs/...",
+  "state": "RUNNING",  # QUEUED, RUNNING, SUCCEEDED, FAILED
+  "totalImages": 250,
+  "completedImages": 180,
+  "failedImages": 5,
+  "runningImages": 65,
+  "createTime": "2025-12-26T...",
+  "startTime": "2025-12-26T...",
+  "statusEvents": [...]
+}
+```
+
+**Google Batch Features:**
+- Automatic parallelization (configurable concurrency, default 20)
+- Built-in retry logic (max 2 retries per task)
+- Cost estimation ($0.03/image + $0.05/hour compute)
+- Job cancellation support
+- Cloud Logging integration
+- Cloud Storage for results
+
+**Cost Optimization:**
+- e2-standard-2 machines: $0.05/hour
+- Imagen API: ~$0.03 per image
+- Total: ~$7.50 for 250 images (estimated 1 hour)
+- Efficient parallelization reduces total job time
+- Automatic resource cleanup after completion
+
+**Configuration:**
+
+Add to `mythic-index/frontend/.env`:
+```bash
+GOOGLE_PROJECT_ID=your-project-id
+GOOGLE_API_TOKEN=your-service-account-token
+```
+
+The service account needs permissions for:
+- `batch.jobs.create`
+- `batch.jobs.get`
+- `batch.jobs.delete`
+- `storage.objects.create` (for results)
+
 ### Future Enhancements (Not Yet Implemented)
 
-- **Admin UI** for template management (list, editor, tester, preview)
-- **Google Batch API integration** for 100+ image batches
+- **Component manager UI** for Handlebars partials
+- **Style preset manager UI** for master styles
+- **Negative prompt library UI** for negative prompts
 - **Template version control** and rollback
 - **A/B testing** for prompt variations
-- **Cost tracking** per provider
+- **Template usage analytics** and cost tracking per provider
 - **Image variant generation** (multiple styles from same prompt)
 
 ## Notes
