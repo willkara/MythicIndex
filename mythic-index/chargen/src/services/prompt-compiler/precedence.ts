@@ -113,6 +113,7 @@ export interface LocationPrecedenceSources {
     lighting?: LightingSpec;
     palette?: PaletteSpec;
     required_elements?: string[];
+    key_elements?: string[]; // v2.0
     negative_prompt?: string;
   };
   overview?: {
@@ -123,6 +124,7 @@ export interface LocationPrecedenceSources {
     lighting?: LightingSpec;
     palette?: PaletteSpec;
     required_elements?: string[];
+    key_elements?: string[]; // v2.0
     negative_prompt?: string;
   };
   visual_anchor?: {
@@ -271,22 +273,46 @@ export function resolvePalette(sources: LocationPrecedenceSources): PaletteSpec 
 export function resolveRequiredElements(sources: LocationPrecedenceSources): string[] {
   // Always include the location's signature elements so every target retains location identity.
   // Zones may specify their own required elements; merge rather than fully override.
-  if (sources.zone?.required_elements?.length) {
-    return mergeStringArrays(
-      sources.zone.required_elements,
-      sources.visual_anchor?.signature_elements
-    );
+  const elements: string[] = [];
+
+  // Collect from zone (highest precedence)
+  if (sources.zone?.required_elements) {
+    elements.push(...sources.zone.required_elements);
+  }
+  if (sources.zone?.key_elements) {
+    // v2.0 field
+    elements.push(...sources.zone.key_elements);
   }
 
-  return mergeStringArrays(
-    sources.overview?.required_elements,
-    sources.visual_anchor?.signature_elements
-  );
+  // v2.0: Check default_prompt_elements.must_include
+  if ('default_prompt_elements' in (sources.zone || {}) && (sources.zone as any).default_prompt_elements?.must_include) {
+    elements.push(...(sources.zone as any).default_prompt_elements.must_include);
+  }
+
+  // Fallback to overview if zone has none
+  if (elements.length === 0) {
+    if (sources.overview?.required_elements) {
+      elements.push(...sources.overview.required_elements);
+    }
+    if (sources.overview?.key_elements) {
+      // v2.0 field
+      elements.push(...sources.overview.key_elements);
+    }
+  }
+
+  // Always merge with visual anchor signature elements
+  return mergeStringArrays(elements, sources.visual_anchor?.signature_elements);
 }
 
 /**
  * Apply precedence rules to resolve negative prompt
- * MERGE all sources (deduplicated)
+ * MERGE all sources (deduplicated):
+ * - Zone negative_prompt
+ * - Overview negative_prompt
+ * - Zone palette.avoid (converted to "X colors")
+ * - Overview palette.avoid (converted to "X colors")
+ * - Zone default_prompt_elements.must_avoid
+ * - Global defaults
  */
 export function resolveNegativePrompt(sources: LocationPrecedenceSources): string[] {
   const terms: string[] = [];
@@ -309,6 +335,24 @@ export function resolveNegativePrompt(sources: LocationPrecedenceSources): strin
         terms.push(...normalizeNegativeTerm(term));
       }
     }
+  }
+
+  // Add palette.avoid colors (zone and overview)
+  if (sources.zone?.palette?.avoid?.length) {
+    for (const color of sources.zone.palette.avoid) {
+      terms.push(`${color} colors`);
+    }
+  }
+  if (sources.overview?.palette?.avoid?.length) {
+    for (const color of sources.overview.palette.avoid) {
+      terms.push(`${color} colors`);
+    }
+  }
+
+  // Add default_prompt_elements.must_avoid (v2.0)
+  const zonePromptElements = (sources.zone as any)?.default_prompt_elements;
+  if (zonePromptElements?.must_avoid?.length) {
+    terms.push(...zonePromptElements.must_avoid);
   }
 
   // Deduplicate (case-insensitive)

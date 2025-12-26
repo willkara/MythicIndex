@@ -26,7 +26,12 @@ import {
 } from '../services/prompt-compiler/index.js';
 import type { TargetMetadata } from '../types/prompt-ir.js';
 import { formatPromptForDisplay } from '../services/prompt-renderer.js';
-import { appendRun, createGenerationRun } from '../services/imagery-yaml.js';
+import {
+  appendRun,
+  appendChapterImageInventory,
+  createGenerationRun,
+  createGeneratedImageInventoryEntry,
+} from '../services/imagery-yaml.js';
 import { generateFromIR, prepareIRPrompt } from '../services/images/index.js';
 
 type ChapterAction = 'list' | 'context' | 'preview' | 'generate' | 'back';
@@ -371,6 +376,7 @@ async function generateChapterImages(chapter: ChapterCacheEntry): Promise<void> 
           depicts_characters: imageSpec?.depicts_characters,
           location: imageSpec?.location,
           zone: imageSpec?.zone,
+          prompt_spec_slug: target.slug,
         };
 
         // Record the run
@@ -397,7 +403,36 @@ async function generateChapterImages(chapter: ChapterCacheEntry): Promise<void> 
           targetMetadata,
         });
 
+        const inventoryEntry = createGeneratedImageInventoryEntry({
+          entityType: 'chapter',
+          entitySlug: chapter.slug,
+          targetId: target.slug,
+          promptSpecSlug: target.slug,
+          outputPath: result.filePath!,
+          model: result.model || 'gemini-3-pro-image-preview',
+          provider: (result.metadata?.provider as string) || 'google',
+          promptUsed: prepared.rendered.prompt,
+          negativePromptUsed: prepared.rendered.negative_prompt,
+          irHash: prepared.rendered.ir_hash,
+          constraints: {
+            aspect_ratio: ir.constraints.aspect_ratio,
+            size: ir.constraints.size,
+            orientation: ir.constraints.orientation,
+            quality: ir.constraints.quality,
+          },
+          providerMetadata: (result.metadata || {}) as Record<string, unknown>,
+          targetMetadata: targetMetadata as unknown as Record<string, unknown>,
+          title: targetMetadata.custom_id,
+          imageType: targetMetadata.image_type,
+        });
+
         await appendRun('chapter', chapter.slug, run);
+        await appendChapterImageInventory({
+          slug: chapter.slug,
+          targetId: target.slug,
+          entry: inventoryEntry,
+          createBackup: true,
+        });
         successCount++;
       } else {
         showError(`Failed: ${result.error}`);

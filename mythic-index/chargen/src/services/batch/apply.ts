@@ -312,11 +312,16 @@ async function updateLocationInventory(
       : typeof targetMetadata.name === 'string'
         ? targetMetadata.name
         : undefined;
+  const promptSpecSlug =
+    typeof targetMetadata.prompt_spec_slug === 'string'
+      ? targetMetadata.prompt_spec_slug
+      : undefined;
 
   const entry = createGeneratedImageInventoryEntry({
     entityType: 'location',
     entitySlug: task.entitySlug,
     targetId: task.targetId,
+    promptSpecSlug,
     outputPath,
     model: task.model,
     provider: 'google',
@@ -364,11 +369,18 @@ async function updateChapterInventory(
       : typeof targetMetadata.name === 'string'
         ? targetMetadata.name
         : undefined;
+  const promptSpecSlug =
+    typeof targetMetadata.custom_id === 'string'
+      ? targetMetadata.custom_id
+      : typeof targetMetadata.prompt_spec_slug === 'string'
+        ? targetMetadata.prompt_spec_slug
+        : undefined;
 
   const entry = createGeneratedImageInventoryEntry({
     entityType: 'chapter',
     entitySlug: task.entitySlug,
     targetId: task.targetId,
+    promptSpecSlug,
     outputPath,
     model: task.model,
     provider: 'google',
@@ -392,6 +404,7 @@ async function updateChapterInventory(
 
   await appendChapterImageInventory({
     slug: task.entitySlug,
+    targetId: task.targetId,
     entry,
     createBackup,
   });

@@ -10,7 +10,7 @@ import { join } from 'path';
 import type { BatchTask, BatchReferenceImage, BatchTaskConfig } from '../../../types/batch.js';
 import type { CompiledPromptIR, RenderedPrompt as _RenderedPrompt } from '../../../types/prompt-ir.js';
 import { getCachedChapters } from '../../entity-cache.js';
-import { readRunsFile, getImagesDir, getEntityDir } from '../../imagery-yaml.js';
+import { readImageryYaml, getImagesDir, getEntityDir } from '../../imagery-yaml.js';
 import { compileChapterImages, listChapterTargets as _listChapterTargets } from '../../prompt-compiler/index.js';
 import { prepareIRPrompt } from '../../images/index.js';
 import { buildFinalPrompt } from '../../images/style.js';
@@ -118,13 +118,25 @@ async function planSingleChapter(
     ? compiledTargets.filter((ir) => options.imageTypes!.includes(ir.image_type || ''))
     : compiledTargets;
 
-  // Load existing runs to check for already-generated images
-  const runsFile = await readRunsFile('chapter', slug);
+  // Load imagery spec + existing inventory to check for already-generated images
   const existingRuns = new Map<string, string>(); // target_id -> ir_hash
+  const imageryData = await readImageryYaml('chapter', slug);
+  const imageSpecMap = new Map<string, Record<string, unknown>>();
 
-  if (runsFile?.runs) {
-    for (const run of runsFile.runs) {
-      existingRuns.set(run.target_id, run.ir_hash);
+  if (imageryData && 'images' in imageryData) {
+    const images = Array.isArray((imageryData as any).images) ? (imageryData as any).images : [];
+    for (const image of images) {
+      if (image?.custom_id) {
+        imageSpecMap.set(image.custom_id, image as Record<string, unknown>);
+      }
+      if (!image?.image_inventory || !Array.isArray(image.image_inventory)) continue;
+      for (const entry of image.image_inventory) {
+        const targetId = entry?.generation?.target_id || image.custom_id;
+        const irHash = entry?.generation?.ir_hash;
+        if (targetId && irHash) {
+          existingRuns.set(targetId, irHash);
+        }
+      }
     }
   }
 
@@ -176,6 +188,7 @@ async function planSingleChapter(
       const outputFileName = `${ir.target_id}-${timestamp}-${dateStr}`;
 
       // Create task
+      const imageSpec = imageSpecMap.get(ir.target_id) || {};
       const task: BatchTask = {
         key: taskKey,
         kind: 'generate',
@@ -198,6 +211,13 @@ async function planSingleChapter(
           custom_id: ir.target_id,
           image_type: ir.image_type,
           scene_mood: ir.scene_mood,
+          scene_id: imageSpec.scene_id as string | undefined,
+          source_moment: imageSpec.source_moment as string | undefined,
+          category: imageSpec.category as string[] | undefined,
+          depicts_characters: imageSpec.depicts_characters as string[] | undefined,
+          location: imageSpec.location as string | undefined,
+          zone: imageSpec.zone as string | undefined,
+          prompt_spec_slug: ir.target_id,
         },
       };
 

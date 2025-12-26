@@ -270,6 +270,20 @@ async function scanEntityImages(
         if (zone?.image_inventory && Array.isArray(zone.image_inventory)) {
           inventoryBuckets.push(...zone.image_inventory);
         }
+        if (zone?.images && Array.isArray(zone.images)) {
+          for (const img of zone.images) {
+            if (img?.image_inventory && Array.isArray(img.image_inventory)) {
+              inventoryBuckets.push(...img.image_inventory);
+            }
+          }
+        }
+      }
+
+      const images = Array.isArray(data?.images) ? data.images : [];
+      for (const img of images) {
+        if (img?.image_inventory && Array.isArray(img.image_inventory)) {
+          inventoryBuckets.push(...img.image_inventory);
+        }
       }
 
       for (const item of inventoryBuckets) {
@@ -526,8 +540,9 @@ export function findZoneReferencePath(locationSlug: string, zone: string): strin
       for (const variant of zoneVariants) {
         const lowerVariant = variant.toLowerCase();
 
+        const partSlug = part.slug || (part as { zone_slug?: string }).zone_slug;
         // Match by slug containing zone variant
-        const slugMatch = part.slug?.toLowerCase().includes(lowerVariant);
+        const slugMatch = partSlug?.toLowerCase().includes(lowerVariant);
         // Match by zone_type
         const zoneTypeMatch = part.zone_type?.toLowerCase() === lowerVariant;
         // Match by name containing zone variant
@@ -541,6 +556,20 @@ export function findZoneReferencePath(locationSlug: string, zone: string): strin
                 const fullPath = join(entityDir, entry.path);
                 if (existsSync(fullPath)) {
                   return fullPath;
+                }
+              }
+            }
+          }
+
+          if (part.images && Array.isArray(part.images)) {
+            for (const img of part.images) {
+              if (!img?.image_inventory || !Array.isArray(img.image_inventory)) continue;
+              for (const entry of img.image_inventory) {
+                if (entry.status === 'approved' && entry.path) {
+                  const fullPath = join(entityDir, entry.path);
+                  if (existsSync(fullPath)) {
+                    return fullPath;
+                  }
                 }
               }
             }

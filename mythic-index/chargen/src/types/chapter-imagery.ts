@@ -5,7 +5,7 @@
  * Chapters reference characters and locations instead of embedding descriptions.
  */
 
-import type { LightingSpec, PaletteSpec } from './prompt-ir.js';
+import type { ImageInventoryEntry, LightingSpec, PaletteSpec } from './prompt-ir.js';
 
 // ============================================================================
 // Chapter Imagery Spec (New Reference-Based Schema)
@@ -76,16 +76,19 @@ export interface ChapterMetadata {
   };
 }
 
-/** Mood distribution for chapter */
+/** Mood distribution for chapter - counts how many images use each mood */
 export interface MoodDistribution {
   somber?: number;
   pastoral?: number;
   celebratory?: number;
-  aquatic?: number;
   ethereal?: number;
   intimate?: number;
   kinetic?: number;
   ominous?: number;
+  heroic?: number;
+  clandestine?: number;
+  tense?: number;
+  reverent?: number;
 }
 
 // ============================================================================
@@ -201,24 +204,25 @@ export interface ResolvedLocation {
 
 /** Image type categories for chapters */
 export type ChapterImageType =
-  | 'hero' // Chapter opening/establishing
+  | 'hero' // Chapter opening/establishing shot
   | 'anchor' // Pivotal moments, action climaxes
-  | 'mood' // Atmospheric, emotional
+  | 'beat' // Narrative beat within scene
   | 'detail' // Close-ups, symbolic details
-  | 'symbol' // Metaphorical, thematic
-  | 'pivot' // Turning point moments
-  | 'character'; // Character portrait in context
+  | 'supporting'; // Supporting imagery for context
 
 /** Scene mood options */
 export type SceneMood =
-  | 'somber'
-  | 'pastoral'
-  | 'celebratory'
-  | 'aquatic'
-  | 'ethereal'
-  | 'intimate'
-  | 'kinetic'
-  | 'ominous';
+  | 'somber' // Grief, loss, melancholy
+  | 'pastoral' // Peaceful, natural, serene
+  | 'celebratory' // Joy, triumph, festivity
+  | 'ethereal' // Mystical, otherworldly, dreamlike
+  | 'intimate' // Close, personal, tender
+  | 'kinetic' // Action, energy, motion
+  | 'ominous' // Foreboding, danger, tension
+  | 'heroic' // Triumph, valor, courage
+  | 'clandestine' // Secret, hidden, covert
+  | 'tense' // Suspense, anxiety, unease
+  | 'reverent'; // Sacred, respectful, solemn
 
 /**
  * Specification for a single chapter image.
@@ -312,6 +316,9 @@ export interface ChapterImageSpec {
 
   /** Tags for filtering/search */
   tags?: string[];
+
+  /** Generated images attached to this image spec */
+  image_inventory?: ImageInventoryEntry[];
 
   // === Generation Status (populated after generation) ===
 

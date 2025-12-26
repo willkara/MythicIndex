@@ -11,6 +11,7 @@ import type {
   ExtendedLocationImagery,
   ExtendedLocationOverview,
   ExtendedLocationZone,
+  ZoneImageSpec,
   CompilerOptions,
   ImageType,
   LightingSpec,
@@ -30,7 +31,7 @@ import {
   getCharacterReferencePaths,
   resolveAsset,
 } from '../asset-registry.js';
-import { getImagesDir } from '../imagery-yaml.js';
+import { buildZoneImageTargetId, getImagesDir } from '../imagery-yaml.js';
 import { existsSync, readdirSync, statSync } from 'fs';
 import { join } from 'path';
 import { logPhase, logStep, logDetail, logLocationResolution } from '../../ui/log.js';
@@ -39,6 +40,19 @@ import { showSuccess } from '../../ui/display.js';
 function countKeywordMatches(haystack: string, keywords: string[]): number {
   const lower = haystack.toLowerCase();
   return keywords.reduce((sum, k) => (lower.includes(k) ? sum + 1 : sum), 0);
+}
+
+function getOverviewSlug(overview: ExtendedLocationOverview | undefined): string {
+  if (overview?.slug) return overview.slug;
+  return 'overview';
+}
+
+function getZoneSlug(zone: ExtendedLocationZone): string {
+  return zone.slug || (zone as { zone_slug?: string }).zone_slug || zone.name;
+}
+
+function getZoneName(zone: ExtendedLocationZone): string {
+  return zone.name || (zone as { zone_name?: string }).zone_name || zone.title || getZoneSlug(zone);
 }
 
 function inferFantasyCuesText(targetText: string): string {
@@ -148,7 +162,7 @@ export async function compileLocationOverview(
     const anchor = imagery.location_visual_anchor;
     const zoneCount = imagery.zones?.length;
     logLocationResolution(slug, {
-      name: imagery.overview.title,
+      name: imagery.overview.title || imagery.overview.name,
       signatureElements: anchor?.signature_elements?.length,
       materials: anchor?.materials ? Object.values(anchor.materials) : undefined,
       zoneCount,
@@ -178,13 +192,15 @@ export async function compileLocationZone(
     return null;
   }
 
-  const zone = zones.find((p) => p.slug === zoneSlug);
+  const zone = zones.find(
+    (p) => p.slug === zoneSlug || ('zone_slug' in p && (p as { zone_slug?: string }).zone_slug === zoneSlug)
+  );
   if (!zone) {
     return null;
   }
 
   if (verbose) {
-    logStep(`Zone: ${zone.name}`);
+    logStep(`Zone: ${getZoneName(zone)}`);
     if (zone.visual_description) {
       logDetail(`Visual description: ${zone.visual_description.length} chars`);
     }
@@ -218,7 +234,7 @@ export async function compileAllLocationTargets(
     const anchor = imagery.location_visual_anchor;
     const zoneCount = imagery.zones?.length;
     logLocationResolution(slug, {
-      name: imagery.overview?.title,
+      name: imagery.overview?.title || imagery.overview?.name,
       signatureElements: anchor?.signature_elements?.length,
       materials: anchor?.materials ? Object.values(anchor.materials) : undefined,
       zoneCount,
@@ -239,9 +255,20 @@ export async function compileAllLocationTargets(
   const zones = imagery.zones ?? [];
   if (zones.length > 0) {
     for (const zone of zones) {
-      const compiled = await compileZoneSection(slug, imagery, zone, options);
-      if (compiled) {
-        results.push(compiled);
+      if (zone.images && zone.images.length > 0) {
+        const zoneSlug = getZoneSlug(zone);
+        for (const imageSpec of zone.images) {
+          if (!imageSpec?.image_slug) continue;
+          const compiled = await compileZoneImage(slug, zoneSlug, imageSpec.image_slug, options);
+          if (compiled) {
+            results.push(compiled);
+          }
+        }
+      } else {
+        const compiled = await compileZoneSection(slug, imagery, zone, options);
+        if (compiled) {
+          results.push(compiled);
+        }
       }
     }
   }
@@ -266,16 +293,39 @@ export async function listLocationTargets(slug: string): Promise<{
   }
 
   const zones = imagery.zones ?? [];
+  const zoneTargets: { slug: string; name: string; title: string; image_type?: string }[] = [];
+
+  for (const zone of zones) {
+    if (zone.images && zone.images.length > 0) {
+      const zoneSlug = getZoneSlug(zone);
+      const zoneName = getZoneName(zone);
+      for (const imageSpec of zone.images) {
+        if (!imageSpec?.image_slug) continue;
+        zoneTargets.push({
+          slug: buildZoneImageTargetId(zoneSlug, imageSpec.image_slug),
+          name: zoneName,
+          title: imageSpec.description || `${zoneName} image`,
+          image_type: imageSpec.image_type || zone.image_type,
+        });
+      }
+    } else {
+      zoneTargets.push({
+        slug: getZoneSlug(zone),
+        name: getZoneName(zone),
+        title: zone.title || getZoneName(zone),
+        image_type: zone.image_type,
+      });
+    }
+  }
+
   return {
     overview: imagery.overview
-      ? { slug: imagery.overview.slug, title: imagery.overview.title || 'Overview' }
+      ? {
+          slug: getOverviewSlug(imagery.overview),
+          title: imagery.overview.title || imagery.overview.name || 'Overview',
+        }
       : null,
-    zones: zones.map((zone) => ({
-      slug: zone.slug,
-      name: zone.name,
-      title: zone.title || zone.name,
-      image_type: zone.image_type,
-    })),
+    zones: zoneTargets,
   };
 }
 
@@ -292,6 +342,8 @@ function compileOverviewSection(
   options: CompilerOptions
 ): CompiledPromptIR {
   const overview = imagery.overview!;
+  const overviewSlug = getOverviewSlug(overview);
+  const overviewTitle = overview.title || overview.name || 'Overview';
   const anchor = imagery.location_visual_anchor;
   const metadata = imagery.metadata;
 
@@ -318,8 +370,8 @@ function compileOverviewSection(
   const requiredElements = resolveRequiredElements(sources);
   const negativeTerms = resolveNegativePrompt(sources);
 
-  // Build positive prompt sections
-  const positive = buildPositiveSections(overview, anchor, lighting, palette, requiredElements);
+  // Build positive prompt sections (with metadata for narrative fields)
+  const positive = buildPositiveSections(overview, anchor, lighting, palette, requiredElements, metadata);
 
   // Resolve references
   // Include character portraits if depicts_characters is specified
@@ -329,11 +381,11 @@ function compileOverviewSection(
   const references = resolveLocationReferences(slug, imagery, depictsCharacters);
 
   return {
-    target_id: overview.slug,
+    target_id: overviewSlug,
     entity_type: 'location',
     entity_slug: slug,
     image_type: (overview.image_type as ImageType) || 'establishing',
-    title: overview.title,
+    title: overviewTitle,
     scene_mood: overview.scene_mood,
     mood_rationale: overview.mood_rationale,
     positive,
@@ -363,6 +415,8 @@ function compileZoneSection(
   const overview = imagery.overview;
   const anchor = imagery.location_visual_anchor;
   const metadata = imagery.metadata;
+  const zoneSlug = getZoneSlug(zone);
+  const zoneTitle = zone.title || getZoneName(zone);
 
   // Build precedence sources
   const sources: LocationPrecedenceSources = {
@@ -399,19 +453,27 @@ function compileZoneSection(
   const requiredElements = resolveRequiredElements(sources);
   const negativeTerms = resolveNegativePrompt(sources);
 
-  // Build positive prompt sections
-  const positive = buildPositiveSections(zone, anchor, lighting, palette, requiredElements);
+  // Build positive prompt sections (with metadata and zone anchor)
+  const positive = buildPositiveSections(
+    zone,
+    anchor,
+    lighting,
+    palette,
+    requiredElements,
+    metadata,
+    zone.zone_visual_anchor
+  );
 
   // Resolve references (part may have its own or inherit from location)
   // Include character portraits if depicts_characters is specified
   const references = resolveLocationReferences(slug, imagery, zone.depicts_characters);
 
   return {
-    target_id: zone.slug,
+    target_id: zoneSlug,
     entity_type: 'location',
     entity_slug: slug,
     image_type: (zone.image_type as ImageType) || 'zone',
-    title: zone.title || zone.name,
+    title: zoneTitle,
     scene_mood: zone.scene_mood,
     mood_rationale: zone.mood_rationale,
     positive,
@@ -430,6 +492,16 @@ function compileZoneSection(
 }
 
 /**
+ * Truncate text at sentence boundary
+ */
+function truncateToSentence(text: string, maxLen: number): string {
+  if (text.length <= maxLen) return text;
+  const truncated = text.slice(0, maxLen);
+  const lastPeriod = truncated.lastIndexOf('.');
+  return lastPeriod > maxLen * 0.5 ? truncated.slice(0, lastPeriod + 1) : truncated + '...';
+}
+
+/**
  * Build the positive prompt sections with weights
  */
 function buildPositiveSections(
@@ -437,7 +509,10 @@ function buildPositiveSections(
   anchor: ExtendedLocationImagery['location_visual_anchor'],
   lighting: LightingSpec | undefined,
   palette: PaletteSpec,
-  requiredElements: string[]
+  requiredElements: string[],
+  metadata?: ExtendedLocationImagery['metadata'],
+  zoneAnchor?: ExtendedLocationZone['zone_visual_anchor'],
+  imageSpec?: ZoneImageSpec
 ): CompiledPromptIR['positive'] {
   const sections: CompiledPromptIR['positive'] = {
     constraints: [],
@@ -448,23 +523,37 @@ function buildPositiveSections(
     style: [],
   };
 
-  // Weight 1: Constraints (required elements)
-  if (requiredElements.length > 0) {
+  // Weight 1: Constraints (required elements + key_elements)
+  const allRequiredElements = [
+    ...requiredElements,
+    ...(target.key_elements || []), // v2.0 field
+  ];
+
+  if (allRequiredElements.length > 0) {
     sections.constraints.push({
       weight: 1,
-      content: requiredElements.join(', '),
-      source: 'required_elements',
+      content: allRequiredElements.join(', '),
+      source: 'required_elements+key_elements',
     });
   }
 
-  // Weight 2: Subject (visual description)
-  if (target.visual_description) {
-    // Clean and condense the visual description
-    const cleaned = cleanMultilineText(target.visual_description);
+  // Weight 2: Subject (visual description OR narrative context OR description)
+  const description =
+    target.visual_description ||
+    target.narrative_context ||
+    ('description' in target ? (target as any).description : undefined);
+
+  if (description) {
+    // Clean and condense the description
+    const cleaned = cleanMultilineText(description);
     sections.subject.push({
       weight: 2,
       content: cleaned,
-      source: 'visual_description',
+      source: target.visual_description
+        ? 'visual_description'
+        : target.narrative_context
+          ? 'narrative_context'
+          : 'description',
     });
   }
 
@@ -475,8 +564,8 @@ function buildPositiveSections(
     [
       target.title,
       'name' in target ? target.name : undefined,
-      target.visual_description,
-      requiredElements.join(', '),
+      description, // Use whichever description field we found
+      allRequiredElements.join(', '), // Use merged elements
     ]
       .filter(Boolean)
       .join(' ')
@@ -524,6 +613,7 @@ function buildPositiveSections(
   if (lighting) {
     const lightingParts: string[] = [];
     if (lighting.primary_source) lightingParts.push(`light from ${lighting.primary_source}`);
+    if (lighting.secondary_source) lightingParts.push(`secondary light from ${lighting.secondary_source}`); // v2.0
     if (lighting.quality) lightingParts.push(lighting.quality);
     if (lighting.direction) lightingParts.push(lighting.direction);
     if (lighting.color_temperature) lightingParts.push(`${lighting.color_temperature} tones`);
@@ -560,8 +650,10 @@ function buildPositiveSections(
   // The global art-direction suffix is injected later by the image service.
   const styleParts: string[] = ['high fantasy'];
 
-  if (target.scene_mood) {
-    styleParts.push(`${target.scene_mood} atmosphere`);
+  // v2.0: Use mood or scene_mood
+  const moodValue = ('mood' in target && (target as any).mood) || target.scene_mood;
+  if (moodValue) {
+    styleParts.push(`${moodValue} atmosphere`);
   }
 
   if (anchor?.materials) {
@@ -584,6 +676,33 @@ function buildPositiveSections(
       weight: 5,
       content: `Mood intent: ${cleanMultilineText(target.mood_rationale)}`,
       source: 'mood_rationale',
+    });
+  }
+
+  // Add narrative_soul from metadata (weight 5)
+  if (metadata?.narrative_soul) {
+    sections.style.push({
+      weight: 5,
+      content: `Location essence: ${truncateToSentence(cleanMultilineText(metadata.narrative_soul), 200)}`,
+      source: 'narrative_soul',
+    });
+  }
+
+  // Add one_line_essence from metadata (weight 5)
+  if (metadata?.one_line_essence) {
+    sections.style.push({
+      weight: 5,
+      content: `Thematic hook: ${metadata.one_line_essence}`,
+      source: 'one_line_essence',
+    });
+  }
+
+  // Add style_notes from image spec (weight 5)
+  if (imageSpec?.style_notes) {
+    sections.style.push({
+      weight: 5,
+      content: imageSpec.style_notes,
+      source: 'style_notes',
     });
   }
 
@@ -616,9 +735,9 @@ function resolveLocationReferences(
     }
   }
 
-  // Check image_inventory for approved overview images
-  if (imagery.image_inventory) {
-    for (const item of imagery.image_inventory) {
+  // Check overview image_inventory for approved overview images
+  if (imagery.overview?.image_inventory) {
+    for (const item of imagery.overview.image_inventory) {
       if (item.status === 'approved' && item.content?.tags?.includes('overview')) {
         const asset = resolveAsset(item.id);
         if (asset && !references.some((r) => r.asset_id === item.id)) {
@@ -635,14 +754,15 @@ function resolveLocationReferences(
 
   // Get any additional reference paths
   const alreadyHaveOverview = references.some((r) => r.role === 'location_overview' && r.exists);
-  if (!alreadyHaveOverview && imagery.overview?.slug) {
+  if (!alreadyHaveOverview && imagery.overview) {
+    const overviewSlug = getOverviewSlug(imagery.overview);
     const imagesDir = getImagesDir('location', slug);
     // Prefer a fresh, location-specific anchor (newest image for the overview target).
     // This avoids arbitrarily picking an older/grounded "establishing" image.
-    const latest = getLatestImageForTargetPrefixSync(imagesDir, `${imagery.overview.slug}-`);
+    const latest = getLatestImageForTargetPrefixSync(imagesDir, `${overviewSlug}-`);
     if (latest) {
       references.push({
-        asset_id: `latest-${imagery.overview.slug}`,
+        asset_id: `latest-${overviewSlug}`,
         role: 'location_overview',
         path: latest,
         exists: true,
@@ -684,6 +804,193 @@ function resolveLocationReferences(
   }
 
   return references;
+}
+
+// ============================================================================
+// Zone Image Compilation (v2.0)
+// ============================================================================
+
+/**
+ * Compile a specific zone image from zones[].images[] specification
+ *
+ * @param slug - Location slug
+ * @param zoneSlug - Zone slug (zones[].slug OR zones[].zone_slug)
+ * @param imageSlug - Image slug (zones[].images[].image_slug)
+ * @param options - Compiler options
+ * @returns CompiledPromptIR or null if not found
+ */
+export async function compileZoneImage(
+  slug: string,
+  zoneSlug: string,
+  imageSlug: string,
+  options: CompilerOptions & { verbose?: boolean } = {}
+): Promise<CompiledPromptIR | null> {
+  const { verbose } = options;
+
+  if (verbose) {
+    logPhase(`Loading location imagery for ${slug}...`);
+  }
+
+  const imagery = await readLocationImagery(slug);
+  if (!imagery || !imagery.zones) {
+    return null;
+  }
+
+  // Find the zone (match slug or zone_slug)
+  const zone = imagery.zones.find(
+    (z) => z.slug === zoneSlug || ('zone_slug' in z && (z as any).zone_slug === zoneSlug)
+  );
+  if (!zone) {
+    if (verbose) {
+      console.error(`Zone not found: ${zoneSlug}`);
+    }
+    return null;
+  }
+  const resolvedZoneSlug = getZoneSlug(zone);
+  const resolvedZoneName = getZoneName(zone);
+
+  // Find the image spec within the zone
+  const imageSpec = zone.images?.find((img) => img.image_slug === imageSlug);
+  if (!imageSpec) {
+    if (verbose) {
+      console.error(`Image spec not found: ${zoneSlug}/${imageSlug}`);
+    }
+    return null;
+  }
+
+  if (verbose) {
+    logPhase(`Compiling zone image: ${zoneSlug}/${imageSlug}`);
+    logDetail(`Image type: ${imageSpec.image_type}`);
+    logDetail(`Mood: ${imageSpec.scene_mood}`);
+  }
+
+  // Build precedence sources - image spec overrides zone fields
+  const mergedZone: ExtendedLocationZone = {
+    ...zone,
+    // Override with image-specific fields
+    visual_description: imageSpec.description || zone.visual_description,
+    scene_mood: imageSpec.scene_mood || zone.scene_mood,
+    lighting: imageSpec.lighting || zone.lighting,
+    palette: imageSpec.palette || zone.palette,
+    required_elements: imageSpec.key_elements || zone.required_elements || zone.key_elements,
+    time_of_day: imageSpec.time_of_day || zone.time_of_day,
+    weather: imageSpec.weather || zone.weather,
+    composition_notes:
+      imageSpec.composition
+        ? Object.entries(imageSpec.composition)
+            .filter(([_, v]) => v)
+            .map(([k, v]) => `${k}: ${v}`)
+            .join(', ')
+        : zone.composition_notes,
+  };
+
+  const sources: LocationPrecedenceSources = {
+    zone: {
+      aspect_ratio: options.aspectRatio || mergedZone.aspect_ratio,
+      size: options.size || mergedZone.size,
+      orientation: mergedZone.orientation,
+      scene_mood: mergedZone.scene_mood,
+      lighting: mergedZone.lighting,
+      palette: mergedZone.palette,
+      required_elements: mergedZone.required_elements,
+      key_elements: mergedZone.key_elements, // v2.0
+      negative_prompt: mergedZone.negative_prompt,
+    },
+    visual_anchor: imagery.location_visual_anchor,
+    metadata: imagery.metadata?.generation_defaults || imagery.generation_defaults,
+  };
+
+  // Resolve with precedence
+  const constraints = resolveConstraints(sources);
+  const lighting = resolveLighting(sources);
+  const palette = resolvePalette(sources);
+  const requiredElements = resolveRequiredElements(sources);
+  const negative = resolveNegativePrompt(sources);
+
+  // Build positive sections (with metadata, zone anchor, and image spec for style_notes)
+  const sections = buildPositiveSections(
+    mergedZone,
+    imagery.location_visual_anchor,
+    lighting,
+    palette,
+    requiredElements,
+    imagery.metadata,
+    zone.zone_visual_anchor,
+    imageSpec
+  );
+
+  // Resolve references (from zone's image_inventory, not images[])
+  const references = resolveLocationReferences(slug, imagery, zone.depicts_characters || []);
+
+  return {
+    target_id: buildZoneImageTargetId(resolvedZoneSlug, imageSlug),
+    entity_type: 'location',
+    entity_slug: slug,
+    image_type: (imageSpec.image_type as ImageType) || 'zone',
+    title: `${resolvedZoneName} - ${imageSpec.description}`,
+    scene_mood: imageSpec.scene_mood || zone.scene_mood,
+    mood_rationale: zone.mood_rationale,
+    positive: sections,
+    negative,
+    references,
+    constraints,
+    lighting,
+    palette,
+    sources: {
+      entity_defaults: (sources.metadata as Record<string, unknown>) || {},
+      image_overrides: {
+        prompt_spec_slug: imageSlug,
+        ...imageSpec,
+      } as Record<string, unknown>,
+      global_defaults: {},
+    },
+    compiled_at: new Date().toISOString(),
+  };
+}
+
+/**
+ * List all zone image specifications for a location
+ *
+ * @param slug - Location slug
+ * @returns Array of image spec metadata
+ */
+export async function listZoneImageSpecs(slug: string): Promise<
+  Array<{
+    zoneSlug: string;
+    zoneName: string;
+    imageSlug: string;
+    imageType: string;
+    description: string;
+  }>
+> {
+  const imagery = await readLocationImagery(slug);
+  if (!imagery || !imagery.zones) {
+    return [];
+  }
+
+  const specs: Array<{
+    zoneSlug: string;
+    zoneName: string;
+    imageSlug: string;
+    imageType: string;
+    description: string;
+  }> = [];
+
+  for (const zone of imagery.zones) {
+    if (zone.images && zone.images.length > 0) {
+      for (const img of zone.images) {
+        specs.push({
+          zoneSlug: getZoneSlug(zone),
+          zoneName: getZoneName(zone),
+          imageSlug: img.image_slug,
+          imageType: img.image_type || 'zone',
+          description: img.description,
+        });
+      }
+    }
+  }
+
+  return specs;
 }
 
 // ============================================================================

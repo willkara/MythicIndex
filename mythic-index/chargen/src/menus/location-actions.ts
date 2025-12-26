@@ -27,6 +27,7 @@ import { formatPromptForDisplay } from '../services/prompt-renderer.js';
 import {
   appendLocationImageInventory,
   createGeneratedImageInventoryEntry,
+  parseZoneImageTargetId,
 } from '../services/imagery-yaml.js';
 import { readLocationImagery } from '../services/asset-registry.js';
 import type { TargetMetadata } from '../types/prompt-ir.js';
@@ -38,6 +39,25 @@ interface TargetInfo {
   slug: string;
   name: string;
   type: string;
+}
+
+function getZoneSlug(zone: Record<string, unknown>): string {
+  return (
+    (zone.slug as string) ||
+    (zone.zone_slug as string) ||
+    (zone.zone_name as string) ||
+    (zone.name as string) ||
+    ''
+  );
+}
+
+function getZoneName(zone: Record<string, unknown>): string {
+  return (
+    (zone.name as string) ||
+    (zone.zone_name as string) ||
+    (zone.title as string) ||
+    getZoneSlug(zone)
+  );
 }
 
 /**
@@ -203,7 +223,8 @@ async function generateLocationImages(location: LocationCacheEntry): Promise<voi
   // Read location imagery for metadata
   const imagery = await readLocationImagery(location.slug);
   const zoneSpecs = imagery?.zones ?? [];
-  const zoneSpecMap = new Map(zoneSpecs.map((zone) => [zone.slug, zone]));
+  const zoneSpecMap = new Map(zoneSpecs.map((zone) => [getZoneSlug(zone as any), zone]));
+  const overviewSlug = imagery?.overview?.slug || 'overview';
 
   // Compile all IRs first
   const compiledTargets: {
@@ -307,20 +328,32 @@ async function generateLocationImages(location: LocationCacheEntry): Promise<voi
         showSuccess(`Generated: ${result.fileName}`);
 
         // Build target metadata from part spec
-        const zoneSpec = zoneSpecMap.get(target.slug);
-        const isOverview = target.slug === imagery?.overview?.slug;
+        const parsedTarget = parseZoneImageTargetId(target.slug);
+        const zoneSpec = parsedTarget
+          ? zoneSpecMap.get(parsedTarget.zoneSlug)
+          : zoneSpecMap.get(target.slug);
         const overviewSpec = imagery?.overview;
+        const isOverview = target.slug === overviewSlug || target.slug === 'overview';
+        const imageSpec =
+          parsedTarget && zoneSpec && Array.isArray((zoneSpec as any).images)
+            ? (zoneSpec as any).images.find(
+                (img: any) => img?.image_slug === parsedTarget.imageSlug
+              )
+            : undefined;
+        const zoneName = zoneSpec ? getZoneName(zoneSpec as any) : undefined;
         const targetMetadata: TargetMetadata = {
           entity_type: 'location',
           entity_slug: location.slug,
           image_type: isOverview
             ? overviewSpec?.image_type || 'establishing'
-            : zoneSpec?.image_type || target.type,
+            : imageSpec?.image_type || zoneSpec?.image_type || target.type,
           zone_type: zoneSpec?.zone_type,
-          name: zoneSpec?.name || overviewSpec?.title,
-          title: zoneSpec?.title || overviewSpec?.title,
-          scene_mood: zoneSpec?.scene_mood || overviewSpec?.scene_mood,
-          depicts_characters: zoneSpec?.depicts_characters,
+          name: zoneName || overviewSpec?.title || overviewSpec?.name,
+          title: imageSpec?.description || zoneSpec?.title || zoneName || overviewSpec?.title,
+          scene_mood: imageSpec?.scene_mood || zoneSpec?.scene_mood || overviewSpec?.scene_mood,
+          depicts_characters: imageSpec?.depicts_characters || zoneSpec?.depicts_characters,
+          zone: parsedTarget?.zoneSlug,
+          prompt_spec_slug: parsedTarget?.imageSlug,
         };
 
         // Record the generated image in imagery.yaml
@@ -328,6 +361,7 @@ async function generateLocationImages(location: LocationCacheEntry): Promise<voi
           entityType: 'location',
           entitySlug: location.slug,
           targetId: target.slug,
+          promptSpecSlug: parsedTarget?.imageSlug,
           outputPath: result.filePath!,
           model: result.model || 'gemini-3-pro-image-preview',
           provider: (result.metadata?.provider as string) || 'google',

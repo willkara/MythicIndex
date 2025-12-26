@@ -8,6 +8,14 @@ import { join, dirname, relative, sep } from 'path';
 import { parse as parseYaml, stringify as stringifyYaml } from 'yaml';
 import { existsSync, readFileSync } from 'fs';
 import { getContentDir } from '../ingestion/config.js';
+import {
+  validateImageryData,
+  ImagerySchemaError,
+  type EntityType as SchemaEntityType,
+} from './imagery-schema.js';
+
+// Re-export for convenience
+export { ImagerySchemaError } from './imagery-schema.js';
 
 /** Local image type for character imagery (different from prompt-ir's location-focused ImageType) */
 type CharacterImageType = 'portrait' | 'full-body' | 'action' | 'scene' | 'mood' | 'collaborative';
@@ -16,6 +24,22 @@ type CharacterImageType = 'portrait' | 'full-body' | 'action' | 'scene' | 'mood'
 const getStoryContentBase = () => getContentDir();
 
 export type EntityType = 'character' | 'location' | 'chapter';
+
+export const LOCATION_ZONE_IMAGE_SEPARATOR = '__';
+
+export function buildZoneImageTargetId(zoneSlug: string, imageSlug: string): string {
+  return `${zoneSlug}${LOCATION_ZONE_IMAGE_SEPARATOR}${imageSlug}`;
+}
+
+export function parseZoneImageTargetId(
+  targetId: string
+): { zoneSlug: string; imageSlug: string } | null {
+  const parts = targetId.split(LOCATION_ZONE_IMAGE_SEPARATOR);
+  if (parts.length !== 2) return null;
+  const [zoneSlug, imageSlug] = parts;
+  if (!zoneSlug || !imageSlug) return null;
+  return { zoneSlug, imageSlug };
+}
 
 export interface GeneratedImageEntry {
   custom_id: string;
@@ -47,6 +71,9 @@ export interface ImageInventoryEntry {
   path: string;
   type: 'generated' | 'imported' | 'edited' | 'placeholder';
   status: 'approved' | 'draft' | 'archived' | 'rejected';
+
+  // NEW: Link back to prompt specification (v2.0)
+  prompt_spec_slug?: string; // Links to zones[].images[].image_slug or chapter images[].custom_id
 
   /** True if this is the canonical reference portrait (portrait.png) - the "gospel truth" for character appearance */
   is_reference_portrait?: boolean;
@@ -136,15 +163,19 @@ export interface CharacterImagery {
 }
 
 export interface LocationZone {
-  name: string;
-  slug: string;
+  name?: string;
+  slug?: string;
+  zone_name?: string;
+  zone_slug?: string;
   title?: string;
   base_prompt?: string;
   image_inventory?: ImageInventoryEntry[];
+  images?: Array<{ image_slug?: string; image_inventory?: ImageInventoryEntry[] }>;
 }
 
 export interface LocationOverview {
-  slug: string;
+  slug?: string;
+  name?: string;
   title?: string;
   base_prompt?: string;
   image_inventory?: ImageInventoryEntry[];
@@ -178,7 +209,10 @@ export interface ChapterImagery {
   style_tokens?: ChapterStyleTokens;
   negative_prompt?: string;
   scenes?: ChapterScene[];
-  image_inventory: ImageInventoryEntry[];
+  images?: Array<{
+    custom_id?: string;
+    image_inventory?: ImageInventoryEntry[];
+  }>;
 }
 
 export type ImageryData = CharacterImagery | LocationImagery | ChapterImagery;
@@ -263,17 +297,25 @@ export function toEntityRelativePath(entityType: EntityType, slug: string, absol
 }
 
 /**
- * Read and parse an imagery.yaml file
+ * Read and parse an imagery.yaml file with strict validation
+ * @throws ImagerySchemaError if the file fails validation
  */
 export async function readImageryYaml(
   entityType: EntityType,
-  slug: string
+  slug: string,
+  options?: { skipValidation?: boolean }
 ): Promise<ImageryData | null> {
   const yamlPath = getImageryPath(entityType, slug);
 
   try {
     const content = await readFile(yamlPath, 'utf-8');
     const data = parseYaml(content);
+
+    // Strict validation (can be skipped for legacy compatibility during migration)
+    if (!options?.skipValidation) {
+      return validateImageryData<ImageryData>(entityType as SchemaEntityType, data, slug);
+    }
+
     return data as ImageryData;
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
@@ -284,18 +326,26 @@ export async function readImageryYaml(
 }
 
 /**
- * Read and parse an imagery.yaml file synchronously
+ * Read and parse an imagery.yaml file synchronously with strict validation
  * Used by asset-registry for reference portrait lookups
+ * @throws ImagerySchemaError if the file fails validation
  */
 export function readImageryYamlSync(
   entityType: EntityType,
-  slug: string
+  slug: string,
+  options?: { skipValidation?: boolean }
 ): ImageryData | null {
   const yamlPath = getImageryPath(entityType, slug);
 
   try {
     const content = readFileSync(yamlPath, 'utf-8');
     const data = parseYaml(content);
+
+    // Strict validation (can be skipped for legacy compatibility during migration)
+    if (!options?.skipValidation) {
+      return validateImageryData<ImageryData>(entityType as SchemaEntityType, data, slug);
+    }
+
     return data as ImageryData;
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
@@ -373,6 +423,7 @@ export function createGeneratedImageInventoryEntry(params: {
   entityType: EntityType;
   entitySlug: string;
   targetId: string;
+  promptSpecSlug?: string;
   outputPath: string;
   model: string;
   provider: string;
@@ -409,6 +460,7 @@ export function createGeneratedImageInventoryEntry(params: {
     path: relativePath,
     type: 'generated',
     status: 'approved',
+    prompt_spec_slug: params.promptSpecSlug,
     image_type: params.imageType as CharacterImageType | undefined,
     content: {
       title,
@@ -436,7 +488,7 @@ export function createGeneratedImageInventoryEntry(params: {
 }
 
 /**
- * Append a generated image entry to a location's imagery.yaml (overview or zone)
+ * Append a generated image entry to a location's imagery.yaml (overview, zone, or zone image spec)
  */
 export async function appendLocationImageInventory(params: {
   slug: string;
@@ -456,13 +508,62 @@ export async function appendLocationImageInventory(params: {
   }
 
   const locationImagery = imageryData as LocationImagery;
-  let target: LocationOverview | LocationZone | undefined;
+  const parsedTarget = parseZoneImageTargetId(params.targetId);
 
-  if (locationImagery.overview?.slug === params.targetId) {
+  if (parsedTarget) {
+    const zones = (locationImagery.zones ?? []) as Array<
+      LocationZone & { zone_slug?: string; images?: Array<{ image_slug?: string; image_inventory?: ImageInventoryEntry[] }> }
+    >;
+    const zone = zones.find(
+      (z) =>
+        z.slug === parsedTarget.zoneSlug ||
+        z.zone_slug === parsedTarget.zoneSlug ||
+        z.name === parsedTarget.zoneSlug ||
+        (z as { zone_name?: string }).zone_name === parsedTarget.zoneSlug
+    );
+    if (!zone) {
+      throw new Error(
+        `Zone ${parsedTarget.zoneSlug} not found in imagery.yaml for ${params.slug}`
+      );
+    }
+
+    const images = Array.isArray(zone.images) ? zone.images : [];
+    const imageSpec = images.find((img) => img.image_slug === parsedTarget.imageSlug);
+    if (!imageSpec) {
+      throw new Error(
+        `Image spec ${parsedTarget.imageSlug} not found in ${params.slug}/${parsedTarget.zoneSlug}`
+      );
+    }
+
+    if (!Array.isArray(imageSpec.image_inventory)) {
+      imageSpec.image_inventory = [];
+    }
+
+    const alreadyExists = imageSpec.image_inventory.some(
+      (item) => item.id === params.entry.id || item.path === params.entry.path
+    );
+
+    if (!alreadyExists) {
+      imageSpec.image_inventory.push(params.entry);
+      await writeImageryYaml('location', params.slug, locationImagery);
+    }
+    return;
+  }
+
+  let target: LocationOverview | LocationZone | undefined;
+  const overviewSlug = locationImagery.overview?.slug || 'overview';
+
+  if (params.targetId === overviewSlug || params.targetId === 'overview') {
     target = locationImagery.overview;
   } else {
     const zones = locationImagery.zones ?? [];
-    target = zones.find((zone) => zone.slug === params.targetId);
+    target = zones.find(
+      (zone) =>
+        zone.slug === params.targetId ||
+        zone.name === params.targetId ||
+        ('zone_slug' in zone && (zone as { zone_slug?: string }).zone_slug === params.targetId) ||
+        ('zone_name' in zone && (zone as { zone_name?: string }).zone_name === params.targetId)
+    );
   }
 
   if (!target) {
@@ -484,10 +585,11 @@ export async function appendLocationImageInventory(params: {
 }
 
 /**
- * Append a generated image entry to a chapter's imagery.yaml (top-level inventory)
+ * Append a generated image entry to a chapter's imagery.yaml (per-image inventory)
  */
 export async function appendChapterImageInventory(params: {
   slug: string;
+  targetId: string;
   entry: ImageInventoryEntry;
   createBackup?: boolean;
 }): Promise<void> {
@@ -502,16 +604,26 @@ export async function appendChapterImageInventory(params: {
     await copyFile(imageryPath, `${imageryPath}.bak`);
   }
 
-  const chapterImagery = imageryData as Record<string, unknown>;
-  const inventory = (chapterImagery.image_inventory as ImageInventoryEntry[] | undefined) || [];
+  const chapterImagery = imageryData as {
+    images?: Array<{ custom_id?: string; image_inventory?: ImageInventoryEntry[] }>;
+  };
+  const images = Array.isArray(chapterImagery.images) ? chapterImagery.images : [];
+  const target = images.find((img) => img.custom_id === params.targetId);
 
-  const alreadyExists = inventory.some(
+  if (!target) {
+    throw new Error(`Image target ${params.targetId} not found in chapter ${params.slug}`);
+  }
+
+  if (!Array.isArray(target.image_inventory)) {
+    target.image_inventory = [];
+  }
+
+  const alreadyExists = target.image_inventory.some(
     (item) => item.id === params.entry.id || item.path === params.entry.path
   );
 
   if (!alreadyExists) {
-    inventory.push(params.entry);
-    chapterImagery.image_inventory = inventory;
+    target.image_inventory.push(params.entry);
     await writeImageryYaml('chapter', params.slug, chapterImagery as ImageryData);
   }
 }
@@ -522,6 +634,9 @@ function isCharacterImagery(data: ImageryData): data is CharacterImagery {
 
 function isChapterImagery(data: ImageryData): data is ChapterImagery {
   if ('entity_type' in data && data.entity_type === 'chapter') {
+    return true;
+  }
+  if ('images' in data) {
     return true;
   }
   if ('scenes' in data) {
@@ -856,4 +971,53 @@ export async function needsRegeneration(
   if (!latestRun) return true;
 
   return latestRun.ir_hash !== currentIrHash;
+}
+
+/**
+ * Append a generated image to a zone's image_inventory array (v2.0)
+ *
+ * @param locationSlug - Location slug
+ * @param zoneSlug - Zone slug (matches zones[].slug or zones[].zone_slug)
+ * @param entry - ImageInventoryEntry to append
+ */
+export async function appendToZoneImageInventory(
+  locationSlug: string,
+  zoneSlug: string,
+  entry: ImageInventoryEntry
+): Promise<void> {
+  const yamlPath = join(getStoryContentBase(), 'locations', locationSlug, 'imagery.yaml');
+
+  if (!existsSync(yamlPath)) {
+    throw new Error(`imagery.yaml not found: ${yamlPath}`);
+  }
+
+  const content = await readFile(yamlPath, 'utf-8');
+  const data = parseYaml(content);
+
+  if (!data.zones || !Array.isArray(data.zones)) {
+    throw new Error('No zones array in imagery.yaml');
+  }
+
+  // Find the zone
+  const zone = data.zones.find((z: any) => z.slug === zoneSlug || z.zone_slug === zoneSlug);
+
+  if (!zone) {
+    throw new Error(`Zone not found: ${zoneSlug}`);
+  }
+
+  // Initialize image_inventory if it doesn't exist
+  if (!zone.image_inventory) {
+    zone.image_inventory = [];
+  }
+
+  // Append entry
+  zone.image_inventory.push(entry);
+
+  // Write back
+  const updatedYaml = stringifyYaml(data, {
+    lineWidth: 0,
+    defaultStringType: 'QUOTE_DOUBLE',
+  });
+
+  await writeFile(yamlPath, updatedYaml, 'utf-8');
 }

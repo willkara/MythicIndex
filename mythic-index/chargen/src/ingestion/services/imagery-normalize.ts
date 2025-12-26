@@ -87,40 +87,29 @@ function normalizeInventoryEntry(
 export function normalizeChapterImagery(data: any): NormalizedImage[] {
   const defaults: GenerationDefaults = data?.metadata?.generation_defaults ?? {};
   const images = Array.isArray(data?.images) ? data.images : [];
+  const normalized: NormalizedImage[] = [];
+  let sort = 0;
 
-  return images
-    .filter((img: any) => !!img && (img.file_path || img.file_name))
-    .map((img: any, index: number): NormalizedImage => {
-      const provider = img.provider ?? defaults.provider ?? 'unknown';
-      const model = img.model ?? defaults.model ?? 'unknown';
-      const quality = img.quality ?? defaults.quality;
-      const size = img.size ?? defaults.size;
-      const aspectRatio = img.aspect_ratio ?? defaults.aspect_ratio;
-      const filePath = img.file_path || (img.file_name ? `images/${img.file_name}` : '');
-      const fileName = img.file_name ?? fallbackFileName(filePath, img.custom_id, index);
+  for (const img of images) {
+    const inventory = Array.isArray(img?.image_inventory) ? img.image_inventory : [];
+    const groupLabel = img?.custom_id || img?.source_moment || 'chapter-image';
 
-      return {
-        filePath,
-        fileName,
-        provider,
-        model,
-        prompt: img.prompt_used,
-        negativePrompt: img.negative_prompt,
-        customId: img.custom_id,
-        imageType: img.image_type,
-        tags: Array.isArray(img.tags) ? img.tags : undefined,
-        sceneSlug: img.scene_id,
-        caption: img.visual_description ?? img.mood_rationale,
-        alt: img.visual_hook ?? img.alt_text ?? img.custom_id ?? fileName,
-        quality,
-        size,
-        aspectRatio,
-        generatedAt: img.generated_at,
-        roleHint: img.image_type ?? img.role,
-        sortOrder: index,
-        group: 'chapter',
-      };
-    });
+    for (const item of inventory) {
+      const entry = normalizeInventoryEntry(item, sort, `image:${groupLabel}`, defaults);
+      if (!entry) continue;
+      entry.sceneSlug = img?.scene_id;
+      if (!entry.imageType && img?.image_type) {
+        entry.imageType = img.image_type;
+      }
+      if (!entry.roleHint && img?.image_type) {
+        entry.roleHint = img.image_type;
+      }
+      normalized.push(entry);
+      sort += 1;
+    }
+  }
+
+  return normalized;
 }
 
 export function normalizeCharacterImagery(data: any): NormalizedImage[] {
@@ -299,6 +288,35 @@ export function normalizeLocationImagery(data: any): NormalizedImage[] {
 				}
 			});
 			sort += partInventory.length;
+		}
+
+		const zoneImages = Array.isArray(part?.images) ? part.images : [];
+		for (const img of zoneImages) {
+			const imgInventory = Array.isArray(img?.image_inventory) ? img.image_inventory : [];
+			if (!imgInventory.length) continue;
+
+			const zoneSlug = part?.slug ?? part?.zone_slug ?? part?.name ?? 'zone';
+			const imageSlug = img?.image_slug ?? 'image';
+			const group = `zone:${zoneSlug}/${imageSlug}`;
+
+			imgInventory.forEach((item: any, index: number) => {
+				const normalized = normalizeInventoryEntry(
+					item,
+					sort + index,
+					group,
+					data?.metadata?.generation_defaults
+				);
+				if (normalized) {
+					if (!normalized.imageType && img?.image_type) {
+						normalized.imageType = img.image_type;
+					}
+					if (!normalized.roleHint && img?.image_type) {
+						normalized.roleHint = img.image_type;
+					}
+					images.push(normalized);
+				}
+			});
+			sort += imgInventory.length;
 		}
 	}
 

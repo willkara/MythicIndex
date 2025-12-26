@@ -3,17 +3,22 @@
  * Generates images across multiple chapters with progress tracking
  */
 
-import { readdir } from 'fs/promises';
+import { readFile } from 'fs/promises';
+import { existsSync } from 'fs';
 import { getCachedChapters } from './entity-cache.js';
-import { getImagesDir } from './imagery-yaml.js';
 import {
   listChapterTargets,
   compileChapterImage,
   loadChapterContext,
 } from './prompt-compiler/chapter-compiler.js';
 import { generateFromIR, prepareIRPrompt } from './images/index.js';
-import { appendRun, createGenerationRun, getImageryPath } from './imagery-yaml.js';
-import { readFile } from 'fs/promises';
+import {
+  appendRun,
+  appendChapterImageInventory,
+  createGenerationRun,
+  createGeneratedImageInventoryEntry,
+  getImageryPath,
+} from './imagery-yaml.js';
 import { parse as parseYaml } from 'yaml';
 import type { ChapterImagerySpec } from '../types/chapter-imagery.js';
 import type { ChapterImageType } from '../types/chapter-imagery.js';
@@ -200,27 +205,28 @@ export async function getBatchTargets(options: BatchGenerationOptions): Promise<
  * Get set of already-generated target IDs for a chapter
  */
 async function getGeneratedTargets(chapterSlug: string): Promise<Set<string>> {
-  const imagesDir = getImagesDir('chapter', chapterSlug);
+  const imageryPath = getImageryPath('chapter', chapterSlug);
+  if (!existsSync(imageryPath)) return new Set();
+
   try {
-    const files = await readdir(imagesDir);
-    // Extract custom_id from filenames
-    // Filenames are like "ch15-img-01-hero-1234567890.png"
-    // custom_id is typically "ch15-img-01"
-    return new Set(
-      files
-        .filter((f) => /\.(png|jpg|jpeg|webp)$/i.test(f))
-        .map((f) => {
-          // Extract everything before the image type and timestamp
-          const parts = f.split('-');
-          // Skip the last two parts (image type and timestamp)
-          if (parts.length >= 4) {
-            return parts.slice(0, 3).join('-');
-          }
-          return f.replace(/\.(png|jpg|jpeg|webp)$/i, '');
-        })
-    );
+    const content = await readFile(imageryPath, 'utf-8');
+    const data = parseYaml(content) as ChapterImagerySpec;
+    const targets = new Set<string>();
+    const images = Array.isArray(data?.images) ? data.images : [];
+
+    for (const image of images) {
+      const inventory = Array.isArray(image.image_inventory) ? image.image_inventory : [];
+      for (const entry of inventory) {
+        const targetId = entry?.generation?.target_id || image.custom_id;
+        if (targetId) {
+          targets.add(targetId);
+        }
+      }
+    }
+
+    return targets;
   } catch {
-    return new Set(); // No images directory yet
+    return new Set();
   }
 }
 
@@ -346,6 +352,7 @@ export async function generateAllChapterImages(
           depicts_characters: imageSpec.depicts_characters,
           location: imageSpec.location,
           zone: imageSpec.zone,
+          prompt_spec_slug: target.targetId,
         };
 
         // Record the run
@@ -372,7 +379,36 @@ export async function generateAllChapterImages(
           targetMetadata,
         });
 
+        const inventoryEntry = createGeneratedImageInventoryEntry({
+          entityType: 'chapter',
+          entitySlug: target.chapterSlug,
+          targetId: target.targetId,
+          promptSpecSlug: target.targetId,
+          outputPath: result.filePath!,
+          model: result.model || 'gemini-3-pro-image-preview',
+          provider: (result.metadata?.provider as string) || 'google',
+          promptUsed: prepared.rendered.prompt,
+          negativePromptUsed: prepared.rendered.negative_prompt,
+          irHash: prepared.rendered.ir_hash,
+          constraints: {
+            aspect_ratio: ir.constraints.aspect_ratio,
+            size: ir.constraints.size,
+            orientation: ir.constraints.orientation,
+            quality: ir.constraints.quality,
+          },
+          providerMetadata: result.metadata,
+          targetMetadata: targetMetadata as unknown as Record<string, unknown>,
+          title: targetMetadata.custom_id,
+          imageType: targetMetadata.image_type,
+        });
+
         await appendRun('chapter', target.chapterSlug, run);
+        await appendChapterImageInventory({
+          slug: target.chapterSlug,
+          targetId: target.targetId,
+          entry: inventoryEntry,
+          createBackup: true,
+        });
         progress.successCount++;
         showSuccess('Success');
       } else {

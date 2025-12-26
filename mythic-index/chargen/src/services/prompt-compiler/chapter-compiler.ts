@@ -26,6 +26,7 @@ import type {
   ResolvedCharacter,
   ResolvedLocation,
   ChapterCompilationContext,
+  ChapterMoment,
 } from '../../types/chapter-imagery.js';
 import {
   getCharacterReferencePaths,
@@ -39,6 +40,158 @@ import { showSuccess } from '../../ui/display.js';
 
 // Base path for story content (not used currently but kept for context if needed)
 // const STORY_CONTENT_BASE = join(...);
+
+// ============================================================================
+// Moment Resolution Types
+// ============================================================================
+
+/** Visual weight affects prompt detail level */
+type VisualWeight = 'low' | 'medium' | 'high' | 'critical';
+
+/** Transformation state for character appearance */
+type TransformationState = 'before' | 'during' | 'after';
+
+/** Resolved moment context */
+interface ResolvedMomentContext {
+  narrativeBeat?: string;
+  visualWeight?: VisualWeight;
+  transformationState?: TransformationState;
+  locationZone?: { location: string; zone: string };
+}
+
+/** Prompt constraints affected by visual weight */
+interface PromptConstraints {
+  maxPromptLength: number;
+  requiredSections: string[];
+  addConstraints: string[];
+}
+
+// ============================================================================
+// Moment Resolution Functions
+// ============================================================================
+
+/**
+ * Resolve moment context from an image spec's source_moment reference
+ */
+function resolveMomentContext(
+  imageSpec: ChapterImageSpec,
+  moments: ChapterMoment[] | undefined
+): ResolvedMomentContext | null {
+  if (!imageSpec.source_moment || !moments) return null;
+
+  const moment = moments.find((m) => m.id === imageSpec.source_moment);
+  if (!moment) return null;
+
+  // Parse location_zone format "location-slug/zone-id"
+  let locationZone: { location: string; zone: string } | undefined;
+  if (moment.location_zone) {
+    const parts = moment.location_zone.split('/');
+    if (parts.length === 2) {
+      locationZone = { location: parts[0], zone: parts[1] };
+    }
+  }
+
+  return {
+    narrativeBeat: moment.narrative_beat,
+    visualWeight: moment.visual_weight as VisualWeight,
+    transformationState: moment.transformation_state as TransformationState,
+    locationZone,
+  };
+}
+
+/**
+ * Get prompt constraints based on visual weight
+ * Higher weight images get more detail and longer prompts
+ */
+function getDetailLevel(weight: VisualWeight | undefined): PromptConstraints {
+  switch (weight) {
+    case 'critical':
+      return {
+        maxPromptLength: 6000,
+        requiredSections: ['subject', 'composition', 'lighting', 'style'],
+        addConstraints: ['highly detailed', 'intricate details', 'sharp focus'],
+      };
+    case 'high':
+      return {
+        maxPromptLength: 5000,
+        requiredSections: ['subject', 'composition', 'lighting'],
+        addConstraints: ['detailed'],
+      };
+    case 'medium':
+      return {
+        maxPromptLength: 4000,
+        requiredSections: ['subject'],
+        addConstraints: [],
+      };
+    case 'low':
+    default:
+      return {
+        maxPromptLength: 3000,
+        requiredSections: ['subject'],
+        addConstraints: [],
+      };
+  }
+}
+
+/**
+ * Parse scene_variations text to extract state-specific appearance
+ *
+ * Expected formats:
+ * - "BEFORE: unmarred face, clean armor"
+ * - "DURING: mid-transformation, glowing"
+ * - "AFTER: scarred, battle-worn"
+ * - "STATE_NAME: description..."
+ */
+function parseSceneVariations(sceneVariations: string): Record<string, string> {
+  const stateMap: Record<string, string> = {};
+
+  const lines = sceneVariations.split('\n');
+  for (const line of lines) {
+    // Match patterns like "BEFORE:" or "- BEFORE:" or "STATE_NAME:"
+    const match = line.match(/^[-\s]*([A-Z_]+)\s*:\s*(.+)$/i);
+    if (match && match[1] && match[2]) {
+      const key = match[1].toUpperCase().trim();
+      const value = match[2].trim();
+      stateMap[key] = value;
+    }
+  }
+
+  return stateMap;
+}
+
+/**
+ * Auto-resolve character appearance based on transformation_state
+ * Falls back to canonical appearance if no state match found
+ */
+function resolveCharacterStateFromTransformation(
+  sceneVariations: string | undefined,
+  transformationState: TransformationState | undefined
+): string | null {
+  if (!sceneVariations || !transformationState) return null;
+
+  const stateMap = parseSceneVariations(sceneVariations);
+  const stateKey = transformationState.toUpperCase();
+
+  // Try exact match first
+  if (stateMap[stateKey]) {
+    return stateMap[stateKey];
+  }
+
+  // Try alternative keys
+  const alternatives: Record<string, string[]> = {
+    BEFORE: ['PRE', 'PRE_CATASTROPHE', 'INITIAL', 'START', 'PRISTINE'],
+    DURING: ['MID', 'TRANSFORMATION', 'CHANGING', 'TRANSITIONING'],
+    AFTER: ['POST', 'POST_CATASTROPHE', 'FINAL', 'END', 'SCARRED'],
+  };
+
+  for (const alt of alternatives[stateKey] || []) {
+    if (stateMap[alt]) {
+      return stateMap[alt];
+    }
+  }
+
+  return null;
+}
 
 // ============================================================================
 // Main Compilation Functions
@@ -82,26 +235,21 @@ export async function compileChapterImage(
   imageSpec: ChapterImageSpec,
   options: CompilerOptions = {}
 ): Promise<CompiledPromptIR> {
-  // Extract zone from source_moment if not already set
-  // This enables zone-aware location reference selection
-  if (!imageSpec.zone && imageSpec.source_moment && imagery.moments) {
-    const moment = imagery.moments.find((m) => m.id === imageSpec.source_moment);
-    if (moment?.location_zone) {
-      // Parse "location-slug/zone-id" → extract zone-id
-      const zoneParts = moment.location_zone.split('/');
-      if (zoneParts.length === 2) {
-        // Set zone on imageSpec - the location is derived from the first part
-        imageSpec.zone = zoneParts[1]; // e.g., "rim", "overview"
+  // Resolve moment context for full moment integration
+  const momentContext = resolveMomentContext(imageSpec, imagery.moments);
 
-        // Also set location if not already set
-        if (!imageSpec.location) {
-          imageSpec.location = zoneParts[0]; // e.g., "undershade-canyon"
-        }
-      }
+  // Extract zone from moment context if not already set
+  if (!imageSpec.zone && momentContext?.locationZone) {
+    imageSpec.zone = momentContext.locationZone.zone;
+    if (!imageSpec.location) {
+      imageSpec.location = momentContext.locationZone.location;
     }
   }
 
-  // Resolve constraints
+  // Get detail level based on visual weight
+  const detailLevel = getDetailLevel(momentContext?.visualWeight);
+
+  // Resolve constraints (affected by visual weight)
   const constraints = resolveChapterConstraints(imagery, imageSpec, options);
 
   // Resolve lighting
@@ -110,13 +258,15 @@ export async function compileChapterImage(
   // Resolve palette
   const palette = resolveChapterPalette(imagery, imageSpec);
 
-  // Build positive prompt sections
+  // Build positive prompt sections with moment context
   const positive = await buildChapterPositiveSections(
     context,
     imagery,
     imageSpec,
     lighting,
-    palette
+    palette,
+    momentContext,
+    detailLevel
   );
 
   // Build negative prompt
@@ -443,13 +593,20 @@ function getLocationDescription(
  * Uses smart mode selection:
  * - When prompt_used exists: Use author's complete prompt as primary content
  * - When prompt_used is absent: Compile from components (characters, location, visual_description)
+ *
+ * With moment integration:
+ * - Uses narrative_beat for scene context
+ * - Uses visual_weight for detail level constraints
+ * - Uses transformation_state to auto-resolve character appearance
  */
 async function buildChapterPositiveSections(
   context: ChapterCompilationContext,
   imagery: ChapterImagerySpec,
   imageSpec: ChapterImageSpec,
   lighting: LightingSpec | undefined,
-  palette: PaletteSpec
+  palette: PaletteSpec,
+  momentContext: ResolvedMomentContext | null,
+  detailLevel: PromptConstraints
 ): Promise<CompiledPromptIR['positive']> {
   const sections: CompiledPromptIR['positive'] = {
     constraints: [],
@@ -472,6 +629,15 @@ async function buildChapterPositiveSections(
       weight: 1,
       content: `Characters: ${charNames}`,
       source: 'depicts_characters',
+    });
+  }
+
+  // Weight 1: Detail level constraints from visual_weight
+  if (detailLevel.addConstraints.length > 0) {
+    sections.constraints.push({
+      weight: 1,
+      content: detailLevel.addConstraints.join(', '),
+      source: 'visual_weight_constraints',
     });
   }
 
@@ -499,10 +665,23 @@ async function buildChapterPositiveSections(
       for (const charSlug of imageSpec.depicts_characters) {
         const resolved = context.characters.get(charSlug);
         if (resolved) {
-          // Only include character_states, not canonical appearance
-          // The reference image defines how the character looks;
-          // character_states specify scene-specific variations (emotion, pose, temporary changes)
-          const state = imageSpec.character_states?.[charSlug];
+          // Priority: explicit character_states > auto-resolved from transformation_state > none
+          let state = imageSpec.character_states?.[charSlug];
+
+          // Auto-resolve from transformation_state if no explicit state
+          if (!state && momentContext?.transformationState) {
+            const charRef = imagery.characters?.find((c) => c.ref === charSlug);
+            if (charRef?.scene_variations) {
+              const autoState = resolveCharacterStateFromTransformation(
+                charRef.scene_variations,
+                momentContext.transformationState
+              );
+              if (autoState) {
+                state = autoState;
+              }
+            }
+          }
+
           if (state) {
             sections.subject.push({
               weight: 2,
@@ -548,6 +727,15 @@ async function buildChapterPositiveSections(
         weight: 2,
         content: cleanMultilineText(imageSpec.visual_description),
         source: 'visual_description',
+      });
+    }
+
+    // Weight 2: Narrative beat from moment (scene context)
+    if (momentContext?.narrativeBeat) {
+      sections.subject.push({
+        weight: 2,
+        content: `Scene narrative: ${cleanMultilineText(momentContext.narrativeBeat)}`,
+        source: 'narrative_beat',
       });
     }
 
@@ -801,9 +989,12 @@ function mapChapterImageType(type: string): ImageType {
   const mapping: Record<string, ImageType> = {
     hero: 'hero',
     anchor: 'anchor',
-    mood: 'beat',
+    beat: 'beat',
     detail: 'detail',
-    symbol: 'symbol',
+    supporting: 'beat', // Supporting maps to beat
+    // Legacy mappings for backwards compatibility
+    mood: 'mood',
+    symbol: 'beat',
     pivot: 'beat',
     character: 'beat',
   };

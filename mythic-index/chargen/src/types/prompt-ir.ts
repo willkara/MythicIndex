@@ -39,7 +39,7 @@ export type ImageType =
   | 'hero' // Chapter hero image
   | 'anchor' // Key emotional moment
   | 'detail' // Close-up focus
-  | 'symbol'; // Iconic representation
+  | 'mood'; // Atmospheric/tonal image
 
 /** A weighted section of the prompt */
 export interface PromptSection {
@@ -59,6 +59,7 @@ export interface ResolvedReference {
 /** Lighting specification from imagery.yaml */
 export interface LightingSpec {
   primary_source?: string;
+  secondary_source?: string; // v2.0
   quality?: string;
   direction?: string;
   color_temperature?: string;
@@ -167,6 +168,7 @@ export interface TargetMetadata {
   depicts_characters?: string[]; // character slugs from ChapterImageSpec
   location?: string; // location slug from ChapterImageSpec.location
   zone?: string; // from ChapterImageSpec.zone
+  prompt_spec_slug?: string; // from zones[].images[].image_slug or chapter image custom_id
 
   // For locations - use exact field names from ExtendedLocationZone
   zone_type?: string; // from ExtendedLocationZone.zone_type
@@ -239,6 +241,51 @@ export type AssetRegistry = Map<string, AssetRegistryEntry>;
 // Location Imagery Types (extended from existing)
 // ============================================================================
 
+/** Scene mood options (shared with chapter-imagery) */
+export type SceneMood =
+  | 'somber' // Grief, loss, melancholy
+  | 'pastoral' // Peaceful, natural, serene
+  | 'celebratory' // Joy, triumph, festivity
+  | 'ethereal' // Mystical, otherworldly, dreamlike
+  | 'intimate' // Close, personal, tender
+  | 'kinetic' // Action, energy, motion
+  | 'ominous' // Foreboding, danger, tension
+  | 'heroic' // Triumph, valor, courage
+  | 'clandestine' // Secret, hidden, covert
+  | 'tense' // Suspense, anxiety, unease
+  | 'reverent'; // Sacred, respectful, solemn
+
+/**
+ * Zone image specification (v2.0 prompt spec format)
+ * Represents a single entry in zones[].images[] array
+ */
+export interface ZoneImageSpec {
+  image_type?: ImageType;
+  image_slug: string; // Unique identifier for this prompt spec
+  description: string;
+  scene_mood?: SceneMood | string; // Allow string for backwards compat
+  time_of_day?: string;
+  weather?: string;
+
+  composition?: {
+    foreground?: string;
+    midground?: string;
+    background?: string;
+    focal_point?: string;
+    depth_cues?: string;
+  };
+
+  lighting?: LightingSpec;
+  palette?: PaletteSpec;
+
+  key_elements?: string[];
+  style_notes?: string;
+  prompt?: string; // Pre-compiled prompt text (optional)
+
+  // File inventory (runtime-populated)
+  image_inventory?: ImageInventoryEntry[];
+}
+
 /** Extended location visual anchor from imagery.yaml */
 export interface LocationVisualAnchor {
   signature_elements?: string[];
@@ -251,37 +298,99 @@ export interface LocationVisualAnchor {
 export interface ExtendedLocationOverview {
   slug: string;
   title?: string;
+  name?: string; // v2.0 uses 'name' in some contexts
   image_type?: ImageType;
   category?: string | string[];
   scene_mood?: string;
+  mood?: string; // v2.0 alias for scene_mood
   mood_rationale?: string;
+
+  // Description fields
   visual_description?: string;
+  narrative_context?: string; // v2.0 alternative
   composition_notes?: string;
   narrative_significance?: string;
   symbolic_elements?: string;
+  description?: string; // v2.0 uses 'description' sometimes
+
+  // Environmental context
   time_of_day?: string;
   weather?: string;
   season?: string;
+
+  // Required elements
   required_elements?: string[];
+  key_elements?: string[]; // v2.0 equivalent
   visible_beyond?: string[];
   approach_from?: string;
+
+  // Visual specs
   lighting?: LightingSpec;
   palette?: PaletteSpec;
+
+  // Generation constraints
   aspect_ratio?: string;
   orientation?: 'landscape' | 'portrait';
   size?: string;
+
+  // Prompts
   prompt_used?: string;
+  prompt_template?: string; // v2.0
   negative_prompt?: string;
-  references?: { placeholder: string; file: string; section: string }[];
+
+  // v2.0: Prompt specifications (YAML-defined)
+  images?: ZoneImageSpec[]; // NEW: Array of prompt specs
+
+  // File inventory (runtime-populated)
   image_inventory?: ImageInventoryEntry[];
+
+  // References
+  references?:
+    | { placeholder: string; file: string; section: string }[] // v1.0
+    | { type?: string; slug?: string; reason?: string; scene?: string }[]; // v2.0
 }
 
 /** Extended location zone from imagery.yaml */
 export interface ExtendedLocationZone extends ExtendedLocationOverview {
   name: string;
+  zone_name?: string;
   zone_type?: string;
+  zone_slug?: string; // v2.0 uses zone_slug instead of slug sometimes
   location_within?: string;
-  // For beat type
+
+  // v2.0: Rich narrative context
+  narrative_role?: string;
+
+  // v2.0: Zone visual anchor
+  zone_visual_anchor?: {
+    defining_features?: string[];
+    materials?: string;
+    color_signature?: string;
+    light_character?: string;
+  };
+
+  // v2.0: Default prompt elements
+  default_prompt_elements?: {
+    atmosphere?: string;
+    must_include?: string[];
+    must_avoid?: string[];
+  };
+
+  // v2.0: Character interaction
+  character_interaction?: {
+    positions?: string[];
+    activities?: string[];
+  };
+
+  // v2.0: Atmospheric details
+  atmospheric?: {
+    weather?: string;
+    environmental_effects?: string | string[];
+    time_pressure?: string;
+  };
+
+  // Beat/temporal/perspective fields (legacy, may still exist in some zones)
+  featured_in_chapters?: string[];
   source_chapter?: string;
   source_scene?: string;
   what_happens?: string;
@@ -289,12 +398,10 @@ export interface ExtendedLocationZone extends ExtendedLocationOverview {
   depicts_characters?: string[];
   character_states?: Record<string, string>;
   key_visual_hook?: string;
-  // For temporal type
   base_zone?: string;
   temporal_state?: string;
   mood_shift_from_base?: string;
   activity_at_this_time?: string[];
-  // For perspective type
   character?: string;
   perspective_description?: string;
   character_signature_element?: string;
@@ -315,9 +422,21 @@ export interface ExtendedLocationImagery {
       quality?: string;
     };
   };
+
+  // v2.0: Top-level generation defaults (alternative to metadata.generation_defaults)
+  generation_defaults?: {
+    provider?: string;
+    model?: string;
+    quality?: string;
+  };
+
   location_visual_anchor?: LocationVisualAnchor;
   overview?: ExtendedLocationOverview;
   zones?: ExtendedLocationZone[];
+
+  // Legacy fields
+  reference_defaults?: Record<string, string>;
+  image_inventory?: ImageInventoryEntry[];
 }
 
 // ============================================================================

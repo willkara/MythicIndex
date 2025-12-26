@@ -19,6 +19,7 @@ import {
   compileLocationZone,
   compileAllLocationTargets,
   listLocationTargets,
+  compileZoneImage,
 } from './location-compiler.js';
 import {
   compileChapterImages,
@@ -26,7 +27,7 @@ import {
   loadChapterContext,
   compileChapterImage,
 } from './chapter-compiler.js';
-import type { EntityType } from '../imagery-yaml.js';
+import { parseZoneImageTargetId, type EntityType } from '../imagery-yaml.js';
 
 // Re-export types and functions for convenience
 export * from './location-compiler.js';
@@ -48,6 +49,16 @@ export async function compilePromptIR(
   options: CompilerOptions = {}
 ): Promise<CompiledPromptIR | null> {
   if (entityType === 'location') {
+    const parsedZoneImage = parseZoneImageTargetId(targetSlug);
+    if (parsedZoneImage) {
+      return compileZoneImage(
+        entitySlug,
+        parsedZoneImage.zoneSlug,
+        parsedZoneImage.imageSlug,
+        options
+      );
+    }
+
     // Check if this is the overview
     const targets = await listLocationTargets(entitySlug);
 

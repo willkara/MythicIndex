@@ -15,6 +15,7 @@ import {
   readRunsFile,
   getImagesDir,
   getEntityDir,
+  parseZoneImageTargetId,
   type LocationImagery,
   type ImageInventoryEntry,
 } from '../../imagery-yaml.js';
@@ -185,6 +186,7 @@ async function planSingleLocation(
       const outputFileName = `${ir.target_id}-${timestamp}-${dateStr}`;
 
       // Create task
+      const parsedTarget = parseZoneImageTargetId(ir.target_id);
       const task: BatchTask = {
         key: taskKey,
         kind: 'generate',
@@ -205,6 +207,8 @@ async function planSingleLocation(
           image_type: ir.image_type,
           title: ir.title,
           scene_mood: ir.scene_mood,
+          zone: parsedTarget?.zoneSlug,
+          prompt_spec_slug: parsedTarget?.imageSlug,
         },
       };
 
@@ -236,6 +240,15 @@ function getLocationInventoryEntries(data: LocationImagery): ImageInventoryEntry
   for (const zone of zones) {
     if (zone.image_inventory) {
       entries.push(...zone.image_inventory);
+    }
+    const zoneImages = (zone as { images?: Array<{ image_inventory?: ImageInventoryEntry[] }> })
+      .images;
+    if (Array.isArray(zoneImages)) {
+      for (const img of zoneImages) {
+        if (img?.image_inventory) {
+          entries.push(...img.image_inventory);
+        }
+      }
     }
   }
 
