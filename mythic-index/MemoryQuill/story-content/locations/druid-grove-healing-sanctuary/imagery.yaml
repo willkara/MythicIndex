@@ -1,0 +1,1019 @@
+# ============================================================================
+# DRUID GROVE HEALING SANCTUARY - LOCATION IMAGERY SPECIFICATION
+# ============================================================================
+# A sequestered woodland sanctuary where transformation wounds heal
+# and water speaks truth to those who listen
+# ============================================================================
+
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "druid-grove-healing-sanctuary"
+  location_name: "Druid Grove Healing Sanctuary"
+  version: "1.0"
+  last_updated: "2025-12-26"
+  zones_defined: 17
+  chapters_featured:
+    - chapter: "ch19-tangled-roots"
+      relevance: "Vera's recovery from dire wolf transformation trauma"
+    - chapter: "ch20-ripples-in-the-current"
+      relevance: "Rill Vossari introduction, water system intelligence"
+    - chapter: "ch24"
+      relevance: "Week-3 timeline reference, ongoing healing"
+
+# ============================================================================
+# GENERATION DEFAULTS
+# ============================================================================
+generation_defaults:
+  provider: "workers-ai"
+  model: "flux-schnell"
+  quality: "high"
+  default_aspect_ratio: "16:9"
+  default_size: "1024x768"
+
+# ============================================================================
+# NARRATIVE SOUL - The Emotional Core
+# ============================================================================
+narrative_soul: |
+  This is where the wild wounds come to mend—not through medicine but through
+  patience, water, and the slow work of living things. The Druid Grove Healing
+  Sanctuary exists in the spaces between breaths: the pause after pain, the
+  moment before memory surfaces, the stillness where transformation trauma
+  finally loosens its grip. Here, veteran oaks have witnessed centuries of
+  suffering transmuted into understanding. The three linked pools don't just
+  cleanse—they remember, restore, and reveal.
+
+  For Vera, these waters became a mirror she couldn't flee. The dire wolf
+  that lives inside her met its own reflection in the scry pool and found,
+  instead of a monster, a wounded guardian. Rill Vossari reads the grove's
+  waters like letters, pulling intelligence from streams that flow through
+  the city's veins, turning hydrology into prophecy.
+
+  The sanctuary's power lies in what it doesn't do: it doesn't fix, force,
+  or cure. It holds space. The canopy vault filters everything into green
+  stillness. The meditation spirals slow time itself. The pools accept
+  whatever enters them—blood, tears, rage—and return only clarity.
+
+one_line_essence: "Where transformation wounds become wisdom and water holds memory"
+
+# ============================================================================
+# LOCATION VISUAL ANCHOR
+# ============================================================================
+location_visual_anchor:
+  signature_elements:
+    - "Interwoven veteran oak canopy forming a living vault 35-50 feet overhead"
+    - "Three linked crystalline spring-fed pools connected by shallow rills"
+    - "Moss-carpeted ground with spiral meditation patterns in pebble and herb"
+    - "Green-gold dappled light shifting through wind-moved leaves"
+    - "Living-wood arches at quarter points with druidic threshold sigils"
+    - "Reed-edged pool margins with pebble aprons and stone seating"
+    - "Woven hazel wickets and bark screens at screened clearings"
+    - "Foxfire and glowmoss providing dim night orientation"
+
+  materials:
+    primary:
+      - "Living oak bark, deeply ridged and moss-patched"
+      - "Spring water, crystalline with barely visible current"
+      - "Moss in infinite greens, velvet-soft underfoot"
+      - "Fieldstone smoothed by centuries of weather"
+    secondary:
+      - "Woven willow and hazel hurdles"
+      - "Reed mats and bark screens"
+      - "Shale stepping flags at wet crossings"
+      - "Copper wire with verdigris patina binding dreadlock-braided branches"
+    accent:
+      - "Foxfire bioluminescence in blue-green glow"
+      - "Herb flowers in white, purple, yellow accents"
+      - "Spring water silver at surface"
+      - "Firefly amber at dusk"
+
+  color_anchors:
+    dominant: ["moss green", "oak brown", "spring silver", "shadow green"]
+    accent: ["foxfire blue-green", "herb flower accents", "water mirror silver"]
+    avoid: ["harsh artificial colors", "neon", "bright reds", "urban grays"]
+
+  characteristic_light:
+    primary: "Dappled canopy-filtered daylight creating shifting pools of green-gold"
+    secondary: "Spring water reflection throwing silver light upward"
+    quality: "Softened, scattered, constantly moving with wind-shifted leaves"
+    atmosphere: "Cathedral-like natural hush with underwater quality"
+
+# ============================================================================
+# OVERVIEW - ESTABLISHING SHOT
+# ============================================================================
+overview:
+  slug: "druid-grove-healing-sanctuary-overview"
+  name: "The Living Sanctuary"
+  image_type: "establishing"
+  mood: "ethereal"
+  narrative_context: |
+    The first impression of the sanctuary—a natural bowl of veteran oaks
+    whose intertwined canopy creates a living cathedral vault. The three
+    linked pools glint through the green, and the air itself seems to
+    breathe more slowly here. This is a place that exists outside the
+    city's rhythms, despite lying within its bounds.
+  lighting:
+    primary_source: "canopy-filtered daylight"
+    secondary_source: "pool reflections throwing silver light upward"
+    quality: "dappled, constantly shifting"
+    direction: "diffused from above through leaf lattice"
+    color_temperature: "warm green-gold"
+    shadow_depth: "soft with multiple overlapping shadows"
+    atmospheric: "morning mist rising from pool margins"
+  palette:
+    dominant: ["moss green", "oak bark brown", "spring silver", "canopy shadow"]
+    accent: ["water reflection silver", "herb flower white and purple", "light shaft gold"]
+    avoid: ["harsh artificial colors", "neon", "bright saturated hues"]
+  aspect_ratio: "16:9"
+  size: "1024x768"
+  prompt_used: |
+    Oil painting, fantasy illustration, wide establishing shot of a natural
+    woodland sanctuary within a bowl of ancient veteran oak trees, their
+    interwoven branches forming a high living vault 40 feet overhead,
+    dappled green-gold light filtering through the leaf lattice, three
+    crystalline spring-fed pools visible in the clearing connected by
+    shallow rills with reed margins, moss-carpeted ground in infinite
+    greens, stone meditation spirals visible between the pools, morning
+    mist rising from the water surfaces, fieldstone seating near pool
+    edges, living-wood arches at quarter points with carved threshold
+    stones, woven hazel hurdles screening smaller clearings, the entire
+    scene breathing with cathedral-like natural stillness, heroic fantasy
+    style, painterly brushwork
+  negative_prompt: "cartoon, anime, photorealistic, modern elements, buildings, structures, bright artificial colors, neon, urban, people, figures"
+  references: []
+
+# ============================================================================
+# ZONES
+# ============================================================================
+zones:
+  # --------------------------------------------------------------------------
+  # APPROACHES-THRESHOLDS - Entry to the Sanctuary
+  # --------------------------------------------------------------------------
+  - slug: "approaches-thresholds"
+    name: "The Approaches and Thresholds"
+    zone_type: "threshold"
+    image_type: "zone"
+    mood: "reverent"
+    narrative_context: |
+      The winding approach paths that lead from discreet city lanes into the
+      sanctuary's embrace. Narrow tracks under woven branch-arches guide
+      visitors through increasingly dense foliage, with threshold stones
+      marking the transition from city to sacred ground. Here the threshold
+      warden greets arrivals, recites sanctuary rules, and opens or closes
+      the braided hazel wicket.
+    lighting:
+      primary_source: "filtered forest light from above"
+      secondary_source: "reflected leaf light from undergrowth"
+      quality: "dappled, increasingly dim as path deepens"
+      direction: "overhead through thinning canopy gaps"
+      color_temperature: "cool green transitioning to warm"
+      shadow_depth: "moderate, paths alternating light and shadow"
+      atmospheric: "quiet, sound-baffled by dense foliage"
+    palette:
+      dominant: ["path brown", "hedge green", "threshold stone gray"]
+      accent: ["sigil-carved stone markings", "wicket woven patterns", "bird glimpses"]
+      avoid: ["city colors", "artificial materials", "harsh light"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, narrow winding forest path leading
+      deeper into woodland, woven living-wood arch overhead with trained
+      branches forming a tunnel, dense hedge walls of holly and hawthorn on
+      either side, threshold stone in the foreground with carved druidic
+      sigils, braided hazel wicket gate partially visible ahead, dappled
+      light filtering through the green canopy, moss on stone edges, bird
+      silhouettes in the understory, the path curving away into deeper
+      green shadow, sense of crossing from ordinary world into sacred
+      space, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, paved roads, signs, buildings, people, figures, bright colors"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # OAK-CATHEDRAL - The Central Heart
+  # --------------------------------------------------------------------------
+  - slug: "oak-cathedral"
+    name: "The Oak Cathedral"
+    zone_type: "heart"
+    image_type: "zone"
+    mood: "reverent"
+    narrative_context: |
+      The central circle of the sanctuary—a ring of veteran oaks whose
+      interwoven limbs create a living vault 35-50 feet overhead. The
+      ground is moss and leaf duff over compacted loam, with natural root
+      buttresses forming seats and steps. This is where the deepest healing
+      work happens: rites, breathwork, guided recovery in the inner ring;
+      counsel and observation in the mid ring; circulation in the outer.
+    lighting:
+      primary_source: "canopy-filtered daylight through trained light wells"
+      secondary_source: "pool reflections from linked waters nearby"
+      quality: "cathedral-like, with defined light shafts through canopy gaps"
+      direction: "overhead through latticed branches"
+      color_temperature: "warm green-gold"
+      shadow_depth: "deep in recesses, bright in light wells"
+      atmospheric: "dust motes and pollen visible in light shafts"
+    palette:
+      dominant: ["oak brown", "moss green", "shadow green", "light shaft gold"]
+      accent: ["bark texture gray-brown", "root buttress amber", "canopy gap blue"]
+      avoid: ["artificial colors", "harsh contrasts", "urban elements"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, interior of a natural cathedral
+      formed by ancient veteran oak trees, massive trunks forming columns
+      around a circular clearing, interwoven branches creating a latticed
+      vault 40 feet overhead with light wells where sun shafts pierce
+      through, moss-carpeted ground in deep greens, natural root buttresses
+      forming organic seating and steps, lintelled living-wood arches at
+      the four quarter points, threshold stones with carved sigils marking
+      entries, the light has cathedral quality with defined shafts and
+      deep shadow recesses, pollen and dust motes floating in the golden
+      light, absolute natural stillness and reverence, heroic fantasy
+      style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, buildings, artificial structures, people, figures, pews, altars, religious symbols"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # CLEANSING-POOL - First Pool in the Sequence
+  # --------------------------------------------------------------------------
+  - slug: "cleansing-pool"
+    name: "The Cleansing Pool"
+    zone_type: "sanctuary"
+    image_type: "zone"
+    mood: "reverent"
+    narrative_context: |
+      The first of the three linked pools, fed directly by the head spring.
+      Here patients wash and acclimate before deeper work. The water is
+      coolest here, fresh from the earth, with gravel bottom visible
+      through crystal clarity. Pebble aprons allow barefoot approach,
+      and low stone sitting ledges line the margins.
+    lighting:
+      primary_source: "canopy-filtered daylight"
+      secondary_source: "upward reflection from clear water surface"
+      quality: "soft with water-thrown light patterns"
+      direction: "overhead and reflected from below"
+      color_temperature: "cool silver-green"
+      shadow_depth: "soft, water clarifying"
+      atmospheric: "faint mist at margins, spring freshness"
+    palette:
+      dominant: ["water silver", "pebble gray", "reed green", "pool blue-green"]
+      accent: ["spring clarity", "stone edge warm", "iris flower purple"]
+      avoid: ["murky colors", "artificial blue", "harsh contrasts"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a crystalline spring-fed pool
+      about 25 feet across in a woodland clearing, the water so clear
+      the gravel and stone bottom is visible at 4 feet depth, pebble
+      apron around the edges for barefoot approach, low fieldstone sitting
+      ledges along the margins, reed and iris growth at the far edge,
+      the spring source visible as a gentle upwelling at one end,
+      canopy-filtered light creating shifting patterns on the water
+      surface, faint mist rising from the cool water, a shallow rill
+      channel leading to the next pool barely visible, the water itself
+      seems to glow with internal clarity, heroic fantasy style,
+      painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, pools, swimming pools, tiles, concrete, people, figures, bathing suits"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # RESTORATION-POOL - The Healing Waters
+  # --------------------------------------------------------------------------
+  - slug: "restoration-pool"
+    name: "The Restoration Pool"
+    zone_type: "sanctuary"
+    image_type: "zone"
+    mood: "intimate"
+    narrative_context: |
+      The middle pool where the real healing work happens. Slightly warmer
+      from midday sun absorption, this pool holds patients during guided
+      recovery. Warmed stones placed at the margins provide comfort. The
+      water here seems to embrace rather than merely hold—patients describe
+      feeling supported by the water itself.
+    lighting:
+      primary_source: "midday sun through canopy light wells"
+      secondary_source: "stone-held warmth radiating"
+      quality: "warm and enveloping"
+      direction: "overhead with warmer tones"
+      color_temperature: "warm green-gold"
+      shadow_depth: "soft, comforting"
+      atmospheric: "steam wisps when cool air meets warm water"
+    palette:
+      dominant: ["warm water green", "sunlit stone amber", "healing blue"]
+      accent: ["steam wisps white", "warm stone orange-brown", "reed gold"]
+      avoid: ["cold colors", "harsh blue", "clinical tones"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a healing pool in a woodland
+      sanctuary, the water slightly warmer than the first pool with
+      faint steam wisps rising where cool air meets the surface,
+      flat flagstones for barefoot approach around the margins,
+      sun-warmed stones placed near the water's edge for comfort,
+      a small timber footbridge visible crossing the linking rill,
+      the water has a embracing quality as if it would support
+      anything placed within it, soft green-gold light filtering
+      through the canopy, low stone ledges for attendants to sit,
+      the pool about 30 feet across with gentle curved natural
+      edges, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, hot tubs, spas, tiles, concrete, people, figures, medical equipment"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # REFLECTION-POOL - The Scry Pool
+  # --------------------------------------------------------------------------
+  - slug: "reflection-pool"
+    name: "The Reflection Pool (Scry Pool)"
+    zone_type: "shrine"
+    image_type: "zone"
+    mood: "ethereal"
+    narrative_context: |
+      The final pool in the sequence, where the water becomes mirror and
+      medium. This is where Rill Vossari reads the waters, pulling
+      intelligence from streams that flow through the city. The pool's
+      surface achieves perfect stillness at dawn and dusk, becoming a
+      flawless mirror that shows more than reflection. Strict silence
+      is observed here.
+    lighting:
+      primary_source: "sky reflection from pool surface"
+      secondary_source: "ambient canopy light"
+      quality: "mirror-like, doubled by perfect reflection"
+      direction: "both overhead and reflected upward"
+      color_temperature: "cool silver-blue"
+      shadow_depth: "minimal, the mirror dominates"
+      atmospheric: "absolute stillness"
+    palette:
+      dominant: ["mirror silver", "sky reflection blue", "water depth green"]
+      accent: ["stone ledge gray", "reflected cloud white", "dusk amber"]
+      avoid: ["ripples unless intentional", "murky colors", "harsh tones"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a sacred scrying pool in a
+      woodland sanctuary, the water achieving perfect mirror stillness
+      reflecting the sky and surrounding oaks with flawless clarity,
+      the surface so still it seems like a portal rather than water,
+      stone ledges at the margins for seated observation, the deepest
+      of the three pools at perhaps 6 feet depth, the bottom barely
+      visible through the reflected sky, reed margins carefully trimmed
+      back to prevent disturbance, the overflow rill leading away to
+      reedbeds visible at one edge, an atmosphere of absolute reverence
+      and silence, dawn light creating perfect conditions for scrying,
+      heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, ripples, disturbed water, people, figures, crystal balls, magic effects"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # MEDITATION-SPIRALS - Paths of Stillness
+  # --------------------------------------------------------------------------
+  - slug: "meditation-spirals"
+    name: "The Meditation Spirals"
+    zone_type: "sanctuary"
+    image_type: "zone"
+    mood: "reverent"
+    narrative_context: |
+      Screened clearings holding spirals of smooth pebbles and low herb
+      edging on firm, well-drained loam. Walking these spirals slows
+      time—each step deliberate, each breath counted. Twig-and-seed
+      chimes hang at the entries, barely audible, signaling when a
+      spiral is occupied. The ground itself has a resilient quality
+      that promotes slow, balanced walking.
+    lighting:
+      primary_source: "soft filtered daylight through screens"
+      secondary_source: "reflected light from pale pebbles"
+      quality: "even, calm, undramatic"
+      direction: "diffused from all sides"
+      color_temperature: "neutral to warm"
+      shadow_depth: "minimal, no harsh shadows"
+      atmospheric: "profound stillness"
+    palette:
+      dominant: ["pebble silver-white", "moss green", "herb edging green"]
+      accent: ["chime materials natural brown", "loam earth tones", "herb flowers"]
+      avoid: ["bright colors", "harsh contrasts", "distracting elements"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a meditation spiral in a
+      woodland sanctuary, smooth pale pebbles arranged in a walking
+      spiral pattern about 20 feet in diameter, low herb edging
+      creating the spiral lines, the ground covered in resilient
+      moss between the pebble paths, woven willow screens surrounding
+      the clearing for privacy, twig-and-seed chimes hanging at the
+      entry barely visible, soft filtered light creating no harsh
+      shadows, the spiral path leading inward to a center of
+      absolute stillness, the entire clearing breathing with
+      meditative calm, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, labyrinths, mazes, signs, people, figures walking"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # HERBAL-GARDENS - Where Medicine Grows
+  # --------------------------------------------------------------------------
+  - slug: "herbal-gardens"
+    name: "The Herbal Gardens"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "pastoral"
+    narrative_context: |
+      The outer ring holds multiple healing beds totaling thousands of
+      square feet. Double-dug loam enriched with leaf mold, wattle
+      edging of hazel and ash, companioned plantings of thyme, comfrey,
+      yarrow, willow, mint, and foxglove. Drying racks of woven willow
+      stand under canopy gaps, and a shaded still-niche processes
+      low-heat infusions using sun-warmed stones.
+    lighting:
+      primary_source: "stronger daylight in outer ring"
+      secondary_source: "reflected light from lighter foliage"
+      quality: "brighter than inner sanctuary, more workday"
+      direction: "overhead with larger canopy gaps"
+      color_temperature: "warm yellow-green"
+      shadow_depth: "moderate, working light"
+      atmospheric: "aromatic, productive"
+    palette:
+      dominant: ["herb green", "loam brown", "leaf mold dark", "wattle tan"]
+      accent: ["flower purples and whites and yellows", "drying rack willow gold"]
+      avoid: ["formal garden colors", "geometric patterns", "cultivated look"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, herbal garden beds in a
+      woodland sanctuary, curving beds of medicinal plants including
+      thyme, yarrow, comfrey, and mint, wattle edging of hazel holding
+      the enriched loam, larger canopy gaps allowing more sunlight for
+      the plants, drying racks of woven willow standing under the trees
+      with herbs hanging to dry, small label stones with carved druidic
+      script identifying species, curving service paths between beds,
+      low hurdles protecting from foraging animals, a shaded still-niche
+      visible with sun-warmed stones for infusion preparation, the
+      atmosphere is productive and aromatic, heroic fantasy style,
+      painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, formal gardens, geometric beds, greenhouses, people, figures, garden tools"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # PERIMETER-HEDGE - The Guardian Boundary
+  # --------------------------------------------------------------------------
+  - slug: "perimeter-hedge"
+    name: "The Perimeter"
+    zone_type: "perimeter"
+    image_type: "zone"
+    mood: "vigilant"
+    narrative_context: |
+      The holly and hawthorn hedge that encircles the sanctuary, dense
+      enough to baffle city noise and discourage casual intrusion.
+      Bird-rich understory provides both soundscape and early warning.
+      Discreet openings are known only to those who belong here. Oak-perch
+      lookouts—natural branch saddles—allow attendants to keep watch.
+    lighting:
+      primary_source: "dappled exterior light"
+      secondary_source: "hedge-shadow contrast"
+      quality: "transitional, outer world meeting sanctuary"
+      direction: "side-lit by exterior"
+      color_temperature: "cooler, more exterior"
+      shadow_depth: "deep within hedge density"
+      atmospheric: "protective, enclosing"
+    palette:
+      dominant: ["hedge dark green", "holly shine", "hawthorn gray-brown"]
+      accent: ["bird glimpses", "hidden opening shadows", "berry red in season"]
+      avoid: ["manicured hedge look", "formal garden", "clear visibility through"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, the perimeter hedge of a
+      woodland sanctuary, dense holly and hawthorn growth creating
+      an impenetrable wall of thorny greenery, glimpses of birds
+      moving in the understory, a barely visible discreet opening
+      known only to initiates, natural branch saddles high in the
+      bordering oaks where lookouts might perch, the hedge at least
+      8 feet tall and deeply dense, light filtering through only
+      at the very top, the sense of protective enclosure and
+      deliberate separation from the outer world, heroic fantasy
+      style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, trimmed hedges, formal gardens, fences, gates, people, figures"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # DRUID-GROVE-CANOPY-ESSENCE - The Living Vault Above
+  # --------------------------------------------------------------------------
+  - slug: "druid-grove-canopy-essence"
+    name: "The Living Vault"
+    zone_type: "zone"
+    image_type: "essence"
+    mood: "ethereal"
+    narrative_context: |
+      Looking up into the interwoven canopy—the trained, grafted limbs
+      that create a living lattice filtering all light into dappled
+      green-gold. This architectural marvel of druidic shaping has
+      grown over centuries, each generation of druids training the
+      branches to support the vault. Light wells positioned for
+      specific times of day create moving patterns below.
+    lighting:
+      primary_source: "sky above filtered through leaf lattice"
+      secondary_source: "reflected leaf-light"
+      quality: "green-filtered, natural stained glass effect"
+      direction: "from directly above, looking up"
+      color_temperature: "green-gold"
+      shadow_depth: "complex lattice patterns"
+      atmospheric: "leaves moving in breeze"
+    palette:
+      dominant: ["leaf green backlit", "sky glimpse blue", "branch dark silhouette"]
+      accent: ["light well gold", "moving shadow patterns", "summer sky peeks"]
+      avoid: ["solid sky", "dead branches", "sparse foliage"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, looking straight up into
+      the canopy of ancient intertwined oak trees, the branches
+      trained and grafted over centuries into a natural vault,
+      leaves creating a green-gold filter for all light, glimpses
+      of blue sky through carefully positioned light wells, the
+      branches forming Gothic-like ribbing against the bright green,
+      wind movement suggested in the leaf patterns, the overall
+      effect like looking up through natural stained glass,
+      dappled patterns of light and shadow, heroic fantasy style,
+      painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, dead trees, sparse canopy, clear sky, ground view, people, figures"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # DRUID-GROVE-HERBAL-GARDENS - Essence of Healing Plants
+  # --------------------------------------------------------------------------
+  - slug: "druid-grove-herbal-gardens"
+    name: "Where Medicine Grows"
+    zone_type: "zone"
+    image_type: "essence"
+    mood: "pastoral"
+    narrative_context: |
+      A close study of the healing plants themselves—the fuzzy leaves
+      of comfrey, the tiny flowers of thyme, the dangerous elegance of
+      foxglove. Each plant companioned with others for mutual benefit,
+      each labeled with druidic script carved into small stones. The
+      medicine grows in the loam, patient and powerful.
+    lighting:
+      primary_source: "dappled sunlight through canopy gaps"
+      secondary_source: "reflected light from lighter plants"
+      quality: "warm garden light with soft shadows"
+      direction: "overhead with some side angle"
+      color_temperature: "warm yellow-green"
+      shadow_depth: "soft, detail-revealing"
+      atmospheric: "aromatic warmth"
+    palette:
+      dominant: ["herb greens in variety", "loam dark brown", "flower accents"]
+      accent: ["thyme purple", "yarrow white", "foxglove pink with danger spots"]
+      avoid: ["cultivated perfection", "formal arrangement", "artificial"]
+    aspect_ratio: "1:1"
+    size: "1024x1024"
+    prompt_used: |
+      Oil painting, fantasy illustration, close study of medicinal
+      herbs growing in a woodland sanctuary garden, comfrey with
+      its fuzzy leaves, tiny flowering thyme, elegant dangerous
+      foxglove with spotted bells, yarrow's flat white flower heads,
+      mint spreading vigorously, all growing in enriched dark loam,
+      small label stones with carved druidic script partially visible,
+      wattle edging containing the beds, dappled sunlight warming the
+      plants, a sense of patient botanical power, heroic fantasy
+      style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, formal gardens, pots, containers, labels, plastic, people, hands"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # DRUID-GROVE-NIGHT-TEMPORAL - The Patient Dark
+  # --------------------------------------------------------------------------
+  - slug: "druid-grove-night-temporal"
+    name: "The Patient Dark"
+    zone_type: "zone"
+    image_type: "temporal"
+    mood: "ethereal"
+    narrative_context: |
+      The sanctuary after dark, when foxfire and glowmoss provide the
+      only illumination. Moonlight threads through canopy light wells,
+      creating silver paths on the moss. The pools become mirrors of
+      stars. Fireflies drift in amber constellations. Night watch
+      attendants move on silent feet, keeping the sanctuary hush.
+    lighting:
+      primary_source: "moonlight through canopy gaps"
+      secondary_source: "foxfire and glowmoss bioluminescence"
+      quality: "low-lumen, eyes-adjusted darkness"
+      direction: "overhead moonbeams, scattered bioluminescence"
+      color_temperature: "cool silver and blue-green"
+      shadow_depth: "deep, absolute in places"
+      atmospheric: "profound night stillness"
+    palette:
+      dominant: ["moon silver", "night blue", "shadow black"]
+      accent: ["foxfire blue-green glow", "glowmoss green", "firefly amber"]
+      avoid: ["daylight colors", "warm tones", "artificial light"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a woodland sanctuary at night,
+      moonlight threading through the canopy light wells creating
+      silver paths on the moss below, foxfire bioluminescent fungi
+      glowing faint blue-green on tree trunks, glowmoss providing
+      dim orientation light along paths, fireflies drifting in amber
+      constellations, the pools reflecting starlight like dark mirrors,
+      the profound stillness of night, deep shadows between the
+      moonlit areas, the entire sanctuary breathing with patient
+      darkness, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, torches, lanterns, bright light, fires, daylight, people, figures"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # DRUID-GROVE-REFLECTION-POOL-NIGHT - The Mirror of Truth
+  # --------------------------------------------------------------------------
+  - slug: "druid-grove-reflection-pool-night"
+    name: "The Mirror of Truth"
+    zone_type: "shrine"
+    image_type: "temporal"
+    mood: "ethereal"
+    narrative_context: |
+      The scrying pool at night achieves its greatest power. Stars
+      reflect in perfect stillness, and the water becomes a window
+      rather than a surface. This is when the deepest work happens—
+      when patients confront what lives beneath their surfaces, and
+      when Rill reads prophecy in the current.
+    lighting:
+      primary_source: "starlight reflected in pool"
+      secondary_source: "ambient moonlight"
+      quality: "mirror-perfect, duplicated reality"
+      direction: "from above and reflected"
+      color_temperature: "cool silver-blue"
+      shadow_depth: "minimal—the reflection dominates"
+      atmospheric: "absolute stillness"
+    palette:
+      dominant: ["star silver", "night sky blue-black", "mirror surface"]
+      accent: ["reflected constellations", "poolside stone dark gray"]
+      avoid: ["ripples", "warm tones", "any light pollution"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a scrying pool at night in
+      a woodland sanctuary, the water achieving perfect mirror
+      stillness reflecting the star field above with absolute clarity,
+      the pool surface appears to be a window into another sky rather
+      than mere reflection, stone ledges at the margins barely visible
+      in the darkness, ambient moonlight providing faint illumination
+      on the surrounding oaks, the atmosphere of revelation and truth,
+      constellations doubled in the still water, heroic fantasy style,
+      painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, ripples, disturbed water, light sources, glowing effects, magic circles, people, figures"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # DRUID-GROVE-RILL-SCRYING - Water Speaks
+  # --------------------------------------------------------------------------
+  - slug: "druid-grove-rill-scrying"
+    name: "Water Speaks"
+    zone_type: "zone"
+    image_type: "beat"
+    mood: "ethereal"
+    narrative_context: |
+      Rill Vossari at the scry pool, reading intelligence from the
+      waters that flow through Waterdeep's veins. Her water genasi
+      nature makes her uniquely suited to this work—the currents
+      beneath her translucent skin quickening to match the water's
+      messages. She turns hydrology into prophecy, reading in the
+      streams what the Silent Hand cannot hide.
+    lighting:
+      primary_source: "pool reflection throwing silver light upward"
+      secondary_source: "ambient canopy-filtered light"
+      quality: "water-dominated, unearthly"
+      direction: "reflected from below onto figure"
+      color_temperature: "cool silver-blue"
+      shadow_depth: "unusual, lit from below"
+      atmospheric: "communion with water"
+    palette:
+      dominant: ["water silver", "genasi blue-green skin", "pool depth green"]
+      accent: ["copper verdigris in hair", "rain-gray eyes", "current patterns"]
+      avoid: ["warm tones", "harsh shadows", "mundane lighting"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a water genasi woman at the
+      edge of a scrying pool in a woodland sanctuary, her pale
+      translucent blue-green skin showing visible turquoise currents
+      moving beneath, thick rope-like dreadlocks fading from deep
+      sea-green to sea-foam white bound with verdigris copper wire,
+      her rain-gray eyes fixed on the pool surface in deep concentration,
+      the water throwing silver light upward onto her features, her
+      hands extended toward the water with currents quickening in
+      her skin matching the pool's patterns, reading intelligence
+      from the water itself, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, normal human, crystal ball, magic effects, glowing runes, other figures"
+    references:
+      - type: "character_portrait"
+        slug: "rill-vossari"
+        purpose: "accurate depiction of Rill's distinctive water genasi features"
+
+  # --------------------------------------------------------------------------
+  # DRUID-GROVE-VERA-ARRIVAL - Crossing the Threshold
+  # --------------------------------------------------------------------------
+  - slug: "druid-grove-vera-arrival"
+    name: "Crossing the Threshold"
+    zone_type: "threshold"
+    image_type: "beat"
+    mood: "somber"
+    narrative_context: |
+      Vera arriving at the sanctuary, still bearing the trauma of her
+      dire wolf transformation. The threshold stones seem to recognize
+      what she carries. The sanctuary's peace begins to work on her
+      even as she steps across, but the weight of what happened—the
+      violence of transformation, the loss of control—is written in
+      every line of her body.
+    lighting:
+      primary_source: "transition light from exterior to sanctuary"
+      secondary_source: "inner sanctuary glow ahead"
+      quality: "threshold lighting, between worlds"
+      direction: "from ahead, drawing inward"
+      color_temperature: "cool exterior warming to sanctuary tones"
+      shadow_depth: "figure backlit slightly"
+      atmospheric: "moment of crossing"
+    palette:
+      dominant: ["threshold stone gray", "hedge green", "sanctuary glow ahead"]
+      accent: ["Vera's clothing and features", "sigil markings"]
+      avoid: ["bright lighting", "cheerful tones", "casual atmosphere"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a young woman with the build
+      of a rogue standing at the threshold of a woodland sanctuary,
+      her posture carrying visible trauma and exhaustion, carved
+      threshold stones beneath her feet, the braided hazel wicket
+      gate open before her, the green sanctuary visible beyond with
+      its promise of healing, her face showing the weight of recent
+      violent transformation, the moment of crossing from wounded
+      outer world into healing space, living-wood arch overhead,
+      heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, happy expression, casual stance, combat gear, wolf features visible"
+    references:
+      - type: "character_portrait"
+        slug: "vera-thornwood"
+        purpose: "accurate depiction of Vera's features in traumatized state"
+
+  # --------------------------------------------------------------------------
+  # DRUID-GROVE-VERA-RESTORATION - Surrender to the Water
+  # --------------------------------------------------------------------------
+  - slug: "druid-grove-vera-restoration"
+    name: "Surrender to the Water"
+    zone_type: "sanctuary"
+    image_type: "beat"
+    mood: "intimate"
+    narrative_context: |
+      Vera in the restoration pool, allowing the waters to hold her
+      weight for the first time since the transformation. The guided
+      recovery requires surrender—letting go of the tension that keeps
+      the wolf at bay, trusting the water to support what she cannot
+      support herself. The attendant watches, ready but not interfering.
+    lighting:
+      primary_source: "canopy-filtered light on water surface"
+      secondary_source: "warm stones radiating at pool edge"
+      quality: "healing light, soft and supportive"
+      direction: "overhead with water reflection"
+      color_temperature: "warm green-gold"
+      shadow_depth: "minimal, accepting"
+      atmospheric: "held, supported, safe"
+    palette:
+      dominant: ["warm water green", "skin tones in water", "pool edge stone"]
+      accent: ["Vera's features", "attendant presence suggested", "steam wisps"]
+      avoid: ["clinical tones", "harsh light", "cold colors"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a young woman floating in a
+      healing pool in a woodland sanctuary, her body finally relaxed
+      and supported by the water, her eyes closed in surrender to the
+      healing process, the water at mid-chest depth, warm stones
+      visible at the pool's edge, canopy-filtered green-gold light
+      playing on the water surface, faint steam wisps rising where
+      cool air meets warm water, the sense of weight being released
+      and trauma beginning to ease, heroic fantasy style, painterly
+      brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, swimming, bathing suit, spa, hot tub, other figures clearly visible"
+    references:
+      - type: "character_portrait"
+        slug: "vera-thornwood"
+        purpose: "accurate depiction of Vera's features in healing moment"
+
+  # --------------------------------------------------------------------------
+  # DRUID-GROVE-VERA-REFLECTION - Meeting the Wolf
+  # --------------------------------------------------------------------------
+  - slug: "druid-grove-vera-reflection"
+    name: "Meeting the Wolf"
+    zone_type: "shrine"
+    image_type: "beat"
+    mood: "somber"
+    narrative_context: |
+      Vera at the reflection pool, forced to confront what looks back.
+      The scry pool shows truth whether wanted or not, and the dire
+      wolf that lives inside her meets its own reflection. This is
+      the crisis point of her recovery—will she see a monster, or
+      something else? The pool's perfect stillness holds no judgment.
+    lighting:
+      primary_source: "pool reflection casting silver light upward"
+      secondary_source: "ambient sanctuary light"
+      quality: "mirror-lit, truth-revealing"
+      direction: "from below, reflected"
+      color_temperature: "cool silver"
+      shadow_depth: "unusual, face lit from water"
+      atmospheric: "moment of confrontation"
+    palette:
+      dominant: ["mirror silver", "reflection depth", "stone ledge gray"]
+      accent: ["Vera's features", "hint of wolf shadow in reflection"]
+      avoid: ["warm comfort", "soft tones", "escape from truth"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a young woman kneeling at
+      the edge of a scrying pool in a woodland sanctuary, looking
+      down at her reflection in the perfectly still water, her
+      expression caught between fear and acceptance, the pool's
+      mirror surface showing her face with perhaps a hint of
+      something wild in the eyes, silver light from the water
+      casting upward onto her features, stone ledges at the
+      pool margin, the moment of confronting inner truth,
+      heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, literal wolf reflection, transformation, monster, horror, other figures"
+    references:
+      - type: "character_portrait"
+        slug: "vera-thornwood"
+        purpose: "accurate depiction of Vera in moment of self-confrontation"
+
+  # --------------------------------------------------------------------------
+  # DRUID-GROVE-VERA-SPIRAL - The Inward Path
+  # --------------------------------------------------------------------------
+  - slug: "druid-grove-vera-spiral"
+    name: "The Inward Path"
+    zone_type: "sanctuary"
+    image_type: "beat"
+    mood: "reverent"
+    narrative_context: |
+      Vera walking a meditation spiral, each deliberate step a practice
+      in control that doesn't come from fighting the wolf but from
+      accepting it. The spiral slows time, forces presence, makes
+      impossible the mindless reaction that transformation exploits.
+      Her feet find the pebbled path, and slowly, slowly, she learns
+      that stillness is not the absence of the wolf but its integration.
+    lighting:
+      primary_source: "soft filtered light through privacy screens"
+      secondary_source: "pebble reflection"
+      quality: "calm, even, meditative"
+      direction: "diffused from all sides"
+      color_temperature: "neutral warm"
+      shadow_depth: "minimal, no distraction"
+      atmospheric: "profound focused stillness"
+    palette:
+      dominant: ["pebble path silver", "moss green", "screen-filtered light"]
+      accent: ["Vera's figure", "herb edging", "chime glimpse"]
+      avoid: ["harsh contrasts", "dramatic lighting", "tension colors"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a young woman walking slowly
+      on a meditation spiral of pale pebbles in a woodland clearing,
+      her bare feet placed with deliberate care on the curved path,
+      her posture centered and controlled, woven willow screens
+      providing privacy around the clearing, low herb edging defining
+      the spiral pattern, soft filtered light creating no harsh shadows,
+      the inward journey visible in her focused expression, learning
+      stillness through each step, heroic fantasy style, painterly
+      brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, running, hurrying, distressed expression, labyrinth, maze, other figures"
+    references:
+      - type: "character_portrait"
+        slug: "vera-thornwood"
+        purpose: "accurate depiction of Vera in meditative practice"
+
+# ============================================================================
+# BEAT IMAGES - Key Narrative Moments
+# ============================================================================
+beat_images:
+  # --------------------------------------------------------------------------
+  # WATER COMMUNION - Rill Reading the Streams
+  # --------------------------------------------------------------------------
+  - slug: "beat-water-communion"
+    name: "Water Communion"
+    scene_id: "ch20-scene-water-intelligence"
+    mood: "ethereal"
+    narrative_context: |
+      Rill Vossari in deep communion with the sanctuary's waters,
+      reading intelligence from streams that flow through the city.
+      The currents beneath her skin match the pool's patterns as
+      she pulls information from hydrology itself—where the Silent
+      Hand's water systems run, what the sewers carry, what the
+      lake remembers.
+    lighting:
+      primary_source: "water throwing silver light upward"
+      secondary_source: "foxfire glow on nearby trees"
+      quality: "otherworldly, water-dominated"
+      direction: "from below"
+      color_temperature: "cool silver-blue"
+      shadow_depth: "unusual, lit from water"
+      atmospheric: "communion with element"
+    palette:
+      dominant: ["water silver", "genasi skin blue-green", "pool depth"]
+      accent: ["skin currents turquoise", "copper verdigris", "foxfire glow"]
+      avoid: ["warm tones", "normal lighting", "mundane"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a water genasi woman in
+      deep communion with a scrying pool at dusk, her translucent
+      blue-green skin showing quickened turquoise currents that
+      match the water's patterns, her hands extended over the pool
+      surface, her rain-gray eyes flooded with solid gray in
+      concentration, dreadlocks bound with verdigris copper
+      trailing toward the water, silver light thrown upward from
+      the pool illuminating her features from below, foxfire glow
+      on nearby tree trunks, reading intelligence from the water
+      itself, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, magic effects, glowing runes, crystals, normal human, other figures"
+    references:
+      - type: "character_portrait"
+        slug: "rill-vossari"
+        purpose: "accurate depiction of Rill in water communion"
+      - type: "chapter_visual_plan"
+        chapter: "ch20-ripples-in-the-current"
+        purpose: "narrative context for intelligence gathering"
+
+  # --------------------------------------------------------------------------
+  # VERA'S BREAKTHROUGH - The Wolf Integrated
+  # --------------------------------------------------------------------------
+  - slug: "beat-vera-breakthrough"
+    name: "The Wolf Integrated"
+    scene_id: "ch19-scene-vera-acceptance"
+    mood: "cathartic"
+    narrative_context: |
+      The moment Vera stops fighting the dire wolf and starts
+      understanding it. At the reflection pool, what she sees is
+      not a monster but a wounded guardian—the wolf that killed to
+      protect, that transformed in response to unbearable threat.
+      Acceptance doesn't mean approval, but it ends the war inside.
+    lighting:
+      primary_source: "dawn light through canopy"
+      secondary_source: "pool reflection, golden"
+      quality: "breakthrough light, the night ending"
+      direction: "first light from the east"
+      color_temperature: "warming from cool to gold"
+      shadow_depth: "lessening, hope returning"
+      atmospheric: "dawn of acceptance"
+    palette:
+      dominant: ["dawn gold", "pool silver warming", "sanctuary green returning"]
+      accent: ["Vera's features in new light", "resolved expression"]
+      avoid: ["harsh light", "cold tones", "remaining struggle"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a young woman at a scrying
+      pool at dawn in a woodland sanctuary, the first golden light
+      of morning breaking through the canopy to touch the water
+      and her face, her expression transformed from fear to
+      acceptance, tears on her cheeks but no longer struggling,
+      her reflection in the pool showing a face at peace with
+      what it contains, the night's long confrontation ending
+      in integration rather than defeat, heroic fantasy style,
+      painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, wolf transformation, monster, horror, struggling expression, other figures"
+    references:
+      - type: "character_portrait"
+        slug: "vera-thornwood"
+        purpose: "accurate depiction of Vera in breakthrough moment"
+
+  # --------------------------------------------------------------------------
+  # THE INTELLIGENCE MAPS - What Water Remembers
+  # --------------------------------------------------------------------------
+  - slug: "beat-intelligence-maps"
+    name: "What Water Remembers"
+    scene_id: "ch20-scene-water-maps"
+    mood: "clandestine"
+    narrative_context: |
+      Rill sharing what she's learned from the waters with Company
+      representatives. The scrying pool becomes a map of the city's
+      water systems, Rill's finger tracing routes that the Silent
+      Hand uses but cannot hide from living water. Intelligence
+      flows where water flows.
+    lighting:
+      primary_source: "pool surface showing traced patterns"
+      secondary_source: "ambient sanctuary dusk"
+      quality: "conspiracy light, shared secrets"
+      direction: "from the illuminated water surface"
+      color_temperature: "cool silver with information glow"
+      shadow_depth: "figures in shadow, map in light"
+      atmospheric: "intelligence briefing"
+    palette:
+      dominant: ["pool silver with water-traces", "shadow figures", "dusk tones"]
+      accent: ["traced routes glinting", "Rill's features", "map patterns"]
+      avoid: ["bright light", "casual atmosphere", "mundane map"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, figures gathered around a
+      scrying pool at dusk in a woodland sanctuary, a water genasi
+      woman with blue-green skin tracing patterns on the water
+      surface that seem to form a map of city waterways, the water
+      holding the traced lines like living ink, other figures
+      partially visible in shadow listening intently, the
+      intelligence briefing conducted in whispers, the pool
+      serving as map and medium, heroic fantasy style,
+      painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, paper maps, written documents, bright lighting, formal meeting room"
+    references:
+      - type: "character_portrait"
+        slug: "rill-vossari"
+        purpose: "accurate depiction of Rill as intelligence source"

@@ -1,0 +1,345 @@
+# The Waterdeep Chronicle - Location Imagery Specifications
+# Generated from chapter visual plans (ch3.5, ch11.5, ch15.5)
+# Where public narrative is constructed through print and selective silence
+
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "waterdeep-chronicle"
+  location_name: "The Waterdeep Chronicle"
+  version: "1.0"
+  last_updated: "2025-12-26"
+  primary_chapters:
+    - ch3.5-ripples-and-reports
+    - ch11.5-wayside-whispers
+    - ch15.5-what-the-city-heard
+  location_type: "newspaper-office"
+
+generation_defaults:
+  provider: "workers-ai"
+  model: "flux-schnell"
+  quality: "high"
+  aspect_ratio: "16:9"
+
+# ============================================================================
+# NARRATIVE SOUL - Thematic Essence for AI Generation
+# ============================================================================
+narrative_soul: |
+  The Waterdeep Chronicle is where truth becomes narrative and omission becomes
+  policy. This print shop represents the power of information curation—not what
+  they say, but what they choose not to say. The smell of ink and the clatter
+  of type frames a fundamental tension: between street-level truth and official
+  narrative, between the whispers on the docks and the columns on page three.
+  When Tennison Quill and his staff compose the Small Notices, they know that
+  sometimes the blank they leave is the story. The Chronicle's broadsheets carry
+  Veyra's terse quotes—"I'm not a symbol. I'm a solution"—stripped of context,
+  shaped for consumption. Yet between the lines, in the margins where expensive
+  ink hasn't touched, truth seeps through for those who know how to read silence.
+  This is a space of newsprint gray and ink-black authority, where the gap
+  between paper and reality is the most important distance in Waterdeep.
+
+one_line_essence: "Where public narrative is constructed through print and what's not printed tells the true story."
+
+# ============================================================================
+# LOCATION VISUAL ANCHOR - Signature Elements
+# ============================================================================
+location_visual_anchor:
+  signature_elements:
+    - "printing press with type frames"
+    - "broadsheet layouts on composition tables"
+    - "ink wells and drying racks"
+    - "stacked newsprint and fresh editions"
+    - "editorial desk with lamp and documents"
+    - "Small Notices column with strategic blanks"
+
+  materials:
+    primary:
+      - "newsprint paper (gray-white)"
+      - "printing ink (carbon black)"
+      - "wooden type cases and frames"
+      - "brass lamp fixtures"
+    secondary:
+      - "composition table wood"
+      - "lead type slugs"
+      - "ink-stained work surfaces"
+      - "paper drying lines"
+    accent:
+      - "lamp oil glow"
+      - "fresh ink sheen"
+      - "quill and inkwell"
+
+  color_anchors:
+    dominant:
+      - "newsprint gray-white"
+      - "ink carbon black"
+      - "wood brown (work surfaces)"
+    secondary:
+      - "lamp amber"
+      - "brass fixture gold"
+      - "paper cream (aged)"
+    accent:
+      - "fresh ink sheen"
+      - "reading lamp glow"
+    avoid:
+      - "bright colors"
+      - "clean sterility"
+      - "modern elements"
+
+  characteristic_light:
+    day: "Window light falling on composition tables; ink drying under diffused illumination"
+    evening: "Lamp-lit late edition work; pools of light on fresh broadsheets"
+    night: "Single editorial lamp burning late; the paper being put to bed"
+
+# ============================================================================
+# OVERVIEW - Location Establishing Shots
+# ============================================================================
+overview:
+  primary:
+    image_type: "establishing"
+    description: "The Waterdeep Chronicle print shop—composition tables, printing press, stacks of broadsheets, the controlled chaos of newsprint production"
+    scene_mood: "quotidian"
+    time_of_day: "day"
+    framing: "wide"
+    key_elements:
+      - "printing press visible"
+      - "composition tables with type frames"
+      - "stacked newsprint"
+      - "workers at various stations"
+    lighting:
+      primary_source: "windows and skylights"
+      quality: "industrial work light"
+      color_temperature: "neutral daylight"
+    palette:
+      dominant: ["newsprint gray", "ink black", "wood brown"]
+      accent: ["paper stacks", "worker motion"]
+      avoid: ["colorful distraction"]
+
+  secondary:
+    image_type: "establishing"
+    description: "The editorial office at night—single lamp burning, tomorrow's edition taking shape, the quiet power of curated narrative"
+    scene_mood: "intimate"
+    time_of_day: "night"
+    framing: "medium"
+    key_elements:
+      - "editorial desk with papers"
+      - "single lamp burning"
+      - "tomorrow's layout visible"
+      - "ink and quill at ready"
+    lighting:
+      primary_source: "desk lamp"
+      quality: "intimate editorial light"
+      color_temperature: "warm amber"
+    palette:
+      dominant: ["lamp amber", "paper white", "shadow surrounding"]
+      accent: ["ink wells", "focused work"]
+      avoid: ["busy production"]
+
+# ============================================================================
+# ZONES - Comprehensive Location Areas
+# ============================================================================
+zones:
+  - slug: "overview"
+    name: "Overview"
+    zone_type: "perspective"
+    featured_in_chapters:
+      - ch3.5-ripples-and-reports
+    description: "The newspaper itself as visual artifact—the broadsheet layout where official narrative meets curated silence, headlines and columns telling only part of the truth"
+    image_type: "detail"
+    scene_mood: "ominous"
+    key_elements:
+      - "broadsheet spread open"
+      - "headline text visible"
+      - "column layout"
+      - "the space where quotes are absent"
+    lighting:
+      primary_source: "reading light (morning)"
+      quality: "cold examination light"
+    palette:
+      dominant: ["newsprint gray", "ink black text", "column white"]
+      accent: ["highlighted or circled text"]
+      avoid: ["colorful imagery"]
+    character_interaction:
+      positions: ["hands holding edges", "reading over table"]
+      activities: ["examining, highlighting, reading between lines"]
+    atmospheric:
+      environmental_effects: "the artifact as narrative distance"
+
+  - slug: "newsroom"
+    name: "The Newsroom"
+    zone_type: "commons"
+    description: "The main working floor where reporters write, editors consult, and the day's narrative takes shape through dozens of small decisions"
+    image_type: "zone"
+    scene_mood: "kinetic"
+    key_elements:
+      - "multiple desks with writers"
+      - "consultation between staff"
+      - "copy being passed and reviewed"
+      - "deadline energy"
+    lighting:
+      primary_source: "overhead windows"
+      secondary_source: "desk lamps"
+      quality: "active newsroom light"
+    palette:
+      dominant: ["paper stacks", "desk wood", "motion blur"]
+      accent: ["ink and quill", "urgent gesture"]
+      avoid: ["orderly stillness"]
+    character_interaction:
+      positions: ["at desks writing", "consulting with editors", "running copy"]
+      activities: ["writing", "editing", "arguing sources"]
+
+  - slug: "office"
+    name: "Office"
+    zone_type: "heart"
+    featured_in_chapters:
+      - ch11.5-wayside-whispers
+      - ch15.5-what-the-city-heard
+    description: "The editorial office where Tennison Quill and senior staff decide what makes the paper—and more importantly, what doesn't"
+    image_type: "zone"
+    scene_mood: "intimate"
+    key_elements:
+      - "editor's desk with layouts"
+      - "Small Notices column visible"
+      - "the blank space where quote should be"
+      - "strategic omission in progress"
+    lighting:
+      primary_source: "desk lamp"
+      secondary_source: "window light"
+      quality: "focused editorial illumination"
+    palette:
+      dominant: ["paper layouts", "desk wood", "lamp pool"]
+      accent: ["ink drying", "marked text"]
+      avoid: ["crowded production"]
+    character_interaction:
+      positions: ["at editorial desk", "reviewing layouts", "making decisions"]
+      activities: ["editing", "deciding what not to print", "curating silence"]
+    atmospheric:
+      environmental_effects: "thin line of ink drying on decisions made"
+
+  - slug: "editorial-desk"
+    name: "Editorial Desk"
+    zone_type: "detail"
+    description: "Close detail on the editorial desk—layouts, ink wells, the Small Notices column where truth hides in plain sight beneath cloak advertisements"
+    image_type: "detail"
+    scene_mood: "intimate"
+    key_elements:
+      - "Small Notices column layout"
+      - "ink drying on decisions"
+      - "finger tapping empty space"
+      - "strategic blanks visible"
+    lighting:
+      primary_source: "desk lamp close"
+      quality: "intimate detail illumination"
+    palette:
+      dominant: ["column text", "paper grain", "lamp glow"]
+      accent: ["empty space as meaning"]
+      avoid: ["cluttered distraction"]
+
+  - slug: "printing-room"
+    name: "Printing Room"
+    zone_type: "works"
+    description: "The press floor where type becomes broadsheet—the mechanical transformation of narrative into mass distribution"
+    image_type: "zone"
+    scene_mood: "kinetic"
+    key_elements:
+      - "printing press mechanism"
+      - "type frames set and ready"
+      - "fresh sheets emerging"
+      - "ink and paper smell"
+    lighting:
+      primary_source: "high windows"
+      secondary_source: "work lamps"
+      quality: "industrial production light"
+    palette:
+      dominant: ["press machinery", "fresh newsprint", "ink black"]
+      accent: ["motion of production"]
+      avoid: ["modern elements"]
+    atmospheric:
+      environmental_effects: "mechanical rhythm, ink smell, paper dust"
+
+# ============================================================================
+# BEAT IMAGES - Key Narrative Moments
+# ============================================================================
+beat_images:
+  - slug: "chronicles-version"
+    title: "The Chronicle's Version"
+    chapter: "ch3.5-ripples-and-reports"
+    scene_id: "scn-04-5-01"
+    description: "The newspaper spread with headline visible, Veyra's quote circled—'I'm not a symbol. I'm a solution'—the gap between street truth and official narrative"
+    zone: "overview"
+    image_type: "detail"
+    scene_mood: "ominous"
+    emotional_beat: "the construction of public narrative"
+    characters_present: []
+    framing: "close"
+    composition_notes: "Newspaper as artifact, text as narrative distance"
+    key_visual_elements:
+      - "broadsheet spread open"
+      - "headline text visible"
+      - "Veyra's quote highlighted or circled"
+      - "the gap between lines"
+    lighting:
+      primary_source: "cold morning reading light"
+      quality: "examination illumination"
+    palette:
+      dominant: ["newsprint gray", "ink black", "column layout"]
+      accent: ["circled quote", "truth squeezed between lines"]
+
+  - slug: "small-notices"
+    title: "Small Notices"
+    chapter: "ch11.5-wayside-whispers"
+    scene_id: "scn-11-5-02"
+    description: "Page three beneath cloak ads—'Trade Irregularities,' 'Misfiling,' 'Missing Pages.' Dena's finger tapping the empty space where official quote should be"
+    zone: "office"
+    image_type: "detail"
+    scene_mood: "intimate"
+    emotional_beat: "truth in negative space—what's not printed is the story"
+    characters_present:
+      - "tennison-quill"
+      - "clerk-dena"
+    framing: "close"
+    composition_notes: "The blank as meaning, absence as communication"
+    key_visual_elements:
+      - "Small Notices column visible"
+      - "thin ink drying"
+      - "finger tapping empty space"
+      - "strategic blank"
+    lighting:
+      primary_source: "print shop lamp"
+      quality: "paper-bright detail"
+    palette:
+      dominant: ["column text", "blank space", "paper texture"]
+      accent: ["finger gesture", "meaningful absence"]
+
+# ============================================================================
+# REFERENCES - Cross-Reference Links
+# ============================================================================
+references:
+  chapter_visual_plans:
+    - slug: "ch3.5-ripples-and-reports"
+      relationship: "newspaper as artifact"
+      notes: "Official narrative versus street whispers"
+    - slug: "ch11.5-wayside-whispers"
+      relationship: "curated silence"
+      notes: "Small Notices and strategic blanks"
+    - slug: "ch15.5-what-the-city-heard"
+      relationship: "media perspective"
+      notes: "How the city learns of events"
+
+  character_portraits:
+    - slug: "tennison-quill"
+      relationship: "editor"
+      notes: "Controls what's printed and what's omitted"
+
+  related_locations:
+    - slug: "castle-ward"
+      relationship: "neighborhood"
+      notes: "Print shop likely in Castle Ward commercial district"
+
+  thematic_connections:
+    - theme: "narrative construction"
+      description: "The gap between event and report, truth and print"
+    - theme: "curated silence"
+      description: "What's not printed tells the real story"
+    - theme: "media as power"
+      description: "Information shaping public understanding"
+    - theme: "official versus street"
+      description: "Watch narrative versus dock ward whispers"

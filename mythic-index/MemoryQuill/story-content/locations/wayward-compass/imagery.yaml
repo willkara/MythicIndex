@@ -1,0 +1,740 @@
+# The Wayward Compass Inn - Location Imagery Specifications
+# Generated from location analysis and chapter visual plans
+# Where information is currency and a crossroads inn becomes battlefield of secrets
+
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "wayward-compass"
+  location_name: "The Wayward Compass Inn"
+  version: "1.0"
+  last_updated: "2025-12-26"
+  primary_chapters:
+    - ch10-the-wayward-compass
+    - ch11.5-wayside-whispers
+    - ch17-the-long-road-home
+  location_type: "crossroads-inn"
+
+generation_defaults:
+  provider: "workers-ai"
+  model: "flux-schnell"
+  quality: "high"
+  aspect_ratio: "16:9"
+
+# ============================================================================
+# NARRATIVE SOUL - Thematic Essence for AI Generation
+# ============================================================================
+narrative_soul: |
+  The Wayward Compass is a toad made of timber and stone squatting at the
+  crossroads where information is more dangerous than drawn steel. Under Durja's
+  broken-tusked authority, this low-beamed, smoky sanctuary maintains neutrality
+  through presence and policy—trouble is redirected or diffused, secrets are
+  traded over dark wine, and the murmur never fully dies even when roads go
+  quiet. The spinning compass sign creaks above a stout door that bangs open
+  under force; inside, sawdust-covered floors remember past blood in darker
+  stains, mismatched chairs cluster around tables lit by calculated pools of
+  lamplight, and the shadowed corner booth hides watchers who see everything
+  while seeming to look at nothing. When predators enter, conversation drops to
+  whispers and patrons press to walls—but sometimes a silk-voiced stranger proves
+  more dangerous than filed tusks, his words cutting through tension like warm
+  honey through ice. This is a place where a pre-Spellplague coin gleams with
+  empire-old promise, where a name dropped right can hit like a crossbow bolt,
+  and where the lantern on certain tables burns absolutely steady no matter who
+  opens the door.
+
+one_line_essence: "A crossroads inn where information outweighs steel—neutral ground maintained by presence, policy, and Durja's broken-tusked authority."
+
+# ============================================================================
+# LOCATION VISUAL ANCHOR - Signature Elements
+# ============================================================================
+location_visual_anchor:
+  signature_elements:
+    - "peeling compass sign with spinning needle"
+    - "low blackened beams under smoke haze"
+    - "oiled oak bar slab under Durja's command"
+    - "shadowed corner booth for observation"
+    - "sawdust-covered floor with dark stain history"
+    - "alcove near kitchen for triage"
+    - "three chimney stacks drawing steadily"
+
+  materials:
+    primary:
+      - "seasoned oak timber frame"
+      - "fitted stone plinth and footings"
+      - "oiled oak bar and furniture"
+      - "sawdust floor covering"
+    secondary:
+      - "iron strap hinges and hardware"
+      - "pewter tankards"
+      - "limewash on infill panels"
+      - "leaded window panes"
+    accent:
+      - "brass lamp fixtures"
+      - "pipe smoke haze"
+      - "wine deep red (Marcus's wine)"
+
+  color_anchors:
+    dominant:
+      - "oak amber (aged, smoke-stained)"
+      - "sawdust tan and brown"
+      - "smoke-black beams"
+    secondary:
+      - "lamp pool amber"
+      - "pewter gray"
+      - "shadow-deep corners"
+    accent:
+      - "Durja's green skin"
+      - "wine-deep red"
+      - "ancient gold (Netherese coin)"
+    avoid:
+      - "bright cheerful colors"
+      - "clean surfaces"
+      - "modern elements"
+
+  characteristic_light:
+    day: "Window light filtered through smoke; bar brighter, booths in shadow"
+    evening: "Peak lamplight with calculated pools; shadow pockets deliberate"
+    night: "Low wicks, intimate glow; boot corner booth barely visible"
+    atmospheric: "Pipe smoke veiling lamplight; shadow and light as tactical terrain"
+
+# ============================================================================
+# OVERVIEW - Location Establishing Shots
+# ============================================================================
+overview:
+  primary:
+    image_type: "establishing"
+    description: "The Wayward Compass squatting at the junction like a toad—timber and stone, three chimneys smoking, the peeling compass sign creaking in the wind"
+    scene_mood: "ominous"
+    time_of_day: "evening"
+    weather: "dust and heat shimmer"
+    framing: "wide"
+    key_elements:
+      - "low timber-and-stone structure"
+      - "three chimney stacks drawing"
+      - "compass sign with spinning needle"
+      - "lamplight and voices spilling from windows"
+    lighting:
+      primary_source: "interior lamplight spilling out"
+      secondary_source: "fading daylight"
+      quality: "warm glow against dusk"
+      color_temperature: "amber interior against cooling exterior"
+      shadow_depth: "deep approaching darkness"
+    palette:
+      dominant: ["timber brown", "stone gray", "chimney smoke"]
+      accent: ["window-glow amber", "sign silhouette"]
+      avoid: ["welcoming warmth overdone"]
+
+  secondary:
+    image_type: "establishing"
+    description: "The common room interior—low beams, smoke haze, mismatched tables in lamp pools, Durja behind the bar, shadow booth in corner"
+    scene_mood: "intimate"
+    time_of_day: "evening"
+    framing: "wide"
+    key_elements:
+      - "low blackened beams"
+      - "smoke haze under ceiling"
+      - "oiled oak bar with Durja"
+      - "lamp pools creating light and shadow"
+      - "shadowed corner booth"
+    lighting:
+      primary_source: "oil lamps creating pools"
+      quality: "deliberate light and shadow terrain"
+      color_temperature: "amber lamp warmth"
+      shadow_depth: "calculated dark pockets"
+    palette:
+      dominant: ["smoke-dark beams", "amber lamp pools", "sawdust floor"]
+      accent: ["pewter clink", "Durja's presence"]
+      avoid: ["even illumination"]
+
+# ============================================================================
+# ZONES - Comprehensive Location Areas
+# ============================================================================
+zones:
+  - slug: "threshold-and-baffle"
+    name: "Threshold and Wind-Baffle"
+    zone_type: "threshold"
+    description: "The stout oak door on strap hinges with simple wind-baffle within—the transition from road dust to smoke haze, frequently banging open when trouble arrives"
+    image_type: "zone"
+    scene_mood: "tense"
+    key_elements:
+      - "stout oak door on iron hinges"
+      - "wind-baffle screen inside"
+      - "sawdust tracked across planks"
+      - "doorway framing common room"
+    lighting:
+      primary_source: "outside light through door"
+      secondary_source: "interior lamp glow"
+      quality: "contrast between outside and in"
+    palette:
+      dominant: ["door oak", "dust from outside", "interior amber"]
+      accent: ["iron hardware"]
+      avoid: ["welcoming entry"]
+    character_interaction:
+      positions: ["entering forcefully", "pausing at baffle", "door slamming open"]
+      activities: ["dramatic entrance", "assessment pause", "trouble arriving"]
+
+  - slug: "common-room"
+    name: "Common Room"
+    zone_type: "heart"
+    featured_in_chapters:
+      - ch10-the-wayward-compass
+      - ch11.5-wayside-whispers
+      - ch17-the-long-road-home
+    description: "The low-beamed, smoky main room—mismatched tables and chairs, lamp pools creating terrain, the bar commanding one wall, shadow booth in corner"
+    image_type: "zone"
+    scene_mood: "ominous"
+    time_of_day: "evening"
+    key_elements:
+      - "low ceiling with blackened beams"
+      - "smoke haze at ceiling level"
+      - "mismatched furniture field"
+      - "calculated lamp placement"
+    lighting:
+      primary_source: "wall-mounted oil lamps"
+      secondary_source: "table lamps at select spots"
+      quality: "pools of light with deliberate shadows"
+      direction: "multiple sources, tactical placement"
+      color_temperature: "amber warmth"
+      shadow_depth: "intentional dark zones"
+    palette:
+      dominant: ["beam black", "sawdust tan", "lamp amber"]
+      accent: ["pewter gray", "patron colors"]
+      avoid: ["even bright light"]
+    character_interaction:
+      positions: ["at bar", "at tables", "in booth", "pressed to walls"]
+      activities: ["drinking", "watching", "whispering", "hiding"]
+    atmospheric:
+      weather: "smoke layer under beams"
+      environmental_effects: "conversation drop when predators enter"
+
+  - slug: "essence"
+    name: "Common Room at Evening Peak"
+    zone_type: "temporal"
+    description: "The common room at peak evening—maximum patronage, lamplight dominance, murmur with an edge, organized groups claiming space"
+    image_type: "mood"
+    scene_mood: "tense"
+    time_of_day: "evening"
+    key_elements:
+      - "peak crowd filling space"
+      - "multiple conversations layering"
+      - "neutral-house pressure visible"
+      - "factions claiming territory"
+    lighting:
+      primary_source: "all lamps lit"
+      quality: "maximum evening illumination"
+    palette:
+      dominant: ["crowded motion", "lamp warmth", "smoke haze"]
+      accent: ["tension visible in posture"]
+      avoid: ["relaxed atmosphere"]
+
+  - slug: "table-field"
+    name: "The Table Field"
+    zone_type: "commons"
+    description: "The loosely ordered field of mismatched tables and chairs—circulation aisles maintained, sightlines from bar and booths controlling approaches"
+    image_type: "zone"
+    scene_mood: "quotidian"
+    key_elements:
+      - "mismatched furniture arrangements"
+      - "circulation aisles between groups"
+      - "patrons claiming space"
+      - "sightlines maintained to exits"
+    lighting:
+      primary_source: "lamp pools at intervals"
+      quality: "table-level illumination"
+    palette:
+      dominant: ["varied furniture", "sawdust floor", "lamp pools"]
+      accent: ["mug and plate clutter"]
+      avoid: ["orderly restaurant setup"]
+
+  - slug: "bar-run"
+    name: "The Bar Run"
+    zone_type: "heart"
+    description: "The oiled oak slab where Durja commands—pewter tankards, under-bar taps, the steady polishing ritual that serves as the room's heartbeat"
+    image_type: "zone"
+    scene_mood: "quotidian"
+    key_elements:
+      - "oiled oak bar slab"
+      - "pewter tankards in rows"
+      - "under-bar taps and storage"
+      - "Durja's commanding position"
+    lighting:
+      primary_source: "bar lamp (kept brighter)"
+      quality: "task lighting for service"
+    palette:
+      dominant: ["oak bar", "pewter gray", "brass taps"]
+      accent: ["bottle colors", "Durja's presence"]
+      avoid: ["decorative excess"]
+    character_interaction:
+      positions: ["behind bar serving", "at bar drinking", "leaning for conversation"]
+      activities: ["polishing tankards", "pouring drinks", "surveillance"]
+
+  - slug: "durja-perspective"
+    name: "The Command Sightline"
+    zone_type: "perspective"
+    description: "View from behind the bar—Durja's sightline to door, full command of approaches, hands able to reach under-bar weapons if needed"
+    image_type: "perspective"
+    scene_mood: "tense"
+    key_elements:
+      - "full room visible from bar"
+      - "door sightline clear"
+      - "approaches controlled"
+      - "under-bar access visible"
+    lighting:
+      primary_source: "room lamps visible"
+      quality: "command-post overview"
+    palette:
+      dominant: ["room panorama", "tactical sightlines"]
+      accent: ["door as focus point"]
+      avoid: ["blind spots"]
+
+  - slug: "for-fucks-sake"
+    name: "Durja's Resignation"
+    zone_type: "beat"
+    description: "The moment Durja sees trouble coming—her hands stopping the polishing, going below the bar, the resigned expression of someone who's seen this too many times"
+    image_type: "beat"
+    scene_mood: "ominous"
+    key_elements:
+      - "Durja's hands pausing"
+      - "movement to below bar"
+      - "resigned expression"
+      - "here we go again"
+    lighting:
+      primary_source: "bar lamp on her face"
+      quality: "character-revealing light"
+    palette:
+      dominant: ["Durja's face", "bar background"]
+      accent: ["resignation visible"]
+      avoid: ["surprise or fear"]
+
+  - slug: "booth"
+    name: "The Shadowed Corner Booth"
+    zone_type: "sanctuary"
+    description: "The recessed corner booth designed for privacy and observation—deep shadow, partial screen backing, pipe smoke lingering, barely touched by lamplight"
+    image_type: "zone"
+    scene_mood: "ominous"
+    key_elements:
+      - "deep recessed alcove"
+      - "partial screen creating shadow"
+      - "pipe smoke veil"
+      - "view to door and bar"
+    lighting:
+      primary_source: "distant lamp glow (barely reaching)"
+      quality: "intentional shadow pocket"
+      shadow_depth: "nearly dark"
+    palette:
+      dominant: ["shadow-deep corner", "smoke veil", "barely visible figures"]
+      accent: ["wine glass catching light", "pipe ember"]
+      avoid: ["bright illumination"]
+    character_interaction:
+      positions: ["seated in shadow", "observing unseen", "meeting privately"]
+      activities: ["surveillance", "negotiation", "information exchange"]
+
+  - slug: "shadowed-corner-booth"
+    name: "The Shadowed Corner Booth"
+    zone_type: "detail"
+    description: "Close perspective of the booth occupant—barely visible through smoke, eyes catching occasional light, wine glass or pipe as only bright points"
+    image_type: "detail"
+    scene_mood: "intimate"
+    key_elements:
+      - "figure shrouded in shadow"
+      - "eyes catching lamplight"
+      - "wine glass gleaming"
+      - "pipe smoke curling"
+    lighting:
+      primary_source: "reflected lamp from distance"
+      quality: "minimal, revealing little"
+    palette:
+      dominant: ["shadow", "smoke", "eye gleam"]
+      accent: ["wine-deep red", "pipe ember"]
+      avoid: ["clear visibility"]
+
+  - slug: "marcus-watching"
+    name: "The Watcher in Shadow"
+    zone_type: "inhabited"
+    description: "Marcus in his element—shrouded in shadow and pipe smoke, cataloguing weapons and competence, the spider watching his web"
+    image_type: "inhabited"
+    scene_mood: "ominous"
+    key_elements:
+      - "Marcus half-visible"
+      - "pipe smoke curling upward"
+      - "wine glass at hand"
+      - "eyes fixed on targets"
+    lighting:
+      primary_source: "minimal ambient"
+      quality: "observer concealed"
+    palette:
+      dominant: ["shadow-shrouded figure", "smoke veil"]
+      accent: ["calculating eyes", "wine gleam"]
+      avoid: ["fully visible"]
+    character_interaction:
+      positions: ["seated watching", "leaning forward slightly", "absolutely still"]
+      activities: ["observing", "calculating", "planning intervention"]
+
+  - slug: "alcove"
+    name: "Alcove Near the Kitchen"
+    zone_type: "sanctuary"
+    featured_in_chapters:
+      - ch11.5-wayside-whispers
+    description: "The semi-private corner near the kitchen—used for triage, quiet work, healer visits, close to hot water and away from main traffic"
+    image_type: "zone"
+    scene_mood: "intimate"
+    key_elements:
+      - "partial separation from main room"
+      - "proximity to kitchen pass"
+      - "clear floor space"
+      - "medical access easy"
+    lighting:
+      primary_source: "nearby lamp"
+      secondary_source: "kitchen warmth"
+      quality: "workable but private"
+    palette:
+      dominant: ["alcove wall", "work surface", "kitchen warmth beyond"]
+      accent: ["medical supplies if present"]
+      avoid: ["public exposure"]
+
+  - slug: "kitchen-alcove"
+    name: "Alcove Near the Kitchen"
+    zone_type: "sanctuary"
+    description: "The alcove when in use for triage—bandages, counsel, private tending within the tactical shell of the inn"
+    image_type: "zone"
+    scene_mood: "intimate"
+    key_elements:
+      - "medical work in progress"
+      - "privacy maintained"
+      - "proximity to aid"
+      - "care within chaos"
+    lighting:
+      primary_source: "task lamp"
+      quality: "intimate medical light"
+    palette:
+      dominant: ["bandage white", "skin tones", "care in progress"]
+      accent: ["medical supplies", "concern"]
+      avoid: ["public audience"]
+
+  - slug: "triage"
+    name: "Care Within the Tactical Shell"
+    zone_type: "temporal"
+    description: "The alcove during active medical care—healer summoned, wounds tended, the inn's neutral-house protocol extending to paying customers' bodies"
+    image_type: "beat"
+    scene_mood: "intimate"
+    key_elements:
+      - "healer at work"
+      - "patient being tended"
+      - "quiet professionalism"
+      - "tactical awareness maintained"
+    lighting:
+      primary_source: "medical task lamp"
+      quality: "focused care light"
+    palette:
+      dominant: ["medical care", "patient focus"]
+      accent: ["healer's hands", "relief or pain"]
+      avoid: ["casual observation"]
+
+  - slug: "kitchen-pass"
+    name: "Kitchen Pass"
+    zone_type: "liminal"
+    description: "The swing door or pass hatch between kitchen and common room—flanking route, staff passage, the hidden circulation of the house"
+    image_type: "zone"
+    scene_mood: "quotidian"
+    key_elements:
+      - "swing door or hatch"
+      - "kitchen activity visible beyond"
+      - "staff passage point"
+      - "alternative approach"
+    lighting:
+      primary_source: "kitchen light through pass"
+      quality: "transitional illumination"
+    palette:
+      dominant: ["kitchen warmth", "door frame", "service motion"]
+      accent: ["food and steam"]
+      avoid: ["main room attention"]
+
+  - slug: "stairs-to-rooms"
+    name: "Stairs to Rooms"
+    zone_type: "liminal"
+    description: "The narrow wooden stair to let-rooms above—predictable creak points, handrail worn smooth, the transition to private space"
+    image_type: "zone"
+    scene_mood: "quotidian"
+    key_elements:
+      - "narrow stair rising"
+      - "worn handrail"
+      - "creak points known"
+      - "rooms above"
+    lighting:
+      primary_source: "below from common room"
+      secondary_source: "above from hallway"
+      quality: "transitional dim"
+    palette:
+      dominant: ["stair wood", "shadow rising", "wall alongside"]
+      accent: ["worn treads", "handrail patina"]
+      avoid: ["grand staircase"]
+
+  - slug: "morning"
+    name: "The Quiet Before"
+    zone_type: "temporal"
+    description: "The common room in morning—floors being sanded, windows open to flush smoke, the quiet before the day's trade arrives"
+    image_type: "mood"
+    scene_mood: "pastoral"
+    time_of_day: "morning"
+    key_elements:
+      - "cleaning in progress"
+      - "windows open for air"
+      - "smoke residue clearing"
+      - "staff preparing"
+    lighting:
+      primary_source: "morning window light"
+      quality: "cleaning light, revealing"
+    palette:
+      dominant: ["morning light", "cleaning motion", "fresh sawdust"]
+      accent: ["preparation activity"]
+      avoid: ["crowd or tension"]
+
+  - slug: "inhabited"
+    name: "The Inn at Work"
+    zone_type: "temporal"
+    description: "The common room in full operation—Durja commanding bar, serving staff circulating, patrons at tables, the ecosystem functioning"
+    image_type: "inhabited"
+    scene_mood: "quotidian"
+    key_elements:
+      - "Durja at bar"
+      - "staff moving with drinks"
+      - "patrons at tables"
+      - "house rhythm visible"
+    lighting:
+      primary_source: "full lamp array"
+      quality: "operational illumination"
+    palette:
+      dominant: ["functioning business", "motion and rest"]
+      accent: ["Durja central", "service rhythm"]
+      avoid: ["empty or tense"]
+
+  - slug: "confrontation"
+    name: "The Confrontation"
+    zone_type: "beat"
+    description: "The common room when tension crystallizes—predators spreading, patrons pressing to walls, hands drifting to weapons, violence balanced on edge"
+    image_type: "beat"
+    scene_mood: "ominous"
+    key_elements:
+      - "predators claiming space"
+      - "patrons retreating to walls"
+      - "hands near weapons"
+      - "tension visible in air"
+    lighting:
+      primary_source: "lamps unchanged but seeming dimmer"
+      quality: "tension-amber"
+    palette:
+      dominant: ["threat figures", "retreating patrons", "weapon gleam"]
+      accent: ["filed tusks", "fear visible"]
+      avoid: ["casual atmosphere"]
+
+# ============================================================================
+# BEAT IMAGES - Key Narrative Moments
+# ============================================================================
+beat_images:
+  - slug: "marcus-watching-entrance"
+    title: "Marcus Watching"
+    chapter: "ch10-the-wayward-compass"
+    scene_id: "scn-10-03"
+    description: "From his corner booth, shrouded in shadow and pipe smoke, Marcus catalogues their weapons, formation, competence—the scarred woman intrigues him most"
+    zone: "marcus-watching"
+    image_type: "anchor"
+    scene_mood: "ominous"
+    emotional_beat: "the spider in the web, watching, assessing, planning"
+    characters_present:
+      - "marcus-heartbridge"
+    framing: "medium"
+    composition_notes: "Marcus half-visible through smoke, Company entrance visible through common room"
+    key_visual_elements:
+      - "Marcus shrouded in shadow"
+      - "pipe smoke curling"
+      - "wine glass catching light"
+      - "eyes fixed on Company"
+    lighting:
+      primary_source: "distant lamp glow"
+      quality: "smoke-filtered, barely illuminating"
+    palette:
+      dominant: ["shadow-deep booth", "smoke veil", "distant activity"]
+      accent: ["calculating eyes", "wine gleam"]
+
+  - slug: "ice-forming"
+    title: "Ice on Water"
+    chapter: "ch10-the-wayward-compass"
+    scene_id: "scn-10-04"
+    description: "Tension solidifies as Krag's yellowed tusks catch the light—hands drift to weapons, Grimjaw hefts his tankard, Durja's hands go below the bar"
+    zone: "confrontation"
+    image_type: "hero"
+    scene_mood: "ominous"
+    emotional_beat: "violence balanced on a knife's edge"
+    characters_present:
+      - "krag"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "grimjaw-ironbeard"
+      - "durja"
+    framing: "wide"
+    composition_notes: "Standoff tableau—Company vs Black Hawks, tension geometry"
+    key_visual_elements:
+      - "Krag's filed tusks gleaming"
+      - "Veyra's scars catching light"
+      - "Thorne positioned as shield"
+      - "Grimjaw with tankard-weapon"
+    lighting:
+      primary_source: "tension-amber lamplight"
+      quality: "drama-enhanced shadows"
+    palette:
+      dominant: ["standoff figures", "weapon gleam", "amber tension"]
+      accent: ["filed tusks", "calculating faces"]
+
+  - slug: "warm-honey-through-ice"
+    title: "Warm Honey Through Ice"
+    chapter: "ch10-the-wayward-compass"
+    scene_id: "scn-10-04"
+    description: "Marcus's voice cuts through tension—stepping into light like an actor taking stage, hands empty and spread, smile perfectly calibrated"
+    zone: "common-room"
+    image_type: "hero"
+    scene_mood: "intimate"
+    emotional_beat: "information as weapon—words defusing what steel could not"
+    characters_present:
+      - "marcus-heartbridge"
+      - "krag"
+      - "veyra-thornwake"
+    framing: "medium"
+    composition_notes: "Marcus emerging from shadow into light, all eyes on him"
+    key_visual_elements:
+      - "Marcus stepping into lamplight"
+      - "hands spread in peace gesture"
+      - "expensive clothes travel-worn"
+      - "smile perfectly calibrated"
+    lighting:
+      primary_source: "theatrical lamp-catch"
+      quality: "shadow-to-spotlight transition"
+    palette:
+      dominant: ["Marcus center stage", "attention focused"]
+      accent: ["confident grace", "calculated charm"]
+
+  - slug: "netherese-coin"
+    title: "The Netherese Coin"
+    chapter: "ch10-the-wayward-compass"
+    scene_id: "scn-10-05"
+    description: "Marcus places a single heavy gold coin on the table—pre-Spellplague, empire-old, gleaming with inner light that has nothing to do with the lamp"
+    zone: "common-room"
+    image_type: "detail"
+    scene_mood: "intimate"
+    emotional_beat: "value beyond gold—history as promise"
+    characters_present:
+      - "marcus-heartbridge"
+      - "veyra-thornwake"
+      - "quartermaster-fayne"
+    framing: "close"
+    composition_notes: "Ancient coin on worn tavern wood, lamp catching impossible gleam"
+    key_visual_elements:
+      - "pre-Spellplague gold coin"
+      - "inner light seeming to pulse"
+      - "worn tavern table beneath"
+      - "hands visible around considering"
+    lighting:
+      primary_source: "coin's own gleam"
+      secondary_source: "lamp light"
+      quality: "ancient radiance"
+    palette:
+      dominant: ["ancient gold", "tavern wood", "lamplight"]
+      accent: ["impossible inner glow"]
+
+  - slug: "steady-flame"
+    title: "Steady Flame"
+    chapter: "ch11.5-wayside-whispers"
+    scene_id: "scn-11-5-01"
+    description: "Two silhouettes in the corner—one scarred, one straight-backed—their lantern burning absolutely steady no matter who opens the door"
+    zone: "booth"
+    image_type: "anchor"
+    scene_mood: "intimate"
+    emotional_beat: "the Last Light burning constant amid chaos"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    framing: "medium"
+    composition_notes: "Two silhouettes, lantern between them steady while room flickers"
+    key_visual_elements:
+      - "scarred silhouette (Veyra)"
+      - "straight-backed silhouette (Thorne)"
+      - "lantern flame absolutely steady"
+      - "surrounding flames flickering with drafts"
+    lighting:
+      primary_source: "their lantern (steady)"
+      secondary_source: "room lamps (flickering)"
+      quality: "constancy amid chaos"
+    palette:
+      dominant: ["silhouette shadow", "steady golden flame"]
+      accent: ["contrast with flicker around them"]
+
+  - slug: "lock-without-door"
+    title: "Lock Without a Door"
+    chapter: "ch11.5-wayside-whispers"
+    scene_id: "scn-11-5-05"
+    description: "Lantern trimmed low, Veyra's scarred hand resting on cloth pouch containing the Bastion Lock—'A lock without a door. Or a door that finally remembered its lock.'"
+    zone: "alcove"
+    image_type: "anchor"
+    scene_mood: "intimate"
+    emotional_beat: "patient strategy—future not yet named but taking shape"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    framing: "medium"
+    composition_notes: "Veyra's hand on pouch, low lantern, silence holding shape"
+    key_visual_elements:
+      - "scarred hand on cloth pouch"
+      - "lantern trimmed to patient glow"
+      - "Thorne across table"
+      - "silence visible in stillness"
+    lighting:
+      primary_source: "low-wick lantern"
+      quality: "patient amber glow"
+      color_temperature: "intimate warmth"
+    palette:
+      dominant: ["low light", "scarred hand", "cloth pouch"]
+      accent: ["future taking shape in silence"]
+
+# ============================================================================
+# REFERENCES - Cross-Reference Links
+# ============================================================================
+references:
+  chapter_visual_plans:
+    - slug: "ch10-the-wayward-compass"
+      relationship: "primary setting"
+      notes: "Marcus introduction, confrontation with Black Hawks"
+    - slug: "ch11.5-wayside-whispers"
+      relationship: "information vignette"
+      notes: "Rumor spreading, steady flame, patient strategy"
+    - slug: "ch17-the-long-road-home"
+      relationship: "recurring stop"
+      notes: "Return journey through familiar ground"
+
+  character_portraits:
+    - slug: "durja"
+      relationship: "proprietor"
+      notes: "Commands the bar, maintains neutral ground"
+    - slug: "marcus-heartbridge"
+      relationship: "observer"
+      notes: "Shadow booth, information broker, silk-voiced danger"
+    - slug: "veyra-thornwake"
+      relationship: "visitor"
+      notes: "Scarred silhouette, steady lantern bearer"
+    - slug: "thorne-brightward"
+      relationship: "visitor"
+      notes: "Straight-backed partner, strategic presence"
+
+  related_locations:
+    - slug: "northern-road"
+      relationship: "approach route"
+      notes: "Trade way access to crossroads"
+
+  thematic_connections:
+    - theme: "information as currency"
+      description: "Words more dangerous than steel in this neutral space"
+    - theme: "neutral ground"
+      description: "Violence redirected by policy and presence"
+    - theme: "the watcher"
+      description: "Marcus as spider observing from shadow"
+    - theme: "steady flame"
+      description: "Last Light burning constant amid chaos"
+    - theme: "names as weapons"
+      description: "Reputation hitting like crossbow bolts"

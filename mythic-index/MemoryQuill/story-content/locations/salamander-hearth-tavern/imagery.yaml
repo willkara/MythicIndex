@@ -1,0 +1,1118 @@
+# Salamander's Hearth Tavern - Location Imagery Specification
+# Working-class tavern where legends are born in the retelling
+# Featured in ch2.5: Echoes in the City
+
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "salamander-hearth-tavern"
+  location_name: "Salamander's Hearth Tavern"
+  version: "2.0"
+  last_updated: "2025-12-26"
+  zone_count: 14
+
+generation_defaults:
+  provider: "workers-ai"
+  model: "stable-diffusion-xl"
+  quality: "high"
+  negative_prompts:
+    - "modern elements"
+    - "electric lights"
+    - "contemporary clothing"
+    - "photorealistic"
+    - "3D render"
+    - "anime style"
+    - "rough biker bar"
+    - "clean sterile"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# NARRATIVE SOUL
+# ═══════════════════════════════════════════════════════════════════════════════
+
+narrative_soul: |
+  The Salamander's Hearth is where stories become legends—a half-full Dock
+  Ward tavern where oil-lanterns paint ceiling beams amber "like honey on
+  old wood" and moon-elf fiddlers play in the corner while sailors, caravan
+  guards, and off-duty watchmen debate philosophy and process extraordinary
+  events.
+
+  At the heart of the space sits the commanding hearth that gives the
+  establishment its name—a gathering point where working folk raise tankards
+  to fallen heroes and whisper prayers for souls they never knew. Unlike
+  rougher waterfront establishments, the Salamander's Hearth has a reverent
+  quality, a contemplative warmth where legend-making happens in real time.
+
+  When the courier bursts through the door with news—"She's awake, the
+  Ash-Marked"—this is where the city's response takes shape, where hope
+  crystallizes in collective toasts and skeptics like Gillthorn voice the
+  counterpoint that makes belief meaningful.
+
+one_line_essence: "Amber-lit hearth-warmth where working folk transform stories into legends."
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# LOCATION VISUAL ANCHOR
+# ═══════════════════════════════════════════════════════════════════════════════
+
+location_visual_anchor:
+  signature_elements:
+    - "Central commanding hearth (the namesake)"
+    - "Oil-lanterns on ceiling beams—'like honey on old wood'"
+    - "Low blackened timber beams"
+    - "Moon-elf fiddlers in corner alcove"
+    - "Scarred round tables near the fire"
+  materials:
+    primary: "timber frame, blackened ceiling beams"
+    secondary: "pewter tankards, oil-lamp brass"
+    accent: "hearth stone, fiddle-warm wood"
+  color_anchors:
+    dominant: ["amber honey-light", "timber brown", "hearth orange"]
+    accent: ["pewter gleam", "moon-elf silver", "fire gold"]
+    avoid: ["harsh fluorescent", "sterile white", "cold blue"]
+  characteristic_light:
+    primary: "oil-lantern amber on ceiling beams"
+    secondary: "hearth fire glow from center"
+    quality: "warm, inviting, reverent—'like honey on old wood'"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# OVERVIEW: ESTABLISHING SHOT
+# ═══════════════════════════════════════════════════════════════════════════════
+
+overview:
+  image_type: "establishing"
+  scene_mood: "reverent"
+  description: "The Salamander's Hearth on a rainy evening—warmth and legend within"
+
+  composition:
+    foreground: "Scarred round table with pewter tankards, working hands"
+    midground: "Central hearth commanding the room, patrons gathered"
+    background: "Moon-elf fiddlers in corner, ceiling beams painted amber"
+    focal_point: "The hearth—the heart of the establishment"
+    depth_cues: "Lantern pools of light, smoke haze, beams receding"
+
+  lighting:
+    primary_source: "Oil-lanterns on ceiling beams"
+    secondary_source: "Central hearth fire"
+    quality: "'like honey on old wood'—warm, amber, inviting"
+    direction: "overhead with hearth accent from center"
+    color_temperature: "deep amber-gold"
+    shadow_depth: "soft—light pools creating intimacy"
+    atmospheric: "slight smoke haze, warmth visible"
+
+  palette:
+    dominant: ["honey amber", "timber brown", "hearth orange"]
+    accent: ["pewter gray", "fire gold", "moon-elf silver"]
+    avoid: ["cold tones", "harsh light", "sterile surfaces"]
+
+  key_elements:
+    - "Central hearth as focal point"
+    - "Ceiling beams painted amber by lantern-light"
+    - "Working-class patrons in conversation"
+    - "Moon-elf fiddlers visible in corner"
+    - "Warmth against rainy evening outside"
+
+  style_notes: "Oil painting style, fantasy illustration. The key visual metaphor is 'honey on old wood'—the amber light transforming aged timber into something precious and warm. This is a reverent space, not a rough tavern."
+
+  prompt_template: "Fantasy working-class tavern interior, central commanding hearth, oil-lanterns painting low blackened ceiling beams amber like honey on old wood, moon-elf fiddlers in corner alcove, sailors and watchmen gathered at scarred round tables, pewter tankards, warm reverent atmosphere, oil painting style, fantasy illustration"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# ZONES
+# ═══════════════════════════════════════════════════════════════════════════════
+
+zones:
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: THE HEARTH
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "the-hearth"
+    zone_name: "The Hearth"
+    zone_type: "heart"
+
+    narrative_role: |
+      The commanding central hearth that gives the tavern its name—
+      the Salamander's Hearth. This is the focal point of the room,
+      where conversations orient and toasts are raised, where the
+      warmth both physical and spiritual originates.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Large commanding fireplace"
+        - "Salamander motif (iron/stone)"
+        - "Seating oriented toward fire"
+        - "Best conversation positions"
+      materials: "hearth stone, iron fire tools, warm ash"
+      color_signature: "fire gold, hearth stone gray, ember orange"
+      light_character: "primary warmth source, dancing flames"
+
+    default_prompt_elements:
+      atmosphere: "warm, central, gathering"
+      must_include:
+        - "commanding hearth"
+        - "active fire"
+        - "seating oriented toward flames"
+        - "warmth as gathering point"
+      must_avoid:
+        - "cold empty hearth"
+        - "peripheral position"
+
+    images:
+      - image_type: "zone"
+        image_slug: "hearth-commanding"
+        description: "The Salamander's Hearth—the heart of the establishment"
+        scene_mood: "reverent"
+
+        composition:
+          foreground: "Fire tools, warm hearthstone"
+          midground: "Active fire, salamander motif visible"
+          background: "Patrons oriented toward warmth"
+
+        lighting:
+          primary_source: "Hearth fire"
+          quality: "dancing, warm, inviting"
+          color_temperature: "fire gold and orange"
+
+        palette:
+          dominant: ["fire gold", "hearth stone"]
+          accent: ["ember orange", "ash gray"]
+
+        key_elements:
+          - "Commanding central position"
+          - "Active dancing fire"
+          - "Salamander motif"
+          - "Heart of the room"
+
+        prompt: "Fantasy tavern central hearth, commanding fireplace with salamander motif, active fire casting dancing light, seating oriented toward warmth, heart of the establishment, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: COMMON ROOM
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "common-room"
+    zone_name: "Common Room Floor"
+    zone_type: "commons"
+    featured_in_chapters: ["ch2.5-echoes-in-the-city"]
+
+    narrative_role: |
+      The main gathering space where stories are shared and legends
+      born—scarred round tables near the hearth, working folk gathered
+      in reverent conversation, the amber light painting their faces
+      as they process extraordinary events.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Scarred round tables for conversation"
+        - "Half-full capacity (moderate occupation)"
+        - "Working-class patrons in groups"
+        - "Ceiling beams painted amber"
+      materials: "scarred wood tables, pewter tankards, bench seating"
+      color_signature: "amber-lit faces, honey wood, pewter gleam"
+      light_character: "oil-lantern overhead, hearth from center"
+
+    default_prompt_elements:
+      atmosphere: "reverent, contemplative, warm"
+      must_include:
+        - "scarred round tables"
+        - "working-class patrons"
+        - "amber ceiling beams"
+        - "conversation atmosphere"
+      must_avoid:
+        - "empty room"
+        - "rowdy chaos"
+        - "harsh lighting"
+
+    images:
+      - image_type: "zone"
+        image_slug: "common-room-evening"
+        description: "The common room floor—stories becoming legends"
+        scene_mood: "reverent"
+
+        composition:
+          foreground: "Scarred round table, pewter tankards"
+          midground: "Patrons in conversation, amber-lit faces"
+          background: "Hearth glow, ceiling beams, fiddlers distant"
+
+        lighting:
+          primary_source: "Oil-lanterns on beams"
+          secondary_source: "Hearth from center"
+          quality: "'like honey on old wood'"
+
+        palette:
+          dominant: ["honey amber", "timber brown"]
+          accent: ["pewter gray", "fire gold"]
+
+        key_elements:
+          - "Amber ceiling beams"
+          - "Working folk in conversation"
+          - "Reverent atmosphere"
+          - "Legend-making in progress"
+
+        prompt: "Fantasy tavern common room at evening, scarred round tables with pewter tankards, working-class patrons in reverent conversation, oil-lanterns painting low blackened ceiling beams amber like honey on old wood, hearth glow visible, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: CORNER STAGE / FIDDLERS
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "corner-stage"
+    zone_name: "Musicians' Corner"
+    zone_type: "shrine"
+
+    narrative_role: |
+      The corner alcove where moon-elf fiddlers play—creating the
+      ambient music that fills the room and pauses for significant
+      moments like collective toasts. Their otherworldly presence
+      adds to the reverent atmosphere.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Corner alcove or slight elevation"
+        - "Moon-elf musicians with fiddles"
+        - "Silver-white hair in amber light"
+        - "Music as ambient presence"
+      materials: "fiddle wood, musician stools, alcove timber"
+      color_signature: "moon-elf silver against amber"
+      light_character: "amber catching silver hair"
+
+    default_prompt_elements:
+      atmosphere: "musical, otherworldly, ambient"
+      must_include:
+        - "moon-elf musicians"
+        - "fiddles/string instruments"
+        - "corner position"
+        - "silver-white hair"
+      must_avoid:
+        - "loud performance"
+        - "human musicians"
+        - "empty stage"
+
+    images:
+      - image_type: "zone"
+        image_slug: "moon-elf-fiddlers"
+        description: "The moon-elf fiddlers in their corner—otherworldly music"
+        scene_mood: "ethereal"
+
+        composition:
+          foreground: "Edge of alcove/corner"
+          midground: "Trio of moon-elf fiddlers playing"
+          background: "Common room visible beyond"
+
+        lighting:
+          primary_source: "Amber tavern light"
+          quality: "catching silver-white hair"
+
+        palette:
+          dominant: ["moon-elf silver", "amber light"]
+          accent: ["fiddle wood warm", "ethereal quality"]
+
+        key_elements:
+          - "Moon-elf musicians"
+          - "Silver-white hair in amber"
+          - "Otherworldly presence"
+          - "Music filling the room"
+
+        prompt: "Fantasy tavern corner with trio of moon-elf fiddlers, silver-white hair catching amber lamplight, otherworldly musicians playing string instruments, ethereal presence in working-class establishment, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: FIDDLERS (Duplicate/Alternate)
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "fiddlers"
+    zone_name: "Musicians' Corner"
+    zone_type: "shrine"
+
+    narrative_role: |
+      Alternate perspective on the musicians—focused on the pause
+      when significant news arrives, the moment fiddlers stop mid-song
+      as the room turns to new information.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Musicians paused mid-song"
+        - "Attention turning away"
+        - "Significant moment"
+      materials: "fiddles lowered, attention elsewhere"
+      color_signature: "amber on silver, attention redirected"
+      light_character: "same amber, frozen moment"
+
+    default_prompt_elements:
+      atmosphere: "paused, attentive"
+      must_include:
+        - "musicians paused"
+        - "fiddles lowered"
+        - "attention elsewhere"
+      must_avoid:
+        - "active playing"
+
+    images:
+      - image_type: "beat"
+        image_slug: "fiddlers-paused"
+        description: "The fiddlers paused mid-song as news arrives"
+        scene_mood: "kinetic"
+
+        composition:
+          focal_point: "Fiddlers frozen mid-song"
+          framing: "musicians with room turning beyond"
+
+        lighting:
+          primary_source: "Amber tavern light"
+          quality: "frozen moment"
+
+        palette:
+          dominant: ["pause amber", "silver attention"]
+
+        key_elements:
+          - "Fiddles lowered"
+          - "Attention redirecting"
+          - "Significant moment"
+
+        prompt: "Fantasy tavern musicians paused mid-song, moon-elf fiddlers with instruments lowered, attention turning toward doorway, significant news arriving, frozen moment in amber lamplight, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: THRESHOLD / ENTRANCE
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "threshold"
+    zone_name: "Entrance/Doorway"
+    zone_type: "threshold"
+
+    narrative_role: |
+      The doorway where cold rain-light meets warm amber interior—
+      where couriers burst in with news and newcomers take their
+      first breath of hearth-warm air.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Door between worlds"
+        - "Cold outside vs warm inside"
+        - "Rain/weather glimpsed beyond"
+        - "News-arrival point"
+      materials: "heavy door, threshold worn"
+      color_signature: "cold gray meeting warm amber"
+      light_character: "transition zone of temperatures"
+
+    default_prompt_elements:
+      atmosphere: "threshold, transition"
+      must_include:
+        - "doorway"
+        - "cold/warm contrast"
+        - "weather visible"
+        - "entry moment"
+      must_avoid:
+        - "interior only"
+        - "closed door"
+
+    images:
+      - image_type: "zone"
+        image_slug: "threshold-rain-warm"
+        description: "The threshold—cold rain-light meeting warm amber"
+        scene_mood: "kinetic"
+
+        composition:
+          foreground: "Open doorway, figure entering"
+          midground: "Threshold between worlds"
+          background: "Warm tavern interior beyond"
+
+        lighting:
+          primary_source: "Cold rain-light from outside"
+          secondary_source: "Warm amber from within"
+          quality: "stark contrast of temperatures"
+
+        palette:
+          dominant: ["rain gray", "amber warm"]
+          accent: ["wet cloak", "threshold wood"]
+
+        key_elements:
+          - "Two temperatures meeting"
+          - "Weather visible outside"
+          - "Warmth inviting within"
+          - "Arrival moment"
+
+        prompt: "Fantasy tavern threshold, door open with cold rain-light from street meeting warm amber interior, figure in wet cloak entering, stark contrast between weather and warmth, transition between worlds, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: EXTERIOR RAIN
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "exterior-rain"
+    zone_name: "Haven in the Harbor Night"
+    zone_type: "perspective"
+
+    narrative_role: |
+      The tavern seen from outside on a rainy night—warm light
+      spilling from windows, haven visible in harbor darkness,
+      the promise of warmth and stories within.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Tavern exterior at night"
+        - "Rain falling"
+        - "Warm light from windows"
+        - "Haven in darkness"
+      materials: "wet cobblestones, timber facade, lit windows"
+      color_signature: "cold rain against warm window glow"
+      light_character: "interior warmth spilling out"
+
+    default_prompt_elements:
+      atmosphere: "haven, refuge"
+      must_include:
+        - "tavern exterior"
+        - "rain"
+        - "warm windows"
+        - "harbor night context"
+      must_avoid:
+        - "interior view"
+        - "dry weather"
+        - "daytime"
+
+    images:
+      - image_type: "perspective"
+        image_slug: "exterior-haven-rain"
+        description: "The Salamander's Hearth from outside—haven in rain"
+        scene_mood: "intimate"
+
+        composition:
+          foreground: "Wet cobblestones, rain falling"
+          midground: "Tavern facade, warm lit windows"
+          background: "Harbor night darkness"
+
+        lighting:
+          primary_source: "Warm light from windows"
+          quality: "haven against cold"
+          color_temperature: "amber warmth in cold blue"
+
+        palette:
+          dominant: ["rain blue-gray", "wet stone"]
+          accent: ["window amber", "haven gold"]
+
+        key_elements:
+          - "Refuge visible"
+          - "Rain and cold"
+          - "Warm windows inviting"
+          - "Harbor night context"
+
+        prompt: "Fantasy tavern exterior at rainy night, warm amber light spilling from windows, wet cobblestones reflecting glow, haven visible in harbor darkness, refuge from cold, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: DEBATE / SKEPTIC'S TABLE
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "debate"
+    zone_name: "The Skeptic's Table"
+    zone_type: "commons"
+
+    narrative_role: |
+      Where Gillthorn the resident skeptic holds court—questioning
+      miracle narratives, voicing the counterpoint that makes belief
+      meaningful. Philosophical debate flourishes here.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Debate-configured seating"
+        - "Skeptic at center"
+        - "Animated discussion"
+        - "Intellectual engagement"
+      materials: "debate table, gesturing hands, intent faces"
+      color_signature: "amber on thoughtful faces"
+      light_character: "illuminating argument"
+
+    default_prompt_elements:
+      atmosphere: "intellectual, debate"
+      must_include:
+        - "animated discussion"
+        - "skeptical figure"
+        - "engaged listeners"
+        - "intellectual atmosphere"
+      must_avoid:
+        - "passive listening"
+        - "agreement only"
+
+    images:
+      - image_type: "zone"
+        image_slug: "skeptics-table-debate"
+        description: "The skeptic's table—Gillthorn questioning the narrative"
+        scene_mood: "intimate"
+
+        composition:
+          foreground: "Gesturing hands, tankards"
+          midground: "Debate circle, faces engaged"
+          background: "Common room beyond"
+
+        lighting:
+          primary_source: "Oil-lamp on table"
+          quality: "illuminating faces in debate"
+
+        palette:
+          dominant: ["debate amber", "intent brown"]
+          accent: ["gesture emphasis"]
+
+        key_elements:
+          - "Animated discussion"
+          - "Skeptical questioning"
+          - "Engaged listeners"
+          - "Intellectual atmosphere"
+
+        prompt: "Fantasy tavern debate scene, skeptical figure questioning narrative to engaged listeners, animated gestures, intent faces in amber lamplight, intellectual working-class discussion, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: TOAST
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "toast"
+    zone_name: "The Collective Toast"
+    zone_type: "heart"
+
+    narrative_role: |
+      The moment of unified action—when tankards rise not just at
+      one table but across the room, when the tavern speaks with
+      one voice to honor the fallen or celebrate the living.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Multiple tables raising tankards"
+        - "Unified gesture"
+        - "Fiddlers paused"
+        - "Collective voice"
+      materials: "raised pewter tankards, unified posture"
+      color_signature: "pewter catching amber light"
+      light_character: "frozen moment of unity"
+
+    default_prompt_elements:
+      atmosphere: "unified, reverent"
+      must_include:
+        - "multiple tables raising tankards"
+        - "unified gesture"
+        - "reverent moment"
+        - "collective action"
+      must_avoid:
+        - "single table only"
+        - "casual drinking"
+
+    images:
+      - image_type: "beat"
+        image_slug: "collective-toast-unity"
+        description: "The collective toast—tankards raised across the room"
+        scene_mood: "somber"
+
+        composition:
+          foreground: "Raised tankards, pewter catching light"
+          midground: "Multiple tables unified"
+          background: "Hearth behind, fiddlers paused"
+          focal_point: "The wave of raised tankards"
+
+        lighting:
+          primary_source: "Oil-lanterns and hearth"
+          quality: "catching pewter surfaces"
+
+        palette:
+          dominant: ["pewter gleam", "amber light"]
+          accent: ["unified gesture"]
+
+        key_elements:
+          - "Room-wide unity"
+          - "Pewter catching light"
+          - "Reverent moment"
+          - "Collective voice"
+
+        style_notes: "This is the signature moment—the room speaking as one. Every tankard should be raised."
+
+        prompt: "Fantasy tavern collective toast, multiple tables raising pewter tankards in unison, unified gesture across room, oil-lanterns and hearth casting amber light on pewter surfaces, fiddlers paused, reverent solemn moment, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: PRAYER
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "prayer"
+    zone_name: "Prayers for Fallen Souls"
+    zone_type: "shrine"
+
+    narrative_role: |
+      The moment of quiet prayer—when tankards are lowered and heads
+      bow, when working folk pause to honor those who didn't survive.
+      The reverent heart of the tavern made manifest.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Bowed heads"
+        - "Lowered tankards"
+        - "Quiet moment"
+        - "Prayer posture"
+      materials: "clasped hands, lowered eyes"
+      color_signature: "prayer shadow, humble posture"
+      light_character: "gentle light on bowed heads"
+
+    default_prompt_elements:
+      atmosphere: "prayerful, reverent"
+      must_include:
+        - "bowed heads"
+        - "quiet moment"
+        - "prayer posture"
+        - "reverent stillness"
+      must_avoid:
+        - "active conversation"
+        - "raised tankards"
+        - "loud atmosphere"
+
+    images:
+      - image_type: "mood"
+        image_slug: "prayers-for-fallen"
+        description: "Prayers for fallen souls—heads bowed in reverence"
+        scene_mood: "somber"
+
+        composition:
+          foreground: "Bowed heads, clasped hands"
+          midground: "Quiet table, lowered tankards"
+          background: "Room in stillness"
+
+        lighting:
+          primary_source: "Gentle amber"
+          quality: "soft on bowed heads"
+
+        palette:
+          dominant: ["prayer shadow", "humble amber"]
+          accent: ["reverent stillness"]
+
+        key_elements:
+          - "Heads bowed"
+          - "Quiet reverence"
+          - "Honoring the dead"
+          - "Stillness in warmth"
+
+        prompt: "Fantasy tavern prayer moment, working folk with bowed heads and clasped hands, tankards lowered, quiet reverence for fallen souls, gentle amber lamplight on humble postures, stillness in the warmth, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: NEWCOMER PERSPECTIVE
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "newcomer-perspective"
+    zone_name: "The Newcomer's First Breath"
+    zone_type: "perspective"
+
+    narrative_role: |
+      The tavern as seen by someone entering for the first time—
+      the sensory impact of warmth and amber after cold street,
+      the first breath of hearth-scented air.
+
+    zone_visual_anchor:
+      defining_features:
+        - "First impression view"
+        - "Sensory impact"
+        - "Warmth enveloping"
+        - "Room revealing itself"
+      materials: "first view elements"
+      color_signature: "warmth overwhelming cold"
+      light_character: "amber embracing newcomer"
+
+    default_prompt_elements:
+      atmosphere: "first impression, welcome"
+      must_include:
+        - "newcomer's viewpoint"
+        - "warmth impact"
+        - "room revealing"
+        - "sensory overwhelm"
+      must_avoid:
+        - "familiar view"
+        - "regular's perspective"
+
+    images:
+      - image_type: "perspective"
+        image_slug: "newcomer-first-view"
+        description: "First breath inside—warmth and amber overwhelming cold"
+        scene_mood: "intimate"
+
+        composition:
+          focal_point: "Room opening before newcomer"
+          framing: "threshold POV looking in"
+
+        lighting:
+          primary_source: "Full amber interior"
+          quality: "enveloping warmth"
+
+        palette:
+          dominant: ["embracing amber", "welcome warmth"]
+          accent: ["cold left behind"]
+
+        key_elements:
+          - "First impression"
+          - "Sensory impact"
+          - "Warmth overwhelming"
+          - "Welcome visible"
+
+        prompt: "Fantasy tavern first impression view, entering from cold into amber warmth, room revealing itself with hearth and lantern-lit beams, sensory impact of welcome, newcomer's perspective, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: WINDOW SEAT
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "salamander-hearth-window"
+    zone_name: "The Window Seat"
+    zone_type: "liminal"
+
+    narrative_role: |
+      The window seat where inside and outside meet—watching rain
+      streak glass while wrapped in warmth, the liminal position
+      between tavern world and harbor night.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Window seat position"
+        - "Rain-streaked glass"
+        - "Liminal position"
+        - "Inside/outside view"
+      materials: "window glass, rain streaks, seat cushion"
+      color_signature: "amber inside, rain blue outside"
+      light_character: "warm interior reflected in glass"
+
+    default_prompt_elements:
+      atmosphere: "contemplative, liminal"
+      must_include:
+        - "window seat"
+        - "rain visible"
+        - "inside warmth"
+        - "contemplative mood"
+      must_avoid:
+        - "center of room"
+        - "no window"
+
+    images:
+      - image_type: "zone"
+        image_slug: "window-seat-rain"
+        description: "The window seat—watching rain while wrapped in warmth"
+        scene_mood: "intimate"
+
+        composition:
+          foreground: "Window seat, tankard"
+          midground: "Rain-streaked glass"
+          background: "Harbor night visible beyond"
+
+        lighting:
+          primary_source: "Interior amber"
+          quality: "reflected in glass"
+
+        palette:
+          dominant: ["rain streak blue", "amber reflection"]
+          accent: ["harbor night beyond"]
+
+        key_elements:
+          - "Liminal position"
+          - "Rain visible"
+          - "Warmth inside"
+          - "Contemplative mood"
+
+        prompt: "Fantasy tavern window seat, patron watching rain streak glass while wrapped in amber warmth, harbor night visible beyond, liminal position between inside and out, contemplative atmosphere, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: OLD REGULAR
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "salamander-hearth-regular"
+    zone_name: "The Old Regular"
+    zone_type: "detail"
+
+    narrative_role: |
+      Portrait of a regular patron—weathered face in amber light,
+      tankard worn smooth by familiar grip, the embodiment of
+      working-class tavern culture.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Weathered regular"
+        - "Familiar position"
+        - "Worn tankard"
+        - "Part of the furniture"
+      materials: "weathered face, worn pewter"
+      color_signature: "amber on experienced lines"
+      light_character: "honest light on honest face"
+
+    default_prompt_elements:
+      atmosphere: "familiar, belonging"
+      must_include:
+        - "weathered face"
+        - "familiar comfort"
+        - "regular's position"
+      must_avoid:
+        - "newcomer"
+        - "unfamiliarity"
+
+    images:
+      - image_type: "detail"
+        image_slug: "old-regular-portrait"
+        description: "An old regular—part of the Salamander's Hearth"
+        scene_mood: "intimate"
+
+        composition:
+          focal_point: "Weathered face in amber light"
+          framing: "close portrait in tavern context"
+
+        lighting:
+          primary_source: "Oil-lamp amber"
+          quality: "honest on honest face"
+
+        palette:
+          dominant: ["weathered brown", "amber light"]
+          accent: ["pewter gleam"]
+
+        key_elements:
+          - "Experience in face"
+          - "Comfortable belonging"
+          - "Worn tankard"
+          - "Part of the place"
+
+        prompt: "Fantasy portrait of old tavern regular, weathered face in amber lamplight, worn pewter tankard in familiar grip, comfortable belonging in working-class establishment, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: HEAT RUNES
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "salamander-hearth-runes"
+    zone_name: "The Heat Runes"
+    zone_type: "detail"
+
+    narrative_role: |
+      A detail of the hearth's magic—dwarven heat runes carved into
+      the hearthstone that keep the fire burning steady and warm,
+      the practical magic of working-class Waterdeep.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Rune carvings in hearthstone"
+        - "Faint magical glow"
+        - "Dwarven craftsmanship"
+        - "Practical magic"
+      materials: "carved stone, faint rune-light"
+      color_signature: "rune-glow in hearthstone"
+      light_character: "faint magical warmth"
+
+    default_prompt_elements:
+      atmosphere: "magical practical"
+      must_include:
+        - "rune carvings"
+        - "hearthstone"
+        - "faint glow"
+        - "dwarven style"
+      must_avoid:
+        - "dramatic magic"
+        - "obvious spell effects"
+
+    images:
+      - image_type: "detail"
+        image_slug: "heat-runes-glow"
+        description: "The heat runes—dwarven magic keeping the hearth warm"
+        scene_mood: "ethereal"
+
+        composition:
+          focal_point: "Runes carved in hearthstone"
+          framing: "close detail of hearth base"
+
+        lighting:
+          primary_source: "Faint rune glow"
+          secondary_source: "Fire above"
+          quality: "subtle magical"
+
+        palette:
+          dominant: ["hearthstone gray", "rune-glow orange"]
+          accent: ["fire warmth above"]
+
+        key_elements:
+          - "Carved runes visible"
+          - "Faint magical glow"
+          - "Practical enchantment"
+          - "Dwarven craft"
+
+        prompt: "Fantasy detail of dwarven heat runes carved into tavern hearthstone, faint magical glow from ancient carvings, practical enchantment keeping fire steady, subtle magic in working-class establishment, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: IRON SALAMANDER SIGN
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "salamander-hearth-sign"
+    zone_name: "The Iron Salamander"
+    zone_type: "detail"
+
+    narrative_role: |
+      The tavern's namesake sign—an iron salamander mounted above
+      the hearth or on the exterior, the symbol that identifies
+      this establishment.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Iron salamander"
+        - "Mounted position"
+        - "Establishment identity"
+        - "Craft workmanship"
+      materials: "wrought iron, mounting hardware"
+      color_signature: "iron black against amber"
+      light_character: "fire catching iron curves"
+
+    default_prompt_elements:
+      atmosphere: "identifying symbol"
+      must_include:
+        - "iron salamander"
+        - "mounted position"
+        - "crafted detail"
+      must_avoid:
+        - "missing or damaged"
+
+    images:
+      - image_type: "detail"
+        image_slug: "iron-salamander-sign"
+        description: "The iron salamander—namesake and identity"
+        scene_mood: "intimate"
+
+        composition:
+          focal_point: "Iron salamander sign"
+          framing: "detail of mounted symbol"
+
+        lighting:
+          primary_source: "Fire or lamp catching iron"
+          quality: "warm on dark metal"
+
+        palette:
+          dominant: ["iron black", "fire-caught gleam"]
+          accent: ["amber light"]
+
+        key_elements:
+          - "Iron salamander"
+          - "Craft detail"
+          - "Establishment identity"
+          - "Warmth-catching"
+
+        prompt: "Fantasy wrought iron salamander sign, crafted detail catching warm firelight, tavern identity symbol mounted above hearth, ironwork against amber glow, oil painting style, fantasy illustration"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# BEAT IMAGES
+# Key narrative moments from ch2.5: Echoes in the City
+# ═══════════════════════════════════════════════════════════════════════════════
+
+beat_images:
+  # ─────────────────────────────────────────────────────────────────────────────
+  # BEAT: TANKARDS TO THE ASH-MARKED
+  # ─────────────────────────────────────────────────────────────────────────────
+  - beat_slug: "tankards-to-ash-marked"
+    beat_title: "Tankards to the Ash-Marked"
+    chapter_ref: "ch2.5"
+    zone_ref: "toast"
+
+    narrative_context: |
+      "Mugs lifted throughout the tavern—not just at their table, but
+      across the room. 'To Commander Thornwake,' someone called. 'The
+      Ash-Marked,' another added... 'To the fallen,' the patrol echoed
+      quietly."
+
+    emotional_beat: "Legend crystallizing—ordinary people finding hope in extraordinary survival"
+
+    image_spec:
+      scene_mood: "somber"
+      image_type: "hero"
+
+      composition:
+        foreground: "Raised tankards, pewter catching amber"
+        midground: "Multiple tables unified in toast"
+        background: "Hearth behind, fiddlers paused"
+        focal_point: "The wave of raised tankards"
+
+      lighting:
+        primary_source: "Oil-lanterns and hearth"
+        quality: "catching pewter surfaces"
+        color_temperature: "deep amber"
+
+      palette:
+        dominant: ["pewter gleam", "amber light"]
+        accent: ["unified gesture", "solemn faces"]
+
+      key_elements:
+        - "Room-wide unity"
+        - "Pewter catching light"
+        - "Reverent moment"
+        - "Many tables as one"
+
+      prompt: "Fantasy tavern room-wide toast, multiple tables raising pewter tankards in unison to honor the Ash-Marked, oil-lanterns and hearth casting amber light on pewter surfaces, fiddlers paused mid-song, solemn reverent moment, legend crystallizing, oil painting style, fantasy illustration"
+
+      source_quote: "Mugs lifted throughout the tavern—not just at their table, but across the room."
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # BEAT: THE COURIER'S NEWS
+  # ─────────────────────────────────────────────────────────────────────────────
+  - beat_slug: "couriers-news"
+    beat_title: "The Courier's Report"
+    chapter_ref: "ch2.5"
+    zone_ref: "threshold"
+
+    narrative_context: |
+      "The tavern door burst open, bringing a gust of rain-scented air
+      and a young courier shaking water from his cloak. 'She's awake,'
+      he announced, breathless. 'The Ash-Marked. They say her eyes—'"
+
+    emotional_beat: "Legend spreading—news arriving like divine messenger"
+
+    image_spec:
+      scene_mood: "kinetic"
+      image_type: "beat"
+
+      composition:
+        foreground: "Young courier in doorway, wet cloak"
+        midground: "All faces turning toward news"
+        background: "Tavern attention redirecting"
+
+      lighting:
+        primary_source: "Cold rain-light from door"
+        secondary_source: "Warm amber from within"
+        quality: "stark temperature contrast"
+
+      palette:
+        dominant: ["rain gray", "amber warm"]
+        accent: ["wet cloak", "urgent gesture"]
+
+      key_elements:
+        - "Door flung open"
+        - "Wet courier"
+        - "All faces turning"
+        - "News arriving"
+
+      prompt: "Fantasy tavern door burst open, young courier shaking rain from cloak, cold rain-light meeting warm amber interior, all faces turning toward news of the Ash-Marked, threshold between worlds, urgent message arriving, oil painting style, fantasy illustration"
+
+      source_quote: "'She's awake,' he announced. 'The Ash-Marked.'"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # BEAT: PRAYERS FOR FALLEN
+  # ─────────────────────────────────────────────────────────────────────────────
+  - beat_slug: "prayers-fallen-souls"
+    beat_title: "Prayers for Fallen Souls"
+    chapter_ref: "ch2.5"
+    zone_ref: "prayer"
+
+    narrative_context: |
+      "'To the fallen,' the patrol echoed quietly... under every jest
+      and wild theory pulsed a current of genuine gratitude."
+
+    emotional_beat: "Reverence in working-class space—honoring those who didn't return"
+
+    image_spec:
+      scene_mood: "somber"
+      image_type: "mood"
+
+      composition:
+        foreground: "Bowed heads, lowered tankards"
+        midground: "Quiet table in prayer"
+        background: "Room in stillness"
+
+      lighting:
+        primary_source: "Gentle amber"
+        quality: "soft on bowed heads"
+
+      palette:
+        dominant: ["prayer shadow", "humble amber"]
+        accent: ["reverent stillness"]
+
+      key_elements:
+        - "Heads bowed"
+        - "Tankards lowered"
+        - "Quiet reverence"
+        - "Honoring the dead"
+
+      prompt: "Fantasy tavern prayer moment, working folk with bowed heads and lowered tankards, honoring fallen souls, quiet reverence in amber lamplight, stillness in the warmth, genuine gratitude visible, oil painting style, fantasy illustration"
+
+      source_quote: "'To the fallen,' the patrol echoed quietly."
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# REFERENCES
+# ═══════════════════════════════════════════════════════════════════════════════
+
+references:
+  chapter_visual_plans:
+    - path: "chapters/ch2.5-echoes-in-the-city/chapter.visual-plan.yaml"
+      context: "Full visual plan for legend-making vignettes"
+
+  related_locations:
+    - slug: "dock-ward"
+      context: "Parent district—harbor neighborhood"
+    - slug: "merchants-rest-tavern"
+      context: "Similar working-class establishment"
+
+  thematic_connections:
+    - "Legend-making in real time"
+    - "Working-class reverence"
+    - "Stories becoming truth through retelling"
+    - "Warmth as spiritual as well as physical"

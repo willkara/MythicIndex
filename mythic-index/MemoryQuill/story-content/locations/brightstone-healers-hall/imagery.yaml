@@ -1,0 +1,2213 @@
+metadata:
+  entity_type: "location-imagery"
+  slug: "brightstone-healers-hall"
+  name: "Brightstone Healers' Hall"
+  location_type: "building"
+  narrative_soul: |
+    Brightstone Healers' Hall believes in choices. It offers restoration without
+    demanding erasure, healing without forgetting. Within its pale walls, patients
+    decide what they keep and what they let go. The Hall asks: what do your scars
+    mean? Are they wounds to hide or testimonies to carry? Here, Veyra chose to
+    bear witness through her body, and the Company learned that survival is not
+    the same as wholeness.
+  one_line_essence: "Where healing asks before it acts"
+  generation_defaults:
+    provider: "openai"
+    model: "gpt-image-1"
+    quality: "high"
+
+location_visual_anchor:
+  signature_elements:
+    - "Pale limestone ashlar with smooth limewash"
+    - "Tall mullioned windows with gauze curtains"
+    - "Dwarven rune-lamp grids for shadowless light"
+    - "Bronze handrails and copper instrument baths"
+    - "Slate-flagged floors with scrub drains"
+    - "Sterilization suite with copper boilers"
+    - "Privacy curtains on brass tracks"
+    - "Thyme-scented antiseptic atmosphere"
+    - "Recovery ward with warmer-spectrum lamps"
+    - "Polished stone worktops"
+    - "Linen rooms with sorted grades"
+    - "Apothecary with herb racks and alembics"
+    - "Isolation stack with segregated flue"
+    - "Quiet day room with reading corner"
+  materials:
+    masonry: "Pale limestone/white granite ashlar on rubble-core backing; smooth limewash in clinical spaces"
+    timber: "Oak joists and stair carriages; sealed plank floors beneath scrubbed slate"
+    roofing: "Leaded valleys; slate courses with snow guards; clay and copper vent cowls"
+    metalwork: "Bronze handrails; copper boilers and instrument baths; dwarven rune-lamp rails"
+    finishing: "Polished stone worktops; oiled oak in admin areas; washable gauze screens"
+  color_anchors:
+    stone: "Bone-white limewash; pale limestone ashlar; slate grey floors"
+    wood: "Oiled oak amber; sealed plank neutral"
+    metal: "Bronze rail warm; copper boiler red-brown; brass track gold"
+    fabric: "Linen cream; gauze white; privacy curtain soft earth tones"
+    light: "Warm amber rune-lamps in wards; cool silver surgical light; natural daylight through mullions"
+  characteristic_light:
+    morning: "Sun shafts through mullioned windows; linens aired; teaching rounds begin"
+    midday: "Full clinical tempo; rune-lamps dimmed where daylight suffices"
+    evening: "Wards quiet; lamps warm; records compiled"
+    night: "Skeleton staff; low-level lamp trails; isolation checks"
+    overcast: "Borrowed light through transoms; rune-lamps compensate"
+
+overview:
+  slug: "brightstone-healers-hall-overview"
+  title: "Brightstone Healers' Hall"
+  image_type: "establishing"
+  category: "exterior"
+
+  scene_mood: "reverent"
+  mood_rationale: |
+    The establishing shot captures the Hall as a place of professional sanctuary—
+    clean, ordered, welcoming yet serious. The atmosphere is one of competence
+    and care, not sterile coldness.
+
+  visual_description: |
+    Brightstone Healers' Hall rises from a Trades Ward street in Waterdeep, its
+    pale limestone facade catching the morning light. Tall mullioned windows march
+    across three floors, their gauze curtains softening the interior glow of
+    rune-lamps. The main entrance sits beneath a modest stone portico, benches
+    flanking for waiting families. A discrete side door handles stretcher traffic.
+    Vent cowls rise from the slate roof, their copper caps catching sun. The
+    street is busy with normal city traffic, but a clear zone around the entrance
+    suggests respect for the Hall's purpose.
+
+  composition_notes: |
+    Wide shot from across the street, showing the full facade. The pale stone
+    contrasts with darker neighboring buildings. The mullioned windows create
+    strong vertical rhythm. Morning light emphasizes the clean, welcoming
+    atmosphere.
+
+  narrative_significance: |
+    Where Veyra recovered from Undershade Canyon, where she chose to keep her
+    scars, where the Company's philosophy of honoring trauma rather than erasing
+    it took root. The Hall represents healing that asks permission first.
+
+  symbolic_elements:
+    - "Pale stone (purity, clean slate offered but not demanded)"
+    - "Gauze curtains (privacy respected)"
+    - "Vent cowls (the institution breathing, alive)"
+    - "Side door (discrete crisis handled)"
+
+  time_of_day: "morning"
+  weather: "fair, clear"
+  season: "spring"
+
+  required_elements:
+    - "Pale limestone facade with string courses"
+    - "Tall mullioned windows with gauze curtains"
+    - "Stone portico at main entrance"
+    - "Waiting benches beside entrance"
+    - "Discrete side door for emergencies"
+    - "Slate roof with copper vent cowls"
+    - "Street traffic suggesting urban setting"
+    - "Rune-lamp glow visible through windows"
+
+  visible_beyond: "Trades Ward street; neighboring buildings; distant city spires"
+  approach_from: "Main carriage street; side lane for emergencies; rear mews for service"
+
+  lighting:
+    primary_source: "morning sun"
+    quality: "clean, clear"
+    direction: "from east, front-lighting facade"
+    color_temperature: "warm morning gold on pale stone"
+    shadow_depth: "moderate, crisp"
+    atmospheric: "urban air, slight haze"
+
+  palette:
+    dominant:
+      - "pale limestone"
+      - "morning gold light"
+      - "slate grey roof"
+    accent:
+      - "copper cowl warm"
+      - "gauze curtain cream"
+      - "bronze door fittings"
+    avoid:
+      - "dark threatening tones"
+      - "abandoned appearance"
+      - "modern materials"
+
+  aspect_ratio: "16:9"
+  orientation: "landscape"
+  size: "1792x1024"
+
+  prompt_used: |
+    Oil painting, matte finish, visible brushwork. Urban medical hall in a fantasy
+    city. Pale limestone facade with smooth ashlar and string courses. Three floors
+    of tall mullioned windows with gauze curtains, rune-lamp glow visible within.
+    Stone portico at main entrance with waiting benches. Discrete side door for
+    stretcher traffic. Slate roof with copper vent cowls catching morning sun.
+    Busy street with pedestrians and carts maintaining respectful distance. Morning
+    light, clean atmosphere. Fantasy medieval medical institution. Competent and
+    welcoming. No people in immediate foreground.
+
+  negative_prompt: |
+    text, watermark, signature, artist name, cartoon, anime, 3D render, CGI, neon,
+    modern, photorealistic, contemporary hospital, abandoned, threatening, dark
+    atmosphere, sterile cold feeling
+
+  references:
+    - source: "locations/brightstone-healers-hall/overview.md"
+      anchor: "pale smooth stone, mullioned windows, white gauze, rune-lamp light"
+    - source: "locations/brightstone-healers-hall/description.md"
+      anchor: "urban medical hall set within a busy Trades Ward artery"
+    - source: "ch02-the-lantern-ward/chapter.visual-plan.yaml"
+      anchor: "clinical intimacy"
+
+zones:
+  - name: "Cellar Infrastructure"
+    slug: "brightstone-healers-hall-cellar-infrastructure"
+    title: "Cellar Infrastructure"
+    image_type: "zone"
+    zone_type: "works"
+    category: "interior"
+
+    scene_mood: "clandestine"
+    mood_rationale: |
+      The cellar is the hidden infrastructure that makes healing possible—
+      boilers, cisterns, herb stills, waste staging. Essential and unseen
+      by patients, the working organs of the institution.
+
+    visual_description: |
+      The cellar of Brightstone Healers' Hall, low-ceilinged and functional.
+      Copper boilers on raised plinths provide hot water and sterilization steam,
+      their safety overflows running to floor trenches. Covered stone cisterns
+      hold water reserves, fed from roof leaders. Small copper alembics distill
+      herbal preparations, their thyme and cinnamon-copper scent filling the
+      air. Sealed tubs stage infectious waste for night-soil removal. Charcoal
+      and lime barrels line the walls. A hand-pump stand provides emergency water.
+
+    composition_notes: |
+      Medium shot showing the working cellar. Boilers as focal point, steam
+      rising. The functional arrangement of medical infrastructure visible.
+      Low ceiling creating sense of hidden utility.
+
+    narrative_significance: |
+      The invisible labor that enables healing—the boiled water, the sterilized
+      instruments, the disposed waste. Without this cellar, the clinical spaces
+      above cannot function.
+
+    symbolic_elements:
+      - "Boilers (heat as purification)"
+      - "Cisterns (reserves for crisis)"
+      - "Alembics (medicine distilled)"
+      - "Sealed waste (danger contained)"
+
+    location_within: "Below ground level"
+    time_of_day: "any, artificially lit"
+    weather: "underground, constant"
+
+    required_elements:
+      - "Copper boilers on raised plinths"
+      - "Covered stone cisterns"
+      - "Copper alembics for distillation"
+      - "Sealed waste tubs"
+      - "Charcoal and lime barrels"
+      - "Hand-pump stand"
+      - "Floor trenches for overflow"
+      - "Low stone ceiling"
+
+    lighting:
+      primary_source: "oil lamps and boiler glow"
+      quality: "warm, functional"
+      direction: "scattered sources"
+      color_temperature: "warm copper-amber"
+      shadow_depth: "moderate"
+      atmospheric: "steam, thyme-copper scent"
+
+    palette:
+      dominant:
+        - "copper boiler red-brown"
+        - "stone grey"
+        - "shadow dark"
+      accent:
+        - "brass fittings"
+        - "lime white"
+        - "charcoal black"
+      avoid:
+        - "bright clinical light"
+        - "patient-facing appearance"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Medical facility cellar,
+      low stone ceiling. Copper boilers on raised plinths with steam rising.
+      Covered stone cisterns for water. Small copper alembics for herb distillation.
+      Sealed tubs for waste staging. Charcoal and lime barrels along walls.
+      Hand-pump stand. Floor trenches for overflow. Warm lamp light and boiler
+      glow. Fantasy medieval medical infrastructure. The working organs of a
+      healing institution. No people.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary plumbing, bright clinical light, patient areas
+
+    references:
+      - source: "locations/brightstone-healers-hall/description.md"
+        anchor: "Compact coal/wood copper kettles for sterilization and hot water"
+      - source: "locations/brightstone-healers-hall/description.md"
+        anchor: "coppery tang from instrument baths (the 'cinnamon mixed with copper' note)"
+
+  - name: "The Choice Between Erasure and Integration"
+    slug: "brightstone-healers-hall-conversation-beat"
+    title: "The Choice"
+    image_type: "beat"
+    category: "interior"
+
+    source_chapter: "ch02-the-lantern-ward"
+    source_scene: "scn-02-02"
+    what_happens: |
+      Veyra's hand shoots out to clamp the apprentice's wrist, refusing the
+      restoration essence that would erase her scars. She chooses to keep her
+      scars as testimonies—"Every mark is a memory. You want to erase them?"
+
+    zone: "recovery-ward"
+
+    depicts_characters:
+      - slug: "veyra-thornwake"
+        role: "Grasping apprentice's wrist, refusing the cure"
+      - slug: "journey-healer-loran"
+        role: "Holding jade phial, frozen by her grip"
+      - slug: "dokra-ironvein"
+        role: "Watching, neither interfering"
+
+    character_states:
+      veyra-thornwake: "Fierce determination, protective of her scars"
+      journey-healer-loran: "Shock, uncertainty"
+      dokra-ironvein: "Calm observation, respect forming"
+
+    character_sources:
+      - slug: "veyra-thornwake"
+        file: "characters/veyra-thornwake/profile.md"
+        anchor: "burn scar on left face"
+
+    character_portrait_refs:
+      - slug: "veyra-thornwake"
+        portrait: "characters/veyra-thornwake/images/portrait.png"
+
+    scene_mood: "intimate"
+    mood_rationale: |
+      This is the defining character moment—Veyra choosing to bear witness through
+      her body, refusing erasure. The intimacy of medical touch becomes philosophical
+      confrontation.
+
+    visual_description: |
+      In a recovery ward, Veyra's burned hand grips the apprentice healer's wrist
+      with surprising strength. Between them, the jade phial of restoration essence
+      shimmers with possibility. Veyra's ruined face is set with fierce determination,
+      her scars livid in the rune-lamp light. The apprentice Loran is frozen in shock.
+      Beyond them, Dokra Ironvein watches—not interfering, recognizing the choice
+      being made. The clinical setting makes the moment more intense, not less.
+
+    composition_notes: |
+      Close-medium shot focusing on the hands and phial as center point. Veyra's
+      scarred grip. Loran's hesitation. Dokra as witness in background. The jade
+      shimmer catching attention.
+
+    narrative_significance: |
+      The moment that defined Veyra's relationship with her trauma—choosing to
+      carry it rather than erase it. The philosophical foundation of the Company.
+
+    symbolic_elements:
+      - "Grip on wrist (refusal of erasure)"
+      - "Jade phial (temptation of forgetting)"
+      - "Scars visible (testimony chosen)"
+      - "Dokra watching (wisdom witnessing)"
+
+    location_within: "Recovery ward"
+    time_of_day: "morning"
+    weather: "indoor, controlled"
+
+    required_elements:
+      - "Veyra's burned hand gripping wrist"
+      - "Jade restoration phial between them"
+      - "Veyra's scarred face, determined"
+      - "Apprentice in healer's garb, frozen"
+      - "Dokra watching in background"
+      - "Recovery ward setting"
+      - "Rune-lamp light"
+
+    lighting:
+      primary_source: "rune-lamps and window light"
+      quality: "clinical but warm"
+      direction: "overhead and from window"
+      color_temperature: "warm clinical"
+      shadow_depth: "soft"
+      atmospheric: "jade shimmer from phial"
+
+    palette:
+      dominant:
+        - "jade phial green shimmer"
+        - "scar tissue pink-red"
+        - "linen white"
+      accent:
+        - "rune-lamp amber"
+        - "healer garb neutral"
+      avoid:
+        - "harsh sterile light"
+        - "cold tones"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Medical drama moment in
+      fantasy hospital recovery ward. Half-elf woman with severe burn scars on
+      face, fierce expression, her damaged hand gripping a young male healer's
+      wrist. Shimmering jade phial between them, restoration essence glowing.
+      Dwarven female healer watching in background, not interfering. Recovery
+      ward setting, rune-lamp light. The refusal of a cure, the choice to keep
+      scars. Intense intimate moment. Clinical setting, emotional confrontation.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary hospital, wrong scar placement, accepting
+      the cure
+
+    references:
+      - source: "ch02-the-lantern-ward/chapter.visual-plan.yaml"
+        scene_id: "scn-02-02"
+        anchor: "Her hand shot out, clamping his wrist with surprising strength. 'No.'"
+      - source: "ch02-the-lantern-ward/chapter.visual-plan.yaml"
+        anchor: "'Every mark is a memory. You want to erase them?'"
+
+  - name: "Day Room"
+    slug: "brightstone-healers-hall-day-room"
+    title: "Day Room"
+    image_type: "zone"
+    zone_type: "commons"
+    category: "interior"
+
+    scene_mood: "pastoral"
+    mood_rationale: |
+      The day room is a place of gentle recovery—where ambulatory patients
+      can sit in light, read, look out the window. A space of healing that
+      respects the need for quiet normalcy.
+
+    visual_description: |
+      A quiet room on an upper floor, mullioned windows looking out over street
+      trees and sky. Low bookshelves line one wall, holding medical texts and
+      lighter reading. Comfortable chairs are arranged for conversation or solitary
+      contemplation. Rune-lamps are tuned to warmer spectrum, creating a domestic
+      rather than clinical atmosphere. A low conversation policy keeps the space
+      peaceful. A tea service sits on a sideboard. The view through the windows
+      offers connection to the living city.
+
+    composition_notes: |
+      Medium shot showing the room's character—the windows with their view,
+      the comfortable furniture, the books. The sense of a place for healing
+      through normalcy.
+
+    narrative_significance: |
+      Where patients return to themselves, testing mobility and connection
+      before returning to the outside world. The bridge between sickness and
+      health.
+
+    symbolic_elements:
+      - "Windows to outside (the world waiting)"
+      - "Comfortable chairs (rest without bed)"
+      - "Books (mind recovering with body)"
+      - "Tea service (civilized rituals)"
+
+    location_within: "Upper floor"
+    time_of_day: "afternoon"
+    weather: "fair, light through windows"
+
+    required_elements:
+      - "Mullioned windows with view"
+      - "Comfortable seating"
+      - "Low bookshelves"
+      - "Warmer-spectrum rune-lamps"
+      - "Tea service on sideboard"
+      - "Peaceful atmosphere"
+
+    lighting:
+      primary_source: "window daylight"
+      quality: "soft, restful"
+      direction: "from windows"
+      color_temperature: "warm natural"
+      shadow_depth: "soft"
+      atmospheric: "peaceful, domestic"
+
+    palette:
+      dominant:
+        - "window light"
+        - "wood furniture warm"
+        - "book leather browns"
+      accent:
+        - "rune-lamp amber"
+        - "tea service ceramic"
+      avoid:
+        - "clinical sterility"
+        - "harsh lighting"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Quiet day room in a fantasy
+      medical hall. Mullioned windows with view of street trees and sky. Comfortable
+      armchairs arranged for reading or conversation. Low bookshelves with medical
+      texts and lighter reading. Warm-spectrum rune-lamps creating domestic glow.
+      Tea service on sideboard. Peaceful, restful atmosphere. The bridge between
+      sickness and recovery. Fantasy medieval. No people, but sense of recent
+      use.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, clinical sterility, hospital bed, medical equipment
+
+    references:
+      - source: "locations/brightstone-healers-hall/description.md"
+        anchor: "Day Room: Quiet reading corner lit by rune-lamps; low conversation policy; view across street trees/sky"
+      - source: "locations/brightstone-healers-hall/inhabitants.md"
+        anchor: "low-stimulation recovery and light mobility"
+
+  - name: "The Window to Return"
+    slug: "brightstone-healers-hall-dayroom-perspective"
+    title: "The Window to Return"
+    image_type: "perspective"
+    category: "interior"
+
+    character: "veyra-thornwake"
+    zone: "day-room"
+    perspective_description: |
+      Veyra at the day room window, looking out at the city she will return to.
+      Her scars visible in the window's reflection. The world beyond the glass
+      waiting for her decision about what she will become.
+
+    character_signature_element: "reflection of scars in window glass, posture of someone deciding"
+
+    depicts_characters:
+      - slug: "veyra-thornwake"
+        role: "Standing at window, looking out, reflecting"
+
+    character_states:
+      veyra-thornwake: "Contemplative, deciding, scars visible in reflection"
+
+    character_sources:
+      - slug: "veyra-thornwake"
+        file: "characters/veyra-thornwake/profile.md"
+        anchor: "burn scar on left face"
+
+    character_portrait_refs:
+      - slug: "veyra-thornwake"
+        portrait: "characters/veyra-thornwake/images/portrait.png"
+
+    scene_mood: "intimate"
+    mood_rationale: |
+      The moment of decision—Veyra seeing herself reflected against the city
+      she will re-enter. The scars she chose to keep now part of her public
+      face.
+
+    visual_description: |
+      Veyra stands at the day room window, her profile visible against the
+      light. The glass reflects her scarred face faintly—the burn marks she
+      chose to keep, the testimony she carries. Beyond the window, Waterdeep
+      lives its normal life: people in the street, carts passing, the city
+      that will see her as she now is. Her posture is not defeated but
+      considering—someone making a choice about who to become.
+
+    composition_notes: |
+      Shot from behind/beside Veyra, showing both her and the window view.
+      Her reflection visible in the glass. The city beyond as context for
+      her return.
+
+    narrative_significance: |
+      The threshold before returning to the world. Veyra seeing herself
+      through the lens of how others will see her, accepting that reality.
+
+    symbolic_elements:
+      - "Window reflection (self as others will see)"
+      - "City beyond (the world waiting)"
+      - "Standing posture (strength returning)"
+      - "Scars visible (choice made, carried)"
+
+    location_within: "Day room, at window"
+    time_of_day: "afternoon"
+    weather: "fair, city visible"
+
+    required_elements:
+      - "Veyra at window, profile view"
+      - "Scars visible in window reflection"
+      - "City street visible beyond"
+      - "Day room setting"
+      - "Contemplative posture"
+
+    lighting:
+      primary_source: "window daylight"
+      quality: "soft, revealing"
+      direction: "from window"
+      color_temperature: "warm natural"
+      shadow_depth: "soft"
+      atmospheric: "contemplative"
+
+    palette:
+      dominant:
+        - "window light"
+        - "city earth tones"
+        - "reflection subtle"
+      accent:
+        - "scar tissue pink"
+        - "mohawk dark"
+      avoid:
+        - "harsh contrast"
+        - "clinical setting"
+
+    aspect_ratio: "9:16"
+    orientation: "portrait"
+    size: "1024x1792"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Portrait orientation. Half-elf
+      woman with severe burn scars on left face, dark mohawk with braids, standing
+      at a mullioned window. Her profile visible against the light, her scarred
+      face faintly reflected in the glass. Fantasy city street visible beyond—
+      people, carts, normal life. Day room setting. Contemplative posture, someone
+      deciding who to become. The scars she chose to keep now part of her public
+      face.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, wrong scar placement, defeated posture, crying
+
+    references:
+      - source: "ch02-the-lantern-ward/chapter.visual-plan.yaml"
+        anchor: "Healing as transformation rather than restoration"
+      - source: "locations/brightstone-healers-hall/description.md"
+        anchor: "Day Room: view across street trees/sky"
+
+  - name: "Dispensary"
+    slug: "brightstone-healers-hall-dispensary"
+    title: "The Dispensary"
+    image_type: "zone"
+    zone_type: "works"
+    category: "interior"
+
+    scene_mood: "quotidian"
+    mood_rationale: |
+      The dispensary is the working heart of medicinal preparation—where
+      ingredients become treatments, where Dokra's practical wisdom takes
+      physical form.
+
+    visual_description: |
+      The apothecary and stillroom of Brightstone Healers' Hall. Stone mortar
+      benches hold grinding bowls and measures. Herb racks line the walls,
+      each labeled with careful script. Small copper alembics distill essences,
+      their sweet-bitter scent filling the air. A ledger desk holds dosage
+      records and patient notes. Locked cabinets contain the more potent
+      preparations. The light is practical, from high windows and rune-lamps,
+      suited to precise work.
+
+    composition_notes: |
+      Medium shot showing the working space—mortar benches, herb racks,
+      alembics in process. The precision and order of medical preparation
+      visible in the arrangement.
+
+    narrative_significance: |
+      Where the medicines that saved Veyra were prepared, where Dokra's
+      silverleaf poultice was compounded. The craft of healing made tangible.
+
+    symbolic_elements:
+      - "Herb racks (nature organized for healing)"
+      - "Mortar and pestle (transformation through work)"
+      - "Ledger desk (care documented)"
+      - "Locked cabinets (power controlled)"
+
+    location_within: "Mezzanine level"
+    time_of_day: "midday"
+    weather: "indoor, controlled"
+
+    required_elements:
+      - "Stone mortar benches"
+      - "Herb racks with labels"
+      - "Copper alembics"
+      - "Ledger desk"
+      - "Locked cabinets"
+      - "Practical lighting"
+      - "Grinding tools and measures"
+
+    lighting:
+      primary_source: "high windows and rune-lamps"
+      quality: "practical, clear"
+      direction: "overhead and from windows"
+      color_temperature: "neutral to warm"
+      shadow_depth: "minimal for precision work"
+      atmospheric: "herb-scented, working"
+
+    palette:
+      dominant:
+        - "herb greens"
+        - "stone grey"
+        - "copper warm"
+      accent:
+        - "label parchment"
+        - "distillate amber"
+      avoid:
+        - "harsh clinical light"
+        - "sterile white"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Medieval fantasy apothecary
+      dispensary. Stone mortar benches with grinding bowls. Herb racks lining
+      walls, each labeled. Small copper alembics distilling essences. Ledger desk
+      with dosage records. Locked wooden cabinets. Practical light from high
+      windows and rune-lamps. Herb-scented working atmosphere. The craft of
+      healing preparation. Fantasy medical institution. No people.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary pharmacy, sterile white, plastic containers
+
+    references:
+      - source: "locations/brightstone-healers-hall/description.md"
+        anchor: "Apothecary & Stillroom: Stone mortar benches; herb racks; small alembics"
+      - source: "ch04-the-healers-calling/chapter.visual-plan.yaml"
+        anchor: "thyme with copper/cinnamon undertone"
+
+  - name: "Recovery Ward Sanctuary"
+    slug: "brightstone-healers-hall-essence-recovery-ward"
+    title: "Recovery Ward Sanctuary"
+    image_type: "essence"
+    zone_type: "sanctuary"
+    category: "interior"
+
+    scene_mood: "ethereal"
+    mood_rationale: |
+      The essence image captures the recovery ward at its most peaceful—
+      when the light through gauze curtains creates a sense of sacred space,
+      healing happening in the quiet between activities.
+
+    visual_description: |
+      The recovery ward in golden afternoon light, mullioned windows casting
+      latticed shadows through gauze curtains. Empty beds with crisp linen
+      wait for patients. Rune-lamps glow amber, tuned to comfort. A nightstand
+      holds a polished lantern and personal effects—river stones, perhaps,
+      or a folded pennon. The air is still, the thyme-antiseptic scent a
+      gentle presence rather than a sharp intrusion. Peace made tangible.
+
+    composition_notes: |
+      Wide shot capturing the ward's atmosphere. Light through gauze as
+      primary visual element. Empty beds suggesting rest rather than
+      absence. The sanctuary quality emphasized.
+
+    narrative_significance: |
+      The space where Veyra healed, where the patrol brought their offerings,
+      where she spoke with ghosts through the lantern flame. Sacred in its
+      ordinariness.
+
+    symbolic_elements:
+      - "Gauze-filtered light (softened reality)"
+      - "Polished lantern (the flame that witnessed)"
+      - "River stones (memory made portable)"
+      - "Empty beds (rest achieved)"
+
+    location_within: "Upper floor recovery ward"
+    time_of_day: "golden afternoon"
+    weather: "fair, light through windows"
+
+    required_elements:
+      - "Mullioned windows with gauze curtains"
+      - "Latticed light patterns"
+      - "Recovery beds with linen"
+      - "Amber rune-lamps"
+      - "Nightstand with lantern and effects"
+      - "Peaceful atmosphere"
+      - "Thyme-scented air implied"
+
+    lighting:
+      primary_source: "afternoon sun through gauze"
+      quality: "golden, diffused, sacred"
+      direction: "from windows"
+      color_temperature: "warm gold"
+      shadow_depth: "soft latticed patterns"
+      atmospheric: "peaceful, sanctuary"
+
+    palette:
+      dominant:
+        - "golden light"
+        - "gauze cream"
+        - "linen white"
+      accent:
+        - "lantern brass"
+        - "river stone grey"
+        - "rune-lamp amber"
+      avoid:
+        - "clinical white"
+        - "harsh shadows"
+        - "busy activity"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Fantasy hospital recovery
+      ward at golden hour. Mullioned windows with gauze curtains, latticed
+      afternoon light casting soft patterns. Empty beds with crisp linen waiting.
+      Amber rune-lamps glowing warm. Nightstand with polished lantern, small
+      river stones, personal effects. Peaceful sanctuary atmosphere. The space
+      between healing activities. Medieval fantasy medical care. No people—
+      the peace of rest.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary hospital, busy activity, harsh lighting,
+      suffering patients
+
+    references:
+      - source: "ch02-the-lantern-ward/chapter.visual-plan.yaml"
+        anchor: "White gauze and soft rune-lamp light, Nightstand with polished lantern"
+      - source: "locations/brightstone-healers-hall/description.md"
+        anchor: "Privacy maintained by curtain tracks; rune-lamps tuned warmer in wards"
+
+  - name: "The Founding Dawn"
+    slug: "brightstone-healers-hall-founding-decision"
+    title: "The Founding Dawn"
+    image_type: "beat"
+    category: "interior"
+
+    source_chapter: "ch02-the-lantern-ward"
+    source_scene: "scn-02-05"
+    what_happens: |
+      Morning light floods the recovery ward as Veyra and Thorne name the
+      Last Light Company. "What else could we be but the Last Light Company?"
+      The name settles over her like a mantle as morning bells toll—a beginning.
+
+    zone: "recovery-ward"
+
+    depicts_characters:
+      - slug: "veyra-thornwake"
+        role: "Sitting up in bed, receiving the name"
+      - slug: "thorne-brightward"
+        role: "Leaning forward, partnership offered"
+
+    character_states:
+      veyra-thornwake: "Awakening to purpose, dawn light on scars"
+      thorne-brightward: "Earnest, committed, the partnership forming"
+
+    character_sources:
+      - slug: "veyra-thornwake"
+        file: "characters/veyra-thornwake/profile.md"
+        anchor: "burn scar on left face"
+      - slug: "thorne-brightward"
+        file: "characters/thorne-brightward/profile.md"
+        anchor: "steel-gray hair, soldier's bearing"
+
+    character_portrait_refs:
+      - slug: "veyra-thornwake"
+        portrait: "characters/veyra-thornwake/images/portrait.png"
+      - slug: "thorne-brightward"
+        portrait: "characters/thorne-brightward/images/portrait.png"
+
+    scene_mood: "pastoral"
+    mood_rationale: |
+      Dawn as rebirth. The Company's founding is not triumphant fanfare but
+      quiet partnership, morning light bringing hope after the long night
+      of recovery.
+
+    visual_description: |
+      Morning light streams through the recovery ward windows, golden and
+      fresh. Veyra sits up in her hospital bed, still bandaged but alert,
+      her scarred face catching the dawn light. Thorne leans forward in a
+      bedside chair, his soldier's bearing softened by earnest commitment.
+      Between them, the polished lantern gleams on the nightstand—the light
+      they will carry. Through the windows, Waterdeep's morning bells can
+      be imagined. The moment of founding, quiet and true.
+
+    composition_notes: |
+      Medium shot of the two figures, dawn light as key element. Veyra sitting
+      up, Thorne leaning in—the partnership forming. The lantern between them
+      as symbol. Morning light flooding the clinical space with hope.
+
+    narrative_significance: |
+      The birth of the Last Light Company—not in triumph but in a hospital
+      room, not in strength but in recovery. The founding moment that makes
+      everything after possible.
+
+    symbolic_elements:
+      - "Dawn light (new beginning)"
+      - "Lantern between them (the light they carry)"
+      - "Sitting up in bed (strength returning)"
+      - "Morning bells (world celebrating unknowing)"
+
+    location_within: "Recovery ward"
+    time_of_day: "dawn"
+    weather: "fair, morning light"
+
+    required_elements:
+      - "Veyra sitting up in hospital bed"
+      - "Thorne leaning forward in chair"
+      - "Dawn light through windows"
+      - "Polished lantern on nightstand"
+      - "Both figures in partnership"
+      - "Scarred face in golden light"
+
+    lighting:
+      primary_source: "dawn sun through windows"
+      quality: "golden, hopeful, fresh"
+      direction: "from windows, backlighting"
+      color_temperature: "warm gold"
+      shadow_depth: "soft, dawn light"
+      atmospheric: "morning freshness"
+
+    palette:
+      dominant:
+        - "dawn gold"
+        - "linen white"
+        - "window light"
+      accent:
+        - "lantern brass"
+        - "Thorne's steel-grey hair"
+        - "Veyra's dark mohawk"
+      avoid:
+        - "clinical coldness"
+        - "night darkness"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Dawn scene in fantasy
+      hospital recovery ward. Half-elf woman with burn scars on face, dark
+      mohawk with braids, sitting up in hospital bed catching golden morning
+      light. Human man with steel-gray hair and soldier's bearing leaning
+      forward in bedside chair. Polished lantern on nightstand between them.
+      Dawn light streaming through mullioned windows. The founding of a
+      partnership, quiet and true. Morning bells implied. Hope after long
+      recovery.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, wrong character features, night scene, clinical coldness,
+      triumph fanfare
+
+    references:
+      - source: "ch02-the-lantern-ward/chapter.visual-plan.yaml"
+        scene_id: "scn-02-05"
+        anchor: "'What else could we be but the Last Light Company?'"
+      - source: "ch02-the-lantern-ward/chapter.visual-plan.yaml"
+        anchor: "morning bells began to toll across Waterdeep, sounded like a beginning"
+
+  - name: "Isolation Stack"
+    slug: "brightstone-healers-hall-isolation-stack"
+    title: "Isolation Stack"
+    image_type: "zone"
+    zone_type: "cell"
+    category: "interior"
+
+    scene_mood: "oppressive"
+    mood_rationale: |
+      The isolation stack is necessary but grim—where contagious or compromised
+      patients are kept separate for the safety of all. Professional care in
+      enforced solitude.
+
+    visual_description: |
+      A rear corner suite with segregated ventilation—the isolation stack.
+      A single bed in a private room, the door heavy with seals. An independent
+      hand-wash station. A refuse staging niche with sealed containers. The
+      negative-draw flue is flagged and locked, pulling air out rather than
+      in. Rune-lamps are dimmer here, the atmosphere quieter than the main
+      wards. A viewing pane in the door allows observation without entry.
+
+    composition_notes: |
+      Medium shot showing the isolation room through the viewing pane, or
+      from within looking at the sealed door. The separation visible in
+      the infrastructure.
+
+    narrative_significance: |
+      The necessary extreme of medical care—isolation that protects by
+      separation. Professional competence applied to dangerous cases.
+
+    symbolic_elements:
+      - "Heavy sealed door (containment)"
+      - "Negative-draw flue (danger pulled away)"
+      - "Viewing pane (care without contact)"
+      - "Single bed (solitude imposed)"
+
+    location_within: "Upper rear corner"
+    time_of_day: "any"
+    weather: "indoor, controlled"
+
+    required_elements:
+      - "Private room with single bed"
+      - "Heavy sealed door"
+      - "Viewing pane in door"
+      - "Independent hand-wash station"
+      - "Refuse staging niche"
+      - "Flagged ventilation duct"
+      - "Dimmer rune-lamps"
+
+    lighting:
+      primary_source: "rune-lamps, reduced"
+      quality: "dim, functional"
+      direction: "overhead"
+      color_temperature: "cool clinical"
+      shadow_depth: "moderate"
+      atmospheric: "quiet, separate"
+
+    palette:
+      dominant:
+        - "stone grey"
+        - "clinical white"
+        - "shadow dark"
+      accent:
+        - "warning flag color"
+        - "seal red"
+      avoid:
+        - "warm comfortable tones"
+        - "homey atmosphere"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Medical isolation room
+      in fantasy hospital. Single bed in private room. Heavy sealed door with
+      viewing pane. Independent hand-wash station. Refuse staging niche with
+      sealed containers. Flagged ventilation duct marked for negative draw.
+      Dim rune-lamp lighting. Quiet, separate atmosphere. Professional isolation
+      for dangerous cases. Fantasy medieval medical quarantine. No people.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary hospital, comfortable atmosphere, bright
+      lighting, prison cell appearance
+
+    references:
+      - source: "locations/brightstone-healers-hall/description.md"
+        anchor: "Isolation Suites: Rear corner stack with segregated vent flue; independent hand-wash"
+      - source: "locations/brightstone-healers-hall/inhabitants.md"
+        anchor: "Contagion/compromised cases with segregated venting"
+
+  - name: "Main Hall"
+    slug: "brightstone-healers-hall-main-hall"
+    title: "Main Hall"
+    image_type: "zone"
+    zone_type: "heart"
+    category: "interior"
+
+    scene_mood: "quotidian"
+    mood_rationale: |
+      The main hall is the working core of the institution—triage, operating
+      access, the hub where staff and patients flow. Professional and busy,
+      care in organized motion.
+
+    visual_description: |
+      The ground floor hall of Brightstone Healers' Hall, a functional space
+      with high ceilings and clerestory windows. Flagged stone floors with
+      guttered drains. Limewashed walls with oak-framed partitions. Self-closing
+      doors with leather soft-latch straps reduce noise. A triage bay opens
+      near the entrance. Corridors lead to operating theatres. Dwarven rune-
+      lamp rails at beam level provide shadowless illumination. Staff move
+      with purpose. Hand-wash basins at key points. Bell and case-board for
+      intake coordination.
+
+    composition_notes: |
+      Wide shot showing the hall's functional organization. High ceiling,
+      clerestory light, the flow of corridors. Working hospital atmosphere.
+
+    narrative_significance: |
+      The functional heart where Dokra works, where patients arrive, where
+      healing is organized into efficient process.
+
+    symbolic_elements:
+      - "High ceiling (institutional dignity)"
+      - "Flow corridors (care organized)"
+      - "Hand-wash basins (hygiene discipline)"
+      - "Case-board (lives tracked)"
+
+    location_within: "Ground floor"
+    time_of_day: "midday"
+    weather: "indoor, controlled"
+
+    required_elements:
+      - "High-ceilinged hall"
+      - "Clerestory windows"
+      - "Flagged stone floors with drains"
+      - "Oak-framed partitions"
+      - "Self-closing doors"
+      - "Rune-lamp rails overhead"
+      - "Hand-wash basins"
+      - "Corridors to theatres"
+
+    lighting:
+      primary_source: "clerestory daylight and rune-lamps"
+      quality: "bright, clinical"
+      direction: "from above"
+      color_temperature: "neutral to cool"
+      shadow_depth: "minimal, shadowless"
+      atmospheric: "professional, working"
+
+    palette:
+      dominant:
+        - "limewash white"
+        - "flagstone grey"
+        - "oak partition brown"
+      accent:
+        - "rune-lamp silver"
+        - "copper fixtures"
+      avoid:
+        - "dim lighting"
+        - "abandoned feeling"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Main hall of fantasy
+      medical institution. High ceilings with clerestory windows. Flagged
+      stone floors with guttered drains. Limewashed walls with oak-framed
+      partitions. Self-closing doors. Dwarven rune-lamp rails providing
+      shadowless light. Hand-wash basins at key points. Corridors leading
+      to operating areas. Professional medical atmosphere. Working hospital.
+      A few staff figures in motion for scale.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary hospital, abandoned, dark, dingy
+
+    references:
+      - source: "locations/brightstone-healers-hall/description.md"
+        anchor: "~110 ft frontage x 60 ft depth; 16–18 ft floor height"
+      - source: "locations/brightstone-healers-hall/description.md"
+        anchor: "Dwarven rune-lamp rails at beam level for shadowless light"
+
+  - name: "Main Vestibule and Triage Bay"
+    slug: "brightstone-healers-hall-main-vestibule-triage"
+    title: "Vestibule and Triage"
+    image_type: "zone"
+    zone_type: "threshold"
+    category: "interior"
+
+    scene_mood: "tense"
+    mood_rationale: |
+      The vestibule is where crisis meets institution—where patients arrive
+      in need and are sorted for care. The tension of intake, the efficiency
+      of triage.
+
+    visual_description: |
+      The main entrance vestibule of Brightstone Healers' Hall. Waiting benches
+      line the load-bearing piers, privacy screens between them. An intake desk
+      commands line-of-sight to the main doors. The stretcher lane is clearly
+      separated from seated waiting. Immediately adjacent, the triage bay opens
+      with hand-wash basins, tool hooks, and herb sluice for initial assessment.
+      Bell and case-board coordinate incoming cases. The atmosphere is controlled
+      urgency—crisis organized into process.
+
+    composition_notes: |
+      Medium-wide shot showing the vestibule's organization. Waiting benches,
+      intake desk, triage bay visible. The separation of flows clear in the
+      layout.
+
+    narrative_significance: |
+      The threshold where patients enter the institution's care—where the
+      world's suffering meets professional response.
+
+    symbolic_elements:
+      - "Waiting benches (hope organized)"
+      - "Intake desk (control point)"
+      - "Separated lanes (crisis sorted)"
+      - "Triage bay (assessment begins)"
+
+    location_within: "Ground floor, main entrance"
+    time_of_day: "morning"
+    weather: "indoor, controlled"
+
+    required_elements:
+      - "Waiting benches along piers"
+      - "Privacy screens"
+      - "Intake desk with case-board"
+      - "Separated stretcher lane"
+      - "Triage bay with hand-wash"
+      - "Bell for coordination"
+      - "Tool hooks and herb sluice"
+
+    lighting:
+      primary_source: "rune-lamps and door light"
+      quality: "bright, practical"
+      direction: "overhead and from entrance"
+      color_temperature: "neutral"
+      shadow_depth: "minimal"
+      atmospheric: "controlled urgency"
+
+    palette:
+      dominant:
+        - "limewash white"
+        - "stone grey"
+        - "wood bench brown"
+      accent:
+        - "brass bell"
+        - "herb sluice copper"
+      avoid:
+        - "chaos appearance"
+        - "dark threatening"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Medical vestibule and
+      triage bay in fantasy hospital. Waiting benches along stone piers with
+      privacy screens. Intake desk with case-board and bell. Separated stretcher
+      lane. Triage bay with hand-wash basins, tool hooks, herb sluice. Bright
+      practical lighting from rune-lamps and entrance. Controlled urgency
+      atmosphere. Crisis organized into process. Fantasy medieval medical
+      institution. A few waiting figures for scale.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary hospital, chaos, panic, empty waiting room
+
+    references:
+      - source: "locations/brightstone-healers-hall/description.md"
+        anchor: "Main Vestibule & Waiting: Benches along load-bearing piers; privacy screens; bell and case-board"
+      - source: "locations/brightstone-healers-hall/inhabitants.md"
+        anchor: "Intake, queue management, initial assessment"
+
+  - name: "Mezzanine Service Band"
+    slug: "brightstone-healers-hall-mezzanine-service"
+    title: "Mezzanine Service"
+    image_type: "zone"
+    zone_type: "works"
+    category: "interior"
+
+    scene_mood: "quotidian"
+    mood_rationale: |
+      The mezzanine is the working infrastructure between floors—sterilization,
+      linen handling, instrument processing. The invisible labor that enables
+      clinical care.
+
+    visual_description: |
+      The mezzanine service band running above the theatre corridor. The
+      sterilization suite dominates—copper boilers on raised plinths, drying
+      racks, instrument baths steaming with thyme and alcohol tinctures. Linen
+      rooms with sorted grades: surgery, isolation, common. Rolling ladders
+      for high shelves. Dumbwaiters connect to theatres and wards. Red and
+      white stripe markers indicate sterile pathways. Hand traffic only—no
+      wheels or hooves. The cinnamon-copper scent of sterilization fills the
+      space.
+
+    composition_notes: |
+      Medium shot showing the working mezzanine. Sterilization equipment as
+      focal point. The organization of medical support visible. Red/white
+      pathway markers for detail.
+
+    narrative_significance: |
+      The professional infrastructure that enables healing—instrument processing,
+      linen flow, the disciplined routines that prevent infection.
+
+    symbolic_elements:
+      - "Copper boilers (purification through heat)"
+      - "Sorted linens (order from chaos)"
+      - "Pathway markers (discipline visible)"
+      - "Dumbwaiters (connection between floors)"
+
+    location_within: "Mezzanine level"
+    time_of_day: "midday"
+    weather: "indoor, steam present"
+
+    required_elements:
+      - "Copper sterilization boilers"
+      - "Drying racks"
+      - "Instrument baths"
+      - "Linen sorting areas"
+      - "Rolling ladders"
+      - "Dumbwaiter doors"
+      - "Red/white pathway markers"
+      - "Steam atmosphere"
+
+    lighting:
+      primary_source: "rune-lamps"
+      quality: "practical, working"
+      direction: "overhead"
+      color_temperature: "warm from steam"
+      shadow_depth: "moderate"
+      atmospheric: "steam, thyme-copper scent"
+
+    palette:
+      dominant:
+        - "copper red-brown"
+        - "steam white"
+        - "linen cream"
+      accent:
+        - "pathway red/white"
+        - "instrument steel"
+      avoid:
+        - "patient-facing appearance"
+        - "clinical sterility"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Medical mezzanine service
+      area in fantasy hospital. Copper sterilization boilers on raised plinths.
+      Drying racks. Instrument baths steaming. Linen sorting areas with shelves.
+      Rolling ladders. Dumbwaiter doors. Red and white stripe pathway markers.
+      Steam atmosphere. Thyme-copper scent implied. Working infrastructure of
+      healing. Fantasy medieval medical support. A few staff figures for scale.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary sterilization, patient areas, clinical
+      sterility
+
+    references:
+      - source: "locations/brightstone-healers-hall/description.md"
+        anchor: "Sterilization Suite: Copper boilers on raised plinths; drying racks; instrument baths"
+      - source: "locations/brightstone-healers-hall/description.md"
+        anchor: "Red/white stripe markers for sterile pathways"
+
+  - name: "Vigilance in the Sleeping Hours"
+    slug: "brightstone-healers-hall-night-rounds"
+    title: "Night Rounds"
+    image_type: "temporal"
+    category: "interior"
+
+    base_zone: "recovery-wards"
+    temporal_state: "night, skeleton staff"
+    mood_shift_from_base: |
+      The daytime activity of recovery wards gives way to night's quiet vigilance.
+      Low-level lamp trails guide staff. Sleeping patients are checked without
+      waking. The healing that happens in rest.
+    activity_at_this_time: |
+      Skeleton staff maintains watch. A nurse moves quietly between beds,
+      checking vitals. Isolation patients receive periodic observation. Emergency
+      intake readiness maintained at the side sally.
+
+    scene_mood: "intimate"
+    mood_rationale: |
+      Night rounds are intimate care—the quiet work of watching over sleepers,
+      the vigilance that continues when the world rests. Professional devotion
+      made visible in darkness.
+
+    visual_description: |
+      The recovery ward at night. Low-level rune-lamp trails create paths of
+      gentle light between beds. A nurse moves silently, checking on sleeping
+      patients without disturbing them. Privacy curtains are drawn. The mullioned
+      windows show city darkness outside. The atmosphere is of watchful peace—
+      care continuing through the night hours.
+
+    composition_notes: |
+      Wide shot of the ward at night. Low lamp trails as visual guide. A single
+      figure moving between beds. Sleeping patients as context. The quiet of
+      night watch.
+
+    narrative_significance: |
+      The care that continues when patients sleep—the professional dedication
+      that watches over recovery even in darkness.
+
+    symbolic_elements:
+      - "Low lamp trails (guidance through dark)"
+      - "Silent movement (care without disturbing)"
+      - "Drawn curtains (privacy respected)"
+      - "Night watch (vigilance never sleeps)"
+
+    location_within: "Recovery ward, night"
+    time_of_day: "night, late hours"
+    weather: "indoor, city dark outside"
+
+    required_elements:
+      - "Low-level rune-lamp trails"
+      - "Nurse figure moving silently"
+      - "Sleeping patients in beds"
+      - "Drawn privacy curtains"
+      - "Dark windows"
+      - "Quiet, watchful atmosphere"
+
+    lighting:
+      primary_source: "low rune-lamp trails"
+      quality: "dim, guiding"
+      direction: "floor level"
+      color_temperature: "warm amber, reduced"
+      shadow_depth: "deep, gentle"
+      atmospheric: "quiet vigilance"
+
+    palette:
+      dominant:
+        - "night shadow"
+        - "lamp trail amber"
+        - "linen cream dim"
+      accent:
+        - "curtain soft tones"
+        - "window dark"
+      avoid:
+        - "bright lighting"
+        - "activity"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Fantasy hospital recovery
+      ward at night. Low-level rune-lamp trails creating paths of gentle light.
+      Nurse figure moving silently between beds. Sleeping patients undisturbed.
+      Privacy curtains drawn. Dark windows showing city night. Quiet watchful
+      peace. Night rounds, vigilance continuing. Medieval fantasy medical care.
+      Single staff figure for scale.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, bright lighting, daytime, activity, disturbed patients
+
+    references:
+      - source: "locations/brightstone-healers-hall/inhabitants.md"
+        anchor: "Night: Skeleton staff; isolation checks; low-lamp trails"
+      - source: "locations/brightstone-healers-hall/description.md"
+        anchor: "rune-lamps tuned warmer in wards for comfort"
+
+  - name: "The Theatre of Precision"
+    slug: "brightstone-healers-hall-operating-theatre"
+    title: "Operating Theatre"
+    image_type: "zone"
+    zone_type: "heart"
+    category: "interior"
+
+    scene_mood: "reverent"
+    mood_rationale: |
+      The operating theatre is sacred space—where Dokra's surgical expertise
+      saves lives through precision and care. The atmosphere is hushed,
+      professional, utterly focused.
+
+    visual_description: |
+      An operating theatre at Brightstone Healers' Hall. North-lit from high
+      clerestory windows, supplemented by rune-lamp grids overhead providing
+      shadowless illumination. A polished stone operating table at center. A
+      rolling tray holds bone-handled shears, rune-etched forceps, gleaming
+      instruments. A scrub anteroom is visible through an open door, with
+      instrument pass-throughs. The floor is flagged with non-skid scoring
+      and guttered drains. Everything is positioned for maximum efficiency—
+      the craft of saving lives made physical.
+
+    composition_notes: |
+      Medium shot centered on the operating table. The rune-lamp grid visible
+      overhead. Instruments on the tray. The shadowless precision of surgical
+      space. The anteroom for context.
+
+    narrative_significance: |
+      Where Veyra was treated after Undershade Canyon, where Dokra's expertise
+      was applied. The space where bodies are mended through skill and care.
+
+    symbolic_elements:
+      - "Shadowless light (no hidden places)"
+      - "Precise instruments (craft tools)"
+      - "Polished table (life's stage)"
+      - "Scrub anteroom (ritual purification)"
+
+    location_within: "Ground floor, north-lit"
+    time_of_day: "daylight hours"
+    weather: "indoor, controlled"
+
+    required_elements:
+      - "Polished stone operating table"
+      - "Rune-lamp grid overhead"
+      - "Clerestory north light"
+      - "Instrument tray with tools"
+      - "Scrub anteroom visible"
+      - "Flagged floor with drains"
+      - "Non-skid scoring"
+      - "Shadowless illumination"
+
+    lighting:
+      primary_source: "north daylight and rune-lamps"
+      quality: "bright, shadowless"
+      direction: "overhead grid"
+      color_temperature: "neutral clinical"
+      shadow_depth: "none, deliberate"
+      atmospheric: "precise, focused"
+
+    palette:
+      dominant:
+        - "stone grey table"
+        - "clinical white"
+        - "instrument steel"
+      accent:
+        - "rune-lamp silver"
+        - "bone tool handles"
+      avoid:
+        - "shadows"
+        - "warm comfortable tones"
+        - "blood"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Fantasy operating theatre.
+      Polished stone operating table at center. Rune-lamp grid overhead providing
+      shadowless light. Clerestory windows for north light. Rolling tray with
+      surgical instruments—bone-handled shears, rune-etched forceps. Scrub
+      anteroom visible through door. Flagged floor with drains and non-skid
+      scoring. Clinical precision atmosphere. The craft of healing surgery.
+      Medieval fantasy medical. No people, ready for use.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary operating room, blood, gore, surgery in
+      progress, shadows
+
+    references:
+      - source: "locations/brightstone-healers-hall/description.md"
+        anchor: "Operating Theatres: North-lit, rune-lamp grids overhead; scrub anterooms"
+      - source: "ch02-the-lantern-ward/chapter.visual-plan.yaml"
+        anchor: "Rolling tray with bone-handled shears and rune-etched forceps"
+
+  - name: "Operating Theatres"
+    slug: "brightstone-healers-hall-operating-theatres"
+    title: "Theatre Complex"
+    image_type: "zone"
+    zone_type: "heart"
+    category: "interior"
+
+    scene_mood: "quotidian"
+    mood_rationale: |
+      The theatre complex as a whole—the infrastructure of surgical care.
+      Multiple theatres with shared support. The professional organization
+      of saving lives.
+
+    visual_description: |
+      The operating theatre corridor at Brightstone Healers' Hall. Two or
+      three theatre doors open off the corridor, each with its clerestory
+      windows visible above. Scrub anterooms between theatres share instrument
+      pass-throughs and dirty exits to sterilization. A prep/recovery niche
+      with curtained bays handles immediate post-procedure care. The rune-lamp
+      rails run continuously. Everything is limewashed and clean, organized
+      for surgical flow.
+
+    composition_notes: |
+      Wide corridor shot showing the theatre complex organization. Multiple
+      theatre doors, shared anterooms, the flow of surgical traffic visible
+      in the layout.
+
+    narrative_significance: |
+      The professional infrastructure of surgical care—multiple theatres
+      serving the institution's needs, organized for efficiency.
+
+    symbolic_elements:
+      - "Multiple theatres (capacity for crisis)"
+      - "Shared infrastructure (efficiency)"
+      - "Recovery niches (care continues)"
+      - "Continuous lighting (no dark corners)"
+
+    location_within: "Ground floor, north wing"
+    time_of_day: "midday"
+    weather: "indoor, controlled"
+
+    required_elements:
+      - "Theatre corridor"
+      - "Multiple theatre doors"
+      - "Clerestory windows above"
+      - "Scrub anterooms"
+      - "Prep/recovery niches with curtains"
+      - "Rune-lamp rails continuous"
+      - "Limewashed walls"
+
+    lighting:
+      primary_source: "rune-lamps and borrowed daylight"
+      quality: "bright, clinical"
+      direction: "overhead continuous"
+      color_temperature: "neutral"
+      shadow_depth: "minimal"
+      atmospheric: "professional, organized"
+
+    palette:
+      dominant:
+        - "limewash white"
+        - "flagstone grey"
+        - "door oak"
+      accent:
+        - "rune-lamp silver"
+        - "curtain neutral"
+      avoid:
+        - "dark areas"
+        - "disorganization"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Operating theatre corridor
+      in fantasy medical hall. Multiple theatre doors with clerestory windows
+      above. Scrub anterooms with pass-throughs. Prep/recovery niches with
+      curtained bays. Continuous rune-lamp rails. Limewashed walls and flagged
+      floors. Professional surgical complex. Organized for efficiency. Medieval
+      fantasy medical institution. A few staff figures for scale.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary hospital, dark areas, disorganization,
+      single theatre
+
+    references:
+      - source: "locations/brightstone-healers-hall/description.md"
+        anchor: "Operating Theatres (2–3 rooms): scrub anterooms with instrument pass-throughs"
+      - source: "locations/brightstone-healers-hall/description.md"
+        anchor: "Prep & Recovery Niche: Small post-procedure bays with curtains"
+
+  - name: "The Patrol's Vigil"
+    slug: "brightstone-healers-hall-patrol-gifts"
+    title: "The Patrol's Vigil"
+    image_type: "beat"
+    category: "interior"
+
+    source_chapter: "ch02-the-lantern-ward"
+    source_scene: "scn-02-03"
+    what_happens: |
+      Thorne's patrol files into Veyra's recovery ward, each carrying an
+      offering: lamp oil, a blue-silver pennon, arrows, river stones, ice
+      water. Solidarity made tangible, the living building bridges to carry
+      the survivor forward.
+
+    zone: "recovery-ward"
+
+    depicts_characters:
+      - slug: "veyra-thornwake"
+        role: "In bed, receiving the patrol's offerings"
+      - slug: "thorne-brightward"
+        role: "Leading the patrol, helm under arm"
+      - generic_count: 5
+        description: "Patrol members in semicircle, each with their token"
+
+    character_states:
+      veyra-thornwake: "Moved, accepting, scars visible"
+      thorne-brightward: "Respectful, leading by presence"
+
+    character_sources:
+      - slug: "veyra-thornwake"
+        file: "characters/veyra-thornwake/profile.md"
+        anchor: "burn scar on left face"
+      - slug: "thorne-brightward"
+        file: "characters/thorne-brightward/profile.md"
+        anchor: "steel-gray hair, soldier's bearing"
+
+    character_portrait_refs:
+      - slug: "veyra-thornwake"
+        portrait: "characters/veyra-thornwake/images/portrait.png"
+      - slug: "thorne-brightward"
+        portrait: "characters/thorne-brightward/images/portrait.png"
+
+    scene_mood: "somber"
+    mood_rationale: |
+      A moment of collective honoring—the patrol bearing witness to Veyra's
+      survival, bringing tokens of care. Somber but warm, grief and solidarity
+      intertwined.
+
+    visual_description: |
+      Twilight amber light paints the recovery ward. Veyra sits propped in her
+      hospital bed, scarred face accepting the offerings. The patrol stands in
+      semicircle around her, each bearing something: Sergeant Kelen with an oil
+      flask, Corporal Darric with a blue-silver pennon, Archer Venn with arrows,
+      Medic Halden with supplies, Quartermaster Fayne holding smooth river stones.
+      The polished lantern glows on the nightstand. A ritual of care, the community
+      gathering around the survivor.
+
+    composition_notes: |
+      Wide shot from Veyra's perspective, the patrol in semicircle. Each figure
+      distinct with their offering. Twilight through windows. The tableau of
+      solidarity.
+
+    narrative_significance: |
+      The moment the patrol became something more than soldiers—a community
+      building itself around shared purpose and care.
+
+    symbolic_elements:
+      - "Semicircle formation (community around survivor)"
+      - "Individual offerings (personal care)"
+      - "Oil flask (keeping the light burning)"
+      - "River stones (memory made portable)"
+
+    location_within: "Recovery ward"
+    time_of_day: "twilight"
+    weather: "indoor, amber evening light"
+
+    required_elements:
+      - "Veyra in hospital bed"
+      - "Patrol in semicircle"
+      - "Individual offerings visible"
+      - "Oil flask, pennon, arrows, stones"
+      - "Twilight amber light"
+      - "Lantern on nightstand"
+      - "Scarred face accepting"
+
+    lighting:
+      primary_source: "twilight through windows"
+      quality: "amber, warm, ritualistic"
+      direction: "from windows"
+      color_temperature: "warm amber"
+      shadow_depth: "soft, evening"
+      atmospheric: "ritual solemnity"
+
+    palette:
+      dominant:
+        - "twilight amber"
+        - "linen white"
+        - "shadow warm"
+      accent:
+        - "pennon blue-silver"
+        - "stone grey"
+        - "oil flask brass"
+      avoid:
+        - "harsh lighting"
+        - "cold clinical"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Twilight hospital scene.
+      Half-elf woman with burn scars sitting in hospital bed. Five soldiers in
+      semicircle around her, each bearing an offering—oil flask, blue-silver
+      pennon, arrows, river stones. Human captain with steel-gray hair leading.
+      Amber twilight through mullioned windows. Polished lantern on nightstand.
+      Ritual of solidarity, the patrol's vigil. Fantasy medieval. The community
+      gathering around the survivor.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, wrong character features, wrong number of soldiers,
+      daylight, empty room
+
+    references:
+      - source: "ch02-the-lantern-ward/chapter.visual-plan.yaml"
+        scene_id: "scn-02-03"
+        anchor: "Patrol members in semicircle around Veyra's bed, each bearing a token"
+      - source: "ch02-the-lantern-ward/chapter.visual-plan.yaml"
+        anchor: "Twilight painted the hospital room in shades of amber and shadow"
+
+  - name: "Recovery Ward"
+    slug: "brightstone-healers-hall-recovery-ward"
+    title: "Recovery Ward"
+    image_type: "zone"
+    zone_type: "sanctuary"
+    category: "interior"
+
+    scene_mood: "intimate"
+    mood_rationale: |
+      The recovery ward is a place of quiet healing—where patients rest,
+      recover, and decide who they will become. Intimate without being
+      stifling, professional yet warm.
+
+    visual_description: |
+      An upper floor recovery ward at Brightstone Healers' Hall. Mullioned
+      windows with gauze curtains let in soft light. Recovery beds with crisp
+      linens are arranged in alternating single and shared configurations.
+      Privacy curtains on brass tracks can be drawn. Rune-lamps are tuned
+      to warmer spectrum, comfortable rather than clinical. Nightstands hold
+      personal effects. A slate hearth surround suggests winter brazier warmth.
+      Nurse stations are visible at bay ends. The atmosphere is of active
+      recovery—not illness, but returning strength.
+
+    composition_notes: |
+      Medium-wide shot showing the ward's character. The gauze-filtered light.
+      The comfortable spacing of beds. The privacy curtains ready. The sense
+      of sanctuary.
+
+    narrative_significance: |
+      Where Veyra recovered, where she woke from nightmares, where she chose
+      to keep her scars. The crucible of the Company's philosophical foundation.
+
+    symbolic_elements:
+      - "Gauze curtains (softened world)"
+      - "Warm lamps (comfort chosen)"
+      - "Privacy curtains (dignity respected)"
+      - "Personal effects (identity preserved)"
+
+    location_within: "Upper floors"
+    time_of_day: "afternoon"
+    weather: "fair, light through gauze"
+
+    required_elements:
+      - "Mullioned windows with gauze"
+      - "Recovery beds with linens"
+      - "Privacy curtains on tracks"
+      - "Warmer rune-lamps"
+      - "Nightstands with effects"
+      - "Slate hearth surround"
+      - "Nurse stations visible"
+
+    lighting:
+      primary_source: "window light and rune-lamps"
+      quality: "soft, comfortable"
+      direction: "from windows and overhead"
+      color_temperature: "warm"
+      shadow_depth: "soft"
+      atmospheric: "healing, sanctuary"
+
+    palette:
+      dominant:
+        - "linen white"
+        - "gauze cream"
+        - "rune-lamp amber"
+      accent:
+        - "brass track"
+        - "slate grey"
+        - "personal effects colors"
+      avoid:
+        - "harsh clinical"
+        - "cold sterility"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Hospital recovery ward in
+      fantasy medical hall. Mullioned windows with gauze curtains, soft light
+      filtering through. Recovery beds with crisp linens, alternating single
+      and shared. Privacy curtains on brass tracks. Warm-spectrum rune-lamps.
+      Nightstands with personal effects. Slate hearth surround for winter.
+      Nurse station visible. Comfortable healing atmosphere. Medieval fantasy
+      medical care. No patients visible, ready for recovery.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary hospital, harsh lighting, cold sterility,
+      suffering patients
+
+    references:
+      - source: "ch02-the-lantern-ward/chapter.visual-plan.yaml"
+        anchor: "White gauze and soft rune-lamp light"
+      - source: "locations/brightstone-healers-hall/description.md"
+        anchor: "Wards: Alternating single and small shared rooms; mullioned windows with gauze curtains"
+
+  - name: "Recovery Wards"
+    slug: "brightstone-healers-hall-recovery-wards"
+    title: "Recovery Ward Complex"
+    image_type: "zone"
+    zone_type: "commons"
+    category: "interior"
+
+    scene_mood: "quotidian"
+    mood_rationale: |
+      The ward complex as functional whole—multiple rooms, nurse stations,
+      the infrastructure of long-term patient care. Professional organization
+      of healing.
+
+    visual_description: |
+      The upper floor ward corridor at Brightstone Healers' Hall. A double-
+      loaded corridor with observation nooks. Ward rooms open on both sides—
+      some single, some shared. Nurse stations positioned every two bays,
+      with cross-corridor visibility. Linen pass-throughs from mezzanine lifts.
+      The corridor is wide enough for stretchers and privacy. Rune-lamps are
+      tuned warm. Sound-absorbing hangings reduce noise travel. The atmosphere
+      is of organized care continuing.
+
+    composition_notes: |
+      Corridor shot showing the ward organization. Nurse stations as focal
+      points. Room doors open. The infrastructure of long-term care visible.
+
+    narrative_significance: |
+      The professional organization of recovery—where patients heal over
+      time, watched over by skilled staff.
+
+    symbolic_elements:
+      - "Corridor width (dignity in movement)"
+      - "Nurse stations (watchful care)"
+      - "Cross visibility (no hidden corners)"
+      - "Sound absorption (rest protected)"
+
+    location_within: "Upper floors"
+    time_of_day: "daytime"
+    weather: "indoor, controlled"
+
+    required_elements:
+      - "Wide ward corridor"
+      - "Observation nooks"
+      - "Ward room doors both sides"
+      - "Nurse stations every two bays"
+      - "Linen pass-through"
+      - "Warm rune-lamps"
+      - "Sound-absorbing hangings"
+
+    lighting:
+      primary_source: "rune-lamps and borrowed window light"
+      quality: "warm, professional"
+      direction: "overhead"
+      color_temperature: "warm"
+      shadow_depth: "soft"
+      atmospheric: "organized care"
+
+    palette:
+      dominant:
+        - "limewash white"
+        - "corridor stone"
+        - "hanging fabric neutral"
+      accent:
+        - "door oak"
+        - "station desk"
+      avoid:
+        - "dark corners"
+        - "clinical harshness"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Hospital ward corridor in
+      fantasy medical hall. Wide double-loaded corridor with observation nooks.
+      Ward room doors on both sides. Nurse stations every two bays with cross-
+      corridor visibility. Linen pass-through visible. Warm rune-lamp lighting.
+      Sound-absorbing hangings on walls. Professional organized care. Medieval
+      fantasy medical institution. A few staff figures for scale.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary hospital, dark corners, narrow corridor
+
+    references:
+      - source: "locations/brightstone-healers-hall/description.md"
+        anchor: "Double-loaded corridor with observation nooks; nurse stations every two bays"
+      - source: "locations/brightstone-healers-hall/inhabitants.md"
+        anchor: "Ward Team: Nurse (bay lead), orderly, on-call healer"
+
+  - name: "The Refusal of Erasure"
+    slug: "brightstone-healers-hall-scar-choice"
+    title: "The Refusal of Erasure"
+    image_type: "beat"
+    category: "interior"
+
+    source_chapter: "ch02-the-lantern-ward"
+    source_scene: "scn-02-02"
+    what_happens: |
+      Dokra applies the silverleaf poultice to Veyra's burns—healing that
+      honors rather than hides. "Some wounds are iron, some are ink," she
+      says, acknowledging the scars as testimony.
+
+    zone: "recovery-ward"
+
+    depicts_characters:
+      - slug: "veyra-thornwake"
+        role: "Receiving treatment, scars visible"
+      - slug: "dokra-ironvein"
+        role: "Applying poultice, gentle expertise"
+
+    character_states:
+      veyra-thornwake: "Accepting care that preserves her testimony"
+      dokra-ironvein: "Professional gentleness, respecting patient choice"
+
+    character_sources:
+      - slug: "veyra-thornwake"
+        file: "characters/veyra-thornwake/profile.md"
+        anchor: "burn scar on left face"
+
+    character_portrait_refs:
+      - slug: "veyra-thornwake"
+        portrait: "characters/veyra-thornwake/images/portrait.png"
+
+    scene_mood: "intimate"
+    mood_rationale: |
+      The intimacy of medical touch—Dokra's hands on damaged skin, the care
+      that heals without erasing. Professional tenderness in service of
+      patient-chosen outcome.
+
+    visual_description: |
+      In the recovery ward, Dokra's weathered hands apply gritty silverleaf
+      poultice to Veyra's burned cheek. Silver filings in the paste catch
+      the light. Veyra's face is still damaged, will remain scarred—but this
+      healing preserves function while honoring the marks. Dokra's expression
+      is of professional care tempered with respect. The ice-heat sensation
+      is visible in Veyra's controlled wince. Medical tools wait on the tray.
+
+    composition_notes: |
+      Close shot on hands and face—Dokra's callused fingers against damaged
+      skin. The silver filings catching light. The intimacy of healing touch.
+
+    narrative_significance: |
+      Healing that asks permission, that respects what the patient chooses
+      to carry. The philosophy of Brightstone made physical.
+
+    symbolic_elements:
+      - "Hands on skin (intimate care)"
+      - "Silver filings (medicine that shimmers)"
+      - "Controlled wince (sensation acknowledged)"
+      - "Scars preserved (choice honored)"
+
+    location_within: "Recovery ward"
+    time_of_day: "morning"
+    weather: "indoor, controlled"
+
+    required_elements:
+      - "Dokra's hands applying poultice"
+      - "Veyra's burned cheek"
+      - "Silver filings catching light"
+      - "Medical tray with tools"
+      - "Professional care expression"
+      - "Recovery ward setting"
+
+    lighting:
+      primary_source: "rune-lamp and window"
+      quality: "clinical but warm"
+      direction: "overhead and from window"
+      color_temperature: "warm clinical"
+      shadow_depth: "soft"
+      atmospheric: "intimate care"
+
+    palette:
+      dominant:
+        - "skin tones"
+        - "silver poultice glint"
+        - "linen white"
+      accent:
+        - "scar tissue pink"
+        - "Dokra's weathered hands"
+      avoid:
+        - "harsh clinical"
+        - "distant perspective"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Intimate medical scene in
+      fantasy hospital. Dwarven healer's weathered hands applying gritty
+      poultice to half-elf woman's burned cheek. Silver filings in paste
+      catching light. Professional gentleness in the healer's expression.
+      Patient's face scarred but accepting care. Medical tray with tools
+      nearby. Recovery ward setting. The intimacy of healing touch. Preserving
+      function while honoring scars.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, wrong character features, distant perspective, clinical
+      coldness
+
+    references:
+      - source: "ch02-the-lantern-ward/chapter.visual-plan.yaml"
+        scene_id: "scn-02-02"
+        anchor: "troll-moss paste and crushed silverleaf, with micron-thin silver filings"
+      - source: "ch02-the-lantern-ward/chapter.visual-plan.yaml"
+        anchor: "Dokra's callused hands gentle against ruined skin"
+
+  - name: "The Threshold of Care"
+    slug: "brightstone-healers-hall-vestibule-triage"
+    title: "Threshold of Care"
+    image_type: "zone"
+    zone_type: "threshold"
+    category: "interior"
+
+    scene_mood: "kinetic"
+    mood_rationale: |
+      The vestibule during active intake is controlled urgency—patients
+      arriving, triage sorting, the institution responding to crisis with
+      professional calm.
+
+    visual_description: |
+      The main vestibule during busy intake hours. Patients and families
+      fill the waiting benches. An intake clerk manages the queue while a
+      triage pair—healer and nurse—rapidly assess an incoming case. A stretcher
+      team moves through the separated lane toward the theatres. Bell signals
+      coordinate response. Through the controlled chaos, the institution's
+      discipline is visible: hand-wash basins used, pathways respected,
+      professional calm maintained.
+
+    composition_notes: |
+      Wide shot capturing the vestibule's activity. Waiting, triage, stretcher
+      traffic all visible. The controlled chaos of medical intake.
+
+    narrative_significance: |
+      The threshold where suffering meets professional response—the institution's
+      first contact with need.
+
+    symbolic_elements:
+      - "Waiting families (hope in line)"
+      - "Triage pair (expertise sorting)"
+      - "Stretcher lane (urgent care flowing)"
+      - "Bell signals (coordination)"
+
+    location_within: "Ground floor entrance"
+    time_of_day: "morning, busy hours"
+    weather: "indoor, controlled"
+
+    required_elements:
+      - "Waiting families on benches"
+      - "Intake clerk at desk"
+      - "Triage pair assessing patient"
+      - "Stretcher team in separated lane"
+      - "Bell for coordination"
+      - "Hand-wash basins in use"
+      - "Controlled chaos atmosphere"
+
+    lighting:
+      primary_source: "rune-lamps and entrance light"
+      quality: "bright, practical"
+      direction: "overhead and from door"
+      color_temperature: "neutral"
+      shadow_depth: "minimal"
+      atmospheric: "professional urgency"
+
+    palette:
+      dominant:
+        - "limewash white"
+        - "waiting family earth tones"
+        - "medical staff neutral"
+      accent:
+        - "stretcher wood"
+        - "desk brass"
+      avoid:
+        - "panic chaos"
+        - "dark threatening"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Medical vestibule during
+      busy intake. Waiting families on benches. Intake clerk at desk. Triage
+      pair—healer and nurse—assessing incoming patient. Stretcher team moving
+      through separated lane. Bell for coordination. Hand-wash basins visible.
+      Controlled urgency, professional calm amid need. Fantasy medieval medical
+      institution. Multiple figures showing activity.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary hospital, panic chaos, empty waiting room,
+      dark threatening
+
+    references:
+      - source: "locations/brightstone-healers-hall/inhabitants.md"
+        anchor: "Intake, queue management, initial assessment"
+      - source: "locations/brightstone-healers-hall/description.md"
+        anchor: "stretcher lane separated from seated waiting"
+
+  - name: "Consciousness Returns"
+    slug: "brightstone-healers-hall-veyra-awakening"
+    title: "Consciousness Returns"
+    image_type: "beat"
+    category: "interior"
+
+    source_chapter: "ch02-the-lantern-ward"
+    source_scene: "scn-02-01"
+    what_happens: |
+      Veyra wakes from white-fire nightmares to find Dokra Ironvein silhouetted
+      in the doorway—a fortress of a dwarf whose presence makes the space feel
+      more solid, more real.
+
+    zone: "recovery-ward"
+
+    depicts_characters:
+      - slug: "veyra-thornwake"
+        role: "Waking in hospital bed, disoriented, bandaged"
+      - slug: "dokra-ironvein"
+        role: "Silhouette in doorway, grounding presence"
+
+    character_states:
+      veyra-thornwake: "Waking from nightmare, gasping, disoriented"
+      dokra-ironvein: "Solid, waiting, grounding"
+
+    character_sources:
+      - slug: "veyra-thornwake"
+        file: "characters/veyra-thornwake/profile.md"
+        anchor: "burn scar on left face"
+
+    character_portrait_refs:
+      - slug: "veyra-thornwake"
+        portrait: "characters/veyra-thornwake/images/portrait.png"
+
+    scene_mood: "somber"
+    mood_rationale: |
+      The moment between nightmare and reality—Veyra gasping awake to find
+      someone waiting, someone real. The transition from dream-terror to
+      grounded presence.
+
+    visual_description: |
+      Morning light floods the recovery ward doorway, silhouetting Dokra
+      Ironvein—a dwarf built like a fortress, iron-gray braids framing a
+      weathered face. In the foreground, Veyra's bandaged form in the hospital
+      bed, gasping awake from nightmare. The polished lantern glows on the
+      nightstand, its flame steady. The contrast between Dokra's solid reality
+      and Veyra's dream-fragility. The moment consciousness returns.
+
+    composition_notes: |
+      From Veyra's bed POV, looking toward doorway. Dokra backlit, solid.
+      Veyra's bandaged arm and bedding in foreground. Lantern as grounding
+      point. Morning light flooding in.
+
+    narrative_significance: |
+      First conscious moment after Undershade Canyon—the beginning of
+      recovery, the introduction of Dokra as healer and guide.
+
+    symbolic_elements:
+      - "Backlit silhouette (reality at threshold)"
+      - "Lantern steady (the light that survived)"
+      - "Morning light (new day, new chance)"
+      - "Bandaged form (damage acknowledged)"
+
+    location_within: "Recovery ward"
+    time_of_day: "morning"
+    weather: "fair, light flooding"
+
+    required_elements:
+      - "Dokra silhouetted in doorway"
+      - "Veyra bandaged in bed"
+      - "Morning light backlighting"
+      - "Polished lantern on nightstand"
+      - "Gasping-awake posture"
+      - "Solid vs. fragile contrast"
+
+    lighting:
+      primary_source: "morning sun through doorway"
+      quality: "bright backlight"
+      direction: "from doorway behind Dokra"
+      color_temperature: "warm morning gold"
+      shadow_depth: "dramatic silhouette"
+      atmospheric: "threshold between dream and real"
+
+    palette:
+      dominant:
+        - "silhouette dark"
+        - "morning gold"
+        - "linen white"
+      accent:
+        - "lantern flame"
+        - "bandage cream"
+      avoid:
+        - "nightmare imagery"
+        - "clinical coldness"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Morning awakening scene
+      in fantasy hospital. Dwarven healer silhouetted in doorway, backlit by
+      morning sun, built like a fortress with iron-gray braids. Half-elf woman
+      in hospital bed, bandaged, gasping awake from nightmare. Polished lantern
+      glowing on nightstand. Morning light flooding through doorway. The moment
+      consciousness returns. Solid healer vs. fragile patient contrast.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, nightmare imagery visible, wrong character features,
+      evening or night scene
+
+    references:
+      - source: "ch02-the-lantern-ward/chapter.visual-plan.yaml"
+        scene_id: "scn-02-01"
+        anchor: "Dokra Ironvein stood silhouetted against the morning light—a dwarf built like a fortress"
+      - source: "ch02-the-lantern-ward/chapter.visual-plan.yaml"
+        anchor: "her presence somehow making the space feel more solid, more real"

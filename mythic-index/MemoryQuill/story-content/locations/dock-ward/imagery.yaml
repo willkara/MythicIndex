@@ -1,0 +1,894 @@
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "dock-ward"
+  location_name: "Dock Ward"
+  zone_count: 16
+  featured_in_chapters:
+    - ch03-the-first-spark
+    - ch11.5-wayside-whispers
+  last_updated: "2025-12-26"
+
+generation_defaults:
+  provider: "workers-ai"
+  model: "flux-schnell"
+  quality: "high"
+  aspect_ratio: "16:9"
+  size: "1344x768"
+
+narrative_soul: |
+  The Dock Ward is Waterdeep's working heartbeat—a dense waterfront where
+  tar-darkened timbers meet salt-stained stone, where masts bristle like
+  a forest, and where order is wrestled from chaos one bell-peal at a time.
+  In this district, the Company found its purpose: when a tenement blazed
+  with phosphorus flame and Veyra's battlefield experience recognized what
+  water would do, when her voice cut through chaos to save lives, when the
+  sealed basement taught them the bitter cost of insufficient resources.
+  The Dock Ward is where competence proves itself in crisis, where legends
+  are forged in fire, and where the Last Light Company first understood
+  what it needed to become.
+
+one_line_essence: "Where the tide-driven city works, bleeds, and occasionally burns."
+
+location_visual_anchor:
+  signature_elements:
+    - "Forests of masts and spars bristling from wharves"
+    - "Narrow lanes between tall, window-sparse warehouses"
+    - "Cranes, capstans, and block-and-tackle rigs on wet cobbles"
+    - "Market stalls in damp squares with shouting vendors"
+    - "Tenements stacked above ground-floor commerce"
+    - "Rope chandlers, sail-makers, and shipping offices"
+    - "Constant motion of carts, crews, and tide-driven labor"
+  materials:
+    - "Salt-stained ashlar and brick"
+    - "Tarred timber and plank"
+    - "Iron-banded doors, hooks, and hoists"
+    - "Rope lines and canvas"
+    - "Wet cobblestone and wooden pier planks"
+  color_anchors:
+    - "Timber tar-dark brown"
+    - "Salt-stain gray-white"
+    - "Harbor water gray-blue"
+    - "Fish-scale silver"
+    - "Rope fiber tan"
+    - "Fire orange when disaster strikes"
+  characteristic_light:
+    dawn: "Fog and muted silhouettes, shift changes, masts emerging from mist"
+    midday: "Markets at peak, a moving maze of carts and crews, harsh noon on wet stone"
+    night: "Lantern pools isolating activity, legitimate merchants shuttered, back-lane movement"
+    storm: "Wind-driven spray, mooring lines straining, building faces taking a pounding"
+
+overview:
+  establishing:
+    slug: "establishing"
+    name: "Dock Ward - Establishing Shot"
+    zone_type: "establishing"
+    image_type: "establishing"
+    mood: "quotidian"
+    narrative_context: |
+      Waterdeep's working waterfront—dense, layered, constantly in motion.
+      Masts bristle from wharves, narrow lanes wind between warehouses,
+      and the air is thick with brine, fish, pitch, and commerce.
+    lighting:
+      primary_source: "Natural harbor light"
+      secondary_source: "Lantern brackets along lanes"
+      quality: "Working daylight, salt-haze softened"
+      direction: "Mixed harbor light"
+      color_temperature: "Cool maritime with warm commerce spots"
+      shadow_depth: "Deep in lanes, open on wharves"
+      atmospheric: "Salt air, fish smell, constant activity"
+    palette:
+      dominant:
+        - "Harbor gray-blue"
+        - "Timber tar-dark"
+        - "Cobblestone wet"
+      accent:
+        - "Sail canvas cream"
+        - "Market color splashes"
+        - "Lantern gold"
+      avoid:
+        - "Clean modern harbor"
+        - "Tourist attraction"
+        - "Empty docks"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of fantasy working harbor district, dense waterfront.
+      Forest of masts and spars at wharves, cranes and capstans on wet
+      cobbles. Narrow lanes between tall warehouses, iron-banded doors,
+      loading hoists. Market stalls in damp squares, shouting vendors,
+      rumbling carts. Tenements stacked above ground-floor commerce.
+      Salt air, fish smell, constant motion of crews and cargo. Rope
+      chandlers and sail-makers. Waterdeep's Dock Ward at work. Fantasy
+      illustration, rich impasto, maritime industry.
+    negative_prompt: "modern harbor, container ships, clean docks, tourist area, empty wharves, cartoon style, anime"
+
+zones:
+  - slug: "working-wharves"
+    name: "Working Wharves & Piers"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      The heart of dock commerce—forests of masts, gangplanks and bollards,
+      cargo cranes and block-and-tackle. Fish-cleaning stations with
+      constant washdown, tar pots and pitch work areas.
+    lighting:
+      primary_source: "Open harbor daylight"
+      secondary_source: "Reflected water light"
+      quality: "Bright maritime work light"
+      direction: "Open sky, water reflection"
+      color_temperature: "Cool maritime"
+      shadow_depth: "Sharp from masts and rigging"
+      atmospheric: "Salt spray, fish, tar"
+    palette:
+      dominant:
+        - "Harbor water gray-blue"
+        - "Pier plank weathered"
+        - "Mast timber dark"
+      accent:
+        - "Sail canvas cream"
+        - "Cargo variety"
+        - "Fish silver"
+      avoid:
+        - "Modern equipment"
+        - "Clean surfaces"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of working wharves, fantasy harbor piers. Forest of
+      masts and spars, gangplanks and bollards, cargo cranes and block-
+      and-tackle rigs. Crews loading and unloading ships, handcarts
+      on wet planks. Fish-cleaning stations with constant washdown.
+      Tar pots and pitch work areas. Salt spray and constant activity.
+      Fantasy illustration, maritime industry.
+    negative_prompt: "modern ships, container cranes, empty docks, pleasure boats, cartoon style, anime"
+
+  - slug: "warehouse-lanes"
+    name: "Warehouse Lanes"
+    zone_type: "liminal"
+    image_type: "zone"
+    mood: "ominous"
+    narrative_context: |
+      Narrow streets between high warehouse walls—few windows, deep door
+      recesses, elevated catwalks and loft hatches. The passages that
+      carry commerce and sometimes darker cargo.
+    lighting:
+      primary_source: "Filtered sky light above"
+      secondary_source: "Occasional door lamp"
+      quality: "Dim corridor light"
+      direction: "Overhead slot, door pools"
+      color_temperature: "Cool shadow"
+      shadow_depth: "Deep—canyon shadows"
+      atmospheric: "Rope fiber, stored goods"
+    palette:
+      dominant:
+        - "Warehouse wall dark"
+        - "Sky slot gray-blue"
+        - "Cobble wet"
+      accent:
+        - "Door iron bands"
+        - "Cart movement"
+        - "Rope coil"
+      avoid:
+        - "Bright lighting"
+        - "Wide streets"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of narrow warehouse lane, fantasy dock district
+      passage. High walls with few windows, deep door recesses, iron-
+      banded doors. Elevated catwalks and loft hatches above. Narrow
+      sky visible between buildings. Wheeled carts rattling over
+      cobbles. Deep shadows, minimal light. Fantasy illustration,
+      ominous commerce corridor.
+    negative_prompt: "wide street, bright lighting, modern warehouse, open space, cartoon style, anime"
+
+  - slug: "warehouse-lane"
+    name: "Warehouse Lane"
+    zone_type: "liminal"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      A single warehouse lane during working hours—carts passing, doors
+      open for loading, the organized chaos of legitimate commerce.
+    lighting:
+      primary_source: "Overhead sky slot"
+      secondary_source: "Open warehouse door light"
+      quality: "Working corridor light"
+      direction: "Overhead and through doors"
+      color_temperature: "Mixed interior-exterior"
+      shadow_depth: "Moderate—active commerce"
+      atmospheric: "Cargo movement"
+    palette:
+      dominant:
+        - "Stone wall gray"
+        - "Cart wood"
+        - "Cobble wet"
+      accent:
+        - "Cargo colors"
+        - "Worker movement"
+        - "Open door warmth"
+      avoid:
+        - "Empty lane"
+        - "Night darkness"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of warehouse lane during working hours, fantasy
+      commerce passage. Carts passing in narrow space, workers moving
+      cargo. Warehouse doors open for loading. Organized chaos of
+      dock district trade. Fantasy illustration, quotidian commerce.
+    negative_prompt: "empty street, night scene, modern warehouse, cartoon style, anime"
+
+  - slug: "market-square"
+    name: "Market Square"
+    zone_type: "commons"
+    image_type: "zone"
+    mood: "kinetic"
+    narrative_context: |
+      A damp square filled with shouting vendors, rumbling carts, and
+      sharp fish-salt smells. The commercial heart where information
+      moves faster than goods.
+    lighting:
+      primary_source: "Open sky over square"
+      secondary_source: "Vendor stall lanterns"
+      quality: "Bright market light"
+      direction: "Overhead, scattered stall lights"
+      color_temperature: "Natural daylight, warm stall accents"
+      shadow_depth: "Light—active public space"
+      atmospheric: "Fish, produce, commerce noise"
+    palette:
+      dominant:
+        - "Market stall canvas"
+        - "Produce colors"
+        - "Wet cobble"
+      accent:
+        - "Fish silver"
+        - "Vendor bright colors"
+        - "Cart wood"
+      avoid:
+        - "Empty square"
+        - "Quiet"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of dock ward market square, fantasy commercial hub.
+      Damp square filled with shouting vendors, rumbling carts.
+      Fish stalls with silver catch, produce heaped high. Sharp
+      fish-salt smell implied. Crowd moving through stalls. Canvas
+      awnings over vendors. Kinetic commerce. Fantasy illustration,
+      market bustle.
+    negative_prompt: "empty square, modern market, supermarket, quiet scene, cartoon style, anime"
+
+  - slug: "markets-and-taverns"
+    name: "Markets & Taverns"
+    zone_type: "commons"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      The commercial and social zone—market stalls in damp squares,
+      taverns presenting warm thresholds, back rooms serving as hiring
+      halls and rumor mills.
+    lighting:
+      primary_source: "Mixed outdoor and tavern light"
+      secondary_source: "Shop lanterns"
+      quality: "Commercial and social"
+      direction: "Varied—outdoor and interior"
+      color_temperature: "Mixed cool market, warm tavern"
+      shadow_depth: "Moderate—active spaces"
+      atmospheric: "Commerce and conversation"
+    palette:
+      dominant:
+        - "Market activity"
+        - "Tavern doorway warm"
+        - "Street traffic"
+      accent:
+        - "Vendor colors"
+        - "Tavern sign"
+        - "Lantern glow"
+      avoid:
+        - "Empty streets"
+        - "Silence"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of dock ward commercial street, fantasy mixed use.
+      Market stalls alongside tavern entrances. Warm light spilling
+      from tavern doors against gray weather. Vendors shouting,
+      patrons moving between commerce and refreshment. Back rooms
+      visible as hiring halls. Fantasy illustration, quotidian
+      dock life.
+    negative_prompt: "empty street, modern shops, quiet scene, cartoon style, anime"
+
+  - slug: "tenements-and-back-lanes"
+    name: "Tenements & Back Lanes"
+    zone_type: "zone"
+    image_type: "zone"
+    mood: "ominous"
+    narrative_context: |
+      Mixed-use stacks—commerce below, crowded living above. Narrow
+      steep stairs, basements sometimes housing unlicensed trades.
+      Where fire risk is highest and response hardest.
+    lighting:
+      primary_source: "Minimal—narrow sky slots"
+      secondary_source: "Window glow from above"
+      quality: "Dim, confined"
+      direction: "Overhead slots, window spill"
+      color_temperature: "Cool shadow, warm window"
+      shadow_depth: "Deep—confined spaces"
+      atmospheric: "Crowded living, fire risk"
+    palette:
+      dominant:
+        - "Dark building wall"
+        - "Narrow sky"
+        - "Steep stair wood"
+      accent:
+        - "Window light"
+        - "Laundry lines"
+        - "Back door activity"
+      avoid:
+        - "Wide spaces"
+        - "Good lighting"
+    aspect_ratio: "3:4"
+    size: "896x1152"
+    prompt_used: |
+      Oil painting of dock ward back lanes, fantasy tenement district.
+      Tall buildings with commerce below, crowded living above.
+      Narrow steep stairs between buildings. Laundry lines overhead.
+      Minimal light, confined spaces. Where fire risk is highest.
+      Fantasy illustration, ominous density.
+    negative_prompt: "wide street, good lighting, modern apartments, open space, cartoon style, anime"
+
+  - slug: "tenement-exterior"
+    name: "Tenement Exterior"
+    zone_type: "zone"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      A typical Dock Ward tenement—commerce at street level, crowded
+      living above, the daily life of working families before disaster
+      strikes.
+    lighting:
+      primary_source: "Street light"
+      secondary_source: "Window glow"
+      quality: "Normal street lighting"
+      direction: "Front facade"
+      color_temperature: "Mixed natural and interior"
+      shadow_depth: "Moderate—normal building"
+      atmospheric: "Daily life"
+    palette:
+      dominant:
+        - "Building facade weathered"
+        - "Street activity"
+        - "Window variety"
+      accent:
+        - "Shop signage"
+        - "Daily life details"
+        - "Laundry hanging"
+      avoid:
+        - "Fire"
+        - "Damage"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of dock ward tenement exterior, fantasy working-
+      class building. Commerce at street level—shops and trades.
+      Crowded living above—windows with laundry, lives visible.
+      Normal daily activity, before any disaster. Weathered but
+      maintained. Fantasy illustration, quotidian life.
+    negative_prompt: "fire, destruction, ruined building, modern apartment, cartoon style, anime"
+    references:
+      - type: "chapter_visual_plan"
+        slug: "ch03-the-first-spark"
+        scene: "scn-03-02"
+        reason: "Tenement before fire"
+
+  - slug: "tenement-fire"
+    name: "Tenement Fire"
+    zone_type: "zone"
+    image_type: "beat"
+    mood: "kinetic"
+    narrative_context: |
+      A tenement ablaze—three-story inferno with white-green phosphorus
+      flames at the base, greasy black smoke rising, the disaster that
+      proves Veyra's expertise when water would have killed them all.
+    lighting:
+      primary_source: "Fire—white-green phosphorus and orange"
+      secondary_source: "Smoke-filtered chaos"
+      quality: "Disaster light, unnatural colors"
+      direction: "Radiating from fire"
+      color_temperature: "Wrong—white-green chemical, orange traditional"
+      shadow_depth: "Chaotic—fire-cast"
+      atmospheric: "Smoke, heat, panic"
+    palette:
+      dominant:
+        - "Fire white-green (wrong color)"
+        - "Traditional orange above"
+        - "Greasy black smoke"
+      accent:
+        - "Crowd faces lit"
+        - "Bucket brigade"
+        - "Watch perimeter"
+      avoid:
+        - "Normal fire colors only"
+        - "Calm scene"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of tenement fire with chemical flames, fantasy
+      disaster scene. Three-story building ablaze, white-green
+      phosphorus flames at base (wrong color), traditional orange
+      flames above. Greasy black smoke column rising. Crowd pushed
+      back by Watch perimeter. Bucket brigade frozen. The disaster
+      that proves expertise. Fantasy illustration, kinetic chaos,
+      unnatural fire colors.
+    negative_prompt: "normal orange fire only, calm scene, controlled burn, cartoon style, anime"
+    references:
+      - type: "chapter_visual_plan"
+        slug: "ch03-the-first-spark"
+        scene: "scn-03-02"
+        reason: "The First Spark fire scene"
+      - type: "character_portrait"
+        slug: "veyra-thornwake"
+        reason: "Veyra recognizing the phosphorus"
+
+  - slug: "fire-scene"
+    name: "Fire Scene"
+    zone_type: "zone"
+    image_type: "beat"
+    mood: "kinetic"
+    narrative_context: |
+      The active disaster zone—partial collapse, trapped victims,
+      the chaotic response. Where Veyra's command cuts through chaos
+      and her lantern finds paths through smoke.
+    lighting:
+      primary_source: "Fire consuming building"
+      secondary_source: "Lantern beams through smoke"
+      quality: "Chaotic fire light, lantern guidance"
+      direction: "Fire radiating, lanterns cutting"
+      color_temperature: "Fire orange and white-green"
+      shadow_depth: "Chaotic—rapid change"
+      atmospheric: "Smoke, collapse sounds, shouted orders"
+    palette:
+      dominant:
+        - "Fire orange"
+        - "Smoke black"
+        - "Dust gray"
+      accent:
+        - "Lantern beam gold"
+        - "Rescue figures"
+        - "Collapse debris"
+      avoid:
+        - "Calm"
+        - "Order"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of active fire disaster zone, fantasy rescue scene.
+      Building partially collapsed, fire still consuming. Rescue
+      figures in smoke, lantern beams cutting through chaos. Victims
+      on rooftops, bucket brigades, Watch perimeter. Dust billowing
+      from collapse. Shouted commands implied. Fantasy illustration,
+      kinetic disaster response.
+    negative_prompt: "calm scene, controlled fire, no collapse, cartoon style, anime"
+    references:
+      - type: "chapter_visual_plan"
+        slug: "ch03-the-first-spark"
+        scene: "scn-03-02"
+        reason: "Fire scene response"
+
+  - slug: "company-adjacent"
+    name: "Company-Adjacent Blocks"
+    zone_type: "zone"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      The blocks near the Company's warehouse complex—steadier Watch
+      attention, brighter lantern brackets, familiar faces who know
+      the Company by sight.
+    lighting:
+      primary_source: "Better-maintained lanterns"
+      secondary_source: "Watch patrol lights"
+      quality: "Better lit than average"
+      direction: "Regular bracket spacing"
+      color_temperature: "Warm lantern, safe feeling"
+      shadow_depth: "Moderate—well-patrolled"
+      atmospheric: "Safer district pocket"
+    palette:
+      dominant:
+        - "Better-maintained buildings"
+        - "Lantern gold regular"
+        - "Watch patrol colors"
+      accent:
+        - "Familiar faces"
+        - "Company awareness"
+        - "Orderly activity"
+      avoid:
+        - "Threatening atmosphere"
+        - "Dark corners"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of dock ward blocks near Company headquarters,
+      fantasy safer district pocket. Better-maintained lantern
+      brackets, more Watch patrol presence. Local faces recognizing
+      Company members. Streets a little cleaner, activity more
+      orderly. The Company's presence creating order. Fantasy
+      illustration, quotidian stability.
+    negative_prompt: "dangerous atmosphere, dark alleys, threatening figures, cartoon style, anime"
+
+  - slug: "company-adjacent-blocks"
+    name: "Company-Adjacent Blocks"
+    zone_type: "zone"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      Alternate view of the Company's neighborhood influence—where
+      trained responders live, trouble is less welcome.
+    lighting:
+      primary_source: "Regular lantern brackets"
+      secondary_source: "Shop window glow"
+      quality: "Well-lit for dock ward"
+      direction: "Even street coverage"
+      color_temperature: "Warm safe light"
+      shadow_depth: "Light—well-patrolled"
+      atmospheric: "Orderly neighborhood"
+    palette:
+      dominant:
+        - "Maintained buildings"
+        - "Lantern warm"
+        - "Street activity"
+      accent:
+        - "Watch presence"
+        - "Local commerce"
+        - "Recognition gestures"
+      avoid:
+        - "Darkness"
+        - "Threat"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of well-patrolled dock ward blocks, fantasy
+      neighborhood stability. Regular lantern coverage, maintained
+      buildings, Watch patrols visible. Local residents comfortable,
+      directions easy to get. The Company's influence creating
+      order. Fantasy illustration, quotidian safety.
+    negative_prompt: "dangerous area, dark corners, threatening, cartoon style, anime"
+
+  - slug: "dockside"
+    name: "Dockside"
+    zone_type: "threshold"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      The waterfront edge—where ships meet shore, cargo transfers,
+      and the boundary between land commerce and sea trade.
+    lighting:
+      primary_source: "Harbor light"
+      secondary_source: "Ship lanterns"
+      quality: "Open maritime"
+      direction: "From water and sky"
+      color_temperature: "Cool maritime"
+      shadow_depth: "Ship and pier shadows"
+      atmospheric: "Salt air, rope, tar"
+    palette:
+      dominant:
+        - "Water gray-blue"
+        - "Pier plank"
+        - "Ship timber"
+      accent:
+        - "Sail canvas"
+        - "Cargo colors"
+        - "Worker movement"
+      avoid:
+        - "Empty docks"
+        - "Modern ships"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of dockside waterfront, fantasy harbor edge.
+      Ships moored at piers, gangplanks extended, cargo in motion.
+      Workers moving between ship and shore. Salt air, rope coils,
+      tar smell implied. The boundary of sea and land trade.
+      Fantasy illustration, quotidian maritime.
+    negative_prompt: "empty docks, modern ships, pleasure boats, cartoon style, anime"
+    references:
+      - type: "chapter_visual_plan"
+        slug: "ch11.5-wayside-whispers"
+        reason: "Dockside scene"
+
+  - slug: "pier-underwalks"
+    name: "Pier Underwalks"
+    zone_type: "liminal"
+    image_type: "zone"
+    mood: "clandestine"
+    narrative_context: |
+      The spaces beneath the piers at low tide—movement routes for
+      those who know the timing, traps for the unwary when surge comes.
+    lighting:
+      primary_source: "Filtered light through pier planks"
+      secondary_source: "Water reflection"
+      quality: "Dim, striated"
+      direction: "Overhead through gaps"
+      color_temperature: "Cool, damp"
+      shadow_depth: "Deep—hidden passage"
+      atmospheric: "Damp, sea life, hidden movement"
+    palette:
+      dominant:
+        - "Pier underside dark"
+        - "Water shallow"
+        - "Piling barnacled"
+      accent:
+        - "Light stripes through planks"
+        - "Hidden figure"
+        - "Tide mark"
+      avoid:
+        - "Bright light"
+        - "Open space"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of pier underwalks at low tide, fantasy hidden
+      passage. Beneath the piers, barnacled pilings, shallow water.
+      Light striping through plank gaps. Movement route for those
+      who know the tide. Dark, damp, hidden. Fantasy illustration,
+      clandestine passage.
+    negative_prompt: "bright light, open space, dry ground, cartoon style, anime"
+
+  - slug: "storm-wharves"
+    name: "Storm Wharves"
+    zone_type: "zone"
+    image_type: "temporal"
+    mood: "ominous"
+    narrative_context: |
+      The wharves during storm season—wind-driven spray, straining
+      mooring lines, building faces taking a pounding.
+    lighting:
+      primary_source: "Storm-filtered daylight"
+      secondary_source: "Lightning flashes"
+      quality: "Storm light, chaotic"
+      direction: "Scattered by weather"
+      color_temperature: "Cold storm gray"
+      shadow_depth: "Chaotic—weather-driven"
+      atmospheric: "Wind, spray, straining rope"
+    palette:
+      dominant:
+        - "Storm gray sky"
+        - "Wave white caps"
+        - "Dark wet everything"
+      accent:
+        - "Straining rope"
+        - "Crew movement"
+        - "Lightning flash"
+      avoid:
+        - "Calm water"
+        - "Clear sky"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of dock ward wharves in storm, fantasy weather
+      disaster. Wind-driven spray, straining mooring lines singing.
+      Waves crashing against pilings. Crew rushing to secure ships.
+      Storm gray sky, lightning flash. Buildings taking a pounding.
+      Fantasy illustration, ominous weather.
+    negative_prompt: "calm water, clear sky, pleasant weather, cartoon style, anime"
+
+  - slug: "night-rain"
+    name: "Night Rain"
+    zone_type: "zone"
+    image_type: "temporal"
+    mood: "ominous"
+    narrative_context: |
+      The dock ward at night in rain—lantern pools isolated by sheets
+      of water, legitimate merchants shuttered, movement in shadows.
+    lighting:
+      primary_source: "Lantern pools in rain"
+      secondary_source: "Reflection in wet cobbles"
+      quality: "Rain-diffused, isolated"
+      direction: "Lantern islands"
+      color_temperature: "Warm lantern in cold rain"
+      shadow_depth: "Deep between lights"
+      atmospheric: "Rain sheets, isolation"
+    palette:
+      dominant:
+        - "Rain dark"
+        - "Wet reflection"
+        - "Lantern gold pools"
+      accent:
+        - "Shuttered shops"
+        - "Shadow movement"
+        - "Rain streaks"
+      avoid:
+        - "Clear night"
+        - "Busy streets"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of dock ward night in rain, fantasy noir
+      atmosphere. Lantern pools isolated by rain sheets. Wet cobbles
+      reflecting light. Shuttered shops, empty streets. Shadow
+      movement between light islands. Cold rain, warm lanterns.
+      Fantasy illustration, ominous night.
+    negative_prompt: "clear night, busy streets, good weather, cartoon style, anime"
+
+  - slug: "essence"
+    name: "Essence"
+    zone_type: "zone"
+    image_type: "essence"
+    mood: "quotidian"
+    narrative_context: |
+      The essential character of the Dock Ward—the smell of brine and
+      fish, the sound of bells and gulls, the constant motion that
+      defines the district.
+    lighting:
+      primary_source: "Natural harbor light"
+      secondary_source: "Activity-generated"
+      quality: "Working daylight"
+      direction: "Maritime exposure"
+      color_temperature: "Cool maritime"
+      shadow_depth: "Active, changing"
+      atmospheric: "Salt, fish, tar, commerce"
+    palette:
+      dominant:
+        - "Harbor gray-blue"
+        - "Timber dark"
+        - "Activity colors"
+      accent:
+        - "Fish silver"
+        - "Rope tan"
+        - "Canvas cream"
+      avoid:
+        - "Stillness"
+        - "Cleanliness"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting capturing essence of dock ward, fantasy working
+      waterfront. Brine smell implied in wet surfaces, fish scales
+      catching light, tar-dark timber, rope coils everywhere.
+      Bells and gulls, constant motion. Industry and survival,
+      order wrestled from chaos. Fantasy illustration, essential
+      character.
+    negative_prompt: "stillness, cleanliness, modern harbor, cartoon style, anime"
+
+beat_images:
+  - slug: "phosphorus-recognition"
+    name: "White Phosphorus Recognition"
+    zone_ref: "fire-scene"
+    image_type: "hero"
+    mood: "kinetic"
+    narrative_context: |
+      Veyra's 'NO!' cuts through chaos as she recognizes the phosphorus
+      blend, stopping the water that would have killed them all.
+      Experience transcending training, expertise earned through trauma.
+    chapter_ref: "ch03-the-first-spark"
+    scene_ref: "scn-03-02"
+    moment_ref: "ch03-the-first-spark-moment-03"
+    lighting:
+      primary_source: "White-green phosphorus flames"
+      secondary_source: "Traditional fire orange above"
+      quality: "Wrong-colored fire light"
+      direction: "From flames behind"
+      color_temperature: "White-green chemical"
+      shadow_depth: "Fire-cast, dramatic"
+      atmospheric: "Moment of command"
+    palette:
+      dominant:
+        - "White-green wrong fire"
+        - "Command figure"
+        - "Frozen bucket brigade"
+      accent:
+        - "Scarred face illuminated"
+        - "Outstretched arm"
+        - "Bucket mid-arc"
+      avoid:
+        - "Normal fire colors"
+        - "Calm scene"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of commander halting bucket brigade, fantasy
+      expertise moment. Female figure with scarred face, arm
+      outstretched in command halt. White-green phosphorus flames
+      behind her (wrong color fire). Bucket frozen mid-arc. Her
+      voice cutting through chaos. Experience transcending training.
+      Fantasy illustration, kinetic command.
+    negative_prompt: "normal fire colors, calm scene, ignored command, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "veyra-thornwake"
+        reason: "Veyra's expertise proving itself"
+
+  - slug: "building-collapse"
+    name: "The Building's Death Cry"
+    zone_ref: "tenement-exterior"
+    image_type: "hero"
+    mood: "kinetic"
+    narrative_context: |
+      Veyra roars 'BACK!' as she hears the building's final groan,
+      the patrol scrambling clear ten seconds before the facade
+      collapses in a roar of dust and debris.
+    chapter_ref: "ch03-the-first-spark"
+    scene_ref: "scn-03-02"
+    moment_ref: "ch03-the-first-spark-moment-06"
+    lighting:
+      primary_source: "Fire behind collapse"
+      secondary_source: "Dust-filtered chaos"
+      quality: "Collapse light, dust-choked"
+      direction: "Fire behind, dust billowing"
+      color_temperature: "Fire orange through dust gray"
+      shadow_depth: "Chaotic—structure failing"
+      atmospheric: "Collapse roar, dust billowing"
+    palette:
+      dominant:
+        - "Collapse dust gray"
+        - "Fire orange behind"
+        - "Debris falling"
+      accent:
+        - "Scrambling figures"
+        - "Retreat motion"
+        - "Command figure"
+      avoid:
+        - "Static image"
+        - "Calm"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of building facade collapsing, fantasy structural
+      failure. Patrol scrambling backward as facade mid-collapse.
+      Dust billowing outward in choking cloud. Fire visible behind.
+      Command figure who called the retreat. Debris and structure
+      falling. The language of breaking things saving lives.
+      Fantasy illustration, kinetic disaster.
+    negative_prompt: "static scene, stable building, calm aftermath, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "veyra-thornwake"
+        reason: "Veyra calling the retreat"
+
+  - slug: "sealed-basement"
+    name: "The Sealed Basement"
+    zone_ref: "tenement-exterior"
+    image_type: "anchor"
+    mood: "somber"
+    narrative_context: |
+      Dust clears to reveal the basement entrance buried under tons
+      of rubble. The cries from below have stopped. The bitter limit
+      of their capability—the cost of insufficient resources.
+    chapter_ref: "ch03-the-first-spark"
+    scene_ref: "scn-03-02"
+    moment_ref: "ch03-the-first-spark-moment-07"
+    lighting:
+      primary_source: "Fading fire glow"
+      secondary_source: "Dust-filtered aftermath"
+      quality: "Somber aftermath light"
+      direction: "Fire behind, dust settling"
+      color_temperature: "Cooling from fire"
+      shadow_depth: "Heavy—defeat shadows"
+      atmospheric: "Silence where cries were"
+    palette:
+      dominant:
+        - "Rubble gray"
+        - "Dust settling"
+        - "Fading fire"
+      accent:
+        - "Frozen figures"
+        - "Sealed entrance"
+        - "Silence visible"
+      avoid:
+        - "Hope"
+        - "Rescue possible"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of sealed basement aftermath, fantasy bitter
+      failure. Patrol facing rubble pile that was entrance. Dust
+      settling, fire fading. Silence where cries were. The basement
+      sealed under tons of debris. Figures frozen in failure.
+      The cost of insufficient resources. Fantasy illustration,
+      somber defeat.
+    negative_prompt: "rescue scene, hope visible, digging, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "veyra-thornwake"
+        reason: "Veyra facing failure"

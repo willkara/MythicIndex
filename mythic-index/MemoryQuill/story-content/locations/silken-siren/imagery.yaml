@@ -1,0 +1,718 @@
+# The Silken Siren - Location Imagery Specification
+# Generated for MythicIndex image generation system
+# "Where information is currency and some questions are poison"
+
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "silken-siren"
+  location_name: "The Silken Siren"
+  version: "1.0"
+  last_updated: "2025-12-26"
+  generation_notes: |
+    An information trading establishment where Waterdeep's shadow economy conducts its
+    most sensitive business. The atmosphere is its security system—palpable tension,
+    nervous glances toward exits, and the unspoken understanding that wrong questions
+    bring consequences. Fear and discretion permeate every surface. This is not a
+    place of violence but of implied consequence, where fences refuse gold rather
+    than speak certain names.
+
+generation_defaults:
+  provider: "google"
+  model: "imagen-3"
+  quality: "high"
+  aspect_ratio: "16:9"
+  style_preset: "location-interior"
+
+# ============================================================================
+# NARRATIVE SOUL - The Essential Truth of This Place
+# ============================================================================
+
+narrative_soul: |
+  The Silken Siren exists in the shadows between what is known and what is dangerous
+  to know. Here, information brokers trade secrets like currency, fences move magical
+  artifacts, and arcane specialists network away from official eyes. The establishment's
+  security isn't physical—it's atmospheric. Everyone who enters understands the rules
+  without being told: some topics are off-limits, some people are protected, and wrong
+  questions bring "visits from unpleasant people."
+
+  When Marcus Heartbridge came seeking information about Korrath Threnx, even his gold
+  couldn't buy answers. The fence's refusal spoke louder than any threat—"That name is
+  poison." The Silken Siren teaches its rules through tension, through glances toward
+  exits, through the weight of words carefully weighed before speaking.
+
+one_line_essence: "Where secrets are currency and silence is survival"
+
+# ============================================================================
+# LOCATION VISUAL ANCHOR - Consistent Visual Identity
+# ============================================================================
+
+location_visual_anchor:
+  signature_elements:
+    - "Dim lighting designed for discretion, bright enough to read faces"
+    - "Tables positioned for confidential conversation, never overlapping"
+    - "Clear sightlines to multiple exits from every seat"
+    - "Professionally invisible staff, observant but unobtrusive"
+    - "Heavy silence broken only by hushed voices"
+
+  materials:
+    primary: "Dark polished wood, absorbing light"
+    secondary: "Deep fabric upholstery, sound-dampening"
+    accent: "Brass fixtures, tarnished rather than gleaming"
+    atmospheric: "Smoke and shadow in equal measure"
+
+  color_anchors:
+    dominant: ["deep shadow", "dark wood", "muted fabric"]
+    accent: ["brass gleam", "candle amber", "pale face tones"]
+    avoid: ["bright colors", "cheerful warmth", "visible security"]
+
+  characteristic_light:
+    primary: "Carefully controlled lanterns, pools of light at tables"
+    secondary: "Deep shadow between seating areas"
+    quality: "Dim enough for discretion, bright enough to read expressions"
+    mood_default: "Tense, watchful, carefully calibrated"
+
+# ============================================================================
+# OVERVIEW SHOT - Location Establishing Image
+# ============================================================================
+
+overview:
+  type: "establishing"
+  framing: "wide"
+  description: |
+    The Silken Siren's interior reveals itself in careful layers—tables arranged
+    for privacy, each a island of soft lantern light in a sea of shadow. Patrons
+    lean close in hushed conversation, their eyes occasionally flickering toward
+    exits. Staff move like ghosts, appearing only when needed, vanishing the moment
+    service is complete. The atmosphere itself speaks of consequence, of danger
+    held at bay by unspoken rules.
+
+  key_elements:
+    - "Tables arranged for confidential conversation"
+    - "Controlled lighting creating privacy pools"
+    - "Visible exits from every position"
+    - "Patrons in guarded conversation"
+    - "Staff in professional invisibility"
+    - "Heavy atmosphere of tension and discretion"
+
+  mood: "ominous"
+  time_of_day: "evening"
+  weather: "interior"
+
+  camera:
+    angle: "entrance perspective, surveying room"
+    distance: "wide establishing interior"
+    focus: "overall atmosphere, no single focal point"
+
+  lighting:
+    primary_source: "Lanterns at tables creating light pools"
+    secondary_source: "Ambient shadow between areas"
+    quality: "Dim, controlled, deliberate"
+    direction: "downward from table lanterns"
+    color_temperature: "warm amber with cold shadow"
+    shadow_depth: "deep between tables"
+    atmospheric: "slight haze suggesting pipe smoke"
+
+  palette:
+    dominant: ["dark wood", "deep shadow", "amber light pools"]
+    accent: ["brass fixtures", "fabric colors muted", "face tones"]
+    avoid: ["brightness", "cheerfulness", "visible security"]
+
+  technical:
+    aspect_ratio: "16:9"
+    focal_length: "standard, surveying perspective"
+    depth_of_field: "moderate, atmosphere visible"
+
+# ============================================================================
+# ZONES - Distinct Areas Within the Location
+# ============================================================================
+
+zones:
+  # --------------------------------------------------------------------------
+  # ENTRY AND APPROACH
+  # --------------------------------------------------------------------------
+
+  - zone_id: "alley"
+    zone_name: "The Alley Entrance"
+    zone_type: "threshold"
+
+    description: |
+      The Silken Siren doesn't advertise. Those who need to know, know. The entrance
+      is through a narrow alley, unmarked save for those who recognize the signs—a
+      particular lamp, a specific pattern in the stonework. The transition from street
+      to shadow marks the boundary between the public world and the shadow economy.
+
+    key_elements:
+      - "Narrow alley, deliberately unremarkable"
+      - "Single lamp with specific coloring"
+      - "Heavy door, well-maintained hinges"
+      - "Threshold between worlds"
+      - "Watchers in the shadows"
+
+    mood: "ominous"
+    time_of_day: "evening"
+
+    lighting:
+      primary_source: "Single alley lamp"
+      secondary_source: "Distant street light"
+      quality: "Intentionally dim"
+      color_temperature: "amber lamp against blue night"
+      shadow_depth: "deep"
+
+    palette:
+      dominant: ["alley shadow", "lamp amber", "stone grey"]
+      accent: ["door wood", "brass hardware"]
+
+    camera:
+      angle: "approaching the entrance"
+      framing: "alley walls framing destination"
+
+  - zone_id: "marcus-pov"
+    zone_name: "Entering the Silence"
+    zone_type: "perspective"
+
+    description: |
+      Crossing the threshold, a newcomer feels the weight of the room immediately.
+      Conversations don't stop but they quiet. Eyes assess without staring. The
+      heavy silence presses in—this is a place where every word is weighed, where
+      observation is constant, where the wrong question can be fatal.
+
+    key_elements:
+      - "Threshold perspective entering room"
+      - "Weight of observation"
+      - "Conversations quieting"
+      - "Assessment without staring"
+      - "The silence that presses"
+
+    mood: "ominous"
+    time_of_day: "evening"
+
+    lighting:
+      primary_source: "Interior lanterns visible ahead"
+      secondary_source: "Doorway behind casting silhouette"
+      quality: "Transition from street to shadow"
+
+    palette:
+      dominant: ["doorway silhouette", "interior amber", "watching faces"]
+
+    narrative_moment: |
+      This is Marcus's perspective when he entered seeking information about
+      Korrath—the immediate sense that this place has rules, that he is being
+      assessed, that every word will have consequence.
+
+  # --------------------------------------------------------------------------
+  # MAIN FLOOR
+  # --------------------------------------------------------------------------
+
+  - zone_id: "main-exchange-floor"
+    zone_name: "Main Exchange Floor"
+    zone_type: "commons"
+
+    description: |
+      The main floor is an architecture of privacy—tables spaced far enough that
+      conversations don't overlap, seating arranged so patrons can observe exits
+      while speaking in confidence. Each table is an island of lantern light in
+      the surrounding shadow. Here, fences meet brokers, arcane specialists
+      network, and information changes hands.
+
+    key_elements:
+      - "Tables arranged for confidential conversation"
+      - "Exit sightlines from every position"
+      - "Lanterns creating private light pools"
+      - "Deep shadow between seating areas"
+      - "Various patrons in hushed exchange"
+
+    mood: "ominous"
+    time_of_day: "evening"
+
+    lighting:
+      primary_source: "Table lanterns"
+      secondary_source: "Ambient shadow"
+      quality: "Pools of light in darkness"
+      color_temperature: "warm amber"
+      shadow_depth: "deep between areas"
+
+    palette:
+      dominant: ["dark wood tables", "amber lantern pools", "shadow black"]
+      accent: ["patron clothing", "brass fixtures"]
+
+    camera:
+      angle: "eye level, surveying floor"
+      framing: "multiple tables visible, privacy emphasized"
+
+    narrative_moment: |
+      The main floor is where the shadow economy operates—not in secret but in
+      careful discretion. Every conversation here has stakes. Every exchange is
+      calibrated.
+
+  - zone_id: "privacy-islands"
+    zone_name: "Privacy Islands"
+    zone_type: "detail"
+
+    description: |
+      Each table is its own territory, a pool of lantern light surrounded by
+      shadow. The spacing ensures conversations don't carry. Patrons lean close
+      across dark wood surfaces, their words meant only for each other. Staff
+      approach only when summoned, disappear immediately after.
+
+    key_elements:
+      - "Individual table as private space"
+      - "Lantern casting intimate light"
+      - "Two or three patrons leaning close"
+      - "Darkness defining boundaries"
+      - "Sound contained by spacing"
+
+    mood: "intimate"
+    time_of_day: "evening"
+
+    lighting:
+      primary_source: "Table lantern"
+      quality: "Intimate, contained"
+      color_temperature: "amber warmth"
+
+    palette:
+      dominant: ["wood surface", "lantern glow", "surrounding shadow"]
+      accent: ["patron faces", "drinks or papers"]
+
+  - zone_id: "exit-awareness-zone"
+    zone_name: "Exit Sightlines"
+    zone_type: "perspective"
+
+    description: |
+      From any seat, the exits are visible. This isn't architectural accident but
+      deliberate design—every patron can track their escape routes, can notice new
+      arrivals, can assess threats before they materialize. The nervous glances
+      toward doors are constant, a rhythm of survival instinct.
+
+    key_elements:
+      - "Multiple exits visible from seating"
+      - "Patron eyes tracking doors"
+      - "The architecture of escape"
+      - "Constant low-level vigilance"
+      - "Survival as design principle"
+
+    mood: "tense"
+    time_of_day: "evening"
+
+    lighting:
+      primary_source: "Table lanterns"
+      secondary_source: "Exit doors catching distant light"
+      quality: "Clear sightlines maintained"
+
+    palette:
+      dominant: ["interior shadow", "exit frame visibility"]
+
+    narrative_moment: |
+      Exit awareness defines the Silken Siren's culture—everyone is prepared to
+      leave quickly, everyone tracks the doors, everyone understands that danger
+      could arrive at any moment.
+
+  - zone_id: "exit-watcher"
+    zone_name: "Perpetual Vigilance"
+    zone_type: "mood"
+
+    description: |
+      A patron's eyes flicker toward the entrance as a new figure appears in the
+      doorway. The assessment is instant and instinctual—friend, foe, or fellow
+      shadow-dweller? The moment passes, conversation resumes, but the vigilance
+      never truly relaxes.
+
+    key_elements:
+      - "Eyes flickering toward doorway"
+      - "New arrival silhouetted"
+      - "Instant assessment"
+      - "Return to guarded conversation"
+      - "Vigilance as constant state"
+
+    mood: "tense"
+    time_of_day: "evening"
+
+    lighting:
+      primary_source: "Doorway backlight"
+      secondary_source: "Interior table lanterns"
+      quality: "Arrival visible in silhouette"
+
+  # --------------------------------------------------------------------------
+  # PRIVATE AREAS
+  # --------------------------------------------------------------------------
+
+  - zone_id: "private-alcoves"
+    zone_name: "Private Alcoves"
+    zone_type: "sanctuary"
+
+    description: |
+      For the most sensitive exchanges, alcoves offer enhanced privacy—curtained
+      or screened from the main floor, sound-dampened, accessed only by trusted
+      clientele or for high-value trades. Here, the really dangerous information
+      changes hands, protected by reputation and consequence.
+
+    key_elements:
+      - "Screened alcove spaces"
+      - "Enhanced sound dampening"
+      - "Reserved for sensitive business"
+      - "Heavy curtains or screens"
+      - "Complete visual separation"
+
+    mood: "ominous"
+    time_of_day: "evening"
+
+    lighting:
+      primary_source: "Alcove lantern"
+      quality: "Self-contained, private"
+      color_temperature: "warm amber"
+
+    palette:
+      dominant: ["curtain fabric", "alcove shadow", "contained light"]
+      accent: ["patron faces in lantern glow"]
+
+  - zone_id: "private-alcove"
+    zone_name: "Private Alcove"
+    zone_type: "cell"
+
+    description: |
+      Within an alcove, the world shrinks to a table, a lantern, and the face
+      across from you. Secrets are spoken here that would never survive the main
+      floor. The curtain isn't just fabric—it's a boundary between the careful
+      and the committed.
+
+    key_elements:
+      - "Single alcove interior"
+      - "Table and two or three seats"
+      - "Curtain or screen at threshold"
+      - "Complete privacy"
+      - "Intimate danger"
+
+    mood: "intimate"
+    time_of_day: "evening"
+
+    lighting:
+      primary_source: "Alcove lantern on table"
+      quality: "Intimate, contained"
+
+    palette:
+      dominant: ["curtain depth", "lantern amber", "wood table"]
+
+  # --------------------------------------------------------------------------
+  # OPERATIONAL ZONES
+  # --------------------------------------------------------------------------
+
+  - zone_id: "service"
+    zone_name: "The Silent Service"
+    zone_type: "works"
+
+    description: |
+      Staff move through the Silken Siren like ghosts—appearing when needed,
+      vanishing the moment service is complete. They observe everything and
+      acknowledge nothing. Drinks arrive without being ordered, empties disappear
+      without interruption. Professional invisibility perfected into art.
+
+    key_elements:
+      - "Staff in professional motion"
+      - "Observation without acknowledgment"
+      - "Service appearing when needed"
+      - "Immediate disappearance after"
+      - "The art of not seeing"
+
+    mood: "quotidian"
+    time_of_day: "evening"
+
+    lighting:
+      primary_source: "Ambient room light"
+      quality: "Staff moving through shadow"
+
+    palette:
+      dominant: ["staff dark clothing", "shadow", "motion blur"]
+
+  - zone_id: "night-activity"
+    zone_name: "Peak Hours"
+    zone_type: "temporal"
+
+    description: |
+      At peak hours, the Silken Siren fills without crowding. Every table
+      occupied but spacing maintained. The hum of hushed conversation creates
+      its own privacy—enough noise to cover words, not enough to carry them.
+      Business is brisk, stakes are high, and the atmosphere thickens with
+      unspoken consequence.
+
+    key_elements:
+      - "Full occupancy, maintained spacing"
+      - "Hushed conversation creating ambient cover"
+      - "Multiple exchanges in progress"
+      - "Staff in constant motion"
+      - "Heightened tension and activity"
+
+    mood: "tense"
+    time_of_day: "late evening"
+
+    lighting:
+      primary_source: "Multiple table lanterns"
+      quality: "Busy but dim"
+      color_temperature: "amber throughout"
+
+    palette:
+      dominant: ["occupied tables", "movement", "amber pools"]
+
+  - zone_id: "lantern"
+    zone_name: "The Glamour-Warded Lantern"
+    zone_type: "detail"
+
+    description: |
+      The lanterns are more than light sources—rumor has it they're glamour-warded,
+      designed to make faces harder to remember, to blur features for those not
+      directly across the table. Whether true or not, the effect is real: people
+      seen in the Silken Siren are difficult to recall afterward.
+
+    key_elements:
+      - "Lantern with possible arcane properties"
+      - "Light that blurs memory"
+      - "Faces visible but not memorable"
+      - "Practical magic for privacy"
+      - "Rumor made manifest"
+
+    mood: "ethereal"
+    time_of_day: "evening"
+
+    lighting:
+      primary_source: "The warded lantern itself"
+      quality: "Softening, memory-blurring"
+      color_temperature: "amber with subtle shimmer"
+
+    palette:
+      dominant: ["lantern glow", "softened faces", "blurred edges"]
+
+  # --------------------------------------------------------------------------
+  # NARRATIVE MOMENTS
+  # --------------------------------------------------------------------------
+
+  - zone_id: "hand-exchange"
+    zone_name: "The Hidden Hand"
+    zone_type: "beat"
+
+    description: |
+      A transaction in progress—hands sliding something across the table,
+      palms briefly touching, the exchange invisible to any watching eyes.
+      A pouch of coin, a folded paper, a small object. The hands retreat,
+      the conversation continues as if nothing happened. This is how secrets
+      change owners.
+
+    key_elements:
+      - "Hands meeting across table"
+      - "Object or payment passing"
+      - "Exchange invisible to observers"
+      - "Casual continuation of conversation"
+      - "The moment of transaction"
+
+    mood: "tense"
+    time_of_day: "evening"
+
+    lighting:
+      primary_source: "Table lantern"
+      quality: "Exchange in half-light"
+
+    palette:
+      dominant: ["hand shadows", "table surface", "object gleam"]
+
+    narrative_moment: |
+      The hidden hand exchange captures the Silken Siren's function—secrets and
+      objects changing hands in ways invisible to all but the participants.
+
+  - zone_id: "fence-refuses-payment"
+    zone_name: "The Transaction That Cannot Happen"
+    zone_type: "beat"
+
+    description: |
+      The fence's face goes pale. The coin pouch sits untouched between them.
+      "That name... it's poison. Anyone asking about him gets visits from
+      unpleasant people." The fence rises, leaving gold on the table, leaving
+      Marcus with dead ends and dangerous knowledge. Some information cannot
+      be bought because the cost is too high to pay.
+
+    key_elements:
+      - "Fence's fear visible in face"
+      - "Untouched coin pouch on table"
+      - "Rising to leave"
+      - "The refusal spoken"
+      - "Marcus alone with consequences"
+
+    mood: "ominous"
+    time_of_day: "evening"
+
+    lighting:
+      primary_source: "Table lantern catching fear"
+      quality: "Revealing emotion"
+      color_temperature: "warm on pale face"
+
+    palette:
+      dominant: ["pale fear", "untouched gold", "table shadow"]
+
+    characters_present:
+      - "Marcus Heartbridge listening"
+      - "Fence refusing to speak"
+
+    narrative_moment: |
+      This is the chapter's key revelation—the fence who refuses payment because
+      Korrath's name is poison, because some protections run too deep to breach
+      with gold. Marcus learns that someone is protecting his target.
+
+# ============================================================================
+# BEAT IMAGES - Key Narrative Moments
+# ============================================================================
+
+beat_images:
+  - beat_id: "name-is-poison"
+    beat_name: "The Name Is Poison"
+    chapter_slug: "ch21-roots-and-reconnaissance"
+
+    description: |
+      The fence's face goes pale the moment Korrath's name is spoken. The coin
+      pouch sits untouched on the table—payment refused because some information
+      is too dangerous to sell. "That name... it's poison. Anyone asking about
+      him gets visits from unpleasant people." The fence rises to leave,
+      abandoning gold, leaving Marcus alone with the weight of what he's learned.
+
+    key_elements:
+      - "Fence's face drained of color"
+      - "Untouched coin pouch between them"
+      - "Rising motion, preparing to leave"
+      - "Fear visible in every line"
+      - "Marcus processing the refusal"
+
+    mood: "ominous"
+
+    composition:
+      focal_point: "Fence's fearful expression"
+      framing: "Close medium shot across table"
+      depth_layers:
+        - "Fence's face sharp"
+        - "Table with coin pouch"
+        - "Marcus partially visible"
+
+    lighting:
+      primary_source: "Table lantern between them"
+      quality: "Warm light on pale fear"
+      color_temperature: "amber on drained color"
+      shadow_depth: "deep around the scene"
+
+    palette:
+      dominant: ["pale skin", "amber lantern", "shadow fear"]
+      accent: ["gold coin pouch", "table wood"]
+
+    emotional_beat: "Some protections run too deep—even gold cannot buy this name"
+
+  - beat_id: "exit-eyes"
+    beat_name: "The Perpetual Watch"
+    chapter_slug: "ch21-roots-and-reconnaissance"
+
+    description: |
+      Throughout the establishment, eyes flicker toward exits. A patron's
+      attention splits between the person across the table and the doors.
+      Another adjusts their seat for a clearer sightline. The constant,
+      low-level vigilance that defines survival in the shadow economy.
+
+    key_elements:
+      - "Multiple patrons visible"
+      - "Eyes tracking toward exits"
+      - "Split attention, guarded postures"
+      - "Exits visible in background"
+      - "The culture of watchfulness"
+
+    mood: "tense"
+
+    composition:
+      focal_point: "Eyes flickering doorward"
+      framing: "Wide shot showing pattern"
+      depth_layers:
+        - "Foreground patron watching"
+        - "Other tables visible"
+        - "Exit doors in background"
+
+    lighting:
+      primary_source: "Multiple table lanterns"
+      quality: "Patchy light, visible shadow"
+      color_temperature: "amber pools in darkness"
+
+    palette:
+      dominant: ["shadow", "amber pools", "watchful faces"]
+      accent: ["exit doorframes", "moving eyes"]
+
+    emotional_beat: "Everyone here is prepared to leave quickly—survival is design"
+
+  - beat_id: "shadow-transaction"
+    beat_name: "The Hidden Hand"
+    chapter_slug: "ch21-roots-and-reconnaissance"
+
+    description: |
+      Across a table, hands meet briefly. Something passes between them—coin,
+      paper, object—invisible to any watching eyes. The exchange complete,
+      conversation continues as if nothing happened. This is how the shadow
+      economy moves its currency.
+
+    key_elements:
+      - "Two hands meeting across table"
+      - "Object or payment passing"
+      - "Exchange hidden by positioning"
+      - "Faces continuing conversation"
+      - "The moment of transaction"
+
+    mood: "tense"
+
+    composition:
+      focal_point: "Hands meeting"
+      framing: "Close shot on table surface"
+      depth_layers:
+        - "Hands and exchange sharp"
+        - "Table surface detail"
+        - "Faces in soft background"
+
+    lighting:
+      primary_source: "Table lantern"
+      quality: "Partial illumination"
+      color_temperature: "amber on hands"
+
+    palette:
+      dominant: ["hand skin tones", "table wood", "shadow edges"]
+      accent: ["exchanged object gleam"]
+
+    emotional_beat: "Secrets and currency change hands invisibly"
+
+# ============================================================================
+# REFERENCES - Connections to Other Content
+# ============================================================================
+
+references:
+  chapter_visual_plans:
+    - chapter_slug: "ch21-roots-and-reconnaissance"
+      relationship: "Marcus's intelligence gathering fails here"
+      relevant_scenes:
+        - "Marcus attempts to buy information about Korrath"
+        - "Fence refuses payment, calls the name 'poison'"
+        - "Revelation of protection network"
+
+  character_portraits:
+    - character_slug: "marcus-heartbridge"
+      relationship: "seeks information, finds danger"
+      visual_notes: "Investigator facing the limits of his method"
+
+    - character_slug: "korrath-threnx"
+      relationship: "the protected name"
+      visual_notes: "Never physically present but casting shadow over the scene"
+
+  related_locations:
+    - location_slug: "warehouse-complex"
+      relationship: "where Marcus returns with dead ends"
+      visual_connection: "Contrast between open warehouse and secretive Siren"
+
+  thematic_connections:
+    - theme: "Information as currency"
+      visual_expression: "Tables as trading posts, conversations as transactions"
+
+    - theme: "Fear as security"
+      visual_expression: "Exit awareness, pale faces, refused gold"
+
+    - theme: "Protected names"
+      visual_expression: "The transaction that cannot happen"
+
+    - theme: "Shadow economy"
+      visual_expression: "Hidden exchanges, professional invisibility"
+
+    - theme: "Survival instinct"
+      visual_expression: "Exit sightlines, constant vigilance"

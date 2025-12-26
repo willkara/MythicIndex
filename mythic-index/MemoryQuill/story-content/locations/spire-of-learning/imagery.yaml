@@ -1,0 +1,973 @@
+# The Spire of Learning - Location Imagery Specification
+# Generated for MythicIndex image generation system
+# "Where knowledge meets morning light and practical wisdom fills ancient halls"
+
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "spire-of-learning"
+  location_name: "The Spire of Learning"
+  version: "1.0"
+  last_updated: "2025-12-26"
+  generation_notes: |
+    A prestigious academic campus in Waterdeep's Castle Ward, organized around a central
+    lawn with pale marble facades that throw brilliant morning glare. The grand amphitheater
+    seats three hundred for lectures and symposia. Covered colonnades provide all-weather
+    circulation between buildings. This is where practical knowledge meets scholarly tradition—
+    where a dwarf engineer with scars instead of theories proves that honest expertise
+    commands respect.
+
+generation_defaults:
+  provider: "google"
+  model: "imagen-3"
+  quality: "high"
+  aspect_ratio: "16:9"
+  style_preset: "location-exterior"
+
+# ============================================================================
+# NARRATIVE SOUL - The Essential Truth of This Place
+# ============================================================================
+
+narrative_soul: |
+  The Spire of Learning represents Waterdeep's commitment to knowledge—pale marble
+  catching morning light, scholars debating in arcaded walks, three hundred minds
+  gathering to learn. But beneath the academic formality lives a truth: knowledge
+  earned through experience carries weight that theory cannot match.
+
+  When Grimjaw Ironbeard stands at the amphitheater podium, compass from a craftsman
+  in his vest pocket, he embodies this truth. "Engineering is not about knowing all
+  the answers. It's about asking the right questions when everything is falling apart."
+  The practical wisdom of a dwarf who has faced mine collapses and structural failures
+  commands respect that no academic credential could grant.
+
+one_line_essence: "Where marble halls amplify the voices of those who know"
+
+# ============================================================================
+# LOCATION VISUAL ANCHOR - Consistent Visual Identity
+# ============================================================================
+
+location_visual_anchor:
+  signature_elements:
+    - "Pale marble facades with high-reflectance morning brightness"
+    - "Grand amphitheater with 300-seat raked tiers"
+    - "Continuous covered colonnades with rhythmic arcades"
+    - "Scholar's Quad with manicured lawns and specimen trees"
+    - "Heavy doors with bronze fittings and sound seals"
+
+  materials:
+    primary: "Fine-grained pale marble, high albedo, brilliant in sunlight"
+    secondary: "Oiled oak in interiors, amber sheen on floors and wainscoting"
+    accent: "Bronze door furniture with developing patina, iron lamp standards"
+    atmospheric: "Stone flags in arcades, dressed stone at paths and channels"
+
+  color_anchors:
+    dominant: ["pale marble white", "oak amber", "lawn green"]
+    accent: ["bronze patina", "slate roof", "faculty banner colors"]
+    avoid: ["aged or dirty stone", "industrial elements", "casual disorder"]
+
+  characteristic_light:
+    primary: "Strong morning light raking across east facades"
+    secondary: "Warm lamplight pools at evening in faculty rooms"
+    quality: "Brilliant, scholarly, institutional dignity"
+    mood_default: "Academic formality softened by human warmth"
+
+# ============================================================================
+# OVERVIEW SHOT - Location Establishing Image
+# ============================================================================
+
+overview:
+  type: "establishing"
+  framing: "wide"
+  description: |
+    The Spire of Learning spreads across its city block, pale marble facades
+    catching morning light with distinctive brilliance. The main hall concourse
+    leads from formal gates through to the Scholar's Quad, where manicured lawns
+    are framed by two- and three-storey academic blocks. Covered colonnades provide
+    weather-protected circulation. The amphitheater block rises at the northern edge,
+    its heavy doors promising the gathering of three hundred minds.
+
+  key_elements:
+    - "Pale marble facades brilliant in morning light"
+    - "Main hall concourse as central axis"
+    - "Scholar's Quad with manicured lawns"
+    - "Rhythmic arcades and colonnades"
+    - "Amphitheater block with distinctive roofline"
+    - "Specimen trees with iron guards"
+
+  mood: "celebratory"
+  time_of_day: "morning"
+  weather: "clear"
+
+  camera:
+    angle: "elevated perspective from approach"
+    distance: "wide establishing showing campus scope"
+    focus: "comprehensive view of academic complex"
+
+  lighting:
+    primary_source: "Strong morning sun from east-southeast"
+    secondary_source: "Reflected light from marble surfaces"
+    quality: "Brilliant, high-key, institutional presence"
+    direction: "low eastern sun raking across facades"
+    color_temperature: "warm gold morning light on pale stone"
+    shadow_depth: "long morning shadows defining forms"
+    atmospheric: "crisp, clear academic atmosphere"
+
+  palette:
+    dominant: ["marble white", "morning gold", "lawn green"]
+    accent: ["bronze finials", "oak door panels", "slate roofing"]
+    avoid: ["dull or aged appearance", "disorder"]
+
+  technical:
+    aspect_ratio: "16:9"
+    focal_length: "wide angle for campus scope"
+    depth_of_field: "deep, all elements sharp"
+
+# ============================================================================
+# ZONES - Distinct Areas Within the Location
+# ============================================================================
+
+zones:
+  # --------------------------------------------------------------------------
+  # ENTRANCE AND APPROACH
+  # --------------------------------------------------------------------------
+
+  - zone_id: "main-gates"
+    zone_name: "Main Gates"
+    zone_type: "threshold"
+
+    description: |
+      The formal entrance to the Spire of Learning announces institutional dignity—
+      double-leaf gates in bronze-bound oak, flanking pilasters with academic symbols,
+      a porter's station maintaining control over who enters this precinct of knowledge.
+      The threshold marks the transition from city streets to scholarly grounds.
+
+    key_elements:
+      - "Bronze-bound double-leaf gates"
+      - "Pilasters with academic symbols"
+      - "Porter's station with clear sightlines"
+      - "Wicket gate for controlled access"
+      - "Transition from street to campus"
+
+    mood: "quotidian"
+    time_of_day: "morning"
+
+    lighting:
+      primary_source: "Morning light on gate facade"
+      quality: "Bright, welcoming, institutional"
+      color_temperature: "warm morning gold"
+
+    palette:
+      dominant: ["bronze gate fittings", "oak panels", "marble surround"]
+      accent: ["porter's uniform", "academic banner"]
+
+  - zone_id: "processional-forecourt"
+    zone_name: "Processional Forecourt"
+    zone_type: "liminal"
+
+    description: |
+      Beyond the gates, the processional forecourt opens to the campus proper.
+      Stone-flagged and precisely aligned, it channels visitors toward the main
+      hall concourse. Lamp standards mark the axial route. The morning sun fills
+      this space with reflected light from the marble facades rising on either side.
+
+    key_elements:
+      - "Stone-flagged forecourt"
+      - "Axial alignment to main hall"
+      - "Lamp standards at intervals"
+      - "Reflected light from facades"
+      - "Academic blocks framing approach"
+
+    mood: "quotidian"
+    time_of_day: "morning"
+
+    lighting:
+      primary_source: "Direct and reflected morning light"
+      quality: "Brilliant, high-key"
+      color_temperature: "warm gold on pale stone"
+
+    palette:
+      dominant: ["stone flags", "marble facades", "morning light"]
+
+  - zone_id: "scholars-fountain"
+    zone_name: "The Cleansing Threshold"
+    zone_type: "threshold"
+
+    description: |
+      A ceremonial fountain marks the transition into the heart of the campus—
+      water playing over stone, the symbolic cleansing before entering the halls
+      of learning. Students and scholars pause here, the sound of water providing
+      a moment of reflection before the work of knowledge begins.
+
+    key_elements:
+      - "Ceremonial fountain with playing water"
+      - "Stone basin and carved surround"
+      - "Scholars pausing before entry"
+      - "Water sound providing transition"
+      - "Marble catching fountain spray light"
+
+    mood: "ethereal"
+    time_of_day: "morning"
+
+    lighting:
+      primary_source: "Morning light through fountain spray"
+      quality: "Sparkling, prismatic"
+      color_temperature: "water-refracted rainbow hints"
+
+    palette:
+      dominant: ["water blue", "marble white", "spray sparkle"]
+
+  # --------------------------------------------------------------------------
+  # MAIN BUILDINGS
+  # --------------------------------------------------------------------------
+
+  - zone_id: "main-hall-concourse"
+    zone_name: "Main Hall Concourse"
+    zone_type: "commons"
+
+    description: |
+      The main hall concourse serves as the campus's wayfinding heart—a long,
+      high-ceilinged passage with coffered timber above and polished stone below.
+      Side doors open to seminar rooms and administration. Bronze directory
+      standards help visitors navigate. The eastern doors admit strong morning
+      light that fills the space with scholarly glow.
+
+    key_elements:
+      - "Long nave-like passage"
+      - "Coffered timber ceiling"
+      - "Polished stone floors with wear patterns"
+      - "Bronze directory standards"
+      - "Side doors to seminar rooms"
+      - "Eastern doors admitting morning light"
+
+    mood: "quotidian"
+    time_of_day: "morning"
+
+    lighting:
+      primary_source: "Eastern doors and glazing"
+      secondary_source: "Lamp niches at bay intervals"
+      quality: "Bright, legible, directional"
+      color_temperature: "morning gold through eastern glass"
+
+    palette:
+      dominant: ["polished stone floor", "coffered timber", "marble walls"]
+      accent: ["bronze standards", "oak doors", "lamp gleam"]
+
+    camera:
+      angle: "axial perspective down concourse"
+      framing: "length emphasized, human scale visible"
+
+    featured_in_chapters:
+      - "ch25-morning-rituals-and-academic-ventures"
+
+  - zone_id: "main-hall"
+    zone_name: "Main Hall"
+    zone_type: "heart"
+
+    description: |
+      The main hall proper opens off the concourse—a formal reception space
+      where scholars gather before lectures, where faculty meet visiting colleagues,
+      where the institution presents its dignified face. High windows admit
+      diffused light. Oak wainscoting rises to plastered walls. The atmosphere
+      speaks of accumulated knowledge and earned respect.
+
+    key_elements:
+      - "Formal reception hall"
+      - "High windows with diffused light"
+      - "Oak wainscoting and plastered walls"
+      - "Portraits and academic symbols"
+      - "Gathering space before events"
+
+    mood: "quotidian"
+    time_of_day: "morning"
+
+    lighting:
+      primary_source: "High windows, diffused"
+      quality: "Soft, scholarly, even"
+      color_temperature: "neutral academic light"
+
+    palette:
+      dominant: ["oak wainscoting", "plaster cream", "portrait frames"]
+
+    featured_in_chapters:
+      - "ch25-morning-rituals-and-academic-ventures"
+
+  - zone_id: "concourse"
+    zone_name: "The Wayfinding Heart"
+    zone_type: "perspective"
+
+    description: |
+      From the center of the concourse, all paths are visible—to the amphitheater,
+      to the quad, to faculty meeting rooms. Scholars in academic robes cross with
+      purpose. Students carry books and writing implements. Staff move efficiently.
+      The space pulses with the movement of knowledge being sought and shared.
+
+    key_elements:
+      - "Central vantage point"
+      - "Multiple paths visible"
+      - "Scholars in motion"
+      - "Books and implements carried"
+      - "Purpose in every movement"
+
+    mood: "kinetic"
+    time_of_day: "morning"
+
+    lighting:
+      primary_source: "Mixed sources—doors, windows, lamps"
+      quality: "Busy, dynamic"
+
+    palette:
+      dominant: ["academic robe colors", "stone floors", "moving figures"]
+
+  # --------------------------------------------------------------------------
+  # AMPHITHEATER
+  # --------------------------------------------------------------------------
+
+  - zone_id: "grand-amphitheater"
+    zone_name: "Grand Amphitheater"
+    zone_type: "heart"
+
+    description: |
+      The grand amphitheater seats three hundred in fixed, raked tiers that rise
+      in an elliptical embrace around the central dais. Acoustic coffers in the
+      ceiling scatter and direct sound. Heavy doors seal against exterior noise.
+      When full, the space hums with concentrated attention—three hundred minds
+      focused on whoever commands the podium.
+
+    key_elements:
+      - "Raked seating for 300"
+      - "Elliptical plan embracing the dais"
+      - "Acoustic coffered ceiling"
+      - "Heavy bronze-bound doors"
+      - "Central podium with diagram rails"
+      - "Observation gallery above"
+
+    mood: "reverent"
+    time_of_day: "morning lecture"
+
+    lighting:
+      primary_source: "Clerestory windows balanced for even illumination"
+      secondary_source: "Lamp ring at balcony front"
+      quality: "Academic, focused, even"
+      color_temperature: "neutral scholarly light"
+      shadow_depth: "minimal—designed for visibility"
+
+    palette:
+      dominant: ["timber benching", "plaster coffers", "marble dais"]
+      accent: ["brass seat numbers", "lamp fixtures", "diagram rails"]
+
+    camera:
+      angle: "from mid-tier looking down at podium"
+      framing: "audience visible, speaker focal point"
+
+    narrative_moment: |
+      This is where Grimjaw found his voice—standing at the podium, compass in
+      his vest pocket, three hundred faces waiting. "Engineering is not about
+      knowing all the answers. It's about asking the right questions when
+      everything is falling apart."
+
+    featured_in_chapters:
+      - "ch20-silent-hand-revelation"
+      - "ch25-morning-rituals-and-academic-ventures"
+      - "ch26-the-weight-of-success"
+
+  - zone_id: "amphitheater"
+    zone_name: "Amphitheater"
+    zone_type: "sanctuary"
+
+    description: |
+      The amphitheater from the speaker's perspective—looking out at the raked
+      tiers, seeing three hundred faces in the graduated light. The podium is
+      a platform of dressed marble with non-slip insets. Diagram rails behind
+      allow for technical drawings to be displayed. This is where practical
+      wisdom meets academic tradition.
+
+    key_elements:
+      - "Speaker's view of audience"
+      - "Marble podium with diagram rails"
+      - "Faces in graduated tiers"
+      - "Acoustic ceiling above"
+      - "Heavy doors at the back"
+
+    mood: "tense"
+    time_of_day: "lecture moment"
+
+    lighting:
+      primary_source: "Balanced amphitheater lighting"
+      quality: "Even, revealing, academic"
+
+    palette:
+      dominant: ["audience faces", "marble podium", "timber tiers"]
+
+    featured_in_chapters:
+      - "ch20-silent-hand-revelation"
+      - "ch25-morning-rituals-and-academic-ventures"
+      - "ch26-the-weight-of-success"
+
+  - zone_id: "amphitheater-filled"
+    zone_name: "The Weight of Three Hundred"
+    zone_type: "inhabited"
+
+    description: |
+      Three hundred scholars fill the amphitheater—academics in formal robes,
+      students with writing implements poised, faculty observers in the gallery
+      above. The weight of their attention is palpable. Quills hover over paper.
+      Every cough echoes. The speaker at the podium holds the focus of all this
+      gathered intelligence.
+
+    key_elements:
+      - "Full occupancy—300 scholars"
+      - "Academic robes and writing implements"
+      - "Faculty in gallery above"
+      - "Concentrated attention"
+      - "Quills poised over paper"
+
+    mood: "tense"
+    time_of_day: "lecture in progress"
+
+    lighting:
+      primary_source: "Amphitheater designed lighting"
+      quality: "Even, focused"
+
+    palette:
+      dominant: ["robe colors", "paper cream", "face tones"]
+
+    narrative_moment: |
+      Grimjaw looks out at this sea of attention and realizes: "These weren't
+      judges waiting to find him wanting. They were scholars eager to learn."
+
+  - zone_id: "audience-quills"
+    zone_name: "The Chorus of Recording"
+    zone_type: "detail"
+
+    description: |
+      Across the tiers, quills scratch on paper as scholars record the lecture.
+      The soft chorus of writing creates a rhythm beneath the speaker's words.
+      Ink bottles are positioned carefully. Pages turn with whispered sounds.
+      Knowledge is being captured, preserved, transferred from voice to record.
+
+    key_elements:
+      - "Multiple quills in motion"
+      - "Paper and ink bottles"
+      - "Hands writing across tiers"
+      - "The chorus of recording"
+      - "Knowledge being captured"
+
+    mood: "reverent"
+    time_of_day: "lecture in progress"
+
+    lighting:
+      primary_source: "Amphitheater light on paper"
+      quality: "Sufficient for writing"
+
+    palette:
+      dominant: ["paper cream", "ink black", "quill feathers"]
+
+  - zone_id: "diagram-detail"
+    zone_name: "The Blueprint of Truth"
+    zone_type: "detail"
+
+    description: |
+      Behind the podium, large engineering diagrams are displayed on the diagram
+      rails—Grimjaw's hand-drawn blueprints showing structural principles, load
+      distribution, the mathematics of not dying in a collapse. The drawings are
+      practical, precise, the work of someone who has faced the reality these
+      calculations describe.
+
+    key_elements:
+      - "Engineering diagrams on display"
+      - "Hand-drawn blueprints"
+      - "Structural principles illustrated"
+      - "Practical precision"
+      - "Diagram rails holding drawings"
+
+    mood: "quotidian"
+    time_of_day: "lecture demonstration"
+
+    lighting:
+      primary_source: "Amphitheater light on diagrams"
+      quality: "Clear, readable"
+
+    palette:
+      dominant: ["paper buff", "ink drawings", "diagram rail bronze"]
+
+  - zone_id: "discarded-drafts"
+    zone_name: "The Weight of Failed Words"
+    zone_type: "detail"
+
+    description: |
+      Before the lecture, the evidence of preparation—crumpled paper surrounding
+      Grimjaw's attempts at academic titles. Rejected: "Structural Dynamics in
+      Crisis Situations." Rejected: "Applied Engineering Principles." Final
+      choice, written bluntly: "How Not to Die in a Collapse."
+
+    key_elements:
+      - "Crumpled paper drafts"
+      - "Rejected formal titles"
+      - "The honest title chosen"
+      - "Evidence of struggle"
+      - "Authenticity over pretense"
+
+    mood: "intimate"
+    time_of_day: "pre-dawn preparation"
+
+    lighting:
+      primary_source: "Desk lamp"
+      quality: "Intimate, working light"
+
+    palette:
+      dominant: ["paper crumple", "ink marks", "desk wood"]
+
+  # --------------------------------------------------------------------------
+  # FACULTY AREAS
+  # --------------------------------------------------------------------------
+
+  - zone_id: "faculty-meeting-rooms"
+    zone_name: "Faculty Meeting Rooms"
+    zone_type: "sanctuary"
+
+    description: |
+      Smaller chambers along the upper corridor serve faculty case discussions
+      and seminars. Oak conference tables seat twelve to twenty-four. Pin-rails
+      hold diagrams and case studies. Lamp-glass provides even, shadow-minimized
+      illumination for evening sessions. Tea services warm on the sideboard.
+
+    key_elements:
+      - "Oak conference table and chairs"
+      - "Pin-rails for diagrams"
+      - "Cabinet safes for manuscripts"
+      - "Blackout shutters for lamp sessions"
+      - "Tea service on sideboard"
+
+    mood: "intimate"
+    time_of_day: "evening"
+
+    lighting:
+      primary_source: "Lamp-glass designed fixtures"
+      quality: "Even, shadow-minimized"
+      color_temperature: "warm amber lamp glow"
+
+    palette:
+      dominant: ["oak table", "plaster walls", "lamp amber"]
+      accent: ["diagram ink", "tea service brass"]
+
+  - zone_id: "faculty-evening"
+    zone_name: "Evening Case Discussion"
+    zone_type: "temporal"
+
+    description: |
+      At evening, faculty rooms fill with serious discussion. Scholars lean
+      over spread documents, debating interpretations and applications. Lamps
+      cast warm pools on oak surfaces. Tea grows cold in cups. The work of
+      advancing knowledge continues into night hours.
+
+    key_elements:
+      - "Evening lamp illumination"
+      - "Faculty in discussion"
+      - "Documents spread on table"
+      - "Cold tea in cups"
+      - "Serious intellectual work"
+
+    mood: "intimate"
+    time_of_day: "evening"
+
+    lighting:
+      primary_source: "Table lamps"
+      quality: "Warm, focused pools"
+      color_temperature: "amber warmth"
+
+    palette:
+      dominant: ["lamp amber", "oak table", "scholarly faces"]
+
+  # --------------------------------------------------------------------------
+  # EXTERIOR SPACES
+  # --------------------------------------------------------------------------
+
+  - zone_id: "scholars-quad"
+    zone_name: "Scholar's Quad"
+    zone_type: "commons"
+
+    description: |
+      The Scholar's Quad is the campus heart—a manicured lawn stretching between
+      academic blocks, crossed by stone paths, shaded by specimen trees with iron
+      guards. Students gather on benches. Faculty cross with purpose. The green
+      space provides respite from marble corridors while remaining contained by
+      institutional architecture.
+
+    key_elements:
+      - "Manicured lawn"
+      - "Stone-edged paths at quadrant lines"
+      - "Specimen trees with iron guards"
+      - "Benches in shaded bays"
+      - "Students and faculty crossing"
+
+    mood: "pastoral"
+    time_of_day: "midday"
+
+    lighting:
+      primary_source: "Overhead sun filtered by trees"
+      quality: "Dappled, comfortable"
+      color_temperature: "green-filtered daylight"
+
+    palette:
+      dominant: ["lawn green", "path stone", "tree shadow"]
+      accent: ["bench wood", "robe colors", "facade marble"]
+
+    camera:
+      angle: "across the quad showing activity"
+      framing: "academic blocks framing green space"
+
+  - zone_id: "colonnades-and-terraces"
+    zone_name: "Colonnades and Terrace Walks"
+    zone_type: "liminal"
+
+    description: |
+      Covered colonnades link the campus buildings—marble columns on granite plinths,
+      stone flags underfoot, terrace parapets for those who wish to pause and survey
+      the grounds. Morning light reflections from east facades create bright, diffuse
+      conditions. The colonnades enable all-weather movement and informal scholarly
+      exchange.
+
+    key_elements:
+      - "Rhythmic arcades"
+      - "Marble columns on granite plinths"
+      - "Stone-flagged walks"
+      - "Terrace parapets"
+      - "Reflected morning brightness"
+
+    mood: "quotidian"
+    time_of_day: "morning"
+
+    lighting:
+      primary_source: "Reflected light from facades"
+      quality: "Bright but diffuse under arcades"
+      color_temperature: "reflected morning warmth"
+
+    palette:
+      dominant: ["column marble", "stone flags", "arcade shadow"]
+      accent: ["scholar movement", "morning reflection"]
+
+  - zone_id: "arcade-perspective"
+    zone_name: "Colonnade Passage"
+    zone_type: "perspective"
+
+    description: |
+      Looking down the colonnade—rhythmic bays creating a tunnel of light and shadow,
+      scholars passing between columns, the quad visible through arched openings.
+      The architecture creates both shelter and display, allowing informal meetings
+      while maintaining institutional dignity.
+
+    key_elements:
+      - "Rhythmic bays stretching ahead"
+      - "Light and shadow alternation"
+      - "Scholars passing between columns"
+      - "Quad visible through arches"
+      - "Architectural rhythm"
+
+    mood: "quotidian"
+    time_of_day: "morning"
+
+    lighting:
+      primary_source: "Bay-filtered light"
+      quality: "Rhythmic light/shadow"
+
+    palette:
+      dominant: ["column rhythm", "shadow bays", "light intervals"]
+
+  - zone_id: "evening"
+    zone_name: "Evening on the Terraces"
+    zone_type: "temporal"
+
+    description: |
+      At evening, the campus transforms. Lamp standards ignite along the colonnades.
+      Faculty rooms glow with warm light through shuttered windows. The Scholar's
+      Quad darkens while terraces become pools of amber illumination. Scholars
+      linger in conversation as the day's work yields to evening contemplation.
+
+    key_elements:
+      - "Lamp standards igniting"
+      - "Faculty room windows glowing"
+      - "Darkening quad"
+      - "Terrace amber pools"
+      - "Lingering scholarly conversation"
+
+    mood: "intimate"
+    time_of_day: "evening"
+
+    lighting:
+      primary_source: "Lamp standards on terraces"
+      secondary_source: "Faculty window glow"
+      quality: "Warm pools in gathering darkness"
+      color_temperature: "deep amber"
+
+    palette:
+      dominant: ["lamp amber", "gathering shadow", "window glow"]
+      accent: ["scholar silhouettes", "terrace stone"]
+
+  - zone_id: "storm"
+    zone_name: "Institution Against the Storm"
+    zone_type: "temporal"
+
+    description: |
+      During storms, the Spire of Learning demonstrates its permanence—marble facades
+      streaming with rain, colonnades providing shelter from downpours, lamp light
+      visible through weather. The institution stands against the elements, knowledge
+      persisting regardless of conditions.
+
+    key_elements:
+      - "Rain streaming on facades"
+      - "Colonnades providing shelter"
+      - "Storm-dark sky"
+      - "Interior lights visible"
+      - "Institutional permanence"
+
+    mood: "ominous"
+    time_of_day: "storm conditions"
+
+    lighting:
+      primary_source: "Storm-diffused daylight"
+      secondary_source: "Interior lamps visible"
+      quality: "Dark, dramatic, persistent interior glow"
+
+    palette:
+      dominant: ["rain-wet marble", "storm grey", "interior amber"]
+
+  # --------------------------------------------------------------------------
+  # SERVICE AREAS
+  # --------------------------------------------------------------------------
+
+  - zone_id: "service-corridor"
+    zone_name: "Service Corridor and Back-of-House"
+    zone_type: "works"
+
+    description: |
+      Away from the public facades, service corridors connect delivery points,
+      storage rooms, lamp oil vaults, and amphitheater back-of-house. Staff move
+      efficiently here, maintaining the mechanisms that allow the institution
+      to function—the unseen work that enables visible scholarship.
+
+    key_elements:
+      - "Service corridor, 3-4m wide"
+      - "Delivery arch and storage rooms"
+      - "Lamp oil vaults with fire prevention"
+      - "Tool room and maintenance access"
+      - "Staff in efficient motion"
+
+    mood: "quotidian"
+    time_of_day: "working hours"
+
+    lighting:
+      primary_source: "Functional corridor fixtures"
+      quality: "Adequate, working light"
+
+    palette:
+      dominant: ["service corridor stone", "storage doors", "staff uniforms"]
+
+# ============================================================================
+# BEAT IMAGES - Key Narrative Moments
+# ============================================================================
+
+beat_images:
+  - beat_id: "finding-his-voice"
+    beat_name: "Finding His Voice"
+    chapter_slug: "ch26-the-weight-of-success"
+
+    description: |
+      Grimjaw Ironbeard stands at the amphitheater podium, three hundred faces
+      waiting in the raked tiers above. Something shifts in his chest as he
+      realizes these aren't judges—they're scholars eager to learn. His shoulders
+      straighten. His hand releases the compass in his vest pocket. He finds
+      his voice.
+
+    key_elements:
+      - "Grimjaw at marble podium"
+      - "Three hundred faces in tiers above"
+      - "Shoulders straightening"
+      - "Transformation visible in posture"
+      - "Amphitheater architecture framing moment"
+
+    mood: "intimate"
+
+    composition:
+      focal_point: "Grimjaw's face and posture at podium"
+      framing: "Medium shot with audience visible behind"
+      depth_layers:
+        - "Grimjaw sharp at podium"
+        - "Audience faces in mid-ground"
+        - "Amphitheater architecture"
+
+    lighting:
+      primary_source: "Amphitheater balanced lighting"
+      quality: "Academic, even, scholarly"
+      color_temperature: "neutral scholarly light"
+
+    palette:
+      dominant: ["marble podium", "audience faces", "timber tiers"]
+      accent: ["Grimjaw's weathered features", "vest with compass pocket"]
+
+    emotional_beat: "The craftsman becomes teacher—practical wisdom finds academic voice"
+
+  - beat_id: "asking-right-questions"
+    beat_name: "Asking the Right Questions"
+    chapter_slug: "ch26-the-weight-of-success"
+
+    description: |
+      Grimjaw's gravelly voice carries through the amphitheater: "Engineering
+      is not about knowing all the answers. It's about asking the right questions
+      when everything is falling apart." Scholars lean forward with visible interest.
+      Quills hover over paper. The practical philosopher speaks.
+
+    key_elements:
+      - "Grimjaw speaking with authority"
+      - "Voice filling the space"
+      - "Scholars leaning forward"
+      - "Quills poised"
+      - "Diagram rails behind with technical drawings"
+
+    mood: "reverent"
+
+    composition:
+      focal_point: "Grimjaw in speaking posture"
+      framing: "Medium-wide showing speaker and engaged audience"
+      depth_layers:
+        - "Grimjaw commanding podium"
+        - "Front-row attention"
+        - "Tiers of engaged scholars"
+
+    lighting:
+      primary_source: "Balanced amphitheater light"
+      quality: "Even, focused on speaker"
+
+    palette:
+      dominant: ["speaker figure", "attentive faces", "timber/marble setting"]
+      accent: ["diagram drawings", "quill feathers", "ink bottles"]
+
+    emotional_beat: "Practical wisdom articulated—scars versus theories proven worthy"
+
+  - beat_id: "hand-on-compass"
+    beat_name: "Hand on Compass"
+    chapter_slug: "ch25-morning-rituals-and-academic-ventures"
+
+    description: |
+      At the amphitheater entrance, Grimjaw straightens his shoulders, his hand
+      resting on the compass in his vest pocket—the craftsman's gift from Jorik.
+      He gives Professor Stoneforge a determined nod. "Lead the way." All the
+      community's support crystallizes in this moment before three hundred minds.
+
+    key_elements:
+      - "Grimjaw at amphitheater entrance"
+      - "Hand on vest pocket (compass)"
+      - "Professor Stoneforge beside him"
+      - "Amphitheater doors ahead"
+      - "Determination in posture"
+
+    mood: "intimate"
+
+    composition:
+      focal_point: "Hand on vest pocket, face resolved"
+      framing: "Medium shot, doors visible ahead"
+      depth_layers:
+        - "Grimjaw and Stoneforge"
+        - "Heavy amphitheater doors"
+        - "Glimpse of audience beyond"
+
+    lighting:
+      primary_source: "Entrance hall light"
+      secondary_source: "Amphitheater light through doors"
+      quality: "Transitional, anticipatory"
+
+    palette:
+      dominant: ["vest fabric", "hand on pocket", "door bronze"]
+      accent: ["Stoneforge's silver hair", "doorway light beyond"]
+
+    emotional_beat: "Anchors gathered, resolve crystallized—ready to teach"
+
+  - beat_id: "commercial-shift"
+    beat_name: "The Commercial Shift"
+    chapter_slug: "ch26-the-weight-of-success"
+
+    description: |
+      Lord Aldric Thann rises among the scholars, his question cutting through
+      academic discourse: "Are you accepting private contracts?" The room's energy
+      shifts visibly—from scholarly engagement to commercial calculation. Success
+      attracts attention of all kinds.
+
+    key_elements:
+      - "Lord Thann standing among seated scholars"
+      - "Well-dressed among academic robes"
+      - "Question changing atmosphere"
+      - "Visible shift in room's energy"
+      - "Commercial calculation emerging"
+
+    mood: "ominous"
+
+    composition:
+      focal_point: "Lord Thann standing"
+      framing: "Medium shot showing him among scholars"
+      depth_layers:
+        - "Thann standing"
+        - "Seated scholars reacting"
+        - "Amphitheater context"
+
+    lighting:
+      primary_source: "Same amphitheater light"
+      quality: "Unchanged—tension is social, not visual"
+
+    palette:
+      dominant: ["Thann's fine clothing", "academic robe contrast", "shifting expressions"]
+
+    emotional_beat: "Academic triumph meets commercial exploitation—the weight begins"
+
+# ============================================================================
+# REFERENCES - Connections to Other Content
+# ============================================================================
+
+references:
+  chapter_visual_plans:
+    - chapter_slug: "ch25-morning-rituals-and-academic-ventures"
+      relationship: "Grimjaw's preparation and arrival"
+      relevant_scenes:
+        - "Community preparation and support"
+        - "Walk through morning markets"
+        - "Arrival at Spire of Learning"
+        - "Hand on compass at amphitheater door"
+
+    - chapter_slug: "ch26-the-weight-of-success"
+      relationship: "Lecture triumph and commercial complications"
+      relevant_scenes:
+        - "Finding his voice at podium"
+        - "Asking the right questions"
+        - "Lord Thann's commercial inquiry"
+        - "Success attracting unwanted attention"
+
+  character_portraits:
+    - character_slug: "grimjaw-ironbeard"
+      relationship: "guest lecturer"
+      visual_notes: "At podium, hand on compass, shoulders straightening"
+
+    - character_slug: "professor-aldara-stoneforge"
+      relationship: "faculty host"
+      visual_notes: "Silver hair, commanding presence, professional respect"
+
+  related_locations:
+    - location_slug: "warehouse-complex"
+      relationship: "where Company prepares Grimjaw"
+      visual_connection: "Domestic warmth contrasting institutional formality"
+
+    - location_slug: "castle-ward"
+      relationship: "surrounding district"
+      visual_connection: "Academic institution within civic ward"
+
+  thematic_connections:
+    - theme: "Scars versus theories"
+      visual_expression: "Working dwarf commanding academic podium"
+
+    - theme: "Practical wisdom"
+      visual_expression: "Hand-drawn diagrams on institutional rails"
+
+    - theme: "Community support"
+      visual_expression: "Compass in vest pocket, community's gift"
+
+    - theme: "Success's complications"
+      visual_expression: "Commercial attention in academic space"
+
+    - theme: "Knowledge earned through experience"
+      visual_expression: "Weathered craftsman teaching polished scholars"

@@ -1,0 +1,827 @@
+# ============================================================================
+# KORRATH THRENX'S OFFICE - LOCATION IMAGERY SPECIFICATION
+# ============================================================================
+# A cathedral of precision where honor lives in right angles and a
+# bronze dragonborn learns his masterwork is a children's prison
+# ============================================================================
+
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "korraths-office"
+  location_name: "Korrath Threnx's Office"
+  version: "1.0"
+  last_updated: "2025-12-26"
+  zones_defined: 15
+  chapters_featured:
+    - chapter: "ch33-an-architects-honor"
+      relevance: "Korrath learns the Silent Hand facility is a prison, draconic fury manifests"
+
+# ============================================================================
+# GENERATION DEFAULTS
+# ============================================================================
+generation_defaults:
+  provider: "workers-ai"
+  model: "flux-schnell"
+  quality: "high"
+  default_aspect_ratio: "16:9"
+  default_size: "1024x768"
+
+# ============================================================================
+# NARRATIVE SOUL - The Emotional Core
+# ============================================================================
+narrative_soul: |
+  Korrath Threnx's office is a blueprint made physical—every tool in its
+  place, every place labeled, every angle true. The space exists to prevent
+  mistakes: lighting positioned to banish shadow, sound controlled so that
+  tools don't rattle, papers don't drift, and footsteps feel too loud on
+  purpose. This is where the Threnx family tradition of engineering excellence
+  manifests in oak and stone and bronze.
+
+  The archive wall holds generations of blueprints, many bearing the family
+  seal. The tool boards read like military inspections. The sample library
+  catalogs stone and metal by compression rating and thermal coefficient.
+  Scale models demonstrate load paths you can touch with tiny brass pins
+  marking critical points.
+
+  But the precision that defines this space cannot contain what happens
+  when Korrath learns his masterwork—the facility he designed with such
+  care—imprisons trafficked children. The bronze dragonborn's heritage
+  manifests: lightning arcs across his scales like living veins of light,
+  ozone sharpens the air, and for a terrible moment the cathedral of
+  control becomes a storm. Only Grimjaw's wisdom reaches him: "The same
+  hands that built the cage can build the key."
+
+one_line_essence: "Where precision is honor and a builder discovers his cage must become a key"
+
+# ============================================================================
+# LOCATION VISUAL ANCHOR
+# ============================================================================
+location_visual_anchor:
+  signature_elements:
+    - "Massive oak drafting table anchoring the room"
+    - "Blueprint tube archive in labeled ranks"
+    - "Pegboard tool walls in military inspection formation"
+    - "Sample compartments marked with load tolerances"
+    - "Scale models with brass pins at critical load points"
+    - "Precision lighting eliminating shadow"
+    - "Right angles everywhere—the room as blueprint"
+    - "Threnx family seal on blueprints and tools"
+
+  materials:
+    primary:
+      - "Heavy oak for drafting table and shelving"
+      - "Stone samples in catalogued compartments"
+      - "Metal samples with rating labels"
+      - "Bronze fittings and hardware"
+    secondary:
+      - "Paper blueprints in protective tubes"
+      - "Leather tool holders"
+      - "Brass pins for models"
+      - "Glass lenses and magnification tools"
+    accent:
+      - "Threnx family seal on bronze chain"
+      - "Tool steel gleam"
+      - "Sample library variety"
+      - "Under stress: electrical discharge across bronze scales"
+
+  color_anchors:
+    dominant: ["oak warm brown", "stone sample grays", "metal sample silvers", "paper cream"]
+    accent: ["bronze fittings", "brass pins", "tool steel gleam", "family seal bronze"]
+    avoid: ["disorder", "casual colors", "clutter", "shadow"]
+
+  characteristic_light:
+    primary: "Precision lamps positioned to eliminate shadow at every work surface"
+    secondary: "Natural light controlled through shutters"
+    quality: "Clear, bright, error-preventing"
+    atmosphere: "Controlled, professional, relentlessly intentional"
+
+# ============================================================================
+# OVERVIEW - ESTABLISHING SHOT
+# ============================================================================
+overview:
+  slug: "korraths-office-overview"
+  name: "The Cathedral of Precision"
+  image_type: "establishing"
+  mood: "reverent"
+  narrative_context: |
+    Korrath Threnx's office—a room that reads like a blueprint made physical.
+    Right angles everywhere, clear sightlines, dedicated zones for each task.
+    The massive oak drafting table anchors everything, surrounded by ordered
+    systems that exist to prevent mistakes.
+  lighting:
+    primary_source: "precision lamps at multiple angles"
+    secondary_source: "controlled natural light"
+    quality: "bright, shadow-banishing"
+    direction: "from multiple angles to eliminate shadows"
+    color_temperature: "neutral to warm"
+    shadow_depth: "minimal by design"
+    atmospheric: "controlled, professional"
+  palette:
+    dominant: ["oak warm", "stone neutral", "tool steel", "paper cream"]
+    accent: ["bronze hardware", "sample variety", "family seal"]
+    avoid: ["shadow", "disorder", "casual elements"]
+  aspect_ratio: "16:9"
+  size: "1024x768"
+  prompt_used: |
+    Oil painting, fantasy illustration, wide establishing shot of a
+    precision engineering office, massive oak drafting table at center
+    under multiple positioned lamps eliminating shadow, blueprint tube
+    archive along one wall in labeled ranks, pegboard tool walls with
+    tools in military inspection formation, sample compartments with
+    stone and metal specimens, scale models of bridges and fortifications
+    on shelves, right angles and clear sightlines throughout, the room
+    as blueprint made physical, heroic fantasy style, painterly brushwork
+  negative_prompt: "cartoon, anime, photorealistic, modern elements, computers, disorder, shadow, clutter, people"
+  references: []
+
+# ============================================================================
+# ZONES
+# ============================================================================
+zones:
+  # --------------------------------------------------------------------------
+  # OFFICE - Main Space (Ch33 Featured)
+  # --------------------------------------------------------------------------
+  - slug: "office"
+    name: "Office"
+    zone_type: "heart"
+    image_type: "zone"
+    mood: "reverent"
+    narrative_context: |
+      The complete workspace where Korrath's precision manifests. Every
+      element intentional, every tool accessible, every angle true. This
+      is where the devastating news arrived and where lightning arced
+      across bronze scales.
+    lighting:
+      primary_source: "precision lamps at drafting table"
+      secondary_source: "even ambient throughout"
+      quality: "shadow-free working light"
+      direction: "multi-directional to eliminate shadows"
+      color_temperature: "neutral"
+      shadow_depth: "minimal"
+      atmospheric: "professional, controlled"
+    palette:
+      dominant: ["oak table", "stone samples", "tool steel", "paper cream"]
+      accent: ["bronze fittings", "model brass", "family seal"]
+      avoid: ["shadow", "disorder"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, interior of a precision
+      engineering office, massive oak drafting table under positioned
+      lamps, blueprint tubes in labeled ranks, tool boards with military
+      precision, sample compartments for stone and metal, scale models
+      on shelves, everything at right angles and perfectly ordered,
+      the space designed to prevent error, heroic fantasy style,
+      painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, computers, disorder, people"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # DRAFTING-TABLE - The Anchor
+  # --------------------------------------------------------------------------
+  - slug: "drafting-table"
+    name: "The Drafting Table"
+    zone_type: "heart"
+    image_type: "zone"
+    mood: "reverent"
+    narrative_context: |
+      The massive oak surface kept immaculate—the altar of Korrath's
+      practice. Magnification tools, straightedges, and precision
+      instruments placed at exact reach. Where blueprints are born
+      and where honor is drawn in careful lines.
+    lighting:
+      primary_source: "multiple positioned lamps"
+      secondary_source: "reflected from work surface"
+      quality: "perfect working light"
+      direction: "from multiple angles"
+      color_temperature: "neutral for color accuracy"
+      shadow_depth: "eliminated at work surface"
+      atmospheric: "focused precision"
+    palette:
+      dominant: ["oak surface warm", "paper white", "tool steel"]
+      accent: ["straightedge brass", "magnification glass", "ink pot black"]
+      avoid: ["clutter", "coffee stains", "disorder"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, close on a massive oak
+      drafting table in an engineer's office, the surface immaculately
+      clean, precision straightedges and magnification tools placed
+      at exact reach, multiple lamps positioned to eliminate shadow,
+      a blueprint partially unrolled showing careful technical drawing,
+      ink pots and quills in perfect order, heroic fantasy style,
+      painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, computer, drafting software, mess, people"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # ARCHIVE-WALL - The Blueprint Archive
+  # --------------------------------------------------------------------------
+  - slug: "archive-wall"
+    name: "The Blueprint Archive"
+    zone_type: "sanctuary"
+    image_type: "zone"
+    mood: "reverent"
+    narrative_context: |
+      Cylindrical blueprint tubes in labeled ranks—generations of
+      engineering work sorted by date and project type. Many bear the
+      Threnx family seal. Retrieval designed for speed without disorder.
+      The professional memory of a lineage.
+    lighting:
+      primary_source: "even ambient"
+      secondary_source: "individual tube labels visible"
+      quality: "clear for retrieval"
+      direction: "diffused"
+      color_temperature: "neutral"
+      shadow_depth: "soft, not obscuring labels"
+      atmospheric: "archival order"
+    palette:
+      dominant: ["tube cases leather-brown", "label tags cream", "wall stone neutral"]
+      accent: ["Threnx seal bronze", "section dividers", "date markings"]
+      avoid: ["disorder", "missing tubes"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, an archive wall of blueprint
+      tubes in an engineer's office, cylindrical cases in labeled ranks
+      sorted by date and type, many tubes bearing a family seal in bronze,
+      section dividers organizing the collection, a retrieval system
+      designed for speed without disorder, the professional archive
+      of generations of engineering work, heroic fantasy style,
+      painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, filing cabinets, digital storage, disorder"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # TOOL-BOARDS - Military Precision
+  # --------------------------------------------------------------------------
+  - slug: "tool-boards"
+    name: "The Tool Discipline"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "vigilant"
+    narrative_context: |
+      Pegboard tool walls laid out like military inspection—tools in
+      graduated sizes, aligned to repeatable patterns. Missing tools
+      are immediately visible. The discipline that enables precision.
+    lighting:
+      primary_source: "even wall lighting"
+      secondary_source: "ambient"
+      quality: "clear for selection"
+      direction: "front-lit"
+      color_temperature: "neutral"
+      shadow_depth: "minimal"
+      atmospheric: "military order"
+    palette:
+      dominant: ["tool steel gleam", "pegboard wood", "wall neutral"]
+      accent: ["handle wrappings", "size markers", "spacing regularity"]
+      avoid: ["empty spaces (except when showing absence)", "disorder"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, pegboard tool walls in an
+      engineer's office, precision tools hung in graduated sizes,
+      aligned to repeatable military-inspection patterns, the position
+      of each tool marked so missing items are immediately visible,
+      wrench sets and calipers and measuring tools in perfect order,
+      the discipline that enables precision work, heroic fantasy
+      style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, power tools, disorder, empty spaces"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # MATERIAL-LIBRARY - The Sample Library
+  # --------------------------------------------------------------------------
+  - slug: "material-library"
+    name: "The Sample Library"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      Stone and metal samples in identical compartments, each marked
+      with load tolerances, compression ratings, and thermal coefficients.
+      The empirical foundation of structural engineering—materials
+      understood through testing.
+    lighting:
+      primary_source: "overhead even light"
+      secondary_source: "compartment illumination"
+      quality: "clear for sample comparison"
+      direction: "from above"
+      color_temperature: "neutral for color accuracy"
+      shadow_depth: "minimal in compartments"
+      atmospheric: "catalogued knowledge"
+    palette:
+      dominant: ["stone sample grays varied", "metal sample silvers", "compartment wood"]
+      accent: ["label tags", "rating numbers", "coefficient markings"]
+      avoid: ["unlabeled samples", "disorder"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, sample library wall in an
+      engineer's office, identical wooden compartments holding stone
+      and metal specimens, each compartment labeled with load tolerances
+      and compression ratings and thermal coefficients, the variety
+      of materials carefully catalogued and accessible, the empirical
+      foundation of structural engineering, heroic fantasy style,
+      painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, jars, bottles, disorder"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # MODEL-SHELVES - Scale Models
+  # --------------------------------------------------------------------------
+  - slug: "model-shelves"
+    name: "The Scale Models"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "reverent"
+    narrative_context: |
+      Scale bridges and fortifications aligned and pinned at critical
+      load points—load paths made tangible. The tiny brass pins mark
+      where forces concentrate, where failure would begin if it came.
+    lighting:
+      primary_source: "shelf lighting"
+      secondary_source: "ambient"
+      quality: "model detail visible"
+      direction: "from above and front"
+      color_temperature: "warm for wood models"
+      shadow_depth: "soft, showing depth"
+      atmospheric: "educational display"
+    palette:
+      dominant: ["model wood natural", "model stone gray", "shelf wood"]
+      accent: ["brass pins gold", "critical point markers", "model detail"]
+      avoid: ["broken models", "dust"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, shelves of scale models in
+      an engineer's office, miniature bridges and fortifications
+      precisely constructed, tiny brass pins marking critical load
+      points where forces concentrate, load paths made tangible and
+      touchable, educational models demonstrating structural principles,
+      heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, toys, broken models, dust"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # SCALE-MODELS - Load Paths Made Tangible
+  # --------------------------------------------------------------------------
+  - slug: "scale-models"
+    name: "Load Paths Made Tangible"
+    zone_type: "works"
+    image_type: "detail"
+    mood: "reverent"
+    narrative_context: |
+      Close study of a scale model's brass pins—the critical points
+      where load concentrates. This is how Korrath teaches and learns:
+      making the invisible visible, making forces something you can touch.
+    lighting:
+      primary_source: "focused lamp on model"
+      secondary_source: "ambient"
+      quality: "detail-revealing"
+      direction: "from above and side"
+      color_temperature: "warm"
+      shadow_depth: "showing three-dimensionality"
+      atmospheric: "close study"
+    palette:
+      dominant: ["model material natural", "brass pin gold", "shadow defining"]
+      accent: ["pin heads", "structure lines", "stress points"]
+      avoid: ["blurred detail", "disorder"]
+    aspect_ratio: "1:1"
+    size: "1024x1024"
+    prompt_used: |
+      Oil painting, fantasy illustration, close detail of a scale model
+      of a bridge or fortification, tiny brass pins marking critical
+      load points where forces concentrate, the structural logic made
+      visible and tangible, precision craftsmanship in miniature,
+      heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, blurred, unclear pins"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # CLIENT-POV - The Client's View
+  # --------------------------------------------------------------------------
+  - slug: "client-pov"
+    name: "The Client's View"
+    zone_type: "threshold"
+    image_type: "perspective"
+    mood: "vigilant"
+    narrative_context: |
+      What clients see when they enter—the ordered precision, the
+      scale of the archive, the professional formality. The space
+      itself argues for competence before any word is spoken.
+    lighting:
+      primary_source: "entry-visible precision lighting"
+      secondary_source: "daylight from windows"
+      quality: "impressive, professional"
+      direction: "from inside toward visitor"
+      color_temperature: "neutral professional"
+      shadow_depth: "dramatic enough to impress"
+      atmospheric: "professional authority"
+    palette:
+      dominant: ["drafting table presence", "archive wall impact", "ordered tools"]
+      accent: ["family seal visible", "model quality", "precision everywhere"]
+      avoid: ["welcoming warmth", "casual atmosphere"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, view into an engineer's
+      office from the doorway, the client's first impression—massive
+      oak drafting table under precision lights, blueprint archive
+      in labeled ranks, tool boards in military formation, the space
+      itself arguing for competence, professional formality manifest,
+      heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, welcoming, casual, people"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # DUST-FREE - The Dust-Free Zone
+  # --------------------------------------------------------------------------
+  - slug: "dust-free"
+    name: "The Dust-Free Zone"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      The drafting area kept meticulously clean—no dust to mar
+      blueprints, no debris to catch in instruments. Precision
+      requires controlled environment.
+    lighting:
+      primary_source: "bright working light"
+      secondary_source: "even ambient"
+      quality: "revealing any contamination"
+      direction: "from multiple angles"
+      color_temperature: "neutral"
+      shadow_depth: "minimal"
+      atmospheric: "clinical precision"
+    palette:
+      dominant: ["clean surfaces", "paper white", "tool gleam"]
+      accent: ["precision instrument shine", "immaculate order"]
+      avoid: ["dust", "debris", "fingerprints"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, the dust-free zone of an
+      engineer's drafting area, immaculately clean surfaces gleaming
+      under precision lights, no dust or debris anywhere, precision
+      instruments perfectly maintained, paper and tools in clinical
+      order, the controlled environment that precision requires,
+      heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, dust, mess, stains, people"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # EMPTY - Before the Engineer
+  # --------------------------------------------------------------------------
+  - slug: "empty"
+    name: "Before the Engineer"
+    zone_type: "zone"
+    image_type: "temporal"
+    mood: "ethereal"
+    narrative_context: |
+      The office in early morning before Korrath arrives—still,
+      ordered, waiting. The systems in place, the tools ready,
+      the precision maintained even in absence.
+    lighting:
+      primary_source: "early morning through shutters"
+      secondary_source: "dormant lamps"
+      quality: "quiet, pre-work"
+      direction: "from windows"
+      color_temperature: "cool morning"
+      shadow_depth: "long morning shadows"
+      atmospheric: "waiting, ready"
+    palette:
+      dominant: ["oak in morning light", "cool shadow", "waiting precision"]
+      accent: ["lamp unlit", "window light bars", "morning stillness"]
+      avoid: ["activity", "warm light"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, an engineer's office in
+      early morning before work begins, precision lamps unlit, cool
+      morning light filtering through shutters, long shadows across
+      the drafting table, tools waiting in their places, the systems
+      ready for the day, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, people, artificial light"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # ESSENCE - The Architect's Faith
+  # --------------------------------------------------------------------------
+  - slug: "essence"
+    name: "The Architect's Faith"
+    zone_type: "shrine"
+    image_type: "essence"
+    mood: "reverent"
+    narrative_context: |
+      The spirit of the space—the belief that precision prevents
+      disaster, that order serves honor, that the Threnx name means
+      work that doesn't collapse. Engineering as faith.
+    lighting:
+      primary_source: "ideal working light"
+      secondary_source: "ambient reverence"
+      quality: "crystalline clarity"
+      direction: "perfect illumination"
+      color_temperature: "balanced"
+      shadow_depth: "eliminated"
+      atmospheric: "devotional precision"
+    palette:
+      dominant: ["perfect oak", "ideal light", "crystalline order"]
+      accent: ["family seal", "precision made visible", "honor manifest"]
+      avoid: ["any imperfection", "any disorder"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, the essence of an engineer's
+      office—precision as faith, order as devotion, the belief that
+      careful work prevents disaster visible in every right angle and
+      labeled tool and catalogued sample, the Threnx family tradition
+      manifest in oak and stone and bronze, heroic fantasy style,
+      painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, any disorder, any imperfection"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # SCRY-SAFE - The Scry-Safe Circle
+  # --------------------------------------------------------------------------
+  - slug: "scry-safe"
+    name: "The Scry-Safe Circle"
+    zone_type: "sanctuary"
+    image_type: "zone"
+    mood: "vigilant"
+    narrative_context: |
+      A corner of the office protected against magical surveillance—
+      where truly sensitive plans are reviewed. The countermeasures
+      are subtle, integrated into the precision aesthetic.
+    lighting:
+      primary_source: "controlled to this area"
+      secondary_source: "ambient from beyond"
+      quality: "private, controlled"
+      direction: "focused inward"
+      color_temperature: "neutral"
+      shadow_depth: "moderate, defining space"
+      atmospheric: "secure discussion"
+    palette:
+      dominant: ["secure corner", "warded materials", "controlled light"]
+      accent: ["subtle countermeasures", "meeting area", "privacy markers"]
+      avoid: ["obvious protection", "visible wards"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a corner of an engineer's
+      office protected against magical surveillance, subtle
+      countermeasures integrated into the precision aesthetic, a
+      space for reviewing sensitive plans, controlled lighting and
+      careful acoustic isolation, security through design rather
+      than obvious wards, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, glowing runes, obvious magic, people"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # RETIRED-TOOL - The Retired Tool
+  # --------------------------------------------------------------------------
+  - slug: "retired-tool"
+    name: "The Retired Tool"
+    zone_type: "shrine"
+    image_type: "detail"
+    mood: "somber"
+    narrative_context: |
+      A precision instrument no longer in regular use—perhaps from
+      Korrath's father or grandfather—kept in a place of honor.
+      The continuity of craft across generations.
+    lighting:
+      primary_source: "respectful ambient"
+      secondary_source: "gentle spotlight"
+      quality: "honoring, not working"
+      direction: "gentle illumination"
+      color_temperature: "warm"
+      shadow_depth: "soft"
+      atmospheric: "memorial, tradition"
+    palette:
+      dominant: ["aged tool patina", "honored place wood", "tradition visible"]
+      accent: ["family seal nearby", "era markers", "careful preservation"]
+      avoid: ["neglect", "dust", "casual placement"]
+    aspect_ratio: "1:1"
+    size: "1024x1024"
+    prompt_used: |
+      Oil painting, fantasy illustration, close on a retired precision
+      instrument in a place of honor in an engineer's office, perhaps
+      a grandfather's caliper or father's straightedge, aged but
+      carefully preserved, the continuity of craft across generations,
+      a family seal nearby, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, neglected tool, broken, dusty"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # REVELATION - The Moment of Truth
+  # --------------------------------------------------------------------------
+  - slug: "revelation"
+    name: "The Revelation"
+    zone_type: "threshold"
+    image_type: "beat"
+    mood: "ominous"
+    narrative_context: |
+      The office in the moment after devastating news arrives—
+      blueprints spread on the drafting table, the precision
+      suddenly meaningless, the air beginning to crackle with
+      draconic power as Korrath processes what he's learned.
+    lighting:
+      primary_source: "precision lamps suddenly harsh"
+      secondary_source: "electrical discharge beginning"
+      quality: "transforming from work to crisis"
+      direction: "scattered by emerging energy"
+      color_temperature: "cooling, electrical"
+      shadow_depth: "increasing, dramatic"
+      atmospheric: "revelation's aftermath"
+    palette:
+      dominant: ["blueprints spread", "precision shattered", "air crackling"]
+      accent: ["electrical discharge hint", "ozone sharp", "drama emerging"]
+      avoid: ["calm", "normal conditions"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, an engineer's office in the
+      moment after devastating news, blueprints spread on the drafting
+      table revealing their terrible purpose, the precision of the
+      space suddenly meaningless, air beginning to crackle with energy,
+      precision lamps now harsh, the cathedral of order about to
+      become a storm, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, calm atmosphere, normal conditions"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # PIVOT - Engineering as Redemption
+  # --------------------------------------------------------------------------
+  - slug: "pivot"
+    name: "Engineering as Redemption"
+    zone_type: "threshold"
+    image_type: "beat"
+    mood: "intimate"
+    narrative_context: |
+      The office after the storm passes—Korrath's lightning dimming
+      not from weakness but from resolution. The blueprints that
+      showed a cage now await transformation into a key. Builder's
+      wisdom: the same hands that built the prison can free the captives.
+    lighting:
+      primary_source: "fading electrical glow"
+      secondary_source: "returning to steady lamp light"
+      quality: "post-crisis, resolving"
+      direction: "normalizing"
+      color_temperature: "warming from electrical"
+      shadow_depth: "softening"
+      atmospheric: "resolution forming"
+    palette:
+      dominant: ["fading lightning", "returning order", "blueprints for redemption"]
+      accent: ["bronze scales calming", "purpose crystallizing", "new mission"]
+      avoid: ["continued rage", "destruction"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, an engineer's office as
+      rage transforms into resolution, fading electrical glow
+      giving way to steady lamplight, blueprints on the table now
+      seen with new purpose—the cage will become the key, the
+      builder's precision redirected to liberation, heroic fantasy
+      style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, continued rage, destruction, people"
+    references: []
+
+# ============================================================================
+# BEAT IMAGES - Key Narrative Moments
+# ============================================================================
+beat_images:
+  # --------------------------------------------------------------------------
+  # LIGHTNING WREATHED - Korrath's Fury Manifests (Ch33 Hero)
+  # --------------------------------------------------------------------------
+  - slug: "beat-lightning-wreathed"
+    name: "Lightning Wreathed"
+    scene_id: "ch33-scene-korrath-rage"
+    mood: "ominous"
+    narrative_context: |
+      Korrath's draconic heritage manifesting as he processes the
+      devastating truth—small bolts of lightning arcing across his
+      bronze scales like living veins of light, his voice carrying
+      distant thunder's resonance. The controlled, terrible justice
+      of bronze.
+    lighting:
+      primary_source: "lightning arcing from Korrath"
+      secondary_source: "precision lamps overwhelmed"
+      quality: "electrical storm in confined space"
+      direction: "radiating from Korrath"
+      color_temperature: "blue-white electrical"
+      shadow_depth: "extreme from lightning flash"
+      atmospheric: "draconic fury manifest"
+    palette:
+      dominant: ["bronze scales", "lightning blue-white", "ozone sharp"]
+      accent: ["living veins of light", "distant thunder", "controlled fury"]
+      avoid: ["calm", "normal lighting", "red dragon chaos"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a bronze dragonborn in an
+      engineer's office, small bolts of lightning arcing across his
+      bronze scales like living veins of light, his draconic heritage
+      manifesting in controlled terrible fury, the precision office
+      becoming a storm, ozone sharp in the air, the resonance of
+      distant thunder, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, calm expression, normal lighting, fire breath"
+    references:
+      - type: "character_portrait"
+        slug: "korrath-threnx"
+        purpose: "accurate depiction of Korrath with lightning across scales"
+      - type: "chapter_visual_plan"
+        chapter: "ch33-an-architects-honor"
+        purpose: "narrative context for Lightning Wreathed moment"
+
+  # --------------------------------------------------------------------------
+  # BUILDER TO BUILDER - Grimjaw's Wisdom (Ch33)
+  # --------------------------------------------------------------------------
+  - slug: "beat-builder-to-builder"
+    name: "Builder to Builder"
+    scene_id: "ch33-scene-grimjaw-wisdom"
+    mood: "intimate"
+    narrative_context: |
+      Grimjaw delivering his old master's wisdom: "The same hands
+      that built the cage can build the key. The same stone that
+      made the wall can make the battering ram. The question isn't
+      what you built—it's what you build next." Korrath's lightning
+      dimming with resolution.
+    lighting:
+      primary_source: "fading electrical glow"
+      secondary_source: "steady lamplight returning"
+      quality: "post-crisis, wisdom received"
+      direction: "normalizing"
+      color_temperature: "warming"
+      shadow_depth: "softening"
+      atmospheric: "redemption offered"
+    palette:
+      dominant: ["bronze scales calming", "dwarf presence steady", "resolution forming"]
+      accent: ["lightning fading", "wisdom visible in eyes", "purpose crystallizing"]
+      avoid: ["continued rage", "conflict between them"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a dwarf engineer speaking
+      to a bronze dragonborn in a precision office, delivering
+      wisdom that reaches through rage—'the same hands that built
+      the cage can build the key'—the dragonborn's lightning dimming
+      not from weakness but from resolution, builder to builder
+      understanding passing between them, heroic fantasy style,
+      painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, continued conflict, other figures"
+    references:
+      - type: "character_portrait"
+        slug: "grimjaw-ironbeard"
+        purpose: "accurate depiction of Grimjaw delivering wisdom"
+      - type: "character_portrait"
+        slug: "korrath-threnx"
+        purpose: "accurate depiction of Korrath receiving wisdom"
+      - type: "chapter_visual_plan"
+        chapter: "ch33-an-architects-honor"
+        purpose: "narrative context for Builder to Builder moment"
+
+  # --------------------------------------------------------------------------
+  # THE WEIGHT OF A NAME - Korrath Receives the News (Ch33)
+  # --------------------------------------------------------------------------
+  - slug: "beat-weight-of-name"
+    name: "The Weight of a Name"
+    scene_id: "ch33-scene-korrath-learns"
+    mood: "ominous"
+    narrative_context: |
+      Korrath in his cathedral of precision receiving the devastating
+      news—Cid delivering documents that show his masterwork is a
+      children's prison. The bronze scales in precise light, the
+      perfect right angles suddenly meaningless.
+    lighting:
+      primary_source: "precision lamps on documents"
+      secondary_source: "ambient on Korrath's scales"
+      quality: "work light becoming crisis light"
+      direction: "on the blueprints of horror"
+      color_temperature: "neutral becoming cold"
+      shadow_depth: "increasing"
+      atmospheric: "revelation moment"
+    palette:
+      dominant: ["bronze scales precise", "documents damning", "precision shattered"]
+      accent: ["blueprints revealed", "Cid's prosthetic", "dawning horror"]
+      avoid: ["calm reception", "normal meeting"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a bronze dragonborn in his
+      precision engineering office receiving documents from a gnome
+      artificer, the blueprints revealing his masterwork is a
+      children's prison, his bronze scales catching the precise
+      light, the perfect right angles of his space suddenly
+      meaningless against what he's learning, heroic fantasy
+      style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, calm meeting, normal conversation"
+    references:
+      - type: "character_portrait"
+        slug: "korrath-threnx"
+        purpose: "accurate depiction of Korrath receiving the news"
+      - type: "character_portrait"
+        slug: "cidrella-vexweld"
+        purpose: "accurate depiction of Cid delivering the documents"
+      - type: "chapter_visual_plan"
+        chapter: "ch33-an-architects-honor"
+        purpose: "narrative context for Weight of a Name moment"

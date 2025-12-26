@@ -1,0 +1,1648 @@
+# Westwall Watchpost - Location Imagery Specifications
+# Generated from chapter visual plans and location documentation
+# Where a rigid military shell was repurposed into a resilient, compassionate home
+
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "westwall-watchpost"
+  location_name: "Westwall Watchpost"
+  version: "1.0"
+  last_updated: "2025-12-26"
+  primary_chapters:
+    - ch07-the-westwall-welcome
+    - ch09-hearth-and-home
+    - ch12-watchpost-whispers
+    - ch15-battle-for-westwall
+    - ch16-bonds-of-community
+  location_type: "military-outpost-home-base"
+
+generation_defaults:
+  provider: "workers-ai"
+  model: "flux-schnell"
+  quality: "high"
+  aspect_ratio: "16:9"
+
+# ============================================================================
+# NARRATIVE SOUL - Thematic Essence for AI Generation
+# ============================================================================
+narrative_soul: |
+  The Westwall Watchpost is where a rigid military shell was transformed into a
+  resilient, compassionate home. This twin-towered fortress on the western rise
+  began as forgotten garrison infrastructure—"great construction waiting for
+  someone to remember why it was built"—and became the Last Light Company's
+  heart. Every cramped corner proves what they built: shoulder-to-shoulder
+  breakfasts, triple-tier bunks, herbs in repurposed helmets. The great hearth
+  in the mess hall anchors evening gatherings where names are given and missions
+  born. Grimjaw's forge rings the morning bell. Vera's aerie watches over all.
+  But this home was tested nearly to destruction: walls breached, dire wolf
+  unleashed, family forming shield wall around their fallen. When the cavalry
+  horns sounded salvation and the community arrived with wagons, the Westwall
+  became more than headquarters—it became the proof that broken people can
+  build something precious enough to defend with their lives.
+
+one_line_essence: "A forgotten garrison transformed into found-family home, tested nearly to destruction, rebuilt by the community it protected."
+
+# ============================================================================
+# LOCATION VISUAL ANCHOR - Signature Elements
+# ============================================================================
+location_visual_anchor:
+  signature_elements:
+    - "twin watchtowers (52ft south, 44ft north)"
+    - "central hardstand courtyard"
+    - "great hearth in mess hall (east range)"
+    - "Last Light Company symbol painted above gate"
+    - "crenellated parapets with arrow slits"
+    - "Grimjaw's forge with spark-arrested stack"
+    - "herb beds along warm wall exposures"
+    - "canyon lantern at mess hall table"
+
+  materials:
+    primary:
+      - "granite/limestone ashlar walls"
+      - "oak and fir timber trusses"
+      - "slate roofing with clay ridge caps"
+      - "wrought-iron hardware and straps"
+    secondary:
+      - "limewash weather coat"
+      - "cobbled courtyard hardstand"
+      - "flagstone floors (worn by decades of boots)"
+      - "firebrick forge hearth"
+    accent:
+      - "company lantern (stars around flame)"
+      - "fresh paint on gate symbol"
+      - "herb drying racks"
+      - "canyon lantern at mess table"
+
+  color_anchors:
+    dominant:
+      - "granite gray"
+      - "slate blue-black"
+      - "oak honey-brown"
+      - "limewash off-white"
+    secondary:
+      - "hearth-glow amber"
+      - "forge-fire orange"
+      - "winter frost silver"
+    accent:
+      - "herb green"
+      - "hay gold"
+      - "lantern flame warm"
+    avoid:
+      - "bright modern colors"
+      - "pristine newness"
+      - "fantasy glow effects"
+
+  characteristic_light:
+    dawn: "Frost bloom on stone, breath-mist in courtyard, mess hearth rekindled, forge's first three strikes"
+    day: "Clear winter sun on merlons, training dust in courtyard, smoke from three chimneys"
+    evening: "Great hearth glow spilling through windows, lantern lines along parapet, dwarven song rising"
+    night: "Patrol intervals on wall walk, tower beacons on ready, city lights below like earthbound stars"
+
+# ============================================================================
+# OVERVIEW - Location Establishing Shots
+# ============================================================================
+overview:
+  primary:
+    image_type: "establishing"
+    description: "The Westwall Watchpost from the approach—twin towers, three smoking chimneys, Last Light symbol painted above gate, morning sun on granite walls"
+    scene_mood: "pastoral"
+    time_of_day: "morning"
+    framing: "wide"
+    key_elements:
+      - "twin watchtowers with crenellations"
+      - "three chimneys smoking"
+      - "lantern symbol above main gate"
+      - "herb beds and vegetable garden visible"
+      - "figures moving in courtyard"
+    lighting:
+      primary_source: "morning sun from east"
+      quality: "golden approach light"
+      color_temperature: "warm gold"
+    palette:
+      dominant: ["granite gray", "morning gold", "smoke wisps"]
+      accent: ["fresh-painted symbol", "green herb beds"]
+      avoid: ["harsh military sterility"]
+
+  secondary:
+    image_type: "establishing"
+    description: "Evening at the Westwall—lantern light spilling from mess hall windows, figures on wall walk, city lights twinkling below"
+    scene_mood: "intimate"
+    time_of_day: "evening"
+    framing: "wide"
+    key_elements:
+      - "warm light from east range windows"
+      - "silhouettes on parapet"
+      - "Waterdeep lights below"
+      - "stars emerging above"
+    lighting:
+      primary_source: "interior hearth glow through windows"
+      secondary_source: "parapet lanterns"
+      quality: "found-family warmth"
+      color_temperature: "amber-gold interior, blue evening exterior"
+    palette:
+      dominant: ["twilight blue", "window amber", "stone silhouette"]
+      accent: ["lantern points", "city twinkle"]
+      avoid: ["cold isolation"]
+
+# ============================================================================
+# ZONES - Comprehensive Location Areas
+# ============================================================================
+zones:
+  # ===== APPROACH & EXTERIOR =====
+  - slug: "courtyard-approach"
+    name: "Hilltop Approach"
+    zone_type: "threshold"
+    featured_in_chapters:
+      - ch07-the-westwall-welcome
+    description: "The hilltop view where visitors first see the transformed watchpost—morning sun on four squat towers, three chimneys smoking, fresh-painted company symbol above gate"
+    image_type: "establishing"
+    scene_mood: "pastoral"
+    key_elements:
+      - "full watchpost visible on rise"
+      - "three chimneys smoking"
+      - "laundry lines, flower boxes, vegetable garden"
+      - "figures approaching from road"
+    lighting:
+      primary_source: "morning sun"
+      quality: "golden reveal light"
+    palette:
+      dominant: ["morning gold", "granite gray", "sky blue"]
+      accent: ["smoke wisps", "garden green"]
+      avoid: ["military grimness"]
+    character_interaction:
+      positions: ["approaching on road", "pausing at crest"]
+      activities: ["first assessment", "homecoming anticipation"]
+
+  - slug: "main-gate"
+    name: "Main Gate (South)"
+    zone_type: "threshold"
+    featured_in_chapters:
+      - ch15-battle-for-westwall
+      - ch16-bonds-of-community
+    description: "The primary entry through the south tower—reinforced oak leaves with iron strapwork, Last Light symbol painted above, murder-hole loft for emergencies"
+    image_type: "zone"
+    scene_mood: "quotidian"
+    key_elements:
+      - "heavy oak double doors"
+      - "iron strapwork and hinges"
+      - "company symbol painted above"
+      - "guard room beyond threshold"
+    lighting:
+      primary_source: "exterior daylight"
+      secondary_source: "guard room lamps"
+      quality: "threshold transition"
+    palette:
+      dominant: ["oak brown", "iron black", "granite frame"]
+      accent: ["painted symbol colors"]
+      avoid: ["decorative frivolity"]
+    character_interaction:
+      positions: ["entering through gates", "guarding threshold", "wagon passage"]
+      activities: ["access control", "welcoming arrivals", "defensive preparation"]
+
+  - slug: "gatehouse"
+    name: "Gatehouse (Guard Room)"
+    zone_type: "works"
+    featured_in_chapters:
+      - ch16-bonds-of-community
+    description: "The ground level of the south tower—armory lockers, gate machinery, alarm bell access, watch rotation station"
+    image_type: "zone"
+    scene_mood: "quotidian"
+    key_elements:
+      - "weapon racks along walls"
+      - "gate bar mechanisms"
+      - "duty roster board"
+      - "stairs spiraling up"
+    lighting:
+      primary_source: "arrow slits"
+      secondary_source: "wall lamps"
+      quality: "functional guard light"
+    palette:
+      dominant: ["stone gray", "weapon steel", "oak timber"]
+      accent: ["lamp pools"]
+      avoid: ["comfort or decoration"]
+    character_interaction:
+      positions: ["at gate controls", "checking weapons", "climbing stairs"]
+      activities: ["watch duty", "gate operation", "tower access"]
+
+  # ===== CENTRAL COURTYARD =====
+  - slug: "courtyard"
+    name: "Central Courtyard"
+    zone_type: "heart"
+    featured_in_chapters:
+      - ch04-the-healers-calling
+      - ch07-the-westwall-welcome
+      - ch09-hearth-and-home
+      - ch14-black-hawks-strike
+      - ch15-battle-for-westwall
+      - ch16-bonds-of-community
+      - ch17-the-long-road-home
+    description: "The packed gravel and stone flag hardstand at the watchpost's center—assembly ground, training yard, triage field, and community gathering space"
+    image_type: "zone"
+    scene_mood: "kinetic"
+    key_elements:
+      - "crowned center with marginal drains"
+      - "training yard markings"
+      - "cistern access hatch"
+      - "all major buildings visible around perimeter"
+    lighting:
+      primary_source: "open sky"
+      secondary_source: "building shadow patterns"
+      quality: "practical work light"
+    palette:
+      dominant: ["gravel tan", "flagstone gray", "building stone"]
+      accent: ["motion blur", "activity colors"]
+      avoid: ["empty stillness"]
+    character_interaction:
+      positions: ["assembly formation", "training pairs", "crossing paths"]
+      activities: ["drilling", "briefing", "arrival/departure", "triage"]
+    atmospheric:
+      environmental_effects: "boot-worn paths visible, seasonal changes (frost, mud, dust)"
+
+  - slug: "training-yard"
+    name: "Training Yard"
+    zone_type: "works"
+    featured_in_chapters:
+      - ch12-watchpost-whispers
+    description: "The thirty-foot square with uneven cobbles where combat training happens—cramped space that teaches spatial awareness and forge-geometry fighting"
+    image_type: "zone"
+    scene_mood: "kinetic"
+    key_elements:
+      - "uneven cobblestones"
+      - "practice weapons rack"
+      - "walls inches from sword-tips"
+      - "training partners in close quarters"
+    lighting:
+      primary_source: "pale winter sun"
+      quality: "clear harsh training light"
+    palette:
+      dominant: ["cobble gray", "practice wood", "motion blur"]
+      accent: ["breath-mist", "exertion"]
+      avoid: ["spacious arena"]
+    character_interaction:
+      positions: ["combat stances", "observing from edges", "demonstration"]
+      activities: ["spatial combat training", "skill sharing", "Grimjaw's lessons"]
+
+  - slug: "courtyard-triage"
+    name: "Triage in the Courtyard"
+    zone_type: "temporal"
+    featured_in_chapters:
+      - ch15-battle-for-westwall
+      - ch16-bonds-of-community
+    description: "The courtyard transformed into emergency medical ground—stretchers on cobbles, healers moving between wounded, blood on flagstones"
+    image_type: "temporal"
+    scene_mood: "somber"
+    key_elements:
+      - "stretchers on stone"
+      - "healers moving between patients"
+      - "medical supplies staged"
+      - "blood on cobbles"
+    lighting:
+      primary_source: "battle-smoke filtered daylight"
+      secondary_source: "improvised lamp stands"
+      quality: "urgent medical light"
+    palette:
+      dominant: ["blood red", "stone gray", "bandage white"]
+      accent: ["healer motion", "healing supplies"]
+      avoid: ["gore focus"]
+    character_interaction:
+      positions: ["on stretchers", "kneeling beside wounded", "moving supplies"]
+      activities: ["triage", "treatment", "comfort"]
+    atmospheric:
+      environmental_effects: "smoke haze, sounds of pain and comfort"
+
+  # ===== EAST RANGE (MESS HALL) =====
+  - slug: "mess-hall"
+    name: "Mess Hall (East Range)"
+    zone_type: "heart"
+    featured_in_chapters:
+      - ch09-hearth-and-home
+      - ch12-watchpost-whispers
+      - ch15-battle-for-westwall
+      - ch2.5-echoes-in-the-city
+    description: "The converted barracks that became the company's social heart—great hearth at south end, long scarred table with mismatched plates, canyon lantern at center"
+    image_type: "zone"
+    scene_mood: "intimate"
+    key_elements:
+      - "great hearth with expanded hood"
+      - "long scarred table"
+      - "mismatched plates and cups"
+      - "canyon lantern at center"
+      - "tapestry-covered walls"
+    lighting:
+      primary_source: "great hearth"
+      secondary_source: "wall lamps"
+      quality: "warm communal light"
+      color_temperature: "amber-gold"
+    palette:
+      dominant: ["hearth amber", "wood brown", "stone gray"]
+      accent: ["flame dance", "gathered faces"]
+      avoid: ["cold sterility"]
+    character_interaction:
+      positions: ["seated at table", "near hearth", "serving from kitchen door"]
+      activities: ["shared meals", "briefings", "naming ceremonies", "song"]
+    atmospheric:
+      environmental_effects: "woodsmoke and food smells, acoustic warmth"
+
+  - slug: "mess-hall-hearth"
+    name: "Mess Hall Great Hearth"
+    zone_type: "shrine"
+    description: "Close focus on the great hearth—retrofitted with expanded hood, the acoustic and spiritual center where the company gathers for warmth and truth"
+    image_type: "detail"
+    scene_mood: "intimate"
+    key_elements:
+      - "massive hearth with expanded hood"
+      - "flames dancing"
+      - "faces lit from below"
+      - "shadow play on walls"
+    lighting:
+      primary_source: "hearth fire"
+      quality: "fire-lit faces"
+      color_temperature: "deep amber"
+    palette:
+      dominant: ["flame orange", "coal red", "stone shadow"]
+      accent: ["face-light", "spark dance"]
+      avoid: ["cold corners"]
+    character_interaction:
+      positions: ["gathered around hearth", "warming hands", "facing fire while speaking"]
+      activities: ["warming", "gathering", "truth-telling", "ritual"]
+
+  - slug: "mess-hall-essence"
+    name: "The Great Hearth at Evening"
+    zone_type: "essence"
+    description: "The mess hall at evening peak—shoulder-to-shoulder company, some eating from measuring cups, wobbling extended table, warmth despite cramped quarters"
+    image_type: "essence"
+    scene_mood: "celebratory"
+    key_elements:
+      - "packed company at table"
+      - "shoulder-to-shoulder eating"
+      - "mismatched vessels"
+      - "wobbling extended table"
+      - "Echo at window"
+    lighting:
+      primary_source: "hearth and lamps"
+      quality: "warm chaos light"
+    palette:
+      dominant: ["warm amber", "crowded motion", "steam and breath"]
+      accent: ["laughter lines", "passed plates"]
+      avoid: ["orderly emptiness"]
+    character_interaction:
+      positions: ["packed at table", "serving from ends", "standing with plates"]
+      activities: ["eating", "talking", "laughing", "reaching past each other"]
+    atmospheric:
+      environmental_effects: "noise, steam, crowded warmth, success as constraint"
+
+  # ===== KITCHEN =====
+  - slug: "kitchen"
+    name: "Elba's Kitchen"
+    zone_type: "works"
+    featured_in_chapters:
+      - ch07-the-westwall-welcome
+      - ch09-hearth-and-home
+      - ch15-battle-for-westwall
+      - ch16-bonds-of-community
+    description: "Mistress Elba's domain—military-precision pot arrangement, meticulously labeled pantry, prize turnip Bertha on her plaque, the heart of practical care"
+    image_type: "zone"
+    scene_mood: "quotidian"
+    key_elements:
+      - "precision pot arrangement"
+      - "meticulously labeled pantry"
+      - "Bertha the turnip on special plaque"
+      - "hot water always ready"
+      - "scullery and wash station"
+    lighting:
+      primary_source: "kitchen fire"
+      secondary_source: "window light"
+      quality: "practical kitchen warmth"
+    palette:
+      dominant: ["copper pot gleam", "vegetable colors", "scrubbed wood"]
+      accent: ["steam", "Bertha's honored spot"]
+      avoid: ["pristine restaurant"]
+    character_interaction:
+      positions: ["at cook station", "checking stores", "guarding Bertha"]
+      activities: ["cooking", "organizing", "defending turnip", "feeding people"]
+
+  # ===== INFIRMARY =====
+  - slug: "infirmary"
+    name: "Infirmary (Northwest Annex)"
+    zone_type: "sanctuary"
+    featured_in_chapters:
+      - ch07-the-westwall-welcome
+      - ch08-the-tracker-in-the-snow
+      - ch09-hearth-and-home
+      - ch14-black-hawks-strike
+    description: "Cramped healing space in converted storage—door-on-sawhorses treatment table, herbs in repurposed containers, campaign tent as privacy curtain, warmest zone for patient comfort"
+    image_type: "zone"
+    scene_mood: "intimate"
+    key_elements:
+      - "door balanced on sawhorses"
+      - "herbs in wine bottles and helmet"
+      - "campaign tent curtain"
+      - "brazier stands with tile plates"
+      - "beds and treatment area"
+    lighting:
+      primary_source: "three oil lamps at angles"
+      secondary_source: "brazier glow"
+      quality: "intimate medical light"
+    palette:
+      dominant: ["warm lamplight", "herb green-brown", "bandage white"]
+      accent: ["brass braziers", "healing supplies"]
+      avoid: ["cold clinical"]
+    character_interaction:
+      positions: ["on treatment table", "attending patients", "preparing herbs"]
+      activities: ["healing", "teaching", "recovery", "vigil"]
+    atmospheric:
+      environmental_effects: "quiet acoustics, herb-laden air, warmth prioritized"
+
+  - slug: "medical-station"
+    name: "Medical Station (Triage)"
+    zone_type: "works"
+    featured_in_chapters:
+      - ch15-battle-for-westwall
+      - ch16-bonds-of-community
+    description: "The infirmary during crisis—Elba defending with cleaver, Aldwin working without pause, the line between kitchen and healing blurred"
+    image_type: "zone"
+    scene_mood: "kinetic"
+    key_elements:
+      - "treatment in progress"
+      - "Elba with cleaver if threatened"
+      - "wounded being treated"
+      - "supplies running low"
+    lighting:
+      primary_source: "smoke-filtered daylight"
+      secondary_source: "emergency lamps"
+      quality: "urgent medical light"
+    palette:
+      dominant: ["blood", "bandage", "urgency"]
+      accent: ["cleaver steel", "protective fury"]
+      avoid: ["calm order"]
+    character_interaction:
+      positions: ["treating wounded", "defending threshold", "arriving injured"]
+      activities: ["triage", "defense", "desperate healing"]
+
+  # ===== WEST RANGE (FORGE & STABLES) =====
+  - slug: "workshop-forge"
+    name: "Workshop and Forge (Grimjaw's Domain)"
+    zone_type: "works"
+    featured_in_chapters:
+      - ch09-hearth-and-home
+    description: "Grimjaw's engineering domain—forge hearth of firebrick and granite, spark-arrested flue, organized tool storage, the rhythmic heartbeat of morning's first three strikes"
+    image_type: "zone"
+    scene_mood: "kinetic"
+    key_elements:
+      - "forge hearth with spark arrestor"
+      - "anvil at center"
+      - "tool racks in precise order"
+      - "workbenches for repair"
+      - "segregated fuel stores"
+    lighting:
+      primary_source: "forge fire"
+      secondary_source: "high windows and ridge vents"
+      quality: "forge-orange industrial"
+    palette:
+      dominant: ["forge orange", "iron black", "ash gray"]
+      accent: ["steel gleam", "spark dance"]
+      avoid: ["cold clean workshop"]
+    character_interaction:
+      positions: ["at anvil", "at workbench", "tending forge"]
+      activities: ["smithing", "repair", "engineering", "morning hammer ritual"]
+    atmospheric:
+      environmental_effects: "hammer ring, charcoal and oil smell, heat waves"
+
+  - slug: "forge"
+    name: "Grimjaw's Forge"
+    zone_type: "heart"
+    featured_in_chapters:
+      - ch09-hearth-and-home
+    description: "The forge at work—Grimjaw silhouetted against fire, hammer raised for the first strike that wakes the compound, thirty years of expertise in every gesture"
+    image_type: "anchor"
+    scene_mood: "pastoral"
+    key_elements:
+      - "Grimjaw at anvil"
+      - "hammer raised"
+      - "forge glow behind"
+      - "morning ritual moment"
+    lighting:
+      primary_source: "forge fire"
+      secondary_source: "cold morning gray beyond"
+      quality: "forge silhouette"
+    palette:
+      dominant: ["forge orange", "silhouette black", "morning gray"]
+      accent: ["hammer gleam", "first strike moment"]
+      avoid: ["soft domestic"]
+    character_interaction:
+      positions: ["at anvil center", "hammer raised"]
+      activities: ["morning ritual strikes", "waking the compound"]
+
+  - slug: "stable-loft"
+    name: "Stable Loft"
+    zone_type: "works"
+    featured_in_chapters:
+      - ch07-the-westwall-welcome
+    description: "The stable area of the west range—eight-to-ten stalls, hayloft bins, tack room, animal warmth and hay smell"
+    image_type: "zone"
+    scene_mood: "pastoral"
+    key_elements:
+      - "horse stalls in row"
+      - "hayloft above"
+      - "tack on pegs"
+      - "stable warmth"
+    lighting:
+      primary_source: "louvered gables"
+      quality: "filtered stable light"
+    palette:
+      dominant: ["hay gold", "wood brown", "horse colors"]
+      accent: ["leather tack", "animal eyes"]
+      avoid: ["sterile stable"]
+    character_interaction:
+      positions: ["in stalls", "in hayloft", "at tack station"]
+      activities: ["animal care", "Finn's domain", "hiding"]
+
+  # ===== TOWERS =====
+  - slug: "tower-command"
+    name: "Command and Signals (Tower Level 2)"
+    zone_type: "works"
+    featured_in_chapters:
+      - ch07-the-westwall-welcome
+    description: "The main tower's second level—maps table with colored pins, writing desk, message lanterns, where orders are given and missions dispatched"
+    image_type: "zone"
+    scene_mood: "quotidian"
+    key_elements:
+      - "maps table with pins"
+      - "writing desk"
+      - "message lanterns"
+      - "travel lantern at ready"
+    lighting:
+      primary_source: "arrow slit daylight"
+      secondary_source: "desk lamp"
+      quality: "command work light"
+    palette:
+      dominant: ["map parchment", "pin colors", "stone gray"]
+      accent: ["lantern at ready", "message gear"]
+      avoid: ["grand war room"]
+    character_interaction:
+      positions: ["at map table", "at desk", "receiving messengers"]
+      activities: ["planning", "dispatching", "briefing"]
+
+  - slug: "command-office"
+    name: "Command Office"
+    zone_type: "works"
+    featured_in_chapters:
+      - ch07-the-westwall-welcome
+    description: "Veyra's command space—map with colored pins showing operations, travel lantern on desk, the moment when the first call comes: 'They're asking for the Last Light Company by name'"
+    image_type: "zone"
+    scene_mood: "quotidian"
+    key_elements:
+      - "map with colored pins"
+      - "travel lantern on desk"
+      - "messenger at door"
+      - "mission readiness"
+    lighting:
+      primary_source: "window light"
+      secondary_source: "desk lamp"
+      quality: "command morning"
+    palette:
+      dominant: ["map parchment", "desk wood", "stone walls"]
+      accent: ["colored pins", "lantern glow"]
+      avoid: ["grand office"]
+    character_interaction:
+      positions: ["at map", "at desk", "door threshold"]
+      activities: ["planning", "receiving news", "dispatching"]
+
+  - slug: "tower-aerie"
+    name: "The Commander's Aerie (Tower Level 4)"
+    zone_type: "sanctuary"
+    description: "Vera's quarters at tower top—large leeward window with narrow balcony perch for Echo, windbreak shutters, the highest view over approaches and countryside"
+    image_type: "zone"
+    scene_mood: "intimate"
+    key_elements:
+      - "leeward window with perch"
+      - "Echo's preferred spot"
+      - "simple quarters"
+      - "long views in all directions"
+    lighting:
+      primary_source: "window light"
+      quality: "aerie height light"
+    palette:
+      dominant: ["sky colors", "simple furnishing", "stone walls"]
+      accent: ["Echo's dark feathers", "wind movement"]
+      avoid: ["luxury"]
+    character_interaction:
+      positions: ["at window", "on balcony perch (Echo)", "resting"]
+      activities: ["watching", "communicating with Echo", "solitude"]
+
+  - slug: "main-tower-aerie"
+    name: "Tower Aerie (Level 4)"
+    zone_type: "overlook"
+    description: "The observation post at tower height—360-degree visibility, roof walk access, the long sightlines that saved lives when Echo's cry shattered pre-dawn quiet"
+    image_type: "zone"
+    scene_mood: "pastoral"
+    key_elements:
+      - "crenellated parapet"
+      - "360-degree views"
+      - "approach routes visible"
+      - "signal lantern ready"
+    lighting:
+      primary_source: "open sky"
+      quality: "height clarity"
+    palette:
+      dominant: ["sky expanse", "stone parapet", "distant landscape"]
+      accent: ["beacon gear"]
+      avoid: ["enclosed feeling"]
+    character_interaction:
+      positions: ["at parapet", "scanning horizon", "with signal gear"]
+      activities: ["observation", "early warning", "signaling"]
+
+  # ===== WALL WALKS & PARAPETS =====
+  - slug: "parapet-walk"
+    name: "Parapet Walk"
+    zone_type: "perimeter"
+    description: "The elevated walkway along curtain walls—crenellations and arrow slits, patrol routes, the path where Veyra and Thorne stood watching city lights like earthbound stars"
+    image_type: "zone"
+    scene_mood: "intimate"
+    key_elements:
+      - "crenellated walkway"
+      - "arrow slits at intervals"
+      - "patrol route"
+      - "views of courtyard and beyond"
+    lighting:
+      primary_source: "open sky"
+      secondary_source: "patrol lanterns at night"
+      quality: "patrol light"
+    palette:
+      dominant: ["stone gray", "sky colors", "shadow patterns"]
+      accent: ["lantern pools at night"]
+      avoid: ["enclosed tunnel"]
+    character_interaction:
+      positions: ["walking patrol", "pausing at merlon", "looking over courtyard"]
+      activities: ["patrol", "reflection", "conversation"]
+
+  - slug: "wall-walk"
+    name: "Wall Walk"
+    zone_type: "overlook"
+    featured_in_chapters:
+      - ch07-the-westwall-welcome
+    description: "Night on the wall walk—city lights below like earthbound stars, dwarven song rising from courtyard, lantern light spilling from hall windows"
+    image_type: "zone"
+    scene_mood: "intimate"
+    key_elements:
+      - "city lights below"
+      - "courtyard visible"
+      - "hall light spilling up"
+      - "stars emerging above"
+    lighting:
+      primary_source: "city lights below"
+      secondary_source: "hall window glow"
+      quality: "contemplative night"
+      color_temperature: "cool blue with warm spots"
+    palette:
+      dominant: ["night blue", "city twinkle", "stone silhouette"]
+      accent: ["window amber", "star points"]
+      avoid: ["harsh lighting"]
+    character_interaction:
+      positions: ["at parapet", "side by side looking out", "silhouetted against sky"]
+      activities: ["reflection", "conversation", "listening to song below"]
+
+  - slug: "parapet"
+    name: "Parapet"
+    zone_type: "overlook"
+    featured_in_chapters:
+      - ch09-hearth-and-home
+      - ch14-black-hawks-strike
+    description: "The parapet at sunset—gold light on countryside below, activity visible in courtyard, stars emerging, wolf howl in distance sounding like promise"
+    image_type: "anchor"
+    scene_mood: "intimate"
+    key_elements:
+      - "sunset gold on stone"
+      - "countryside visible"
+      - "courtyard activity below"
+      - "stars emerging"
+    lighting:
+      primary_source: "dying sunset"
+      secondary_source: "first stars"
+      quality: "contemplative dusk"
+    palette:
+      dominant: ["sunset gold", "emerging blue", "stone silhouette"]
+      accent: ["first stars", "distant treeline"]
+      avoid: ["harsh daylight"]
+    character_interaction:
+      positions: ["silhouetted against sky", "looking out together"]
+      activities: ["surveying what they've built", "planning future", "listening to wolf howl"]
+
+  - slug: "dawn-parapet"
+    name: "The Commander's Vigil"
+    zone_type: "perspective"
+    description: "Pre-dawn on the parapet—frost on stone, breath-mist in cold, Veyra alone with her thoughts before the compound wakes"
+    image_type: "perspective"
+    scene_mood: "intimate"
+    key_elements:
+      - "frost on merlons"
+      - "breath-mist visible"
+      - "pre-dawn gray"
+      - "solitary figure"
+    lighting:
+      primary_source: "pre-dawn gray"
+      quality: "cold vigil light"
+    palette:
+      dominant: ["frost silver", "stone gray", "breath-white"]
+      accent: ["silhouette against lightening sky"]
+      avoid: ["warmth"]
+    character_interaction:
+      positions: ["alone at parapet", "looking out over approaches"]
+      activities: ["vigilance", "contemplation", "command solitude"]
+
+  - slug: "gatehouse-parapet"
+    name: "Gatehouse Parapet"
+    zone_type: "perimeter"
+    featured_in_chapters:
+      - ch15-battle-for-westwall
+    description: "The defensive position above the main gate—fighting position, arrow rain falling, shields raised, the first moments of battle"
+    image_type: "zone"
+    scene_mood: "kinetic"
+    key_elements:
+      - "defensive positions"
+      - "shields raised"
+      - "arrows falling"
+      - "battle engagement"
+    lighting:
+      primary_source: "pre-dawn battle light"
+      quality: "urgent combat"
+    palette:
+      dominant: ["shield steel", "arrow shadow", "stone defensive"]
+      accent: ["blood", "impact sparks"]
+      avoid: ["calm observation"]
+    character_interaction:
+      positions: ["behind shields", "firing down", "taking cover"]
+      activities: ["defense", "archery", "survival"]
+
+  # ===== BARRACKS & QUARTERS =====
+  - slug: "barracks"
+    name: "Barracks"
+    zone_type: "commons"
+    featured_in_chapters:
+      - ch03-the-first-spark
+      - ch04-the-healers-calling
+      - ch09-hearth-and-home
+      - ch12-watchpost-whispers
+      - ch15-battle-for-westwall
+      - ch3.5-ripples-and-reports
+    description: "The cramped sleeping quarters—triple-tier bunks, gear as obstacle course, Fayne's candlelit sketching corner, the cost of success in head impacts"
+    image_type: "zone"
+    scene_mood: "intimate"
+    key_elements:
+      - "triple-tier bunk system"
+      - "gear storage everywhere"
+      - "personal effects on bunks"
+      - "candlelight in corners"
+    lighting:
+      primary_source: "small windows"
+      secondary_source: "candles"
+      quality: "cramped interior"
+    palette:
+      dominant: ["wood brown", "blanket colors", "personal items"]
+      accent: ["candlelight pools", "gear glint"]
+      avoid: ["spacious military"]
+    character_interaction:
+      positions: ["in bunks", "navigating gear", "bumping heads"]
+      activities: ["sleeping", "personal time", "head-counting comedy"]
+
+  - slug: "commanders-quarters"
+    name: "Commanders Quarters"
+    zone_type: "sanctuary"
+    featured_in_chapters:
+      - ch12-watchpost-whispers
+    description: "Simple officer quarters in the upper east range—functional furnishing, personal effects, the private space within shared living"
+    image_type: "zone"
+    scene_mood: "intimate"
+    key_elements:
+      - "simple bed and desk"
+      - "personal effects"
+      - "window with view"
+      - "private amid communal"
+    lighting:
+      primary_source: "window light"
+      secondary_source: "desk lamp"
+      quality: "private interior"
+    palette:
+      dominant: ["simple furnishing", "personal items", "stone walls"]
+      accent: ["light through window"]
+      avoid: ["luxury"]
+
+  # ===== OTHER SPACES =====
+  - slug: "common-room"
+    name: "Common Room"
+    zone_type: "commons"
+    featured_in_chapters:
+      - ch08-the-tracker-in-the-snow
+    description: "A smaller gathering space beyond the mess hall—for quieter conversations, smaller meetings, overflow from the crowded main room"
+    image_type: "zone"
+    scene_mood: "intimate"
+    key_elements:
+      - "smaller hearth"
+      - "comfortable seating"
+      - "quieter atmosphere"
+      - "private conversation spots"
+    lighting:
+      primary_source: "smaller hearth"
+      secondary_source: "lamps"
+      quality: "intimate gathering"
+    palette:
+      dominant: ["hearth warmth", "seating fabric", "stone walls"]
+      accent: ["lamp pools"]
+      avoid: ["crowded chaos"]
+
+  - slug: "main-hall"
+    name: "Main Hall"
+    zone_type: "heart"
+    featured_in_chapters:
+      - ch07-the-westwall-welcome
+      - ch12-watchpost-whispers
+    description: "The formal gathering space for ceremonies—long scarred table, canyon lantern at center, gathered faces in warm light, where the company was named"
+    image_type: "zone"
+    scene_mood: "reverent"
+    key_elements:
+      - "long scarred table"
+      - "canyon lantern at center"
+      - "tapestry-covered walls"
+      - "gathered company"
+    lighting:
+      primary_source: "central lantern"
+      secondary_source: "wall lamps and hearth"
+      quality: "ceremonial warmth"
+    palette:
+      dominant: ["lantern amber", "table wood", "gathered faces"]
+      accent: ["flame brightening", "recognition silence"]
+      avoid: ["casual disorder"]
+    character_interaction:
+      positions: ["around table", "speaking at head", "holding lantern high"]
+      activities: ["naming ceremony", "communal gathering", "identity forming"]
+
+  - slug: "tower-room"
+    name: "Tower Room"
+    zone_type: "works"
+    featured_in_chapters:
+      - ch08-the-tracker-in-the-snow
+    description: "A functional room within the tower—maps, communication equipment, observation records"
+    image_type: "zone"
+    scene_mood: "quotidian"
+    key_elements:
+      - "observation records"
+      - "communication gear"
+      - "narrow windows"
+    lighting:
+      primary_source: "arrow slit light"
+      quality: "functional interior"
+    palette:
+      dominant: ["stone gray", "equipment", "records"]
+      accent: ["lamp for detail work"]
+      avoid: ["comfortable"]
+
+  # ===== BATTLE ZONES =====
+  - slug: "breach"
+    name: "Breach"
+    zone_type: "liminal"
+    featured_in_chapters:
+      - ch15-battle-for-westwall
+    description: "The wall where stone crumbled—mercenaries pouring through, desperate defense, where Vera's transformation reached its peak protecting Finn"
+    image_type: "zone"
+    scene_mood: "kinetic"
+    key_elements:
+      - "crumbled wall section"
+      - "rubble and debris"
+      - "fighting in gap"
+      - "bodies and combat"
+    lighting:
+      primary_source: "battle-smoke filtered"
+      quality: "chaos light"
+    palette:
+      dominant: ["rubble gray", "blood red", "combat motion"]
+      accent: ["weapon gleam", "transformation fur"]
+      avoid: ["orderly defense"]
+    character_interaction:
+      positions: ["in breach", "defending gap", "attacking through"]
+      activities: ["desperate combat", "transformation", "rescue"]
+
+  - slug: "ramparts"
+    name: "Ramparts"
+    zone_type: "perimeter"
+    featured_in_chapters:
+      - ch15-battle-for-westwall
+    description: "The defensive walls during battle—Vera's transformation point, bones breaking and reforming, silver-gray fur erupting, the leap that saved Finn"
+    image_type: "zone"
+    scene_mood: "ethereal"
+    key_elements:
+      - "defensive stone walls"
+      - "transformation in progress"
+      - "combat around"
+      - "twenty-foot drop to courtyard"
+    lighting:
+      primary_source: "battle-smoke morning"
+      secondary_source: "transformation glow"
+      quality: "primal light"
+    palette:
+      dominant: ["stone gray", "silver fur", "battle chaos"]
+      accent: ["amber eyes", "bone-white transformation"]
+      avoid: ["calm defense"]
+    character_interaction:
+      positions: ["on ramparts", "mid-transformation", "about to leap"]
+      activities: ["transformation", "protective leap", "battle fighting"]
+
+  - slug: "east-wall"
+    name: "East Wall"
+    zone_type: "perimeter"
+    featured_in_chapters:
+      - ch15-battle-for-westwall
+    description: "The eastern defensive wall—where arrows first darkened the dawn sky, shields raised, the battle's opening moments"
+    image_type: "zone"
+    scene_mood: "kinetic"
+    key_elements:
+      - "arrow rain falling"
+      - "shields raised in wall"
+      - "pre-dawn gray"
+      - "first casualties"
+    lighting:
+      primary_source: "pre-dawn"
+      quality: "battle dawn"
+    palette:
+      dominant: ["arrow shadow", "shield steel", "blood"]
+      accent: ["impact sparks"]
+      avoid: ["peaceful"]
+
+  - slug: "eastern-wall"
+    name: "Eastern Wall"
+    zone_type: "perimeter"
+    featured_in_chapters:
+      - ch15-battle-for-westwall
+    description: "The eastern wall during the assault—sustained attack, defense holding, the long grind of battle"
+    image_type: "zone"
+    scene_mood: "kinetic"
+    key_elements:
+      - "sustained combat"
+      - "defensive positions"
+      - "attackers on ladders"
+    lighting:
+      primary_source: "battle daylight"
+      quality: "combat light"
+    palette:
+      dominant: ["stone", "blood", "combat motion"]
+      accent: ["weapon gleam"]
+      avoid: ["calm"]
+
+  - slug: "eastern-tower"
+    name: "Eastern Tower"
+    zone_type: "works"
+    featured_in_chapters:
+      - ch15-battle-for-westwall
+    description: "The secondary tower during battle—observation post, archer positions, critical vantage"
+    image_type: "zone"
+    scene_mood: "kinetic"
+    key_elements:
+      - "archer positions"
+      - "battle visibility"
+      - "defensive fire"
+    lighting:
+      primary_source: "battle daylight"
+      quality: "combat observation"
+    palette:
+      dominant: ["stone gray", "arrow flight"]
+      accent: ["target identification"]
+      avoid: ["peaceful observation"]
+
+  - slug: "south-wall"
+    name: "South Wall"
+    zone_type: "perimeter"
+    featured_in_chapters:
+      - ch15-battle-for-westwall
+    description: "The southern defensive wall near the main gate—primary attack focus, heaviest fighting"
+    image_type: "zone"
+    scene_mood: "kinetic"
+    key_elements:
+      - "main gate below"
+      - "heaviest combat"
+      - "defensive positions tested"
+    lighting:
+      primary_source: "battle daylight"
+      quality: "urgent combat"
+    palette:
+      dominant: ["stone", "blood", "combat"]
+      accent: ["gate below"]
+      avoid: ["calm"]
+
+  - slug: "north-wall"
+    name: "North Wall"
+    zone_type: "perimeter"
+    featured_in_chapters:
+      - ch15-battle-for-westwall
+    description: "The northern wall during battle—secondary attack axis, holding the line"
+    image_type: "zone"
+    scene_mood: "kinetic"
+    key_elements:
+      - "secondary gate nearby"
+      - "sustained defense"
+      - "holding position"
+    lighting:
+      primary_source: "battle daylight"
+      quality: "sustained combat"
+    palette:
+      dominant: ["stone", "combat motion"]
+      accent: ["secondary threats"]
+      avoid: ["quiet"]
+
+  - slug: "keep"
+    name: "Keep"
+    zone_type: "sanctuary"
+    featured_in_chapters:
+      - ch15-battle-for-westwall
+    description: "The interior keep during crisis—last refuge if walls fall, where non-combatants shelter"
+    image_type: "zone"
+    scene_mood: "somber"
+    key_elements:
+      - "interior refuge"
+      - "non-combatants"
+      - "last defense position"
+    lighting:
+      primary_source: "limited windows"
+      quality: "refuge interior"
+    palette:
+      dominant: ["stone gray", "fear", "hope"]
+      accent: ["protected faces"]
+      avoid: ["exposure"]
+
+  # ===== AFTERMATH & SPECIAL ZONES =====
+  - slug: "ruins"
+    name: "After the Fall"
+    zone_type: "temporal"
+    description: "The Westwall after battle—breached wall, smoke still rising, but dawn light showing the community arriving to rebuild"
+    image_type: "temporal"
+    scene_mood: "somber"
+    key_elements:
+      - "breached wall visible"
+      - "battle damage throughout"
+      - "smoke still rising"
+      - "but people arriving"
+    lighting:
+      primary_source: "post-battle dawn"
+      quality: "damage assessment light"
+    palette:
+      dominant: ["ruin gray", "smoke", "damage"]
+      accent: ["arriving wagons", "helping hands"]
+      avoid: ["despair only"]
+    character_interaction:
+      positions: ["assessing damage", "arriving to help", "beginning cleanup"]
+      activities: ["damage assessment", "community arrival", "rebuilding begins"]
+
+  - slug: "sanctuary"
+    name: "Sanctuary"
+    zone_type: "sanctuary"
+    featured_in_chapters:
+      - ch14-black-hawks-strike
+    description: "The protected interior during crisis—where the vulnerable shelter while others fight"
+    image_type: "zone"
+    scene_mood: "somber"
+    key_elements:
+      - "protected interior"
+      - "vulnerable sheltering"
+      - "sounds of battle outside"
+    lighting:
+      primary_source: "limited"
+      quality: "sheltered interior"
+    palette:
+      dominant: ["protective stone", "sheltered faces", "hope"]
+      accent: ["comfort"]
+      avoid: ["exposure"]
+
+  - slug: "echo-return"
+    name: "Echo's Return"
+    zone_type: "mood"
+    description: "The moment of Echo's triumphant return—landing on perch, delivering message, the raven who brought salvation's timing"
+    image_type: "mood"
+    scene_mood: "kinetic"
+    key_elements:
+      - "Echo landing"
+      - "message delivered"
+      - "hope arriving"
+    lighting:
+      primary_source: "battle light"
+      quality: "arrival moment"
+    palette:
+      dominant: ["black feathers", "urgency", "hope"]
+      accent: ["message", "perch"]
+      avoid: ["casual observation"]
+    character_interaction:
+      positions: ["landing on perch", "delivering to recipient"]
+      activities: ["message delivery", "hope arriving"]
+
+  # ===== PERSPECTIVE & CHARACTER ZONES =====
+  - slug: "grimjaw-perspective"
+    name: "The Smith's Pride"
+    zone_type: "perspective"
+    description: "Grimjaw's view of his work—the forge operational, defenses he helped design holding, the engineer's satisfaction in seeing theory become survival"
+    image_type: "perspective"
+    scene_mood: "intimate"
+    key_elements:
+      - "forge domain"
+      - "defensive positions he designed"
+      - "pride in practical work"
+    lighting:
+      primary_source: "forge glow"
+      quality: "craftsman's assessment"
+    palette:
+      dominant: ["forge orange", "work satisfaction", "practical pride"]
+      accent: ["defensive designs", "thirty years visible"]
+      avoid: ["boastful display"]
+
+  - slug: "durja-perspective"
+    name: "The Command Sightline"
+    zone_type: "perspective"
+    description: "Leadership perspective—Veyra's view from the wall walk, seeing her company at work, the weight of command in what she surveys"
+    image_type: "perspective"
+    scene_mood: "intimate"
+    key_elements:
+      - "command view over compound"
+      - "company visible below"
+      - "weight of responsibility"
+    lighting:
+      primary_source: "evening light"
+      quality: "command contemplation"
+    palette:
+      dominant: ["sunset gold", "responsibility", "care"]
+      accent: ["activity below", "those she protects"]
+      avoid: ["detached observation"]
+
+  # ===== SYMBOLIC MOMENTS =====
+  - slug: "heraldry-sketch"
+    name: "Heraldry of Hope"
+    zone_type: "detail"
+    description: "Close on the Last Light Company symbol—lantern surrounded by stars, painted fresh above the gate, identity made visible"
+    image_type: "detail"
+    scene_mood: "reverent"
+    key_elements:
+      - "lantern symbol"
+      - "surrounding stars"
+      - "fresh paint"
+      - "stone frame"
+    lighting:
+      primary_source: "morning sun on gate"
+      quality: "symbol illuminated"
+    palette:
+      dominant: ["symbol colors", "fresh paint", "stone frame"]
+      accent: ["light catching paint"]
+      avoid: ["faded old"]
+
+  - slug: "motto-sketch"
+    name: "The Motto Emerges"
+    zone_type: "detail"
+    description: "The moment of naming—canyon lantern's flame brightening as Fayne speaks 'The Last Light Company,' identity crystallizing in fire"
+    image_type: "detail"
+    scene_mood: "reverent"
+    key_elements:
+      - "canyon lantern flame"
+      - "flame brightening"
+      - "gathered faces watching"
+      - "recognition in silence"
+    lighting:
+      primary_source: "lantern flame"
+      quality: "flame responding to words"
+    palette:
+      dominant: ["flame amber", "recognition", "silence"]
+      accent: ["brightening moment"]
+      avoid: ["static flame"]
+
+  - slug: "saras-drawing"
+    name: "Sara's Drawing"
+    zone_type: "detail"
+    description: "A child's drawing of the watchpost—simple lines capturing home, the fortress through young eyes, posted on a wall"
+    image_type: "detail"
+    scene_mood: "intimate"
+    key_elements:
+      - "child's drawing"
+      - "simple representation"
+      - "posted with care"
+      - "family visible in art"
+    lighting:
+      primary_source: "soft interior"
+      quality: "tender observation"
+    palette:
+      dominant: ["drawing colors", "paper", "child's perspective"]
+      accent: ["love visible"]
+      avoid: ["sophisticated art"]
+
+  - slug: "alcove"
+    name: "Alcove Near the Kitchen"
+    zone_type: "liminal"
+    description: "A quiet alcove near the kitchen—where private conversations happen, where comfort food is pressed into hands, Elba's secondary domain"
+    image_type: "zone"
+    scene_mood: "intimate"
+    key_elements:
+      - "sheltered corner"
+      - "kitchen warmth nearby"
+      - "private moment space"
+    lighting:
+      primary_source: "kitchen light spillover"
+      quality: "intimate warmth"
+    palette:
+      dominant: ["warm stone", "kitchen glow", "comfort"]
+      accent: ["food being shared"]
+      avoid: ["exposure"]
+    character_interaction:
+      positions: ["in alcove", "receiving comfort"]
+      activities: ["private conversation", "receiving food", "moment of care"]
+
+# ============================================================================
+# BEAT IMAGES - Key Narrative Moments
+# ============================================================================
+beat_images:
+  - slug: "home-transformed"
+    title: "Home Transformed"
+    chapter: "ch07-the-westwall-welcome"
+    scene_id: "scn-07-01"
+    description: "The hilltop reveal of the transformed watchpost—morning sun on four towers, three chimneys smoking, Last Light symbol fresh-painted above gate, Grimjaw assessing: 'great construction waiting for someone to remember why it was built'"
+    zone: "courtyard-approach"
+    image_type: "anchor"
+    scene_mood: "pastoral"
+    emotional_beat: "homecoming revelation—forgotten garrison becomes family home"
+    characters_present:
+      - grimjaw-ironbeard
+      - veyra-thornwake
+      - thorne-brightward
+    framing: "wide"
+    composition_notes: "The reveal shot—home coming into view, transformation visible in every detail"
+    key_visual_elements:
+      - "morning sun on watchpost"
+      - "three chimneys smoking"
+      - "fresh-painted symbol above gate"
+      - "company silhouetted on approach"
+    lighting:
+      primary_source: "golden morning light"
+      quality: "revelation warmth"
+    palette:
+      dominant: ["morning gold", "granite warmth", "hope"]
+      accent: ["smoke wisps", "symbol colors"]
+
+  - slug: "the-naming"
+    title: "The Naming Moment"
+    chapter: "ch07-the-westwall-welcome"
+    scene_id: "scn-07-03"
+    description: "Fayne speaks the name and the lantern flame brightens—'The Last Light Company. When everything else goes dark, we're the last light burning.' Identity crystallizing in fire."
+    zone: "main-hall"
+    image_type: "hero"
+    scene_mood: "reverent"
+    emotional_beat: "identity crystallizing—the name finding its people"
+    characters_present:
+      - quartermaster-fayne
+      - veyra-thornwake
+      - thorne-brightward
+      - aldwin-gentleheart
+      - sarge
+      - grimjaw-ironbeard
+    framing: "medium"
+    composition_notes: "The naming as sacrament—the flame responding to the words"
+    key_visual_elements:
+      - "Fayne mid-speech"
+      - "central lantern flame brightening"
+      - "gathered faces in recognition"
+      - "silence made visible"
+    lighting:
+      primary_source: "lantern flame at center"
+      quality: "flame-bright truth"
+      color_temperature: "warm amber"
+    palette:
+      dominant: ["lantern amber", "gathered faces", "recognition"]
+      accent: ["flame brightening"]
+
+  - slug: "lantern-raised"
+    title: "Lantern Raised High"
+    chapter: "ch07-the-westwall-welcome"
+    scene_id: "scn-07-03"
+    description: "Veyra lifts the lantern high—'We don't find them. They find us. We just have to keep the light burning bright enough for them to see.' The commander as beacon-bearer."
+    zone: "main-hall"
+    image_type: "hero"
+    scene_mood: "reverent"
+    emotional_beat: "mission philosophy made visible—hope as strategy"
+    characters_present:
+      - veyra-thornwake
+    framing: "medium"
+    composition_notes: "The commander as beacon-bearer, light reaching all faces"
+    key_visual_elements:
+      - "Veyra raising lantern high"
+      - "light reaching every face"
+      - "scars illuminated"
+      - "mission made visible"
+    lighting:
+      primary_source: "raised lantern"
+      quality: "radiant purpose"
+    palette:
+      dominant: ["light radiating", "faces touched", "hope"]
+      accent: ["scars as testimony"]
+
+  - slug: "crowded-family"
+    title: "Crowded Breakfast"
+    chapter: "ch09-hearth-and-home"
+    scene_id: "scn-09-02"
+    description: "The mess hall packed shoulder-to-shoulder—some eating from measuring cups, wobbling extended table, Echo at window—success measured in cramped quarters, family in close proximity"
+    zone: "mess-hall-essence"
+    image_type: "anchor"
+    scene_mood: "celebratory"
+    emotional_beat: "success strangling itself—abundance and constraint visible together"
+    characters_present:
+      - veyra-thornwake
+      - grimjaw-ironbeard
+      - vera-moonwhisper
+      - aldwin-gentleheart
+    framing: "wide"
+    composition_notes: "Abundance and constraint visible together—love as proximity"
+    key_visual_elements:
+      - "shoulder-to-shoulder eating"
+      - "measuring cups as bowls"
+      - "wobbling extended table"
+      - "Echo at window"
+      - "warm chaos"
+    lighting:
+      primary_source: "morning frost-windows"
+      secondary_source: "hearth warmth"
+      quality: "crowded warmth"
+    palette:
+      dominant: ["warm amber", "crowded motion", "steam"]
+      accent: ["makeshift vessels", "laughter"]
+
+  - slug: "sunset-vision"
+    title: "Sunset Vision"
+    chapter: "ch09-hearth-and-home"
+    scene_id: "scn-09-05"
+    description: "Veyra and Thorne on the parapet at sunset—'We've built something precious here, but we're strangling it'—planning the future, wolf howl sounding like promise"
+    zone: "parapet"
+    image_type: "hero"
+    scene_mood: "intimate"
+    emotional_beat: "recognition of growth requiring change—vision beyond current constraints"
+    characters_present:
+      - veyra-thornwake
+      - thorne-brightward
+    framing: "wide"
+    composition_notes: "Vision looking forward—leadership surveying what they've built"
+    key_visual_elements:
+      - "two figures silhouetted"
+      - "sunset-gold sky"
+      - "courtyard activity below"
+      - "stars emerging"
+    lighting:
+      primary_source: "dying sunset gold"
+      secondary_source: "first stars"
+      quality: "contemplative dusk"
+    palette:
+      dominant: ["sunset gold", "emerging blue", "silhouette"]
+      accent: ["first stars", "wolf-howl implied"]
+
+  - slug: "family-defending-home"
+    title: "Family Defending Home"
+    chapter: "ch15-battle-for-westwall"
+    scene_id: "scn-15-03"
+    description: "Veyra's toast before battle—'Tomorrow they face something stronger. They face a family defending its home.' Water raised, voices joining, distant howling through windows"
+    zone: "mess-hall"
+    image_type: "anchor"
+    scene_mood: "intimate"
+    emotional_beat: "communal resolve before battle—identity affirmed"
+    characters_present:
+      - veyra-thornwake
+      - grimjaw-ironbeard
+    framing: "wide"
+    composition_notes: "Last supper energy—family before battle"
+    key_visual_elements:
+      - "Veyra with raised cup"
+      - "assembled faces"
+      - "simple water toast becoming sacred"
+      - "distant howling implied"
+    lighting:
+      primary_source: "evening lamplight"
+      quality: "communion warmth"
+    palette:
+      dominant: ["lamp amber", "gathered faces", "resolve"]
+      accent: ["raised cups", "shadow lengthening"]
+
+  - slug: "dire-wolf-transformation"
+    title: "The Unleashing"
+    chapter: "ch15-battle-for-westwall"
+    scene_id: "scn-15-15"
+    description: "Vera's transformation on the ramparts—spine elongating, bones breaking and reforming, silver-gray fur erupting, humanity torn away to become something twice wolf-size"
+    zone: "ramparts"
+    image_type: "hero"
+    scene_mood: "ethereal"
+    emotional_beat: "transformation's cost—protective rage made manifest"
+    characters_present:
+      - vera-moonwhisper
+    framing: "medium"
+    composition_notes: "The ultimate transformation—humanity sacrificed for family"
+    key_visual_elements:
+      - "Vera on battlements mid-change"
+      - "spine elongating"
+      - "silver-gray fur erupting"
+      - "amber eyes blazing"
+      - "armor straps snapping"
+    lighting:
+      primary_source: "smoke-filtered morning"
+      secondary_source: "transformation glow"
+      quality: "primal light"
+    palette:
+      dominant: ["silver fur", "amber eyes", "battle chaos"]
+      accent: ["bone-white transformation", "protective fury"]
+
+  - slug: "dire-wolf-leap"
+    title: "Death From Above"
+    chapter: "ch15-battle-for-westwall"
+    scene_id: "scn-15-16"
+    description: "The dire wolf in full leap—twenty feet from wall to courtyard, hitting Finn's would-be killer like an avalanche of fur and fury, a sight that burns itself into memory"
+    zone: "courtyard"
+    image_type: "hero"
+    scene_mood: "kinetic"
+    emotional_beat: "protective fury incarnate—the leap that saves family"
+    characters_present:
+      - vera-moonwhisper
+      - finn
+    framing: "wide"
+    composition_notes: "Death from above—protective fury made visible"
+    key_visual_elements:
+      - "massive dire wolf mid-leap"
+      - "silver-gray fur catching light"
+      - "Finn on ground below"
+      - "attacker about to be struck"
+      - "twenty-foot drop frozen"
+    lighting:
+      primary_source: "morning battle light"
+      quality: "frozen action moment"
+    palette:
+      dominant: ["silver fur", "motion blur", "impact imminent"]
+      accent: ["amber eyes", "salvation"]
+
+  - slug: "grandmother-fury"
+    title: "No One Touches My Boys"
+    chapter: "ch15-battle-for-westwall"
+    scene_id: "scn-15-12"
+    description: "Mistress Elba meets the mercenary with a kitchen cleaver to the neck—'No one touches my boys! By stone and steel!'—grandmother becoming guardian"
+    zone: "medical-station"
+    image_type: "beat"
+    scene_mood: "kinetic"
+    emotional_beat: "non-combatant becoming warrior—grandmother's protective fury"
+    characters_present:
+      - mistress-elba
+      - aldwin-gentleheart
+    framing: "medium"
+    composition_notes: "Love made lethal—the grandmother who defends"
+    key_visual_elements:
+      - "Elba standing over fallen mercenary"
+      - "cleaver dark with blood"
+      - "apron splattered"
+      - "eyes blazing with fury"
+      - "wounded being treated behind her"
+    lighting:
+      primary_source: "smoke-filtered light"
+      quality: "maternal wrath"
+    palette:
+      dominant: ["blood", "fury", "protection"]
+      accent: ["cleaver steel", "grandmother's eyes"]
+
+  - slug: "three-horns"
+    title: "Cavalry Salvation"
+    chapter: "ch15-battle-for-westwall"
+    scene_id: "scn-15-21"
+    description: "Three cavalry squadrons cresting hills from east, north, and south simultaneously—Atlock's voice: 'PER EQUITES, MORS!'—salvation arriving in coordinated glory"
+    zone: "courtyard"
+    image_type: "hero"
+    scene_mood: "kinetic"
+    emotional_beat: "salvation arriving—hope made audible in three horns"
+    characters_present:
+      - commander-atlock
+    framing: "wide"
+    composition_notes: "Cavalry to the rescue—coordinated salvation"
+    key_visual_elements:
+      - "Atlock at head of charge"
+      - "two hundred riders behind"
+      - "mercenaries scattering"
+      - "morning dust and glory"
+    lighting:
+      primary_source: "morning gold"
+      quality: "dust-cloud glory"
+    palette:
+      dominant: ["cavalry steel", "morning gold", "victory dust"]
+      accent: ["hooves churning", "battle cries"]
+
+  - slug: "community-arrives"
+    title: "When Our People Are Hurt"
+    chapter: "ch16-bonds-of-community"
+    scene_id: "scn-16-02"
+    description: "Harriet Blackwood's fierce pride—'When our people are hurt, we come'—Veyra feeling something tighten in her throat as she realizes the Company has been claimed as family"
+    zone: "courtyard"
+    image_type: "beat"
+    scene_mood: "intimate"
+    emotional_beat: "community claiming ownership—strangers becoming family"
+    characters_present:
+      - harriet-blackwood
+      - veyra-thornwake
+    framing: "medium"
+    composition_notes: "The moment of claiming—strangers into family"
+    key_visual_elements:
+      - "Harriet gesturing to arriving wagons"
+      - "fierce maternal pride"
+      - "Veyra's emotional response"
+      - "families coming to help"
+    lighting:
+      primary_source: "morning warmth"
+      quality: "emotional light"
+    palette:
+      dominant: ["wagon colors", "gathering help", "community"]
+      accent: ["fierce pride", "acceptance"]
+
+  - slug: "becoming-family"
+    title: "We Were Becoming Family"
+    chapter: "ch16-bonds-of-community"
+    scene_id: "scn-16-03"
+    description: "Veyra's revelation—'All this time, I thought we were building a rescue company. I was wrong. We were becoming family.'—watching children from different settlements play together"
+    zone: "courtyard"
+    image_type: "anchor"
+    scene_mood: "intimate"
+    emotional_beat: "mission's true nature revealed—family beyond organization"
+    characters_present:
+      - veyra-thornwake
+      - marcus-heartbridge
+    framing: "wide"
+    composition_notes: "The revelation moment—mission's true nature visible in playing children"
+    key_visual_elements:
+      - "Veyra leaning against stone"
+      - "children playing together"
+      - "damaged fortress becoming living community"
+      - "Marcus beside her"
+    lighting:
+      primary_source: "golden afternoon"
+      quality: "warmth-glow revelation"
+    palette:
+      dominant: ["golden afternoon", "playing children", "community gathering"]
+      accent: ["repair in progress", "hope rebuilding"]
+
+# ============================================================================
+# REFERENCES - Cross-Reference Links
+# ============================================================================
+references:
+  chapter_visual_plans:
+    - slug: "ch07-the-westwall-welcome"
+      relationship: "homecoming and naming"
+      notes: "Company arrives, transforms garrison to home, naming ceremony"
+    - slug: "ch09-hearth-and-home"
+      relationship: "growing pains"
+      notes: "Cramped success, skill sharing, vision for future"
+    - slug: "ch12-watchpost-whispers"
+      relationship: "daily operations"
+      notes: "Rumors, training, command discussions"
+    - slug: "ch14-black-hawks-strike"
+      relationship: "threat arrives"
+      notes: "Black Hawks attack, courtyard combat"
+    - slug: "ch15-battle-for-westwall"
+      relationship: "siege and transformation"
+      notes: "Major battle, Vera's dire wolf form, cavalry rescue"
+    - slug: "ch16-bonds-of-community"
+      relationship: "aftermath and community"
+      notes: "Community arrives, druids heal, family revelation"
+
+  character_portraits:
+    - slug: "veyra-thornwake"
+      relationship: "commander"
+      notes: "Lantern raised, naming ceremony, sunset vision"
+    - slug: "grimjaw-ironbeard"
+      relationship: "engineer and smith"
+      notes: "Forge domain, morning hammer, defensive preparations"
+    - slug: "vera-moonwhisper"
+      relationship: "ranger and dire wolf"
+      notes: "Aerie quarters, transformation, protective fury"
+    - slug: "aldwin-gentleheart"
+      relationship: "healer"
+      notes: "Infirmary domain, teaching Halden"
+    - slug: "mistress-elba"
+      relationship: "cook and grandmother"
+      notes: "Kitchen domain, Bertha, cleaver defense"
+    - slug: "quartermaster-fayne"
+      relationship: "logistics genius"
+      notes: "Lists of lists, naming moment speaker"
+    - slug: "finn"
+      relationship: "stable hand turned ranger"
+      notes: "Joyful welcome, protected by Vera, protecting Vera"
+
+  related_locations:
+    - slug: "brightstone-healers-hall"
+      relationship: "medical support"
+      notes: "Nearby, Dokra's workplace, advanced care"
+    - slug: "dock-ward"
+      relationship: "city access"
+      notes: "Logistics staging, wagon route"
+    - slug: "thornwood-forest"
+      relationship: "wolf territory"
+      notes: "Where pack answered Vera's call"
+
+  thematic_connections:
+    - theme: "garrison to home"
+      description: "Rigid military shell transformed into compassionate family residence"
+    - theme: "cramped success"
+      description: "Growth measured in tight quarters, abundance as constraint"
+    - theme: "tested to destruction"
+      description: "Home defended with everything, nearly lost, rebuilt by community"
+    - theme: "found family"
+      description: "Broken people building something precious enough to die for"
+    - theme: "transformation cost"
+      description: "Vera's dire wolf form—protecting family at cost of humanity"
+    - theme: "community claiming"
+      description: "Strangers becoming 'our people' through shared purpose"

@@ -1,0 +1,597 @@
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "croft-warehouse"
+  location_name: "Croft Warehouse"
+  zone_count: 7
+  featured_in_chapters:
+    - ch11-an-honest-coin
+  last_updated: "2025-12-26"
+
+generation_defaults:
+  provider: "workers-ai"
+  model: "flux-schnell"
+  quality: "high"
+  aspect_ratio: "16:9"
+  size: "1344x768"
+
+narrative_soul: |
+  Croft Warehouse is corruption made architectural—a respectable dock
+  facade concealing weapons trafficking and Silent Hand supply chains.
+  Behind a hideous battle tapestry, a safe holds ledgers of crimes that
+  could bring down the merchant who runs it. When Veyra goes shoulder-
+  first through a window with those pages, and when the "controlled"
+  fire burns everything except the military-grade weapons, the building
+  reveals its two truths: the commerce it pretends to be, and the war
+  materiel it actually moves. This is where the Company learns that
+  corruption burns its evidence while protecting its true trade.
+
+one_line_essence: "Where corruption hides behind commerce, and fire reveals what matters."
+
+location_visual_anchor:
+  signature_elements:
+    - "Dock warehouse with respectable merchant facade"
+    - "Hideous battle tapestry concealing office safe"
+    - "Portrait of 'Beloved Mara' (mistress, not daughter)"
+    - "Stacked crates—some legitimate, some holding weapons"
+    - "Rooftop ventilation hatches for infiltration"
+    - "Office windows overlooking dock and water"
+  materials:
+    - "Weathered timber warehouse construction"
+    - "Stone foundation and dock pilings"
+    - "Iron bands on shipping crates"
+    - "Oiled ledger leather"
+    - "Gaudy tapestry fabric"
+    - "Window glass (destined to shatter)"
+  color_anchors:
+    - "Dock wood weathered gray-brown"
+    - "Warehouse shadow deep"
+    - "Fire orange when burning"
+    - "Tapestry clashing colors"
+    - "Ledger black leather"
+    - "Steel gleam of hidden weapons"
+  characteristic_light:
+    normal: "Minimal warehouse illumination, lanterns at guard posts, office lamp glow"
+    infiltration: "Moonless night, guard torch pools, shadow between"
+    burning: "Fire orange consuming office section, weapons steel catching light in saved crates"
+
+overview:
+  establishing:
+    slug: "establishing"
+    name: "Croft Warehouse - Establishing Shot"
+    zone_type: "establishing"
+    image_type: "establishing"
+    mood: "ominous"
+    narrative_context: |
+      A respectable dock warehouse in Stonebridge—but certain crates
+      are watched more carefully than others, and the guards carry
+      weapons too good for simple watchmen.
+    lighting:
+      primary_source: "Ambient dock light"
+      secondary_source: "Guard lanterns"
+      quality: "Commercial evening"
+      direction: "Mixed harbor light"
+      color_temperature: "Cool evening, warm lantern spots"
+      shadow_depth: "Deep—dock warehouse shadows"
+      atmospheric: "Salt air, commerce front"
+    palette:
+      dominant:
+        - "Weathered dock wood"
+        - "Harbor gray-blue"
+        - "Warehouse shadow"
+      accent:
+        - "Guard lantern gold"
+        - "Merchant signage"
+        - "Water reflection"
+      avoid:
+        - "Obvious criminal lair"
+        - "Overt threat"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of dock warehouse at evening, fantasy merchant
+      facade. Large timber warehouse on stone pilings, weathered but
+      well-maintained. Guards at corners with lanterns, weapons slightly
+      too good for simple watchmen. Merchant signage suggesting
+      legitimate commerce. Harbor water reflecting evening light.
+      Respectable front hiding darker purpose. Fantasy illustration,
+      ominous commerce.
+    negative_prompt: "obvious criminal lair, skull decorations, threatening entrance, ruined building, cartoon style, anime"
+
+zones:
+  - slug: "warehouse-exterior"
+    name: "Warehouse Exterior"
+    zone_type: "perimeter"
+    image_type: "zone"
+    mood: "ominous"
+    narrative_context: |
+      The exterior perimeter—guard positions at corners, main loading
+      doors, the dock face. And later, where controlled fire reveals
+      which crates are worth saving: the weapons.
+    lighting:
+      primary_source: "Guard lanterns"
+      secondary_source: "Ambient night"
+      quality: "Security lighting"
+      direction: "Pools at guard posts"
+      color_temperature: "Warm lantern in cool night"
+      shadow_depth: "Deep between posts"
+      atmospheric: "Dock commerce, hidden purpose"
+    palette:
+      dominant:
+        - "Warehouse wood dark"
+        - "Night shadow"
+        - "Guard post glow"
+      accent:
+        - "Steel gleam in crates"
+        - "Smoking guards"
+        - "Loading dock"
+      avoid:
+        - "Bright lighting"
+        - "Obvious threat"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of warehouse exterior at night, fantasy dock security.
+      Timber warehouse with guards at corner posts, lanterns creating
+      pools of light. Loading dock with stacked crates. Guards smoking
+      at corner, professional but bored. Dock face meeting harbor water.
+      Security perimeter for legitimate commerce. Fantasy illustration,
+      ominous watch.
+    negative_prompt: "bright lights, obvious guards, military fortification, cartoon style, anime"
+    references:
+      - type: "chapter_visual_plan"
+        slug: "ch11-an-honest-coin"
+        scene: "scn-11-07"
+        reason: "Controlled fire scene"
+
+  - slug: "warehouse-floor"
+    name: "Warehouse Floor"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "ominous"
+    narrative_context: |
+      The main storage floor—stacked crates of legitimate and
+      illegitimate cargo mixed, workers moving goods, the appearance
+      of normal dock commerce.
+    lighting:
+      primary_source: "High windows (daytime) or lanterns (night)"
+      secondary_source: "Work lamps at stations"
+      quality: "Functional warehouse"
+      direction: "Overhead and work-focused"
+      color_temperature: "Neutral work light"
+      shadow_depth: "Deep between stacks"
+      atmospheric: "Warehouse echo, moving cargo"
+    palette:
+      dominant:
+        - "Crate wood tan"
+        - "Shadow between stacks"
+        - "Floor worn gray"
+      accent:
+        - "Iron bands dark"
+        - "Worker figures"
+        - "Cargo variety"
+      avoid:
+        - "Empty space"
+        - "Visible weapons"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of warehouse interior, fantasy commercial storage.
+      Stacked crates creating canyons of cargo, workers moving goods
+      with handcarts. High windows providing filtered light during
+      day, lanterns at night. Legitimate commerce appearance hiding
+      mixed cargo. Fantasy illustration, ominous commerce.
+    negative_prompt: "empty warehouse, visible weapons, military storage obvious, cartoon style, anime"
+    references:
+      - type: "chapter_visual_plan"
+        slug: "ch11-an-honest-coin"
+        scene: "scn-11-05"
+        reason: "Heist location"
+
+  - slug: "storage"
+    name: "Storage Floor"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      Secondary storage areas—categorized cargo, inventory systems,
+      the organized side of dock commerce.
+    lighting:
+      primary_source: "Practical overhead"
+      secondary_source: "Inventory desk lamp"
+      quality: "Functional"
+      direction: "General work lighting"
+      color_temperature: "Neutral"
+      shadow_depth: "Moderate—orderly storage"
+      atmospheric: "Organized commerce"
+    palette:
+      dominant:
+        - "Organized crate rows"
+        - "Category markers"
+        - "Floor paths clear"
+      accent:
+        - "Inventory desk"
+        - "Clipboard papers"
+        - "Worker movement"
+      avoid:
+        - "Chaos"
+        - "Hidden areas"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of organized storage section, fantasy warehouse
+      inventory. Crates in organized rows with category markers.
+      Inventory desk with papers and ledgers. Clear pathways for
+      cargo movement. Functional commerce atmosphere. Fantasy
+      illustration, quotidian organization.
+    negative_prompt: "chaos, hidden areas, suspicious activity, cartoon style, anime"
+
+  - slug: "rooftop"
+    name: "Rooftop"
+    zone_type: "perimeter"
+    image_type: "zone"
+    mood: "ominous"
+    narrative_context: |
+      The warehouse roof—Veyra's infiltration route on a moonless night,
+      ventilation hatches providing entry, guards visible below but
+      distracted by drunk merchants.
+    lighting:
+      primary_source: "Moonless night (none)"
+      secondary_source: "Guard torches far below"
+      quality: "Near total darkness"
+      direction: "Upward torch glow from street"
+      color_temperature: "Cool night, distant warm"
+      shadow_depth: "Maximum—infiltration darkness"
+      atmospheric: "Silent movement, held breath"
+    palette:
+      dominant:
+        - "Roof tile dark gray"
+        - "Night sky darker"
+        - "Shadow absolute"
+      accent:
+        - "Ventilation hatch outline"
+        - "Distant torch glow"
+        - "Shadow figure moving"
+      avoid:
+        - "Moonlight"
+        - "Visibility"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of warehouse rooftop at moonless night, fantasy
+      infiltration route. Roof tiles in near-complete darkness, only
+      hint of shape visible. Ventilation hatch outlined against night
+      sky. Distant torch glow from guard posts below. Shadow figure
+      moving silently across tiles. Fantasy illustration, ominous
+      stealth.
+    negative_prompt: "moonlight, visible detail, lit rooftop, daytime, cartoon style, anime"
+    references:
+      - type: "chapter_visual_plan"
+        slug: "ch11-an-honest-coin"
+        scene: "scn-11-05"
+        moment: "ch11-an-honest-coin-moment-04"
+        reason: "Drunk Merchant Pantomime / rooftop approach"
+      - type: "character_portrait"
+        slug: "veyra-thornwake"
+        reason: "Veyra infiltrating"
+
+  - slug: "office"
+    name: "Office"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "intimate"
+    narrative_context: |
+      Croft's private office—obsessively ordered, hideous battle tapestry
+      on one wall concealing the safe, portrait of "Beloved Mara" on
+      desk revealing the combination's key.
+    lighting:
+      primary_source: "Single desk lamp"
+      secondary_source: "Window moonlight (what little)"
+      quality: "Intimate office glow"
+      direction: "Desk-focused"
+      color_temperature: "Warm lamp in dark office"
+      shadow_depth: "Deep—private space"
+      atmospheric: "Obsessive order, hidden secrets"
+    palette:
+      dominant:
+        - "Dark wood furniture"
+        - "Tapestry clashing colors"
+        - "Lamp pool gold"
+      accent:
+        - "Portrait frame"
+        - "Safe behind tapestry"
+        - "Ledger black leather"
+      avoid:
+        - "Bright lighting"
+        - "Chaos"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of merchant's private office, fantasy criminal
+      lair disguised. Obsessively ordered desk with papers and inkwell.
+      Single lamp casting warm pool. Hideous battle tapestry on wall
+      in clashing colors (concealing safe). Small portrait of woman
+      ("Beloved Mara") on desk. Dark wood furniture, leather chair.
+      Private secrets hidden in plain sight. Fantasy illustration,
+      intimate criminality.
+    negative_prompt: "bright office, modern furniture, obvious safe, cartoon style, anime"
+    references:
+      - type: "chapter_visual_plan"
+        slug: "ch11-an-honest-coin"
+        scene: "scn-11-05"
+        moment: "ch11-an-honest-coin-moment-05"
+        reason: "Behind the Hideous Tapestry"
+
+  - slug: "veyra-descent"
+    name: "The Descent"
+    zone_type: "liminal"
+    image_type: "zone"
+    mood: "tense"
+    narrative_context: |
+      Veyra's infiltration path—through ventilation hatch, down into
+      warehouse darkness, navigating to the office unseen.
+    lighting:
+      primary_source: "None (night infiltration)"
+      secondary_source: "Distant guard lamp glow"
+      quality: "Minimal, navigating by feel"
+      direction: "Downward descent"
+      color_temperature: "Cool darkness"
+      shadow_depth: "Maximum—relying on darkness"
+      atmospheric: "Silent descent, controlled breathing"
+    palette:
+      dominant:
+        - "Absolute shadow"
+        - "Structure silhouette"
+        - "Descent path"
+      accent:
+        - "Distant light sources"
+        - "Shadow figure descending"
+        - "Rope or handhold"
+      avoid:
+        - "Light"
+        - "Detection"
+    aspect_ratio: "3:4"
+    size: "896x1152"
+    prompt_used: |
+      Oil painting of infiltrator descending through warehouse, fantasy
+      stealth moment. Shadow figure descending through darkness,
+      navigating by feel. Distant light sources far below. Vertical
+      composition emphasizing descent. Silent movement in absolute
+      shadow. Fantasy illustration, tense stealth.
+    negative_prompt: "visible detail, lit scene, detected figure, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "veyra-thornwake"
+        reason: "Veyra descending"
+
+  - slug: "window-escape"
+    name: "Explosive Escape"
+    zone_type: "threshold"
+    image_type: "beat"
+    mood: "kinetic"
+    narrative_context: |
+      The escape—footsteps on stairs, no time for subtlety. Veyra goes
+      shoulder-first through the office window in a shower of glass,
+      hits the dock rolling, comes up running.
+    lighting:
+      primary_source: "Lamp light through shattering glass"
+      secondary_source: "Dock ambient"
+      quality: "Explosive moment"
+      direction: "Outward through window"
+      color_temperature: "Warm lamp, cool night"
+      shadow_depth: "Shattered by action"
+      atmospheric: "Glass flying, escape in motion"
+    palette:
+      dominant:
+        - "Glass shatter silver"
+        - "Night beyond"
+        - "Motion blur"
+      accent:
+        - "Escaping figure"
+        - "Dock below"
+        - "Water beyond"
+      avoid:
+        - "Static image"
+        - "Caught figure"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of figure bursting through window, fantasy explosive
+      escape. Female figure shoulder-first through glass in shower of
+      shards. Office lamp light catching glass fragments. Dock and
+      water visible below. Motion and desperation in action. Plans
+      becoming desperate exits. Fantasy illustration, kinetic escape.
+    negative_prompt: "static pose, caught figure, gentle exit, cartoon style, anime"
+    references:
+      - type: "chapter_visual_plan"
+        slug: "ch11-an-honest-coin"
+        scene: "scn-11-05"
+        moment: "ch11-an-honest-coin-moment-06"
+        reason: "Window Exit - hero moment"
+      - type: "character_portrait"
+        slug: "veyra-thornwake"
+        reason: "Veyra escaping"
+
+beat_images:
+  - slug: "hideous-tapestry"
+    name: "Behind the Hideous Tapestry"
+    zone_ref: "office"
+    image_type: "detail"
+    mood: "intimate"
+    narrative_context: |
+      The tapestry is indeed hideous—glorified battle in clashing colors.
+      But behind it waits the safe, and Mara's portrait gives up the
+      combination. Men's secrets hidden behind their vanities.
+    chapter_ref: "ch11-an-honest-coin"
+    scene_ref: "scn-11-05"
+    moment_ref: "ch11-an-honest-coin-moment-05"
+    lighting:
+      primary_source: "Desk lamp"
+      secondary_source: "None—intimate discovery"
+      quality: "Revealing"
+      direction: "On tapestry and safe"
+      color_temperature: "Warm lamp on discovery"
+      shadow_depth: "Deep—secret revealed"
+      atmospheric: "Hidden truth exposed"
+    palette:
+      dominant:
+        - "Tapestry clashing colors"
+        - "Safe dark metal"
+        - "Portrait frame gold"
+      accent:
+        - "Combination dial"
+        - "Mara's painted face"
+        - "Hand on tapestry"
+      avoid:
+        - "Modern safe"
+        - "Clean reveal"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of secret revealed behind tapestry, fantasy heist
+      discovery. Hideous battle tapestry in clashing colors pushed
+      aside. Dark iron safe visible behind. Small portrait of woman
+      ("Beloved Mara") on desk—the combination's key. Hand pulling
+      tapestry aside. Men's secrets hidden behind their vanities.
+      Fantasy illustration, intimate discovery.
+    negative_prompt: "modern safe, digital lock, clean wall, cartoon style, anime"
+
+  - slug: "window-shatter"
+    name: "Shoulder-First Through Glass"
+    zone_ref: "window-escape"
+    image_type: "hero"
+    mood: "kinetic"
+    narrative_context: |
+      Footsteps on stairs, no time for subtlety—Veyra goes shoulder-first
+      through glass, hits dock rolling, comes up running. Elegant plans
+      become desperate exits.
+    chapter_ref: "ch11-an-honest-coin"
+    scene_ref: "scn-11-05"
+    moment_ref: "ch11-an-honest-coin-moment-06"
+    lighting:
+      primary_source: "Office lamp behind"
+      secondary_source: "Night beyond"
+      quality: "Explosive action"
+      direction: "Backlit through window"
+      color_temperature: "Warm lamp, cool night"
+      shadow_depth: "Shattered by motion"
+      atmospheric: "Glass flying, escape committed"
+    palette:
+      dominant:
+        - "Glass shatter white"
+        - "Night dark beyond"
+        - "Motion silhouette"
+      accent:
+        - "Glass catching light"
+        - "Ledger pages in hand"
+        - "Dock visible below"
+      avoid:
+        - "Controlled exit"
+        - "Hesitation"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of desperate window escape, fantasy action peak.
+      Female figure shoulder-first through shattering window, glass
+      exploding outward. Office lamp backlighting the explosion.
+      Dock and harbor water visible below. Ledger pages clutched in
+      hand. Elegant plans becoming desperate exits. Fantasy
+      illustration, kinetic desperation.
+    negative_prompt: "controlled exit, hesitant pose, gentle breaking, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "veyra-thornwake"
+        reason: "Veyra's desperate escape"
+
+  - slug: "controlled-burn"
+    name: "Corruption Burns Its Evidence"
+    zone_ref: "warehouse-exterior"
+    image_type: "anchor"
+    mood: "ominous"
+    narrative_context: |
+      The fire is "controlled"—concentrated on the office section while
+      Croft's men evacuate certain crates. Weapons. Military grade.
+      Silent Hand supply. Corruption burns what it wants forgotten
+      while protecting what it truly values.
+    chapter_ref: "ch11-an-honest-coin"
+    scene_ref: "scn-11-07"
+    moment_ref: "ch11-an-honest-coin-moment-08"
+    lighting:
+      primary_source: "Fire consuming office section"
+      secondary_source: "Reflected on water"
+      quality: "Chaotic fire light"
+      direction: "One section burning, others dark"
+      color_temperature: "Fire orange, weapon steel cold"
+      shadow_depth: "Fire-cast dramatic"
+      atmospheric: "Controlled destruction"
+    palette:
+      dominant:
+        - "Fire orange consuming"
+        - "Saved crate shadow"
+        - "Water reflection"
+      accent:
+        - "Weapon steel gleam"
+        - "Men carrying crates"
+        - "Bucket brigade pretense"
+      avoid:
+        - "Total destruction"
+        - "Accident"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of controlled warehouse fire, fantasy corruption
+      revealed. Office section consumed in flames while men carefully
+      evacuate certain crates from other section. Weapon steel visible
+      in saved crates catching firelight. Bucket brigades forming as
+      pretense. Two truths revealed—what burns, what's saved. Fantasy
+      illustration, ominous revelation.
+    negative_prompt: "total destruction, accidental fire, rescue attempts, cartoon style, anime"
+
+  - slug: "bastion-lock"
+    name: "The Bastion Lock"
+    zone_ref: "warehouse-exterior"
+    image_type: "hero"
+    mood: "ethereal"
+    narrative_context: |
+      The lock is heavier than expected, dark metal warm against Veyra's
+      palm. For a heartbeat, she has the sensation of being truly seen—
+      not watched, but seen. The artifact that will change everything.
+    chapter_ref: "ch11-an-honest-coin"
+    scene_ref: "scn-11-07"
+    moment_ref: "ch11-an-honest-coin-moment-10"
+    lighting:
+      primary_source: "Fire glow behind"
+      secondary_source: "Dark metal's presence"
+      quality: "Intimate focus"
+      direction: "Fire backlighting, focus on lock"
+      color_temperature: "Warm fire, dark artifact"
+      shadow_depth: "Dramatic—destiny moment"
+      atmospheric: "Weight of future"
+    palette:
+      dominant:
+        - "Dark intricate metal"
+        - "Scarred hands holding"
+        - "Fire chaos behind"
+      accent:
+        - "Lock detail"
+        - "Palm warmth contact"
+        - "Eye recognition"
+      avoid:
+        - "Simple lock"
+        - "Casual handling"
+    aspect_ratio: "3:4"
+    size: "896x1152"
+    prompt_used: |
+      Oil painting close-up of ancient artifact lock in scarred hands,
+      fantasy destiny moment. Intricate dark metal lock warm against
+      palm, heavier than expected. Fire chaos visible in background.
+      Moment of connection visible in holder's eyes—being truly seen.
+      The artifact that will change everything. Fantasy illustration,
+      ethereal destiny.
+    negative_prompt: "simple lock, padlock, modern lock, casual handling, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "veyra-thornwake"
+        reason: "Veyra receiving the Bastion Lock"
+      - type: "character_portrait"
+        slug: "marcus-heartbridge"
+        reason: "Marcus presenting the lock"

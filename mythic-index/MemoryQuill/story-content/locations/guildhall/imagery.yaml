@@ -1,0 +1,866 @@
+# ============================================================================
+# MASONS' GUILDHALL - LOCATION IMAGERY SPECIFICATION
+# ============================================================================
+# A monument to craft discipline where stone teaches and expertise
+# serves the city's foundations
+# ============================================================================
+
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "guildhall"
+  location_name: "Masons' Guildhall"
+  version: "1.0"
+  last_updated: "2025-12-26"
+  zones_defined: 17
+  chapters_featured:
+    - chapter: "ch15.5-what-the-city-heard"
+      relevance: "Guild vote, 'laughter recorded', civic support formalizing"
+    - chapter: "ch24"
+      relevance: "Letter with guild seal acknowledging Grimjaw's counter-lever method"
+
+# ============================================================================
+# GENERATION DEFAULTS
+# ============================================================================
+generation_defaults:
+  provider: "workers-ai"
+  model: "flux-schnell"
+  quality: "high"
+  default_aspect_ratio: "16:9"
+  default_size: "1024x768"
+
+# ============================================================================
+# NARRATIVE SOUL - The Emotional Core
+# ============================================================================
+narrative_soul: |
+  The Masons' Guildhall exists to teach by example. Every stone in its
+  facade demonstrates technique—rusticated granite rising to polished
+  marble, bond patterns labeled in bronze, tool marks left visible as
+  lessons. The building doesn't merely house expertise; it embodies it.
+  When you enter through the voussoired portal with its guild seal keystone,
+  you're entering an argument made permanent: craft discipline matters,
+  and those who master it serve foundations that outlast generations.
+
+  This is where the city's structures receive their blessing or their
+  condemnation. In the Proving Cellar, compression rigs test samples until
+  they shatter or hold. In the Council chambers, disputes are arbitrated
+  by those who understand load-bearing intimately. The Keystone Library
+  preserves plans and surveys dating back centuries—the city's architectural
+  memory made accessible.
+
+  When the Masons' Guild voted to supply timber and materials to the
+  Company, someone proposed letting them affix their symbol to repaired
+  structures. The motion was tabled; laughter was recorded. Bureaucracy
+  with warmth—craft supporting craft, aid through proper channels.
+
+one_line_essence: "Where stone teaches, expertise serves, and craft discipline becomes civic authority"
+
+# ============================================================================
+# LOCATION VISUAL ANCHOR
+# ============================================================================
+location_visual_anchor:
+  signature_elements:
+    - "Rusticated granite plinth rising to polished marble ashlar"
+    - "Voussoired grand portal with guild seal keystone"
+    - "Bronze-bound oak doors and nameplate lettering"
+    - "Statue niches of past Guildmasters"
+    - "Grand Hall of Works with demonstration arch and model plinths"
+    - "North-lit Keystone Library with drawing vaults"
+    - "Proving Cellar with compression rig and test frames"
+    - "Roof cloister around bell cote and ridge lanterns"
+
+  materials:
+    primary:
+      - "Granite footings and plinth, rusticated below, dressed above"
+      - "Marble and fine limestone ashlar"
+      - "Heavy oak joists and purlins"
+      - "Wrought iron tie-bars and cramps set in lead"
+    secondary:
+      - "Bronze for weather-exposed fixtures and nameplates"
+      - "Slate roofing with copper and lead flashings"
+      - "Leaded glass in high arches"
+      - "Lime mortar with pozzolanic amendment"
+    accent:
+      - "Verdigris on aged bronze"
+      - "Guild seal in keystone position"
+      - "Tool-marked demonstration panels"
+      - "Gilt section markers in library"
+
+  color_anchors:
+    dominant: ["granite gray", "marble cream", "oak amber", "iron black"]
+    accent: ["bronze verdigris", "gilt lettering", "lime white"]
+    avoid: ["bright colors", "modern materials", "painted finishes"]
+
+  characteristic_light:
+    primary: "North light through clerestory in library and studios"
+    secondary: "Daylight sheets through hall windows"
+    quality: "Clear, working light for precision tasks"
+    atmosphere: "Professional, disciplined, teaching"
+
+# ============================================================================
+# OVERVIEW - ESTABLISHING SHOT
+# ============================================================================
+overview:
+  slug: "guildhall-overview"
+  name: "The Monument to Craft"
+  image_type: "establishing"
+  mood: "reverent"
+  narrative_context: |
+    The Masons' Guildhall presents its fortress-grade base to the street—
+    rusticated granite rising to polished ashlar with refined orders, deep
+    cornices, and the voussoired grand portal with its seal keystone. The
+    facade teaches even before you enter: bond patterns, tool marks, and
+    didactic samples embedded in the stonework.
+  lighting:
+    primary_source: "afternoon daylight on dressed stone"
+    secondary_source: "shadow defining architectural depth"
+    quality: "clear, revelatory of stone quality"
+    direction: "front and side lit"
+    color_temperature: "warm stone tones"
+    shadow_depth: "deep in portal, moderate on facade"
+    atmospheric: "civic authority"
+  palette:
+    dominant: ["granite gray", "marble cream", "bronze verdigris"]
+    accent: ["guild seal", "portal shadow", "statue niches"]
+    avoid: ["bright colors", "modern elements"]
+  aspect_ratio: "16:9"
+  size: "1024x768"
+  prompt_used: |
+    Oil painting, fantasy illustration, wide establishing shot of a
+    monumental guildhall in a fantasy city, rusticated granite base
+    rising to polished marble ashlar with refined classical orders,
+    deep voussoired portal with carved guild seal keystone, bronze-bound
+    oak doors, statue niches of past masters flanking the entry, deep
+    cornices and string courses, the facade teaching by example with
+    visible bond patterns and labeled stone samples, civic authority
+    made architectural, heroic fantasy style, painterly brushwork
+  negative_prompt: "cartoon, anime, photorealistic, modern elements, glass, contemporary architecture, people, crowds"
+  references: []
+
+# ============================================================================
+# ZONES
+# ============================================================================
+zones:
+  # --------------------------------------------------------------------------
+  # GRAND-PORTAL - Entry Monument
+  # --------------------------------------------------------------------------
+  - slug: "grand-portal"
+    name: "Grand Portal and Vestibule"
+    zone_type: "threshold"
+    image_type: "zone"
+    mood: "reverent"
+    narrative_context: |
+      The ceremonial entrance—a voussoired arch 14 feet wide with the
+      guild seal as keystone, bronze-bound oak doors, and a barrel-vaulted
+      vestibule 24 feet deep. Porter's lodge, token register, and the
+      threshold between public and professional worlds.
+    lighting:
+      primary_source: "exterior daylight through open doors"
+      secondary_source: "vestibule lamp fixtures"
+      quality: "transitional, grand to controlled"
+      direction: "from outside inward"
+      color_temperature: "warm stone in sunlight"
+      shadow_depth: "deep in vault"
+      atmospheric: "threshold moment"
+    palette:
+      dominant: ["voussoir stone", "oak door bronze-bound", "vestibule vault"]
+      accent: ["seal keystone gilt", "porter's desk lamp", "floor pattern"]
+      avoid: ["casual atmosphere", "bright artificial light"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, the grand portal of a masons'
+      guildhall, voussoired stone arch with carved guild seal as keystone,
+      bronze-bound oak doors standing open, barrel-vaulted vestibule
+      visible beyond, porter's desk to one side with lamp and register,
+      the threshold between public street and professional interior,
+      afternoon light streaming through the portal into the cooler vault,
+      heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, glass doors, people entering"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # SEAL-KEYSTONE - The Guild's Mark
+  # --------------------------------------------------------------------------
+  - slug: "seal-keystone"
+    name: "Guild Seal Keystone"
+    zone_type: "shrine"
+    image_type: "detail"
+    mood: "reverent"
+    narrative_context: |
+      The carved keystone bearing the Masons' Guild seal—the architectural
+      and symbolic anchor of the entire facade. Positioned at the apex of
+      the portal arch, it declares identity and authority in stone that
+      will outlast those who carved it.
+    lighting:
+      primary_source: "raking afternoon light defining carving depth"
+      secondary_source: "ambient sky"
+      quality: "sculptural, revealing detail"
+      direction: "side-lit for shadow definition"
+      color_temperature: "warm stone"
+      shadow_depth: "deep in carving relief"
+      atmospheric: "permanence"
+    palette:
+      dominant: ["carved stone gray-cream", "shadow depth", "chisel marks"]
+      accent: ["gilt in seal details", "weathering patina"]
+      avoid: ["painted elements", "bright colors"]
+    aspect_ratio: "1:1"
+    size: "1024x1024"
+    prompt_used: |
+      Oil painting, fantasy illustration, close detail of a carved
+      keystone at the apex of a guildhall portal arch, the stone
+      bearing the masons' guild seal with geometric compass and square
+      imagery, deep relief carving with raking light defining every
+      chisel mark, centuries of weathering adding patina, the
+      architectural and symbolic anchor of the building, heroic
+      fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, bright colors, painted stone"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # FOG - Atmospheric Facade
+  # --------------------------------------------------------------------------
+  - slug: "fog"
+    name: "Facade in Morning Fog"
+    zone_type: "zone"
+    image_type: "temporal"
+    mood: "ethereal"
+    narrative_context: |
+      The guildhall facade emerging from morning sea fog—the solid
+      permanence of stone rendered mysterious, the rusticated base
+      barely visible while the upper ashlar catches the first light.
+      The city's craft authority made dreamlike.
+    lighting:
+      primary_source: "diffused early light through fog"
+      secondary_source: "ambient gray"
+      quality: "soft, fog-diffused"
+      direction: "scattered from all directions"
+      color_temperature: "cool gray with warming hints"
+      shadow_depth: "minimal, fog-obscured"
+      atmospheric: "mystery, permanence emerging"
+    palette:
+      dominant: ["fog gray", "stone emerging cream", "shadow suggestion"]
+      accent: ["first sunlight hints gold", "bronze gleam through mist"]
+      avoid: ["clear visibility", "harsh contrast"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, masons' guildhall facade
+      emerging from morning sea fog, rusticated granite base barely
+      visible in the mist, polished marble upper facade catching
+      the first hints of sunlight, the grand portal a dark opening
+      in the fog, the solid permanence of stone made mysterious
+      and dreamlike, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, clear weather, harsh light, people"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # GRAND-HALL - Hall of Works
+  # --------------------------------------------------------------------------
+  - slug: "grand-hall"
+    name: "Grand Hall of Works"
+    zone_type: "heart"
+    image_type: "zone"
+    mood: "reverent"
+    narrative_context: |
+      The central teaching space—120 by 60 feet with 28-30 foot ceiling
+      under mixed stone and timber roof. The demonstration arch stands
+      semi-permanent at center, surrounded by model plinths and test
+      walls. Gallery balconies on two sides allow observation during
+      lectures and demonstrations.
+    lighting:
+      primary_source: "daylight through high windows"
+      secondary_source: "oil sconce rings for evening"
+      quality: "clear sheets for demonstration"
+      direction: "from both sides through galleries"
+      color_temperature: "neutral daylight"
+      shadow_depth: "moderate, defining forms"
+      atmospheric: "teaching, demonstration"
+    palette:
+      dominant: ["stone floor polished", "demonstration arch gray", "timber roof warm"]
+      accent: ["iron tie-bars", "gallery rail", "lectern dais wood"]
+      avoid: ["casual clutter", "modern elements"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, interior of a grand guildhall
+      hall of works, 30-foot ceiling with stone transverse arches and
+      timber rafters, central demonstration arch of precisely fitted
+      stone, model plinths displaying structural samples, test wall
+      showing bond patterns, gallery balconies on two sides, lectern
+      dais for speakers, daylight streaming through high windows,
+      the teaching cathedral of masonry craft, heroic fantasy style,
+      painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, audience, people, clutter"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # GRAND-HALL-OF-WORKS - Alternate View
+  # --------------------------------------------------------------------------
+  - slug: "grand-hall-of-works"
+    name: "Grand Hall of Works"
+    zone_type: "heart"
+    image_type: "perspective"
+    mood: "reverent"
+    narrative_context: |
+      A different angle on the Hall of Works emphasizing the floor anchor
+      sockets for rigging and the broad aisles sized for statuary transport.
+      The architecture accommodates heavy work while maintaining ceremonial
+      dignity.
+    lighting:
+      primary_source: "side light from gallery windows"
+      secondary_source: "reflected from polished floor"
+      quality: "working clarity"
+      direction: "from gallery level"
+      color_temperature: "neutral to warm"
+      shadow_depth: "defining floor pattern"
+      atmospheric: "functional grandeur"
+    palette:
+      dominant: ["floor pattern stone", "aisle spacing", "column rhythm"]
+      accent: ["anchor socket flush metal", "model plinths", "overhead structure"]
+      avoid: ["clutter", "modern elements"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, view across the grand hall of
+      works in a masons' guildhall, polished stone floor with flush anchor
+      sockets visible, broad aisles for heavy transport, column grid
+      supporting gallery above, mixed stone and timber roof structure,
+      model plinths arranged for display, the working architecture of
+      craft education, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, people, cranes, modern equipment"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # MAIN-HALL - Guild Vote Scene (Ch15.5 Featured)
+  # --------------------------------------------------------------------------
+  - slug: "main-hall"
+    name: "Main Hall"
+    zone_type: "heart"
+    image_type: "beat"
+    mood: "intimate"
+    narrative_context: |
+      Where the guild voted to supply timber and materials to the Company,
+      and someone proposed letting them affix their symbol to repaired
+      structures. The motion was tabled; laughter was recorded. Bureaucracy
+      with warmth—craft supporting craft through proper channels.
+    lighting:
+      primary_source: "guildhall lamplight"
+      secondary_source: "daylight through high windows"
+      quality: "formal meeting light"
+      direction: "overhead and side"
+      color_temperature: "warm lamp and natural mix"
+      shadow_depth: "moderate, meeting atmosphere"
+      atmospheric: "civic deliberation"
+    palette:
+      dominant: ["meeting table wood", "ledger page cream", "guild member robes"]
+      accent: ["ink pot", "seal stamp", "lamp glow"]
+      avoid: ["casual atmosphere", "modern elements"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, the main hall of a masons'
+      guildhall during a formal meeting, timber ledger open on the table,
+      quill and ink pot visible, guild members in professional robes
+      suggested around the table, lamplight and window light mixing,
+      the atmosphere of civic deliberation and craft solidarity, heroic
+      fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, casual meeting, individual faces clear"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # COUNCIL-ARBITRATION - Dispute Resolution
+  # --------------------------------------------------------------------------
+  - slug: "council-arbitration"
+    name: "Council and Arbitration Chambers"
+    zone_type: "sanctuary"
+    image_type: "zone"
+    mood: "vigilant"
+    narrative_context: |
+      Stone-vaulted chambers where construction disputes are resolved
+      and contracts certified. Acoustic timber canopies improve speech
+      clarity, evidence alcoves hold stone cores and sample trays, and
+      twin-key protocol doors protect the evidence storage.
+    lighting:
+      primary_source: "controlled side windows"
+      secondary_source: "task lamps at clerks' table"
+      quality: "judicial clarity"
+      direction: "from sides, balanced"
+      color_temperature: "neutral"
+      shadow_depth: "moderate, formal"
+      atmospheric: "deliberation, judgment"
+    palette:
+      dominant: ["vault stone", "timber canopy", "evidence alcove shadow"]
+      accent: ["clerk's lamp", "sample tray stone", "twin-key door hardware"]
+      avoid: ["casual elements", "bright colors"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, arbitration chamber in a
+      masons' guildhall, shallow stone vault overhead with timber
+      acoustic canopy panels, council bench on raised platform,
+      clerks' table with lamp and documents, evidence alcoves along
+      walls holding stone samples in trays, twin-key protocol door
+      visible leading to evidence storage, formal judicial atmosphere,
+      heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, courtroom furniture, people"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # KEYSTONE-LIBRARY - Archive of Plans
+  # --------------------------------------------------------------------------
+  - slug: "keystone-library"
+    name: "Keystone Library and Drawing Vaults"
+    zone_type: "sanctuary"
+    image_type: "zone"
+    mood: "reverent"
+    narrative_context: |
+      The north-lit reading nave with drawing vaults, specimen room for
+      quarry cores labeled by density and porosity, and survey loft with
+      skylit plan table. Chain-of-custody rails protect master tracings;
+      stamped plan seals authenticate copies. The city's structural memory.
+    lighting:
+      primary_source: "north-light clerestory"
+      secondary_source: "shaded task lamps"
+      quality: "even, color-accurate"
+      direction: "from north, diffused"
+      color_temperature: "neutral daylight"
+      shadow_depth: "minimal on work surfaces"
+      atmospheric: "scholarly precision"
+    palette:
+      dominant: ["cedar shelving amber", "plan paper cream", "limestone vault"]
+      accent: ["quarry core samples", "chain-rail brass", "plan seal"]
+      avoid: ["bright direct light", "clutter"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, the keystone library of a
+      masons' guildhall, north-light clerestory windows providing even
+      illumination, cedar shelving with architectural drawings in flat
+      files, reading nave with study desks, chain-of-custody rails for
+      master tracings, specimen room visible with quarry core samples
+      labeled on shelves, the city's structural archive, heroic fantasy
+      style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, computers, fluorescent lights, people"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # LIBRARY - Alternate Keystone Library View
+  # --------------------------------------------------------------------------
+  - slug: "library"
+    name: "Keystone Library"
+    zone_type: "sanctuary"
+    image_type: "perspective"
+    mood: "reverent"
+    narrative_context: |
+      An alternate perspective emphasizing the survey loft with its skylit
+      plan table, the flat-file cabinets, and the humidity-buffer cupboards
+      that preserve centuries of architectural records.
+    lighting:
+      primary_source: "skylight over plan table"
+      secondary_source: "north clerestory"
+      quality: "focused for plan reading"
+      direction: "overhead and north"
+      color_temperature: "neutral"
+      shadow_depth: "minimal for accuracy"
+      atmospheric: "archival work"
+    palette:
+      dominant: ["plan table wood", "flat-file cabinet", "skylight frame"]
+      accent: ["unrolled plan detail", "humidity cupboard", "reading lamp"]
+      avoid: ["dark corners", "clutter"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, the survey loft of a guildhall
+      library, large plan table beneath a skylight, flat-file cabinets
+      for drawing storage, humidity-buffer cupboards along walls, an
+      architectural plan partially unrolled on the table, the precision
+      environment of archival preservation, heroic fantasy style,
+      painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, computers, people, modern lighting"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # EXAMINATION-SALON - Masterwork Judging
+  # --------------------------------------------------------------------------
+  - slug: "examination-salon"
+    name: "Examination Salon"
+    zone_type: "sanctuary"
+    image_type: "zone"
+    mood: "tense"
+    narrative_context: |
+      The controlled-access hall where candidate masterworks are judged.
+      Perimeter plinths with concealed scales, daylight controlled by
+      upper shutters, the examination board assessing years of learning
+      in a single afternoon.
+    lighting:
+      primary_source: "controlled daylight through shuttered windows"
+      secondary_source: "supplemental task lamps"
+      quality: "adjustable for different assessments"
+      direction: "overhead and side, controlled"
+      color_temperature: "neutral for color accuracy"
+      shadow_depth: "managed for plinth display"
+      atmospheric: "examination tension"
+    palette:
+      dominant: ["plinth stone", "shutter frame wood", "floor pattern"]
+      accent: ["concealed scale brass", "exam board bench", "candidate work"]
+      avoid: ["casual atmosphere", "cluttered space"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, the examination salon of a
+      masons' guildhall, perimeter plinths for displaying candidate
+      masterworks, upper window shutters allowing daylight control,
+      examination board bench at one end, stone flooring with subtle
+      pattern, the atmosphere of professional judgment, heroic fantasy
+      style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, classroom, people, modern equipment"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # LECTURE - A Teaching Moment
+  # --------------------------------------------------------------------------
+  - slug: "lecture"
+    name: "A Lecture in Progress"
+    zone_type: "heart"
+    image_type: "inhabited"
+    mood: "intimate"
+    narrative_context: |
+      The Grand Hall transformed by a lecture—a master at the dais before
+      the demonstration arch, apprentices and journeymen on gallery and
+      floor, the craft's knowledge being transmitted through voice and
+      example.
+    lighting:
+      primary_source: "daylight from high windows"
+      secondary_source: "focus on lecturer and demonstration"
+      quality: "lecture hall clarity"
+      direction: "overhead and on speaker"
+      color_temperature: "warm afternoon"
+      shadow_depth: "moderate, attention-directing"
+      atmospheric: "teaching, transmission"
+    palette:
+      dominant: ["lecturer robes", "demonstration arch", "audience silhouettes"]
+      accent: ["lectern lamp", "model being explained", "gallery rail"]
+      avoid: ["modern lecture equipment", "contemporary elements"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a lecture in progress in the
+      grand hall of a masons' guildhall, master in robes at the lectern
+      dais, the demonstration arch behind as example, audience of
+      apprentices and journeymen suggested on floor and gallery,
+      afternoon light streaming through high windows, the moment of
+      craft knowledge transmission, heroic fantasy style, painterly
+      brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, projector, screen, individual faces clear"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # HEARTHSTONE-LOUNGE - Members' Rest
+  # --------------------------------------------------------------------------
+  - slug: "hearthstone-lounge"
+    name: "Hearthstone Lounge and Roof Cloister"
+    zone_type: "commons"
+    image_type: "zone"
+    mood: "intimate"
+    narrative_context: |
+      The third-floor members' lounge with its large fireplace, honor
+      boards listing past masters, and trophy friezes of notable works.
+      Doors open to the small roof cloister around the ridge lantern
+      and bell cote.
+    lighting:
+      primary_source: "hearth fire glow"
+      secondary_source: "windows to roof cloister"
+      quality: "warm, relaxed"
+      direction: "from hearth and exterior"
+      color_temperature: "warm amber"
+      shadow_depth: "comfortable, not dramatic"
+      atmospheric: "respite, fellowship"
+    palette:
+      dominant: ["hearth stone", "firelight amber", "honor board wood"]
+      accent: ["trophy frieze gilt", "cloister door daylight", "member seating"]
+      avoid: ["formal tension", "cold lighting"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, the hearthstone lounge of a
+      masons' guildhall, large stone fireplace with fire burning,
+      honor boards on walls listing past masters, trophy friezes
+      depicting notable works, comfortable seating for members, doors
+      open to a small roof cloister with bell cote visible beyond,
+      warm firelight creating fellowship atmosphere, heroic fantasy
+      style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, bar, people, modern furniture"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # LOUNGE - Alternate View
+  # --------------------------------------------------------------------------
+  - slug: "lounge"
+    name: "Hearthstone Lounge"
+    zone_type: "commons"
+    image_type: "perspective"
+    mood: "intimate"
+    narrative_context: |
+      Focus on the interior details—the quality of the woodwork, the
+      inscribed honor boards, the carefully maintained fellowship space
+      where masters gather after the day's work.
+    lighting:
+      primary_source: "hearth light dominant"
+      secondary_source: "evening lamp supplemental"
+      quality: "intimate evening"
+      direction: "from hearth center"
+      color_temperature: "warm amber to gold"
+      shadow_depth: "cozy, enveloping"
+      atmospheric: "end of day rest"
+    palette:
+      dominant: ["hearth glow", "wood paneling warm", "ceiling shadow"]
+      accent: ["honor board inscriptions", "lamp brass", "drink glasses"]
+      avoid: ["cold light", "empty feeling"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, interior detail of the
+      hearthstone lounge, wood paneling catching firelight, inscribed
+      honor boards with past masters' names visible, comfortable
+      seating arranged for conversation, evening lamp adding warm
+      glow, the intimate fellowship space of craft masters, heroic
+      fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, people, modern furniture"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # HAMMER-CHISEL-WORKSHOPS - Training Below
+  # --------------------------------------------------------------------------
+  - slug: "hammer-chisel-workshops"
+    name: "'Hammer & Chisel' Training Workshops"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      The basement training spaces—segmental vaults on granite piers,
+      banker benches with clamp rails, wet room with stone troughs,
+      saw pit for heavy cutting. Here apprentices learn the fundamentals
+      of stone craft through repetition and correction.
+    lighting:
+      primary_source: "hooded lamps at work stations"
+      secondary_source: "cross-vent ambient"
+      quality: "task-focused, practical"
+      direction: "downward at benches"
+      color_temperature: "neutral to cool"
+      shadow_depth: "defined at work surfaces"
+      atmospheric: "training, discipline"
+    palette:
+      dominant: ["vault brick", "granite pier", "bench wood"]
+      accent: ["work stone white/gray", "tool steel gleam", "wet room tile"]
+      avoid: ["finished display quality", "bright overall"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, basement training workshops
+      of a masons' guildhall, segmental brick and stone vaults on
+      granite piers, banker benches with clamp rails along walls,
+      hooded lamps over work stations, stone in progress on benches,
+      tool racks organized, wet room with stone troughs visible beyond,
+      the disciplined atmosphere of craft training, heroic fantasy
+      style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, power tools, people, modern equipment"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # PROVING-CELLAR - Material Testing
+  # --------------------------------------------------------------------------
+  - slug: "proving-cellar"
+    name: "Proving Cellar"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "tense"
+    narrative_context: |
+      Where materials are tested to destruction—compression rig with
+      screw frame, wedge test bed, shear frame, ring-test rack for
+      small arches. Samples are crushed until they fail, and the
+      results filed immediately to the Library. Truth in stone.
+    lighting:
+      primary_source: "work lamps over test rigs"
+      secondary_source: "dust-settle vent ambient"
+      quality: "focused observation"
+      direction: "on rig frames"
+      color_temperature: "neutral"
+      shadow_depth: "dramatic at rig machinery"
+      atmospheric: "testing, judgment"
+    palette:
+      dominant: ["rig frame iron black", "sample stone gray", "vault dark"]
+      accent: ["lamp focus", "scale markings", "test record board"]
+      avoid: ["safe atmosphere", "casual lighting"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, the proving cellar of a masons'
+      guildhall, compression rig with massive screw frame for testing
+      stone samples, wedge test bed and shear frame nearby, ring-test
+      rack for small arch sections, work lamps focused on the testing
+      apparatus, dust-settle vents in the vault ceiling, the atmosphere
+      of materials pushed to failure, heroic fantasy style, painterly
+      brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, hydraulic press, modern equipment, people"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # GRIMJAW-PERSPECTIVE - Engineer's Assessment
+  # --------------------------------------------------------------------------
+  - slug: "grimjaw-perspective"
+    name: "Grimjaw's View of the Proving Cellar"
+    zone_type: "works"
+    image_type: "beat"
+    mood: "intimate"
+    narrative_context: |
+      The proving cellar as Grimjaw would see it—recognizing kindred
+      expertise, understanding the precision that the guild demands.
+      His letter from the Masons' Guild acknowledged his counter-lever
+      method; this is the place that would test and verify such work.
+    lighting:
+      primary_source: "test lamp illuminating rig"
+      secondary_source: "ambient vault darkness"
+      quality: "expert assessment"
+      direction: "on testing apparatus"
+      color_temperature: "neutral, precise"
+      shadow_depth: "dramatic, professional"
+      atmospheric: "expertise recognizing expertise"
+    palette:
+      dominant: ["rig machinery", "sample stone", "vault shadow"]
+      accent: ["scale precision", "observation angle", "tool quality"]
+      avoid: ["casual atmosphere", "amateur perspective"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, the proving cellar of a masons'
+      guildhall from an expert engineer's perspective, compression rig
+      with precision visible in its construction, stone sample under
+      test, the quality of the machinery and method evident to a
+      trained eye, vault darkness beyond, the recognition of kindred
+      craft expertise, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, modern machinery, casual observer"
+    references:
+      - type: "character_portrait"
+        slug: "grimjaw-ironbeard"
+        purpose: "perspective of expert engineer viewing guild facilities"
+
+  # --------------------------------------------------------------------------
+  # GUILD-LETTER - Formal Recognition
+  # --------------------------------------------------------------------------
+  - slug: "guild-letter"
+    name: "The Guild's Interest"
+    zone_type: "zone"
+    image_type: "detail"
+    mood: "intimate"
+    narrative_context: |
+      The letter bearing the Masons' Guild seal—formal acknowledgment
+      of contemporary structural technique, the guild's interest in
+      Grimjaw's counter-lever method. Expertise recognized by expertise.
+    lighting:
+      primary_source: "desk lamp illuminating document"
+      secondary_source: "ambient library light"
+      quality: "document reading clarity"
+      direction: "from above on paper"
+      color_temperature: "warm lamp"
+      shadow_depth: "minimal on document"
+      atmospheric: "formal correspondence"
+    palette:
+      dominant: ["paper cream", "ink black", "seal red wax"]
+      accent: ["desk wood", "lamp brass", "letter fold shadows"]
+      avoid: ["modern paper", "typed text"]
+    aspect_ratio: "1:1"
+    size: "1024x1024"
+    prompt_used: |
+      Oil painting, fantasy illustration, close detail of a formal
+      letter bearing a masons' guild seal in red wax, handwritten
+      text visible discussing structural technique and counter-lever
+      methods, the letter on a wooden desk surface with lamp light
+      illuminating it, ink still crisp on quality paper, craft
+      expertise formally acknowledging craft expertise, heroic
+      fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, typed text, modern paper, computer"
+    references: []
+
+# ============================================================================
+# BEAT IMAGES - Key Narrative Moments
+# ============================================================================
+beat_images:
+  # --------------------------------------------------------------------------
+  # LAUGHTER RECORDED - Guild Vote (Ch15.5)
+  # --------------------------------------------------------------------------
+  - slug: "beat-laughter-recorded"
+    name: "Laughter Recorded"
+    scene_id: "ch15.5-scene-guild-vote"
+    mood: "intimate"
+    narrative_context: |
+      The guild minutes recording the vote to supply timber and materials
+      to the Company. Someone proposed letting them affix their symbol
+      to repaired structures—the motion was tabled, laughter was recorded.
+      Elba's representative made a persuasive case for two cauldrons.
+      Bureaucracy with warmth.
+    lighting:
+      primary_source: "guildhall lamplight on ledger"
+      secondary_source: "ambient meeting room light"
+      quality: "formal document clarity"
+      direction: "overhead lamp"
+      color_temperature: "warm lamp"
+      shadow_depth: "soft around ledger"
+      atmospheric: "formal meeting with humor"
+    palette:
+      dominant: ["ledger page cream", "ink notation black", "table wood"]
+      accent: ["timber allocation list", "'laughter recorded' notation", "cauldrons amendment"]
+      avoid: ["modern document", "casual notes"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, close on an open guild ledger
+      during a meeting, formal timber allocation resolutions visible in
+      neat handwriting, a notation reading 'laughter recorded' among
+      the serious entries, mention of cauldrons amendment visible,
+      lamplight illuminating the page, the warmth of bureaucracy
+      supporting those who serve, heroic fantasy style, painterly
+      brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, computer, typed text, people clearly visible"
+    references:
+      - type: "chapter_visual_plan"
+        chapter: "ch15.5-what-the-city-heard"
+        purpose: "narrative context for guild vote scene"
+
+  # --------------------------------------------------------------------------
+  # CRAFT RECOGNIZES CRAFT - Guild Acknowledgment
+  # --------------------------------------------------------------------------
+  - slug: "beat-craft-recognizes-craft"
+    name: "Craft Recognizes Craft"
+    scene_id: "ch24-scene-guild-letter"
+    mood: "intimate"
+    narrative_context: |
+      The Masons' Guild formally acknowledging Grimjaw's counter-lever
+      method through a sealed letter—expert recognizing expert, craft
+      discipline finding kindred precision in unconventional application.
+      The guild wants to study and perhaps incorporate the technique.
+    lighting:
+      primary_source: "desk lamp on sealed letter"
+      secondary_source: "ambient library"
+      quality: "document reading"
+      direction: "overhead on desk"
+      color_temperature: "warm lamp"
+      shadow_depth: "minimal on letter"
+      atmospheric: "recognition moment"
+    palette:
+      dominant: ["letter paper", "seal wax red", "desk surface"]
+      accent: ["ink text", "guild seal impression", "fold shadow"]
+      avoid: ["modern elements", "casual treatment"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a sealed letter on a desk
+      surface, the Masons' Guild seal in red wax prominent, handwritten
+      text visible discussing structural methods and interest in
+      studying the counter-lever technique, lamp light illuminating
+      the formal acknowledgment of expertise, heroic fantasy style,
+      painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, typed text, email, people"
+    references:
+      - type: "character_portrait"
+        slug: "grimjaw-ironbeard"
+        purpose: "context for recipient of guild recognition"

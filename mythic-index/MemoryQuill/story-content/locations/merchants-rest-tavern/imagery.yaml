@@ -1,0 +1,923 @@
+# Merchant's Rest Tavern - Location Imagery Specification
+# Working-class tavern where the common folk celebrate heroes with trade-earned respect
+# Featured in ch23.5: Front Page News - public reaction to the Library Rescue
+
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "merchants-rest-tavern"
+  location_name: "Merchant's Rest Tavern"
+  version: "2.0"
+  last_updated: "2025-12-26"
+  zone_count: 10
+
+generation_defaults:
+  provider: "workers-ai"
+  model: "stable-diffusion-xl"
+  quality: "high"
+  negative_prompts:
+    - "modern elements"
+    - "electric lights"
+    - "plastic"
+    - "contemporary clothing"
+    - "photorealistic"
+    - "3D render"
+    - "anime style"
+    - "clean sterile surfaces"
+    - "empty spaces"
+    - "luxury furnishings"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# NARRATIVE SOUL
+# ═══════════════════════════════════════════════════════════════════════════════
+
+narrative_soul: |
+  The Merchant's Rest is where legend meets labor—a packed Dock Ward tavern where
+  working folk gather to share stories, raise tankards, and celebrate practical
+  competence over flashy magic. When the Last Light Company's exploits make the
+  headlines, it's here that longshoremen, barrel-makers, carters, and carpenters
+  offer their highest praise: "They know their trade."
+
+  Visually, this is a space of thick pipe smoke, warm lamplight, and raised
+  tankards. The air is hazy, the crowd is dense, and every surface shows the
+  honest wear of working hands. Unlike noble salons where heroes are discussed
+  abstractly, here the people who witnessed events share eyewitness accounts—
+  focusing on technique, on method, on how Grimjaw listened to the stone and
+  how Rill moved the water "just so."
+
+  The dominant emotional register is celebratory pride in craft. When someone
+  calls out "To a job well done!" and the tavern roars back, that's the heart
+  of this place—collective acknowledgment that competence is the currency of
+  respect among those who build Waterdeep with their hands.
+
+one_line_essence: "Pipe smoke and tankards raised—where working folk celebrate competence as the highest virtue."
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# LOCATION VISUAL ANCHOR
+# ═══════════════════════════════════════════════════════════════════════════════
+
+location_visual_anchor:
+  signature_elements:
+    - "Thick pipe smoke hazing the lamplight"
+    - "Tankards raised in collective toast"
+    - "Dense crowd of working folk"
+    - "Worn wooden surfaces polished by use"
+    - "Working hands gripping mugs"
+  materials:
+    primary: "aged timber, barrel-wood bar"
+    secondary: "ceramic tankards, battered pewter"
+    accent: "iron lamp fixtures, leather aprons"
+  color_anchors:
+    dominant: ["warm amber", "tobacco brown", "ale gold"]
+    accent: ["hearth orange", "pewter gray", "sawdust tan"]
+    avoid: ["bright white", "clinical blue", "rich purple", "gold leaf"]
+  characteristic_light:
+    primary: "oil lamp warmth filtering through pipe smoke"
+    secondary: "hearth glow from fire corner"
+    quality: "diffused, hazy, intimate"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# OVERVIEW: ESTABLISHING SHOT
+# ═══════════════════════════════════════════════════════════════════════════════
+
+overview:
+  image_type: "establishing"
+  scene_mood: "celebratory"
+  description: "The Merchant's Rest Tavern during peak celebration, viewed from just inside the entrance"
+
+  composition:
+    foreground: "Working hands gripping tankards, broad shoulders of laborers"
+    midground: "Packed common room, pipe smoke layering the air, animated conversations"
+    background: "Bar service area, glowing hearth, lamplight halos in the haze"
+    focal_point: "The collective raising of tankards in mid-toast"
+    depth_cues: "Smoke layers creating atmospheric depth, crowd density receding"
+
+  lighting:
+    primary_source: "Multiple oil lamps hanging from ceiling beams"
+    secondary_source: "Hearth fire in corner"
+    quality: "warm, diffused through omnipresent pipe smoke"
+    direction: "overhead with fire accent from side"
+    color_temperature: "warm amber-gold"
+    shadow_depth: "soft—smoke scatters light throughout"
+    atmospheric: "thick smoke haze, visible light shafts where lamps pierce"
+
+  palette:
+    dominant: ["tobacco brown", "amber glow", "ale gold"]
+    accent: ["hearth orange", "work-leather tan"]
+    avoid: ["bright sterile tones", "nobility purple", "pristine surfaces"]
+
+  key_elements:
+    - "Dense crowd of tradespeople—longshoremen, carpenters, barrel-makers visible by dress"
+    - "Tankards raised throughout the room"
+    - "Pipe smoke creating visible atmospheric layers"
+    - "Worn but sturdy timber construction"
+    - "Cheerful chaos of celebration"
+
+  style_notes: "Oil painting style, fantasy illustration, emphasis on warmth and community energy. The smoke should be a character—diffusing light, softening edges, creating the intimate haze that defines this space."
+
+  prompt_template: "Fantasy tavern interior, packed with celebrating working folk, thick pipe smoke hazing lamplight, tankards raised in toast, warm amber atmosphere, longshoremen and carpenters crowding the common room, worn timber and barrel-wood bar, cheerful tavern chaos, oil painting style, fantasy illustration, detailed environmental storytelling"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# ZONES
+# ═══════════════════════════════════════════════════════════════════════════════
+
+zones:
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: COMMON ROOM
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "common-room"
+    zone_name: "The Common Room"
+    zone_type: "commons"
+
+    narrative_role: |
+      The heart of the tavern—the packed space where working folk gather,
+      stories are shared, and collective toasts shake the rafters. When
+      celebration erupts, this room becomes a single organism of raised
+      tankards and unified voices.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Open floor packed with patrons"
+        - "Air thick with pipe smoke"
+        - "Tables surrounded by standing crowds"
+        - "Ceiling beams hung with oil lamps"
+      materials: "timber frame, plank floor worn smooth, barrel-top tables"
+      color_signature: "amber lamplight through tobacco haze"
+      light_character: "warm glow diffused by ever-present smoke"
+
+    default_prompt_elements:
+      atmosphere: "packed, smoky, celebratory"
+      must_include:
+        - "dense crowd of working folk"
+        - "visible pipe smoke layers"
+        - "raised tankards"
+        - "animated expressions"
+      must_avoid:
+        - "empty or sparse room"
+        - "clean air"
+        - "seated quiet patrons"
+        - "noble attire"
+
+    images:
+      - image_type: "zone"
+        image_slug: "common-room-celebration"
+        description: "The common room at peak celebration, every inch packed with cheering tradespeople"
+        scene_mood: "celebratory"
+
+        composition:
+          foreground: "Working hands on tankards, muscled arms in work-worn sleeves"
+          midground: "Dense crowd, faces lit by lamplight, smoke swirling"
+          background: "Bar area glimpsed through crowd, more patrons streaming in"
+          focal_point: "Central group mid-cheer, tankards aloft"
+
+        lighting:
+          primary_source: "Overhead oil lamps"
+          quality: "warm, smoke-diffused"
+          color_temperature: "deep amber"
+          atmospheric: "thick tobacco haze creating light halos"
+
+        palette:
+          dominant: ["amber", "tobacco brown", "work-leather tan"]
+          accent: ["ale foam white", "hearth-flush pink on cheeks"]
+
+        key_elements:
+          - "Standing-room-only density"
+          - "Pipe smoke thick enough to taste"
+          - "Collective joy on weathered faces"
+          - "Trade-roughened hands on ceramic tankards"
+
+        style_notes: "Capture the collective energy of common folk celebrating their own heroes. Every face should show genuine working-class pride."
+
+        prompt: "Fantasy tavern common room packed with celebrating working folk, thick pipe smoke hazing oil lamplight, tankards raised throughout, longshoremen and carpenters cheering, amber-gold atmosphere, tobacco haze creating light halos, collective celebration energy, worn timber interior, oil painting style, fantasy illustration, warm community atmosphere"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: COMMON ROOM QUIET
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "common-room-quiet"
+    zone_name: "The Common Room Before Celebration"
+    zone_type: "commons"
+
+    narrative_role: |
+      The same common room during regular hours—occupied but not packed,
+      conversations at normal volume, the space waiting for the next story
+      worth celebrating. This is the baseline against which celebration
+      transforms the room.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Same timber frame, lighter occupation"
+        - "Patrons seated at tables"
+        - "Moderate smoke rather than thick haze"
+        - "Room has breathing space"
+      materials: "same worn timber and barrel-tops"
+      color_signature: "softer amber, less concentrated"
+      light_character: "clearer lamplight, smoke still present but not dominant"
+
+    default_prompt_elements:
+      atmosphere: "comfortable, working-class, everyday"
+      must_include:
+        - "occupied but not packed"
+        - "seated patrons with tankards"
+        - "visible smoke but not obscuring"
+        - "quiet conversations"
+      must_avoid:
+        - "celebration energy"
+        - "standing crowds"
+        - "empty room"
+
+    images:
+      - image_type: "zone"
+        image_slug: "common-room-before"
+        description: "The common room during regular hours—occupied but peaceful"
+        scene_mood: "quotidian"
+
+        composition:
+          foreground: "Empty chair, waiting"
+          midground: "Groups at tables, quiet drinks and conversation"
+          background: "Bar with room to approach, regular service"
+
+        lighting:
+          primary_source: "Oil lamps"
+          quality: "steady, less filtered by smoke"
+          color_temperature: "warm amber"
+
+        palette:
+          dominant: ["warm wood", "amber light"]
+          accent: ["ale gold", "leather brown"]
+
+        key_elements:
+          - "Regular crowd, working folk after their day"
+          - "Space to move, room to breathe"
+          - "Comfortable routine atmosphere"
+
+        prompt: "Fantasy tavern common room during regular hours, working folk seated at worn tables, moderate pipe smoke, warm oil lamplight, comfortable but not crowded, timber interior, everyday tavern atmosphere, quiet conversations, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: COLLECTIVE TOAST
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "collective-toast"
+    zone_name: "To a Job Well Done"
+    zone_type: "heart"
+
+    narrative_role: |
+      The transcendent moment when individual celebration becomes collective
+      affirmation. Someone calls out "To a job well done!" and the entire
+      tavern roars back in unison—tankards raised, voices unified, the
+      working folk of Waterdeep pronouncing their highest verdict.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Unified motion of raised tankards"
+        - "Every face turned toward the same moment"
+        - "Visible sound wave of collective voice"
+        - "Peak smoke visibility as movement stirs the air"
+      materials: "ceramic and pewter tankards, working hands"
+      color_signature: "ale gold catching lamplight, unified amber"
+      light_character: "lamplight flashing off raised tankards"
+
+    default_prompt_elements:
+      atmosphere: "transcendent celebration, unified voice"
+      must_include:
+        - "every tankard raised in unison"
+        - "unified direction of attention"
+        - "mouths open in collective shout"
+        - "peak energy moment"
+      must_avoid:
+        - "partial participation"
+        - "seated patrons"
+        - "quiet atmosphere"
+
+    images:
+      - image_type: "beat"
+        image_slug: "collective-toast-moment"
+        description: "The moment the tavern roars 'To a job well done!' in unified celebration"
+        scene_mood: "celebratory"
+
+        composition:
+          foreground: "Multiple tankards raised, ale sloshing"
+          midground: "Forest of arms, unified upward gesture"
+          background: "Every face visible, every mouth open in shout"
+          focal_point: "The wave of raised tankards"
+
+        lighting:
+          primary_source: "Oil lamps"
+          quality: "catching on raised tankard surfaces"
+          color_temperature: "warm gold"
+          atmospheric: "smoke swirling from collective movement"
+
+        palette:
+          dominant: ["ale gold", "amber light"]
+          accent: ["pewter flash", "ale foam white"]
+
+        key_elements:
+          - "Perfect unison of the gesture"
+          - "Joyful working faces"
+          - "Collective voice made visible in posture"
+          - "The democracy of celebration"
+
+        style_notes: "This is the heart of the location—the moment where individual pride becomes collective honor. Every arm should be raised."
+
+        prompt: "Fantasy tavern unified toast moment, dozens of tankards raised in perfect unison, working folk of all trades shouting together, thick pipe smoke swirling from movement, oil lamplight catching on raised mugs, ale sloshing, joyful weathered faces, collective celebration peak moment, 'To a job well done' energy, oil painting style, fantasy illustration, triumphant community moment"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: JORIK STORYTELLING
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "jorik-storytelling"
+    zone_name: "Jorik One-Eye Tells the Tale"
+    zone_type: "shrine"
+
+    narrative_role: |
+      The eyewitness account made sacred by attention. Jorik One-Eye,
+      distinguished by his lost eye and his firsthand knowledge, holds
+      court as the crowd leans in. He describes Grimjaw's stone-listening
+      technique—the practical competence these folk value above all.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Circle of rapt listeners"
+        - "One-eyed storyteller commanding attention"
+        - "Hands gesturing to demonstrate technique"
+        - "Crowd leaning inward"
+      materials: "worn faces, working clothes, tankards momentarily forgotten"
+      color_signature: "warm amber focus on the storyteller"
+      light_character: "lamplight making his features dramatic"
+
+    default_prompt_elements:
+      atmosphere: "rapt attention, story-sacred"
+      must_include:
+        - "one-eyed storyteller (eyepatch or scarred socket)"
+        - "circle of intent listeners"
+        - "demonstrative hand gestures"
+        - "forgotten tankards"
+      must_avoid:
+        - "distracted audience"
+        - "competing conversations"
+        - "Jorik seated alone"
+
+    images:
+      - image_type: "inhabited"
+        image_slug: "jorik-tells-tale"
+        description: "Jorik One-Eye commanding the crowd's attention as he describes the rescue"
+        scene_mood: "reverent"
+
+        composition:
+          foreground: "Backs of intent listeners, leaning forward"
+          midground: "Jorik One-Eye gesturing, demonstrating stone-listening"
+          background: "More crowd pressing in to hear"
+          focal_point: "Jorik's animated face, his remaining eye bright"
+
+        lighting:
+          primary_source: "Nearby lamp"
+          quality: "dramatic on storyteller, shadowed listeners"
+          color_temperature: "warm amber"
+
+        palette:
+          dominant: ["story-amber", "shadow brown"]
+          accent: ["gleam on his good eye"]
+
+        key_elements:
+          - "One-eyed man with weathered face"
+          - "Crowd pressed close for every word"
+          - "Hands demonstrating technique"
+          - "Sacred attention of storytelling"
+
+        prompt: "Fantasy tavern storytelling scene, one-eyed man with eyepatch telling tale to rapt crowd, working folk leaning in to listen, demonstrative hand gestures, pipe smoke atmosphere, oil lamplight dramatic on storyteller's face, forgotten tankards, collective attention on eyewitness account, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: CARPENTER ASSESSMENT
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "carpenter-assessment"
+    zone_name: "The Carpenter's Nod"
+    zone_type: "shrine"
+
+    narrative_role: |
+      An older carpenter's professional assessment of Veyra's bearing—
+      the moment when expertise recognizes expertise across trades.
+      His nod carries the weight of decades of craft, pronouncing
+      his verdict: she carries herself like someone who knows their work.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Weathered craftsman's face"
+        - "Eyes that have measured a thousand joints"
+        - "Subtle nod of professional approval"
+        - "Wood-dust still in his clothes"
+      materials: "sawdust-touched clothing, calloused hands"
+      color_signature: "honest wood-tones"
+      light_character: "lamplight on a face of earned lines"
+
+    default_prompt_elements:
+      atmosphere: "professional assessment, quiet respect"
+      must_include:
+        - "older carpenter, face lined by years of work"
+        - "expression of professional approval"
+        - "sawdust touches on clothing"
+        - "knowing eyes"
+      must_avoid:
+        - "young craftsman"
+        - "dismissive expression"
+        - "clean clothing"
+
+    images:
+      - image_type: "detail"
+        image_slug: "carpenter-nod"
+        description: "The older carpenter's face as he gives his professional nod of approval"
+        scene_mood: "intimate"
+
+        composition:
+          focal_point: "Weathered face, knowing eyes, subtle approving nod"
+          framing: "close portrait in tavern context"
+
+        lighting:
+          primary_source: "Tavern lamplight"
+          quality: "honest light on honest face"
+          color_temperature: "warm amber"
+
+        palette:
+          dominant: ["wood brown", "sawdust tan"]
+          accent: ["lamplight amber"]
+
+        key_elements:
+          - "Decades of craft visible in face"
+          - "Eyes that measure true"
+          - "Subtle nod—highest compliment"
+          - "Sawdust in collar, competence personified"
+
+        prompt: "Fantasy portrait of older carpenter in tavern, weathered face with knowing eyes, subtle nod of professional approval, sawdust traces on work clothes, lines of experience on face, warm lamplight, wise craftsman recognizing craft in others, oil painting style, fantasy illustration, intimate character moment"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: WORKING HANDS
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "working-hands"
+    zone_name: "The Hands That Build Waterdeep"
+    zone_type: "detail"
+
+    narrative_role: |
+      A detail study of the hands that grip tankards in celebration—
+      the calloused, scarred, competent hands of those who build and
+      maintain the city. These are the hands that recognize craft in
+      the Company's work because they know what good work feels like.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Variety of trade-marked hands"
+        - "Calluses and scars of honest work"
+        - "Gripping ceramic tankards"
+        - "Signs of specific trades"
+      materials: "skin marked by labor, ceramic and pewter"
+      color_signature: "work-worn brown, ale gold"
+      light_character: "lamplight on weathered skin"
+
+    default_prompt_elements:
+      atmosphere: "detail study, honest labor"
+      must_include:
+        - "multiple working hands on tankards"
+        - "visible calluses and scars"
+        - "trade-specific marks"
+        - "variety of skin tones"
+      must_avoid:
+        - "soft unmarked hands"
+        - "elegant fingers"
+        - "empty hands"
+
+    images:
+      - image_type: "detail"
+        image_slug: "working-hands-tankards"
+        description: "Close study of working hands gripping tankards—the hands that build the city"
+        scene_mood: "reverent"
+
+        composition:
+          focal_point: "Multiple hands on tankards, detail visible"
+          framing: "tight focus on hands, tavern atmosphere implied"
+
+        lighting:
+          primary_source: "Tavern lamplight"
+          quality: "catching calluses and ale foam"
+          color_temperature: "warm amber"
+
+        palette:
+          dominant: ["work-worn skin tones", "ceramic brown"]
+          accent: ["ale gold", "foam white"]
+
+        key_elements:
+          - "Cooper's groove on thumb"
+          - "Carpenter's squared nails"
+          - "Longshoreman's rope burn"
+          - "Diversity of trades in diversity of hands"
+
+        prompt: "Fantasy detail study of working hands gripping ale tankards, calloused weathered hands of tradespeople, visible scars and calluses from labor, variety of skin tones and trade marks, ceramic and pewter tankards, warm tavern lamplight, honest labor made visible, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: HEARTH LIGHTING
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "hearth-lighting"
+    zone_name: "The Hearth-Warming"
+    zone_type: "heart"
+
+    narrative_role: |
+      The fire corner where the tavern's warmth originates—both physical
+      and spiritual. The hearth is where cold workers warm themselves,
+      where the best storytelling seats cluster, where the amber glow
+      that defines this space is born.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Active hearth fire"
+        - "Clustered seats in warming range"
+        - "Orange-amber light origin"
+        - "Mantle with working-class decorations"
+      materials: "blackened stone hearth, iron tools, timber surround"
+      color_signature: "fire orange grading to ambient amber"
+      light_character: "dancing firelight, primary warmth source"
+
+    default_prompt_elements:
+      atmosphere: "warming center, communal heart"
+      must_include:
+        - "active hearth fire"
+        - "patrons positioned for warmth"
+        - "fire tools nearby"
+        - "mantle details"
+      must_avoid:
+        - "cold empty hearth"
+        - "noble fireplace decoration"
+
+    images:
+      - image_type: "zone"
+        image_slug: "hearth-corner"
+        description: "The hearth corner with its welcoming fire, the heart of the tavern's warmth"
+        scene_mood: "intimate"
+
+        composition:
+          foreground: "Fire tools, worn hearthstone"
+          midground: "Active fire, seated patrons in glow"
+          background: "Room visible beyond firelight"
+
+        lighting:
+          primary_source: "Hearth fire"
+          quality: "dancing, warming"
+          color_temperature: "deep orange to amber"
+
+        palette:
+          dominant: ["fire orange", "hearth amber"]
+          accent: ["ash gray", "iron black"]
+
+        key_elements:
+          - "Well-fed fire"
+          - "Best seats claimed by regulars"
+          - "Faces lit by dancing flames"
+          - "The heart that warms the room"
+
+        prompt: "Fantasy tavern hearth corner, warm fire burning in well-used fireplace, working folk gathered in warming range, dancing firelight on weathered faces, fire tools nearby, comfortable gathering spot, amber and orange glow, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: CELLAR RUNES
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "cellar-runes"
+    zone_name: "The Cellar Runes"
+    zone_type: "liminal"
+
+    narrative_role: |
+      Below the celebration, the practical magic of the city—preservation
+      runes carved into the cellar walls that keep the ale fresh and the
+      stores safe. This is the quiet craft that keeps Waterdeep fed and
+      watered, unnoticed but essential.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Stone cellar walls"
+        - "Faintly glowing preservation runes"
+        - "Stacked casks and barrels"
+        - "Cooler darker space below"
+      materials: "cut stone, aged oak casks, iron bindings"
+      color_signature: "cool stone gray with faint blue rune glow"
+      light_character: "dim, rune-lit, cool compared to above"
+
+    default_prompt_elements:
+      atmosphere: "practical magic, below-stairs utility"
+      must_include:
+        - "stone cellar walls"
+        - "faintly glowing runes"
+        - "stored casks and barrels"
+        - "cool dim lighting"
+      must_avoid:
+        - "dramatic magic display"
+        - "abandoned ruin"
+        - "modern storage"
+
+    images:
+      - image_type: "zone"
+        image_slug: "cellar-runes-glow"
+        description: "The cellar with its preservation runes glowing faintly among the casks"
+        scene_mood: "ethereal"
+
+        composition:
+          foreground: "Stone steps descending"
+          midground: "Rows of casks, runes visible on walls"
+          background: "Deeper cellar fading into cool darkness"
+
+        lighting:
+          primary_source: "Faint rune glow"
+          secondary_source: "Light from above through hatch"
+          quality: "subtle, magical, cool"
+          color_temperature: "cool blue against stone gray"
+
+        palette:
+          dominant: ["stone gray", "oak brown"]
+          accent: ["soft blue rune-light"]
+
+        key_elements:
+          - "Practical dwarven runes"
+          - "Well-maintained casks"
+          - "Evidence of regular use"
+          - "The unseen craft that keeps ale fresh"
+
+        prompt: "Fantasy tavern cellar with preservation runes, stone walls with faintly glowing dwarven runes, stacked oak ale casks, cool dim lighting, practical magic atmosphere, stairs leading up to tavern noise above, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: MORNING
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "morning"
+    zone_name: "The Morning After"
+    zone_type: "temporal"
+
+    narrative_role: |
+      The tavern in quiet morning light—after the celebration has faded,
+      before the next crowd arrives. Empty tankards wait to be cleared,
+      yesterday's smoke still hangs faintly in the air, and the space
+      rests between stories.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Dawn light through windows"
+        - "Empty chairs, forgotten tankards"
+        - "Lingering smoke traces"
+        - "Quiet after the roar"
+      materials: "same worn timber, now visible in clean light"
+      color_signature: "pale morning gold, clearing smoke"
+      light_character: "honest daylight, revealing wear"
+
+    default_prompt_elements:
+      atmosphere: "quiet aftermath, resting space"
+      must_include:
+        - "morning light through windows"
+        - "empty chairs and tables"
+        - "abandoned tankards"
+        - "signs of last night's celebration"
+      must_avoid:
+        - "crowded room"
+        - "active service"
+        - "nighttime atmosphere"
+
+    images:
+      - image_type: "temporal"
+        image_slug: "morning-after-celebration"
+        description: "The tavern in quiet morning light, resting after last night's celebration"
+        scene_mood: "somber"
+
+        composition:
+          foreground: "Empty tankards, pushed-aside chairs"
+          midground: "Empty tables in morning light"
+          background: "Windows letting in pale dawn"
+
+        lighting:
+          primary_source: "Morning sun through windows"
+          quality: "gentle, revealing"
+          color_temperature: "cool morning gold"
+
+        palette:
+          dominant: ["morning gray", "pale gold"]
+          accent: ["last night's amber traces"]
+
+        key_elements:
+          - "Evidence of celebration past"
+          - "Space resting, catching breath"
+          - "Soon-to-be-cleared tables"
+          - "Memory of voices in silence"
+
+        prompt: "Fantasy tavern interior in morning light, empty after celebration, abandoned tankards on worn tables, pale dawn light through windows, lingering traces of pipe smoke, quiet aftermath atmosphere, signs of last night's joy now silent, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: REFLECTION
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "reflection"
+    zone_name: "Puddle Reflection"
+    zone_type: "perspective"
+
+    narrative_role: |
+      An exterior perspective—the tavern seen from outside, its warm light
+      reflected in a rain puddle on the cobblestones. The noise and warmth
+      glimpsed from the cold street, the invitation of celebration visible
+      to those still making their way there.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Exterior view of tavern"
+        - "Rain puddle reflecting warm windows"
+        - "Cobblestone street"
+        - "Noise and warmth glimpsed from outside"
+      materials: "wet cobblestones, timber facade, lit windows"
+      color_signature: "cool street vs warm window glow"
+      light_character: "warm light spilling out, reflected in water"
+
+    default_prompt_elements:
+      atmosphere: "exterior invitation, warmth glimpsed"
+      must_include:
+        - "tavern exterior"
+        - "rain puddle with reflection"
+        - "warm light from windows"
+        - "cobblestone street"
+      must_avoid:
+        - "interior view"
+        - "dry street"
+        - "dark unlit building"
+
+    images:
+      - image_type: "perspective"
+        image_slug: "puddle-reflection-tavern"
+        description: "The tavern's warm glow reflected in a rain puddle on the cobblestones"
+        scene_mood: "intimate"
+
+        composition:
+          foreground: "Rain puddle reflecting tavern light"
+          midground: "Tavern facade with lit windows"
+          background: "Dock Ward evening sky"
+
+        lighting:
+          primary_source: "Tavern light spilling through windows"
+          quality: "warm glow in cool evening"
+          color_temperature: "warm amber within, cool blue evening without"
+
+        palette:
+          dominant: ["wet cobblestone gray", "evening blue"]
+          accent: ["warm amber reflection"]
+
+        key_elements:
+          - "Mirror image in puddle"
+          - "Warm invitation visible from cold"
+          - "Sound implied through light"
+          - "Working-class tavern facade"
+
+        prompt: "Fantasy tavern exterior at evening, warm light spilling from windows, rain puddle on cobblestones reflecting amber glow, Dock Ward street scene, invitation of warmth glimpsed from cold evening, sound of celebration implied, oil painting style, fantasy illustration"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# BEAT IMAGES
+# Key narrative moments from ch23.5: Front Page News
+# ═══════════════════════════════════════════════════════════════════════════════
+
+beat_images:
+  # ─────────────────────────────────────────────────────────────────────────────
+  # BEAT: "TO A JOB WELL DONE"
+  # ─────────────────────────────────────────────────────────────────────────────
+  - beat_slug: "to-a-job-well-done"
+    beat_title: "To a Job Well Done"
+    chapter_ref: "ch23.5"
+    zone_ref: "collective-toast"
+
+    narrative_context: |
+      The moment when celebration crystallizes into verdict. "'It ain't about
+      gods and monsters. It's about knowing your trade. And their trade is
+      bringing people home.' 'To a job well done!' called someone, raising a
+      tankard. 'To a job well done!' the tavern roared back."
+
+    emotional_beat: "Collective affirmation—the common folk pronouncing their highest honor"
+
+    image_spec:
+      scene_mood: "celebratory"
+      image_type: "beat"
+
+      composition:
+        foreground: "Tankards raised, ale sloshing over rims"
+        midground: "United crowd, every arm raised, every face joyful"
+        background: "Entire tavern visible, packed to the walls"
+        focal_point: "The wave of unified motion"
+
+      lighting:
+        primary_source: "Oil lamps throughout"
+        quality: "warm, catching on raised tankards"
+        color_temperature: "deep amber gold"
+        atmospheric: "pipe smoke swirling from collective motion"
+
+      palette:
+        dominant: ["celebration amber", "ale gold"]
+        accent: ["foam white", "tankard gleam"]
+        avoid: ["cool tones", "empty spaces"]
+
+      key_elements:
+        - "Perfect synchrony of raised tankards"
+        - "Joyful shouting faces"
+        - "Thick smoke stirred by motion"
+        - "The democracy of celebration"
+
+      style_notes: "This is THE moment—the working folk of Waterdeep pronouncing their verdict. Every tankard should be raised, every face should be alight."
+
+      prompt: "Fantasy tavern collective toast moment, entire packed crowd raising tankards in perfect unison, working folk of all trades shouting 'To a job well done', thick pipe smoke swirling from motion, oil lamplight catching on raised mugs, ale sloshing over rims, joyful weathered faces, peak celebration energy, oil painting style, fantasy illustration, triumphant community moment, warm amber atmosphere"
+
+      source_quote: "'To a job well done!' called someone, raising a tankard. 'To a job well done!' the tavern roared back."
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # BEAT: JORIK'S STONE-LISTENING
+  # ─────────────────────────────────────────────────────────────────────────────
+  - beat_slug: "jorik-stone-listening"
+    beat_title: "The Way He Listened to the Stone"
+    chapter_ref: "ch23.5"
+    zone_ref: "jorik-storytelling"
+
+    narrative_context: |
+      Jorik One-Eye recounting Grimjaw's technique to a rapt audience. The
+      eyewitness describes not magical power but professional method—how
+      the stone mason listened to the building, understood its language,
+      worked with it rather than against it.
+
+    emotional_beat: "Expertise recognizing expertise—the sacred moment of professional appreciation"
+
+    image_spec:
+      scene_mood: "reverent"
+      image_type: "beat"
+
+      composition:
+        foreground: "Backs of intent listeners"
+        midground: "Jorik One-Eye gesturing, demonstrating listening posture"
+        background: "More crowd pressing in, hanging on every word"
+        focal_point: "Jorik's animated face, hands cupped to ear in demonstration"
+
+      lighting:
+        primary_source: "Nearby oil lamp"
+        quality: "dramatic on storyteller"
+        color_temperature: "warm amber"
+
+      palette:
+        dominant: ["story-amber", "attentive shadow"]
+        accent: ["gleam in remaining eye"]
+
+      key_elements:
+        - "One-eyed storyteller (eyepatch)"
+        - "Hands demonstrating stone-listening technique"
+        - "Crowd leaning in with rapt attention"
+        - "Forgotten tankards as story takes precedence"
+
+      style_notes: "Focus on the sacred attention of eyewitness storytelling. The crowd should be utterly absorbed in Jorik's account."
+
+      prompt: "Fantasy tavern storytelling scene, one-eyed man with eyepatch gesturing to crowd, demonstrating how Grimjaw listened to the stone, hands cupped to ear, rapt working-class audience leaning in, thick pipe smoke atmosphere, oil lamplight dramatic on storyteller's weathered face, forgotten tankards, sacred attention to eyewitness account, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # BEAT: KNOWING YOUR TRADE
+  # ─────────────────────────────────────────────────────────────────────────────
+  - beat_slug: "knowing-your-trade"
+    beat_title: "Knowing Your Trade"
+    chapter_ref: "ch23.5"
+    zone_ref: "carpenter-assessment"
+
+    narrative_context: |
+      The older carpenter's professional assessment. He notes Veyra's bearing—
+      how she carried herself with the confidence of someone who knows their
+      work. His nod carries the weight of decades of craft, the highest
+      compliment one tradesperson can give another.
+
+    emotional_beat: "Professional recognition crossing trade boundaries—competence honoring competence"
+
+    image_spec:
+      scene_mood: "intimate"
+      image_type: "beat"
+
+      composition:
+        foreground: "Carpenter's weathered hands around tankard"
+        midground: "His face, eyes knowing, subtle nod"
+        background: "Tavern atmosphere, others celebrating"
+        focal_point: "The carpenter's eyes—measuring, approving"
+
+      lighting:
+        primary_source: "Tavern lamplight"
+        quality: "honest light on honest face"
+        color_temperature: "warm amber"
+
+      palette:
+        dominant: ["work-worn brown", "sawdust tan"]
+        accent: ["knowing-eye gleam"]
+
+      key_elements:
+        - "Decades of craft visible in lined face"
+        - "Eyes that measure true"
+        - "Subtle nod of approval"
+        - "Sawdust traces in collar—still a working man"
+
+      style_notes: "An intimate portrait of professional recognition. This carpenter knows good work when he sees it, and he's seen it in Veyra."
+
+      prompt: "Fantasy portrait of older carpenter in tavern celebration, weathered face with knowing eyes giving subtle nod of professional approval, lines of decades of craft on face, sawdust traces on work clothes, calloused hands on tankard, warm lamplight, wise craftsman recognizing competence across trades, oil painting style, fantasy illustration, intimate character moment"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# REFERENCES
+# ═══════════════════════════════════════════════════════════════════════════════
+
+references:
+  chapter_visual_plans:
+    - path: "chapters/ch23.5-front-page-news/chapter.visual-plan.yaml"
+      context: "Full chapter visual plan showing tavern scene as public reaction beat"
+
+  related_locations:
+    - slug: "dock-ward"
+      context: "Parent district—working waterfront neighborhood"
+
+  thematic_connections:
+    - "Working-class pride in professional competence"
+    - "The common folk's verdict on heroism"
+    - "Trade-earned respect over flashy magic"
+    - "Collective celebration as community bond"

@@ -1,0 +1,783 @@
+# The Windborne Roost - Location Imagery Specifications
+# Generated from chapter visual plans and location documentation
+# A strategic waystation where cover is maintained and sharp eyes miss nothing
+
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "windborne-roost"
+  location_name: "The Windborne Roost"
+  version: "1.0"
+  last_updated: "2025-12-26"
+  primary_chapters:
+    - ch28-the-road-north
+    - ch32-the-return-and-the-reckoning
+  location_type: "roadside-inn-waystation"
+
+generation_defaults:
+  provider: "workers-ai"
+  model: "flux-schnell"
+  quality: "high"
+  aspect_ratio: "16:9"
+
+# ============================================================================
+# NARRATIVE SOUL - Thematic Essence for AI Generation
+# ============================================================================
+narrative_soul: |
+  The Windborne Roost is where legitimate commerce and clandestine operations
+  share the same roof without ever acknowledging each other. This hilltop inn
+  at the crossroads serves travelers with hot food and dry beds, serves farmers
+  with seed and tools, and serves the City Watch with intelligence and staging
+  grounds—all under the watchful eyes of Quierk, the aarakocra proprietor who
+  sees everything from his observation cupola and says nothing he shouldn't.
+  The compound sprawls with the honest prosperity of a successful waystation:
+  timber longhouse with twin hearths, busy stables, market arcade with fold-down
+  awnings, guest wing under dormers. But two rooms have bell-pulls to the perch.
+  Two market bays have rear hatches to the tavern. And the stream that waters
+  the stock carries secrets in its current—including, one terrible day, the
+  magical taint of the Silent Hand's trafficking. For the reconnaissance team,
+  the Roost transforms from waystation to sanctuary, a place where weary faces
+  find warm fires and the return from danger feels like homecoming.
+
+one_line_essence: "A hilltop waystation where legitimate business covers clandestine operations and sharp aarakocra eyes miss nothing."
+
+# ============================================================================
+# LOCATION VISUAL ANCHOR - Signature Elements
+# ============================================================================
+location_visual_anchor:
+  signature_elements:
+    - "hilltop position with commanding views"
+    - "heavy timber longhouse with twin chimneys"
+    - "cobbled courtyard with bell frame at gate"
+    - "observation cupola above tavern gable"
+    - "aarakocra proprietor (Quierk)"
+    - "busy market arcade with fold-down awnings"
+    - "cedar-shingle roofs with copper caps"
+
+  materials:
+    primary:
+      - "fieldstone foundations and plinths"
+      - "oak and pine timber framing"
+      - "cedar shingle roofing"
+      - "lime mortar and limewash"
+    secondary:
+      - "copper-capped chimney pots"
+      - "cobbled courtyard stone"
+      - "oiled board-and-batten siding"
+      - "iron brackets and hardware"
+    accent:
+      - "lamp posts at corners"
+      - "bell frame at gate"
+      - "trough and pump brass"
+      - "market awning canvas"
+
+  color_anchors:
+    dominant:
+      - "cedar brown"
+      - "pine honey"
+      - "fieldstone gray"
+      - "limewash cream"
+    secondary:
+      - "copper-green patina"
+      - "hearth ember orange"
+      - "stream silver"
+    accent:
+      - "conifer green"
+      - "canvas tan"
+      - "lamp brass"
+    avoid:
+      - "modern elements"
+      - "pristine newness"
+      - "urban density"
+
+  characteristic_light:
+    dawn: "Frost or dew on shingles, kitchen smoke rising, watch shift changing at perch, stream mist in hollow"
+    day: "Courtyard at busiest, stalls open, sun on cedar roofs, traffic on approach roads"
+    evening: "Hearth-glow through mullions, lamps at gates, market shutters closing, perch observation casual"
+    night: "Gate lamps and walk lights, dormers dark, perch on intermittent watch, stars above forest edge"
+
+# ============================================================================
+# OVERVIEW - Location Establishing Shots
+# ============================================================================
+overview:
+  primary:
+    image_type: "establishing"
+    description: "The Windborne Roost from the approach road—hilltop compound with twin chimneys smoking, busy courtyard visible, observation cupola catching light above the gable"
+    scene_mood: "pastoral"
+    time_of_day: "day"
+    framing: "wide"
+    key_elements:
+      - "hilltop position"
+      - "timber longhouse with twin chimneys"
+      - "busy courtyard"
+      - "observation cupola"
+      - "approach road winding up"
+    lighting:
+      primary_source: "afternoon sun"
+      quality: "prosperous waystation light"
+      color_temperature: "warm daylight"
+    palette:
+      dominant: ["cedar brown", "chimney smoke", "fieldstone gray"]
+      accent: ["courtyard activity", "road dust"]
+      avoid: ["military grimness"]
+
+  secondary:
+    image_type: "establishing"
+    description: "The Roost at dawn—watery sunrise through Thornwood trees, warm light from tavern windows promising sanctuary after dangerous roads"
+    scene_mood: "pastoral"
+    time_of_day: "dawn"
+    framing: "wide"
+    key_elements:
+      - "sunrise through forest edge"
+      - "warm windows visible"
+      - "smoke from chimneys"
+      - "morning mist in hollow"
+    lighting:
+      primary_source: "watery sunrise"
+      secondary_source: "warm window light"
+      quality: "sanctuary promise"
+      color_temperature: "cool dawn exterior, warm interior glow"
+    palette:
+      dominant: ["dawn gray", "forest edge", "window amber"]
+      accent: ["chimney smoke", "sanctuary light"]
+      avoid: ["cold isolation"]
+
+# ============================================================================
+# ZONES - Comprehensive Location Areas
+# ============================================================================
+zones:
+  # ===== APPROACH & EXTERIOR =====
+  - slug: "exterior"
+    name: "Exterior Approach"
+    zone_type: "threshold"
+    featured_in_chapters:
+      - ch28-the-road-north
+    description: "The hilltop compound from the approaching roads—graded stone-lined drive climbing from crossroads, the waystation sprawling above with commanding views in all directions"
+    image_type: "establishing"
+    scene_mood: "pastoral"
+    key_elements:
+      - "crossroads below"
+      - "graded approach drive"
+      - "compound visible above"
+      - "sight lines down both roads"
+    lighting:
+      primary_source: "open sky"
+      quality: "crossroads light"
+    palette:
+      dominant: ["road dust", "hillside green", "compound timber"]
+      accent: ["approaching travelers"]
+      avoid: ["hidden or secretive"]
+    character_interaction:
+      positions: ["approaching on road", "pausing at crossroads"]
+      activities: ["arrival assessment", "watching for followers"]
+
+  - slug: "carriage-gate"
+    name: "Carriage Gate and Approach"
+    zone_type: "threshold"
+    description: "The main entry to the compound—stout bar gate with lamp posts and bell frame, cobbled drive passing through for wagon access, sight lines from perch covering both sides"
+    image_type: "zone"
+    scene_mood: "quotidian"
+    key_elements:
+      - "stout bar gate"
+      - "lamp posts flanking"
+      - "bell frame and rope"
+      - "cobbled drive through"
+    lighting:
+      primary_source: "daylight"
+      secondary_source: "gate lamps at night"
+      quality: "threshold transition"
+    palette:
+      dominant: ["timber gate", "iron hardware", "lamp brass"]
+      accent: ["bell frame", "arriving traffic"]
+      avoid: ["military checkpoint"]
+    character_interaction:
+      positions: ["gate attendant", "arriving wagon", "checking credentials"]
+      activities: ["arrival control", "lamp and bell management", "wagon coordination"]
+
+  # ===== COURTYARD =====
+  - slug: "courtyard"
+    name: "Cobbled Courtyard"
+    zone_type: "heart"
+    description: "The central cobbled yard crowned with trench drains—circulation hub with hitching rails, water trough, lamp posts at corners, turning radius for wagons, all overlooked by the cupola perch"
+    image_type: "zone"
+    scene_mood: "kinetic"
+    key_elements:
+      - "crowned cobble surface"
+      - "trench drains visible"
+      - "hitching rails and trough"
+      - "lamp posts at corners"
+      - "buildings around perimeter"
+    lighting:
+      primary_source: "open sky"
+      secondary_source: "lamp posts at evening"
+      quality: "working courtyard light"
+    palette:
+      dominant: ["cobble gray", "timber buildings", "motion activity"]
+      accent: ["brass fittings", "wagon colors"]
+      avoid: ["empty stillness"]
+    character_interaction:
+      positions: ["crossing courtyard", "at trough", "near hitching rails"]
+      activities: ["circulation", "staging", "pre-dawn departure", "muster"]
+    atmospheric:
+      environmental_effects: "seasonal changes—spring mud, summer dust, winter frost"
+
+  - slug: "predawn-staging"
+    name: "Before First Light"
+    zone_type: "temporal"
+    description: "The courtyard in pre-dawn darkness—quiet staging for discreet departures, agricultural cover for operational movements, perch watch increased, kitchen smoke rising"
+    image_type: "temporal"
+    scene_mood: "ominous"
+    key_elements:
+      - "pre-dawn gray"
+      - "quiet movement"
+      - "cover activities (muck-out, wagon loading)"
+      - "kitchen smoke rising"
+    lighting:
+      primary_source: "pre-dawn gray"
+      secondary_source: "stable and kitchen lamps"
+      quality: "operational twilight"
+    palette:
+      dominant: ["dawn gray", "lamp pools", "quiet motion"]
+      accent: ["smoke rising", "breath-mist"]
+      avoid: ["bright exposure"]
+    character_interaction:
+      positions: ["moving through shadows", "loading wagons", "checking mounts"]
+      activities: ["discreet staging", "cover maintenance", "early departure"]
+
+  # ===== MAIN TAVERN =====
+  - slug: "common-room"
+    name: "Main Tavern Common Room"
+    zone_type: "heart"
+    featured_in_chapters:
+      - ch28-the-road-north
+      - ch32-the-return-and-the-reckoning
+    description: "The longhouse tavern's great room—twin masonry hearths, trestle tables in central nave, booth alcoves set between posts for discreet conversations, corner stage for entertainment"
+    image_type: "zone"
+    scene_mood: "intimate"
+    key_elements:
+      - "twin hearths with shared flue"
+      - "trestle tables (seats 80-120)"
+      - "booth alcoves between posts"
+      - "lantern rails under tie-beams"
+      - "corner stage/dais nook"
+    lighting:
+      primary_source: "twin hearths"
+      secondary_source: "lantern rails"
+      quality: "warm communal tavern light"
+      color_temperature: "amber-gold"
+    palette:
+      dominant: ["hearth glow", "timber frame", "trestle wood"]
+      accent: ["lamp brass", "traveler colors"]
+      avoid: ["cold formality"]
+    character_interaction:
+      positions: ["at trestle tables", "in booth alcoves", "near hearths"]
+      activities: ["eating", "discreet conversation", "receiving intelligence", "sanctuary rest"]
+    atmospheric:
+      environmental_effects: "hearth smoke well-drafted, food smells, conversation hum"
+
+  - slug: "booth-meeting"
+    name: "Discreet Conversation"
+    zone_type: "sanctuary"
+    description: "A booth alcove between heavy timber posts—privacy within public space, where sensitive intelligence is shared and covers are maintained amid legitimate traffic"
+    image_type: "zone"
+    scene_mood: "intimate"
+    key_elements:
+      - "booth between posts"
+      - "partial shadow"
+      - "nearby common room activity"
+      - "discreet conversation visible"
+    lighting:
+      primary_source: "hearth glow from room"
+      secondary_source: "table candle"
+      quality: "semi-private"
+    palette:
+      dominant: ["shadow", "timber frame", "candlelight"]
+      accent: ["intent faces", "documents passing"]
+      avoid: ["full exposure"]
+    character_interaction:
+      positions: ["seated in booth", "leaning close"]
+      activities: ["intelligence sharing", "briefing", "credential verification"]
+
+  - slug: "kitchen"
+    name: "The Kitchens"
+    zone_type: "works"
+    description: "The tavern's rear quadrant—hearth with bake oven, scullery and pantry, pass-through to common room, cellar steps to cool store, service door to yard"
+    image_type: "zone"
+    scene_mood: "kinetic"
+    key_elements:
+      - "kitchen hearth with bake oven"
+      - "scullery and work surfaces"
+      - "pass-through window"
+      - "cellar steps visible"
+    lighting:
+      primary_source: "kitchen hearth"
+      secondary_source: "high windows"
+      quality: "practical work light"
+    palette:
+      dominant: ["hearth glow", "work surfaces", "copper pots"]
+      accent: ["steam", "food preparation"]
+      avoid: ["modern kitchen"]
+    character_interaction:
+      positions: ["at hearth", "at work surfaces", "at pass-through"]
+      activities: ["cooking", "warm-up prep", "hot food service"]
+
+  # ===== GUEST WING =====
+  - slug: "guest-wing"
+    name: "Guest Quarters Wing"
+    zone_type: "commons"
+    description: "The northeast wing under dormers—12-18 private rooms, interior plaster, shared wash nooks, two corner rooms with bell-pulls to the perch for urgent summons"
+    image_type: "zone"
+    scene_mood: "intimate"
+    key_elements:
+      - "dormered rooms"
+      - "corridor with doors"
+      - "wash nook at landing"
+      - "courtyard view through dormers"
+    lighting:
+      primary_source: "dormer windows"
+      secondary_source: "corridor lamps"
+      quality: "quiet lodging light"
+    palette:
+      dominant: ["plaster cream", "timber doors", "dormer light"]
+      accent: ["personal effects", "travel wear"]
+      avoid: ["public exposure"]
+    character_interaction:
+      positions: ["in rooms", "in corridor", "at wash nook"]
+      activities: ["rest", "recovery", "private briefing"]
+
+  # ===== STABLES =====
+  - slug: "stables"
+    name: "Stables"
+    zone_type: "works"
+    featured_in_chapters:
+      - ch28-the-road-north
+      - ch32-the-return-and-the-reckoning
+    description: "The west stable block—center-aisle plan with 12-16 stalls, hayloft with trolley above, tack and grain rooms, farrier bay with anvil and brazier"
+    image_type: "zone"
+    scene_mood: "quotidian"
+    key_elements:
+      - "center-aisle layout"
+      - "stalls with split doors"
+      - "hayloft above"
+      - "tack room visible"
+    lighting:
+      primary_source: "gable vents and shutters"
+      secondary_source: "guarded lamp brackets"
+      quality: "working stable light"
+    palette:
+      dominant: ["hay gold", "horse colors", "timber partitions"]
+      accent: ["leather tack", "iron rings"]
+      avoid: ["sterile modern"]
+    character_interaction:
+      positions: ["in stalls", "in aisle", "at tack room"]
+      activities: ["animal care", "mount preparation", "equipment check"]
+    atmospheric:
+      environmental_effects: "horse warmth, hay scent, leather and saddle soap"
+
+  - slug: "stables-and-coach-yard"
+    name: "Stables and Coach Yard"
+    zone_type: "works"
+    description: "The full west complex—stable block adjoining open coach shed, paddock on leeward side, drainage to manure pit and reed bed"
+    image_type: "zone"
+    scene_mood: "quotidian"
+    key_elements:
+      - "stable block"
+      - "coach shed with wagons"
+      - "paddock beyond"
+      - "drainage system visible"
+    lighting:
+      primary_source: "open coach shed"
+      quality: "practical work light"
+    palette:
+      dominant: ["timber", "wagon colors", "paddock grass"]
+      accent: ["equipment", "drainage"]
+      avoid: ["decorative"]
+
+  # ===== OBSERVATION =====
+  - slug: "observation-perch"
+    name: "Observation Perch / Cupola"
+    zone_type: "overlook"
+    description: "The cupola platform above the tavern gable—Quierk's preferred roost with sight lines down both approach roads, whistle and signal flags ready, bell-pull connections to key rooms"
+    image_type: "zone"
+    scene_mood: "intimate"
+    key_elements:
+      - "elevated cupola platform"
+      - "sight lines in all directions"
+      - "signal equipment (whistle, flags)"
+      - "bell-pull ropes"
+    lighting:
+      primary_source: "open sky"
+      quality: "height observation light"
+    palette:
+      dominant: ["sky expanse", "timber platform", "distant landscape"]
+      accent: ["signal gear", "Quierk's feathers"]
+      avoid: ["enclosed feeling"]
+    character_interaction:
+      positions: ["at perch", "scanning roads", "operating signals"]
+      activities: ["observation", "traffic monitoring", "signal communication"]
+
+  - slug: "perch-perspective"
+    name: "Command of Sight"
+    zone_type: "perspective"
+    description: "Quierk's view from the cupola—both roads visible, courtyard below, approach traffic assessed, nothing escaping those keen aarakocra eyes"
+    image_type: "perspective"
+    scene_mood: "intimate"
+    key_elements:
+      - "both roads in view"
+      - "courtyard visible below"
+      - "approaching travelers watched"
+      - "keen assessment perspective"
+    lighting:
+      primary_source: "daylight from height"
+      quality: "watcher's clarity"
+    palette:
+      dominant: ["road ribbons", "landscape spread", "courtyard activity"]
+      accent: ["approaching figures", "sharp assessment"]
+      avoid: ["blind spots"]
+    character_interaction:
+      positions: ["Quierk at perch", "looking down"]
+      activities: ["watching", "assessing", "missing nothing"]
+
+  - slug: "essence-quierk-perch"
+    name: "The Watcher on the Height"
+    zone_type: "essence"
+    description: "Quierk in his element—feathered form silhouetted against sky, head cocked in assessment, the aarakocra proprietor who sees everything and knows when to stay silent"
+    image_type: "essence"
+    scene_mood: "pastoral"
+    key_elements:
+      - "Quierk silhouetted"
+      - "feathered head cocked"
+      - "keen eyes assessing"
+      - "sky behind"
+    lighting:
+      primary_source: "backlight from sky"
+      quality: "silhouette clarity"
+    palette:
+      dominant: ["feather silhouette", "sky blue", "platform timber"]
+      accent: ["keen eye gleam"]
+      avoid: ["obscured features"]
+
+  # ===== MARKET ARCADE =====
+  - slug: "market-arcade"
+    name: "Market Stalls Arcade"
+    zone_type: "works"
+    description: "The southeast shed row—6-8 rentable bays with shutter fronts and fold-down awnings, legitimate agricultural stock (seed, tools), two bays with rear hatches to tavern service corridor"
+    image_type: "zone"
+    scene_mood: "kinetic"
+    key_elements:
+      - "shutter-front bays"
+      - "fold-down awnings"
+      - "agricultural goods displayed"
+      - "vendor activity"
+    lighting:
+      primary_source: "daylight under awnings"
+      quality: "market light"
+    palette:
+      dominant: ["timber posts", "canvas awnings", "goods display"]
+      accent: ["vendor colors", "customer traffic"]
+      avoid: ["urban market density"]
+    character_interaction:
+      positions: ["at stall counters", "browsing", "loading supplies"]
+      activities: ["trading", "cover maintenance", "discreet transfers through hatches"]
+
+  # ===== STREAM & WATER =====
+  - slug: "stream"
+    name: "Stream"
+    zone_type: "liminal"
+    featured_in_chapters:
+      - ch28-the-road-north
+    description: "The stream near the compound—stock watering, cleaning, and the terrible discovery of magical suppression compounds tainting the water, the wilderness weaponized"
+    image_type: "zone"
+    scene_mood: "pastoral"
+    key_elements:
+      - "stream in hollow"
+      - "clear water (normally)"
+      - "stock access point"
+      - "forest edge nearby"
+    lighting:
+      primary_source: "filtered forest light"
+      quality: "stream clarity"
+    palette:
+      dominant: ["stream silver", "bank earth", "forest edge"]
+      accent: ["water movement", "reflection"]
+      avoid: ["obviously tainted"]
+    character_interaction:
+      positions: ["kneeling at bank", "testing water"]
+      activities: ["stock watering", "detection of magical taint"]
+
+  - slug: "mooring"
+    name: "The Mooring Ring"
+    zone_type: "detail"
+    description: "A mooring ring at the stream bank—practical for watering, but also where Rill's webbed fingers detected the Silent Hand's trafficking compounds in the current"
+    image_type: "detail"
+    scene_mood: "ominous"
+    key_elements:
+      - "iron mooring ring"
+      - "stream current"
+      - "bank edge"
+      - "fingers in water"
+    lighting:
+      primary_source: "stream reflection"
+      quality: "water-light"
+    palette:
+      dominant: ["iron ring", "water current", "bank earth"]
+      accent: ["unnatural shimmer implied"]
+      avoid: ["obvious magic effects"]
+
+  # ===== SERVICE AREAS =====
+  - slug: "service-yard"
+    name: "Service Yard and Reed Bed"
+    zone_type: "works"
+    description: "The leeward service area—woodpile, refuse routing, grease trap, reed bed for wastewater, functional infrastructure hidden from guest view"
+    image_type: "zone"
+    scene_mood: "quotidian"
+    key_elements:
+      - "stacked woodpile"
+      - "refuse staging"
+      - "reed bed visible"
+      - "drainage routing"
+    lighting:
+      primary_source: "filtered daylight"
+      quality: "work light"
+    palette:
+      dominant: ["wood stacks", "functional materials", "reeds"]
+      accent: ["work activity"]
+      avoid: ["pristine presentation"]
+    character_interaction:
+      positions: ["at woodpile", "managing refuse"]
+      activities: ["fuel staging", "maintenance work"]
+
+  # ===== MOOD & TEMPORAL ZONES =====
+  - slug: "sanctuary-return"
+    name: "First Safety"
+    zone_type: "mood"
+    description: "The compound as sanctuary after ordeal—weary team emerging from Thornwood at dawn, Quierk waiting without words, warm light promising safety"
+    image_type: "mood"
+    scene_mood: "pastoral"
+    key_elements:
+      - "weary arrival"
+      - "Quierk waiting"
+      - "warm inn light"
+      - "danger behind"
+    lighting:
+      primary_source: "watery dawn"
+      secondary_source: "warm inn windows"
+      quality: "sanctuary promise"
+    palette:
+      dominant: ["dawn gray", "sanctuary amber", "forest edge"]
+      accent: ["weary faces", "relief"]
+      avoid: ["continued danger"]
+    character_interaction:
+      positions: ["emerging from treeline", "Quierk at edge"]
+      activities: ["return from danger", "sanctuary reached"]
+
+  - slug: "courier"
+    name: "The Courier's Arrival"
+    zone_type: "mood"
+    description: "Urgent message arriving—courier at gate, bell ringing, intelligence incoming that will change everything"
+    image_type: "mood"
+    scene_mood: "kinetic"
+    key_elements:
+      - "courier at gate"
+      - "bell ringing"
+      - "urgency visible"
+      - "message to be delivered"
+    lighting:
+      primary_source: "daylight"
+      quality: "urgent clarity"
+    palette:
+      dominant: ["courier colors", "gate frame", "urgency"]
+      accent: ["message pouch", "bell motion"]
+      avoid: ["casual arrival"]
+    character_interaction:
+      positions: ["courier dismounting", "staff responding"]
+      activities: ["urgent delivery", "intelligence incoming"]
+
+# ============================================================================
+# BEAT IMAGES - Key Narrative Moments
+# ============================================================================
+beat_images:
+  - slug: "quierks-assessment"
+    title: "The Watcher's Welcome"
+    chapter: "ch28-the-road-north"
+    scene_id: "scn-28-02"
+    description: "Quierk meets them at the door—feathered head cocked, keen eyes assessing the disguised team with a single glance, voice a melodic blend of birdcall and speech: 'Welcome, travelers'"
+    zone: "common-room"
+    image_type: "anchor"
+    scene_mood: "intimate"
+    emotional_beat: "cover tested—the asset who misses nothing"
+    characters_present:
+      - quierk
+      - veyra-thornwake
+      - thorne-brightward
+    framing: "medium"
+    composition_notes: "The assessment—sharp eyes seeing through disguise without revealing knowledge"
+    key_visual_elements:
+      - "Quierk at door"
+      - "feathered head cocked"
+      - "keen eyes assessing"
+      - "warm inn light behind"
+    lighting:
+      primary_source: "warm inn light spilling out"
+      secondary_source: "dusk behind"
+      quality: "welcoming assessment"
+    palette:
+      dominant: ["feather colors", "inn amber", "twilight"]
+      accent: ["keen eye gleam", "melodic welcome"]
+
+  - slug: "tainted-waters"
+    title: "The Stream's Secret"
+    chapter: "ch28-the-road-north"
+    scene_id: "scn-28-03"
+    description: "Rill kneels by the stream bank—webbed fingers dipping into current, sea-glass skin catching light as she detects the magical suppression compounds: 'They're using the waterways to transport their captives'"
+    zone: "stream"
+    image_type: "hero"
+    scene_mood: "ominous"
+    emotional_beat: "horror discovered—the wilderness weaponized"
+    characters_present:
+      - rill-vossari
+    framing: "medium"
+    composition_notes: "The discovery—nature itself turned to trafficking"
+    key_visual_elements:
+      - "Rill kneeling at bank"
+      - "webbed fingers in current"
+      - "sea-glass skin catching light"
+      - "stream flowing past"
+    lighting:
+      primary_source: "evening forest light"
+      secondary_source: "faint magical glow in water"
+      quality: "discovery light"
+    palette:
+      dominant: ["stream silver", "bank earth", "sea-glass skin"]
+      accent: ["magical taint implied", "urgent concern"]
+
+  - slug: "sanctuary-found"
+    title: "Sanctuary Return"
+    chapter: "ch32-the-return-and-the-reckoning"
+    scene_id: "scn-32-01"
+    description: "The weary reconnaissance team emerges from the Thornwood at dawn—Quierk waiting at the clearing's edge, saying nothing, merely gesturing toward the inn where warm fire and hot food await"
+    zone: "sanctuary-return"
+    image_type: "anchor"
+    scene_mood: "pastoral"
+    emotional_beat: "refuge found—the return begins"
+    characters_present:
+      - quierk
+      - veyra-thornwake
+    framing: "wide"
+    composition_notes: "The return—sanctuary after ordeal, no words needed"
+    key_visual_elements:
+      - "team emerging from forest"
+      - "Quierk's feathered figure waiting"
+      - "warm inn light in distance"
+      - "watery dawn light"
+    lighting:
+      primary_source: "watery sunrise"
+      secondary_source: "warm inn windows"
+      quality: "sanctuary promise"
+    palette:
+      dominant: ["dawn gray", "forest edge", "sanctuary amber"]
+      accent: ["weary faces", "silent welcome"]
+
+  - slug: "fifty-children"
+    title: "The Report"
+    chapter: "ch32-the-return-and-the-reckoning"
+    scene_id: "scn-32-01"
+    description: "Lyra delivers the count—flat voice, clenching jaw, something cold and dangerous flickering in golden eyes despite emotionless tone: 'At least fifty, possibly more. Mostly children'"
+    zone: "common-room"
+    image_type: "beat"
+    scene_mood: "ominous"
+    emotional_beat: "horror quantified—the stakes made real"
+    characters_present:
+      - lyra-kestrel
+      - veyra-thornwake
+    framing: "close"
+    composition_notes: "The count—emotion suppressed but visible in details"
+    key_visual_elements:
+      - "Lyra's face"
+      - "flat expression"
+      - "jaw clenching"
+      - "cold flicker in golden eyes"
+    lighting:
+      primary_source: "firelight"
+      quality: "intimate revelation"
+    palette:
+      dominant: ["fire-amber", "shadow", "golden eyes"]
+      accent: ["cold danger flickering"]
+
+  - slug: "silent-welcome"
+    title: "No Words Needed"
+    chapter: "ch32-the-return-and-the-reckoning"
+    scene_id: "scn-32-01"
+    description: "Quierk's silent assessment of weary faces—the aarakocra proprietor says nothing, merely gestures toward warmth and safety, understanding visible in keen eyes"
+    zone: "courtyard"
+    image_type: "beat"
+    scene_mood: "intimate"
+    emotional_beat: "understanding without words—the asset as sanctuary"
+    characters_present:
+      - quierk
+      - veyra-thornwake
+    framing: "medium"
+    composition_notes: "The silent welcome—recognition without speech"
+    key_visual_elements:
+      - "Quierk's silent gesture"
+      - "weary team behind"
+      - "inn visible beyond"
+      - "keen understanding in eyes"
+    lighting:
+      primary_source: "dawn light"
+      secondary_source: "inn warmth beyond"
+      quality: "wordless welcome"
+    palette:
+      dominant: ["dawn", "feathers", "gesture"]
+      accent: ["understanding", "sanctuary"]
+
+# ============================================================================
+# REFERENCES - Cross-Reference Links
+# ============================================================================
+references:
+  chapter_visual_plans:
+    - slug: "ch28-the-road-north"
+      relationship: "waystation stop"
+      notes: "Resupply, Quierk's assessment, tainted water discovery"
+    - slug: "ch32-the-return-and-the-reckoning"
+      relationship: "sanctuary return"
+      notes: "Exhausted team returns, intelligence shared, sanctuary found"
+
+  character_portraits:
+    - slug: "quierk"
+      relationship: "proprietor"
+      notes: "Aarakocra watcher, observation cupola, melodic voice"
+    - slug: "rill-vossari"
+      relationship: "visitor"
+      notes: "Detects tainted water at stream"
+    - slug: "lyra-kestrel"
+      relationship: "visitor"
+      notes: "Delivers intelligence report in common room"
+    - slug: "veyra-thornwake"
+      relationship: "visitor"
+      notes: "Mission commander, returns to sanctuary"
+
+  related_locations:
+    - slug: "northern-road"
+      relationship: "approach route"
+      notes: "Road north passes through crossroads below"
+    - slug: "thornwood-forest"
+      relationship: "adjacent"
+      notes: "Forest edge provides approach cover"
+    - slug: "silent-hand-facility"
+      relationship: "mission target"
+      notes: "Intelligence gathered here supports facility infiltration"
+    - slug: "warehouse-complex"
+      relationship: "home base"
+      notes: "Team returns here after Roost debrief"
+
+  thematic_connections:
+    - theme: "legitimate cover"
+      description: "Agricultural trading post concealing intelligence operations"
+    - theme: "sharp observation"
+      description: "Quierk's cupola seeing everything, saying nothing unnecessary"
+    - theme: "sanctuary"
+      description: "Waystation becoming refuge after dangerous operations"
+    - theme: "tainted nature"
+      description: "Stream carrying Silent Hand's trafficking compounds"
+    - theme: "wordless understanding"
+      description: "Quierk's silent welcome to weary operatives"

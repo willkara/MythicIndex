@@ -1,0 +1,1747 @@
+metadata:
+  entity_type: "location-imagery"
+  slug: "blackvein-lode"
+  name: "Blackvein Lode"
+  location_type: "compound"
+  narrative_soul: |
+    The Blackvein Lode is a wound in the mountain that demands respect. It has swallowed
+    overconfident miners and spat them back as lessons. It doesn't hate those who dig into
+    its bones—it simply operates on geological time, indifferent to human urgency. Those
+    who listen to its creaks and groans earn the right to take its silver. Those who don't
+    listen earn its silence, forever.
+  one_line_essence: "Where mountains teach through disaster"
+  generation_defaults:
+    provider: "openai"
+    model: "gpt-image-1"
+    quality: "high"
+
+location_visual_anchor:
+  signature_elements:
+    - "Timber headframe against slate-blue peaks"
+    - "Stone-banded shaft collar with iron rings"
+    - "Fracture flags snapping on ridgeline stakes"
+    - "Louvered ventilation collars with canvas windsocks"
+    - "Dry-laid stone retaining walls on benched terraces"
+    - "Iron sheaves and thick rope at hoist"
+    - "Capstan and block-and-tackle rigging"
+    - "Bell-code plates at collar and junctions"
+    - "Lamproom with shielded oil lanterns"
+    - "Argent glints in dark host rock"
+    - "Rope stanchions separating vigil from workfront"
+    - "Windbreak canvas on command bench"
+    - "Stretcher-marked gravel corridors"
+    - "Timber sets and lagging underground"
+  materials:
+    masonry: "Dry-laid stone retaining walls keyed to slope; granite outcrop bedrock; stone collar ring with iron banding"
+    timber: "Seasoned oak and mountain fir for headframe and cribbing; lagging planks; sleepers for strap-rail"
+    roofing: "Open headframe structure; canvas tarps for temporary weather protection; lamproom has pitched timber shakes"
+    metalwork: "Iron sheaves, straps, dogs, and bolts; bronze bell pulls; forged capstan drums"
+    finishing: "Tar and pitch on exposed timber; oiled iron fittings; chalk marks on fracture flags"
+  color_anchors:
+    stone: "Slate grey metamorphic rock; iron-black ore veins; argent silver glints"
+    wood: "Oak umber headframe; pitch-black tarred piles; weathered grey exposed timber"
+    metal: "Iron black sheaves and straps; bronze bell fittings; rope-brown hemp"
+    fabric: "Canvas tan windbreaks and windsocks; rope-brown stanchion lines"
+    light: "Lantern gold in dust; copper-shadow sunset; grey dawn frost"
+  characteristic_light:
+    dawn: "Frost on timbers; pale grey light; windsocks slow"
+    midday: "Harsh high sun; dust motes peak; shadows sharp under headframe"
+    evening: "Copper shadows across slope; lantern lines glow; vigil fires draw families"
+    night: "Minimal lighting; sentries monitor vent flow; quiet zone enforced"
+    overcast: "Flat grey light; wind gusts more pronounced; dust settles"
+
+overview:
+  slug: "blackvein-lode-overview"
+  title: "The Blackvein Lode"
+  image_type: "establishing"
+  category: "exterior"
+
+  scene_mood: "ominous"
+  mood_rationale: |
+    The establishing shot captures the mine during the crisis—a site of ongoing danger
+    and desperate hope. The mountain looms as antagonist, the human infrastructure
+    fragile against its scale.
+
+  visual_description: |
+    The Blackvein Lode clings to a steep mountain slope, its timber headframe rising
+    against slate-blue peaks. Benched terraces hold the clustered infrastructure:
+    the main shaft collar with its iron-banded stone ring, the capstan and hoist
+    rigging, the lamproom and tool house offset leeward. Fracture flags snap in the
+    wind along the ridgeline, marking stress zones. Ventilation collars with louvered
+    shutters dot the upper slope, their canvas windsocks indicating airflow. Dry-stone
+    retaining walls step down toward tailings slopes below. The approach trail
+    switchbacks up from the valley, narrow and treacherous.
+
+  composition_notes: |
+    Wide establishing shot from the approach trail, looking up at the mine complex.
+    The headframe as focal point, mountain peaks framing above. The benched terraces
+    create horizontal rhythm against the steep slope. Fracture flags provide vertical
+    accents on the ridgeline.
+
+  narrative_significance: |
+    This is where the Last Light Company first proved themselves—and learned their
+    limitations. The site represents the cost of overconfidence and the value of
+    expertise. Twelve miners trapped below, the mountain still settling.
+
+  symbolic_elements:
+    - "Headframe (human ambition against mountain scale)"
+    - "Fracture flags (danger mapped but not eliminated)"
+    - "Ventilation collars (the mountain's breath controlled)"
+    - "Switchback trail (no easy approach to hard work)"
+
+  time_of_day: "late afternoon, copper light"
+  weather: "fair, steady wind"
+  season: "late autumn"
+
+  required_elements:
+    - "Timber headframe with double-braced bents"
+    - "Stone-banded shaft collar"
+    - "Iron sheaves and rope at hoist"
+    - "Benched terraces with retaining walls"
+    - "Fracture flags on ridgeline stakes"
+    - "Ventilation collars with windsocks"
+    - "Switchback approach trail"
+    - "Mountain peaks behind"
+
+  visible_beyond: "Sword Mountains peaks; valley approach below; ridgeline ventilation stations"
+  approach_from: "Switchback trail from valley floor; narrow, treacherous"
+
+  lighting:
+    primary_source: "late afternoon sun"
+    quality: "copper-warm, shadows lengthening"
+    direction: "low angle from west"
+    color_temperature: "warm copper-gold"
+    shadow_depth: "long shadows from headframe and retaining walls"
+    atmospheric: "dust halos in shafts of light"
+
+  palette:
+    dominant:
+      - "slate grey mountain"
+      - "timber brown headframe"
+      - "copper-gold light"
+    accent:
+      - "white fracture flags"
+      - "canvas tan windsocks"
+      - "iron black fittings"
+    avoid:
+      - "green vegetation"
+      - "bright colors"
+      - "pristine surfaces"
+
+  aspect_ratio: "16:9"
+  orientation: "landscape"
+  size: "1792x1024"
+
+  prompt_used: |
+    Oil painting, matte finish, visible brushwork. Establishing shot of a mountain
+    silver mine on a steep slope. Timber headframe with double-braced bents rising
+    against slate-blue peaks. Stone-banded shaft collar with iron rings. Benched
+    terraces with dry-laid stone retaining walls. Fracture flags snapping in the wind
+    on ridgeline stakes. Ventilation collars with louvered shutters and canvas
+    windsocks on upper slope. Capstan and hoist rigging near headframe. Lamproom and
+    tool house offset. Switchback trail approaching from valley below. Late afternoon
+    copper-gold light, long shadows. Dust halos in air. Fantasy medieval mining
+    operation. Dangerous industrial atmosphere. No people in immediate view.
+
+  negative_prompt: |
+    text, watermark, signature, artist name, UI elements, cartoon, anime, 3D render,
+    CGI, neon colors, modern elements, photorealistic, sci-fi, contemporary mining
+    equipment, green vegetation, pristine new construction, safe comfortable atmosphere
+
+  references:
+    - source: "locations/blackvein-lode/overview.md"
+      anchor: "timber headframe over a stone-banded shaft collar, wind-tossed ventilation collars"
+    - source: "locations/blackvein-lode/description.md"
+      anchor: "clustered surface yard around the main shaft (headframe, hoist/capstan, tipple, lamproom)"
+    - source: "ch05-the-weight-of-the-world/chapter.visual-plan.yaml"
+      anchor: "Stone-deep gray, timber-brown supports, lamplight gold against darkness"
+
+zones:
+  - name: "Underground Breakthrough"
+    slug: "blackvein-lode-breakthrough"
+    title: "The Breakthrough"
+    image_type: "zone"
+    zone_type: "threshold"
+    category: "interior"
+
+    scene_mood: "cathartic"
+    mood_rationale: |
+      The breakthrough moment—when the rescue tunnel finally reaches the trapped
+      miners—is release after unbearable tension. The first light entering the
+      refuge void, the first sound of living voices.
+
+    visual_description: |
+      A narrow rescue tunnel breaks through into a refuge void. Lamplight from the
+      rescue side spills through the opening, catching dust and illuminating the
+      first glimpse of the trapped space beyond. Timber cribbing lines the rescue
+      tunnel, fresh-cut and pale against the dark rock. The breakthrough hole is
+      irregular, just large enough for a person. On the rescue side, tools and
+      debris. Through the opening, the glint of frightened eyes in the lantern light.
+
+    composition_notes: |
+      Shot from the rescue tunnel looking through the breakthrough hole. The opening
+      as focal point, framed by timber cribbing. Light spilling through into darkness.
+      The promise of the void beyond.
+
+    narrative_significance: |
+      The culmination of methodical rescue work—listening to the mountain, setting
+      proper cribbing, controlled advance. The moment expertise paid off in lives.
+
+    symbolic_elements:
+      - "Breakthrough hole (salvation achieved)"
+      - "Light entering darkness (hope breaking through)"
+      - "Fresh cribbing (craft protecting life)"
+      - "Eyes beyond (the rescued waiting)"
+
+    location_within: "Deep gallery, rescue tunnel terminus"
+    time_of_day: "underground, timeless"
+    weather: "underground, still air"
+
+    required_elements:
+      - "Rescue tunnel with fresh timber cribbing"
+      - "Irregular breakthrough hole"
+      - "Lamplight spilling through"
+      - "Dark refuge void beyond"
+      - "Dust caught in light"
+      - "Rescue tools scattered"
+
+    lighting:
+      primary_source: "rescue lanterns"
+      quality: "sharp beam into darkness"
+      direction: "from rescue side through opening"
+      color_temperature: "warm gold against black"
+      shadow_depth: "extreme contrast"
+      atmospheric: "dust motes in beam"
+
+    palette:
+      dominant:
+        - "black void"
+        - "lantern gold"
+        - "pale fresh timber"
+      accent:
+        - "rock grey"
+        - "iron tool dark"
+      avoid:
+        - "daylight"
+        - "bright colors"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Underground rescue tunnel
+      breaking through into a refuge void. Narrow tunnel lined with fresh pale
+      timber cribbing. Irregular breakthrough hole at tunnel end. Lamplight spilling
+      through the opening into darkness beyond. Dust motes caught in the beam.
+      Rescue tools scattered in foreground. Glimpse of dark space beyond the opening.
+      Extreme contrast between lit tunnel and dark void. Medieval fantasy mining.
+      Cathartic moment of breakthrough. Underground, no natural light.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary mining equipment, daylight, bright colors
+
+    references:
+      - source: "locations/blackvein-lode/description.md"
+        anchor: "air pockets (refuge voids) identified and preserved during breakthrough"
+      - source: "ch05-the-weight-of-the-world/chapter.visual-plan.yaml"
+        anchor: "dusty emergence"
+
+  - name: "Command Staging Bench"
+    slug: "blackvein-lode-command-bench"
+    title: "Command Staging Bench"
+    image_type: "zone"
+    zone_type: "heart"
+    category: "exterior"
+
+    scene_mood: "tense"
+    mood_rationale: |
+      The command bench is where rescue decisions are made—tactical planning under
+      impossible pressure, status slates updated, lives weighed against risk.
+      The tension never fully releases.
+
+    visual_description: |
+      A wind-sheltered staging area on the upper bench, canvas windbreaks stretched
+      on poles creating a tactical alcove. A rough table made from planks on
+      sawhorses holds maps, status slates, and chalk. Message boards show the
+      half-hour updates. A lantern line marks the perimeter. The main workfront
+      is visible downslope, the headframe and collar busy with activity. Behind,
+      the mountain rises. The "quiet zone" placard marks where workfront silence
+      is enforced.
+
+    composition_notes: |
+      Medium shot of the command bench interior, showing the tactical setup.
+      Canvas windbreaks frame the space. Maps and slates as functional detail.
+      Workfront visible through gaps in the canvas.
+
+    narrative_significance: |
+      Where Veyra commanded the rescue operation, where decisions were made that
+      balanced urgency against safety, where the Company learned to coordinate
+      complex operations.
+
+    symbolic_elements:
+      - "Canvas shelter (fragile protection in crisis)"
+      - "Status slates (lives tracked in chalk)"
+      - "Quiet zone placard (discipline over panic)"
+      - "Visible workfront (command connected to action)"
+
+    location_within: "Upper bench, segregated from workfront"
+    time_of_day: "afternoon"
+    weather: "windy, canvas straining"
+
+    required_elements:
+      - "Canvas windbreaks on poles"
+      - "Plank table with maps and slates"
+      - "Message boards with updates"
+      - "Lantern line at perimeter"
+      - "Quiet zone placard"
+      - "Headframe visible downslope"
+
+    lighting:
+      primary_source: "filtered daylight through canvas"
+      quality: "diffused, working light"
+      direction: "ambient through fabric"
+      color_temperature: "neutral to warm"
+      shadow_depth: "soft under canvas"
+      atmospheric: "functional command space"
+
+    palette:
+      dominant:
+        - "canvas tan"
+        - "plank brown"
+        - "chalk white on slates"
+      accent:
+        - "lantern warm"
+        - "grey mountain behind"
+      avoid:
+        - "bright colors"
+        - "festive atmosphere"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Tactical command bench at a
+      mountain mine rescue. Canvas windbreaks stretched on poles creating sheltered
+      alcove. Rough plank table with maps, chalk slates, tactical notes. Message
+      boards with time-stamped updates. Lantern line marking perimeter. "Quiet zone"
+      placard visible. Headframe and workfront visible through canvas gaps downslope.
+      Mountain rises behind. Afternoon light diffused through canvas. Tense working
+      atmosphere. Fantasy medieval rescue command. No people in immediate view.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary equipment, relaxed atmosphere, bright festive
+      colors
+
+    references:
+      - source: "locations/blackvein-lode/description.md"
+        anchor: "command bench ~20x30 ft wind-sheltered; message boards and time-slates"
+      - source: "locations/blackvein-lode/inhabitants.md"
+        anchor: "Command Bench: Commander/Veyra + adjutant, message runner, medic"
+
+  - name: "Family Vigil Grounds at Night"
+    slug: "blackvein-lode-family-vigil"
+    title: "The Night Vigil"
+    image_type: "temporal"
+    category: "exterior"
+
+    base_zone: "family-vigil-grounds"
+    temporal_state: "night, vigil fires burning"
+    mood_shift_from_base: |
+      The daytime vigil grounds hold anxious hope in harsh light. At night, the
+      fires become islands of warmth against cold mountain darkness, the waiting
+      made intimate and eternal.
+    activity_at_this_time: |
+      Families cluster around fire circles, some sleeping, some keeping watch.
+      Children wrapped in blankets against parents. Elders tending flames.
+      The update board visible only by lantern light.
+
+    scene_mood: "somber"
+    mood_rationale: |
+      Night vigil is the hardest time—when hope thins and fear grows. The fires
+      are both comfort and reminder that somewhere below, trapped miners have
+      no light at all.
+
+    visual_description: |
+      The vigil grounds at night, fire circles casting warm pools in the mountain
+      darkness. Family groups huddle near flames, wrapped in cloaks and blankets.
+      The rope stanchions marking the boundary with the workfront are barely visible,
+      lanterns on posts creating dim corridors. The message board is a pale rectangle
+      in the darkness. The headframe is a skeletal silhouette against stars. The
+      mountain above is pure black. Smoke rises into cold air.
+
+    composition_notes: |
+      Wide shot of the vigil grounds at night, fire circles as focal points.
+      Human figures as silhouettes against flames. The headframe silhouette
+      for context. Stars visible above the mountain mass.
+
+    narrative_significance: |
+      The cost of mining disaster measured in sleepless families. The human
+      stakes that drive the rescue beyond mere professionalism.
+
+    symbolic_elements:
+      - "Fire circles (hope against darkness)"
+      - "Huddles figures (community in crisis)"
+      - "Headframe silhouette (the crisis source)"
+      - "Stars above (indifferent eternity)"
+
+    location_within: "Vigil grounds, night"
+    time_of_day: "night, late hours"
+    weather: "cold, clear"
+
+    required_elements:
+      - "Fire circles with gathered families"
+      - "Figures wrapped in blankets"
+      - "Rope stanchions dimly visible"
+      - "Message board in lantern light"
+      - "Headframe silhouette"
+      - "Stars above mountain"
+      - "Smoke rising"
+
+    lighting:
+      primary_source: "vigil fires"
+      quality: "warm pools in cold darkness"
+      direction: "from below, fire uplighting"
+      color_temperature: "warm fire against cold night"
+      shadow_depth: "extreme, fire-lit faces"
+      atmospheric: "smoke and cold breath"
+
+    palette:
+      dominant:
+        - "night black"
+        - "fire orange"
+        - "starfield cold white"
+      accent:
+        - "blanket earthy tones"
+        - "smoke grey"
+      avoid:
+        - "daylight"
+        - "bright artificial light"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Mountain mine vigil grounds at
+      night. Fire circles casting warm pools in darkness. Family groups huddled
+      around flames, wrapped in cloaks and blankets. Silhouettes against fire glow.
+      Rope stanchions barely visible in darkness. Lanterns on posts creating dim
+      corridors. Message board pale rectangle. Timber headframe skeletal silhouette
+      against stars. Mountain mass pure black above. Smoke rising into cold air.
+      Somber atmosphere, the wait continuing. Fantasy medieval mining crisis.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, daylight, cheerful atmosphere, contemporary elements
+
+    references:
+      - source: "locations/blackvein-lode/description.md"
+        anchor: "Vigil grounds ~40x50 ft with fire circles"
+      - source: "locations/blackvein-lode/inhabitants.md"
+        anchor: "Family Vigil Grounds: Spouses, children, elders; fire circles, update board"
+
+  - name: "Family Vigil Grounds"
+    slug: "blackvein-lode-family-vigil-grounds"
+    title: "Family Vigil Grounds"
+    image_type: "zone"
+    zone_type: "commons"
+    category: "exterior"
+
+    scene_mood: "somber"
+    mood_rationale: |
+      The vigil grounds hold those who can only wait—wives, children, elders
+      with no power to help, only hope. The mood is heavy with helplessness
+      and desperate faith.
+
+    visual_description: |
+      A cleared area segregated from the workfront by rope stanchions and lantern
+      posts. Fire circles are laid but not all lit during the day. Families cluster
+      in small groups, some standing, some sitting on rough benches. The message
+      board displays the latest update in chalk. The rope boundary is clear—beyond
+      it, the workfront continues, the headframe visible, the sounds of rescue
+      filtered across the divide. Shelter lines with canvas offer some protection
+      from wind.
+
+    composition_notes: |
+      Medium-wide shot showing the vigil area as a distinct zone. Rope stanchions
+      clearly marking the boundary. Families as human scale. The workfront visible
+      beyond as context.
+
+    narrative_significance: |
+      Where the Company's work gains its human weight—the families whose hopes
+      rest on the rescue. The segregation protects the workfront but also creates
+      the helpless distance of those who wait.
+
+    symbolic_elements:
+      - "Rope boundary (helplessness contained)"
+      - "Message board (hope or dread in chalk)"
+      - "Unlit fire circles (waiting for night)"
+      - "Visible workfront (action tantalizingly close)"
+
+    location_within: "Segregated area below command bench"
+    time_of_day: "afternoon"
+    weather: "windy, overcast"
+
+    required_elements:
+      - "Rope stanchions with lantern posts"
+      - "Fire circles prepared"
+      - "Families in small groups"
+      - "Message board with chalk update"
+      - "Canvas shelter lines"
+      - "Workfront visible beyond boundary"
+
+    lighting:
+      primary_source: "overcast daylight"
+      quality: "flat, grey"
+      direction: "diffused"
+      color_temperature: "cool neutral"
+      shadow_depth: "minimal"
+      atmospheric: "heavy, waiting"
+
+    palette:
+      dominant:
+        - "grey overcast"
+        - "earth brown ground"
+        - "canvas tan"
+      accent:
+        - "rope brown"
+        - "chalk white on board"
+      avoid:
+        - "cheerful colors"
+        - "sunny atmosphere"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Mining vigil grounds for
+      families during rescue crisis. Rope stanchions with lantern posts marking
+      boundary. Fire circles prepared but unlit. Small family groups clustered,
+      some standing, some on rough benches. Message board with chalk updates.
+      Canvas shelter lines for wind protection. Workfront and headframe visible
+      beyond the rope boundary. Overcast afternoon, flat grey light. Heavy
+      waiting atmosphere. Fantasy medieval mining disaster. A few figures
+      scattered in groups.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, cheerful atmosphere, sunny day, contemporary elements
+
+    references:
+      - source: "locations/blackvein-lode/inhabitants.md"
+        anchor: "Family Vigil Grounds (Segregated): Spouses, children, elders"
+      - source: "locations/blackvein-lode/description.md"
+        anchor: "segregated corridor to family vigil area bounded by rope lines and lantern posts"
+
+  - name: "The Fracture Flag"
+    slug: "blackvein-lode-fracture-flag"
+    title: "The Fracture Flag"
+    image_type: "zone"
+    zone_type: "perimeter"
+    category: "exterior"
+
+    scene_mood: "ominous"
+    mood_rationale: |
+      The fracture flags mark where the mountain's stress becomes visible—painted
+      stakes and cloth snapping in the wind, each one a warning that the ground
+      beneath is uncertain.
+
+    visual_description: |
+      A painted wooden stake driven into rock-strewn ground, its white flag
+      snapping in the mountain wind. Chalk marks on nearby stone indicate fracture
+      direction. Other flags are visible along the ridgeline, a network of warnings.
+      The ground shows subtle cracks, the kind that shift centimeters when the
+      mountain settles. The headframe is visible below, the slope falling away.
+      This is the territory where confidence becomes foolishness.
+
+    composition_notes: |
+      Close-medium shot of a single fracture flag as hero object, with the
+      network of other flags visible along the ridgeline. The stake and flag
+      in foreground, the dangerous terrain and distant headframe for context.
+
+    narrative_significance: |
+      The fracture flags represent expertise made visible—the mapping of danger
+      that allows methodical work. Each flag was placed by someone who knew
+      what they were looking at.
+
+    symbolic_elements:
+      - "White flag (surrender to geology)"
+      - "Chalk marks (reading the stone)"
+      - "Network of warnings (danger mapped)"
+      - "Wind snap (restless instability)"
+
+    location_within: "Ridgeline above mine workings"
+    time_of_day: "midday"
+    weather: "windy, partly cloudy"
+
+    required_elements:
+      - "Painted wooden stake with white cloth flag"
+      - "Chalk marks on nearby stone"
+      - "Visible cracks in ground"
+      - "Other flags on ridgeline"
+      - "Headframe visible below"
+      - "Rocky, dangerous terrain"
+
+    lighting:
+      primary_source: "high midday sun"
+      quality: "harsh, contrasty"
+      direction: "overhead"
+      color_temperature: "neutral to cool"
+      shadow_depth: "sharp, minimal"
+      atmospheric: "wind-swept clarity"
+
+    palette:
+      dominant:
+        - "grey rock"
+        - "white flag cloth"
+        - "earth brown stake"
+      accent:
+        - "chalk white marks"
+        - "sky blue between clouds"
+      avoid:
+        - "warm comfortable tones"
+        - "safe atmosphere"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Close-medium shot of a
+      fracture warning flag at a mountain mine. Painted wooden stake driven into
+      rocky ground, white cloth flag snapping in wind. Chalk marks on nearby stone
+      indicating fracture direction. Subtle cracks visible in ground. Network of
+      other flags visible along ridgeline. Timber headframe visible downslope.
+      Harsh midday light, wind-swept atmosphere. Ominous warning, dangerous terrain.
+      Fantasy medieval mining safety. No people.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, safe comfortable atmosphere, contemporary flagging
+
+    references:
+      - source: "locations/blackvein-lode/description.md"
+        anchor: "Stress-flag markers (painted stakes and cloths) placed by the foreman track visible fracture zones"
+      - source: "locations/blackvein-lode/overview.md"
+        anchor: "fracture flags mapping stress"
+
+  - name: "Grimjaw Listening to the Mountain"
+    slug: "blackvein-lode-grimjaw-listening"
+    title: "Listening to the Mountain"
+    image_type: "beat"
+    category: "exterior"
+
+    source_chapter: "ch05-the-weight-of-the-world"
+    source_scene: "scn-05-04"
+    what_happens: |
+      Grimjaw places his massive hand against the rock face at the mine entrance
+      and stands perfectly still, listening. Then announces: "She's angry." His
+      expertise made visible in the simple act of touch.
+
+    zone: "mine-entrance"
+
+    depicts_characters:
+      - slug: "grimjaw-ironbeard"
+        role: "Hand on stone, eyes closed, listening"
+      - generic_count: 3
+        description: "Onlookers watching in hushed silence"
+
+    character_states:
+      grimjaw-ironbeard: "Still, concentrated, communing with stone"
+
+    character_sources:
+      - slug: "grimjaw-ironbeard"
+        file: "characters/grimjaw-ironbeard/profile.md"
+        anchor: "iron-grey beard, stone-deep eyes"
+
+    character_portrait_refs:
+      - slug: "grimjaw-ironbeard"
+        portrait: "characters/grimjaw-ironbeard/images/portrait.png"
+
+    scene_mood: "reverent"
+    mood_rationale: |
+      The moment is sacred—a master craftsman communing with his element. The
+      crowd falls silent, recognizing expertise beyond their understanding.
+      Grimjaw isn't performing; he's praying.
+
+    visual_description: |
+      Grimjaw Ironbeard stands at the mine entrance, his massive weathered hand
+      flat against the stone wall, eyes closed. His iron-grey beard bristles in
+      the mountain wind. His stance is rooted, still as the stone he touches.
+      Behind him, a small crowd watches in hushed silence—miners, Company members,
+      all waiting for his diagnosis. The timber supports of the entrance frame
+      the scene, dust still visible in the air. The moment stretches.
+
+    composition_notes: |
+      Medium shot focusing on Grimjaw and his contact with the stone. Profile
+      view showing the hand against rock, the concentration in his posture. The
+      crowd as softer background, the mine entrance framing the scene.
+
+    narrative_significance: |
+      The visual distillation of Grimjaw's philosophy—listening over forcing,
+      expertise through patience. His hand on stone is the chapter's thesis
+      made physical.
+
+    symbolic_elements:
+      - "Hand on stone (communion, not conquest)"
+      - "Closed eyes (listening, not looking)"
+      - "Hushed crowd (expertise recognized)"
+      - "Dust in air (danger still present)"
+
+    location_within: "Mine entrance"
+    time_of_day: "afternoon"
+    weather: "clear, windy"
+
+    required_elements:
+      - "Grimjaw with hand flat on stone wall"
+      - "Eyes closed, absolute stillness"
+      - "Iron-grey beard, weathered dwarf features"
+      - "Timber entrance supports"
+      - "Crowd watching in silence behind"
+      - "Dust in air"
+
+    lighting:
+      primary_source: "afternoon sun"
+      quality: "dramatic, raking light"
+      direction: "from side, highlighting hand on stone"
+      color_temperature: "warm gold"
+      shadow_depth: "strong contrast"
+      atmospheric: "dust motes visible"
+
+    palette:
+      dominant:
+        - "stone grey"
+        - "dwarf weathered skin"
+        - "iron-grey beard"
+      accent:
+        - "timber brown entrance"
+        - "gold sunlight"
+      avoid:
+        - "action poses"
+        - "dramatic magic"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Dwarven master engineer
+      placing his hand against stone at a mine entrance. Iron-grey beard, weathered
+      face, eyes closed in concentration. Massive hand flat against dark rock wall.
+      Absolute stillness in posture. Timber mine entrance supports framing scene.
+      Small crowd watching in hushed silence behind. Dust visible in afternoon
+      sunlight. Raking light from side highlighting the communion between dwarf
+      and stone. Fantasy medieval mining. Reverent moment of expertise.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, magic effects, glowing hands, action pose, young dwarf
+
+    references:
+      - source: "ch05-the-weight-of-the-world/chapter.visual-plan.yaml"
+        scene_id: "scn-05-04"
+        anchor: "placed one massive hand against the rock face and stood perfectly still"
+      - source: "ch05-the-weight-of-the-world/chapter.visual-plan.yaml"
+        anchor: "'She's angry,' he announced"
+
+  - name: "Main Minehead and Headframe"
+    slug: "blackvein-lode-main-minehead"
+    title: "The Headframe"
+    image_type: "zone"
+    zone_type: "heart"
+    category: "exterior"
+
+    scene_mood: "ominous"
+    mood_rationale: |
+      The headframe is the gateway to the mountain's depths—the structure that
+      lowers workers into darkness and raises ore (or survivors). During crisis,
+      it becomes the focal point of desperate hope.
+
+    visual_description: |
+      The timber headframe rises 30 feet against the mountain sky, its double-
+      braced bents creating a skeletal lattice of oak and fir. Iron sheaves
+      at the apex hold thick hemp ropes running to the capstan below. The
+      shaft collar is ringed in stone with iron banding, the dark opening
+      exhaling cool air. The bell-code board hangs at the collar edge. The
+      tipple platform extends to one side, ore sleds waiting. The lamproom and
+      tool house huddle nearby. Post-collapse barricades block the approaches
+      to compromised areas.
+
+    composition_notes: |
+      Medium-wide shot with the headframe as central subject. The skeletal
+      structure against sky creates strong graphic element. The shaft collar
+      as the dark focal point. Support buildings for context.
+
+    narrative_significance: |
+      The headframe is the spine of the operation—everything passes through it.
+      During rescue, it becomes the umbilical cord to the trapped miners.
+
+    symbolic_elements:
+      - "Skeletal structure (bones of the operation)"
+      - "Dark shaft opening (gateway to danger)"
+      - "Bell-code board (communication across worlds)"
+      - "Thick ropes (lifelines literal)"
+
+    location_within: "Main minehead yard"
+    time_of_day: "midday"
+    weather: "overcast"
+
+    required_elements:
+      - "Double-braced timber headframe ~30 ft"
+      - "Iron sheaves with hemp ropes"
+      - "Stone-banded shaft collar"
+      - "Bell-code board at collar"
+      - "Capstan and hoist rigging"
+      - "Tipple platform with ore sleds"
+      - "Lamproom and tool house nearby"
+      - "Post-collapse barricades"
+
+    lighting:
+      primary_source: "overcast daylight"
+      quality: "flat, even"
+      direction: "diffused"
+      color_temperature: "cool neutral"
+      shadow_depth: "minimal"
+      atmospheric: "grey working light"
+
+    palette:
+      dominant:
+        - "timber brown"
+        - "stone grey collar"
+        - "iron black fittings"
+      accent:
+        - "hemp rope tan"
+        - "barrier red/white"
+      avoid:
+        - "bright colors"
+        - "sunny cheerfulness"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Timber mine headframe rising
+      ~30 feet against overcast mountain sky. Double-braced bents of oak and fir
+      creating skeletal structure. Iron sheaves at apex with thick hemp ropes.
+      Stone-banded shaft collar with iron rings, dark opening visible. Bell-code
+      board at collar edge. Capstan and hoist rigging below. Tipple platform with
+      ore sleds. Lamproom and tool house nearby. Post-collapse barricades visible.
+      Overcast light, industrial working atmosphere. Fantasy medieval mining
+      operation. No people.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary mining equipment, safe comfortable atmosphere,
+      sunny bright day
+
+    references:
+      - source: "locations/blackvein-lode/description.md"
+        anchor: "Headframe height ~28–32 ft; shaft collar 8–10 ft diameter"
+      - source: "locations/blackvein-lode/description.md"
+        anchor: "Double-braced timber bents on stone footings; iron-banded collar curb"
+
+  - name: "Mine Entrance"
+    slug: "blackvein-lode-mine-entrance"
+    title: "The Mine Entrance"
+    image_type: "zone"
+    zone_type: "threshold"
+    category: "exterior"
+
+    scene_mood: "ominous"
+    mood_rationale: |
+      The mine entrance is the literal threshold between surface world and
+      underground danger—the point of no return where daylight ends and
+      the mountain's domain begins.
+
+    visual_description: |
+      The main adit entrance into the mountain, timber sets framing the opening
+      like the ribs of a beast. The stone walls transition from natural outcrop
+      to dressed supports. Rail tracks run into the darkness, the gleam of iron
+      fading quickly. Oil lamps bracket the entrance, their glow weak against
+      the mountain's dark. Post-collapse, the entrance shows fresh cribbing,
+      stress fractures chalked and flagged. The air visibly moves—cool draft
+      exhaling from the depths.
+
+    composition_notes: |
+      Shot from outside looking into the entrance. The timber framing creates
+      a natural vignette. The darkness swallowing the rails as they enter.
+      Daylight in the foreground, underground black beyond.
+
+    narrative_significance: |
+      Where miners go down and (sometimes) come back up. The threshold Grimjaw
+      examined, placing his hand on stone to listen. The place where the Company
+      learned the mountain demands respect.
+
+    symbolic_elements:
+      - "Timber ribs (the mountain's cage)"
+      - "Rails into darkness (the journey down)"
+      - "Draft exhaling (the mountain breathing)"
+      - "Chalked warnings (danger acknowledged)"
+
+    location_within: "Main adit entrance"
+    time_of_day: "afternoon"
+    weather: "clear"
+
+    required_elements:
+      - "Timber-framed adit entrance"
+      - "Rail tracks disappearing into dark"
+      - "Oil lamp brackets at entrance"
+      - "Fresh cribbing post-collapse"
+      - "Chalked stress marks"
+      - "Cool draft visible (dust movement)"
+      - "Transition from outcrop to timbered supports"
+
+    lighting:
+      primary_source: "daylight from outside"
+      quality: "transition from bright to dark"
+      direction: "behind viewer"
+      color_temperature: "warm outside, cool within"
+      shadow_depth: "extreme at entrance depth"
+      atmospheric: "dust in draft"
+
+    palette:
+      dominant:
+        - "timber brown"
+        - "rock grey-black"
+        - "darkness beyond"
+      accent:
+        - "rail iron gleam"
+        - "lamp gold"
+        - "chalk white"
+      avoid:
+        - "bright interior"
+        - "welcoming warmth"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Mine entrance looking into
+      mountain. Timber sets framing the opening like ribs. Natural rock outcrop
+      transitioning to dressed supports. Rail tracks running into darkness, iron
+      gleam fading. Oil lamp brackets at entrance sides. Fresh cribbing from
+      post-collapse work. Chalk marks on stress fractures. Cool draft visible
+      in dust movement. Daylight behind viewer, underground darkness beyond.
+      The threshold between worlds. Fantasy medieval mining. No people.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary mining equipment, bright lit interior, safe
+      inviting entrance
+
+    references:
+      - source: "ch05-the-weight-of-the-world/chapter.visual-plan.yaml"
+        scene_id: "scn-05-04"
+        anchor: "Grimjaw approaching the mine like a doctor, hand on stone"
+      - source: "locations/blackvein-lode/description.md"
+        anchor: "Main drift follows ore strike with crosscuts"
+
+  - name: "Mine Head"
+    slug: "blackvein-lode-mine-head"
+    title: "The Mine Head Crisis"
+    image_type: "inhabited"
+    category: "exterior"
+
+    zone: "main-minehead"
+    activity: "Rescue crisis command and family chaos"
+
+    depicts_characters:
+      - slug: "veyra-thornwake"
+        role: "Standing at command position, directing operations"
+      - generic_count: 8
+        description: "Miners, families, Company members in controlled chaos"
+
+    character_states:
+      veyra-thornwake: "Commanding, calm amid chaos, burn scars visible"
+
+    character_sources:
+      - slug: "veyra-thornwake"
+        file: "characters/veyra-thornwake/profile.md"
+        anchor: "burn scar on left face"
+
+    character_portrait_refs:
+      - slug: "veyra-thornwake"
+        portrait: "characters/veyra-thornwake/images/portrait.png"
+
+    scene_mood: "kinetic"
+    mood_rationale: |
+      The mine head during active crisis is controlled chaos—families arriving
+      demanding information, workers coordinating rescue, the mountain rumbling
+      with aftershocks. Energy and fear in equal measure.
+
+    visual_description: |
+      The minehead yard in crisis mode. Veyra stands at a rough command table
+      near the headframe, maps spread, giving directions. Around her, chaos:
+      families cluster near the vigil rope line, workers move equipment, dust
+      rises from every footfall. The headframe towers behind. A messenger on
+      a lathered horse has just arrived. The tipple is abandoned, all attention
+      on rescue. Canvas windbreaks snap in the mountain wind.
+
+    composition_notes: |
+      Wide shot capturing the controlled chaos. Veyra as the calm center. The
+      headframe as context. Movement and activity throughout, but with clear
+      command structure visible.
+
+    narrative_significance: |
+      The Company's first major test—coordinating a complex rescue with limited
+      expertise, recognizing their limitations, sending for Grimjaw.
+
+    symbolic_elements:
+      - "Veyra's stillness in chaos (command presence)"
+      - "Lathered horse (urgent communication)"
+      - "Vigil rope line (boundary between hope and action)"
+      - "Abandoned tipple (normal operations suspended)"
+
+    location_within: "Minehead yard, crisis operations"
+    time_of_day: "midday"
+    weather: "windy, dust rising"
+
+    required_elements:
+      - "Veyra at command table with maps"
+      - "Headframe in background"
+      - "Family groups at rope line"
+      - "Workers moving equipment"
+      - "Lathered messenger horse"
+      - "Dust in air"
+      - "Canvas windbreaks"
+
+    lighting:
+      primary_source: "midday sun"
+      quality: "harsh, dusty"
+      direction: "overhead"
+      color_temperature: "neutral to warm"
+      shadow_depth: "sharp but dust-diffused"
+      atmospheric: "dust halos, chaos energy"
+
+    palette:
+      dominant:
+        - "dust brown-grey"
+        - "timber headframe"
+        - "earth tones"
+      accent:
+        - "Veyra's dark mohawk"
+        - "horse sweat-foam"
+      avoid:
+        - "calm peaceful tones"
+        - "organized stillness"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Mine crisis scene at minehead
+      yard. Half-elf woman commander with burn scar on left face, dark mohawk with
+      braids, standing at rough command table with maps. Timber headframe towering
+      behind. Family groups at rope line perimeter. Workers moving equipment. Dust
+      rising from activity. Lathered messenger horse just arrived. Canvas windbreaks
+      snapping. Controlled chaos, urgent energy. Midday harsh light. Fantasy
+      medieval mining rescue. Multiple figures in motion.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary equipment, calm peaceful atmosphere, empty scene
+
+    references:
+      - source: "ch05-the-weight-of-the-world/chapter.visual-plan.yaml"
+        scene_id: "scn-05-01"
+        anchor: "Mine Head - Crisis Camp: Grieving families clustered, Command table with Veyra"
+      - source: "ch05-the-weight-of-the-world/chapter.visual-plan.yaml"
+        anchor: "A low rumble echoed from deep within the earth—an aftershock"
+
+  - name: "Pre-Dawn Frost"
+    slug: "blackvein-lode-predawn"
+    title: "Pre-Dawn Frost"
+    image_type: "temporal"
+    category: "exterior"
+
+    base_zone: "main-minehead"
+    temporal_state: "pre-dawn, frost on surfaces"
+    mood_shift_from_base: |
+      The midday chaos of crisis gives way to the cold stillness before dawn.
+      Frost silvers every surface. The vigil fires have burned low. A few
+      sentries keep watch. The mountain is quiet—waiting.
+    activity_at_this_time: |
+      Minimal activity. Sentries monitor vent flows and listen for stone sounds.
+      Vigil families sleep around dying fires. Rescue work pauses for the
+      coldest hours.
+
+    scene_mood: "somber"
+    mood_rationale: |
+      Pre-dawn at a rescue site is the hardest hour—hope thins, cold bites,
+      exhaustion weighs. The frost makes everything silver and ghostly, the
+      world held in frozen suspension.
+
+    visual_description: |
+      The minehead yard in pre-dawn darkness, frost silvering every surface.
+      The headframe is a dark skeleton against the first grey hint of dawn.
+      Vigil fires have burned to embers, their smoke rising straight in the
+      still air. Frost crystals edge the retaining walls, the rope lines, the
+      canvas windbreaks. A single lantern burns at the command bench. Windsocks
+      hang limp at the ventilation collars—the mountain holding its breath.
+
+    composition_notes: |
+      Wide shot in pre-dawn grey, the frost creating silver edges on dark
+      silhouettes. The headframe against the first light. Dying fires as warm
+      points in cold scene. Stillness and waiting.
+
+    narrative_significance: |
+      The hour before the breakthrough, when hope is thinnest and the rescue
+      seems impossible. The cold that makes the eventual success more meaningful.
+
+    symbolic_elements:
+      - "Frost on everything (time suspended)"
+      - "Dying fires (hope burning low)"
+      - "Still windsocks (mountain's held breath)"
+      - "First grey light (dawn coming, eventually)"
+
+    location_within: "Minehead yard, pre-dawn"
+    time_of_day: "pre-dawn, nautical twilight"
+    weather: "clear, frost"
+
+    required_elements:
+      - "Frost on surfaces"
+      - "Headframe dark silhouette"
+      - "Dying vigil fire embers"
+      - "Single lantern at command"
+      - "Limp windsocks"
+      - "First grey light on eastern horizon"
+      - "Still, cold atmosphere"
+
+    lighting:
+      primary_source: "ambient pre-dawn grey"
+      quality: "cold, flat, minimal"
+      direction: "diffused, eastern horizon hint"
+      color_temperature: "cold blue-grey"
+      shadow_depth: "minimal, everything flattened"
+      atmospheric: "frost-silver, held breath"
+
+    palette:
+      dominant:
+        - "grey pre-dawn"
+        - "frost silver"
+        - "ember orange"
+      accent:
+        - "lantern warm spot"
+        - "first light grey-blue"
+      avoid:
+        - "warm daylight"
+        - "activity colors"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Mountain mine at pre-dawn,
+      frost on every surface. Timber headframe dark silhouette against first grey
+      light. Vigil fires burned to glowing embers. Frost crystals on retaining
+      walls, ropes, canvas. Single lantern at command bench. Windsocks hanging
+      limp—no wind. Still, cold atmosphere. Fantasy medieval mining site in
+      frozen suspension. First hint of dawn on eastern horizon. Somber waiting.
+      No activity, minimal figures.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, daylight, warm colors, activity, cheerful atmosphere
+
+    references:
+      - source: "locations/blackvein-lode/description.md"
+        anchor: "Morning: Frost on timbers; windsocks slow"
+      - source: "locations/blackvein-lode/inhabitants.md"
+        anchor: "Night: Minimal lift cycles; sentry on vents and weather"
+
+  - name: "Lamproom, Tool House, Foreman's Office"
+    slug: "blackvein-lode-support-buildings"
+    title: "Support Buildings"
+    image_type: "zone"
+    zone_type: "works"
+    category: "exterior"
+
+    scene_mood: "quotidian"
+    mood_rationale: |
+      The support buildings represent the functional infrastructure of mining—
+      where lamps are issued, tools stored, shifts rostered. Mundane but essential,
+      the backbone of operations.
+
+    visual_description: |
+      Three small timber buildings clustered near the headframe. The lamproom
+      with its distinctive racks of oil lanterns visible through the window,
+      shielded flames waiting for issue. The tool house with iron implements
+      hanging on pegs, organized by function. The foreman's office with maps
+      on the walls, shift rosters posted, a desk with the roll book. All are
+      weathered timber with pitched roofs, functional rather than pretty.
+
+    composition_notes: |
+      Medium shot showing the three buildings in context with each other and
+      the headframe behind. Each building's purpose visible through doors or
+      windows. Working infrastructure.
+
+    narrative_significance: |
+      The unsexy reality of mining—the support functions that make extraction
+      possible. During crisis, the foreman's office becomes a secondary command
+      post with its fracture-flag charts.
+
+    symbolic_elements:
+      - "Organized tools (competence prepared)"
+      - "Lamp racks (light against darkness)"
+      - "Posted rosters (lives accounted)"
+      - "Fracture charts (danger mapped)"
+
+    location_within: "Near headframe, leeward side"
+    time_of_day: "afternoon"
+    weather: "overcast"
+
+    required_elements:
+      - "Three timber buildings"
+      - "Lamproom with visible lantern racks"
+      - "Tool house with iron implements"
+      - "Foreman's office with posted maps"
+      - "Headframe visible behind"
+      - "Weathered timber construction"
+
+    lighting:
+      primary_source: "overcast daylight"
+      quality: "flat, working"
+      direction: "diffused"
+      color_temperature: "neutral"
+      shadow_depth: "minimal"
+      atmospheric: "functional"
+
+    palette:
+      dominant:
+        - "weathered timber grey-brown"
+        - "iron tool black"
+        - "lantern brass"
+      accent:
+        - "map paper cream"
+        - "roster board white"
+      avoid:
+        - "decorative colors"
+        - "clean new construction"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Three support buildings at
+      a mountain mine. Lamproom with racks of oil lanterns visible through window.
+      Tool house with iron implements on pegs. Foreman's office with posted maps
+      and roster boards. All weathered timber with pitched roofs. Timber headframe
+      visible behind. Overcast afternoon, flat working light. Functional industrial
+      infrastructure. Fantasy medieval mining. No people.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, decorative architecture, clean new buildings, contemporary
+      equipment
+
+    references:
+      - source: "locations/blackvein-lode/inhabitants.md"
+        anchor: "Foreman's Office, Tool House, Lamproom: Maps, fracture-flag charts, lamp oil storage"
+      - source: "locations/blackvein-lode/description.md"
+        anchor: "lamproom and oil store offset leeward; safety board and bell codes mounted"
+
+  - name: "Surface Yards and Retaining Works"
+    slug: "blackvein-lode-surface-yards"
+    title: "Surface Yards"
+    image_type: "zone"
+    zone_type: "works"
+    category: "exterior"
+
+    scene_mood: "quotidian"
+    mood_rationale: |
+      The surface yards represent the functional infrastructure of mining—
+      benched terraces, retaining walls, cart tracks. The engineering that
+      makes the operation possible.
+
+    visual_description: |
+      Benched terraces cut into the mountain slope, held by dry-laid stone
+      retaining walls 3-5 feet thick. Iron strap-rail cart tracks run on
+      hardwood sleepers, connecting ore sleds to the tipple. Drainage weeps
+      through the walls, dark stains marking the channels. Timber skid paths
+      for heavy equipment. The terraces step down toward tailings slopes below.
+      Everything is functional, weathered, hard-used.
+
+    composition_notes: |
+      Wide shot showing the terraced layout, the retaining walls creating
+      horizontal lines across the slope. Cart tracks provide leading lines.
+      The industrial nature of the operation visible in the infrastructure.
+
+    narrative_significance: |
+      The physical foundation of the operation—without the retaining works,
+      the slope would collapse, the tracks would slide, nothing would function.
+      Infrastructure enabling extraction.
+
+    symbolic_elements:
+      - "Terraced benches (order imposed on slope)"
+      - "Retaining walls (holding ground)"
+      - "Cart tracks (extraction in motion)"
+      - "Drainage weeps (water managed)"
+
+    location_within: "Staging yard and benches"
+    time_of_day: "midday"
+    weather: "clear"
+
+    required_elements:
+      - "Benched terraces on slope"
+      - "Dry-laid stone retaining walls"
+      - "Iron strap-rail tracks on sleepers"
+      - "Ore sleds/carts"
+      - "Drainage stains at weeps"
+      - "Tailings slope below"
+      - "Headframe for context"
+
+    lighting:
+      primary_source: "midday sun"
+      quality: "harsh, industrial"
+      direction: "overhead"
+      color_temperature: "neutral"
+      shadow_depth: "sharp, short"
+      atmospheric: "dusty, working"
+
+    palette:
+      dominant:
+        - "grey stone walls"
+        - "iron rail dark"
+        - "earth brown ground"
+      accent:
+        - "drainage stain dark"
+        - "timber sleeper brown"
+      avoid:
+        - "green vegetation"
+        - "clean surfaces"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Mining surface yards on
+      mountain slope. Benched terraces held by dry-laid stone retaining walls.
+      Iron strap-rail cart tracks on hardwood sleepers. Ore sleds on tracks.
+      Drainage weeps through walls with dark stains. Tailings slope below.
+      Timber headframe in background. Midday harsh light, dusty atmosphere.
+      Functional industrial mining infrastructure. Fantasy medieval. No people.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary equipment, green vegetation, clean new
+      construction
+
+    references:
+      - source: "locations/blackvein-lode/description.md"
+        anchor: "Staging yard ~60x90 ft on benched terraces; dry-laid retaining walls 3–5 ft thick"
+      - source: "locations/blackvein-lode/description.md"
+        anchor: "cart track with iron strap rails over hardwood sleepers"
+
+  - name: "Deep Gallery (Collapse Zone)"
+    slug: "blackvein-lode-underground-collapse-zone"
+    title: "The Collapse Zone"
+    image_type: "zone"
+    zone_type: "pit"
+    category: "interior"
+
+    scene_mood: "oppressive"
+    mood_rationale: |
+      The collapse zone is the disaster made physical—the mountain's anger
+      expressed in splintered timber, fractured rock, and the weight of
+      thousands of tons pressing down. Claustrophobic, dangerous, final.
+
+    visual_description: |
+      A collapsed underground gallery, massive roof fall blocking the drift.
+      Splintered timber sets protrude from the rubble, their failure visible.
+      Fractured rock is stacked to the backs, filling the space that was
+      once open. Dust still hangs in the lamp-lit air. Post-collapse cribbing
+      shores the edges, preventing further fall. Through gaps in the rubble,
+      the glint of argent ore mocks the disaster. Barricade signs warn of
+      instability. The space presses in from all sides.
+
+    composition_notes: |
+      Medium shot looking at the collapse face. The rubble pile as subject,
+      splintered timber as detail. The compression of space visible. Post-
+      collapse cribbing showing rescue work underway.
+
+    narrative_significance: |
+      The disaster itself—what happened when the Guild team "over-cut and
+      under-braced," what Grimjaw was called to remediate, what trapped
+      twelve miners in refuge voids beyond.
+
+    symbolic_elements:
+      - "Splintered timber (failure of protection)"
+      - "Rubble pile (the mountain's revenge)"
+      - "Argent glint (treasure that cost lives)"
+      - "Post-collapse cribbing (methodical response)"
+
+    location_within: "Deep gallery, Level 3"
+    time_of_day: "underground, timeless"
+    weather: "underground, still"
+
+    required_elements:
+      - "Massive roof fall rubble"
+      - "Splintered timber sets protruding"
+      - "Fractured rock piled high"
+      - "Dust in lamp light"
+      - "Post-collapse cribbing at edges"
+      - "Barricade warning signs"
+      - "Argent ore glints in rubble"
+
+    lighting:
+      primary_source: "rescue lanterns"
+      quality: "harsh, limited"
+      direction: "from rescue side"
+      color_temperature: "warm lamp against cold rock"
+      shadow_depth: "extreme"
+      atmospheric: "dust-thick, close"
+
+    palette:
+      dominant:
+        - "rock grey-black"
+        - "timber brown"
+        - "shadow black"
+      accent:
+        - "lamp gold"
+        - "argent ore glint"
+        - "barricade warning colors"
+      avoid:
+        - "open space"
+        - "bright light"
+        - "safe atmosphere"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Underground mine collapse
+      zone. Massive roof fall filling the gallery. Splintered timber sets
+      protruding from rubble. Fractured rock piled high. Dust thick in lamp
+      light. Post-collapse cribbing shoring the edges. Barricade signs visible.
+      Argent ore glinting in the debris. Oppressive, claustrophobic atmosphere.
+      The mountain's anger made physical. Fantasy medieval mining disaster.
+      Underground, no natural light.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary equipment, open space, bright lighting, safe
+      atmosphere
+
+    references:
+      - source: "locations/blackvein-lode/description.md"
+        anchor: "deep gallery is barricaded; controlled cribbing and relief cuts installed"
+      - source: "locations/blackvein-lode/description.md"
+        anchor: "fracture 'laddering' visible where Guild team over-cut and under-braced"
+
+  - name: "Ridge Ventilation Collars"
+    slug: "blackvein-lode-vent-collars"
+    title: "Ridge Ventilation"
+    image_type: "zone"
+    zone_type: "perimeter"
+    category: "exterior"
+
+    scene_mood: "ominous"
+    mood_rationale: |
+      The ventilation collars on the ridgeline are the mountain's breath made
+      visible—the windsocks and louvers showing airflow, the sounds from below
+      audible to trained ears. Remote, wind-swept, essential.
+
+    visual_description: |
+      Two ventilation collars on the ridgeline above the main workings. Stone-
+      shored circular shafts 3-4 feet diameter, fitted with louvered shutters
+      and canvas windsocks. The windsocks strain in the mountain wind, showing
+      the upcast/downcast flow. The main minehead is visible far below. Fracture
+      flags dot the slope between. At the collars, a vent-check pair would
+      monitor flow, adjust louvers, listen for the "mountain talk" that signals
+      stress changes below.
+
+    composition_notes: |
+      Medium shot of the ventilation collars against sky. The windsocks as
+      movement in a static landscape. The descent to the minehead providing
+      scale and context.
+
+    narrative_significance: |
+      The ventilation system is the mine's lungs—without proper flow, miners
+      suffocate. During crisis, the collars become listening posts for changes
+      in the mountain's behavior.
+
+    symbolic_elements:
+      - "Windsocks straining (the mountain breathing)"
+      - "Louvered shutters (control over nature)"
+      - "Ridgeline position (danger monitored from above)"
+      - "View of minehead below (connection to operations)"
+
+    location_within: "Ridgeline above main workings"
+    time_of_day: "afternoon"
+    weather: "windy"
+
+    required_elements:
+      - "Two ventilation collar shafts"
+      - "Stone shoring around collars"
+      - "Louvered shutters"
+      - "Canvas windsocks straining"
+      - "Minehead visible below"
+      - "Fracture flags on slope"
+      - "Mountain peaks behind"
+
+    lighting:
+      primary_source: "afternoon sun"
+      quality: "bright, wind-clear"
+      direction: "from side"
+      color_temperature: "neutral to cool"
+      shadow_depth: "moderate"
+      atmospheric: "wind-swept clarity"
+
+    palette:
+      dominant:
+        - "grey stone collars"
+        - "canvas tan windsocks"
+        - "sky blue"
+      accent:
+        - "fracture flag white"
+        - "mountain grey"
+      avoid:
+        - "calm stillness"
+        - "warm tones"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Ventilation collars on
+      mountain ridgeline above a mine. Two stone-shored circular shafts with
+      louvered shutters. Canvas windsocks straining in wind, showing airflow.
+      Minehead visible far below on slope. Fracture flags on the terrain between.
+      Mountain peaks behind. Afternoon light, wind-swept atmosphere. The mountain's
+      breath made visible. Fantasy medieval mining infrastructure. No people.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary ventilation equipment, calm still air
+
+    references:
+      - source: "locations/blackvein-lode/description.md"
+        anchor: "Two vent collars 3–4 ft diameter; collars shored in stone with louvered shutters and canvas windsocks"
+      - source: "locations/blackvein-lode/description.md"
+        anchor: "Audible 'mountain talk' (subtle stone creak) more pronounced near upcast"
+
+  - name: "Ventilation Shafts and Collars"
+    slug: "blackvein-lode-ventilation-collars"
+    title: "Ventilation Control"
+    image_type: "zone"
+    zone_type: "works"
+    category: "interior"
+
+    scene_mood: "clandestine"
+    mood_rationale: |
+      The underground ventilation system is the hidden infrastructure that keeps
+      miners alive—brattices, air doors, bellows. Essential and unseen by most,
+      understood only by the experienced.
+
+    visual_description: |
+      An underground brattice junction where ventilation is controlled. Canvas
+      and timber brattices divide the drift, forcing air through controlled
+      paths. An air door with leather hinges controls flow between sections.
+      A cloth flag on a string shows air direction, moving gently. Candle flames
+      in the lamp lean with the current. In an alcove, emergency bellows wait
+      for stagnant conditions. Bell-pull lines run along the roof for signaling.
+
+    composition_notes: |
+      Medium shot of the brattice junction, showing the ventilation control
+      system. The moving flag and leaning flames demonstrate airflow. The
+      functional nature of the space visible.
+
+    narrative_significance: |
+      The ventilation system is life or death underground. During crisis, proper
+      ventilation allowed the rescue to proceed. Grimjaw's expertise included
+      managing these flows.
+
+    symbolic_elements:
+      - "Brattice barriers (control over invisible)"
+      - "Moving flag (life-sustaining flow)"
+      - "Leaning flames (air currents visible)"
+      - "Emergency bellows (backup for stagnation)"
+
+    location_within: "Underground drift junction"
+    time_of_day: "underground, timeless"
+    weather: "underground, controlled flow"
+
+    required_elements:
+      - "Canvas and timber brattices"
+      - "Air door with leather hinges"
+      - "Cloth direction flag moving"
+      - "Lamp flames leaning with current"
+      - "Emergency bellows in alcove"
+      - "Bell-pull signal lines"
+
+    lighting:
+      primary_source: "oil lamps on brackets"
+      quality: "dim, functional"
+      direction: "scattered points"
+      color_temperature: "warm lamp gold"
+      shadow_depth: "deep between lamps"
+      atmospheric: "slightly hazy, stale"
+
+    palette:
+      dominant:
+        - "canvas brattice tan"
+        - "timber brown"
+        - "rock grey"
+      accent:
+        - "lamp gold"
+        - "flag cloth movement"
+      avoid:
+        - "fresh outdoor air"
+        - "bright lighting"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Underground mine ventilation
+      junction. Canvas and timber brattices dividing the drift. Air door with
+      leather hinges. Cloth direction flag moving gently on string. Oil lamp
+      flames leaning with air current. Emergency bellows in alcove. Bell-pull
+      signal lines along roof. Dim lamp lighting, deep shadows. The invisible
+      made visible—air management underground. Fantasy medieval mining. No people.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, contemporary ventilation equipment, bright lighting,
+      outdoor atmosphere
+
+    references:
+      - source: "locations/blackvein-lode/description.md"
+        anchor: "Vent doors bratticed underground to force flow; hand-operated bellows available"
+      - source: "locations/blackvein-lode/description.md"
+        anchor: "soundings taken with candles and cloth flags"
+
+  - name: "Veyra's Recognition at the Threshold"
+    slug: "blackvein-lode-veyra-perspective"
+    title: "Recognition at the Threshold"
+    image_type: "perspective"
+    category: "exterior"
+
+    character: "veyra-thornwake"
+    zone: "mine-entrance"
+    perspective_description: |
+      Veyra at the mine entrance, watching Grimjaw work. Her recognition of
+      expertise beyond her own—the moment she understood the Company needed
+      more than courage, needed craft.
+
+    character_signature_element: "burn scar catching the light, command posture softened to learning"
+
+    depicts_characters:
+      - slug: "veyra-thornwake"
+        role: "Watching, learning, recognizing"
+      - slug: "grimjaw-ironbeard"
+        role: "Working at entrance, focus of attention"
+
+    character_states:
+      veyra-thornwake: "Humbled, observing, open to learning"
+      grimjaw-ironbeard: "Working, unaware of observation, focused"
+
+    character_sources:
+      - slug: "veyra-thornwake"
+        file: "characters/veyra-thornwake/profile.md"
+        anchor: "burn scar on left face"
+      - slug: "grimjaw-ironbeard"
+        file: "characters/grimjaw-ironbeard/profile.md"
+        anchor: "iron-grey beard, stone-deep eyes"
+
+    character_portrait_refs:
+      - slug: "veyra-thornwake"
+        portrait: "characters/veyra-thornwake/images/portrait.png"
+      - slug: "grimjaw-ironbeard"
+        portrait: "characters/grimjaw-ironbeard/images/portrait.png"
+
+    scene_mood: "reverent"
+    mood_rationale: |
+      This is a moment of recognition—Veyra understanding that true competence
+      looks like Grimjaw's patient expertise, not her own urgent courage. A
+      humbling that strengthens.
+
+    visual_description: |
+      From behind Veyra's shoulder, watching Grimjaw at the mine entrance. Her
+      burn scar visible on her left profile, her posture unusually still—watching,
+      not commanding. Grimjaw works at the entrance ahead, checking supports,
+      reading the stone. The mountain frames them both. Veyra's expression is
+      not defeat but recognition—seeing what the Company needs to become.
+
+    composition_notes: |
+      Over-the-shoulder shot from behind Veyra, her profile visible. Grimjaw as
+      the subject of her attention. The relationship between commander and
+      craftsman visible in the framing.
+
+    narrative_significance: |
+      The moment Veyra understood the Company's limitations—and the solution.
+      Recognizing expertise worth following, worth recruiting.
+
+    symbolic_elements:
+      - "Veyra's stillness (command paused to learn)"
+      - "Grimjaw working (expertise in action)"
+      - "Mountain framing both (the teacher above all)"
+      - "Over-shoulder perspective (seeing through her eyes)"
+
+    location_within: "Mine entrance, observation position"
+    time_of_day: "afternoon"
+    weather: "clear"
+
+    required_elements:
+      - "Veyra from behind, profile visible, burn scar"
+      - "Grimjaw at entrance ahead, working"
+      - "Mountain framing scene"
+      - "Command posture softened"
+      - "Recognition in expression"
+
+    lighting:
+      primary_source: "afternoon sun"
+      quality: "warm, raking"
+      direction: "from side"
+      color_temperature: "warm gold"
+      shadow_depth: "moderate"
+      atmospheric: "dust in air"
+
+    palette:
+      dominant:
+        - "Veyra's dark mohawk"
+        - "stone grey mountain"
+        - "timber entrance"
+      accent:
+        - "burn scar texture"
+        - "Grimjaw's iron-grey beard"
+      avoid:
+        - "action energy"
+        - "command assertiveness"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Over-the-shoulder shot
+      behind a half-elf woman commander, her burn scar visible on left profile,
+      dark mohawk with braids. She watches a dwarven engineer at the mine entrance
+      ahead, his iron-grey beard visible as he works. Her posture unusually still,
+      observing not commanding. Mountain framing the scene. Afternoon light.
+      Recognition and learning in her expression. Fantasy medieval mining rescue.
+      The moment a commander acknowledges expertise beyond her own.
+
+    negative_prompt: |
+      text, watermark, signature, cartoon, anime, 3D render, CGI, neon, modern,
+      photorealistic, action pose, command assertiveness, contemporary elements
+
+    references:
+      - source: "ch05-the-weight-of-the-world/chapter.visual-plan.yaml"
+        anchor: "Veyra climbing the last stretch of path... his gaze lingering on her scars"
+      - source: "ch05-the-weight-of-the-world/chapter.visual-plan.yaml"
+        anchor: "Listening as strength—the mountain doesn't respect courage, only competence"

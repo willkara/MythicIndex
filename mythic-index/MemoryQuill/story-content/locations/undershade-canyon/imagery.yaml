@@ -1,0 +1,1205 @@
+# Undershade Canyon - Location Imagery Specifications
+# Generated from location analysis and ch01-ash-and-compass visual plan
+# The crucible where the Last Light Company was forged through sacrifice
+
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "undershade-canyon"
+  location_name: "Undershade Canyon"
+  version: "1.0"
+  last_updated: "2025-12-26"
+  primary_chapters:
+    - ch01-ash-and-compass
+  location_type: "ritual-site-transformed"
+
+generation_defaults:
+  provider: "workers-ai"
+  model: "flux-schnell"
+  quality: "high"
+  aspect_ratio: "16:9"
+
+# ============================================================================
+# NARRATIVE SOUL - Thematic Essence for AI Generation
+# ============================================================================
+narrative_soul: |
+  Undershade Canyon is the genesis wound, the place where hope became ash and
+  grief became purpose. What was ancient stone sanctuary became catastrophic
+  crucible became crystalline tomb became sacred ground. The canyon exists in
+  three temporal states that coexist in memory and image: the ochre-banded
+  throat exhaling primordial heat where vine-strangled dragon pillars mark
+  passage to vaulted ritual space; the catastrophic transformation when
+  dragon-fire turned architecture to molten glass and sealed the living behind
+  barriers transparent yet absolute; and the aftermath where lantern light
+  persists not as comfort but as defiance, where a woman's three-day vigil
+  carved names in blood and forged loss into vow. Every surface here witnesses
+  something—geological time in ochre bands, ancient ambition in basalt plinth
+  and brass braziers, recent violence in week-old scorch marks, catastrophic
+  transformation in rippled glass that holds shadows frozen, and human
+  persistence in cairns built by battered shield. This is threshold, crucible,
+  tomb, and birthplace—the Last Light Company drew first breath here, purchased
+  by sacrifice measured in blood and broken stone.
+
+one_line_essence: "Where dragon-fire turned stone to glass and grief became vow—the crucible where the Last Light Company was born."
+
+# ============================================================================
+# LOCATION VISUAL ANCHOR - Signature Elements
+# ============================================================================
+location_visual_anchor:
+  signature_elements:
+    - "ochre-banded sedimentary walls cut by darker igneous ribs"
+    - "vine-strangled draconic threshold pillars"
+    - "vaulted temple nave with brass brazier rows"
+    - "basalt plinth altar with runic drainage grooves"
+    - "vitrified glass barriers and rippled glass walls (post-event)"
+    - "cairns and blood-carved memorial names"
+    - "the ever-burning lantern as defiant light"
+
+  materials:
+    primary:
+      - "ochre sedimentary stone with iron-red bands"
+      - "dark basalt intrusions and plinths"
+      - "brass brazier metalwork"
+      - "rippled translucent glass (post-transformation)"
+    secondary:
+      - "shale caprock at rim"
+      - "vitrified glaze on switchbacks"
+      - "ash deposits (flour-fine)"
+      - "cairn stones (hand-placed)"
+    accent:
+      - "copper-red magical residue (Ignis locus)"
+      - "blood staining on glass edges"
+      - "lantern brass (warm, battered)"
+
+  color_anchors:
+    dominant:
+      - "ochre and iron-red sediment"
+      - "basalt black"
+      - "translucent glass (amber-tinged)"
+    secondary:
+      - "brass gold from braziers"
+      - "lantern amber"
+      - "ash gray"
+    accent:
+      - "emerald-white dragon-fire (memory)"
+      - "copper-red magical flare"
+      - "blood crimson"
+    avoid:
+      - "bright greens or blues suggesting life"
+      - "pure white (except fire)"
+      - "saturated cheerful colors"
+
+  characteristic_light:
+    golden_hour: "Molten brass light pooling on canyon rim, casting long shadows into the throat below"
+    day: "Harsh light from above creating deep shadows in canyon; glass surfaces creating disorienting reflections"
+    twilight: "Ochre walls catching dying light while depths remain in shadow; updrafts carrying heat"
+    night: "Near-total darkness except for lantern light; glass surfaces pinging on cooling"
+    fire_event: "Emerald-white supernatural fire overwhelming all other light sources"
+
+# ============================================================================
+# OVERVIEW - Location Establishing Shots
+# ============================================================================
+overview:
+  primary:
+    image_type: "establishing"
+    description: "The vast ochre-banded throat of Undershade Canyon at twilight, heat shimmer rising from depths, distant threshold pillars marking the descent to doom"
+    scene_mood: "ominous"
+    time_of_day: "twilight"
+    weather: "clear, dry heat"
+    framing: "wide"
+    key_elements:
+      - "vast canyon coiling in ochre bands"
+      - "shale caprock rim catching last light"
+      - "heat shimmer rising from below"
+      - "distant vine-strangled pillars visible in shadows"
+    lighting:
+      primary_source: "dying sun"
+      secondary_source: "heat glow from depths"
+      quality: "molten brass pooling on rim"
+      direction: "low western angle"
+      color_temperature: "warm golden fading to cool shadow"
+      shadow_depth: "deep in canyon"
+    palette:
+      dominant: ["ochre", "iron-red", "shadow black"]
+      accent: ["molten brass", "heat shimmer distortion"]
+      avoid: ["bright colors", "vegetation green"]
+
+  secondary:
+    image_type: "establishing"
+    description: "The canyon transformed to crystalline tomb—rippled glass walls catching refracted light, vitrified floors holding frozen shadows, the aftermath of catastrophic fire"
+    scene_mood: "somber"
+    time_of_day: "dawn"
+    weather: "still, residual heat"
+    framing: "wide"
+    key_elements:
+      - "translucent rippled glass walls"
+      - "vitrified floor with frozen wave patterns"
+      - "collapsed architecture fused solid"
+      - "ash coating every surface"
+    lighting:
+      primary_source: "dawn light filtering through glass"
+      secondary_source: "residual heat glow"
+      quality: "refracted, multiplied through glass planes"
+      direction: "filtering from above"
+      color_temperature: "amber-tinged through glass"
+      shadow_depth: "soft but disorienting"
+    palette:
+      dominant: ["translucent amber", "ash gray", "black basalt"]
+      accent: ["refracted light", "glass-distorted color"]
+      avoid: ["pure clear glass", "cheerful colors"]
+
+# ============================================================================
+# ZONES - Comprehensive Location Areas
+# ============================================================================
+zones:
+  # --- RIM AND APPROACH ZONES ---
+  - slug: "rim-overlook"
+    name: "Rim Overlook"
+    zone_type: "overlook"
+    featured_in_chapters:
+      - ch01-ash-and-compass
+    description: "The canyon's lip where teams stage before descent—sun-warm shale underfoot, the vast throat coiling below, last light pooling like molten brass"
+    image_type: "establishing"
+    scene_mood: "ominous"
+    time_of_day: "twilight"
+    key_elements:
+      - "shale caprock rim wide enough for party staging"
+      - "canyon coiling in ochre bands below"
+      - "heat rising from depths (wrong season warmth)"
+      - "sage and brimstone scent on updrafts"
+    lighting:
+      primary_source: "setting sun"
+      secondary_source: "heat shimmer from canyon"
+      quality: "molten brass pooling on stone"
+      direction: "low western angle"
+      color_temperature: "warm golden"
+      shadow_depth: "deep into canyon"
+    palette:
+      dominant: ["ochre", "shale gray", "sunset brass"]
+      accent: ["iron-red bands", "sage green (distant)"]
+      avoid: ["green vegetation", "cool tones"]
+    character_interaction:
+      positions: ["kneeling at edge", "standing assessment", "grouped staging"]
+      activities: ["surveying descent", "checking gear", "lantern held aloft"]
+    atmospheric:
+      weather: "dry heat rising"
+      environmental_effects: "thermal updrafts, scent of sage/brimstone"
+      time_pressure: "fading light"
+
+  - slug: "rim-stations"
+    name: "Rim Stations and Staging Ledges"
+    zone_type: "works"
+    description: "The operational infrastructure at canyon rim—belay anchor points, stretcher hoist positions, signal flag stations where rescue operations coordinate"
+    image_type: "zone"
+    scene_mood: "tense"
+    key_elements:
+      - "anchor points drilled into caprock"
+      - "rope coils staged at intervals"
+      - "signal flag mounts"
+      - "stretcher staging area"
+    lighting:
+      primary_source: "overhead sun"
+      quality: "harsh operational light"
+    palette:
+      dominant: ["stone gray", "rope brown", "equipment metal"]
+      accent: ["signal flag colors"]
+      avoid: ["festive colors"]
+
+  - slug: "switchback-descent"
+    name: "Switchback Descent"
+    zone_type: "liminal"
+    featured_in_chapters:
+      - ch01-ash-and-compass
+    description: "The treacherous south switchbacks descending into the canyon—ancient fire left vitrified glazing over friable scree, single-file descent where one slip means death"
+    image_type: "zone"
+    scene_mood: "tense"
+    time_of_day: "twilight"
+    key_elements:
+      - "hairpin turns carved into canyon wall"
+      - "vitrified glaze patches from old fire"
+      - "friable scree under glazed surface"
+      - "lantern light flaring against glazed stone"
+    lighting:
+      primary_source: "dying daylight from above"
+      secondary_source: "lantern from lead climber"
+      quality: "dramatic shadows in wall recesses"
+      direction: "steep overhead angle"
+      color_temperature: "cooling amber"
+      shadow_depth: "deep in wall shadows"
+    palette:
+      dominant: ["ochre wall", "glazed amber patches", "shadow black"]
+      accent: ["lantern gold", "rope brown"]
+      avoid: ["bright highlights", "safe-looking tones"]
+    character_interaction:
+      positions: ["single-file descent", "braced against wall", "belayed from above"]
+      activities: ["careful footwork on glaze", "rope management", "testing handholds"]
+    atmospheric:
+      weather: "still, rising heat"
+      environmental_effects: "vitrified slip hazard, shale flaking"
+      time_pressure: "racing darkness"
+
+  - slug: "fissured-gallery"
+    name: "Fissured Gallery and High Escarpment"
+    zone_type: "liminal"
+    description: "Narrow side corridor rising through outer wall to elevated ledge overlooking the nave—used for flanking overwatch and alternate egress"
+    image_type: "zone"
+    scene_mood: "tense"
+    key_elements:
+      - "narrow fissure corridor angling upward"
+      - "broken roof-stones for scrambling"
+      - "ankle-trap cracks in floor"
+      - "view opening onto nave below"
+    lighting:
+      primary_source: "shaft light from above"
+      secondary_source: "glow from nave (during event)"
+      quality: "narrow beams cutting dark corridor"
+    palette:
+      dominant: ["dark stone", "shadow", "shaft light"]
+      accent: ["distant fire glow"]
+      avoid: ["open bright spaces"]
+
+  - slug: "escarpment-gallery"
+    name: "Escarpment Gallery"
+    zone_type: "overlook"
+    featured_in_chapters:
+      - ch01-ash-and-compass
+    description: "The elevated ledge with full view of the nave below—Veyra's vantage point during the catastrophe, where archer disruption failed and witness became curse"
+    image_type: "zone"
+    scene_mood: "ominous"
+    key_elements:
+      - "high ledge overlooking temple nave"
+      - "broken roof-stones for scrambling access"
+      - "falling glaze flakes hazard"
+      - "view down onto braziers and plinth"
+    lighting:
+      primary_source: "nave illumination from below"
+      secondary_source: "shaft light from above"
+      quality: "upcast dramatic shadows on observer"
+    palette:
+      dominant: ["dark stone", "fire-lit from below"]
+      accent: ["brazier gold", "dragon-fire green (event)"]
+      avoid: ["safe vantage colors"]
+
+  # --- TEMPLE ZONES ---
+  - slug: "temple-threshold"
+    name: "Temple Threshold"
+    zone_type: "threshold"
+    featured_in_chapters:
+      - ch01-ash-and-compass
+    description: "The vine-strangled draconic pillars marking passage from canyon to sacred space—a ceremonial pinch that amplifies chant and funnels the unwary"
+    image_type: "zone"
+    scene_mood: "ominous"
+    time_of_day: "twilight"
+    key_elements:
+      - "paired pillars with coiled dragon carvings"
+      - "vine and moss overtaking soft stone capitals"
+      - "lintel fragments with root intrusion"
+      - "narrow gorge funneling inward"
+    lighting:
+      primary_source: "twilight filtered through vines"
+      secondary_source: "inner temple glow (braziers)"
+      quality: "dappled shadow and ancient darkness"
+      direction: "ahead from temple interior"
+      color_temperature: "cool green shadow, warm interior glow"
+      shadow_depth: "deep in vine tangles"
+    palette:
+      dominant: ["weathered stone gray", "vine green-brown", "shadow"]
+      accent: ["brazier glow from within", "dragon carving highlights"]
+      avoid: ["welcoming colors", "clear passage"]
+    character_interaction:
+      positions: ["passing between pillars", "checking carvings", "pausing at threshold"]
+      activities: ["entry check compliance", "weapon ready", "reading dragon reliefs"]
+    atmospheric:
+      weather: "stale heat flowing outward"
+      environmental_effects: "acoustic amplification of sound"
+      time_pressure: "point of no return"
+
+  - slug: "threshold-pillars"
+    name: "Dragon Threshold Pillars"
+    zone_type: "detail"
+    description: "Close detail on the paired pillars—dragon coils in weathered relief, moss-covered stone eyes that seem to glint in torchlight, ancient warning ignored"
+    image_type: "detail"
+    scene_mood: "ominous"
+    key_elements:
+      - "coiled dragon carvings in stone relief"
+      - "eroded but still recognizable scaled forms"
+      - "moss covering stone eyes (seeming to watch)"
+      - "vine intrusion cracking ancient mortar"
+    lighting:
+      primary_source: "torch or lantern held close"
+      quality: "dramatic uplighting on carved relief"
+    palette:
+      dominant: ["aged stone", "moss green", "shadow"]
+      accent: ["dragon scale texture", "glinting eyes"]
+      avoid: ["clearly inanimate", "friendly creatures"]
+
+  - slug: "temple-nave"
+    name: "Temple Nave"
+    zone_type: "heart"
+    featured_in_chapters:
+      - ch01-ash-and-compass
+    description: "The multi-bay vaulted hall that served as ritual heart—brass brazier rows lining walls, basalt plinth at center, scorched circles and charred feathers marking recent use"
+    image_type: "zone"
+    scene_mood: "ominous"
+    time_of_day: "pre-event"
+    key_elements:
+      - "high vaulted ceiling with multiple bays"
+      - "brass brazier rows along walls (cold/dark)"
+      - "central basalt plinth"
+      - "charred feathers like forgotten offerings"
+      - "fresh scorch circle (week-old activity)"
+    lighting:
+      primary_source: "lanterns brought by party"
+      secondary_source: "residual heat glow from stone"
+      quality: "warm pools in vast darkness"
+      direction: "handheld, casting moving shadows"
+      color_temperature: "amber lantern against dark stone"
+      shadow_depth: "impenetrable beyond light reach"
+    palette:
+      dominant: ["black basalt", "brass dull gold", "ash gray"]
+      accent: ["lantern amber", "scorch black", "feather gray"]
+      avoid: ["clean surfaces", "welcoming atmosphere"]
+    character_interaction:
+      positions: ["spread search pattern", "gathered at plinth", "covering exits"]
+      activities: ["examining scorch marks", "checking braziers", "assessing threats"]
+    atmospheric:
+      weather: "stale dense heat"
+      environmental_effects: "acoustic amplification", "claustrophobic despite height"
+      time_pressure: "trap being set"
+
+  - slug: "vaulted-nave"
+    name: "Vaulted Nave"
+    zone_type: "perspective"
+    description: "Architectural perspective emphasizing the temple's soaring height—vault ribs converging overhead, scale dwarfing human figures, ancient engineering for ritual acoustics"
+    image_type: "perspective"
+    scene_mood: "reverent"
+    key_elements:
+      - "vault ribs converging to keystones above"
+      - "rhythmic bay divisions along length"
+      - "brazier rows creating visual rhythm"
+      - "human figures dwarfed by scale"
+    lighting:
+      primary_source: "brazier glow"
+      quality: "upcast shadows on vault ceiling"
+    palette:
+      dominant: ["dark stone", "shadow depth"]
+      accent: ["brazier fire gold", "distant light pools"]
+      avoid: ["bright cheerful spaces"]
+
+  - slug: "ritual-plinth"
+    name: "Ritual Plinth"
+    zone_type: "sanctuary"
+    featured_in_chapters:
+      - ch01-ash-and-compass
+    description: "The basalt altar at nave's heart—runic drainage grooves carved for ritual purpose, circumferential collection ring, the ember-amber orb pulsing like a dragon's heartbeat"
+    image_type: "anchor"
+    scene_mood: "ethereal"
+    key_elements:
+      - "basalt plinth altar, massive and ancient"
+      - "runic channel grooves radiating outward"
+      - "circumferential collection ring for ritual fluids"
+      - "ember-amber quartz orb with living cinders"
+    lighting:
+      primary_source: "orb's inner pulsing glow"
+      secondary_source: "lantern light from approaching party"
+      quality: "warm inner glow from orb as primary source"
+      direction: "radiant from orb center"
+      color_temperature: "ember amber, pulsing"
+      shadow_depth: "dragon-scale shadows radiating"
+    palette:
+      dominant: ["basalt black", "ember amber", "ancient stone"]
+      accent: ["living cinder glow", "runic shadow patterns"]
+      avoid: ["sterile altar", "inert stone"]
+    character_interaction:
+      positions: ["approaching plinth", "hands reaching toward orb", "circled around"]
+      activities: ["examining orb", "tracing runes", "feeling the pulse"]
+    atmospheric:
+      weather: "supernatural warmth radiating"
+      environmental_effects: "orb pulse visible in shadow patterns"
+      time_pressure: "wonder before horror"
+
+  - slug: "trapped-arch"
+    name: "Trapped Arch and Chokepoint"
+    zone_type: "threshold"
+    description: "The cracked arch with hidden needle trap—poisoned spike mechanism designed to preserve victims 'whole for burning,' a chokepoint between nave and escape"
+    image_type: "zone"
+    scene_mood: "ominous"
+    key_elements:
+      - "cracked arch showing trap placement"
+      - "hidden needle mechanism (for context)"
+      - "chokepoint narrowing"
+      - "load-bearing pillar beyond"
+    lighting:
+      primary_source: "lantern from approaching party"
+      quality: "shadows hiding trap mechanisms"
+    palette:
+      dominant: ["dark stone", "crack shadows"]
+      accent: ["metal glint (trap)", "passage darkness"]
+      avoid: ["obvious danger", "highlighted trap"]
+
+  - slug: "heat-shadow-corridor"
+    name: "Heat-Shadow Corridor (Collapsed)"
+    zone_type: "liminal"
+    description: "The narrow passage created when the dragon-fire serpent's radius passed—a transient safe zone used for desperate timed runs, now collapsed and sealed"
+    image_type: "zone"
+    scene_mood: "tense"
+    key_elements:
+      - "load-bearing pillar creating narrow gap"
+      - "collapse rubble sealing passage"
+      - "heat-warped stone showing passage of fire"
+      - "no current access (study only)"
+    lighting:
+      primary_source: "observer's lantern"
+      quality: "probing light into sealed space"
+    palette:
+      dominant: ["rubble brown-gray", "warped stone", "sealed darkness"]
+      accent: ["heat discoloration"]
+      avoid: ["open passage"]
+
+  - slug: "antechamber"
+    name: "Antechamber"
+    zone_type: "cell"
+    featured_in_chapters:
+      - ch01-ash-and-compass
+    description: "The death trap where the team was sealed—no other exit, smoke seeping through cracks, glass barrier solidifying as escape became impossible"
+    image_type: "zone"
+    scene_mood: "somber"
+    key_elements:
+      - "small enclosed space beyond collapsed corridor"
+      - "cooling glass wall sealing exit"
+      - "smoke seeping through cracks"
+      - "no other exit visible"
+    lighting:
+      primary_source: "fire glow through glass"
+      secondary_source: "fading divine light (Borin's prayer)"
+      quality: "hellish orange through glass, silver prayer light fading"
+      color_temperature: "fire orange, cooling to dark"
+      shadow_depth: "total beyond glass"
+    palette:
+      dominant: ["glass amber", "smoke gray", "dark stone"]
+      accent: ["silver prayer light", "fire orange"]
+      avoid: ["escape route", "hope colors"]
+    character_interaction:
+      positions: ["pressed against glass", "collapsed", "fading"]
+      activities: ["dying", "praying", "last moments"]
+    atmospheric:
+      weather: "superheated smoke"
+      environmental_effects: "oxygen depletion"
+      time_pressure: "seconds to oblivion"
+
+  # --- RITUAL CIRCLE ZONES ---
+  - slug: "exterior-ritual-circle"
+    name: "Exterior Ritual Circle"
+    zone_type: "sanctuary"
+    description: "The canyon floor runic complex—stelae, incised channels, spiral intake geometry that fed the green-white heat lattice and gave birth to the fire serpent"
+    image_type: "zone"
+    scene_mood: "ominous"
+    key_elements:
+      - "rune stelae arranged in pattern"
+      - "incised channels in stone floor"
+      - "spiral intake geometry"
+      - "circumferential ring connecting elements"
+    lighting:
+      primary_source: "overhead daylight"
+      secondary_source: "reflected heat (residual)"
+      quality: "harsh revealing light on runic patterns"
+    palette:
+      dominant: ["canyon floor stone", "carved shadow", "basalt accents"]
+      accent: ["metal salt deposits in channels", "heat discoloration"]
+      avoid: ["active power", "glowing runes"]
+
+  - slug: "ritual-circle"
+    name: "Exterior Ritual Circle (Active)"
+    zone_type: "beat"
+    description: "The ritual circle during catastrophic activation—runes blazing core-hot, power surging through channels, feeding the serpent construct in the nave"
+    image_type: "beat"
+    scene_mood: "kinetic"
+    key_elements:
+      - "runes blazing with core-hot light"
+      - "power flowing through incised channels"
+      - "spiral geometry pulsing with energy"
+      - "connection to temple nave visible"
+    lighting:
+      primary_source: "blazing runic energy"
+      quality: "supernatural brilliance overwhelming natural light"
+      color_temperature: "white-hot core with green edges"
+    palette:
+      dominant: ["white-hot light", "green-white energy", "stone in silhouette"]
+      accent: ["power channel glow"]
+      avoid: ["controlled ritual", "safe magic"]
+
+  # --- TRANSFORMATION EVENT ZONES ---
+  - slug: "serpent-construct"
+    name: "The Serpent of Fire"
+    zone_type: "beat"
+    description: "The dragon-fire serpent at full manifestation—scales of emerald and white flame knitting into serpentine form, coiling between escape and doom"
+    image_type: "beat"
+    scene_mood: "kinetic"
+    key_elements:
+      - "serpentine fire creature with visible scales"
+      - "emerald and white flames forming coherent shape"
+      - "coiling through temple space"
+      - "heat warping air like rippled glass"
+    lighting:
+      primary_source: "serpent's own supernatural fire"
+      quality: "overwhelming, reality-warping"
+      color_temperature: "emerald-white, forge-hot"
+      shadow_depth: "absolute black beyond light"
+    palette:
+      dominant: ["emerald fire", "white-hot core", "darkness beyond"]
+      accent: ["stone in silhouette", "human figures dwarfed"]
+      avoid: ["friendly dragon", "controlled fire"]
+    character_interaction:
+      positions: ["bracing against heat", "protected by divine dome", "fleeing"]
+      activities: ["survival", "prayer", "desperate combat"]
+
+  - slug: "glass-transformation"
+    name: "The Glass Sealing"
+    zone_type: "beat"
+    description: "The moment of transformation—stone flowing like water, arches sagging under liquefying weight, floors rippling as architecture seals living within"
+    image_type: "beat"
+    scene_mood: "kinetic"
+    key_elements:
+      - "stone melting and flowing"
+      - "arches collapsing into barriers"
+      - "floors rippling into glassy pools"
+      - "figures visible through forming glass"
+    lighting:
+      primary_source: "catastrophic fire light"
+      quality: "reality-breaking brilliance"
+      color_temperature: "white-gold overwhelming"
+    palette:
+      dominant: ["molten amber", "white-hot", "forming glass"]
+      accent: ["trapped figures through distortion"]
+      avoid: ["stable architecture"]
+
+  - slug: "keystone-sacrifice"
+    name: "The Chosen Death"
+    zone_type: "beat"
+    description: "Lysander's final act—deliberately collapsing the keystone to seal dragon-fire, his shield buckling cherry-red, his eyes finding Veyra through glass"
+    image_type: "hero"
+    scene_mood: "somber"
+    key_elements:
+      - "Lysander driving forward against narrowing gap"
+      - "shield glowing cherry-red with heat"
+      - "stone crushing inward from sides"
+      - "his face calm and accepting"
+    lighting:
+      primary_source: "hellish orange-red glow"
+      secondary_source: "fire behind him"
+      quality: "underlighting from molten stone"
+      color_temperature: "cherry-red, hellish"
+      shadow_depth: "absolute beyond the gap"
+    palette:
+      dominant: ["cherry-red glow", "golden armor", "crushing stone"]
+      accent: ["calm eyes through chaos"]
+      avoid: ["escape possible", "uncertain sacrifice"]
+
+  # --- POST-EVENT ZONES ---
+  - slug: "vitrified-nave"
+    name: "Vitrified Nave - Crystalline Tomb"
+    zone_type: "perspective"
+    description: "The transformed nave—rippled translucent glass where stone once stood, frozen wave patterns in floor, shadows preserved in crystalline distortion"
+    image_type: "zone"
+    scene_mood: "somber"
+    time_of_day: "dawn"
+    key_elements:
+      - "walls transformed to rippled translucent glass"
+      - "floor in frozen wave patterns"
+      - "trapped bubbles and flow striae visible"
+      - "shapes preserved in crystalline amber"
+    lighting:
+      primary_source: "dawn light refracting through glass"
+      secondary_source: "residual heat glow (faint)"
+      quality: "multiplied and distorted by glass planes"
+      direction: "filtering from above, refracting horizontally"
+      color_temperature: "amber-tinged through glass"
+      shadow_depth: "soft but disorienting"
+    palette:
+      dominant: ["translucent amber glass", "ash gray", "frozen shadow"]
+      accent: ["refracted light patterns", "trapped air bubbles"]
+      avoid: ["clear clean glass", "organized space"]
+
+  - slug: "glass-barrier"
+    name: "Glass Barrier"
+    zone_type: "threshold"
+    featured_in_chapters:
+      - ch01-ash-and-compass
+    description: "The translucent wall that separated Veyra from her dying companions—thick rippled glass showing distorted shapes beyond, blood and handprints where she pounded"
+    image_type: "anchor"
+    scene_mood: "somber"
+    key_elements:
+      - "thick rippled glass barrier"
+      - "bloody handprints on surface"
+      - "spider-web cracks from Borin's hammer"
+      - "narrow gap barely wide enough for arm"
+    lighting:
+      primary_source: "lantern light on near side"
+      secondary_source: "dim glow from beyond"
+      quality: "intimate amber on glass surface"
+      direction: "handheld, searching"
+      color_temperature: "warm amber against cold barrier"
+      shadow_depth: "absolute beyond glass"
+    palette:
+      dominant: ["translucent amber glass", "blood crimson", "darkness beyond"]
+      accent: ["crack patterns", "distorted shapes"]
+      avoid: ["clear visibility", "hope of passage"]
+    character_interaction:
+      positions: ["pressed against glass", "reaching through gap", "kneeling in grief"]
+      activities: ["witnessing death", "attempting breach", "accepting loss"]
+    atmospheric:
+      environmental_effects: "muffled sounds through glass"
+      time_pressure: "watching death in silence"
+
+  - slug: "through-glass"
+    name: "The Barrier"
+    zone_type: "perspective"
+    description: "View through the glass barrier—distorted vision of trapped forms, smoke swirling, the helpless clarity of witness unable to help"
+    image_type: "perspective"
+    scene_mood: "somber"
+    key_elements:
+      - "distorted view through rippled glass"
+      - "shapes of trapped companions visible"
+      - "smoke obscuring details"
+      - "glass surface reflecting observer"
+    lighting:
+      primary_source: "dying fire beyond glass"
+      quality: "distorted through glass medium"
+    palette:
+      dominant: ["glass distortion", "smoke gray", "fire glow"]
+      accent: ["trapped shapes", "blood on glass (near surface)"]
+      avoid: ["clear view", "hope of rescue"]
+
+  - slug: "borin-breach"
+    name: "Borin's Breach"
+    zone_type: "detail"
+    description: "The spider-web fracture and partial breakthrough—where Borin's hammer strikes cracked the barrier, blood staining glass edges, gap too narrow for extraction"
+    image_type: "detail"
+    scene_mood: "somber"
+    key_elements:
+      - "spider-web crack pattern radiating from impact"
+      - "partial breakthrough gap"
+      - "blood staining razor-keen edges"
+      - "glass chips scattered on floor"
+    lighting:
+      primary_source: "lantern probing the gap"
+      quality: "intimate detail lighting"
+    palette:
+      dominant: ["cracked glass", "blood crimson", "sharp edges"]
+      accent: ["glass chip scatter"]
+      avoid: ["clean break", "passage possible"]
+
+  - slug: "ignis-locus"
+    name: "Ignis Vanishing Locus"
+    zone_type: "shrine"
+    description: "The perfect circle where Ignis vanished—scorched floor with no body and no ash, copper-ozone scent, a ripple lens in adjacent glass, intermittent copper glints"
+    image_type: "detail"
+    scene_mood: "ethereal"
+    key_elements:
+      - "perfect scorched circle on floor"
+      - "no remains, no ash, no body"
+      - "ripple lens effect in nearby glass"
+      - "copper-ozone scent (implied)"
+    lighting:
+      primary_source: "lantern light"
+      secondary_source: "intermittent copper glints"
+      quality: "strange reflections in ripple lens"
+      color_temperature: "amber with copper afterimages"
+    palette:
+      dominant: ["scorch black circle", "floor stone", "glass ripple"]
+      accent: ["copper glints", "ozone blue (subtle)"]
+      avoid: ["remains", "clear answers"]
+
+  # --- EXCAVATION AND MEMORIAL ZONES ---
+  - slug: "excavation"
+    name: "The Three-Day Vigil"
+    zone_type: "temporal"
+    description: "The site during Veyra's three-day excavation—Lysander's shield used as tool, bloody cloth-wrapped grip, rubble slowly cleared by sheer will"
+    image_type: "beat"
+    scene_mood: "somber"
+    time_of_day: "changing (multi-day)"
+    key_elements:
+      - "battered shield used as shovel and wedge"
+      - "blood-soaked cloth strips around grip"
+      - "rubble partially cleared"
+      - "Veyra's torn and burned form laboring"
+    lighting:
+      primary_source: "harsh daylight from above"
+      secondary_source: "lantern for night work"
+      quality: "unforgiving operational light"
+    palette:
+      dominant: ["rubble gray", "blood-rust", "exhaustion colors"]
+      accent: ["shield metal", "torn cloth"]
+      avoid: ["help arriving", "easy progress"]
+
+  - slug: "first-vigil"
+    name: "The Light That Stayed"
+    zone_type: "temporal"
+    description: "Night of the first day—Veyra alone in darkness, lantern the only light, beginning the impossible work that will define her"
+    image_type: "mood"
+    scene_mood: "intimate"
+    time_of_day: "night"
+    key_elements:
+      - "single lantern in vast darkness"
+      - "Veyra's silhouette bent to labor"
+      - "glass walls reflecting single light infinitely"
+      - "silence and solitude absolute"
+    lighting:
+      primary_source: "single lantern"
+      quality: "defiant amber against total darkness"
+      color_temperature: "warm amber, cold surrounding black"
+    palette:
+      dominant: ["lantern amber", "absolute black", "glass reflections"]
+      accent: ["Veyra's silhouette"]
+      avoid: ["other lights", "company"]
+
+  - slug: "transept"
+    name: "Transept"
+    zone_type: "sanctuary"
+    featured_in_chapters:
+      - ch01-ash-and-compass
+    description: "The side space where Veyra arranged recovered bodies for ceremony—shield as bier, daggers crossed on chests, the sacred arrangement of the dead"
+    image_type: "zone"
+    scene_mood: "reverent"
+    key_elements:
+      - "two shrouded forms on battered shield"
+      - "Elara's daggers crossed on her chest"
+      - "Borin's holy symbol in his hands"
+      - "Veyra standing guard over the dead"
+    lighting:
+      primary_source: "lantern placed at shrine's head"
+      quality: "intimate vigil lighting"
+      color_temperature: "warm amber on shrouded forms"
+      shadow_depth: "soft, reverent shadows"
+    palette:
+      dominant: ["shroud white-gray", "shield metal", "stone floor"]
+      accent: ["dagger steel", "holy symbol gold", "lantern amber"]
+      avoid: ["disrespect", "chaos"]
+    character_interaction:
+      positions: ["standing guard", "kneeling in prayer", "arranged in death"]
+      activities: ["vigil", "honor", "waiting"]
+
+  - slug: "cairn-site"
+    name: "Cairn Site"
+    zone_type: "shrine"
+    featured_in_chapters:
+      - ch01-ash-and-compass
+    description: "The memorial cairns constructed by hand—stones carried by shield, one over collapsed arch for Lysander, one empty and waiting for Ignis who may yet return"
+    image_type: "zone"
+    scene_mood: "reverent"
+    key_elements:
+      - "stone cairn over collapsed arch (Lysander)"
+      - "empty cairn waiting (Ignis)"
+      - "stones carefully placed"
+      - "relics at base of each"
+    lighting:
+      primary_source: "lantern light"
+      quality: "intimate memorial illumination"
+    palette:
+      dominant: ["cairn stone gray", "memorial solemnity"]
+      accent: ["relic items at base"]
+      avoid: ["neglected memorial"]
+
+  - slug: "memorial"
+    name: "Memorial Wall and Cairns"
+    zone_type: "shrine"
+    description: "The blood-carved names on stone wall—four names inscribed with Veyra's blood to make memory permanent: LYSANDER. IGNIS. ELARA. BORIN."
+    image_type: "detail"
+    scene_mood: "intimate"
+    key_elements:
+      - "four names carved deep into stone"
+      - "blood filling carved letters (dried)"
+      - "obsidian shard used for carving"
+      - "lantern light revealing names"
+    lighting:
+      primary_source: "lantern held close"
+      quality: "intimate revealing light"
+      color_temperature: "warm amber on bloody stone"
+    palette:
+      dominant: ["stone wall gray", "blood-rust in letters"]
+      accent: ["obsidian shard edge"]
+      avoid: ["faded memory", "unclear names"]
+
+  - slug: "memorial-cairns"
+    name: "Memorial Wall and Cairns (Wide)"
+    zone_type: "perspective"
+    description: "Wide view of the memorial complex—cairns, wall names, shield propped as altar, the sacred space carved from catastrophe"
+    image_type: "perspective"
+    scene_mood: "reverent"
+    key_elements:
+      - "full memorial arrangement visible"
+      - "cairns positioned meaningfully"
+      - "wall with blood-carved names"
+      - "shield-altar at center"
+    lighting:
+      primary_source: "multiple lanterns"
+      quality: "vigil illumination"
+    palette:
+      dominant: ["memorial stone", "lantern warmth"]
+      accent: ["blood-rust names", "shield metal"]
+      avoid: ["abandoned memorial"]
+
+  # --- DISCOVERY AND RESOLUTION ZONES ---
+  - slug: "watch-arrival"
+    name: "The Discovery"
+    zone_type: "beat"
+    description: "The moment the Watch patrol discovers Veyra—torchlight falling on a dragon-burned woman standing guard, naked blade in one hand, burning lantern in the other"
+    image_type: "hero"
+    scene_mood: "somber"
+    key_elements:
+      - "torch glow falling on Veyra"
+      - "her ruined face revealed"
+      - "blade and lantern held ready"
+      - "shrouded forms behind her on shield"
+    lighting:
+      primary_source: "patrol torches from approaching angle"
+      secondary_source: "Veyra's lantern (constant)"
+      quality: "dramatic revelation lighting"
+      color_temperature: "torch orange mixing with lantern amber"
+      shadow_depth: "deep behind Veyra"
+    palette:
+      dominant: ["torch orange", "lantern amber", "damaged flesh"]
+      accent: ["blade steel", "shroud gray"]
+      avoid: ["recognizable beauty", "easy rescue"]
+
+  - slug: "evening"
+    name: "Evening Vigil"
+    zone_type: "temporal"
+    description: "The final evening at the site—six guards surrounding Veyra and the dead, preparations for extraction, the Last Light Company about to be born"
+    image_type: "mood"
+    scene_mood: "reverent"
+    time_of_day: "evening"
+    key_elements:
+      - "guards circled around Veyra and shrouded forms"
+      - "multiple torches creating warm circle"
+      - "preparations for extraction"
+      - "collective grief and determination"
+    lighting:
+      primary_source: "multiple torches"
+      secondary_source: "Veyra's lantern held aloft"
+      quality: "warm circle in canyon darkness"
+    palette:
+      dominant: ["torch warmth", "armor steel", "shadow beyond"]
+      accent: ["lantern center", "faces in firelight"]
+      avoid: ["isolated grief"]
+
+  - slug: "rim-descent"
+    name: "Twilight on the Rim"
+    zone_type: "temporal"
+    description: "The extraction procession at twilight—stretchers fashioned from cloaks, the slow ascent back to the world, lantern held high as they climb"
+    image_type: "mood"
+    scene_mood: "somber"
+    time_of_day: "twilight"
+    key_elements:
+      - "procession climbing switchbacks"
+      - "stretchers with shrouded forms"
+      - "guards assisting Veyra"
+      - "lantern leading the way up"
+    lighting:
+      primary_source: "dying sunset"
+      secondary_source: "lantern in procession"
+      quality: "twilight departure"
+    palette:
+      dominant: ["ochre walls", "dying gold light", "shadow"]
+      accent: ["lantern amber leading way"]
+      avoid: ["joyful departure"]
+
+# ============================================================================
+# BEAT IMAGES - Key Narrative Moments
+# ============================================================================
+beat_images:
+  - slug: "twilight-sentinel"
+    title: "Twilight Sentinel"
+    chapter: "ch01-ash-and-compass"
+    scene_id: "scn-01-01"
+    description: "Veyra kneels at the canyon's edge, lantern held aloft against dying light, assessing the descent into Undershade Canyon while her companions gather behind her"
+    zone: "rim-overlook"
+    image_type: "hero"
+    scene_mood: "ominous"
+    emotional_beat: "cautious hope at threshold of doom"
+    characters_present:
+      - "veyra-thornwake"
+      - "lysander-valerius"
+      - "ignis-emberheart"
+      - "elara-whisperwind"
+      - "borin-stonehand"
+    framing: "wide"
+    composition_notes: "Low angle from canyon depth looking up at silhouetted figures; rule of thirds with canyon dominating lower two-thirds"
+    key_visual_elements:
+      - "golden lantern glow against vast ochre canyon"
+      - "team silhouettes at sunset"
+      - "heat rising from depths"
+    lighting:
+      primary_source: "molten brass sunset behind figures"
+      secondary_source: "lantern providing warm fill on Veyra's face"
+      quality: "backlit heroic silhouette"
+    palette:
+      dominant: ["ochre bands", "sunset brass", "silhouette black"]
+      accent: ["lantern gold on Veyra's face"]
+
+  - slug: "dragons-heart"
+    title: "The Dragon's Heart"
+    chapter: "ch01-ash-and-compass"
+    scene_id: "scn-01-02"
+    description: "Ignis cups the ember-amber orb on its basalt plinth, its inner cinders flaring to cast dragon-scale shadows that ripple across the temple nave"
+    zone: "ritual-plinth"
+    image_type: "anchor"
+    scene_mood: "ethereal"
+    emotional_beat: "wonder before catastrophe—beauty and danger intertwined"
+    characters_present:
+      - "ignis-emberheart"
+      - "veyra-thornwake"
+      - "lysander-valerius"
+      - "elara-whisperwind"
+      - "borin-stonehand"
+    framing: "medium"
+    composition_notes: "Slightly low angle looking up at Ignis holding the orb; orb centered with dragon-scale shadows radiating outward"
+    key_visual_elements:
+      - "living cinders pulsing inside amber quartz"
+      - "dragon-scale shadows on walls"
+      - "Ignis's awed face in orb light"
+    lighting:
+      primary_source: "warm inner glow from orb"
+      quality: "supernatural pulsing light"
+      color_temperature: "ember amber with living quality"
+    palette:
+      dominant: ["ember amber", "basalt black", "shadow"]
+      accent: ["scale pattern shadows", "living cinder glow"]
+
+  - slug: "fire-serpent"
+    title: "The Fire Serpent"
+    chapter: "ch01-ash-and-compass"
+    scene_id: "scn-01-03"
+    description: "The dragon-fire serpent coils between escape and doom, its emerald-white scales of flame warping the air, as the team faces the cult's sacrifice trap"
+    zone: "temple-nave"
+    image_type: "hero"
+    scene_mood: "kinetic"
+    emotional_beat: "peak action—supernatural terror unleashed"
+    characters_present:
+      - "veyra-thornwake"
+      - "lysander-valerius"
+      - "ignis-emberheart"
+      - "elara-whisperwind"
+      - "borin-stonehand"
+    framing: "wide"
+    composition_notes: "Dynamic diagonal from elevated position; serpent forming S-curve through frame, team small but defiant at bottom"
+    key_visual_elements:
+      - "serpentine fire creature with emerald-white scales"
+      - "silver dome of Borin's divine protection"
+      - "team bracing against impossible heat"
+    lighting:
+      primary_source: "supernatural green-white dragon-fire"
+      secondary_source: "orange glow from braziers, silver from Borin's prayer"
+      quality: "overwhelming supernatural brilliance"
+    palette:
+      dominant: ["emerald-white fire", "darkness beyond"]
+      accent: ["silver protection dome", "human silhouettes"]
+
+  - slug: "lysanders-sacrifice"
+    title: "Lysander's Sacrifice"
+    chapter: "ch01-ash-and-compass"
+    scene_id: "scn-01-03"
+    description: "Lysander holds the narrowing gap as molten stone crushes inward, his shield buckling and glowing cherry-red, as he roars his final command: 'LIVE!'"
+    zone: "antechamber"
+    image_type: "hero"
+    scene_mood: "somber"
+    emotional_beat: "defining loss—a leader becoming a door"
+    characters_present:
+      - "lysander-valerius"
+      - "veyra-thornwake"
+    framing: "medium"
+    composition_notes: "Through the gap from team's POV looking at Lysander; he is framed by narrowing stone pressing in from sides"
+    key_visual_elements:
+      - "shield glowing cherry-red"
+      - "Lysander's calm accepting face"
+      - "stone crushing inward"
+      - "his eyes finding Veyra through glass"
+    lighting:
+      primary_source: "hellish orange-red from molten stone"
+      quality: "face lit from below by dying fire"
+    palette:
+      dominant: ["cherry-red glow", "golden armor", "crushing stone"]
+      accent: ["calm eyes amid destruction"]
+
+  - slug: "through-glass-witness"
+    title: "Through the Glass"
+    chapter: "ch01-ash-and-compass"
+    scene_id: "scn-01-03"
+    description: "Veyra pounds against the glass barrier, watching helplessly as her trapped companions die—Borin's hammer strikes cracking the glass, copper-red flare as Ignis vanishes"
+    zone: "glass-barrier"
+    image_type: "anchor"
+    scene_mood: "somber"
+    emotional_beat: "witness to death—horror of seeing without helping"
+    characters_present:
+      - "veyra-thornwake"
+      - "borin-stonehand"
+      - "elara-whisperwind"
+      - "ignis-emberheart"
+    framing: "close"
+    composition_notes: "Over Veyra's shoulder through distorted glass; her damaged profile in foreground, trapped friends distorted beyond"
+    key_visual_elements:
+      - "bloody handprints on glass"
+      - "spider-web cracks from hammer strike"
+      - "distorted view of Borin striking barrier"
+      - "copper-red flare from Ignis's magic"
+    lighting:
+      primary_source: "smoky orange from dying fire"
+      secondary_source: "copper-red magical flare"
+      quality: "distorted through glass medium"
+    palette:
+      dominant: ["glass amber", "blood crimson", "smoke gray"]
+      accent: ["copper-red magic", "crack patterns"]
+
+  - slug: "shield-as-shovel"
+    title: "Shield as Shovel"
+    chapter: "ch01-ash-and-compass"
+    scene_id: "scn-01-04"
+    description: "Day two: Veyra uses Lysander's warped shield as her only tool—wedge, shovel, protection—to excavate her friends' bodies, blood from torn hands making the grip slippery"
+    zone: "excavation"
+    image_type: "beat"
+    scene_mood: "somber"
+    emotional_beat: "love expressed through labor—grief as physical work"
+    characters_present:
+      - "veyra-thornwake"
+    framing: "medium"
+    composition_notes: "Low angle from rubble level looking up at Veyra bent to task; shield central to composition, rubble surrounding"
+    key_visual_elements:
+      - "battered shield used as shovel"
+      - "bloody cloth-wrapped grip"
+      - "Veyra's determined, burned face"
+      - "dust motes in harsh daylight"
+    lighting:
+      primary_source: "harsh daylight from above"
+      quality: "unforgiving operational light"
+    palette:
+      dominant: ["rubble gray", "shield metal", "blood-rust"]
+      accent: ["cloth strips", "dust in light"]
+
+  - slug: "names-in-blood"
+    title: "Names in Blood"
+    chapter: "ch01-ash-and-compass"
+    scene_id: "scn-01-04"
+    description: "Veyra carves four names in her own blood—on the shield and stone wall—making memory permanent: LYSANDER. IGNIS. ELARA. BORIN."
+    zone: "memorial"
+    image_type: "detail"
+    scene_mood: "intimate"
+    emotional_beat: "ritual of memory—blood makes it binding"
+    characters_present:
+      - "veyra-thornwake"
+    framing: "close"
+    composition_notes: "Extreme close-up on hand carving; letters filling frame, blood welling into carved grooves"
+    key_visual_elements:
+      - "obsidian shard cutting stone"
+      - "blood filling carved letters"
+      - "four names emerging clear"
+      - "lantern light on bloody stone"
+    lighting:
+      primary_source: "lantern held close"
+      quality: "intimate revealing detail"
+      color_temperature: "warm amber on blood and stone"
+    palette:
+      dominant: ["stone gray", "blood crimson", "lantern amber"]
+      accent: ["obsidian black edge"]
+
+  - slug: "guardian-of-dead"
+    title: "The Guardian of the Dead"
+    chapter: "ch01-ash-and-compass"
+    scene_id: "scn-01-05"
+    description: "The Watch patrol stops short: a dragon-burned, ruined woman stands guard over two shrouded forms, naked blade in one hand, still-burning lantern in the other"
+    zone: "transept"
+    image_type: "hero"
+    scene_mood: "somber"
+    emotional_beat: "impossible survival—three days of hell survived by will alone"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "sergeant-kelen"
+    framing: "medium"
+    composition_notes: "From patrol's POV looking at Veyra; she is central figure, shield-altar with bodies forming triangle base"
+    key_visual_elements:
+      - "dragon-burned face half-ruined"
+      - "battered blade held ready"
+      - "burning lantern still lit after three days"
+      - "shrouded forms on shield behind her"
+    lighting:
+      primary_source: "patrol torches from side"
+      secondary_source: "Veyra's lantern (constant amber)"
+      quality: "dramatic revelation mixing torch orange and lantern amber"
+    palette:
+      dominant: ["torch orange", "lantern amber", "ruin and determination"]
+      accent: ["blade steel", "shroud gray", "burned flesh"]
+
+  - slug: "six-fists-chestplate"
+    title: "Six Fists to Chestplate"
+    chapter: "ch01-ash-and-compass"
+    scene_id: "scn-01-06"
+    description: "Thorne declares 'No soul should burn alone' and every guard slams a fist to chestplate—six resonant thuds echoing like a heartbeat, the Last Light Company born"
+    zone: "transept"
+    image_type: "anchor"
+    scene_mood: "reverent"
+    emotional_beat: "collective oath—individual tragedy becoming shared purpose"
+    characters_present:
+      - "veyra-thornwake"
+      - "thorne-brightward"
+      - "sergeant-kelen"
+      - "archer-venn"
+      - "corporal-darric"
+      - "medic-halden"
+    framing: "wide"
+    composition_notes: "Low angle looking up at circle of guards; lantern held aloft by Thorne at apex, guards forming ring with fists to chest"
+    key_visual_elements:
+      - "six armored figures with fists to chest"
+      - "lantern held aloft as central light"
+      - "Veyra supported at center"
+      - "circular formation of solidarity"
+    lighting:
+      primary_source: "lantern as central light source"
+      quality: "warm glow on armor and determined faces"
+    palette:
+      dominant: ["armor steel", "lantern amber", "circle unity"]
+      accent: ["faces in firelight", "raised lantern"]
+
+# ============================================================================
+# REFERENCES - Cross-Reference Links
+# ============================================================================
+references:
+  chapter_visual_plans:
+    - slug: "ch01-ash-and-compass"
+      relationship: "primary setting"
+      notes: "Entire chapter takes place in canyon; birth of Last Light Company"
+
+  character_portraits:
+    - slug: "veyra-thornwake"
+      relationship: "protagonist"
+      notes: "Sole survivor; defined by vigil here; carries lantern and shield forward"
+    - slug: "lysander-valerius"
+      relationship: "sacrifice"
+      notes: "Dies sealing dragon-fire; his shield becomes Veyra's tool"
+    - slug: "ignis-emberheart"
+      relationship: "vanished"
+      notes: "Disappears at copper-ozone locus; fate unknown"
+    - slug: "borin-stonehand"
+      relationship: "fallen"
+      notes: "Dies behind glass; his hammer cracks the barrier"
+    - slug: "elara-whisperwind"
+      relationship: "fallen"
+      notes: "Dies behind glass; her daggers crossed on her chest"
+    - slug: "thorne-brightward"
+      relationship: "rescue"
+      notes: "Leads patrol that discovers Veyra; helps found the Company"
+
+  related_locations:
+    - slug: "city-watch-headquarters"
+      relationship: "organizational"
+      notes: "Patrol origin; Company administrative home"
+
+  thematic_connections:
+    - theme: "sacrifice"
+      description: "Lysander's sacrifice defines the Company's founding ethos"
+    - theme: "witness"
+      description: "Veyra's curse is to see through glass but cannot help"
+    - theme: "memory and vow"
+      description: "Blood-carved names make memory permanent and binding"
+    - theme: "transformation"
+      description: "Stone to glass, grief to purpose, individuals to Company"
+    - theme: "lantern as symbol"
+      description: "The light that refuses to die, passed from Veyra to Thorne"

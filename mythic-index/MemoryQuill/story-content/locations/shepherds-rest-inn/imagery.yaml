@@ -1,0 +1,793 @@
+# Shepherd's Rest Inn - Location Imagery Specification
+# Generated for MythicIndex image generation system
+# "Exactly as advertised—unremarkable in every way that mattered"
+
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "shepherds-rest-inn"
+  location_name: "Shepherd's Rest Inn"
+  version: "1.0"
+  last_updated: "2025-12-26"
+  generation_notes: |
+    An unremarkable merchant's inn in Stonebridge that serves as an operational safe house.
+    Its very mundanity provides perfect cover for sensitive meetings and surveillance.
+    The visual key is capturing "deliberate forgettability" - functional comfort without
+    any distinctive features that might fix in memory. Privacy through indifference.
+
+generation_defaults:
+  provider: "google"
+  model: "imagen-3"
+  quality: "high"
+  aspect_ratio: "16:9"
+  style_preset: "location-interior"
+
+# ============================================================================
+# NARRATIVE SOUL - The Essential Truth of This Place
+# ============================================================================
+
+narrative_soul: |
+  The Shepherd's Rest exists to be forgotten. It is not worn or tired but simply
+  unremarkable - the kind of establishment travelers describe as "fine" and cannot
+  recall a week later. Its rooms are clean without character, its common room adequate
+  without charm, its innkeeper pleasant without being memorable. This very anonymity
+  makes it perfect for those who need to meet unseen and plan unremembered.
+
+  When Cidri's team gathers here after the Bastion heist, the room's bland functionality
+  serves as neutral ground for complicated emotions - relief, guilt, the weight of
+  violence justified by necessity. The unremarkable surroundings become a frame that
+  throws their extraordinary circumstances into sharp relief.
+
+one_line_essence: "Where forgettable rooms host unforgettable decisions"
+
+# ============================================================================
+# LOCATION VISUAL ANCHOR - Consistent Visual Identity
+# ============================================================================
+
+location_visual_anchor:
+  signature_elements:
+    - "Standard-issue wooden furniture, well-maintained but characterless"
+    - "Whitewashed walls with no decorative elements"
+    - "Plain wool blankets in undyed natural colors"
+    - "Single window with street view, functional shutters"
+    - "Oil lamp on bedside table, basic iron construction"
+
+  materials:
+    primary: "Serviceable pine wood, sanded smooth but unstained"
+    secondary: "Whitewashed plaster walls, slightly textured"
+    accent: "Plain iron hardware, functional ceramic fixtures"
+    atmospheric: "Undyed linen curtains filtering street light"
+
+  color_anchors:
+    dominant: ["off-white walls", "natural pine wood", "cream linen"]
+    accent: ["iron gray hardware", "brown wool blankets"]
+    avoid: ["bright colors", "rich fabrics", "decorative patterns"]
+
+  characteristic_light:
+    primary: "Filtered daylight through plain curtains"
+    secondary: "Simple oil lamp casting even, workmanlike glow"
+    quality: "Flat and even, no dramatic shadows"
+    mood_default: "Neutral, functional, deliberately unremarkable"
+
+# ============================================================================
+# OVERVIEW SHOT - Location Establishing Image
+# ============================================================================
+
+overview:
+  type: "establishing"
+  framing: "wide"
+  description: |
+    The Shepherd's Rest Inn presents exactly what it advertises - a two-story
+    timber-frame building of standard Stonebridge commercial construction, its
+    whitewashed walls and dark-stained beams indistinguishable from a dozen
+    similar establishments on neighboring streets. A modest sign depicts a
+    shepherd's crook, carved competently but without artistry. The courtyard
+    visible through an archway shows practical cobblestones and a functional
+    well, nothing more.
+
+  key_elements:
+    - "Two-story timber-frame construction, utterly typical"
+    - "Whitewashed walls with dark beam accents"
+    - "Simple wooden sign with shepherd's crook motif"
+    - "Arched passage to interior courtyard"
+    - "Clean but characterless facade"
+
+  mood: "quotidian"
+  time_of_day: "mid-morning"
+  weather: "overcast"
+
+  camera:
+    angle: "straight-on, pedestrian eye level"
+    distance: "medium establishing shot from across street"
+    focus: "sharp throughout, documentary quality"
+
+  lighting:
+    primary_source: "Diffused daylight through cloud cover"
+    secondary_source: "None needed"
+    quality: "Flat and even, no dramatic shadows"
+    direction: "overhead and ambient"
+    color_temperature: "neutral gray daylight"
+    shadow_depth: "minimal"
+    atmospheric: "unremarkable weather, forgettable sky"
+
+  palette:
+    dominant: ["whitewash cream", "weathered timber brown", "gray cobblestones"]
+    accent: ["iron-gray hardware", "faded green shutters"]
+    avoid: ["saturated colors", "dramatic contrasts", "distinctive features"]
+
+  technical:
+    aspect_ratio: "16:9"
+    focal_length: "standard 50mm equivalent"
+    depth_of_field: "deep, everything in focus"
+
+# ============================================================================
+# ZONES - Distinct Areas Within the Location
+# ============================================================================
+
+zones:
+  # --------------------------------------------------------------------------
+  # COMMON AREAS
+  # --------------------------------------------------------------------------
+
+  - zone_id: "common-room"
+    zone_name: "Common Room"
+    zone_type: "commons"
+
+    description: |
+      The common room of the Shepherd's Rest embodies functional adequacy - clean tables,
+      sturdy benches, a modest fireplace that provides warmth without becoming a gathering
+      point. The ceiling is low enough to feel contained but not oppressive. Merchants
+      eat their meals here in comfortable silence, conducting business in low voices that
+      don't carry. The serving staff move efficiently without soliciting conversation.
+
+    key_elements:
+      - "Clean but unremarkable wooden tables and benches"
+      - "Small fireplace with utilitarian stone surround"
+      - "Low ceiling with exposed beams, typical construction"
+      - "Bar counter of plain polished wood"
+      - "Oil lamps mounted on walls at regular intervals"
+
+    mood: "quotidian"
+    time_of_day: "evening"
+
+    lighting:
+      primary_source: "Oil lamps on wall brackets"
+      secondary_source: "Low fire in hearth"
+      quality: "Even, warm, workmanlike"
+      color_temperature: "warm amber"
+      shadow_depth: "shallow"
+
+    palette:
+      dominant: ["pine wood tones", "whitewash walls", "amber lamplight"]
+      accent: ["gray stone fireplace", "brown leather aprons on staff"]
+      avoid: ["decorative elements", "colorful furnishings", "distinctive features"]
+
+    camera:
+      angle: "eye level, seated perspective"
+      framing: "medium wide to capture room scope"
+      focus: "overall atmosphere, no focal point"
+
+  - zone_id: "courtyard"
+    zone_name: "Interior Courtyard"
+    zone_type: "liminal"
+
+    description: |
+      The cobbled courtyard serves as a practical transition between street and inn,
+      offering stabling facilities and a functional well. Its high walls ensure privacy
+      without creating a sense of enclosure. Merchants' horses stand in unremarkable stalls,
+      their tack plain and serviceable. The space exists for logistics, not atmosphere.
+
+    key_elements:
+      - "Cobblestone paving, well-maintained"
+      - "Simple well with wooden cover"
+      - "Modest stabling along one wall"
+      - "High walls providing privacy"
+      - "Back entrance to inn's ground floor"
+
+    mood: "quotidian"
+    time_of_day: "afternoon"
+
+    lighting:
+      primary_source: "Open sky overhead"
+      secondary_source: "Reflected light from whitewashed walls"
+      quality: "Bright but contained"
+      color_temperature: "neutral daylight"
+      shadow_depth: "moderate, cast by walls"
+
+    palette:
+      dominant: ["gray cobblestones", "whitewash walls", "weathered wood stalls"]
+      accent: ["iron well hardware", "horse leather tack"]
+      avoid: ["decorative plantings", "colorful elements", "distinctive features"]
+
+  - zone_id: "stairwell"
+    zone_name: "Interior Stairwell"
+    zone_type: "liminal"
+
+    description: |
+      A narrow wooden staircase connects the common room to the second-floor guest rooms.
+      The steps are worn smooth by countless boots but remain structurally sound. A single
+      window on the landing provides adequate light during day hours. At night, a wall-mounted
+      lamp serves the same function without distinction.
+
+    key_elements:
+      - "Narrow wooden staircase with plain banister"
+      - "Worn but solid steps"
+      - "Small landing window"
+      - "Wall-mounted oil lamp"
+      - "Whitewashed walls throughout"
+
+    mood: "quotidian"
+    time_of_day: "variable"
+
+    lighting:
+      primary_source: "Landing window or oil lamp depending on hour"
+      quality: "Adequate, functional"
+      color_temperature: "neutral to warm"
+      shadow_depth: "moderate on stairs"
+
+  # --------------------------------------------------------------------------
+  # GUEST ROOMS
+  # --------------------------------------------------------------------------
+
+  - zone_id: "inn-room"
+    zone_name: "Guest Room"
+    zone_type: "cell"
+
+    description: |
+      The guest rooms are studies in adequate comfort - narrow beds with clean linens,
+      a washstand with functional basin, a small table and chair for correspondence,
+      hooks for hanging clothes. Each room has a single window looking out to the street
+      below. The furnishings are identical across all rooms, making it impossible to
+      remember which specific room one occupied. This is by design.
+
+    key_elements:
+      - "Narrow bed with clean undyed wool blanket"
+      - "Simple pine washstand with ceramic basin"
+      - "Small writing table with single chair"
+      - "Wall hooks for clothing"
+      - "Single street-facing window with plain curtains"
+
+    mood: "quotidian"
+    time_of_day: "morning"
+
+    lighting:
+      primary_source: "Street-facing window with linen curtains"
+      secondary_source: "Bedside oil lamp"
+      quality: "Soft, filtered, unremarkable"
+      color_temperature: "neutral daylight"
+      shadow_depth: "minimal"
+
+    palette:
+      dominant: ["pine wood furniture", "cream linen", "whitewash walls"]
+      accent: ["brown wool blanket", "gray ceramic basin"]
+      avoid: ["colorful bedding", "decorative items", "personal touches"]
+
+    camera:
+      angle: "doorway perspective looking in"
+      framing: "full room visible"
+      focus: "emphasize standardized furnishings"
+
+    narrative_moment: |
+      These identical rooms serve different purposes across the narrative - anonymous
+      accommodation for traveling merchants, surveillance posts overlooking the street,
+      and private spaces for complicated post-mission emotions.
+
+  - zone_id: "window-view"
+    zone_name: "Street View from Window"
+    zone_type: "perspective"
+
+    description: |
+      From the second-floor windows, guests can observe Stonebridge's commercial district
+      without drawing attention. The view encompasses the street below, neighboring shop
+      fronts, and the flow of merchant traffic. For operatives, these windows provide
+      excellent surveillance positions while maintaining perfect innocence - any merchant
+      might watch the street while contemplating business.
+
+    key_elements:
+      - "Street scene visible through plain window frame"
+      - "Neighboring buildings of similar construction"
+      - "Merchant foot traffic below"
+      - "Partial view of the courtyard entrance"
+      - "Linen curtains capable of concealing observer"
+
+    mood: "quotidian"
+    time_of_day: "afternoon"
+
+    lighting:
+      primary_source: "Exterior daylight"
+      secondary_source: "Dim interior behind observer"
+      quality: "Bright exterior, shadowed interior"
+      direction: "looking out from shadow"
+
+    palette:
+      dominant: ["street cobblestones", "building facades", "gray sky"]
+      accent: ["merchant clothing colors", "shop awnings"]
+
+    camera:
+      angle: "over-the-shoulder from within room"
+      framing: "window frame establishing vantage point"
+      focus: "street scene sharp, interior edges soft"
+
+    narrative_moment: |
+      This perspective defines the inn's operational value - the ability to watch
+      without being watched, to see the street's rhythm and spot anomalies.
+
+  - zone_id: "room-at-night"
+    zone_name: "Guest Room at Night"
+    zone_type: "temporal"
+
+    description: |
+      At night, the guest rooms become pools of lamplight in surrounding darkness.
+      The single oil lamp on the bedside table casts a small warm circle that barely
+      reaches the walls. Outside the window, the street is quiet but not silent -
+      occasional footsteps, a distant dog, the normal sounds of a district at rest.
+
+    key_elements:
+      - "Oil lamp creating intimate circle of light"
+      - "Bed and furniture partially visible in glow"
+      - "Window showing dark street beyond"
+      - "Shadows pooling in corners"
+      - "Sense of contained privacy"
+
+    mood: "intimate"
+    time_of_day: "late evening"
+
+    lighting:
+      primary_source: "Bedside oil lamp"
+      secondary_source: "None"
+      quality: "Warm, intimate, limited range"
+      color_temperature: "deep amber"
+      shadow_depth: "heavy beyond lamp's reach"
+
+    palette:
+      dominant: ["amber lamplight", "deep shadows", "cream linen in light"]
+      accent: ["warm wood tones", "brass lamp fixture"]
+
+  # --------------------------------------------------------------------------
+  # OPERATIONAL SPACES
+  # --------------------------------------------------------------------------
+
+  - zone_id: "meeting-room"
+    zone_name: "Private Meeting Room"
+    zone_type: "sanctuary"
+
+    description: |
+      A larger corner room sometimes used for merchant negotiations serves equally well
+      for operational planning. It contains a table large enough to spread maps or documents,
+      several chairs, and windows on two walls providing both light and escape routes.
+      The room is rented by the day to merchants who need privacy for deals - or to
+      operatives who need privacy for other purposes.
+
+    key_elements:
+      - "Larger table suitable for documents or maps"
+      - "Multiple chairs of simple construction"
+      - "Windows on two walls (corner room)"
+      - "Door with functional lock"
+      - "Same plain furnishings as other rooms"
+
+    mood: "tense"
+    time_of_day: "late afternoon"
+
+    lighting:
+      primary_source: "Multiple windows providing cross-light"
+      secondary_source: "Oil lamp on table for evening work"
+      quality: "Good working light"
+      color_temperature: "neutral daylight"
+
+    palette:
+      dominant: ["pine table surface", "whitewash walls", "gray daylight"]
+      accent: ["paper documents", "ink bottles", "leather satchels"]
+
+    narrative_moment: |
+      This space hosts the planning session for the Bastion warehouse operation -
+      maps spread on the table, routes discussed, contingencies planned. The room's
+      anonymity contains their conspiracy like water in a vessel.
+
+  - zone_id: "planning-session"
+    zone_name: "Heist Planning Session"
+    zone_type: "beat"
+
+    description: |
+      The team gathered around the table, maps and notes spread between them. The
+      Bastion Lock sits at the center - that ancient mechanism that will grant them
+      access to the warehouse's secured vault. Faces are intent, voices low, the
+      discussion weighing risk against necessity. The bland room around them makes
+      their dangerous purpose feel almost mundane.
+
+    key_elements:
+      - "Team gathered around table"
+      - "Maps and documents spread out"
+      - "The Bastion Lock as central focus"
+      - "Intense but controlled discussion"
+      - "Unremarkable room framing remarkable purpose"
+
+    mood: "tense"
+    time_of_day: "afternoon"
+
+    lighting:
+      primary_source: "Windows providing working light"
+      quality: "Clear and even for reading documents"
+      color_temperature: "neutral daylight"
+
+    characters_present:
+      - "Cidri coordinating discussion"
+      - "Team members with specific roles"
+
+    camera:
+      angle: "slightly elevated, over table"
+      framing: "group composition with documents visible"
+      focus: "faces and the lock at center"
+
+    narrative_moment: |
+      The planning scene establishes the heist's stakes and the team's competence.
+      Each person knows their role. The room's forgettable nature contrasts with
+      the gravity of what they're planning.
+
+  - zone_id: "surveillance-position"
+    zone_name: "Street Surveillance Position"
+    zone_type: "perspective"
+
+    description: |
+      An operative positioned at the window, curtain held slightly aside, watching
+      the street below with patient attention. From this vantage, patterns emerge -
+      when guards change, which merchants follow regular schedules, where foot traffic
+      thins. The watching is invisible from below, just another merchant idly looking
+      out while contemplating business.
+
+    key_elements:
+      - "Figure at window, partially concealed by curtain"
+      - "Street scene below showing normal traffic"
+      - "Patient, professional observation"
+      - "Notes or sketches perhaps visible on nearby table"
+
+    mood: "tense"
+    time_of_day: "variable - multiple observation periods"
+
+    lighting:
+      primary_source: "Exterior light on street"
+      secondary_source: "Dim room behind observer"
+      quality: "Bright exterior, shadow-concealed interior"
+
+    camera:
+      angle: "profile of observer with street visible"
+      framing: "split between watcher and watched"
+      focus: "observer's concentration, street context"
+
+  # --------------------------------------------------------------------------
+  # AFTERMATH SPACES
+  # --------------------------------------------------------------------------
+
+  - zone_id: "post-mission-room"
+    zone_name: "Post-Mission Solitude"
+    zone_type: "mood"
+
+    description: |
+      After the warehouse operation, the team returns to the Shepherd's Rest in
+      complicated silence. The rooms that served as planning spaces now host
+      aftermath - the processing of violence, the weight of necessity, the particular
+      exhaustion that follows crisis. The bland surroundings offer no comfort but
+      also make no demands, allowing space for whatever emotions need processing.
+
+    key_elements:
+      - "Solitary figure in unremarkable room"
+      - "Aftermath stillness - gear set aside, tension unwinding"
+      - "Window showing night street or early dawn"
+      - "The contrast between mundane setting and extraordinary experience"
+
+    mood: "somber"
+    time_of_day: "pre-dawn"
+
+    lighting:
+      primary_source: "Single oil lamp, burning low"
+      secondary_source: "Gray pre-dawn light at window"
+      quality: "Dim, transitional, exhausted"
+      color_temperature: "cool gray mixing with warm lamp"
+
+    palette:
+      dominant: ["gray pre-dawn", "amber lamp glow", "shadowed corners"]
+      accent: ["discarded gear", "rumpled blankets"]
+
+    narrative_moment: |
+      The victory was necessary but not clean. This image captures the aftermath -
+      not celebration but processing. The unremarkable room becomes a space for
+      coming to terms with what was required.
+
+  - zone_id: "complicated-victory"
+    zone_name: "Complicated Victory"
+    zone_type: "beat"
+
+    description: |
+      Cidri alone in the room, sitting on the bed's edge or standing at the window,
+      processing the mission's cost. The heist succeeded - they have what they need.
+      But the path required violence, and every choice that brought them here weighs
+      in the silence. The bland room offers no distraction from the accounting.
+
+    key_elements:
+      - "Cidri alone with thoughts"
+      - "Dim room, post-mission stillness"
+      - "Physical markers of the operation - perhaps a scrape, torn cloth"
+      - "The Bastion Lock or recovered documents nearby"
+      - "Expression showing complex emotion - relief and cost intertwined"
+
+    mood: "somber"
+    time_of_day: "pre-dawn"
+
+    lighting:
+      primary_source: "Gray dawn light beginning at window"
+      secondary_source: "Dying oil lamp"
+      quality: "Transitional, neither night nor day"
+      color_temperature: "cool gray with amber remnants"
+
+    camera:
+      angle: "medium shot, slightly below eye level"
+      framing: "figure against anonymous room"
+      focus: "expression, with room context"
+
+    narrative_moment: |
+      This is the chapter's emotional culmination - not the heist itself but its
+      aftermath. Cidri processing what the mission required, what it cost, what it
+      means. The victory is real but complicated. The room's emptiness holds space
+      for that complexity.
+
+  - zone_id: "dawn-departure"
+    zone_name: "Dawn Departure"
+    zone_type: "temporal"
+
+    description: |
+      Morning light fills the room as the team prepares to leave. The operation is
+      complete, the Shepherd's Rest has served its purpose, and soon they'll be gone
+      with no trace of their presence. The inn will return to hosting unremarkable
+      merchants with unremarkable business. The room shows signs of recent occupancy
+      but nothing that would suggest what happened here.
+
+    key_elements:
+      - "Morning light filling the room"
+      - "Belongings gathered, ready to depart"
+      - "Room returning to its anonymous state"
+      - "Team members in traveling clothes"
+      - "Window showing busy morning street"
+
+    mood: "quotidian"
+    time_of_day: "early morning"
+
+    lighting:
+      primary_source: "Morning sun through window"
+      quality: "Clear, new day, fresh light"
+      color_temperature: "neutral to warm morning"
+
+    palette:
+      dominant: ["morning gold", "clean white walls", "traveling brown clothes"]
+      accent: ["packed bags", "cleared table"]
+
+    narrative_moment: |
+      The departure marks return to the world - the inn's purpose served, its
+      anonymity preserved. They leave as unremarkable merchants who stayed a night
+      or two. The room will remember nothing.
+
+  # --------------------------------------------------------------------------
+  # SERVICE AREAS
+  # --------------------------------------------------------------------------
+
+  - zone_id: "kitchen-glimpse"
+    zone_name: "Kitchen Glimpse"
+    zone_type: "detail"
+
+    description: |
+      Through a briefly opened door, a glimpse of the inn's kitchen - copper pots,
+      plain crockery, a cook working efficiently without conversation. The food here
+      is adequate and unremarkable, served promptly without ceremony. The kitchen
+      embodies the same functional competence as the rest of the establishment.
+
+    key_elements:
+      - "Partial view through service door"
+      - "Copper pots and practical implements"
+      - "Cook working efficiently"
+      - "Steam and warmth suggesting active meal preparation"
+
+    mood: "quotidian"
+    time_of_day: "meal time"
+
+    lighting:
+      primary_source: "Kitchen hearth fire"
+      secondary_source: "Small window for ventilation"
+      quality: "Warm, working light"
+
+    palette:
+      dominant: ["copper pot tones", "hearth fire amber", "steam white"]
+      accent: ["vegetable colors", "flour dust"]
+
+  - zone_id: "innkeeper"
+    zone_name: "The Innkeeper"
+    zone_type: "inhabited"
+
+    description: |
+      The innkeeper embodies the establishment's ethos - pleasant without being
+      memorable, efficient without being intrusive. Middle-aged, unremarkable
+      features, an apron that's clean but not new. He (or she) processes guests
+      with the same attentive indifference given to accounting ledgers, providing
+      exactly what's needed and nothing more.
+
+    key_elements:
+      - "Unremarkable middle-aged figure"
+      - "Clean but worn apron"
+      - "Polite, professional expression"
+      - "Standing behind bar counter or at guest room door"
+      - "Ledger book or room key in hand"
+
+    mood: "quotidian"
+    time_of_day: "variable"
+
+    lighting:
+      primary_source: "Common room lamps or daylight"
+      quality: "Even, unremarkable"
+
+    narrative_moment: |
+      The innkeeper never asks questions, never remembers faces longer than necessary,
+      never notices odd hours or quiet meetings. This is professional discretion
+      perfected into art form - privacy through cultivated indifference.
+
+# ============================================================================
+# BEAT IMAGES - Key Narrative Moments
+# ============================================================================
+
+beat_images:
+  - beat_id: "bastion-lock-revealed"
+    beat_name: "The Bastion Lock Revealed"
+    chapter_slug: "ch11-an-honest-coin"
+
+    description: |
+      The ancient Bastion Lock sits on the table between them - a mechanism of
+      dwarvish make, complex and beautiful in its precision. This is their key
+      to the warehouse vault, acquired through channels Cidri doesn't discuss.
+      The team studies it with professional attention, understanding that this
+      small object represents their path to whatever the Croft syndicate has hidden.
+
+    key_elements:
+      - "Bastion Lock as central focus - intricate dwarvish mechanism"
+      - "Table surface with maps and notes around it"
+      - "Hands reaching toward or examining the lock"
+      - "Faces showing focused attention"
+      - "Afternoon light from windows"
+
+    mood: "tense"
+
+    composition:
+      focal_point: "The Bastion Lock at table center"
+      framing: "Overhead or slightly elevated angle on table"
+      depth_layers:
+        - "Lock in sharp focus at center"
+        - "Hands and document edges in mid-ground"
+        - "Faces at table edges, partially visible"
+
+    lighting:
+      primary_source: "Window light falling on table"
+      quality: "Clear working light emphasizing lock's detail"
+      color_temperature: "neutral daylight"
+      shadow_depth: "moderate, giving lock dimension"
+
+    palette:
+      dominant: ["brass/bronze lock tones", "pine table", "parchment maps"]
+      accent: ["window light", "serious face tones"]
+
+    emotional_beat: "The plan becomes real - they have the tool, now they need the will"
+
+  - beat_id: "street-patterns"
+    beat_name: "Learning the Street"
+    chapter_slug: "ch11-an-honest-coin"
+
+    description: |
+      Patient surveillance from the window - watching the street below, learning its
+      rhythms. Guard patrol timing, merchant traffic patterns, the gaps in attention
+      that create opportunity. The observer is still and focused, curtain held just
+      enough to see without being seen. Notes accumulate on the table behind.
+
+    key_elements:
+      - "Observer at window, partially concealed"
+      - "Street scene below showing daily patterns"
+      - "Careful, patient attention"
+      - "Notes or sketches visible on nearby surface"
+      - "The craft of invisible watching"
+
+    mood: "tense"
+
+    composition:
+      focal_point: "Observer's focused attention"
+      framing: "Profile with street visible beyond"
+      depth_layers:
+        - "Observer's face in shadow, sharp"
+        - "Window frame as boundary"
+        - "Street scene with moving figures"
+
+    lighting:
+      primary_source: "Exterior daylight on street"
+      secondary_source: "Dim interior"
+      quality: "Bright outside, shadowed inside - concealment"
+      direction: "Looking out from shadow"
+
+    palette:
+      dominant: ["shadow interior", "bright street", "linen curtain cream"]
+      accent: ["moving figures on street", "paper notes"]
+
+    emotional_beat: "Professional patience - the tedious work that enables the daring act"
+
+  - beat_id: "accounting-silence"
+    beat_name: "The Accounting Silence"
+    chapter_slug: "ch11-an-honest-coin"
+
+    description: |
+      In the gray pre-dawn, Cidri sits alone in the unremarkable room, processing
+      what the night required. The heist succeeded. The violence was necessary.
+      Both truths exist simultaneously without resolving. The bland room offers no
+      absolution and demands no justification - it simply holds space for the
+      complicated arithmetic of conscience.
+
+    key_elements:
+      - "Cidri alone, sitting on bed edge or standing at window"
+      - "Pre-dawn gray light mixing with dying lamp"
+      - "Physical evidence of the operation - minor wounds, torn fabric"
+      - "Stillness and weight"
+      - "The room's emptiness holding complexity"
+
+    mood: "somber"
+
+    composition:
+      focal_point: "Cidri's expression and posture"
+      framing: "Medium shot with room context"
+      depth_layers:
+        - "Cidri in mid-ground, sharp"
+        - "Room furnishings as anonymous frame"
+        - "Window showing gray dawn"
+
+    lighting:
+      primary_source: "Gray pre-dawn from window"
+      secondary_source: "Dying oil lamp, almost guttered"
+      quality: "Transitional, exhausted light"
+      color_temperature: "cool gray with warm amber remnants"
+      shadow_depth: "deep in corners, soft on face"
+
+    palette:
+      dominant: ["gray dawn", "amber lamp remnant", "shadow pools"]
+      accent: ["skin tones showing exhaustion", "evidence of action"]
+
+    emotional_beat: |
+      Victory has a price. This image captures the moment of reckoning - not
+      guilt exactly, but the weight of necessity. The heist was right but not
+      clean. Both truths require acknowledgment.
+
+# ============================================================================
+# REFERENCES - Connections to Other Content
+# ============================================================================
+
+references:
+  chapter_visual_plans:
+    - chapter_slug: "ch11-an-honest-coin"
+      relationship: "primary setting for heist planning and aftermath"
+      relevant_scenes:
+        - "Bastion Lock examination and heist planning"
+        - "Street surveillance establishing patterns"
+        - "Post-operation processing"
+        - "Complicated victory reflection"
+
+  character_portraits:
+    - character_slug: "cidri-ashwalker"
+      relationship: "primary occupant during operation"
+      visual_notes: "Post-mission appearance - exhausted, marked by the work"
+    - character_slug: "veyra-thornweald"
+      relationship: "present for planning sessions"
+
+  related_locations:
+    - location_slug: "stonebridge"
+      relationship: "district context"
+      visual_connection: "Standard Stonebridge commercial architecture"
+    - location_slug: "croft-warehouse"
+      relationship: "target of operation planned here"
+      visual_connection: "Contrast between anonymous inn and target location"
+
+  thematic_connections:
+    - theme: "Operational anonymity"
+      visual_expression: "Deliberately forgettable furnishings"
+    - theme: "Privacy through indifference"
+      visual_expression: "Innkeeper who never remembers faces"
+    - theme: "The weight of necessary violence"
+      visual_expression: "Bland rooms holding complicated emotions"
+    - theme: "Professionalism as armor"
+      visual_expression: "Patient surveillance, careful planning"

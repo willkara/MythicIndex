@@ -1,0 +1,1157 @@
+# Thornwood Forest - Location Imagery Specification
+# Generated for MythicIndex image generation system
+# "Where the forest watches and nature's indifference braids beauty with danger"
+
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "thornwood-forest"
+  location_name: "Thornwood Forest"
+  version: "1.0"
+  last_updated: "2025-12-26"
+  generation_notes: |
+    An ancient, dense forest north of Waterdeep that serves as wilderness backdrop,
+    infiltration corridor, and barometer for unnatural corruption. The Thornwood swallows
+    travelers in a dozen steps—old-growth trees creating deep shadow corridors, hidden
+    hollows breaking sightlines, seasonal extremes turning the forest into either a
+    hushed winter cathedral or a spring mud labyrinth. Near the Silent Hand facility,
+    the forest feels actively hostile, observing intruders with intelligence rather
+    than instinct.
+
+generation_defaults:
+  provider: "google"
+  model: "imagen-3"
+  quality: "high"
+  aspect_ratio: "16:9"
+  style_preset: "location-exterior"
+
+# ============================================================================
+# NARRATIVE SOUL - The Essential Truth of This Place
+# ============================================================================
+
+narrative_soul: |
+  The Thornwood is old and it watches. Ancient trees packed tight create shadow
+  corridors where even midday becomes twilight. Hidden hollows and brush walls
+  break sightlines every few yards. Wildlife moves as a coordinated system—
+  warning calls, sudden silences, eruptions of flight that signal something wrong.
+
+  In winter, snow-laden boughs transform the forest into a hushed cathedral where
+  sound dampens to eerie quiet and exposure becomes lethal. In spring thaw, the
+  ground becomes a labyrinth of mud and fog. Near the Silent Hand's territory,
+  the forest feels contaminated—water carrying suppression signatures, the very
+  trees seeming to observe intruders with malevolent attention.
+
+  This is where Vera was found, protected by animals that shouldn't care. Where
+  the reconnaissance team realized they were being herded. Where Lyra emerged
+  from shadows to prove she was both asset and predator. The forest doesn't judge—
+  it simply reveals what you bring into it.
+
+one_line_essence: "Ancient trees watching, nature's indifference braiding beauty with danger"
+
+# ============================================================================
+# LOCATION VISUAL ANCHOR - Consistent Visual Identity
+# ============================================================================
+
+location_visual_anchor:
+  signature_elements:
+    - "Dense old-growth canopy swallowing sunlight"
+    - "Gnarled roots and slick leaf-mold underfoot"
+    - "Hidden hollows and brush walls breaking sightlines"
+    - "Clear streams carrying pine-scented cold"
+    - "Wildlife moving as coordinated warning system"
+
+  materials:
+    primary: "Ancient bark, lichen-covered, gnarled with age"
+    secondary: "Layered forest floor—damp leaves, needles, root-webs"
+    accent: "Clear stream water, exposed stone, fallen logs"
+    atmospheric: "Seasonal—snow or mud, mist or dappled light"
+
+  color_anchors:
+    dominant: ["deep green canopy", "bark brown", "shadow black"]
+    accent: ["stream silver", "leaf rot copper", "sky glimpse blue"]
+    avoid: ["bright colors", "cultivated appearance", "human structures"]
+
+  characteristic_light:
+    primary: "Dappled and unreliable—bright shafts swallowed by shadow"
+    secondary: "Filtered through canopy, green-shifted"
+    quality: "Changing constantly, never trustworthy"
+    mood_default: "Watchful, ancient, indifferent"
+
+# ============================================================================
+# OVERVIEW SHOT - Location Establishing Image
+# ============================================================================
+
+overview:
+  type: "establishing"
+  framing: "wide"
+  description: |
+    The Thornwood stretches as far as sight allows—ancient trees packed tight,
+    their interlocking branches creating a canopy that swallows most light. Game
+    trails wind between massive trunks. Hidden hollows wait in shadow. Streams
+    thread silver through the green-brown depths. The forest breathes with its
+    own rhythm, watching all who enter.
+
+  key_elements:
+    - "Dense old-growth forest stretching into distance"
+    - "Massive tree trunks with gnarled roots"
+    - "Interlocking canopy filtering light"
+    - "Game trails barely visible"
+    - "Streams threading through"
+    - "Hidden hollows in shadow"
+
+  mood: "ominous"
+  time_of_day: "afternoon"
+  weather: "overcast"
+
+  camera:
+    angle: "from forest edge looking into depths"
+    distance: "wide establishing"
+    focus: "depth and scale of forest"
+
+  lighting:
+    primary_source: "Overcast sky filtered through canopy"
+    secondary_source: "Occasional shafts through gaps"
+    quality: "Dappled, unreliable, constantly shifting"
+    direction: "overhead and scattered"
+    color_temperature: "green-shifted, cool"
+    shadow_depth: "deep in hollows and under canopy"
+    atmospheric: "hint of mist in lower areas"
+
+  palette:
+    dominant: ["forest green", "bark brown", "shadow black"]
+    accent: ["stream silver", "light shaft gold"]
+    avoid: ["bright sun", "clear visibility", "welcoming appearance"]
+
+  technical:
+    aspect_ratio: "16:9"
+    focal_length: "wide angle for forest scope"
+    depth_of_field: "moderate, fog-like depth"
+
+# ============================================================================
+# ZONES - Distinct Areas Within the Location
+# ============================================================================
+
+zones:
+  # --------------------------------------------------------------------------
+  # GENERAL FOREST
+  # --------------------------------------------------------------------------
+
+  - zone_id: "forest"
+    zone_name: "Forest"
+    zone_type: "commons"
+
+    description: |
+      The general Thornwood—dense stands of old-growth trees creating deep shadow
+      corridors, a ceiling of branches that swallows sunlight, turning even midday
+      into twilight. The forest floor is treacherous with damp leaves, needles, and
+      root-webs. Visibility breaks every few yards.
+
+    key_elements:
+      - "Dense old-growth trees"
+      - "Deep shadow corridors"
+      - "Canopy filtering light"
+      - "Treacherous forest floor"
+      - "Broken sightlines"
+
+    mood: "ominous"
+    time_of_day: "variable"
+
+    lighting:
+      primary_source: "Canopy-filtered light"
+      quality: "Dappled, constantly shifting"
+      color_temperature: "green-shifted"
+      shadow_depth: "deep"
+
+    palette:
+      dominant: ["forest green", "bark brown", "shadow"]
+      accent: ["light shafts", "leaf glint"]
+
+    featured_in_chapters:
+      - "ch30-the-silent-approach"
+
+  - zone_id: "deep-wood"
+    zone_name: "The Deep Wood"
+    zone_type: "pit"
+
+    description: |
+      The deep Thornwood where the canopy closes completely—near-constant twilight,
+      the sense of being swallowed by the forest. Here the trees are oldest, the
+      undergrowth thickest, the feeling of being watched most intense. Only those
+      with true tracker knowledge navigate safely.
+
+    key_elements:
+      - "Complete canopy closure"
+      - "Near-constant twilight"
+      - "Oldest, most massive trees"
+      - "Thick undergrowth"
+      - "Intense feeling of observation"
+
+    mood: "ominous"
+    time_of_day: "perpetual twilight"
+
+    lighting:
+      primary_source: "Minimal filtered light"
+      quality: "Dim, oppressive"
+      color_temperature: "deep green-brown"
+      shadow_depth: "profound"
+
+    palette:
+      dominant: ["dark bark", "deep shadow", "scattered green"]
+      accent: ["rare light shaft", "fungal glow"]
+
+  - zone_id: "forest-edge"
+    zone_name: "Forest Edge"
+    zone_type: "threshold"
+
+    description: |
+      Where the Thornwood meets open land—the transition zone where light gives
+      way to shadow, where the safety of clearings ends and the forest's rule
+      begins. Wildlife congregates here, and the forest's first watchfulness
+      manifests.
+
+    key_elements:
+      - "Transition from open to canopy"
+      - "Light giving way to shadow"
+      - "Wildlife congregation"
+      - "First sense of observation"
+      - "Marking the forest's boundary"
+
+    mood: "tense"
+    time_of_day: "variable"
+
+    lighting:
+      primary_source: "Open light meeting forest shadow"
+      quality: "Transition, contrast"
+
+    palette:
+      dominant: ["open sky", "forest shadow", "edge vegetation"]
+
+    featured_in_chapters:
+      - "ch15-battle-for-westwall"
+
+  # --------------------------------------------------------------------------
+  # TRAILS AND MOVEMENT
+  # --------------------------------------------------------------------------
+
+  - zone_id: "trail"
+    zone_name: "Trail"
+    zone_type: "liminal"
+
+    description: |
+      Forest trails thread through the Thornwood—game paths worn by generations
+      of animals, wider routes used by those who know the forest. The trails
+      shift with weather and season, reliable only to those who read them
+      constantly.
+
+    key_elements:
+      - "Worn path through forest"
+      - "Game trail origins"
+      - "Shifting with season"
+      - "Reading required for navigation"
+      - "Movement corridor"
+
+    mood: "tense"
+    time_of_day: "variable"
+
+    lighting:
+      primary_source: "Canopy-filtered, variable"
+      quality: "Better than deep wood, still unreliable"
+
+    palette:
+      dominant: ["trail earth", "framing trees", "dappled light"]
+
+    featured_in_chapters:
+      - "ch28-the-road-north"
+      - "ch30-the-silent-approach"
+
+  - zone_id: "forest-road"
+    zone_name: "Forest Road"
+    zone_type: "liminal"
+
+    description: |
+      The established road through the Thornwood—wider than game trails, used
+      by travelers and traders, but still dominated by the forest's presence.
+      The road offers faster travel but less concealment, visible to anything
+      watching from the trees.
+
+    key_elements:
+      - "Established road through forest"
+      - "Wider than game trails"
+      - "Less concealment"
+      - "Faster travel"
+      - "Exposed to observation"
+
+    mood: "quotidian"
+    time_of_day: "day"
+
+    lighting:
+      primary_source: "More open than deep wood"
+      quality: "Road-gap light"
+
+    palette:
+      dominant: ["road surface", "framing forest", "sky glimpse"]
+
+    featured_in_chapters:
+      - "ch08-the-tracker-in-the-snow"
+
+  - zone_id: "game-trails"
+    zone_name: "Game Trails and Ridge Spines"
+    zone_type: "liminal"
+
+    description: |
+      The network of animal paths that thread the Thornwood—narrow tracks through
+      brush, ridge spines that keep feet above mud, routes known to trackers and
+      rangers. These are the forest's secret highways, invisible to the untrained.
+
+    key_elements:
+      - "Narrow animal paths"
+      - "Ridge spines above wet ground"
+      - "Routes requiring expertise"
+      - "Invisible to untrained"
+      - "Forest's secret network"
+
+    mood: "tense"
+    time_of_day: "variable"
+
+    lighting:
+      primary_source: "Variable filtered light"
+      quality: "Challenging, inconsistent"
+
+    palette:
+      dominant: ["trail trace", "undergrowth", "root and stone"]
+
+  # --------------------------------------------------------------------------
+  # WATER FEATURES
+  # --------------------------------------------------------------------------
+
+  - zone_id: "stream"
+    zone_name: "Stream"
+    zone_type: "sanctuary"
+
+    description: |
+      Clear streams thread through the Thornwood, carrying the scent of pine
+      and wet earth, the forest's cold breath. These are landmarks for navigation,
+      sources of fresh water, and in winter, deceptive crossings that ice over
+      while remaining treacherous beneath.
+
+    key_elements:
+      - "Clear flowing water"
+      - "Pine and earth scent"
+      - "Navigation landmark"
+      - "Seasonal danger (ice)"
+      - "Forest's cold breath"
+
+    mood: "ethereal"
+    time_of_day: "variable"
+
+    lighting:
+      primary_source: "Reflected sky through canopy gaps"
+      quality: "Water-reflected, shifting"
+      color_temperature: "cool blue-silver"
+
+    palette:
+      dominant: ["water silver", "bank green", "stone grey"]
+      accent: ["sky reflection", "moss color"]
+
+    featured_in_chapters:
+      - "ch30-the-silent-approach"
+
+  - zone_id: "stream-crossings"
+    zone_name: "Streams and Seeps"
+    zone_type: "liminal"
+
+    description: |
+      The many water crossings of the Thornwood—shallow fords, stepping stones,
+      places where seeps create boggy ground. Each crossing is a decision point:
+      risk wet feet or go around, trust the ice or find another way.
+
+    key_elements:
+      - "Multiple crossing points"
+      - "Shallow fords"
+      - "Stepping stones"
+      - "Boggy seep areas"
+      - "Decision points in travel"
+
+    mood: "tense"
+    time_of_day: "variable"
+
+    lighting:
+      primary_source: "Stream-reflected light"
+      quality: "Variable with canopy"
+
+    palette:
+      dominant: ["water", "wet stone", "boggy vegetation"]
+
+  - zone_id: "stream-crossing"
+    zone_name: "The Crossing"
+    zone_type: "threshold"
+
+    description: |
+      A specific significant stream crossing—the point where a route requires
+      commitment, where the forest on the far side might be different, where
+      tracks can be lost or found in the water's edge.
+
+    key_elements:
+      - "Significant crossing point"
+      - "Commitment required"
+      - "Territory boundary"
+      - "Track reading at water's edge"
+      - "Navigation decision"
+
+    mood: "tense"
+    time_of_day: "variable"
+
+    lighting:
+      primary_source: "Open above water"
+      quality: "Brighter at crossing, shadow beyond"
+
+    palette:
+      dominant: ["crossing water", "approach trail", "far bank shadow"]
+
+  # --------------------------------------------------------------------------
+  # CONCEALMENT AND SHELTER
+  # --------------------------------------------------------------------------
+
+  - zone_id: "hidden-hollows"
+    zone_name: "Hidden Hollows"
+    zone_type: "sanctuary"
+
+    description: |
+      Natural depressions and hidden spaces in the Thornwood—places where the
+      ground drops away, where fallen logs create shelter, where brush walls
+      hide from casual view. Perfect for ambush, concealment, or simply getting
+      lost.
+
+    key_elements:
+      - "Natural depressions"
+      - "Fallen log shelter"
+      - "Brush wall concealment"
+      - "Hidden from casual view"
+      - "Ambush potential"
+
+    mood: "ominous"
+    time_of_day: "variable—darker than surroundings"
+
+    lighting:
+      primary_source: "Minimal—shadowed by terrain"
+      quality: "Dark, concealing"
+      shadow_depth: "profound"
+
+    palette:
+      dominant: ["deep shadow", "earth", "concealing vegetation"]
+
+  - zone_id: "hidden-hollow"
+    zone_name: "The Hidden Camp"
+    zone_type: "sanctuary"
+
+    description: |
+      A specific defensible hollow used for camping—rocky overhang providing
+      shelter, concealed from most approaches, defensible perimeter. The kind
+      of place experienced trackers know and mark for future use.
+
+    key_elements:
+      - "Rocky overhang shelter"
+      - "Concealed approaches"
+      - "Defensible position"
+      - "Known to experienced trackers"
+      - "Camp capability"
+
+    mood: "intimate"
+    time_of_day: "night camp"
+
+    lighting:
+      primary_source: "Smokeless fire, carefully managed"
+      secondary_source: "Moonlight through canopy"
+      quality: "Intimate, controlled"
+      color_temperature: "warm fire, cool moonlight"
+
+    palette:
+      dominant: ["firelit faces", "shadow beyond", "overhang stone"]
+      accent: ["bedroll colors", "gear metal"]
+
+  - zone_id: "camp"
+    zone_name: "Camp"
+    zone_type: "sanctuary"
+
+    description: |
+      A forest camp in the Thornwood—defensible hollow, smokeless fire cooking,
+      team gathered in the relative safety of chosen ground. The wilderness
+      pressed close but held at bay, at least for the night.
+
+    key_elements:
+      - "Defensible position chosen"
+      - "Smokeless fire"
+      - "Team gathered"
+      - "Wilderness pressing close"
+      - "Temporary safety"
+
+    mood: "intimate"
+    time_of_day: "night"
+
+    lighting:
+      primary_source: "Small fire"
+      secondary_source: "Moonlight through canopy gaps"
+      quality: "Warm firelit center, cold darkness beyond"
+      color_temperature: "fire amber, moon silver"
+
+    palette:
+      dominant: ["firelight on faces", "surrounding darkness", "gear scatter"]
+      accent: ["Rill's glowing patterns", "Lyra's shadow-absorption"]
+
+    narrative_moment: |
+      Here the reconnaissance team camps—Rill communing with water, Lyra
+      scanning darkness, Veyra processing what it means to be herded. And
+      later, Lyra materializing at the firelight's edge, blade wiped clean.
+
+    featured_in_chapters:
+      - "ch30-the-silent-approach"
+      - "ch31-splintered-focus"
+
+  # --------------------------------------------------------------------------
+  # HIGH GROUND AND OBSERVATION
+  # --------------------------------------------------------------------------
+
+  - zone_id: "rocky-outcrops"
+    zone_name: "Rocky Outcrops and Overwatch Points"
+    zone_type: "overlook"
+
+    description: |
+      Where rock breaks through the forest floor—exposed stone providing high
+      ground, observation points, positions that command views of the surrounding
+      wood. These are strategic positions known to rangers and hunted by those
+      who want to control the forest.
+
+    key_elements:
+      - "Exposed rock formations"
+      - "High ground above canopy gaps"
+      - "Observation capability"
+      - "Strategic value"
+      - "Defensible positions"
+
+    mood: "tense"
+    time_of_day: "variable"
+
+    lighting:
+      primary_source: "More open sky at outcrop"
+      quality: "Clearer than deep wood"
+
+    palette:
+      dominant: ["grey stone", "lichen green", "sky glimpse"]
+      accent: ["distant forest view", "movement below"]
+
+  - zone_id: "rocky-outcrop"
+    zone_name: "The High Ground"
+    zone_type: "overlook"
+
+    description: |
+      A specific significant outcrop—the observation point used to study the
+      forest below, to spot the Silent Hand facility in its valley, to see
+      what the forest hides from ground level.
+
+    key_elements:
+      - "Significant observation point"
+      - "View of forest below"
+      - "Strategic intelligence value"
+      - "Exposed position"
+      - "High ground advantage"
+
+    mood: "ominous"
+    time_of_day: "afternoon"
+
+    lighting:
+      primary_source: "Open sky"
+      secondary_source: "Forest below in shadow"
+      quality: "Clear observation light"
+
+    palette:
+      dominant: ["outcrop stone", "forest spread below", "sky above"]
+      accent: ["distant targets visible", "observer position"]
+
+  # --------------------------------------------------------------------------
+  # SEASONAL VARIATIONS
+  # --------------------------------------------------------------------------
+
+  - zone_id: "winter-cathedral"
+    zone_name: "Winter Cathedral (Seasonal)"
+    zone_type: "temporal"
+
+    description: |
+      The Thornwood in winter—snow-laden boughs turning the canopy into a white
+      ceiling, branches cracking under weight, sound dampening into eerie quiet.
+      The forest becomes a hushed cathedral where exposure becomes lethal fast
+      and stillness steals heat.
+
+    key_elements:
+      - "Snow-laden boughs"
+      - "White ceiling effect"
+      - "Eerie quiet"
+      - "Lethal cold"
+      - "Cathedral atmosphere"
+
+    mood: "ethereal"
+    time_of_day: "winter day"
+
+    lighting:
+      primary_source: "Snow-reflected light"
+      quality: "Bright but cold"
+      color_temperature: "blue-white"
+
+    palette:
+      dominant: ["snow white", "bark dark", "ice shimmer"]
+      accent: ["occasional bird", "breath steam"]
+
+    narrative_moment: |
+      This is where the Company searched for Vera—the frozen cathedral where
+      every bird suddenly took flight, streaming overhead in the same direction,
+      leading to the impossible discovery of a woman kept alive by animal
+      intervention.
+
+  - zone_id: "thaw-labyrinth"
+    zone_name: "Thaw Labyrinth (Seasonal)"
+    zone_type: "temporal"
+
+    description: |
+      The Thornwood in spring thaw—the ground becoming a quagmire that grabs
+      boots and hooves, air thickening with damp earth and decay-sweet leaf
+      rot, fog collecting in low hollows at dawn. Trails shift as water reroutes.
+      Navigation becomes memory and landmark.
+
+    key_elements:
+      - "Mud-grabbed terrain"
+      - "Decay-sweet air"
+      - "Fog in hollows"
+      - "Shifting trails"
+      - "Landmark navigation"
+
+    mood: "ominous"
+    time_of_day: "dawn"
+
+    lighting:
+      primary_source: "Fog-diffused dawn"
+      quality: "Murky, limited visibility"
+      color_temperature: "grey-green"
+      atmospheric: "fog as primary element"
+
+    palette:
+      dominant: ["mud brown", "fog grey", "new-growth green"]
+      accent: ["standing water", "rot vegetation"]
+
+  - zone_id: "spring-thaw"
+    zone_name: "The Thaw Labyrinth"
+    zone_type: "temporal"
+
+    description: |
+      Specific spring thaw conditions—paths widened into churned channels, the
+      forest floor treacherous with hidden holes, the air heavy with moisture.
+      Progress slows to a crawl. Only ridge spines and known dry routes remain
+      passable.
+
+    key_elements:
+      - "Churned channel paths"
+      - "Hidden holes in mud"
+      - "Moisture-heavy air"
+      - "Slow difficult progress"
+      - "Ridge routes only"
+
+    mood: "ominous"
+    time_of_day: "thaw season"
+
+    lighting:
+      primary_source: "Overcast through canopy"
+      quality: "Flat, grey, wet"
+
+    palette:
+      dominant: ["mud", "standing water", "grey sky"]
+
+  # --------------------------------------------------------------------------
+  # CORRUPTED ZONES (Silent Hand territory)
+  # --------------------------------------------------------------------------
+
+  - zone_id: "contaminated-zone"
+    zone_name: "Corrupted Forest (Silent Hand Territory)"
+    zone_type: "pit"
+
+    description: |
+      Where the Thornwood borders Silent Hand territory, the forest feels wrong.
+      Water carries a magical suppression signature. Wildlife is agitated or
+      unnaturally absent. The trees seem to observe with intelligence rather
+      than instinct. The contamination is felt before it's understood.
+
+    key_elements:
+      - "Wrongness in the air"
+      - "Water carrying suppression"
+      - "Agitated or absent wildlife"
+      - "Intelligent observation"
+      - "Felt before understood"
+
+    mood: "ominous"
+    time_of_day: "variable"
+
+    lighting:
+      primary_source: "Same canopy-filtered light"
+      quality: "Feels different—hostile"
+      color_temperature: "slightly off, sickly"
+
+    palette:
+      dominant: ["similar colors but wrong", "unhealthy vegetation hints"]
+      accent: ["metallic ozone tang visible in air quality"]
+
+    narrative_moment: |
+      Rill feels it first—sister-water carrying poison-song. The forest that
+      should be indifferent becomes actively hostile. The corruption spreading
+      from the facility poisons everything it touches.
+
+  - zone_id: "corrupted"
+    zone_name: "The Watching Wood"
+    zone_type: "mood"
+
+    description: |
+      The sensation of being watched by something with intelligence—the forest
+      itself seeming to track movement, to calculate approaches, to steer
+      intruders where it wants them. Not wildlife but the trees themselves
+      seeming aware.
+
+    key_elements:
+      - "Sensation of intelligent observation"
+      - "Trees seeming to watch"
+      - "Calculated steering"
+      - "Beyond wildlife awareness"
+      - "Forest as hostile entity"
+
+    mood: "ominous"
+    time_of_day: "variable"
+
+    lighting:
+      primary_source: "Normal forest light"
+      quality: "Normal light, unnatural attention"
+
+    palette:
+      dominant: ["normal forest colors with wrongness"]
+
+  # --------------------------------------------------------------------------
+  # RUINS AND HAZARDS
+  # --------------------------------------------------------------------------
+
+  - zone_id: "ruins-ground"
+    zone_name: "Ruins Ground"
+    zone_type: "pit"
+
+    description: |
+      Where the forest has reclaimed old stonework—collapsed foundations, broken
+      walls, hidden pits where cellars once stood. The ruins appear without
+      warning, hazards invisible under leaf-mold. These are the forest's traps,
+      where the unwary fall.
+
+    key_elements:
+      - "Reclaimed stonework"
+      - "Collapsed foundations"
+      - "Hidden pit hazards"
+      - "Invisible under leaves"
+      - "Forest's natural traps"
+
+    mood: "ominous"
+    time_of_day: "variable"
+
+    lighting:
+      primary_source: "Canopy-filtered"
+      quality: "Standard forest light hiding hazards"
+
+    palette:
+      dominant: ["moss-covered stone", "leaf-hidden edges", "pit shadow"]
+
+  # --------------------------------------------------------------------------
+  # PERSPECTIVE AND CHARACTER ZONES
+  # --------------------------------------------------------------------------
+
+  - zone_id: "veyra-perspective"
+    zone_name: "What the Tracker Sees"
+    zone_type: "perspective"
+
+    description: |
+      The forest through Veyra's eyes—tracks invisible to others, patterns in
+      disturbed earth, signs of passage that tell stories of pursuit and
+      calculation. Where others see only trees, she reads a text of movement
+      and intention.
+
+    key_elements:
+      - "Tracks visible that others miss"
+      - "Disturbed earth patterns"
+      - "Stories of passage"
+      - "Tracker's reading"
+      - "Forest as text"
+
+    mood: "tense"
+    time_of_day: "variable"
+
+    lighting:
+      primary_source: "Standard forest light"
+      quality: "Revealing to trained eye"
+
+    palette:
+      dominant: ["tracking details", "disturbed patterns", "ground reading"]
+
+    narrative_moment: |
+      Veyra dismounts to examine tracks invisible to others. Her fingers trace
+      patterns in the disturbed earth. "We're being herded." The tracker
+      reading the story the forest tells.
+
+  - zone_id: "veyra-leading"
+    zone_name: "The Guide and the Guided"
+    zone_type: "inhabited"
+
+    description: |
+      Veyra leading others through the Thornwood—the difference between those
+      who can read the forest and those who must follow. The guide's confidence
+      contrasted with the guided's uncertainty, the trust placed in expertise.
+
+    key_elements:
+      - "Veyra leading with confidence"
+      - "Others following with trust"
+      - "Expertise demonstrated"
+      - "Forest navigation in action"
+      - "Leader and followers"
+
+    mood: "kinetic"
+    time_of_day: "travel"
+
+    lighting:
+      primary_source: "Trail-filtered light"
+      quality: "Movement through varying light"
+
+    palette:
+      dominant: ["figure movement", "trail ahead", "following forms"]
+
+  - zone_id: "rally-point"
+    zone_name: "Rally Point"
+    zone_type: "threshold"
+
+    description: |
+      A designated gathering point in the forest—the place where separated
+      parties reconvene, where missions begin or end, where the team reforms
+      after dispersal. Known location, defensible position, marked for memory.
+
+    key_elements:
+      - "Designated gathering place"
+      - "Reconvention point"
+      - "Defensible position"
+      - "Marked for memory"
+      - "Mission staging"
+
+    mood: "tense"
+    time_of_day: "variable"
+
+    lighting:
+      primary_source: "Forest-filtered"
+      quality: "Clear enough for recognition"
+
+    palette:
+      dominant: ["identifiable features", "defensive terrain", "gathering space"]
+
+    featured_in_chapters:
+      - "ch31-splintered-focus"
+
+  # --------------------------------------------------------------------------
+  # NARRATIVE BEATS
+  # --------------------------------------------------------------------------
+
+  - zone_id: "ch08-first-encounter"
+    zone_name: "The Tracker in the Snow"
+    zone_type: "beat"
+
+    description: |
+      The winter clearing where Vera was found—raven black against pristine white,
+      the woman half-buried in snow under an impossible blanket of leaves and
+      moss, animals forming a protective circle. The moment the supernatural
+      became undeniable.
+
+    key_elements:
+      - "Winter clearing in forest"
+      - "Raven vigil on white canvas"
+      - "Woman under animal-made blanket"
+      - "Protective animal circle"
+      - "Supernatural intervention visible"
+
+    mood: "ethereal"
+    time_of_day: "winter day"
+
+    lighting:
+      primary_source: "Snow-reflected light"
+      quality: "Stark, revelatory"
+      color_temperature: "blue-white cold"
+
+    palette:
+      dominant: ["snow white", "raven black", "protective animals"]
+      accent: ["Vera's pale face", "blanket materials"]
+
+    narrative_moment: |
+      Echo black against pristine white, Vera nearly invisible under the
+      impossible blanket, animals risking their winter survival to protect
+      a stranger. The discovery that changes everything.
+
+# ============================================================================
+# BEAT IMAGES - Key Narrative Moments
+# ============================================================================
+
+beat_images:
+  - beat_id: "bird-exodus"
+    beat_name: "The Bird Exodus"
+    chapter_slug: "ch08-the-tracker-in-the-snow"
+
+    description: |
+      Every bird in the forest suddenly takes flight—ravens, wrens, cardinals—
+      streaming overhead in a cacophony of cries, snow cascading from disturbed
+      branches creating a localized blizzard. Nature fleeing something wrong.
+      The Company moves toward what others flee.
+
+    key_elements:
+      - "Hundreds of birds bursting from trees"
+      - "Snow cascading from branches"
+      - "Localized blizzard effect"
+      - "Company looking up in alarm"
+      - "All flying the same direction"
+
+    mood: "ominous"
+
+    composition:
+      focal_point: "Birds exploding upward"
+      framing: "Wide shot, vertical movement"
+      depth_layers:
+        - "Birds in sharp motion"
+        - "Falling snow"
+        - "Company below"
+
+    lighting:
+      primary_source: "Weak winter light"
+      quality: "Snow-cascade disruption"
+      color_temperature: "cold blue-white"
+
+    palette:
+      dominant: ["bird black against white", "snow cascade", "frozen trees"]
+      accent: ["Company movement below"]
+
+    emotional_beat: "Nature's alarm—something wrong ahead, the Company follows"
+
+  - beat_id: "raven-vigil"
+    beat_name: "The Raven's Vigil"
+    chapter_slug: "ch08-the-tracker-in-the-snow"
+
+    description: |
+      A raven sits motionless over a body in the snow—midnight on white canvas,
+      ice crystals glittering on its feathers. It watches over a dying woman
+      it refuses to abandon. Around them, an impossible blanket of dead leaves
+      and moss, offerings arranged by creatures that shouldn't care.
+
+    key_elements:
+      - "Echo black against pristine snow"
+      - "Vera partially visible beneath"
+      - "Animal-made leaf/moss blanket"
+      - "Offerings arranged around her"
+      - "Protective vigil"
+
+    mood: "ethereal"
+
+    composition:
+      focal_point: "Raven on snow"
+      framing: "Wide discovery shot"
+      depth_layers:
+        - "Raven sharp and still"
+        - "Vera beneath blanket"
+        - "Animal offerings visible"
+
+    lighting:
+      primary_source: "Winter light on snow"
+      quality: "High contrast, stark"
+      color_temperature: "blue-white"
+
+    palette:
+      dominant: ["raven black", "snow white", "blanket earth tones"]
+      accent: ["Vera's face", "offerings"]
+
+    emotional_beat: "Supernatural bond made visible—love crossing species boundaries"
+
+  - beat_id: "predator-emerges"
+    beat_name: "The Predator Emerges"
+    chapter_slug: "ch30-the-silent-approach"
+
+    description: |
+      Lyra's transformation complete—gone is the woman who carved wood and
+      gave a child a bird. In her place sits a predator, deep plum skin absorbing
+      shadows, golden eyes dilated and assessing threats. The asset reveals
+      her true nature as they enter enemy territory.
+
+    key_elements:
+      - "Lyra mounted, posture changed"
+      - "Shadows gathering around her"
+      - "Plum skin absorbing light"
+      - "Golden eyes assessing"
+      - "Predator fully revealed"
+
+    mood: "ominous"
+
+    composition:
+      focal_point: "Lyra's transformed presence"
+      framing: "Medium shot, shadows emphasized"
+      depth_layers:
+        - "Lyra sharp against shadow"
+        - "Forest pressing close"
+        - "Team visible behind"
+
+    lighting:
+      primary_source: "Filtered forest light"
+      secondary_source: "Shadows pooling"
+      quality: "Contrast between shadow and light"
+      color_temperature: "cool green-brown"
+
+    palette:
+      dominant: ["plum skin", "shadow absorption", "forest frame"]
+      accent: ["golden eyes", "horn gleam"]
+
+    emotional_beat: "The asset shows her true nature—warmth yields to lethal purpose"
+
+  - beat_id: "being-herded"
+    beat_name: "Being Herded"
+    chapter_slug: "ch30-the-silent-approach"
+
+    description: |
+      Veyra dismounts to examine tracks invisible to others—her fingers tracing
+      patterns in disturbed earth, reading the story of pursuit and calculation.
+      "We're being herded." The chilling realization that hunters have become prey.
+
+    key_elements:
+      - "Veyra kneeling at earth"
+      - "Fingers tracing invisible patterns"
+      - "Face showing grave realization"
+      - "Team waiting, tense"
+      - "Forest pressing close"
+
+    mood: "ominous"
+
+    composition:
+      focal_point: "Veyra's fingers on earth"
+      framing: "Medium shot, ground focus"
+      depth_layers:
+        - "Tracking detail sharp"
+        - "Veyra's grave expression"
+        - "Team and forest behind"
+
+    lighting:
+      primary_source: "Midday forest light"
+      quality: "Revealing to trained eye"
+
+    palette:
+      dominant: ["disturbed earth", "Veyra's hands", "forest shadow"]
+
+    emotional_beat: "Power dynamics reverse—hunters become the herded"
+
+  - beat_id: "silent-kill"
+    beat_name: "The Silent Kill"
+    chapter_slug: "ch30-the-silent-approach"
+
+    description: |
+      Lyra materializes at the edge of their firelight like smoke taking shape,
+      methodically wiping her blade clean. "Two. Silent Hand patrol. The first
+      one never saw me coming." The Academy-trained assassin proving her worth
+      in lethal efficiency.
+
+    key_elements:
+      - "Lyra emerging from darkness"
+      - "Blade being wiped clean"
+      - "Calm, professional report"
+      - "Firelight meeting shadow"
+      - "Lethal efficiency demonstrated"
+
+    mood: "kinetic"
+
+    composition:
+      focal_point: "Lyra at shadow's edge"
+      framing: "Medium shot, threshold moment"
+      depth_layers:
+        - "Lyra sharp at firelight edge"
+        - "Blade gleaming"
+        - "Team reacting"
+
+    lighting:
+      primary_source: "Campfire"
+      secondary_source: "Darkness behind Lyra"
+      quality: "Firelight meeting shadow"
+      color_temperature: "warm fire, cold night"
+
+    palette:
+      dominant: ["firelit face", "blade gleam", "shadow behind"]
+      accent: ["blood on blade", "calm expression"]
+
+    emotional_beat: "The asset proves her worth—lethal competence demonstrated"
+
+# ============================================================================
+# REFERENCES - Connections to Other Content
+# ============================================================================
+
+references:
+  chapter_visual_plans:
+    - chapter_slug: "ch08-the-tracker-in-the-snow"
+      relationship: "Vera discovery in winter"
+      relevant_scenes:
+        - "Bird exodus warning"
+        - "Raven's vigil discovery"
+        - "Protective animal circle"
+        - "Frost execution"
+
+    - chapter_slug: "ch30-the-silent-approach"
+      relationship: "reconnaissance approach"
+      relevant_scenes:
+        - "Predator transformation"
+        - "Being herded realization"
+        - "Water communion"
+        - "Silent kills"
+        - "Closing the eyes"
+
+    - chapter_slug: "ch31-splintered-focus"
+      relationship: "staging and infiltration"
+      relevant_scenes:
+        - "Camp preparations"
+        - "Rally point"
+
+  character_portraits:
+    - character_slug: "veyra-thornwake"
+      relationship: "tracker and navigator"
+      visual_notes: "Reading invisible tracks, leading through forest"
+
+    - character_slug: "vera-moonwhisper"
+      relationship: "discovered in winter cathedral"
+      visual_notes: "Protected by animals, raven bond visible"
+
+    - character_slug: "lyra-kestrel"
+      relationship: "predator revealed"
+      visual_notes: "Transformation, shadow absorption, lethal efficiency"
+
+    - character_slug: "rill-vossari"
+      relationship: "water communion"
+      visual_notes: "Sea-glass skin brightening at streams"
+
+  related_locations:
+    - location_slug: "windborne-roost"
+      relationship: "last waystation before deep forest"
+      visual_connection: "Departure point into wilderness"
+
+    - location_slug: "silent-hand-facility"
+      relationship: "hidden deeper north"
+      visual_connection: "Approached through corrupted forest"
+
+    - location_slug: "westwall-watchpost"
+      relationship: "Company base for winter rescue"
+      visual_connection: "Departure and return point"
+
+  thematic_connections:
+    - theme: "Nature's indifference"
+      visual_expression: "Beauty and danger braided together"
+
+    - theme: "The watching wood"
+      visual_expression: "Intelligent observation, coordinated wildlife"
+
+    - theme: "Seasonal extremes"
+      visual_expression: "Winter cathedral, thaw labyrinth"
+
+    - theme: "Corruption spreading"
+      visual_expression: "Contaminated zones near Silent Hand"
+
+    - theme: "Predator and prey"
+      visual_expression: "Transformation, being herded, lethal response"

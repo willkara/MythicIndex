@@ -1,0 +1,1459 @@
+# The Northern Road - Location Imagery Specification
+# Major trade route from Waterdeep north through Thornwood to Silent Hand territory
+# Featured in ch28: The Road North, ch30: The Silent Approach
+
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "northern-road"
+  location_name: "The Northern Road"
+  version: "2.0"
+  last_updated: "2025-12-26"
+  zone_count: 17
+
+generation_defaults:
+  provider: "workers-ai"
+  model: "stable-diffusion-xl"
+  quality: "high"
+  negative_prompts:
+    - "modern elements"
+    - "paved roads"
+    - "asphalt"
+    - "vehicles"
+    - "power lines"
+    - "contemporary clothing"
+    - "photorealistic"
+    - "3D render"
+    - "anime style"
+    - "bright cheerful colors"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# NARRATIVE SOUL
+# ═══════════════════════════════════════════════════════════════════════════════
+
+narrative_soul: |
+  The Northern Road is the threshold between civilization and darkness—a ribbon
+  of mud and thawing earth winding north from Waterdeep through increasingly
+  hostile territory. In spring, the road becomes a treacherous quagmire where
+  horses struggle at every step, their hooves sucking at clinging mud.
+
+  As the route progresses north, the Thornwood Forest closes in, ancient trees
+  forming a natural corridor that funnels travelers into predictable paths—
+  and into the watchful eyes of Silent Hand patrols. The air carries pine
+  and damp earth, but something else lurks beneath: the sense of being
+  evaluated from the shadows, the unnatural silence where wildlife should sing.
+
+  This is where the wilderness reveals what the city conceals. The streams
+  run clear but carry magical suppression compounds. The paths seem natural
+  but herd travelers like sheep. Every clearing could be an observation post,
+  every shadow a patrol. The Northern Road is beautiful and dangerous—
+  exactly as the Silent Hand intended.
+
+one_line_essence: "A mud-ribbon road through awakening spring, beautiful and watched, where hunters become prey."
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# LOCATION VISUAL ANCHOR
+# ═══════════════════════════════════════════════════════════════════════════════
+
+location_visual_anchor:
+  signature_elements:
+    - "Mud road winding through forest"
+    - "Ancient Thornwood trees forming corridor"
+    - "Spring thaw conditions—struggling hooves"
+    - "Dappled light through canopy"
+    - "Silence where birdsong should be"
+  materials:
+    primary: "mud and thawing earth, ancient timber"
+    secondary: "pine needles, forest understory"
+    accent: "stream water, mist, shadow"
+  color_anchors:
+    dominant: ["forest green", "mud brown", "pine bark gray"]
+    accent: ["spring bud green", "stream silver", "mist white"]
+    avoid: ["bright cheerful tones", "summer vibrancy", "warm safety colors"]
+  characteristic_light:
+    primary: "dappled sunlight filtering through canopy"
+    secondary: "gray overcast of spring sky"
+    quality: "uncertain, shifting, concealing"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# OVERVIEW: ESTABLISHING SHOT
+# ═══════════════════════════════════════════════════════════════════════════════
+
+overview:
+  image_type: "establishing"
+  scene_mood: "ominous"
+  description: "The Northern Road stretching through awakening spring landscape, Thornwood closing in ahead"
+
+  composition:
+    foreground: "Mud road with fresh hoofprints, water pooling in ruts"
+    midground: "Road winding into increasingly dense forest corridor"
+    background: "Thornwood canopy closing overhead, gray spring sky beyond"
+    focal_point: "The vanishing point where road disappears into forest shadow"
+    depth_cues: "Trees growing closer together, light dimming, path narrowing"
+
+  lighting:
+    primary_source: "Overcast spring sky"
+    secondary_source: "Dappled light through awakening canopy"
+    quality: "uncertain, shifting with cloud movement"
+    direction: "diffuse overhead"
+    color_temperature: "cool spring gray with hints of green"
+    shadow_depth: "moderate—deepening toward forest"
+    atmospheric: "mist lingering in tree shadows"
+
+  palette:
+    dominant: ["mud brown", "forest gray-green", "spring overcast"]
+    accent: ["pine dark green", "thaw puddle silver"]
+    avoid: ["warm inviting tones", "summer brightness"]
+
+  key_elements:
+    - "Ribbon of mud road with visible wheel ruts and hoofprints"
+    - "Spring thaw making travel difficult"
+    - "Thornwood Forest looming ahead"
+    - "Fresh pine scent suggested through detail"
+    - "The road that leads to danger"
+
+  style_notes: "Oil painting style, fantasy illustration. Capture the transitional quality—civilization giving way to wilderness, safety giving way to threat. The road should invite and warn simultaneously."
+
+  prompt_template: "Fantasy wilderness road in early spring, mud and thawing earth winding north through awakening landscape, ancient Thornwood Forest closing in ahead forming corridor, dappled overcast light, hoofprints and wheel ruts in mud, mist lingering in tree shadows, ominous beauty, oil painting style, fantasy illustration, road to danger"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# ZONES
+# ═══════════════════════════════════════════════════════════════════════════════
+
+zones:
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: ROAD (Main Arterial)
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "road"
+    zone_name: "Road"
+    zone_type: "commons"
+    featured_in_chapters: ["ch28-the-road-north"]
+
+    narrative_role: |
+      The main artery itself—the muddy track where merchant caravans and
+      disguised reconnaissance teams travel. In spring, every step is a
+      struggle against clinging mud, and the road's condition reveals
+      who has passed before.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Wide muddy track with wheel ruts"
+        - "Hoofprints revealing traffic patterns"
+        - "Water pooling in low points"
+        - "Forest bordering both sides"
+      materials: "mud, thawing earth, wheel-packed clay"
+      color_signature: "brown mud against green forest"
+      light_character: "open sky overhead, forest shadow at edges"
+
+    default_prompt_elements:
+      atmosphere: "transitional, watchful"
+      must_include:
+        - "muddy road surface"
+        - "evidence of travel (ruts, prints)"
+        - "forest bordering"
+        - "spring conditions"
+      must_avoid:
+        - "paved surface"
+        - "summer dryness"
+        - "isolated wilderness"
+
+    images:
+      - image_type: "zone"
+        image_slug: "road-spring-conditions"
+        description: "The Northern Road in spring—mud and thaw, forest closing in"
+        scene_mood: "pastoral"
+
+        composition:
+          foreground: "Fresh hoofprints in mud, water pooling"
+          midground: "Road stretching ahead, trees on either side"
+          background: "Forest canopy beginning to close overhead"
+
+        lighting:
+          primary_source: "Overcast spring sky"
+          quality: "diffuse, cool"
+          color_temperature: "spring gray-blue"
+
+        palette:
+          dominant: ["mud brown", "spring green"]
+          accent: ["puddle silver", "sky gray"]
+
+        key_elements:
+          - "Difficult travel conditions"
+          - "Evidence of regular use"
+          - "Forest increasing density"
+          - "Road that tests travelers"
+
+        prompt: "Fantasy wilderness road in early spring, mud and thawing earth stretching north, fresh hoofprints and wheel ruts in soft ground, water pooling in low spots, Thornwood Forest bordering both sides, overcast spring sky, difficult travel conditions visible, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: SOUTHERN APPROACH
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "southern-approach"
+    zone_name: "Southern Section (Waterdeep to Forest Edge)"
+    zone_type: "threshold"
+
+    narrative_role: |
+      The initial stretch where civilization still feels close—Waterdeep's
+      towers visible behind, the Windborne Roost ahead. Traffic is more
+      frequent here, the road better maintained, though spring mud still
+      makes travel challenging.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Better-maintained road section"
+        - "Waterdeep visible in distance behind"
+        - "More traffic, more travelers"
+        - "Gradual transition to wilderness"
+      materials: "packed earth, scattered gravel, road markers"
+      color_signature: "civilized browns, visible sky"
+      light_character: "more open, less forest shadow"
+
+    default_prompt_elements:
+      atmosphere: "transitional, relatively safe"
+      must_include:
+        - "road stretching toward forest"
+        - "civilized elements nearby"
+        - "other travelers possible"
+        - "spring conditions"
+      must_avoid:
+        - "deep wilderness"
+        - "threatening atmosphere"
+
+    images:
+      - image_type: "zone"
+        image_slug: "southern-approach-waterdeep"
+        description: "The southern section with Waterdeep visible behind, forest ahead"
+        scene_mood: "pastoral"
+
+        composition:
+          foreground: "Road surface, travelers on horseback"
+          midground: "Road stretching toward distant forest"
+          background: "Waterdeep's towers on horizon behind"
+
+        lighting:
+          primary_source: "Morning sun"
+          quality: "clear, promising"
+          color_temperature: "warm morning gold"
+
+        palette:
+          dominant: ["road brown", "spring green"]
+          accent: ["city stone gray", "morning gold"]
+
+        key_elements:
+          - "Civilization behind"
+          - "Wilderness ahead"
+          - "Journey beginning"
+          - "Threshold moment"
+
+        prompt: "Fantasy road stretching north from medieval city, Waterdeep towers visible on horizon behind, road winding toward distant forest, spring morning light, travelers on horseback, threshold between civilization and wilderness, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: THORNWOOD CORRIDOR
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "thornwood-corridor"
+    zone_name: "The Thornwood Corridor"
+    zone_type: "liminal"
+
+    narrative_role: |
+      Where the forest closes in, creating a natural corridor that
+      funnels travelers into predictable paths. The canopy blocks
+      sunlight, creating a "maze of shadows" where every tree could
+      hide a watcher.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Ancient trees forming natural tunnel"
+        - "Canopy blocking most sunlight"
+        - "Road narrowed by encroaching forest"
+        - "Shadows deep and numerous"
+      materials: "ancient timber, thick understory, moss-covered stones"
+      color_signature: "deep forest green, shadow brown"
+      light_character: "dappled, uncertain, concealing"
+
+    default_prompt_elements:
+      atmosphere: "claustrophobic, watchful"
+      must_include:
+        - "trees closing overhead"
+        - "narrow road"
+        - "deep shadows"
+        - "filtered light"
+      must_avoid:
+        - "open sky"
+        - "comfortable space"
+        - "bright lighting"
+
+    images:
+      - image_type: "zone"
+        image_slug: "thornwood-corridor-closed"
+        description: "The forest corridor where ancient trees form a natural tunnel"
+        scene_mood: "ominous"
+
+        composition:
+          foreground: "Road narrowing, undergrowth pressing"
+          midground: "Trees leaning inward, forming tunnel"
+          background: "Light visible at distant point"
+          focal_point: "The corridor disappearing ahead"
+
+        lighting:
+          primary_source: "Filtered through canopy"
+          quality: "dappled, uncertain"
+          color_temperature: "cool forest green"
+          atmospheric: "shadows pooling between trees"
+
+        palette:
+          dominant: ["dark forest green", "shadow brown"]
+          accent: ["light shaft gold", "moss green"]
+
+        key_elements:
+          - "Ancient trees as walls"
+          - "Canopy as ceiling"
+          - "Road as floor"
+          - "Natural funneling"
+
+        style_notes: "This is where the forest becomes architecture—walls, ceiling, floor. The corridor effect should feel deliberately designed despite being natural."
+
+        prompt: "Fantasy forest corridor, ancient Thornwood trees forming natural tunnel over narrow road, canopy blocking sunlight creating maze of shadows, dappled light filtering through, road narrowing ahead, every shadow potentially watching, ominous beauty, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: THORNWOOD CORRIDOR ZONE (Duplicate consolidated)
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "thornwood-corridor-zone"
+    zone_name: "Thornwood Corridor Zone"
+    zone_type: "liminal"
+
+    narrative_role: |
+      Alternate perspective on the corridor—emphasizing the tactical
+      reality of being funneled into predictable paths. What seems
+      natural is actually a trap.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Same corridor, different angle"
+        - "Tactical view of the funneling"
+        - "Visibility lines revealed"
+        - "Ambush potential visible"
+      materials: "same forest elements"
+      color_signature: "tactical greens and browns"
+      light_character: "revealing potential threats"
+
+    default_prompt_elements:
+      atmosphere: "tactical awareness"
+      must_include:
+        - "corridor from tactical perspective"
+        - "visibility lines"
+        - "potential threat positions"
+      must_avoid:
+        - "comfortable atmosphere"
+
+    images:
+      - image_type: "perspective"
+        image_slug: "corridor-tactical-view"
+        description: "The corridor seen from a tactical perspective—ambush potential visible"
+        scene_mood: "tense"
+
+        composition:
+          foreground: "Ranger's view, assessing terrain"
+          midground: "Corridor with marked sightlines"
+          background: "Points of potential threat"
+
+        lighting:
+          primary_source: "Filtered forest light"
+          quality: "revealing and concealing"
+
+        palette:
+          dominant: ["tactical green", "assessment brown"]
+          accent: ["threat shadows"]
+
+        key_elements:
+          - "Tactical assessment visible"
+          - "Sightlines marked"
+          - "Threat positions implied"
+
+        prompt: "Fantasy forest corridor from tactical perspective, Thornwood trees showing ambush potential, visibility lines through canopy gaps, shadows where enemies could hide, ranger's assessment of terrain, threat awareness, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: NORTHERN WILDERNESS
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "northern-wilderness"
+    zone_name: "Northern Wilderness (Silent Hand Territory)"
+    zone_type: "perimeter"
+
+    narrative_role: |
+      The deep wilderness where Silent Hand control is absolute. Here
+      the forest becomes denser and more oppressive, wildlife falls
+      silent, and the unnatural presence that tracks travelers is
+      strongest. This is hostile territory.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Denser, more oppressive forest"
+        - "Unnatural silence"
+        - "Sense of being watched"
+        - "Contaminated atmosphere"
+      materials: "ancient timber, thick undergrowth, hidden danger"
+      color_signature: "deep threatening greens, shadow black"
+      light_character: "filtered to near-darkness, oppressive"
+
+    default_prompt_elements:
+      atmosphere: "hostile, contaminated, watched"
+      must_include:
+        - "oppressive forest density"
+        - "unnatural silence implied"
+        - "sense of threat"
+        - "patrol territory feel"
+      must_avoid:
+        - "welcoming wilderness"
+        - "normal forest sounds implied"
+        - "safe atmosphere"
+
+    images:
+      - image_type: "zone"
+        image_slug: "northern-wilderness-territory"
+        description: "Deep into Silent Hand territory—the forest oppressive and watching"
+        scene_mood: "ominous"
+
+        composition:
+          foreground: "Dense undergrowth, path barely visible"
+          midground: "Ancient trees, oppressive canopy"
+          background: "Darkness between trees"
+
+        lighting:
+          primary_source: "Minimal filtered light"
+          quality: "oppressive, threatening"
+          color_temperature: "cold, unwelcoming"
+          atmospheric: "something wrong with the light"
+
+        palette:
+          dominant: ["threatening green", "shadow black"]
+          accent: ["wrong light", "contaminated tones"]
+
+        key_elements:
+          - "Forest as enemy territory"
+          - "Unnatural silence"
+          - "Watching shadows"
+          - "Contaminated beauty"
+
+        prompt: "Fantasy hostile wilderness deep in enemy territory, ancient Thornwood oppressively dense, unnatural silence, sense of being watched, something wrong with the forest, filtered threatening light, patrol territory atmosphere, oil painting style, fantasy illustration, ominous beauty"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: WINDBORNE ROOST WAYPOINT
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "windborne-roost-waypoint"
+    zone_name: "The Windborne Roost Clearing"
+    zone_type: "commons"
+
+    narrative_role: |
+      The major waypoint clearing where the Windborne Roost inn sits
+      at the edge of Thornwood—last civilization before deep wilderness.
+      A moment of respite before danger increases.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Clearing at forest edge"
+        - "Inn visible as destination"
+        - "Relief from forest pressure"
+        - "Transitional point"
+      materials: "cleared land, inn timber, stable structures"
+      color_signature: "welcoming warmth against forest edge"
+      light_character: "open sky, relief from canopy"
+
+    default_prompt_elements:
+      atmosphere: "waypoint relief"
+      must_include:
+        - "clearing in forest"
+        - "inn/waystation visible"
+        - "open sky"
+        - "transition point"
+      must_avoid:
+        - "deep wilderness"
+        - "threatening atmosphere"
+
+    images:
+      - image_type: "zone"
+        image_slug: "windborne-roost-approach"
+        description: "The clearing where the Windborne Roost offers respite"
+        scene_mood: "pastoral"
+
+        composition:
+          foreground: "Road opening into clearing"
+          midground: "The Windborne Roost inn"
+          background: "Forest edge, Thornwood beyond"
+
+        lighting:
+          primary_source: "Open sky"
+          quality: "relief after forest shadow"
+          color_temperature: "warmer, welcoming"
+
+        palette:
+          dominant: ["clearing green", "inn wood brown"]
+          accent: ["warm window light", "open sky blue"]
+
+        key_elements:
+          - "Last civilization"
+          - "Waypoint respite"
+          - "Forest behind and ahead"
+          - "Transition point"
+
+        prompt: "Fantasy waystation clearing at forest edge, the Windborne Roost inn visible, road emerging from forest shadows into welcoming clearing, open sky above, travelers finding respite, last civilization before deep wilderness, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: WINDBORNE ROOST ESSENCE
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "windborne-roost-essence"
+    zone_name: "The Windborne Roost at Forest's Edge"
+    zone_type: "threshold"
+
+    narrative_role: |
+      The inn as liminal point—where cover stories are tested by Quierk's
+      sharp eyes, where intelligence is gathered, where the team transforms
+      from merchants to operatives. Last chance for warmth before cold mission.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Inn at edge of wilderness"
+        - "Aarakocra presence implied"
+        - "Intelligence gathering point"
+        - "Transformation threshold"
+      materials: "inn structure, bird-friendly architecture"
+      color_signature: "warm interior against dark forest"
+      light_character: "welcoming light spilling out, darkness beyond"
+
+    default_prompt_elements:
+      atmosphere: "waypoint threshold, cover tested"
+      must_include:
+        - "inn at forest edge"
+        - "welcoming and watchful"
+        - "darkness beyond"
+      must_avoid:
+        - "purely comfortable"
+        - "unaware atmosphere"
+
+    images:
+      - image_type: "essence"
+        image_slug: "windborne-roost-threshold"
+        description: "The Windborne Roost as threshold between safety and danger"
+        scene_mood: "intimate"
+
+        composition:
+          foreground: "Inn entrance, warm light spilling"
+          midground: "Activity visible through windows"
+          background: "Dark forest looming beyond"
+
+        lighting:
+          primary_source: "Warm inn light"
+          quality: "welcoming against threatening dark"
+          color_temperature: "warm amber vs cold forest"
+
+        palette:
+          dominant: ["warm amber", "inn wood"]
+          accent: ["dark forest beyond"]
+
+        key_elements:
+          - "Last warmth before cold mission"
+          - "Sharp eyes assessing"
+          - "Cover stories tested"
+          - "Threshold moment"
+
+        prompt: "Fantasy wilderness inn at forest edge, warm amber light spilling from windows, dark Thornwood Forest looming beyond, last waypoint before dangerous territory, welcoming and watchful, threshold between safety and mission, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: COURTYARD
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "courtyard"
+    zone_name: "Courtyard"
+    zone_type: "commons"
+    featured_in_chapters: ["ch30-the-silent-approach"]
+
+    narrative_role: |
+      The pre-dawn departure point—where Veyra touches her lantern and
+      prays to Tymora, where the team transforms from guests to operatives,
+      where the mission truly begins.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Inn courtyard in pre-dawn"
+        - "Horses prepared for departure"
+        - "Agricultural cover maintained"
+        - "Prayer moment space"
+      materials: "courtyard stone, stable wood, travel gear"
+      color_signature: "pre-dawn gray, lantern warm"
+      light_character: "gray dawn with warm light touches"
+
+    default_prompt_elements:
+      atmosphere: "pre-mission ritual"
+      must_include:
+        - "pre-dawn atmosphere"
+        - "horses prepared"
+        - "cover disguises"
+        - "departure tension"
+      must_avoid:
+        - "full daylight"
+        - "relaxed atmosphere"
+
+    images:
+      - image_type: "zone"
+        image_slug: "courtyard-dawn-departure"
+        description: "The courtyard at pre-dawn, team preparing to depart"
+        scene_mood: "ominous"
+
+        composition:
+          foreground: "Horses being prepared, travel gear"
+          midground: "Team in agricultural disguises"
+          background: "Inn behind, forest road ahead"
+
+        lighting:
+          primary_source: "Pre-dawn sky"
+          secondary_source: "Stable lanterns"
+          quality: "gray dawn with warm touches"
+          color_temperature: "cool blue-gray with amber lantern"
+
+        palette:
+          dominant: ["pre-dawn gray", "stable brown"]
+          accent: ["lantern amber", "disguise earth-tones"]
+
+        key_elements:
+          - "Pre-dawn departure"
+          - "Cover maintained"
+          - "Mission beginning"
+          - "Prayer moment"
+
+        prompt: "Fantasy inn courtyard at pre-dawn, reconnaissance team preparing horses for departure, agricultural consultant disguises visible, stable lanterns casting warm light against gray dawn, forest road visible ahead, mission beginning atmosphere, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: STABLES
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "stables"
+    zone_name: "Stables"
+    zone_type: "works"
+    featured_in_chapters: ["ch30-the-silent-approach"]
+
+    narrative_role: |
+      Where horses are prepared for the difficult journey—practical
+      space of straps and saddles, where the physical reality of the
+      mission is made manifest in gear and provisions.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Working stable space"
+        - "Horses being prepared"
+        - "Travel gear organized"
+        - "Professional preparation"
+      materials: "stable timber, horse tack, travel provisions"
+      color_signature: "warm stable brown, leather tan"
+      light_character: "lantern-lit interior"
+
+    default_prompt_elements:
+      atmosphere: "professional preparation"
+      must_include:
+        - "stable interior"
+        - "horses and tack"
+        - "mission gear"
+      must_avoid:
+        - "empty stable"
+        - "relaxed atmosphere"
+
+    images:
+      - image_type: "zone"
+        image_slug: "stables-preparation"
+        description: "The stables during mission preparation"
+        scene_mood: "intimate"
+
+        composition:
+          foreground: "Tack and gear being checked"
+          midground: "Horses being saddled"
+          background: "Stable structure, hay storage"
+
+        lighting:
+          primary_source: "Stable lanterns"
+          quality: "warm, working light"
+
+        palette:
+          dominant: ["stable brown", "hay gold"]
+          accent: ["leather tan", "metal gleam"]
+
+        key_elements:
+          - "Mission preparation"
+          - "Horses ready"
+          - "Gear checked"
+          - "Professional readiness"
+
+        prompt: "Fantasy stable interior during mission preparation, horses being saddled, travel gear and provisions being checked, warm lantern light, professional preparation atmosphere, reconnaissance team readying for dangerous journey, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: ROCKY OUTCROP OBSERVATION
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "rocky-outcrop-observation"
+    zone_name: "Rocky Outcrop Observation Post"
+    zone_type: "overlook"
+
+    narrative_role: |
+      The concealed observation post from which the team first surveys
+      the Silent Hand facility—a natural vantage point that becomes
+      their command position for intelligence gathering.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Natural rock formation with concealment"
+        - "View of valley below"
+        - "Hidden observation position"
+        - "Tactical vantage point"
+      materials: "weathered rock, scattered brush, concealing vegetation"
+      color_signature: "stone gray, observation-green"
+      light_character: "careful about revealing presence"
+
+    default_prompt_elements:
+      atmosphere: "concealed observation"
+      must_include:
+        - "rocky outcrop"
+        - "concealment position"
+        - "view below"
+        - "tactical use"
+      must_avoid:
+        - "exposed position"
+        - "comfortable location"
+
+    images:
+      - image_type: "zone"
+        image_slug: "rocky-outcrop-concealed"
+        description: "The observation post—natural rock concealment overlooking valley"
+        scene_mood: "tense"
+
+        composition:
+          foreground: "Rock formation, concealing brush"
+          midground: "Position where observers crouch"
+          background: "Valley visible below through gap"
+
+        lighting:
+          primary_source: "Afternoon sun"
+          quality: "careful to avoid reflection"
+          color_temperature: "late afternoon gold"
+
+        palette:
+          dominant: ["rock gray", "concealment green"]
+          accent: ["valley below", "careful light"]
+
+        key_elements:
+          - "Natural concealment"
+          - "Valley view"
+          - "Tactical position"
+          - "Intelligence gathering"
+
+        prompt: "Fantasy rocky outcrop observation post, natural stone formation with concealing brush, hidden position overlooking valley below, tactical vantage point for surveillance, reconnaissance team's command position, concealment and observation, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: OBSERVATION POST ZONE
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "observation-post-zone"
+    zone_name: "Observation Post Above the Facility"
+    zone_type: "overlook"
+
+    narrative_role: |
+      The view from the observation post—the Silent Hand facility
+      sprawled across the hidden valley, guard towers and manor house
+      visible, the target finally revealed.
+
+    zone_visual_anchor:
+      defining_features:
+        - "View from observation post"
+        - "Facility visible below"
+        - "Guard towers marked"
+        - "Target assessment"
+      materials: "observer's view, distant buildings"
+      color_signature: "distance blue-gray, target assessment"
+      light_character: "late afternoon revealing detail"
+
+    default_prompt_elements:
+      atmosphere: "target revealed"
+      must_include:
+        - "facility visible below"
+        - "guard towers"
+        - "assessment perspective"
+        - "first view of target"
+      must_avoid:
+        - "close-up facility"
+        - "inside walls"
+
+    images:
+      - image_type: "perspective"
+        image_slug: "observation-facility-view"
+        description: "The view from the outcrop—Silent Hand facility spread below"
+        scene_mood: "ominous"
+
+        composition:
+          foreground: "Edge of observation rock"
+          midground: "Hidden valley, facility buildings"
+          background: "Mountains beyond, scope of operation"
+
+        lighting:
+          primary_source: "Late afternoon sun"
+          quality: "revealing facility detail"
+          color_temperature: "golden afternoon"
+          atmospheric: "long shadows across compound"
+
+        palette:
+          dominant: ["valley green", "facility stone"]
+          accent: ["guard tower dark", "threat shadows"]
+
+        key_elements:
+          - "Facility revealed"
+          - "Scale of operation"
+          - "Guard positions marked"
+          - "The target at last"
+
+        prompt: "Fantasy view from hidden observation post, Silent Hand facility sprawled across hidden valley below, manor house and guard towers visible, sprawling estate blending with natural landscape, reconnaissance team's first view of their target, late afternoon light casting long shadows, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: SILENCE MARKER
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "silence-marker"
+    zone_name: "The Silence Marker"
+    zone_type: "threshold"
+
+    narrative_role: |
+      The invisible line where the forest changes—where wildlife falls
+      silent, where the unnatural presence is felt most strongly, where
+      entering Silent Hand territory becomes unmistakable.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Visually normal forest"
+        - "Unnatural silence"
+        - "Threshold feeling"
+        - "Wildlife absence"
+      materials: "same forest, different feeling"
+      color_signature: "same greens, wrong feeling"
+      light_character: "light seems wrong somehow"
+
+    default_prompt_elements:
+      atmosphere: "threshold into danger"
+      must_include:
+        - "forest that seems normal"
+        - "implied silence"
+        - "wrong feeling"
+        - "invisible boundary"
+      must_avoid:
+        - "obvious magical effects"
+        - "visible danger"
+
+    images:
+      - image_type: "mood"
+        image_slug: "silence-marker-threshold"
+        description: "The forest where wildlife falls silent—invisible threshold"
+        scene_mood: "ominous"
+
+        composition:
+          foreground: "Forest path continuing"
+          midground: "Trees that look the same"
+          background: "Same forest, different feeling"
+
+        lighting:
+          primary_source: "Filtered forest light"
+          quality: "something slightly wrong"
+          color_temperature: "subtly off"
+
+        palette:
+          dominant: ["forest green—wrong shade"]
+          accent: ["silence implied"]
+
+        key_elements:
+          - "Visually normal"
+          - "Atmosphere wrong"
+          - "Silence where sound should be"
+          - "Invisible boundary crossed"
+
+        style_notes: "The challenge is showing a feeling without visual change. Use subtle atmospheric effects—slightly off colors, too-still leaves, absence of bird or insect motion."
+
+        prompt: "Fantasy forest at invisible threshold, trees look normal but something wrong, unnatural stillness, wildlife has fallen silent, crossing into enemy territory without visible marker, subtle atmospheric wrongness, oil painting style, fantasy illustration, ominous beauty"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: PREDAWN TEMPORAL
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "predawn-temporal"
+    zone_name: "Pre-Dawn Movement"
+    zone_type: "temporal"
+
+    narrative_role: |
+      The road during the safest travel window—pre-dawn darkness when
+      patrols are least active and movement is most concealed. Cold,
+      quiet, and urgent.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Pre-dawn darkness"
+        - "Minimal visibility"
+        - "Cold atmosphere"
+        - "Urgent movement"
+      materials: "dark shapes, cold air, muffled hooves"
+      color_signature: "pre-dawn blue-black"
+      light_character: "barely visible, moon or stars only"
+
+    default_prompt_elements:
+      atmosphere: "covert movement"
+      must_include:
+        - "pre-dawn darkness"
+        - "minimal light"
+        - "urgent movement"
+        - "cold atmosphere"
+      must_avoid:
+        - "daylight"
+        - "leisurely pace"
+
+    images:
+      - image_type: "temporal"
+        image_slug: "predawn-movement-covert"
+        description: "Pre-dawn movement through darkness—safest window"
+        scene_mood: "tense"
+
+        composition:
+          foreground: "Dark shapes of horses and riders"
+          midground: "Road barely visible"
+          background: "First hint of dawn on horizon"
+
+        lighting:
+          primary_source: "Pre-dawn sky glow"
+          secondary_source: "Stars or moon"
+          quality: "minimal, covert"
+          color_temperature: "cold blue-black"
+
+        palette:
+          dominant: ["pre-dawn black", "cold blue"]
+          accent: ["first light hint"]
+
+        key_elements:
+          - "Darkness as cover"
+          - "Urgent pace"
+          - "Cold breath visible"
+          - "Dawn approaching"
+
+        prompt: "Fantasy pre-dawn movement on wilderness road, dark shapes of riders barely visible against cold blue-black sky, first hint of dawn on horizon, covert travel during safest window, breath visible in cold air, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: WATCHER PERSPECTIVE
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "watcher-perspective"
+    zone_name: "The Watcher's View"
+    zone_type: "perspective"
+
+    narrative_role: |
+      The road as seen by those who monitor it—from the shadows of the
+      forest, from the perspective of the unnatural presence that tracks
+      travelers and herds them into predictable paths.
+
+    zone_visual_anchor:
+      defining_features:
+        - "View from concealment"
+        - "Travelers visible from shadows"
+        - "Predator's perspective"
+        - "Herding assessment"
+      materials: "shadow, concealment, watching position"
+      color_signature: "shadow blacks, target visibility"
+      light_character: "from darkness looking at light"
+
+    default_prompt_elements:
+      atmosphere: "predator watching prey"
+      must_include:
+        - "view from shadows"
+        - "travelers visible"
+        - "surveillance perspective"
+        - "concealment"
+      must_avoid:
+        - "traveler's perspective"
+        - "open view"
+
+    images:
+      - image_type: "perspective"
+        image_slug: "watcher-view-shadows"
+        description: "The road as seen by watchers in the forest—predator's view"
+        scene_mood: "ominous"
+
+        composition:
+          foreground: "Dark tree trunks, concealing brush"
+          midground: "Road visible through gap, travelers passing"
+          background: "More forest for further concealment"
+
+        lighting:
+          primary_source: "Light on road, shadow in forest"
+          quality: "watching from darkness"
+
+        palette:
+          dominant: ["shadow black", "concealment green"]
+          accent: ["lit road", "visible targets"]
+
+        key_elements:
+          - "Predator perspective"
+          - "Prey visible"
+          - "Natural concealment"
+          - "Surveillance position"
+
+        prompt: "Fantasy predator's view from forest shadow, road visible through dark tree trunks, travelers passing unaware, surveillance perspective, watching from concealment, herding assessment, oil painting style, fantasy illustration, ominous atmosphere"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: BEING WATCHED BEAT
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "being-watched-beat"
+    zone_name: "The Watching Wilderness"
+    zone_type: "mood"
+
+    narrative_role: |
+      The psychological experience of being tracked through hostile
+      territory—the realization that hunters have become prey, that
+      something is herding them into predictable paths.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Normal-looking forest"
+        - "Psychological pressure"
+        - "Being evaluated"
+        - "Herded feeling"
+      materials: "forest that watches, shadows that follow"
+      color_signature: "paranoia greens, watching shadows"
+      light_character: "every shadow potentially occupied"
+
+    default_prompt_elements:
+      atmosphere: "being herded"
+      must_include:
+        - "forest that feels alive"
+        - "sense of being watched"
+        - "psychological pressure"
+        - "hunters becoming prey"
+      must_avoid:
+        - "comfortable wilderness"
+        - "normal forest atmosphere"
+
+    images:
+      - image_type: "mood"
+        image_slug: "being-watched-wilderness"
+        description: "The forest that watches—being herded through hostile territory"
+        scene_mood: "ominous"
+
+        composition:
+          foreground: "Travelers' view forward"
+          midground: "Forest pressing in"
+          background: "Shadows that might contain watchers"
+
+        lighting:
+          primary_source: "Filtered forest light"
+          quality: "every shadow suspicious"
+          atmospheric: "paranoia made visual"
+
+        palette:
+          dominant: ["watching green", "paranoia shadow"]
+          accent: ["glimpsed movement"]
+
+        key_elements:
+          - "Hunted feeling"
+          - "Shadows everywhere"
+          - "Nowhere safe"
+          - "Being herded"
+
+        prompt: "Fantasy wilderness where hunters become prey, forest pressing in with watching shadows, sense of being evaluated from concealment, paranoia made visual, every shadow potentially occupied, herded through hostile territory, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: CONTAMINATED WATER BEAT
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "contaminated-water-beat"
+    zone_name: "Contaminated Water Discovery"
+    zone_type: "beat"
+
+    narrative_role: |
+      The stream where Rill discovers the magical suppression compounds—
+      clear water that carries invisible poison, the Silent Hand's method
+      for subduing transported captives.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Clear stream, looks normal"
+        - "Hidden contamination"
+        - "Rill's detection moment"
+        - "Beautiful and poisoned"
+      materials: "stream water, rocky bank, forest shore"
+      color_signature: "deceptive clarity, hidden wrong"
+      light_character: "water reflecting light, concealing danger"
+
+    default_prompt_elements:
+      atmosphere: "discovery of hidden poison"
+      must_include:
+        - "clear stream"
+        - "beauty concealing danger"
+        - "detection moment"
+        - "water that lies"
+      must_avoid:
+        - "visibly polluted water"
+        - "obvious contamination"
+
+    images:
+      - image_type: "beat"
+        image_slug: "contaminated-water-discovery"
+        description: "The stream where Rill discovers hidden poison—clear water that lies"
+        scene_mood: "ominous"
+
+        composition:
+          foreground: "Stream bank, Rill kneeling"
+          midground: "Clear stream water, deceptively pure"
+          background: "Forest, beauty concealing evil"
+
+        lighting:
+          primary_source: "Evening light on water"
+          quality: "beautiful, deceptive"
+          color_temperature: "evening gold on poisoned stream"
+
+        palette:
+          dominant: ["clear water", "stream bank brown"]
+          accent: ["evening gold", "hidden wrongness"]
+
+        key_elements:
+          - "Clear water hides poison"
+          - "Beauty conceals danger"
+          - "Detection moment"
+          - "Wilderness weaponized"
+
+        style_notes: "The water should look perfectly natural and inviting—the horror is that it's poisoned. No visual contamination, only the knowledge of what it contains."
+
+        prompt: "Fantasy stream discovery scene, clear beautiful water concealing magical suppression compounds, water genasi kneeling by bank detecting hidden poison, webbed fingers in current sensing wrongness, beautiful stream that lies, wilderness weaponized, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: PATROL ENCOUNTER BEAT
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "patrol-encounter-beat"
+    zone_name: "Dusk Patrol Encounter"
+    zone_type: "beat"
+
+    narrative_role: |
+      The moment when theory becomes lethal reality—Silent Hand patrol
+      encountered at dusk, two operatives killed by Lyra emerging from
+      shadow. The team's first blood on this mission.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Dusk lighting"
+        - "Patrol encounter moment"
+        - "Lethal violence"
+        - "Shadow assassination"
+      materials: "dusk light, forest shadow, drawn weapons"
+      color_signature: "dusk orange meeting shadow black"
+      light_character: "last light before violence"
+
+    default_prompt_elements:
+      atmosphere: "lethal encounter"
+      must_include:
+        - "dusk lighting"
+        - "patrol figures"
+        - "shadow threat"
+        - "violence imminent or occurring"
+      must_avoid:
+        - "daytime"
+        - "peaceful encounter"
+
+    images:
+      - image_type: "beat"
+        image_slug: "patrol-encounter-dusk"
+        description: "Dusk patrol encounter—shadow assassination about to occur"
+        scene_mood: "kinetic"
+
+        composition:
+          foreground: "Patrol figures unaware"
+          midground: "Shadow where Lyra hides"
+          background: "Dusk forest, last light"
+
+        lighting:
+          primary_source: "Dusk light from west"
+          quality: "last light before violence"
+          color_temperature: "dusk orange meeting shadow"
+          atmospheric: "shadows lengthening, danger imminent"
+
+        palette:
+          dominant: ["dusk orange", "forest shadow"]
+          accent: ["patrol dark clothing", "blade gleam implied"]
+
+        key_elements:
+          - "Patrol unaware"
+          - "Death in shadows"
+          - "Dusk light fading"
+          - "Mission turns lethal"
+
+        prompt: "Fantasy dusk patrol encounter, Silent Hand operatives on forest path unaware, shadows gathering where assassin hides, last light before violence, dusk orange meeting shadow black, lethal moment approaching, oil painting style, fantasy illustration"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# BEAT IMAGES
+# Key narrative moments from ch28 and ch30
+# ═══════════════════════════════════════════════════════════════════════════════
+
+beat_images:
+  # ─────────────────────────────────────────────────────────────────────────────
+  # BEAT: COLUMN RIDING NORTH
+  # ─────────────────────────────────────────────────────────────────────────────
+  - beat_slug: "column-riding-north"
+    beat_title: "Column Riding North"
+    chapter_ref: "ch28"
+    zone_ref: "road"
+
+    narrative_context: |
+      "The northern road stretched before them, a ribbon of mud and thawing
+      earth winding through the awakening spring landscape. Veyra rode at
+      the head of their small column, her gaze sweeping the treeline with
+      the practiced vigilance of a ranger."
+
+    emotional_beat: "The journey begins—team moving toward danger through spring awakening"
+
+    image_spec:
+      scene_mood: "pastoral"
+      image_type: "anchor"
+
+      composition:
+        foreground: "Mud road, hoofprints in soft earth"
+        midground: "Small column of riders, Veyra at head"
+        background: "Spring landscape, Thornwood ahead"
+        focal_point: "Veyra leading, eyes on treeline"
+
+      lighting:
+        primary_source: "Morning spring sun"
+        quality: "crisp, clear, promising"
+        color_temperature: "cool spring morning"
+
+      palette:
+        dominant: ["spring green", "mud brown"]
+        accent: ["rider colors", "morning gold"]
+
+      key_elements:
+        - "Ribbon of mud road"
+        - "Small column in disguise"
+        - "Veyra's vigilance"
+        - "Spring awakening landscape"
+
+      prompt: "Fantasy reconnaissance team riding north through spring landscape, mud road stretching ahead, Veyra at head of column sweeping treeline with ranger vigilance, thawing earth and awakening spring, Thornwood Forest visible ahead, ribbon of road winding through countryside, oil painting style, fantasy illustration"
+
+      source_quote: "The northern road stretched before them, a ribbon of mud and thawing earth winding through the awakening spring landscape."
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # BEAT: TAINTED WATERS
+  # ─────────────────────────────────────────────────────────────────────────────
+  - beat_slug: "tainted-waters"
+    beat_title: "Tainted Waters"
+    chapter_ref: "ch28"
+    zone_ref: "contaminated-water-beat"
+
+    narrative_context: |
+      "She knelt by the bank, her webbed fingers dipping into the current.
+      The water hummed with a faint, almost imperceptible energy, a subtle
+      distortion that spoke of unnatural forces at play. 'They're using the
+      waterways to transport their captives,' she murmured."
+
+    emotional_beat: "Horror discovered—the wilderness weaponized against the innocent"
+
+    image_spec:
+      scene_mood: "ominous"
+      image_type: "hero"
+
+      composition:
+        foreground: "Stream bank, Rill kneeling"
+        midground: "Her webbed fingers in the water, sea-glass skin"
+        background: "Clear stream, beautiful and poisoned"
+        focal_point: "Rill's face registering horror"
+
+      lighting:
+        primary_source: "Evening forest light"
+        secondary_source: "Faint magical glow in water"
+        quality: "beautiful, deceptive"
+        color_temperature: "evening gold with wrongness"
+
+      palette:
+        dominant: ["clear water", "Rill's sea-glass skin"]
+        accent: ["faint magical wrongness"]
+        avoid: ["obvious pollution"]
+
+      key_elements:
+        - "Webbed fingers in current"
+        - "Sea-glass skin catching light"
+        - "Clear water hiding poison"
+        - "Discovery horror"
+
+      style_notes: "The water must look inviting and pure—the horror is invisible, only detected by Rill's unique abilities."
+
+      prompt: "Fantasy water genasi kneeling by forest stream, webbed fingers dipping into current, sea-glass skin catching evening light with darker patterns swirling beneath, detecting magical suppression compounds in clear water, beautiful stream hiding poison, discovery of wilderness weaponized, oil painting style, fantasy illustration"
+
+      source_quote: "She knelt by the bank, her webbed fingers dipping into the current. 'They're using the waterways to transport their captives.'"
+
+      character_refs:
+        - slug: "rill-vossari"
+          role: "primary subject"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # BEAT: BEING HERDED
+  # ─────────────────────────────────────────────────────────────────────────────
+  - beat_slug: "being-herded"
+    beat_title: "We're Being Herded"
+    chapter_ref: "ch30"
+    zone_ref: "being-watched-beat"
+
+    narrative_context: |
+      "'Two hours behind us, something crossed our trail,' Veyra said,
+      dismounting to examine tracks that were invisible to the others.
+      Her fingers traced patterns in the disturbed earth, reading a story
+      of pursuit and calculation. 'And something else is moving ahead of
+      us, staying just out of sight. We're being herded.'"
+
+    emotional_beat: "Hunter becomes hunted—the chilling reversal of power"
+
+    image_spec:
+      scene_mood: "ominous"
+      image_type: "beat"
+
+      composition:
+        foreground: "Veyra kneeling, fingers in disturbed earth"
+        midground: "Forest pressing in around her"
+        background: "Team mounted, watching shadows"
+        focal_point: "Veyra's grave face reading invisible tracks"
+
+      lighting:
+        primary_source: "Filtered forest light"
+        quality: "tense, uncertain"
+        color_temperature: "cool forest green"
+        atmospheric: "every shadow potentially occupied"
+
+      palette:
+        dominant: ["forest green", "earth brown"]
+        accent: ["Veyra's concern", "shadow threat"]
+
+      key_elements:
+        - "Veyra reading invisible tracks"
+        - "Fingers tracing patterns"
+        - "Forest closing in"
+        - "Hunters becoming prey"
+
+      prompt: "Fantasy ranger kneeling to read invisible tracks, fingers tracing patterns in disturbed earth, face grave with realization, forest pressing in around her, mounted team watching shadows nervously, hunters becoming prey, 'We're being herded' moment, oil painting style, fantasy illustration"
+
+      source_quote: "Her fingers traced patterns in the disturbed earth, reading a story of pursuit and calculation. 'We're being herded.'"
+
+      character_refs:
+        - slug: "veyra-thornwake"
+          role: "primary subject"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # BEAT: THE TARGET REVEALED
+  # ─────────────────────────────────────────────────────────────────────────────
+  - beat_slug: "target-revealed"
+    beat_title: "The Target Revealed"
+    chapter_ref: "ch28"
+    zone_ref: "observation-post-zone"
+
+    narrative_context: |
+      "The Silent Hand facility was a sprawling estate nestled in a hidden
+      valley, its buildings blending seamlessly with the natural landscape.
+      From their concealed observation post on a rocky outcrop, Veyra and
+      her team had a clear view of their target."
+
+    emotional_beat: "Target sighted—the gilded cage revealed at last"
+
+    image_spec:
+      scene_mood: "ominous"
+      image_type: "hero"
+
+      composition:
+        foreground: "Edge of rocky observation post"
+        midground: "Valley below, facility visible"
+        background: "Mountains beyond, scope of operation"
+        focal_point: "The sprawling estate in hidden valley"
+
+      lighting:
+        primary_source: "Late afternoon sun"
+        quality: "revealing detail, long shadows"
+        color_temperature: "golden afternoon"
+        atmospheric: "shadows across compound"
+
+      palette:
+        dominant: ["valley green", "facility stone"]
+        accent: ["guard tower dark", "ward shimmer"]
+
+      key_elements:
+        - "Rocky outcrop observation post"
+        - "Facility sprawled below"
+        - "Guard towers visible"
+        - "Hidden valley revealed"
+
+      prompt: "Fantasy reconnaissance team on rocky outcrop, Silent Hand facility sprawled across hidden valley below, manor house and guard towers visible, estate blending with natural landscape, first view of target, late afternoon light casting long shadows, observation and assessment, oil painting style, fantasy illustration"
+
+      source_quote: "The Silent Hand facility was a sprawling estate nestled in a hidden valley... Veyra and her team had a clear view of their target."
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # BEAT: VEYRA'S PRAYER
+  # ─────────────────────────────────────────────────────────────────────────────
+  - beat_slug: "veyras-prayer"
+    beat_title: "Lady Luck Guide Our Path"
+    chapter_ref: "ch30"
+    zone_ref: "courtyard"
+
+    narrative_context: |
+      "As they prepared to depart, Veyra touched the battered lantern at
+      her belt and murmured: 'Lady Luck guide our path and guard our purpose.'
+      A brief prayer to Tymora, goddess of fortune—appropriate for those
+      venturing into unknown danger."
+
+    emotional_beat: "Faith before danger—the commander's ritual"
+
+    image_spec:
+      scene_mood: "ominous"
+      image_type: "beat"
+
+      composition:
+        foreground: "Veyra's hand on battered lantern"
+        midground: "Her face in pre-dawn light, murmuring prayer"
+        background: "Courtyard activity, team preparing"
+        focal_point: "The lantern, the prayer, the faith"
+
+      lighting:
+        primary_source: "Pre-dawn sky"
+        secondary_source: "Stable lanterns"
+        quality: "gray dawn with warm lantern glow"
+        color_temperature: "cool blue-gray with amber accent"
+
+      palette:
+        dominant: ["pre-dawn gray", "lantern amber"]
+        accent: ["prayer focus", "faith warmth"]
+
+      key_elements:
+        - "Fingers on battered lantern"
+        - "Murmured prayer"
+        - "Pre-dawn departure"
+        - "Faith before danger"
+
+      prompt: "Fantasy commander's prayer moment at pre-dawn, Veyra touching battered lantern at belt, murmuring to Tymora goddess of fortune, courtyard preparations behind her, gray dawn with warm lantern glow, faith before danger, oil painting style, fantasy illustration, intimate ritual moment"
+
+      source_quote: "Veyra touched the battered lantern at her belt and murmured: 'Lady Luck guide our path and guard our purpose.'"
+
+      character_refs:
+        - slug: "veyra-thornwake"
+          role: "primary subject"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# REFERENCES
+# ═══════════════════════════════════════════════════════════════════════════════
+
+references:
+  chapter_visual_plans:
+    - path: "chapters/ch28-the-road-north/chapter.visual-plan.yaml"
+      context: "Journey north, water discovery, facility observation"
+    - path: "chapters/ch30-the-silent-approach/chapter.visual-plan.yaml"
+      context: "Departure, being herded, patrol encounter, Lyra's kill"
+
+  character_portraits:
+    - slug: "veyra-thornwake"
+      context: "Commander leading team, ranger skills"
+    - slug: "rill-vossari"
+      context: "Water genasi detecting contamination"
+    - slug: "lyra-kestrel"
+      context: "Tiefling operative, transformation to predator"
+    - slug: "quierk"
+      context: "Aarakocra innkeeper at Windborne Roost"
+
+  related_locations:
+    - slug: "windborne-roost"
+      context: "Major waypoint on the route"
+    - slug: "thornwood-forest"
+      context: "Forest through which road passes"
+    - slug: "silent-hand-facility"
+      context: "Northern destination"
+
+  thematic_connections:
+    - "Threshold between civilization and darkness"
+    - "Hunters becoming prey"
+    - "Wilderness weaponized"
+    - "Beauty concealing danger"

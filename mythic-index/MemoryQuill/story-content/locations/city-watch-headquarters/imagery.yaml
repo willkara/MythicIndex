@@ -1,0 +1,1575 @@
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "city-watch-headquarters"
+  location_name: "City Watch Headquarters Complex"
+  zone_count: 28
+  featured_in_chapters:
+    - ch20-silent-hand-revelation
+    - ch27-official-channels
+    - ch32-the-return-and-the-reckoning
+  last_updated: "2025-12-26"
+
+generation_defaults:
+  provider: "workers-ai"
+  model: "flux-schnell"
+  quality: "high"
+  aspect_ratio: "16:9"
+  size: "1344x768"
+
+narrative_soul: |
+  The City Watch Headquarters is a philosophical proposition rendered in
+  limestone and granite—the belief that transparency and secrecy can
+  serve the same justice. Shield Hall welcomes the public with heraldic
+  warmth while the Spire of Inquiry holds its secrets behind dressed
+  granite and narrow windows. Between them, sky-bridges span Justicar's
+  Way like raised eyebrows, connecting different truths. In its
+  interrogation cells, Marcus Heartbridge reveals what a skilled artist
+  can do with a soul instead of canvas. In its offices, Lady Blackwater
+  trades legitimacy for obligation. This is where the Last Light Company
+  learns the price of becoming official: they are not partners—they are
+  assets to be deployed.
+
+one_line_essence: "Where transparency and secrecy serve the same justice across sky-bridges."
+
+location_visual_anchor:
+  signature_elements:
+    - "Twin buildings: Shield Hall (limestone, welcoming) and Spire of Inquiry (granite, discrete)"
+    - "Bridge of Scrutiny (3rd floor, enclosed) and Bridge of Whispers (5th floor, open-air)"
+    - "Waterdeep heraldic crest at Shield Hall's grand entrance"
+    - "Stone-vaulted detention cells below Shield Hall"
+    - "LICO command suite with maps and colored pins"
+    - "Interrogation chambers with pressing stone walls"
+    - "Training courtyard visible from Justicar's Way"
+  materials:
+    - "Limestone ashlar (Shield Hall) projecting warmth"
+    - "Darker dressed granite (Spire) projecting quiet authority"
+    - "Oak beams and waxed oak rails"
+    - "Iron bars, grilles, and straps on secure doors"
+    - "Slate and lead roofing"
+    - "Polished stone floors in public areas"
+    - "Limewashed masonry in detention areas"
+  color_anchors:
+    - "Limestone gray with warm undertones (Shield Hall)"
+    - "Darker granite gray-blue (Spire)"
+    - "Oak umber in administrative floors"
+    - "Iron black-blue at secure portals"
+    - "Lantern gold in public spaces"
+    - "Cold stone in detention"
+  characteristic_light:
+    public_halls: "Morning sun through mullioned windows, lantern gold pooling along corridors"
+    administrative: "Professional light, brass fixtures, hearth warmth"
+    detention: "Minimal harsh overhead, pressing shadows, damp stone coolness"
+    bridges: "Open sky at Bridge of Whispers, controlled light in Bridge of Scrutiny, dusk casting latticed shadows on the street below"
+
+overview:
+  establishing:
+    slug: "establishing"
+    name: "City Watch Headquarters Complex - Establishing Shot"
+    zone_type: "establishing"
+    image_type: "establishing"
+    mood: "quotidian"
+    narrative_context: |
+      Twin government buildings connected by dramatic sky-bridges spanning
+      Justicar's Way—Shield Hall's welcoming limestone facade opposite
+      the Spire of Inquiry's discrete granite authority. 275-325 personnel
+      coordinate everything from street patrol to regional intelligence.
+    lighting:
+      primary_source: "Natural daylight"
+      secondary_source: "Window reflections"
+      quality: "Official, authoritative"
+      direction: "General atmospheric"
+      color_temperature: "Cool professional daylight"
+      shadow_depth: "Moderate—buildings cast dignified shadows"
+      atmospheric: "Urban civic atmosphere"
+    palette:
+      dominant:
+        - "Limestone warm gray"
+        - "Granite cool gray"
+        - "Sky blue between buildings"
+      accent:
+        - "Heraldic crest colors"
+        - "Iron bridge dark"
+        - "Slate roof charcoal"
+      avoid:
+        - "Fantasy excess"
+        - "Medieval cliche"
+        - "Modern elements"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of twin government buildings connected by sky-bridges,
+      fantasy civic architecture. Five-story limestone Shield Hall with
+      soaring columns and Waterdeep heraldic crest at grand entrance,
+      facing six-story granite Spire of Inquiry with narrower windows
+      projecting quiet authority. Two elevated bridges span the busy
+      thoroughfare between—enclosed Bridge of Scrutiny at third floor,
+      open-air Bridge of Whispers at fifth. Busy street below with city
+      watch patrols and citizens. Training courtyard visible behind
+      Shield Hall. Official, authoritative atmosphere. Fantasy illustration,
+      rich impasto, civic dignity.
+    negative_prompt: "modern architecture, glass buildings, skyscrapers, medieval cliche, fantasy excess, neon lights, cartoon style, anime"
+
+zones:
+  - slug: "shield-hall-portal"
+    name: "Shield Hall Grand Entrance"
+    zone_type: "threshold"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      Soaring limestone columns with Waterdeep's heraldic crest, designed
+      to inspire citizen confidence. The welcoming face of law enforcement.
+    lighting:
+      primary_source: "Morning sunlight on facade"
+      secondary_source: "Interior warmth visible through doors"
+      quality: "Welcoming, official"
+      direction: "Front-lit for visibility"
+      color_temperature: "Warm daylight on limestone"
+      shadow_depth: "Light—designed for openness"
+      atmospheric: "Civic dignity"
+    palette:
+      dominant:
+        - "Limestone warm gray"
+        - "Heraldic colors (city crest)"
+        - "Oak door wood"
+      accent:
+        - "Brass fixtures"
+        - "Guard livery"
+        - "Polished step stone"
+      avoid:
+        - "Threatening"
+        - "Fortress severity"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of grand entrance to City Watch headquarters, fantasy
+      civic portal. Soaring limestone columns framing recessed entrance
+      with heavy oak doors, prominent Waterdeep heraldic crest carved in
+      stone above. Polished step stones worn by countless visitors.
+      Morning sunlight on facade, interior warmth visible beyond. Guards
+      in city watch livery at posts. Bollards and removable crossbars
+      for queue control. Designed to inspire confidence. Fantasy
+      illustration, welcoming authority.
+    negative_prompt: "fortress gates, threatening entrance, dungeon doors, modern security, cartoon style, anime"
+
+  - slug: "shield-portal"
+    name: "Shield Hall Grand Entrance"
+    zone_type: "threshold"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      Alternate view of the grand entrance—the public face of justice
+      where citizens seek assistance and reports are filed.
+    lighting:
+      primary_source: "Natural daylight"
+      secondary_source: "Interior lantern glow"
+      quality: "Welcoming civic"
+      direction: "Exterior approach"
+      color_temperature: "Warm limestone in light"
+      shadow_depth: "Light—transparent governance"
+      atmospheric: "Busy civic activity"
+    palette:
+      dominant:
+        - "Limestone gray"
+        - "Civic heraldry"
+        - "Oak warmth"
+      accent:
+        - "Guard colors"
+        - "Brass detail"
+        - "Street activity"
+      avoid:
+        - "Intimidation"
+        - "Darkness"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of City Watch headquarters entrance from street level,
+      fantasy civic approach. Limestone columns rising to frame official
+      portal, heraldic crest prominent, oak doors open during business
+      hours. Citizens approaching, guards maintaining order at bollards.
+      Natural daylight on warm stone, interior lantern glow beckoning.
+      The accessible face of justice. Fantasy illustration, civic warmth.
+    negative_prompt: "fortress, dungeon, threatening atmosphere, closed doors, cartoon style, anime"
+
+  - slug: "office"
+    name: "Office"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "ominous"
+    narrative_context: |
+      Lady Blackwater's intelligence briefing space—maps with colored pins,
+      documents with official seals, the place where obligations are
+      traded for legitimacy and assets are deployed.
+    lighting:
+      primary_source: "Morning light through tall windows"
+      secondary_source: "Desk lamps on documents"
+      quality: "Official, morning clarity"
+      direction: "Side-lit from windows"
+      color_temperature: "Cool morning light, warm wood"
+      shadow_depth: "Moderate—authority casts shadows"
+      atmospheric: "Political weight in the air"
+    palette:
+      dominant:
+        - "Mahogany desk dark"
+        - "Document pale"
+        - "Window light cool"
+      accent:
+        - "Seal wax red"
+        - "Pin colors on maps"
+        - "Brass fixtures"
+      avoid:
+        - "Casual warmth"
+        - "Cozy atmosphere"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of intelligence briefing office, fantasy government
+      chamber. Polished mahogany desk with documents bearing official
+      seals spread across surface. Maps on wall with colored pins
+      marking locations. Tall windows admitting morning light. Lady
+      intelligence director with sharp gray-green eyes presiding.
+      Political weight visible in atmosphere. Where legitimacy is
+      traded for obligation. Fantasy illustration, official authority.
+    negative_prompt: "cozy office, casual furniture, modern computers, friendly atmosphere, cartoon style, anime"
+    references:
+      - type: "chapter_visual_plan"
+        slug: "ch20-silent-hand-revelation"
+        scene: "scn-20-01"
+        reason: "The Debt Called In scene"
+      - type: "chapter_visual_plan"
+        slug: "ch27-official-channels"
+        scene: "scn-27-01"
+        reason: "Intelligence briefing scene"
+      - type: "chapter_visual_plan"
+        slug: "ch32-the-return-and-the-reckoning"
+        scene: "scn-32-03"
+        reason: "Authorization granted scene"
+
+  - slug: "anteroom"
+    name: "Anteroom"
+    zone_type: "threshold"
+    image_type: "zone"
+    mood: "tense"
+    narrative_context: |
+      The waiting space before Lady Blackwater's office—where Company
+      members compose themselves before entering the political arena.
+    lighting:
+      primary_source: "Filtered window light"
+      secondary_source: "Wall sconces"
+      quality: "Subdued, anticipatory"
+      direction: "Ambient general"
+      color_temperature: "Cool professional"
+      shadow_depth: "Moderate—waiting shadows"
+      atmospheric: "Tension before meetings"
+    palette:
+      dominant:
+        - "Stone wall gray"
+        - "Bench wood dark"
+        - "Subdued light"
+      accent:
+        - "Door to office beyond"
+        - "Sconce warm"
+        - "Nervous gestures"
+      avoid:
+        - "Comfort"
+        - "Casual waiting"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of anteroom outside intelligence office, fantasy
+      government waiting space. Stone walls with minimal decoration,
+      dark wooden benches along walls. Filtered light through narrow
+      windows, wall sconces providing additional illumination. Heavy
+      oak door to office visible. Atmosphere of anticipation before
+      important meetings. Fantasy illustration, subdued tension.
+    negative_prompt: "comfortable waiting room, modern lobby, casual furniture, bright lighting, cartoon style, anime"
+
+  - slug: "corridor"
+    name: "Corridor"
+    zone_type: "liminal"
+    image_type: "zone"
+    mood: "tense"
+    narrative_context: |
+      The stone corridor where Marcus emerges from interrogation cells,
+      adjusting his cuffs as his charming smile returns—masks exchanged
+      as casually as changing coats.
+    lighting:
+      primary_source: "Wall lanterns at intervals"
+      secondary_source: "Cell door light filtering"
+      quality: "Cold corridor light"
+      direction: "Pools along walls"
+      color_temperature: "Cool stone, warm lantern spots"
+      shadow_depth: "Deep—corridor shadows"
+      atmospheric: "Cold reality"
+    palette:
+      dominant:
+        - "Stone corridor gray"
+        - "Iron door dark"
+        - "Lantern pool gold"
+      accent:
+        - "Figure emerging"
+        - "Distant cell light"
+        - "Step echo implied"
+      avoid:
+        - "Warmth"
+        - "Comfort"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of stone corridor in detention area, fantasy government
+      passage. Cold stone walls with wall lanterns creating pools of
+      light at intervals. Iron-banded doors to cells visible. Atmosphere
+      of cold institutional reality. Where masks are exchanged between
+      interrogation and public face. Fantasy illustration, tense corridor.
+    negative_prompt: "warm hallway, comfortable passage, bright lighting, modern corridor, cartoon style, anime"
+    references:
+      - type: "chapter_visual_plan"
+        slug: "ch20-silent-hand-revelation"
+        scene: "scn-20-03"
+        reason: "Post-interrogation corridor"
+
+  - slug: "corridors"
+    name: "Corridors"
+    zone_type: "liminal"
+    image_type: "zone"
+    mood: "ominous"
+    narrative_context: |
+      The headquarters corridors where the Mockingbird walks in iron
+      cuffs, head held high, as clerks flatten against walls and whispers
+      trail in her wake—legend walking among mortals.
+    lighting:
+      primary_source: "Overhead lanterns"
+      secondary_source: "Window light from offices"
+      quality: "Administrative, exposed"
+      direction: "General overhead"
+      color_temperature: "Mixed warm and cool"
+      shadow_depth: "Moderate—figures visible"
+      atmospheric: "Whispers following"
+    palette:
+      dominant:
+        - "Stone floor polished"
+        - "Wall pale"
+        - "Lantern warm"
+      accent:
+        - "Iron cuffs dark"
+        - "Clerk backs against walls"
+        - "Legend walking"
+      avoid:
+        - "Empty corridors"
+        - "Cheerful atmosphere"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of headquarters corridors with procession, fantasy
+      legend walking. Polished stone floors, pale walls with official
+      notices, overhead lanterns. Central figure in iron cuffs walking
+      with unnerving grace, head high, while clerks and guards flatten
+      against walls. Whispers following like shadows. Legend made flesh
+      passing among mortals. Fantasy illustration, ominous procession.
+    negative_prompt: "empty corridor, cheerful atmosphere, modern hallway, casual walking, cartoon style, anime"
+    references:
+      - type: "chapter_visual_plan"
+        slug: "ch27-official-channels"
+        scene: "scn-27-05"
+        reason: "Walk of the Mockingbird"
+      - type: "character_portrait"
+        slug: "lyra-kestrel"
+        reason: "The Mockingbird in procession"
+
+  - slug: "interrogation-chamber"
+    name: "Interrogation Chamber"
+    zone_type: "cell"
+    image_type: "zone"
+    mood: "ominous"
+    narrative_context: |
+      Cold stone walls pressing in, harsh overhead light, a shackled
+      prisoner—and Marcus Heartbridge circling, reaching down with
+      unshakable firmness to place his hand over a clenched fist. The
+      gesture shockingly intimate in this stark room.
+    lighting:
+      primary_source: "Harsh overhead lamp"
+      secondary_source: "None—intentional isolation"
+      quality: "Harsh, exposing"
+      direction: "Direct overhead"
+      color_temperature: "Cold, clinical"
+      shadow_depth: "Sharp—no hiding"
+      atmospheric: "Pressing, claustrophobic"
+    palette:
+      dominant:
+        - "Stone wall cold gray"
+        - "Iron restraint dark"
+        - "Harsh light white"
+      accent:
+        - "Prisoner flesh"
+        - "Elegant hand reaching"
+        - "Intimate violation"
+      avoid:
+        - "Comfort"
+        - "Warmth"
+        - "Space"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of interrogation chamber, fantasy psychological
+      warfare room. Cold stone walls pressing in, harsh overhead lamp
+      creating stark shadows. Simple iron chair with shackled prisoner,
+      white-knuckled fists. Elegant figure in fine clothes circling,
+      one hand placed with intimate firmness over the prisoner's fist.
+      Shockingly intimate gesture in stark room. Violence without
+      violence. Fantasy illustration, ominous atmosphere.
+    negative_prompt: "torture devices, gore, blood, modern interrogation room, two-way mirror, cartoon style, anime"
+    references:
+      - type: "chapter_visual_plan"
+        slug: "ch20-silent-hand-revelation"
+        scene: "scn-20-03"
+        moment: "ch20-silent-hand-revelation-moment-03"
+        reason: "The Touch - hero moment"
+      - type: "character_portrait"
+        slug: "marcus-heartbridge"
+        reason: "Marcus conducting interrogation"
+
+  - slug: "holding-cells"
+    name: "Holding Cells"
+    zone_type: "cell"
+    image_type: "zone"
+    mood: "oppressive"
+    narrative_context: |
+      Stone-vaulted subgrade detention—iron bars, dampness seeping through
+      limewash, minimal daylight. The contrast to administrative floors
+      above stark and intentional.
+    lighting:
+      primary_source: "Minimal overhead lanterns"
+      secondary_source: "Small barred window slits"
+      quality: "Dim, damp"
+      direction: "Sparse pools"
+      color_temperature: "Cool, prison-cold"
+      shadow_depth: "Deep—cells in shadow"
+      atmospheric: "Damp, dripping, close"
+    palette:
+      dominant:
+        - "Stone vault gray"
+        - "Iron bar black"
+        - "Damp dark patches"
+      accent:
+        - "Lantern gold minimal"
+        - "Prisoner forms"
+        - "Drainage channels"
+      avoid:
+        - "Light"
+        - "Comfort"
+        - "Space"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of subgrade detention cells, fantasy prison block.
+      Stone-vaulted corridor with iron-barred cells on both sides.
+      Minimal lantern light, dampness visible on limewashed walls.
+      Drainage channels in floor. Chain clinks and distant drips.
+      The stark contrast to administrative warmth above. Fantasy
+      illustration, oppressive atmosphere.
+    negative_prompt: "bright prison, clean cells, modern jail, humane conditions visible, cartoon style, anime"
+
+  - slug: "detention-block"
+    name: "Detention Block"
+    zone_type: "cell"
+    image_type: "zone"
+    mood: "intimate"
+    narrative_context: |
+      The Spire's high-security detention where the Mockingbird is held—
+      but her cell is immaculate. Books in precise formations, delicate
+      wood carvings of birds and animals. The assassin revealed as artist.
+    lighting:
+      primary_source: "Small cell window"
+      secondary_source: "Corridor light through bars"
+      quality: "Filtered, controlled"
+      direction: "Side window, front bars"
+      color_temperature: "Cool stone, warmed by artistry"
+      shadow_depth: "Moderate—cell with character"
+      atmospheric: "Humanity preserved in captivity"
+    palette:
+      dominant:
+        - "Stone cell gray"
+        - "Iron bar dark"
+        - "Book leather warm"
+      accent:
+        - "Wood carving pale"
+        - "Precise arrangement"
+        - "Golden eyes watching"
+      avoid:
+        - "Typical prison cell"
+        - "Squalor"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of high-security cell through bars, fantasy artist's
+      cage. View through reinforced iron bars into immaculate space.
+      Books stacked in precise formations. Delicate wood carvings of
+      birds and animals arranged with obsessive care on shelf. Small
+      window casting filtered light. Humanity preserved in captivity.
+      The assassin revealed as artist. Fantasy illustration, intimate
+      complexity.
+    negative_prompt: "filthy cell, typical prison, squalid conditions, bare room, cartoon style, anime"
+    references:
+      - type: "chapter_visual_plan"
+        slug: "ch27-official-channels"
+        scene: "scn-27-02"
+        moment: "ch27-official-channels-moment-02"
+        reason: "The Artist's Cell"
+      - type: "character_portrait"
+        slug: "lyra-kestrel"
+        reason: "Lyra's immaculate cell"
+
+  - slug: "shield-hall-detention"
+    name: "Shield Hall Detention Block"
+    zone_type: "cell"
+    image_type: "zone"
+    mood: "oppressive"
+    narrative_context: |
+      The standard detention facilities beneath Shield Hall—stone vaults,
+      iron bars, evidence lockers, chain-of-custody procedures. Where
+      common criminals await processing.
+    lighting:
+      primary_source: "Sparse overhead lanterns"
+      secondary_source: "Shaft grilles to upper levels"
+      quality: "Minimal, institutional"
+      direction: "Overhead pools"
+      color_temperature: "Cool, damp"
+      shadow_depth: "Deep—standard prison"
+      atmospheric: "Lime and iron scent"
+    palette:
+      dominant:
+        - "Vault stone gray"
+        - "Iron black"
+        - "Limewash pale"
+      accent:
+        - "Evidence locker doors"
+        - "Guard posts"
+        - "Prisoner forms"
+      avoid:
+        - "Warmth"
+        - "Character"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of standard detention block, fantasy prison subgrade.
+      Stone-vaulted corridor with cells, evidence lockers, chain-of-
+      custody desk. Guard posts at intervals. Sparse overhead lighting.
+      Lime and iron scent implied. Standard institutional detention.
+      Fantasy illustration, oppressive utility.
+    negative_prompt: "comfortable, bright, modern jail, special treatment visible, cartoon style, anime"
+
+  - slug: "spire-high-security-detention"
+    name: "High-Security Detention"
+    zone_type: "cell"
+    image_type: "zone"
+    mood: "oppressive"
+    narrative_context: |
+      The Spire's deepest level—magical wards humming faintly, anti-magic
+      fields, sound-dampening materials, observation niches. Where the
+      most dangerous prisoners are held.
+    lighting:
+      primary_source: "Controlled arcane lighting"
+      secondary_source: "Observation niche light"
+      quality: "Suppressed, monitored"
+      direction: "Overhead controlled"
+      color_temperature: "Neutral, designed to suppress"
+      shadow_depth: "Engineered—no hiding spots"
+      atmospheric: "Magical suppression hum"
+    palette:
+      dominant:
+        - "Reinforced stone dark"
+        - "Iron and ward-metal"
+        - "Suppression blue-gray"
+      accent:
+        - "Ward glow faint"
+        - "Observation window"
+        - "Isolation room doors"
+      avoid:
+        - "Comfort"
+        - "Personality"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of high-security magical detention, fantasy prison
+      deepest level. Reinforced stone walls with arcane wards glowing
+      faintly. Anti-magic suppression visible as blue-gray field.
+      Observation niches with protected windows. Isolation room doors
+      with multiple locks. Sound-dampening stone absorbing all echo.
+      Where the most dangerous are held. Fantasy illustration, oppressive
+      security.
+    negative_prompt: "comfortable cells, regular prison, bright lighting, escape routes visible, cartoon style, anime"
+
+  - slug: "high-security"
+    name: "Spire High-Security Detention"
+    zone_type: "cell"
+    image_type: "zone"
+    mood: "oppressive"
+    narrative_context: |
+      Alternate view of the deepest detention—the weight of stone and
+      ward pressing down, designed to contain the uncontainable.
+    lighting:
+      primary_source: "Ward glow"
+      secondary_source: "Controlled overhead"
+      quality: "Suppressive"
+      direction: "Engineered coverage"
+      color_temperature: "Cold suppression"
+      shadow_depth: "Eliminated—total visibility"
+      atmospheric: "Magical hum constant"
+    palette:
+      dominant:
+        - "Ward blue-gray"
+        - "Stone dark"
+        - "Iron reinforced"
+      accent:
+        - "Suppression field shimmer"
+        - "Guard presence"
+        - "Control mechanisms"
+      avoid:
+        - "Escape possibility"
+        - "Privacy"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of ultimate security detention, fantasy magical
+      prison. Ward energy visible as constant blue-gray shimmer.
+      Stone engineered for complete coverage. Guard posts with arcane
+      monitoring equipment. No shadows, no privacy, no escape. The
+      weight of containment visible. Fantasy illustration, oppressive
+      totality.
+    negative_prompt: "comfortable, weak security, visible flaws, escape routes, cartoon style, anime"
+
+  - slug: "bridge-of-scrutiny"
+    name: "Bridge of Scrutiny"
+    zone_type: "threshold"
+    image_type: "zone"
+    mood: "tense"
+    narrative_context: |
+      The enclosed third-floor sky-bridge connecting Shield Hall to the
+      Spire—stone-and-iron corridor with interior shutters and privacy
+      baffles, guarded at both portals. For formal coordination.
+    lighting:
+      primary_source: "Controlled interior light"
+      secondary_source: "Shutter-filtered exterior"
+      quality: "Professional, private"
+      direction: "Even overhead"
+      color_temperature: "Neutral, controlled"
+      shadow_depth: "Moderate—professional"
+      atmospheric: "Formal passage"
+    palette:
+      dominant:
+        - "Stone-and-iron structure"
+        - "Shutter wood"
+        - "Controlled light neutral"
+      accent:
+        - "Guard livery"
+        - "Document cases"
+        - "Seal colors"
+      avoid:
+        - "Open views"
+        - "Casual atmosphere"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of enclosed sky-bridge interior, fantasy secure
+      passage. Stone-and-iron corridor with privacy baffles and interior
+      shutters. Guards at portal positions. Controlled overhead lighting.
+      Figures in official dress carrying document cases crossing between
+      buildings. Formal coordination space. Fantasy illustration, tense
+      professionalism.
+    negative_prompt: "open air, casual walking, views visible, unguarded, cartoon style, anime"
+
+  - slug: "bridge-scrutiny"
+    name: "Bridge of Scrutiny Interior"
+    zone_type: "threshold"
+    image_type: "zone"
+    mood: "tense"
+    narrative_context: |
+      Interior view of the formal bridge—the transition between Shield
+      Hall's public warmth and the Spire's discrete authority.
+    lighting:
+      primary_source: "Bridge lanterns"
+      secondary_source: "Destination building glow"
+      quality: "Transitional"
+      direction: "Overhead and forward"
+      color_temperature: "Neutral transition"
+      shadow_depth: "Controlled—no surprises"
+      atmospheric: "Official passage"
+    palette:
+      dominant:
+        - "Stone underfoot"
+        - "Iron structure"
+        - "Destination light ahead"
+      accent:
+        - "Guard positions"
+        - "Privacy baffles"
+        - "Checkpoint markers"
+      avoid:
+        - "Views"
+        - "Distraction"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of sky-bridge interior passage, fantasy official
+      crossing. Stone floor, iron-reinforced walls, privacy baffles
+      at intervals. Lanterns providing even light. Guard checkpoint
+      ahead at destination portal. Official atmosphere. The transition
+      between transparency and secrecy. Fantasy illustration, controlled
+      passage.
+    negative_prompt: "open views, windows, casual atmosphere, unguarded, cartoon style, anime"
+
+  - slug: "bridge-of-whispers"
+    name: "Bridge of Whispers"
+    zone_type: "overlook"
+    image_type: "zone"
+    mood: "intimate"
+    narrative_context: |
+      The open-air fifth-floor sky-bridge—caged walkway with wind baffles,
+      latticed ironwork casting shadows on the street below. For informal
+      consultation and observation.
+    lighting:
+      primary_source: "Open sky"
+      secondary_source: "Street activity below"
+      quality: "Natural, exposed"
+      direction: "From above and below"
+      color_temperature: "Natural daylight"
+      shadow_depth: "Lattice shadows on bridge and street"
+      atmospheric: "Wind, whispered conversation"
+    palette:
+      dominant:
+        - "Iron lattice dark"
+        - "Sky blue"
+        - "Street colors below"
+      accent:
+        - "Wind baffle fabric"
+        - "Figure silhouettes"
+        - "Shadow patterns"
+      avoid:
+        - "Enclosed feeling"
+        - "Privacy"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of open-air sky-bridge, fantasy elevated walkway.
+      Latticed ironwork cage allowing views of street below and sky
+      above. Wind baffles and railings. Figures in quiet conversation,
+      wind carrying whispers away. Lattice shadows falling on busy
+      Justicar's Way below. Informal consultation space. Fantasy
+      illustration, intimate exposure.
+    negative_prompt: "enclosed bridge, no views, modern structure, cartoon style, anime"
+
+  - slug: "bridge-whispers-dusk"
+    name: "Bridge of Whispers at Dusk"
+    zone_type: "overlook"
+    image_type: "temporal"
+    mood: "ominous"
+    narrative_context: |
+      The open bridge at dusk—latticed shadows lengthening on the street
+      below, figures silhouetted against fading sky, whispers carried
+      on evening wind.
+    lighting:
+      primary_source: "Fading sunset"
+      secondary_source: "Street lanterns kindling below"
+      quality: "Transitional, atmospheric"
+      direction: "Low angle sunset"
+      color_temperature: "Warm sunset cooling to evening"
+      shadow_depth: "Long dramatic lattice shadows"
+      atmospheric: "Evening transition"
+    palette:
+      dominant:
+        - "Sunset orange-gold"
+        - "Shadow purple deepening"
+        - "Iron silhouette dark"
+      accent:
+        - "First lantern glows"
+        - "Figure outlines"
+        - "Wind-moved fabric"
+      avoid:
+        - "Bright daylight"
+        - "Night darkness"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of open sky-bridge at dusk, fantasy dramatic crossing.
+      Sunset light catching latticed ironwork, long shadows falling on
+      street below. Figures silhouetted against fading sky. First street
+      lanterns kindling in Justicar's Way. Wind baffles moving. Whispers
+      carried on evening breeze. Fantasy illustration, ominous beauty.
+    negative_prompt: "midday, bright sun, no shadows, modern bridge, cartoon style, anime"
+
+  - slug: "veyra-crossing"
+    name: "Veyra's Bridge Crossing"
+    zone_type: "threshold"
+    image_type: "inhabited"
+    mood: "tense"
+    narrative_context: |
+      Veyra crossing between buildings—navigating the literal bridge
+      between transparency and secrecy, public service and covert
+      operations.
+    lighting:
+      primary_source: "Bridge environment"
+      secondary_source: "Destination ahead"
+      quality: "Transitional"
+      direction: "Forward journey"
+      color_temperature: "Mixed building atmospheres"
+      shadow_depth: "Journey shadows"
+      atmospheric: "Weight of transition"
+    palette:
+      dominant:
+        - "Bridge structure"
+        - "Destination light"
+        - "Journey figure"
+      accent:
+        - "Mission weight visible"
+        - "Determination in posture"
+        - "Purpose in stride"
+      avoid:
+        - "Casual walking"
+        - "Relaxed posture"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of Company commander crossing sky-bridge, fantasy
+      leadership in motion. Female figure with determined stride crossing
+      between buildings, weight of mission visible in posture. Bridge
+      structure around her, destination building ahead. Navigating the
+      transition between worlds. Fantasy illustration, tense purpose.
+    negative_prompt: "casual walking, relaxed posture, tourism, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "veyra-thornwake"
+        reason: "Veyra crossing the bridge"
+
+  - slug: "detective-bullpen"
+    name: "Detective Bullpen"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      Second floor of Shield Hall—25-40 desks, case file rooms, interview
+      rooms, case boards covering interior walls. The heart of traditional
+      investigation.
+    lighting:
+      primary_source: "Mullioned window natural light"
+      secondary_source: "Desk lamps"
+      quality: "Professional work light"
+      direction: "Window side plus individual"
+      color_temperature: "Mixed natural and lamp warm"
+      shadow_depth: "Light—productive workspace"
+      atmospheric: "Paper shuffle, quill scratch"
+    palette:
+      dominant:
+        - "Desk wood medium"
+        - "Paper pale"
+        - "Wall board covered"
+      accent:
+        - "Case file colors"
+        - "Evidence markers"
+        - "Detective presence"
+      avoid:
+        - "Empty desks"
+        - "Modern office"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of detective bullpen, fantasy investigation hub.
+      Rows of wooden desks covered in case files and evidence. Case
+      boards on walls with notes and connections. Mullioned windows
+      providing natural light, desk lamps for close work. Detectives
+      working, papers shuffling, quills scratching. The heart of
+      investigation. Fantasy illustration, productive authority.
+    negative_prompt: "modern office, computers, empty desks, sterile environment, cartoon style, anime"
+
+  - slug: "briefing-room"
+    name: "Briefing Room"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "tense"
+    narrative_context: |
+      Third floor tactical planning—maps, strategy boards, secure
+      discussion space. Where operations are coordinated and
+      intelligence is shared.
+    lighting:
+      primary_source: "Overhead professional"
+      secondary_source: "Map table lamps"
+      quality: "Clear for detail work"
+      direction: "Table-focused"
+      color_temperature: "Neutral clarity"
+      shadow_depth: "Light—must see all details"
+      atmospheric: "Strategic weight"
+    palette:
+      dominant:
+        - "Map table wood"
+        - "Map colors"
+        - "Wall strategy boards"
+      accent:
+        - "Pin markers"
+        - "Unit tokens"
+        - "Planning notation"
+      avoid:
+        - "Casual atmosphere"
+        - "Incomplete planning"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of tactical briefing room, fantasy military planning.
+      Large map table with terrain features and unit markers. Strategy
+      boards on walls. Overhead lighting for clarity. Officers gathered
+      around table, discussing operations. Strategic weight in
+      atmosphere. Fantasy illustration, tense professionalism.
+    negative_prompt: "casual meeting room, modern screens, empty room, cartoon style, anime"
+    references:
+      - type: "chapter_visual_plan"
+        slug: "ch27-official-channels"
+        scene: "scn-27-01"
+        reason: "Intelligence briefing"
+
+  - slug: "tactical-briefing-suite"
+    name: "Tactical Planning & Briefing Rooms"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "tense"
+    narrative_context: |
+      The suite of planning rooms on Shield Hall's third floor—commander's
+      adjacent suite, secure map chamber, strategy coordination.
+    lighting:
+      primary_source: "Multiple room sources"
+      secondary_source: "Connecting corridor"
+      quality: "Professional throughout"
+      direction: "Task-appropriate per room"
+      color_temperature: "Neutral professional"
+      shadow_depth: "Light—operational clarity"
+      atmospheric: "Multiple simultaneous planning"
+    palette:
+      dominant:
+        - "Oak and stone"
+        - "Map colors"
+        - "Documentation pale"
+      accent:
+        - "Commander's authority markers"
+        - "Strategy tokens"
+        - "Priority indicators"
+      avoid:
+        - "Casual spaces"
+        - "Empty rooms"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of tactical planning suite, fantasy operations center.
+      Multiple connected rooms visible—map chamber, strategy room,
+      commander's planning desk. Oak furniture, stone walls, professional
+      lighting. Officers moving between spaces, plans in hand.
+      Operational complexity coordinated. Fantasy illustration, tense
+      professionalism.
+    negative_prompt: "single room, casual atmosphere, modern equipment, cartoon style, anime"
+
+  - slug: "arcane-division"
+    name: "Arcane Division"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "ethereal"
+    narrative_context: |
+      The Spire's magical forensics and analysis section—containment
+      benches, arcane measurement devices, specialists studying evidence
+      with magical signatures.
+    lighting:
+      primary_source: "Arcane analysis lights"
+      secondary_source: "Containment field glow"
+      quality: "Specialized, controlled"
+      direction: "Focused on work surfaces"
+      color_temperature: "Cool analytical with arcane accent"
+      shadow_depth: "Controlled—must see signatures"
+      atmospheric: "Magical hum, ozone tang"
+    palette:
+      dominant:
+        - "Analysis surface neutral"
+        - "Arcane glow colors"
+        - "Protective glass"
+      accent:
+        - "Evidence samples"
+        - "Measurement displays"
+        - "Specialist robes"
+      avoid:
+        - "Mundane laboratory"
+        - "Chaos"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of arcane analysis division, fantasy magical forensics.
+      Containment benches with protective glass, arcane measurement
+      devices glowing with analysis light. Specialists in protective
+      robes examining evidence with magical signatures. Controlled
+      atmosphere, ozone tang implied. Fantasy illustration, ethereal
+      professionalism.
+    negative_prompt: "mundane laboratory, modern equipment, chaos, uncontrolled magic, cartoon style, anime"
+    references:
+      - type: "chapter_visual_plan"
+        slug: "ch27-official-channels"
+        reason: "Spire specialized operations"
+
+  - slug: "lico-command"
+    name: "LICO Command Suite"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "ominous"
+    narrative_context: |
+      Lady Moira Blackwater's intelligence coordination headquarters—
+      regional maps, secure briefing facilities, the nerve center of
+      Waterdeep's covert operations.
+    lighting:
+      primary_source: "Controlled professional"
+      secondary_source: "Map illumination"
+      quality: "Clear but restrained"
+      direction: "Focused task lighting"
+      color_temperature: "Cool professional"
+      shadow_depth: "Deliberate—some things in shadow"
+      atmospheric: "Intelligence weight"
+    palette:
+      dominant:
+        - "Mahogany authority"
+        - "Map colors"
+        - "Controlled light neutral"
+      accent:
+        - "Seal red"
+        - "Regional markers"
+        - "Secure door iron"
+      avoid:
+        - "Warmth"
+        - "Casual comfort"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of intelligence command suite, fantasy operations
+      nerve center. Regional maps covering walls with colored markers.
+      Mahogany desk with documents and seals. Secure briefing alcove
+      visible. Controlled lighting leaving some areas deliberately
+      shadowed. The weight of secrets in the atmosphere. Fantasy
+      illustration, ominous authority.
+    negative_prompt: "bright lighting, casual atmosphere, modern screens, open space, cartoon style, anime"
+
+  - slug: "lico-command-suite"
+    name: "LICO Command Suite"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "ominous"
+    narrative_context: |
+      Alternate view of the intelligence nerve center—secure communication
+      stations, encrypted document storage, the infrastructure of secrets.
+    lighting:
+      primary_source: "Task lights at stations"
+      secondary_source: "Document illumination"
+      quality: "Compartmentalized"
+      direction: "Individual pools"
+      color_temperature: "Cool operational"
+      shadow_depth: "Deep between stations"
+      atmospheric: "Quiet efficiency"
+    palette:
+      dominant:
+        - "Station wood dark"
+        - "Document pale"
+        - "Shadow between"
+      accent:
+        - "Encryption devices"
+        - "Seal materials"
+        - "Messenger pouches"
+      avoid:
+        - "Bright overall"
+        - "Visible secrets"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of intelligence operations center, fantasy secure
+      communications. Multiple work stations with task lighting,
+      encrypted document cases, messenger pouches ready. Deep shadows
+      between compartmentalized work areas. Quiet efficiency, no
+      wasted motion. Fantasy illustration, ominous professionalism.
+    negative_prompt: "bright lighting, visible documents, casual atmosphere, cartoon style, anime"
+
+  - slug: "first-briefing"
+    name: "First LICO Briefing"
+    zone_type: "works"
+    image_type: "beat"
+    mood: "ominous"
+    narrative_context: |
+      The moment the Last Light Company first receives their LICO
+      briefing—learning the price of legitimacy, that they are not
+      partners but assets to be deployed.
+    lighting:
+      primary_source: "Briefing table lamp"
+      secondary_source: "Window morning light"
+      quality: "Revealing"
+      direction: "On documents and faces"
+      color_temperature: "Cool morning clarity"
+      shadow_depth: "Truth emerging from shadow"
+      atmospheric: "Obligation settling"
+    palette:
+      dominant:
+        - "Document pale"
+        - "Table wood"
+        - "Face illumination"
+      accent:
+        - "Seal red"
+        - "Expression shadows"
+        - "Understanding dawning"
+      avoid:
+        - "Warmth"
+        - "Partnership feeling"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of first intelligence briefing, fantasy political
+      revelation. Documents with official seals spread on table,
+      intelligence director presenting. Company leadership receiving
+      information, expressions shifting as they understand—they are
+      assets, not partners. Morning light revealing truth. Fantasy
+      illustration, ominous political moment.
+    negative_prompt: "friendly meeting, partnership atmosphere, warm reception, cartoon style, anime"
+    references:
+      - type: "chapter_visual_plan"
+        slug: "ch20-silent-hand-revelation"
+        scene: "scn-20-01"
+        reason: "The Debt Called In"
+
+  - slug: "spire-observation-deck"
+    name: "Observation Deck"
+    zone_type: "overlook"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      The Spire's roof-level strategic overview—weather screens, discrete
+      regional surveillance, reduced lighting for night observation.
+    lighting:
+      primary_source: "Natural sky"
+      secondary_source: "Minimal deck lights"
+      quality: "Open, surveying"
+      direction: "From above"
+      color_temperature: "Natural varying"
+      shadow_depth: "Weather-dependent"
+      atmospheric: "Strategic overview"
+    palette:
+      dominant:
+        - "Sky colors"
+        - "Deck stone gray"
+        - "Weather screen canvas"
+      accent:
+        - "Observer positions"
+        - "Signal equipment"
+        - "City panorama"
+      avoid:
+        - "Enclosed feeling"
+        - "Blindness to surroundings"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of observation deck atop intelligence tower, fantasy
+      strategic overlook. Open deck with weather screens, observer
+      positions with city panorama visible. Minimal lighting to preserve
+      night vision. Signal equipment for communication. Strategic
+      overview of Waterdeep. Fantasy illustration, surveying authority.
+    negative_prompt: "enclosed space, blind positions, modern equipment, bright lights, cartoon style, anime"
+
+  - slug: "training-yard"
+    name: "Training Yard"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "kinetic"
+    narrative_context: |
+      The walled courtyard behind Shield Hall—flagged stone surface,
+      weapons racks, drill formations. Where City Watch maintains
+      readiness.
+    lighting:
+      primary_source: "Open sky"
+      secondary_source: "Gallery shadows"
+      quality: "Natural training light"
+      direction: "Sun angle"
+      color_temperature: "Natural outdoor"
+      shadow_depth: "Formation shadows"
+      atmospheric: "Drill sounds, exertion"
+    palette:
+      dominant:
+        - "Flagged stone gray"
+        - "Training uniform colors"
+        - "Sky blue"
+      accent:
+        - "Weapon metal gleam"
+        - "Drill marks on stone"
+        - "Gallery shade"
+      avoid:
+        - "Empty yard"
+        - "Peaceful atmosphere"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of city watch training yard, fantasy military drill
+      ground. Walled courtyard with flagged stone surface. Weapons racks
+      along walls, drill formations of guards in training. Open sky
+      above, gallery shadows at edges. Dust and exertion in the
+      atmosphere. Fantasy illustration, kinetic discipline.
+    negative_prompt: "empty yard, peaceful garden, modern training facility, cartoon style, anime"
+
+  - slug: "yard-muster"
+    name: "Training Yard Morning Muster"
+    zone_type: "works"
+    image_type: "temporal"
+    mood: "quotidian"
+    narrative_context: |
+      Morning shift change in the training yard—formations assembling,
+      duty assignments given, the daily rhythm of city law enforcement.
+    lighting:
+      primary_source: "Morning sun"
+      secondary_source: "Building reflection"
+      quality: "Fresh morning light"
+      direction: "Low angle morning"
+      color_temperature: "Warm morning gold"
+      shadow_depth: "Long morning shadows"
+      atmospheric: "Fresh start, ordered beginning"
+    palette:
+      dominant:
+        - "Morning light gold"
+        - "Formation uniform"
+        - "Yard stone warm"
+      accent:
+        - "Commander positions"
+        - "Duty roster visible"
+        - "Bell station"
+      avoid:
+        - "Midday flat"
+        - "Disorder"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of morning muster in training yard, fantasy military
+      dawn. Shift formations assembling in fresh morning light.
+      Commanders at positions, duty roster being read. Bell station
+      for shift changes. Long morning shadows, ordered beginning to
+      day. The daily rhythm of law enforcement. Fantasy illustration,
+      quotidian discipline.
+    negative_prompt: "midday, casual assembly, disorder, modern ceremony, cartoon style, anime"
+
+  - slug: "night"
+    name: "Headquarters at Night Watch"
+    zone_type: "zone"
+    image_type: "temporal"
+    mood: "ominous"
+    narrative_context: |
+      The headquarters complex at night—reduced bridge passage, quiet
+      corridors, detention checks at the bells, observation deck in
+      low-light posture.
+    lighting:
+      primary_source: "Window lantern glow"
+      secondary_source: "Street lights below"
+      quality: "Night watch minimal"
+      direction: "Interior pools visible through windows"
+      color_temperature: "Lantern gold in darkness"
+      shadow_depth: "Night dominant"
+      atmospheric: "Quiet vigilance"
+    palette:
+      dominant:
+        - "Night dark blue"
+        - "Building silhouettes"
+        - "Lantern gold in windows"
+      accent:
+        - "Bridge shadows"
+        - "Guard post glow"
+        - "Street activity reduced"
+      avoid:
+        - "Daytime brightness"
+        - "Full activity"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of city watch headquarters at night, fantasy night
+      watch. Twin buildings silhouetted against night sky, lantern
+      glow visible through windows. Bridges as dark connections.
+      Reduced street activity below. Quiet vigilance atmosphere.
+      Fantasy illustration, ominous darkness.
+    negative_prompt: "daytime, bright lights, full activity, modern lighting, cartoon style, anime"
+
+beat_images:
+  - slug: "the-touch"
+    name: "The Touch - Psychological Warfare Made Physical"
+    zone_ref: "interrogation-chamber"
+    image_type: "hero"
+    mood: "ominous"
+    narrative_context: |
+      Marcus reaches down and gently, with unshakable firmness, places
+      his hand over Brenner's clenched fist. The gesture is shockingly
+      intimate in the cold, stark room. Violence without violence.
+    chapter_ref: "ch20-silent-hand-revelation"
+    scene_ref: "scn-20-03"
+    moment_ref: "ch20-silent-hand-revelation-moment-03"
+    lighting:
+      primary_source: "Harsh overhead"
+      secondary_source: "None—isolation"
+      quality: "Exposing, clinical"
+      direction: "Direct down"
+      color_temperature: "Cold, clinical"
+      shadow_depth: "Sharp—no hiding"
+      atmospheric: "Intimate violation"
+    palette:
+      dominant:
+        - "Cold stone gray"
+        - "Elegant hand pale"
+        - "Prisoner flesh"
+      accent:
+        - "Touch point focus"
+        - "White-knuckled fist"
+        - "Whispered proximity"
+      avoid:
+        - "Violence"
+        - "Blood"
+        - "Torture devices"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of psychological interrogation moment, fantasy
+      intimate violation. Elegant hand placed with unshakable firmness
+      over a prisoner's white-knuckled clenched fist. Cold stone walls
+      pressing in. Harsh overhead light. The interrogator's whispered
+      proximity. Shockingly intimate gesture in stark room. Violence
+      without violence. Fantasy illustration, ominous intimacy.
+    negative_prompt: "physical violence, blood, torture devices, gore, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "marcus-heartbridge"
+        reason: "Marcus conducting interrogation"
+
+  - slug: "mask-exchange"
+    name: "He Believed I Would"
+    zone_ref: "corridor"
+    image_type: "beat"
+    mood: "intimate"
+    narrative_context: |
+      Marcus emerges from the cell, charming smile returned as if it
+      never left. "He believed I would. That's the only part that has
+      to be true." Watching him casually exchange one perfectly crafted
+      mask for another.
+    chapter_ref: "ch20-silent-hand-revelation"
+    scene_ref: "scn-20-03"
+    moment_ref: "ch20-silent-hand-revelation-moment-04"
+    lighting:
+      primary_source: "Corridor lanterns"
+      secondary_source: "Cell door behind"
+      quality: "Cold corridor reality"
+      direction: "Side lighting"
+      color_temperature: "Cool stone"
+      shadow_depth: "Moderate—masks and shadows"
+      atmospheric: "Casual transformation"
+    palette:
+      dominant:
+        - "Corridor stone"
+        - "Elegant dress"
+        - "Returned smile"
+      accent:
+        - "Unfastening collar"
+        - "Watching face"
+        - "Terror and awe mixed"
+      avoid:
+        - "Warmth"
+        - "Trust"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of mask exchange moment, fantasy character revelation.
+      Elegant figure emerging from cell, unfastening collar, charming
+      smile returning as if it never left. Female observer's expression
+      mixing awe and terror at what she's witnessed. Cold corridor
+      stone. Casual transformation between masks. Fantasy illustration,
+      intimate horror.
+    negative_prompt: "literal masks, costume change, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "marcus-heartbridge"
+        reason: "Marcus post-interrogation"
+      - type: "character_portrait"
+        slug: "veyra-thornwake"
+        reason: "Veyra witnessing"
+
+  - slug: "mockingbird-recognition"
+    name: "Mockingbird"
+    zone_ref: "detention-block"
+    image_type: "beat"
+    mood: "ominous"
+    narrative_context: |
+      Thorne steps forward, entire body going rigid as recognition hits.
+      His voice barely above a whisper: "Mockingbird." Past collides
+      with present as the hunter faces his quarry through bars.
+    chapter_ref: "ch27-official-channels"
+    scene_ref: "scn-27-02"
+    moment_ref: "ch27-official-channels-moment-01"
+    lighting:
+      primary_source: "Filtered detention light"
+      secondary_source: "Cell window beyond"
+      quality: "Recognition moment"
+      direction: "Side lighting through bars"
+      color_temperature: "Cool detention"
+      shadow_depth: "Bar shadows crossing"
+      atmospheric: "Past meeting present"
+    palette:
+      dominant:
+        - "Iron bar dark"
+        - "Recognition tension"
+        - "Stone gray"
+      accent:
+        - "Golden eyes through bars"
+        - "Rigid body language"
+        - "Whispered name"
+      avoid:
+        - "Casual encounter"
+        - "Friendly recognition"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of recognition moment at detention cell, fantasy
+      hunter meets quarry. Male fighter's body going rigid as he
+      steps forward, barely whispering "Mockingbird." View through
+      reinforced bars to figure with golden eyes beyond. Past colliding
+      with present. Fantasy illustration, ominous recognition.
+    negative_prompt: "friendly meeting, casual encounter, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "thorne-brightward"
+        reason: "Thorne recognizing enemy"
+      - type: "character_portrait"
+        slug: "lyra-kestrel"
+        reason: "Lyra the Mockingbird"
+
+  - slug: "not-a-killer"
+    name: "I Am Not a Killer"
+    zone_ref: "detention-block"
+    image_type: "hero"
+    mood: "ominous"
+    narrative_context: |
+      "I have killed. I am not a killer. There is a difference. One is
+      an action. The other is an identity." Lyra's intricate tattoos
+      flicker with violet light like heat lightning as she speaks.
+    chapter_ref: "ch27-official-channels"
+    scene_ref: "scn-27-03"
+    moment_ref: "ch27-official-channels-moment-03"
+    lighting:
+      primary_source: "Cell window"
+      secondary_source: "Tattoo glow violet"
+      quality: "Supernatural accent"
+      direction: "Face lit, arms glowing"
+      color_temperature: "Cool with violet accent"
+      shadow_depth: "Deepening with words"
+      atmospheric: "Power barely restrained"
+    palette:
+      dominant:
+        - "Golden eyes cold"
+        - "Tattoo violet light"
+        - "Stone gray"
+      accent:
+        - "Heat lightning flicker"
+        - "Dangerous edge"
+        - "Identity defended"
+      avoid:
+        - "Warmth"
+        - "Submission"
+    aspect_ratio: "3:4"
+    size: "896x1152"
+    prompt_used: |
+      Oil painting close portrait of assassin defending identity, fantasy
+      dangerous declaration. Female tiefling's golden eyes cold and
+      dangerous as she speaks. Intricate arm tattoos flickering with
+      violet light like heat lightning. "I am not a killer." The
+      distinction that defines her. Fantasy illustration, ominous power.
+    negative_prompt: "submissive, pleading, warm expression, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "lyra-kestrel"
+        reason: "Lyra's defining moment"
+
+  - slug: "children-break-her"
+    name: "Children Break Her"
+    zone_ref: "detention-block"
+    image_type: "hero"
+    mood: "intimate"
+    narrative_context: |
+      Lyra doesn't crack—she breaks. Her golden eyes go distant, seeing
+      something beyond prison walls. When they open again, tears she
+      won't let fall make her irises gleam like coins at the bottom
+      of a wishing well.
+    chapter_ref: "ch27-official-channels"
+    scene_ref: "scn-27-03"
+    moment_ref: "ch27-official-channels-moment-04"
+    lighting:
+      primary_source: "Cell window soft"
+      secondary_source: "Tear reflection"
+      quality: "Vulnerability revealing"
+      direction: "Soft face lighting"
+      color_temperature: "Warm with sorrow"
+      shadow_depth: "Soft—defense falling"
+      atmospheric: "Breaking point"
+    palette:
+      dominant:
+        - "Golden eyes gleaming"
+        - "Tears held"
+        - "Vulnerability exposed"
+      accent:
+        - "Coin gleam in eyes"
+        - "Distant seeing"
+        - "Breaking moment"
+      avoid:
+        - "Actual crying"
+        - "Weak collapse"
+    aspect_ratio: "3:4"
+    size: "896x1152"
+    prompt_used: |
+      Oil painting close portrait of assassin breaking, fantasy
+      vulnerability revealed. Female tiefling's golden eyes distant,
+      seeing beyond prison walls. Tears she won't let fall making
+      irises gleam like coins at bottom of wishing well. The predator
+      gone, something raw and wounded in its place. Fantasy illustration,
+      intimate breaking.
+    negative_prompt: "crying openly, weak collapse, begging, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "lyra-kestrel"
+        reason: "Lyra's vulnerability"
+
+  - slug: "lady-blackwater-mandate"
+    name: "Full Operational Autonomy"
+    zone_ref: "office"
+    image_type: "anchor"
+    mood: "ominous"
+    narrative_context: |
+      "This is a direct threat to city security. We will authorize a
+      full-scale rescue operation. Commander Thornwake, you will have
+      full operational autonomy." Lady Blackwater's cold voice delivering
+      the authorization.
+    chapter_ref: "ch32-the-return-and-the-reckoning"
+    scene_ref: "scn-32-03"
+    moment_ref: "ch32-the-return-and-the-reckoning-moment-06"
+    lighting:
+      primary_source: "Morning sun through tall windows"
+      secondary_source: "Desk lamp on documents"
+      quality: "Official clarity"
+      direction: "Side lighting from windows"
+      color_temperature: "Cool morning professionalism"
+      shadow_depth: "Moderate—authority shadows"
+      atmospheric: "Political weight"
+    palette:
+      dominant:
+        - "Sunlit mahogany"
+        - "Document pale"
+        - "Official dress"
+      accent:
+        - "Gray-green eyes sharp"
+        - "Seal colors"
+        - "Authorization weight"
+      avoid:
+        - "Warmth"
+        - "Friendship"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of official authorization moment, fantasy political
+      mandate. Intelligence director with sharp gray-green eyes
+      delivering cold words—"Full operational autonomy." Morning sun
+      streaming through tall windows onto documents on mahogany desk.
+      Company commander receiving authorization. Political weight in
+      atmosphere. Fantasy illustration, ominous official blessing.
+    negative_prompt: "friendly meeting, warm reception, casual atmosphere, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "veyra-thornwake"
+        reason: "Veyra receiving authorization"

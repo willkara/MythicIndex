@@ -1,0 +1,1546 @@
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "cids-workshop"
+  location_name: "Cidrella Vexweld's Workshop"
+  zone_count: 27
+  featured_in_chapters:
+    - ch33-an-architects-honor
+  last_updated: "2025-12-26"
+
+generation_defaults:
+  provider: "workers-ai"
+  model: "flux-schnell"
+  quality: "high"
+  aspect_ratio: "16:9"
+  size: "1344x768"
+
+narrative_soul: |
+  Cid's workshop is not a building—it is a nervous system. When Cid is
+  curious, the prototypes click and hum with eager energy. When she is
+  joyful, Unit 7 pours drinks with theatrical precision and the
+  conduits sing with steady light. When she learns her masterpiece has
+  been perverted into a children's prison, the workshop convulses: tools
+  rattle on pegboards, lightning arcs from conduit to conduit, and her
+  augmented fist shatters a workbench that has survived decades. This is
+  a space where creation is identity—and when the work is corrupted, the
+  maker bleeds through the building itself.
+
+one_line_essence: "Where genius creates, and grief makes the walls scream."
+
+location_visual_anchor:
+  signature_elements:
+    - "Multi-jointed mechanical arm (Unit 7) serving drinks with surgical precision"
+    - "Blueprint-papered walls, rafters, cabinet faces—a living archive of invention"
+    - "Heavy oak workbench (destroyed in Ch33) as central altar of creation"
+    - "Arcane conduit runs that glow, hum, and spike with Cid's emotional state"
+    - "Pegboard tool walls that rattle when power surges ride the room"
+    - "Half-finished contraptions clicking and ticking—the room refusing stillness"
+    - "Mismatched cups and lightning-lime fizz station amid chaos"
+  materials:
+    - "Oiled wood worn by constant pivoting and pacing"
+    - "Scorched metal from a thousand experiments"
+    - "Resin-coated housings and cable bundles tied with quick knots"
+    - "Oak that has absorbed decades of oil, solder, and genius"
+    - "Copper conduits wrapped in leather and arcane insulation"
+    - "Scattered filings and dropped screws finding boots"
+  color_anchors:
+    - "Copper conduit glow against warm shadow"
+    - "Blueprint pale washing the walls in schematic dreams"
+    - "Task-light islands in warm amber"
+    - "Lightning-arc blue when power spikes"
+    - "Citrus-lime green of the signature fizzy drink"
+    - "Ash and char after destruction"
+  characteristic_light:
+    normal: "Warm task-lighting islands in pools of amber, warm shadow between, arcane conduit glow steady in the bones of the building"
+    emotional_spike: "Static crackling, sudden arcs between conduits, tool walls vibrating, Unit 7 snapping into attack configuration, prototypes reacting with alarm chirps"
+    after_destruction: "Fires flickering in debris, ozone-sharp air, blueprint pages drifting like ash"
+
+overview:
+  establishing:
+    slug: "establishing"
+    name: "Cidrella Vexweld's Workshop - Establishing Shot"
+    zone_type: "establishing"
+    image_type: "establishing"
+    mood: "quotidian"
+    narrative_context: |
+      A contained explosion of creativity on Castle Ward's artisan row—
+      wires running like vines, blueprints tacked to every surface, and
+      the rhythmic clicking of a dozen contraptions keeping time. In the
+      center, Unit 7 pours lightning-lime fizz with incongruous delicacy.
+    lighting:
+      primary_source: "Task lamps in bright islands"
+      secondary_source: "Arcane conduit glow in walls and ceiling"
+      quality: "Warm workshop light with arcane accent"
+      direction: "Multiple pools, overhead conduit lines"
+      color_temperature: "Amber task light, copper conduit glow"
+      shadow_depth: "Moderate—warm shadows between work islands"
+      atmospheric: "Ozone shimmer, hot metal haze"
+    palette:
+      dominant:
+        - "Warm amber workshop light"
+        - "Copper conduit glow"
+        - "Oiled wood tones"
+      accent:
+        - "Blueprint pale blue"
+        - "Citrus-lime green fizz"
+        - "Spark white from active mechanisms"
+      avoid:
+        - "Clinical white"
+        - "Corporate sterility"
+        - "Unworked surfaces"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of a gnome artificer's workshop, fantasy artisan space.
+      Heavy oak workbench at center surrounded by chaotic creativity—
+      blueprints tacked to every surface, wires running like vines along
+      walls and rafters, pegboard tool walls with hanging implements.
+      Multi-jointed metal arm (Unit 7) delicately pouring citrus-green
+      fizzy drink into mismatched cups. Half-finished clockwork contraptions
+      clicking and ticking on shelves—a clockwork crab, a chirping mechanical
+      bird. Arcane conduits running along walls and ceiling, glowing with
+      steady copper light. Warm task-lighting in amber pools, warm shadow
+      between. Oiled wood floors worn by pacing, scattered metal filings.
+      Smell of ozone and hot metal made visible in heat shimmer. Cable
+      bundles tied with quick knots. The room refuses to sit still. Fantasy
+      illustration, rich impasto, warm palette with copper and amber
+      dominance, controlled creative chaos.
+    negative_prompt: "clean workspace, modern technology, computers, screens, LED lights, sterile environment, empty walls, corporate office, pristine surfaces, unused tools, cartoon style, anime, chibi, cell shaded"
+    references:
+      - type: "character_portrait"
+        slug: "cidrella-vexweld"
+        reason: "Workshop owner's energy reflected in space"
+
+zones:
+  - slug: "workshop"
+    name: "Workshop"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "celebratory"
+    narrative_context: |
+      The main workshop space in its natural state—contained explosion of
+      creativity where Unit 7 serves drinks, contraptions click, and every
+      horizontal surface bears evidence of genius in progress. Before the
+      devastating news arrives.
+    lighting:
+      primary_source: "Task lamps over workbenches"
+      secondary_source: "Arcane conduit glow"
+      quality: "Warm, active, humming with life"
+      direction: "Pools of focus light, ambient conduit glow"
+      color_temperature: "Amber task light, copper accent"
+      shadow_depth: "Moderate—creative shadow play"
+      atmospheric: "Ozone tang, hot metal warmth"
+    palette:
+      dominant:
+        - "Amber task light"
+        - "Copper conduit warmth"
+        - "Oiled oak"
+      accent:
+        - "Lightning-lime green"
+        - "Blueprint pale"
+        - "Spark white"
+      avoid:
+        - "Darkness"
+        - "Sterility"
+        - "Stillness"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of a gnome artificer's workshop interior, fantasy
+      creative space in full productive chaos. Heavy oak workbench at
+      center covered in projects—clockwork crab prototype, plant-emotion
+      translator device, scattered gears and tools. Unit 7 mechanical arm
+      pouring lightning-lime fizz into mismatched cups with surgical
+      precision. Blueprint papers covering walls, rafters, cabinet faces.
+      Pegboard tool walls, hanging implements, clicking mechanisms. Arcane
+      conduits glowing copper along walls. Warm amber task lighting in
+      pools, rhythm of invention. Ozone and hot metal atmosphere. Joy of
+      creation before the storm. Fantasy illustration, rich impasto,
+      warm amber and copper palette.
+    negative_prompt: "clean workspace, modern technology, empty surfaces, sterile environment, unused tools, darkness, stillness, cartoon style, anime"
+    references:
+      - type: "chapter_visual_plan"
+        slug: "ch33-an-architects-honor"
+        scene: "scn-33-02"
+        reason: "World of Wonders scene"
+      - type: "character_portrait"
+        slug: "cidrella-vexweld"
+        reason: "Workshop owner presence"
+
+  - slug: "entry-threshold"
+    name: "Entry / Client Threshold"
+    zone_type: "threshold"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      The narrow clearing where clients are greeted—a charmed introduction
+      before the hazards of the workshop proper. Where wonder begins.
+    lighting:
+      primary_source: "Filtered street light from doorway"
+      secondary_source: "Workshop glow from within"
+      quality: "Transitional, inviting"
+      direction: "Front to back gradient"
+      color_temperature: "Cool daylight giving way to warm interior"
+      shadow_depth: "Light—welcoming threshold"
+      atmospheric: "First hint of ozone"
+    palette:
+      dominant:
+        - "Daylight cool"
+        - "Warm interior amber beckoning"
+        - "Worn threshold wood"
+      accent:
+        - "Conduit glow glimpsed beyond"
+        - "Blueprint corners visible"
+      avoid:
+        - "Darkness"
+        - "Forbidding atmosphere"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of an artificer workshop entrance, fantasy threshold
+      moment. Narrow clearing just inside door where clients are greeted.
+      View into chaotic creative workshop beyond—glimpses of blueprints,
+      hanging tools, glowing conduits. Transitional light—cool daylight
+      from street giving way to warm amber workshop glow. Worn threshold
+      boards from countless visitors. First hint of ozone and hot metal
+      scent. Charming introduction to wonders. Fantasy illustration,
+      inviting transition, warm palette.
+    negative_prompt: "dark entrance, forbidding doorway, modern door, security systems, sterile lobby, cartoon style, anime"
+
+  - slug: "central-work-floor"
+    name: "Central Work Floor"
+    zone_type: "heart"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      The heavy oak workbench stands at the center—altar of creation where
+      Cid's projects take shape. Projects in various stages crowd every
+      surface. This is the heart that will shatter.
+    lighting:
+      primary_source: "Overhead task lamp"
+      secondary_source: "Conduit glow from walls"
+      quality: "Focused, professional"
+      direction: "Downward on workbench, ambient from sides"
+      color_temperature: "Pure work light with copper warmth"
+      shadow_depth: "Moderate—defined work shadows"
+      atmospheric: "Heat shimmer from solder work"
+    palette:
+      dominant:
+        - "Oak workbench warm"
+        - "Task light white"
+        - "Metal tool silver"
+      accent:
+        - "Copper accents"
+        - "Solder smoke gray"
+        - "Gear brass"
+      avoid:
+        - "Emptiness"
+        - "Cleanliness"
+        - "Order"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of central workbench in artificer workshop, fantasy
+      engineering heart. Heavy oak workbench worn by decades of creation,
+      surface covered with projects in progress—clockwork mechanisms,
+      precision gears, delicate housings. Strong overhead task light
+      illuminating work surface. Tools arranged for immediate use—soldering
+      implements, fine pliers, arcane measurement devices. Conduit glow
+      from surrounding walls. Atmosphere of focused creation, the altar
+      of invention. Heat shimmer from recent solder work. Fantasy
+      illustration, rich impasto, warm oak and metal tones.
+    negative_prompt: "clean workbench, empty surface, modern tools, power tools, computer workstation, sterile lab, cartoon style, anime"
+
+  - slug: "meeting-nook"
+    name: "Meeting / Meal Nook"
+    zone_type: "commons"
+    image_type: "zone"
+    mood: "intimate"
+    narrative_context: |
+      A "relatively clear" patch where visitors can eat and talk without
+      brushing live work—hospitality embedded in the workflow.
+    lighting:
+      primary_source: "Softer overhead fixture"
+      secondary_source: "Ambient workshop glow"
+      quality: "Warmer, more social"
+      direction: "General overhead"
+      color_temperature: "Warm amber, social lighting"
+      shadow_depth: "Soft—comfortable atmosphere"
+      atmospheric: "Citrus-lime fizz freshness"
+    palette:
+      dominant:
+        - "Warm wood"
+        - "Amber light"
+        - "Worn comfort"
+      accent:
+        - "Mismatched cup colors"
+        - "Citrus-lime green"
+        - "Food warmth"
+      avoid:
+        - "Cold lighting"
+        - "Formal dining"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of cozy meeting nook in artificer workshop, fantasy
+      hospitality corner. Relatively clear patch with sturdy workbench
+      doubling as dining surface. Mismatched cups holding lightning-lime
+      fizzy drink. Visitors can perch here without brushing live projects.
+      Warmer lighting than work areas. Comfort embedded in workflow—where
+      hospitality protocols meet engineering. Unit 7's domestic service
+      zone. Fantasy illustration, warm intimate atmosphere, social light.
+    negative_prompt: "formal dining room, restaurant, modern kitchen, sterile cafeteria, corporate break room, cartoon style, anime"
+
+  - slug: "blueprint-walls"
+    name: "Blueprint Surfaces"
+    zone_type: "works"
+    image_type: "detail"
+    mood: "quotidian"
+    narrative_context: |
+      Plans pinned to walls, cabinet faces, hanging lines—chalk annotations
+      building a living archive. The margins hold private notes and the
+      philosophy that will later save children: "Every design has a
+      failure mode."
+    lighting:
+      primary_source: "Task lamp angled on wall section"
+      secondary_source: "Ambient workshop light"
+      quality: "Reading light, clear"
+      direction: "Side-angled to reduce glare"
+      color_temperature: "Cool blue of blueprint paper, warm ambient"
+      shadow_depth: "Light—must see annotations"
+      atmospheric: "Paper dust, chalk trace"
+    palette:
+      dominant:
+        - "Blueprint pale blue"
+        - "Chalk white annotations"
+        - "Paper aged cream"
+      accent:
+        - "Red correction marks"
+        - "Pinhole shadows"
+        - "Margin scrawl ink"
+      avoid:
+        - "Clean digital displays"
+        - "Empty walls"
+    aspect_ratio: "3:4"
+    size: "896x1152"
+    prompt_used: |
+      Oil painting detail of blueprint-covered wall in artificer workshop,
+      fantasy engineering archive. Plans pinned to every surface—walls,
+      cabinet faces, hanging from lines. Chalk annotations in margins,
+      corrections in red, design iterations visible. Layered papers showing
+      creative evolution. Philosophical notes in margins—"Every design has
+      a failure mode." Task light angled to illuminate without glare.
+      Living archive of invention. Fantasy illustration, rich detail,
+      blueprint pale blue dominant.
+    negative_prompt: "digital screens, clean walls, computer monitors, modern displays, empty surfaces, cartoon style, anime"
+
+  - slug: "tool-walls"
+    name: "Tool Walls"
+    zone_type: "works"
+    image_type: "detail"
+    mood: "quotidian"
+    narrative_context: |
+      Pegboards with hanging tools and parts—calm in normal conversation,
+      but prone to vibrating under heavy emotional/arcane load. The first
+      sign of sympathetic resonance.
+    lighting:
+      primary_source: "Side task light"
+      secondary_source: "Conduit glow from adjacent runs"
+      quality: "Utilitarian, practical"
+      direction: "Cross-lighting for depth"
+      color_temperature: "Neutral with copper accent"
+      shadow_depth: "Moderate—tools cast defined shadows"
+      atmospheric: "Metal tang, oil sheen"
+    palette:
+      dominant:
+        - "Pegboard tan"
+        - "Metal tool silver"
+        - "Oil-dark handles"
+      accent:
+        - "Copper wire coils"
+        - "Brass fittings"
+        - "Conduit glow reflection"
+      avoid:
+        - "Modern power tools"
+        - "Plastic handles"
+    aspect_ratio: "3:4"
+    size: "896x1152"
+    prompt_used: |
+      Oil painting detail of tool wall in artificer workshop, fantasy
+      engineering pegboard. Carefully arranged tools and parts hanging
+      on hooks—precision pliers, arcane measurement devices, coiled
+      copper wire, specialized implements. Oil-dark wooden handles,
+      metal gleaming. Cross-lighting showing depth and organization.
+      Tools ready to vibrate under arcane power surge. Fantasy
+      illustration, rich detail, utilitarian beauty.
+    negative_prompt: "modern power tools, electric drills, plastic handles, hardware store display, cartoon style, anime"
+
+  - slug: "conduit-runs"
+    name: "Power & Conduit Runs"
+    zone_type: "works"
+    image_type: "detail"
+    mood: "quotidian"
+    narrative_context: |
+      Arcane conduits snake along walls and beams, feeding work lights and
+      prototype rigs. The hum rises when the shop is active—and the glow
+      spikes when Cid's emotions spike.
+    lighting:
+      primary_source: "Self-luminous conduit glow"
+      secondary_source: "Ambient workshop light"
+      quality: "Arcane warmth, pulsing slightly"
+      direction: "Linear along conduit paths"
+      color_temperature: "Copper-gold arcane light"
+      shadow_depth: "Creates own highlights"
+      atmospheric: "Electrical hum visible as shimmer"
+    palette:
+      dominant:
+        - "Copper conduit gold"
+        - "Leather insulation brown"
+        - "Wall material behind"
+      accent:
+        - "Junction point brightness"
+        - "Spark potential white"
+        - "Cable bundle shadows"
+      avoid:
+        - "Neon colors"
+        - "Modern electrical"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting detail of arcane conduit runs in artificer workshop,
+      fantasy power infrastructure. Copper conduits snaking along walls
+      and ceiling beams, wrapped in leather insulation. Self-luminous
+      copper-gold glow pulsing gently. Junction points brighter. Cable
+      bundles tied with quick knots rather than elegant routing. The
+      nervous system of the workshop—hum rising when active, spike when
+      emotional. Fantasy illustration, arcane technology aesthetic,
+      copper and gold palette.
+    negative_prompt: "modern electrical wiring, plastic conduit, LED strips, neon lights, clean cable management, cartoon style, anime"
+
+  - slug: "conduit-infrastructure"
+    name: "The Arcane Arteries"
+    zone_type: "works"
+    image_type: "detail"
+    mood: "ethereal"
+    narrative_context: |
+      The power infrastructure seen as living system—conduits as arteries,
+      junction boxes as hearts, the workshop breathing with arcane energy.
+    lighting:
+      primary_source: "Conduit self-illumination"
+      secondary_source: "Refracted glow on surfaces"
+      quality: "Ethereal, living"
+      direction: "Radiating from conduit lines"
+      color_temperature: "Deep copper-gold"
+      shadow_depth: "Dramatic—conduit glow against shadow"
+      atmospheric: "Visible energy flow"
+    palette:
+      dominant:
+        - "Deep copper gold"
+        - "Shadow between lines"
+        - "Energy pulse white"
+      accent:
+        - "Junction point bright"
+        - "Refracted glow on wood"
+        - "Static spark blue"
+      avoid:
+        - "Dead conduits"
+        - "Modern electrical"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of arcane conduit infrastructure as living system,
+      fantasy workshop arteries. Copper conduits glowing with internal
+      energy, junction boxes pulsing like hearts. Visible energy flow
+      along lines. The nervous system of the workshop seen as organism.
+      Deep copper-gold light against shadow. Static potential crackling
+      at junctions. Fantasy illustration, ethereal quality, the building
+      breathing with power.
+    negative_prompt: "dead wires, modern electrical panels, circuit breakers, utility boxes, plastic conduit, cartoon style, anime"
+
+  - slug: "unit-7-station"
+    name: "Unit 7 Station / Domestic Corner"
+    zone_type: "sanctuary"
+    image_type: "zone"
+    mood: "intimate"
+    narrative_context: |
+      The domestic corner where Unit 7 serves lightning-lime fizz with
+      surgical precision—comfort embedded in chaos. The mechanical arm
+      that can snap from hospitality to attack configuration in an instant.
+    lighting:
+      primary_source: "Warm domestic lamp"
+      secondary_source: "Conduit glow from arm"
+      quality: "Warm, comfortable, social"
+      direction: "Soft overhead"
+      color_temperature: "Amber warmth, citrus green accent"
+      shadow_depth: "Soft—inviting atmosphere"
+      atmospheric: "Citrus fizz bubbles, mechanical precision"
+    palette:
+      dominant:
+        - "Amber domestic light"
+        - "Metal arm silver"
+        - "Wood counter warm"
+      accent:
+        - "Lightning-lime green"
+        - "Cup color variety"
+        - "Conduit glow on metal"
+      avoid:
+        - "Industrial cold"
+        - "Threatening atmosphere"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of domestic corner in artificer workshop, fantasy
+      hospitality station. Multi-jointed metal arm (Unit 7) delicately
+      pouring citrus-green lightning-lime fizzy drink into mismatched
+      cups. Surgical precision in domestic task. Warm amber lighting,
+      comfortable corner amid workshop chaos. The arm gleaming with
+      conduit glow, capable of snapping into attack configuration but
+      currently gentle. Comfort embedded in workflow. Fantasy
+      illustration, warm intimate atmosphere.
+    negative_prompt: "modern appliances, coffee machine, vending machine, industrial robot, threatening machinery, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "cidrella-vexweld"
+        reason: "Unit 7 reflects Cid's dual nature"
+
+  - slug: "prototype-shelves"
+    name: "Prototype Shelves"
+    zone_type: "works"
+    image_type: "detail"
+    mood: "quotidian"
+    narrative_context: |
+      Cluttered perches for half-assembled mechanisms—including a clockwork
+      bird that can chirp frantically when alarmed.
+    lighting:
+      primary_source: "Scattered task lights"
+      secondary_source: "Ambient workshop glow"
+      quality: "Varied—each prototype differently lit"
+      direction: "Multiple angles"
+      color_temperature: "Mixed warm"
+      shadow_depth: "Complex—layered prototypes"
+      atmospheric: "Clicking, ticking, occasional chirp"
+    palette:
+      dominant:
+        - "Mixed metals"
+        - "Worn wood shelves"
+        - "Mechanism brass"
+      accent:
+        - "Indicator light glows"
+        - "Glass component clarity"
+        - "Colorful experimental bits"
+      avoid:
+        - "Finished products"
+        - "Store display"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of prototype shelves in artificer workshop, fantasy
+      invention display. Cluttered perches holding half-assembled
+      mechanisms—clockwork bird ready to chirp, plant-emotion translator,
+      sewer maintenance crab in progress. Mixed metals, exposed gears,
+      incomplete housings. Each prototype differently lit. Works in
+      progress rather than finished products. The children of invention
+      waiting to be completed. Fantasy illustration, rich detail,
+      creative chaos.
+    negative_prompt: "finished products, retail display, museum exhibit, clean shelves, modern electronics, cartoon style, anime"
+
+  - slug: "prototype-menagerie"
+    name: "The Children"
+    zone_type: "sanctuary"
+    image_type: "detail"
+    mood: "intimate"
+    narrative_context: |
+      Cid's prototypes seen as her children—each mechanism with personality,
+      each invention carrying her care. The clockwork crab, the chirping
+      bird, the plant translator.
+    lighting:
+      primary_source: "Soft ambient workshop light"
+      secondary_source: "Individual mechanism indicator glows"
+      quality: "Tender, nurturing"
+      direction: "Gentle overall"
+      color_temperature: "Warm amber"
+      shadow_depth: "Soft—affectionate atmosphere"
+      atmospheric: "Gentle clicks and whirs"
+    palette:
+      dominant:
+        - "Brass mechanism warm"
+        - "Copper accent"
+        - "Wood perch warm"
+      accent:
+        - "Indicator light colors"
+        - "Glass component clear"
+        - "Personality colors on each"
+      avoid:
+        - "Industrial cold"
+        - "Mass production"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of artificer's prototype collection, fantasy mechanical
+      menagerie. Half-finished mechanisms with distinct personalities—
+      clockwork crab designed for sewer maintenance, mechanical bird that
+      chirps when alarmed, plant-emotion translator with gentle sensor
+      array. Each invention shows Cid's care and creativity. Warm amber
+      light on brass and copper. The children of invention, each loved.
+      Fantasy illustration, intimate affection for creations.
+    negative_prompt: "mass production, industrial robots, cold machines, threatening devices, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "cidrella-vexweld"
+        reason: "Prototypes reflect creator's personality"
+
+  - slug: "annex-ground"
+    name: "The Annex (Ground Floor)"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "clandestine"
+    narrative_context: |
+      A secondary bench for private, higher-risk experiments—often more
+      cluttered than the main shop. Where dangerous creativity happens.
+    lighting:
+      primary_source: "Single focused task lamp"
+      secondary_source: "Conduit glow through door"
+      quality: "Intense focus, shadowed periphery"
+      direction: "Strong downward on bench"
+      color_temperature: "Harsh work light, warm shadow"
+      shadow_depth: "Deep—private space shadows"
+      atmospheric: "Higher-risk chemical tang"
+    palette:
+      dominant:
+        - "Task light white"
+        - "Deep shadow"
+        - "Experimental metal"
+      accent:
+        - "Warning colors on containers"
+        - "Unusual material hues"
+        - "Conduit glow from doorway"
+      avoid:
+        - "Bright overall"
+        - "Safe laboratory"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of private experimental annex in artificer workshop,
+      fantasy high-risk laboratory. Secondary workbench even more
+      cluttered than main shop—dangerous prototypes, unusual materials,
+      experimental housings. Single focused task lamp creating intense
+      pool of light, deep shadows around. Private space for risky
+      creativity. Warning colors on containers, unusual chemical hues.
+      Fantasy illustration, clandestine atmosphere, focused intensity.
+    negative_prompt: "clean laboratory, safety equipment visible, bright lighting, modern lab, sterile environment, cartoon style, anime"
+
+  - slug: "annex-loft"
+    name: "The Annex (Sleeping Loft)"
+    zone_type: "sanctuary"
+    image_type: "zone"
+    mood: "intimate"
+    narrative_context: |
+      A narrow sleeping nook reached by rickety spiral stair, surrounded
+      by humming conduits and pinned plans. Where Cid dreams of inventions.
+    lighting:
+      primary_source: "Conduit glow from surrounding walls"
+      secondary_source: "Small bedside lamp"
+      quality: "Warm, somnolent, enclosed"
+      direction: "Ambient surround"
+      color_temperature: "Copper warmth for sleeping"
+      shadow_depth: "Soft—comfortable rest"
+      atmospheric: "Conduit hum as lullaby"
+    palette:
+      dominant:
+        - "Conduit copper glow"
+        - "Bedding warm tones"
+        - "Wood beam dark"
+      accent:
+        - "Pinned plan pale blue"
+        - "Small lamp amber"
+        - "Dream-project sketches"
+      avoid:
+        - "Harsh light"
+        - "Spacious bedroom"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of sleeping loft in artificer workshop annex, fantasy
+      intimate nest. Narrow nook reached by oil-stained spiral stair,
+      surrounded by humming conduits and pinned plans. Simple bedding
+      in warm tones. Conduit glow as primary light, small bedside lamp.
+      Dream-project sketches pinned to angled ceiling. The hum of conduits
+      as lullaby. Where an artificer dreams of inventions. Fantasy
+      illustration, intimate sanctuary, copper warmth.
+    negative_prompt: "spacious bedroom, modern bed, clean walls, no inventions visible, quiet room, cartoon style, anime"
+
+  - slug: "mezzanine-refuge"
+    name: "Cid's Private Vantage"
+    zone_type: "overlook"
+    image_type: "zone"
+    mood: "intimate"
+    narrative_context: |
+      A raised platform where Cid can survey her domain—see all her
+      creations at once, watch visitors navigate the chaos, plan the
+      next invention.
+    lighting:
+      primary_source: "Borrowed workshop light from below"
+      secondary_source: "Private conduit glow"
+      quality: "Elevated overview lighting"
+      direction: "Upward from workshop, ambient personal"
+      color_temperature: "Mixed—workshop amber from below"
+      shadow_depth: "Moderate—observation position"
+      atmospheric: "Above the chaos"
+    palette:
+      dominant:
+        - "Workshop light reflected"
+        - "Platform wood warm"
+        - "Railing metal"
+      accent:
+        - "Personal items color"
+        - "Private notes pale"
+        - "Conduit glow copper"
+      avoid:
+        - "Darkness"
+        - "Industrial platform"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of mezzanine vantage point in artificer workshop,
+      fantasy elevated refuge. Raised platform where the artificer can
+      survey her creative domain—view of workbenches, prototypes, and
+      conduit runs below. Private space with personal items. Borrowed
+      amber light from workshop below. Observation position above the
+      chaos. Fantasy illustration, intimate overlook, warm perspective.
+    negative_prompt: "industrial catwalk, warehouse mezzanine, cold metal platform, dark space, cartoon style, anime"
+
+  - slug: "shipping-bay"
+    name: "Shipping and Receiving Bay"
+    zone_type: "threshold"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      Where deliveries arrive and completed commissions depart—the workshop's
+      connection to the outside world of commerce and clients.
+    lighting:
+      primary_source: "Practical overhead"
+      secondary_source: "Street light when doors open"
+      quality: "Utilitarian, bright for inspection"
+      direction: "General overhead"
+      color_temperature: "Neutral practical"
+      shadow_depth: "Light—must see condition of goods"
+      atmospheric: "Street sounds, cart clatter"
+    palette:
+      dominant:
+        - "Packing material tan"
+        - "Crate wood"
+        - "Inspection light neutral"
+      accent:
+        - "Address label colors"
+        - "Tool for opening"
+        - "Street glimpse beyond"
+      avoid:
+        - "Modern shipping"
+        - "Conveyor systems"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of shipping bay in artificer workshop, fantasy receiving
+      area. Practical space for deliveries and completed commissions.
+      Crates, packing materials, inspection table. Large doors opening
+      to street when needed. Utilitarian lighting for checking goods.
+      Workshop's connection to commerce. Fantasy illustration, practical
+      atmosphere, transitional space.
+    negative_prompt: "modern warehouse, conveyor belt, shipping labels, cardboard boxes, industrial dock, cartoon style, anime"
+
+  - slug: "test-yard"
+    name: "Outdoor Test Yard"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "kinetic"
+    narrative_context: |
+      A small outdoor space for testing prototypes too dangerous or large
+      for indoor work—scorch marks on walls, test targets, blast shields.
+    lighting:
+      primary_source: "Natural daylight"
+      secondary_source: "Test apparatus glow"
+      quality: "Open air, bright"
+      direction: "Sun angle"
+      color_temperature: "Daylight natural"
+      shadow_depth: "Sharp outdoor shadows"
+      atmospheric: "Open air, test debris"
+    palette:
+      dominant:
+        - "Sky blue"
+        - "Scorch black on walls"
+        - "Stone paving gray"
+      accent:
+        - "Test target colors"
+        - "Prototype metal"
+        - "Safety rope orange"
+      avoid:
+        - "Clean test facility"
+        - "Indoor lighting"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of outdoor test yard behind artificer workshop, fantasy
+      prototype testing ground. Small enclosed yard with scorch marks on
+      walls, dented test targets, portable blast shields. Stone paving
+      worn by experiments. Natural daylight, open air. Evidence of
+      numerous tests—both successful and explosive. Where dangerous
+      creativity is safely tested. Fantasy illustration, kinetic
+      atmosphere, experimental evidence.
+    negative_prompt: "clean test facility, modern lab, indoor testing, pristine walls, safety equipment modern, cartoon style, anime"
+
+  - slug: "front-counter-orders"
+    name: "Front Counter Orders"
+    zone_type: "threshold"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      The counter where clients place orders—forms, samples, reference
+      materials. Business interface with the creative chaos beyond.
+    lighting:
+      primary_source: "Counter lamp"
+      secondary_source: "Workshop glow behind"
+      quality: "Business lighting, readable"
+      direction: "On counter surface"
+      color_temperature: "Warm professional"
+      shadow_depth: "Light—business clarity"
+      atmospheric: "Paper rustle, ink smell"
+    palette:
+      dominant:
+        - "Counter wood worn"
+        - "Paper order forms cream"
+        - "Ink dark"
+      accent:
+        - "Sample materials various"
+        - "Reference sketch pale"
+        - "Deposit coins metal"
+      avoid:
+        - "Modern register"
+        - "Corporate counter"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of front counter in artificer workshop, fantasy order
+      station. Worn wooden counter for client business—order forms,
+      material samples, reference sketches. Counter lamp for paperwork.
+      Creative chaos visible beyond. Where commissions begin. Fantasy
+      illustration, business-meets-creativity, warm professional light.
+    negative_prompt: "modern cash register, computer, retail counter, corporate desk, point of sale, cartoon style, anime"
+
+  - slug: "pickup-bench"
+    name: "Pickup Bench and Inventory Wall"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      Where completed commissions wait for pickup—inventory of parts and
+      materials on wall behind. The transition from created to delivered.
+    lighting:
+      primary_source: "Overhead practical"
+      secondary_source: "Wall display lighting"
+      quality: "Clear for identification"
+      direction: "On bench and wall"
+      color_temperature: "Neutral identification light"
+      shadow_depth: "Light—must see items clearly"
+      atmospheric: "Organized anticipation"
+    palette:
+      dominant:
+        - "Pickup bench wood"
+        - "Inventory wall organized"
+        - "Wrapped items neutral"
+      accent:
+        - "Client name tags"
+        - "Component colors on wall"
+        - "Protective wrapping"
+      avoid:
+        - "Chaos"
+        - "Retail display"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of pickup area in artificer workshop, fantasy commission
+      ready zone. Bench with completed items awaiting client pickup,
+      each tagged with client name. Inventory wall behind with organized
+      parts and materials. Rare moment of organization in creative chaos.
+      Clear lighting for identification. Fantasy illustration, organized
+      anticipation, transition to delivery.
+    negative_prompt: "retail display, modern inventory system, barcode, shipping labels modern, warehouse shelving, cartoon style, anime"
+
+  - slug: "consultation-nook"
+    name: "Waiting Nook"
+    zone_type: "threshold"
+    image_type: "zone"
+    mood: "intimate"
+    narrative_context: |
+      Where clients wait for Cid's attention—a glimpse of the creative
+      process while anticipating their turn.
+    lighting:
+      primary_source: "Soft waiting area light"
+      secondary_source: "Workshop glow visible"
+      quality: "Comfortable waiting"
+      direction: "General ambient"
+      color_temperature: "Warm comfortable"
+      shadow_depth: "Soft—relaxed atmosphere"
+      atmospheric: "Workshop sounds filtering through"
+    palette:
+      dominant:
+        - "Waiting seat worn"
+        - "Warm wall tone"
+        - "Ambient light soft"
+      accent:
+        - "Workshop glimpse colors"
+        - "Reading material"
+        - "Past work samples"
+      avoid:
+        - "Formal waiting room"
+        - "Modern lobby"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of waiting nook in artificer workshop, fantasy client
+      comfort zone. Worn but comfortable seating for clients awaiting
+      consultation. View into workshop showing creative process. Samples
+      of past work for browsing. Soft comfortable lighting. Workshop
+      sounds filtering through. Fantasy illustration, anticipation
+      atmosphere, warm waiting.
+    negative_prompt: "modern waiting room, office lobby, reception area, plastic chairs, magazines, cartoon style, anime"
+
+  - slug: "active-floor-no-cid"
+    name: "Workshop Floor (Owner Absent)"
+    zone_type: "zone"
+    image_type: "temporal"
+    mood: "quotidian"
+    narrative_context: |
+      The workshop when Cid is away—mechanisms still clicking, conduits
+      still humming, Unit 7 on standby. The space waiting for its heart.
+    lighting:
+      primary_source: "Minimal task lights left on"
+      secondary_source: "Conduit glow steady"
+      quality: "Reduced, waiting"
+      direction: "Minimal pools"
+      color_temperature: "Cooler without Cid's energy"
+      shadow_depth: "Deeper—less active"
+      atmospheric: "Quieter clicking, steady hum"
+    palette:
+      dominant:
+        - "Shadow expanded"
+        - "Conduit glow steady"
+        - "Silent mechanism metal"
+      accent:
+        - "Standby indicator lights"
+        - "Unit 7 dormant gleam"
+        - "Project patience"
+      avoid:
+        - "Full activity"
+        - "Brightness"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of artificer workshop with owner absent, fantasy space
+      waiting. Mechanisms still clicking softly, conduits humming steadily,
+      Unit 7 on standby. Fewer lights active, deeper shadows. Projects
+      waiting patiently. The workshop alive but quieter without its heart.
+      Fantasy illustration, anticipation atmosphere, reduced activity.
+    negative_prompt: "busy activity, full lighting, people present, active work, bright workshop, cartoon style, anime"
+
+  - slug: "cid-rest"
+    name: "The Artificer's Rest"
+    zone_type: "sanctuary"
+    image_type: "zone"
+    mood: "intimate"
+    narrative_context: |
+      Cid's personal rest space within the workshop—where exhaustion
+      finally catches her between inventions.
+    lighting:
+      primary_source: "Single soft lamp"
+      secondary_source: "Conduit glow ambient"
+      quality: "Rest lighting, dim"
+      direction: "Soft nearby"
+      color_temperature: "Warm sleep-ready"
+      shadow_depth: "Deep—rest atmosphere"
+      atmospheric: "Finally quiet"
+    palette:
+      dominant:
+        - "Rest surface soft"
+        - "Warm blanket tones"
+        - "Dim ambient"
+      accent:
+        - "Nearby sketch pad"
+        - "Cold drink forgotten"
+        - "Dream blueprints"
+      avoid:
+        - "Bright activity"
+        - "Formal bedroom"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of artificer's rest corner in workshop, fantasy
+      exhaustion sanctuary. Simple surface where Cid collapses between
+      inventions—warm blanket, soft lamp, nearby sketch pad for midnight
+      ideas. Conduit glow ambient. The rare moment of rest for relentless
+      creator. Fantasy illustration, intimate exhaustion, warm peace.
+    negative_prompt: "proper bedroom, clean bed, bright lighting, active work, formal sleeping quarters, cartoon style, anime"
+
+  - slug: "cid-testing"
+    name: "The Spark of Discovery"
+    zone_type: "works"
+    image_type: "beat"
+    mood: "celebratory"
+    narrative_context: |
+      The moment a prototype works—Cid's face lit by success, mechanism
+      performing as designed, the spark of discovery illuminating everything.
+    lighting:
+      primary_source: "Prototype activation glow"
+      secondary_source: "Workshop ambient"
+      quality: "Success illumination"
+      direction: "From prototype upward"
+      color_temperature: "Bright discovery white-gold"
+      shadow_depth: "Light—success drives shadows back"
+      atmospheric: "Joy visible in light"
+    palette:
+      dominant:
+        - "Discovery glow bright"
+        - "Success warmth"
+        - "Face illumination"
+      accent:
+        - "Mechanism activation colors"
+        - "Eye spark reflection"
+        - "Tool gleam"
+      avoid:
+        - "Failure"
+        - "Darkness"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of artificer's moment of discovery, fantasy success
+      beat. Gnome artificer's face lit from below by successful prototype
+      activation—joy and triumph visible. Mechanism performing as designed,
+      glowing with proper function. The spark of discovery illuminating
+      workshop. Pure creative joy. Fantasy illustration, celebratory
+      atmosphere, discovery light.
+    negative_prompt: "failure, explosion, darkness, disappointment, broken mechanism, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "cidrella-vexweld"
+        reason: "Cid's joy at successful invention"
+
+  - slug: "engineering-detail"
+    name: "The Mind of the Machine"
+    zone_type: "works"
+    image_type: "detail"
+    mood: "intimate"
+    narrative_context: |
+      Close detail of precision engineering—gears meshing, conduits
+      connecting, the beautiful complexity of Cid's work.
+    lighting:
+      primary_source: "Magnification lamp"
+      secondary_source: "Conduit glow within mechanism"
+      quality: "Precise examination light"
+      direction: "Direct on work"
+      color_temperature: "Clear white work light"
+      shadow_depth: "Minimal—must see all detail"
+      atmospheric: "Precision concentration"
+    palette:
+      dominant:
+        - "Brass gear gold"
+        - "Copper conduit"
+        - "Steel precision silver"
+      accent:
+        - "Tiny indicator colors"
+        - "Wire insulation hues"
+        - "Arcane crystal glow"
+      avoid:
+        - "Rough work"
+        - "Simple mechanism"
+    aspect_ratio: "1:1"
+    size: "1024x1024"
+    prompt_used: |
+      Oil painting extreme close-up of precision mechanism, fantasy
+      engineering detail. Brass gears meshing perfectly, copper micro-
+      conduits connecting, arcane crystal junction glowing. The beautiful
+      complexity of master artificer work. Magnification lamp illumination.
+      Every component purposeful. Fantasy illustration, intimate precision,
+      mechanical beauty.
+    negative_prompt: "rough work, simple mechanism, modern electronics, circuit board, microchip, cartoon style, anime"
+
+  - slug: "first-visit"
+    name: "Warriors in Wonderland"
+    zone_type: "zone"
+    image_type: "inhabited"
+    mood: "celebratory"
+    narrative_context: |
+      The Last Light Company's first impression of Cid's workshop—warriors
+      navigating a world of clicking wonders, being served by Unit 7.
+    lighting:
+      primary_source: "Full workshop lighting"
+      secondary_source: "Conduit glow active"
+      quality: "Welcoming, impressive"
+      direction: "Showcasing the space"
+      color_temperature: "Warm welcome"
+      shadow_depth: "Light—nothing hidden"
+      atmospheric: "Wonder and hospitality"
+    palette:
+      dominant:
+        - "Warm workshop amber"
+        - "Creative chaos colors"
+        - "Visitor presence"
+      accent:
+        - "Lightning-lime fizz green"
+        - "Unit 7 metal gleam"
+        - "Prototype click-colors"
+      avoid:
+        - "Threat"
+        - "Darkness"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of warrior visitors in artificer workshop, fantasy
+      wonder moment. The Last Light Company experiencing Cid's creative
+      chaos for the first time—eyes wide at clicking contraptions,
+      accepting mismatched cups of lightning-lime fizz from Unit 7.
+      Warriors navigating wonderland. Warm welcoming light, impressive
+      display of invention. Fantasy illustration, celebratory atmosphere,
+      joy before storm.
+    negative_prompt: "threat, danger, darkness, empty workshop, hostile atmosphere, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "cidrella-vexweld"
+        reason: "Workshop owner hosting visitors"
+      - type: "chapter_visual_plan"
+        slug: "ch33-an-architects-honor"
+        scene: "scn-33-02"
+        reason: "World of Wonders scene"
+
+  - slug: "purification-matrix"
+    name: "The Breathing Building"
+    zone_type: "works"
+    image_type: "detail"
+    mood: "ethereal"
+    narrative_context: |
+      The workshop's atmospheric systems—venting, filtration, the building
+      processing ozone and metal fumes. The workshop breathing.
+    lighting:
+      primary_source: "Vent glow"
+      secondary_source: "Filtered conduit light"
+      quality: "Ethereal system light"
+      direction: "Through vents and filters"
+      color_temperature: "Cool processing blue-white"
+      shadow_depth: "Atmospheric—haze visible"
+      atmospheric: "Visible air movement"
+    palette:
+      dominant:
+        - "Vent metal"
+        - "Filter membrane pale"
+        - "Processing glow"
+      accent:
+        - "Clean air clarity"
+        - "Fume haze being removed"
+        - "Conduit power feeding system"
+      avoid:
+        - "Modern HVAC"
+        - "Industrial venting"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of workshop atmospheric system, fantasy building
+      breathing. Arcane vents processing ozone and metal fumes, filter
+      membranes glowing with purification. Visible air movement showing
+      the building breathing. Conduit power feeding the system. Fantasy
+      illustration, ethereal atmosphere, living building.
+    negative_prompt: "modern HVAC, air conditioning unit, industrial vent, ductwork metal, cartoon style, anime"
+
+  - slug: "sympathetic-resonance"
+    name: "The Workshop Screams"
+    zone_type: "zone"
+    image_type: "beat"
+    mood: "kinetic"
+    narrative_context: |
+      When Cid's emotions spike, the workshop responds—tools rattling on
+      pegboards, conduits flaring, Unit 7 snapping to attack configuration,
+      prototypes reacting with alarm.
+    lighting:
+      primary_source: "Conduits flaring bright"
+      secondary_source: "Spark discharge"
+      quality: "Unstable, strobing"
+      direction: "Chaotic from all conduit sources"
+      color_temperature: "Lightning blue-white over copper"
+      shadow_depth: "Chaotic—rapid shadow dance"
+      atmospheric: "Static crackle, ozone sharp"
+    palette:
+      dominant:
+        - "Lightning arc blue-white"
+        - "Conduit flare copper-gold"
+        - "Alarm indicator red"
+      accent:
+        - "Spark discharge white"
+        - "Tool vibration blur"
+        - "Unit 7 attack angle metal"
+      avoid:
+        - "Calm"
+        - "Steady light"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of workshop in sympathetic resonance, fantasy emotional
+      response. Tools rattling on pegboards, arcane conduits flaring with
+      lightning arcs, Unit 7 mechanical arm snapping into attack
+      configuration. Prototypes chirping with alarm. Static crackling in
+      air, ozone sharp. The workshop screaming with its owner's distress.
+      Chaotic light, rapid shadows. Fantasy illustration, kinetic
+      atmosphere, building responding to emotion.
+    negative_prompt: "calm workshop, steady lighting, peaceful atmosphere, quiet space, stable environment, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "cidrella-vexweld"
+        reason: "Cid's emotional state causing resonance"
+      - type: "chapter_visual_plan"
+        slug: "ch33-an-architects-honor"
+        scene: "scn-33-03"
+        reason: "Devastating revelation scene"
+
+  - slug: "after-destruction"
+    name: "The Wound"
+    zone_type: "zone"
+    image_type: "beat"
+    mood: "cathartic"
+    narrative_context: |
+      After Cid shatters the workbench—oak splinters scattered, small fires
+      flickering, blueprints drifting like murdered birds, gadgets broken.
+      The physical aftermath of devastating grief.
+    lighting:
+      primary_source: "Flickering fire glow"
+      secondary_source: "Dying conduit sparks"
+      quality: "Aftermath light, unstable"
+      direction: "Low from fires, residual from conduits"
+      color_temperature: "Fire orange, spark white, shadow dominant"
+      shadow_depth: "Deep—destruction shadows"
+      atmospheric: "Smoke, settling dust, grief"
+    palette:
+      dominant:
+        - "Ash gray"
+        - "Splinter pale"
+        - "Fire flicker orange"
+      accent:
+        - "Blood from prosthetic impact"
+        - "Blueprint drift pale"
+        - "Spark residue"
+      avoid:
+        - "Intact workshop"
+        - "Clean surfaces"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of destroyed workshop aftermath, fantasy grief made
+      physical. Heavy oak workbench shattered—splinters scattered across
+      floor, thick surface exploded from augmented impact. Small fires
+      flickering in debris. Blueprint pages drifting through air like
+      murdered birds. Half-assembled gadgets broken, scattered. Smoke
+      and settling dust. The wound where creation stood. Deep shadows,
+      fire glow, aftermath atmosphere. Fantasy illustration, cathartic
+      destruction, grief visible in debris.
+    negative_prompt: "intact workshop, clean space, undamaged furniture, peaceful aftermath, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "cidrella-vexweld"
+        reason: "Cid's augmented strength caused destruction"
+      - type: "chapter_visual_plan"
+        slug: "ch33-an-architects-honor"
+        scene: "scn-33-03"
+        moment: "ch33-an-architects-honor-moment-05"
+        reason: "The Workbench Shatters - hero moment"
+
+beat_images:
+  - slug: "grimjaws-axe-blow"
+    name: "The Axe-Blow Truth"
+    zone_ref: "workshop"
+    image_type: "beat"
+    mood: "ominous"
+    narrative_context: |
+      "They're using it to traffic children, lass." Grimjaw's words cut
+      through diplomacy like an axe through kindling. The brutal truth
+      landing as Cid's entire body goes rigid.
+    chapter_ref: "ch33-an-architects-honor"
+    scene_ref: "scn-33-03"
+    moment_ref: "ch33-an-architects-honor-moment-03"
+    lighting:
+      primary_source: "Workshop ambient"
+      secondary_source: "Sudden conduit flare beginning"
+      quality: "Moment of impact"
+      direction: "On faces"
+      color_temperature: "Warm going harsh"
+      shadow_depth: "Deepening as words land"
+      atmospheric: "Air going electric"
+    palette:
+      dominant:
+        - "Dwarf earth tones"
+        - "Gnome artificer colors"
+        - "Workshop warm turning cold"
+      accent:
+        - "Conduit beginning to flare"
+        - "Cid's power pack spiking"
+        - "Truth-weight visible"
+      avoid:
+        - "Softness"
+        - "Gentle lighting"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of devastating truth delivered, fantasy emotional
+      impact. Gruff dwarf veteran speaking brutal words—"They're using it
+      to traffic children"—as female gnome artificer freezes, her power
+      pack beginning to spike to emergency output. Workshop around them
+      beginning to respond to her distress. The moment before explosion.
+      Warm light going harsh, shadows deepening. Fantasy illustration,
+      ominous atmosphere, truth landing like axe blow.
+    negative_prompt: "gentle conversation, peaceful moment, soft lighting, calm atmosphere, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "grimjaw-ironbeard"
+        reason: "Grimjaw delivering truth"
+      - type: "character_portrait"
+        slug: "cidrella-vexweld"
+        reason: "Cid receiving devastating news"
+
+  - slug: "i-built-every-piece"
+    name: "The Engineer's Horror"
+    zone_ref: "workshop"
+    image_type: "beat"
+    mood: "ominous"
+    narrative_context: |
+      "I made it inescapable. I made it perfect, and I made it a prison."
+      Cid's engineer mind racing through implications, prosthetic hand
+      rising to her mouth as brilliance reveals complicity.
+    chapter_ref: "ch33-an-architects-honor"
+    scene_ref: "scn-33-03"
+    moment_ref: "ch33-an-architects-honor-moment-04"
+    lighting:
+      primary_source: "Flickering conduit light"
+      secondary_source: "Horror in eyes"
+      quality: "Unstable, dawning"
+      direction: "On face, revealing horror"
+      color_temperature: "Cold realization"
+      shadow_depth: "Deepening with each thought"
+      atmospheric: "Rage becoming horror"
+    palette:
+      dominant:
+        - "Horror-pale face"
+        - "Prosthetic metal"
+        - "Shadow encroaching"
+      accent:
+        - "Eye reflection of blueprints"
+        - "Conduit flicker"
+        - "Hand to mouth gesture"
+      avoid:
+        - "Comfort"
+        - "Warmth"
+    aspect_ratio: "3:4"
+    size: "896x1152"
+    prompt_used: |
+      Oil painting close-up of gnome artificer's face in horror, fantasy
+      realization beat. Prosthetic hand rising to mouth as engineer's
+      mind races—"I made it inescapable. I made it a prison." Horror
+      replacing rage as she realizes her complicity. Flickering conduit
+      light on pale face. Eyes reflecting blueprint memories. Brilliance
+      becoming torture. Fantasy illustration, ominous atmosphere,
+      devastating self-knowledge.
+    negative_prompt: "calm expression, peaceful face, soft lighting, gentle moment, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "cidrella-vexweld"
+        reason: "Cid's horror at self-knowledge"
+
+  - slug: "the-workbench-shatters"
+    name: "Grief Made Physical"
+    zone_ref: "after-destruction"
+    image_type: "hero"
+    mood: "kinetic"
+    narrative_context: |
+      Her prosthetic hand slammed down with augmented strength and anguish
+      combined. The workbench didn't crack—it shattered. Oak surface
+      exploding outward, splinters and gadgets flying, blueprints
+      scattering like murdered birds.
+    chapter_ref: "ch33-an-architects-honor"
+    scene_ref: "scn-33-03"
+    moment_ref: "ch33-an-architects-honor-moment-05"
+    lighting:
+      primary_source: "Flash of arcane energy at impact"
+      secondary_source: "Fires starting in debris"
+      quality: "Explosive, chaotic"
+      direction: "Radiating from impact point"
+      color_temperature: "Impact white-gold, fire orange"
+      shadow_depth: "Shattered by explosion"
+      atmospheric: "Wood dust, flying debris, starting fires"
+    palette:
+      dominant:
+        - "Oak explosion pale"
+        - "Impact energy white"
+        - "Fire starting orange"
+      accent:
+        - "Blueprint scatter"
+        - "Gadget fragments"
+        - "Prosthetic gleam"
+      avoid:
+        - "Intact furniture"
+        - "Controlled destruction"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of workbench shattering under augmented impact, fantasy
+      destruction hero moment. Female gnome artificer's prosthetic hand
+      slamming into heavy oak with devastating force—workbench not
+      cracking but exploding outward. Thick oak surface shattering,
+      splinters flying, half-assembled gadgets scattering, blueprints
+      drifting like murdered birds. Flash of arcane energy at impact
+      point. Small fires starting. Grief made devastatingly physical.
+      Fantasy illustration, kinetic explosion, emotional release in
+      destruction.
+    negative_prompt: "controlled impact, small crack, gentle breaking, calm destruction, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "cidrella-vexweld"
+        reason: "Cid's augmented destruction"
+
+  - slug: "piece-by-piece"
+    name: "Creator Becomes Destroyer"
+    zone_ref: "workshop"
+    image_type: "beat"
+    mood: "kinetic"
+    narrative_context: |
+      "I demand to help you. I will take their operation apart. Piece.
+      By. Piece." Cid holding up her prosthetic hand pulsing with barely
+      restrained power, the brilliant gnome transformed into weapon of
+      righteous fury.
+    chapter_ref: "ch33-an-architects-honor"
+    scene_ref: "scn-33-03"
+    moment_ref: "ch33-an-architects-honor-moment-06"
+    lighting:
+      primary_source: "Prosthetic conduit pulse"
+      secondary_source: "Workshop ambient recovering"
+      quality: "Cold fury replacing heat"
+      direction: "From raised hand, casting shadows"
+      color_temperature: "Cold blue fury, controlled"
+      shadow_depth: "Dramatic—fury casts long shadows"
+      atmospheric: "Static settling, resolution forming"
+    palette:
+      dominant:
+        - "Prosthetic glow blue"
+        - "Cold fury light"
+        - "Resolved shadow"
+      accent:
+        - "Eye fire reflection"
+        - "Conduit pulse rhythm"
+        - "Destruction debris around"
+      avoid:
+        - "Warmth"
+        - "Softness"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of gnome artificer pledging vengeance, fantasy
+      transformation beat. Female gnome holding up prosthetic hand
+      pulsing with barely restrained arcane power—"I demand to help you.
+      Piece. By. Piece." Cold fury replacing hot rage, brilliant creator
+      becoming weapon of destruction. Destruction debris around her,
+      workshop recovering from emotional spike. Fantasy illustration,
+      kinetic resolution, righteous transformation.
+    negative_prompt: "calm gesture, peaceful pose, soft lighting, gentle expression, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "cidrella-vexweld"
+        reason: "Cid's transformation to destroyer"
+
+  - slug: "the-bellringer"
+    name: "Genius Redirected"
+    zone_ref: "workshop"
+    image_type: "beat"
+    mood: "kinetic"
+    narrative_context: |
+      "We'll ring it like a bell! We'll call it the Bellringer." Cid
+      grabbing charcoal and sketching furiously as inspiration strikes—
+      genius redirected from cage to key, creation becoming liberation.
+    chapter_ref: "ch33-an-architects-honor"
+    scene_ref: "scn-33-06"
+    moment_ref: "ch33-an-architects-honor-moment-09"
+    lighting:
+      primary_source: "War room working light"
+      secondary_source: "Inspiration energy visible"
+      quality: "Active creation light"
+      direction: "On sketching hands and paper"
+      color_temperature: "Warm creative energy"
+      shadow_depth: "Light—creativity drives shadows back"
+      atmospheric: "Energy crackling, hope forming"
+    palette:
+      dominant:
+        - "Charcoal sketch black"
+        - "Paper pale"
+        - "Creative energy warm"
+      accent:
+        - "Fierce smile"
+        - "Eye spark"
+        - "Solution forming"
+      avoid:
+        - "Darkness"
+        - "Despair"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of artificer sketching solution, fantasy inspiration
+      beat. Female gnome grabbing charcoal and sketching furiously on
+      parchment—"We'll ring it like a bell!" Fierce, humorless smile as
+      she names the Bellringer. Genius redirected from building cage to
+      building key. Creative energy visible, hope forming in sketch lines.
+      Fantasy illustration, kinetic creation, redemption through invention.
+    negative_prompt: "despair, darkness, giving up, sad expression, no creation, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "cidrella-vexweld"
+        reason: "Cid inventing the solution"
+
+  - slug: "failure-mode"
+    name: "The Philosophy Made Action"
+    zone_ref: "workshop"
+    image_type: "mood"
+    mood: "intimate"
+    narrative_context: |
+      "Every design has a failure mode. We choose how this one fails—
+      and who it frees." Veyra invoking Cid's own words, the epigraph
+      transformed from philosophy to battle plan.
+    chapter_ref: "ch33-an-architects-honor"
+    scene_ref: "scn-33-06"
+    moment_ref: "ch33-an-architects-honor-moment-10"
+    lighting:
+      primary_source: "War room light"
+      secondary_source: "Determined faces glow"
+      quality: "Resolution light"
+      direction: "On speaker, team listening"
+      color_temperature: "Warm determination"
+      shadow_depth: "Moderate—purposeful shadows"
+      atmospheric: "Philosophy becoming action"
+    palette:
+      dominant:
+        - "Determination warm"
+        - "Team unity colors"
+        - "Plan document pale"
+      accent:
+        - "Eye meeting eye"
+        - "Cid's notes visible"
+        - "Future forming"
+      avoid:
+        - "Doubt"
+        - "Darkness"
+    aspect_ratio: "16:9"
+    size: "1344x768"
+    prompt_used: |
+      Oil painting of team moment of resolution, fantasy philosophy
+      applied. Group listening as leader speaks Cid's own words—"Every
+      design has a failure mode. We choose how this one fails." Determined
+      faces, unified purpose. Cid's pinned notes visible in background.
+      The epigraph transformed from workshop margin to battle plan.
+      Fantasy illustration, intimate determination, words becoming action.
+    negative_prompt: "doubt, disagreement, dark atmosphere, despair, separation, cartoon style, anime"
+    references:
+      - type: "character_portrait"
+        slug: "veyra-thornwake"
+        reason: "Veyra invoking the philosophy"
+      - type: "character_portrait"
+        slug: "cidrella-vexweld"
+        reason: "Cid's words being used"

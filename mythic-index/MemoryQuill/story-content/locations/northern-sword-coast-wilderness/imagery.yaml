@@ -1,0 +1,1065 @@
+# Northern Sword Coast Wilderness - Location Imagery Specification
+# Ancient forest transitioning from pristine beauty to creeping corruption
+# The border between civilization and Silent Hand territory
+
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "northern-sword-coast-wilderness"
+  location_name: "Northern Sword Coast Wilderness"
+  version: "2.0"
+  last_updated: "2025-12-26"
+  zone_count: 13
+
+generation_defaults:
+  provider: "workers-ai"
+  model: "stable-diffusion-xl"
+  quality: "high"
+  negative_prompts:
+    - "modern elements"
+    - "trails with signs"
+    - "managed forest"
+    - "contemporary equipment"
+    - "photorealistic"
+    - "3D render"
+    - "anime style"
+    - "bright cheerful colors"
+    - "obvious fantasy creatures"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# NARRATIVE SOUL
+# ═══════════════════════════════════════════════════════════════════════════════
+
+narrative_soul: |
+  The Northern Sword Coast Wilderness is a realm of ancient trees and deep
+  shadows—a place where the natural beauty of the world feels both profound
+  and perilous. This is old-growth forest unchanged for millennia, where
+  massive trees create a cathedral of green and shadow, and crystal-clear
+  streams cut through rocky terrain.
+
+  But something is wrong. The deeper one travels, the more the wrongness
+  manifests. Normal wildlife patterns are disrupted. Birdsong falls silent.
+  An unnatural presence tracks travelers through the shadows. The forest
+  is at war with itself—pristine nature being subtly poisoned by a creeping,
+  unseen corruption emanating from the Silent Hand facility to the north.
+
+  This is the gradient between healthy wilderness and weaponized landscape—
+  where the reconnaissance team must travel to reach their target, and where
+  the beauty of the ancient forest serves as both blessing and warning.
+
+one_line_essence: "Ancient forest cathedral transitioning from pristine wonder to creeping corruption."
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# LOCATION VISUAL ANCHOR
+# ═══════════════════════════════════════════════════════════════════════════════
+
+location_visual_anchor:
+  signature_elements:
+    - "Massive ancient trees forming natural cathedral"
+    - "Dappled light through dense canopy"
+    - "Crystal-clear streams cutting through rock"
+    - "Rocky outcrops and natural shelters"
+    - "Gradient from healthy to corrupted"
+  materials:
+    primary: "ancient timber, moss-covered stone"
+    secondary: "rushing water, forest floor detritus"
+    accent: "mist, filtered light, shadow"
+  color_anchors:
+    dominant: ["deep forest green", "ancient bark brown", "moss emerald"]
+    accent: ["stream silver", "light shaft gold", "stone gray"]
+    avoid: ["bright artificial tones", "tropical colors", "managed forest look"]
+  characteristic_light:
+    primary: "filtered through dense canopy—perpetual twilight"
+    secondary: "light shafts where canopy breaks"
+    quality: "mysterious, uncertain, concealing"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# OVERVIEW: ESTABLISHING SHOT
+# ═══════════════════════════════════════════════════════════════════════════════
+
+overview:
+  image_type: "establishing"
+  scene_mood: "pastoral"
+  description: "The Northern Sword Coast Wilderness in its healthy state—ancient forest cathedral"
+
+  composition:
+    foreground: "Massive tree roots, moss-covered stones, fern understory"
+    midground: "Cathedral-like space between ancient tree trunks"
+    background: "Canopy above filtering light, more trees fading into distance"
+    focal_point: "The scale of the ancient trees dwarfing human presence"
+    depth_cues: "Trees receding into misty distance, light shafts creating depth"
+
+  lighting:
+    primary_source: "Filtered sunlight through canopy"
+    secondary_source: "Occasional light shafts piercing gaps"
+    quality: "soft, diffused, mysterious"
+    direction: "overhead with angled shafts"
+    color_temperature: "cool green with warm light shaft accents"
+    shadow_depth: "deep—perpetual twilight under canopy"
+    atmospheric: "mist lingering in hollows"
+
+  palette:
+    dominant: ["deep forest green", "ancient bark brown"]
+    accent: ["light shaft gold", "mist white", "moss emerald"]
+    avoid: ["bright cheerful tones", "tropical vibrancy"]
+
+  key_elements:
+    - "Scale of ancient trees—massive, awe-inspiring"
+    - "Cathedral-like atmosphere"
+    - "Filtered mysterious light"
+    - "Sense of age and wildness"
+    - "Beauty that could hide danger"
+
+  style_notes: "Oil painting style, fantasy illustration. Capture the awe-inspiring scale and ancient feel. This is wilderness untouched by civilization—both beautiful and intimidating."
+
+  prompt_template: "Fantasy ancient old-growth forest, massive trees forming natural cathedral, dappled light filtering through dense canopy, moss-covered stones and fern understory, perpetual twilight atmosphere, mist lingering between ancient trunks, awe-inspiring scale, oil painting style, fantasy illustration"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# ZONES
+# ═══════════════════════════════════════════════════════════════════════════════
+
+zones:
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: OLD FOREST HEALTHY
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "old-forest-healthy"
+    zone_name: "The Old Forest (Healthy)"
+    zone_type: "sanctuary"
+
+    narrative_role: |
+      The forest in its natural, untainted state—massive ancient trees
+      whose canopy creates perpetual twilight, the forest floor a labyrinth
+      of roots, moss, and fallen leaves. This is what the wilderness should
+      be, before corruption touches it.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Massive ancient trees, centuries old"
+        - "Dense canopy creating twilight below"
+        - "Healthy understory vegetation"
+        - "Normal wildlife signs"
+      materials: "ancient bark, healthy moss, fern fronds"
+      color_signature: "deep healthy green, rich brown"
+      light_character: "filtered, soft, mysterious"
+
+    default_prompt_elements:
+      atmosphere: "ancient, awe-inspiring, wild"
+      must_include:
+        - "massive old-growth trees"
+        - "healthy vegetation"
+        - "filtered light"
+        - "natural beauty"
+      must_avoid:
+        - "signs of corruption"
+        - "managed forest"
+        - "obvious paths"
+
+    images:
+      - image_type: "zone"
+        image_slug: "old-forest-cathedral"
+        description: "The Old Forest in its healthy state—nature's cathedral"
+        scene_mood: "reverent"
+
+        composition:
+          foreground: "Massive roots, healthy ferns"
+          midground: "Ancient tree trunks like columns"
+          background: "Canopy filtering light, misty distance"
+
+        lighting:
+          primary_source: "Filtered through canopy"
+          quality: "soft, mysterious, green-tinted"
+          color_temperature: "cool forest green"
+
+        palette:
+          dominant: ["deep green", "rich brown"]
+          accent: ["moss emerald", "light shaft gold"]
+
+        key_elements:
+          - "Scale of ancient trees"
+          - "Cathedral atmosphere"
+          - "Healthy wilderness"
+          - "Untouched by corruption"
+
+        prompt: "Fantasy ancient old-growth forest in healthy state, massive trees forming natural cathedral, dense canopy creating twilight atmosphere, moss-covered roots and healthy fern understory, filtered green light, nature's untouched sanctuary, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: OLD FOREST DETAIL
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "northern-wilderness-old-forest-detail"
+    zone_name: "The Old Forest Cathedral"
+    zone_type: "shrine"
+
+    narrative_role: |
+      A specific clearing where the cathedral effect is most pronounced—
+      ancient trees creating columns, canopy gaps allowing light shafts,
+      the space between trunks suggesting sacred architecture.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Cathedral-like spacing of trees"
+        - "Light shafts through canopy gaps"
+        - "Sacred atmosphere"
+        - "Hushed reverence"
+      materials: "ancient timber, soft moss floor"
+      color_signature: "green shadow with gold light shafts"
+      light_character: "dramatic shafts piercing twilight"
+
+    default_prompt_elements:
+      atmosphere: "sacred, cathedral-like"
+      must_include:
+        - "tree columns"
+        - "light shafts"
+        - "hushed atmosphere"
+        - "sacred feeling"
+      must_avoid:
+        - "dense undergrowth"
+        - "chaos"
+        - "corruption"
+
+    images:
+      - image_type: "zone"
+        image_slug: "forest-cathedral-light"
+        description: "The forest cathedral with dramatic light shafts"
+        scene_mood: "reverent"
+
+        composition:
+          foreground: "Moss floor, soft and silent"
+          midground: "Tree trunks as columns, light shafts"
+          background: "Canopy with gaps allowing light"
+
+        lighting:
+          primary_source: "Dramatic light shafts"
+          quality: "theatrical, sacred"
+          color_temperature: "warm gold shafts in cool green"
+
+        palette:
+          dominant: ["green shadow", "gold light"]
+          accent: ["dust motes", "moss soft"]
+
+        key_elements:
+          - "Light shafts as divine touch"
+          - "Tree columns as architecture"
+          - "Sacred atmosphere"
+          - "Hushed reverence"
+
+        prompt: "Fantasy forest cathedral, ancient trees as columns, dramatic light shafts piercing canopy gaps, dust motes in golden light, moss floor soft and silent, sacred hushed atmosphere, nature's temple, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: RUSHWATER STREAMS
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "rushwater-streams"
+    zone_name: "The Rushwater Streams"
+    zone_type: "commons"
+
+    narrative_role: |
+      The network of cold, clear streams that cut through the forest—
+      sources of life and natural obstacles. Their banks are rocky and
+      slick, the water rushing fast and cold, providing both sustenance
+      and challenge.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Clear rushing water"
+        - "Rocky stream banks"
+        - "Forest pressing close"
+        - "Natural crossing challenges"
+      materials: "rushing water, smooth stones, wet rock"
+      color_signature: "stream silver, wet stone gray, forest green"
+      light_character: "reflected light from water, forest shadow"
+
+    default_prompt_elements:
+      atmosphere: "challenging, life-giving"
+      must_include:
+        - "rushing clear water"
+        - "rocky banks"
+        - "forest context"
+        - "crossing challenge implied"
+      must_avoid:
+        - "still water"
+        - "easy crossing"
+        - "open meadow banks"
+
+    images:
+      - image_type: "zone"
+        image_slug: "rushwater-stream-flow"
+        description: "The Rushwater Streams—clear water rushing over rocks"
+        scene_mood: "pastoral"
+
+        composition:
+          foreground: "Rocky stream bank, water rushing past"
+          midground: "Stream cutting through forest"
+          background: "Trees pressing close on both banks"
+
+        lighting:
+          primary_source: "Filtered forest light"
+          secondary_source: "Reflected light from water"
+          quality: "dappled, moving"
+
+        palette:
+          dominant: ["stream silver", "rock gray", "forest green"]
+          accent: ["white water", "wet stone dark"]
+
+        key_elements:
+          - "Crystal-clear water"
+          - "Fast current visible"
+          - "Rocky difficult banks"
+          - "Life source in wilderness"
+
+        prompt: "Fantasy forest stream, crystal-clear water rushing over smooth rocks, rocky slick banks, ancient forest pressing close on both sides, dappled light on moving water, wilderness water source, challenging crossing, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: STREAM CROSSING
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "northern-wilderness-stream-crossing"
+    zone_name: "Rushwater Stream Crossing"
+    zone_type: "threshold"
+
+    narrative_role: |
+      A specific crossing point—where travelers must ford the stream,
+      water rushing around horse legs, rocks slick underfoot. A moment
+      of vulnerability in enemy territory.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Fordable but challenging"
+        - "Water mid-thigh on horses"
+        - "Slick rocks underwater"
+        - "Both banks visible"
+      materials: "rushing water, submerged rocks, wet hooves"
+      color_signature: "stream silver, splash white, bank brown"
+      light_character: "open sky at crossing, shadow beyond"
+
+    default_prompt_elements:
+      atmosphere: "challenging, vulnerable"
+      must_include:
+        - "stream crossing in progress"
+        - "horses in water"
+        - "challenging footing"
+        - "forest on both sides"
+      must_avoid:
+        - "easy bridge"
+        - "shallow calm water"
+
+    images:
+      - image_type: "zone"
+        image_slug: "stream-crossing-ford"
+        description: "Crossing the Rushwater—horses struggling through current"
+        scene_mood: "kinetic"
+
+        composition:
+          foreground: "Water churning around horse legs"
+          midground: "Riders crossing mid-stream"
+          background: "Far bank, forest waiting"
+
+        lighting:
+          primary_source: "Open sky at crossing"
+          quality: "brighter than forest, exposed"
+
+        palette:
+          dominant: ["rushing water", "wet horse"]
+          accent: ["splash white", "worried focus"]
+
+        key_elements:
+          - "Horses struggling with current"
+          - "Riders focused on footing"
+          - "Vulnerability of crossing"
+          - "Forest waiting on far side"
+
+        prompt: "Fantasy stream crossing, horses struggling through rushing water, riders focused on treacherous footing, cold clear water mid-thigh on mounts, slick rocks visible underwater, forest waiting on far bank, vulnerable moment in hostile territory, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: DAWN FOG
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "northern-wilderness-dawn-fog"
+    zone_name: "Dawn Fog on the Rushwater"
+    zone_type: "temporal"
+
+    narrative_role: |
+      The stream at dawn when fog rises from the cold water—ethereal
+      beauty that provides both cover and disorientation. The wilderness
+      at its most mysterious.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Fog rising from cold water"
+        - "Dawn light filtering through"
+        - "Dreamlike atmosphere"
+        - "Visibility limited"
+      materials: "fog, cold water, dawn light"
+      color_signature: "fog white, dawn pink, water silver"
+      light_character: "diffused dawn, fog-filtered"
+
+    default_prompt_elements:
+      atmosphere: "ethereal, disorienting"
+      must_include:
+        - "fog on water"
+        - "dawn light"
+        - "limited visibility"
+        - "dreamlike quality"
+      must_avoid:
+        - "full daylight"
+        - "clear visibility"
+        - "fog-free"
+
+    images:
+      - image_type: "temporal"
+        image_slug: "dawn-fog-rushwater"
+        description: "Dawn fog rising from the Rushwater—ethereal beauty"
+        scene_mood: "ethereal"
+
+        composition:
+          foreground: "Fog tendrils rising from water"
+          midground: "Stream barely visible through mist"
+          background: "Trees as shadows in fog, dawn glow"
+
+        lighting:
+          primary_source: "Dawn light through fog"
+          quality: "diffused, dreamlike"
+          color_temperature: "cool fog with warm dawn hints"
+
+        palette:
+          dominant: ["fog white", "water silver"]
+          accent: ["dawn pink", "shadow blue"]
+
+        key_elements:
+          - "Fog rising from cold water"
+          - "Dreamlike visibility"
+          - "Dawn light suffusing"
+          - "Ethereal beauty"
+
+        prompt: "Fantasy stream at dawn, fog rising from cold rushing water, ethereal mist obscuring visibility, dawn light filtering through fog tendrils, trees as shadows in the mist, dreamlike wilderness atmosphere, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: STONE FANGS
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "stone-fangs"
+    zone_name: "The Stone Fangs"
+    zone_type: "perimeter"
+
+    narrative_role: |
+      Jagged rocky outcrops and small cliffs that punctuate the forest—
+      natural shelter and defensive positions, but also ideal ambush
+      locations. Both blessing and threat.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Jagged rock formations"
+        - "Overhangs and sheltered spaces"
+        - "Cliffs and drops"
+        - "Tactical terrain"
+      materials: "weathered stone, cliff faces, rocky debris"
+      color_signature: "stone gray, lichen green, shadow black"
+      light_character: "contrast of exposed rock and deep shadow"
+
+    default_prompt_elements:
+      atmosphere: "tactical, ambiguous safety"
+      must_include:
+        - "rocky outcrops"
+        - "overhangs and shelters"
+        - "tactical terrain"
+        - "forest context"
+      must_avoid:
+        - "flat terrain"
+        - "simple rock"
+        - "obviously safe"
+
+    images:
+      - image_type: "zone"
+        image_slug: "stone-fangs-outcrops"
+        description: "The Stone Fangs—rocky outcrops providing shelter and danger"
+        scene_mood: "tense"
+
+        composition:
+          foreground: "Rocky debris, tactical approach"
+          midground: "Jagged outcrops with overhangs"
+          background: "Forest surrounding, more formations"
+
+        lighting:
+          primary_source: "Angled light on rock faces"
+          quality: "harsh contrast, deep shadows"
+          color_temperature: "cool stone, warm sun on exposed faces"
+
+        palette:
+          dominant: ["stone gray", "shadow black"]
+          accent: ["lichen green", "sunlit stone"]
+
+        key_elements:
+          - "Jagged formations"
+          - "Sheltered overhangs"
+          - "Tactical complexity"
+          - "Both refuge and ambush site"
+
+        prompt: "Fantasy rocky outcrops in ancient forest, jagged stone formations called the Stone Fangs, overhangs providing shelter, tactical terrain with deep shadows and exposed rock faces, natural defensive positions, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: STONE FANGS SHELTER
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "northern-wilderness-stone-fangs-shelter"
+    zone_name: "Rocky Overhang Shelter"
+    zone_type: "sanctuary"
+
+    narrative_role: |
+      A specific rocky overhang providing defensible shelter—where the
+      reconnaissance team camps, with stone at their back and sightlines
+      forward. A hard-won respite in hostile territory.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Natural rock overhang"
+        - "Defensible position"
+        - "Camp space beneath"
+        - "Sightlines forward"
+      materials: "rock overhang, camp debris, defensive position"
+      color_signature: "shelter shadow, camp warmth, defensive stone"
+      light_character: "shadow under overhang, light beyond"
+
+    default_prompt_elements:
+      atmosphere: "tactical respite"
+      must_include:
+        - "rock overhang overhead"
+        - "defensible camp space"
+        - "stone at back"
+        - "view forward"
+      must_avoid:
+        - "exposed camp"
+        - "comfortable lodge"
+
+    images:
+      - image_type: "zone"
+        image_slug: "overhang-shelter-camp"
+        description: "The rocky overhang shelter—defensible camp position"
+        scene_mood: "intimate"
+
+        composition:
+          foreground: "Camp supplies, sleeping positions"
+          midground: "Rock overhang providing cover"
+          background: "Forest visible beyond, watch position"
+
+        lighting:
+          primary_source: "Light from opening"
+          secondary_source: "Low fire glow"
+          quality: "shadow with camp warmth"
+
+        palette:
+          dominant: ["shelter stone", "camp earth"]
+          accent: ["fire glow", "forest green beyond"]
+
+        key_elements:
+          - "Natural roof overhead"
+          - "Stone protection"
+          - "Tactical positioning"
+          - "Hard-won respite"
+
+        prompt: "Fantasy rocky overhang camp, natural shelter with stone at back, defensible position with sightlines forward, reconnaissance team's respite in hostile territory, low smokeless fire, tactical camp arrangement, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: COLD CAMP
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "northern-wilderness-cold-camp"
+    zone_name: "Cold Camp—The Night Watch"
+    zone_type: "temporal"
+
+    narrative_role: |
+      The camp at night with no fire—cold watch in hostile territory,
+      eyes adjusted to darkness, listening for patrol sounds. The
+      uncomfortable reality of covert operations.
+
+    zone_visual_anchor:
+      defining_features:
+        - "No fire—cold camp"
+        - "Night darkness"
+        - "Watchful alertness"
+        - "Uncomfortable necessity"
+      materials: "darkness, cold breath, weapon ready"
+      color_signature: "night blue-black, starlight silver"
+      light_character: "only moon/stars, adjusted eyes"
+
+    default_prompt_elements:
+      atmosphere: "cold, watchful, tense"
+      must_include:
+        - "no fire"
+        - "night darkness"
+        - "alert postures"
+        - "cold conditions"
+      must_avoid:
+        - "comfortable warmth"
+        - "fire glow"
+        - "relaxed atmosphere"
+
+    images:
+      - image_type: "temporal"
+        image_slug: "cold-camp-night-watch"
+        description: "Cold camp at night—no fire, watchful eyes"
+        scene_mood: "tense"
+
+        composition:
+          foreground: "Watcher's position, weapon ready"
+          midground: "Sleeping figures in darkness"
+          background: "Forest dark, potential threat"
+
+        lighting:
+          primary_source: "Moonlight through canopy"
+          quality: "minimal, eyes-adjusted dark"
+          color_temperature: "cold blue-black"
+
+        palette:
+          dominant: ["night black", "moonlight silver"]
+          accent: ["breath visible", "alert eyes"]
+
+        key_elements:
+          - "No fire—cold discipline"
+          - "Watchful alertness"
+          - "Uncomfortable necessity"
+          - "Hostile territory night"
+
+        prompt: "Fantasy cold camp at night, no fire in hostile territory, watcher with weapon ready scanning darkness, sleeping figures barely visible, moonlight through canopy, breath visible in cold air, tactical discipline, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: NIGHT UNDER CANOPY
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "northern-wilderness-night"
+    zone_name: "Night Under the Canopy"
+    zone_type: "temporal"
+
+    narrative_role: |
+      The forest at night—almost total darkness under the canopy,
+      broken only by occasional moonlight in clearings. Where predators
+      hunt and unnatural eyes gleam in the shadows.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Near-total darkness"
+        - "Occasional moonlight patches"
+        - "Sound over sight"
+        - "Predator territory"
+      materials: "darkness, shadow, unseen threat"
+      color_signature: "black, deeper black, silver patches"
+      light_character: "absence of light, rare moon shafts"
+
+    default_prompt_elements:
+      atmosphere: "threatening darkness"
+      must_include:
+        - "near-total darkness"
+        - "occasional moonlight"
+        - "threat implied"
+        - "predator atmosphere"
+      must_avoid:
+        - "visible detail"
+        - "comfortable lighting"
+
+    images:
+      - image_type: "temporal"
+        image_slug: "forest-night-darkness"
+        description: "Night under the canopy—near-total darkness"
+        scene_mood: "ominous"
+
+        composition:
+          foreground: "Darkness, barely visible shapes"
+          midground: "Moonlight patch, trees silhouetted"
+          background: "Deeper darkness, unknown threats"
+
+        lighting:
+          primary_source: "Single moonlight shaft"
+          quality: "minimal, revealing little"
+          color_temperature: "cold silver on black"
+
+        palette:
+          dominant: ["black", "deeper black"]
+          accent: ["moonlight silver", "eye gleam implied"]
+
+        key_elements:
+          - "Near-total darkness"
+          - "Rare moonlight"
+          - "Threat unseen"
+          - "Predator territory"
+
+        prompt: "Fantasy ancient forest at night, near-total darkness under dense canopy, single shaft of moonlight through gap, trees as black silhouettes, threat implied in shadows, predator territory, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: RANGER PERSPECTIVE
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "northern-wilderness-ranger-perspective"
+    zone_name: "What the Trained Eye Sees"
+    zone_type: "perspective"
+
+    narrative_role: |
+      The forest as a ranger reads it—signs invisible to others that
+      tell stories of passage, threat, and danger. Where Veyra sees
+      tracks in disturbed earth that mark pursuit and calculation.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Subtle signs visible"
+        - "Ranger's trained reading"
+        - "Story in disturbed earth"
+        - "Threat decoded"
+      materials: "subtle tracks, bent vegetation, story in detail"
+      color_signature: "detail within detail"
+      light_character: "close observation lighting"
+
+    default_prompt_elements:
+      atmosphere: "expert reading of wilderness"
+      must_include:
+        - "subtle tracking signs"
+        - "ranger's perspective"
+        - "story in details"
+        - "threat decoded"
+      must_avoid:
+        - "obvious tracks"
+        - "untrained view"
+
+    images:
+      - image_type: "perspective"
+        image_slug: "ranger-reads-signs"
+        description: "The ranger's view—subtle signs telling dangerous stories"
+        scene_mood: "intimate"
+
+        composition:
+          foreground: "Disturbed earth, bent vegetation"
+          midground: "Pattern of passage visible"
+          background: "Forest context, threat direction"
+
+        lighting:
+          primary_source: "Angled light revealing detail"
+          quality: "observation-perfect"
+
+        palette:
+          dominant: ["earth brown", "detail visible"]
+          accent: ["threat indication"]
+
+        key_elements:
+          - "Tracks invisible to untrained eye"
+          - "Story of pursuit"
+          - "Danger decoded"
+          - "Expert reading"
+
+        prompt: "Fantasy ranger's perspective reading wilderness signs, subtle tracks in disturbed earth, bent vegetation telling story, patterns of passage visible to trained eye, threat direction decoded, expert tracking view, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: CORRUPTED ZONES
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "corrupted-zones"
+    zone_name: "The Corrupted Zones"
+    zone_type: "liminal"
+
+    narrative_role: |
+      Areas closer to the Silent Hand facility where the natural world
+      is visibly tainted—vegetation twisted, water with oily sheen,
+      wildlife absent or unnaturally aggressive. The creeping poison
+      made visible.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Twisted vegetation"
+        - "Oily water sheen"
+        - "Wildlife absence"
+        - "Visible corruption"
+      materials: "twisted growth, tainted water, wrongness visible"
+      color_signature: "sickly green, oily purple, wrong colors"
+      light_character: "light seems wrong, sickly quality"
+
+    default_prompt_elements:
+      atmosphere: "corrupted, wrong"
+      must_include:
+        - "twisted vegetation"
+        - "visible taint"
+        - "wrongness apparent"
+        - "forest sickening"
+      must_avoid:
+        - "healthy forest"
+        - "normal nature"
+        - "obvious magic effects"
+
+    images:
+      - image_type: "zone"
+        image_slug: "corrupted-zone-visible"
+        description: "The Corrupted Zones—forest visibly sickening"
+        scene_mood: "ominous"
+
+        composition:
+          foreground: "Twisted vegetation, wrongly-colored"
+          midground: "Trees with sickly growth"
+          background: "Healthy forest visible behind for contrast"
+
+        lighting:
+          primary_source: "Same sun, wrong colors"
+          quality: "sickly, uncomfortable"
+          color_temperature: "wrong—too green, too purple"
+
+        palette:
+          dominant: ["sickly green", "wrong purple"]
+          accent: ["healthy forest contrast"]
+          avoid: ["normal forest colors"]
+
+        key_elements:
+          - "Visible corruption"
+          - "Twisted growth"
+          - "Wrongness apparent"
+          - "Healthy forest behind for contrast"
+
+        style_notes: "The corruption should be subtle but clear—not fantasy magic glowing, but nature sickening. Like pollution or disease, not spell effects."
+
+        prompt: "Fantasy forest showing visible corruption, twisted vegetation with sickly green and wrong purple hues, trees with unnatural growth patterns, oily sheen on water, healthy forest visible behind for contrast, subtle wrongness rather than magic effects, nature sickening, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: CORRUPTION GRADIENT
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "northern-wilderness-corruption-gradient"
+    zone_name: "The Corruption Gradient"
+    zone_type: "threshold"
+
+    narrative_role: |
+      The transitional zone where healthy forest gives way to corruption—
+      the gradient visible in the shift from vibrant green to sickly hues,
+      the warning that danger increases ahead.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Visible transition"
+        - "Healthy behind, corrupted ahead"
+        - "Gradient of change"
+        - "Warning made visible"
+      materials: "transitioning vegetation, shifting colors"
+      color_signature: "healthy green fading to sickly tones"
+      light_character: "same light, different absorption"
+
+    default_prompt_elements:
+      atmosphere: "transitional warning"
+      must_include:
+        - "visible gradient"
+        - "healthy to corrupted"
+        - "warning transition"
+      must_avoid:
+        - "sharp boundary"
+        - "invisible change"
+
+    images:
+      - image_type: "zone"
+        image_slug: "corruption-gradient-transition"
+        description: "The gradient from healthy forest to corruption"
+        scene_mood: "ominous"
+
+        composition:
+          foreground: "Still-healthy vegetation"
+          midground: "Transition zone, colors shifting"
+          background: "Corrupted zone visible ahead"
+
+        lighting:
+          primary_source: "Same sun throughout"
+          quality: "revealing the change"
+
+        palette:
+          dominant: ["gradient from green to sickly"]
+          accent: ["warning colors"]
+
+        key_elements:
+          - "Visible gradient"
+          - "Health giving way to sickness"
+          - "Warning to travelers"
+          - "Danger increases ahead"
+
+        prompt: "Fantasy forest showing corruption gradient, healthy vibrant vegetation in foreground transitioning to sickly twisted growth ahead, visible gradient of change, warning made visual, same sunlight revealing different absorption, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: CORRUPTION RECOGNITION
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "northern-wilderness-corruption-recognition"
+    zone_name: "Recognition—The Forest Sickens"
+    zone_type: "beat"
+
+    narrative_role: |
+      The moment of recognizing that something is deeply wrong—
+      a character noticing the absence of birdsong, the twisted growth,
+      the oily sheen. Horror dawning.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Recognition moment"
+        - "Horror dawning"
+        - "Details noticed"
+        - "Wrongness understood"
+      materials: "what the eye finally sees"
+      color_signature: "wrongness becoming apparent"
+      light_character: "revelation lighting"
+
+    default_prompt_elements:
+      atmosphere: "dawning horror"
+      must_include:
+        - "recognition moment"
+        - "wrongness noticed"
+        - "character realization"
+        - "horror dawning"
+      must_avoid:
+        - "comfortable acceptance"
+        - "oblivious passage"
+
+    images:
+      - image_type: "beat"
+        image_slug: "recognition-forest-sickens"
+        description: "The moment of recognizing the forest is sick"
+        scene_mood: "ominous"
+
+        composition:
+          foreground: "Character stopping, noticing"
+          midground: "The wrongness that caught attention"
+          background: "More corruption visible now that eyes are open"
+
+        lighting:
+          primary_source: "Revealing light"
+          quality: "showing what was missed"
+
+        palette:
+          dominant: ["recognition colors"]
+          accent: ["horror realization"]
+
+        key_elements:
+          - "Character noticing"
+          - "Wrongness revealed"
+          - "Horror dawning"
+          - "Can't unsee"
+
+        prompt: "Fantasy moment of recognition, character stopping as they notice forest corruption, twisted vegetation that suddenly registers, absence of birdsong understood, horror dawning on face, wrongness finally visible, oil painting style, fantasy illustration"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# BEAT IMAGES
+# ═══════════════════════════════════════════════════════════════════════════════
+
+beat_images:
+  # ─────────────────────────────────────────────────────────────────────────────
+  # BEAT: FOREST CATHEDRAL
+  # ─────────────────────────────────────────────────────────────────────────────
+  - beat_slug: "forest-cathedral-awe"
+    beat_title: "The Forest Cathedral"
+    zone_ref: "northern-wilderness-old-forest-detail"
+
+    narrative_context: |
+      The first view of the ancient forest interior—massive trees creating
+      a cathedral-like space, light shafts piercing the canopy, the sheer
+      age and scale inspiring awe before the danger registers.
+
+    emotional_beat: "Awe at nature's scale before understanding its danger"
+
+    image_spec:
+      scene_mood: "reverent"
+      image_type: "anchor"
+
+      composition:
+        foreground: "Traveler dwarfed by scale"
+        midground: "Massive tree trunks as columns"
+        background: "Light shafts, canopy above"
+
+      lighting:
+        primary_source: "Dramatic light shafts"
+        quality: "theatrical, sacred"
+        color_temperature: "warm gold shafts in cool green"
+
+      palette:
+        dominant: ["cathedral green", "light shaft gold"]
+        accent: ["awe-scale"]
+
+      key_elements:
+        - "Human scale against ancient trees"
+        - "Cathedral atmosphere"
+        - "Light shafts as divine touch"
+        - "Awe before danger"
+
+      prompt: "Fantasy ancient forest cathedral, traveler dwarfed by massive ancient trees, dramatic light shafts piercing canopy like divine blessing, cathedral-like atmosphere, awe at nature's scale, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # BEAT: THE FOREST SICKENS
+  # ─────────────────────────────────────────────────────────────────────────────
+  - beat_slug: "the-forest-sickens"
+    beat_title: "The Forest Sickens"
+    zone_ref: "corrupted-zones"
+
+    narrative_context: |
+      The realization that the beautiful wilderness is being poisoned—
+      twisted vegetation, oily water, absent wildlife. The creeping
+      corruption made visible, horror at what the Silent Hand has done.
+
+    emotional_beat: "Horror at corruption poisoning pristine wilderness"
+
+    image_spec:
+      scene_mood: "ominous"
+      image_type: "mood"
+
+      composition:
+        foreground: "Twisted, sickly vegetation"
+        midground: "Corrupted zone clearly visible"
+        background: "Healthy forest in distance for contrast"
+
+      lighting:
+        primary_source: "Same sun, wrong absorption"
+        quality: "sickly, uncomfortable"
+
+      palette:
+        dominant: ["sickly green", "wrong purple"]
+        accent: ["healthy contrast"]
+
+      key_elements:
+        - "Visible corruption"
+        - "Nature sickening"
+        - "Contrast with health"
+        - "Horror at damage"
+
+      prompt: "Fantasy corrupted forest zone, vegetation twisted with sickly unnatural colors, oily sheen on water, wildlife notably absent, healthy forest visible in distance for contrast, nature sickening from unseen poison, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # BEAT: HARD-WON RESPITE
+  # ─────────────────────────────────────────────────────────────────────────────
+  - beat_slug: "hard-won-respite"
+    beat_title: "A Hard-Won Respite"
+    zone_ref: "northern-wilderness-stone-fangs-shelter"
+
+    narrative_context: |
+      The team finding defensible shelter under the rocky overhang—
+      a moment of relative safety in hostile territory, where they
+      can rest with stone at their back and sightlines forward.
+
+    emotional_beat: "Relief at finding defensible position in hostile territory"
+
+    image_spec:
+      scene_mood: "intimate"
+      image_type: "beat"
+
+      composition:
+        foreground: "Camp under overhang"
+        midground: "Team settling, defensive positions"
+        background: "Forest visible beyond, watch maintained"
+
+      lighting:
+        primary_source: "Light from opening"
+        secondary_source: "Low smokeless fire"
+        quality: "protective shadow with warmth"
+
+      palette:
+        dominant: ["shelter stone", "camp warmth"]
+        accent: ["defensive positioning"]
+
+      key_elements:
+        - "Stone protection overhead"
+        - "Defensible position"
+        - "Team respite"
+        - "Watch still maintained"
+
+      prompt: "Fantasy rocky overhang camp, reconnaissance team finding defensible shelter in hostile territory, stone at back, low smokeless fire, watch positions maintained, hard-won respite in enemy territory, oil painting style, fantasy illustration"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# REFERENCES
+# ═══════════════════════════════════════════════════════════════════════════════
+
+references:
+  related_locations:
+    - slug: "windborne-roost"
+      context: "20 miles south—last safe waystation"
+    - slug: "silent-hand-facility"
+      context: "3 miles north—source of corruption"
+    - slug: "northern-road"
+      context: "Main transit route through region"
+    - slug: "thornwood-forest"
+      context: "Related forest region"
+
+  thematic_connections:
+    - "Beauty concealing danger"
+    - "Corruption spreading from evil source"
+    - "Wilderness as both sanctuary and threat"
+    - "Natural world at war with unnatural forces"

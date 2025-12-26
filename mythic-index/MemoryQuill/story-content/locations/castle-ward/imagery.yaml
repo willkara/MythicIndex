@@ -1,0 +1,616 @@
+metadata:
+  entity_type: "location-imagery"
+  slug: castle-ward
+  name: "Castle Ward"
+  location_type: district
+  narrative_soul: |
+    Castle Ward is the administrative heart of Waterdeep, a district of
+    stone towers, government offices, and noble estates. It observes
+    without judging, serving whoever holds power with the same granite
+    indifference it has shown for centuries. It does not love its
+    inhabitants—it simply endures, outlasting every lord and every law.
+  one_line_essence: "Power's architecture, cold and patient"
+  generation_defaults:
+    provider: "openai"
+    model: "dall-e-3"
+    quality: "high"
+
+location_visual_anchor:
+  signature_elements:
+    - "Castle Waterdeep silhouette on Piergeiron's Folly"
+    - "Granite and marble government buildings"
+    - "Tall, narrow tower windows"
+    - "Heraldic banners of noble houses"
+    - "Watchful griffon statues"
+    - "Wide ceremonial avenues"
+    - "Iron-gated noble estates"
+    - "Polished stone floors"
+  materials:
+    masonry: "dressed grey granite with marble trim, precision-cut blocks"
+    timber: "dark polished oak for doors and furniture, minimal exterior wood"
+    roofing: "slate tiles, copper domes on major buildings, verdigris patina"
+    metalwork: "polished bronze fixtures, iron gates with gold-leaf accents"
+    finishing: "marble floors, plaster walls with painted friezes, tapestries"
+  color_anchors:
+    stone: "cool granite grey, white marble accents"
+    wood: "dark oak brown, polished to sheen"
+    metal: "bronze gold, iron black, copper green"
+    fabric: "deep blues, rich purples, gold thread"
+    light: "cool daylight through tall windows, warm candlelight in evenings"
+  characteristic_light:
+    day_exterior: "bright, direct sunlight on pale stone, harsh shadows from tall buildings"
+    day_interior: "diffused light through tall narrow windows, geometric patterns on marble floors"
+    evening: "warm candlelight and lantern glow, shadows pooling in high-ceilinged chambers"
+    night: "scattered lamplighter's glow, moonlight on pale towers"
+
+overview:
+  slug: castle-ward-overview
+  title: "Castle Ward Overview"
+  image_type: establishing
+  category: exterior
+
+  scene_mood: reverent
+  mood_rationale: |
+    Castle Ward commands respect through architecture alone. The scale and
+    permanence of the buildings convey institutional authority that exists
+    independent of whoever currently holds power. Visitors are meant to
+    feel small and supplicant.
+
+  visual_description: |
+    An elevated view of Castle Ward stretching from the viewer toward
+    Castle Waterdeep, which crowns Mount Waterdeep in the distance. Wide
+    ceremonial avenues lined with granite government buildings and noble
+    estates radiate from central plazas. Tall, narrow windows pierce
+    uniform facades. Heraldic banners hang from poles at intersections.
+    Griffon statues stand sentinel atop corner pillars. The district's
+    architecture is vertical and imposing—towers, spires, and high-pitched
+    slate roofs reaching toward the sky. A few figures in fine clothes or
+    official robes move along the streets, dwarfed by the buildings.
+
+  composition_notes: |
+    High-angle establishing shot looking toward Castle Waterdeep. Use the
+    castle as the background focal point with the district's buildings
+    creating leading lines toward it. Foreground should include one plaza
+    or intersection with visible scale figures. Architectural repetition
+    creates rhythm; variety comes from heraldic colors and building heights.
+
+  narrative_significance: |
+    Castle Ward represents Waterdeep's administrative power—the courts,
+    councils, and noble families who shape the city's fate. It stands in
+    contrast to the organic chaos of the Dock Ward and the commercial
+    bustle of Trade Ward.
+
+  symbolic_elements:
+    - "Vertical architecture (aspiration, hierarchy)"
+    - "Castle crowning the hill (ultimate authority)"
+    - "Wide avenues (ceremonial power, parade routes)"
+    - "Small figures (individual insignificance before institutions)"
+    - "Griffon sentinels (watchful justice)"
+
+  time_of_day: "mid-morning"
+  weather: "fair, thin high clouds"
+  season: "late spring"
+
+  required_elements:
+    - "Castle Waterdeep visible on Mount Waterdeep"
+    - "Wide ceremonial avenue with granite buildings"
+    - "Heraldic banners on poles"
+    - "Griffon statues on pillars"
+    - "Tall narrow windows in uniform facades"
+    - "Slate and copper roofing"
+    - "Scale figures in fine clothes"
+
+  visible_beyond: "Mount Waterdeep and Castle Waterdeep"
+  approach_from: "elevated vantage point within the district"
+
+  lighting:
+    primary_source: "morning sun"
+    quality: "bright, direct"
+    direction: "high front-left"
+    color_temperature: "neutral to warm"
+    shadow_depth: "sharp shadows from tall buildings"
+    atmospheric: "slight haze in distance, crisp foreground"
+
+  palette:
+    dominant:
+      - "granite grey"
+      - "marble white"
+      - "slate blue-grey"
+    accent:
+      - "heraldic deep blue"
+      - "noble purple"
+      - "gold thread and fixtures"
+      - "copper-verdigris green"
+    avoid:
+      - "rust and decay"
+      - "organic overgrowth"
+      - "warm earth tones"
+
+  aspect_ratio: "16:9"
+  orientation: "landscape"
+  size: "1792x1024"
+
+  prompt_used: |
+    Oil painting, matte finish, visible brushwork. Establishing shot of a
+    medieval fantasy government district, Castle Ward of Waterdeep.
+    Elevated view looking toward a massive castle on a hill in the
+    distance. Wide ceremonial avenues lined with imposing granite
+    government buildings and noble estates. Tall, narrow windows in
+    uniform stone facades. Heraldic banners in deep blue and purple hang
+    from poles at intersections. Griffon statues stand sentinel on corner
+    pillars. Slate roofs and copper domes with verdigris patina. A few
+    small figures in fine robes walk the streets, dwarfed by architecture.
+    Morning light casting sharp shadows. High-angle establishing shot.
+    Fantasy medieval civic architecture, not medieval military. Polished,
+    formal, institutional. Subtle fantasy: ward-stones at gate corners,
+    subtle magical street lamps, mixed ancestries among the figures.
+
+  negative_prompt: |
+    text, watermark, signature, artist name, UI elements, health bars,
+    HUD, level indicator, cartoon, anime, manga, cel-shaded, plastic,
+    glossy, 3D render, CGI, video game screenshot, neon colors,
+    airbrushed, smooth surfaces, stock photo, digital art gloss,
+    concept art polish, AI artifacts, modern elements, futuristic
+    elements, photorealistic, sci-fi, firearms, empty sterile unused
+    appearance, pristine new construction, ruins, decay, overgrown,
+    military fortifications, castle defenses, dungeons
+
+  references:
+    - source: "locations/castle-ward/zones.yaml"
+      anchor: "Castle Ward location with government and noble zones"
+
+zones:
+  - name: Castle Balcony
+    slug: castle-ward-castle-balcony
+    title: "Castle Balcony"
+    image_type: zone
+    zone_type: overlook
+    category: exterior
+
+    scene_mood: reverent
+    mood_rationale: |
+      A balcony of Castle Waterdeep offers a commanding view of the city
+      and the sea beyond. The elevation enforces contemplation and a
+      sense of responsibility—one sees all that depends on decisions
+      made within these walls.
+
+    visual_description: |
+      A stone balcony projecting from Castle Waterdeep's outer wall,
+      offering a panoramic view of Waterdeep spread below. A low
+      balustrade of carved granite with griffon finials marks the edge.
+      The harbor is visible in the distance, tiny ships at anchor. The
+      city's wards spread in a patchwork of rooftops and streets. The
+      balcony floor is polished granite, worn smooth by centuries of
+      feet. An arched doorway leads back into the castle's interior,
+      dark by comparison. Wind moves a single heraldic banner mounted
+      on the balcony's corner.
+
+    composition_notes: |
+      Wide-angle shot from within the balcony, using the balustrade as
+      foreground framing. The city vista fills the middle ground and
+      background. The castle doorway visible at frame edge provides
+      depth and context. Camera at standing height, slightly elevated
+      to emphasize the height and view.
+
+    narrative_significance: |
+      This vantage point represents the perspective of power—seeing the
+      city laid out as a responsibility and a possession. Those who
+      stand here make decisions that ripple through every street below.
+
+    symbolic_elements:
+      - "Griffon finials (noble guardianship)"
+      - "Vast view (scope of responsibility)"
+      - "Worn stone floor (weight of history)"
+      - "Distant harbor (commerce and connection)"
+      - "Wind-moved banner (change despite permanence)"
+
+    location_within: "Castle Waterdeep, outer wall balcony"
+    time_of_day: "late afternoon"
+    weather: "partly cloudy, wind"
+
+    required_elements:
+      - "Stone balcony projecting from castle wall"
+      - "Low granite balustrade with griffon finials"
+      - "Panoramic view of Waterdeep below"
+      - "Harbor visible in distance"
+      - "Polished granite floor, worn smooth"
+      - "Arched doorway to castle interior"
+      - "Heraldic banner on corner pole"
+
+    lighting:
+      primary_source: "late afternoon sun"
+      quality: "warm, golden hour beginning"
+      direction: "side-front, low angle"
+      color_temperature: "warm gold"
+      shadow_depth: "long shadows across balcony floor"
+      atmospheric: "slight haze over distant city"
+
+    palette:
+      dominant:
+        - "granite grey"
+        - "golden afternoon light"
+        - "city rooftop earth tones"
+      accent:
+        - "harbor blue in distance"
+        - "heraldic banner colors"
+        - "copper-verdigris on spires"
+      avoid:
+        - "neon colors"
+        - "modern elements"
+        - "overly bright highlights"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Stone balcony
+      projecting from a medieval castle wall, overlooking a fantasy
+      city far below. Low granite balustrade with carved griffon
+      finials at corners. Polished granite floor worn smooth by
+      centuries. Panoramic view of city rooftops, streets, and
+      distant harbor with ships at anchor. Late afternoon golden
+      light creating long shadows across the balcony. Arched doorway
+      to castle interior visible at frame edge. Single heraldic
+      banner on corner pole moving in wind. Wide-angle view from
+      within balcony. High fantasy medieval architecture. Empty of
+      people. Subtle fantasy: ward-runes carved into balustrade,
+      distant magical lamplights in city. Waterdeep from Castle
+      Waterdeep balcony.
+
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars,
+      HUD, level indicator, cartoon, anime, manga, cel-shaded, plastic,
+      glossy, 3D render, CGI, video game screenshot, neon colors,
+      airbrushed, smooth surfaces, stock photo, digital art gloss,
+      concept art polish, AI artifacts, modern elements, futuristic
+      elements, photorealistic, sci-fi, firearms, empty sterile unused
+      appearance, pristine new construction, people, figures, characters,
+      bright magic effects, glowing runes, night scene, interior view
+
+    references:
+      - source: "locations/castle-ward/zones.yaml"
+        anchor: "Castle Balcony zone"
+
+  - name: Committee Chamber
+    slug: castle-ward-castle-waterdeep-committee-chamber
+    title: "Committee Chamber"
+    image_type: zone
+    zone_type: arena
+    category: interior
+
+    scene_mood: clandestine
+    mood_rationale: |
+      Committee chambers are where real decisions happen—away from public
+      view, in closed sessions where compromise and coercion mingle.
+      The mood is one of secrecy and controlled confrontation.
+
+    visual_description: |
+      A rectangular chamber with a long polished oak table at its center,
+      surrounded by high-backed chairs with carved armrests. The walls
+      are paneled in dark wood below and painted plaster above, decorated
+      with faded tapestries showing historical scenes. Tall, narrow
+      windows with heavy drapes let in controlled light. Iron candelabra
+      hang from chains above the table. A large fireplace dominates one
+      end wall, cold and dark. Papers and inkwells are arranged on the
+      table. The door is heavy oak, reinforced with iron bands.
+
+    composition_notes: |
+      Camera positioned at one end of the table, looking down its length
+      toward the fireplace. Use the table as a leading line with chairs
+      creating rhythm on both sides. Windows provide depth and light
+      source. The empty chairs suggest presence without requiring figures.
+
+    narrative_significance: |
+      This is where the Lords of Waterdeep or their subordinates meet in
+      closed session. Deals are struck, alliances forged, enemies made.
+      The room has witnessed centuries of political maneuvering.
+
+    symbolic_elements:
+      - "Long table (negotiation, confrontation)"
+      - "High-backed chairs (authority, formality)"
+      - "Cold fireplace (unlit passions, calculated dealings)"
+      - "Heavy door (secrecy, exclusion)"
+      - "Faded tapestries (weight of precedent)"
+
+    location_within: "Castle Waterdeep, administrative wing"
+    time_of_day: "afternoon"
+    weather: "overcast, grey light"
+
+    required_elements:
+      - "Long polished oak table"
+      - "High-backed carved chairs"
+      - "Dark wood paneling on lower walls"
+      - "Tall narrow windows with heavy drapes"
+      - "Iron candelabra on chains"
+      - "Large fireplace, unlit"
+      - "Heavy oak door with iron bands"
+      - "Papers and inkwells on table"
+      - "Faded historical tapestries"
+
+    lighting:
+      primary_source: "tall windows, overcast daylight"
+      quality: "grey, diffused, controlled"
+      direction: "side light from windows"
+      color_temperature: "cool neutral"
+      shadow_depth: "soft shadows, formal atmosphere"
+      atmospheric: "dust motes in light shafts"
+
+    palette:
+      dominant:
+        - "dark oak brown"
+        - "grey window light"
+        - "cream plaster walls"
+      accent:
+        - "faded tapestry reds and golds"
+        - "iron black candelabra"
+        - "parchment cream on table"
+      avoid:
+        - "bright colors"
+        - "warm firelight"
+        - "cheerful atmosphere"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Interior of a
+      medieval committee chamber in a castle. Long polished oak table
+      at center surrounded by high-backed carved chairs. Dark wood
+      paneling on lower walls, cream plaster above with faded
+      historical tapestries. Tall narrow windows with heavy drapes
+      let in grey overcast light. Iron candelabra hang from chains
+      above the table. Large stone fireplace at far end, unlit and
+      cold. Papers and inkwells arranged on table surface. Heavy oak
+      door with iron reinforcement visible. Camera at one end looking
+      down table length toward fireplace. Empty of people. Formal,
+      secretive atmosphere. Dust motes in light shafts. High fantasy
+      medieval administrative architecture. Subtle fantasy: ward-marks
+      on door frame, seal stamps on papers.
+
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars,
+      HUD, level indicator, cartoon, anime, manga, cel-shaded, plastic,
+      glossy, 3D render, CGI, video game screenshot, neon colors,
+      airbrushed, smooth surfaces, stock photo, digital art gloss,
+      concept art polish, AI artifacts, modern elements, futuristic
+      elements, photorealistic, sci-fi, firearms, empty sterile unused
+      appearance, pristine new construction, people, figures, characters,
+      bright magic effects, glowing runes, lit fireplace, warm lighting,
+      cheerful atmosphere, throne room
+
+    references:
+      - source: "locations/castle-ward/zones.yaml"
+        anchor: "Committee Chamber zone"
+
+  - name: Council Chambers
+    slug: castle-ward-council-chambers
+    title: "Council Chambers"
+    image_type: zone
+    zone_type: arena
+    category: interior
+
+    scene_mood: reverent
+    mood_rationale: |
+      The Council Chambers are where public power is performed. Unlike
+      the private committee room, this space is designed to awe and
+      impress—to make petitioners and observers feel the weight of
+      institutional authority.
+
+    visual_description: |
+      A grand circular chamber with a domed ceiling painted with scenes
+      of Waterdeep's founding. A raised dais holds a curved bench where
+      masked Lords would sit, facing a lower floor where petitioners
+      stand. Tall marble columns ring the space, supporting a gallery
+      level above. The dome's oculus admits a shaft of light that falls
+      on the center floor—a deliberate architectural spotlight. The
+      Lords' bench is backed by a great seal of Waterdeep in bronze.
+      The floor is polished marble with inlaid patterns. Heavy bronze
+      doors guard the main entrance.
+
+    composition_notes: |
+      Camera positioned at petitioner level, looking up toward the
+      Lords' dais. Use the columns to create depth and the dome to
+      draw the eye upward. The shaft of light from the oculus creates
+      a natural focal point. The curved bench and great seal dominate
+      the frame.
+
+    narrative_significance: |
+      This is where Waterdeep's Masked Lords hold public session, where
+      laws are proclaimed and judgment delivered. The architecture is
+      designed to make the Lords seem more than human—elevated,
+      anonymous, inexorable.
+
+    symbolic_elements:
+      - "Circular chamber (completeness, no escape)"
+      - "Raised dais (hierarchy, judgment from above)"
+      - "Masked Lords' bench (anonymous authority)"
+      - "Oculus light (divine sanction, spotlight of justice)"
+      - "Great seal (institutional permanence)"
+
+    location_within: "Castle Waterdeep, central administrative wing"
+    time_of_day: "mid-morning"
+    weather: "fair, sunlight through oculus"
+
+    required_elements:
+      - "Circular domed chamber"
+      - "Painted dome with founding scenes"
+      - "Oculus admitting shaft of light"
+      - "Raised dais with curved Lords' bench"
+      - "Great seal of Waterdeep in bronze"
+      - "Tall marble columns ringing space"
+      - "Gallery level above"
+      - "Polished marble floor with inlaid patterns"
+      - "Heavy bronze doors"
+
+    lighting:
+      primary_source: "oculus shaft of light"
+      quality: "dramatic, theatrical"
+      direction: "directly from above, centered"
+      color_temperature: "warm gold"
+      shadow_depth: "deep shadows beyond the light shaft"
+      atmospheric: "dust motes in the light beam"
+
+    palette:
+      dominant:
+        - "white marble"
+        - "bronze metalwork"
+        - "painted dome colors (muted)"
+      accent:
+        - "gold light shaft"
+        - "deep blue of Lords' dais cloth"
+        - "seal bronze"
+      avoid:
+        - "bright colors"
+        - "casual elements"
+        - "decay or disrepair"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Grand circular
+      council chamber in a medieval fantasy castle. Domed ceiling
+      painted with historical scenes, central oculus admitting a
+      dramatic shaft of golden light. Raised dais at far end with
+      curved bench for officials, backed by a great bronze seal.
+      Tall white marble columns ring the space, supporting a gallery
+      level. Polished marble floor with geometric inlay patterns.
+      Camera at ground level looking up toward the dais. The light
+      shaft falls on the center floor, creating theatrical
+      illumination. Heavy bronze doors at entrance. Empty of people.
+      Formal, awe-inspiring atmosphere. Dust motes suspended in light
+      beam. High fantasy medieval civic architecture. Waterdeep
+      Council Chambers. Subtle fantasy: ward-runes on columns, magical
+      preservation of dome paintings.
+
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars,
+      HUD, level indicator, cartoon, anime, manga, cel-shaded, plastic,
+      glossy, 3D render, CGI, video game screenshot, neon colors,
+      airbrushed, smooth surfaces, stock photo, digital art gloss,
+      concept art polish, AI artifacts, modern elements, futuristic
+      elements, photorealistic, sci-fi, firearms, empty sterile unused
+      appearance, pristine new construction, people, figures, characters,
+      bright magic effects, glowing runes, throne, medieval court,
+      religious iconography, church interior
+
+    references:
+      - source: "locations/castle-ward/zones.yaml"
+        anchor: "Council Chambers zone"
+
+  - name: Castle Ward Rooftop
+    slug: castle-ward-rooftop
+    title: "Castle Ward Rooftop"
+    image_type: zone
+    zone_type: overlook
+    category: exterior
+
+    scene_mood: pastoral
+    mood_rationale: |
+      A rooftop in Castle Ward offers a moment of peace above the
+      formality of the streets below. The view is expansive, the air
+      cleaner, and the political weight of the district feels
+      momentarily distant.
+
+    visual_description: |
+      A slate-roofed rooftop of a Castle Ward government building, with
+      a flat section bounded by a low parapet. Copper chimney stacks
+      with verdigris patina punctuate the roofline. The view extends
+      across neighboring rooftops toward the harbor in one direction
+      and Mount Waterdeep in the other. A forgotten wooden bench sits
+      against a chimney stack, suggesting someone's secret refuge.
+      Pigeons perch on the parapet. The slate tiles are worn and
+      weathered, with patches of moss in shadowed corners.
+
+    composition_notes: |
+      Camera at rooftop level, using the parapet as foreground framing.
+      The bench provides a human-scale anchor. Multiple depths created
+      by layers of rooftops, with Mount Waterdeep as distant backdrop.
+      Late afternoon light creates warm tones on the slate and copper.
+
+    narrative_significance: |
+      A hidden perspective on the formal district—where servants,
+      clerks, or thoughtful nobles might retreat for a moment of
+      peace. The rooftops reveal what the streets conceal: the city
+      as a living whole rather than compartmentalized bureaucracy.
+
+    symbolic_elements:
+      - "Hidden bench (refuge from formality)"
+      - "Pigeons (ordinary life amid power)"
+      - "Weathered slate (time passing despite permanence)"
+      - "Dual views (choices, perspectives)"
+      - "Verdigris copper (beauty in aging)"
+
+    location_within: "Rooftop of a government building in Castle Ward"
+    time_of_day: "late afternoon"
+    weather: "fair, light breeze"
+
+    required_elements:
+      - "Slate rooftop with flat section"
+      - "Low stone parapet"
+      - "Copper chimney stacks with verdigris"
+      - "View of neighboring rooftops"
+      - "Mount Waterdeep visible in distance"
+      - "Harbor visible in opposite direction"
+      - "Wooden bench against chimney"
+      - "Pigeons on parapet"
+      - "Weathered slate with moss patches"
+
+    lighting:
+      primary_source: "late afternoon sun"
+      quality: "warm, golden hour"
+      direction: "low side angle"
+      color_temperature: "warm gold-amber"
+      shadow_depth: "long shadows, soft edges"
+      atmospheric: "slight haze in distance, crisp foreground"
+
+    palette:
+      dominant:
+        - "slate grey-blue"
+        - "copper-verdigris green"
+        - "warm golden light"
+      accent:
+        - "moss green in shadows"
+        - "pigeon grey and white"
+        - "weathered wood brown"
+      avoid:
+        - "harsh colors"
+        - "modern elements"
+        - "pristine surfaces"
+
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork. Medieval fantasy
+      city rooftop in late afternoon golden light. Slate-tiled roof
+      of a government building with flat section bounded by low stone
+      parapet. Copper chimney stacks with beautiful verdigris patina.
+      View extends across neighboring slate and tile rooftops toward
+      distant harbor in one direction, mountain with castle in other.
+      Small wooden bench tucked against a chimney stack, forgotten
+      refuge. Pigeons perched on parapet edge. Weathered slate tiles
+      with moss in shadowed corners. Late golden hour light creating
+      long soft shadows. Camera at rooftop level. Empty of people.
+      Peaceful, contemplative atmosphere. High fantasy medieval civic
+      architecture. Waterdeep Castle Ward rooftop. Subtle fantasy:
+      distant magical lamplights, unusual chimney smoke colors.
+
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars,
+      HUD, level indicator, cartoon, anime, manga, cel-shaded, plastic,
+      glossy, 3D render, CGI, video game screenshot, neon colors,
+      airbrushed, smooth surfaces, stock photo, digital art gloss,
+      concept art polish, AI artifacts, modern elements, futuristic
+      elements, photorealistic, sci-fi, firearms, empty sterile unused
+      appearance, pristine new construction, people, figures, characters,
+      bright magic effects, glowing runes, night scene, interior view,
+      aerial view, birds eye view
+
+    references:
+      - source: "locations/castle-ward/zones.yaml"
+        anchor: "Castle Ward Rooftop zone"

@@ -1,0 +1,830 @@
+# Stonebridge - Location Imagery Specification
+# Generated for MythicIndex image generation system
+# "Where honest coin passes under ancient arches and justice finds cracks in corruption's walls"
+
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "stonebridge"
+  location_name: "Stonebridge"
+  version: "1.0"
+  last_updated: "2025-12-26"
+  generation_notes: |
+    A river-straddling trade hub defined by its ancient five-arch stone bridge over
+    the Silver Rush, a paved market square with guild arcades and central fountain,
+    and busy west-bank docks lined with warehouses and cranes. The town's civic stonework
+    shows centuries of maintenance against flood, ice, and constant commerce. This is
+    where honest trade meets shadowed dealing, where justice struggles against corruption,
+    and where the Company proves their worth through a heist that delivers evidence
+    the law cannot gather.
+
+generation_defaults:
+  provider: "google"
+  model: "imagen-3"
+  quality: "high"
+  aspect_ratio: "16:9"
+  style_preset: "location-exterior"
+
+# ============================================================================
+# NARRATIVE SOUL - The Essential Truth of This Place
+# ============================================================================
+
+narrative_soul: |
+  Stonebridge lives up to its name—the ancient five-arch bridge is the town's spine,
+  connecting east-bank markets and guild halls to west-bank docks and warehouses.
+  Commerce flows constantly: carts cross the bridge, stalls fill the market square,
+  cranes swing cargo at the quay. But beneath the honest bustle runs a darker current.
+
+  When the Company arrives, they find a magistrate bone-tired from fighting losing
+  battles, a clerk whose conscience finds cracks in corruption's walls, and evidence
+  locked in warehouses that serve shadowed masters. Justice cannot work openly here,
+  so justice works through shadows—a heist that delivers what the law cannot gather,
+  a controlled burn that reveals what corruption tries to hide.
+
+one_line_essence: "Where ancient stone spans honest trade and shadowed dealing"
+
+# ============================================================================
+# LOCATION VISUAL ANCHOR - Consistent Visual Identity
+# ============================================================================
+
+location_visual_anchor:
+  signature_elements:
+    - "Five-arch stone bridge with cutwater piers and parapet refuges"
+    - "Market square with central fountain and guild arcade perimeter"
+    - "West-bank docks with cranes, bollards, and stepped quays"
+    - "Flood-mark stones on bridge returns showing centuries of river history"
+    - "Timber-frame buildings with slate roofs and iron strapwork"
+
+  materials:
+    primary: "Ancient cut stone in bridge piers and arches, weathered but serviceable"
+    secondary: "Granite and basalt cobbles at market, dressed stone in guild facades"
+    accent: "Timber wharf piles, tarred planks, iron bollards and crane hardware"
+    atmospheric: "River green water, morning mist, market awning colors"
+
+  color_anchors:
+    dominant: ["stone grey", "river green", "slate blue-black"]
+    accent: ["awning ochre/red", "tar brown", "torch gold at night"]
+    avoid: ["pristine/new appearance", "sterile cleanliness"]
+
+  characteristic_light:
+    primary: "River mist diffusing morning light at dawn"
+    secondary: "Harsh midday sun on cobblestones, softened by awnings"
+    quality: "Working light for commerce, moody for night operations"
+    mood_default: "Busy commercial daylight with shadowed undertones"
+
+# ============================================================================
+# OVERVIEW SHOT - Location Establishing Image
+# ============================================================================
+
+overview:
+  type: "establishing"
+  framing: "wide"
+  description: |
+    Stonebridge spreads across the Silver Rush—the ancient five-arch bridge
+    spanning the water as the town's spine, east-bank market square visible
+    beyond with its fountain and guild arcades, west-bank docks busy with
+    cranes and cargo. Cart traffic crosses the bridge. Stalls crowd the market.
+    The town thrums with commerce built on centuries of river trade.
+
+  key_elements:
+    - "Five-arch stone bridge spanning the Silver Rush"
+    - "East-bank market square with fountain visible"
+    - "West-bank docks with crane masts rising"
+    - "Cart and foot traffic on the bridge"
+    - "Warehouse rows beyond the quay"
+    - "Guild facades with slate roofs"
+
+  mood: "kinetic"
+  time_of_day: "midday"
+  weather: "clear"
+
+  camera:
+    angle: "elevated perspective showing river and both banks"
+    distance: "wide establishing"
+    focus: "comprehensive view of river crossing and commerce"
+
+  lighting:
+    primary_source: "Midday sun"
+    secondary_source: "River reflections"
+    quality: "Bright working light"
+    direction: "overhead"
+    color_temperature: "neutral daylight"
+    shadow_depth: "sharp under awnings and arches"
+    atmospheric: "clear, busy"
+
+  palette:
+    dominant: ["stone grey", "river green", "cobble brown"]
+    accent: ["awning colors", "crane timber", "cart movement"]
+    avoid: ["moody darkness", "atmospheric obscuring"]
+
+  technical:
+    aspect_ratio: "16:9"
+    focal_length: "wide angle for scope"
+    depth_of_field: "deep, all elements sharp"
+
+# ============================================================================
+# ZONES - Distinct Areas Within the Location
+# ============================================================================
+
+zones:
+  # --------------------------------------------------------------------------
+  # THE BRIDGE
+  # --------------------------------------------------------------------------
+
+  - zone_id: "five-arch-bridge"
+    zone_name: "The Stone Bridge (Five Arches)"
+    zone_type: "heart"
+
+    description: |
+      The five-arch stone bridge is Stonebridge's defining feature—ancient masonry
+      spanning the Silver Rush with semi-circular arches, upstream cutwaters on each
+      pier, and parapet walls with pedestrian refuges every sixty feet. The roadway
+      is twenty-two feet wide, enough for two carts to pass with pedestrian squeeze.
+      Flood-mark stones on the parapet returns record centuries of spring rises.
+
+    key_elements:
+      - "Five semi-circular arches, 45-55 ft spans"
+      - "Cut-stone voussoirs with tight lime joints"
+      - "Parapet walls with pedestrian refuges"
+      - "Flood-mark stones on returns"
+      - "Cambered roadway with drainage scuppers"
+      - "Iron mooring rings near abutments"
+
+    mood: "kinetic"
+    time_of_day: "midday"
+
+    lighting:
+      primary_source: "Overhead sun"
+      secondary_source: "River reflections under arches"
+      quality: "Bright on deck, shadowed under arches"
+      color_temperature: "neutral daylight"
+
+    palette:
+      dominant: ["weathered stone grey", "river green glimpse", "cart brown"]
+      accent: ["iron hardware", "parapet shadows"]
+
+    camera:
+      angle: "from bridge approach, arches visible"
+      framing: "bridge length emphasized"
+      focus: "ancient construction, constant use"
+
+  - zone_id: "keystone"
+    zone_name: "The Runic Keystone"
+    zone_type: "detail"
+
+    description: |
+      At the crown of the central arch, a carved keystone bears weathered
+      runes—ancient markings from the bridge's original construction, their
+      meaning debated by scholars. The carving is worn but visible, speaking
+      to the bridge's age and the forgotten craftsmen who built it.
+
+    key_elements:
+      - "Carved keystone at central arch"
+      - "Weathered runes in ancient script"
+      - "Worn but visible carvings"
+      - "Centuries of weather erosion"
+
+    mood: "ethereal"
+    time_of_day: "afternoon light"
+
+    lighting:
+      primary_source: "Raking afternoon light catching carved relief"
+      quality: "Revealing texture and depth"
+
+    palette:
+      dominant: ["weathered stone", "shadow in carving depths"]
+
+  - zone_id: "bridge-perspective"
+    zone_name: "View from Bridge Midspan"
+    zone_type: "perspective"
+
+    description: |
+      From the bridge's crown at midspan, both banks spread visible—east-bank
+      market and guild halls rising behind the bridgehead, west-bank docks with
+      their crane masts and warehouse rows. The river flows beneath, constant
+      and green. The parapet provides vantage while traffic flows around.
+
+    key_elements:
+      - "Dual-bank panorama"
+      - "River flowing beneath"
+      - "Traffic flowing around observer"
+      - "Parapet as vantage rail"
+      - "Town spreading on both sides"
+
+    mood: "kinetic"
+    time_of_day: "midday"
+
+    lighting:
+      primary_source: "Open sky overhead"
+      quality: "Clear panoramic light"
+
+    palette:
+      dominant: ["river green", "stone banks", "building facades"]
+
+  - zone_id: "under-arch"
+    zone_name: "Under the Arch"
+    zone_type: "liminal"
+
+    description: |
+      Beneath the bridge arches, the world changes—hollow echo replacing
+      market babble, river rush amplified, damp stone smell. Boats pass
+      through the central channel. The massive piers show their true scale
+      from water level. This is a perspective travelers rarely see.
+
+    key_elements:
+      - "Arch curve overhead"
+      - "River flowing through"
+      - "Pier mass visible"
+      - "Hollow acoustic"
+      - "Damp stone smell"
+
+    mood: "ethereal"
+    time_of_day: "variable"
+
+    lighting:
+      primary_source: "Reflected light from water"
+      secondary_source: "Arch opening to sky"
+      quality: "Cool, shadowed, amplified reflections"
+      color_temperature: "cool blue-green from water"
+
+    palette:
+      dominant: ["shadowed stone", "water green", "arch silhouette"]
+
+  - zone_id: "bridge-night"
+    zone_name: "The Bridge at Night"
+    zone_type: "temporal"
+
+    description: |
+      At night, the bridge transforms—torch posts casting pools of light along
+      the parapet, guards at bridgeheads controlling flow, the river black
+      beneath. During incidents, crossbars narrow passage to single lanes.
+      The bridge becomes a controlled threshold between town halves.
+
+    key_elements:
+      - "Torch posts along parapets"
+      - "Guard posts at bridgeheads"
+      - "Dark river beneath"
+      - "Controlled passage"
+      - "Crossbars for crowd control"
+
+    mood: "ominous"
+    time_of_day: "night"
+
+    lighting:
+      primary_source: "Torch posts at intervals"
+      secondary_source: "Bridgehead guard lamps"
+      quality: "Pools of light, darkness between"
+      color_temperature: "warm torch amber"
+      shadow_depth: "deep between light sources"
+
+    palette:
+      dominant: ["torch amber", "night black", "stone silhouette"]
+      accent: ["guard uniforms", "water glint"]
+
+  - zone_id: "bridgeheads"
+    zone_name: "Bridgehead Guard Posts"
+    zone_type: "threshold"
+
+    description: |
+      Guard posts at both bridgeheads control the flow—crossbar stores ready
+      for crowd control, toll niches (when enforced), and watchful guards
+      monitoring traffic. The transition from bridge to town is managed here,
+      the threshold between crossing and arriving.
+
+    key_elements:
+      - "Guard post structures"
+      - "Crossbar stores"
+      - "Toll niche (when active)"
+      - "Traffic monitoring"
+      - "Transition point"
+
+    mood: "quotidian"
+    time_of_day: "variable"
+
+    lighting:
+      primary_source: "Natural daylight or guard lamps"
+      quality: "Functional, observation-focused"
+
+    palette:
+      dominant: ["guard post stone", "barrier timber", "uniform colors"]
+
+  - zone_id: "toll"
+    zone_name: "The Toll Station"
+    zone_type: "detail"
+
+    description: |
+      When tolls are enforced, a niche at the bridgehead serves collection—
+      a clerk with ledger, guard backing, coins changing hands. The toll
+      station captures the bureaucracy of commerce, the checkpoint where
+      honest trade meets official extraction.
+
+    key_elements:
+      - "Toll niche in bridgehead"
+      - "Clerk with ledger"
+      - "Guard presence"
+      - "Queue of carts"
+      - "Coins and paperwork"
+
+    mood: "quotidian"
+    time_of_day: "day"
+
+    lighting:
+      primary_source: "Daylight on toll point"
+      quality: "Working light for counting"
+
+    palette:
+      dominant: ["clerk browns", "ledger cream", "coin gleam"]
+
+  # --------------------------------------------------------------------------
+  # MARKET SQUARE (EAST BANK)
+  # --------------------------------------------------------------------------
+
+  - zone_id: "market-square"
+    zone_name: "Market Square and Central Fountain"
+    zone_type: "heart"
+
+    description: |
+      The market square sprawls from the east bridgehead—160 by 110 feet of
+      granite cobbles, stalls radiating from the central fountain, guild arcades
+      framing the perimeter. The fountain cistern is eighteen feet across with
+      carved spill-lips. Awnings splash color. Hawkers call. Commerce flows
+      in every direction.
+
+    key_elements:
+      - "Granite/basalt cobble paving"
+      - "Central fountain with carved cistern"
+      - "Stall rows radiating outward"
+      - "Guild arcades at perimeter"
+      - "Awnings and rigging points"
+      - "Shade trees in corners"
+
+    mood: "kinetic"
+    time_of_day: "midday market peak"
+
+    lighting:
+      primary_source: "Full daylight"
+      secondary_source: "Awning-dappled shade"
+      quality: "Bright with color variation"
+      color_temperature: "warm midday"
+      shadow_depth: "sharp under awnings"
+
+    palette:
+      dominant: ["cobble grey", "awning ochre/red", "fountain stone"]
+      accent: ["goods colors", "food colors", "fabric bolts"]
+
+    camera:
+      angle: "elevated to show square layout"
+      framing: "fountain as center, stalls spreading"
+
+    narrative_moment: |
+      Here the Company gathers intelligence through commerce—a spice merchant
+      with knowing eyes, a dockworker's warning about asking questions, the
+      texture of a town where corruption has deep roots.
+
+  - zone_id: "market-rain"
+    zone_name: "Market Square in Rain"
+    zone_type: "temporal"
+
+    description: |
+      When rain comes, the market transforms—awnings extended or furled,
+      cobbles slick and streaming, customers clustering under arcades,
+      fountain spray mixing with falling water. The commerce doesn't stop
+      but contracts, retreating to shelter while goods stay covered.
+
+    key_elements:
+      - "Rain on cobbles"
+      - "Extended awnings"
+      - "Customers under arcades"
+      - "Fountain in rain"
+      - "Contracted but continuing commerce"
+
+    mood: "somber"
+    time_of_day: "rainy"
+
+    lighting:
+      primary_source: "Overcast rain light"
+      quality: "Flat, wet, reflective"
+      color_temperature: "cool grey"
+
+    palette:
+      dominant: ["wet cobble gleam", "rain grey", "arcade shadow"]
+      accent: ["awning colors muted", "puddle reflections"]
+
+  - zone_id: "guild-arcades"
+    zone_name: "Guild Hall Row and Arcades"
+    zone_type: "commons"
+
+    description: |
+      Guild halls line the market's perimeter—dressed stone facades with
+      slate roofs, arcaded frontages providing shelter for transactions.
+      Posting boards display notices. Permanent scales stand for official
+      weighing. The arcades are where commerce meets bureaucracy, where
+      deals are struck in shade.
+
+    key_elements:
+      - "Dressed stone guild facades"
+      - "Slate roofing"
+      - "Arcaded transaction space"
+      - "Posting boards with notices"
+      - "Scales and inspection areas"
+      - "Awning rigging points"
+
+    mood: "quotidian"
+    time_of_day: "day"
+
+    lighting:
+      primary_source: "Arcade-filtered daylight"
+      secondary_source: "Market brightness beyond"
+      quality: "Sheltered, transaction-friendly"
+
+    palette:
+      dominant: ["arcade stone", "slate shadow", "posting paper cream"]
+      accent: ["guild banner colors", "scale brass"]
+
+  # --------------------------------------------------------------------------
+  # DOCKS (WEST BANK)
+  # --------------------------------------------------------------------------
+
+  - zone_id: "docks-and-quay"
+    zone_name: "Docks, Quays, and Warehouse Front"
+    zone_type: "works"
+
+    description: |
+      The west-bank docks stretch 320 feet of working waterfront—stepped quays
+      for different water levels, bollards at regular intervals, cranes at
+      corners, warehouse rows behind. This is where river commerce meets
+      land transport, where cargo changes hands and secrets hide in numbered
+      bay doors.
+
+    key_elements:
+      - "Stepped quay levels (upper dry goods, lower waterline)"
+      - "Bollards at 25-30 ft intervals"
+      - "Capstan posts and crane masts"
+      - "Strap-rail spurs for cargo sleds"
+      - "Warehouse bay doors numbered"
+      - "Firebreak alleys between rows"
+
+    mood: "kinetic"
+    time_of_day: "working hours"
+
+    lighting:
+      primary_source: "Full daylight on quay"
+      secondary_source: "Warehouse shadow beyond"
+      quality: "Working light, functional"
+
+    palette:
+      dominant: ["timber quay brown", "crane mast grey", "warehouse weathering"]
+      accent: ["cargo colors", "rope hemp", "tar stains"]
+
+    camera:
+      angle: "quay-level showing activity"
+      framing: "work in progress, cranes operating"
+
+  - zone_id: "docks"
+    zone_name: "West Bank Docks and Quay"
+    zone_type: "works"
+
+    description: |
+      The docks at water level—timber piles with stone facings, flood ladders
+      bolted into quaystone, boats moored and being loaded/unloaded. The smell
+      of tar and river water, the sounds of chain and rope, the constant
+      movement of cargo.
+
+    key_elements:
+      - "Timber pile construction"
+      - "Stone facing walls"
+      - "Flood ladders"
+      - "Moored boats"
+      - "Loading/unloading in progress"
+      - "Tar kettles at set pads"
+
+    mood: "kinetic"
+    time_of_day: "working hours"
+
+    lighting:
+      primary_source: "Daylight on water and quay"
+      quality: "Glaring off water, shadowed at walls"
+
+    palette:
+      dominant: ["water green", "tar brown", "rope hemp"]
+      accent: ["boat colors", "cargo variety"]
+
+  # --------------------------------------------------------------------------
+  # CIVIC AND LODGING
+  # --------------------------------------------------------------------------
+
+  - zone_id: "magistrates-office"
+    zone_name: "Magistrate's Office"
+    zone_type: "cell"
+
+    description: |
+      Magistrate Vance's office is cramped with scrolls competing for space—
+      the working quarters of a man fighting losing battles against connected
+      corruption. Gray light through a small window. Ink stains on the desk.
+      The exhaustion of bureaucracy against power visible in every surface.
+
+    key_elements:
+      - "Cramped quarters, scroll-cluttered"
+      - "Small window, gray light"
+      - "Ink-stained desk"
+      - "Tired furniture"
+      - "Evidence of futile paperwork"
+
+    mood: "somber"
+    time_of_day: "gray office light"
+
+    lighting:
+      primary_source: "Small window"
+      quality: "Gray, cramped, frustrating"
+      color_temperature: "cool, dispiriting"
+
+    palette:
+      dominant: ["scroll cream", "ink black", "worn wood"]
+      accent: ["seal wax red", "tired fabric"]
+
+    narrative_moment: |
+      Here Magistrate Vance speaks of knowing versus proving, of evidence
+      that tends to disappear, of the exhaustion that comes from fighting
+      losing battles. Here conscience finds cracks—a young clerk pressing
+      warehouse registry into Thorne's hands.
+
+    featured_in_chapters:
+      - "ch11-an-honest-coin"
+
+  - zone_id: "shepherds-rest"
+    zone_name: "The Shepherd's Rest Inn"
+    zone_type: "sanctuary"
+
+    description: |
+      One street off the market square, the Shepherd's Rest provides
+      unremarkable lodging for merchants and travelers. Timber frame on
+      stone plinth, slate roof, common room on the street front. The
+      kind of establishment nobody remembers—perfect for those who
+      need to plan and depart without notice.
+
+    key_elements:
+      - "Two-storey timber frame with dormers"
+      - "Slate roof, stone plinth"
+      - "Common room frontage"
+      - "Lantern post at corner"
+      - "Painted signboard"
+      - "Service courtyard behind"
+
+    mood: "quotidian"
+    time_of_day: "variable"
+
+    lighting:
+      primary_source: "Street daylight or interior lamps"
+      quality: "Unremarkable, adequate"
+
+    palette:
+      dominant: ["timber brown", "slate grey", "plaster cream"]
+      accent: ["signboard colors", "lantern amber"]
+
+  - zone_id: "inn-room"
+    zone_name: "Inn Room"
+    zone_type: "cell"
+
+    description: |
+      A room at the Shepherd's Rest—narrow bed, washstand, writing table,
+      hooks for clothes. The kind of room indistinguishable from any other,
+      perfect for anonymous occupation. Here the Company processes
+      complicated victories, weighing what they've gained against how
+      they've gained it.
+
+    key_elements:
+      - "Narrow bed with plain blanket"
+      - "Washstand with basin"
+      - "Writing table and chair"
+      - "Hooks for clothing"
+      - "Single window to street or courtyard"
+
+    mood: "intimate"
+    time_of_day: "pre-dawn"
+
+    lighting:
+      primary_source: "Dying hearth glow"
+      secondary_source: "Dawn bleeding through window"
+      quality: "Transitional, exhausted"
+      color_temperature: "hearth amber mixing with dawn grey"
+
+    palette:
+      dominant: ["hearth ember", "dawn bleed", "plain furnishings"]
+      accent: ["Bastion Lock dark metal", "contract papers"]
+
+    narrative_moment: |
+      Pre-dawn, the Bastion Lock on the table by the dying hearth. The
+      Company counts the cost of their complicated victory. "He played us,
+      but he delivered." Justice achieved through shadows.
+
+    featured_in_chapters:
+      - "ch11-an-honest-coin"
+
+  # --------------------------------------------------------------------------
+  # ARRIVAL AND PERSPECTIVE
+  # --------------------------------------------------------------------------
+
+  - zone_id: "arrival-beat"
+    zone_name: "Company Arrival at the Bridge"
+    zone_type: "beat"
+
+    description: |
+      The Company approaches Stonebridge from the Trade Way—the five-arch
+      bridge rising ahead, market bustle audible, a day's ride from the
+      Wayward Compass behind them. First impressions of the town that will
+      test their principles and prove their methods.
+
+    key_elements:
+      - "Bridge visible ahead"
+      - "Trade Way approach"
+      - "Market sounds carrying"
+      - "Company in travel posture"
+      - "First view of the town"
+
+    mood: "quotidian"
+    time_of_day: "midday arrival"
+
+    lighting:
+      primary_source: "Road daylight"
+      secondary_source: "Town detail ahead"
+      quality: "Travel light, approach perspective"
+
+    palette:
+      dominant: ["road dust", "bridge stone ahead", "travel wear"]
+
+    narrative_moment: |
+      Arrival at a town that will challenge them—corruption entrenched,
+      justice frustrated, the need for methods beyond law.
+
+# ============================================================================
+# BEAT IMAGES - Key Narrative Moments
+# ============================================================================
+
+beat_images:
+  - beat_id: "bone-tired-justice"
+    beat_name: "Bone-Tired Justice"
+    chapter_slug: "ch11-an-honest-coin"
+
+    description: |
+      Magistrate Vance surrounded by scrolls, exhaustion in every line of his
+      face—the kind of tiredness that comes from fighting losing battles.
+      "Knowing and proving are different beasts entirely." The system's failure
+      personified in one dedicated, defeated man.
+
+    key_elements:
+      - "Vance at crowded desk"
+      - "Scrolls competing for space"
+      - "Exhaustion visible"
+      - "Gray office light"
+      - "Bitter smile"
+
+    mood: "somber"
+
+    composition:
+      focal_point: "Vance's tired face"
+      framing: "Medium shot, desk clutter visible"
+      depth_layers:
+        - "Vance sharp"
+        - "Scroll clutter around"
+        - "Gray window behind"
+
+    lighting:
+      primary_source: "Small window, gray light"
+      quality: "Dispiriting, bureaucratic"
+      color_temperature: "cool grey"
+
+    palette:
+      dominant: ["scroll cream", "tired face tones", "grey light"]
+      accent: ["ink stains", "seal wax"]
+
+    emotional_beat: "The system fails when corruption is connected"
+
+  - beat_id: "clerks-conscience"
+    beat_name: "The Clerk's Conscience"
+    chapter_slug: "ch11-an-honest-coin"
+
+    description: |
+      In a shadow corridor, the young clerk presses rolled parchment into
+      Thorne's hand—ink-stained fingers trembling. "The law serves justice,
+      not the other way around. You said that." The warehouse registry, public
+      record, delivered by conscience finding cracks.
+
+    key_elements:
+      - "Ink-stained hands pressing parchment"
+      - "Shadow corridor"
+      - "Nervous glance"
+      - "Thorne's calloused hand receiving"
+      - "Immediate flight"
+
+    mood: "intimate"
+
+    composition:
+      focal_point: "Hands meeting, paper passing"
+      framing: "Close shot on the exchange"
+      depth_layers:
+        - "Hands and parchment sharp"
+        - "Corridor shadow around"
+        - "Escape route behind"
+
+    lighting:
+      primary_source: "Corridor shadow"
+      quality: "Furtive, concealing"
+      color_temperature: "cool shadow"
+
+    palette:
+      dominant: ["ink-stained fingers", "parchment cream", "shadow"]
+      accent: ["calloused palm", "nervous face glimpse"]
+
+    emotional_beat: "Conscience acts through small brave gestures"
+
+  - beat_id: "complicated-victory"
+    beat_name: "The Complicated Victory"
+    chapter_slug: "ch11-an-honest-coin"
+
+    description: |
+      Pre-dawn at the Shepherd's Rest, the Bastion Lock on the table by the
+      dying hearth. The Company gathered in thoughtful exhaustion, weighing
+      what they've gained. "He played us, but we walked out with what we
+      needed." Justice achieved through shadows, victory tangled in schemes.
+
+    key_elements:
+      - "Bastion Lock on table, dark metal"
+      - "Dying hearth glow"
+      - "Company gathered around"
+      - "Pre-dawn light through window"
+      - "Thoughtful exhaustion on faces"
+
+    mood: "somber"
+
+    composition:
+      focal_point: "Bastion Lock as center"
+      framing: "Medium-wide showing group and artifact"
+      depth_layers:
+        - "Lock sharp at center"
+        - "Company faces in hearth light"
+        - "Dawn through window behind"
+
+    lighting:
+      primary_source: "Dying hearth ember glow"
+      secondary_source: "Dawn bleeding through glass"
+      quality: "Transitional, exhausted"
+      color_temperature: "amber hearth, grey dawn mixing"
+
+    palette:
+      dominant: ["dark lock metal", "hearth amber", "dawn grey"]
+      accent: ["tired faces", "contract papers"]
+
+    emotional_beat: "Victory achieved through methods that leave questions"
+
+# ============================================================================
+# REFERENCES - Connections to Other Content
+# ============================================================================
+
+references:
+  chapter_visual_plans:
+    - chapter_slug: "ch11-an-honest-coin"
+      relationship: "primary setting for heist arc"
+      relevant_scenes:
+        - "Magistrate's desperate hope"
+        - "Clerk's conscience delivering registry"
+        - "Market intelligence gathering"
+        - "Evidence delivery by night"
+        - "Dawn departure with complicated victory"
+
+  character_portraits:
+    - character_slug: "veyra-thornwake"
+      relationship: "heist leader"
+      visual_notes: "Planning, executing, processing aftermath"
+
+    - character_slug: "thorne-brightward"
+      relationship: "point of contact with magistrate"
+      visual_notes: "Receiving clerk's gift, delivering evidence"
+
+    - character_slug: "magistrate-vance"
+      relationship: "local ally"
+      visual_notes: "Bone-tired, hopeful when evidence arrives"
+
+  related_locations:
+    - location_slug: "shepherds-rest-inn"
+      relationship: "detailed separately"
+      visual_connection: "Company lodging and aftermath processing"
+
+    - location_slug: "croft-warehouse"
+      relationship: "heist target"
+      visual_connection: "West-bank warehouses context"
+
+    - location_slug: "wayward-compass"
+      relationship: "previous stop"
+      visual_connection: "A day's ride behind"
+
+  thematic_connections:
+    - theme: "Justice beyond law"
+      visual_expression: "Exhausted magistrate, conscience clerk, shadow methods"
+
+    - theme: "Honest trade, shadowed dealing"
+      visual_expression: "Market bustle above, warehouse secrets below"
+
+    - theme: "Complicated victories"
+      visual_expression: "Bastion Lock by dying hearth, dawn questions"
+
+    - theme: "Ancient infrastructure"
+      visual_expression: "Five-arch bridge with flood marks, centuries of service"

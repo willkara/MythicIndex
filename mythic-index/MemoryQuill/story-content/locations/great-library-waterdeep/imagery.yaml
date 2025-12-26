@@ -1,0 +1,1131 @@
+# ============================================================================
+# THE GREAT LIBRARY OF WATERDEEP - LOCATION IMAGERY SPECIFICATION
+# ============================================================================
+# A civic-scale repository of knowledge where precision triumphs over power,
+# and where Lysander's brother is pulled from the darkness
+# ============================================================================
+
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "great-library-waterdeep"
+  location_name: "The Great Library of Waterdeep"
+  version: "1.0"
+  last_updated: "2025-12-26"
+  zones_defined: 20
+  chapters_featured:
+    - chapter: "ch23-the-library-rescue"
+      relevance: "Collapse rescue, Cassius found, Lysander's eyes, precision engineering"
+
+# ============================================================================
+# GENERATION DEFAULTS
+# ============================================================================
+generation_defaults:
+  provider: "workers-ai"
+  model: "flux-schnell"
+  quality: "high"
+  default_aspect_ratio: "16:9"
+  default_size: "1024x768"
+
+# ============================================================================
+# NARRATIVE SOUL - The Emotional Core
+# ============================================================================
+narrative_soul: |
+  The Great Library is knowledge made stone—ordered, catalogued, preserved against
+  time's entropy. Its grand reading hall breathes with the quiet industry of
+  scholars, its clerestory lanterns casting pools of working light across endless
+  desk fields. The architecture speaks of civic confidence: knowledge is power,
+  and power requires preservation.
+
+  But beneath the ordered calm lie the sub-archives, where ancient dust settles
+  on compact shelving and water damage whispers of vulnerability. When the floor
+  collapsed, swallowing scholars into darkness, the library revealed its other
+  nature: a trap of stone and silence where the weight of knowledge threatens
+  to crush those who seek it.
+
+  This is where Grimjaw proved that precision matters more than power. Where
+  Veyra confronted her canyon trauma and found Lysander's eyes looking back
+  from his brother's dust-covered face. Where Rill spoke to churning water
+  like an old friend, and the Company emerged into cheering daylight with
+  a stranger who was not a stranger at all.
+
+one_line_essence: "Where knowledge is preserved in stone and precision saves what power cannot"
+
+# ============================================================================
+# LOCATION VISUAL ANCHOR
+# ============================================================================
+location_visual_anchor:
+  signature_elements:
+    - "Grand reading hall with 12-meter ceiling and clerestory lanterns"
+    - "Ordered desk fields radiating from central nave"
+    - "Orthogonal stack aisles with rolling ladders on guide rails"
+    - "Roof lanterns casting pools of natural light through glare baffles"
+    - "Dual-chamber vestibule with pressure lock entry"
+    - "Thickened masonry vault core for restricted collections"
+    - "Sub-archives below grade with compact shelving grids"
+    - "Bronze and brass fittings throughout"
+
+  materials:
+    primary:
+      - "Dense dressed stone in ashlar tolerance"
+      - "Hardwood joists and laminated timber trusses"
+      - "Bronze and brass hardware and fittings"
+      - "Mineral plasters in muted neutrals"
+    secondary:
+      - "Clay and stone tile roofing"
+      - "Safety glazing in skylights and lanterns"
+      - "Oiled wood desk surfaces"
+      - "Quiet laminated flooring on isolators"
+    accent:
+      - "Natural light pools from clerestory"
+      - "Task lamp glow on desk surfaces"
+      - "Gilt lettering on section markers"
+      - "Verdigris on exterior bronze"
+
+  color_anchors:
+    dominant: ["stone neutral", "wood warm brown", "parchment cream", "shadow gray"]
+    accent: ["brass gleam", "natural light gold", "leather binding browns and greens"]
+    avoid: ["bright colors", "modern materials", "neon", "harsh artificial light"]
+
+  characteristic_light:
+    primary: "Clerestory and roof lantern daylight filtered through glare baffles"
+    secondary: "Task lamps creating pools of warm working light"
+    quality: "Layered, controlled, scholarly"
+    atmosphere: "Quiet industry, concentrated study"
+
+# ============================================================================
+# OVERVIEW - ESTABLISHING SHOT
+# ============================================================================
+overview:
+  slug: "great-library-waterdeep-overview"
+  name: "The Repository of Knowledge"
+  image_type: "establishing"
+  mood: "reverent"
+  narrative_context: |
+    The Great Library rises from its urban plaza as civic confidence made
+    architectural—a grand hall of learning with clerestory lanterns piercing
+    the roofline, flanked by lower research wings and perimeter stack
+    volumes. The dual-chamber vestibule controls entry while the ordered
+    interior promises infinite scholarship.
+  lighting:
+    primary_source: "afternoon daylight on dressed stone facade"
+    secondary_source: "clerestory glow visible through windows"
+    quality: "civic, imposing, welcoming"
+    direction: "front-lit exterior"
+    color_temperature: "warm stone colors"
+    shadow_depth: "moderate, architectural definition"
+    atmospheric: "urban scholarly atmosphere"
+  palette:
+    dominant: ["dressed stone gray-tan", "bronze entry fixtures", "plaza paving"]
+    accent: ["clerestory glass gleam", "entry canopy shadow", "wayfinding bollards"]
+    avoid: ["modern elements", "bright artificial colors"]
+  aspect_ratio: "16:9"
+  size: "1024x768"
+  prompt_used: |
+    Oil painting, fantasy illustration, wide establishing shot of a grand
+    civic library building in a fantasy city, central high-volume reading
+    hall visible through tall windows, clerestory lanterns piercing the
+    roofline, flanked by lower research wings, dressed stone facade in
+    ashlar tolerance, bronze entry fixtures with verdigris patina, dual
+    vestibule entry visible, public plaza with wayfinding bollards and
+    paved approaches, afternoon light warming the stone, the architecture
+    of civic confidence and knowledge preservation, heroic fantasy style,
+    painterly brushwork
+  negative_prompt: "cartoon, anime, photorealistic, modern elements, glass curtain walls, contemporary architecture, people, crowds"
+  references: []
+
+# ============================================================================
+# ZONES
+# ============================================================================
+zones:
+  # --------------------------------------------------------------------------
+  # EXTERIOR - The Plaza and Facade (Ch23 Featured)
+  # --------------------------------------------------------------------------
+  - slug: "exterior"
+    name: "Exterior"
+    zone_type: "threshold"
+    image_type: "zone"
+    mood: "reverent"
+    narrative_context: |
+      The library's public face—dressed stone facade, bronze entry fixtures,
+      and the plaza where the Company gathered during the rescue. After the
+      collapse, this became the staging ground for recovery operations, the
+      cheering crowds, and Veyra's hidden tears behind a pillar.
+    lighting:
+      primary_source: "daylight on stone facade"
+      secondary_source: "reflected plaza light"
+      quality: "civic, open"
+      direction: "front and side lit"
+      color_temperature: "warm stone tones"
+      shadow_depth: "moderate, architectural definition"
+      atmospheric: "urban public space"
+    palette:
+      dominant: ["dressed stone tan-gray", "plaza paving", "bronze fixtures"]
+      accent: ["verdigris on bronze", "bollard markers", "entry shadow"]
+      avoid: ["modern elements", "bright colors", "neon"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, the exterior plaza of a grand
+      civic library, dressed stone facade with tall windows, bronze entry
+      fixtures showing verdigris patina, wayfinding bollards on paved
+      plaza, entry canopy creating shadow, the facade reading as civic
+      confidence and scholarly purpose, afternoon light warming the stone,
+      heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, glass walls, contemporary, crowds, people"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # ENTRY-VESTIBULE - Pressure Lock
+  # --------------------------------------------------------------------------
+  - slug: "entry-vestibule"
+    name: "Entry Screening & Vestibule"
+    zone_type: "threshold"
+    image_type: "zone"
+    mood: "vigilant"
+    narrative_context: |
+      The dual-chamber vestibule controlling access—a pressure lock design
+      with brush seals, bag-check counters, and anti-tailgate stanchions.
+      Light baffles prevent direct UV into the reading hall while acoustic
+      panels absorb plaza noise.
+    lighting:
+      primary_source: "controlled entry lighting"
+      secondary_source: "plaza light filtered through outer doors"
+      quality: "transitional, controlled"
+      direction: "overhead and from doors"
+      color_temperature: "neutral, deliberately managed"
+      shadow_depth: "soft, no harsh contrasts"
+      atmospheric: "professional security"
+    palette:
+      dominant: ["stone vestibule walls", "bronze grille matting", "wood counters"]
+      accent: ["bag-check fixtures", "stanchion markers", "acoustic panel texture"]
+      avoid: ["bright colors", "casual atmosphere"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, the entry vestibule of a grand
+      library, dual-chamber design with inner and outer doors visible,
+      bag-check counters along sides, bronze grille matting on floor,
+      acoustic panels on ceiling absorbing sound, anti-tailgate stanchions
+      guiding flow, controlled lighting creating professional atmosphere,
+      the transition from public plaza to scholarly interior, heroic
+      fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, electronic security, turnstiles, people, queues"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # GRAND-READING-HALL - The Heart of Learning
+  # --------------------------------------------------------------------------
+  - slug: "grand-reading-hall"
+    name: "Grand Reading Hall"
+    zone_type: "heart"
+    image_type: "zone"
+    mood: "reverent"
+    narrative_context: |
+      The primary reading volume—42 meters long, 22 meters wide, with 12-meter
+      ceiling under lantern ridge. Column grids support timber/iron composite
+      trusses while clerestory bands and roof lanterns flood the space with
+      layered daylight. Some 260 seats at mixed desk types.
+    lighting:
+      primary_source: "clerestory and roof lanterns"
+      secondary_source: "task lamps at desk surfaces"
+      quality: "layered, scholarly, controlled"
+      direction: "overhead daylight with supplemental task lighting"
+      color_temperature: "natural daylight transitioning to warm task light"
+      shadow_depth: "soft, study-conducive"
+      atmospheric: "quiet industry"
+    palette:
+      dominant: ["wood desk surfaces oiled", "stone column warm gray", "parchment light"]
+      accent: ["brass task lamp gleam", "leather binding colors", "gilt section markers"]
+      avoid: ["harsh contrasts", "bright colors", "modern materials"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, interior of a grand library
+      reading hall with 12-meter ceiling, rows of reading desks arranged
+      in central nave, column grid supporting timber trusses, clerestory
+      windows and roof lanterns flooding space with layered daylight,
+      scholars' task lamps creating warm pools of light at desk surfaces,
+      reference counters along perimeter, the quiet industry of scholarship,
+      leather bindings and gilt section markers visible, heroic fantasy
+      style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, computers, fluorescent lights, people clearly visible"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # READING-HALL - Alternate View
+  # --------------------------------------------------------------------------
+  - slug: "reading-hall"
+    name: "Grand Reading Hall"
+    zone_type: "heart"
+    image_type: "perspective"
+    mood: "reverent"
+    narrative_context: |
+      An alternate perspective of the reading hall emphasizing the long
+      sightlines and regular desk field rhythms. The architecture creates
+      controlled zones—bright task areas versus calm perimeters.
+    lighting:
+      primary_source: "lantern light from above"
+      secondary_source: "perimeter ambient"
+      quality: "graduated from bright to dim"
+      direction: "overhead primary, graduated outward"
+      color_temperature: "warm reading light"
+      shadow_depth: "graduated zones"
+      atmospheric: "concentrated study"
+    palette:
+      dominant: ["desk wood warm", "stone column neutral", "floor wood polished"]
+      accent: ["lantern light pools", "book spines colored", "brass fixtures"]
+      avoid: ["harsh contrasts", "modern elements"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, long view down a grand library
+      reading hall, ordered desk fields creating rhythmic perspective,
+      roof lanterns casting pools of light along the central nave, column
+      grid receding into distance, reference counters along sides, the
+      architectural control of light and space, scholarly atmosphere of
+      quiet concentration, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, computers, fluorescent, people"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # READING-HALL-NIGHT - After Hours
+  # --------------------------------------------------------------------------
+  - slug: "reading-hall-night"
+    name: "Grand Reading Hall - Night"
+    zone_type: "heart"
+    image_type: "temporal"
+    mood: "ethereal"
+    narrative_context: |
+      The reading hall after dark—artificial lamps dominant, security
+      lighting at pathways, the space transformed into pools of warm
+      light amid darkness. Night staff patrol routes, air handlers in
+      maintenance mode.
+    lighting:
+      primary_source: "artificial lamps at select stations"
+      secondary_source: "security lighting along egress paths"
+      quality: "low-light, selected illumination"
+      direction: "downward from fixtures"
+      color_temperature: "warm artificial"
+      shadow_depth: "deep between light pools"
+      atmospheric: "after-hours quiet"
+    palette:
+      dominant: ["night shadow", "lamp pool warm", "desk silhouettes"]
+      accent: ["egress lighting strips", "brass fixture gleam"]
+      avoid: ["daylight colors", "bright overall lighting"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, grand library reading hall at
+      night, artificial lamps creating isolated pools of warm light at
+      selected desks, security lighting strips along egress paths, deep
+      shadows between the lit areas, column silhouettes receding into
+      darkness, the after-hours transformation of scholarly space, quiet
+      and still, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, daylight, people, bright overall lighting"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # GENERAL-STACKS - Open Access
+  # --------------------------------------------------------------------------
+  - slug: "general-stacks"
+    name: "General Stacks (Open Access)"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      The open access stacks—orthogonal aisles radiating from the hall,
+      shelves rising 2.3-3 meters with rolling ladders on guide rails.
+      Low-glare lighting shields, humidity-buffering finishes, and quiet
+      laminated floors support browsing and retrieval.
+    lighting:
+      primary_source: "aisle lighting with low-glare shields"
+      secondary_source: "ambient from adjacent hall"
+      quality: "even, task-oriented"
+      direction: "overhead in aisles"
+      color_temperature: "neutral to warm"
+      shadow_depth: "minimal between shelves"
+      atmospheric: "browsing, searching"
+    palette:
+      dominant: ["book spine colors varied", "shelf wood warm", "aisle floor quiet"]
+      accent: ["ladder rail gleam", "section markers gilt", "endcap seating"]
+      avoid: ["harsh overhead", "dramatic shadows"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, library stacks with orthogonal
+      aisles between tall shelving units, books in varied leather bindings
+      creating color rhythm, rolling ladder on guide rail against shelves,
+      low-glare lighting from above, quiet laminated flooring, endcap
+      reference niches with seating, the browsing atmosphere of accessible
+      knowledge, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, fluorescent, people browsing"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # RESEARCH-SCRIPTORIUM - Conservation Support
+  # --------------------------------------------------------------------------
+  - slug: "research-scriptorium"
+    name: "Research Rooms & Scriptorium"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "intimate"
+    narrative_context: |
+      The quiet belt flanking the stacks—module rooms with reserved benches,
+      negative-pressure hoods over solvents, filtered task lamps, and
+      gloveboxes for delicate repairs. Pass-through windows connect to
+      materials quarantine.
+    lighting:
+      primary_source: "filtered task lamps"
+      secondary_source: "hood illumination"
+      quality: "precise, controlled"
+      direction: "directed at work surfaces"
+      color_temperature: "cool for color accuracy"
+      shadow_depth: "minimal on work surfaces"
+      atmospheric: "conservation precision"
+    palette:
+      dominant: ["work surface neutral", "hood fixture metal", "document parchment"]
+      accent: ["solvent bottles colored", "glovebox glass", "tool organization"]
+      avoid: ["warm light", "casual atmosphere", "clutter"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, library conservation scriptorium
+      with work benches and filtered task lamps, negative-pressure hood
+      visible over solvent area, gloveboxes for delicate document repair,
+      locking flat files for maps and folios, pass-through window to
+      quarantine area, the precise atmosphere of archival conservation,
+      heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, computers, casual clutter, people"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # RESTRICTED-VAULT - Secured Core
+  # --------------------------------------------------------------------------
+  - slug: "restricted-vault"
+    name: "Restricted Stacks Vault"
+    zone_type: "sanctuary"
+    image_type: "zone"
+    mood: "reverent"
+    narrative_context: |
+      The secured core—thickened masonry shell, double-door airlock,
+      low-temperature low-UV lighting, and environmental control
+      redundancy. The innermost chamber holds the rarest materials
+      under curator-only access.
+    lighting:
+      primary_source: "low-temperature low-UV fixtures"
+      secondary_source: "observation window ambient"
+      quality: "conservation-appropriate, dim"
+      direction: "indirect to protect materials"
+      color_temperature: "cool, controlled spectrum"
+      shadow_depth: "soft, protective"
+      atmospheric: "protective reverence"
+    palette:
+      dominant: ["masonry shell gray", "vault door bronze", "dim interior"]
+      accent: ["observation window glass", "environmental control indicators", "rare bindings"]
+      avoid: ["bright light", "warm temperatures", "UV exposure"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, restricted library vault with
+      thickened masonry walls, heavy bronze double-door airlock entrance,
+      low dim lighting to protect rare materials, compact shelving units
+      holding priceless documents, observation window with shading visible,
+      environmental control panels on walls, the protective reverence of
+      archival preservation, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, bright lighting, open access, people"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # SUB-ARCHIVES - Below Grade (Ch23 Featured)
+  # --------------------------------------------------------------------------
+  - slug: "sub-archives"
+    name: "Sub-Archives (Below Grade)"
+    zone_type: "cell"
+    image_type: "zone"
+    mood: "ominous"
+    narrative_context: |
+      Two sublevels beneath the main building—compact shelving grids,
+      low-intensity task lights, stable cool microclimate. This is where
+      the collapse occurred, where Cassius was found protecting his
+      research with his own body, where water damage whispers of decades
+      of vulnerability.
+    lighting:
+      primary_source: "low-intensity task lights"
+      secondary_source: "emergency egress lighting"
+      quality: "minimal, preservation-focused"
+      direction: "overhead task-oriented"
+      color_temperature: "cool"
+      shadow_depth: "significant between aisles"
+      atmospheric: "cool, still, preservation"
+    palette:
+      dominant: ["compact shelving metal", "archive box neutral", "corridor gray"]
+      accent: ["task light pools", "floor egress markings", "desiccant bank indicators"]
+      avoid: ["warm tones", "bright lighting", "moisture"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, library sub-archives below grade,
+      compact shelving units in grid pattern, narrow corridors between
+      shelves, low-intensity task lights creating isolated pools of
+      illumination, floor markings for egress and load limits, cool stable
+      atmosphere of archival preservation, the weight of knowledge overhead,
+      heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, bright lighting, water, damage, people"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # SUB-ARCHIVES-NORMAL - Corridor View
+  # --------------------------------------------------------------------------
+  - slug: "sub-archives-normal"
+    name: "Sub-Archives Corridor"
+    zone_type: "liminal"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      The typical working state of the sub-archive corridors—compact
+      shelving operations, materials retrieval, staff moving carts
+      through narrow aisles. Before the collapse.
+    lighting:
+      primary_source: "corridor task lighting"
+      secondary_source: "stair core ambient"
+      quality: "working light, adequate"
+      direction: "overhead linear"
+      color_temperature: "cool neutral"
+      shadow_depth: "moderate in alcoves"
+      atmospheric: "archival work"
+    palette:
+      dominant: ["corridor wall neutral", "shelving metal gray", "cart wheels"]
+      accent: ["task light fixtures", "material box labels", "floor markings"]
+      avoid: ["damage", "water", "emergency conditions"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, library sub-archive corridor
+      in normal working state, compact shelving lining walls, narrow
+      aisle for cart passage, overhead task lighting adequate for
+      retrieval work, floor markings visible, the ordinary operation
+      of archival storage, cool stable environment, heroic fantasy
+      style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, damage, water, collapse, people"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # PIT-EDGE - Looking Down (Ch23 Featured)
+  # --------------------------------------------------------------------------
+  - slug: "pit-edge"
+    name: "Pit Edge"
+    zone_type: "threshold"
+    image_type: "beat"
+    mood: "ominous"
+    narrative_context: |
+      The ragged wound in the library floor—where the reading hall
+      collapsed into sub-archives. Dust spiraling upward, darkness
+      below, the smell of pulverized rock and ancient sealed spaces.
+      Where Veyra's canyon trauma activated and Grimjaw read the
+      collapse pattern.
+    lighting:
+      primary_source: "daylight from above"
+      secondary_source: "dust-scattered light"
+      quality: "dramatic, revealing damage"
+      direction: "from above into pit"
+      color_temperature: "natural daylight with dust diffusion"
+      shadow_depth: "deep into the pit"
+      atmospheric: "disaster site, assessment"
+    palette:
+      dominant: ["broken stone gray", "dust spiral tan", "darkness below"]
+      accent: ["exposed structural elements", "scattered debris", "lantern preparation"]
+      avoid: ["intact surfaces", "normal conditions"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, the edge of a collapse pit in
+      a library floor, ragged wound in stone and timber where reading
+      hall fell into sub-archives below, dust spiraling upward into
+      daylight from above, darkness visible in the depths, broken
+      structural elements exposed, scattered debris around the rim,
+      the disaster site awaiting rescue assessment, heroic fantasy
+      style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, intact floor, normal conditions, people, rescuers"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # DEBRIS-FIELD - The Descent (Ch23 Featured)
+  # --------------------------------------------------------------------------
+  - slug: "debris-field"
+    name: "Debris Field"
+    zone_type: "cell"
+    image_type: "beat"
+    mood: "ominous"
+    narrative_context: |
+      The narrow passage through collapsed rubble where Grimjaw found
+      the keystone—the one piece holding the whole thing up. Lanterns
+      in darkness, stone surgery, precision over power. This is where
+      expertise proved itself.
+    lighting:
+      primary_source: "lanterns held by rescue team"
+      secondary_source: "scattered daylight from above"
+      quality: "isolated pools in darkness"
+      direction: "hand-held, mobile"
+      color_temperature: "warm lantern against cold stone"
+      shadow_depth: "extreme, defining passage"
+      atmospheric: "rescue in progress"
+    palette:
+      dominant: ["rubble gray", "darkness black", "lantern warm"]
+      accent: ["keystone identified", "dust particles", "passage opening"]
+      avoid: ["bright overall lighting", "safe conditions"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a narrow passage through
+      collapsed rubble in library sub-archives, lantern light
+      illuminating carefully placed stones, the keystone visible
+      as an insignificant-looking block wedged deep in the pile,
+      darkness pressing from all sides, dust particles catching
+      the light, the moment before precision stone surgery, heroic
+      fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, flashlights, safe conditions, people clearly visible"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # FLOODED-CHAMBER - Water Crisis (Ch23 Featured)
+  # --------------------------------------------------------------------------
+  - slug: "flooded-chamber"
+    name: "Flooded Chamber"
+    zone_type: "cell"
+    image_type: "beat"
+    mood: "ethereal"
+    narrative_context: |
+      Where the burst fountain pipe filled the lower archives with
+      churning water. Magical fixtures arcing under wet conditions,
+      water threatening to drown everything. This is where Rill spoke
+      to the water like an old friend, calming it into purposeful
+      currents.
+    lighting:
+      primary_source: "lantern light on water surface"
+      secondary_source: "magical arcing creating flashes"
+      quality: "chaotic, water-reflected"
+      direction: "scattered by water surface"
+      color_temperature: "cold water with warm lantern"
+      shadow_depth: "distorted by water movement"
+      atmospheric: "crisis, magical intervention"
+    palette:
+      dominant: ["water churning dark", "stone wet black", "light reflection scattered"]
+      accent: ["magical arcing blue-white", "lantern warm", "water calming"]
+      avoid: ["calm water", "dry conditions"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, flooded chamber in library
+      sub-archives with churning water from burst pipe, magical
+      fixtures arcing blue-white under wet conditions, lantern light
+      scattering across agitated water surface, stone walls glistening
+      wet, the moment of crisis before water is calmed, heroic fantasy
+      style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, calm water, dry conditions, swimming pools, people"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # FLOOD-CRISIS - Sub-Archives Flooding
+  # --------------------------------------------------------------------------
+  - slug: "flood-crisis"
+    name: "Sub-Archives Flood Crisis"
+    zone_type: "cell"
+    image_type: "beat"
+    mood: "kinetic"
+    narrative_context: |
+      The ongoing flood from the burst fountain pipe threatening the
+      entire sub-archive collection. Water rising, materials at risk,
+      electrical systems compromised. The crisis that required Rill's
+      water magic to resolve.
+    lighting:
+      primary_source: "emergency lighting flickering"
+      secondary_source: "water-surface reflections"
+      quality: "chaotic, emergency conditions"
+      direction: "scattered and reflected"
+      color_temperature: "emergency red/orange mixed with cold"
+      shadow_depth: "distorted by water and flickering"
+      atmospheric: "emergency crisis"
+    palette:
+      dominant: ["water rising dark", "emergency light red-orange", "archive boxes floating"]
+      accent: ["electrical sparks", "water spray", "desperate action"]
+      avoid: ["calm conditions", "stable lighting"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, library sub-archives flooding
+      from burst pipe, water rising around compact shelving units,
+      archive boxes beginning to float, emergency lighting flickering
+      red-orange, electrical fixtures sparking overhead, the crisis
+      requiring immediate intervention, heroic fantasy style,
+      painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, calm conditions, stable lighting, people"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # MEDICAL-STATION - Triage Area (Ch23 Featured)
+  # --------------------------------------------------------------------------
+  - slug: "medical-station"
+    name: "Medical Station"
+    zone_type: "sanctuary"
+    image_type: "zone"
+    mood: "intimate"
+    narrative_context: |
+      The improvised triage area established in the plaza for collapse
+      victims. Where Aldwin worked his healing magic, where Cassius
+      was assessed after extraction, where the Company's care
+      manifested in practical action.
+    lighting:
+      primary_source: "afternoon daylight"
+      secondary_source: "canopy shadow for patient comfort"
+      quality: "open but sheltered"
+      direction: "natural daylight filtered"
+      color_temperature: "warm afternoon"
+      shadow_depth: "soft under canopy"
+      atmospheric: "urgent care, competence"
+    palette:
+      dominant: ["canvas canopy cream", "medical supplies white", "stone plaza"]
+      accent: ["healing light blue-white", "patient blankets", "water basins"]
+      avoid: ["gore", "panic", "chaos"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, improvised medical station
+      in library plaza after collapse rescue, canvas canopy providing
+      shade, medical supplies arranged on tables, water basins and
+      bandages ready, the organized competence of emergency care,
+      afternoon light filtering through canopy, heroic fantasy style,
+      painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, ambulances, modern medical equipment, gore, people"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # WATCH-CORDON - Crowd Control
+  # --------------------------------------------------------------------------
+  - slug: "watch-cordon"
+    name: "City Watch Cordon at Plaza"
+    zone_type: "perimeter"
+    image_type: "zone"
+    mood: "tense"
+    narrative_context: |
+      The City Watch perimeter controlling access to the disaster site.
+      Crowds held back, official access only, the controlled chaos of
+      emergency response overlaid on civic order.
+    lighting:
+      primary_source: "daylight on plaza"
+      secondary_source: "crowd and building shadows"
+      quality: "public, exposed"
+      direction: "overhead daylight"
+      color_temperature: "neutral daylight"
+      shadow_depth: "moderate, crowd creating"
+      atmospheric: "controlled emergency"
+    palette:
+      dominant: ["Watch uniform colors", "cordon markers", "plaza stone"]
+      accent: ["crowd colors varied", "official signage", "equipment staging"]
+      avoid: ["panic", "violence", "uncontrolled chaos"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, City Watch cordon at library
+      plaza disaster site, uniformed guards maintaining perimeter,
+      cordon markers and barriers controlling access, crowd held back
+      behind the line, official equipment staging area visible, the
+      controlled response to emergency overlaid on civic order, heroic
+      fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, police tape, contemporary uniforms, panic, violence"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # BREATHING-WALL - Engineering Danger
+  # --------------------------------------------------------------------------
+  - slug: "breathing-wall"
+    name: "The Breathing Wall"
+    zone_type: "cell"
+    image_type: "beat"
+    mood: "ominous"
+    narrative_context: |
+      The unstable wall section identified by engineers—stone that
+      shifts with each vibration, threatening further collapse. The
+      precision keystone manipulation used to settle debris and create
+      safe passage required understanding this threat.
+    lighting:
+      primary_source: "lantern held close"
+      secondary_source: "dust-scattered ambient"
+      quality: "diagnostic, revealing movement"
+      direction: "close inspection angle"
+      color_temperature: "warm lantern on cold stone"
+      shadow_depth: "showing crack patterns"
+      atmospheric: "danger assessment"
+    palette:
+      dominant: ["stone gray with stress cracks", "dust film", "shadow black"]
+      accent: ["lantern warm", "movement indicators", "fresh fracture lines"]
+      avoid: ["stable appearance", "safe conditions"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, an unstable stone wall in
+      collapsed library sub-archives, cracks visible in lantern light,
+      dust sifting from fresh fractures, the wall appearing to shift
+      slightly with each vibration, the engineering danger requiring
+      precision assessment, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, stable wall, safe conditions, people"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # ROOF-MAINTENANCE - Above the Knowledge
+  # --------------------------------------------------------------------------
+  - slug: "roof-maintenance"
+    name: "Roof Lanterns & Maintenance Walks"
+    zone_type: "overlook"
+    image_type: "zone"
+    mood: "vigilant"
+    narrative_context: |
+      The maintenance catwalks along the roof lantern system—non-slip
+      decking, tie-off points, weather stations and lightning protection.
+      Above the reading hall, responsible for the light that makes
+      scholarship possible.
+    lighting:
+      primary_source: "open sky daylight"
+      secondary_source: "lantern glass reflection"
+      quality: "bright, exposed"
+      direction: "overhead and reflected"
+      color_temperature: "natural daylight"
+      shadow_depth: "cast by parapet and equipment"
+      atmospheric: "maintenance, oversight"
+    palette:
+      dominant: ["roof tile clay", "lantern glass clear", "catwalk deck neutral"]
+      accent: ["tie-off points metal", "weather station equipment", "parapet rail"]
+      avoid: ["interior views", "enclosed space"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, library roof maintenance walk
+      along clerestory lanterns, non-slip catwalk decking between rows
+      of skylights, parapet rail providing safety, tie-off anchor points
+      visible, weather station equipment on mount, the working level
+      above the knowledge below, city visible beyond, heroic fantasy
+      style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, interior, reading hall below visible, people"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # SECURITY-CHOKEPOINTS - Control Points
+  # --------------------------------------------------------------------------
+  - slug: "security-chokepoints"
+    name: "Security Envelope & Chokepoints"
+    zone_type: "threshold"
+    image_type: "zone"
+    mood: "vigilant"
+    narrative_context: |
+      The controlled thresholds between access tiers—gatehouses, sally
+      corridors, observation niches. Each transition supervised, each
+      interface a moment of verification. The architecture of controlled
+      access.
+    lighting:
+      primary_source: "corridor lighting"
+      secondary_source: "sightline-optimized ambient"
+      quality: "clear for supervision"
+      direction: "overhead even distribution"
+      color_temperature: "neutral for observation"
+      shadow_depth: "minimal for security"
+      atmospheric: "controlled access"
+    palette:
+      dominant: ["corridor stone", "door frame bronze", "observation niche shadow"]
+      accent: ["lock hardware", "alarm pull", "staff post furniture"]
+      avoid: ["dark corners", "blind spots"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, library security chokepoint
+      with reinforced door frame, observation niche for staff supervision,
+      clear sightlines in both directions, mechanical locks visible on
+      door, alarm pull on wall, the architecture of controlled access
+      between library zones, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, electronic locks, cameras, guards"
+    references: []
+
+  # --------------------------------------------------------------------------
+  # SERVICE-QUARANTINE - Intake and Processing
+  # --------------------------------------------------------------------------
+  - slug: "service-quarantine"
+    name: "Service, Receiving & Quarantine"
+    zone_type: "works"
+    image_type: "zone"
+    mood: "quotidian"
+    narrative_context: |
+      The intake system for new materials—recessed delivery bay, washable
+      surfaces, insect traps, quarantine room for assessment. Where
+      knowledge enters the library before cataloging and shelving.
+    lighting:
+      primary_source: "working light in receiving"
+      secondary_source: "quarantine room task lighting"
+      quality: "inspection-appropriate"
+      direction: "overhead for inspection"
+      color_temperature: "neutral for assessment"
+      shadow_depth: "minimal for inspection"
+      atmospheric: "intake processing"
+    palette:
+      dominant: ["washable surface neutral", "cart metal", "receiving bay industrial"]
+      accent: ["insect trap markers", "PPE storage", "quarantine signage"]
+      avoid: ["finished presentation", "public areas"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, library service receiving area
+      with recessed delivery bay, roll-through cart corridor, washable
+      surfaces throughout, quarantine room visible through pass-through
+      window, insect traps mounted at entry points, the intake system
+      for new materials before cataloging, heroic fantasy style,
+      painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, loading docks, forklifts, people"
+    references: []
+
+# ============================================================================
+# BEAT IMAGES - Key Narrative Moments
+# ============================================================================
+beat_images:
+  # --------------------------------------------------------------------------
+  # LYSANDER'S EYES - The Recognition (Ch23 Hero)
+  # --------------------------------------------------------------------------
+  - slug: "beat-lysanders-eyes"
+    name: "Lysander's Eyes"
+    scene_id: "ch23-scene-cassius-found"
+    mood: "somber"
+    narrative_context: |
+      Cassius's dust-covered face as his eyes open in the sub-archive
+      darkness—and Veyra sees Lysander's jawline, Lysander's steady gaze.
+      Time fractures as the dead speak through the living. Her world
+      tilts sideways with recognition.
+    lighting:
+      primary_source: "lantern light on Cassius's face"
+      secondary_source: "ambient rescue light"
+      quality: "intimate, revelatory"
+      direction: "close and warm"
+      color_temperature: "warm lantern on cold dust"
+      shadow_depth: "darkness behind, face illuminated"
+      atmospheric: "recognition across death"
+    palette:
+      dominant: ["dust-covered skin", "lantern warm", "darkness behind"]
+      accent: ["Lysander's features visible", "scrolls scattered", "protective lean-to"]
+      avoid: ["bright lighting", "casual moment"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a dust-covered scholar's face
+      in lantern light as his eyes open in library sub-archive darkness,
+      the jawline and steady gaze recognizably familiar, scattered scrolls
+      around him, the lean-to of collapsed shelving he used for protection
+      visible, the moment of recognition that fractures time, heroic
+      fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, bright lighting, casual expression, other figures clearly visible"
+    references:
+      - type: "chapter_visual_plan"
+        chapter: "ch23-the-library-rescue"
+        purpose: "narrative context for Lysander's eyes recognition"
+
+  # --------------------------------------------------------------------------
+  # THE KEYSTONE - Precision Over Power (Ch23 Hero)
+  # --------------------------------------------------------------------------
+  - slug: "beat-the-keystone"
+    name: "The Keystone"
+    scene_id: "ch23-scene-keystone"
+    mood: "intimate"
+    narrative_context: |
+      Grimjaw pointing to an insignificant-looking block wedged deep in
+      the rubble pile—the keystone holding the whole collapse in precarious
+      balance. His calm certainty in the lantern light, the moment before
+      precision stone surgery: "Everyone thinks you solve a collapse by
+      moving the biggest rocks. Amateurs."
+    lighting:
+      primary_source: "lantern illuminating the keystone"
+      secondary_source: "ambient darkness"
+      quality: "focused, diagnostic"
+      direction: "directed at identified stone"
+      color_temperature: "warm lantern on cold stone"
+      shadow_depth: "extreme, pile-defined"
+      atmospheric: "expertise revealed"
+    palette:
+      dominant: ["rubble gray", "keystone identified", "lantern warm"]
+      accent: ["pointing hand", "debris texture", "darkness pressing"]
+      avoid: ["bright overall", "casual moment"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a dwarven engineer pointing to
+      an insignificant-looking stone block wedged in collapse rubble,
+      lantern light catching his expression of calm certainty, the
+      keystone identified in the chaos, darkness pressing from all
+      sides, the moment before precision stone surgery begins, heroic
+      fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, flashlight, bright lighting, other figures clearly visible"
+    references:
+      - type: "character_portrait"
+        slug: "grimjaw-ironbeard"
+        purpose: "accurate depiction of Grimjaw identifying the keystone"
+      - type: "chapter_visual_plan"
+        chapter: "ch23-the-library-rescue"
+        purpose: "narrative context for keystone moment"
+
+  # --------------------------------------------------------------------------
+  # CANYON ECHO - Trauma Triggered (Ch23)
+  # --------------------------------------------------------------------------
+  - slug: "beat-canyon-echo"
+    name: "Canyon Echo"
+    scene_id: "ch23-scene-veyra-trauma"
+    mood: "ominous"
+    narrative_context: |
+      Veyra's hand gripping her lantern at the pit's edge, metal biting
+      into palm, the smell of pulverized rock triggering her canyon
+      trauma. For a heartbeat she was back under the mountain's weight,
+      grounding herself through pain to stay in the present.
+    lighting:
+      primary_source: "pit darkness behind"
+      secondary_source: "lantern glow on hand"
+      quality: "contrast between darkness and light"
+      direction: "hand illuminated, darkness beyond"
+      color_temperature: "warm lantern against cold pit"
+      shadow_depth: "extreme, pit yawning"
+      atmospheric: "trauma surfacing"
+    palette:
+      dominant: ["darkness black", "lantern warm", "hand detail"]
+      accent: ["white knuckles", "metal biting", "pit edge stone"]
+      avoid: ["bright lighting", "calm expression"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, close detail of a scarred hand
+      gripping a lantern at the edge of a collapse pit, knuckles white
+      with tension, metal biting into palm, the darkness of the pit
+      yawning beyond, the moment between past trauma and present
+      mission, heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, flashlight, calm grip, full figure"
+    references:
+      - type: "character_portrait"
+        slug: "veyra-thornwake"
+        purpose: "accurate depiction of Veyra's trauma response"
+      - type: "chapter_visual_plan"
+        chapter: "ch23-the-library-rescue"
+        purpose: "narrative context for canyon echo moment"
+
+  # --------------------------------------------------------------------------
+  # INTO THE LIGHT - Emergence (Ch23 Hero)
+  # --------------------------------------------------------------------------
+  - slug: "beat-into-the-light"
+    name: "Into the Light"
+    scene_id: "ch23-scene-emergence"
+    mood: "celebratory"
+    narrative_context: |
+      The Company emerging from the pit into golden afternoon light,
+      dust-covered and triumphant, stretcher bearing Cassius, the crowd's
+      cheer crashing over them like a wave. Darkness overcome, mission
+      complete.
+    lighting:
+      primary_source: "golden afternoon daylight"
+      secondary_source: "contrast with pit darkness behind"
+      quality: "triumphant, revelatory"
+      direction: "from above and ahead"
+      color_temperature: "warm golden afternoon"
+      shadow_depth: "pit shadow behind, light washing forward"
+      atmospheric: "triumph, relief, celebration"
+    palette:
+      dominant: ["golden light", "dust-covered figures", "crowd colors beyond"]
+      accent: ["stretcher visible", "cheering faces suggested", "Company silhouettes"]
+      avoid: ["continued darkness", "somber tones"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, dust-covered rescue team
+      emerging from collapse pit into golden afternoon light, stretcher
+      with rescued scholar visible, the darkness of the pit behind giving
+      way to bright plaza light, crowd suggested beyond with cheering
+      energy, the moment of triumphant emergence, heroic fantasy style,
+      painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, continued darkness, failure, individual faces clear"
+    references:
+      - type: "chapter_visual_plan"
+        chapter: "ch23-the-library-rescue"
+        purpose: "narrative context for emergence triumph"
+
+  # --------------------------------------------------------------------------
+  # TEARS BEHIND THE PILLAR - Private Grief (Ch23)
+  # --------------------------------------------------------------------------
+  - slug: "beat-tears-behind-pillar"
+    name: "Tears Behind the Pillar"
+    scene_id: "ch23-scene-veyra-grief"
+    mood: "somber"
+    narrative_context: |
+      Veyra hidden behind a library pillar after the public triumph,
+      hand pressed over mouth to contain the sound, tears streaming
+      down dust-streaked face. Three silent shaking breaths. The
+      private cost of leadership, the grief released only out of sight.
+    lighting:
+      primary_source: "afternoon light beyond"
+      secondary_source: "pillar shadow concealing"
+      quality: "contrast between public light and private shadow"
+      direction: "side-lit by pillar"
+      color_temperature: "warm light, cold grief"
+      shadow_depth: "pillar creating concealment"
+      atmospheric: "private grief"
+    palette:
+      dominant: ["pillar shadow", "afternoon light beyond", "dust-streaked face"]
+      accent: ["tears", "hand over mouth", "dust on clothing"]
+      avoid: ["public visibility", "stoic expression"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a woman hidden behind a
+      library pillar, hand pressed over mouth, tears streaming down
+      dust-streaked face, afternoon light visible in the plaza beyond
+      but she is in shadow, the private moment after public triumph,
+      three silent shaking breaths, heroic fantasy style, painterly
+      brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, stoic expression, public visibility, other figures"
+    references:
+      - type: "character_portrait"
+        slug: "veyra-thornwake"
+        purpose: "accurate depiction of Veyra in private grief"
+      - type: "chapter_visual_plan"
+        chapter: "ch23-the-library-rescue"
+        purpose: "narrative context for tears behind pillar"
+
+  # --------------------------------------------------------------------------
+  # WATER SPEAKS - Rill's Communion (Ch23)
+  # --------------------------------------------------------------------------
+  - slug: "beat-water-speaks-library"
+    name: "Water Speaks"
+    scene_id: "ch23-scene-rill-water"
+    mood: "ethereal"
+    narrative_context: |
+      Rill's sea-glass hands extended toward the churning flood water,
+      speaking to it like an old friend rather than commanding. The
+      water settling into purposeful currents as she shows it where
+      it wants to flow. Gentle mastery through communion.
+    lighting:
+      primary_source: "magical light on water surface"
+      secondary_source: "lantern glow behind"
+      quality: "ethereal, water-reflected"
+      direction: "from water surface upward"
+      color_temperature: "cool water-magic with warm lantern"
+      shadow_depth: "water-distorted"
+      atmospheric: "communion with element"
+    palette:
+      dominant: ["water surface reflecting", "genasi skin blue-green", "magical light"]
+      accent: ["currents settling", "turquoise patterns in skin", "copper verdigris hair"]
+      avoid: ["violent water", "commanding posture"]
+    aspect_ratio: "16:9"
+    size: "1024x768"
+    prompt_used: |
+      Oil painting, fantasy illustration, a water genasi woman with
+      sea-glass translucent skin extending hands toward churning flood
+      water in a collapsed library chamber, the water beginning to
+      settle into purposeful currents as she speaks to it softly,
+      magical light flickering across the surface, turquoise currents
+      visible moving beneath her skin, gentle mastery through communion,
+      heroic fantasy style, painterly brushwork
+    negative_prompt: "cartoon, anime, photorealistic, modern elements, commanding posture, violent water, normal human"
+    references:
+      - type: "character_portrait"
+        slug: "rill-vossari"
+        purpose: "accurate depiction of Rill calming the flood"
+      - type: "chapter_visual_plan"
+        chapter: "ch23-the-library-rescue"
+        purpose: "narrative context for water communion"

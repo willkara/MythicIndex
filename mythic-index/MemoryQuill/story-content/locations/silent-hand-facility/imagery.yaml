@@ -1,0 +1,1252 @@
+# Silent Hand Facility - Location Imagery Specification
+# Generated for MythicIndex image generation system
+# "Where beauty hides barbarity, and water carries poison"
+
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "silent-hand-facility"
+  location_name: "Silent Hand Facility (Veridian Agronomics Research Center)"
+  version: "1.0"
+  last_updated: "2025-12-26"
+  generation_notes: |
+    A sprawling country estate that presents as a prestigious horticultural research center
+    while concealing a black-site prison for magical captives. Every element of beauty—
+    the glass rotunda, ornamental gardens, tranquil waterways—serves dual purposes of
+    control, surveillance, and suppression. The visual key is "the gilded cage": beauty
+    weaponized, nature perverted, institutions corrupted.
+
+generation_defaults:
+  provider: "google"
+  model: "imagen-3"
+  quality: "high"
+  aspect_ratio: "16:9"
+  style_preset: "location-exterior"
+
+# ============================================================================
+# NARRATIVE SOUL - The Essential Truth of This Place
+# ============================================================================
+
+narrative_soul: |
+  Veridian Agronomics presents an impeccable facade—a prestigious research center
+  cultivating rare orchids that require magical purity, justifying every security measure
+  and containment system. The manor is stately, the conservatory spectacular, the gardens
+  immaculate. Guests see cutting-edge environmental research. They don't see the sub-basement
+  cells, the suppression compounds flowing through the water system, the kill zones disguised
+  as ornamental gardens.
+
+  This is Korrath and Cid's work weaponized—water systems they engineered for purity now
+  deliver magical suppressants, architectural precision they created now channels prisoners
+  into controlled corridors. When the reconnaissance team observes from the rocky outcrop,
+  they see both the gilded surface and the iron beneath. When Rill's fingers touch the
+  corrupted water, she feels the violation of everything natural. When Lyra infiltrates
+  through deception, she turns the facility's human vulnerabilities back upon itself.
+
+one_line_essence: "A gilded cage where beauty hides barbarity"
+
+# ============================================================================
+# LOCATION VISUAL ANCHOR - Consistent Visual Identity
+# ============================================================================
+
+location_visual_anchor:
+  signature_elements:
+    - "100-foot glass rotunda conservatory, iron and copper framing catching light"
+    - "Three-storey stone manor with slate roof and brick chimneys"
+    - "Engineered waterways—streams, rills, weirs—threading through grounds"
+    - "Manicured gardens with hidden sightlines and kill zones"
+    - "Tudor-style gatehouse with 'agricultural inspection' cover"
+
+  materials:
+    primary: "Dressed stone walls with rubble core, prestigious and imposing"
+    secondary: "Glass and iron/copper conservatory framing, reflecting sky"
+    accent: "Slate roofing, copper flashings, wrought-iron fencing"
+    atmospheric: "Moving water everywhere—streams, fountains, culverts"
+
+  color_anchors:
+    dominant: ["stone grey", "glass green", "water blue"]
+    accent: ["copper oxidation", "slate purple-grey", "garden greens"]
+    avoid: ["overt prison colors", "visible security hardware", "industrial elements"]
+
+  characteristic_light:
+    primary: "Daylight filtered through conservatory glass, creating emerald glow"
+    secondary: "Lamplit manor windows at evening, warm against stone"
+    quality: "Prestigious, controlled, deceptively welcoming"
+    mood_default: "Seductive beauty masking institutional control"
+
+# ============================================================================
+# OVERVIEW SHOT - Location Establishing Image
+# ============================================================================
+
+overview:
+  type: "establishing"
+  framing: "wide"
+  description: |
+    The Silent Hand facility sprawls across a hidden valley, its buildings blending
+    seamlessly with the natural landscape. From the observation outcrop, the estate
+    reveals its scope—the three-storey stone manor commanding the grounds, the
+    spectacular glass rotunda of the conservatory catching afternoon light, formal
+    gardens descending toward a tranquil lake, twin streams converging at the heart
+    of the property. Guard towers are disguised as observation posts. The dock
+    appears recreational. Everything beautiful. Everything calculated.
+
+  key_elements:
+    - "Stone manor house, three storeys, slate roof with brick chimneys"
+    - "Glass rotunda conservatory, 100 feet diameter, glinting with copper/iron"
+    - "Formal gardens with geometric precision, hiding sightlines"
+    - "Lake with boathouse and hidden dock"
+    - "Streams converging near the manor core"
+    - "Distant gatehouse on the southern approach"
+
+  mood: "ominous"
+  time_of_day: "late afternoon"
+  weather: "clear with long shadows"
+
+  camera:
+    angle: "elevated perspective from rocky outcrop"
+    distance: "wide establishing shot showing full estate"
+    focus: "comprehensive view revealing layout"
+
+  lighting:
+    primary_source: "Late afternoon sun casting long shadows"
+    secondary_source: "Light reflecting off conservatory glass"
+    quality: "Golden hour light making everything beautiful"
+    direction: "low western sun"
+    color_temperature: "warm gold on stone, cool green through glass"
+    shadow_depth: "long shadows revealing contours"
+    atmospheric: "clear air, distant shimmer"
+
+  palette:
+    dominant: ["stone grey", "garden green", "glass emerald"]
+    accent: ["copper warmth", "lake blue", "slate purple"]
+    avoid: ["prison grey", "industrial textures", "visible security"]
+
+  technical:
+    aspect_ratio: "16:9"
+    focal_length: "wide angle to capture scope"
+    depth_of_field: "deep, everything sharp"
+
+# ============================================================================
+# ZONES - Distinct Areas Within the Location
+# ============================================================================
+
+zones:
+  # --------------------------------------------------------------------------
+  # PERIMETER AND APPROACH
+  # --------------------------------------------------------------------------
+
+  - zone_id: "observation-post"
+    zone_name: "Observation Post"
+    zone_type: "overlook"
+
+    description: |
+      A rocky outcrop on the valley rim provides the reconnaissance team's primary
+      observation position. From here, the facility spreads below like a map—every
+      building visible, every patrol route traceable. The team studies the gilded cage
+      from above, cataloging guard rotations, identifying the hidden dock, mapping
+      the kill zones disguised as ornamental gardens.
+
+    key_elements:
+      - "Rocky outcrop with natural concealment"
+      - "Facility spread across valley below"
+      - "Clear sightlines to all major buildings"
+      - "Team positioned for observation"
+      - "Late afternoon light revealing patterns"
+
+    mood: "ominous"
+    time_of_day: "late afternoon"
+
+    lighting:
+      primary_source: "Low sun from behind observers"
+      secondary_source: "Light reflecting off estate"
+      quality: "Clear observation conditions"
+      color_temperature: "golden hour warmth"
+      shadow_depth: "long shadows on valley floor"
+
+    palette:
+      dominant: ["rocky grey", "forest green", "distant estate tones"]
+      accent: ["observer clothing", "equipment leather"]
+      avoid: ["visible in silhouette", "exposed positions"]
+
+    camera:
+      angle: "over-shoulder of observers looking down"
+      framing: "facility visible in background"
+      focus: "split between watchers and target"
+
+    narrative_moment: |
+      This is where the target first becomes real—not intelligence reports but
+      physical reality spread before them. Veyra traces kill zones disguised as
+      gardens. The team absorbs the scale of what they're planning to breach.
+
+    featured_in_chapters:
+      - "ch28-the-road-north"
+      - "ch31-splintered-focus"
+
+  - zone_id: "perimeter"
+    zone_name: "Perimeter Approach"
+    zone_type: "liminal"
+
+    description: |
+      The facility's perimeter is a masterwork of deceptive defense—wrought-iron
+      'specimen fencing' concealing sensors, ornamental screens hiding cameras,
+      manicured hedges channeling any approach into killing fields. Under Rill's
+      magically enhanced mist, the infiltration team ghosts toward the walls,
+      fog clinging to the ground, footsteps muffled.
+
+    key_elements:
+      - "Wrought-iron decorative fencing (concealed sensors)"
+      - "Ornamental hedges and screening"
+      - "Ground-hugging mist obscuring movement"
+      - "Shadowed figures approaching"
+      - "Stone walls rising through fog"
+
+    mood: "ominous"
+    time_of_day: "night"
+
+    lighting:
+      primary_source: "Moonlight diffused through mist"
+      secondary_source: "Distant facility lamps"
+      quality: "Ethereal, ghostly, concealing"
+      color_temperature: "cool blue-white moonlight"
+      shadow_depth: "mist softens all shadows"
+      atmospheric: "mist as primary visual element"
+
+    palette:
+      dominant: ["silver mist", "moonlit stone", "shadow black"]
+      accent: ["distant warm lamp glow", "infiltrator silhouettes"]
+      avoid: ["clear visibility", "exposed figures"]
+
+    camera:
+      angle: "low, through mist"
+      framing: "figures emerging from fog"
+      focus: "soft, atmospheric"
+
+    narrative_moment: |
+      The mist-covered approach is where reconnaissance becomes infiltration.
+      Rill's magic conceals them. Every step forward is a step past no return.
+
+    featured_in_chapters:
+      - "ch28-the-road-north"
+
+  - zone_id: "northern-hunter-blinds"
+    zone_name: "Hunter's Blinds (Alpha & Beta)"
+    zone_type: "perimeter"
+
+    description: |
+      Concealed observation posts in the northern forest, disguised as wildlife
+      blinds. Timber-and-earth construction with stone-lined crawl cavities,
+      mirrored signal slits, and rope ladders into the canopy. They triangulate
+      the northern approach and main road views, watching for any approach through
+      the Thornwood.
+
+    key_elements:
+      - "Timber-and-earth camouflaged construction"
+      - "Elevated position with forest views"
+      - "Signal equipment disguised as hunting gear"
+      - "Rope ladders to canopy level"
+      - "Cache lockers for supplies"
+
+    mood: "tense"
+    time_of_day: "variable"
+
+    lighting:
+      primary_source: "Dappled forest light"
+      quality: "Broken, fragmented, concealing"
+
+    palette:
+      dominant: ["forest greens", "earth browns", "bark textures"]
+      accent: ["signal glass", "rope hemp"]
+
+    camera:
+      angle: "from forest floor looking up, or interior looking out"
+      framing: "camouflage emphasized"
+
+  - zone_id: "treeline"
+    zone_name: "Treeline Observation"
+    zone_type: "liminal"
+
+    description: |
+      The forest edge where the team observes gatehouse activity. Dense cover
+      provides concealment while gaps between trees allow clear sightlines to the
+      southern approach. Lyra watches from here as Captain Darius's stern face
+      softens at Poyra's touch—identifying the human vulnerability she'll exploit.
+
+    key_elements:
+      - "Forest edge with natural concealment"
+      - "Clear sightlines to gatehouse"
+      - "Observers in shadow"
+      - "Gatehouse lamplight visible below"
+      - "Evening transition lighting"
+
+    mood: "ominous"
+    time_of_day: "evening"
+
+    lighting:
+      primary_source: "Distant gatehouse lamps"
+      secondary_source: "Dying daylight behind"
+      quality: "Observers in shadow, targets illuminated"
+      color_temperature: "warm gatehouse glow against cool forest"
+
+    palette:
+      dominant: ["forest shadow", "distant warm light", "silhouette black"]
+      accent: ["Lyra's golden eyes catching light"]
+
+    narrative_moment: |
+      From this position, Lyra identifies love as vulnerability—watching the
+      captain's defenses crumble at his lover's touch. The operative's mind
+      calculates how to weaponize human connection.
+
+    featured_in_chapters:
+      - "ch31-splintered-focus"
+
+  # --------------------------------------------------------------------------
+  # GATEHOUSE AND ENTRANCE
+  # --------------------------------------------------------------------------
+
+  - zone_id: "gatehouse"
+    zone_name: "Gatehouse"
+    zone_type: "threshold"
+
+    description: |
+      The Tudor-style gatehouse presents as an agricultural inspection station—
+      vehicle barriers, manifest intake, badge issuance. Warm lamplight spills
+      from windows. Guards in research staff uniforms process visitors. The
+      cover is impeccable. When Lyra approaches speaking in Poyra's voice,
+      the calligraphic patterns on her throat pulse with the deception.
+
+    key_elements:
+      - "Tudor-style gatehouse architecture"
+      - "Vehicle barrier and inspection spur"
+      - "Warm lamplight through windows"
+      - "Guards in 'research staff' uniforms"
+      - "Manifest desk and badge station"
+
+    mood: "ominous"
+    time_of_day: "night"
+
+    lighting:
+      primary_source: "Interior lamplight spilling out"
+      secondary_source: "Exterior perimeter lights"
+      quality: "Warm interior, cold exterior"
+      color_temperature: "amber interior, blue-white exterior"
+      shadow_depth: "sharp at threshold"
+
+    palette:
+      dominant: ["warm amber lamplight", "cold night blue", "Tudor timber"]
+      accent: ["guard uniform green", "manifest paper cream"]
+
+    camera:
+      angle: "from approach, threshold visible"
+      framing: "gatehouse as portal between worlds"
+
+    narrative_moment: |
+      The gatehouse is where cover meets reality, where Lyra's gift proves itself.
+      Her throat patterns pulse as she speaks in a stolen voice, and the guard
+      never questions his lover's midnight visit.
+
+    featured_in_chapters:
+      - "ch31-splintered-focus"
+
+  - zone_id: "gatehouse-threshold"
+    zone_name: "Gatehouse and Arrival Court"
+    zone_type: "threshold"
+
+    description: |
+      Beyond the gatehouse, the arrival court opens to manicured grounds—gravel
+      drive curving toward the manor, ornamental plantings, the conservatory
+      visible in the distance. Everything designed to impress legitimate visitors
+      while channeling them along controlled paths.
+
+    key_elements:
+      - "Gravel arrival court"
+      - "Curved drive to manor"
+      - "Ornamental plantings"
+      - "Conservatory visible beyond"
+      - "Controlled pedestrian routes"
+
+    mood: "quotidian"
+    time_of_day: "afternoon"
+
+    lighting:
+      primary_source: "Full daylight"
+      quality: "Bright, welcoming, legitimate"
+      color_temperature: "neutral daylight"
+
+    palette:
+      dominant: ["gravel grey", "garden green", "manor stone"]
+      accent: ["flower colors", "conservatory glass"]
+
+  # --------------------------------------------------------------------------
+  # MANOR HOUSE
+  # --------------------------------------------------------------------------
+
+  - zone_id: "veridian-manor-public"
+    zone_name: "Veridian Manor (Public Floors)"
+    zone_type: "commons"
+
+    description: |
+      The manor's public floors maintain the research institution facade—grand
+      entrance hall with botanical displays, library/reading room with scholarly
+      atmosphere, staged laboratories with impressive equipment, conference rooms
+      for legitimate visitors. Staff move efficiently, researchers confer over
+      specimens. Nothing betrays the detention complex beneath.
+
+    key_elements:
+      - "Grand entrance hall with botanical displays"
+      - "Library with scholarly atmosphere"
+      - "Staged 'research' laboratories"
+      - "Conference rooms with professional décor"
+      - "Staff in research institution attire"
+
+    mood: "quotidian"
+    time_of_day: "afternoon"
+
+    lighting:
+      primary_source: "Large windows with scholarly light"
+      secondary_source: "Reading lamps and laboratory fixtures"
+      quality: "Bright, institutional, legitimate"
+      color_temperature: "neutral with warm accents"
+
+    palette:
+      dominant: ["wood paneling", "cream walls", "brass fixtures"]
+      accent: ["botanical specimen greens", "research equipment chrome"]
+      avoid: ["security hardware", "institutional coldness"]
+
+    camera:
+      angle: "visitor perspective moving through"
+      framing: "emphasis on legitimate facade"
+
+  # --------------------------------------------------------------------------
+  # GLASS CONSERVATORY
+  # --------------------------------------------------------------------------
+
+  - zone_id: "glass-conservatory"
+    zone_name: "Primary Research Conservatory (Glass Rotunda)"
+    zone_type: "heart"
+
+    description: |
+      The spectacular glass rotunda—100 feet in diameter, 40 feet to the apex—
+      is Veridian's crown jewel. Iron and copper framing holds thousands of glass
+      panels. Inside, staged garden beds display exotic specimens around a central
+      fountain (the suppression monitor). An observation gallery circles above.
+      What visitors don't know: garden-bed hatches conceal access to cells below.
+
+    key_elements:
+      - "100-foot diameter glass rotunda"
+      - "Iron and copper framing, green with oxidation"
+      - "Staged garden beds with exotic specimens"
+      - "Central fountain (suppression distribution)"
+      - "Upper observation gallery (guard catwalk)"
+      - "Clerestory vents for climate control"
+
+    mood: "ethereal"
+    time_of_day: "afternoon"
+
+    lighting:
+      primary_source: "Diffused daylight through glass"
+      secondary_source: "Central fountain reflections"
+      quality: "Emerald-filtered, greenhouse atmosphere"
+      color_temperature: "green-shifted from glass"
+      shadow_depth: "soft, filtered"
+      atmospheric: "humid, tropical feel"
+
+    palette:
+      dominant: ["glass emerald", "copper green", "botanical greens"]
+      accent: ["flower colors", "water reflections"]
+      avoid: ["visible security", "institutional elements"]
+
+    camera:
+      angle: "looking up at glass dome, or across garden beds"
+      framing: "emphasize spectacular architecture"
+      focus: "beauty masking purpose"
+
+    narrative_moment: |
+      The conservatory is the facility's masterpiece of deception—a place of
+      genuine beauty serving terrible purpose. The fountain distributes suppressants.
+      The garden beds hide cell access. The observation gallery lets guards watch
+      prisoners without being seen.
+
+  - zone_id: "conservatory-interior"
+    zone_name: "Glass Conservatory Interior"
+    zone_type: "sanctuary"
+
+    description: |
+      Within the conservatory, paths wind through garden sectors. Exotic plants
+      create privacy screens and sightline blocks. The humid air carries floral
+      scents and the mineral tang of the fountain. Climate arrays hum quietly.
+      Prisoners are brought here for 'exercise periods'—surrounded by beauty
+      while suppression compounds flow through every water feature.
+
+    key_elements:
+      - "Winding garden paths"
+      - "Exotic plant sectors"
+      - "Central fountain with mineral tang"
+      - "Climate control equipment"
+      - "Observation sightlines from above"
+
+    mood: "ethereal"
+    time_of_day: "afternoon"
+
+    lighting:
+      primary_source: "Glass-filtered daylight"
+      quality: "Soft, green, tropical"
+      atmospheric: "humid air visible in light beams"
+
+    palette:
+      dominant: ["botanical greens", "flower colors", "fountain water"]
+      accent: ["path gravel", "copper planters"]
+
+  - zone_id: "conservatory-evening"
+    zone_name: "Conservatory at Evening"
+    zone_type: "temporal"
+
+    description: |
+      At evening, the conservatory transforms. Interior lamps ignite, turning
+      the glass dome into a jewel visible across the valley. The copper and
+      iron framework becomes a dark lattice against glowing panels. The fountain
+      catches lamplight. From outside, it's spectacular. From inside, it's a
+      gilded cage growing darker by the hour.
+
+    key_elements:
+      - "Glass dome glowing from within"
+      - "Copper framework as dark lattice"
+      - "Interior lamps reflecting on glass"
+      - "Fountain catching golden light"
+      - "Transition from day to night"
+
+    mood: "ominous"
+    time_of_day: "evening transition"
+
+    lighting:
+      primary_source: "Interior lamps"
+      secondary_source: "Dying daylight outside"
+      quality: "Glowing from within"
+      color_temperature: "warm interior, cool exterior"
+
+    palette:
+      dominant: ["glowing amber", "dark framework silhouette", "twilight blue"]
+      accent: ["plant shadows", "fountain gleam"]
+
+  - zone_id: "exercise-period"
+    zone_name: "Garden Exercise Period"
+    zone_type: "inhabited"
+
+    description: |
+      During controlled 'exercise periods,' suppressed prisoners are brought
+      to the conservatory. They walk garden paths under watchful eyes from the
+      observation gallery, surrounded by beauty they cannot enjoy, breathing
+      humid air laced with the compounds that mute their magic. The gilded cage
+      in its purest form.
+
+    key_elements:
+      - "Prisoners in simple garments walking paths"
+      - "Guards visible on observation gallery above"
+      - "Beautiful garden setting"
+      - "Fountain spray catching light"
+      - "The contrast of beauty and captivity"
+
+    mood: "somber"
+    time_of_day: "afternoon"
+
+    lighting:
+      primary_source: "Glass-filtered daylight"
+      quality: "Soft, beautiful, ironic"
+
+    palette:
+      dominant: ["garden greens", "prisoner greys", "fountain blue"]
+      accent: ["guard uniform colors", "copper rails above"]
+
+    narrative_moment: |
+      This image captures the facility's cruelty—prisoners walking among flowers,
+      unable to appreciate beauty through the haze of suppression, watched from
+      above by guards on the observation ring.
+
+  # --------------------------------------------------------------------------
+  # WATER SYSTEMS
+  # --------------------------------------------------------------------------
+
+  - zone_id: "stream-confluence"
+    zone_name: "Stream Confluence and Grounds"
+    zone_type: "heart"
+
+    description: |
+      The two streams converge near the estate's core—a primary stream flowing
+      east-to-west, a secondary stream from the north. At their meeting, engineered
+      weirs and sluices control flow, distributing water throughout the property.
+      What appears as landscaping is precision infrastructure. When Rill touches
+      this water, she feels the corruption—sister-water carrying poison-song.
+
+    key_elements:
+      - "Two streams converging"
+      - "Engineered weirs and sluices (disguised as natural)"
+      - "Landscaped banks with ornamental plantings"
+      - "Water flow controlling equipment hidden"
+      - "The corruption invisible but present"
+
+    mood: "ominous"
+    time_of_day: "night"
+
+    lighting:
+      primary_source: "Moonlight on water"
+      secondary_source: "Distant facility lights"
+      quality: "Silver on black, water glinting"
+      color_temperature: "cool moonlight"
+
+    palette:
+      dominant: ["black water", "silver moonlight", "bank shadows"]
+      accent: ["Rill's sea-glass skin", "corrupted water shimmer"]
+
+    camera:
+      angle: "low, at water level"
+      framing: "stream confluence as focal point"
+      focus: "water surface detail"
+
+    narrative_moment: |
+      This is where Rill discovers the corruption—her webbed fingers touching
+      water that carries magical suppression, feeling the violation of everything
+      natural. The streams that should give life have been weaponized.
+
+    featured_in_chapters:
+      - "ch31-splintered-focus"
+
+  - zone_id: "confluence"
+    zone_name: "Stream Confluence"
+    zone_type: "sanctuary"
+
+    description: |
+      The confluence point at night becomes the stage for Rill's sacrifice.
+      Water rises from the bank to embrace the guard—not commanded but invited,
+      gentle hands that become a burial shroud. A single bubble carries his last
+      breath to the surface. The healer becomes killer. The water that poisoned
+      now kills directly.
+
+    key_elements:
+      - "Stream confluence at night"
+      - "Water rising with unnatural purpose"
+      - "Guard caught in the current"
+      - "Moonlight on churning surface"
+      - "Single bubble rising"
+
+    mood: "ominous"
+    time_of_day: "night"
+
+    lighting:
+      primary_source: "Moonlight on water"
+      quality: "Cold, silver, revealing"
+      color_temperature: "blue-white"
+
+    palette:
+      dominant: ["churning water", "moonlight silver", "shadow black"]
+      accent: ["Rill's storm-blue skin", "bubble gleam"]
+
+    narrative_moment: |
+      The confluence becomes the site of Rill's innocence lost—where she asks
+      water to take life for the first time, where the healer becomes killer,
+      where the mission extracts its terrible cost.
+
+    featured_in_chapters:
+      - "ch31-splintered-focus"
+
+  - zone_id: "water-treatment-complex"
+    zone_name: "Water Treatment Complex"
+    zone_type: "works"
+
+    description: |
+      The stone-clad treatment plant presents as environmental purity research.
+      A public tour corridor shows 'filtration exhibits.' Behind walls: suppression
+      compounding facilities, storage cisterns, injection manifolds, and the master
+      valve room that can isolate any section in 90 seconds. Korrath's precision
+      engineering serves terrible purpose.
+
+    key_elements:
+      - "Stone superstructure with industrial roofline"
+      - "Public tour corridor with 'research' exhibits"
+      - "Hidden cisterns and compounding facilities"
+      - "Pipes and valves visible through access points"
+      - "The smell of minerals and chemicals"
+
+    mood: "ominous"
+    time_of_day: "afternoon"
+
+    lighting:
+      primary_source: "Daylight through high windows"
+      secondary_source: "Industrial fixtures in work areas"
+      quality: "Clinical, functional"
+      color_temperature: "neutral to cool"
+
+    palette:
+      dominant: ["stone grey", "pipe bronze", "cistern blue"]
+      accent: ["valve wheel red", "chemical green"]
+
+  - zone_id: "valve-room"
+    zone_name: "Water Treatment Master Valve Room"
+    zone_type: "heart"
+
+    description: |
+      The nerve center of the suppression system. Banks of color-coded valve
+      wheels control flow to every section of the estate. Pressure gauges and
+      flow meters line the walls. A master cutoff can isolate any line in under
+      90 seconds. This is Korrath's engineering at its most precise—and its
+      most corrupted.
+
+    key_elements:
+      - "Banks of valve wheels, color-coded"
+      - "Pressure gauges and flow meters"
+      - "Master cutoff mechanisms"
+      - "Pipe manifolds covering walls"
+      - "Engineering diagrams posted"
+
+    mood: "ominous"
+    time_of_day: "artificial light"
+
+    lighting:
+      primary_source: "Industrial fixtures"
+      quality: "Harsh, functional"
+      color_temperature: "cool white"
+
+    palette:
+      dominant: ["iron grey", "copper pipes", "gauge brass"]
+      accent: ["valve wheel colors", "diagram ink"]
+
+    narrative_moment: |
+      The valve room represents the corrupted heart of the facility—Korrath's
+      engineering excellence serving evil. Every turn of these wheels delivers
+      suppression to prisoners. Every gauge measures suffering.
+
+  - zone_id: "waterworks"
+    zone_name: "Waterworks"
+    zone_type: "works"
+
+    description: |
+      The surface-level waterworks—weirs, sluices, distribution channels—thread
+      through the grounds like the facility's circulatory system. Disguised as
+      ornamental water features and irrigation infrastructure, they deliver
+      suppression compounds to every building. Rill traces these channels,
+      reading the corruption flowing through them.
+
+    key_elements:
+      - "Weirs and sluice gates"
+      - "Distribution channels"
+      - "Ornamental water features (functional)"
+      - "Irrigation infrastructure"
+      - "The constant sound of flowing water"
+
+    mood: "quotidian"
+    time_of_day: "afternoon"
+
+    lighting:
+      primary_source: "Daylight"
+      quality: "Clear, revealing water flow"
+
+    palette:
+      dominant: ["water blue-green", "stone grey", "plant green"]
+      accent: ["sluice gate iron", "foam white"]
+
+    featured_in_chapters:
+      - "ch31-splintered-focus"
+
+  # --------------------------------------------------------------------------
+  # UNDERGROUND AND DETENTION
+  # --------------------------------------------------------------------------
+
+  - zone_id: "sub-basement-detention"
+    zone_name: "Sub-Basement Detention Complex"
+    zone_type: "pit"
+
+    description: |
+      Below the manor lies the facility's true purpose—a hardened detention complex
+      with intake processing, primary and secondary holding blocks, interrogation
+      rooms, and 'conditioning' facilities. Pressure-rated doors and blast locks
+      segment the space. Emergency lamps in cages. The air tastes of metal and
+      suppression compounds. 14 or more cells hold magical captives.
+
+    key_elements:
+      - "Reinforced corridors with blast doors"
+      - "Cell blocks with heavy doors"
+      - "Emergency lighting in protective cages"
+      - "Processing and intake areas"
+      - "Medical/conditioning spaces"
+      - "Constant mechanical hum"
+
+    mood: "ominous"
+    time_of_day: "artificial light only"
+
+    lighting:
+      primary_source: "Emergency lamps and industrial fixtures"
+      secondary_source: "Cell illumination through doors"
+      quality: "Harsh, institutional, oppressive"
+      color_temperature: "cold white, occasional red emergency"
+      shadow_depth: "deep in corners and recesses"
+
+    palette:
+      dominant: ["concrete grey", "door steel", "lamp cold white"]
+      accent: ["emergency lamp red", "pipe rust"]
+      avoid: ["warmth", "comfort", "natural elements"]
+
+    camera:
+      angle: "corridor perspective, low and oppressive"
+      framing: "emphasize institutional control"
+
+    narrative_moment: |
+      This is what the gilded surface conceals—the prison where magical beings
+      are held, conditioned, processed. The contrast with the manor above makes
+      the horror more stark.
+
+  - zone_id: "detention-corridor"
+    zone_name: "Sub-Basement Detention Corridor"
+    zone_type: "liminal"
+
+    description: |
+      The corridors connecting detention cells are designed for control—blind
+      corners breaking sightlines, choke doors forcing single-file movement,
+      vision traps ensuring guards always have advantage. Color-coded stripes
+      on floors indicate routes. The air circulates with mechanical persistence.
+
+    key_elements:
+      - "Reinforced concrete corridors"
+      - "Blind corners and choke points"
+      - "Color-coded floor routing"
+      - "Heavy doors at intervals"
+      - "Emergency lamp stations"
+      - "Mechanical ventilation hum"
+
+    mood: "ominous"
+    time_of_day: "artificial light"
+
+    lighting:
+      primary_source: "Ceiling fixtures at intervals"
+      quality: "Harsh pools of light, dark between"
+
+    palette:
+      dominant: ["concrete grey", "floor stripe colors", "door steel"]
+
+  - zone_id: "tunnels"
+    zone_name: "Tunnels"
+    zone_type: "liminal"
+
+    description: |
+      Service tunnels connect the detention complex to the treatment plant,
+      boathouse, and carriage complex. Pressure-rated doors at nodes. Cable
+      trays and pipe runs along walls. Color-coded valve wheels at junctions.
+      These are routes for prisoner transfer, maintenance access, and emergency
+      egress—hidden arteries of the facility's true function.
+
+    key_elements:
+      - "Service tunnel construction"
+      - "Pipe runs and cable trays"
+      - "Pressure-rated doors"
+      - "Color-coded valve equipment"
+      - "Limited lighting"
+      - "Inspection plaquettes with ciphered codes"
+
+    mood: "ominous"
+    time_of_day: "artificial light"
+
+    lighting:
+      primary_source: "Sparse utility fixtures"
+      quality: "Dim, functional"
+      color_temperature: "cold"
+
+    palette:
+      dominant: ["tunnel grey", "pipe metal", "door steel"]
+      accent: ["valve colors", "code plaquettes"]
+
+    featured_in_chapters:
+      - "ch28-the-road-north"
+
+  - zone_id: "underground-spine"
+    zone_name: "Underground Utility Spine"
+    zone_type: "works"
+
+    description: |
+      The primary utility spine connects all underground facilities—a reinforced
+      gallery carrying pipes, cables, and the suppression distribution network.
+      Hatches provide access from above. Emergency tunnel west to boathouse.
+      The spine is the facility's hidden backbone, carrying water, power, and
+      prisoners between surface and depths.
+
+    key_elements:
+      - "Main utility gallery"
+      - "Pipe and cable infrastructure"
+      - "Access hatches to surface"
+      - "Emergency egress route"
+      - "Suppression distribution manifolds"
+
+    mood: "ominous"
+    time_of_day: "artificial light"
+
+    lighting:
+      primary_source: "Utility fixtures along ceiling"
+      quality: "Functional, revealing infrastructure"
+
+    palette:
+      dominant: ["gallery grey", "pipe bronze", "cable black"]
+
+  # --------------------------------------------------------------------------
+  # SUPPORT FACILITIES
+  # --------------------------------------------------------------------------
+
+  - zone_id: "boathouse-egress"
+    zone_name: "Boathouse and Lakeworks"
+    zone_type: "threshold"
+
+    description: |
+      The boathouse on the western lakeshore serves dual purposes—recreational
+      boat storage for the research center cover, and emergency egress for the
+      detention complex. A screened tunnel from the basement terminates in a
+      low-sill water gate. Underwater intakes disguised as 'water quality probes'
+      monitor for escape attempts.
+
+    key_elements:
+      - "Timber-frame boathouse with stone pier"
+      - "Boat storage and dock slips"
+      - "Screened egress tunnel terminus"
+      - "Underwater monitoring equipment"
+      - "Lake-monitor console"
+      - "Winch and equipment storage"
+
+    mood: "quotidian"
+    time_of_day: "afternoon"
+
+    lighting:
+      primary_source: "Daylight through open bays"
+      secondary_source: "Lake reflections"
+      quality: "Bright, recreational appearance"
+      color_temperature: "water-reflected blue"
+
+    palette:
+      dominant: ["timber brown", "lake blue", "stone grey"]
+      accent: ["boat colors", "equipment metal"]
+
+  # --------------------------------------------------------------------------
+  # PERSPECTIVE AND DETAIL SHOTS
+  # --------------------------------------------------------------------------
+
+  - zone_id: "blind-perspective"
+    zone_name: "Reconnaissance Perspective"
+    zone_type: "perspective"
+
+    description: |
+      The view from one of the hidden observation positions—hunter blind, treeline,
+      or rocky outcrop. The facility spread below, beautiful and terrible. The
+      team cataloging patrol patterns, identifying vulnerabilities, planning
+      infiltration. The reconnaissance that makes rescue possible.
+
+    key_elements:
+      - "Concealed observation position"
+      - "Facility visible below/beyond"
+      - "Team with observation equipment"
+      - "The act of watching"
+      - "Intelligence gathering"
+
+    mood: "tense"
+    time_of_day: "variable"
+
+    lighting:
+      primary_source: "Natural light appropriate to time"
+      quality: "Observers in shadow, target visible"
+
+    camera:
+      angle: "over-shoulder through concealment"
+      framing: "split between watcher and target"
+
+# ============================================================================
+# BEAT IMAGES - Key Narrative Moments
+# ============================================================================
+
+beat_images:
+  - beat_id: "target-revealed"
+    beat_name: "The Target Revealed"
+    chapter_slug: "ch28-the-road-north"
+
+    description: |
+      From the rocky outcrop, Veyra and her team see the Silent Hand facility
+      for the first time—a sprawling estate nestled in the hidden valley, its
+      buildings blending with the landscape, guard towers disguised as observation
+      posts, the lake with its hidden dock. The gilded cage revealed.
+
+    key_elements:
+      - "Rocky outcrop observation position"
+      - "Estate spread across valley below"
+      - "Manor, conservatory, lake visible"
+      - "Team absorbing the scope"
+      - "Late afternoon golden light"
+
+    mood: "ominous"
+
+    composition:
+      focal_point: "The facility spread below"
+      framing: "Wide shot from elevated position"
+      depth_layers:
+        - "Observers on outcrop, foreground"
+        - "Facility in middle ground"
+        - "Valley and forest background"
+
+    lighting:
+      primary_source: "Late afternoon sun behind observers"
+      quality: "Golden hour, long shadows"
+      color_temperature: "warm gold on stone, cool on water"
+      shadow_depth: "long shadows revealing contours"
+
+    palette:
+      dominant: ["rocky grey", "estate stone", "glass green"]
+      accent: ["water blue", "garden greens"]
+
+    emotional_beat: "The intelligence becomes reality—they see their target for the first time"
+
+  - beat_id: "mist-approach"
+    beat_name: "Ghosts in the Mist"
+    chapter_slug: "ch28-the-road-north"
+
+    description: |
+      Under cover of Rill's magically enhanced mist, the infiltration team
+      approaches the facility's perimeter. Fog clings to the ground, obscuring
+      movement, muffling footsteps. Shadowed figures ghost toward stone walls.
+      The professional approach to a place of horror.
+
+    key_elements:
+      - "Ground-hugging magical mist"
+      - "Shadowed figures moving through fog"
+      - "Facility walls rising ahead"
+      - "Moonlight diffused through mist"
+      - "The act of infiltration"
+
+    mood: "ominous"
+
+    composition:
+      focal_point: "Figures emerging from mist"
+      framing: "Wide shot, low angle through fog"
+      depth_layers:
+        - "Mist in foreground"
+        - "Infiltrators in mid-ground"
+        - "Walls looming behind"
+
+    lighting:
+      primary_source: "Moonlight diffused through mist"
+      secondary_source: "Distant perimeter lights"
+      quality: "Ethereal, ghostly, concealing"
+      color_temperature: "cool blue-white"
+      shadow_depth: "mist softens all edges"
+      atmospheric: "mist as primary element"
+
+    palette:
+      dominant: ["silver mist", "shadow black", "moonlit stone"]
+      accent: ["distant warm lamps"]
+
+    emotional_beat: "The threshold crossed—reconnaissance becomes infiltration"
+
+  - beat_id: "perfect-deception"
+    beat_name: "The Perfect Deception"
+    chapter_slug: "ch31-splintered-focus"
+
+    description: |
+      Lyra approaches the gatehouse speaking in Poyra's exact voice. The
+      calligraphic patterns on her dusky throat pulse with faint light as her
+      infernal gift produces perfect mimicry. "It's me... Poyra." The guard's
+      defenses crumble at his lover's voice. The Mockingbird proves her name.
+
+    key_elements:
+      - "Lyra at the gatehouse threshold"
+      - "Throat patterns pulsing with light"
+      - "Speaking in stolen voice"
+      - "Gatehouse lamplight on her face"
+      - "The act of deception"
+
+    mood: "ominous"
+
+    composition:
+      focal_point: "Lyra's throat with pulsing patterns"
+      framing: "Close shot on throat and lower face"
+      depth_layers:
+        - "Throat patterns sharp"
+        - "Face partially visible"
+        - "Gatehouse interior beyond"
+
+    lighting:
+      primary_source: "Gatehouse lamplight through crack"
+      secondary_source: "Throat patterns glowing"
+      quality: "Warm light on deception"
+      color_temperature: "amber gate light, calligraphic glow"
+
+    palette:
+      dominant: ["dusky skin", "amber lamplight", "pattern glow"]
+      accent: ["obsidian horn tips", "golden eye glint"]
+
+    emotional_beat: "Gift weaponized—the Mockingbird's signature ability in action"
+
+  - beat_id: "water-brother"
+    beat_name: "Water-Brother"
+    chapter_slug: "ch31-splintered-focus"
+
+    description: |
+      Water rises from the bank to embrace the guard—not commanded but invited,
+      flowing with the purposeful grace of a living thing protecting its kin.
+      The current wraps around his ankles like gentle but inexorable hands.
+      A single bubble carries his last breath to the surface. Rill's storm-blue
+      skin reflects the violence she has invited.
+
+    key_elements:
+      - "Water rising with unnatural purpose"
+      - "Guard caught in the current"
+      - "Rill watching, storm-blue skin"
+      - "Single bubble rising to surface"
+      - "Moonlight on churning water"
+
+    mood: "ominous"
+
+    composition:
+      focal_point: "Water embracing the guard"
+      framing: "Medium shot showing water's movement"
+      depth_layers:
+        - "Churning water in foreground"
+        - "Guard in mid-ground"
+        - "Rill's figure in background"
+
+    lighting:
+      primary_source: "Moonlight on water"
+      quality: "Cold, silver, revealing"
+      color_temperature: "blue-white"
+      shadow_depth: "water creates shifting shadows"
+
+    palette:
+      dominant: ["churning water", "moonlight silver", "Rill's storm-blue"]
+      accent: ["bubble gleam", "guard's uniform"]
+
+    emotional_beat: "Innocence sacrificed—the healer becomes killer to protect her team"
+
+  - beat_id: "ritual-atonement"
+    beat_name: "Ritual Atonement"
+    chapter_slug: "ch31-splintered-focus"
+
+    description: |
+      Rill's blood falls from her cut palm into the river. She speaks the ritual
+      words in Aquan. The water initially recoils, tiny waves rippling away from
+      the blood as if the river itself grieved. Then the current begins to pulse—
+      once, twice, three times—in the rhythm of a great heart beating. Blood for
+      blood. Balance restored.
+
+    key_elements:
+      - "Blood dispersing into water"
+      - "Rill's cut palm over the current"
+      - "Water rippling away then accepting"
+      - "Moonlight on ritual moment"
+      - "The pulsing current"
+
+    mood: "ethereal"
+
+    composition:
+      focal_point: "Blood meeting water"
+      framing: "Close shot on palm and water surface"
+      depth_layers:
+        - "Cut palm and falling blood"
+        - "Water surface receiving offering"
+        - "Current ripples spreading"
+
+    lighting:
+      primary_source: "Moonlight on water"
+      quality: "Silver, reverent"
+      color_temperature: "cool blue-white"
+
+    palette:
+      dominant: ["blood red", "water silver", "moonlight white"]
+      accent: ["Rill's sea-glass skin", "current patterns"]
+
+    emotional_beat: "Balance sought through sacrifice—druidic response to necessary violence"
+
+  - beat_id: "gilded-cage"
+    beat_name: "The Gilded Cage"
+    chapter_slug: "ch31-splintered-focus"
+
+    description: |
+      The conservatory at evening—glass dome glowing from within, copper framework
+      a dark lattice against the light. Beautiful from every angle. Inside,
+      suppressed prisoners walk garden paths, unable to appreciate beauty through
+      the haze of magical suppression, watched from the observation gallery above.
+      The facility's cruelty made architectural.
+
+    key_elements:
+      - "Glass conservatory glowing at evening"
+      - "Copper framework silhouette"
+      - "Interior glimpse of gardens"
+      - "Suggestion of prisoners within"
+      - "Guards on observation gallery"
+
+    mood: "somber"
+
+    composition:
+      focal_point: "Glowing conservatory"
+      framing: "External view with interior suggested"
+      depth_layers:
+        - "Exterior darkness"
+        - "Glass dome glowing"
+        - "Interior figures visible"
+
+    lighting:
+      primary_source: "Interior lamps through glass"
+      secondary_source: "Dying daylight"
+      quality: "Jewel-like glow against dusk"
+      color_temperature: "warm interior, cool exterior"
+
+    palette:
+      dominant: ["amber glow", "glass green", "dusk blue"]
+      accent: ["copper framework", "interior movement"]
+
+    emotional_beat: "Beauty weaponized—the visual metaphor of the gilded cage"
+
+# ============================================================================
+# REFERENCES - Connections to Other Content
+# ============================================================================
+
+references:
+  chapter_visual_plans:
+    - chapter_slug: "ch28-the-road-north"
+      relationship: "first reconnaissance and infiltration"
+      relevant_scenes:
+        - "Target revealed from observation outcrop"
+        - "Mist-covered approach to perimeter"
+        - "Lyra's infiltration through drainage grate"
+
+    - chapter_slug: "ch31-splintered-focus"
+      relationship: "deeper reconnaissance and Rill's sacrifice"
+      relevant_scenes:
+        - "Kill zone architecture analysis"
+        - "Lyra's perfect deception at gatehouse"
+        - "Rill discovering water corruption"
+        - "Water-Brother drowning"
+        - "Ritual atonement"
+
+  character_portraits:
+    - character_slug: "veyra-thornwake"
+      relationship: "reconnaissance team leader"
+      visual_notes: "Reading the kill zones, leading the approach"
+
+    - character_slug: "lyra-kestrel"
+      relationship: "infiltration specialist"
+      visual_notes: "Throat patterns pulsing, golden eyes calculating"
+
+    - character_slug: "rill-vossari"
+      relationship: "druid discovering corruption"
+      visual_notes: "Sea-glass skin, storm-blue in violence, ritual posture"
+
+  related_locations:
+    - location_slug: "thornwood-forest"
+      relationship: "approach route through"
+      visual_connection: "Forest providing concealment for reconnaissance"
+
+    - location_slug: "windborne-roost"
+      relationship: "waystation before approach"
+      visual_connection: "Where Rill first detected tainted water"
+
+  thematic_connections:
+    - theme: "The gilded cage"
+      visual_expression: "Beauty masking barbarity, glass and stone hiding prison"
+
+    - theme: "Corrupted institutions"
+      visual_expression: "Research center facade hiding detention complex"
+
+    - theme: "Water as medium"
+      visual_expression: "Streams carrying suppression, confluence as battleground"
+
+    - theme: "Necessary violence"
+      visual_expression: "Rill's sacrifice, blood for blood"
+
+    - theme: "Professional competence"
+      visual_expression: "Reconnaissance from concealment, careful infiltration"

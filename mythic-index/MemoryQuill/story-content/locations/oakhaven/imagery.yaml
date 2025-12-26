@@ -1,0 +1,704 @@
+# Oakhaven - Location Imagery Specification
+# Plague-stricken village where Aldwin Gentleheart performs mercy rituals
+# Featured in ch04: The Healer's Calling
+
+metadata:
+  entity_type: "location-imagery"
+  location_slug: "oakhaven"
+  location_name: "Oakhaven"
+  version: "2.0"
+  last_updated: "2025-12-26"
+  zone_count: 4
+
+generation_defaults:
+  provider: "workers-ai"
+  model: "stable-diffusion-xl"
+  quality: "high"
+  negative_prompts:
+    - "modern elements"
+    - "contemporary medicine"
+    - "hospital equipment"
+    - "photorealistic"
+    - "3D render"
+    - "anime style"
+    - "gore"
+    - "graphic death"
+    - "bright cheerful colors"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# NARRATIVE SOUL
+# ═══════════════════════════════════════════════════════════════════════════════
+
+narrative_soul: |
+  Oakhaven is a village frozen in plague-time—a place where death has become
+  organized, where care persists even in catastrophe. Behind the sharpened
+  stake barricade with its skull warning, neat rows of sheet-wrapped bodies
+  wait for burning, while windows marked with red X's show candle-glow from
+  the infected still living.
+
+  At its heart is the barn hospice where Aldwin Gentleheart performs his
+  sacred work—transforming death from defeat into peaceful passage. Here,
+  cots arranged with personal effects hold the dying, while lanterns on
+  rafters and the bronze brazier's glow create warmth against the gray
+  weight of plague.
+
+  This is not a place of horror but of dignity—where death is met with
+  care, where mercy is the deepest medicine. The visual language must
+  balance the weight of plague with the warmth of compassion, the gray
+  of death with the amber of mercy's ritual.
+
+one_line_essence: "A plague village where death is organized with dignity and mercy transforms passage."
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# LOCATION VISUAL ANCHOR
+# ═══════════════════════════════════════════════════════════════════════════════
+
+location_visual_anchor:
+  signature_elements:
+    - "Stake barricade with yellow flags and skull warning"
+    - "Neat rows of sheet-wrapped bodies"
+    - "Red X windows with candle-glow"
+    - "Barn hospice with lantern-lit rafters"
+    - "Bronze brazier's ceremonial glow"
+  materials:
+    primary: "rough timber, stained sheets, village stone"
+    secondary: "bronze ritual objects, herb smoke"
+    accent: "yellow warning flags, red X paint"
+  color_anchors:
+    dominant: ["plague gray", "sheet white", "timber brown"]
+    accent: ["brazier amber", "candle gold", "warning yellow"]
+    avoid: ["cheerful bright colors", "clinical white", "healthy green"]
+  characteristic_light:
+    primary: "twilight gray with lantern warmth pockets"
+    secondary: "brazier glow in hospice"
+    quality: "somber with compassionate warmth"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# OVERVIEW: ESTABLISHING SHOT
+# ═══════════════════════════════════════════════════════════════════════════════
+
+overview:
+  image_type: "establishing"
+  scene_mood: "somber"
+  description: "Oakhaven at twilight—the plague village behind its barricade"
+
+  composition:
+    foreground: "Stake barricade with yellow flags, skull sign"
+    midground: "Village streets, wrapped bodies visible, red X windows"
+    background: "Silent cottages, no chimney smoke despite cold"
+    focal_point: "The threshold between life and death—the barricade"
+    depth_cues: "Village receding into twilight, occasional window glow"
+
+  lighting:
+    primary_source: "Twilight sky—no warm sun"
+    secondary_source: "Candle-glow from red X windows"
+    quality: "gray, subdued, with warm pockets"
+    direction: "diffuse overhead"
+    color_temperature: "cold gray with isolated amber warmth"
+    shadow_depth: "long twilight shadows"
+    atmospheric: "stillness, silence made visible"
+
+  palette:
+    dominant: ["twilight gray", "village stone", "stake wood brown"]
+    accent: ["yellow warning", "red X", "window candle gold"]
+    avoid: ["bright tones", "healthy colors"]
+
+  key_elements:
+    - "Barricade as threshold"
+    - "Wrapped bodies in organized rows"
+    - "Red X windows glowing"
+    - "Silent chimneys—no smoke"
+    - "Order maintained in catastrophe"
+
+  style_notes: "Oil painting style, fantasy illustration. The mood is somber but not horrific—dignity in death, care maintained. Avoid gore or disturbing imagery; focus on the organized response to plague."
+
+  prompt_template: "Fantasy medieval plague village at twilight, stake barricade with yellow flags and skull warning sign, village streets behind with sheet-wrapped bodies in neat rows, red X marked windows with candle-glow, cottages with cold chimneys, somber dignity, oil painting style, fantasy illustration"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# ZONES
+# ═══════════════════════════════════════════════════════════════════════════════
+
+zones:
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: APPROACH
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "approach"
+    zone_name: "The Approach"
+    zone_type: "threshold"
+
+    narrative_role: |
+      The road approaching Oakhaven—where the wrongness begins. Birds fall
+      silent, insects disappear, the forest itself seems to recoil from
+      what lies ahead. The barricade visible in the distance, yellow flags
+      warning away travelers.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Road through silent forest"
+        - "Barricade visible ahead"
+        - "Yellow flags on stakes"
+        - "Autumn decay—gold and rust"
+      materials: "road dirt, autumn leaves, stake wood distant"
+      color_signature: "gold-rust decay meeting gray warning"
+      light_character: "filtered autumn light, ominous beauty"
+
+    default_prompt_elements:
+      atmosphere: "ominous approach"
+      must_include:
+        - "road to village"
+        - "barricade visible"
+        - "silent forest"
+        - "autumn decay"
+      must_avoid:
+        - "normal forest sounds implied"
+        - "welcoming approach"
+
+    images:
+      - image_type: "zone"
+        image_slug: "approach-silent-road"
+        description: "The road approaching Oakhaven—silence and warning ahead"
+        scene_mood: "ominous"
+
+        composition:
+          foreground: "Road through autumn forest"
+          midground: "Trees with gold-rust canopy, empty branches"
+          background: "Barricade visible, yellow flags"
+
+        lighting:
+          primary_source: "Filtered autumn sun"
+          quality: "ominous beauty"
+          color_temperature: "gold-rust with gray ahead"
+
+        palette:
+          dominant: ["autumn gold", "rust red", "gray warning"]
+          accent: ["yellow flags distant"]
+
+        key_elements:
+          - "Silent forest—no birds"
+          - "Autumn beauty as decay"
+          - "Warning visible ahead"
+          - "Road of no return"
+
+        prompt: "Fantasy road approaching plague village, autumn forest with gold and rust canopy, silent empty branches without birds, stake barricade with yellow warning flags visible ahead, ominous beauty, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: VILLAGE STREETS
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "village-streets"
+    zone_name: "Village Streets"
+    zone_type: "commons"
+    featured_in_chapters: ["ch04-the-healers-calling"]
+
+    narrative_role: |
+      Inside the barricade—the village streets where plague's toll is
+      visible. Neat rows of sheet-wrapped bodies waiting for burning,
+      windows marked with red X's showing candle-glow from the infected
+      still living. Order maintained even in catastrophe.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Wrapped bodies in neat rows outside cottages"
+        - "Red X windows with candle-glow"
+        - "Silent street, no movement"
+        - "Cold chimneys, no smoke"
+      materials: "stained sheets, village stone, painted X's"
+      color_signature: "plague gray with red warning, candle gold"
+      light_character: "twilight with occasional window warmth"
+
+    default_prompt_elements:
+      atmosphere: "organized death, maintained dignity"
+      must_include:
+        - "wrapped bodies in rows"
+        - "red X windows"
+        - "silent streets"
+        - "order in catastrophe"
+      must_avoid:
+        - "graphic gore"
+        - "chaos"
+        - "normal village activity"
+
+    images:
+      - image_type: "zone"
+        image_slug: "village-streets-plague"
+        description: "The village streets—organized death, maintained dignity"
+        scene_mood: "somber"
+
+        composition:
+          foreground: "Street cobblestones, silent"
+          midground: "Wrapped bodies in neat rows, cottages with red X"
+          background: "More cottages, cold chimneys"
+
+        lighting:
+          primary_source: "Twilight sky"
+          secondary_source: "Candle-glow from X windows"
+          quality: "gray with warm pockets"
+
+        palette:
+          dominant: ["twilight gray", "sheet white"]
+          accent: ["red X", "candle gold"]
+
+        key_elements:
+          - "Neat rows—care even in death"
+          - "Red X windows showing life inside"
+          - "Silent street—no movement"
+          - "Dignity maintained"
+
+        style_notes: "The bodies should be wrapped and arranged with care, not scattered chaotically. The red X's are the only bright color besides candle-glow."
+
+        prompt: "Fantasy medieval plague village streets at twilight, neat rows of sheet-wrapped bodies outside cottages, windows marked with red X paint showing candle-glow within, silent empty streets, cold chimneys, somber dignity in organized death, oil painting style, fantasy illustration"
+
+      - image_type: "beat"
+        image_slug: "quarantine-barricade-threshold"
+        description: "The quarantine barricade—threshold between worlds"
+        scene_mood: "ominous"
+
+        composition:
+          foreground: "Sharpened stake barricade"
+          midground: "Yellow flags, skull sign, gap for entry"
+          background: "Village visible beyond, silent"
+
+        lighting:
+          primary_source: "Late afternoon light"
+          quality: "long shadows, grim"
+
+        palette:
+          dominant: ["stake brown", "warning yellow"]
+          accent: ["skull black", "village gray beyond"]
+
+        key_elements:
+          - "Stakes as boundary"
+          - "Yellow warning flags"
+          - "Skull sign—DEATH TO THOSE WHO ENTER"
+          - "Choice made visible"
+
+        prompt: "Fantasy quarantine barricade of sharpened stakes with yellow warning flags and skull sign, threshold between safety and plague village, late afternoon light casting long shadows, village visible beyond, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: STREETS (Duplicate consolidated)
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "streets"
+    zone_name: "Village Streets"
+    zone_type: "commons"
+
+    narrative_role: |
+      Alternate perspective on the village streets—focusing on the
+      red X windows and the living still inside, the vigil maintained.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Focus on red X windows"
+        - "Candle-glow showing life"
+        - "Vigil from within"
+        - "Hope in plague"
+      materials: "window glass, red paint, candle light"
+      color_signature: "red X against warm window glow"
+      light_character: "interior warmth against exterior gray"
+
+    default_prompt_elements:
+      atmosphere: "life persisting"
+      must_include:
+        - "red X windows"
+        - "candle-glow"
+        - "life inside"
+        - "vigil maintained"
+      must_avoid:
+        - "abandoned feeling"
+        - "no life signs"
+
+    images:
+      - image_type: "detail"
+        image_slug: "red-x-window-vigil"
+        description: "A red X window with candle-glow—life inside the plague"
+        scene_mood: "intimate"
+
+        composition:
+          focal_point: "Window with red X, warm glow within"
+          framing: "close focus on window from street"
+
+        lighting:
+          primary_source: "Candle-glow from within"
+          quality: "warm against cold exterior"
+
+        palette:
+          dominant: ["stone gray", "red X"]
+          accent: ["candle gold warmth"]
+
+        key_elements:
+          - "Red X marking"
+          - "Warm light within"
+          - "Life persisting"
+          - "Vigil maintained"
+
+        prompt: "Fantasy plague village window close-up, red X painted on glass, warm candle-glow from within, life persisting in quarantine, stone cottage exterior cold gray, intimate detail, oil painting style, fantasy illustration"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # ZONE: BARN HOSPICE
+  # ─────────────────────────────────────────────────────────────────────────────
+  - zone_slug: "barn-hospice"
+    zone_name: "Barn Hospice"
+    zone_type: "heart"
+    featured_in_chapters: ["ch04-the-healers-calling"]
+
+    narrative_role: |
+      Aldwin Gentleheart's domain—a barn converted to hospice where the
+      dying are attended with dignity. Cots arranged in neat rows with
+      personal effects nearby, lanterns hanging from rafters, and at the
+      center, the bronze brazier that holds Aldwin's mercy ritual.
+
+    zone_visual_anchor:
+      defining_features:
+        - "Barn converted to hospice"
+        - "Cots in neat rows with personal effects"
+        - "Lanterns on rafters"
+        - "Bronze brazier at center of ritual"
+      materials: "barn timber, cot canvas, bronze brazier"
+      color_signature: "warm amber against plague gray"
+      light_character: "lantern warmth, brazier glow, care in shadows"
+
+    default_prompt_elements:
+      atmosphere: "sacred mercy, dignified death"
+      must_include:
+        - "barn interior as hospice"
+        - "cots with dying"
+        - "lanterns on rafters"
+        - "warmth against plague"
+      must_avoid:
+        - "clinical hospital"
+        - "abandoned space"
+        - "horror atmosphere"
+
+    images:
+      - image_type: "zone"
+        image_slug: "barn-hospice-interior"
+        description: "The barn hospice—Aldwin's domain of mercy"
+        scene_mood: "intimate"
+
+        composition:
+          foreground: "Cot with personal effects, gentle care"
+          midground: "More cots, Aldwin's brazier visible"
+          background: "Barn rafters with hanging lanterns"
+
+        lighting:
+          primary_source: "Lanterns on rafters"
+          secondary_source: "Bronze brazier glow"
+          quality: "warm, caring, against exterior gray"
+          color_temperature: "amber warmth"
+
+        palette:
+          dominant: ["barn timber brown", "lantern amber"]
+          accent: ["brazier bronze", "sheet white"]
+
+        key_elements:
+          - "Barn as sanctuary"
+          - "Organized care"
+          - "Lantern warmth"
+          - "Brazier as ritual center"
+
+        style_notes: "The atmosphere should be warm and caring, not grim. This is where death becomes peaceful passage. Focus on the care, not the disease."
+
+        prompt: "Fantasy barn converted to plague hospice, cots in neat rows with personal effects, lanterns hanging from timber rafters casting warm amber light, bronze brazier glowing at center, atmosphere of dignified care, mercy's sanctuary, oil painting style, fantasy illustration"
+
+      - image_type: "beat"
+        image_slug: "mercy-ritual-brazier"
+        description: "The mercy ritual—Aldwin's bronze brazier and herb smoke"
+        scene_mood: "ethereal"
+
+        composition:
+          foreground: "Bronze brazier glowing, herb smoke rising"
+          midground: "Aldwin kneeling beside patient"
+          background: "Other cots, lantern-lit"
+          focal_point: "The brazier and rising smoke"
+
+        lighting:
+          primary_source: "Brazier glow"
+          quality: "warm, sacred"
+          color_temperature: "bronze amber"
+          atmospheric: "herb smoke catching light"
+
+        palette:
+          dominant: ["brazier bronze", "smoke gold"]
+          accent: ["peaceful faces"]
+
+        key_elements:
+          - "Bronze brazier"
+          - "Herb smoke sweetness"
+          - "Sacred attention"
+          - "Death transformed"
+
+        prompt: "Fantasy mercy ritual scene, small bronze brazier glowing with herb smoke rising, halfling healer kneeling beside dying patient, warm amber light against barn shadows, sacred attention, death transformed into peaceful passage, oil painting style, fantasy illustration"
+
+      - image_type: "beat"
+        image_slug: "it-tastes-like-spring"
+        description: "Mara's face transformed by wonder—'It tastes like spring'"
+        scene_mood: "ethereal"
+
+        composition:
+          focal_point: "Old woman's face transformed by wonder"
+          framing: "close on face, cup at lips"
+
+        lighting:
+          primary_source: "Brazier glow on face"
+          quality: "soft, transformative"
+          color_temperature: "warm bronze"
+
+        palette:
+          dominant: ["wonder warmth", "peace gold"]
+          accent: ["tension melting"]
+
+        key_elements:
+          - "Wonder replacing fear"
+          - "Memory reclaimed"
+          - "Tension leaving face"
+          - "Death becoming passage"
+
+        prompt: "Fantasy close portrait of old woman's face transformed by wonder, cup of tea at lips, tension melting into peace, warm brazier light, 'It tastes like spring' moment, death becoming peaceful passage, oil painting style, fantasy illustration"
+
+      - image_type: "temporal"
+        image_slug: "night-vigil-hospice"
+        description: "Night vigil in the barn hospice—the Company integrated"
+        scene_mood: "somber"
+
+        composition:
+          foreground: "Veyra sitting with the living"
+          midground: "Aldwin attending a passage"
+          background: "Thorne moving with reverence, lanterns glowing"
+
+        lighting:
+          primary_source: "Multiple lanterns"
+          secondary_source: "Brazier for ritual"
+          quality: "warm pockets in darkness"
+
+        palette:
+          dominant: ["night shadow", "lantern amber"]
+          accent: ["care warmth"]
+
+        key_elements:
+          - "Company integrated into mercy work"
+          - "Different roles unified"
+          - "Night-long commitment"
+          - "Presence as healing"
+
+        prompt: "Fantasy night vigil in barn hospice, multiple figures in different activities of care, halfling healer attending dying, scarred woman sitting with living, man moving bodies with reverence, lanterns creating warm pockets in darkness, oil painting style, fantasy illustration"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# BEAT IMAGES
+# Key narrative moments from ch04: The Healer's Calling
+# ═══════════════════════════════════════════════════════════════════════════════
+
+beat_images:
+  # ─────────────────────────────────────────────────────────────────────────────
+  # BEAT: THE QUARANTINE THRESHOLD
+  # ─────────────────────────────────────────────────────────────────────────────
+  - beat_slug: "quarantine-threshold"
+    beat_title: "The Quarantine Barricade"
+    chapter_ref: "ch04"
+    zone_ref: "village-streets"
+
+    narrative_context: |
+      "A hastily erected barricade of sharpened stakes and yellow warning
+      flags. The sign nailed to the central post was crude but clear: a
+      skull with 'PLAGUE – DEATH TO THOSE WHO ENTER' beneath it."
+
+    emotional_beat: "The threshold between life and death—choice made visible"
+
+    image_spec:
+      scene_mood: "ominous"
+      image_type: "hero"
+
+      composition:
+        foreground: "Sharpened stake barricade"
+        midground: "Yellow flags, skull sign, four masked figures"
+        background: "Silent village beyond, cold chimneys"
+        focal_point: "The skull warning"
+
+      lighting:
+        primary_source: "Late afternoon sun"
+        quality: "long shadows, grim"
+        color_temperature: "cold afternoon"
+
+      palette:
+        dominant: ["stake brown", "warning yellow"]
+        accent: ["skull black", "mask white"]
+
+      key_elements:
+        - "Sharpened stakes as boundary"
+        - "Yellow warning flags"
+        - "Skull sign—DEATH TO THOSE WHO ENTER"
+        - "Masked figures making choice"
+
+      prompt: "Fantasy quarantine barricade, sharpened stakes with yellow warning flags, crude skull sign reading PLAGUE DEATH TO THOSE WHO ENTER, four masked figures approaching, silent village with cold chimneys beyond, late afternoon long shadows, threshold moment, oil painting style, fantasy illustration"
+
+      source_quote: "'PLAGUE – DEATH TO THOSE WHO ENTER'"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # BEAT: THE TEA CEREMONY BEGINS
+  # ─────────────────────────────────────────────────────────────────────────────
+  - beat_slug: "tea-ceremony-begins"
+    beat_title: "The Tea Ceremony Begins"
+    chapter_ref: "ch04"
+    zone_ref: "barn-hospice"
+
+    narrative_context: |
+      "He withdrew a small bronze brazier, no larger than a teacup, and
+      set it beside her bed. Adding pinches of herbs that released a
+      sweet, complex smoke. The scent cut through the hospice's miasma
+      like a blade of memory."
+
+    emotional_beat: "The mercy ritual introduced—sacred attention to the dying"
+
+    image_spec:
+      scene_mood: "intimate"
+      image_type: "hero"
+
+      composition:
+        foreground: "Bronze brazier, herb smoke rising"
+        midground: "Aldwin kneeling, patient watching"
+        background: "Hospice cots, lantern light"
+        focal_point: "The brazier between healer and patient"
+
+      lighting:
+        primary_source: "Brazier glow"
+        secondary_source: "Rafter lanterns"
+        quality: "warm, sacred"
+        color_temperature: "bronze amber"
+
+      palette:
+        dominant: ["brazier bronze", "smoke gold"]
+        accent: ["care warmth", "patient hope"]
+
+      key_elements:
+        - "Bronze brazier small as teacup"
+        - "Herb smoke rising sweet"
+        - "Aldwin's focused attention"
+        - "Old woman's hope and fear"
+
+      prompt: "Fantasy mercy ritual scene, halfling healer kneeling beside dying old woman, small bronze brazier glowing between them, sweet herb smoke rising and catching lantern light, hospice cots visible beyond, sacred attention in the face of death, oil painting style, fantasy illustration"
+
+      source_quote: "The scent cut through the hospice's miasma like a blade of memory."
+
+      character_refs:
+        - slug: "aldwin-gentleheart"
+          role: "primary subject"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # BEAT: IT TASTES LIKE SPRING
+  # ─────────────────────────────────────────────────────────────────────────────
+  - beat_slug: "tastes-like-spring"
+    beat_title: "It Tastes Like Spring"
+    chapter_ref: "ch04"
+    zone_ref: "barn-hospice"
+
+    narrative_context: |
+      "'It tastes like... like spring,' she whispered, wonder in her voice.
+      'Like the morning Thomas proposed by the old oak. Like... like
+      beginning.' The tension left her face like water from a broken dam."
+
+    emotional_beat: "Death transformed—wonder replacing fear, memory reclaimed"
+
+    image_spec:
+      scene_mood: "ethereal"
+      image_type: "anchor"
+
+      composition:
+        foreground: "Mara's face in close-up"
+        midground: "Cup at lips, Aldwin's hand supporting"
+        background: "Soft brazier glow"
+        focal_point: "The transformation in her expression"
+
+      lighting:
+        primary_source: "Brazier warmth on face"
+        quality: "soft, transformative"
+        color_temperature: "warm bronze gold"
+
+      palette:
+        dominant: ["wonder warmth", "peace gold"]
+        accent: ["tension melting"]
+
+      key_elements:
+        - "Wonder transforming fear"
+        - "Memory of spring in eyes"
+        - "Tension leaving face"
+        - "Death becoming beginning"
+
+      prompt: "Fantasy close portrait of dying old woman's face transformed by wonder, cup of special tea at lips, halfling healer's hand gently supporting, tension melting into peace, warm brazier glow, memory of spring in her eyes, death transformed into passage, oil painting style, fantasy illustration"
+
+      source_quote: "'It tastes like... like spring... Like the morning Thomas proposed by the old oak.'"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # BEAT: THE WELCOME TEA
+  # ─────────────────────────────────────────────────────────────────────────────
+  - beat_slug: "welcome-tea"
+    beat_title: "The Welcome Tea"
+    chapter_ref: "ch04"
+    zone_ref: "barn-hospice"
+
+    narrative_context: |
+      "Aldwin quietly unpacked his tea service... 'Don't worry,' he said,
+      a hint of mischief in his eyes. 'It's just mint. I save the special
+      blends for special occasions. This is simply for sharing, for marking
+      the beginning of something new.'"
+
+    emotional_beat: "The ritual reclaimed for celebration—mercy's tools becoming welcome's"
+
+    image_spec:
+      scene_mood: "pastoral"
+      image_type: "hero"
+
+      composition:
+        foreground: "Tea service, bronze brazier"
+        midground: "Circle of faces around campfire"
+        background: "Stars emerging overhead"
+        focal_point: "Aldwin serving with mischief in eyes"
+
+      lighting:
+        primary_source: "Campfire warmth"
+        secondary_source: "Brazier glow"
+        quality: "warm belonging"
+        color_temperature: "amber welcome"
+
+      palette:
+        dominant: ["campfire orange", "brazier bronze"]
+        accent: ["starlight silver", "smile warmth"]
+
+      key_elements:
+        - "Same ritual, different purpose"
+        - "Circle of belonging"
+        - "Mischief and warmth"
+        - "Stars and hope"
+
+      prompt: "Fantasy campfire scene, halfling healer serving tea from bronze brazier to circle of companions, warm firelight on tentative smiling faces, stars emerging overhead, ritual transformed from death to welcome, beginning of belonging, oil painting style, fantasy illustration"
+
+      source_quote: "'This is simply for sharing, for marking the beginning of something new.'"
+
+      character_refs:
+        - slug: "aldwin-gentleheart"
+          role: "primary subject"
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# REFERENCES
+# ═══════════════════════════════════════════════════════════════════════════════
+
+references:
+  chapter_visual_plans:
+    - path: "chapters/ch04-the-healers-calling/chapter.visual-plan.yaml"
+      context: "Full visual plan for Aldwin's recruitment, mercy rituals"
+
+  character_portraits:
+    - slug: "aldwin-gentleheart"
+      context: "Halfling healer performing mercy rituals"
+    - slug: "medic-halden"
+      context: "Battlefield medic confronting different philosophy"
+    - slug: "veyra-thornwake"
+      context: "Commander whose scars somehow comfort the living"
+
+  related_locations:
+    - slug: "brightstone-healers-hall"
+      context: "Where Dokra provides the plague map"
+    - slug: "westwall-watchpost"
+      context: "Where the need for a true healer is identified"
+
+  thematic_connections:
+    - "Death transformed from defeat to passage"
+    - "Mercy as the deepest healing"
+    - "Care maintained in catastrophe"
+    - "Ritual as sacred attention"
