@@ -916,3 +916,330 @@ export const sceneZoneRelations = relations(sceneZone, ({ one }) => ({
     references: [locationZone.id],
   }),
 }));
+
+// ============================================================================
+// IMAGE GENERATION SYSTEM
+// ============================================================================
+
+/**
+ * Prompt Template - Configurable prompt templates for image generation
+ *
+ * Stores reusable prompt templates that define how images are generated for
+ * different entity types. Templates can be versioned, forked, and set as defaults.
+ */
+export const promptTemplate = sqliteTable(
+  'prompt_template',
+  {
+    id: text('id').primaryKey(),
+    name: text('name').notNull(),
+    slug: text('slug').notNull().unique(),
+    category: text('category').notNull(), // 'character', 'location', 'scene'
+    subcategory: text('subcategory'),
+    description: text('description'),
+    templateType: text('template_type').notNull().default('full'),
+    status: text('status').notNull().default('draft'),
+    isDefault: integer('is_default', { mode: 'boolean' }).default(false),
+    version: integer('version').notNull().default(1),
+    parentTemplateId: text('parent_template_id'),
+    createdBy: text('created_by'),
+    createdAt: integer('created_at').notNull(),
+    updatedAt: integer('updated_at').notNull(),
+  },
+  table => [
+    index('ix_template_category').on(table.category, table.subcategory),
+    index('ix_template_status').on(table.status),
+    index('ix_template_slug').on(table.slug),
+  ]
+);
+
+/**
+ * Prompt Template Section - Weighted components of a prompt template
+ *
+ * Each template consists of multiple sections (subject, composition, lighting, etc.)
+ * with different priority weights (1-5). Sections can have conditional logic.
+ */
+export const promptTemplateSection = sqliteTable(
+  'prompt_template_section',
+  {
+    id: text('id').primaryKey(),
+    templateId: text('template_id').notNull(),
+    name: text('name').notNull(),
+    weight: integer('weight').notNull(), // 1-5 (1 = highest priority)
+    sortOrder: integer('sort_order').notNull().default(0),
+    content: text('content').notNull(), // Handlebars template
+    condition: text('condition'), // JavaScript expression
+    notes: text('notes'),
+    createdAt: integer('created_at').notNull(),
+    updatedAt: integer('updated_at').notNull(),
+  },
+  table => [
+    index('ix_section_template').on(table.templateId),
+    index('ix_section_weight').on(table.weight, table.sortOrder),
+  ]
+);
+
+/**
+ * Prompt Template Variable - Documentation for template variables
+ *
+ * Defines available variables for templates with type information,
+ * validation rules, and documentation.
+ */
+export const promptTemplateVariable = sqliteTable(
+  'prompt_template_variable',
+  {
+    id: text('id').primaryKey(),
+    templateId: text('template_id').notNull(),
+    name: text('name').notNull(),
+    variableType: text('variable_type').notNull(),
+    description: text('description').notNull(),
+    exampleValue: text('example_value'),
+    isRequired: integer('is_required', { mode: 'boolean' }).default(false),
+    defaultValue: text('default_value'),
+    validationPattern: text('validation_pattern'),
+    createdAt: integer('created_at').notNull(),
+  },
+  table => [index('ix_variable_template').on(table.templateId)]
+);
+
+/**
+ * Prompt Component - Reusable prompt partials
+ *
+ * Shared components that can be included in multiple templates
+ * (e.g., expression inferrer, lighting presets, composition rules).
+ */
+export const promptComponent = sqliteTable(
+  'prompt_component',
+  {
+    id: text('id').primaryKey(),
+    name: text('name').notNull(),
+    slug: text('slug').notNull().unique(),
+    category: text('category').notNull(),
+    content: text('content').notNull(),
+    description: text('description'),
+    variables: text('variables'), // JSON array
+    usageCount: integer('usage_count').default(0),
+    status: text('status').default('active'),
+    createdAt: integer('created_at').notNull(),
+    updatedAt: integer('updated_at').notNull(),
+  },
+  table => [
+    index('ix_component_category').on(table.category),
+    index('ix_component_slug').on(table.slug),
+  ]
+);
+
+/**
+ * Style Preset - Art direction and style configurations
+ *
+ * Defines style presets with artist references, aesthetic notes,
+ * and negative prompts. Can be mood-specific or master styles.
+ */
+export const stylePreset = sqliteTable(
+  'style_preset',
+  {
+    id: text('id').primaryKey(),
+    name: text('name').notNull(),
+    slug: text('slug').notNull().unique(),
+    category: text('category').notNull(),
+    styleDescription: text('style_description').notNull(),
+    negativePrompts: text('negative_prompts'), // JSON array
+    artistReferences: text('artist_references'), // JSON array
+    aestheticNotes: text('aesthetic_notes'),
+    isMasterStyle: integer('is_master_style', { mode: 'boolean' }).default(false),
+    priority: integer('priority').default(0),
+    status: text('status').default('active'),
+    createdAt: integer('created_at').notNull(),
+    updatedAt: integer('updated_at').notNull(),
+  },
+  table => [
+    index('ix_style_category').on(table.category),
+    index('ix_style_master').on(table.isMasterStyle),
+  ]
+);
+
+/**
+ * Negative Prompt Preset - Library of negative prompts
+ *
+ * Categorized collections of negative prompts that prevent
+ * unwanted elements in generated images.
+ */
+export const negativePromptPreset = sqliteTable(
+  'negative_prompt_preset',
+  {
+    id: text('id').primaryKey(),
+    name: text('name').notNull(),
+    slug: text('slug').notNull().unique(),
+    category: text('category').notNull(),
+    prompts: text('prompts').notNull(), // JSON array
+    description: text('description'),
+    isDefault: integer('is_default', { mode: 'boolean' }).default(false),
+    priority: integer('priority').default(0),
+    status: text('status').default('active'),
+    createdAt: integer('created_at').notNull(),
+    updatedAt: integer('updated_at').notNull(),
+  },
+  table => [index('ix_negative_category').on(table.category)]
+);
+
+/**
+ * Prompt IR - Compiled intermediate representation of prompts
+ *
+ * Stores the compiled IR (Intermediate Representation) of prompts
+ * before rendering. Enables caching and regeneration detection via IR hash.
+ */
+export const promptIR = sqliteTable(
+  'prompt_ir',
+  {
+    id: text('id').primaryKey(),
+    entityType: text('entity_type').notNull(),
+    entitySlug: text('entity_slug').notNull(),
+    targetId: text('target_id').notNull(),
+    irData: text('ir_data').notNull(), // JSON.stringify(CompiledPromptIR)
+    irHash: text('ir_hash').notNull().unique(),
+    imageType: text('image_type'),
+    sceneMood: text('scene_mood'),
+    createdAt: integer('created_at').notNull(),
+    updatedAt: integer('updated_at').notNull(),
+  },
+  table => [
+    index('ix_prompt_ir_entity').on(table.entityType, table.entitySlug),
+    index('ix_prompt_ir_hash').on(table.irHash),
+  ]
+);
+
+/**
+ * Prompt History - Record of rendered prompts and generation results
+ *
+ * Tracks every image generation with the full prompt, parameters,
+ * and result. Enables auditing and prompt quality analysis.
+ */
+export const promptHistory = sqliteTable(
+  'prompt_history',
+  {
+    id: text('id').primaryKey(),
+    irId: text('ir_id'),
+    irHash: text('ir_hash').notNull(),
+    renderedPrompt: text('rendered_prompt').notNull(),
+    renderedNegative: text('rendered_negative'),
+    charCount: integer('char_count').notNull(),
+    trimmed: integer('trimmed', { mode: 'boolean' }).default(false),
+    aspectRatio: text('aspect_ratio'),
+    size: text('size'),
+    quality: text('quality'),
+    resultAssetId: text('result_asset_id'),
+    workflowInstanceId: text('workflow_instance_id'), // Cloudflare Workflow ID
+    provider: text('provider'),
+    model: text('model'),
+    createdAt: integer('created_at').notNull(),
+  },
+  table => [
+    index('ix_prompt_history_ir').on(table.irId),
+    index('ix_prompt_history_workflow').on(table.workflowInstanceId),
+    index('ix_prompt_history_asset').on(table.resultAssetId),
+  ]
+);
+
+/**
+ * Image Reference Metadata - Tracks which images to use for consistency
+ *
+ * Marks specific images as reference images for maintaining character/location
+ * consistency across generations. Supports quality ratings and aspect-specific
+ * reference tracking (face, body, clothing, environment).
+ */
+export const imageReferenceMetadata = sqliteTable(
+  'image_reference_metadata',
+  {
+    id: text('id').primaryKey(),
+    assetId: text('asset_id').notNull(),
+    entityType: text('entity_type').notNull(),
+    entitySlug: text('entity_slug').notNull(),
+    isCanonical: integer('is_canonical', { mode: 'boolean' }).default(false),
+    referenceQuality: text('reference_quality'), // 'high', 'medium', 'low'
+    useForConsistency: integer('use_for_consistency', { mode: 'boolean' }).default(true),
+    priority: integer('priority').default(0),
+    faceReference: integer('face_reference', { mode: 'boolean' }).default(true),
+    bodyReference: integer('body_reference', { mode: 'boolean' }).default(false),
+    clothingReference: integer('clothing_reference', { mode: 'boolean' }).default(false),
+    environmentReference: integer('environment_reference', { mode: 'boolean' }).default(false),
+    notes: text('notes'),
+    createdAt: integer('created_at').notNull(),
+    updatedAt: integer('updated_at').notNull(),
+  },
+  table => [
+    index('ix_ref_meta_entity').on(table.entityType, table.entitySlug),
+    index('ix_ref_meta_asset').on(table.assetId),
+  ]
+);
+
+/**
+ * Prompt Reference - Links prompt history to reference images used
+ *
+ * Junction table tracking which reference images were used during
+ * a specific image generation.
+ */
+export const promptReference = sqliteTable(
+  'prompt_reference',
+  {
+    id: text('id').primaryKey(),
+    promptHistoryId: text('prompt_history_id'),
+    assetId: text('asset_id'),
+    role: text('role').notNull(),
+    sortOrder: integer('sort_order').default(0),
+  },
+  table => [
+    index('ix_prompt_ref_history').on(table.promptHistoryId),
+    index('ix_prompt_ref_asset').on(table.assetId),
+  ]
+);
+
+/**
+ * Prompt Template Override - Entity-specific prompt customizations
+ *
+ * Allows overriding specific template sections for individual entities
+ * (e.g., custom prompt for a specific character).
+ */
+export const promptTemplateOverride = sqliteTable(
+  'prompt_template_override',
+  {
+    id: text('id').primaryKey(),
+    entityType: text('entity_type').notNull(),
+    entitySlug: text('entity_slug').notNull(),
+    templateId: text('template_id'),
+    sectionName: text('section_name'),
+    overrideContent: text('override_content').notNull(),
+    overrideWeight: integer('override_weight'),
+    reason: text('reason'),
+    createdBy: text('created_by'),
+    createdAt: integer('created_at').notNull(),
+    updatedAt: integer('updated_at').notNull(),
+  },
+  table => [
+    index('ix_override_entity').on(table.entityType, table.entitySlug),
+    index('ix_override_template').on(table.templateId),
+  ]
+);
+
+/**
+ * Prompt Template Usage - Analytics for template effectiveness
+ *
+ * Tracks template usage and allows rating generated results to
+ * identify which templates produce the best images.
+ */
+export const promptTemplateUsage = sqliteTable(
+  'prompt_template_usage',
+  {
+    id: text('id').primaryKey(),
+    templateId: text('template_id').notNull(),
+    entityType: text('entity_type').notNull(),
+    entitySlug: text('entity_slug').notNull(),
+    promptHistoryId: text('prompt_history_id'),
+    resultAssetId: text('result_asset_id'),
+    userRating: integer('user_rating'), // 1-5 stars
+    adminNotes: text('admin_notes'),
+    createdAt: integer('created_at').notNull(),
+  },
+  table => [
+    index('ix_usage_template').on(table.templateId),
+    index('ix_usage_entity').on(table.entityType, table.entitySlug),
+  ]
+);

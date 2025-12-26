@@ -17,6 +17,11 @@ database_id = "a3f97481-6340-44c7-ae75-06dcf0c76ac2"
 [ai]
 binding = "AI"
 
+[[workflows]]
+binding = "BATCH_IMAGE_WORKFLOW"
+name = "batch-image-generation"
+class_name = "BatchImageGenerationWorkflow"
+
 [vars]
 # WARNING: These values are deployment-specific and safe to commit
 # The Account Hash is public in image URLs anyway
