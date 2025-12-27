@@ -1,319 +1,315 @@
-# ============================================================================
-# CHAPTER IMAGERY SPECIFICATION
-# Chapter: An Honest Coin
-# Generated: 2025-12-21
-# ============================================================================
-
 metadata:
   entity_type: "chapter-imagery"
   slug: "ch11-an-honest-coin"
   chapter_number: 11
   chapter_title: "An Honest Coin"
-  visual_thesis: "From mist-shrouded arrival through shadow-work and flame, ending with the weight of mysterious purpose held in firelight."
+  visual_thesis: "Justice beyond law—a heist proves an ally's intelligence, corruption burns in controlled flames, and a mysterious lock opens futures unknown."
   color_palette:
     primary:
-      - "#8B9A9E"
-      - "#D4A574"
-      - "#2C3E50"
-      - "#C45C26"
+      - "#4A5568" # Mist-gray approach / stone
+      - "#C05621" # Fire-orange chaos
+      - "#2D3748" # Warehouse shadow / night
     accent:
-      - "#1A1A2E"
-      - "#F5DEB3"
+      - "#1A202C" # Dark metal (Bastion Lock)
+      - "#F6AD55" # Dawn-bleed / hearth glow
+      - "#718096" # Bridge stone / slate
   generation_defaults:
     provider: "openai"
     model: "dall-e-3"
     quality: "hd"
   mood_distribution:
-    somber: 2
-    pastoral: 2
-    celebratory: 0
-    aquatic: 0
-    ethereal: 1
     intimate: 3
-    kinetic: 1
-    ominous: 1
+    kinetic: 2
+    ominous: 2
+    ethereal: 1
+    clandestine: 1
 
 characters:
   - ref: "veyra-thornwake"
     name: "Veyra Thornwake"
-    scene_variations: "Full weathered leather armor. Burn scar prominent. Tactical and alert. Bruised cheek in final scene."
+    scene_variations: |
+      CHAPTER 11 VARIATIONS (HEIST OPERATION):
+      - SCENES 01-04 (Pre-heist): Standard gear—leather cuirass, dark tunic, lantern at belt.
+        Alert, calculating, professional. Burn scar visible on left face.
+      - SCENE 05 (Infiltration): Shadow-wear, soft-soled boots, lockpicks ready.
+        Moving like a ghost through darkness. Intensity without visible strain.
+      - SCENE 05 (Window Exit): Mid-escape, glass shards flying, hitting dock rolling.
+        Desperate but controlled, ledger pages secured.
+      - SCENES 06-08 (Aftermath): Clothes dusty from heist, adrenaline fading.
+        Holding Bastion Lock with strange recognition in eyes.
+      - Throughout: Jet black mohawk with single braided lock, deep earth-brown skin,
+        teal tattoos visible on arms. Lantern ALWAYS present.
     reference_images:
-      - "veyra-thornwake-official-portrait-01"
+      - "veyra-thornwake-portrait"
 
   - ref: "thorne-brightward"
     name: "Thorne Brightward"
-    scene_variations: "Standard patrol gear. Blue cloak. Bruised jaw in final scenes."
+    scene_variations: |
+      CHAPTER 11 VARIATIONS (TACTICAL SUPPORT):
+      - SCENE 01 (Official Channels): Captain's bearing, faded blue cloak, formal but approachable.
+        Meeting magistrate with quiet authority.
+      - SCENE 05 (Drunk Act): Deliberately staggering, voice slurred, eyes sharp.
+        Playing the role perfectly while Veyra infiltrates.
+      - SCENES 06-08 (Aftermath): Bruised jaw from guard encounter.
+        Steady, reliable, processing the night's complications.
+      - Throughout: Steel-gray cropped hair, deep-set brown eyes, weathered kind face.
+        Old guard captain's cloak with Last Light Company sigil.
     reference_images:
-      - "thorne-brightward-portrait-01"
-
-  - ref: "marcus-heartbridge"
-    name: "Marcus Heartbridge"
-    scene_variations: "High-collared charcoal doublet. Neat mustache. Knowing smirk. Ornate rapier."
-    reference_images:
-      - "marcus-heartbridge-portrait-study-01"
+      - "thorne-brightward-portrait"
 
   - ref: "grimjaw-ironbeard"
     name: "Grimjaw Ironbeard"
-    scene_variations: "Iron-gray beard. Copper pauldrons. Carrying lockpicks and tools."
+    scene_variations: |
+      CHAPTER 11 VARIATIONS (SUPPORT & ESCAPE):
+      - SCENE 02 (Market Intel): Dwarven practicality, critiquing stew with professional eye.
+        Gathering intelligence through casual conversation.
+      - SCENE 05 (Drunk Act): Partner to Thorne's performance, roaring about bushels.
+        Lockpicks hidden, boat ready.
+      - SCENE 07 (Fire): At the oars, professional calm amid chaos.
+        Watching Marcus's infinite coat with professional envy.
+      - Throughout: Heavy dwarven build, iron-gray beard, miner's practical clothing.
     reference_images:
-      - "grimjaw-ironbeard-portrait-01"
+      - "grimjaw-ironbeard-portrait"
 
   - ref: "quartermaster-fayne"
     name: "Quartermaster Fayne"
-    scene_variations: "Brass spectacles. Ink-stained fingers. Sketching and documenting."
+    scene_variations: |
+      CHAPTER 11 VARIATIONS (OBSERVER & ANALYST):
+      - SCENE 02 (Market Intel): Consulting his ever-present list, eye for detail.
+        Sketching frantically when Marcus produces objects from coat.
+      - SCENE 05 (River Watch): Positioned with signal whistle, observing from boat.
+      - SCENE 08 (Aftermath): Examining supply contracts, whistling at favorable terms.
+        Analytical even in exhaustion.
+      - Throughout: Young, earnest, ink-stained fingers from constant note-taking.
     reference_images:
-      - "quartermaster-fayne-standard-portrait-01"
+      - "quartermaster-fayne-portrait"
+
+  - ref: "marcus-heartbridge"
+    name: "Marcus Heartbridge"
+    scene_variations: |
+      CHAPTER 11 VARIATIONS (THE FIXER):
+      - SCENE 07 (Fire): Materializing from shadows, perfectly composed amid chaos.
+        Infinite coat producing scroll after scroll, silk-wrapped lock.
+        Magician's flourish, knowing smile, pragmatic generosity.
+      - Throughout: Well-tailored doublet, immaculate appearance regardless of circumstances.
+        Smooth confidence, coat with mysteriously deep pockets.
+    reference_images:
+      - "marcus-heartbridge-portrait"
 
   - ref: "magistrate-vance"
     name: "Magistrate Elias Vance"
-    scene_variations: "Tired features, disheveled gray hair, faded formal robes."
+    scene_variations: |
+      CHAPTER 11 VARIATIONS (JUSTICE CONSTRAINED):
+      - SCENE 01 (Office): Bone-tired exhaustion, cramped office drowning in scrolls.
+        Bitter smile speaking of disappearing evidence. Knows but cannot prove.
+      - SCENE 06 (Night Delivery): In robe but instantly alert, face moving through
+        surprise, satisfaction, grim determination. Ready to act.
+      - Throughout: Tired in his bones, neat but cramped office, fighting losing battles.
     reference_images: []
 
 locations:
   - ref: "stonebridge"
     zones:
-      - id: "approach"
-        chapter_context: "Ancient town in morning mist. Five-arch bridge over Silver Rush. Towers emerging from fog."
-      - id: "market"
-        chapter_context: "Bustling square with stalls. Unusually warm winter day. Vibrant colors, active trade."
-
-  - ref: "magistrate-office"
-    zones:
-      - id: "overview"
-        chapter_context: "Cramped stone room. Buried in papers, scrolls, and ledgers. Dusty afternoon light."
+      - id: "magistrates-office"
+        chapter_context: |
+          Cramped stone building near town center, disapproving like a stern aunt.
+          Interior drowning in scrolls and ledgers, evidence of too many cases and too few wins.
+          Gray office light, cramped shadows pressing in.
+          Vance's exhaustion personifies the space—a man fighting corruption with paper.
+          The young clerk waits in shadowed corridors, conscience finding cracks.
+      - id: "market-square"
+        chapter_context: |
+          Mid-winter market day, unusually warm. Traders and merchants in force.
+          Stalls arranged between fountain and guild halls. Noise of commerce.
+          Warm lamplight in taverns like The Grain and Goblet.
+          Information flows like coin—spice merchants with knowing eyes,
+          dockworkers with whispered warnings.
 
   - ref: "croft-warehouse"
     zones:
-      - id: "overview"
-        chapter_context: "Vast grain warehouse. Mountains of crates. Dark, smoky, later burning. Dockside access."
+      - id: "rooftop"
+        chapter_context: |
+          Moonless night, perfect darkness for infiltration.
+          Guards meeting at corners to smoke, their circuits predictable.
+          Ventilation hatch mostly rust, knife makes quick work.
+          Neighboring rooftops for approach, tiles nearly silent under soft-soled boots.
+      - id: "office"
+        chapter_context: |
+          Northwest corner, second floor. Orderly to obsession.
+          Hideous battle tapestry in clashing colors concealing the safe.
+          Portrait of "Beloved Mara" on desk—mistress, not daughter.
+          Black leather ledger with damning columns of doctored numbers.
+          Window overlooking docks—escape route when subtlety fails.
+      - id: "warehouse-exterior"
+        chapter_context: |
+          Night chaos of controlled fire. Flames concentrated on office section.
+          Croft's men evacuating certain crates—weapons, military grade.
+          Bucket brigades forming, bells ringing throughout city.
+          Smoke rising, evidence burning, truth exposed in firelight.
 
-  - ref: "shepherds-rest-room"
+  - ref: "shepherds-rest-inn"
     zones:
-      - id: "overview"
-        chapter_context: "Second-floor inn room. Forgettable anonymity. Functional furniture. Pre-dawn hearth light."
+      - id: "inn-room"
+        chapter_context: |
+          Second floor, view of street. Clean, quiet, unremarkable.
+          Planning table with map of warehouse district, sketches of entrances.
+          Pre-dawn light bleeding over rooftops after the heist.
+          Hearth dying, Bastion Lock on table, contemplative exhaustion.
+          Supply contracts examined, complicated victory counted.
 
 moments:
-  - id: "ch11-an-honest-coin-moment-01"
-    scene_id: "scn-11-01"
-    title: "The Mist-Born City"
-    narrative_beat: "The Company approaches Stonebridge as it emerges from the morning mist."
-    visual_weight: "hero"
-    characters_present:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "grimjaw-ironbeard"
-      - "quartermaster-fayne"
-    location_zone: "stonebridge/approach"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch11-an-honest-coin-moment-02"
-    scene_id: "scn-11-01"
-    title: "Institutional Exhaustion"
-    narrative_beat: "Magistrate Vance shows his hands over the useless evidence, a good man defeated by bureaucracy."
-    visual_weight: "high"
-    characters_present:
-      - "magistrate-vance"
-      - "veyra-thornwake"
-      - "thorne-brightward"
-    location_zone: "magistrate-office/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch11-an-honest-coin-moment-03"
-    scene_id: "scn-11-02"
-    title: "Market Gossip"
-    narrative_beat: "Grimjaw and Fayne picking up rumors about Croft while buying premium salt and flour."
-    visual_weight: "medium"
-    characters_present:
-      - "grimjaw-ironbeard"
-      - "quartermaster-fayne"
-    location_zone: "stonebridge/market"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch11-an-honest-coin-moment-04"
-    scene_id: "scn-11-02"
-    title: "The Stew Critique"
-    narrative_beat: "Grimjaw critiquing the mushroom rendering in his stew while discussing corruption."
-    visual_weight: "medium"
-    characters_present:
-      - "grimjaw-ironbeard"
-      - "quartermaster-fayne"
-    location_zone: "stonebridge/market"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch11-an-honest-coin-moment-05"
-    scene_id: "scn-11-04"
-    title: "Tactical Preparation"
-    narrative_beat: "Thorne's hand on the candlelit map as they plan the warehouse infiltration."
-    visual_weight: "medium"
-    characters_present:
-      - "thorne-brightward"
-    location_zone: "shepherds-rest-room/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch11-an-honest-coin-moment-06"
-    scene_id: "scn-11-04"
-    title: "Checking the Picks"
-    narrative_beat: "Grimjaw laying out his lockpicks, revealing a checkered past of 'safety inspection'."
-    visual_weight: "medium"
-    characters_present:
-      - "grimjaw-ironbeard"
-      - "quartermaster-fayne"
-    location_zone: "shepherds-rest-room/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch11-an-honest-coin-moment-07"
-    scene_id: "scn-11-05"
-    title: "The Descent"
-    narrative_beat: "Veyra dropping through the ventilation hatch into the warehouse void."
-    visual_weight: "high"
-    characters_present:
-      - "veyra-thornwake"
-    location_zone: "croft-warehouse/overview"
-    transformation_state: "during"
-    recommended_images: 1
-
-  - id: "ch11-an-honest-coin-moment-08"
-    scene_id: "scn-11-05"
-    title: "Explosive Escape"
-    narrative_beat: "Veyra bursting through the window in a shower of glass to escape the guards."
-    visual_weight: "critical"
-    characters_present:
-      - "veyra-thornwake"
-    location_zone: "croft-warehouse/overview"
-    transformation_state: "during"
-    recommended_images: 1
-
-  - id: "ch11-an-honest-coin-moment-09"
-    scene_id: "scn-11-06"
-    title: "Waking the Law"
-    narrative_beat: "Veyra and Thorne delivering the ledger pages to Vance at his home in the middle of the night."
-    visual_weight: "medium"
-    characters_present:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "magistrate-vance"
-    location_zone: "stonebridge/streets"
-    transformation_state: "n/a"
-    recommended_images: 1
-
   - id: "ch11-an-honest-coin-moment-10"
     scene_id: "scn-11-07"
-    title: "Weapons in the Fire"
-    narrative_beat: "Discovering smuggled weapons in the saved crates while the warehouse burns."
-    visual_weight: "high"
-    characters_present:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-    location_zone: "croft-warehouse/overview"
-    transformation_state: "after"
-    recommended_images: 1
-
-  - id: "ch11-an-honest-coin-moment-11"
-    scene_id: "scn-11-07"
     title: "The Bastion Lock"
-    narrative_beat: "Marcus offering the mysterious lock, the artifact 'seeing' Veyra."
+    narrative_beat: "The lock is heavier than expected, dark metal warm against Veyra's palm—for a heartbeat, she has the sensation of being truly seen."
     visual_weight: "critical"
     characters_present:
       - "veyra-thornwake"
       - "marcus-heartbridge"
-    location_zone: "croft-warehouse/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
+    location_zone: "croft-warehouse/warehouse-exterior"
+    transformation_state: "after"
+    recommended_images: 2
 
-  - id: "ch11-an-honest-coin-moment-12"
-    scene_id: "scn-11-08"
-    title: "The Silent Witness"
-    narrative_beat: "The innkeeper watching the weary Company return at dawn."
-    visual_weight: "medium"
+  - id: "ch11-an-honest-coin-moment-06"
+    scene_id: "scn-11-05"
+    title: "Window Exit"
+    narrative_beat: "Footsteps on stairs, no time for subtlety—Veyra goes shoulder-first through glass, hits dock rolling, comes up running."
+    visual_weight: "critical"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "croft-warehouse/office"
+    transformation_state: "during"
+    recommended_images: 2
+
+  - id: "ch11-an-honest-coin-moment-08"
+    scene_id: "scn-11-07"
+    title: "Controlled Burn"
+    narrative_beat: "The fire is staged—concentrated on the office, while Croft's men evacuate certain crates. Weapons. Military grade. Silent Hand supply."
+    visual_weight: "critical"
     characters_present:
       - "veyra-thornwake"
       - "thorne-brightward"
-    location_zone: "shepherds-rest-room/overview"
-    transformation_state: "after"
-    recommended_images: 1
+    location_zone: "croft-warehouse/warehouse-exterior"
+    transformation_state: "during"
+    recommended_images: 2
 
-  - id: "ch11-an-honest-coin-moment-13"
-    scene_id: "scn-11-08"
-    title: "Weight of the Future"
-    narrative_beat: "Veyra contemplating the lock by the hearth as the team prepares to depart."
+  - id: "ch11-an-honest-coin-moment-05"
+    scene_id: "scn-11-05"
+    title: "Behind the Hideous Tapestry"
+    narrative_beat: "The tapestry is indeed hideous—a glorified battle in clashing colors—but behind it waits the safe, and the mistress's portrait gives up the combination."
     visual_weight: "high"
     characters_present:
       - "veyra-thornwake"
+    location_zone: "croft-warehouse/office"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch11-an-honest-coin-moment-07"
+    scene_id: "scn-11-06"
+    title: "Anonymous Delivery"
+    narrative_beat: "Vance in robe but instantly alert, face moving through surprise, satisfaction, grim determination—'These documents were delivered anonymously.'"
+    visual_weight: "high"
+    characters_present:
+      - "magistrate-vance"
+      - "veyra-thornwake"
       - "thorne-brightward"
-      - "grimjaw-ironbeard"
-      - "quartermaster-fayne"
-    location_zone: "shepherds-rest-room/overview"
+    location_zone: "stonebridge/magistrates-office"
     transformation_state: "after"
     recommended_images: 1
 
-images:
-  - custom_id: "ch11-an-honest-coin-img-11-01-01"
-    source_moment: "ch11-an-honest-coin-moment-01"
+  - id: "ch11-an-honest-coin-moment-02"
     scene_id: "scn-11-01"
+    title: "The Clerk's Gift"
+    narrative_beat: "The young clerk presses rolled parchment into Thorne's hand—'The law serves justice, not the other way around. You said that.'"
+    visual_weight: "high"
+    characters_present:
+      - "thorne-brightward"
+    location_zone: "stonebridge/magistrates-office"
+    transformation_state: "before"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch11-an-honest-coin-img-07-10-01"
+    source_moment: "ch11-an-honest-coin-moment-10"
+    scene_id: "scn-11-07"
     image_type: "hero"
     category:
-      - "location"
       - "moment"
-    scene_mood: "pastoral"
-    mood_rationale: "Arrival at civilization. The mist lifting represents hope and transition. Soft morning light."
+      - "character"
+      - "symbol"
+    scene_mood: "ethereal"
+    mood_rationale: |
+      The Bastion Lock transcends mere metal—Veyra experiences a soul-deep recognition,
+      something ancient looking back through her. Otherworldly connection in mundane fire-chaos.
     aspect_ratio: "21:9"
     orientation: "landscape"
     size: "1792x768"
     visual_description: |
-      The ancient town of Stonebridge emerges from silver morning mist. The great five-arch bridge dominates the foreground over the Silver Rush river. Beyond, towers and rooftops materialize in layers as the mist lifts. Small figures of the Company approach on the road in foreground.
+      Veyra stands amid the chaos of the burning warehouse district, but the world has
+      narrowed to the object in her hands. The Bastion Lock rests in her scarred palms,
+      its dark metal seeming to absorb the firelight rather than reflect it. Her eyes
+      are fixed on the lock with an expression of startled recognition—something has
+      looked back at her. Behind her, flames lick at warehouse timbers and figures move
+      in organized panic, but she is utterly still, caught in a moment of connection
+      with something ancient.
     composition_notes: |
-      Extreme wide shot. Bridge as visual anchor. Company figures small. Layered depth through mist.
-    visual_hook: "The moment where stone and timber seem to crystallize from formless mist, a city being born from fog"
+      Medium-close framing on Veyra and the lock, fire chaos soft-focused behind.
+      Lock positioned at visual center, drawing the eye. Veyra's face in three-quarter
+      profile, expression visible. Fire provides warm backlighting, lock remains dark.
+      Ultra-wide format emphasizes isolation-in-chaos.
+    visual_hook: "Dark intricate lock in scarred hands, fire chaos behind, moment of soul-recognition in Veyra's eyes"
     depicts_characters:
       - "veyra-thornwake"
-      - "thorne-brightward"
-      - "grimjaw-ironbeard"
-      - "quartermaster-fayne"
     character_states:
       veyra-thornwake: |
-        Small figure leading. Mohawk silhouette. Lantern at hip.
-      thorne-brightward: |
-        Walking beside Veyra. Blue cloak.
-      grimjaw-ironbeard: |
-        Stocky figure behind.
-    location: "stonebridge"
+        Post-heist, clothes dusty and smoke-touched. Holding the Bastion Lock in both hands,
+        palms scarred. Expression of startled recognition—something has truly seen her.
+        Burn scar visible on left face, illuminated by firelight.
+    location: "croft-warehouse"
+    zone: "warehouse-exterior"
     lighting:
-      primary_source: "morning sun"
-      quality: "soft, luminous"
-      direction: "above/behind"
-      color_temperature: "silver/gold"
-      shadow_depth: "gentle"
-      atmospheric: "mist in layers"
+      primary_source: "Burning warehouse behind"
+      quality: "warm, dramatic"
+      direction: "backlighting from fire, face-lit by reflected glow"
+      color_temperature: "fire-orange background, dark metal absorbs light"
+      shadow_depth: "deep shadows on face, lock remains dark"
+      atmospheric: "smoke drifting, heat shimmer, ash particles"
     palette:
       dominant:
-        - "silver-gray"
-        - "soft gold"
-        - "stone ochre"
+        - "fire-orange"
+        - "dark iron gray"
+        - "smoke gray"
       accent:
-        - "teal-green"
+        - "warm skin tones"
+        - "teal tattoo hints"
       avoid:
-        - "harsh contrast"
+        - "cool blue"
+        - "bright white"
+        - "neon"
     prompt_used: |
-      Ancient stone town emerging from silver morning mist,
-      great five-arch bridge in midground,
-      weathered stonework catching diffused golden light,
-      small figures of travelers on road in foreground,
-      river reflecting fragments of pale sky,
-      classical oil painting, plein air naturalism, soft diffused daylight,
-      Hudson River School grandeur, visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Rembrandt chiaroscuro.
+      Burning warehouse district at night, flames leaping from timber buildings.
+      Half-elf woman with mohawk and burn scar on left face stands still amid chaos,
+      holding an intricate dark metal lock in both scarred hands, her expression one
+      of startled recognition as if something has looked back at her through the metal.
+      Medium-close framing, fire backlighting, smoke and ash in air.
+      Warm orange firelight contrasted with the lock's light-absorbing dark metal.
+      Ultra-wide cinematic aspect, moment of otherworldly connection amid mundane chaos.
+      Subtle fantasy: teal tattoos on arms, ward-marks on lock.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      glowing magic effects, supernatural aura, blue tones, action pose
     tags:
-      - "establishing-shot"
-      - "landscape"
-      - "pastoral"
-      - "stonebridge"
+      - "bastion-lock"
+      - "hero-image"
+      - "ethereal"
+      - "destiny"
+      - "veyra"
     generated_at: null
     file_name: null
     file_path: null
@@ -321,67 +317,330 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch11-an-honest-coin-img-11-01-02"
-    source_moment: "ch11-an-honest-coin-moment-02"
-    scene_id: "scn-11-01"
-    image_type: "anchor"
+  - custom_id: "ch11-an-honest-coin-img-07-10-02"
+    source_moment: "ch11-an-honest-coin-moment-10"
+    scene_id: "scn-11-07"
+    image_type: "detail"
     category:
-      - "character"
+      - "symbol"
       - "moment"
-      - "emotion"
-    scene_mood: "somber"
-    mood_rationale: "Vance embodies institutional defeat. Cramped office, weight of useless evidence. Rembrandt shadows."
+    scene_mood: "intimate"
+    mood_rationale: |
+      Close focus on the artifact itself—the lock's intricate mechanisms, dark metal warming
+      in Veyra's palm. The intimate detail of an object that will change everything.
     aspect_ratio: "3:4"
     orientation: "portrait"
     size: "1024x1365"
     visual_description: |
-      Magistrate Vance sits behind his buried desk, hands spread helplessly over documents. Face shows bone-deep exhaustion. Dusty afternoon light from a small window catches motes. Veyra and Thorne sit opposite him, attentive. Papers and scrolls frame the composition.
+      Extreme close-up of the Bastion Lock resting in Veyra's palm. The lock is a
+      masterwork of craftsmanship—dark metal with intricate mechanisms visible through
+      decorative apertures. Ancient runes or maker's marks barely visible in the metal.
+      Veyra's hand is scarred, calloused, the skin of a working warrior. The lock seems
+      to absorb the ambient firelight, remaining impossibly dark even as warm light
+      plays across her fingers. Her other hand hovers near, about to trace the mechanisms.
     composition_notes: |
-      Medium shot. Portrait orientation. Vance center-right. Desk as barrier. Light from upper left.
-    visual_hook: "Vance's hands spread helplessly over documents that prove nothing—the gesture of a man who knows the truth but cannot speak it officially"
+      Tight portrait framing on lock and hands only. Shallow depth of field.
+      Lock fills lower two-thirds, hand visible. Fire-glow warm on skin,
+      lock remains mysteriously dark. Vertical format emphasizes weight and detail.
+    visual_hook: "Dark intricate lock mechanisms in scarred warrior's palm, impossibly light-absorbing metal"
     depicts_characters:
-      - "magistrate-vance"
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Only hands visible—scarred, calloused, warrior's hands. One palm cradling
+        the lock, the other hovering near as if about to trace its mechanisms.
+    location: "croft-warehouse"
+    zone: "warehouse-exterior"
+    lighting:
+      primary_source: "Ambient fire-glow"
+      quality: "warm, intimate"
+      direction: "from above and side"
+      color_temperature: "warm amber on skin, lock absorbs light"
+      shadow_depth: "soft gradients on hands"
+      atmospheric: "smoke-touched air"
+    palette:
+      dominant:
+        - "dark iron metal"
+        - "warm skin tones"
+        - "amber firelight"
+      accent:
+        - "mechanism brass hints"
+      avoid:
+        - "bright reflections"
+        - "cool tones"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Vermeer detail lighting.
+      Extreme close-up of an intricate dark metal lock resting in a scarred
+      warrior's palm, ancient mechanisms visible through decorative apertures,
+      maker's marks barely visible in the dark metal that seems to absorb light
+      rather than reflect it. Another hand hovers near, about to trace the mechanisms.
+      Warm ambient firelight on skin, lock remains mysteriously dark.
+      Tight portrait framing, shallow depth of field.
+      Dark iron and warm amber palette.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, full figure, busy background, glowing magic, bright reflections
+    tags:
+      - "bastion-lock"
+      - "detail"
+      - "symbol"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch11-an-honest-coin-img-05-06-01"
+    source_moment: "ch11-an-honest-coin-moment-06"
+    scene_id: "scn-11-05"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "action"
+      - "character"
+    scene_mood: "kinetic"
+    mood_rationale: |
+      Peak action of the heist—Veyra shattering through glass in desperate escape.
+      Pure motion, urgency, the moment when elegant plans become survival.
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Veyra explodes shoulder-first through a warehouse window in a shower of glass
+      shards. She is mid-trajectory, body twisted for the impact, ledger pages
+      tucked against her chest. Below, the dock and dark water wait. Glass fragments
+      catch the minimal moonlight, creating a halo of destruction around her. Behind,
+      through the shattered frame, the dark warehouse interior and the shape of a
+      pursuer on the stairs. Her expression is focused, calculating even in desperation—
+      she's already planning the roll, the run, the escape.
+    composition_notes: |
+      Dynamic diagonal composition, Veyra moving from upper left toward lower right.
+      Glass shards forming radiating pattern around her. Window frame as compositional
+      device. Dark dock below, darker water beyond. Ultra-wide emphasizes the fall.
+      Motion captured at peak moment.
+    visual_hook: "Shoulder-first through shattering glass, glass shards haloing around her, dock below"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Mid-shatter, body twisted, shoulder leading. Ledger pages secured against chest.
+        Expression focused despite desperation. Hair wild, glass fragments everywhere.
+        Shadow-wear for infiltration, soft-soled boots visible.
+    location: "croft-warehouse"
+    zone: "office"
+    lighting:
+      primary_source: "Interior lamp through window, minimal moonlight outside"
+      quality: "high contrast, dramatic"
+      direction: "warm light from behind, darkness ahead"
+      color_temperature: "warm interior, cool night outside"
+      shadow_depth: "deep shadows, glass catching light"
+      atmospheric: "glass fragments suspended in air"
+    palette:
+      dominant:
+        - "night black"
+        - "glass-white fragments"
+        - "warm interior glow"
+      accent:
+        - "dock wood brown"
+        - "water reflection"
+      avoid:
+        - "bright colors"
+        - "daylight"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, dynamic Baroque movement.
+      Half-elf woman with mohawk exploding shoulder-first through a warehouse window
+      in a shower of glass shards, body twisted mid-fall, papers clutched to chest,
+      dock and dark water visible below. Glass fragments catch minimal light in
+      radiating pattern. Interior lamp-glow behind, moonless night ahead.
+      Dynamic diagonal composition, peak action moment.
+      Ultra-wide cinematic aspect, high contrast between warm interior and cold night.
+      Subtle fantasy: teal tattoos visible on arms.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      static pose, calm expression, symmetrical composition, daylight
+    tags:
+      - "window-exit"
+      - "hero-image"
+      - "kinetic"
+      - "escape"
+      - "heist"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch11-an-honest-coin-img-05-06-02"
+    source_moment: "ch11-an-honest-coin-moment-06"
+    scene_id: "scn-11-05"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "action"
+    scene_mood: "kinetic"
+    mood_rationale: |
+      The landing—Veyra hitting the dock rolling, coming up running.
+      The escape continues, pursuit behind, boat ahead.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Veyra in mid-roll on weathered dock planks, coming up into a sprint. Her momentum
+      carries her forward, one hand touching down for balance, the other protecting
+      the ledger pages. Behind and above, the shattered window with shouts emerging.
+      Ahead, the dark water and the suggestion of a boat with Grimjaw at the oars.
+      Water-slick dock planks gleam faintly in what little light exists.
+    composition_notes: |
+      Low angle, dock-level perspective. Veyra mid-transition from roll to run.
+      Broken window visible in upper background. Boat shape suggested in foreground.
+      Horizontal format emphasizes the run toward escape.
+    visual_hook: "Mid-roll on dock, coming up running, shattered window above, boat ahead"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Mid-roll, transitioning to sprint. One hand on dock, one protecting papers.
+        Clothes dusty, possibly glass fragments in hair. Focused determination.
+    location: "croft-warehouse"
+    zone: "warehouse-exterior"
+    lighting:
+      primary_source: "Distant warehouse light, minimal night ambient"
+      quality: "low, dramatic"
+      direction: "from above and behind"
+      color_temperature: "cold night, warm hint from warehouse"
+      shadow_depth: "deep shadows, wet dock gleam"
+      atmospheric: "night mist off water"
+    palette:
+      dominant:
+        - "dock wood gray-brown"
+        - "night black"
+        - "water reflection"
+      accent:
+        - "warm window glow distant"
+      avoid:
+        - "bright colors"
+        - "daylight"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, dynamic composition.
+      Half-elf woman with mohawk mid-roll on weathered dock planks, transitioning
+      to sprint, one hand on dock for balance, other protecting papers.
+      Shattered window visible above and behind with shouts emerging.
+      Dark water and suggestion of boat ahead. Low dock-level angle.
+      Moonless night, minimal light, wet dock gleam.
+      Night black and dock brown palette with warm distant window light.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      static pose, standing still, daylight, calm expression
+    tags:
+      - "escape"
+      - "dock"
+      - "kinetic"
+      - "pursuit"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch11-an-honest-coin-img-07-08-01"
+    source_moment: "ch11-an-honest-coin-moment-08"
+    scene_id: "scn-11-07"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "location"
+      - "action"
+    scene_mood: "ominous"
+    mood_rationale: |
+      Corruption burning its own evidence while protecting its true trade.
+      Controlled destruction reveals deeper rot—weapons where grain should be.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The warehouse district in controlled chaos. Flames leap from the office section
+      of Croft's main building, concentrated and deliberate. In the foreground, Croft's
+      men move crates away from the fire with suspicious efficiency—one crate is open,
+      revealing military-grade weapons gleaming in firelight. Bucket brigades form in
+      the background, unaware of what's being saved. Veyra and Thorne observe from
+      shadows at frame edge, their expressions grim with understanding.
+    composition_notes: |
+      Wide shot establishing the scene. Fire concentrated on one section (left).
+      Workers evacuating crates (center). Open weapons crate as focal point.
+      Veyra and Thorne small but visible at right edge. Bucket brigade distant.
+      Composition reveals two truths: what burns, what's saved.
+    visual_hook: "Controlled fire one side, weapons crates being saved other, two truths revealed"
+    depicts_characters:
       - "veyra-thornwake"
       - "thorne-brightward"
     character_states:
-      magistrate-vance: |
-        Seated, leaning back. Hands spread. Exhausted expression. Gray-brown hair.
       veyra-thornwake: |
-        Leaning forward. Intent. Burn scar visible.
+        Observing from shadows, expression grim with understanding.
+        Post-heist clothes, smoke-touched.
       thorne-brightward: |
-        Straight-backed military posture. Watchful.
-    location: "magistrate-office"
+        Beside Veyra, bruised jaw visible. Processing what the weapons mean.
+        Blue cloak identifying him despite shadows.
+    location: "croft-warehouse"
+    zone: "warehouse-exterior"
     lighting:
-      primary_source: "narrow window"
-      quality: "diffused, dusty"
-      direction: "upper left"
-      color_temperature: "amber/dust"
-      shadow_depth: "deep, rich"
-      atmospheric: "dust motes"
+      primary_source: "Burning warehouse"
+      quality: "fire-dramatic, harsh"
+      direction: "from left (fire), casting long shadows right"
+      color_temperature: "fire-orange dominant, cool night at edges"
+      shadow_depth: "deep, long shadows from fire"
+      atmospheric: "smoke rising, sparks, heat shimmer"
     palette:
       dominant:
-        - "parchment ochre"
-        - "slate shadow"
-        - "ink brown"
+        - "fire-orange"
+        - "smoke gray"
+        - "night black"
       accent:
-        - "deep blue"
+        - "steel weapon gleam"
+        - "wood brown crates"
       avoid:
-        - "bright colors"
+        - "cool blue"
+        - "peaceful tones"
     prompt_used: |
-      Weary magistrate behind desk buried in scrolls,
-      hands spread helplessly over papers,
-      shadows beneath tired eyes,
-      narrow window casting dusty light with visible motes,
-      adventurers leaning in to listen,
-      classical oil painting, Rembrandt lighting, chiaroscuro,
-      muted earth palette, deep rich shadows,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Turner fire luminosity.
+      Warehouse district at night, flames leaping from one section of timber building
+      while workers efficiently evacuate crates from another section.
+      One crate open revealing military weapons gleaming in firelight.
+      Bucket brigades forming in distant background. Two observers in shadows at edge.
+      Wide establishing shot, fire at left, weapons at center, observers at right.
+      Fire-orange and smoke-gray palette, ominous revelation of deeper corruption.
+      Subtle fantasy: mixed ancestries in crowd, ward-marks on crates.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, organized space
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      calm scene, daylight, blue tones, peaceful atmosphere
     tags:
-      - "character"
-      - "somber"
-      - "office"
+      - "controlled-burn"
+      - "weapons"
+      - "ominous"
+      - "revelation"
       - "corruption"
     generated_at: null
     file_name: null
@@ -390,247 +649,72 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch11-an-honest-coin-img-11-02-01"
-    source_moment: "ch11-an-honest-coin-moment-03"
-    scene_id: "scn-11-02"
-    image_type: "beat"
-    category:
-      - "character"
-      - "location"
-    scene_mood: "pastoral"
-    mood_rationale: "Market intelligence. Active trade in a vibrant square. Human connection and rumors."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Grimjaw and Fayne at a spice merchant's stall in the Stonebridge market. The merchant, a weather-beaten woman, is leaning in to whisper. Grimjaw holds a small sack of salt. The market is busy with colorful stalls and crowds in the background. Warm winter sun.
-    composition_notes: |
-      Medium shot. Merchant stall foreground. Busy market background. Focus on the conspiratorial interaction.
-    visual_hook: "The weather-beaten merchant woman leaning in to whisper gossip, salt being weighed out between them."
-    depicts_characters:
-      - "grimjaw-ironbeard"
-      - "quartermaster-fayne"
-    character_states:
-      grimjaw-ironbeard: |
-        Holding salt sack. Listening intently.
-      quartermaster-fayne: |
-        Counting coins. Eavesdropping.
-    location: "stonebridge"
-    lighting:
-      primary_source: "Dappled sun"
-      quality: "Warm, active"
-      direction: "Side"
-      color_temperature: "Golden"
-      shadow_depth: "Soft"
-      atmospheric: "Market dust"
-    palette:
-      dominant:
-        - "market colors"
-        - "wood brown"
-        - "stone gray"
-      accent:
-        - "salt white"
-      avoid:
-        - "gloom"
-    prompt_used: |
-      Dwarf and gnome at medieval spice stall,
-      merchant woman whispering gossip,
-      busy market square background,
-      warm sunlight,
-      atmosphere of trade and secrets,
-      classical oil painting, genre scene,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "beat"
-      - "market"
-      - "intelligence"
-      - "pastoral"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch11-an-honest-coin-img-11-04-01"
-    source_moment: "ch11-an-honest-coin-moment-05"
-    scene_id: "scn-11-04"
-    image_type: "beat"
-    category:
-      - "location"
-      - "detail"
-      - "symbol"
-    scene_mood: "intimate"
-    mood_rationale: "The 'Character's Silence.' Pre-mission tension. Candlelit map. Focused and conspiratorial."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
-    visual_description: |
-      Close-up of a scarred wooden table in a dim room. A single candle illuminates a hand-drawn map of the warehouse district. Weighted by a pile of coins. Pair of lockpicks nearby. A broad human hand (Thorne's) rests on the table edge.
-    composition_notes: |
-      Tight square framing. Candle focal point off-center. Shallow depth. Map and coins sharp.
-    visual_hook: "A hand-drawn map and a pile of coins spotlighted by a single candle, with a warrior's bruised hand resting at the edge."
-    depicts_characters:
-      - "thorne-brightward"
-    character_states:
-      thorne-brightward: |
-        Only hand visible. Scarred knuckles.
-    location: "shepherds-rest-room"
-    lighting:
-      primary_source: "single candle"
-      quality: "warm, flickering"
-      direction: "center-outward"
-      color_temperature: "amber-gold"
-      shadow_depth: "deep"
-      atmospheric: "still"
-    palette:
-      dominant:
-        - "warm amber"
-        - "parchment"
-        - "shadow"
-      accent:
-        - "gold coins"
-      avoid:
-        - "bright colors"
-    prompt_used: |
-      Macro detail still life on dark wooden table,
-      single candle illuminating hand-drawn map and lockpicks,
-      large scarred human hand at edge of light,
-      conspiratorial atmosphere,
-      classical oil painting, Vermeer lighting,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "detail"
-      - "preparation"
-      - "intimate"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch11-an-honest-coin-img-11-05-01"
-    source_moment: "ch11-an-honest-coin-moment-07"
-    scene_id: "scn-11-05"
-    image_type: "pivot"
-    category:
-      - "action"
-      - "moment"
-      - "character"
-    scene_mood: "ominous"
-    mood_rationale: "Threshold-crossing. Veyra descending into the void. Entering the criminal's domain."
-    aspect_ratio: "2:3"
-    orientation: "portrait"
-    size: "1024x1536"
-    visual_description: |
-      Veyra drops through the ventilation hatch, silhouette framed against dim light above. Descending into the warehouse void. Dust puffs from grain sacks below. Controlled mid-fall.
-    composition_notes: |
-      Vertical portrait. Veyra at center. Hatch sole light source. Low angle looking up. Deep blacks lower two-thirds.
-    visual_hook: "A silhouette dropping through a rectangle of weak light into absolute void—the moment of no return"
-    depicts_characters:
-      - "veyra-thornwake"
-    character_states:
-      veyra-thornwake: |
-        Mid-descent. Body controlled. Mohawk silhouette against light. Prepared for impact.
-    location: "croft-warehouse"
-    lighting:
-      primary_source: "hatch light"
-      quality: "harsh rectangle"
-      direction: "from above"
-      color_temperature: "gray-blue"
-      shadow_depth: "absolute"
-      atmospheric: "rising dust"
-    palette:
-      dominant:
-        - "void black"
-        - "charcoal gray"
-        - "gray-blue"
-      accent:
-        - "pale dust"
-      avoid:
-        - "warm colors"
-    prompt_used: |
-      Silhouette of athletic woman dropping through rectangular hatch into darkness,
-      view from low looking up,
-      hatch creating portal of sickly light,
-      dust motes rising from sacks below,
-      classical oil painting, Symbolist unease,
-      void black and charcoal palette,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, comfortable atmosphere
-    tags:
-      - "action"
-      - "infiltration"
-      - "ominous"
-      - "descent"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch11-an-honest-coin-img-11-05-02"
+  - custom_id: "ch11-an-honest-coin-img-07-08-02"
     source_moment: "ch11-an-honest-coin-moment-08"
-    scene_id: "scn-11-05"
-    image_type: "anchor"
+    scene_id: "scn-11-07"
+    image_type: "beat"
     category:
-      - "action"
       - "moment"
-      - "character"
-    scene_mood: "kinetic"
-    mood_rationale: "Peak action moment. Explosive escape through glass. Diagonal energy and chaos."
+      - "symbol"
+    scene_mood: "ominous"
+    mood_rationale: |
+      Close focus on the weapons crate—military-grade steel where grain should be.
+      The Silent Hand's supply line exposed in fire-glow.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Glass explodes outward as Veyra bursts shoulder-first through the office window. Shards suspended in air. Launched into the moonless night. Trajectory toward dark dock below. Interior light silhouettes her.
+      An open wooden crate, lid cast aside, reveals row upon row of military-grade
+      weapons—swords, daggers, armor pieces, all of excellent steel. Firelight plays
+      across the metal, making it gleam. A worker's hands are visible lifting a sword
+      to move it, checking the blade. The crate's markings indicate grain, but the
+      contents tell a different story. Smoke drifts across the scene.
     composition_notes: |
-      Wide dynamic horizontal momentum. Veyra center-left moving right. Glass shards radiate. Vertical light source left.
-    visual_hook: "Glass shards suspended around her silhouette like frozen rain—the explosive instant of escape made eternal"
-    depicts_characters:
-      - "veyra-thornwake"
-    character_states:
-      veyra-thornwake: |
-        Mid-flight. Shoulder leading. Profile catches light from behind. Committed action.
+      Medium shot focused on open crate. Weapons catching firelight as focal point.
+      Worker's hands for scale and action. Smoke drifting through frame.
+      Horizontal format emphasizes the row of weapons.
+    visual_hook: "Military weapons gleaming in open 'grain' crate, firelight on steel"
+    depicts_characters: []
+    character_states: {}
     location: "croft-warehouse"
+    zone: "warehouse-exterior"
     lighting:
-      primary_source: "interior office light"
-      quality: "harsh, backlighting"
-      direction: "behind/left"
-      color_temperature: "orange-yellow vs night"
-      shadow_depth: "extreme"
-      atmospheric: "shattering glass"
+      primary_source: "Fire from burning warehouse"
+      quality: "harsh, revealing"
+      direction: "from side, casting across weapons"
+      color_temperature: "fire-orange warmth on cold steel"
+      shadow_depth: "deep in crate interior"
+      atmospheric: "smoke drifting, sparks"
     palette:
       dominant:
-        - "orange-yellow"
-        - "night black"
-        - "dock gray"
+        - "steel gray"
+        - "fire-orange reflection"
+        - "wood brown crate"
       accent:
-        - "glass fragments"
+        - "smoke gray"
       avoid:
-        - "static"
+        - "cool tones"
+        - "peaceful colors"
     prompt_used: |
-      Muscular woman with mohawk bursting through window in explosion of glass shards,
-      fragments suspended in air around her silhouette,
-      jumping into moonless night toward dark dock,
-      harsh backlighting from interior,
-      explosive diagonal composition,
-      classical oil painting, Romantic dynamism,
-      Delacroix energy, visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Caravaggio light-on-metal.
+      Open wooden crate revealing military-grade weapons—swords, daggers, armor—
+      all excellent steel gleaming in firelight. Worker's hands lifting a sword.
+      Crate marked for grain but containing arms. Smoke drifting through frame.
+      Medium shot on crate, weapons catching fire-glow.
+      Steel gray and fire-orange palette.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, static pose
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, peaceful scene, daylight
     tags:
-      - "action"
-      - "escape"
-      - "kinetic"
-      - "peak-moment"
+      - "weapons"
+      - "smuggling"
+      - "ominous"
+      - "detail"
     generated_at: null
     file_name: null
     file_path: null
@@ -638,138 +722,79 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch11-an-honest-coin-img-11-07-01"
-    source_moment: "ch11-an-honest-coin-moment-11"
-    scene_id: "scn-11-07"
-    image_type: "symbol"
-    category:
-      - "symbol"
-      - "character"
-      - "moment"
-    scene_mood: "ethereal"
-    mood_rationale: "Artifact 'seeing' Veyra. Supernatural heart of the chapter. Luminous significance."
-    aspect_ratio: "4:5"
-    orientation: "portrait"
-    size: "1024x1280"
-    visual_description: |
-      The Bastion Lock in Veyra's hands, unwrapped from black silk. Masterwork dark metal. Firelight from distant burning warehouse absorbed. Veyra's eyes widened—moment of being 'seen'. Marcus visible in soft focus behind.
-    composition_notes: |
-      Close-medium portrait. Lock center. Veyra hands framing. Marcus over shoulder. Flickering firelight.
-    visual_hook: "Dark metal that seems to absorb firelight while Veyra's eyes widen with the sensation of being truly seen"
-    depicts_characters:
-      - "veyra-thornwake"
-      - "marcus-heartbridge"
-    character_states:
-      veyra-thornwake: |
-        Hands raised holding lock. Eyes widened imperceptibly. Recognition.
-      marcus-heartbridge: |
-        Background. Knowing expression.
-    location: "croft-warehouse"
-    lighting:
-      primary_source: "distant fire + artifact glow"
-      quality: "luminous, flickering"
-      direction: "behind/side"
-      color_temperature: "orange vs pale silver"
-      shadow_depth: "soft"
-      atmospheric: "smoke haze"
-    palette:
-      dominant:
-        - "iron-black"
-        - "amber-orange"
-        - "earth-brown"
-      accent:
-        - "luminous silver"
-        - "black silk"
-      avoid:
-        - "mundane"
-    prompt_used: |
-      Portrait of scarred woman holding intricate dark metal lock in calloused hands,
-      black silk pooling around artifact,
-      dark eyes widened with spiritual shock,
-      distant burning building firelight in background,
-      man with goatee watching knowingly,
-      ethereal luminous quality,
-      classical oil painting, Pre-Raphaelite luminosity,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, ordinary lock
-    tags:
-      - "symbol"
-      - "artifact"
-      - "ethereal"
-      - "destiny"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch11-an-honest-coin-img-11-08-01"
-    source_moment: "ch11-an-honest-coin-moment-13"
-    scene_id: "scn-11-08"
+  - custom_id: "ch11-an-honest-coin-img-05-05-01"
+    source_moment: "ch11-an-honest-coin-moment-05"
+    scene_id: "scn-11-05"
     image_type: "detail"
     category:
-      - "character"
       - "moment"
-      - "emotion"
-    scene_mood: "intimate"
-    mood_rationale: "Quiet aftermath. Processing weight of purpose. Dual lighting tension."
+      - "symbol"
+    scene_mood: "clandestine"
+    mood_rationale: |
+      The heist's key moment—vanity concealing crime. The hideous tapestry pulled aside
+      reveals the safe, the portrait gives up the combination. Secrets in shadows.
     aspect_ratio: "3:4"
     orientation: "portrait"
     size: "1024x1365"
     visual_description: |
-      Veyra sits by hearth in inn room. Bastion Lock on table. Firelight from right on scarred face. Cold gray pre-dawn from window at left. Company moving quietly in soft focus background.
+      The hideous battle tapestry—clashing colors depicting some glorified ancient
+      conflict—is pulled aside to reveal a dark iron safe set into the wall. On the
+      nearby desk, partially visible, is the portrait of "Beloved Mara" that provided
+      the combination. Veyra's hand is on the safe dial, about to enter the code.
+      A single lamp illuminates the obsessively ordered office. The tapestry's garish
+      colors contrast with the utilitarian darkness of the safe.
     composition_notes: |
-      Medium portrait. Two opposing light sources. Lock at Veyra's elbow. Background depth.
-    visual_hook: "Her burn-scarred face split between warm firelight and cold dawn—two lights, two futures"
+      Vertical composition: tapestry pulled aside (top), safe revealed (center),
+      portrait hint on desk (bottom edge). Veyra's hand on dial as focal point.
+      Single lamp lighting. Portrait framing emphasizes the secret's hiding place.
+    visual_hook: "Hideous tapestry pulled aside revealing dark safe, portrait on desk, hand on combination"
     depicts_characters:
       - "veyra-thornwake"
-      - "thorne-brightward"
-      - "grimjaw-ironbeard"
-      - "quartermaster-fayne"
     character_states:
       veyra-thornwake: |
-        Seated, contemplative. Split lighting. Eyes on lock. Lantern at hip.
-      thorne-brightward: |
-        Background. Checking gear.
-      grimjaw-ironbeard: |
-        Background. Gathering supplies.
-      quartermaster-fayne: |
-        Background. Consulting papers.
-    location: "shepherds-rest-room"
+        Only hand visible—on the safe dial, entering combination.
+        Shadow-wear for infiltration.
+    location: "croft-warehouse"
+    zone: "office"
     lighting:
-      primary_source: "hearth vs window"
-      quality: "soft, warm, intimate"
-      direction: "right vs left"
-      color_temperature: "amber vs gray"
-      shadow_depth: "gentle"
-      atmospheric: "still"
+      primary_source: "Single desk lamp"
+      quality: "intimate, pool of light"
+      direction: "from desk, casting upward"
+      color_temperature: "warm amber"
+      shadow_depth: "deep shadows in corners"
+      atmospheric: "dust motes in light pool"
     palette:
       dominant:
-        - "hearth amber"
-        - "pre-dawn gray"
-        - "wood brown"
+        - "tapestry clashing colors (reds, golds, blues)"
+        - "safe dark iron"
+        - "amber lamplight"
       accent:
-        - "iron black"
-        - "gold glow"
+        - "portrait colors"
+        - "wood desk brown"
       avoid:
-        - "harsh contrast"
+        - "cool modern tones"
+        - "bright overall lighting"
     prompt_used: |
-      Scarred woman sitting by hearth in simple room,
-      face split between warm firelight and cold gray dawn light,
-      intricate dark lock on table beside her,
-      companions preparing to leave in soft focus background,
-      contemplative atmosphere,
-      classical oil painting, Vermeer interior lighting,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Dutch interior lighting.
+      Garish battle tapestry in clashing colors pulled aside to reveal dark iron
+      safe set in wall. Hand on safe dial entering combination. Portrait of young
+      woman visible on desk nearby. Single lamp-pool lighting obsessively ordered office.
+      Vertical portrait composition, hideous tapestry contrasting utilitarian safe.
+      Warm amber and iron-dark palette, clandestine atmosphere.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, urgency
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, bright lighting, modern office, action pose
     tags:
-      - "character"
-      - "intimate"
-      - "contemplation"
-      - "aftermath"
+      - "safe"
+      - "heist"
+      - "clandestine"
+      - "tapestry"
+      - "detail"
     generated_at: null
     file_name: null
     file_path: null
@@ -777,64 +802,170 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch11-an-honest-coin-img-11-08-02"
-    source_moment: "ch11-an-honest-coin-moment-12"
-    scene_id: "scn-11-08"
-    image_type: "perspective"
+  - custom_id: "ch11-an-honest-coin-img-06-07-01"
+    source_moment: "ch11-an-honest-coin-moment-07"
+    scene_id: "scn-11-06"
+    image_type: "beat"
     category:
-      - "location"
       - "moment"
-    scene_mood: "somber"
-    mood_rationale: "The 'Character's Witness.' Inn as silent accomplice. Weary humanity of the rescuers."
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Justice delivered in darkness. Vance's face moving through surprise to determination
+      as he realizes what he holds—the proof he's needed for years.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      POV from behind the bar. Innkeeper's weary hand with damp rag in foreground. Veyra and Thorne entering through front door in pre-dawn gray light. Dusted with limestone, smoke-scented. Composed but visibly tired.
+      Magistrate Vance in his night robe, bent over ledger pages spread on his study
+      desk, candlelight illuminating the damning evidence. His face shows the progression
+      from surprise to satisfaction to grim determination. Behind him, Veyra and Thorne
+      stand in shadow, watching his reaction. The study is cramped, books and scrolls
+      everywhere, but all attention is on the papers. Vance's tired eyes are suddenly
+      sharp, alive with purpose.
     composition_notes: |
-      First-person perspective. Bar horizontal anchor. Figures focal point in doorway. Cold window light vs warm dying hearth (off-frame).
-    visual_hook: "The view over an innkeeper's bar as weary, dust-covered heroes return from the dark in the first gray light of dawn."
+      Medium shot, Vance at desk as focal point. Candle lighting his face and papers.
+      Veyra and Thorne visible but in shadow behind. Horizontal format captures the
+      study's cramped intimacy. Rule of thirds: Vance at left, papers center, visitors right.
+    visual_hook: "Robed magistrate examining ledger by candlelight, tired eyes suddenly sharp with purpose"
     depicts_characters:
+      - "magistrate-vance"
       - "veyra-thornwake"
       - "thorne-brightward"
     character_states:
+      magistrate-vance: |
+        In night robe, bone-tired but instantly alert. Face moving through emotions:
+        surprise, satisfaction, grim determination. Tired eyes now sharp with purpose.
       veyra-thornwake: |
-        Walking with measured stride. Pale with exhaustion.
+        Standing in shadow, watching. Post-heist, waiting for his reaction.
       thorne-brightward: |
-        Walking beside Veyra. Armor gray with dust.
-    location: "shepherds-rest-room"
+        Beside Veyra, formal even in shadows. Letting the evidence speak.
+    location: "stonebridge"
+    zone: "magistrates-office"
     lighting:
-      primary_source: "pre-dawn light"
-      secondary_source: "hearth embers"
-      quality: "cold, honest"
-      direction: "front"
-      color_temperature: "gray vs amber"
-      shadow_depth: "moderate"
-      atmospheric: "smoke/damp wool"
+      primary_source: "Single candle on desk"
+      quality: "warm, intimate, single pool"
+      direction: "from desk upward, illuminating papers and face"
+      color_temperature: "warm amber-gold"
+      shadow_depth: "deep shadows in room corners, faces half-lit"
+      atmospheric: "night stillness, dust motes in candlelight"
     palette:
       dominant:
-        - "stone gray"
-        - "wood brown"
+        - "amber candlelight"
+        - "paper cream"
+        - "shadow gray"
+      accent:
+        - "robe fabric"
+        - "ink black"
+      avoid:
+        - "bright colors"
+        - "daylight"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Rembrandt candlelight.
+      Tired magistrate in night robe bent over ledger pages on cramped study desk,
+      single candle illuminating his face and the damning evidence, expression moving
+      from surprise to satisfaction to determination. Two figures standing in shadow
+      behind, watching his reaction. Study cramped with scrolls and books.
+      Medium shot, warm amber candlelight on face and papers.
+      Night-study intimacy, justice delivered in darkness.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      bright lighting, daylight, action scene, theatrical expression
+    tags:
+      - "evidence"
+      - "magistrate"
+      - "intimate"
+      - "justice"
+      - "night"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch11-an-honest-coin-img-01-02-01"
+    source_moment: "ch11-an-honest-coin-moment-02"
+    scene_id: "scn-11-01"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      A small act of conscience in the machinery of corruption. Ink-stained fingers
+      pressing parchment into calloused hands—the system finding cracks.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      In a shadowed corridor outside the magistrate's office, a young clerk with
+      ink-stained fingers presses a rolled parchment into Thorne's hand. The clerk's
+      expression is nervous, earnest, glancing around for observers. Thorne's weathered
+      hand receives the gift, his expression one of careful attention. The corridor is
+      dim, gray light from distant windows, the furtive moment captured between them.
+      The contrast between the clerk's youth and Thorne's experience is visible.
+    composition_notes: |
+      Close to medium shot, focused on the hands meeting—ink-stained youth to calloused
+      veteran. Faces visible but hands as focal point. Corridor shadows frame the
+      furtive exchange. Horizontal format captures the clandestine moment.
+    visual_hook: "Ink-stained fingers pressing parchment into calloused hands, nervous glance, shadow corridor"
+    depicts_characters:
+      - "thorne-brightward"
+    character_states:
+      thorne-brightward: |
+        Receiving the parchment, expression of careful attention. Weathered hands,
+        captain's bearing even in a corridor. Understanding the weight of the gift.
+    location: "stonebridge"
+    zone: "magistrates-office"
+    lighting:
+      primary_source: "Distant window, gray daylight"
+      quality: "dim, corridor lighting"
+      direction: "from end of corridor, side-lighting the exchange"
+      color_temperature: "cool gray daylight"
+      shadow_depth: "moderate, corridor shadows"
+      atmospheric: "quiet, furtive"
+    palette:
+      dominant:
+        - "stone gray corridor"
+        - "parchment cream"
         - "shadow"
       accent:
-        - "ember orange"
+        - "ink stains on fingers"
+        - "blue cloak hint"
       avoid:
-        - "bright sun"
+        - "bright colors"
+        - "warm tones"
     prompt_used: |
-      First person perspective from behind inn bar looking at two weary travelers entering at dawn,
-      dusted with gray limestone and soot,
-      innkeeper's hand with rag in foreground,
-      cold morning light from windows,
-      atmosphere of quiet aftermath,
-      classical oil painting, Rembrandt lighting at dawn,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, interior corridor lighting.
+      Shadowed corridor outside official office, young clerk with ink-stained fingers
+      pressing rolled parchment into the calloused hand of a weathered captain.
+      Clerk's expression nervous and earnest, glancing around. Veteran's hand receiving
+      with careful attention. Gray daylight from distant window, furtive exchange.
+      Close-medium shot focused on hands meeting, faces visible.
+      Stone gray and parchment cream palette, quiet conspiracy.
+      Subtle fantasy: mixed ancestries, ward-marks on doorframe.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright sunlight
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      bright lighting, action pose, theatrical expression, busy background
     tags:
-      - "perspective"
-      - "aftermath"
-      - "somber"
-      - "inn"
+      - "clerk"
+      - "conscience"
+      - "intimate"
+      - "evidence"
+      - "thorne"
     generated_at: null
     file_name: null
     file_path: null

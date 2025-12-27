@@ -8,7 +8,7 @@
 | Vera "The Tracker" Moonwhisper | Scout for the Last Light Company | Half-Elf Ranger with exceptional tracking skills and animal partnerships, searching for her missing brother | The Bastion of Last Light | Active |
 | Brother Aldwin Gentleheart | Medic for the Last Light Company | Halfling Cleric, former battlefield healer with a holistic approach to medicine and a special tea ceremony | The Bastion of Last Light | Active |
 | Grimjaw Ironbeard | Heavy Rescue for the Last Light Company | Dwarf Barbarian, master miner turned safety expert with specialized equipment and a reputation for never losing anyone | The Bastion of Last Light | Active |
-| Rylan Stormcaller | Magical Support for the Last Light Company | Elf Wizard specializing in weather magic and planar convergence theory, with a phoenix familiar and interdimensional experience | The Bastion of Last Light | Active |
+| Rylan Ashvale | Magical Support for the Last Light Company | Elf Wizard specializing in weather magic and planar convergence theory, with a phoenix familiar and interdimensional experience | The Bastion of Last Light | Active |
 | Marcus "The Voice" Heartbridge | Negotiator & Morale for the Last Light Company | Human Bard, trade diplomat and court liaison who operates with a James Bond-style approach to fixing political complications | The Bastion of Last Light | Active |
 | Nireya Voss | Death-Walker for the Last Light Company | Kalashtar Spirit-Medium with a split appearance between life and death, who can extract information from the recently dead and navigate spectral landscapes | The Bastion of Last Light | Active |
 | Cidrella "Cid" Vexweld | Magical Engineer for the Last Light Company | Rock Gnome Sorcerer/Artificer hybrid born with wild magic, who channels her innate sorcerous power through technical precision to create "impossible" magical-technical fusion solutions and specialized equipment for rescue operations | The Bastion of Last Light | Active |
@@ -230,6 +230,6 @@ graph TD
     *   **Communication:** Often through humor, shared experiences, and practical demonstrations of skill.
     *   **Learning:** Patrol members learn from specialists' unique abilities; specialists learn about the practicalities of Watch life.
     *   **Bond:** Forged in shared daily routines, minor frustrations (like cramped quarters), and the collective purpose of the Company.
-    *   **Examples:** Grimjaw's storytelling in the mess hall, Aldwin's tea ceremonies, Fayne's logistical struggles, Sarge's gruff acceptance, Venn's teasing, Mistress Elba's good-natured complaints, Finn's eagerness.
+    *   **Examples:** Grimjaw's storytelling in the mess hall, Aldwin's tea ceremonies, Fayne's logistical struggles, Tomaq's gruff acceptance, Venn's teasing, Mistress Elba's good-natured complaints, Finn's eagerness.
 *   **Relationship Web**
 - **Lieutenant Tomaq and Thorne Brightward**: Tomaq and Thorne share a long history in the City Watch. Their relationship is one of professional respect between old comrades, though Tomaq's strict adherence to the rules and his duty to report to his superiors sometimes puts him in tension with Thorne's new, less conventional methods. He acts as a grounded, official counterpoint to the Company's semi-independent status.

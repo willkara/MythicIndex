@@ -33,7 +33,7 @@
   - *Current Status*: Professional colleagues
   - *Professional Opinion of*: Likely appreciates his healing skills and calm demeanor
 
-- **Rylan Stormcaller**:
+- **Rylan Ashvale**:
   - *Nature of Relationship*: Fellow Company member
   - *Hierarchy*: Different specialties (rescue and magical support)
   - *Dynamics*: His weather magic could help create safe conditions for his rescue operations

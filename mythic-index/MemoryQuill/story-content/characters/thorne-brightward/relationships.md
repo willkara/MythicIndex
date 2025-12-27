@@ -33,7 +33,7 @@
   - *Current Status*: Professional colleagues
   - *Professional Opinion of*: Respects his experience and "never loses anyone" reputation
 
-- **Rylan Stormcaller**: 
+- **Rylan Ashvale**: 
   - *Nature of Relationship*: Deputy Commander and Magical Support
   - *Hierarchy*: Leadership position with magical specialist
   - *Dynamics*: Coordinates magical support for tactical operations
@@ -82,7 +82,7 @@
   - *Current Status*: Professional colleagues with a surprising degree of mutual respect.
   - *Feelings Toward*: He trusts her skills, if not her methods. He sees her as a precision tool that must be handled carefully.
 
-- **Sarge**:
+- **Tomaq**:
   - *Nature of Relationship*: Fellow Watch-Sergeant, colleague.
   - *Hierarchy*: Thorne is his former Captain.
   - *Dynamics*: Shares a professional respect. Thorne observes his training methods and comments on the Watchmen's adaptation to new influences.

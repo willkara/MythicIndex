@@ -39,7 +39,7 @@
   - *Key Moments*: Fixing her water flask without being asked; "I've carried men up who weren't breathing anymore and still felt them heavy with something. I work in the dark. You work in a different kind of dark. Don't mean either of us is lost."
   - *Current Status*: Mutual respect - she was genuinely surprised by his understanding and care
 
-- **Rylan Stormcaller**:
+- **Rylan Ashvale**:
   - *Nature of Relationship*: Fellow practitioners of esoteric arts with quiet protective instincts
   - *Hierarchy*: Equals with different magical specialties
   - *Dynamics*: Both deal with forces beyond normal perception - Rylan with planar energies, Nireya with spirits

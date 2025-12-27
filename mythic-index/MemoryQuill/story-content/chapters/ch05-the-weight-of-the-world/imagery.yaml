@@ -1,550 +1,290 @@
-# ============================================================================
-# CHAPTER IMAGERY SPECIFICATION
-# Chapter: The Weight of the World
-# Generated: 2025-12-21
-# ============================================================================
-
 metadata:
   entity_type: "chapter-imagery"
   slug: "ch05-the-weight-of-the-world"
   chapter_number: 5
   chapter_title: "The Weight of the World"
-  visual_thesis: "From desperate chaos to earned trust through the revelation that true strength lies in listening rather than forcing"
+  visual_thesis: "Listening as strength—the mountain doesn't respect courage, only competence, and true mastery is knowing when to stop forcing and start understanding."
   color_palette:
     primary:
-      - "#8B7355"
-      - "#4A5568"
-      - "#D4A574"
-      - "#2D3748"
+      - "#6B6B6B" # stone-deep gray
+      - "#8B6914" # dust-brown / timber-brown
+      - "#D4AF37" # lamplight gold / sunset gold
     accent:
-      - "#B8860B"
-      - "#CD853F"
+      - "#B8860B" # ale-amber
+      - "#E5E5E5" # dust-ghost white
+      - "#CC5500" # earth-rust red
   generation_defaults:
     provider: "openai"
     model: "dall-e-3"
     quality: "hd"
   mood_distribution:
-    somber: 2
-    pastoral: 2
+    kinetic: 2
+    intimate: 3
+    somber: 1
     celebratory: 1
-    aquatic: 0
     ethereal: 1
-    intimate: 1
-    kinetic: 1
-    ominous: 1
 
 characters:
-  - ref: "veyra-thornwake"
-    name: "Veyra Thornwake"
-    scene_variations: "Full weathered leather armor. Burn scar prominent. Guardian stance at mine entrance."
-    reference_images:
-      - "veyra-thornwake-official-portrait-01"
-
   - ref: "grimjaw-ironbeard"
     name: "Grimjaw Ironbeard"
-    scene_variations: "First appearance. No insignia yet. Dark mining leathers, copper pauldrons. Braided beard with metal bands."
+    scene_variations: |
+      CHAPTER 5 VARIATIONS (RECRUITMENT ARC):
+      - SCENES 01-02 (Pre-recruitment): Not present, still in mountain isolation
+      - SCENE 03 (Cliff-face encounter): Working alone on sheer cliff, no safety lines.
+        Stocky dwarf build, iron-gray beard braided with metal charms and tool pieces.
+        Practical reinforced leather mining clothes with metal studs, thick boots, wide belt.
+        Weathered hands and face from decades underground. Movements economical and precise.
+      - SCENES 04-05 (After recruitment): Same appearance but now engaged with the team.
+        Assessment mode - hand on stone, listening. Later: covered in mine dust, working
+        methodically. Final scene: accepting ale, first genuine smile emerging.
+      - Throughout: War-hammer/mining pick "Tremor" always present. Beard charms include
+        rare ore chips and tiny tools. Bright, keen eyes despite age. Solid stance with
+        feet planted firmly.
+    reference_images: []
+
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: |
+      CHAPTER 5 (POST-CHAPTER-1):
+      - SCENE 03 (Cliff-face): Warm brown skin with mottled burn scar covering left side
+        of face from jaw to temple (healed but permanent from Ch01 dragon-fire). Dark brown
+        mohawk with shaved sides, longer braided lock adorned with feathers. Blue swirling
+        tattoos on neck and left arm. Weathered leather armor, heavy cowl, shoulder pauldrons.
+        Battered metal lantern at belt glowing with warm orange light.
+      - Throughout: Scarred but resolute. Calm, deliberate movements. Eyes intense and focused.
     reference_images:
-      - "grimjaw-ironbeard-portrait-01"
+      - "veyra-thornwake-portrait"
 
   - ref: "aldwin-gentleheart"
-    name: "Brother Aldwin Gentleheart"
-    scene_variations: "Moss-green cowl against dust. Treating miners."
-    reference_images:
-      - "aldwin-gentleheart-official-portrait-01"
-
-  - ref: "thorne-brightward"
-    name: "Thorne Brightward"
-    scene_variations: "Dust-coated armor. Grim resolve."
-    reference_images:
-      - "thorne-brightward-portrait-01"
-
-  - ref: "medic-halden"
-    name: "Medic Halden"
-    scene_variations: "Working triage. Dust-coated."
-    reference_images:
-      - "medic-halden-standing-portrait-01"
-
-  - ref: "corporal-darric"
-    name: "Corporal Darric"
-    scene_variations: "Part of search party. Climbing gear."
-    reference_images:
-      - "corporal-darric-portrait-01"
+    name: "Aldwin Gentleheart"
+    scene_variations: |
+      CHAPTER 5 (EARLY COMPANY MEMBER):
+      - SCENES 01, 05: Healer/medic role. Gentle presence, practical medical gear.
+        Tending wounded, preparing supplies. Later offers Grimjaw the rare dwarven spirits.
+    reference_images: []
 
   - ref: "quartermaster-fayne"
     name: "Quartermaster Fayne"
-    scene_variations: "Part of search party. Spotting details."
-    reference_images:
-      - "quartermaster-fayne-standard-portrait-01"
+    scene_variations: |
+      CHAPTER 5 (SEARCH PARTY):
+      - SCENES 02-03: Sharp-eyed quartermaster. Practical traveling gear. Reads dwarven
+        runes, studies obstacles, provides the key insight: "The mountain's winning."
+    reference_images: []
+
+  - ref: "medic-halden"
+    name: "Medic Halden"
+    scene_variations: |
+      CHAPTER 5 (RESCUE SUPPORT):
+      - SCENE 05: Medical support alongside Aldwin. Tending dust-covered miners.
+    reference_images: []
 
 locations:
+  - ref: "sword-mountains"
+    zones:
+      - id: "mountain-trail"
+        chapter_context: |
+          Deliberately neglected mining road turned obstacle course. Dense old-growth forest
+          with massive ancient trees. Bridges missing key planks, trail markers turned wrong
+          directions or removed. Carefully positioned rockfalls block easy routes. Strategic
+          mud patches. Moss-covered stone markers with insulting dwarven runes ("Bugger off").
+          Masterwork of discouragement—dangerous enough to deter but not kill. Afternoon sun
+          filtering through canopy, creating dappled shadows. Rising elevation, mountain air.
+      - id: "cliff-face"
+        chapter_context: |
+          Sheer cliff face halfway up mountain slope. Massive stone overhang looming over
+          shepherd's path far below. No safety infrastructure—raw stone work site. Single
+          dwarf working alone with hammer and timber supports. Slate-blue mountain peaks
+          visible in background. High noon sun creating dramatic shadows on stone face.
+          Thousands of tons of waiting stone. Economical, precise work in progress. Sound
+          of metal on stone echoing off mountainside. Wind through heights. Vertical
+          exposure emphasizing scale contrast.
+
   - ref: "blackvein-lode"
     zones:
-      - id: "overview"
-        chapter_context: "Industrial wound in mountainside. Timber headframes groaning. Coal dust coating everything. Anxious families gathering."
-
-  - ref: "grimjaw-cliff"
-    zones:
-      - id: "overview"
-        chapter_context: "Sheer granite cliff face above shepherd's path. Treacherous trail with deliberate obstacles. Massive timber supports bracing overhang."
-
-  - ref: "westwall-watchpost"
-    zones:
-      - id: "exterior"
-        chapter_context: "Dawn at the watchpost. The messenger's exhausted horse arrives with desperate news of the mine collapse."
+      - id: "mine-head"
+        chapter_context: |
+          Surface staging area at main shaft. Timber headframe 28-32ft tall with iron-banded
+          collar. Hoist/capstan mechanisms. Windbreak canvas stretched on poles. Command bench
+          for crisis management. Family vigil grounds with rope stanchions and lantern lines.
+          Post-collapse: groaning timber supports, dust clouds, controlled chaos. Midday harsh
+          sun on dusty scene. Later: sunset blood-gold light on mountains, ale-amber tones,
+          dust catching light like halos. Mining families clustered, grief and desperate hope.
+      - id: "mine-entrance"
+        chapter_context: |
+          Shaft collar 8-10ft diameter with stone ring and timber curb. Timber sets (oak)
+          with lagging. Post-collapse: groaning supports, dust falling from ceiling, dangerous
+          instability. Grimjaw approaching like a doctor, placing massive hand flat against
+          rock face. Afternoon sun on stone. Later: miners emerging from darkness into daylight,
+          dust-white ghosts crawling and carried. Contrast of dark mine interior and bright
+          exterior. Atmospheric dust motes. Lamplight gold from within. Sound of creaking timber,
+          faint tapping from deep down, stone "talk."
 
 moments:
-  - id: "ch05-the-weight-of-the-world-moment-01"
-    scene_id: "scn-05-01"
-    title: "The Messenger's Arrival"
-    narrative_beat: "A teenage messenger arrives at Westwall at dawn, exhausted horse, delivering news of the collapse."
-    visual_weight: "medium"
+  - id: "ch05-the-weight-of-the-world-moment-04"
+    scene_id: "scn-05-03"
+    title: "The Cliff-Face Master"
+    narrative_beat: "Grimjaw found not in a cottage but halfway up a sheer cliff, single-handedly shoring up an overhang—no ropes, no assistants, just dwarf and stone."
+    visual_weight: "critical"
     characters_present:
-      - "corporal-darric"
-    location_zone: "westwall-watchpost/exterior"
-    transformation_state: "n/a"
-    recommended_images: 1
+      - "grimjaw-ironbeard"
+    location_zone: "sword-mountains/cliff-face"
+    transformation_state: "before"
+    recommended_images: 2
 
-  - id: "ch05-the-weight-of-the-world-moment-02"
-    scene_id: "scn-05-01"
-    title: "Command at Chaos"
-    narrative_beat: "Veyra establishes command at the mine head amidst panic and dust."
-    visual_weight: "high"
+  - id: "ch05-the-weight-of-the-world-moment-06"
+    scene_id: "scn-05-03"
+    title: "Scars Meet Stone"
+    narrative_beat: "Veyra climbs up unexpectedly, her scarred face meeting Grimjaw's ancient gaze—'I was done with the world... then people needed help.'"
+    visual_weight: "critical"
     characters_present:
       - "veyra-thornwake"
+      - "grimjaw-ironbeard"
+    location_zone: "sword-mountains/cliff-face"
+    transformation_state: "during"
+    recommended_images: 2
+
+  - id: "ch05-the-weight-of-the-world-moment-07"
+    scene_id: "scn-05-04"
+    title: "Hand on Stone"
+    narrative_beat: "Grimjaw approaches the mine like a doctor, circles it, studies it, then places his massive hand against the rock and stands perfectly still—'She's angry.'"
+    visual_weight: "high"
+    characters_present:
+      - "grimjaw-ironbeard"
+    location_zone: "blackvein-lode/mine-entrance"
+    transformation_state: "after"
+    recommended_images: 2
+
+  - id: "ch05-the-weight-of-the-world-moment-08"
+    scene_id: "scn-05-05"
+    title: "The Ghosts Emerge"
+    narrative_beat: "Miners emerge one by one, covered in dust so thick they look like ghosts—crawling, carried, all coated in the mountain's grip released."
+    visual_weight: "high"
+    characters_present:
+      - "grimjaw-ironbeard"
       - "aldwin-gentleheart"
-      - "thorne-brightward"
-    location_zone: "blackvein-lode/overview"
-    transformation_state: "n/a"
+      - "medic-halden"
+    location_zone: "blackvein-lode/mine-entrance"
+    transformation_state: "after"
     recommended_images: 1
 
-  - id: "ch05-the-weight-of-the-world-moment-03"
-    scene_id: "scn-05-02"
-    title: "The Discouraging Path"
-    narrative_beat: "The search party encounters Grimjaw's deliberately decayed trail and the 'Bugger Off' sign."
-    visual_weight: "medium"
+  - id: "ch05-the-weight-of-the-world-moment-09"
+    scene_id: "scn-05-05"
+    title: "The Undermountain Reserve"
+    narrative_beat: "Aldwin offers Grimjaw a bottle of impossible-to-get dwarven spirits—the dwarf's eyebrows shoot up, then he laughs like boulders tumbling."
+    visual_weight: "high"
     characters_present:
-      - "quartermaster-fayne"
-      - "corporal-darric"
-      - "thorne-brightward"
-    location_zone: "grimjaw-cliff/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch05-the-weight-of-the-world-moment-04"
-    scene_id: "scn-05-02"
-    title: "The Ascent"
-    narrative_beat: "The team struggles up the treacherous mountain path, racing against time."
-    visual_weight: "medium"
-    characters_present:
-      - "thorne-brightward"
-      - "corporal-darric"
-      - "quartermaster-fayne"
-    location_zone: "grimjaw-cliff/overview"
-    transformation_state: "n/a"
+      - "grimjaw-ironbeard"
+      - "aldwin-gentleheart"
+    location_zone: "blackvein-lode/mine-head"
+    transformation_state: "after"
     recommended_images: 1
 
   - id: "ch05-the-weight-of-the-world-moment-05"
     scene_id: "scn-05-03"
-    title: "The Solitary Master"
-    narrative_beat: "Grimjaw working alone on the cliff face, holding up the mountain with a single timber."
-    visual_weight: "hero"
-    characters_present:
-      - "grimjaw-ironbeard"
-    location_zone: "grimjaw-cliff/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch05-the-weight-of-the-world-moment-06"
-    scene_id: "scn-05-03"
-    title: "The Decision"
-    narrative_beat: "Grimjaw sets down his hammer, choosing to help."
-    visual_weight: "critical"
-    characters_present:
-      - "grimjaw-ironbeard"
-      - "veyra-thornwake"
-    location_zone: "grimjaw-cliff/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch05-the-weight-of-the-world-moment-07"
-    scene_id: "scn-05-04"
-    title: "Communion with Stone"
-    narrative_beat: "Grimjaw listening to the mountain, hand on stone, eyes closed."
+    title: "The Mountain's Winning"
+    narrative_beat: "Fayne's words stop Grimjaw mid-swing: 'The mountain's winning.' His hammer freezes at apex, stone-deep eyes turning to assess them."
     visual_weight: "high"
     characters_present:
       - "grimjaw-ironbeard"
-    location_zone: "blackvein-lode/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch05-the-weight-of-the-world-moment-08"
-    scene_id: "scn-05-04"
-    title: "The Splintering Prop"
-    narrative_beat: "Detail shot of a wooden support failing under pressure, highlighting the danger."
-    visual_weight: "medium"
-    characters_present: []
-    location_zone: "blackvein-lode/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch05-the-weight-of-the-world-moment-09"
-    scene_id: "scn-05-04"
-    title: "Trapped in the Dark"
-    narrative_beat: "Perspective from inside the collapsed mine, looking up at faint light."
-    visual_weight: "high"
-    characters_present: []
-    location_zone: "blackvein-lode/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch05-the-weight-of-the-world-moment-10"
-    scene_id: "scn-05-05"
-    title: "The Emergence"
-    narrative_beat: "Miners emerging from the dust into golden afternoon light."
-    visual_weight: "high"
-    characters_present:
-      - "aldwin-gentleheart"
-      - "medic-halden"
-    location_zone: "blackvein-lode/overview"
-    transformation_state: "after"
-    recommended_images: 1
-
-  - id: "ch05-the-weight-of-the-world-moment-11"
-    scene_id: "scn-05-05"
-    title: "The Veteran's Connection"
-    narrative_beat: "Aldwin offering the rare bottle to Grimjaw, sealing their connection."
-    visual_weight: "high"
-    characters_present:
-      - "aldwin-gentleheart"
-      - "grimjaw-ironbeard"
-    location_zone: "blackvein-lode/overview"
-    transformation_state: "after"
+      - "quartermaster-fayne"
+    location_zone: "sword-mountains/cliff-face"
+    transformation_state: "during"
     recommended_images: 1
 
 images:
-  - custom_id: "ch05-the-weight-of-the-world-img-05-01-01"
-    source_moment: "ch05-the-weight-of-the-world-moment-02"
-    scene_id: "scn-05-01"
-    image_type: "anchor"
-    category:
-      - "moment"
-      - "character"
-      - "location"
-    scene_mood: "somber"
-    mood_rationale: "Lives hang in the balance. This scene establishes the stakes—weeping families, trapped miners, a commander confronting limits."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Veyra Thornwake stands behind a rough-hewn wooden table positioned at the mine head. Her scarred face is composed, unreadable. Behind her, the dark mouth of the mine exhales dust. Mining families cluster in the middle distance. Aldwin sets up triage; Thorne prepares assessment. The scene captures the terrible stillness of command.
-    composition_notes: |
-      Veyra at lower rule-of-thirds intersection. Mine entrance behind her forms dark focal void. Figures arranged in receding depth. Diagonal lines of timber supports.
-    visual_hook: "Her scarred fingers splayed on rough wood, the only stillness in a world of anxious motion"
-    depicts_characters:
-      - "veyra-thornwake"
-      - "aldwin-gentleheart"
-      - "thorne-brightward"
-    character_states:
-      veyra-thornwake: |
-        Standing behind command table. Guardian's stand posture. Expression stoic. Lantern at hip.
-      aldwin-gentleheart: |
-        Crouched, unpacking medical supplies. Focused.
-      thorne-brightward: |
-        Standing at parade rest. Grim resolve.
-    location: "blackvein-lode"
-    lighting:
-      primary_source: "harsh midday sun"
-      quality: "hard, dramatic"
-      direction: "above"
-      color_temperature: "neutral to cool"
-      shadow_depth: "deep, rich"
-      atmospheric: "heavy coal dust haze"
-    palette:
-      dominant:
-        - "rust brown"
-        - "coal-dust gray"
-        - "weathered timber silver"
-      accent:
-        - "amber lantern glow"
-        - "teal-blue tattoos"
-      avoid:
-        - "bright greens"
-        - "cheerful colors"
-    prompt_used: |
-      Half-elf woman commander with burn scar standing behind rough wooden command table at mine entrance,
-      fingers resting on wood with controlled stillness,
-      mine entrance exhaling dust behind her,
-      grieving families clustered in background,
-      halfling medic setting up supplies, armored paladin standing guard,
-      classical oil painting, Rembrandt lighting, chiaroscuro,
-      deep rich shadows, atmospheric haze, melancholy weight,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright cheerful colors, smiling
-    tags:
-      - "anchor"
-      - "veyra"
-      - "command"
-      - "mine"
-      - "somber"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch05-the-weight-of-the-world-img-05-01-02"
-    source_moment: "ch05-the-weight-of-the-world-moment-01"
-    scene_id: "scn-05-01"
-    image_type: "action"
-    category:
-      - "action"
-      - "intro"
-    scene_mood: "kinetic"
-    mood_rationale: "The arrival of the messenger breaks the dawn calm. Urgency and desperation."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      A teenage boy half-falling from a lathered horse at the gates of Westwall Watchpost. It is dawn—blue light mixed with the first gold rays. Darric is rushing to catch him. The horse is exhausted, foam on its flanks. Sparks fly from hooves on cobblestones.
-    composition_notes: |
-      Dynamic composition. Horse and boy center. Darric rushing in from side. Low angle to emphasize the frantic arrival.
-    visual_hook: "The exhaustion of the horse and rider, steam rising from their bodies in the chill dawn air."
-    depicts_characters:
-      - "corporal-darric"
-    character_states:
-      corporal-darric: |
-        Rushing forward. Arms outstretched to catch the boy. Expression of alarm.
-    location: "westwall-watchpost"
-    lighting:
-      primary_source: "Dawn light"
-      quality: "Clear, cold"
-      direction: "Low angle"
-      color_temperature: "Blue/Gold"
-      shadow_depth: "Long shadows"
-      atmospheric: "Steam from horse"
-    palette:
-      dominant:
-        - "dawn blue"
-        - "cobblestone gray"
-        - "horse brown"
-      accent:
-        - "gold sun rays"
-      avoid:
-        - "stillness"
-    prompt_used: |
-      Teenage messenger falling from exhausted lathered horse at dawn,
-      dwarf soldier rushing to catch him,
-      medieval city gate background,
-      steam rising from horse in cold morning air,
-      dynamic action pose,
-      classical oil painting, kinetic energy,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, static pose
-    tags:
-      - "beat"
-      - "arrival"
-      - "messenger"
-      - "kinetic"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch05-the-weight-of-the-world-img-05-02-01"
-    source_moment: "ch05-the-weight-of-the-world-moment-03"
-    scene_id: "scn-05-02"
-    image_type: "beat"
-    category:
-      - "location"
-      - "humor"
-    scene_mood: "pastoral"
-    mood_rationale: "The 'Bugger Off' sign. Establishing Grimjaw's character through the environment. A moment of grim humor in the desperate search."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      A moss-covered stone marker on a mountain trail. Dwarven runes carved into it are blunt and deep. Fayne is squatting to read it, looking back at Darric and Thorne with a wry expression. The trail beyond is deliberately overgrown and blocked by a "careful" rockfall. The forest is dense and ancient.
-    composition_notes: |
-      Medium shot. Stone marker in foreground. Fayne reading it. Trail winding back into depth.
-    visual_hook: "The contrast between the ancient, majestic forest and the grumpy, exclusionary message on the stone."
-    depicts_characters:
-      - "quartermaster-fayne"
-      - "corporal-darric"
-      - "thorne-brightward"
-    character_states:
-      quartermaster-fayne: |
-        Squatting. Reading runes. Wry smile.
-      corporal-darric: |
-        Standing with hands on hips. Annoyed expression.
-      thorne-brightward: |
-        Looking at the blocked trail. Grim respect.
-    location: "grimjaw-cliff"
-    lighting:
-      primary_source: "Dappled forest sunlight"
-      quality: "Natural, textured"
-      direction: "Overhead through leaves"
-      color_temperature: "Green/Gold"
-      shadow_depth: "Dappled"
-      atmospheric: "Forest quiet"
-    palette:
-      dominant:
-        - "moss green"
-        - "stone gray"
-        - "forest brown"
-      accent:
-        - "sunlight patches"
-      avoid:
-        - "darkness"
-    prompt_used: |
-      Gnome examining mossy stone marker with dwarven runes on mountain trail,
-      dwarf and human companions waiting behind,
-      trail blocked by rockfall,
-      ancient forest background,
-      atmosphere of deliberate obstruction,
-      classical oil painting, landscape with figures,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "beat"
-      - "search"
-      - "humor"
-      - "pastoral"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch05-the-weight-of-the-world-img-05-02-02"
+  - custom_id: "ch05-the-weight-of-the-world-img-03-04-01"
     source_moment: "ch05-the-weight-of-the-world-moment-04"
-    scene_id: "scn-05-02"
-    image_type: "mood"
-    category:
-      - "action"
-      - "location"
-    scene_mood: "kinetic"
-    mood_rationale: "The physical struggle of the climb. Man against mountain. The urgency of time passing."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      The search party climbing a steep, muddy slope where the trail has been washed away (deliberately). Darric is pulling his boot from mud. Thorne is helping Fayne up a ledge. The trees loom high and indifferent. The light is shifting, suggesting time is running out.
-    composition_notes: |
-      Low angle looking up the slope. The verticality of the challenge. Sweat and dirt on the characters.
-    visual_hook: "The physical effort of the climb, mud clinging to boots, the mountain resisting their progress."
-    depicts_characters:
-      - "thorne-brightward"
-      - "corporal-darric"
-      - "quartermaster-fayne"
-    character_states:
-      thorne-brightward: |
-        Climbing. Helping Fayne.
-      corporal-darric: |
-        Struggling with mud. Grumbling expression.
-      quartermaster-fayne: |
-        Being helped. Alert.
-    location: "grimjaw-cliff"
-    lighting:
-      primary_source: "Midday sun"
-      quality: "Bright but blocked by terrain"
-      direction: "Overhead"
-      color_temperature: "Natural"
-      shadow_depth: "Deep in ravines"
-      atmospheric: "Sweat, dust"
-    palette:
-      dominant:
-        - "mud brown"
-        - "rock gray"
-        - "leaf green"
-      accent:
-        - "sweat sheen"
-      avoid:
-        - "easy terrain"
-    prompt_used: |
-      Fantasy adventurers struggling up steep muddy mountain slope,
-      dwarf pulling boot from mud, human helping gnome up ledge,
-      dense forest terrain,
-      physical exertion and urgency,
-      classical oil painting, action composition,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "beat"
-      - "climb"
-      - "struggle"
-      - "kinetic"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch05-the-weight-of-the-world-img-05-03-01"
-    source_moment: "ch05-the-weight-of-the-world-moment-05"
     scene_id: "scn-05-03"
     image_type: "hero"
     category:
       - "moment"
       - "character"
       - "location"
-    scene_mood: "pastoral"
-    mood_rationale: "Awestruck discovery—Grimjaw's solitary heroism against the mountain's grandeur. Hudson River School majesty."
+    scene_mood: "kinetic"
+    mood_rationale: |
+      Action and motion despite the dwarf's controlled movements—the sheer scale, the
+      impossible labor, the dynamic tension of thousands of tons held by precise craftsmanship.
+      The viewer feels the kinetic energy of the work in progress.
     aspect_ratio: "21:9"
     orientation: "landscape"
-    size: "2048x878"
+    size: "1792x768"
     visual_description: |
-      A single dwarf silhouetted against sky and stone, halfway up a sheer cliff face, holds a massive timber brace against thousands of tons of overhanging rock. He works without safety lines. His hammer is raised at the apex of its swing. Below him, the cliff drops away to a narrow path where tiny figures look upward. Afternoon sun backlights the scene.
+      Wide ultra-cinematic view looking up at a massive sheer cliff face of slate-gray stone.
+      Halfway up the wall, a stocky dwarf figure works beneath a threatening overhang—a mass
+      of stone jutting out at a precarious angle. Grimjaw Ironbeard, small against the immense
+      scale but clearly visible, drives timber supports into place with his war-hammer. His
+      iron-gray beard braided with metal charms catches the high noon light. He wears reinforced
+      leather mining gear, dark and practical, with a wide belt of tools. No safety lines, no
+      ropes—just dwarf and tools against gravity. Far below, a thin shepherd's path winds through
+      green scrub, emphasizing the deadly height. The mountain peaks rise blue-gray in the
+      background. The overhang's shadow creates dramatic contrast.
     composition_notes: |
-      Extreme wide shot. Vertical scale of cliff. Grimjaw small but commanding upper third. Shepherd's path bottom edge. Low angle looking up.
-    visual_hook: "A single figure against thousands of tons of stone, hammer raised at apex of swing, utterly alone with the weight of the world"
+      Ultra-wide 21:9 format emphasizes the massive horizontal sweep of the cliff. Grimjaw
+      positioned in the left third, with the overhang's threatening bulk dominating the upper
+      frame. Vertical scale created by showing both the dwarf and the tiny shepherd path below.
+      Strong diagonal line from lower right to upper left following the cliff face. Deep focus
+      showing texture of stone, dwarf detail, and distant peaks.
+    visual_hook: "Single dwarf figure working on sheer cliff beneath massive overhang, no safety gear, mountain scale"
     depicts_characters:
       - "grimjaw-ironbeard"
     character_states:
       grimjaw-ironbeard: |
-        Silhouetted against sky. Clinging to rock face. One hand steadies timber, other raises hammer. Beard streaming. No safety lines.
-    location: "grimjaw-cliff"
+        Halfway up sheer cliff, stocky powerful build visible even from distance. Iron-gray
+        beard braided with metal charms. Reinforced leather mining clothes, wide tool belt.
+        Hammer raised mid-swing. Feet planted solid on narrow ledge. Working alone with
+        economical precision. No fear, only competence.
+    location: "sword-mountains"
+    zone: "cliff-face"
     lighting:
-      primary_source: "afternoon sun behind mountain"
-      quality: "soft, golden, diffused"
-      direction: "backlighting"
-      color_temperature: "warm gold vs cool shadow"
-      shadow_depth: "gentle on cliff, strong rim light"
-      atmospheric: "light mountain haze"
+      primary_source: "High noon sun from above"
+      quality: "harsh and direct"
+      direction: "from above, creating strong shadows"
+      color_temperature: "neutral bright daylight"
+      shadow_depth: "deep dramatic shadows under overhang"
+      atmospheric: "mountain air clarity, no haze"
     palette:
       dominant:
-        - "weathered granite gray"
-        - "sky blue"
-        - "warm gold backlight"
+        - "slate-blue stone gray"
+        - "stone-deep gray shadows"
+        - "neutral daylight brightness"
       accent:
-        - "copper pauldrons"
-        - "dark brown leathers"
+        - "iron-gray beard with metal glints"
+        - "dark leather brown"
+        - "distant green scrub"
       avoid:
-        - "harsh industrial colors"
-        - "darkness"
+        - "warm tones"
+        - "gold light"
+        - "soft focus"
     prompt_used: |
-      Robust elderly dwarf with flowing beard working alone halfway up sheer granite cliff face,
-      silhouetted against golden afternoon sky,
-      steadying timber support and raising sledgehammer,
-      vast mountain landscape, tiny figures watching from below,
-      classical oil painting, Hudson River School influence, Bierstadt mountain grandeur,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, dramatic vertical composition.
+      Massive sheer cliff face of slate-blue stone with threatening overhang jutting out.
+      Single stocky dwarf figure working halfway up the wall beneath the overhang, no safety
+      lines, driving timber supports with war-hammer. Iron-gray braided beard with metal charms,
+      reinforced dark leather mining gear, wide tool belt. Feet planted on narrow ledge, hammer
+      raised mid-swing. Thin shepherd's path visible far below emphasizing deadly height.
+      Distant blue-gray mountain peaks in background.
+      Ultra-wide 21:9 cinematic framing, looking up from below, dwarf positioned left third.
+      High noon sun from above creating deep dramatic shadows under overhang. Harsh direct light,
+      stone texture visible. Slate-blue and stone-gray palette with neutral daylight. Scale
+      contrast between small dwarf and thousands of tons of waiting stone. Economical precise
+      movements, competence over courage. Deep focus showing cliff texture and distant landscape.
+      Subtle fantasy: dwarven mastery, mountain as living entity.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, dark oppressive atmosphere
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      safety harness, climbing ropes, carabiners, modern gear, fear expression,
+      action pose, theatrical, bright warm lighting, soft focus
     tags:
-      - "hero"
       - "grimjaw"
-      - "mountain"
-      - "solitude"
-      - "pastoral"
+      - "cliff-work"
+      - "mastery"
+      - "scale-contrast"
+      - "kinetic"
+      - "hero-image"
     generated_at: null
     file_name: null
     file_path: null
@@ -552,67 +292,436 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch05-the-weight-of-the-world-img-05-03-02"
+  - custom_id: "ch05-the-weight-of-the-world-img-03-04-02"
+    source_moment: "ch05-the-weight-of-the-world-moment-04"
+    scene_id: "scn-05-03"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "detail"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Closer view capturing the personal relationship between dwarf and stone. The intimate
+      connection of hand to work, the concentration, the decades of experience visible in
+      weathered features and precise movements.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Medium shot of Grimjaw Ironbeard on the cliff face, framed from the waist up. His stocky
+      build fills the frame with solid presence. Weathered face with bright keen eyes focused
+      on his work, iron-gray beard braided with small metal charms and tiny tool pieces catching
+      light. Massive weathered hands grip his war-hammer "Tremor"—a hybrid war-hammer/mining
+      pick with masterwork craftsmanship visible in the metalwork. He's driving a timber support
+      into the cliff face with economical precision. Reinforced leather mining clothes with metal
+      studs, thick worn straps, wide belt with various pouches and loops. Behind him, the massive
+      stone overhang looms, thousands of tons suspended. The cliff face shows stress lines and
+      geological texture. His stance is solid, feet planted firmly on the narrow ledge.
+    composition_notes: |
+      16:9 medium shot, Grimjaw positioned slightly right of center. Low angle looking up
+      emphasizes his solid presence against the mountain. Hammer and hands in sharp focus as
+      primary focal point. Overhang visible behind creating sense of threat and scale. Rule of
+      thirds: eyes at upper third line, hammer impact point at lower third. Diagonal line from
+      hammer through arms to face draws eye.
+    visual_hook: "Weathered dwarf hands gripping masterwork hammer, timber support being driven into living stone"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+    character_states:
+      grimjaw-ironbeard: |
+        Mid-work concentration. Weathered face showing decades underground, bright keen eyes
+        despite age. Iron-gray beard braided with metal charms (ore chips, tiny tools). Massive
+        hands competent and sure. Reinforced leather mining gear worn but well-maintained.
+        Solid stance, economical movements. War-hammer "Tremor" in skilled grip. Expression:
+        focused, patient, no wasted effort.
+    location: "sword-mountains"
+    zone: "cliff-face"
+    lighting:
+      primary_source: "Noon sun from upper right"
+      quality: "harsh direct mountain light"
+      direction: "from upper right, side-lighting"
+      color_temperature: "neutral daylight"
+      shadow_depth: "moderate, defining weathered features"
+      atmospheric: "clear mountain air, dust motes from stone work"
+    palette:
+      dominant:
+        - "stone gray cliff face"
+        - "dark leather brown gear"
+        - "iron-gray beard"
+      accent:
+        - "metal glints on hammer and charms"
+        - "warm flesh tone hands"
+        - "timber support brown"
+      avoid:
+        - "bright colors"
+        - "soft romantic light"
+        - "green tones"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Rembrandt lighting on weathered features.
+      Medium shot of stocky dwarf working on cliff face, framed waist-up. Weathered face with
+      bright keen eyes, iron-gray beard braided with small metal charms and tool pieces.
+      Massive weathered hands gripping masterwork war-hammer/mining pick hybrid. Driving timber
+      support into living stone with economical precision. Reinforced dark leather mining clothes
+      with metal studs, worn thick straps, wide belt with pouches. Solid stance, feet planted
+      firmly on narrow ledge. Behind: massive stone overhang looming, thousands of tons suspended.
+      Cliff face showing geological texture and stress lines.
+      16:9 medium framing, dwarf positioned slightly right of center, low angle looking up.
+      Noon sun from upper right creating side-lighting, harsh direct mountain light. Moderate
+      shadows defining weathered features. Clear mountain air with subtle dust motes from stonework.
+      Stone gray and dark leather brown palette with metal glints and warm flesh tones. Hands and
+      hammer in sharp focus. Decades of experience visible in face and movements. Competence and
+      patience over heroics.
+      Subtle fantasy: masterwork dwarven tool craftsmanship, mountain as living challenge.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      action pose, dramatic expression, fear, safety harness, modern climbing gear,
+      clean unworn gear, soft lighting, bright warm tones
+    tags:
+      - "grimjaw"
+      - "craftsmanship"
+      - "dwarven-mastery"
+      - "intimate"
+      - "character-introduction"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch05-the-weight-of-the-world-img-03-06-01"
     source_moment: "ch05-the-weight-of-the-world-moment-06"
     scene_id: "scn-05-03"
-    image_type: "pivot"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Close emotional connection between two survivors recognizing kinship. The scars
+      on both faces—one from fire, one from decades underground—tell parallel stories.
+      Intimate moment of mutual understanding that transcends words.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Medium shot on the cliff face showing Veyra and Grimjaw face to face. Veyra has climbed
+      to his ledge, standing close in the confined space. Her warm brown skin contrasts with
+      the mottled burn scar covering the left side of her face from jaw to temple—healed but
+      permanent, textured. Dark brown mohawk with shaved sides, a longer braided lock adorned
+      with feathers falling past her shoulder. Blue swirling tattoos visible on her neck. Dark
+      weathered leather armor, heavy cowl around neck, reinforced shoulder pauldrons. Her eyes
+      are intense, unwavering, meeting Grimjaw's stone-deep gaze. Grimjaw, shorter but solid,
+      his iron-gray beard braided with metal charms, weathered face showing decades underground.
+      His bright keen eyes assess her scars, reading the story. He holds his hammer at rest.
+      Mountain backdrop behind them, the overhang looming above. Clear recognition passing
+      between them—two people marked by survival.
+    composition_notes: |
+      16:9 medium two-shot. Veyra positioned slightly left, Grimjaw right, both facing each
+      other creating central negative space filled with their connection. Eyes meeting at
+      intersection of thirds. Vertical cliff face and overhang frame the encounter. High noon
+      sun creates strong contrast on both scarred faces. Shallow depth of field keeps focus
+      on faces while mountain backdrop remains visible but softer.
+    visual_hook: "Scarred faces meeting—burn-marked half-elf and weathered dwarf, mutual recognition between survivors"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "grimjaw-ironbeard"
+    character_states:
+      veyra-thornwake: |
+        Standing on cliff ledge after climbing up. Warm brown skin, mottled burn scar left face
+        (jaw to temple). Dark brown mohawk, shaved sides, feathered braid. Blue swirl tattoos
+        on neck. Dark weathered leather armor, heavy cowl, shoulder pauldrons. Battered lantern
+        at belt (warm orange glow subtle). Eyes intense, unwavering, meeting dwarf's gaze.
+        Expression: calm resolve, scars as testimony not weakness. Post-Chapter-1 transformation
+        fully healed but permanent.
+      grimjaw-ironbeard: |
+        On his work ledge, hammer at rest. Stocky build, weathered face decades underground.
+        Bright keen eyes assessing her scars—reading story they tell. Iron-gray beard braided
+        with metal charms. Reinforced leather mining gear. Solid stance. Expression: recognition,
+        respect forming, ancient wisdom in stone-deep eyes. Seeing kinship in survival.
+    location: "sword-mountains"
+    zone: "cliff-face"
+    lighting:
+      primary_source: "High noon sun from above"
+      quality: "harsh and revealing"
+      direction: "from above, creating strong shadows on features"
+      color_temperature: "neutral bright daylight"
+      shadow_depth: "strong on scarred features, texture visible"
+      atmospheric: "clear mountain air, heat shimmer subtle"
+    palette:
+      dominant:
+        - "warm brown skin and cool stone gray"
+        - "dark leather brown"
+        - "iron-gray beard"
+      accent:
+        - "blue swirl tattoos"
+        - "burn scar mottled texture"
+        - "metal charm glints"
+        - "subtle lantern orange"
+      avoid:
+        - "bright cheerful colors"
+        - "soft romantic light"
+        - "perfect unblemished skin"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Rembrandt lighting on scarred features.
+      Mountain cliff face with two figures face to face on narrow ledge. Half-elf woman with
+      warm brown skin and prominent mottled burn scar covering left side of face (jaw to temple),
+      healed but textured. Dark brown mohawk with shaved sides, feathered braid falling past
+      shoulder. Blue swirling tattoos on neck. Dark weathered leather armor, heavy cowl,
+      reinforced shoulder pauldrons, subtle warm orange glow from lantern at belt. Eyes intense
+      and unwavering. Facing stocky dwarf with weathered face, iron-gray beard braided with
+      metal charms, bright keen eyes assessing. Dark reinforced leather mining gear, hammer
+      at rest. Both bearing marks of survival—fire scars and decades underground. Recognition
+      passing between them. Massive stone overhang looming above, mountain backdrop behind.
+      16:9 medium two-shot, figures positioned left and right creating central connection.
+      Eyes meeting at rule of thirds intersection. High noon sun from above creating harsh
+      revealing light, strong shadows on scarred features making texture visible. Clear mountain
+      air with subtle heat shimmer. Warm brown and cool stone gray palette with blue tattoo
+      and burn scar accents. Mutual respect and understanding visible. Cliff face frames encounter.
+      Subtle fantasy: battle-tested commander meets mountain master, scars as badges of survival.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      perfect unblemished skin, soft lighting, romantic atmosphere, fear expression,
+      action pose, dramatic gestures, safety equipment, clean new gear
+    tags:
+      - "veyra"
+      - "grimjaw"
+      - "recruitment"
+      - "survival-recognition"
+      - "scars"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch05-the-weight-of-the-world-img-03-06-02"
+    source_moment: "ch05-the-weight-of-the-world-moment-06"
+    scene_id: "scn-05-03"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "emotion"
+      - "character"
+    scene_mood: "somber"
+    mood_rationale: |
+      The weight of the words spoken—"I was done with the world... then people needed help."
+      The heaviness of past trauma acknowledged, the burden of choosing to return. Grief and
+      duty intertwined in both figures.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Close shot focusing on Veyra's scarred face as she speaks, with Grimjaw listening in
+      profile. Her burn scar is prominently visible—mottled texture running from jawline up
+      left side of her face to temple, the healed skin telling its own story. Her dark eyes
+      hold both pain and resolve. The feathered braid falls across one shoulder, blue tattoo
+      swirls visible on her neck. Behind her, blurred but present, Grimjaw's weathered profile
+      shows him truly listening—not just hearing but reading the weight in her words. His
+      stone-deep eyes hold recognition. The cliff face stretches behind them, out of focus.
+      Mountain wind stirs the feather in her braid. The moment captures vulnerability made
+      into strength.
+    composition_notes: |
+      16:9 close framing. Veyra's scarred face dominant in frame, positioned slightly left.
+      Grimjaw's profile right background, slightly out of focus but expression clear. Burn
+      scar catches light, texture emphasized. Eyes as focal point meeting viewer's gaze
+      (breaking fourth wall for emotional impact). Vertical cliff behind suggests the climb
+      she made to reach him. Shallow depth of field isolates the emotional moment.
+    visual_hook: "Burn-scarred face speaking quiet truth, weathered dwarf listening, mountain witness behind"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "grimjaw-ironbeard"
+    character_states:
+      veyra-thornwake: |
+        Close on face. Burn scar prominent—mottled texture jaw to temple, healed but permanent.
+        Dark eyes holding both pain of past and resolve of present. Speaking quietly but with
+        weight. Feathered braid visible, blue tattoo on neck. Expression: vulnerable strength,
+        scars acknowledged not hidden. "I was done with the world... then people needed help."
+      grimjaw-ironbeard: |
+        Profile, slightly background/blurred but expression clear. Truly listening—ancient
+        eyes reading the weight in her words, not just surface. Recognition forming. Weathered
+        face showing he understands what scars cost. Respectful attention.
+    location: "sword-mountains"
+    zone: "cliff-face"
+    lighting:
+      primary_source: "Noon sun from upper left"
+      quality: "clear but not harsh, revealing"
+      direction: "from upper left, catching scar texture"
+      color_temperature: "neutral with slight warmth"
+      shadow_depth: "soft on face, texture of scar emphasized"
+      atmospheric: "clear air, mountain wind subtle"
+    palette:
+      dominant:
+        - "warm brown skin"
+        - "mottled burn scar texture"
+        - "stone gray background"
+      accent:
+        - "blue swirl tattoos"
+        - "dark leather"
+        - "feather in braid"
+      avoid:
+        - "bright cheerful tones"
+        - "perfect skin"
+        - "dramatic harsh shadows"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Vermeer interior quality light on features.
+      Close shot of half-elf woman's scarred face speaking. Warm brown skin with prominent
+      mottled burn scar covering left face from jawline to temple—healed but textured, skin
+      telling its story. Dark eyes holding both pain and resolve, meeting viewer's gaze.
+      Dark brown mohawk with shaved sides, single feathered braid falling across shoulder.
+      Blue swirling tattoos on neck. Dark weathered leather armor visible. Mountain wind
+      stirring feather. Behind her right side: blurred but clear weathered dwarf profile
+      listening intently, stone-deep eyes reading weight in her words, recognition forming.
+      Cliff face stretched behind both, out of focus.
+      16:9 close framing, woman's face dominant positioned slightly left, dwarf profile
+      right background. Burn scar catches light emphasizing texture. Eyes as focal point.
+      Noon sun from upper left, clear revealing light not harsh. Soft shadows on face, scar
+      texture emphasized. Clear mountain air. Warm brown and stone gray palette with blue
+      tattoo accent. Shallow depth of field isolating emotional moment. Vulnerability made
+      into strength. Weight of choosing to return from retirement.
+      Subtle fantasy: survival marks as testimony, mountain as witness to vows.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      perfect unblemished skin, airbrushed beauty, soft romantic lighting,
+      dramatic tears, theatrical expression, wide shot, busy background
+    tags:
+      - "veyra"
+      - "burn-scar"
+      - "testimony"
+      - "recruitment"
+      - "somber"
+      - "vulnerability-strength"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch05-the-weight-of-the-world-img-04-07-01"
+    source_moment: "ch05-the-weight-of-the-world-moment-07"
+    scene_id: "scn-05-04"
+    image_type: "hero"
     category:
       - "moment"
       - "character"
       - "symbol"
     scene_mood: "intimate"
-    mood_rationale: "The pivotal choice—Grimjaw setting down his isolation along with his hammer. Quiet poetry of Vermeer."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
+    mood_rationale: |
+      The essence of Grimjaw's expertise made visible—listening to stone as intimate act
+      of understanding. The mountain as living entity requiring respect, not force. Quiet
+      mastery more powerful than loud heroics.
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
     visual_description: |
-      Grimjaw's massive, battered hands releasing the handle of his sledgehammer with impossible gentleness, placing it down onto gray mountain stone. His calloused palms and scarred knuckles tell the story of decades. The hammer rests on the rock. Late afternoon golden light catches the iron. At the edge of the frame, Veyra Thornwake is visible—a presence rather than a focus.
+      Ultra-wide view of the Blackvein Lode mine entrance. Timber headframe rises against
+      dusty afternoon sky. The mine entrance is a dark maw ringed in stone with timber curb
+      and iron banding, groaning timber supports visible within creating geometric patterns.
+      Dust falls from the ceiling in lazy columns catching the light. In the mid-ground,
+      Grimjaw Ironbeard stands with his massive weathered hand flat against the rock face
+      beside the entrance, eyes closed, body perfectly still. His stocky form creates a
+      striking silhouette against the lighter stone. Behind him, a crowd of mining families
+      watches in hushed silence—men, women, faces marked by dust and worry, held back by
+      rope stanchions. The families are blurred but their attention on the dwarf is palpable.
+      Mine equipment scattered around—rope, lanterns hanging on posts, tool racks. The
+      Sword Mountains rise blue-gray in the distant background. Afternoon sun creates long
+      shadows. The entire scene holds its breath as the dwarf listens to thousands of tons
+      of angry stone.
     composition_notes: |
-      Tight focus on hands and hammer. Grimjaw's profile visible at top edge. Hammer horizontal anchor. Centered composition.
-    visual_hook: "Massive, battered hands releasing the hammer's handle with impossible gentleness—the same hands that shape stone now choosing to shape something else"
+      Ultra-wide 21:9 emphasizes the breadth of the mine site and watching crowd. Grimjaw
+      positioned in golden ratio left, hand on stone as focal point. Mine entrance dark maw
+      on left third creating visual weight and threat. Crowd arrayed right stretching across
+      frame showing scale of stakes. Horizontal line of rope stanchions and headframe timbers.
+      Vertical line of Grimjaw's solid stance anchors composition. Deep focus from dwarf to
+      distant mountains. Silence made visible through stillness.
+    visual_hook: "Dwarf's hand flat on stone, crowd hushed behind, listening to mountain's anger through touch"
     depicts_characters:
       - "grimjaw-ironbeard"
-      - "veyra-thornwake"
     character_states:
       grimjaw-ironbeard: |
-        Hands dominate frame. Releasing hammer handle. Profile visible at top showing contemplation.
-      veyra-thornwake: |
-        Present at frame edge. Scarred hands or lantern glow.
-    location: "grimjaw-cliff"
+        Standing before mine entrance, massive weathered hand flat against rock face. Eyes
+        closed, body perfectly still, absolute concentration. Diagnosis through touch. Stocky
+        build, iron-gray beard braided with metal charms catching light. Reinforced leather
+        mining gear covered in travel dust. Feet planted solid. War-hammer "Tremor" resting
+        at belt. Expression: listening, reading the stone's language, decades of experience
+        in this moment. "She's angry"—the mountain as living entity to be respected.
+    location: "blackvein-lode"
+    zone: "mine-entrance"
     lighting:
-      primary_source: "late afternoon sun"
-      quality: "soft, warm, close"
-      direction: "side lighting"
-      color_temperature: "warm gold and amber"
-      shadow_depth: "soft gradients"
-      atmospheric: "still mountain air"
+      primary_source: "Afternoon sun from upper right"
+      quality: "dusty golden, atmospheric"
+      direction: "from upper right, side-lighting"
+      color_temperature: "warm afternoon gold shifting to shadow"
+      shadow_depth: "long shadows, dust columns catching light"
+      atmospheric: "heavy dust, collapse aftermath visible in air"
     palette:
       dominant:
-        - "warm amber"
-        - "iron gray"
-        - "weathered stone gray"
+        - "dust-brown atmosphere"
+        - "stone-gray entrance"
+        - "timber-brown supports"
       accent:
-        - "soft rose of sunset"
-        - "silver of beard"
+        - "afternoon gold sunlight"
+        - "dark leather on dwarf"
+        - "iron and metal glints"
       avoid:
-        - "cold blues"
-        - "harsh contrasts"
+        - "bright cheerful colors"
+        - "clean crisp air"
+        - "action movement"
     prompt_used: |
-      Extreme close-up of massive battered dwarf hands releasing handle of sledgehammer onto stone,
-      careful deliberate precision,
-      dwarf profile with iron-gray beard visible at top,
-      golden afternoon light,
-      soft focus observer at edge,
-      classical oil painting, Vermeer interior lighting,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, atmospheric dust and golden afternoon light.
+      Blackvein Lode mine entrance—timber headframe rising against dusty sky. Mine entrance
+      dark maw ringed in stone with timber curb and iron banding, groaning timber supports
+      within creating geometric patterns. Dust falling from ceiling in lazy columns catching
+      light. Stocky dwarf standing mid-ground with massive weathered hand flat against rock
+      face beside entrance, eyes closed, body perfectly still in absolute concentration.
+      Iron-gray beard braided with metal charms, reinforced dark leather mining gear covered
+      in travel dust, feet planted solid, war-hammer at belt. Behind: crowd of mining families
+      watching in hushed silence—men women faces marked by dust and worry, held back by rope
+      stanchions, blurred but attention palpable. Mine equipment scattered: rope, hanging
+      lanterns, tool racks. Sword Mountains blue-gray in distant background.
+      Ultra-wide 21:9 cinematic format. Dwarf positioned golden ratio left, hand on stone
+      as focal point. Mine entrance dark maw left third. Crowd right stretching across frame.
+      Afternoon sun from upper right creating dusty golden atmosphere, long shadows, dust
+      columns catching light. Warm afternoon gold shifting to shadow. Deep focus from dwarf
+      to distant mountains. Silence made visible through stillness. Diagnosis through touch—
+      mountain as living entity. Hushed breath of waiting.
+      Subtle fantasy: dwarven stone-reading, mountain's anger communicated through living rock.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, wide shot, action scene
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      action pose, dramatic gestures, loud expressions, clean environment,
+      bright noon light, no dust, crisp air
     tags:
-      - "pivot"
       - "grimjaw"
-      - "decision"
+      - "stone-listening"
+      - "diagnosis"
+      - "expertise"
       - "intimate"
-      - "hands"
+      - "hero-image"
+      - "mountain-respect"
     generated_at: null
     file_name: null
     file_path: null
@@ -620,62 +729,105 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch05-the-weight-of-the-world-img-05-04-01"
+  - custom_id: "ch05-the-weight-of-the-world-img-04-07-02"
     source_moment: "ch05-the-weight-of-the-world-moment-07"
     scene_id: "scn-05-04"
-    image_type: "symbol"
+    image_type: "detail"
     category:
-      - "moment"
-      - "character"
       - "symbol"
-    scene_mood: "ethereal"
-    mood_rationale: "Grimjaw's communion with stone. Ethereal mood captures the luminous, otherworldly nature of this gift."
+      - "character"
+      - "moment"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Extreme intimacy of hand on stone—the physical connection between master and mountain.
+      Decades of knowledge compressed into weathered flesh reading living rock.
     aspect_ratio: "3:4"
     orientation: "portrait"
     size: "1024x1365"
     visual_description: |
-      Grimjaw's calloused palm pressed flat against the rough stone of the mine face, fingers splayed like roots. His profile is shown in deep concentration, eyes closed, listening. Dust motes hang suspended in lamplight that seems to glow from the stone itself. Behind him, the chaos of the mine becomes soft, unfocused.
+      Extreme close-up vertical portrait of Grimjaw's hand against the mine entrance stone.
+      His massive weathered hand fills the lower frame, palm flat against the rough gray
+      rock face. The hand shows decades of work—thick calluses, old scars, dirt ground into
+      the lines, strong broad fingers spread to feel maximum stone surface. Just above the
+      hand, Grimjaw's face in profile, eyes closed in concentration. Iron-gray beard visible
+      with small metal charms braided in—chips of ore, tiny worn tools catching subtle light.
+      Weathered face carved by decades underground, deep lines speaking of experience. His
+      lips move slightly—murmuring something, perhaps feeling the stone's answer. The stone
+      itself shows texture—metamorphic grain, stress lines, the argent glint of silver-bearing
+      veins. Afternoon light rakes across creating micro-shadows in the stone's texture and
+      the hand's weathered surface.
     composition_notes: |
-      Tight portrait framing. Hand at intersection of thirds. Profile showing concentration. Background soft.
-    visual_hook: "His palm pressed flat against stone, fingers splayed like roots—the contact point between human will and geological time"
+      Vertical 3:4 portrait format. Hand dominant in lower two-thirds, palm and fingers
+      spread as focal point. Face in upper third, profile view. Tight framing eliminates
+      distractions. Extreme detail visible—stone texture, skin texture, beard detail. Shallow
+      depth of field keeping hand and immediate contact point sharp while background stone
+      gently softens. Vertical format emphasizes the connection running from ground through
+      hand to ancient knowledge in face.
+    visual_hook: "Weathered dwarf hand reading living stone, decades of knowledge in flesh against rock"
     depicts_characters:
       - "grimjaw-ironbeard"
     character_states:
       grimjaw-ironbeard: |
-        Profile view. Eyes closed. Beard touching stone. Hand pressed flat. Expression reverent.
+        Only hand and face visible. Hand: massive, weathered, thick calluses, old scars,
+        dirt in lines, palm flat against stone, fingers spread to maximize contact. Face
+        profile: eyes closed in concentration, lips moving slightly, deep lines showing
+        decades underground. Iron-gray beard with metal charm braids (ore chips, tiny tools).
+        Expression: absolute focus, listening through flesh, reading mountain's mood.
     location: "blackvein-lode"
+    zone: "mine-entrance"
     lighting:
-      primary_source: "lamplight + stone glow"
-      quality: "soft, luminous"
-      direction: "ambient/emanating"
-      color_temperature: "warm gold/pale"
-      shadow_depth: "minimal, dreamy"
-      atmospheric: "suspended dust, slowed time"
+      primary_source: "Afternoon sun raking from side"
+      quality: "revealing, texture-emphasizing"
+      direction: "from left side, creating micro-shadows"
+      color_temperature: "warm afternoon neutral"
+      shadow_depth: "soft but texture-defining"
+      atmospheric: "still air, dust settled, quiet"
     palette:
       dominant:
-        - "pale gold"
-        - "silver-gray"
-        - "stone gray"
+        - "stone gray rock texture"
+        - "weathered flesh tones"
+        - "iron-gray beard"
       accent:
-        - "soft purple shadows"
-        - "copper warmth"
+        - "metal charm glints"
+        - "argent vein in stone"
+        - "afternoon warmth on skin"
       avoid:
-        - "harsh reds"
-        - "blacks"
+        - "bright colors"
+        - "smooth surfaces"
+        - "dramatic contrast"
     prompt_used: |
-      Profile of elderly dwarf with eyes closed pressing palm against rough mine stone,
-      deep reverent concentration,
-      dust motes in soft luminous light,
-      ethereal atmosphere,
-      classical oil painting, Pre-Raphaelite luminosity,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Vermeer light revealing texture.
+      Extreme close-up of massive weathered dwarf hand flat against rough gray rock face.
+      Hand filling lower frame: thick calluses, old scars, dirt ground into lines, strong
+      broad fingers spread across stone surface. Above: dwarf face in profile, eyes closed
+      in concentration, lips moving slightly. Iron-gray beard visible with small metal charm
+      braids—chips of rare ore and tiny worn tools catching light. Weathered face carved
+      by decades underground, deep lines of experience. Stone showing metamorphic texture,
+      stress lines, argent glint of silver-bearing veins. Afternoon light raking across from
+      side creating micro-shadows in stone texture and weathered skin.
+      Vertical 3:4 portrait format. Hand dominant lower two-thirds, face upper third profile.
+      Tight framing, extreme detail visible. Afternoon sun from left creating texture-revealing
+      side light. Soft shadows emphasizing micro-texture. Stone gray and weathered flesh palette
+      with metal charm and argent vein accents. Shallow depth of field keeping contact point
+      sharp. Vertical emphasizes connection from ground through hand to knowledge. Diagnosis
+      through touch. Listening made physical.
+      Subtle fantasy: dwarven stone-communion, mountain speaking through living rock to skilled hand.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, action scene, harsh lighting
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      clean unworn hands, smooth skin, perfect manicure, wide shot, full figure,
+      busy background, bright dramatic lighting
     tags:
-      - "symbol"
       - "grimjaw"
-      - "stone-speaking"
-      - "ethereal"
+      - "hand-detail"
+      - "stone-communion"
+      - "mastery"
+      - "intimate"
+      - "texture"
     generated_at: null
     file_name: null
     file_path: null
@@ -683,183 +835,118 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch05-the-weight-of-the-world-img-05-04-02"
+  - custom_id: "ch05-the-weight-of-the-world-img-05-08-01"
     source_moment: "ch05-the-weight-of-the-world-moment-08"
-    scene_id: "scn-05-04"
-    image_type: "beat"
-    category:
-      - "moment"
-      - "location"
-      - "symbol"
-    scene_mood: "ominous"
-    mood_rationale: "The 'Character's Challenge.' Highlighting the failure of traditional methods against the mountain's indifference."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
-    visual_description: |
-      A macro-shot deep within the mine. A massive oak support prop is splintering violently under invisible weight. Jagged shards peeling away. In the foreground, out of focus, an abandoned brass compass and chisels lie in rock dust. Background is absolute black.
-    composition_notes: |
-      Macro close-up. Texture of tearing wood. Forced perspective. Dark background. Harsh directional light.
-    visual_hook: "The violent splintering of a massive oak prop, its grain tearing like a wound, while abandoned human tools lie forgotten"
-    depicts_characters: []
-    character_states: {}
-    location: "blackvein-lode"
-    lighting:
-      primary_source: "distant lamp"
-      quality: "harsh, high contrast"
-      direction: "low side-light"
-      color_temperature: "sickly pale amber"
-      shadow_depth: "extreme"
-      atmospheric: "rock dust"
-    palette:
-      dominant:
-        - "raw wood amber"
-        - "black shadow"
-        - "rock dust gray"
-      accent:
-        - "brass glint"
-      avoid:
-        - "balanced lighting"
-    prompt_used: |
-      Macro detail of splintering oak mine support beam under pressure,
-      jagged wood shards,
-      abandoned brass tools in foreground dust,
-      dark ominous background,
-      harsh chiaroscuro lighting,
-      classical oil painting, realism,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, balanced lighting
-    tags:
-      - "detail"
-      - "collapse"
-      - "failure"
-      - "ominous"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch05-the-weight-of-the-world-img-05-04-03"
-    source_moment: "ch05-the-weight-of-the-world-moment-09"
-    scene_id: "scn-05-04"
-    image_type: "perspective"
+    scene_id: "scn-05-05"
+    image_type: "hero"
     category:
       - "moment"
       - "character"
-      - "emotion"
-    scene_mood: "somber"
-    mood_rationale: "The 'Location's Soul.' Seeing the rescue from the perspective of the trapped."
-    aspect_ratio: "9:16"
-    orientation: "portrait"
-    size: "640x1152"
-    visual_description: |
-      A POV shot from the bottom of the mine shaft looking up. The exit is a small, jagged constellation of light far above. A single, muddy, trembling hand is pressed against the damp rock wall in foreground. The darkness is a physical weight.
-    composition_notes: |
-      First-person vertical perspective. Hand in foreground. Eye led upward to distant light. Forced perspective.
-    visual_hook: "A muddy, trembling hand pressed against cold rock, looking up from the bottom of a dark pit toward a tiny sliver of sky."
-    depicts_characters:
-      - "trapped-miner"
-    character_states:
-      trapped-miner: "POV. Only hand visible."
-    location: "blackvein-lode"
-    lighting:
-      primary_source: "distant daylight"
-      quality: "tiny, distant"
-      direction: "top-down"
-      color_temperature: "cold silver"
-      shadow_depth: "total"
-      atmospheric: "stale air, dampness"
-    palette:
-      dominant:
-        - "absolute black"
-        - "rock gray"
-        - "muddy brown"
-      accent:
-        - "silver sky"
-      avoid:
-        - "internal light"
-    prompt_used: |
-      First person perspective looking up dark mine shaft to distant light,
-      muddy hand pressed against wet rock wall in foreground,
-      oppressive darkness and depth,
-      classical oil painting, chiaroscuro,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright light
-    tags:
-      - "perspective"
-      - "trapped"
-      - "somber"
-      - "depth"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch05-the-weight-of-the-world-img-05-05-01"
-    source_moment: "ch05-the-weight-of-the-world-moment-10"
-    scene_id: "scn-05-05"
-    image_type: "anchor"
-    category:
-      - "moment"
-      - "emotion"
       - "location"
-    scene_mood: "pastoral"
-    mood_rationale: "Miners emerging from darkness into light. Pastoral mood captures the diffused golden light of late afternoon and the promise of life renewed."
-    aspect_ratio: "16:9"
+    scene_mood: "ethereal"
+    mood_rationale: |
+      Emergence from darkness into light—otherworldly quality of dust-white figures appearing
+      like spirits from the earth. The daylight catching dust creates an almost divine
+      transfiguration. Victory as baptism in stone dust.
+    aspect_ratio: "21:9"
     orientation: "landscape"
-    size: "1792x1024"
+    size: "1792x768"
     visual_description: |
-      Miners emerge from the dark mine mouth into late afternoon golden light. Coated in dust, they appear ghost-like. The first man squints against the sun. Aldwin and Halden move toward them with water. Families strain forward at the edges.
+      Ultra-wide view of mine entrance as miners emerge from the dark maw into daylight.
+      The entrance is a black void ringed in stone and timber, groaning supports visible
+      within. From this darkness, dust-white figures emerge one by one—some crawling on
+      hands and knees, some carried by others, all absolutely coated in dust so thick they
+      appear ghostly. The dust catches the daylight creating halos around each figure,
+      transforming them into apparitions. In the foreground right, Grimjaw stands watching,
+      covered in his own layer of mine dust, war-hammer resting. Left foreground, Aldwin
+      and Medic Halden rush forward to help, medical gear ready. The middle ground shows
+      the emergence: three miners visible—one crawling, one being supported between two
+      others, faces barely distinguishable beneath the dust coating. Behind them, more
+      figures visible in the darkness waiting their turn. The contrast between the pitch-black
+      mine interior and the bright daylight exterior creates stark drama. Dust motes fill
+      the air catching sun rays. Mining families visible in distant background, held at
+      rope lines, hands raised to mouths in shock and relief.
     composition_notes: |
-      Wide shot. Staggered procession. Backlighting. Leading lines toward survivors.
-    visual_hook: "Dust-coated miners appear ghostly against darkness, the first one's hand raised against light he didn't expect to see again"
+      Ultra-wide 21:9 format emphasizes the journey from darkness (left) to light (right).
+      Mine entrance positioned left third, dark maw drawing eye. Emerging miners center,
+      dust halos making them focal points. Grimjaw right foreground providing scale and
+      witness. Aldwin/Halden left foreground rushing to help creating motion. Strong diagonal
+      from dark mine up to bright sky. Horizontal layers: darkness, emergence zone with dust,
+      bright daylight. Contrast of black and white with dust-ghost figures between.
+    visual_hook: "Dust-white miners emerging from black mine entrance, daylight catching dust like halos, rebirth from stone"
     depicts_characters:
+      - "grimjaw-ironbeard"
       - "aldwin-gentleheart"
       - "medic-halden"
     character_states:
+      grimjaw-ironbeard: |
+        Standing right foreground, watching the emergence. Covered in mine dust, iron-gray
+        beard now dust-white. War-hammer "Tremor" resting at side. Stocky form solid. Face
+        shows exhaustion but satisfaction—the mountain yielded. Witness to victory.
       aldwin-gentleheart: |
-        Moving toward miners. Compassionate expression. Silver-streaked hair catching light.
+        Left foreground rushing toward emerging miners. Medical gear visible, gentle healer's
+        presence urgent. Ready to tend wounded. Relief and professional focus balanced.
       medic-halden: |
-        Approaching with satchel. Weary but alert.
+        Alongside Aldwin, medical supplies at ready. Focused on triage and immediate care.
     location: "blackvein-lode"
+    zone: "mine-entrance"
     lighting:
-      primary_source: "late afternoon sun"
-      quality: "soft, golden"
-      direction: "backlighting"
-      color_temperature: "warm gold"
-      shadow_depth: "gentle"
-      atmospheric: "dust in sunbeams"
+      primary_source: "Bright daylight from outside contrasting mine darkness"
+      quality: "stark dramatic, ethereal"
+      direction: "from right exterior illuminating emerging figures"
+      color_temperature: "warm daylight against cool darkness"
+      shadow_depth: "extreme—pitch black mine to bright exterior"
+      atmospheric: "heavy dust catching sunbeams, motes everywhere, halo effect"
     palette:
       dominant:
-        - "warm gold"
-        - "dust white-gray"
-        - "black void"
+        - "pitch black mine interior"
+        - "dust-ghost white figures"
+        - "warm daylight brightness"
       accent:
-        - "moss green"
-        - "red cross"
+        - "timber brown supports"
+        - "stone gray entrance ring"
+        - "dust-gold sunbeam halos"
       avoid:
-        - "harsh contrasts"
-        - "oppressive darkness"
+        - "mid-tones (emphasis on contrast)"
+        - "bright colors"
+        - "clean surfaces"
     prompt_used: |
-      Ghost-like dust-covered miners emerging from dark cave into golden afternoon light,
-      first man squinting and shielding eyes,
-      halfling and human medic approaching with aid,
-      families waiting in background,
-      classical oil painting, plein air naturalism, soft diffused daylight,
-      Constable influence, visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Caravaggio chiaroscuro with ethereal dust light.
+      Blackvein Lode mine entrance as dark maw ringed in stone and timber, groaning supports
+      within. From pitch-black interior, dust-white figures emerging into daylight—miners
+      coated in dust so thick they appear ghostly. Some crawling on hands and knees, some
+      carried between others, faces barely distinguishable beneath coating. Dust catches
+      daylight creating halos around each figure like transfiguration. Right foreground:
+      stocky dwarf standing witness, covered in mine dust making iron-gray beard dust-white,
+      war-hammer resting, exhaustion and satisfaction. Left foreground: two healers rushing
+      forward with medical gear, urgent gentle presence. Middle ground emergence zone: three
+      miners visible—one crawling, one supported, more figures in darkness behind waiting
+      turn. Dust motes fill air catching sun rays. Distant background: mining families at
+      rope lines, hands to mouths, shock and relief.
+      Ultra-wide 21:9 cinematic format. Mine entrance left third dark maw, emerging miners
+      center with dust halos as focal points, dwarf witness right foreground. Strong diagonal
+      from darkness to light. Bright daylight from right exterior illuminating figures.
+      Extreme contrast: pitch black to bright exterior, dust-white apparitions between.
+      Heavy dust atmospheric, sunbeam halos, ethereal quality. Warm daylight against cool
+      darkness. Emergence as rebirth from stone. Victory measured in dust-covered survival.
+      Subtle fantasy: mountain's reluctant release, dust as baptism, ghostly transfiguration.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, dark mood
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      clean figures, no dust, soft lighting, mid-tone palette, bright colors,
+      dramatic action poses, fear expressions
     tags:
-      - "anchor"
-      - "rescue"
       - "emergence"
-      - "pastoral"
+      - "dust-ghosts"
+      - "rescue"
+      - "ethereal"
+      - "hero-image"
+      - "victory"
+      - "chiaroscuro"
     generated_at: null
     file_name: null
     file_path: null
@@ -867,66 +954,224 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch05-the-weight-of-the-world-img-05-05-02"
-    source_moment: "ch05-the-weight-of-the-world-moment-11"
+  - custom_id: "ch05-the-weight-of-the-world-img-05-09-01"
+    source_moment: "ch05-the-weight-of-the-world-moment-09"
     scene_id: "scn-05-05"
-    image_type: "character"
+    image_type: "anchor"
     category:
       - "moment"
       - "character"
       - "emotion"
     scene_mood: "celebratory"
-    mood_rationale: "Two veterans recognizing each other. Grimjaw's laugh cracks his isolation. Dutch Golden Age energy."
-    aspect_ratio: "3:4"
-    orientation: "portrait"
-    size: "1024x1365"
+    mood_rationale: |
+      First genuine moment of joy and connection—the unexpected gift, Grimjaw's surprised
+      delight, the boulder-tumbling laugh. Relief and bonding after crisis. Warmth of
+      acceptance through shared appreciation.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
     visual_description: |
-      Aldwin offers a small ceramic bottle to Grimjaw with a mischievous bow. Grimjaw has just tasted it and is throwing his head back in full-bodied laughter. Behind them, soft-focus reunion scene.
+      Medium shot at the mine head staging area as sunset paints the mountains blood-gold.
+      Aldwin stands offering a small unmarked ceramic bottle to Grimjaw. Aldwin is gentle-
+      featured, practical healer's clothes, warm expression of offering. Grimjaw, still
+      covered in dust and grime from the rescue, reaches for the bottle—his bushy eyebrows
+      raised high in genuine surprise, eyes wide. His weathered face shows the moment before
+      laughter breaks, mouth beginning to open. The bottle catches the warm sunset glow,
+      amber ceramic suggesting the spirits within. Behind them, the mine head with its
+      timber headframe silhouetted against the golden sunset. Other company members visible
+      in soft focus background—relieved faces, exhausted but triumphant. Dust still hangs
+      in the air catching the golden light. Grimjaw's iron-gray beard is dust-white, tools
+      still at his belt. The moment captures unexpected connection—rare gift recognized
+      and appreciated.
     composition_notes: |
-      Two-character portrait. Aldwin offering up, Grimjaw laughing down. Bottle central. Background soft.
-    visual_hook: "Grimjaw's laugh transforming his entire face—deep lines becoming channels for joy"
+      16:9 medium two-shot. Aldwin positioned slightly left offering bottle, Grimjaw right
+      receiving with surprised delight. Bottle at center as focal point catching sunset glow.
+      Background mine headframe silhouetted provides context. Rule of thirds: faces at upper
+      intersection points, bottle at center lower third. Warm sunset light from behind creates
+      glow around figures. Shallow depth keeping focus on exchange while showing setting.
+    visual_hook: "Healer offering rare spirits, dwarf's eyebrows raised in surprise, sunset-glow bottle between them"
     depicts_characters:
-      - "aldwin-gentleheart"
       - "grimjaw-ironbeard"
+      - "aldwin-gentleheart"
     character_states:
-      aldwin-gentleheart: |
-        Smiling mischievously. Offering bottle with bow.
       grimjaw-ironbeard: |
-        Head thrown back laughing. Beard shaking. Isolation melting.
+        Still covered in rescue dust and grime, iron-gray beard now dust-white. Bushy eyebrows
+        shot up in genuine surprise. Eyes wide with recognition of unexpected gift. Weathered
+        face showing the moment before laughter—mouth beginning to open. Reaching for bottle.
+        Exhausted from rescue work but surprise bringing first real smile. Appreciation and
+        connection forming.
+      aldwin-gentleheart: |
+        Gentle healer offering small unmarked ceramic bottle. Practical healer's clothes,
+        warm expression of giving. Knowing smile of someone who has exactly the right thing.
+        Post-rescue exhaustion present but satisfaction in the gesture.
     location: "blackvein-lode"
+    zone: "mine-head"
     lighting:
-      primary_source: "sunset light"
-      quality: "warm, flickering"
-      direction: "side"
-      color_temperature: "amber/copper"
-      shadow_depth: "warm"
-      atmospheric: "golden hour"
+      primary_source: "Sunset from behind mountains"
+      quality: "warm golden glow"
+      direction: "from behind, backlighting figures"
+      color_temperature: "blood-gold sunset warmth"
+      shadow_depth: "soft shadows, warm ambient fill"
+      atmospheric: "dust catching golden light, gentle haze"
     palette:
       dominant:
-        - "sunset gold"
-        - "amber"
-        - "warm copper"
+        - "sunset blood-gold"
+        - "dust-white on dwarf"
+        - "warm amber bottle glow"
       accent:
-        - "moss green"
-        - "iron gray"
+        - "timber-brown headframe silhouette"
+        - "warm flesh tones"
+        - "ale-amber atmospheric light"
       avoid:
-        - "cold blues"
+        - "cool tones"
+        - "harsh shadows"
+        - "bright noon light"
     prompt_used: |
-      Halfling healer offering bottle to laughing elderly dwarf,
-      dwarf head thrown back in joy, beard shaking,
-      sunset light,
-      background of rescue aftermath,
-      atmosphere of connection and warmth,
-      classical oil painting, Dutch Golden Age genre painting, Jan Steen style,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Rembrandt warm interior light quality.
+      Mine head staging area at sunset, mountains painted blood-gold behind. Gentle-featured
+      healer in practical clothes offering small unmarked ceramic bottle to stocky dwarf.
+      Dwarf covered in dust and grime from rescue, iron-gray beard dust-white, bushy eyebrows
+      raised high in genuine surprise, eyes wide, weathered face showing moment before laughter
+      breaks, mouth opening, reaching for bottle. Bottle catches warm sunset glow, amber
+      ceramic. Behind: timber headframe silhouetted against golden sunset. Other company
+      members soft focus background, relieved exhausted faces. Dust hangs in air catching
+      golden light. Tools at dwarf belt. Unexpected connection—rare gift recognized.
+      16:9 medium two-shot. Healer left offering, dwarf right receiving with delight. Bottle
+      center focal point catching glow. Background headframe silhouette. Warm sunset light
+      from behind creating glow around figures. Soft shadows, warm ambient fill. Dust catching
+      golden light. Blood-gold sunset and ale-amber palette with dust-white and warm amber
+      accents. First genuine smile emerging. Bonding through appreciation. Warmth of acceptance.
+      Subtle fantasy: rare impossible dwarven spirits, recognition of masterwork between trades.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, somber mood
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      clean unworn gear, no dust, harsh lighting, cool tones, dramatic shadows,
+      fear expression, serious faces, no joy
     tags:
-      - "character"
-      - "connection"
-      - "celebratory"
       - "grimjaw"
       - "aldwin"
+      - "bonding"
+      - "undermountain-reserve"
+      - "celebratory"
+      - "sunset"
+      - "acceptance"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch05-the-weight-of-the-world-img-03-05-01"
+    source_moment: "ch05-the-weight-of-the-world-moment-05"
+    scene_id: "scn-05-03"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Pivotal turning point—the moment the words land and change everything. Hammer frozen
+      mid-swing captures the instant of decision, the weight of challenge accepted. Intimate
+      focus on the shift from refusal to consideration.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Medium shot on the cliff face of Grimjaw turning to look at Fayne. His war-hammer
+      "Tremor" is frozen mid-arc at the apex of its swing, the masterwork tool suspended
+      in air showing the precise instant of interruption. Grimjaw's body is turned from his
+      work, stone-deep eyes—bright and keen despite age—fixing on Fayne with assessment.
+      His weathered face shows the transition from automatic refusal to genuine attention.
+      Iron-gray beard braided with metal charms, reinforced leather mining gear, stocky
+      build planted solid even while turning. In the background slightly blurred but clear:
+      Fayne standing with calm steady presence, having just spoken the words "The mountain's
+      winning." The cliff face and massive overhang loom above, the work site scattered
+      with timbers and tools. Noon sun creates strong side-lighting emphasizing the frozen
+      moment.
+    composition_notes: |
+      16:9 medium framing. Grimjaw dominant in frame positioned right of center, hammer
+      frozen at apex creating strong diagonal line. Eyes as focal point, locking with Fayne.
+      Fayne positioned left background creating sight line. Suspended hammer creates tension—
+      movement stopped mid-action. Cliff and overhang visible behind establishing context.
+      The turn captured—body language shifting from dismissal to attention.
+    visual_hook: "Hammer frozen mid-swing, dwarf turning, stone-deep eyes assessing—the challenge landed"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "quartermaster-fayne"
+    character_states:
+      grimjaw-ironbeard: |
+        Turning from work, hammer frozen mid-arc at apex. Stone-deep eyes bright and keen,
+        fixing on Fayne with ancient assessment. Weathered face showing transition: automatic
+        refusal shifting to genuine attention. Iron-gray beard with metal charms. Reinforced
+        leather mining gear. Stocky build planted solid even while turning. The words "The
+        mountain's winning" registering. Challenge recognized.
+      quartermaster-fayne: |
+        Background left, calm steady presence. Having just spoken the turning-point words.
+        Sharp-eyed quartermaster, practical traveling gear. Meeting ancient dwarf's gaze
+        without flinching. Knowing exactly what nerve was struck.
+    location: "sword-mountains"
+    zone: "cliff-face"
+    lighting:
+      primary_source: "Noon sun from right side"
+      quality: "harsh direct, revealing"
+      direction: "from right creating side-light on dwarf"
+      color_temperature: "neutral bright daylight"
+      shadow_depth: "strong defining features and frozen hammer"
+      atmospheric: "clear mountain air, moment of stillness"
+    palette:
+      dominant:
+        - "stone gray cliff"
+        - "dark leather brown"
+        - "iron-gray beard"
+      accent:
+        - "metal hammer and charm glints"
+        - "warm flesh tone hands and face"
+        - "timber brown background"
+      avoid:
+        - "soft lighting"
+        - "warm atmospheric tones"
+        - "motion blur"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, sharp frozen moment clarity.
+      Sheer cliff face work site with massive overhang above. Stocky dwarf turning from work,
+      masterwork war-hammer/mining pick frozen mid-arc at apex of swing—suspended showing
+      precise instant of interruption. Stone-deep eyes bright and keen, fixing on viewer's
+      left with ancient assessment. Weathered face showing transition from automatic refusal
+      to genuine attention. Iron-gray beard braided with small metal charms catching light.
+      Reinforced dark leather mining gear with metal studs, wide tool belt. Stocky build
+      planted solid even while turning. Left background: calm quartermaster figure with
+      steady presence, sharp-eyed, practical traveling gear, having just spoken challenge.
+      Work site scattered with timbers and tools. Cliff texture and overhang visible.
+      16:9 medium framing. Dwarf dominant right of center, frozen hammer creating strong
+      diagonal tension. Eyes as focal point. Quartermaster left background creating sight
+      line. Noon sun from right creating harsh side-light, strong shadows defining features
+      and hammer. Clear mountain air, moment of absolute stillness. Stone gray and dark
+      leather palette with metal glints and warm flesh accents. Suspended action creating
+      visual tension. The instant the challenge lands. "The mountain's winning" recognized.
+      Subtle fantasy: masterwork dwarven tool, mountain as living opponent, challenge of pride.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      motion blur, action pose, dramatic expression, soft lighting,
+      warm atmospheric glow, clean gear
+    tags:
+      - "grimjaw"
+      - "fayne"
+      - "turning-point"
+      - "challenge"
+      - "frozen-moment"
+      - "intimate"
+      - "recruitment"
     generated_at: null
     file_name: null
     file_path: null

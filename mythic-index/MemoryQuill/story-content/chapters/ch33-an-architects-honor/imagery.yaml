@@ -1,589 +1,224 @@
-# ============================================================================
-# CHAPTER IMAGERY SPECIFICATION
-# Chapter: An Architect's Honor
-# Generated: 2025-12-21
-# ============================================================================
-
 metadata:
   entity_type: "chapter-imagery"
   slug: "ch33-an-architects-honor"
   chapter_number: 33
   chapter_title: "An Architect's Honor"
-  visual_thesis: "From the quiet weight of grim purpose to the explosive devastation of betrayed creation, ending in the cold forge of redemption."
+  visual_thesis: "Creation perverted, honor demanded—two brilliant architects discover their masterpiece is a children's prison, and channel their devastating fury into becoming the keys to unlock their own cage."
   color_palette:
     primary:
-      - "#C4A35A"
-      - "#8B7355"
-      - "#1E3A5F"
-      - "#B87333"
+      - "#3D85C6"  # Arcane conduit blue-white
+      - "#CD7F32"  # Bronze metallic (Korrath's scales)
+      - "#8B4513"  # Oak brown (workshop)
     accent:
-      - "#00BFFF"
-      - "#FF6B35"
+      - "#E6E6FA"  # Lightning white-purple
+      - "#B87333"  # Copper-red (Cid's hair)
+      - "#00CED1"  # Ozone electric blue
   generation_defaults:
     provider: "openai"
     model: "dall-e-3"
     quality: "hd"
   mood_distribution:
-    somber: 2
-    pastoral: 1
-    celebratory: 0
-    aquatic: 0
-    ethereal: 1
-    intimate: 3
     kinetic: 3
-    ominous: 2
+    ominous: 3
+    intimate: 2
 
 characters:
-  - ref: "veyra-thornwake"
-    name: "Veyra Thornwake"
-    scene_variations: "Dignified, somber lead. Burn scar prominent. Stoic mask cracking slightly during revelations."
+  - ref: "cidrella-vexweld"
+    name: "Cidrella 'Cid' Vexweld"
+    scene_variations: |
+      CHAPTER 33 VARIATIONS (THE SHATTERING):
+      - SCENE 02 (Pre-revelation): Bubbly, bouncing on feet, copper-red hair escaping braids, blue streak prominent. Goggles on forehead. Enthusiastic, bright brown eyes. Prosthetic arm at rest, conduits with normal blue glow.
+      - SCENE 03 (The Blow): Frozen rigid. Power pack whining. Conduits flaring blue-white. Static building, hair lifting.
+      - SCENE 03 (Horror Dawning): Prosthetic hand to mouth. Wet eyes. Engineer's mind racing. Conduits flickering erratically.
+      - SCENE 03 (The Explosion): Prosthetic slamming down. Oak exploding. Blue-white flash at impact. Splinters flying. Small fires starting. Hair fully lifted by static.
+      - SCENE 03 (Cold Fury): Standing amid wreckage. Conduits pulsing with barely restrained power. Face ice. "Piece. By. Piece."
+      - SCENE 06 (The Bellringer): Furious sketching with charcoal. Fierce, humorless smile. Creative energy redirected from destruction to solution.
+      - Throughout: Short sturdy gnome, freckled face often smudged. Oil-stained leather tunic, bandolier of power cells. Brass prosthetic left arm with glowing arcane conduits.
     reference_images:
-      - "veyra-thornwake-official-portrait-01"
+      - "cidrella-vexweld-portrait"
 
-  - ref: "thorne-brightward"
-    name: "Thorne Brightward"
-    scene_variations: "Carrying leather satchel. Watchful partner. Steadying presence."
+  - ref: "korrath-threnx"
+    name: "Korrath Threnx"
+    scene_variations: |
+      CHAPTER 33 VARIATIONS (THE STORM):
+      - SCENE 04 (The Weight): Statue-still at drafting table. Bronze scales catching precise light. Scar across left eye visible. Family crest on chain. Analytical, controlled.
+      - SCENE 05 (Lightning Manifesting): Sparks at eye corners. Scales brightening. Metallic taste in air. Tools vibrating on pegboards. Lights flickering.
+      - SCENE 05 (Full Fury): Lightning arcing across bronze scales like living veins of light. Voice carrying thunder resonance. Controlled terrible justice of bronze dragonborn.
+      - SCENE 05 (Resolution): Lightning dimming, not from weakness but from purpose. Finger tracing blueprints, singed paper where he touches.
+      - Throughout: Tall, broad bronze dragonborn. Burnished scales scarred from forge work. Reinforced leather work clothes. Family crest (three gears beneath hammer) on bronze chain.
     reference_images:
-      - "thorne-brightward-portrait-01"
-
-  - ref: "marcus-heartbridge"
-    name: "Marcus Heartbridge"
-    scene_variations: "Immaculate doublet. Diplomatic calm. Subdued after the truth is out."
-    reference_images:
-      - "marcus-heartbridge-portrait-study-01"
+      - "korrath-threnx-portrait"
 
   - ref: "grimjaw-ironbeard"
     name: "Grimjaw Ironbeard"
-    scene_variations: "Gravelly baritone. Bone-deep understanding of craft. Immovable anchor against lightning."
+    scene_variations: |
+      CHAPTER 33 VARIATIONS (THE MENTOR):
+      - SCENE 03 (The Axe-Blow): Speaking blunt truth. Gravelly voice. Weathered hands at sides. Face showing he knows this will hurt.
+      - SCENE 05 (Builder to Builder): Stepping through electrical discharge without flinching. Scarred hands visible—decades of similar guilt carried. Delivering master's wisdom with bone-deep understanding.
+      - Throughout: Stocky weathered dwarf. Iron-gray beard braided with metal charms and tiny tools. Bright keen eyes. Practical reinforced mining clothes.
     reference_images:
-      - "grimjaw-ironbeard-portrait-01"
-
-  - ref: "cidrella-vexweld"
-    name: "Cidrella 'Cid' Vexweld"
-    scene_variations: "Whirlwind of motion. Mechanical arm flaring blue-white. Anguished fury. Cold focus on 'Bellringer'."
-    reference_images:
-      - "cidrella-vexweld-portrait-01"
-
-  - ref: "korrath-threnx"
-    name: "Korrath 'Wallbreaker' Threnx"
-    scene_variations: "Bronze dragonborn. Lightning-wreathed features. Cold draconic judgment. Resolute builder."
-    reference_images:
-      - "korrath-threnx-portrait-01"
-
-  - ref: "rill-vossari"
-    name: "Rill Vossari"
-    scene_variations: "Aquamarine skin, bioluminescent currents. Calm steady anchor. Solidarity with Cid."
-    reference_images:
-      - "rill-vossari-casting-portrait-01"
+      - "grimjaw-ironbeard-portrait"
 
 locations:
-  - ref: "warehouse-complex"
-    zones:
-      - id: "main-hall"
-        chapter_context: "Cavernous industrial space. Heavy beams, round tactical table. Amber lamp-light. Somber preparation energy."
   - ref: "cids-workshop"
     zones:
-      - id: "overview"
-        chapter_context: "Explosion of creativity. Blueprints everywhere, humming conduits. Mechanical arm Unit 7. Shattered workbench scars."
+      - id: "workshop"
+        chapter_context: |
+          Before devastation: Contained explosion of creativity. Wires running like vines along walls. Blueprints tacked to every surface. Unit 7 (massive multi-jointed serving arm) delicately pouring lightning-lime fizz. Smell of ozone and hot metal. Rhythmic clicking of half-finished contraptions.
+          After devastation: Heavy oak workbench shattered outward from impact point. Splinters and half-assembled gadgets scattered. Metal legs buckled. Blueprints on floor like murdered birds. Small fires where sparks hit oil-soaked rags. Unit 7 reeling backward, chirping alarm.
+
   - ref: "korraths-office"
     zones:
-      - id: "overview"
-        chapter_context: "Cathedral of precision. Meticulous blueprint tubes, graduated tools. Heavy oak drafting table. Stroboscopic lightning effects."
-  - ref: "dock-ward"
+      - id: "office"
+        chapter_context: |
+          Cathedral of precision engineering. Perfect right angles everywhere. Walls lined with meticulously labeled blueprint tubes. Precision tools on pegboards in graduated sizes. Stone and metal samples in identical compartments with load tolerances labeled. Massive unmarred oak drafting table dominating center. Optimal lighting eliminating shadows.
+          During fury: Tools vibrating against hooks. Lights flickering. Air charged with metallic taste. Ozone sharp enough to sting. Paper singed where lightning-wreathed finger touches.
+
+  - ref: "warehouse-complex"
     zones:
-      - id: "overview"
-        chapter_context: "Bustling Dock Ward streets. The Company as a somber island of stillness amid the chaos."
+      - id: "briefing-circle"
+        chapter_context: |
+          War room at Dock Ward HQ. Heavy atmosphere of purpose transformed. Cid and Korrath at the heart of the operation now. Maps and blueprints spread. Charcoal and parchment for furious sketching. Team unified around the table.
 
 moments:
-  - id: "ch33-an-architects-honor-moment-01"
-    scene_id: "scn-33-01"
-    title: "Somber Island"
-    narrative_beat: "The Company moving through the bustling Dock Ward as a small, somber island of stillness."
-    visual_weight: "medium"
-    characters_present:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "marcus-heartbridge"
-      - "grimjaw-ironbeard"
-      - "lyra-kestrel"
-    location_zone: "dock-ward/streets"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch33-an-architects-honor-moment-02"
-    scene_id: "scn-33-02"
-    title: "Contained Explosion"
-    narrative_beat: "The first look at Cid's chaotic, brilliant workshop before the revelation hits."
-    visual_weight: "medium"
-    characters_present:
-      - "cidrella-vexweld"
-    location_zone: "cids-workshop/overview"
-    transformation_state: "before"
-    recommended_images: 1
-
   - id: "ch33-an-architects-honor-moment-03"
     scene_id: "scn-33-03"
-    title: "Static Anguish"
-    narrative_beat: "The workshop reacting to Cid's internal scream, blueprints scattering like startled birds."
+    title: "Grimjaw's Axe-Blow"
+    narrative_beat: "'They're using it to traffic children, lass.' Grimjaw's gravelly voice cut through Veyra's careful diplomacy like an axe through kindling. The words hung in the air, brutal and uncompromising."
     visual_weight: "high"
     characters_present:
+      - "grimjaw-ironbeard"
       - "cidrella-vexweld"
-    location_zone: "cids-workshop/overview"
-    transformation_state: "during"
+    location_zone: "cids-workshop/workshop"
+    transformation_state: "before"
     recommended_images: 1
 
   - id: "ch33-an-architects-honor-moment-04"
     scene_id: "scn-33-03"
-    title: "The Workshop Scar"
-    narrative_beat: "The jagged, blackened split in the oak workbench where Cid's fist struck in rage."
-    visual_weight: "medium"
-    characters_present: []
-    location_zone: "cids-workshop/overview"
-    transformation_state: "after"
+    title: "I Built Every Piece"
+    narrative_beat: "Her prosthetic hand went to her mouth. 'I made it inescapable. I made it perfect, and I made it a prison.'"
+    visual_weight: "high"
+    characters_present:
+      - "cidrella-vexweld"
+    location_zone: "cids-workshop/workshop"
+    transformation_state: "during"
     recommended_images: 1
 
   - id: "ch33-an-architects-honor-moment-05"
-    scene_id: "scn-33-04"
-    title: "The Cathedral of Order"
-    narrative_beat: "Korrath's meticulous office before the revelation, precision models and shadow-banishing light."
-    visual_weight: "medium"
+    scene_id: "scn-33-03"
+    title: "The Workbench Shatters"
+    narrative_beat: "Her prosthetic hand slammed down onto the heavy oak workbench with the full force of her augmented strength and her anguish combined. The workbench didn't just crack. It shattered."
+    visual_weight: "critical"
     characters_present:
-      - "korrath-threnx"
-    location_zone: "korraths-office/overview"
-    transformation_state: "before"
-    recommended_images: 1
-
-  - id: "ch33-an-architects-honor-moment-06"
-    scene_id: "scn-33-05"
-    title: "Draconic Judgment"
-    narrative_beat: "Korrath rigid with controlled fury, lightning veins tracing his bronze face."
-    visual_weight: "high"
-    characters_present:
-      - "korrath-threnx"
-    location_zone: "korraths-office/overview"
+      - "cidrella-vexweld"
+    location_zone: "cids-workshop/workshop"
     transformation_state: "during"
-    recommended_images: 1
+    recommended_images: 2
 
   - id: "ch33-an-architects-honor-moment-07"
     scene_id: "scn-33-05"
-    title: "Vibrating Tools"
-    narrative_beat: "Precision tools vibrating on their hooks as Korrath's electrical discharge fills the room."
-    visual_weight: "medium"
-    characters_present: []
-    location_zone: "korraths-office/overview"
+    title: "Lightning Wreathed"
+    narrative_beat: "When he looked at them, small bolts of lightning arced across his bronze features like living veins of light. His voice, when it came again, carried the resonance of distant thunder."
+    visual_weight: "critical"
+    characters_present:
+      - "korrath-threnx"
+    location_zone: "korraths-office/office"
     transformation_state: "during"
-    recommended_images: 1
+    recommended_images: 2
 
   - id: "ch33-an-architects-honor-moment-08"
     scene_id: "scn-33-05"
-    title: "Builder's Resolution"
-    narrative_beat: "Korrath's scaled finger singeing the blueprint at the maintenance access point."
+    title: "Builder to Builder"
+    narrative_beat: "'The same hands that built the cage can build the key. The same stone that made the wall can make the battering ram.' The lightning playing across his scales began to dim, not from weakness, but from something like resolution."
     visual_weight: "high"
     characters_present:
-      - "korrath-threnx"
       - "grimjaw-ironbeard"
-    location_zone: "korraths-office/overview"
+      - "korrath-threnx"
+    location_zone: "korraths-office/office"
     transformation_state: "after"
     recommended_images: 1
 
   - id: "ch33-an-architects-honor-moment-09"
     scene_id: "scn-33-06"
-    title: "Elemental Solidarity"
-    narrative_beat: "Rill's aquamarine hand resting on Cid's brass prosthetic arm, a moment of elemental trust."
+    title: "The Bellringer"
+    narrative_beat: "'We'll ring it like a bell!' She flashed a fierce, humorless smile. 'We'll call it the Bellringer.'"
     visual_weight: "high"
     characters_present:
+      - "cidrella-vexweld"
       - "rill-vossari"
-      - "cidrella-vexweld"
-    location_zone: "warehouse-complex/overview"
-    transformation_state: "after"
-    recommended_images: 1
-
-  - id: "ch33-an-architects-honor-moment-10"
-    scene_id: "scn-33-06"
-    title: "The Bellringer Concept"
-    narrative_beat: "The leadership team huddling over the new 'Bellringer' sketches, hope through subversion."
-    visual_weight: "medium"
-    characters_present:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "cidrella-vexweld"
-      - "korrath-threnx"
-    location_zone: "warehouse-complex/overview"
+    location_zone: "warehouse-complex/briefing-circle"
     transformation_state: "after"
     recommended_images: 1
 
 images:
-  - custom_id: "ch33-an-architects-honor-img-33-01-01"
-    source_moment: "ch33-an-architects-honor-moment-01"
-    scene_id: "scn-33-01"
-    image_type: "hero"
-    category:
-      - "moment"
-      - "character"
-      - "location"
-    scene_mood: "somber"
-    mood_rationale: "Devastating news through an oblivious world. Contrast between morning commerce and grim purpose."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      The core Company members move through a bustling harbor market. Veyra leads with a stoic expression, burn scar catching shadow. Thorne carries a leather satchel of evidence. Grimjaw and Lyra follow. Merchants and dock workers part around them like a current around a stone. Sepia-gold morning sun through haze.
-    composition_notes: |
-      Wide shot. Group center-weighted. Colorful market chaos surrounding the dark, somber island of adventurers. High contrast in tones.
-    visual_hook: "The bubble of stillness around the group—merchants parting around them unconsciously"
-    depicts_characters:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "marcus-heartbridge"
-      - "grimjaw-ironbeard"
-      - "lyra-kestrel"
-    character_states:
-      veyra-thornwake: |
-        Leading. Stoic resolve. Burn scar prominent. Lantern at hip.
-      thorne-brightward: |
-        Watchful. Carrying evidence satchel.
-      marcus-heartbridge: |
-        Diplomatic smoothness. Reading the street.
-      grimjaw-ironbeard: |
-        Protective stance. Braided beard glinting.
-      lyra-kestrel: |
-        Deep plum skin. Assessing angles.
-    location: "dock-ward"
-    lighting:
-      primary_source: "Morning sun"
-      quality: "Soft, diffused, weighted"
-      direction: "Side"
-      color_temperature: "Sepia-gold"
-      shadow_depth: "Deep on Company"
-      atmospheric: "Harbor haze"
-    palette:
-      dominant:
-        - "sepia gold"
-        - "burnt sienna"
-        - "slate gray"
-      accent:
-        - "Company blue"
-      avoid:
-        - "cheerful protagonist tones"
-    prompt_used: |
-      Group of adventurers moving through a busy harbor market at morning,
-      dark somber island of figures in a sea of colorful commerce,
-      woman with mohawk leading,
-      weathered paladin in blue cloak,
-      dwarf with magnificent beard,
-      morning sun filtered through mist,
-      classical oil painting, Rembrandt lighting,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, cheerful expressions
-    tags:
-      - "hero"
-      - "aftermath"
-      - "somber"
-      - "market"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch33-an-architects-honor-img-33-02-01"
-    source_moment: "ch33-an-architects-honor-moment-02"
-    scene_id: "scn-33-02"
-    image_type: "establishing"
-    category:
-      - "location"
-      - "character"
-    scene_mood: "pastoral"
-    mood_rationale: "The 'Character's Joy.' Creative spark before the horror. A contained explosion of invention. Bright and hopeful."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Cid's workshop as a world of wonders. Blueprints on every surface, wires like vines. Mechanical arm Unit 7 pouring drinks. Half-finished gadgets clicking. Cid is a whirlwind of motion, copper hair escaping braids. Warm industrial light. Atmosphere of pure creative energy.
-    composition_notes: |
-      Wide establishing shot. Deep cluttered perspective. Multiple focal points of invention. Cid center-left in motion. High key highlights.
-    visual_hook: "The mechanical arm Unit 7 delicately pouring a fizzing drink into a mismatched cup."
-    depicts_characters:
-      - "cidrella-vexweld"
-    character_states:
-      cidrella-vexweld: |
-        Bouncing on toes. Enthusiastic. Copper hair wild. Goggles on forehead.
-    location: "cids-workshop"
-    lighting:
-      primary_source: "Workshop lamps"
-      quality: "Bright, high-key, clear"
-      direction: "Multiple"
-      color_temperature: "Warm gold"
-      shadow_depth: "Minimal"
-      atmospheric: "Ozone and metal scent"
-    palette:
-      dominant:
-        - "copper and brass"
-        - "sunlit gold"
-        - "oak brown"
-      accent:
-        - "lightning-lime green"
-      avoid:
-        - "harsh shadows"
-    prompt_used: |
-      Wide shot of a chaotic artificer's workshop filled with mechanical inventions and blueprints,
-      gnome woman with red hair moving with excitement,
-      mechanical arms and clockwork gadgets,
-      warm bright lighting,
-      atmosphere of pure creativity and wonder,
-      classical oil painting, Dutch genre influence,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, darkness, doom
-    tags:
-      - "establishing"
-      - "workshop"
-      - "cid"
-      - "pastoral"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch33-an-architects-honor-img-33-03-01"
+  - custom_id: "ch33-an-architects-honor-img-03-03-01"
     source_moment: "ch33-an-architects-honor-moment-03"
     scene_id: "scn-33-03"
-    image_type: "anchor"
-    category:
-      - "moment"
-      - "character"
-      - "action"
-    scene_mood: "kinetic"
-    mood_rationale: "Emotional detonation. Cid's body as a lightning rod. Stolen identity as a maker. Stroboscopic electrical discharge."
-    aspect_ratio: "2:3"
-    orientation: "portrait"
-    size: "1024x1536"
-    visual_description: |
-      Cid frozen in shock. Brass prosthetic arm blazes with blue-white electrical discharge. Lightning arcs crawling up mechanical joints. Copper-red hair lifting and fanning from static. Power array on back whining. Freckled face contorted in horror. Blue blueprints scattered in background.
-    composition_notes: |
-      Medium close-up. Low angle. Vertical emphasis on upward lightning crawl. Face as emotional anchor. Electrical chaos radiating.
-    visual_hook: "The blue-white lightning arcs crawling up her brass prosthetic arm while her copper hair lifts and fans"
-    depicts_characters:
-      - "cidrella-vexweld"
-    character_states:
-      cidrella-vexweld: |
-        Rigid shock. flaring conduits. Static hair. Horror in expression.
-    location: "cids-workshop"
-    lighting:
-      primary_source: "electrical discharge"
-      quality: "hard, strobing, chaotic"
-      direction: "radiating outward"
-      color_temperature: "cold blue-white vs warm amber"
-      shadow_depth: "harsh contrast"
-      atmospheric: "static charged air"
-    palette:
-      dominant:
-        - "electric blue-white"
-        - "brass gold"
-        - "copper red"
-      accent:
-        - "orange-amber background"
-      avoid:
-        - "calm colors"
-    prompt_used: |
-      Close portrait of a gnome woman in shock,
-      her mechanical arm blazing with blue electricity,
-      hair fanned out by static charge,
-      contorted expression of horror,
-      harsh strobing blue-white light in a dark workshop,
-      classical oil painting, Romantic dynamism,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, peaceful, even lighting
-    tags:
-      - "anchor"
-      - "shock"
-      - "cid"
-      - "magic"
-      - "kinetic"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch33-an-architects-honor-img-33-03-02"
-    source_moment: "ch33-an-architects-honor-moment-04"
-    scene_id: "scn-33-03"
-    image_type: "detail"
-    category:
-      - "location"
-      - "detail"
-      - "symbol"
-    scene_mood: "somber"
-    mood_rationale: "The 'Character's Wound.' Aftermath of rage. Permanent change to location recording betrayal. Still and tragic."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
-    visual_description: |
-      Jagged, blackened split in heavy oak workbench. Splintered and charred point of impact. Unburnt blueprint draped across the split showing the prison design. Crushed music box foreground. Silent, shadow-filled workshop background.
-    composition_notes: |
-      Tight square framing. Blackened split center. Blueprint as white diagonal. Shallow depth. Low-angle side light highlights wood 'wound'.
-    visual_hook: "The jagged, blackened split in the oak workbench—a literal scar—draped with the blueprint"
-    depicts_characters: []
-    character_states: {}
-    location: "cids-workshop"
-    lighting:
-      primary_source: "dim lamp"
-      quality: "somber, directional"
-      direction: "side"
-      color_temperature: "muted amber"
-      shadow_depth: "absolute black in split"
-      atmospheric: "dust motes in still air"
-    palette:
-      dominant:
-        - "charred black"
-        - "wood brown"
-        - "parchment white"
-      accent:
-        - "blue ink lines"
-      avoid:
-        - "bright colors"
-    prompt_used: |
-      Macro detail of a shattered wooden workbench,
-      jagged black split in the wood with splinters,
-      white blueprint draped over the wreckage,
-      dim lonely light casting deep shadows,
-      atmosphere of grief and betrayal,
-      classical oil painting, Rembrandt lighting,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, whole furniture
-    tags:
-      - "detail"
-      - "aftermath"
-      - "somber"
-      - "still-life"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch33-an-architects-honor-img-33-04-01"
-    source_moment: "ch33-moment-05"
-    scene_id: "scn-33-04"
-    image_type: "establishing"
-    category:
-      - "location"
-      - "detail"
-    scene_mood: "intimate"
-    mood_rationale: "Cathedral of precision. Measure twice, cut once. Shadow-banishing light. Philosophical perfection."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
-    visual_description: |
-      Scale model of a stone bridge on a perfectly aligned shelf. Miniature stone joints precisely fitted. Tiny brass pins mark load-bearing points. Clinical shadow-banishing light. Background meticulously labeled blueprint tubes. Absolute order.
-    composition_notes: |
-      Tight square framing. Bridge arch horizontal focal point. Brass pins as rhythmic highlights. Soft geometric background. No shadows.
-    visual_hook: "A scale model of a bridge with tiny brass pins marking every load-bearing point"
-    depicts_characters: []
-    character_states: {}
-    location: "korraths-office"
-    lighting:
-      primary_source: "engineered workshop light"
-      quality: "clinical, flat, bright"
-      direction: "multiple"
-      color_temperature: "white-gold"
-      shadow_depth: "minimal"
-      atmospheric: "clean air"
-    palette:
-      dominant:
-        - "granite gray"
-        - "blueprint cream"
-        - "brass gold"
-      accent:
-        - "ink black labels"
-      avoid:
-        - "dramatic shadows"
-    prompt_used: |
-      Macro detail of a precise architectural scale model of a bridge,
-      tiny brass pins marking structural points,
-      organized workshop background with blueprint tubes,
-      bright even lighting without shadows,
-      atmosphere of extreme professional honor,
-      classical oil painting, architectural realism,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, shadows, messy
-    tags:
-      - "detail"
-      - "precision"
-      - "honor"
-      - "intimate"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch33-an-architects-honor-img-33-05-01"
-    source_moment: "ch33-an-architects-honor-moment-06"
-    scene_id: "scn-33-05"
-    image_type: "anchor"
+    image_type: "beat"
     category:
       - "moment"
       - "character"
       - "emotion"
     scene_mood: "ominous"
-    mood_rationale: "Controlled fury. Judgment rather than rage. Draconic heritage manifesting. Order disrupted by unnatural energy."
-    aspect_ratio: "2:3"
-    orientation: "portrait"
-    size: "1024x1536"
+    mood_rationale: |
+      The moment before the storm. Grimjaw's brutal honesty cuts through all pretense, delivering truth like a blade. The dread is in what comes next—the catastrophic effect visible on Cid's frozen form.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
     visual_description: |
-      Korrath stands rigid over drafting table. Lightning veins of electric-blue trace his bronze scales. Deliberate judgment. Lightning bright along eye scar. Sparks dance between teeth. Amber-gold eyes cold. Precision tools background vibrating. Lighting in room flickers.
+      Medium two-shot in Cid's chaotic workshop. Grimjaw stands firm, weathered hands at his sides, delivering the killing truth with his gravelly voice. His iron-gray beard catches the workshop light, metal charms glinting. His expression is that of someone who knows mercy sometimes requires an axe.
+      Across from him, Cid has frozen mid-motion. Her entire body rigid. The copper-red hair is beginning to lift from static charge. Her power pack, visible at her back, emits a high-pitched whine. The arcane conduits in her prosthetic arm flare from normal blue to brilliant blue-white, casting harsh shadows. Unit 7 in the background is frozen mid-pour, responding to its creator's distress.
     composition_notes: |
-      Medium close-up. Eye-level. Frontal bronze texture. Lightning traces facial ridges. Meticulous background disrupted. Visual menace of judgment.
-    visual_hook: "Lightning veins tracing the contours of his bronze face—particularly bright along his scarred eye"
+      Grimjaw positioned left, solid as stone. Cid positioned right, caught in the moment of impact. The chaotic workshop between and around them suddenly feels ominous. Eye moves from Grimjaw's steady presence to Cid's electrified stillness.
+    visual_hook: "Grimjaw's words land like an axe as Cid's conduits flare white with shock"
     depicts_characters:
-      - "korrath-threnx"
+      - "grimjaw-ironbeard"
+      - "cidrella-vexweld"
     character_states:
-      korrath-threnx: |
-        Rigid posture. Hands gripping table. Bronze scales with blue lightning. Amber eyes cold judgment. Bony head spikes.
-    location: "korraths-office"
+      grimjaw-ironbeard: |
+        Standing solid, weathered hands at sides. Expression of someone delivering necessary pain with reluctant resolve. Iron-gray beard braided with metal charms.
+      cidrella-vexweld: |
+        Frozen rigid. Power pack whining. Hair beginning to lift. Prosthetic arm conduits flaring blue-white. Eyes wide, not yet processing. The moment before catastrophe.
+    location: "cids-workshop"
+    zone: "workshop"
     lighting:
-      primary_source: "lightning on scales"
-      quality: "unsettling, strobing"
-      direction: "internal to external"
-      color_temperature: "cold blue-white vs bronze"
-      shadow_depth: "deep, directionless"
-      atmospheric: "metallic taste in air"
+      primary_source: "Workshop ambient + flaring conduits"
+      quality: "harsh, electric, building"
+      direction: "mixed, with blue-white from Cid's arm"
+      color_temperature: "warm workshop shifting to cold electric"
+      shadow_depth: "harsh shadows from conduit flare"
+      atmospheric: "ozone building, static charge"
     palette:
       dominant:
-        - "burnished bronze"
+        - "workshop bronze-brown"
         - "electric blue-white"
-        - "deep shadow"
+        - "shadow grey"
       accent:
-        - "amber-gold eyes"
+        - "copper-red (hair)"
+        - "iron-gray (beard)"
+        - "arcane blue (conduits)"
       avoid:
-        - "warm comfortable tones"
+        - "warm cheerful tones"
+        - "soft lighting"
     prompt_used: |
-      Bronze dragonborn engineer with lightning flickering across his scales,
-      precise veins of blue light tracing his face and head spikes,
-      cold amber-gold eyes,
-      standing rigid over a drafting table,
-      atmosphere of draconic judgment and controlled fury,
-      classical oil painting, Symbolist unease,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Rembrandt dramatic lighting.
+      Interior of a chaotic inventor's workshop filled with wires, blueprints, and half-finished contraptions.
+      A stocky dwarf with an iron-gray beard braided with metal charms stands solid, delivering brutal truth with necessary resolve.
+      Across from him, a small rock gnome with copper-red hair and a blue streak has frozen mid-motion. Her prosthetic brass arm with arcane conduits flares brilliant blue-white, casting harsh shadows. Static charge lifts her hair. Her power pack whines at emergency output.
+      A massive mechanical serving arm in the background has frozen mid-task.
+      Medium two-shot, the moment of devastating revelation, ozone sharp in the air.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, hot rage
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      cheerful expression, warm lighting, calm scene
     tags:
-      - "anchor"
-      - "dragonborn"
-      - "judgment"
-      - "lightning"
+      - "grimjaw-ironbeard"
+      - "cidrella-vexweld"
+      - "revelation"
       - "ominous"
     generated_at: null
     file_name: null
@@ -592,63 +227,71 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch33-an-architects-honor-img-33-05-02"
-    source_moment: "ch33-an-architects-honor-moment-08"
-    scene_id: "scn-33-05"
+  - custom_id: "ch33-an-architects-honor-img-03-04-01"
+    source_moment: "ch33-an-architects-honor-moment-04"
+    scene_id: "scn-33-03"
     image_type: "beat"
     category:
       - "moment"
       - "character"
-      - "symbol"
-    scene_mood: "intimate"
-    mood_rationale: "Builder to builder moment. Shared weight of responsibility. Still, heavy, profound resolution."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
+      - "emotion"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The engineer's mind becomes torture. Cid's brilliance turns against her as she traces every way her masterpiece has been weaponized. Horror replacing rage—complicity realized.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
     visual_description: |
-      Tight shot of blueprints on oak table. Korrath's massive bronze-scaled finger pressed on 'Point seven-beta'. Parchment slightly singed at contact point. Grimjaw's weathered, scarred hand rests nearby on the table. Floorboards edge visible. Lightning resonance easing. Returning amber light.
+      Close-medium shot of Cid at her workbench, blueprints spread before her. Her prosthetic hand is raised to her mouth, the gesture of dawning horror. Her brown eyes are wet, reflecting the damning schematics. The arcane conduits in her arm flicker erratically—not the steady glow of work, but the unstable pulse of emotional surge.
+      The blueprints in the foreground show recognizable engineering diagrams: climate zones, sluice gates, ventilation matrices. Each elegant solution now revealed as a cage component. Her copper-red hair, partially lifted by residual static, frames a face transitioning from rage to horrified understanding.
     composition_notes: |
-      Extreme close-up. Two hands and blueprint only. Singed point as visual center. Shallow depth. Low-angle warm light.
-    visual_hook: "A bronze-scaled dragonborn finger singeing a blueprint while a weathered dwarven hand rests beside it"
+      Tight framing on Cid, blueprints filling the lower third. Her raised prosthetic hand dominates the middle frame. Expression is the focus—the brilliant mind turning its analysis inward. Flickering conduits create unsettled lighting.
+    visual_hook: "Prosthetic hand to mouth as Cid realizes she built every piece of the prison"
     depicts_characters:
-      - "korrath-threnx"
-      - "grimjaw-ironbeard"
+      - "cidrella-vexweld"
     character_states:
-      korrath-threnx: |
-        Hands only. Bronze-scaled. Pressing with resolution.
-      grimjaw-ironbeard: |
-        Hands only. Large, scarred. Grounding presence.
-    location: "korraths-office"
+      cidrella-vexweld: |
+        Prosthetic hand raised to mouth. Eyes wet with horrified understanding. Conduits flickering erratically. Hair partially lifted. Expression of dawning complicity—the brilliant engineer seeing her work as cage.
+    location: "cids-workshop"
+    zone: "workshop"
     lighting:
-      primary_source: "returning amber lamp"
-      quality: "soft, warm, intimate"
-      direction: "side"
-      color_temperature: "warm amber-gold"
-      shadow_depth: "gentle"
-      atmospheric: "charged air clearing"
+      primary_source: "Flickering conduit light"
+      quality: "unstable, emotional"
+      direction: "from below and side (arm conduits)"
+      color_temperature: "cold blue-white, unstable"
+      shadow_depth: "dancing shadows from flickering"
+      atmospheric: "tension, grief"
     palette:
       dominant:
-        - "parchment cream"
-        - "bronze scales"
-        - "oak brown"
+        - "blueprint cream"
+        - "unstable blue-white"
+        - "copper-red (hair)"
       accent:
-        - "singed brown"
+        - "brass (prosthetic)"
+        - "wet brown (eyes)"
       avoid:
-        - "active lightning"
+        - "warm tones"
+        - "steady light"
     prompt_used: |
-      Macro detail of a bronze-scaled hand and a weathered dwarven hand on a blueprint,
-      dragonborn finger singeing the paper at a specific point,
-      heavy oak table,
-      atmosphere of profound resolution and shared craft,
-      classical oil painting, Vermeer lighting,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, emotional chiaroscuro.
+      Close-medium portrait of a rock gnome inventor at her workbench, engineering blueprints spread before her.
+      Her masterwork prosthetic brass arm is raised, hand covering her mouth in horror. The arcane conduits in the arm flicker erratically with unstable blue-white light.
+      Her copper-red hair with blue streak is partially lifted by static. Her brown eyes are wet, reflecting the damning schematics—climate zone diagrams, sluice gates, ventilation matrices.
+      Expression of devastating realization: the brilliant engineer understanding she built every piece of a children's prison.
+      Intimate framing, flickering unsettled light, grief and horror.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, faces
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      steady lighting, calm expression, wide shot
     tags:
-      - "detail"
-      - "resolution"
-      - "blueprint"
-      - "intimate"
+      - "cidrella-vexweld"
+      - "horror"
+      - "realization"
+      - "ominous"
     generated_at: null
     file_name: null
     file_path: null
@@ -656,64 +299,453 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch33-an-architects-honor-img-33-06-01"
-    source_moment: "ch33-an-architects-honor-moment-09"
-    scene_id: "scn-33-06"
-    image_type: "mood"
+  - custom_id: "ch33-an-architects-honor-img-03-05-01"
+    source_moment: "ch33-an-architects-honor-moment-05"
+    scene_id: "scn-33-03"
+    image_type: "hero"
     category:
-      - "character"
+      - "moment"
+      - "action"
       - "emotion"
-      - "symbol"
-    scene_mood: "ethereal"
-    mood_rationale: "Elemental solidarity. Water and metal, calm and fury united. Luminous harmony of found family."
-    aspect_ratio: "4:5"
-    orientation: "portrait"
-    size: "1024x1280"
+    scene_mood: "kinetic"
+    mood_rationale: |
+      Grief made devastatingly physical. The chapter's visual peak—augmented strength and anguish combined in a single explosive impact. Motion, force, consequence captured in the moment of destruction.
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
     visual_description: |
-      Rill's aquamarine hand rests on Cid's brass prosthetic arm. Bioluminescent currents glow beneath Rill's skin, pulsing softly at contact. Cid looks up from 'Bellringer' sketch. Copper hair calm. War room amber light mingles with Rill's blue glow. Luminous harmony.
+      The moment of impact. Cid's prosthetic arm, conduits blazing white-hot at maximum power, slams into the heavy oak workbench. The impact point is a corona of light. The thick oak surface is already exploding outward—splinters radiating in all directions, half-assembled gadgets tumbling through the air, blueprints scattering like murdered birds.
+      Cid is caught in the pose of full downward strike, her small frame channeling all her augmented strength and anguish. Her copper-red hair streams upward from the force and static. Her face is a mask of grief-rage, tears and fury combined. Small fires are starting where arcane sparks meet oil-soaked rags.
+      The metal legs of the workbench are buckling. Unit 7 in the background reels backward. The workshop's careful chaos becomes actual destruction.
     composition_notes: |
-      Close two-shot. Touching hands as focal point. Faces soft-focused above. Sketch and blueprints context. Romantic realism.
-    visual_hook: "Rill's aquamarine hand with glowing bioluminescent currents resting on Cid's brass prosthetic arm"
+      Ultra-wide cinematic framing captures the explosion radiating outward from center impact. Cid positioned left-center, arm extended down, impact point as focal anchor. Debris fills the frame in dynamic motion. Small fires create secondary light sources. The destruction feels visceral and immediate.
+    visual_hook: "Oak workbench exploding outward as prosthetic arm impacts with augmented fury"
     depicts_characters:
-      - "rill-vossari"
       - "cidrella-vexweld"
     character_states:
-      rill-vossari: |
-        Bioluminescent patterns glowing. Pupil-less eyes soft. Solidarity gesture.
       cidrella-vexweld: |
-        Focused on solution. Grateful expression. Prosthetic arm dim/cool.
-    location: "warehouse-complex"
+        Full downward strike pose, prosthetic arm impacting. Conduits blazing white-hot. Hair streaming up from force. Face showing grief-rage, tears in eyes. Small frame channeling devastating power. Bandolier visible, goggles askew.
+    location: "cids-workshop"
+    zone: "workshop"
     lighting:
-      primary_source: "amber lamp + bioluminescence"
-      quality: "soft, luminous, sourceless"
-      direction: "ambient"
-      color_temperature: "warm amber vs cool aquamarine"
-      shadow_depth: "minimal"
-      atmospheric: "soft edges"
+      primary_source: "White-hot impact flash"
+      quality: "explosive, blinding at center"
+      direction: "radiating from impact point"
+      color_temperature: "white-hot core, blue-white corona"
+      shadow_depth: "harsh radiating shadows"
+      atmospheric: "dust, splinters, sparks, small fires"
     palette:
       dominant:
-        - "aquamarine"
-        - "brass gold"
-        - "amber"
+        - "white-hot flash"
+        - "oak brown (exploding)"
+        - "shadow black"
       accent:
-        - "bioluminescent blue-white"
+        - "copper-red (hair)"
+        - "fire orange (starting fires)"
+        - "brass (prosthetic)"
       avoid:
-        - "harsh shadows"
+        - "calm colors"
+        - "soft lighting"
+        - "static composition"
     prompt_used: |
-      Water genasi hand with glowing blue veins touching a brass mechanical arm,
-      faces of two women looking at each other with trust,
-      dim war room setting with soft amber light,
-      ethereal bioluminescent glow,
-      atmosphere of solidarity and hope,
-      classical oil painting, Pre-Raphaelite luminosity,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Turner's explosive energy.
+      Ultra-wide shot of an inventor's workshop at the moment of destruction.
+      A small rock gnome with copper-red hair and a blue streak brings her prosthetic brass arm down onto a heavy oak workbench with augmented strength. The arcane conduits in her arm blaze white-hot at impact.
+      The workbench doesn't crack—it shatters. The thick oak surface explodes outward, splinters radiating in all directions, half-assembled gadgets tumbling through the air, blueprints scattering like murdered birds.
+      Her hair streams upward from force and static. Her face shows grief-rage combined, tears catching the light.
+      Small fires start where sparks meet oil-soaked rags. A massive mechanical arm in the background reels backward.
+      Cinematic ultra-wide framing, kinetic energy of grief made physical, destruction as expression.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, explosive energy
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      calm scene, intact furniture, soft lighting, static pose
     tags:
-      - "mood"
-      - "solidarity"
-      - "found-family"
-      - "ethereal"
+      - "cidrella-vexweld"
+      - "hero-image"
+      - "kinetic"
+      - "destruction"
+      - "climax"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch33-an-architects-honor-img-03-05-02"
+    source_moment: "ch33-an-architects-honor-moment-05"
+    scene_id: "scn-33-03"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "aftermath"
+    scene_mood: "kinetic"
+    mood_rationale: |
+      The aftermath of explosion—Cid standing amid the wreckage of her own creation, transformed from bubbly inventor to weapon of cold fury. Residual energy, settling debris, the promise of destruction to come.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Cid stands in the center of devastation. The shattered remains of the oak workbench surround her—buckled metal legs, scattered splinters, overturned gadgets. Small fires gutter at the edges of the frame. Blueprints litter the floor. Her prosthetic arm hangs at her side, conduits still crackling with residual energy, pulsing with barely restrained power.
+      Her expression has shifted from explosive grief to ice. The wild energy compressed into something far more dangerous: controlled, focused, lethal. Her copper-red hair is settling but still charged. Her brown eyes are cold now, fixed on some internal target. "Piece. By. Piece."
+    composition_notes: |
+      Cid centered in the wreckage, establishing dominance over the destruction she caused. Debris radiating outward from her position. Residual fires provide accent lighting. Her posture is still, but coiled—the threat of future action implicit.
+    visual_hook: "Cid standing amid wreckage, transformed from bubbly inventor to cold fury incarnate"
+    depicts_characters:
+      - "cidrella-vexweld"
+    character_states:
+      cidrella-vexweld: |
+        Standing in wreckage, arm at side. Conduits crackling with restrained power. Hair settling but charged. Expression ice-cold, focused, lethal. The bubbly gnome is gone—a weapon has taken her place.
+    location: "cids-workshop"
+    zone: "workshop"
+    lighting:
+      primary_source: "Residual conduit glow + small fires"
+      quality: "settling, dangerous calm"
+      direction: "mixed—fires at edges, arm glow at center"
+      color_temperature: "cold blue conduits, warm fire accent"
+      shadow_depth: "moderate, dramatic"
+      atmospheric: "settling dust, smoke wisps"
+    palette:
+      dominant:
+        - "destruction grey-brown"
+        - "cold blue (conduits)"
+        - "shadow"
+      accent:
+        - "fire orange (dying flames)"
+        - "copper-red (hair)"
+      avoid:
+        - "warm overall tone"
+        - "cheerful colors"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, aftermath atmosphere.
+      A small rock gnome with copper-red hair and blue streak stands in the center of devastation.
+      Shattered oak workbench surrounds her—buckled metal legs, scattered splinters, overturned gadgets. Small fires gutter at the edges. Blueprints litter the floor.
+      Her prosthetic brass arm hangs at her side, arcane conduits crackling with barely restrained power. Her hair is settling but still charged with static.
+      Her expression has transformed: the bubbly inventor is gone. In her place stands cold fury incarnate—controlled, focused, lethal.
+      Medium shot, wreckage radiating from her position, the dangerous calm after destruction.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      cheerful expression, intact furniture, active destruction
+    tags:
+      - "cidrella-vexweld"
+      - "aftermath"
+      - "cold-fury"
+      - "transformation"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch33-an-architects-honor-img-05-07-01"
+    source_moment: "ch33-an-architects-honor-moment-07"
+    scene_id: "scn-33-05"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "transformation"
+    scene_mood: "ominous"
+    mood_rationale: |
+      Draconic heritage manifested in rage. The controlled, terrible justice of bronze—not explosive fury but measured wrath. Lightning arcing across scales like living veins of light. Supernatural power restrained by will.
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Korrath stands in his cathedral of precision, but the order he built is disrupted by the storm he contains. Small bolts of lightning arc across his burnished bronze scales, tracing his features like living veins of light. The scar across his left eye is illuminated by electrical discharge. His family crest on its bronze chain catches the lightning, the three interlocked gears seeming to glow.
+      The precision tools on their pegboards vibrate against their hooks. The lights in the workshop flicker. The air itself seems charged, metallic taste and ozone sting. His massive hands rest on the drafting table, and where his fingers touch, the paper is singed at the edges.
+      His expression is not rage but something more terrible: the controlled justice of his draconic heritage, patience weaponized.
+    composition_notes: |
+      Ultra-wide cinematic framing with Korrath dominating the center. The precision workshop around him provides contrast—order disrupted by contained chaos. Lightning traces create visual movement across his still form. The flickering lights and vibrating tools suggest barely-restrained power.
+    visual_hook: "Lightning arcing across bronze scales like living veins of light"
+    depicts_characters:
+      - "korrath-threnx"
+    character_states:
+      korrath-threnx: |
+        Standing at drafting table, massive hands resting on surface. Lightning arcing across bronze scales. Scar illuminated by electrical discharge. Family crest glowing. Expression of controlled terrible justice. Paper singed where he touches.
+    location: "korraths-office"
+    zone: "office"
+    lighting:
+      primary_source: "Lightning arcs across scales"
+      quality: "electrical, flickering, dangerous"
+      direction: "from Korrath's form, affecting room"
+      color_temperature: "electric white-blue"
+      shadow_depth: "harsh, rapidly shifting"
+      atmospheric: "ozone, metallic taste, vibrating air"
+    palette:
+      dominant:
+        - "burnished bronze (scales)"
+        - "lightning white-blue"
+        - "shadow black"
+      accent:
+        - "brass (family crest)"
+        - "singed paper brown"
+        - "workshop oak"
+      avoid:
+        - "warm cheerful lighting"
+        - "calm atmosphere"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Old Master lighting with electrical drama.
+      Ultra-wide shot of a precision engineering workshop, every surface meticulously organized.
+      A tall, broad bronze dragonborn stands at a heavy oak drafting table. Small bolts of lightning arc across his burnished bronze scales, tracing his features like living veins of light. The deep scar across his left eye is illuminated by electrical discharge.
+      His family engineering crest—three interlocked gears beneath a hammer—glows on a bronze chain at his chest.
+      Precision tools on pegboards vibrate against their hooks. Lights flicker. Where his massive hands rest on blueprints, the paper singes at the edges.
+      His expression is not explosive rage but controlled, terrible justice—the heritage of bronze dragonborn fully manifested.
+      Cinematic ultra-wide framing, draconic power barely contained, ozone sharp in the air.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      calm scene, warm lighting, uncontrolled rage, fire breath
+    tags:
+      - "korrath-threnx"
+      - "hero-image"
+      - "lightning"
+      - "draconic"
+      - "ominous"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch33-an-architects-honor-img-05-07-02"
+    source_moment: "ch33-an-architects-honor-moment-07"
+    scene_id: "scn-33-05"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "symbol"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The family honor at stake. Close focus on the engineering crest catching lightning, the three gears that represent generations of Threnx builders now associated with a children's prison. Symbol of pride becoming symbol of shame.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Close-medium shot focused on Korrath's chest and face. The family engineering crest hangs on its bronze chain—three interlocked gears beneath a hammer, catching and channeling the lightning that plays across his scales. The crest seems to glow from within, ancestral honor responding to ancestral rage.
+      His bronze scales are bright with electrical discharge, the burnished surface reflecting the arcs. His jaw is set, sparks playing between his teeth as he speaks words that carry thunder resonance. The scar across his left eye is a dark river in the electrical storm of his face.
+      Behind him, out of focus, the perfect order of his workshop—a life's work of precision now associated with a prison.
+    composition_notes: |
+      Tight framing with crest as anchor point, face as emotional focus. Lightning creates dynamic movement within a still pose. The out-of-focus workshop behind establishes context without distraction. The crest and scar create dual focal points of honor and pain.
+    visual_hook: "Family crest glowing with captured lightning, honor and fury combined"
+    depicts_characters:
+      - "korrath-threnx"
+    character_states:
+      korrath-threnx: |
+        Close portrait, lightning across scales. Family crest prominent, catching electrical discharge. Sparks between teeth. Scar illuminated. Expression of controlled terrible justice. Voice carrying thunder.
+    location: "korraths-office"
+    zone: "office"
+    lighting:
+      primary_source: "Lightning arcs"
+      quality: "electrical, intimate"
+      direction: "from scales and crest"
+      color_temperature: "electric white-blue, bronze warm"
+      shadow_depth: "harsh, dramatic"
+      atmospheric: "ozone, charge"
+    palette:
+      dominant:
+        - "burnished bronze"
+        - "lightning white"
+        - "shadow"
+      accent:
+        - "brass (crest)"
+        - "scar-dark"
+      avoid:
+        - "warm overall tone"
+        - "soft focus"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, portrait intensity.
+      Close-medium portrait of a bronze dragonborn's chest and face. Lightning plays across burnished bronze scales.
+      The family engineering crest—three interlocked gears beneath a hammer—hangs on a bronze chain, catching and channeling electrical discharge, glowing from within.
+      His jaw is set, sparks visible between his teeth as he speaks with thunder resonance. A deep scar across his left eye is a dark river in the electrical storm of his face.
+      Behind him, out of focus, the perfect order of his precision workshop.
+      Intimate framing of ancestral honor responding to ancestral rage, symbol of pride becoming symbol of fury.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, calm expression, warm lighting
+    tags:
+      - "korrath-threnx"
+      - "family-crest"
+      - "lightning"
+      - "ominous"
+      - "symbol"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch33-an-architects-honor-img-05-08-01"
+    source_moment: "ch33-an-architects-honor-moment-08"
+    scene_id: "scn-33-05"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Builder to builder understanding. Grimjaw delivers wisdom from his own past guilt, and Korrath's lightning dims—not from weakness but from resolution. Two craftsmen who have walked the same road, finding redemption in future creation.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Two-shot of Grimjaw and Korrath in the engineering workshop. Grimjaw stands close, weathered hands visible—decades of forge work and stone dust marking them, scars from similar guilt carried. His iron-gray beard catches the fading lightning, metal charms glinting. His expression holds bone-deep understanding: he has been here before.
+      Korrath's lightning is dimming, the arcs across his scales retreating not from exhaustion but from something like resolution. His massive form remains still, but the tension is draining. His gaze meets Grimjaw's—builder to builder, the understanding that needs no words.
+      The precision workshop around them is settling, tools no longer vibrating, lights steadying.
+    composition_notes: |
+      Two-shot with equal weight to both figures. Grimjaw slightly lower due to height, but positioned with visual authority. The fading lightning creates transitional lighting—dangerous into hopeful. Eye contact between them is the emotional anchor.
+    visual_hook: "Builder to builder—Grimjaw's wisdom dimming Korrath's lightning into resolution"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "korrath-threnx"
+    character_states:
+      grimjaw-ironbeard: |
+        Standing close, weathered hands visible. Expression of bone-deep understanding. Iron-gray beard catching fading light. Metal charms glinting. The mentor who has walked this road.
+      korrath-threnx: |
+        Lightning dimming across scales—not weakness but resolution. Tension draining from massive form. Gaze meeting Grimjaw's with understanding. Beginning to see the path forward.
+    location: "korraths-office"
+    zone: "office"
+    lighting:
+      primary_source: "Fading lightning + returning steady light"
+      quality: "transitional, softening"
+      direction: "mixed, settling"
+      color_temperature: "cooling from electric to warm"
+      shadow_depth: "softening"
+      atmospheric: "tension releasing"
+    palette:
+      dominant:
+        - "fading lightning blue"
+        - "bronze (scales)"
+        - "iron-gray (beard)"
+      accent:
+        - "metal charm glints"
+        - "workshop oak"
+      avoid:
+        - "harsh contrast"
+        - "cold only"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, intimate emotional connection.
+      Two-shot in a precision engineering workshop. A stocky dwarf with an iron-gray beard braided with metal charms stands close to a tall bronze dragonborn.
+      The dwarf's weathered hands are visible—decades of forge work, carrying similar guilt. His expression holds bone-deep understanding.
+      The dragonborn's lightning is dimming across his bronze scales—not from weakness but from resolution. Tension drains from his massive form. Their eyes meet: builder to builder, understanding without words.
+      The workshop around them settles, tools no longer vibrating, lights steadying.
+      Medium two-shot, the wisdom of one craftsman reaching another, redemption offered through future creation.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      intense lightning, anger, cold atmosphere
+    tags:
+      - "grimjaw-ironbeard"
+      - "korrath-threnx"
+      - "intimate"
+      - "wisdom"
+      - "redemption"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch33-an-architects-honor-img-06-09-01"
+    source_moment: "ch33-an-architects-honor-moment-09"
+    scene_id: "scn-33-06"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "solution"
+    scene_mood: "kinetic"
+    mood_rationale: |
+      Genius redirected from destruction to liberation. Cid's furious creativity now channeled into solution—the Bellringer conceived. Energy not diminished but transformed. Hope through action.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      War room at Dock Ward HQ. Cid is bent over parchment, charcoal flying across the surface as she sketches furiously. Her prosthetic arm's conduits pulse with creative energy—blue-white but controlled now, focused. Her copper-red hair is wild, goggles pushed up on her forehead. The fierce, humorless smile on her freckled face speaks of revenge through brilliance.
+      Around her, the team watches: Rill's calm presence providing steady anchor, her sea-glass hand resting near the sketches as she offers to prime the device. Blueprints and maps spread across the table. The atmosphere is purpose transformed—grief channeled into solution.
+      "We'll ring it like a bell" hangs in the air—the Bellringer named, the countermeasure conceived.
+    composition_notes: |
+      Cid positioned center-left, bent over her work. The sketch in progress visible but abstracted—the genius in motion rather than the result. Rill positioned right, providing calm counterpoint. Team members suggested in background. Energy flows from Cid's creation into the room.
+    visual_hook: "Cid sketching furiously with fierce smile—the Bellringer conceived, destruction becomes solution"
+    depicts_characters:
+      - "cidrella-vexweld"
+      - "rill-vossari"
+    character_states:
+      cidrella-vexweld: |
+        Bent over parchment, charcoal flying. Prosthetic conduits pulsing with controlled creative energy. Hair wild, goggles up. Fierce humorless smile—revenge through brilliance.
+      rill-vossari: |
+        Standing nearby, calm anchor. Sea-glass hand near the sketches. Steady presence counterbalancing Cid's fierce energy.
+    location: "warehouse-complex"
+    zone: "briefing-circle"
+    lighting:
+      primary_source: "War room lanterns + Cid's conduit glow"
+      quality: "warm ambient, creative energy"
+      direction: "overhead and from prosthetic"
+      color_temperature: "warm overall, blue accent from conduits"
+      shadow_depth: "moderate, purposeful"
+      atmospheric: "determination, hope through action"
+    palette:
+      dominant:
+        - "parchment cream"
+        - "conduit blue"
+        - "warm lantern"
+      accent:
+        - "copper-red (hair)"
+        - "sea-glass blue-green (Rill)"
+        - "charcoal black (sketching)"
+      avoid:
+        - "cold atmosphere"
+        - "grief colors"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, creative energy captured.
+      War room interior with maps and blueprints spread across a heavy table.
+      A rock gnome with wild copper-red hair and blue streak bends over parchment, charcoal flying as she sketches furiously. Her prosthetic brass arm's conduits pulse with controlled creative energy. Her freckled face wears a fierce, humorless smile—genius redirected from destruction to solution.
+      Nearby, a water genasi with pale sea-glass skin provides calm anchor, her hand resting near the sketches.
+      Warm lantern light mixed with blue conduit glow. The atmosphere is purpose transformed—'We'll ring it like a bell.'
+      Medium shot, creative kinetic energy, the Bellringer conceived.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      grief, destruction, cold tones, static pose
+    tags:
+      - "cidrella-vexweld"
+      - "rill-vossari"
+      - "bellringer"
+      - "kinetic"
+      - "solution"
     generated_at: null
     file_name: null
     file_path: null

@@ -1,248 +1,323 @@
-# ============================================================================
-# CHAPTER IMAGERY SPECIFICATION
-# Chapter: Spring Thaw
-# Generated: 2025-12-21
-# ============================================================================
-
 metadata:
   entity_type: "chapter-imagery"
   slug: "ch13-spring-thaw"
   chapter_number: 13
   chapter_title: "Spring Thaw"
-  visual_thesis: "From the competent warmth of routine rescue to the cold revelation of encirclement, ending in defiant vigil against an unseen threat"
+  visual_thesis: "Routine dissolves into threat—the patient watchers are themselves being watched, as spring reveals what winter kept frozen."
   color_palette:
     primary:
-      - "#8B7355"
-      - "#4A5568"
-      - "#D4A574"
-      - "#2D3748"
+      - "#B8C4CE" # Morning mist gray
+      - "#D4A574" # Workshop lamplight amber
+      - "#4A5568" # Moral gray, stone
     accent:
-      - "#B8860B"
-      - "#7B8B6F"
+      - "#3B82F6" # Arcane blue (Cidrella's streak, conduits)
+      - "#B87333" # Brass prosthetic copper
+      - "#FF6B35" # Sunset battlements
   generation_defaults:
     provider: "openai"
     model: "dall-e-3"
     quality: "hd"
   mood_distribution:
     somber: 2
-    pastoral: 3
-    celebratory: 0
-    aquatic: 0
-    ethereal: 0
-    intimate: 1
-    kinetic: 1
-    ominous: 2
+    ominous: 3
+    intimate: 2
 
 characters:
   - ref: "veyra-thornwake"
     name: "Veyra Thornwake"
-    scene_variations: "Full weathered leather armor. Burn scar prominent. Rappelling in forest. Crouching on rooftop. Defiant on parapet."
+    scene_variations: |
+      CHAPTER 13 VARIATIONS (COMPETENCE TO RESOLVE):
+      - SCENE 01 (Morning): Rappelling, practiced efficiency. Rope burn on shoulders.
+        Standard scout gear, lantern at belt. Professional focus.
+      - SCENE 05 (Dawn/Sunset): Defensive preparations, watching from parapet.
+        Lantern in hand, sunset silhouette, resolute waiting.
+      - Throughout: Burn scar on left face, mohawk with braided lock, teal tattoos.
+        Lantern ALWAYS present.
     reference_images:
-      - "veyra-thornwake-official-portrait-01"
-
-  - ref: "thorne-brightward"
-    name: "Thorne Brightward"
-    scene_variations: "Standard patrol gear. Blue cloak. Rigid in Grimsby's office. Introspective on horseback."
-    reference_images:
-      - "thorne-brightward-portrait-01"
+      - "veyra-thornwake-portrait"
 
   - ref: "vera-moonwhisper"
     name: "Vera Moonwhisper"
-    scene_variations: "Forest-green cloak. Chestnut braid. Tracking in forest. Crouching on rooftop. Echo present and alert."
+    scene_variations: |
+      CHAPTER 13 VARIATIONS (TRACKER INSTINCTS):
+      - SCENE 01 (Morning): Echo staying close, sensing danger. Agitated.
+        Reading trail signs, concerned about the silence.
+      - SCENE 05 (Morning): Forest patrol with Grimjaw. Finding evidence.
+        Tracker mode, reading flattened grass and hidden signs.
+      - Throughout: Dark brown braided hair with feathers, earth-toned leather.
+        Echo always nearby, more alert than playful.
     reference_images:
-      - "vera-moonwhisper-portrait-01"
+      - "vera-moonwhisper-portrait"
+
+  - ref: "echo-raven"
+    name: "Echo"
+    scene_variations: |
+      CHAPTER 13 VARIATIONS (SENTINEL MODE):
+      - SCENE 01: Staying close instead of ranging. Unusual behavior.
+        Sensing watchers, protective, agitated.
+      - SCENE 05: Launching with sharp cry at chapter end.
+        Warning call echoing, other ravens answering.
+      - Throughout: Alert, tense. Not playful like chapter 12.
+    reference_images: []
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: |
+      CHAPTER 13 VARIATIONS (POLITICAL PRESSURE):
+      - SCENE 02 (Midday): At Watch HQ, facing wealthy merchants.
+        Formal Watch cloak, neutral mask, calculating eyes watching.
+        Weight of competing loyalties visible in posture.
+      - Throughout: Steel-gray hair, military bearing. Watch blue cloak
+        with Last Light sigil replacing city crest.
+    reference_images:
+      - "thorne-brightward-portrait"
 
   - ref: "grimjaw-ironbeard"
     name: "Grimjaw Ironbeard"
-    scene_variations: "Iron-gray beard. Copper pauldrons. Field gear. Analytical during tracking."
+    scene_variations: |
+      CHAPTER 13 VARIATIONS (TRACKER SUPPORT):
+      - SCENE 05 (Morning): Forest patrol with Vera. Kneeling to examine ground.
+        Weathered hands brushing leaves, reading evidence.
+        Engineering mind applied to tracking.
+      - Throughout: Iron-gray braided beard with charms, stocky build.
+        Practical mining clothes.
     reference_images:
-      - "grimjaw-ironbeard-portrait-01"
-
-  - ref: "aldwin-gentleheart"
-    name: "Brother Aldwin Gentleheart"
-    scene_variations: "Moss-green cloak. Silver-streaked hair. Assisting in rescue."
-    reference_images:
-      - "aldwin-gentleheart-official-portrait-01"
+      - "grimjaw-ironbeard-portrait"
 
   - ref: "cidrella-vexweld"
     name: "Cidrella Vexweld"
-    scene_variations: "Rock gnome artificer. Red hair. Prosthetic left arm with glowing conduits. Focused on craft."
-    reference_images:
-      - "cidrella-vexweld-portrait-01"
+    scene_variations: |
+      CHAPTER 13 (CHARACTER INTRODUCTION):
+      - SCENE 03 (Evening): At workbench in her workshop.
+        Wild coppery-red hair in messy faux-hawk, prominent arcane blue streak.
+        Sharp brown eyes, barely four feet tall but commanding presence.
+        LEFT ARM: Masterwork brass prosthetic with articulated plates,
+        glowing arcane conduits pulsing with sorcerous energy.
+        Passionate about work, completely unaware of criminal connections.
+      - Throughout: Precision instruments around her, focused intensity,
+        innocent enthusiasm.
+    reference_images: []
+
+  - ref: "mistress-elba"
+    name: "Mistress Elba"
+    scene_variations: |
+      CHAPTER 13 (FIERCE BLESSING):
+      - SCENE 05 (Morning): Approaching Veyra with steaming mug.
+        Grandmother's steel behind knowing eyes. Arms crossed.
+        "Give them hell" blessing in posture.
+      - Throughout: Elderly but fierce, practical clothing, caretaker presence.
+    reference_images: []
 
 locations:
   - ref: "thornwood-hills"
     zones:
-      - id: "overview"
-        chapter_context: "Rocky outcrops, patchy snow. Morning mist. Vertical and treacherous."
-  - ref: "north-ward-watch-station"
+      - id: "hillside"
+        chapter_context: |
+          Late winter morning. Rocky outcrop with merchant stranded on ledge below.
+          Morning mist clinging, pale sun struggling through clouds. Patches of
+          stubborn snow in shadows. Rope rappel in progress. The familiar burn
+          of practiced rescue work.
+      - id: "trail"
+        chapter_context: |
+          Afternoon return journey. Too quiet—no birdsong except Echo.
+          Empty branches, unnatural silence. Something watching from the trees.
+          The first hint that winter's thaw is revealing threats.
+
+  - ref: "city-watch-headquarters"
     zones:
-      - id: "overview"
-        chapter_context: "Solid stone civic building. Formal halls. Cold institutional light."
-  - ref: "vexweld-innovations-workshop"
+      - id: "watch-station"
+        chapter_context: |
+          Midday. Captain Grimsby's office. Stone building, symbol of authority.
+          Two wealthy merchants in expensive clothing waiting. Lamplight
+          casting shadows on faces. Threat wrapped in silk. The civilized
+          face of corruption.
+
+  - ref: "castle-ward-vexweld-innovations"
     zones:
-      - id: "overview"
-        chapter_context: "Gnomish workshop. Precision instruments, glowing conduits. Warm lamplight."
-  - ref: "castle-ward-rooftop"
-    zones:
-      id: "overview"
-      chapter_context: "Weathered tiles, chimney shadows. Vantage point for watchers. Transition from sunset to dark."
+      - id: "main-floor"
+        chapter_context: |
+          Evening. Three-floor converted merchant house. Workshop warmth.
+          Precision instruments, workbenches, the smell of oil and brass.
+          Lamplight catching on metal. An innocent craftsman at the height
+          of professional success, unknowingly creating tools for horror.
+      - id: "rooftop"
+        chapter_context: |
+          Twilight. Surveillance position across the street. Cold rooftop,
+          patient watching. Workshop windows glowing below. The moral
+          complexity of investigating innocent people caught in criminal webs.
+
   - ref: "westwall-watchpost"
     zones:
+      - id: "forest-trail"
+        chapter_context: |
+          Morning. Network of game trails and maintenance paths in wooded hills.
+          Evidence of patient surveillance—flattened grass, scraped moss,
+          hidden fire rings. Professional distance. The hunters becoming hunted.
       - id: "parapet"
-        chapter_context: "Defensive stone battlements. Iconic silhouette. Dramatic sunset background."
+        chapter_context: |
+          Sunset. Highest point of watchpost. Defensive preparations complete.
+          Spring asserting itself through budding leaves. The scent of change.
+          Echo's cry echoing, ravens answering in distance. Resolute waiting.
+      - id: "courtyard"
+        chapter_context: |
+          Morning. Spring cleaning that's actually defensive preparation.
+          Weapons being checked, supplies redistributed. Mistress Elba
+          bringing comfort and fierce blessing to those preparing for war.
 
 moments:
-  - id: "ch13-spring-thaw-moment-01"
-    scene_id: "scn-13-01"
-    title: "The Gully Rescue"
-    narrative_beat: "Veyra rappelling into the mist-shrouded gully to reach the injured merchant."
-    visual_weight: "hero"
+  - id: "ch13-spring-thaw-moment-11"
+    scene_id: "scn-13-05"
+    title: "Ready and Waiting"
+    narrative_beat: "'Come on then. We're ready.' In the gathering twilight, Echo let out a single, sharp cry that echoed across the courtyard. The Last Light Company waited."
+    visual_weight: "critical"
     characters_present:
       - "veyra-thornwake"
-    location_zone: "thornwood-hills/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch13-spring-thaw-moment-02"
-    scene_id: "scn-13-01"
-    title: "Field Triage"
-    narrative_beat: "Halden and Aldwin splinting the merchant's leg by the trail as the sun breaks through."
-    visual_weight: "medium"
-    characters_present:
-      - "medic-halden"
-      - "aldwin-gentleheart"
-      - "veyra-thornwake"
-    location_zone: "thornwood-hills/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
+      - "echo-raven"
+    location_zone: "westwall-watchpost/parapet"
+    transformation_state: "after"
+    recommended_images: 2
 
   - id: "ch13-spring-thaw-moment-03"
     scene_id: "scn-13-02"
-    title: "Political Encirclement"
-    narrative_beat: "Thorne standing rigid in Grimsby's office, flanked by merchant princes."
-    visual_weight: "high"
+    title: "Silk-Wrapped Threats"
+    narrative_beat: "'The Company provides valuable services, no one disputes that. But they need guidance. Proper oversight.' The words hung in the air like a threat wrapped in silk."
+    visual_weight: "critical"
     characters_present:
       - "thorne-brightward"
-    location_zone: "north-ward-watch-station/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch13-spring-thaw-moment-04"
-    scene_id: "scn-13-02"
-    title: "Divided Loyalty"
-    narrative_beat: "Thorne's solitary ride through city light and shadow, processing the threat."
-    visual_weight: "medium"
-    characters_present:
-      - "thorne-brightward"
-    location_zone: "waterdeep-streets"
-    transformation_state: "n/a"
+    location_zone: "city-watch-headquarters/watch-station"
+    transformation_state: "during"
     recommended_images: 1
 
   - id: "ch13-spring-thaw-moment-05"
     scene_id: "scn-13-03"
-    title: "Artisanal Passion"
-    narrative_beat: "Cidrella in her warm workshop, absorbed in technical diagrams and her own prosthesis."
-    visual_weight: "high"
+    title: "The Brass Arm"
+    narrative_beat: "Cidrella Vexweld stood barely four feet tall, but her presence commanded the entire space. Most striking was her left arm—a masterwork prosthetic of articulated brass and bronze plates, with glowing arcane conduits."
+    visual_weight: "critical"
     characters_present:
       - "cidrella-vexweld"
-    location_zone: "vexweld-innovations-workshop/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch13-spring-thaw-moment-06"
-    scene_id: "scn-13-04"
-    title: "The Watchers"
-    narrative_beat: "Veyra and Vera on the rooftop, watching the innocent Cidrella far below."
-    visual_weight: "high"
-    characters_present:
-      - "veyra-thornwake"
-      - "vera-moonwhisper"
-      - "cidrella-vexweld"
-    location_zone: "castle-ward-rooftop/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch13-spring-thaw-moment-07"
-    scene_id: "scn-13-05"
-    title: "Discovery of Surveillance"
-    narrative_beat: "Vera and Grimjaw uncovering evidence of watchers in the beautiful morning forest."
-    visual_weight: "high"
-    characters_present:
-      - "vera-moonwhisper"
-      - "grimjaw-ironbeard"
-    location_zone: "watchpost-perimeter-forest"
-    transformation_state: "n/a"
+    location_zone: "castle-ward-vexweld-innovations/main-floor"
+    transformation_state: "during"
     recommended_images: 1
 
   - id: "ch13-spring-thaw-moment-08"
     scene_id: "scn-13-05"
-    title: "The Defiant Vigil"
-    narrative_beat: "Veyra standing alone on the parapet at sunset, ready for the coming storm."
-    visual_weight: "hero"
+    title: "Finding the Watchers"
+    narrative_beat: "'This grass here—it's been flattened, but not by deer or boar. Wrong pattern.' They spent twenty minutes examining the area, finding subtle signs of patient observation."
+    visual_weight: "critical"
     characters_present:
+      - "grimjaw-ironbeard"
+      - "vera-moonwhisper"
+    location_zone: "westwall-watchpost/forest-trail"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch13-spring-thaw-moment-10"
+    scene_id: "scn-13-05"
+    title: "Give Them Hell"
+    narrative_beat: "'Spring cleaning, she says. With enough weapons to outfit a mercenary company.' Mistress Elba fixed Veyra with a knowing look. 'We know how to duck when the arrows start flying. Give them hell.'"
+    visual_weight: "high"
+    characters_present:
+      - "mistress-elba"
       - "veyra-thornwake"
-    location_zone: "westwall-watchpost/parapet"
-    transformation_state: "n/a"
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch13-spring-thaw-moment-02"
+    scene_id: "scn-13-01"
+    title: "Echo's Agitation"
+    narrative_beat: "'Too quiet. No birdsong except for Echo, and he's staying close instead of ranging ahead like usual. It's like something's watching.'"
+    visual_weight: "high"
+    characters_present:
+      - "vera-moonwhisper"
+      - "echo-raven"
+    location_zone: "thornwood-hills/trail"
+    transformation_state: "before"
     recommended_images: 1
 
 images:
-  - custom_id: "ch13-spring-thaw-img-13-01-01"
-    source_moment: "ch13-spring-thaw-moment-01"
-    scene_id: "scn-13-01"
+  - custom_id: "ch13-spring-thaw-img-13-05-01"
+    source_moment: "ch13-spring-thaw-moment-11"
+    scene_id: "scn-13-05"
     image_type: "hero"
     category:
       - "moment"
       - "character"
-      - "action"
-    scene_mood: "pastoral"
-    mood_rationale: "Opening rescue scene establishes professional competence. Morning light breaking through mist."
-    aspect_ratio: "16:9"
+      - "symbol"
+    scene_mood: "somber"
+    mood_rationale: |
+      The culminating stance. Not despair but resolute preparation—the Company
+      has discovered they're being watched, prepared their defenses, and now
+      wait for spring to bring what it will.
+    aspect_ratio: "21:9"
     orientation: "landscape"
-    size: "1792x1024"
+    size: "1792x768"
     visual_description: |
-      Veyra Thornwake mid-rappel down a rocky cliff face, her burn-scarred profile sharp with focus as she descends through morning mist. Below her on a narrow ledge lies the injured merchant looking up with hope. Patches of ice and brown rock.
+      Wide shot of Veyra silhouetted on the Watchpost's highest parapet against
+      a spring sunset. Echo launches from the battlements, wings spread, sharp cry
+      carrying across the courtyard. Below, the shapes of the Company in motion—
+      defensive preparations visible. The thawing land stretches beyond, first
+      green appearing. Budding trees. The sky holds sunset gold fading to twilight.
+      In the distance, shadows of the forest where watchers hide.
     composition_notes: |
-      Strong vertical composition. Rope as leading line. Veyra in upper third. Mist thickening toward bottom.
-    visual_hook: "Veyra's burn-scarred face in sharp profile against the soft mist, her teal-tattooed arm gripping the rope"
+      Ultra-wide cinematic. Veyra left of center, Echo mid-launch creating diagonal.
+      Courtyard activity below. Horizon line low, emphasizing the weight of sky
+      and waiting. The lantern in her hand a small steady flame.
+    visual_hook: "Veyra on battlements, Echo launching with cry, spring sunset, Company preparing below"
     depicts_characters:
       - "veyra-thornwake"
+      - "echo-raven"
     character_states:
       veyra-thornwake: |
-        Mid-rappel. Braced against stone. Tattooed arm gripping rope. Focused expression. Lantern glowing at hip.
-    location: "thornwood-hills"
+        Silhouette against sunset. Lantern in hand. Posture speaks of resolve—
+        shoulders back, ready. "Come on then" in every line.
+      echo-raven: |
+        Mid-launch, wings spread. Sharp cry visible in open beak.
+        Sentinel calling to distant ravens.
+    location: "westwall-watchpost"
+    zone: "parapet"
     lighting:
-      primary_source: "pale morning sun"
-      quality: "soft, diffused"
-      direction: "above/behind"
-      color_temperature: "cool to warm gold"
-      shadow_depth: "gentle"
-      atmospheric: "morning mist"
+      primary_source: "Spring sunset"
+      quality: "golden fading to twilight"
+      direction: "backlit"
+      color_temperature: "warm gold to cool blue"
+      shadow_depth: "figures as silhouettes"
+      atmospheric: "spring clarity, first warmth"
     palette:
       dominant:
-        - "slate gray"
-        - "mist white"
-        - "brown earth"
+        - "sunset gold"
+        - "twilight blue"
+        - "stone gray"
       accent:
-        - "teal tattoo"
-        - "amber lantern"
+        - "lantern flame"
+        - "Echo's black"
+        - "first green below"
       avoid:
-        - "harsh shadows"
+        - "winter white"
+        - "harsh midday"
     prompt_used: |
-      Half-elf woman with burn scar rappelling down cliff into morning mist,
-      mohawk and teal arm tattoos visible,
-      wearing leather armor with glowing lantern,
-      injured man on ledge below,
-      soft diffused daylight through clouds,
-      classical oil painting, plein air naturalism,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Turner atmospheric light.
+      Medieval watchtower parapet at spring sunset. A half-elf woman silhouetted
+      against golden sky, lantern in hand. A black raven launches from battlements,
+      wings spread, cry echoing. Below in courtyard, figures in defensive preparation.
+      Thawing land beyond, first green appearing, budding trees.
+      Ultra-wide cinematic format. Somber resolve before coming storm.
+      Sunset gold fading to twilight, spring atmosphere.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, harsh shadows
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      winter snow, celebration, action battle, midday brightness
     tags:
-      - "hero"
-      - "rescue"
-      - "pastoral"
-      - "veyra"
+      - "parapet"
+      - "sunset"
+      - "echo"
+      - "resolve"
+      - "hero-image"
+      - "somber"
     generated_at: null
     file_name: null
     file_path: null
@@ -250,66 +325,78 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch13-spring-thaw-img-13-01-02"
-    source_moment: "ch13-spring-thaw-moment-02"
-    scene_id: "scn-13-01"
-    image_type: "beat"
+  - custom_id: "ch13-spring-thaw-img-13-05-02"
+    source_moment: "ch13-spring-thaw-moment-11"
+    scene_id: "scn-13-05"
+    image_type: "anchor"
     category:
+      - "moment"
+      - "symbol"
       - "character"
-      - "action"
-    scene_mood: "pastoral"
-    mood_rationale: "Teamwork and care. The successful ascent and medical treatment in the morning sun."
+    scene_mood: "somber"
+    mood_rationale: |
+      Companion to hero shot—focus on Echo's cry as the signal that
+      carries across the gathering twilight, answered by distant ravens.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Halden and Aldwin kneeling on the trail, splinting the merchant's leg. Veyra stands nearby, wiping sweat from her brow. The travois is ready. Sunbeams break through the trees, warming the scene. Patchy snow on the ground.
+      Medium shot of Echo in flight, wings fully spread against twilight sky.
+      Beak open in sharp cry. Below and behind, the battlements where Veyra
+      stands watching. In the darkening sky, tiny shapes of distant ravens
+      answering the call. The connection visible—a network of watchers.
     composition_notes: |
-      Medium shot. Focal point on the medical care. Leading lines of the trail. Sunbeams creating a hopeful atmosphere.
-    visual_hook: "The focused, gentle hands of the two healers working in unison against the rugged mountain backdrop."
+      Echo as focal point, dramatic wingspan. Battlements below for scale.
+      Distant ravens as dots against fading light. The cry made visual.
+    visual_hook: "Echo in flight, wings spread, distant ravens answering in twilight"
     depicts_characters:
-      - "medic-halden"
-      - "aldwin-gentleheart"
+      - "echo-raven"
       - "veyra-thornwake"
     character_states:
-      medic-halden: |
-        Kneeling. Hands steady on splint. Focused expression.
-      aldwin-gentleheart: |
-        Handing herbs to Halden. Benevolent smile.
+      echo-raven: |
+        Full wingspan, sharp cry. Not playful—sentinel. Calling to network.
       veyra-thornwake: |
-        Standing. Watchful. Rock dust on gear.
-    location: "thornwood-hills"
+        Small figure on battlements below, watching the raven fly.
+    location: "westwall-watchpost"
+    zone: "parapet"
     lighting:
-      primary_source: "Sunlight breaking through trees"
-      quality: "Warm, dappled"
-      direction: "Side"
-      color_temperature: "Golden"
-      shadow_depth: "Soft"
-      atmospheric: "Steam/Haze"
+      primary_source: "Fading twilight"
+      quality: "dim, transitional"
+      direction: "ambient from sky"
+      color_temperature: "cool blue-purple"
+      shadow_depth: "soft, atmospheric"
+      atmospheric: "evening clarity"
     palette:
       dominant:
-        - "forest green"
-        - "earth brown"
-        - "gold light"
+        - "twilight blue"
+        - "raven black"
+        - "fading gold"
       accent:
-        - "white bandage"
+        - "distant raven dots"
       avoid:
-        - "darkness"
+        - "bright daylight"
+        - "harsh contrast"
     prompt_used: |
-      Medieval medic and halfling healer tending to an injured man on a mountain trail,
-      splinting a broken leg,
-      sunbeams cutting through trees,
-      patchy snow and early spring growth,
-      atmosphere of teamwork and relief,
-      classical oil painting, realism,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, atmospheric evening.
+      Black raven in flight, wings fully spread against twilight sky,
+      beak open in cry. Medieval battlements below with small silhouetted figure.
+      In darkening sky, distant shapes of other ravens answering.
+      Network of watchers made visible. Evening blue-purple palette.
+      Somber mood, communication across distance.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      playful raven, daylight, single bird alone
     tags:
-      - "beat"
-      - "teamwork"
-      - "healing"
-      - "pastoral"
+      - "echo"
+      - "ravens"
+      - "network"
+      - "twilight"
+      - "somber"
     generated_at: null
     file_name: null
     file_path: null
@@ -320,122 +407,78 @@ images:
   - custom_id: "ch13-spring-thaw-img-13-02-01"
     source_moment: "ch13-spring-thaw-moment-03"
     scene_id: "scn-13-02"
-    image_type: "anchor"
+    image_type: "beat"
     category:
       - "moment"
       - "character"
       - "emotion"
     scene_mood: "ominous"
-    mood_rationale: "Political threat crystallizes. Predators in silk. Cold institutional light."
+    mood_rationale: |
+      Political pressure made visible. The threat wrapped in silk—wealthy men
+      in expensive clothing making demands that sound like offers. The civilized
+      face of corruption.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Thorne Brightward stands rigid in Grimsby's office, flanked by two merchant princes in expensive silk. Calculating assessive eyes. Grimsby sits uncomfortable behind his desk. Visual trap: Thorne centered but surrounded. Formal stone architecture.
+      Medium shot in Captain Grimsby's office. Thorne stands in Watch blue,
+      facing two wealthy merchants in expensive clothing. Their postures speak of
+      power—relaxed, confident, making threats that sound like suggestions.
+      Behind his desk, Grimsby watches with calculating eyes. Lamplight casts
+      shadows across faces. The stone walls of authority now feel like a trap.
     composition_notes: |
-      Three-point composition. Thorne center. Merchants flanking. Grimsby background. Formal authority frame.
-    visual_hook: "Thorne's weathered face absolutely still, deep-set brown eyes revealing nothing as silk-clad wolves circle"
+      Thorne facing the merchants, Grimsby behind. Three-way tension.
+      Expensive fabric vs. honest wool. Shadows on faces revealing character.
+      Office as cage.
+    visual_hook: "Thorne in Watch blue facing wealthy merchants, threat visible in polite smiles"
     depicts_characters:
       - "thorne-brightward"
     character_states:
       thorne-brightward: |
-        Standing at attention. Stone expression. Blue cloak with sunburst sigil visible. Mustache hard line.
-    location: "north-ward-watch-station"
+        Neutral mask hiding calculation. Watch cloak formal. Standing straight
+        but surrounded. The weight of competing loyalties not yet visible
+        but pressing in.
+    location: "city-watch-headquarters"
+    zone: "watch-station"
     lighting:
-      primary_source: "cold window light"
-      quality: "flat, institutional"
-      direction: "side"
-      color_temperature: "greenish-gray"
-      shadow_depth: "deep corners"
-      atmospheric: "oppressive stillness"
+      primary_source: "Office lamplight"
+      quality: "warm but shadowed"
+      direction: "from desk lamp"
+      color_temperature: "amber"
+      shadow_depth: "moderate, revealing"
+      atmospheric: "bureaucratic tension"
     palette:
       dominant:
-        - "cold stone gray"
+        - "Watch blue"
+        - "expensive fabric colors"
+        - "stone gray"
+      accent:
+        - "lamplight amber"
         - "shadow"
-        - "pallid skin"
-      accent:
-        - "silk burgundy/blue"
-        - "gold jewelry"
       avoid:
-        - "warm tones"
+        - "bright cheerful"
+        - "outdoor light"
     prompt_used: |
-      Armored man with gray mustache standing at attention in formal stone office,
-      flanked by two wealthy merchants in silk with gold chains,
-      cold institutional light from windows,
-      threatening political atmosphere,
-      classical oil painting, Symbolist unease,
-      cold sickly palette, deep shadows,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Vermeer interior tension.
+      Stone office interior with desk. A man in blue military cloak faces
+      two wealthy merchants in expensive clothing. Behind desk, a captain
+      watches with calculating eyes. Lamplight from desk creates shadows on faces.
+      Political pressure, civilized threat, the enemy in fine clothes.
+      Ominous atmosphere despite polite setting.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, friendly expressions
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      outdoor scene, friendly smiles, action pose, bright lighting
     tags:
-      - "anchor"
-      - "threat"
-      - "politics"
-      - "ominous"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch13-spring-thaw-img-13-02-02"
-    source_moment: "ch13-spring-thaw-moment-04"
-    scene_id: "scn-13-02"
-    image_type: "detail"
-    category:
-      - "character"
-      - "emotion"
-    scene_mood: "somber"
-    mood_rationale: "Thorne's divided loyalties. Passage between two worlds represented by bars of light and shadow."
-    aspect_ratio: "3:4"
-    orientation: "portrait"
-    size: "1024x1536"
-    visual_description: |
-      Thorne Brightward on horseback riding through Waterdeep. Afternoon light slants between buildings. Military rigid but distant gaze. Reins loose in scarred hands. Passing through alternating bands of illumination and shadow.
-    composition_notes: |
-      Portrait orientation. Low angle. Street architecture leading lines. Bars of light across the frame.
-    visual_hook: "Thorne's scarred hands loose on the reins, eyes fixed on something beyond the road ahead"
-    depicts_characters:
-      - "thorne-brightward"
-    character_states:
-      thorne-brightward: |
-        Mounted. Straight saddle posture. Distant expression. Scarred hands. Blue cloak draped.
-    location: "castle-ward"
-    zone: "streets"
-    lighting:
-      primary_source: "slanting afternoon sun"
-      quality: "hard, directional"
-      direction: "side"
-      color_temperature: "warm gold/cool shadow"
-      shadow_depth: "deep, rich"
-      atmospheric: "dust motes"
-    palette:
-      dominant:
-        - "stone ochre"
-        - "deep shadow"
-        - "dusty brown"
-      accent:
-        - "faded blue"
-        - "gold light"
-      avoid:
-        - "bright colors"
-    prompt_used: |
-      Man with gray mustache on horseback in city street,
-      afternoon sun creating bars of light and shadow,
-      rigid posture but introspective gaze,
-      scarred hands on reins,
-      atmosphere of divided loyalty,
-      classical oil painting, Rembrandt lighting, chiaroscuro,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, happy expression
-    tags:
-      - "detail"
       - "thorne"
-      - "somber"
-      - "journey"
+      - "political"
+      - "threat"
+      - "watch"
+      - "ominous"
     generated_at: null
     file_name: null
     file_path: null
@@ -446,58 +489,253 @@ images:
   - custom_id: "ch13-spring-thaw-img-13-03-01"
     source_moment: "ch13-spring-thaw-moment-05"
     scene_id: "scn-13-03"
-    image_type: "mood"
+    image_type: "anchor"
     category:
+      - "moment"
       - "character"
-      - "location"
-      - "emotion"
     scene_mood: "intimate"
-    mood_rationale: "Innocent creative passion. Warm sanctuary being watched. Unawareness of misuse."
-    aspect_ratio: "4:5"
-    orientation: "portrait"
-    size: "1024x1280"
+    mood_rationale: |
+      Character introduction through craft. Cidrella's brass arm catching
+      workshop light, arcane conduits pulsing. The innocent artisan at the
+      height of her powers, unknowing accomplice to horror.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
     visual_description: |
-      Cidrella Vexweld at her workbench. Masterwork prosthetic arm tracing diagrams. Arcane conduits pulse blue-white. Wild red hair with blue streak. Surrounded by precision instruments. Cluttered but organized workshop. Warm amber lamplight.
+      Medium shot of Cidrella Vexweld at her workbench. The Rock Gnome stands
+      barely four feet tall but commands the frame. Wild coppery-red hair in
+      messy faux-hawk with prominent streak of arcane blue. Sharp brown eyes
+      focused on precision work. Her left arm—the brass prosthetic—is prominent:
+      articulated plates of brass and bronze, glowing arcane conduits pulsing
+      with blue-white energy. Precision instruments scattered around her.
+      Workshop warmth, lamplight on metal.
     composition_notes: |
-      Portrait orientation. Cidrella off-center. Workbench horizontal anchor. Focus on prosthetic arm. Warm and enclosed.
-    visual_hook: "The articulated brass fingers of her prosthetic tracing diagrams, arcane conduits pulsing with soft light"
+      Cidrella central, brass arm as visual focus. Workbench cluttered with
+      precision tools. Lamplight catching on metal surfaces. Her small stature
+      contrasted with commanding presence. The blue of arcane energy echoing
+      the streak in her hair.
+    visual_hook: "Rock gnome with brass prosthetic arm, arcane conduits glowing, precision workshop"
     depicts_characters:
       - "cidrella-vexweld"
     character_states:
       cidrella-vexweld: |
-        Leaning forward. Prosthetic arm extended. Focused, absorbed expression. Disheveled hair. Leather apron.
-    location: "vexweld-innovations-workshop"
+        At workbench, focused on precision work. Brass arm prominent, conduits
+        glowing. Hair wild with blue streak. Sharp eyes, passionate about craft.
+        Completely innocent, unaware of how her work is being used.
+    location: "castle-ward-vexweld-innovations"
+    zone: "main-floor"
     lighting:
-      primary_source: "oil lamp + prosthetic glow"
-      quality: "soft, warm"
-      direction: "side"
-      color_temperature: "warm amber/cool blue-white"
-      shadow_depth: "gentle gradients"
-      atmospheric: "still interior"
+      primary_source: "Workshop lamps"
+      quality: "warm, crafting light"
+      direction: "from multiple work lamps"
+      color_temperature: "amber with blue arcane accent"
+      shadow_depth: "soft, working light"
+      atmospheric: "oil and brass smell almost visible"
     palette:
       dominant:
-        - "warm amber"
-        - "brass/copper"
-        - "rich brown"
+        - "brass gold"
+        - "copper red (hair)"
+        - "workshop brown"
       accent:
-        - "arcane blue glow"
-        - "red hair"
+        - "arcane blue (streak, conduits)"
+        - "bronze"
       avoid:
-        - "cold tones"
+        - "cold industrial"
+        - "sterile white"
     prompt_used: |
-      Rock gnome artificer with red hair and brass prosthetic arm working at bench,
-      arcane conduits glowing blue in arm,
-      surrounded by precision tools and clocks,
-      warm amber oil lamp light,
-      intimate workshop atmosphere,
-      classical oil painting, Vermeer lighting,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, workshop warmth.
+      A Rock Gnome woman barely four feet tall at a cluttered workbench.
+      Wild coppery-red hair in messy faux-hawk with streak of arcane blue.
+      Sharp brown eyes focused on precision work. Her left arm is a masterwork
+      brass prosthetic—articulated plates with glowing blue arcane conduits.
+      Precision instruments and tools scattered around. Workshop lamplight
+      catching on metal surfaces. Intimate craftsman portrait.
+      Fantasy engineering, innocent passion.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin, sinister lighting
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      tall figure, human proportions, dark sinister, cold lighting
     tags:
-      - "mood"
       - "cidrella"
+      - "brass-arm"
       - "workshop"
+      - "artificer"
+      - "intimate"
+      - "introduction"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch13-spring-thaw-img-13-05-03"
+    source_moment: "ch13-spring-thaw-moment-08"
+    scene_id: "scn-13-05"
+    image_type: "detail"
+    category:
+      - "moment"
+      - "symbol"
+    scene_mood: "ominous"
+    mood_rationale: |
+      Discovery of surveillance. Grimjaw's weathered hands revealing evidence—
+      the flattened grass pattern that speaks of patient human observation.
+      The hunters becoming hunted.
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Close detail shot of Grimjaw's weathered hands brushing aside leaves
+      to reveal flattened grass beneath. The pattern is wrong—too deliberate,
+      not animal. Morning forest light illuminates the evidence. Behind and
+      above, Vera's form scanning the treeline, Echo tense on her shoulder.
+      The moment of discovery: they've been watched for weeks.
+    composition_notes: |
+      Hands and evidence as focal point. Portrait orientation for intimate
+      discovery. Forest floor detail. Vera blurred in background providing scale.
+      The pattern in grass telling its story.
+    visual_hook: "Weathered hands revealing flattened grass, wrong pattern, evidence of watchers"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "vera-moonwhisper"
+    character_states:
+      grimjaw-ironbeard: |
+        Only hands and forearms visible. Weathered, practical, reading evidence.
+        Engineering mind applied to tracking.
+      vera-moonwhisper: |
+        Blurred background, scanning treeline. Alert posture. Echo on shoulder.
+    location: "westwall-watchpost"
+    zone: "forest-trail"
+    lighting:
+      primary_source: "Morning forest light"
+      quality: "dappled, revealing"
+      direction: "from above through canopy"
+      color_temperature: "cool morning"
+      shadow_depth: "soft forest shadows"
+      atmospheric: "spring morning, damp earth"
+    palette:
+      dominant:
+        - "forest green"
+        - "earth brown"
+        - "grass pattern"
+      accent:
+        - "hand skin tone"
+        - "leaf litter"
+      avoid:
+        - "bright sunlight"
+        - "cheerful colors"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, forest floor detail.
+      Close-up of weathered dwarven hands brushing aside leaves to reveal
+      flattened grass beneath—pattern wrong for animal, too deliberate.
+      Behind, blurred figure of half-elf woman scanning treeline with
+      black raven on shoulder. Morning forest light through canopy.
+      Evidence of surveillance discovered. Ominous discovery moment.
+      Portrait orientation, intimate detail.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, full figures, bright lighting, indoor scene
+    tags:
+      - "grimjaw"
+      - "vera"
+      - "evidence"
+      - "surveillance"
+      - "ominous"
+      - "detail"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch13-spring-thaw-img-13-05-04"
+    source_moment: "ch13-spring-thaw-moment-10"
+    scene_id: "scn-13-05"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Community choosing to stand. Mistress Elba's fierce blessing—
+      grandmother's steel behind knowing eyes, pressing mug into warrior's hands,
+      "Give them hell" visible in every line.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Medium shot in Watchpost courtyard. Mistress Elba presses a steaming mug
+      into Veyra's hands, arms crossed after, fixing the commander with a knowing
+      look. Behind them, spring cleaning that's clearly weapons preparation.
+      Morning light. The elderly woman's posture speaks of border wars survived,
+      children raised, fierce protective love. Veyra receives both comfort
+      and command.
+    composition_notes: |
+      Two figures, generational connection. Mug as transfer of blessing.
+      Courtyard activity behind showing preparations. Morning light warm
+      but activity serious. The caretaker as warrior in her own way.
+    visual_hook: "Elderly woman pressing mug into commander's hands, knowing look, fierce blessing"
+    depicts_characters:
+      - "mistress-elba"
+      - "veyra-thornwake"
+    character_states:
+      mistress-elba: |
+        Arms crossed after giving mug. Knowing look that sees through deflection.
+        Grandmother's steel. "Give them hell" in her posture.
+      veyra-thornwake: |
+        Receiving mug, meeting the look. Burn scar visible. Accepting both
+        comfort and command from the elder.
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "Morning courtyard sun"
+      quality: "warm, spring morning"
+      direction: "from side"
+      color_temperature: "warm gold"
+      shadow_depth: "soft, welcoming"
+      atmospheric: "steam from mug, morning clarity"
+    palette:
+      dominant:
+        - "morning gold"
+        - "stone gray"
+        - "practical fabric colors"
+      accent:
+        - "steam white"
+        - "mug ceramic"
+      avoid:
+        - "cold"
+        - "dark ominous"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, morning warmth.
+      Watchpost courtyard in morning light. An elderly woman with crossed arms
+      and knowing eyes has just pressed a steaming mug into the hands of a
+      scarred half-elf commander. Behind them, figures preparing weapons
+      under guise of spring cleaning. Generational connection, fierce blessing.
+      Grandmother's steel meeting warrior's resolve. Intimate community moment.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      action scene, cold atmosphere, no steam, young people only
+    tags:
+      - "elba"
+      - "veyra"
+      - "blessing"
+      - "community"
       - "intimate"
     generated_at: null
     file_name: null
@@ -506,195 +744,84 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch13-spring-thaw-img-13-04-01"
-    source_moment: "ch13-spring-thaw-moment-06"
-    scene_id: "scn-13-04"
-    image_type: "symbol"
+  - custom_id: "ch13-spring-thaw-img-13-01-01"
+    source_moment: "ch13-spring-thaw-moment-02"
+    scene_id: "scn-13-01"
+    image_type: "mood"
     category:
       - "moment"
-      - "character"
-      - "symbol"
+      - "atmosphere"
     scene_mood: "ominous"
-    mood_rationale: "Watchers watching the innocent. Vertical distance and power dynamic. Cold rooftop vs warm street."
-    aspect_ratio: "21:9"
+    mood_rationale: |
+      Foreshadowing through animal instinct. Echo staying close instead of
+      ranging, the unnatural silence of woods that should sing. Something
+      watching from the trees—the first hint of threat.
+    aspect_ratio: "16:9"
     orientation: "landscape"
-    size: "1792x768"
+    size: "1792x1024"
     visual_description: |
-      Veyra and Vera crouched in shadow on a weathered rooftop. Silhouettes against twilight. Small warm figure of Cidrella locking her door far below. Echo perched nearby. City spreads beyond. Street lamps flickering.
+      Mood shot of Vera on forest trail with Echo perched tight on her shoulder
+      instead of ranging ahead. Empty branches around them, no other birds.
+      Late winter afternoon light filtering through bare trees. The stillness
+      is palpable—wrong for this time of year. Her posture alert, scanning.
+      Echo's head turned, listening to silence that shouldn't exist.
     composition_notes: |
-      Extreme wide aspect. Watchers upper left, target lower right. Strong diagonal. Cidrella small but visible. Tension between dark/light.
-    visual_hook: "Two shadowed figures on the rooftop edge looking down at the small, innocent figure far below"
+      Vera and Echo as focus, surrounded by emptiness. Bare branches creating
+      cage-like pattern. The absence of life made visible. Atmospheric tension.
+      Something watching from beyond the frame.
+    visual_hook: "Echo staying close on shoulder, empty branches, unnatural forest silence"
     depicts_characters:
-      - "veyra-thornwake"
       - "vera-moonwhisper"
-      - "cidrella-vexweld"
+      - "echo-raven"
     character_states:
-      veyra-thornwake: |
-        Crouched. Silhouette against twilight. Tense body language.
       vera-moonwhisper: |
-        Beside Veyra. Hooded form. Echo nearby.
-      cidrella-vexweld: |
-        Distant, small. Locking door. Unaware.
-    location: "castle-ward-rooftop"
+        Alert posture, scanning treeline. Hand near weapon. Tracker instincts
+        activated by the wrongness.
+      echo-raven: |
+        Tight on shoulder instead of ranging. Not playful—protective.
+        Head turned to listen, sensing what humans miss.
+    location: "thornwood-hills"
+    zone: "trail"
     lighting:
-      primary_source: "dying daylight + street lamps"
-      quality: "transitional, fading"
-      direction: "low western"
-      color_temperature: "cool twilight vs warm lamps"
-      shadow_depth: "deep on roof"
-      atmospheric: "dusk stillness"
+      primary_source: "Late winter afternoon"
+      quality: "filtered, thin"
+      direction: "through bare branches"
+      color_temperature: "cool gray"
+      shadow_depth: "soft but present"
+      atmospheric: "stillness, wrong silence"
     palette:
       dominant:
-        - "twilight violet"
-        - "rooftop shadow"
-        - "warm streetlight"
+        - "bare branch brown"
+        - "winter gray"
+        - "earth-tone leather"
       accent:
-        - "dying gold"
+        - "Echo's black"
+        - "pale sky"
       avoid:
+        - "spring green"
         - "bright colors"
     prompt_used: |
-      Shadowed figures on a rooftop watching a small gnome woman locking her shop far below,
-      twilight city rooftops,
-      silhouettes against purple and gold sky,
-      raven perched on shoulder,
-      atmosphere of surveillance and moral weight,
-      classical oil painting, Symbolist unease,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, atmospheric tension.
+      Forest trail in late winter. A half-elf ranger with a black raven
+      perched tight on her shoulder—not ranging ahead as usual. Empty branches
+      around them, no other birds. Late afternoon light filtering through
+      bare trees. The stillness is wrong, unnatural. Something watching.
+      Mood piece, foreshadowing, animal instinct warning.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, comfortable atmosphere
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      singing birds, cheerful forest, summer greenery, raven flying free
     tags:
-      - "symbol"
-      - "surveillance"
+      - "vera"
+      - "echo"
+      - "silence"
+      - "foreshadowing"
       - "ominous"
-      - "twilight"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch13-spring-thaw-img-13-05-01"
-    source_moment: "ch13-spring-thaw-moment-07"
-    scene_id: "scn-13-05"
-    image_type: "anchor"
-    category:
-      - "moment"
-      - "character"
-      - "action"
-    scene_mood: "pastoral"
-    mood_rationale: "Unsettling contrast—discovery of danger in beautiful morning light. Disconnect between setting and discovery."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Vera kneels on the forest floor, brushing aside deliberately scattered leaves. Grimjaw points to a moss-scraped tree trunk. Echo alert on a branch. Spring forest—dappled sunlight, soft green-gold. Evidence of observation posts.
-    composition_notes: |
-      Vera lower third. Grimjaw vertical element. Forest depth with haze. Echo high point of alertness.
-    visual_hook: "Vera's gloved fingers brushing aside too-perfectly-arranged leaves while Grimjaw points to the moss-scraped trunk"
-    depicts_characters:
-      - "vera-moonwhisper"
-      - "grimjaw-ironbeard"
-    character_states:
-      vera-moonwhisper: |
-        Kneeling. Professional focus. Forest-green cloak.
-      grimjaw-ironbeard: |
-        Standing solid. Pointing at tree. Grim expression.
-    location: "westwall-watchpost"
-    zone: "perimeter"
-    lighting:
-      primary_source: "morning sun through canopy"
-      quality: "soft, dappled"
-      direction: "above/leaves"
-      color_temperature: "warm gold/green"
-      shadow_depth: "gentle"
-      atmospheric: "spring mist"
-    palette:
-      dominant:
-        - "verdant green"
-        - "gold light"
-        - "brown bark"
-      accent:
-        - "copper pauldrons"
-      avoid:
-        - "dark shadows"
-    prompt_used: |
-      Woman kneeling in sun-dappled forest floor examining disturbed leaves,
-      dwarf pointing at scraped tree bark,
-      raven on branch alert,
-      soft early spring forest atmosphere,
-      evidence of hidden watchers,
-      classical oil painting, plein air naturalism,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, dark forest
-    tags:
-      - "anchor"
-      - "discovery"
-      - "surveillance"
-      - "pastoral"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch13-spring-thaw-img-13-05-02"
-    source_moment: "ch13-spring-thaw-moment-08"
-    scene_id: "scn-13-05"
-    image_type: "hero"
-    category:
-      - "moment"
-      - "character"
-      - "symbol"
-    scene_mood: "kinetic"
-    mood_rationale: "Defiant vigil. Urgent energy despite stillness. Sunset bleeding into darkness."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Veyra Thornwake alone on the Watchpost parapet. Silhouetted against dramatic gold/crimson sunset. Hand on stone. Lantern glows warm. Echo wheels overhead. Battlements frame her. Iconic statement of defiance.
-    composition_notes: |
-      Low angle looking up. Rule-of-thirds silhouette. Parapet horizontal base. Echo adds diagonal movement.
-    visual_hook: "Veyra's silhouette against dying light, her mohawk and burn scar in sharp profile, lantern glowing warm"
-    depicts_characters:
-      - "veyra-thornwake"
-    character_states:
-      veyra-thornwake: |
-        Guardian's stand. Profile silhouette. Mohawk and scar sharp. Ready posture.
-    location: "westwall-watchpost"
-    lighting:
-      primary_source: "dramatic sunset"
-      quality: "hard, directional backlighting"
-      direction: "behind/below"
-      color_temperature: "gold/crimson/violet"
-      shadow_depth: "deep silhouette"
-      atmospheric: "crystalline sky"
-    palette:
-      dominant:
-        - "sunset gold"
-        - "crimson"
-        - "twilight violet"
-      accent:
-        - "warm amber lantern"
-      avoid:
-        - "flat light"
-    prompt_used: |
-      Silhouette of woman with mohawk and burn scar on stone battlements at dramatic sunset,
-      hand on parapet, glowing lantern at belt,
-      gold and crimson sky,
-      raven flying overhead,
-      heroic defiant composition,
-      classical oil painting, Romantic dynamism,
-      Delacroix energy, visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin
-    tags:
-      - "hero"
-      - "defiance"
-      - "vigil"
-      - "kinetic"
+      - "mood"
     generated_at: null
     file_name: null
     file_path: null

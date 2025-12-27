@@ -1,483 +1,345 @@
-# ============================================================================
-# CHAPTER IMAGERY SPECIFICATION
-# Chapter: Roots and Reconnaissance
-# Generated: 2025-12-21
-# ============================================================================
-
 metadata:
   entity_type: "chapter-imagery"
   slug: "ch21-roots-and-reconnaissance"
   chapter_number: 21
   chapter_title: "Roots and Reconnaissance"
-  visual_thesis: "From the warmth of belonging to the cold realization that protecting what you love may require endangering the innocent."
+  visual_thesis: |
+    Home takes root while danger lurks—the Company builds domesticity in their
+    warehouse as an innocent engineer unknowingly connects them to their target,
+    forcing moral choices between mission and protection.
   color_palette:
     primary:
-      - "#8B7355"
-      - "#C4A67A"
-      - "#4A5D5E"
-      - "#D4A574"
+      - "#5C4033"  # warm warehouse wood
+      - "#D87F33"  # forge glow orange
+      - "#B87333"  # copper mechanical
     accent:
-      - "#2F4F4F"
-      - "#CD853F"
+      - "#E8D4B8"  # warm afternoon light
+      - "#4A5568"  # industrial steel
+      - "#8B4513"  # leather brown
   generation_defaults:
     provider: "openai"
     model: "dall-e-3"
     quality: "hd"
   mood_distribution:
-    somber: 1
-    pastoral: 2
-    celebratory: 1
-    aquatic: 0
-    ethereal: 0
     intimate: 3
+    celebratory: 2
     kinetic: 1
-    ominous: 0
+    ominous: 1
 
 characters:
+  - ref: "cidrella-vexweld"
+    name: "Cidrella Vexweld"
+    scene_variations: |
+      CHAPTER 21 VARIATIONS (FIRST APPEARANCE):
+      - Throughout: Force of barely contained energy. Rock gnome, short and sturdy.
+        Unruly copper-red hair with blue streak escaping practical braids. Tinkerer's
+        goggles perched on forehead. Light freckles across nose, often smudged with
+        grease. Large expressive gnomish ears with simple ring piercings.
+      - LEFT ARM: Masterwork mechanical prosthetic of articulated brass and glowing
+        conduits—designed and built herself after wild magic accident. Flexes with
+        obvious pride when showing it.
+      - ATTIRE: Dark oil-stained leather tunic, heavy leather apron/cuirass with tool
+        pockets and loops. Bandolier of power cells across chest.
+      - EXPRESSION: Eyes lit up with professional excitement, bouncing on toes with
+        enthusiasm. Gestures animatedly, especially when discussing technical matters.
+    reference_images: []
+
   - ref: "veyra-thornwake"
     name: "Veyra Thornwake"
-    scene_variations: "Guarded and alert at first. Burn scar prominently visible. Touching scar edge in moment of connection with Cid."
-    reference_images:
-      - "veyra-thornwake-official-portrait-01"
-
-  - ref: "thorne-brightward"
-    name: "Thorne Brightward"
-    scene_variations: "Hand near sword hilt. Watchful partner. Paperwork at desk."
-    reference_images:
-      - "thorne-brightward-portrait-01"
-
-  - ref: "marcus-heartbridge"
-    name: "Marcus Heartbridge"
-    scene_variations: "Frustrated by dead ends. Strategic observer. High-collared charcoal doublet."
-    reference_images:
-      - "marcus-heartbridge-portrait-study-01"
+    scene_variations: |
+      CHAPTER 21 VARIATIONS (HOME REALIZATION):
+      - SCENE 02 (Cid visit): Standard commander appearance—weatherworn leather coat.
+        Carefully neutral expression that softens during shared scars moment.
+        Recognition of kindred trauma survivor.
+      - SCENE 04 (Home realization): Standing on mezzanine, watching Company routines
+        below. The moment she realizes this feels like home. Both comfort and terror
+        of belonging visible in expression.
+      - Throughout: Mottled burn scar on left face. Dark mohawk with shaved sides,
+        feathered braids. Sharp dark eyes. Swirling tattoos.
+    reference_images: []
 
   - ref: "grimjaw-ironbeard"
     name: "Grimjaw Ironbeard"
-    scene_variations: "At forge. Massive scarred hands. Delicate wooden spoon creation. Proud but defensive."
-    reference_images:
-      - "grimjaw-ironbeard-portrait-01"
-
-  - ref: "cidrella-vexweld"
-    name: "Cidrella Vexweld"
-    scene_variations: "Irrepressible enthusiasm. Mechanical arm gesturing. Sympathetic connection over trauma."
-    reference_images:
-      - "cidrella-vexweld-portrait-01"
-
-  - ref: "finn"
-    name: "Finn"
-    scene_variations: "Straining against stone blocks. Covered in sawdust. Practicing archery."
-    reference_images:
-      - "finn-stable-archer-01"
-
-  - ref: "corporal-darric"
-    name: "Corporal Darric"
-    scene_variations: "Rushing to help. Using wooden beam as lever."
-    reference_images:
-      - "corporal-darric-portrait-01"
-
-  - ref: "medic-halden"
-    name: "Medic Halden"
-    scene_variations: "Focused on knees in cobblestones. Tending child's gash. Reassuring chatter."
-    reference_images:
-      - "medic-halden-standing-portrait-01"
+    scene_variations: |
+      CHAPTER 21 VARIATIONS (NESTING):
+      - SCENE 04 (Forge): At his forge, crafting decorative spoons. Iron-gray braided
+        beard with metal charms. Massive hands holding delicate work. "Geometric
+        rosettes" that absolutely look like flowers visible on spoon handle.
+      - SCENE 05 (Cid discussion): Warming to fellow craftsperson. Professional respect
+        crossing boundaries. Debating compression ratios with enthusiasm.
+      - Throughout: Stocky, powerful build. Bright keen eyes. Practical mining clothes.
+    reference_images: []
 
   - ref: "quartermaster-fayne"
     name: "Quartermaster Fayne"
-    scene_variations: "Gentle amusement. Knowing smirk. Documenting patterns."
-    reference_images:
-      - "quartermaster-fayne-standard-portrait-01"
+    scene_variations: |
+      CHAPTER 21 (GENTLE OBSERVER):
+      - SCENE 04 (Forge): Watching Grimjaw with gentle smirk. Amused observation of
+        the dwarf's denial about "flowers." Warm laughter filling the forge.
+      - Throughout: Rock gnome, 3'4", wiry. Auburn short hair, hazel eyes. Custom
+        spectacles. Ink-stained fingers. Androgynous appearance.
+    reference_images: []
+
+  - ref: "finn"
+    name: "Finn"
+    scene_variations: |
+      CHAPTER 21 (PROVING HIMSELF):
+      - SCENE 02: Practicing archery at loading area targets. Answers door for Cid.
+        Eager, nervous but growing confident.
+      - SCENE 03 (Rescue): Sprinting toward children, throwing himself against stone
+        block. Ranger reflexes in action. Screaming for help while straining.
+      - Throughout: Human, young, lean build. Brown hair, hazel eyes. Simple leather
+        tunic and breeches. Growing from nervous to confident.
+    reference_images: []
+
+  - ref: "corporal-darric"
+    name: "Corporal Darric"
+    scene_variations: |
+      CHAPTER 21 (SOLDIER'S INSTINCT):
+      - SCENE 03 (Rescue): Grabbing wooden beam, creating improvised lever. Soldier's
+        training taking over. Straining with Halden against stone.
+      - Throughout: Shield dwarf, female. Perpetually unimpressed expression. City
+        Guard armor, proudly dented shin-guard. Steady, reliable presence.
+    reference_images: []
+
+  - ref: "medic-halden"
+    name: "Medic Halden"
+    scene_variations: |
+      CHAPTER 21 (FIELD MEDIC):
+      - SCENE 03 (Rescue): Abandoning purchases to help with lever, then dropping to
+        knees to treat wounded child. Calm, reassuring chatter while hands work.
+      - Throughout: Human male, shy but earnest. City Guard armor with medical pack.
+        Nervous tic at left eye corner. Methodical, compassionate.
+    reference_images: []
+
+  - ref: "marcus-heartbridge"
+    name: "Marcus Heartbridge"
+    scene_variations: |
+      CHAPTER 21 (SUBTLE OPERATOR):
+      - SCENE 05: Carefully neutral expression watching Cid mention Korrath. Exchanging
+        careful glance with Veyra—the opening they've waited for.
+      - Throughout: Well-tailored doublets. Smooth composure. Sharp observer.
+    reference_images: []
 
 locations:
   - ref: "warehouse-complex"
     zones:
-      - id: "overview"
-        chapter_context: "Industrial space becoming home. High vaulted ceilings, clerestory light. Active forge, workbenches, planning area."
-  - ref: "artisan-quarter-marketplace"
+      - id: "main-floor"
+        chapter_context: |
+          The main warehouse floor during Cid's enthusiastic entrance—cavernous
+          space with high windows, Finn's archery targets in the loading area.
+          Professional assessment atmosphere as Cid evaluates structural potential.
+          The moment of shared trauma recognition between Cid and Veyra.
+      - id: "forge"
+        chapter_context: |
+          Grimjaw's forge in Building B, warm with rhythmic hammering. The dwarf
+          crafting decorative spoons with "geometric rosettes" (flowers). Fayne's
+          gentle teasing about nesting. Forge glow creating warm, domestic atmosphere.
+      - id: "mezzanine"
+        chapter_context: |
+          The mezzanine during Veyra's "home" realization—evening light, watching
+          Company routines below. Grimjaw at forge, Aldwin in infirmary, others
+          at their stations. The commander surveying her found family.
+      - id: "briefing-circle"
+        chapter_context: |
+          The briefing table during Cid's return visit with architectural plans.
+          Technical discussion about secure meeting rooms. The moment Korrath's
+          name is spoken with proud affection by Cid, Veyra and Marcus exchanging
+          careful glances.
+
+  - ref: "artisan-quarter"
     zones:
-      - id: "overview"
-        chapter_context: "Bustling cobblestone square. Merchant stalls, canvas awnings. Construction debris at edges."
+      - id: "market"
+        chapter_context: |
+          Waterdeep's Artisan Quarter marketplace during the stone rescue—late
+          morning bustle, merchants hawking, street performers, children playing.
+          Cart accident with stone blocks sliding toward children. Chaos giving
+          way to heroic improvisation. Mason's tears of gratitude afterward.
 
 moments:
-  - id: "ch21-roots-and-reconnaissance-moment-01"
-    scene_id: "scn-21-01"
-    title: "The Paper Dead-End"
-    narrative_beat: "Marcus staring at the documents representing weeks of dead ends in the Korrath investigation."
-    visual_weight: "medium"
-    characters_present:
-      - "marcus-heartbridge"
-      - "veyra-thornwake"
-    location_zone: "warehouse-complex/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch21-roots-and-reconnaissance-moment-02"
-    scene_id: "scn-21-01"
-    title: "Shadow Warning"
-    narrative_beat: "Close up of the Silken Siren tavern interior, the nervous fence returning Marcus's gold."
-    visual_weight: "medium"
-    characters_present: []
-    location_zone: "waterdeep/tavern"
-    transformation_state: "n/a"
-    recommended_images: 1
-
   - id: "ch21-roots-and-reconnaissance-moment-03"
     scene_id: "scn-21-02"
-    title: "Enthusiastic Incursion"
-    narrative_beat: "Cid bursting into the warehouse, mechanical arm gesturing as she critiques the 'bones' of the space."
-    visual_weight: "high"
+    title: "Shared Scars"
+    narrative_beat: |
+      'I understand magical... mishaps.' She raised her mechanical arm. 'This wasn't
+      by choice. Wild magic surge when I was younger. My entire left arm was transformed
+      into living crystal.' There was a moment of unexpected connection—two women
+      marked by magical trauma.
+    visual_weight: "critical"
     characters_present:
       - "cidrella-vexweld"
       - "veyra-thornwake"
+    location_zone: "warehouse-complex/main-floor"
+    transformation_state: "during"
+    recommended_images: 2
+
+  - id: "ch21-roots-and-reconnaissance-moment-07"
+    scene_id: "scn-21-04"
+    title: "This Felt Like Home"
+    narrative_beat: |
+      This felt like home. Not the desperate camaraderie of a siege, or the temporary
+      shelter of an inn between missions. This felt like a place they belonged, work
+      they were meant to do, people they were meant to be with.
+    visual_weight: "critical"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "warehouse-complex/mezzanine"
+    transformation_state: "during"
+    recommended_images: 2
+
+  - id: "ch21-roots-and-reconnaissance-moment-02"
+    scene_id: "scn-21-02"
+    title: "Copper and Chrome"
+    narrative_beat: |
+      The woman who entered was a force of barely contained energy. Copper-red hair
+      escaped from practical braids, her left arm gleamed with intricate mechanical
+      construction, and her eyes lit up as they swept across the cavernous space.
+    visual_weight: "critical"
+    characters_present:
+      - "cidrella-vexweld"
       - "finn"
-    location_zone: "warehouse-complex/overview"
-    transformation_state: "n/a"
+      - "veyra-thornwake"
+    location_zone: "warehouse-complex/main-floor"
+    transformation_state: "before"
+    recommended_images: 1
+
+  - id: "ch21-roots-and-reconnaissance-moment-06"
+    scene_id: "scn-21-04"
+    title: "Not Flowers"
+    narrative_beat: |
+      'Those are not flowers,' Grimjaw protested. 'They're... geometric rosettes.
+      Completely different thing. Traditional dwarven design element.'
+      'They look like flowers to me.' 'Then you need your eyes checked.'
+    visual_weight: "critical"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "quartermaster-fayne"
+    location_zone: "warehouse-complex/forge"
+    transformation_state: "during"
     recommended_images: 1
 
   - id: "ch21-roots-and-reconnaissance-moment-04"
-    scene_id: "scn-21-02"
-    title: "Trauma Recognition"
-    narrative_beat: "Cid and Veyra connecting over their shared history of magical mishaps and scars."
-    visual_weight: "high"
-    characters_present:
-      - "veyra-thornwake"
-      - "cidrella-vexweld"
-    location_zone: "warehouse-complex/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch21-roots-and-reconnaissance-moment-05"
     scene_id: "scn-21-03"
-    title: "The Falling Stones"
-    narrative_beat: "Finn straining against the sliding stone blocks to save the children in the marketplace."
-    visual_weight: "hero"
+    title: "Stone and Lever"
+    narrative_beat: |
+      Darric grabbed a long wooden beam and jammed it under the stone, creating an
+      improvised lever. Together, the three Company members managed to redirect the
+      stone's momentum, sending it rolling harmlessly into an empty fountain.
+    visual_weight: "high"
     characters_present:
       - "finn"
       - "corporal-darric"
       - "medic-halden"
-    location_zone: "artisan-quarter-marketplace/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch21-roots-and-reconnaissance-moment-06"
-    scene_id: "scn-21-03"
-    title: "Post-Crisis Care"
-    narrative_beat: "Halden tending to the wounded boy on the cobblestones, calm focus in the aftermath."
-    visual_weight: "medium"
-    characters_present:
-      - "medic-halden"
-    location_zone: "artisan-quarter-marketplace/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch21-roots-and-reconnaissance-moment-07"
-    scene_id: "scn-21-04"
-    title: "The Dwarven Spoon"
-    narrative_beat: "Grimjaw delicately filing a wooden spoon, hiding his desire to make the place a home."
-    visual_weight: "medium"
-    characters_present:
-      - "grimjaw-ironbeard"
-      - "quartermaster-fayne"
-    location_zone: "warehouse-complex/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch21-roots-and-reconnaissance-moment-08"
-    scene_id: "scn-21-04"
-    title: "The Heartbeat Forge"
-    narrative_beat: "Establishing the warehouse interior at night, the warm glow of the forge acting as the Company's heart."
-    visual_weight: "medium"
-    characters_present: []
-    location_zone: "warehouse-complex/overview"
-    transformation_state: "n/a"
+    location_zone: "artisan-quarter/market"
+    transformation_state: "during"
     recommended_images: 1
 
   - id: "ch21-roots-and-reconnaissance-moment-09"
     scene_id: "scn-21-05"
-    title: "Technical Collaboration"
-    narrative_beat: "Cid and Grimjaw huddling over sketches, debating compression ratios and load distribution."
+    title: "The Name Spoken"
+    narrative_beat: |
+      'Korrath Threnx. He's been pushing me to think bigger with my projects for
+      years. These plans, for instance—they're better because of his input.'
+      Veyra and Marcus exchanged a careful glance.
     visual_weight: "high"
     characters_present:
       - "cidrella-vexweld"
-      - "grimjaw-ironbeard"
-    location_zone: "warehouse-complex/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch21-roots-and-reconnaissance-moment-10"
-    scene_id: "scn-21-05"
-    title: "The Architect's Danger"
-    narrative_beat: "The Company leaders realizing that investigating Korrath through Cid puts her in the Silent Hand's crosshairs."
-    visual_weight: "high"
-    characters_present:
       - "veyra-thornwake"
       - "marcus-heartbridge"
-      - "thorne-brightward"
-    location_zone: "warehouse-complex/overview"
-    transformation_state: "n/a"
+    location_zone: "warehouse-complex/briefing-circle"
+    transformation_state: "during"
     recommended_images: 1
 
 images:
-  - custom_id: "ch21-roots-and-reconnaissance-img-21-01-01"
-    source_moment: "ch21-roots-and-reconnaissance-moment-01"
-    scene_id: "scn-21-01"
-    image_type: "beat"
-    category:
-      - "moment"
-      - "character"
-      - "emotion"
-    scene_mood: "somber"
-    mood_rationale: "The investigation stalls. Dead ends and frustration. Heavy atmosphere of professional defeat."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Marcus Heartbridge staring at a collection of documents spread across his mezzanine workspace. Shifting light from high windows highlight the mess of papers. His expression is one of unusual frustration. Veyra approaches from below, her silhouette visible on the stairs. The warehouse is vast and quiet.
-    composition_notes: |
-      Medium-wide shot. Marcus foreground at desk. Veyra background on stairs. high-angle perspective from mezzanine. Depth from papers to distant warehouse floor.
-    visual_hook: "The scattered papers representing dead ends, highlighted by a single cold shaft of afternoon light."
-    depicts_characters:
-      - "marcus-heartbridge"
-      - "veyra-thornwake"
-    character_states:
-      marcus-heartbridge: |
-        Staring at desk. Hands gripping edges. Frustrated expression. Doublet loosened.
-      veyra-thornwake: |
-        Approaching. Watchful stance.
-    location: "warehouse-complex"
-    lighting:
-      primary_source: "High windows"
-      quality: "Cold, shifting"
-      direction: "Top-down"
-      color_temperature: "Gray/Blue"
-      shadow_depth: "Deep"
-      atmospheric: "Dusty"
-    palette:
-      dominant:
-        - "stone gray"
-        - "paper cream"
-        - "shadow"
-      accent:
-        - "charcoal doublet"
-      avoid:
-        - "warmth"
-    prompt_used: |
-      Man with neat goatee looking frustrated at a desk covered in papers,
-      mezzanine office overlooking a dark warehouse,
-      woman approaching from stairs in background,
-      cold shafts of light through high windows,
-      atmosphere of professional dead-ends,
-      classical oil painting, interior realism,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smiling
-    tags:
-      - "beat"
-      - "investigation"
-      - "marcus"
-      - "somber"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch21-roots-and-reconnaissance-img-21-02-01"
+  - custom_id: "ch21-roots-and-reconnaissance-img-21-03-01"
     source_moment: "ch21-roots-and-reconnaissance-moment-03"
     scene_id: "scn-21-02"
     image_type: "anchor"
     category:
       - "moment"
       - "character"
-    scene_mood: "celebratory"
-    mood_rationale: "Cid's entrance. Infectious chaos and uncontained enthusiasm. Convivial disruption."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Cidrella Vexweld mid-stride through the warehouse entrance. Copper-red hair, brass prosthetic arm spread wide in gesture. Catching dusty light through windows. Veyra emerging from planning area in relative shadow, guarded. Finn at archery targets in background.
-    composition_notes: |
-      Cid slightly left of center in light shaft. Veyra right third in shadow. Finn background. Depth through warehouse pillars. Light pattern tells the story.
-    visual_hook: "Cid's articulated brass prosthetic arm spread wide in emphatic gesture, blue-tinged conduits catching light"
-    depicts_characters:
-      - "cidrella-vexweld"
-      - "veyra-thornwake"
-      - "finn"
-    character_states:
-      cidrella-vexweld: |
-        Mid-stride. Mechanical arm spread. Enthusiastic expression. Red curls. Tinkerer's goggles.
-      veyra-thornwake: |
-        Guarded. Assessing. In partial shadow.
-      finn: |
-        Lowered bow. Curious.
-    location: "warehouse-complex"
-    lighting:
-      primary_source: "clerestory windows"
-      quality: "warm, theatrical shafts"
-      direction: "above/behind"
-      color_temperature: "warm gold"
-      shadow_depth: "soft"
-      atmospheric: "industrial dust"
-    palette:
-      dominant:
-        - "warm amber"
-        - "copper red"
-        - "dusty gold"
-      accent:
-        - "electric blue conduits"
-        - "teal tattoos"
-      avoid:
-        - "cold grays"
-    prompt_used: |
-      Female gnome with red hair and blue streak bursting through warehouse doors,
-      articulated brass prosthetic arm spread in gesture,
-      woman with mohawk watching from shadows,
-      dusty light shafts from high windows,
-      atmosphere of enthusiastic disruption,
-      classical oil painting, Dutch Golden Age warmth, Jan Steen style,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, clean sterile space
-    tags:
-      - "anchor"
-      - "character-intro"
-      - "cid"
-      - "celebratory"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch21-roots-and-reconnaissance-img-21-02-02"
-    source_moment: "ch21-roots-and-reconnaissance-moment-04"
-    scene_id: "scn-21-02"
-    image_type: "detail"
-    category:
-      - "moment"
-      - "character"
       - "emotion"
     scene_mood: "intimate"
-    mood_rationale: "Emotional pivot. Two women connecting over trauma. Vermeer quality of quiet poetry."
-    aspect_ratio: "3:4"
-    orientation: "portrait"
-    size: "1024x1536"
-    visual_description: |
-      Cid has raised her mechanical arm in confession. Veyra's hand is near her own facial scar. Both faces illuminated by Veyra's belt lantern. Expressions are sympathetic and knowing. Industrial scale falls away. Enclosed private space.
-    composition_notes: |
-      Two-figure composition. Cid left, Veyra right. Three-quarter profile. Slightly low angle. Lantern glow heart of composition. Background figures soft.
-    visual_hook: "Cid's mechanical fingers flexed with hard-won pride, Veyra's hand touching the edge of her burn scar"
-    depicts_characters:
-      - "veyra-thornwake"
-      - "cidrella-vexweld"
-    character_states:
-      veyra-thornwake: |
-        Touching scar edge. Expression vulnerable but guarded. Lantern glow upward.
-      cidrella-vexweld: |
-        Raised mechanical arm. Empathetic expression. Knowing smile gone.
-    location: "warehouse-complex"
-    lighting:
-      primary_source: "Veyra's lantern"
-      quality: "soft, warm, intimate"
-      direction: "below/between"
-      color_temperature: "warm amber-gold"
-      shadow_depth: "soft gradients"
-      atmospheric: "still, private"
-    palette:
-      dominant:
-        - "warm amber"
-        - "soft gold"
-        - "honey tones"
-      accent:
-        - "brass arm"
-        - "red-brown scar"
-      avoid:
-        - "harsh contrasts"
-    prompt_used: |
-      Two women in intimate conversation,
-      scarred woman touching her facial burn,
-      gnome woman showing her mechanical arm,
-      warm lantern light illuminating both faces,
-      shared understanding of trauma,
-      classical oil painting, Vermeer lighting,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, action pose
-    tags:
-      - "detail"
-      - "connection"
-      - "vulnerability"
-      - "intimate"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch21-roots-and-reconnaissance-img-21-03-01"
-    source_moment: "ch21-roots-and-reconnaissance-moment-05"
-    scene_id: "scn-21-03"
-    image_type: "hero"
-    category:
-      - "moment"
-      - "action"
-      - "character"
-    scene_mood: "kinetic"
-    mood_rationale: "Impossible heroism. Young man against tons of stone. Romantic drama and dynamic tension."
+    mood_rationale: |
+      Two women marked by magical trauma finding unexpected recognition. The
+      mechanical arm and burn scars become symbols of shared survival, not
+      shame. Brief understanding between strangers.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Finn's lean frame small against a mass of rough-hewn stone blocks sliding from a cart. Muscles corded, face contorted, one hand flat against rock. Children scramble clear in foreground. Market onlookers in frozen horror. Dust cloud forming.
+      Cid raises her mechanical left arm, brass articulation and glowing conduits
+      catching the warehouse light. Veyra stands before her, burn scars visible at
+      neck and hands, expression softening with recognition. Both women's marks of
+      magical trauma visible—one metal and chrome, one burned and healed. The
+      cavernous warehouse surrounds them but fades to soft focus, the connection
+      between them the focal point.
     composition_notes: |
-      Strong diagonal upper-left to lower-right. Finn at apex. Low angle looking up. Rule of thirds: Finn left intersection. Depth through dust.
-    visual_hook: "Finn's lean archer's arms impossibly braced against tons of stone, veins standing out"
+      Medium two-shot with Cid at left raising her arm, Veyra at right. Mechanical
+      arm and burn scars both visible, creating visual parallel. Warehouse interior
+      in soft focus beyond. Natural afternoon light from high windows. Intimate
+      moment despite industrial setting.
+    visual_hook: "Mechanical arm raised, burn scars visible, two survivors recognizing each other"
     depicts_characters:
-      - "finn"
-      - "corporal-darric"
-      - "medic-halden"
+      - "cidrella-vexweld"
+      - "veyra-thornwake"
     character_states:
-      finn: |
-        Straining against stone. Sleeves pushed up. Face contorted. No bow.
-      corporal-darric: |
-        Rushing from middle-ground. Reaching for lever. Urgent alarm.
-      medic-halden: |
-        Moving to crisis. Bag bouncing. Focused.
-    location: "artisan-quarter-marketplace"
+      cidrella-vexweld: |
+        Raising mechanical left arm to show—brass articulation, glowing conduits.
+        Rock gnome, copper-red hair with blue streak, tinkerer's goggles on forehead.
+        Expression serious, empathetic. Sharing her own magical trauma.
+      veyra-thornwake: |
+        Burn scars visible at neck and hands. Expression softening from guarded to
+        understanding. Dark mohawk, feathered braids. Mottled burn scar on left face.
+        Recognition of kindred survivor.
+    location: "warehouse-complex"
+    zone: "main-floor"
     lighting:
-      primary_source: "harsh midday sun"
-      quality: "hard, dramatic"
-      direction: "above/behind"
-      color_temperature: "warm but harsh"
-      shadow_depth: "harsh contrast"
-      atmospheric: "thick dust"
+      primary_source: "High warehouse windows, afternoon light"
+      quality: "natural, warm, intimate"
+      direction: "from above and side"
+      color_temperature: "warm afternoon amber"
+      shadow_depth: "soft, gentle"
+      atmospheric: "warehouse dust motes in light shafts"
     palette:
       dominant:
-        - "raw sienna"
-        - "stone gray"
-        - "dust ochre"
+        - "brass mechanical copper"
+        - "skin tones"
+        - "warehouse wood brown"
       accent:
-        - "blood red knuckles"
+        - "glowing blue conduits"
+        - "burn scar texture"
+        - "copper-red hair"
       avoid:
-        - "soft pastels"
+        - "harsh shadows"
+        - "clinical lighting"
+        - "dark mood"
     prompt_used: |
-      Young man straining against massive falling stone blocks in a marketplace,
-      desperate effort and contorted face,
-      children fleeing in foreground,
-      other adventurers rushing to help,
-      harsh sun and swirling dust,
-      classical oil painting, Romantic dynamism, Delacroix energy,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, intimate connection composition.
+      Cavernous warehouse interior with high windows casting afternoon light, wooden
+      beams and industrial atmosphere softened.
+      Rock gnome woman raising mechanical left arm—intricate brass articulation with
+      glowing blue conduits, copper-red hair with blue streak escaping braids, tinkerer's
+      goggles on forehead, freckled face, expression serious and empathetic.
+      Half-elf woman standing before her, burn scars visible at neck and hands, mottled
+      burn scar on left side of face, dark mohawk with feathered braids, expression
+      softening with recognition.
+      Medium two-shot, both women's scars visible—one mechanical, one burned—survivors
+      recognizing each other, intimate moment in industrial space, warm afternoon light.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, calm scene
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      clinical lighting, cold mood, hiding scars, shame expression, action pose
     tags:
-      - "hero"
-      - "rescue"
-      - "finn"
-      - "kinetic"
+      - "cid"
+      - "veyra"
+      - "shared-scars"
+      - "intimate"
+      - "mechanical-arm"
+      - "connection"
     generated_at: null
     file_name: null
     file_path: null
@@ -486,60 +348,442 @@ images:
     provider_metadata: {}
 
   - custom_id: "ch21-roots-and-reconnaissance-img-21-03-02"
-    source_moment: "ch21-roots-and-reconnaissance-moment-06"
-    scene_id: "scn-21-03"
+    source_moment: "ch21-roots-and-reconnaissance-moment-03"
+    scene_id: "scn-21-02"
+    image_type: "detail"
+    category:
+      - "moment"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Close focus on the mechanical arm itself—the engineering brilliance born
+      from magical trauma. The glowing conduits and precise articulation as
+      symbol of transformation and adaptation.
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Extreme close-up of Cid's mechanical left arm—articulated brass construction
+      with precise joints, glowing blue conduits running along the forearm, intricate
+      engineering visible in every joint and plate. The fingers slightly flexed,
+      demonstrating the prosthetic's sophisticated movement. Warehouse light catches
+      the polished brass surfaces and the soft blue glow of the magical conduits.
+    composition_notes: |
+      Tight portrait framing on the arm from elbow to fingertips. Shallow depth of
+      field keeps focus on the mechanical detail. Blue conduit glow provides accent
+      color. Brass surfaces reflect warm warehouse light. The craftsmanship and
+      functionality both evident.
+    visual_hook: "Articulated brass arm, glowing blue conduits, masterwork engineering detail"
+    depicts_characters:
+      - "cidrella-vexweld"
+    character_states:
+      cidrella-vexweld: |
+        Only mechanical arm visible—articulated brass construction, blue glowing
+        conduits, precisely engineered joints. Fingers slightly flexed showing
+        sophisticated movement capability. Pride of self-designed craftsmanship.
+    location: "warehouse-complex"
+    zone: "main-floor"
+    lighting:
+      primary_source: "Warehouse ambient light"
+      quality: "warm, highlighting metal surfaces"
+      direction: "from above"
+      color_temperature: "warm amber with blue accent from conduits"
+      shadow_depth: "soft"
+      atmospheric: "still, contemplative"
+    palette:
+      dominant:
+        - "polished brass"
+        - "copper articulation"
+        - "glowing blue conduits"
+      accent:
+        - "warm light reflection"
+        - "steel joint pins"
+      avoid:
+        - "cold lighting"
+        - "sterile appearance"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, technical detail composition.
+      Extreme close-up of mechanical prosthetic arm—articulated brass construction
+      with precise joints and plates, glowing blue conduits running along forearm,
+      intricate engineering visible in every component. Fingers slightly flexed
+      demonstrating sophisticated movement.
+      Warehouse light catching polished brass surfaces, soft blue glow from magical
+      conduits, masterwork craftsmanship evident.
+      Tight portrait framing, shallow depth of field, warm amber light with blue
+      accent, transformation through engineering.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      photorealistic, sci-fi, futuristic, wide shot, full figure
+    tags:
+      - "mechanical-arm"
+      - "detail"
+      - "engineering"
+      - "intimate"
+      - "symbol"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch21-roots-and-reconnaissance-img-21-07-01"
+    source_moment: "ch21-roots-and-reconnaissance-moment-07"
+    scene_id: "scn-21-04"
+    image_type: "mood"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      The thematic peak—Veyra realizing the warehouse has become home. The commander
+      surveying her found family at their evening routines, both comfort and terror
+      of belonging in her expression.
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Veyra stands on the mezzanine railing, looking down at her Company in their
+      evening routines. Below, Grimjaw's forge glows orange, Aldwin moves through
+      the infirmary, others settle at their stations. The warehouse has become a
+      living organism of purpose and belonging. Evening light streams through high
+      windows, painting everything in warm domestic gold. Veyra's expression holds
+      both the comfort and terror of finding home.
+    composition_notes: |
+      Ultra-wide cinematic framing. Veyra at left third on mezzanine, looking right
+      and down. Below her, the warehouse life unfolds—forge glow, infirmary warmth,
+      people at their stations. Layers of activity create depth. Evening golden
+      light suffuses everything. The commander's solitary figure against the
+      community she's built.
+    visual_hook: "Veyra on mezzanine surveying Company routines below, evening light, home realized"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Standing at mezzanine railing, looking down. Weatherworn leather coat.
+        Dark mohawk with feathered braids. Expression complex—comfort and terror
+        of belonging both visible. The commander surveying her found family.
+    location: "warehouse-complex"
+    zone: "mezzanine"
+    lighting:
+      primary_source: "Evening light through high windows, forge glow below"
+      quality: "warm, golden, domestic"
+      direction: "from side and below"
+      color_temperature: "warm evening gold with orange forge accent"
+      shadow_depth: "soft, comfortable"
+      atmospheric: "peaceful, domestic, alive"
+    palette:
+      dominant:
+        - "evening gold light"
+        - "forge orange glow"
+        - "warehouse wood brown"
+      accent:
+        - "infirmary white"
+        - "leather brown"
+        - "mezzanine shadow"
+      avoid:
+        - "harsh lighting"
+        - "cold tones"
+        - "empty feeling"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, panoramic domestic scene.
+      Ultra-wide warehouse interior at evening. Mezzanine level at left with half-elf
+      woman in weatherworn leather coat standing at railing, looking down at activity
+      below. Dark mohawk with feathered braids, expression holding both comfort and
+      quiet fear of belonging.
+      Below: forge glowing orange with stocky dwarf working, infirmary area with soft
+      light, other figures at their stations. Evening golden light streaming through
+      high windows. A living space full of purpose.
+      Ultra-wide cinematic framing, layers of activity, warm domestic atmosphere,
+      the moment home is realized.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty warehouse, cold lighting, lonely feeling, action pose
+    tags:
+      - "veyra"
+      - "home"
+      - "mood"
+      - "intimate"
+      - "mezzanine"
+      - "thematic-peak"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch21-roots-and-reconnaissance-img-21-07-02"
+    source_moment: "ch21-roots-and-reconnaissance-moment-07"
+    scene_id: "scn-21-04"
     image_type: "detail"
     category:
       - "moment"
       - "character"
       - "emotion"
-    scene_mood: "pastoral"
-    mood_rationale: "Bubble of calm after chaos. Focused care. Hope and calm following crisis."
+    scene_mood: "intimate"
+    mood_rationale: |
+      Close on Veyra's face as the realization hits—this feels like home. The
+      complex emotions visible: comfort that could make you soft, attachment
+      that gives something worth fighting for.
     aspect_ratio: "3:4"
     orientation: "portrait"
-    size: "1024x1536"
+    size: "1024x1365"
     visual_description: |
-      Halden kneels on cobblestones, attention on a boy's gash. Boy is wide-eyed but trusting. Medical supplies spread on stones. Background suggests aftermath—debris, crowd at distance. Soft diffused daylight through dust.
+      Close portrait of Veyra at the mezzanine railing, evening light warming her
+      features. Her burn scar on the left side of her face catches the golden light.
+      Her dark eyes look down at something beyond the frame—her Company, her home.
+      The expression is complex: peace and fear intertwined, the comfort of belonging
+      and the terror of having something to lose.
     composition_notes: |
-      Medium shot, low angle. Halden upper two-thirds. Portrait orientation. Child lower third. Bubble of calm focal point.
-    visual_hook: "Halden's weathered hands working with gentle precision on a small wound"
+      Tight portrait framing on Veyra's face and upper body. Mezzanine railing at
+      bottom edge. Evening golden light from side. Burn scar visible but not
+      emphasized. Expression is the focal point—complex emotions readable.
+    visual_hook: "Veyra's face in evening light, complex emotions as home is realized"
     depicts_characters:
-      - "medic-halden"
+      - "veyra-thornwake"
     character_states:
-      medic-halden: |
-        Kneeling. Hands gentle. Expression focused/calm. Tic absent. Tanned weathered face.
-    location: "artisan-quarter-marketplace"
+      veyra-thornwake: |
+        Close portrait. Burn scar on left face visible in evening light. Dark
+        mohawk, feathered braids. Dark eyes looking down. Expression complex—
+        comfort and fear of belonging, peace and terror intertwined.
+    location: "warehouse-complex"
+    zone: "mezzanine"
     lighting:
-      primary_source: "diffused sun"
-      quality: "soft, gentle"
-      direction: "above/behind"
-      color_temperature: "warm but soft"
-      shadow_depth: "gentle"
-      atmospheric: "settling dust"
+      primary_source: "Evening light from side"
+      quality: "warm, golden, soft"
+      direction: "from right side"
+      color_temperature: "warm gold"
+      shadow_depth: "soft, gentle"
+      atmospheric: "peaceful, contemplative"
     palette:
       dominant:
-        - "soft gold"
-        - "slate blue"
-        - "cobblestone gray"
+        - "skin tone in golden light"
+        - "dark hair"
+        - "scar texture"
       accent:
-        - "red cross"
+        - "evening gold"
+        - "leather brown"
       avoid:
-        - "harsh reds"
+        - "harsh shadows"
+        - "clinical lighting"
     prompt_used: |
-      Medieval medic tending to a child's leg wound on marketplace stones,
-      gentle hands and focused kind expression,
-      child looking up with trust,
-      soft morning light through dust,
-      aftermath of a crisis,
-      classical oil painting, plein air naturalism,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, intimate portrait.
+      Close portrait of half-elf woman at mezzanine railing, evening golden light
+      warming her features from the side. Mottled burn scar on left side of face
+      catching the light. Dark mohawk with shaved sides and feathered braids. Sharp
+      dark eyes looking down at something beyond frame.
+      Expression complex—peace and fear intertwined, comfort of belonging and terror
+      of having something to lose.
+      Tight portrait framing, warm golden evening light, contemplative moment, home
+      realized.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, gory wound
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      harsh lighting, action expression, wide shot, full figure
     tags:
+      - "veyra"
+      - "portrait"
+      - "intimate"
+      - "emotion"
+      - "home"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch21-roots-and-reconnaissance-img-21-02-01"
+    source_moment: "ch21-roots-and-reconnaissance-moment-02"
+    scene_id: "scn-21-02"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "action"
+    scene_mood: "celebratory"
+    mood_rationale: |
+      Cid's memorable entrance—a force of barely contained energy bursting into
+      the warehouse, copper hair catching light, mechanical arm gleaming. The
+      enthusiasm is infectious.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Cid steps through the warehouse doors, a whirlwind of energy. Her copper-red
+      hair with its blue streak escapes from practical braids, her mechanical left
+      arm gleams with intricate brass construction and glowing conduits, and her
+      eyes light up as they sweep across the cavernous space. Tinkerer's goggles
+      perched on her forehead, leather apron bristling with tools, bandolier of
+      power cells across her chest. Behind her, Finn stands near his archery targets,
+      surprised by the energetic visitor.
+    composition_notes: |
+      Medium shot with Cid stepping in from right, body angled toward the warehouse
+      interior. Mechanical arm visible in profile. Warehouse door frame creates
+      entrance framing. Finn at archery targets in mid-ground, surprised. Cavernous
+      warehouse extends beyond. Light from doorway backlights her entrance.
+    visual_hook: "Cid's energetic entrance, mechanical arm gleaming, copper hair flying, warehouse assessment begins"
+    depicts_characters:
+      - "cidrella-vexweld"
+      - "finn"
+    character_states:
+      cidrella-vexweld: |
+        Stepping through door, force of barely contained energy. Copper-red hair
+        with blue streak escaping braids. Mechanical left arm gleaming—brass
+        articulation, glowing conduits. Tinkerer's goggles on forehead. Leather
+        apron with tools. Eyes lit up with professional excitement. Bouncing on
+        toes. Gesturing animatedly.
+      finn: |
+        At archery targets, surprised by visitor. Lean, young. Brown hair, hazel
+        eyes. Simple leather tunic. Bow in hand. Looking toward the entrance.
+    location: "warehouse-complex"
+    zone: "main-floor"
+    lighting:
+      primary_source: "Doorway light, warehouse ambient"
+      quality: "bright entrance, atmospheric interior"
+      direction: "backlit from door, ambient from windows"
+      color_temperature: "bright doorway, warm interior"
+      shadow_depth: "moderate, dynamic"
+      atmospheric: "energy entering calm space"
+    palette:
+      dominant:
+        - "copper-red hair"
+        - "brass mechanical"
+        - "warehouse wood"
+      accent:
+        - "blue streak/conduits"
+        - "doorway brightness"
+        - "leather brown"
+      avoid:
+        - "muted tones"
+        - "static composition"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, dynamic entrance composition.
+      Rock gnome woman stepping through warehouse doors, force of barely contained
+      energy. Copper-red hair with blue streak escaping practical braids. Mechanical
+      left arm gleaming—brass articulation with glowing blue conduits. Tinkerer's
+      goggles on forehead, leather apron bristling with tools, bandolier across chest.
+      Eyes lit up with excitement as she surveys the cavernous space.
+      Young human man with bow at archery targets in mid-ground, surprised by visitor.
+      Warehouse interior extends beyond, high windows casting light.
+      Medium shot, dynamic entrance, bright doorway backlight, enthusiast arrives.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      static pose, muted colors, dark entrance, shy expression
+    tags:
+      - "cid"
+      - "entrance"
+      - "celebratory"
+      - "anchor"
+      - "mechanical-arm"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch21-roots-and-reconnaissance-img-21-06-01"
+    source_moment: "ch21-roots-and-reconnaissance-moment-06"
+    scene_id: "scn-21-04"
+    image_type: "detail"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "celebratory"
+    mood_rationale: |
+      Character comedy—Grimjaw's nesting revealed through decorative spoons he
+      insists are "geometric rosettes, not flowers." The dwarf's domesticity
+      denied but visible, Fayne's amused observation.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Grimjaw's massive hands hold a delicately decorated spoon, the handle carved
+      with elaborate patterns that are unmistakably flowers despite his protests.
+      The forge glows warm behind him. Fayne stands nearby, gentle smirk visible,
+      clearly enjoying the dwarf's denial. The contrast between the burly engineer
+      and the delicate craftsmanship tells the story—home being built one spoon
+      at a time.
+    composition_notes: |
+      Medium shot centered on Grimjaw holding the spoon, hands prominent. Fayne at
+      right, amused expression. Forge glow in background. The spoon's decorative
+      "geometric rosettes" clearly visible. Warm domestic atmosphere despite
+      industrial setting.
+    visual_hook: "Grimjaw's massive hands holding flower-decorated spoon, Fayne's amused smirk, nesting denied"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "quartermaster-fayne"
+    character_states:
+      grimjaw-ironbeard: |
+        Massive hands holding delicate spoon. Iron-gray braided beard with metal
+        charms. Stocky, powerful build. Expression of wounded dignity. The spoon's
+        handle clearly decorated with flowers (he insists they're "geometric
+        rosettes").
+      quartermaster-fayne: |
+        Nearby, gentle smirk. Rock gnome, auburn hair, spectacles. Clearly enjoying
+        the dwarf's denial. Warm laughter about to escape.
+    location: "warehouse-complex"
+    zone: "forge"
+    lighting:
+      primary_source: "Forge glow"
+      quality: "warm, golden, domestic"
+      direction: "from behind and below"
+      color_temperature: "warm orange-gold"
+      shadow_depth: "soft, warm"
+      atmospheric: "forge warmth, domestic comfort"
+    palette:
+      dominant:
+        - "forge orange glow"
+        - "iron-gray beard"
+        - "skin tone"
+      accent:
+        - "spoon metal"
+        - "flower carving"
+        - "auburn hair"
+      avoid:
+        - "cold tones"
+        - "harsh lighting"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, warm domestic comedy.
+      Stocky dwarf with iron-gray braided beard holding delicate metal spoon, massive
+      hands gentle around delicate work. The spoon's handle carved with elaborate
+      flower patterns (despite his protests they're "geometric rosettes").
+      Rock gnome woman nearby with gentle smirk, auburn hair, spectacles, clearly
+      enjoying the denial.
+      Forge glowing warm orange behind them.
+      Medium shot, forge warmth, character comedy, nesting denied but visible.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      cold lighting, serious expression, action pose, dark mood
+    tags:
+      - "grimjaw"
+      - "fayne"
+      - "flowers"
+      - "celebratory"
       - "detail"
-      - "care"
-      - "halden"
-      - "pastoral"
+      - "character-comedy"
     generated_at: null
     file_name: null
     file_path: null
@@ -548,130 +792,93 @@ images:
     provider_metadata: {}
 
   - custom_id: "ch21-roots-and-reconnaissance-img-21-04-01"
-    source_moment: "ch21-roots-and-reconnaissance-moment-07"
-    scene_id: "scn-21-04"
-    image_type: "mood"
+    source_moment: "ch21-roots-and-reconnaissance-moment-04"
+    scene_id: "scn-21-03"
+    image_type: "hero"
     category:
       - "moment"
-      - "character"
-      - "symbol"
-    scene_mood: "intimate"
-    mood_rationale: "Warrior-engineer creating beauty. Massive hands holding something small. Gruff vulnerability and roots of home."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
-    visual_description: |
-      Grimjaw's massive hands delicately holding a small wooden spoon with knotwork carving. Expression caught between pride and embarrassment. Fayne's knowing smirk in background. Forge glows amber behind.
-    composition_notes: |
-      Centered square. Hands and spoon heart of frame. Face upper third. Iconic quality. Depth through focus.
-    visual_hook: "Grimjaw's enormes, stone-rough hands cradling a delicate spoon with elaborate carved knotwork"
-    depicts_characters:
-      - "grimjaw-ironbeard"
-      - "quartermaster-fayne"
-    character_states:
-      grimjaw-ironbeard: |
-        Massive calloused hands. Holding delicate spoon. Pride and defensive embarrassment. Braided beard.
-      quartermaster-fayne: |
-        Background. Knowing half-smile. Warm amusement.
-    location: "warehouse-complex"
-    lighting:
-      primary_source: "forge fire"
-      quality: "soft, warm, intimate"
-      direction: "behind/below"
-      color_temperature: "warm amber"
-      shadow_depth: "soft gradients"
-      atmospheric: "still interior"
-    palette:
-      dominant:
-        - "forge amber"
-        - "copper"
-        - "honey wood"
-      accent:
-        - "iron gray"
-      avoid:
-        - "cold colors"
-    prompt_used: |
-      Dwarf with massive rough hands holding a small delicate carved wooden spoon,
-      expression of pride and embarrassment,
-      forge fire glowing in background,
-      gnome friend watching with amusement,
-      warm intimate atmosphere,
-      classical oil painting, Vermeer interior lighting,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, action pose
-    tags:
-      - "mood"
-      - "character"
-      - "grimjaw"
-      - "intimate"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch21-roots-and-reconnaissance-img-21-04-02"
-    source_moment: "ch21-roots-and-reconnaissance-moment-08"
-    scene_id: "scn-21-04"
-    image_type: "establishing"
-    category:
-      - "location"
-      - "moment"
-    scene_mood: "pastoral"
-    mood_rationale: "Establishing the warehouse as home. The transition from industrial space to lived-in sanctuary. Morning light and routine."
-    aspect_ratio: "16:9"
+      - "action"
+    scene_mood: "kinetic"
+    mood_rationale: |
+      The action peak—three Company members straining against massive stone with
+      improvised lever, children scrambling clear. Heroes by accident, ordinary
+      people becoming extraordinary in a moment of crisis.
+    aspect_ratio: "21:9"
     orientation: "landscape"
-    size: "1792x1024"
+    size: "1792x768"
     visual_description: |
-      A wide-angle shot of the warehouse interior at dawn. Dusty light shafts from high windows illuminate the main floor. The Briefing Circle table is set for breakfast. Finn is practicing with his bow in one corner. Aldwin is tending his window-box herbs. Mistress Elba is carrying a tray of bread. The space looks organized, loved, and active.
+      Marketplace chaos frozen at its crisis point. Finn strains against a massive
+      stone block, Darric has jammed a wooden beam under it as an improvised lever,
+      Halden throws his weight against the beam beside her. Children scramble clear
+      in the foreground. Market stalls and scattered goods around them. Bright
+      market daylight illuminates the scene. An overturned cart with one wheel
+      missing visible behind them. The moment of heroic intervention captured.
     composition_notes: |
-      Wide establishing shot. Deep perspective through the warehouse bays. Multiple points of activity.
-    visual_hook: "The transformation of the cold industrial space into a warm, active community heart."
+      Ultra-wide action shot. The three rescuers at center, straining against stone.
+      Lever creates diagonal dynamic. Children running clear at bottom. Overturned
+      cart at right. Market chaos around them. Bright daylight, frozen action moment.
+    visual_hook: "Three straining against stone with lever, children scrambling, marketplace chaos, heroes by accident"
     depicts_characters:
       - "finn"
-      - "aldwin-gentleheart"
-      - "mistress-elba"
+      - "corporal-darric"
+      - "medic-halden"
     character_states:
       finn: |
-        Aiming bow. Focused.
-      aldwin-gentleheart: |
-        Tending herbs. Peaceful.
-      mistress-elba: |
-        Carrying tray. Purposeful.
-    location: "warehouse-complex"
+        Straining against stone block directly. Lean, young. Brown hair. Simple
+        leather tunic. Ranger reflexes in action. Face contorted with effort.
+      corporal-darric: |
+        Jamming wooden beam under stone as lever, straining. Shield dwarf, female.
+        Perpetually unimpressed expression now focused. City Guard armor, dented
+        shin-guard.
+      medic-halden: |
+        Throwing weight against beam with Darric. Human male. City Guard armor
+        with medical pack. Effort showing, soldier's discipline overriding medic
+        instincts.
+    location: "artisan-quarter"
+    zone: "market"
     lighting:
-      primary_source: "Dawn sun"
-      quality: "Soft, golden, dusty"
-      direction: "Top-down"
-      color_temperature: "Gold"
-      shadow_depth: "Soft"
-      atmospheric: "Dust motes"
+      primary_source: "Bright market daylight"
+      quality: "bright, urgent, immediate"
+      direction: "from above"
+      color_temperature: "bright natural"
+      shadow_depth: "sharp, action-frozen"
+      atmospheric: "dust from displaced stone, market chaos"
     palette:
       dominant:
         - "stone gray"
-        - "wood brown"
-        - "dawn gold"
+        - "wooden beam brown"
+        - "market earth tones"
       accent:
-        - "herb green"
+        - "guard armor metal"
+        - "scattered goods colors"
+        - "children's clothing"
       avoid:
-        - "night"
+        - "dark shadows"
+        - "muted action"
     prompt_used: |
-      Interior wide shot of a medieval warehouse transformed into a home,
-      morning sunbeams cutting through high windows,
-      people going about their morning routines,
-      archery targets and medical herb boxes,
-      warm and active atmosphere,
-      classical oil painting, interior realism,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, dynamic action composition.
+      Bustling marketplace frozen at crisis moment. Three figures straining against
+      massive stone block—lean young man pushing directly, shield dwarf woman jamming
+      wooden beam as lever, human man in armor throwing weight against beam.
+      Children scrambling clear in foreground. Overturned cart with missing wheel
+      behind. Market stalls and scattered goods around.
+      Ultra-wide cinematic framing, bright daylight, dust rising, heroes by accident,
+      ordinary people becoming extraordinary.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      static pose, calm scene, empty market, dark lighting
     tags:
-      - "establishing"
-      - "home"
-      - "warehouse"
-      - "pastoral"
+      - "finn"
+      - "darric"
+      - "halden"
+      - "rescue"
+      - "kinetic"
+      - "hero"
+      - "marketplace"
     generated_at: null
     file_name: null
     file_path: null
@@ -679,129 +886,96 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch21-roots-and-reconnaissance-img-21-05-01"
+  - custom_id: "ch21-roots-and-reconnaissance-img-21-09-01"
     source_moment: "ch21-roots-and-reconnaissance-moment-09"
     scene_id: "scn-21-05"
     image_type: "beat"
     category:
-      - "character"
-      - "action"
-    scene_mood: "intimate"
-    mood_rationale: "Technical collaboration. Two craftspeople connecting over engineering. Mutual respect and shared knowledge."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Cid and Grimjaw huddling over architectural sketches on the map table. Cid's mechanical arm is pointing at a structural joint. Grimjaw is nodding, scratching his beard. They look like two scholars lost in a text. The others watch with a mix of amusement and exclusion. Warm afternoon light.
-    composition_notes: |
-      Two-shot focus on the pair. The table and sketches as the base. Close, collaborative posture.
-    visual_hook: "The visual bridge of the mechanical arm and the scarred dwarven hand meeting over a shared design."
-    depicts_characters:
-      - "cidrella-vexweld"
-      - "grimjaw-ironbeard"
-    character_states:
-      cidrella-vexweld: |
-        Leaning in. Pointing with mechanical fingers. Enthusiastic.
-      grimjaw-ironbeard: |
-        Leaning in. Analyzing. Respectful expression.
-    location: "warehouse-complex"
-    lighting:
-      primary_source: "Window light + Lantern"
-      quality: "Soft, warm"
-      direction: "Side"
-      color_temperature: "Amber"
-      shadow_depth: "Soft"
-      atmospheric: "Close"
-    palette:
-      dominant:
-        - "wood brown"
-        - "paper tan"
-        - "amber light"
-      accent:
-        - "brass arm"
-      avoid:
-        - "tension"
-    prompt_used: |
-      Gnome artificer and dwarf engineer huddling over scrolls on a table,
-      mechanical arm pointing at drawings,
-      expressions of intense collaborative focus,
-      warm interior light,
-      classical oil painting, interior realism,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "beat"
-      - "collaboration"
-      - "engineering"
-      - "intimate"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch21-roots-and-reconnaissance-img-21-05-02"
-    source_moment: "ch21-roots-and-reconnaissance-moment-10"
-    scene_id: "scn-21-05"
-    image_type: "beat"
-    category:
+      - "moment"
       - "character"
       - "emotion"
-    scene_mood: "somber"
-    mood_rationale: "The 'Character's Dilemma.' Realizing that protecting the innocent may endanger them. A moment of heavy tactical decision-making."
+    scene_mood: "ominous"
+    mood_rationale: |
+      The name spoken with proud affection—Korrath Threnx—while Veyra and Marcus
+      exchange a careful glance behind Cid. The opening they've waited for arrives
+      through innocent lips, carrying the weight of moral dilemma.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Veyra, Thorne, and Marcus in a huddle after Cid has left. Veyra is looking at the door, her expression weighed down. Marcus has his arms crossed, mask of charm gone. Thorne is staring at the map. The warehouse is getting dark as evening falls. The single lantern on the table casts long, ominous shadows.
+      Cid speaks with proud enthusiasm, gesturing at architectural sketches spread
+      across the briefing table, oblivious to the tension behind her. Veyra and
+      Marcus stand in the background, exchanging a careful, weighted glance over
+      Cid's shoulder. The sketches and plans cover the table between them. Afternoon
+      light streams through windows, but shadows gather at the edges. The moment
+      Korrath's name enters the conversation, opportunity and danger intertwined.
     composition_notes: |
-      Ensemble shot. Tense, slightly separated postures. Low angle. Focus on Veyra's face.
-    visual_hook: "The long shadows cast by the three leaders, representing the dark consequences of their choices."
+      Medium shot with Cid in foreground at left, speaking and gesturing. Veyra
+      and Marcus at right background, exchanging glance. Table with sketches between
+      them. Afternoon light with gathering shadows. The careful exchange happening
+      behind the oblivious enthusiast.
+    visual_hook: "Cid speaking Korrath's name, Veyra and Marcus exchanging careful glance behind her"
     depicts_characters:
+      - "cidrella-vexweld"
       - "veyra-thornwake"
       - "marcus-heartbridge"
-      - "thorne-brightward"
     character_states:
+      cidrella-vexweld: |
+        Speaking with proud enthusiasm. Gesturing at sketches. Copper-red hair,
+        mechanical arm visible. Oblivious to tension. Proud affection when mentioning
+        Korrath.
       veyra-thornwake: |
-        Looking at the exit. Pained expression.
+        In background, exchanging careful glance with Marcus. Expression neutral
+        but alert. The opening they've waited for.
       marcus-heartbridge: |
-        Serious expression. Arms crossed.
-      thorne-brightward: |
-        Staring at map. Jaw set.
+        In background, returning Veyra's glance. Carefully neutral expression
+        hiding sharp attention. The investigator's opportunity recognized.
     location: "warehouse-complex"
+    zone: "briefing-circle"
     lighting:
-      primary_source: "Single lantern"
-      quality: "High contrast"
-      direction: "Below"
-      color_temperature: "Amber"
-      shadow_depth: "Deep, long"
-      atmospheric: "Evening chill"
+      primary_source: "Afternoon light through windows"
+      quality: "natural with gathering shadows"
+      direction: "from side"
+      color_temperature: "warm afternoon cooling to shadow"
+      shadow_depth: "moderate, tension building"
+      atmospheric: "suspense beneath surface"
     palette:
       dominant:
-        - "shadow black"
-        - "stone gray"
-        - "amber"
+        - "paper/sketch white"
+        - "afternoon light"
+        - "shadow gathering"
       accent:
-        - "reddish scar"
+        - "copper hair"
+        - "mechanical arm brass"
+        - "careful glance tension"
       avoid:
-        - "bright colors"
+        - "bright celebratory"
+        - "harsh shadows"
     prompt_used: |
-      Three adventurers in a dark warehouse at evening,
-      standing around a map table with one lantern,
-      expressions of heavy moral choice and worry,
-      long ominous shadows on the wall,
-      atmosphere of a coming storm,
-      classical oil painting, chiaroscuro,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, suspense composition.
+      Briefing room with table covered in architectural sketches. Rock gnome woman
+      in foreground speaking with proud enthusiasm, gesturing at plans, copper-red
+      hair, mechanical arm visible, oblivious to tension.
+      Behind her, half-elf woman with burn scars and well-dressed human man exchanging
+      careful, weighted glance over her shoulder. Afternoon light through windows,
+      shadows gathering at edges.
+      Medium shot, the name spoken, opportunity and danger, careful exchange behind
+      innocent enthusiasm.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      bright lighting, celebratory mood, obvious conspiracy, action pose
     tags:
+      - "cid"
+      - "veyra"
+      - "marcus"
+      - "korrath"
+      - "ominous"
       - "beat"
       - "dilemma"
-      - "leadership"
-      - "somber"
     generated_at: null
     file_name: null
     file_path: null

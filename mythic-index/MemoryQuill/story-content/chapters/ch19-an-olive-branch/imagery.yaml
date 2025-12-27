@@ -1,265 +1,344 @@
-# ============================================================================
-# CHAPTER IMAGERY SPECIFICATION
-# Chapter: An Olive Branch
-# Generated: 2025-12-21
-# ============================================================================
-
 metadata:
   entity_type: "chapter-imagery"
   slug: "ch19-an-olive-branch"
   chapter_number: 19
   chapter_title: "An Olive Branch"
-  visual_thesis: "From the vulnerability of unfamiliar clothes to the armored dignity of earned recognition, strangers become figures of consequence."
+  visual_thesis: |
+    Rescuers become guests—the Company navigates formal society's invisible rules,
+    discovering that legitimacy requires learning a language as foreign as any battlefield.
   color_palette:
     primary:
-      - "#2C3E50"
-      - "#D4AF37"
-      - "#1A2530"
-      - "#4A6FA5"
+      - "#1E3A5F"  # deep harbor blue
+      - "#F5F5F0"  # polished marble white
+      - "#2B4F72"  # azure tile twilight
     accent:
-      - "#F5F5F5"
-      - "#722F37"
+      - "#D4A574"  # warm lantern amber
+      - "#8B7355"  # weathered leather brown
+      - "#C9B896"  # formal fabric cream
   generation_defaults:
     provider: "openai"
     model: "dall-e-3"
     quality: "hd"
   mood_distribution:
+    intimate: 4
+    celebratory: 2
+    ominous: 1
     somber: 1
-    pastoral: 1
-    celebratory: 3
-    aquatic: 0
-    ethereal: 0
-    intimate: 2
-    kinetic: 0
-    ominous: 0
 
 characters:
   - ref: "veyra-thornwake"
     name: "Veyra Thornwake"
-    scene_variations: "Dark, unadorned formal gown with a high collar. No lantern. Burn scars visible on face and fingers. Teal tattoos visible on arm."
-    reference_images:
-      - "veyra-thornwake-official-portrait-01"
-
-  - ref: "thorne-brightward"
-    name: "Thorne Brightward"
-    scene_variations: "Old dress uniform, dark blue with golden sunburst sigil. Rigid military posture. Snug fit."
-    reference_images:
-      - "thorne-brightward-portrait-01"
+    scene_variations: |
+      CHAPTER 19 VARIATIONS (FORMAL EVENT ARC):
+      - SCENE 01 (Warehouse): Standard commander appearance—weatherworn leather coat,
+        burn scars visible at neck and hands. Hand unconsciously touching collar where
+        scars disappear. Vulnerability beneath command persona.
+      - SCENES 02-05 (Azure Pavilion): Dark, unadorned formal gown with high collar
+        (not hiding, but dignified). Burn scars visible at neck edge and on hands.
+        Quiet dignity despite discomfort in formal setting. Calm, observant demeanor.
+      - Throughout: Mottled burn scar on left face from jaw to temple. Dark mohawk
+        with shaved sides, feathered braids. Sharp, clear dark eyes. Swirling tattoos
+        on neck and arms. Lantern NOT present at formal event.
+    reference_images: []
 
   - ref: "marcus-heartbridge"
     name: "Marcus Heartbridge"
-    scene_variations: "Immaculate dark doublet. practiced smile. Cracked mask moment when meeting Matriarch Stoneheart."
-    reference_images:
-      - "marcus-heartbridge-portrait-study-01"
+    scene_variations: |
+      CHAPTER 19 (SOCIAL EDUCATOR):
+      - SCENE 01 (Markets): Teaching mode—gesturing at fabrics, demonstrating social
+        semiotics. Impeccably dressed, smooth confidence, knowing glint in eye.
+      - SCENE 03 (Pavilion): Perfect smile that freezes briefly when rejected by
+        Matriarch Stoneheart. Genuine embarrassment quickly masked. Recovering with
+        graceful bow.
+      - Throughout: Well-tailored doublets, polished boots, smooth marble smile.
+        Average height, poised confident posture.
+    reference_images: []
 
-  - ref: "aldwin-gentleheart"
-    name: "Aldwin Gentleheart"
-    scene_variations: "Deep plum-colored tunic. Elegant, scholarly look. Kind eyes."
-    reference_images:
-      - "aldwin-gentleheart-official-portrait-01"
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: |
+      CHAPTER 19 (FORMAL DISCOMFORT):
+      - Throughout: Old dress uniform, slightly snug after Westwall campaign.
+        Steel-gray short military hair. Deep-set brown eyes, weathered kind face.
+        Stiff but serviceable appearance. Disciplined military posture even in
+        uncomfortable formal setting.
+    reference_images: []
 
   - ref: "grimjaw-ironbeard"
     name: "Grimjaw Ironbeard"
-    scene_variations: "Borrowed formal coat, too small for dwarven shoulders. Magnificent braided beard. Uncomfortable expression."
-    reference_images:
-      - "grimjaw-ironbeard-portrait-01"
-
-  - ref: "vera-moonwhisper"
-    name: "Vera Moonwhisper"
-    scene_variations: "Muted green cloak. Thinner and paler. Shadowy presence at the edges."
-    reference_images:
-      - "vera-moonwhisper-portrait-01"
+    scene_variations: |
+      CHAPTER 19 (FISH OUT OF WATER):
+      - Throughout: Borrowed formal coat straining at broad dwarf shoulders and seams.
+        Iron-gray braided beard with metal charms. Stocky, powerful build. Bright keen
+        eyes observing structural integrity of pavilion rather than social dynamics.
+        Tiny pastry looking absurd in massive hand.
+    reference_images: []
 
   - ref: "quartermaster-fayne"
     name: "Quartermaster Fayne"
-    scene_variations: "Well-tailored scholarly outfit. Brass spectacles. Ink-stained fingers."
-    reference_images:
-      - "quartermaster-fayne-standard-portrait-01"
+    scene_variations: |
+      CHAPTER 19 (PATTERN LEARNER):
+      - SCENE 01 (Markets): Surveyor's precision—notebook out, scribbling furiously.
+        Attempting to quantify fashion semiotics. Frustration at illogical social rules.
+      - SCENE 01 (Warehouse): Well-tailored scholar-like outfit. Taking notes on
+        Veyra's requests.
+      - Throughout: Rock gnome, 3'4", wiry and nimble. Auburn short hair, hazel eyes.
+        Custom spectacles with swing-arm lenses. Ink-stained fingers. Androgynous
+        appearance, leather bandolier with tools.
+    reference_images: []
 
   - ref: "captain-grimsby"
     name: "Captain Grimsby"
-    scene_variations: "Immaculate formal Watch uniform. Stern expression. Disciplined posture."
-    reference_images:
-      - "captain-grimsby-official-portrait-01"
+    scene_variations: |
+      CHAPTER 19 (FORMAL HOST):
+      - Throughout: Immaculate Watch Captain's uniform. Gruff, mustachioed veteran.
+        Stern, by-the-book expression softening slightly during toast. Mechanical
+        precision in greeting guests. Rigid but offering genuine public acknowledgment.
+    reference_images: []
+
+  - ref: "aldwin-gentleheart"
+    name: "Aldwin Gentleheart"
+    scene_variations: |
+      CHAPTER 19 (SURPRISING SOPHISTICATE):
+      - SCENE 01 (Markets): Surprisingly astute fashion observations. Deep forest-green
+        velvet outfit. Quiet amusement at the social education lesson.
+      - Throughout: Halfling with compact sturdy build. Curly brown hair with silver
+        at temples. Kind hazel eyes. Practical earth-tone robes, surprisingly dapper
+        for the formal event.
+    reference_images: []
+
+  - ref: "matriarch-stoneheart"
+    name: "Matriarch Stoneheart"
+    scene_variations: |
+      CHAPTER 19 (DIAMOND-SHARP REJECTION):
+      - SCENE 03: Elderly dwarven woman in severe black silk. Grey eyes sharp as
+        cut diamonds. Not looking up from her wine while dismissing Marcus.
+        Generational memory of the Heartbridge family's "same smile, same angle."
+    reference_images: []
 
 locations:
   - ref: "warehouse-complex"
     zones:
-      - id: "overview"
-        chapter_context: "Industrial space. Clerestory windows, dusty light. Repurposed for logistics and planning."
+      - id: "briefing-circle"
+        chapter_context: |
+          The Briefing Circle during the invitation scramble—morning light through
+          clerestory lancets illuminating the round map table now covered with supply
+          manifests. The Company gathered in battle-worn clothes, reacting to the
+          formal invitation's demands. Warehouse dust motes in the air, practical
+          military atmosphere suddenly confronted with high-society requirements.
+      - id: "market"
+        chapter_context: |
+          Waterdeep's fabric markets during the shopping expedition. Stalls displaying
+          silks in vibrant hues, bolts of velvet, passing nobles demonstrating social
+          hierarchy through their attire. Market daylight, bustling crowds, the
+          unlikely trio of Marcus, Fayne, and Aldwin navigating social semiotics.
+
   - ref: "azure-pavilion"
     zones:
-      - id: "overview"
-        chapter_context: "Polished white marble, azure-glazed tile roof. Crystal lanterns. Overlooks dark harbor."
+      - id: "entrance"
+        chapter_context: |
+          Evening arrival at the Azure Pavilion—polished white stone reflecting
+          crystal lantern glow, azure-tiled roofs catching twilight. The Company
+          in their unfamiliar formal shoes taking careful steps on polished stone.
+          Sea salt mixing with expensive perfume, harbor shimmer beyond.
+      - id: "main-floor"
+        chapter_context: |
+          The main floor during social navigation—multiple conversations, dignity
+          under scrutiny, Marcus's rejection by Matriarch Stoneheart. Veyra facing
+          the young noble's rudeness about her scars with quiet dignity. Crystal
+          lanterns casting silver-white light, harbor visible through open-air
+          structure.
+      - id: "platform"
+        chapter_context: |
+          The raised platform during Grimsby's toast—Captain in immaculate uniform,
+          glass raised, crowd echoing "To order!" Crystal lanterns glowing brighter
+          as evening deepens. Public endorsement with conditions, olive branch
+          extended with expectations attached.
 
 moments:
-  - id: "ch19-an-olive-branch-moment-01"
-    scene_id: "scn-19-01"
-    title: "Vulnerability at the Collar"
-    narrative_beat: "Veyra alone in the warehouse, tracing the scars at her collar as she prepares for the social trial."
-    visual_weight: "medium"
+  - id: "ch19-an-olive-branch-moment-05"
+    scene_id: "scn-19-03"
+    title: "Every Scar Tells a Story"
+    narrative_beat: |
+      A young noble gaped openly at her scars. 'How do you—I mean, doesn't it hurt to—'
+      'Every scar tells a story,' Veyra said clearly. 'Mine tell of the day I learned
+      that survival without purpose is merely existence.'
+    visual_weight: "critical"
     characters_present:
       - "veyra-thornwake"
-    location_zone: "warehouse-complex/overview"
-    transformation_state: "n/a"
+      - "thorne-brightward"
+    location_zone: "azure-pavilion/main-floor"
+    transformation_state: "during"
+    recommended_images: 2
+
+  - id: "ch19-an-olive-branch-moment-07"
+    scene_id: "scn-19-04"
+    title: "To Order"
+    narrative_beat: |
+      'To the successful integration of all who serve our city. To understanding that
+      must flow both ways. And to the future of Waterdeep!' 'To order!' the crowd
+      echoed, raising glasses.
+    visual_weight: "critical"
+    characters_present:
+      - "captain-grimsby"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    location_zone: "azure-pavilion/platform"
+    transformation_state: "during"
     recommended_images: 1
 
   - id: "ch19-an-olive-branch-moment-02"
     scene_id: "scn-19-01"
-    title: "The Market Scramble"
-    narrative_beat: "Fayne and Aldwin in the market, debating the subtext of fabric with a guiding Marcus."
-    visual_weight: "medium"
+    title: "Something With a High Collar"
+    narrative_beat: |
+      Veyra's hand unconsciously moved to her neck where the burn scars disappeared
+      beneath her collar. 'For me, something with a high collar if possible. But not
+      so high it looks like I'm hiding.'
+    visual_weight: "critical"
     characters_present:
+      - "veyra-thornwake"
+      - "quartermaster-fayne"
+    location_zone: "warehouse-complex/briefing-circle"
+    transformation_state: "before"
+    recommended_images: 1
+
+  - id: "ch19-an-olive-branch-moment-04"
+    scene_id: "scn-19-03"
+    title: "Some People Refuse to Be Charmed"
+    narrative_beat: |
+      'Marcus Heartbridge. I knew your father. And his father. Same smile, same angle
+      of approach.' Matriarch Stoneheart didn't even let him finish. 'The answer is no.'
+      Marcus's smile froze for just a heartbeat.
+    visual_weight: "critical"
+    characters_present:
+      - "marcus-heartbridge"
+      - "matriarch-stoneheart"
+      - "veyra-thornwake"
+    location_zone: "azure-pavilion/main-floor"
+    transformation_state: "during"
+    recommended_images: 2
+
+  - id: "ch19-an-olive-branch-moment-01"
+    scene_id: "scn-19-01"
+    title: "Invisible Stuff That Matters"
+    narrative_beat: |
+      'Attire is not merely about what one can see. There are... unseen threads at play.
+      Invisible stuff that matters.' Marcus gestured to the fabrics, teaching Fayne the
+      language of cloth.
+    visual_weight: "high"
+    characters_present:
+      - "marcus-heartbridge"
       - "quartermaster-fayne"
       - "aldwin-gentleheart"
-      - "marcus-heartbridge"
-    location_zone: "waterdeep-markets"
-    transformation_state: "n/a"
+    location_zone: "warehouse-complex/market"
+    transformation_state: "before"
     recommended_images: 1
 
   - id: "ch19-an-olive-branch-moment-03"
     scene_id: "scn-19-02"
-    title: "The Azure Arrival"
-    narrative_beat: "The Company entering the pavilion in their motley formal wear, a dark island in a bright world."
-    visual_weight: "hero"
+    title: "Crystal Lanterns and Unfamiliar Shoes"
+    narrative_beat: |
+      The Azure Pavilion was an open-air structure of polished white stone and azure-tiled
+      roofs. As they walked in unfamiliar formal shoes, several members moved with careful
+      steps of people afraid they might slip.
+    visual_weight: "high"
     characters_present:
       - "veyra-thornwake"
       - "thorne-brightward"
       - "grimjaw-ironbeard"
-      - "aldwin-gentleheart"
-      - "quartermaster-fayne"
-      - "vera-moonwhisper"
-    location_zone: "azure-pavilion/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch19-an-olive-branch-moment-04"
-    scene_id: "scn-19-02"
-    title: "Host's Greeting"
-    narrative_beat: "Captain Grimsby greeting Veyra and Thorne at the entrance with formal, rigid courtesy."
-    visual_weight: "medium"
-    characters_present:
-      - "captain-grimsby"
-      - "veyra-thornwake"
-      - "thorne-brightward"
-    location_zone: "azure-pavilion/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch19-an-olive-branch-moment-05"
-    scene_id: "scn-19-03"
-    title: "The Cracked Mask"
-    narrative_beat: "Marcus Heartbridge's smile freezes as he is evaluated and dismissed by Matriarch Stoneheart."
-    visual_weight: "medium"
-    characters_present:
-      - "marcus-heartbridge"
-      - "veyra-thornwake"
-    location_zone: "azure-pavilion/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch19-an-olive-branch-moment-06"
-    scene_id: "scn-19-03"
-    title: "Every Scar Tells a Story"
-    narrative_beat: "Veyra stops Thorne's intervention, choosing to address a curious noble with quiet dignity."
-    visual_weight: "high"
-    characters_present:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-    location_zone: "azure-pavilion/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch19-an-olive-branch-moment-07"
-    scene_id: "scn-19-04"
-    title: "A Toast to Order"
-    narrative_beat: "Grimsby delivering his public endorsement and challenge from the raised platform."
-    visual_weight: "high"
-    characters_present:
-      - "captain-grimsby"
-      - "veyra-thornwake"
-      - "thorne-brightward"
-    location_zone: "azure-pavilion/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch19-an-olive-branch-moment-08"
-    scene_id: "scn-19-04"
-    title: "Sea of Silks"
-    narrative_beat: "High angle shot of the Company reflected in the polished marble floor amongst the colorful elite."
-    visual_weight: "medium"
-    characters_present:
-      - "veyra-thornwake"
-    location_zone: "azure-pavilion/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch19-an-olive-branch-moment-09"
-    scene_id: "scn-19-05"
-    title: "The Fragile Hope"
-    narrative_beat: "Veyra looking out at the city lights at the evening's end, a rare smile appearing."
-    visual_weight: "high"
-    characters_present:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-    location_zone: "azure-pavilion/overview"
-    transformation_state: "after"
+    location_zone: "azure-pavilion/entrance"
+    transformation_state: "during"
     recommended_images: 1
 
 images:
-  - custom_id: "ch19-an-olive-branch-img-19-01-01"
-    source_moment: "ch19-an-olive-branch-moment-01"
-    scene_id: "scn-19-01"
-    image_type: "detail"
+  - custom_id: "ch19-an-olive-branch-img-19-05-01"
+    source_moment: "ch19-an-olive-branch-moment-05"
+    scene_id: "scn-19-03"
+    image_type: "anchor"
     category:
-      - "emotion"
+      - "moment"
       - "character"
-    scene_mood: "intimate"
-    mood_rationale: "Private moment of vulnerability. Veyra alone with her fear. Single warm light source."
-    aspect_ratio: "3:4"
-    orientation: "portrait"
-    size: "1024x1536"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: |
+      Dignity in the face of rudeness—the weight of Veyra's response transforms an
+      uncomfortable social moment into quiet revelation. Her scars become teaching,
+      not shame.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
     visual_description: |
-      Veyra Thornwake stands in the dusty amber light of the warehouse, her hand pressed against her collar—fingers tracing the boundary where burn scars disappear beneath fabric. Her dark eyes are unfocused. Her jaw is tight. She wears a dark formal gown.
+      Veyra stands tall in her dark formal gown at the Azure Pavilion, burn scars visible
+      at her neck and on her hands. A mortified young noble is mid-retreat, turning away
+      in embarrassment. Several older nobles in the background nod with newfound respect.
+      Crystal lanterns cast silver-white pools of light across the polished white marble
+      floor. Veyra's expression is calm, dignified—not defensive, but teaching. Her dark
+      mohawk with feathered braids frames the mottled burn scar on her left face, visible
+      but worn with quiet strength.
     composition_notes: |
-      Close framing, shoulders and above. Rule of thirds: face right, hand left. Shallow depth of field.
-    visual_hook: "Her scarred fingers pressed against her collar where the burn marks disappear beneath fabric"
+      Medium shot centered on Veyra, the retreating noble creating diagonal movement away
+      from her. Background nobles positioned as witnesses, their nodding heads reinforcing
+      the moment's impact. Crystal lanterns above create vertical interest. Rule of thirds
+      places Veyra at left intersection, her gaze directed slightly right.
+    visual_hook: "Burn scars visible, calm dignity, mortified noble fleeing, older nobles nodding respect"
     depicts_characters:
       - "veyra-thornwake"
     character_states:
       veyra-thornwake: |
-        Hand pressed to collar. Vulnerable expression. Disheveled hair. Dark gown.
-    location: "warehouse-complex"
+        Dark formal gown with high collar. Burn scars visible at neck edge and hands.
+        Mottled burn scar on left face from jaw to temple. Dark mohawk with feathered
+        braids. Expression calm and dignified—not hiding, not defensive, teaching.
+        Standing tall with quiet strength.
+    location: "azure-pavilion"
+    zone: "main-floor"
     lighting:
-      primary_source: "warehouse lantern"
-      quality: "soft, warm"
-      direction: "side"
-      color_temperature: "warm amber"
-      shadow_depth: "soft"
-      atmospheric: "dust motes"
+      primary_source: "Crystal lanterns suspended above"
+      quality: "soft, silvery, diffused"
+      direction: "from above, creating gentle pools"
+      color_temperature: "silver-white with warm amber accents"
+      shadow_depth: "soft gradients"
+      atmospheric: "harbor shimmer through open-air structure"
     palette:
       dominant:
-        - "amber"
-        - "dusty brown"
-        - "shadow"
+        - "polished white marble"
+        - "deep navy formal gown"
+        - "silver lantern light"
       accent:
-        - "reddish-brown scar"
+        - "amber crystal glow"
+        - "burn scar texture"
+        - "azure tile glimpses"
       avoid:
+        - "harsh lighting"
         - "bright colors"
+        - "dramatic shadows"
     prompt_used: |
-      Close portrait of scarred woman in dark gown touching her neck scars,
-      unconscious self-protective gesture,
-      dusty warehouse background with amber light,
-      atmosphere of private vulnerability,
-      classical oil painting, Vermeer lighting,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Vermeer dignity and interior light.
+      Open-air civic pavilion of polished white marble with azure-tiled roofs, crystal
+      lanterns suspended above casting silver-white pools of light.
+      Half-elf woman in her forties in dark formal gown with high collar standing tall,
+      burn scars visible at neck and hands, mottled burn scar on left side of face from
+      jaw to temple, dark mohawk with shaved sides and feathered braids, expression calm
+      and dignified, teaching through presence not words.
+      A mortified young noble retreating in embarrassment, older nobles in background
+      nodding with newfound respect.
+      Medium shot, subject at left third, soft silver lighting from crystal lanterns above,
+      warm amber accents, harbor shimmer visible through open structure.
+      Quiet dignity, scars as strength not shame, fantasy formal gathering.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, armor
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      hiding scars, shame expression, bright lighting, busy background, action pose
     tags:
-      - "detail"
-      - "vulnerability"
       - "veyra"
-      - "intimate"
+      - "dignity"
+      - "scars"
+      - "azure-pavilion"
+      - "somber"
+      - "character-moment"
     generated_at: null
     file_name: null
     file_path: null
@@ -267,66 +346,184 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch19-an-olive-branch-img-19-01-02"
-    source_moment: "ch19-an-olive-branch-moment-02"
-    scene_id: "scn-19-01"
-    image_type: "beat"
+  - custom_id: "ch19-an-olive-branch-img-19-05-02"
+    source_moment: "ch19-an-olive-branch-moment-05"
+    scene_id: "scn-19-03"
+    image_type: "detail"
     category:
+      - "moment"
       - "character"
-      - "location"
-    scene_mood: "pastoral"
-    mood_rationale: "The bustle of the market. Discovery and color. The 'foreign language' of high society clothes."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Close focus on the scars themselves—not as wounds but as testament. The detail
+      shot captures what the young noble saw and what Veyra reframed through her words.
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
     visual_description: |
-      Fayne, Aldwin, and Marcus in a vibrant silk merchant's stall. Fayne is holding up a bolt of forest-green velvet with an expression of intense confusion. Marcus is gesturing with a silk-draped hand, explaining subtext. Aldwin is looking at a plum tunic with quiet approval. The market is full of people and vibrant colors.
+      Close-up of Veyra's hand resting at her side, the burn scars across her fingers
+      and the back of her hand clearly visible in the soft lantern light. The edge of
+      her dark formal gown's sleeve frames the shot. The scars are mottled, healed but
+      permanent—not fresh wounds but marks of survival. In the soft focus background,
+      the polished marble floor reflects crystal lantern light.
     composition_notes: |
-      Medium shot. Figures center. Stalls framing. Focus on the contrast between the gnome's confusion and the dandy's ease.
-    visual_hook: "The small gnome holding a heavy bolt of velvet like it's a dangerous trap, while Marcus handles silk with practiced elegance."
+      Tight portrait framing on scarred hand. Shallow depth of field keeps focus on the
+      texture of the scars. Gown sleeve creates dark frame at top. Lantern-lit marble
+      reflection provides luminous base. Vertical format emphasizes the vulnerability
+      and strength in this single detail.
+    visual_hook: "Scarred hand in lantern light, healed but permanent marks, dark gown sleeve framing"
     depicts_characters:
-      - "quartermaster-fayne"
-      - "aldwin-gentleheart"
-      - "marcus-heartbridge"
+      - "veyra-thornwake"
     character_states:
-      quartermaster-fayne: |
-        Holding velvet. Confused expression. Notebook nearby.
-      aldwin-gentleheart: |
-        Approving expression. Dapper appearance starting.
-      marcus-heartbridge: |
-        Gesturing. Smooth smirk. Hand on silk.
-    location: "dock-ward"
-    zone: "market"
+      veyra-thornwake: |
+        Only hand visible—scarred from burns, fingers slightly curled in relaxed
+        position. Dark formal gown sleeve at wrist. The scars are old, healed,
+        textured—testament to survival, not fresh trauma.
+    location: "azure-pavilion"
+    zone: "main-floor"
     lighting:
-      primary_source: "Daylight"
-      quality: "Bright, vibrant"
-      direction: "Overhead"
-      color_temperature: "Natural"
-      shadow_depth: "Soft"
-      atmospheric: "Market bustle"
+      primary_source: "Crystal lantern light reflected from marble"
+      quality: "soft, warm, intimate"
+      direction: "ambient from below and side"
+      color_temperature: "warm amber-silver blend"
+      shadow_depth: "soft, minimal"
+      atmospheric: "still, contemplative"
     palette:
       dominant:
-        - "silk colors (crimson, blue, purple)"
-        - "velvet green"
-        - "tan stone"
+        - "skin tone with scar texture"
+        - "dark navy gown fabric"
+        - "marble reflection white"
       accent:
-        - "gold thread"
+        - "warm lantern amber"
+        - "scar pink-white"
       avoid:
-        - "darkness"
+        - "bright colors"
+        - "harsh shadows"
+        - "clinical lighting"
     prompt_used: |
-      Gnome, halfling, and human man in a medieval fabric market,
-      vibrant bolts of silk and velvet,
-      expressions of confusion and teaching,
-      busy colorful square,
-      classical oil painting, genre scene,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Vermeer intimate detail.
+      Extreme close-up of a woman's hand resting at her side, burn scars clearly
+      visible across fingers and back of hand, healed but permanent mottled texture,
+      dark formal gown sleeve framing at wrist, polished white marble floor reflecting
+      soft silver-amber lantern light in soft-focus background.
+      Tight portrait framing, shallow depth of field, warm intimate lighting,
+      scars as testament not trauma, quiet dignity in detail.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      fresh wounds, blood, clinical setting, wide shot, full figure, busy background
     tags:
-      - "beat"
-      - "market"
-      - "clothes"
-      - "pastoral"
+      - "veyra"
+      - "scars"
+      - "detail"
+      - "intimate"
+      - "symbol"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch19-an-olive-branch-img-19-07-01"
+    source_moment: "ch19-an-olive-branch-moment-07"
+    scene_id: "scn-19-04"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "action"
+      - "symbol"
+    scene_mood: "celebratory"
+    mood_rationale: |
+      The chapter's climactic public endorsement—Grimsby on the platform, glass raised,
+      the crowd echoing "To order!" This is the olive branch made formal, the truce
+      given public weight.
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Captain Grimsby stands on the raised platform at the Azure Pavilion, his
+      immaculate Watch Captain's uniform catching the crystal lantern light. His glass
+      is raised high, the crowd before him echoing his toast with their own raised
+      glasses. The Last Light Company is visible in the audience—Veyra in her dark gown,
+      Thorne stiff in his dress uniform, others scattered among the Waterdeep elite.
+      Azure-tiled roofs frame the scene above, the harbor shimmer visible beyond the
+      open-air structure. Crystal lanterns create halos of silver-white light throughout.
+    composition_notes: |
+      Ultra-wide cinematic framing. Grimsby centered on platform, elevated above the
+      crowd. Raised glasses create rhythmic vertical accents across the lower third.
+      Azure roof tiles visible at top edge. Company members identifiable in mid-ground.
+      Harbor twilight visible through gaps in structure. The toast moment frozen at
+      its apex.
+    visual_hook: "Grimsby on platform, glass raised, crowd echoing 'To order!', Company receiving public acknowledgment"
+    depicts_characters:
+      - "captain-grimsby"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    character_states:
+      captain-grimsby: |
+        On raised platform. Immaculate Watch Captain's uniform. Gruff, mustachioed
+        veteran. Glass raised high. Expression stern but offering genuine acknowledgment.
+        The host delivering his carefully calculated public endorsement.
+      veyra-thornwake: |
+        In audience, visible in dark formal gown. Receiving public acknowledgment
+        with calm, unreadable expression. Understanding the message behind the toast.
+      thorne-brightward: |
+        In audience near Veyra. Dress uniform, slightly snug. Steel-gray hair.
+        Stiff but present, witnessing the truce being formalized.
+    location: "azure-pavilion"
+    zone: "platform"
+    lighting:
+      primary_source: "Crystal lanterns throughout pavilion"
+      quality: "bright, festive, silver-white"
+      direction: "from above and throughout"
+      color_temperature: "silver-white with evening warmth"
+      shadow_depth: "soft, celebratory"
+      atmospheric: "evening harbor glow, crystal shimmer"
+    palette:
+      dominant:
+        - "azure tile blue"
+        - "polished white marble"
+        - "crystal lantern silver"
+      accent:
+        - "Watch uniform brass"
+        - "wine glass crystal"
+        - "harbor twilight"
+      avoid:
+        - "dark shadows"
+        - "somber tones"
+        - "muted colors"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, classical civic ceremony composition.
+      Open-air pavilion of polished white marble with azure-tiled roofs, crystal lanterns
+      casting silver-white halos throughout, harbor twilight visible beyond.
+      Military officer in immaculate Watch Captain's uniform on raised platform, glass
+      raised high in toast, gruff mustachioed veteran expression offering formal acknowledgment.
+      Crowd before him raising their own glasses, echoing the toast. Among them, a half-elf
+      woman in dark formal gown with burn scars visible, a man in slightly snug military
+      dress uniform with steel-gray hair, receiving public recognition.
+      Ultra-wide cinematic framing, platform centered, raised glasses creating rhythm,
+      celebratory lighting, evening harbor glow, public endorsement moment.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      dark shadows, somber lighting, empty crowd, static poses
+    tags:
+      - "grimsby"
+      - "toast"
+      - "hero-image"
+      - "celebratory"
+      - "endorsement"
+      - "azure-pavilion"
     generated_at: null
     file_name: null
     file_path: null
@@ -335,270 +532,86 @@ images:
     provider_metadata: {}
 
   - custom_id: "ch19-an-olive-branch-img-19-02-01"
-    source_moment: "ch19-an-olive-branch-moment-03"
-    scene_id: "scn-19-02"
-    image_type: "hero"
+    source_moment: "ch19-an-olive-branch-moment-02"
+    scene_id: "scn-19-01"
+    image_type: "detail"
     category:
       - "moment"
-      - "location"
-      - "character"
-    scene_mood: "celebratory"
-    mood_rationale: "Full visual spectacle of arrival. Crystal lanterns, white marble. The Company stepping into a bright world."
-    aspect_ratio: "21:9"
-    orientation: "landscape"
-    size: "1792x768"
-    visual_description: |
-      The Last Light Company arrives at the Azure Pavilion in loose formation. Earth-toned formal wear against white marble and azure tiles. Crystal lanterns string overhead. Dark harbor behind. Veyra leads in a dark gown. Thorne in dress uniform. Grimjaw in too-small coat.
-    composition_notes: |
-      Wide cinematic frame. Low angle looking up. Colonnade frames composition. Receding lanterns. Harbor darkness between columns.
-    visual_hook: "The motley mix of earth-toned formal wear against the white marble and azure tiles"
-    depicts_characters:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "grimjaw-ironbeard"
-      - "aldwin-gentleheart"
-      - "quartermaster-fayne"
-      - "vera-moonwhisper"
-    character_states:
-      veyra-thornwake: |
-        Leading. Dark gown. Dignified. Watchful.
-      thorne-brightward: |
-        Stiff in uniform. Snug fit. Determined.
-      grimjaw-ironbeard: |
-        Uncomfortable coat. Magnificent beard.
-      aldwin-gentleheart: |
-        Dapper plum tunic. Warm expression.
-      quartermaster-fayne: |
-        Scholarly look. Spectacles.
-      vera-moonwhisper: |
-        Muted green cloak. Separate. Thinner.
-    location: "azure-pavilion"
-    lighting:
-      primary_source: "crystal lanterns"
-      quality: "warm, overlapping"
-      direction: "overhead"
-      color_temperature: "warm gold"
-      shadow_depth: "warm, soft"
-      atmospheric: "sea air"
-    palette:
-      dominant:
-        - "white marble"
-        - "azure tile"
-        - "gold light"
-      accent:
-        - "harbor black"
-      avoid:
-        - "harsh shadows"
-    prompt_used: |
-      Group of adventurers in varied formal wear entering an elegant white marble pavilion with blue roof tiles,
-      crystal lanterns casting warm light,
-      harbor at night in background,
-      contrast between rugged people and elegant setting,
-      wide cinematic composition,
-      classical oil painting, Dutch Golden Age warmth,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, armor
-    tags:
-      - "hero"
-      - "arrival"
-      - "pavilion"
-      - "celebratory"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch19-an-olive-branch-img-19-02-02"
-    source_moment: "ch19-an-olive-branch-moment-04"
-    scene_id: "scn-19-02"
-    image_type: "beat"
-    category:
-      - "character"
-      - "moment"
-    scene_mood: "somber"
-    mood_rationale: "The formal barrier. Grimsby as gatekeeper. Recognition mixed with obstruction."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Captain Grimsby standing at the pavilion entrance, perfectly turned out in his Watch uniform. He is offering a curt nod to Veyra and Thorne as they arrive. The lighting is slightly cooler at the threshold. Behind Grimsby, the warmth of the party is visible.
-    composition_notes: |
-      Medium shot. Grimsby foreground. Veyra and Thorne mid-ground. Architecture framing the interaction.
-    visual_hook: "The rigid perfection of the Watch commander against the 'borrowed' dignity of the Company."
-    depicts_characters:
-      - "captain-grimsby"
-      - "veyra-thornwake"
-      - "thorne-brightward"
-    character_states:
-      captain-grimsby: |
-        Immaculate. Rigid. Correct. Curt nod.
-      veyra-thornwake: |
-        Standing tall. Dark gown.
-      thorne-brightward: |
-        Formal salute or nod. Stiff uniform.
-    location: "azure-pavilion"
-    lighting:
-      primary_source: "Pavilion lanterns"
-      quality: "Formal, clear"
-      direction: "Side"
-      color_temperature: "Neutral/Gold"
-      shadow_depth: "Moderate"
-      atmospheric: "Evening mist"
-    palette:
-      dominant:
-        - "slate blue"
-        - "marble white"
-        - "dark gown"
-      accent:
-        - "gold crest"
-      avoid:
-        - "chaos"
-    prompt_used: |
-      Watch commander in immaculate uniform greeting two adventurers in formal clothes at an entrance,
-      white marble columns,
-      atmosphere of formal tension and respect,
-      classical oil painting, realism,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "beat"
-      - "meeting"
-      - "grimsby"
-      - "somber"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch19-an-olive-branch-img-19-03-01"
-    source_moment: "ch19-an-olive-branch-moment-05"
-    scene_id: "scn-19-03"
-    image_type: "character"
-    category:
       - "character"
       - "emotion"
     scene_mood: "intimate"
-    mood_rationale: "Crack in Marcus's mask. Private exposure witnessed by few. Focus on the frozen smile."
+    mood_rationale: |
+      The commander's private vulnerability—her hand unconsciously touching her neck
+      where scars hide, making a quiet request that reveals the weight she carries
+      beneath her command persona.
     aspect_ratio: "3:4"
     orientation: "portrait"
-    size: "1024x1536"
+    size: "1024x1365"
     visual_description: |
-      Marcus Heartbridge's practiced smile frozen.caught between confidence and embarrassment. Crystal lantern light catches his face. Wine glass slightly lowered. Matriarch Stoneheart in background regards him with evaluation. Veyra visible at edge of frame.
+      Veyra's scarred hand at her collar, fingers touching the edge of her neck where
+      burn scars disappear beneath weatherworn leather. The gesture is unconscious,
+      protective. Morning light through clerestory windows catches dust motes in the
+      warehouse air. The collar edge shows texture of practical leather reinforced with
+      old armor plates. In soft focus beyond, the Briefing Circle with its round map table.
     composition_notes: |
-      Medium close-up. Rule of thirds: Marcus left vertical. Shallow depth. Eyeline between Marcus and Matriarch.
-    visual_hook: "The frozen smile—not quite a wince, not quite recovered—that moment between polished confidence and genuine embarrassment."
-    depicts_characters:
-      - "marcus-heartbridge"
-      - "veyra-thornwake"
-    character_states:
-      marcus-heartbridge: |
-        Smile frozen. Mask cracked. Embarrassed eyes. High-collared doublet.
-      veyra-thornwake: |
-        Observant. Shadow watching light fail.
-    location: "azure-pavilion"
-    lighting:
-      primary_source: "crystal lantern"
-      quality: "soft, warm, revealing"
-      direction: "side"
-      color_temperature: "warm gold"
-      shadow_depth: "soft"
-      atmospheric: "party noise bokeh"
-    palette:
-      dominant:
-        - "warm amber"
-        - "soft rose"
-        - "charcoal"
-      accent:
-        - "black silk"
-        - "wine red"
-      avoid:
-        - "harsh contrast"
-    prompt_used: |
-      Close portrait of a man with neat goatee whose practiced smile is frozen in embarrassment,
-      holding a wine glass,
-      shadowed tavern setting with soft warm light,
-      elderly dwarf woman watching in background,
-      atmosphere of private humiliation,
-      classical oil painting, Vermeer interior lighting,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, confident smile
-    tags:
-      - "character"
-      - "mask-cracking"
-      - "intimate"
-      - "marcus"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch19-an-olive-branch-img-19-03-02"
-    source_moment: "ch19-an-olive-branch-moment-06"
-    scene_id: "scn-19-03"
-    image_type: "anchor"
-    category:
-      - "moment"
-      - "character"
-      - "emotion"
-    scene_mood: "celebratory"
-    mood_rationale: "Triumphant transformation. Veyra claiming the light. Scars illuminated as she chooses visibility."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Veyra stands in crystal lantern light, her raised hand stopping Thorne. Scars fully illuminated, mottled reddish-brown. Expression quietly certain. Mortified noble retreats. Older nobles watching with respect. White marble columns.
-    composition_notes: |
-      Medium-wide. Veyra center-left. Thorne frozen behind right. Semicircle of attention. Low angle.
-    visual_hook: "Her raised hand stopping Thorne—a small gesture of command that speaks louder than words"
+      Tight portrait framing on hand and collar area. Shallow depth of field. Clerestory
+      light creates diagonal beam catching dust. The gesture is the focal point—fingers
+      at collar edge, scars on hand visible. Vertical format emphasizes vulnerability
+      within the commander's armor.
+    visual_hook: "Scarred hand at collar edge, unconscious protective gesture, dust motes in morning light"
     depicts_characters:
       - "veyra-thornwake"
-      - "thorne-brightward"
     character_states:
       veyra-thornwake: |
-        Standing straight. Dark gown. Raised hand. Scars fully lit. Quiet dominance.
-      thorne-brightward: |
-        Frozen mid-step. Recognizing her strength. Blue uniform.
-    location: "azure-pavilion"
+        Only hand and collar visible. Scarred fingers touching neck at collar edge.
+        Weatherworn leather coat with mismatched armor plates. Burn scars on hand.
+        The gesture unconscious, protective—vulnerability beneath command.
+    location: "warehouse-complex"
+    zone: "briefing-circle"
     lighting:
-      primary_source: "overhead crystal lanterns"
-      quality: "warm, clear, revealing"
-      direction: "above"
-      color_temperature: "warm gold"
-      shadow_depth: "moderate"
-      atmospheric: "party warmth"
+      primary_source: "Clerestory windows, morning light"
+      quality: "natural, dusty, intimate"
+      direction: "diagonal from high windows"
+      color_temperature: "warm morning amber"
+      shadow_depth: "moderate, natural"
+      atmospheric: "dust motes visible in light shafts"
     palette:
       dominant:
-        - "crystal gold"
-        - "marble white"
-        - "warm amber"
+        - "weathered leather brown"
+        - "skin tone"
+        - "morning light amber"
       accent:
-        - "reddish-brown scars"
-        - "dark gown"
+        - "scar texture pink-white"
+        - "armor plate grey"
+        - "dust mote gold"
       avoid:
-        - "harsh shadows"
+        - "bright colors"
+        - "formal setting"
+        - "harsh lighting"
     prompt_used: |
-      Scarred woman in dark gown holding up a hand to stop a soldier,
-      burn scars fully visible in bright crystal light,
-      atmosphere of quiet dignity and authority,
-      white marble columns and party crowd,
-      classical oil painting, Dutch Golden Age warmth,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Rembrandt intimate lighting.
+      Extreme close-up of a woman's scarred hand at her collar, fingers unconsciously
+      touching the edge of her neck where burn scars disappear beneath weatherworn
+      leather coat reinforced with old armor plates. The gesture protective, vulnerable.
+      Diagonal morning light through high windows catching dust motes in warehouse air,
+      soft-focus briefing room with round map table beyond.
+      Tight portrait framing, shallow depth of field, warm morning amber light,
+      vulnerability beneath command, the weight of scars.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, scars hidden
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, full figure, formal attire, busy background, action pose
     tags:
-      - "anchor"
-      - "transformation"
+      - "veyra"
+      - "vulnerability"
       - "scars"
-      - "celebratory"
+      - "detail"
+      - "intimate"
+      - "warehouse"
     generated_at: null
     file_name: null
     file_path: null
@@ -607,67 +620,96 @@ images:
     provider_metadata: {}
 
   - custom_id: "ch19-an-olive-branch-img-19-04-01"
-    source_moment: "ch19-an-olive-branch-moment-07"
-    scene_id: "scn-19-04"
-    image_type: "anchor"
+    source_moment: "ch19-an-olive-branch-moment-04"
+    scene_id: "scn-19-03"
+    image_type: "beat"
     category:
       - "moment"
       - "character"
-      - "symbol"
-    scene_mood: "celebratory"
-    mood_rationale: "Ceremonial climax. Grimsby delivering endorsement with thorns. Raised glass, crowd responding. Public recognition."
+      - "emotion"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The charmer meets his match—Marcus's perfect smile freezing for a heartbeat
+      as the Matriarch dismisses him with generational memory. Diamond-sharp rejection
+      revealing limits even the smoothest talker cannot overcome.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Captain Grimsby on raised platform, crystal lanterns behind. Glass raised in toast. Immaculate dark blue uniform, red collar, gold epaulets. Stern face partly shadowed. Crowd has raised glasses. Company in foreground—Veyra and Thorne watching.
+      Marcus Heartbridge mid-bow, his perfect smile frozen for a heartbeat, a crack
+      in his usual smooth confidence. Matriarch Stoneheart sits in severe black silk,
+      not even looking up from her wine glass, her grey eyes diamond-sharp in dismissal.
+      Crystal lanterns cast silver light across the pavilion floor. Veyra observes
+      from nearby, filing the moment away. The contrast between Marcus's polished
+      facade and the Matriarch's unmoved rejection creates the visual tension.
     composition_notes: |
-      Wide frame. Grimsby elevated right of center. Bright backdrop against harbor darkness. Crowd rhythm. Low angle on Grimsby.
-    visual_hook: "The raised glass catching crystal light while his stern face remains in partial shadow"
+      Medium shot with Marcus at left third, Matriarch seated at right. His bow creates
+      diagonal line, her seated stillness creates horizontal anchor. Veyra visible in
+      middle ground as observer. Crystal lantern pools on marble floor. The frozen
+      moment of rejection captured.
+    visual_hook: "Marcus's frozen smile, Matriarch's diamond-sharp dismissal, generational memory refusing charm"
     depicts_characters:
-      - "captain-grimsby"
+      - "marcus-heartbridge"
+      - "matriarch-stoneheart"
       - "veyra-thornwake"
-      - "thorne-brightward"
     character_states:
-      captain-grimsby: |
-        Raised glass. Toasting. Immaculate uniform. Stern but softening.
+      marcus-heartbridge: |
+        Mid-bow, impeccably dressed in well-tailored doublet. Perfect smile frozen
+        for just a heartbeat—a crack in the smooth facade. Genuine embarrassment
+        beginning to register, quickly to be masked. Average height, poised posture
+        disrupted by the unexpected rejection.
+      matriarch-stoneheart: |
+        Seated, not looking up from her wine. Elderly dwarven woman in severe black
+        silk. Grey eyes sharp as cut diamonds when they do meet his. Unmoved,
+        uncharmed, unimpressed. Generational memory of Heartbridge methods.
       veyra-thornwake: |
-        Watching. Dark gown. Receiving challenge.
-      thorne-brightward: |
-        Thoughtful expression.
+        In background, observing. Dark formal gown. Expression watchful, filing
+        the moment away. Learning something new about Marcus.
     location: "azure-pavilion"
+    zone: "main-floor"
     lighting:
-      primary_source: "lanterns behind Grimsby"
-      quality: "warm, ceremonial"
-      direction: "behind/above"
-      color_temperature: "warm gold"
-      shadow_depth: "moderate"
-      atmospheric: "harbor darkness"
+      primary_source: "Crystal lanterns"
+      quality: "sharp, revealing"
+      direction: "from above"
+      color_temperature: "silver-white, cool"
+      shadow_depth: "sharp, unflattering for Marcus"
+      atmospheric: "formal, scrutinizing"
     palette:
       dominant:
-        - "gold light"
-        - "slate-blue"
-        - "marble white"
+        - "severe black silk"
+        - "polished marble white"
+        - "crystal silver"
       accent:
-        - "burgundy sash"
+        - "wine glass red"
+        - "doublet rich fabric"
+        - "diamond-sharp grey eyes"
       avoid:
-        - "flat lighting"
+        - "warm tones"
+        - "soft lighting"
+        - "flattering shadows"
     prompt_used: |
-      Military officer on raised platform giving a toast,
-      immaculate blue and red uniform,
-      raised glass catching light,
-      crowd with raised glasses in background,
-      elegant marble pavilion with crystal lanterns,
-      atmosphere of ceremonial weight and public truce,
-      classical oil painting, Dutch Golden Age celebratory scene,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, sharp social observation.
+      Open-air pavilion of polished white marble, crystal lanterns casting silver light.
+      Well-dressed human man mid-bow, smooth confident bearing with perfect smile frozen
+      for a heartbeat, a crack in his polished facade, genuine embarrassment registering.
+      Elderly dwarven woman in severe black silk seated, not looking up from her wine
+      glass, grey eyes diamond-sharp, unmoved and uncharmed, refusing to play his game.
+      Half-elf woman in dark formal gown visible in background, observing the rejection.
+      Medium shot, rejection moment captured, cool silver lighting, sharp social tension.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smiling warmly
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      warm lighting, flattering pose, successful charm, friendly expression
     tags:
-      - "anchor"
-      - "ceremony"
-      - "grimsby"
-      - "celebratory"
+      - "marcus"
+      - "matriarch-stoneheart"
+      - "rejection"
+      - "ominous"
+      - "social-limits"
     generated_at: null
     file_name: null
     file_path: null
@@ -676,60 +718,80 @@ images:
     provider_metadata: {}
 
   - custom_id: "ch19-an-olive-branch-img-19-04-02"
-    source_moment: "ch19-an-olive-branch-moment-08"
-    scene_id: "scn-19-04"
-    image_type: "beat"
+    source_moment: "ch19-an-olive-branch-moment-04"
+    scene_id: "scn-19-03"
+    image_type: "detail"
     category:
       - "moment"
-      - "location"
-      - "composition"
-    scene_mood: "somber"
-    mood_rationale: "Company as an island in an alien sea. Reflection on the floor creates a second world. Outsider status highlighted by beauty."
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      The aftermath—Marcus recovering with a graceful bow, the genuine embarrassment
+      now quickly masked. The mask going back on, but the viewer saw behind it.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Last Light Company in formation on low marble dais from high angle. Polished floor acts as dark mirror, reflecting the 'Sea of Silks' (vibrant colorful noble gowns). Company in muted earth-tones appears as dark island. Crystal light points on floor. Black harbor beyond.
+      Marcus withdrawing with a graceful bow, his composure returning but the viewer
+      catching the lingering trace of genuine embarrassment in his eyes. He takes a
+      longer-than-necessary drink from his wine glass. Crystal lantern light catches
+      the polished fabric of his doublet. The smooth recovery, but the crack was real.
     composition_notes: |
-      High-angle looking down. Floor reflective quality key. Company dark geometric shape. Diagonal lines of colonnade. Contrast solid vs fluid.
-    visual_hook: "The Company appearing as a dark island of warriors reflected in a literal sea of vibrant, colorful noble silks"
+      Medium close shot on Marcus in recovery. Wine glass raised, taking a longer drink.
+      Eyes showing the trace of genuine feeling behind the mask. Lantern light creating
+      pools on marble floor. The graceful retreat after unexpected defeat.
+    visual_hook: "Marcus's graceful recovery, wine glass raised, genuine embarrassment lingering in eyes"
     depicts_characters:
-      - "veyra-thornwake"
+      - "marcus-heartbridge"
     character_states:
-      veyra-thornwake: |
-        Front of island. Spine straight. Professional neutrality.
+      marcus-heartbridge: |
+        Withdrawing gracefully, composure returning. Wine glass raised for a longer-
+        than-necessary drink. Well-tailored doublet, polished boots. The smooth
+        recovery, but eyes still showing a trace of genuine embarrassment. The mask
+        going back on after a rare genuine moment.
     location: "azure-pavilion"
+    zone: "main-floor"
     lighting:
-      primary_source: "crystal lanterns"
-      quality: "formal, silvery"
-      direction: "top-down"
-      color_temperature: "silver-white vs amber"
-      shadow_depth: "sharp, short"
-      atmospheric: "ceremonial weight"
+      primary_source: "Crystal lanterns"
+      quality: "soft, forgiving"
+      direction: "ambient"
+      color_temperature: "warm amber silver blend"
+      shadow_depth: "soft"
+      atmospheric: "evening gathering atmosphere"
     palette:
       dominant:
-        - "white marble"
-        - "Company charcoal"
-        - "rainbow noble silks (reflected)"
+        - "rich doublet fabric"
+        - "wine glass crystal"
+        - "marble floor"
       accent:
-        - "harbor black"
+        - "wine red"
+        - "lantern amber"
+        - "eye color"
       avoid:
-        - "heroic poses"
+        - "harsh lighting"
+        - "dramatic shadows"
     prompt_used: |
-      High angle shot of a group of rugged travelers in formal clothes on a polished marble floor,
-      floor reflecting a crowd of brightly colored noble silks,
-      warriors form a dark island in the sea of colors,
-      crystal lanterns overhead,
-      harbor at night beyond,
-      classical oil painting, high angle reflection, chiaroscuro,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, psychological portrait.
+      Well-dressed human man in well-tailored doublet withdrawing gracefully, wine glass
+      raised for a longer drink, composure returning after an unexpected rejection.
+      Eyes still showing a trace of genuine embarrassment behind the smooth facade,
+      the mask going back on but the viewer saw behind it.
+      Medium close shot, soft ambient lantern light, polished marble pavilion setting,
+      the graceful recovery after rare defeat.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      triumphant expression, confident pose, wide shot
     tags:
-      - "beat"
-      - "reflection"
-      - "contrast"
-      - "somber"
+      - "marcus"
+      - "recovery"
+      - "intimate"
+      - "character-depth"
     generated_at: null
     file_name: null
     file_path: null
@@ -737,64 +799,204 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch19-an-olive-branch-img-19-05-01"
-    source_moment: "ch19-an-olive-branch-moment-09"
-    scene_id: "scn-19-05"
-    image_type: "symbol"
+  - custom_id: "ch19-an-olive-branch-img-19-01-01"
+    source_moment: "ch19-an-olive-branch-moment-01"
+    scene_id: "scn-19-01"
+    image_type: "beat"
     category:
-      - "symbol"
-      - "emotion"
+      - "moment"
       - "character"
-    scene_mood: "pastoral"
-    mood_rationale: "Possibility rather than resolution. Open atmosphere, breathing room. Waterdeep stretched before her. Fragile hope."
+      - "action"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Social education in progress—Marcus teaching Fayne the invisible language of
+      cloth while Aldwin observes with quiet amusement. Comedy of culture clash,
+      the logical mind confronting illogical social rules.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Veyra stands at the pavilion edge, looking at Waterdeep night. City lights reflect on harbor. Faint smile. Scars catch city glow and harbor silver. Thorne beside her, relaxed. Party in soft focus behind.
+      Marcus holds a length of deep forest-green velvet against the light, gesturing
+      at passing nobles to demonstrate the social semiotics of fabric. Fayne scribbles
+      furiously in their notebook, their expression shifting between frustration and
+      determination to understand this illogical system. Aldwin observes with quiet
+      amusement, surprisingly dapper. Market stalls display silks in vibrant hues
+      around them. Daylight fills the scene with color and movement.
     composition_notes: |
-      Three-quarter view from behind. Veyra left third. Harbor middle. City cityscape. wide but close for smile.
-    visual_hook: "The faint smile—almost invisible—on her usually grave face, scars and city lights in the same frame."
+      Medium wide shot with Marcus at center holding fabric, Fayne at left with notebook,
+      Aldwin at right observing. Market stalls create colorful backdrop. Passing nobles
+      in middle ground demonstrate what Marcus is explaining. The unlikely teaching
+      trio framed by the bustle of commerce.
+    visual_hook: "Marcus holding velvet to light, Fayne scribbling furiously, Aldwin's quiet amusement"
+    depicts_characters:
+      - "marcus-heartbridge"
+      - "quartermaster-fayne"
+      - "aldwin-gentleheart"
+    character_states:
+      marcus-heartbridge: |
+        Teaching mode—holding forest-green velvet to the light, gesturing at passing
+        nobles, smooth confidence and knowing glint in eye. Well-tailored doublet,
+        polished boots. Enjoying the role of social educator.
+      quartermaster-fayne: |
+        Notebook out, scribbling furiously. Rock gnome, 3'4", wiry. Auburn short hair,
+        hazel eyes behind custom spectacles with swing-arm lenses. Expression shifting
+        between frustration and determination. Previous calculations abandoned for
+        notes on "social semiotics of fabric."
+      aldwin-gentleheart: |
+        Observing with quiet amusement. Halfling, compact sturdy build. Curly brown
+        hair with silver at temples. Kind hazel eyes twinkling. Surprisingly dapper
+        in deep forest-green outfit. Hidden talent for fashion diplomacy revealed.
+    location: "warehouse-complex"
+    zone: "market"
+    lighting:
+      primary_source: "Market daylight"
+      quality: "bright, natural, colorful"
+      direction: "overhead and ambient"
+      color_temperature: "warm natural daylight"
+      shadow_depth: "soft, market bustle"
+      atmospheric: "busy, commercial, alive"
+    palette:
+      dominant:
+        - "forest-green velvet"
+        - "market stall colors"
+        - "daylight warmth"
+      accent:
+        - "silk vibrants"
+        - "notebook paper"
+        - "doublet rich fabric"
+      avoid:
+        - "dark shadows"
+        - "somber tones"
+        - "muted colors"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, lively market scene.
+      Bustling fabric market with stalls displaying silks in vibrant hues. Well-dressed
+      human man in tailored doublet holding deep forest-green velvet against the light,
+      gesturing at passing nobles, teaching social semiotics of cloth with smooth confidence.
+      Rock gnome with auburn hair and spectacles scribbling furiously in notebook,
+      expression mixing frustration and determination. Halfling with curly hair and
+      kind eyes observing with quiet amusement, surprisingly dapper in green outfit.
+      Medium wide shot, unlikely teaching trio, bright market daylight, colorful commerce,
+      education in disguise.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      dark lighting, somber mood, empty market, static poses
+    tags:
+      - "marcus"
+      - "fayne"
+      - "aldwin"
+      - "market"
+      - "education"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch19-an-olive-branch-img-19-03-01"
+    source_moment: "ch19-an-olive-branch-moment-03"
+    scene_id: "scn-19-02"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "location"
+      - "emotion"
+    scene_mood: "celebratory"
+    mood_rationale: |
+      The grand entrance—fish out of water. Warriors in formal clothes entering
+      beneath crystal lanterns, careful steps on polished stone, wonder mixed with
+      discomfort. The setting visual for the chapter's social arena.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The Last Light Company entering the Azure Pavilion at evening. Polished white
+      marble and azure-tiled roofs frame the scene. Crystal lanterns suspended on
+      strung lines cast silver-white halos. Veyra leads in her dark formal gown,
+      Thorne stiff in his dress uniform beside her. Grimjaw's broad shoulders strain
+      his borrowed coat. The Company moves with the careful steps of people afraid
+      they might slip—warriors navigating elegance. The harbor shimmers beyond the
+      open-air structure, evening light painting everything in twilight blues.
+    composition_notes: |
+      Wide establishing shot with the Company entering from left third. Azure-tiled
+      roof visible at top, creating the signature color. Crystal lanterns create
+      vertical rhythm. Polished marble floor extends toward harbor view. The Company
+      grouped but slightly awkward, contrasting with the elegant setting. Fish out
+      of water made visual.
+    visual_hook: "Company in formal clothes, careful steps, crystal lanterns above, azure roofs, harbor shimmer"
     depicts_characters:
       - "veyra-thornwake"
       - "thorne-brightward"
+      - "grimjaw-ironbeard"
     character_states:
       veyra-thornwake: |
-        Looking at city. Dark gown. rare faint smile. Scars catching mixed light.
+        Leading the entrance. Dark formal gown with high collar. Burn scars visible
+        at neck and hands. Dark mohawk with feathered braids. Calm expression despite
+        unfamiliar setting. Moving with quiet grace that belies discomfort.
       thorne-brightward: |
-        Posture relaxed. Companionable.
+        Beside Veyra. Old dress uniform, slightly snug. Steel-gray short military hair.
+        Stiff posture, eyes sweeping the crowd, assessing. Disciplined even in
+        uncomfortable formal shoes.
+      grimjaw-ironbeard: |
+        Broad dwarf shoulders straining borrowed coat seams. Iron-gray braided beard.
+        Careful steps on polished stone. Eyes already scanning structural integrity
+        of the pavilion rather than the social dynamics.
     location: "azure-pavilion"
+    zone: "entrance"
     lighting:
-      primary_source: "City lights + harbor silver"
-      quality: "soft, diffused"
-      direction: "right + behind"
-      color_temperature: "warm city vs cool harbor"
-      shadow_depth: "gentle"
-      atmospheric: "sea air"
+      primary_source: "Crystal lanterns suspended above"
+      quality: "silver-white, inviting"
+      direction: "from above throughout"
+      color_temperature: "silver-white with evening twilight"
+      shadow_depth: "soft, celebratory"
+      atmospheric: "sea salt, expensive perfume, evening harbor"
     palette:
       dominant:
-        - "gold city lights"
-        - "harbor silver"
-        - "night sky blue"
+        - "polished white marble"
+        - "azure tile blue"
+        - "crystal lantern silver"
       accent:
-        - "pavilion warmth"
+        - "dark formal gown"
+        - "dress uniform blue"
+        - "harbor twilight"
       avoid:
-        - "harsh contrast"
+        - "harsh shadows"
+        - "muted colors"
+        - "dark mood"
     prompt_used: |
-      Woman looking out at a city at night from an elegant balcony,
-      city lights reflecting on water,
-      rare faint smile on her scarred face,
-      companion standing beside her,
-      atmosphere of fragile hope and future,
-      classical oil painting, plein air naturalism, soft diffused twilight,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, grand entrance composition.
+      Open-air pavilion of polished white marble with azure-tiled roofs at evening,
+      crystal lanterns suspended on strung lines casting silver-white halos, harbor
+      twilight shimmering beyond.
+      Group entering—half-elf woman in dark formal gown leading with quiet grace,
+      burn scars visible at neck, dark mohawk with braids; human man in slightly snug
+      dress uniform beside her, steel-gray hair, stiff military posture; stocky dwarf
+      with iron-gray braided beard, broad shoulders straining borrowed coat seams.
+      All moving with careful steps of people afraid they might slip—warriors navigating
+      elegance.
+      Wide establishing shot, crystal lanterns creating vertical rhythm, azure roof at top,
+      harbor view beyond, fish out of water in formal setting.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, facing viewer directly
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      confident striding, comfortable expressions, battle gear, dark mood
     tags:
-      - "symbol"
-      - "hope"
-      - "cityscape"
-      - "pastoral"
+      - "entrance"
+      - "azure-pavilion"
+      - "company"
+      - "celebratory"
+      - "fish-out-of-water"
     generated_at: null
     file_name: null
     file_path: null

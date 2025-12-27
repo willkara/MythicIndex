@@ -39,7 +39,7 @@
   - *Dynamics*: Professional kinship due to shared focus on structural understanding and safety
   - *Professional Opinion of*: Respects his traditional engineering knowledge and practical mining experience
 
-- **Rylan Stormcaller**:
+- **Rylan Ashvale**:
   - *Nature of Relationship*: Intellectual sparring partner; The Storm to his Architect.
   - *Hierarchy*: Peers and masters of opposing, yet complementary, domains.
   - *Dynamics*: Korrath is deeply fascinated and professionally unsettled by Rylan. He commands the very forces of chaos—wind, water, pressure—that Korrath spends his life designing structures to withstand. Korrath is driven to understand the principles of Rylan's magic so he can better account for such unpredictable variables in his own work. Rylan's constant refrain that the elements will eventually win is a philosophical challenge Korrath takes very seriously.

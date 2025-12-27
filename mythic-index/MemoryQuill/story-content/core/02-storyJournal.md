@@ -140,7 +140,7 @@
 
 - The Company returns to the Westwall Watchpost.
 - The Watchpost is described as a transformed, active community hub.
-- Introduction of minor supporting characters: Finn, Mistress Elba, and Lieutenant Tomaq (called "Sarge").
+- Introduction of minor supporting characters: Finn, Mistress Elba, and Lieutenant Tomaq (called "Tomaq").
 - Grimjaw is integrated into the group through small acts of welcome and respect.
 - Grimjaw accepts his new, temporary home.
   **Characters Present**: Veyra Thornwake, Thorne Brightward, Aldwin Gentleheart, Halden, Venn, Darric, Fayne, Grimjaw Ironbeard, Finn, Mistress Elba, Lieutenant Tomaq.

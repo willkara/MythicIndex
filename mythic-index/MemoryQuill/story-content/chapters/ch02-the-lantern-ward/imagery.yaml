@@ -1,162 +1,137 @@
-# ============================================================================
-# CHAPTER IMAGERY SPECIFICATION
-# Chapter: The Lantern Ward
-# Generated: 2025-12-21
-# ============================================================================
-
 metadata:
   entity_type: "chapter-imagery"
   slug: "ch02-the-lantern-ward"
   chapter_number: 2
   chapter_title: "The Lantern Ward"
-  visual_thesis: "From the fractured glass of nightmare through the defiant claim of scars, to the warmth of community and the first light of purpose reborn"
+  visual_thesis: "Healing as transformation rather than restoration—the body remembers everything, and scars become maps of survival, not marks of failure."
   color_palette:
     primary:
-      - "#8B4513"
-      - "#CD853F"
-      - "#2F4F4F"
-      - "#B8860B"
+      - "#F0F8FF" # Healing gauze white
+      - "#98FB98" # Medicinal herb green
+      - "#FFBF00" # Amber twilight/lantern gold
     accent:
-      - "#008080"
-      - "#DC143C"
+      - "#B0C4DE" # Blue-and-silver pennon
+      - "#708090" # River-stone gray
+      - "#FF4500" # White-fire/molten orange (nightmare only)
   generation_defaults:
     provider: "openai"
     model: "dall-e-3"
     quality: "hd"
   mood_distribution:
-    somber: 2
-    pastoral: 2
-    celebratory: 1
-    aquatic: 0
-    ethereal: 1
-    intimate: 3
-    kinetic: 0
-    ominous: 2
+    ethereal: 2
+    intimate: 2
+    somber: 1
+    pastoral: 1
 
 characters:
   - ref: "veyra-thornwake"
     name: "Veyra Thornwake"
     scene_variations: |
-      CHAPTER 2 VARIATIONS (HOSPITAL RECOVERY):
-      - No armor: Wears simple hospital linen shift/gown, bandages wrapped around ribs and torso
-      - Burn scars are FRESH/FORMING: Raw, reddish, still healing—not yet the mottled brown of healed tissue
-      - Additional bandages on face covering portions of burns
-      - Lantern is on nightstand beside bed, not on her belt
-      - Hair still in mohawk style but may be disheveled from bedrest
-      - Visible exhaustion, dark circles under eyes
-      - Movement constrained by healing injuries
+      CHAPTER 2 VARIATIONS (RECOVERY ARC):
+      - SCENE 01 (Nightmare): Silhouette against molten light, phantom-like, trapped behind glass.
+      - SCENE 01-02 (Waking/Treatment): Heavily bandaged ribs and head. Left face showing fresh, raw burn "starburst". Hands bandaged. Hospital gown.
+      - SCENE 03 (Vigil): Sitting up in bed, bandages reduced but visible. Scar on cheek treated with silver-flecked poultice.
+      - SCENE 04 (Night): Alone, weary, illuminated by lantern light. Unarmored, vulnerable.
+      - SCENE 05 (Dawn): Sitting straighter, "mantle of purpose". Scars accepted as part of her.
+      - Throughout: The burn scar on the left side of her face is FRESH and RAW, not yet the silvered scar of later chapters.
     reference_images:
-      - "veyra-thornwake-official-portrait-01"
+      - "veyra-thornwake-portrait"
 
   - ref: "dokra-ironvein"
     name: "Dokra Ironvein"
     scene_variations: |
       CHAPTER 2:
-      - Wearing healer's leather apron over sturdy clothes
-      - Iron-gray braids severe and practical
-      - Carrying tray of implements or cup of tea
+      - Throughout: Wearing medical apron over sturdy tunic. Sleeves rolled up revealing muscular forearms. Iron-gray hair in severe braids.
     reference_images:
-      - "dokra-ironvein-portrait-full"
+      - "dokra-ironvein-portrait"
 
   - ref: "thorne-brightward"
-    name: "Captain Thorne Brightward"
+    name: "Thorne Brightward"
     scene_variations: |
-      CHAPTER 2 VARIATIONS (HOSPITAL VISIT):
-      - May appear without full armor when visiting hospital
-      - Iron helm tucked under arm or set beside lantern
-      - Holds wrapped documents (transfer orders) in final scene
-      - Expression shows protective warmth rather than battlefield vigilance
+      CHAPTER 2:
+      - SCENE 03: Helm tucked under arm, respectful posture. Blue wool cloak with sunburst. Chainmail glinting in twilight.
+      - SCENE 05: Casual morning visit (for a soldier), bringing food.
     reference_images:
-      - "thorne-brightward-portrait-01"
+      - "thorne-brightward-portrait"
 
   - ref: "sergeant-kelen"
     name: "Sergeant Kelen"
-    scene_variations: "CHAPTER 2: Bears a flask of lamp oil as gift offering"
-    reference_images: []
+    scene_variations: |
+      CHAPTER 2:
+      - SCENE 03: Full patrol gear but helmets off/held. Holding flask of lamp oil.
+    reference_images:
+      - "sergeant-kelen-portrait-01"
 
   - ref: "corporal-darric"
     name: "Corporal Darric"
-    scene_variations: "CHAPTER 2: Carries a small folded pennon—blue and silver with embroidered lantern"
+    scene_variations: |
+      CHAPTER 2:
+      - SCENE 03: Holding blue and silver pennon.
     reference_images:
-      - "corporal-darric-portrait-01"
+      - "corporal-darric-portrait"
 
   - ref: "archer-venn"
     name: "Archer Venn"
-    scene_variations: "CHAPTER 2: Carries a slim ashwood case containing arrows fletched with cerulean storm-petrel feathers"
+    scene_variations: |
+      CHAPTER 2:
+      - SCENE 03: Holding ashwood case of arrows. Smirk softened by occasion.
     reference_images:
-      - "archer-venn-portrait-01"
+      - "archer-venn-portrait"
 
   - ref: "medic-halden"
     name: "Medic Halden"
-    scene_variations: "CHAPTER 2: Carries a bucket of spelled ice stones (burn treatment)"
+    scene_variations: |
+      CHAPTER 2:
+      - SCENE 03: Holding bucket of river stones. Red cross satchel visible.
     reference_images:
-      - "medic-halden-standing-portrait-01"
+      - "medic-halden-portrait"
 
   - ref: "quartermaster-fayne"
     name: "Quartermaster Fayne"
-    scene_variations: "CHAPTER 2: Carries four smooth river pebbles with copper-etched letters: L, E, B, I"
+    scene_variations: |
+      CHAPTER 2:
+      - SCENE 03: Placing river pebbles on bed. Multi-lensed spectacles reflecting lamplight.
     reference_images:
-      - "quartermaster-fayne-standard-portrait-01"
-
-  - ref: "journey-healer-loran"
-    name: "Journey-Healer Loran"
-    scene_variations: "Young, lanky, spotless white robes, eager but confused expression"
-    reference_images: []
+      - "quartermaster-fayne-portrait"
 
 locations:
   - ref: "brightstone-healers-hall"
     zones:
-      - id: "overview"
+      - id: "recovery-ward"
         chapter_context: |
-          A healing institution built of pale ashlar stone—blocks fitted with dwarven precision. Tall mullioned windows diffuse soft light through gauze privacy screens. Dwarven rune-lamps mounted in brass brackets cast steady, shadowless illumination throughout the ward—a warm amber glow that doesn't flicker like torchlight. The air carries notes of thyme, dried lavender, and antiseptic compounds. The atmosphere is clinical but not cold—pragmatic healing rather than spiritual comfort. Veyra's private room features a sturdy wooden bed with clean linen, a bedside table bearing her battered lantern (still glowing), and a mullioned window that faces east toward the harbor.
-
-  - ref: "nightmare-canyon"
-    zones:
-      - id: "overview"
-        chapter_context: |
-          A surreal, distorted version of the canyon where Veyra's comrades died. In the nightmare, the walls have become vertical sheets of glass—transparent but impenetrable. The sky above is molten, folding over itself like a blacksmith working steel—amber and orange and black. Scale is wrong—vast and oppressive simultaneously. Ghostly figures walk through the glass as if through water. The atmosphere is suffocating, dreamlike, wrong. Color palette: sepia, molten amber, ash-gray, obsidian black.
+          A sanctuary of pale smooth stone and oak. High mullioned windows letting in distinct times of day (molten nightmare light -> morning -> amber twilight -> deep night -> golden dawn).
+          Atmosphere is sterile but warm, smelling of thyme and ozone.
+          Key props: Bed with white linens, nightstand with Veyra's battered lantern, rune-lamps on walls.
 
 moments:
   - id: "ch02-the-lantern-ward-moment-01"
     scene_id: "scn-02-01"
-    title: "The Nightmare"
-    narrative_beat: "Veyra trapped behind glass walls in a nightmare canyon, unable to reach her dying friends."
-    visual_weight: "high"
-    characters_present:
-      - "veyra-thornwake"
-    location_zone: "nightmare-canyon/overview"
-    transformation_state: "n/a"
-    recommended_images: 3
-
-  - id: "ch02-the-lantern-ward-moment-02"
-    scene_id: "scn-02-02"
-    title: "The Refusal"
-    narrative_beat: "Veyra physically stops the healer from erasing her scars, choosing to keep them as memory."
+    title: "Glass Walls and Shadow Watchers"
+    narrative_beat: "Veyra trapped in nightmare, walls of glass solid only for her, friends walking through like water while a shadow watcher speaks of weight and choice."
     visual_weight: "critical"
     characters_present:
       - "veyra-thornwake"
-      - "journey-healer-loran"
-      - "dokra-ironvein"
-    location_zone: "brightstone-healers-hall/overview"
-    transformation_state: "after"
-    recommended_images: 1
+    location_zone: "brightstone-healers-hall/recovery-ward"
+    transformation_state: "before"
+    recommended_images: 2
 
   - id: "ch02-the-lantern-ward-moment-03"
     scene_id: "scn-02-02"
-    title: "The Self-Claiming"
-    narrative_beat: "Veyra touches her own forming scars with tenderness, claiming them as truth."
-    visual_weight: "high"
+    title: "The Refused Cure"
+    narrative_beat: "Veyra's hand shoots out to clamp the apprentice's wrist, refusing the restoration essence that would erase her scars—choosing memory over beauty."
+    visual_weight: "critical"
     characters_present:
       - "veyra-thornwake"
-    location_zone: "brightstone-healers-hall/overview"
-    transformation_state: "after"
-    recommended_images: 1
+      - "dokra-ironvein"
+    location_zone: "brightstone-healers-hall/recovery-ward"
+    transformation_state: "during"
+    recommended_images: 2
 
-  - id: "ch02-the-lantern-ward-moment-04"
+  - id: "ch02-the-lantern-ward-moment-06"
     scene_id: "scn-02-03"
-    title: "The Patrol's Gifts"
-    narrative_beat: "The patrol visits with practical gifts, showing solidarity and care."
-    visual_weight: "high"
+    title: "The Patrol's Offerings"
+    narrative_beat: "The patrol files in bearing tokens—lamp oil, pennon, arrows, river stones, ice water—each gift a promise of continued care."
+    visual_weight: "critical"
     characters_present:
       - "veyra-thornwake"
       - "thorne-brightward"
@@ -165,65 +140,43 @@ moments:
       - "archer-venn"
       - "medic-halden"
       - "quartermaster-fayne"
-    location_zone: "brightstone-healers-hall/overview"
-    transformation_state: "after"
-    recommended_images: 1
-
-  - id: "ch02-the-lantern-ward-moment-05"
-    scene_id: "scn-02-03"
-    title: "The Touch of Stone"
-    narrative_beat: "Veyra touches the memorial pebble with the copper 'L', grief made tactile."
-    visual_weight: "medium"
-    characters_present:
-      - "veyra-thornwake"
-    location_zone: "brightstone-healers-hall/overview"
-    transformation_state: "after"
-    recommended_images: 1
-
-  - id: "ch02-the-lantern-ward-moment-06"
-    scene_id: "scn-02-04"
-    title: "Flame Communion"
-    narrative_beat: "Veyra whispering to her ghosts through the lantern flame in the night."
-    visual_weight: "high"
-    characters_present:
-      - "veyra-thornwake"
-    location_zone: "brightstone-healers-hall/overview"
-    transformation_state: "after"
-    recommended_images: 1
-
-  - id: "ch02-the-lantern-ward-moment-07"
-    scene_id: "scn-02-04"
-    title: "Dokra's Counsel"
-    narrative_beat: "Dokra sits with Veyra in the night, offering wisdom and tea. 'We share the load.'"
-    visual_weight: "medium"
-    characters_present:
-      - "veyra-thornwake"
-      - "dokra-ironvein"
-    location_zone: "brightstone-healers-hall/overview"
-    transformation_state: "after"
-    recommended_images: 1
+    location_zone: "brightstone-healers-hall/recovery-ward"
+    transformation_state: "during"
+    recommended_images: 2
 
   - id: "ch02-the-lantern-ward-moment-08"
+    scene_id: "scn-02-04"
+    title: "Counsel with the Flame"
+    narrative_beat: "Deep night—Veyra alone with her lantern, watching shadows on the ceiling, conversing with ghosts who speak through the flame's flicker."
+    visual_weight: "critical"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "brightstone-healers-hall/recovery-ward"
+    transformation_state: "during"
+    recommended_images: 2
+
+  - id: "ch02-the-lantern-ward-moment-07"
+    scene_id: "scn-02-03"
+    title: "Four Letters in Stone"
+    narrative_beat: "Veyra holds the 'L' stone—one of four river pebbles etched with LEBI—thumb tracing the letter while acknowledging Lysander was 'never wrong.'"
+    visual_weight: "critical"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "brightstone-healers-hall/recovery-ward"
+    transformation_state: "during"
+    recommended_images: 2
+
+  - id: "ch02-the-lantern-ward-moment-09"
     scene_id: "scn-02-05"
-    title: "The Dawn Decision"
-    narrative_beat: "Morning light brings the decision to form the Last Light Company."
+    title: "The Last Light Company"
+    narrative_beat: "Morning light, Thorne and Veyra in partnership, the naming of the Company—carrying light through darkness as mission rather than miracle."
     visual_weight: "critical"
     characters_present:
       - "veyra-thornwake"
       - "thorne-brightward"
-    location_zone: "brightstone-healers-hall/overview"
+    location_zone: "brightstone-healers-hall/recovery-ward"
     transformation_state: "after"
-    recommended_images: 1
-
-  - id: "ch02-the-lantern-ward-moment-09"
-    scene_id: "scn-02-05"
-    title: "Brightstone Dawn"
-    narrative_beat: "Exterior establishing shot of the Healers' Hall at dawn, symbolizing a new beginning."
-    visual_weight: "medium"
-    characters_present: []
-    location_zone: "brightstone-healers-hall/exterior"
-    transformation_state: "n/a"
-    recommended_images: 1
+    recommended_images: 2
 
 images:
   - custom_id: "ch02-the-lantern-ward-img-02-01-01"
@@ -234,186 +187,53 @@ images:
       - "moment"
       - "emotion"
       - "symbol"
-    scene_mood: "ominous"
-    mood_rationale: "Nightmare sequence depicting survivor's guilt. The surreal imagery demands the unsettling quality of Ominous mood."
-    aspect_ratio: "16:9"
+    scene_mood: "ethereal"
+    mood_rationale: |
+      Captures the surreal terror of the nightmare. The impossible physics of the glass walls and the molten sky visualize the trauma Veyra is processing.
+    aspect_ratio: "21:9"
     orientation: "landscape"
-    size: "1792x1024"
+    size: "1792x768"
     visual_description: |
-      Veyra stands trapped behind a wall of vertical glass in a nightmare version of Undershade Canyon. Her palms press against the transparent barrier as ghostly figures of her fallen comrades walk through the glass ahead of her. Her mouth is open in a scream, but the words emerging have become ash—gray particles crumbling and falling from her lips. Above, the sky folds over itself in impossible geometries.
+      A surreal dreamscape. Veyra stands with her back to the viewer, hands pressed against a towering vertical wall of rippling glass. Through the glass, distorted figures of her friends walk away as if through water. The sky above is a folding, molten sheet of orange and ash-gray. A shadowy watcher stands at the far edge of the frame, arms folded. Veyra's silhouette is sharp, desperate, while the world beyond the glass is fluid and unreachable.
     composition_notes: |
-      Wide establishing shot. Veyra positioned left-of-center, pressed against glass. Dutch tilt to emphasize disorientation. Rule of thirds: Veyra left, ghosts center.
-    visual_hook: "Words crumbling to ash as they leave Veyra's lips—the visible failure of communication with the dead"
+      Ultra-wide shot. Veyra's small, dark figure in the center-left foreground against the massive scale of the glass wall. The molten sky dominates the upper third. The shadow watcher is a subtle detail in the periphery.
+    visual_hook: "Veyra pressing against a river of glass, molten sky folding overhead"
     depicts_characters:
       - "veyra-thornwake"
     character_states:
       veyra-thornwake: |
-        Nightmare version: wearing standard leather gear. Face shows raw anguish. Ash-gray particles stream from her open mouth.
-    location: "nightmare-canyon"
-    lighting:
-      primary_source: "Molten churning sky"
-      quality: "unsettling, flat"
-      direction: "ambient"
-      color_temperature: "sickly amber"
-      shadow_depth: "deep but directionless"
-      atmospheric: "oppressively still"
-    palette:
-      dominant:
-        - "sepia brown"
-        - "molten amber"
-        - "ash gray"
-      accent:
-        - "obsidian black"
-        - "cold teal through glass"
-      avoid:
-        - "bright colors"
-        - "natural greens"
-    prompt_used: |
-      A half-elf woman with deep earth-brown skin and a jet black mohawk pressing her palms desperately against an invisible vertical glass wall,
-      mouth open in a silent scream with ash-gray particles crumbling from her lips,
-      wearing worn brown leather armor,
-      in a nightmare canyon with walls of vertical glass,
-      a molten amber-and-black sky folding over itself impossibly above,
-      ghostly translucent figures walking through the glass away from her,
-      wide cinematic composition with dutch tilt, surreal nightmare atmosphere,
-      classical oil painting, Symbolist unease, unnatural lighting,
-      cold sickly palette, bruise purple shadows, oppressive stillness,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
-      video game screenshot, neon colors, airbrushed, smooth skin,
-      bright happy colors, natural daylight, peaceful atmosphere
-    tags:
-      - "nightmare"
-      - "survivor-guilt"
-      - "surreal"
-      - "hero-image"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch02-the-lantern-ward-img-02-01-02"
-    source_moment: "ch02-the-lantern-ward-moment-01"
-    scene_id: "scn-02-01"
-    image_type: "detail"
-    category:
-      - "symbol"
-      - "emotion"
-      - "location"
-    scene_mood: "intimate"
-    mood_rationale: "The 'Character's Sanctuary.' Capturing the first physical evidence of order returning after the canyon's chaos."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
-    visual_description: |
-      An extreme close-up of the polished oak nightstand in Veyra's room at Brightstone. Her battered, rusty metal lantern sits in the center, its glass recently 'trimmed and polished,' casting a steady, pale gold halo across the wood. Beside it, a simple ceramic bowl of clear, cooling broth and a neatly folded stack of white gauze bandages. A small drop of amber oil has spilled onto the wood.
-    composition_notes: |
-      Tight square framing on the nightstand surface. The lantern is the central focal point. Shallow depth of field.
-    visual_hook: "The battered, rusty lantern—symbol of trauma—now polished and glowing steadily beside the simple, clean implements of medical care."
-    depicts_characters: []
-    character_states: {}
+        Dream-self: wearing her canyon scout gear but it's turning to ash at the edges. Desperate posture, hands splayed on the invisible barrier.
     location: "brightstone-healers-hall"
+    zone: "recovery-ward"
     lighting:
-      primary_source: "Veyra's battered lantern (warm gold)"
-      quality: "soft, warm, intimate"
-      direction: "center-outward"
-      color_temperature: "warm amber-gold"
-      shadow_depth: "soft, gentle shadows"
-      atmospheric: "still, clean antiseptic air"
+      primary_source: "Molten sky"
+      quality: "surreal, glowing, hellish"
+      direction: "from above"
+      color_temperature: "magma orange and ash grey"
+      shadow_depth: "deep, unnatural"
+      atmospheric: "heat distortion, dream haze"
     palette:
       dominant:
-        - "warm amber"
-        - "honey wood-tone"
-        - "clean white"
+        - "molten orange"
+        - "ash grey"
+        - "obsidian black"
       accent:
-        - "rusty metal gray"
-        - "clear broth silver"
-      avoid:
-        - "harsh clinical whites"
-        - "cold blues"
+        - "glassy teal (the barrier)"
     prompt_used: |
-      A macro fantasy detail shot of a polished oak nightstand in a silent hospital room,
-      a battered rusted metal lantern with an immaculate glass chimney is the central light source casting a warm steady golden glow,
-      beside the lantern is a simple white ceramic bowl of clear broth and a small neat stack of white gauze,
-      a single drop of amber oil on the wood reflects the flame,
-      hushed antiseptic atmosphere,
-      Classical oil painting, Vermeer interior lighting, single warm light source,
-      high texture realism, visible brushwork, matte finish
+      Oil painting, surrealist style, Dali-esque dreamscape.
+      A female figure silhouetted against a massive vertical wall of rippling liquid glass, hands pressed desperately against the surface.
+      Beyond the glass, blurred figures walk away into mist.
+      The sky overhead is a folding sheet of molten orange fire and ash.
+      A shadowy, indistinct figure watches from the far edge.
+      High contrast, nightmare atmosphere, vibrant magma colors against deep shadows.
+      Ultra-wide cinematic composition.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, harsh lighting, blood, messy
+      text, watermark, signature, UI, photorealistic, modern clothing, clear faces on the blurred figures, cheerful colors, peaceful, mundane hospital room.
     tags:
-      - "detail"
-      - "still-life"
-      - "intimate"
-      - "healing"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch02-the-lantern-ward-img-02-01-03"
-    source_moment: "ch02-the-lantern-ward-moment-01"
-    scene_id: "scn-02-01"
-    image_type: "beat"
-    category:
-      - "moment"
-      - "emotion"
-      - "mystery"
-    scene_mood: "ominous"
-    mood_rationale: "The 'Character's Trauma.' Visualizing the psychological prison of the survivor."
-    aspect_ratio: "9:16"
-    orientation: "portrait"
-    size: "640x1136"
-    visual_description: |
-      A POV shot from Veyra's perspective within the 'nightmare version' of Undershade Canyon. Her 'deep earth-brown' palms are pressed flat against a 'transparent barrier' of vertical glass that fills the frame. Through the 'rippled' and distorted surface of the glass, the blurry, 'ghostly' shapes of her fallen comrades are visible. The air is thick with falling 'gray ash particles.'
-    composition_notes: |
-      Extreme close-up perspective. The palms of the hands and the glass barrier occupy the immediate foreground. High contrast between the 'molten amber' reflections and the 'cold gray' of the ash.
-    visual_hook: "Dark, tattooed palms pressed against a rippled glass wall, through which the ghosts of the dead walk like memories through water."
-    depicts_characters:
-      - "veyra-thornwake"
-      - "fallen-comrades"
-    character_states:
-      veyra-thornwake: |
-        POV perspective. Only her hands are visible, fingers 'splayed' and 'desperate.'
-    location: "nightmare-canyon"
-    lighting:
-      primary_source: "molten churning sky"
-      quality: "unsettling, distorted"
-      direction: "from everywhere beyond the glass"
-      color_temperature: "sickly amber and ash-gray"
-      shadow_depth: "deep"
-      atmospheric: "thick with falling ash"
-    palette:
-      dominant:
-        - "ash gray"
-        - "molten amber"
-        - "deep shadow black"
-      accent:
-        - "teal tattoo pigment"
-      avoid:
-        - "warm inviting light"
-        - "clear sky"
-    prompt_used: |
-      A first-person fantasy nightmare shot,
-      two dark-skinned hands are pressed hard against a thick rippled glass wall,
-      through the glass blurry ghost-like figures walk away,
-      air filled with falling gray ash,
-      sky is molten dark orange,
-      suffocating silent atmosphere,
-      Classical oil painting, Symbolist unease, Böcklin dread, chiaroscuro,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, clear view, happy people
-    tags:
-      - "beat"
-      - "trauma"
       - "nightmare"
-      - "glass"
+      - "trauma"
+      - "glass-wall"
+      - "surreal"
     generated_at: null
     file_name: null
     file_path: null
@@ -422,137 +242,63 @@ images:
     provider_metadata: {}
 
   - custom_id: "ch02-the-lantern-ward-img-02-02-01"
-    source_moment: "ch02-the-lantern-ward-moment-02"
+    source_moment: "ch02-the-lantern-ward-moment-03"
     scene_id: "scn-02-02"
-    image_type: "pivot"
+    image_type: "anchor"
     category:
       - "moment"
       - "character"
-      - "action"
-    scene_mood: "somber"
-    mood_rationale: "The defining choice of the chapter—Veyra refusing the healing that would erase her scars."
-    aspect_ratio: "3:4"
-    orientation: "portrait"
-    size: "1024x1536"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      The moment of choice. Intense focus on the physical rejection of the "cure". It grounds the high-concept theme of "scars as memory" in a physical action.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
     visual_description: |
-      An intimate, charged confrontation in a hospital room. Veyra's bandaged hand grips Journey-Healer Loran's wrist with white-knuckle intensity. Between them, a jade-green phial of restoration essence trembles, its shimmer casting a sickly-beautiful glow across their skin. Veyra's expression is fierce, dangerous. Fresh burn tissue is visible on her face beneath loosened bandages.
+      Close-up on Veyra's hand, bandages partially unravelled to reveal red, angry burn scars, gripping the pristine wrist of a young healer. A phial of glowing jade liquid is held in the healer's hand, caught mid-air. In the background, slightly out of focus, Dokra Ironvein watches with a knowing, approving expression. Veyra's face is partially visible, fierce and resolute, the fresh burn on her cheek prominent.
     composition_notes: |
-      Tight portrait framing. The grip on the wrist center-frame. Veyra dominant left. Jade phial catching light. Shallow depth of field.
-    visual_hook: "Veyra's bandaged hand white-knuckle gripping Loran's wrist, the jade phial trembling between them"
+      Tight framing on the hands and the jade phial. The line of the arm leads to Veyra's intense eye contact. Dokra provides a stabilizing vertical element in the background.
+    visual_hook: "Scarred hand gripping pristine wrist, stopping the jade cure"
     depicts_characters:
       - "veyra-thornwake"
-      - "journey-healer-loran"
       - "dokra-ironvein"
     character_states:
       veyra-thornwake: |
-        Expression: Intense, dangerous, defiant. Grip on Loran's wrist is dominant action. Fresh burn tissue visible.
-      journey-healer-loran: |
-        Wrist caught, phial trembling. Face shows confusion and fear.
+        Sitting in hospital bed. Fresh, raw burns on left cheek and hand. Fierce, protective expression.
       dokra-ironvein: |
-        Background presence watching from shadow.
+        Standing behind, arms crossed or holding tray. Stoic, approving.
     location: "brightstone-healers-hall"
+    zone: "recovery-ward"
     lighting:
-      primary_source: "Dwarven rune-lamp from above"
-      quality: "hard, dramatic"
-      direction: "above and slightly front"
-      color_temperature: "neutral clinical white tinted by jade"
-      shadow_depth: "deep, rich"
-      atmospheric: "none"
+      primary_source: "Clinical rune-lamp"
+      quality: "clean, white, revealing"
+      direction: "from side"
+      color_temperature: "neutral white"
+      shadow_depth: "moderate"
+      atmospheric: "clean hospital air"
     palette:
       dominant:
-        - "clinical white"
-        - "shadow gray"
-        - "hospital linen beige"
-      accent:
-        - "jade green (phial)"
-        - "raw red (burn tissue)"
-      avoid:
-        - "warm earth tones"
-        - "cheerful colors"
-    prompt_used: |
-      A close portrait of a dark-skinned half-elf woman with jet black mohawk and fresh red burn tissue gripping a young healer's wrist with intensity,
-      a shimmering jade-green phial trembling between them casting green glow,
-      the healer in spotless white robes looks confused and afraid,
-      dwarven woman watching in background shadow,
-      clinical hospital room, harsh overhead lighting creating Rembrandt shadows,
-      classical oil painting, chiaroscuro, muted clinical palette with jade accent,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
-      video game screenshot, neon colors, airbrushed, smooth skin,
-      warm golden light, peaceful expression, gratitude
-    tags:
-      - "pivot-moment"
-      - "choice"
-      - "scars"
-      - "defiance"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch02-the-lantern-ward-img-02-02-02"
-    source_moment: "ch02-the-lantern-ward-moment-03"
-    scene_id: "scn-02-02"
-    image_type: "character"
-    category:
-      - "character"
-      - "emotion"
-      - "symbol"
-    scene_mood: "intimate"
-    mood_rationale: "Veyra touching her own scars while naming the dead—damaged touching damaged with tenderness."
-    aspect_ratio: "2:3"
-    orientation: "portrait"
-    size: "1024x1536"
-    visual_description: |
-      A medium-close portrait showing Veyra in three-quarter profile, her own scarred hand raised to touch her scarred cheek. Both are damaged, yet the touch is tender. Her expression is fierce certainty. Her dark eyes are steady, looking inward. The composition shows both the intact right side and the damaged left side.
-    composition_notes: |
-      Three-quarter profile. Hand raised to cheek. Rule of thirds: face upper intersection. Shallow depth.
-    visual_hook: "Scarred hand touching scarred face—damaged honoring damaged with tenderness"
-    depicts_characters:
-      - "veyra-thornwake"
-    character_states:
-      veyra-thornwake: |
-        Hand raised to touch raw burn scar. Expression: fierce certainty. Dark eyes reflecting lantern glow.
-    location: "brightstone-healers-hall"
-    lighting:
-      primary_source: "Lantern on nightstand"
-      quality: "soft, warm, intimate"
-      direction: "side"
-      color_temperature: "warm amber-gold"
-      shadow_depth: "soft gradients"
-      atmospheric: "still"
-    palette:
-      dominant:
-        - "warm amber"
-        - "soft rose"
         - "hospital white"
+        - "jade green (phial)"
+        - "raw red (burns)"
       accent:
-        - "teal-blue (tattoos)"
-        - "raw reddish-brown (burns)"
-      avoid:
-        - "harsh clinical white"
-        - "cold tones"
+        - "brass (lantern nearby)"
     prompt_used: |
-      A three-quarter profile portrait of a dark-skinned half-elf woman with jet black mohawk touching her raw burn scar on left cheek with a bandaged hand,
-      gesture of tender claiming,
-      intensely dark eyes looking inward with fierce certainty,
-      soft focus hospital bed background with glowing lantern,
-      soft amber lantern light creating gentle shadows,
-      classical oil painting, Vermeer interior lighting,
-      amber and soft rose tones, Dutch Golden Age intimacy,
-      visible brushwork, matte finish
+      Oil painting, realistic style, Rembrandt lighting.
+      Close up of a scarred, burned hand firmly gripping the wrist of a healer holding a phial of glowing jade liquid.
+      The burned woman has a fierce, resolute expression, fresh scars on her face.
+      An older female dwarf healer watches approvingly from the background.
+      Setting is a clean stone hospital room.
+      Contrast between the raw red burns and the pristine white robes and jade liquid.
+      Intense emotional weight, refusal of erasure.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
-      video game screenshot, neon colors, airbrushed, smooth skin,
-      crying, tears, anguish, self-pity
+      text, watermark, signature, magical sparkles everywhere, anime style, smooth skin on the burned woman, modern hospital equipment, plastic bottles.
     tags:
-      - "character-portrait"
-      - "scars-as-memory"
+      - "scars"
+      - "choice"
+      - "healing"
       - "intimate"
-      - "self-claiming"
     generated_at: null
     file_name: null
     file_path: null
@@ -561,23 +307,24 @@ images:
     provider_metadata: {}
 
   - custom_id: "ch02-the-lantern-ward-img-02-03-01"
-    source_moment: "ch02-the-lantern-ward-moment-04"
+    source_moment: "ch02-the-lantern-ward-moment-06"
     scene_id: "scn-02-03"
-    image_type: "mood"
+    image_type: "hero"
     category:
       - "moment"
       - "character"
-      - "emotion"
-    scene_mood: "celebratory"
-    mood_rationale: "The patrol vigil is an act of solidarity. Despite the hospital setting, this is celebratory: community gathering."
-    aspect_ratio: "16:9"
+      - "group"
+    scene_mood: "somber"
+    mood_rationale: |
+      The formation of the "founding patrol". A visual tableau of solidarity. The twilight setting adds a reverent, quiet tone to the gathering.
+    aspect_ratio: "21:9"
     orientation: "landscape"
-    size: "1792x1024"
+    size: "1792x768"
     visual_description: |
-      A hospital room at twilight, amber light streaming through tall mullioned windows. From Veyra's perspective in bed, we see the founding patrol entering single-file through the doorway, each figure silhouetted against the warm light, each carrying something different. Thorne is already present near the foot of the bed. Veyra's lantern glows on the nightstand.
+      A wide shot of the hospital room at twilight. Veyra sits up in bed, looking small but centered. Around her, the patrol members stand in a loose semicircle, each holding their offering. Thorne with his helm, Kelen with oil, Darric with the pennon, Venn with arrows, Halden with the bucket, Fayne with stones. The room is painted in amber sunset light coming through the window, mixing with the warm glow of Veyra's lantern on the bedside table.
     composition_notes: |
-      Medium-wide shot from Veyra's bedside POV. Diagonal procession. Window backlighting. Lantern foreground.
-    visual_hook: "Single-file procession silhouetted against twilight amber, each figure holding something different"
+      Classic group tableau. Veyra is the focal point, but the eye moves through the circle of faces. The lighting connects them all—a "circle of warmth" against the darkening window.
+    visual_hook: "Patrol gathered around the bed in amber twilight, each bearing a gift"
     depicts_characters:
       - "veyra-thornwake"
       - "thorne-brightward"
@@ -588,58 +335,51 @@ images:
       - "quartermaster-fayne"
     character_states:
       veyra-thornwake: |
-        Implied presence (POV).
+        In bed, bandaged, listening/receiving.
       thorne-brightward: |
-        Standing near foot of bed. Protective warmth.
+        Standing tall, protective.
       sergeant-kelen: |
-        Carrying flask.
+        Holding oil flask, fatherly.
       corporal-darric: |
-        Carrying pennon.
+        Holding pennon, solemn.
       archer-venn: |
-        Carrying arrow case.
+        Holding arrows, slight sad smile.
       medic-halden: |
-        Carrying bucket.
+        Holding bucket, clinical but kind.
       quartermaster-fayne: |
-        Carrying pebbles.
+        Placing stones, precise.
     location: "brightstone-healers-hall"
+    zone: "recovery-ward"
     lighting:
-      primary_source: "Twilight through windows"
-      quality: "warm, diffused"
-      direction: "backlighting"
-      color_temperature: "warm amber-gold"
-      shadow_depth: "moderate, warm"
-      atmospheric: "golden dust motes"
+      primary_source: "Sunset window light"
+      quality: "warm, golden, horizontal"
+      direction: "from window (back/side)"
+      color_temperature: "amber gold"
+      shadow_depth: "long shadows"
+      atmospheric: "dust motes in sunbeams"
     palette:
       dominant:
-        - "amber gold"
-        - "warm shadow brown"
-        - "silhouette black"
+        - "amber twilight"
+        - "stone grey"
+        - "white linens"
       accent:
-        - "steel armor glints"
-        - "lantern gold"
-      avoid:
-        - "cold tones"
-        - "clinical white"
+        - "guard blue (uniforms)"
+        - "lantern yellow"
     prompt_used: |
-      A hospital room at amber twilight viewed from patient bedside,
-      patrol of soldiers entering single-file through doorway carrying gifts,
-      silhouetted against warm golden window light,
-      diverse group including dwarf, elf, human, gnome,
-      captain standing near bed watching warmly,
-      lantern glowing in foreground,
-      warm amber backlighting, ritual quality,
-      classical oil painting, Dutch Golden Age warmth,
-      genre painting storytelling, Jan Steen liveliness,
-      visible brushwork, matte finish
+      Oil painting, classical group portrait, Renaissance style.
+      A hospital room at twilight, bathed in warm amber light.
+      A bandaged woman sits in bed surrounded by a group of six fantasy soldiers (human, dwarf, elf, gnome) standing in a semicircle.
+      Each soldier holds a specific object: a flask, a flag, arrows, a bucket, stones.
+      Atmosphere of solemn solidarity and quiet respect.
+      Detailed faces, worn armor, soft fabric textures.
+      Cinematic wide shot.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
-      video game screenshot, neon colors, airbrushed, smooth skin,
-      clinical cold lighting, harsh shadows, violence
+      text, watermark, signature, modern clothing, bright daylight, harsh fluorescent light, cartoonish proportions, weapons drawn aggressively.
     tags:
-      - "patrol-vigil"
       - "solidarity"
-      - "twilight"
-      - "celebratory"
+      - "patrol"
+      - "vigil"
+      - "group-shot"
     generated_at: null
     file_name: null
     file_path: null
@@ -648,62 +388,59 @@ images:
     provider_metadata: {}
 
   - custom_id: "ch02-the-lantern-ward-img-02-03-02"
-    source_moment: "ch02-the-lantern-ward-moment-05"
+    source_moment: "ch02-the-lantern-ward-moment-07"
     scene_id: "scn-02-03"
     image_type: "detail"
     category:
+      - "moment"
       - "symbol"
-      - "emotion"
     scene_mood: "intimate"
-    mood_rationale: "An extreme close-up of grief made tangible—Veyra's thumb on the copper 'L' for Lysander."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
+    mood_rationale: |
+      Focus on the tactile reality of grief. The stones are physical manifestations of the lost friends.
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
     visual_description: |
-      An extreme close-up focusing entirely on hands and stone. Veyra's thumb—bearing healing burns—presses into the groove of a copper-etched "L" on a smooth river pebble. The copper catches warm lantern light. In soft focus beyond: three more pebbles with letters E, B, I rest on hospital blanket fabric.
+      Macro close-up of Veyra's hand, bandages partially unwrapped to show healing burns, holding a smooth gray river stone. The letter 'L' is etched into the stone and filled with copper wire. The thumb gently traces the curve of the letter. In the soft-focus background, three other stones rest on the white blanket: E, B, I. Warm lamplight glints off the copper inlay.
     composition_notes: |
-      Square format, centered composition. Thumb and "L" stone in sharp focus. Shallow depth.
-    visual_hook: "Thumb pad pressing into copper letter groove—skin finding the name of the dead"
+      Extreme close up. Shallow depth of field. Focus is on the texture of the stone, the copper glint, and the damaged skin of the thumb.
+    visual_hook: "Thumb tracing the copper 'L' on a river stone"
     depicts_characters:
       - "veyra-thornwake"
     character_states:
       veyra-thornwake: |
-        Only hand visible. Thumb presses firmly into the "L".
+        Hand only. Burned/scarred skin visible.
     location: "brightstone-healers-hall"
+    zone: "recovery-ward"
     lighting:
-      primary_source: "Lantern"
-      quality: "soft, warm, intimate"
-      direction: "side light"
+      primary_source: "Bedside lantern"
+      quality: "warm, close, intimate"
+      direction: "from side"
       color_temperature: "warm gold"
-      shadow_depth: "gentle"
-      atmospheric: "still"
+      shadow_depth: "soft"
+      atmospheric: "stillness"
     palette:
       dominant:
-        - "copper amber"
-        - "river stone gray-brown"
-        - "cream blanket"
+        - "stone grey"
+        - "skin tones (scarred)"
+        - "white (bedding)"
       accent:
-        - "deep brown skin"
-        - "healing red of burns"
-      avoid:
-        - "cold tones"
-        - "harsh contrast"
+        - "copper metallic"
     prompt_used: |
-      Extreme close-up of dark brown hand with healing burns pressing thumb into copper-etched letter "L" on a gray river pebble,
-      three other pebbles with letters visible in soft focus on cream wool blanket,
-      warm lantern light from side catching copper,
-      intimacy of grief made tangible,
-      classical oil painting, Vermeer interior lighting,
-      amber and soft rose tones, visible brushwork, matte finish
+      Oil painting, macro detail shot.
+      A scarred, bandaged hand holding a smooth grey river stone.
+      The letter 'L' is etched into the stone and inlaid with copper.
+      A thumb gently traces the letter.
+      In the blurred background, three other stones rest on white linen.
+      Warm, intimate lighting highlighting the skin texture and the metallic copper.
+      Sad, reflective mood.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
-      video game screenshot, neon colors, airbrushed, smooth skin,
-      face visible, wide shot, cold lighting
+      text, watermark, signature, wide shot, faces, bright lights, perfect manicure, pristine skin.
     tags:
-      - "memorial-stones"
       - "grief"
-      - "intimate"
-      - "detail-shot"
+      - "memory"
+      - "detail"
+      - "stones"
     generated_at: null
     file_name: null
     file_path: null
@@ -712,129 +449,59 @@ images:
     provider_metadata: {}
 
   - custom_id: "ch02-the-lantern-ward-img-02-04-01"
-    source_moment: "ch02-the-lantern-ward-moment-06"
+    source_moment: "ch02-the-lantern-ward-moment-08"
     scene_id: "scn-02-04"
-    image_type: "symbol"
+    image_type: "anchor"
     category:
-      - "character"
-      - "symbol"
+      - "moment"
       - "emotion"
+      - "character"
     scene_mood: "ethereal"
-    mood_rationale: "Veyra communing with her ghosts through flame. The spiritual dimension demands Ethereal mood."
-    aspect_ratio: "2:3"
-    orientation: "portrait"
-    size: "1024x1536"
-    visual_description: |
-      Night in the hospital room. All light comes from a single source: the flame of Veyra's battered lantern on the nightstand. Her face is illuminated from below and side, the flame reflected twice in her dark, glistening eyes. Her lips are parted, whispering to ghosts. The atmosphere is both intimate and otherworldly.
-    composition_notes: |
-      Close portrait, low angle. Flame between viewer and subject. Eyes are focal point.
-    visual_hook: "Flame reflected double in her dark, grief-wet eyes—the dead looking back through fire"
-    depicts_characters:
-      - "veyra-thornwake"
-    character_states:
-      veyra-thornwake: |
-        Face lit by flame. Lips moving. Eyes glistening with reflections. Hand tracing patterns on blanket.
-    location: "brightstone-healers-hall"
-    lighting:
-      primary_source: "Single lantern flame"
-      quality: "soft, luminous"
-      direction: "below and side"
-      color_temperature: "warm gold"
-      shadow_depth: "minimal on face, darkness beyond"
-      atmospheric: "dreamy"
-    palette:
-      dominant:
-        - "soft gold"
-        - "luminous amber"
-        - "shadow darkness"
-      accent:
-        - "pale silver of wet eyes"
-      avoid:
-        - "harsh reds"
-        - "clinical tones"
-    prompt_used: |
-      Close portrait from below of dark-skinned half-elf woman with burn scar,
-      face illuminated only by single lantern flame,
-      dark eyes glistening and reflecting flame twice,
-      lips parted whispering to unseen presences,
-      darkness surrounding her,
-      classical oil painting, Pre-Raphaelite luminosity,
-      soft sourceless glow, luminous quality,
-      dreamy atmosphere, romantic realism,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
-      video game screenshot, neon colors, airbrushed, smooth skin,
-      horror lighting, scary, daylight
-    tags:
-      - "flame-communion"
-      - "ghosts"
-      - "ethereal"
-      - "vigil"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch02-the-lantern-ward-img-02-04-02"
-    source_moment: "ch02-the-lantern-ward-moment-07"
-    scene_id: "scn-02-04"
-    image_type: "beat"
-    category:
-      - "character"
-      - "emotion"
-    scene_mood: "intimate"
-    mood_rationale: "Dokra offering wisdom and tea in the quiet of the night. The weight of shared experience and mentorship."
+    mood_rationale: |
+      The quiet communion with the dead/memory. The visual interplay of flame and shadow represents the conversation with ghosts.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Dokra Ironvein sits in a wooden chair beside Veyra's bed, holding a steaming cup of tea in her weathered hands. The lantern light casts deep shadows, emphasizing the lines on Dokra's face—lines of wisdom and old griefs. Veyra is propped up in bed, looking at Dokra with a mix of skepticism and need. The space between them is filled with the quiet understanding of survivors.
+      Veyra lying in bed at night, profile visible, looking at the lantern on her nightstand. The room is dark, but the lantern flame is bright and lively. It casts large, dancing shadows on the stone ceiling above—shadows that vaguely resemble the shapes of her lost friends (a large dwarf, a lithe elf). Veyra's expression is one of quiet conversation, not fear.
     composition_notes: |
-      Two-shot. Dokra in foreground/midground, Veyra slightly further back. Focus on Dokra's hands offering the cup.
-    visual_hook: "Dokra's weathered hands holding the steaming cup—an offering of life and grounding to the survivor."
+      Low angle looking up from bed level, capturing Veyra's profile and the ceiling. The lantern is the light source, blowing out the foreground slightly to cast the dramatic shadows which are the secondary subject.
+    visual_hook: "Lantern flame casting shadows of lost friends on the ceiling"
     depicts_characters:
       - "veyra-thornwake"
-      - "dokra-ironvein"
     character_states:
       veyra-thornwake: |
-        Listening, guarded but receptive.
-      dokra-ironvein: |
-        Sitting solid like a rock. Expression of ancient patience.
+        Lying down, profile. Peaceful, sad, listening.
     location: "brightstone-healers-hall"
+    zone: "recovery-ward"
     lighting:
-      primary_source: "Lantern"
-      quality: "warm, quiet"
-      direction: "side"
-      color_temperature: "amber"
-      shadow_depth: "deep"
-      atmospheric: "steam from tea"
+      primary_source: "Single lantern flame"
+      quality: "flickering, high contrast"
+      direction: "radiating from point"
+      color_temperature: "deep orange fire"
+      shadow_depth: "very deep"
+      atmospheric: "night quiet"
     palette:
       dominant:
-        - "shadow brown"
-        - "warm amber"
-        - "iron gray"
+        - "black shadow"
+        - "flame orange"
+        - "stone grey"
       accent:
-        - "white steam"
-      avoid:
-        - "bright light"
+        - "amber (glass of lantern)"
     prompt_used: |
-      A stout dwarven woman with iron-gray braids sitting in a chair holding a steaming cup of tea,
-      beside a hospital bed where a scarred half-elf woman listens,
-      warm lantern light casting deep shadows,
-      atmosphere of quiet wisdom and mentorship,
-      classical oil painting, Rembrandt lighting,
-      deep browns and ambers,
-      visible brushwork, matte finish
+      Oil painting, chiaroscuro style, Georges de La Tour influence.
+      A woman lying in a hospital bed at night, illuminated solely by a single lantern on the bedside table.
+      She looks at the flame.
+      The flame casts large, dancing shadows on the stone ceiling above.
+      The shadows subtly suggest the shapes of people (a dwarf, an elf).
+      Intimate, spiritual atmosphere. Deep blacks and rich oranges.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright daylight
+      text, watermark, signature, daylight, bright room, scary ghosts, horror style, monsters in shadows.
     tags:
-      - "beat"
-      - "mentorship"
-      - "intimate"
-      - "dokra"
+      - "ghosts"
+      - "memory"
+      - "night"
+      - "lantern"
     generated_at: null
     file_name: null
     file_path: null
@@ -843,127 +510,64 @@ images:
     provider_metadata: {}
 
   - custom_id: "ch02-the-lantern-ward-img-02-05-01"
-    source_moment: "ch02-the-lantern-ward-moment-08"
+    source_moment: "ch02-the-lantern-ward-moment-09"
     scene_id: "scn-02-05"
-    image_type: "anchor"
+    image_type: "hero"
     category:
       - "moment"
       - "character"
-      - "symbol"
+      - "theme"
     scene_mood: "pastoral"
-    mood_rationale: "The chapter closes with dawn. The transition from artificial light to natural light mirrors Veyra's transition."
-    aspect_ratio: "16:9"
+    mood_rationale: |
+      The dawn of the new idea. The shift from night/grief to morning/purpose. Pastoral mood here signifies "fresh hope" and "new beginning".
+    aspect_ratio: "21:9"
     orientation: "landscape"
-    size: "1792x1024"
+    size: "1792x768"
     visual_description: |
-      Morning in the hospital room. Dawn light streams through the mullioned window, gold and gentle. Veyra sits up in bed—straighter than before. Her expression is determined. Thorne stands at bedside holding wrapped documents. The golden sunburst sigil on his cloak catches the dawn light. The lantern light is fading as morning takes over.
+      Wide shot of the hospital room filled with bright, clean morning light streaming through the open mullioned windows. Dust motes dance in the air. Veyra sits on the edge of the bed, feet on the floor, looking at Thorne who stands nearby leaning against the wall with a smile. The lantern sits unlit now, but gleaming in the sun. The mood is crisp, airy, and hopeful. A view of the city roofs is visible through the window.
     composition_notes: |
-      Medium shot, landscape. Veyra left, Thorne right. Window dominates upper right. Lantern fading in lower left.
-    visual_hook: "Morning light catching Veyra's face as she straightens despite pain—cost and commitment visible together"
+      Bright, high-key lighting. Open composition. The window is a major element, symbolizing the future/outside world. Veyra and Thorne share a look of partnership.
+    visual_hook: "Morning light flooding the room, Veyra sitting up, city visible through window"
     depicts_characters:
       - "veyra-thornwake"
       - "thorne-brightward"
     character_states:
       veyra-thornwake: |
-        Sitting up straight. Back straightens despite pain. Expression determined.
+        Sitting up, bandages lighter. Expression of resolve/new purpose.
       thorne-brightward: |
-        Standing. Holding documents. Expression of pride/concern.
+        Relaxed posture, smiling, proud.
     location: "brightstone-healers-hall"
+    zone: "recovery-ward"
     lighting:
-      primary_source: "Dawn sunlight"
-      quality: "soft, golden, diffused"
-      direction: "from right (window)"
-      color_temperature: "warm morning gold"
-      shadow_depth: "gentle"
-      atmospheric: "light morning air"
+      primary_source: "Morning sun"
+      quality: "bright, clear, white-gold"
+      direction: "from window"
+      color_temperature: "morning daylight"
+      shadow_depth: "light, transparent"
+      atmospheric: "fresh morning air"
     palette:
       dominant:
-        - "dawn gold"
-        - "soft blue"
-        - "hospital white"
-      accent:
-        - "golden sunburst sigil"
-      avoid:
-        - "harsh shadows"
-        - "darkness"
-    prompt_used: |
-      Medium shot of hospital room at dawn, golden morning light streaming through mullioned window,
-      scarred half-elf woman sitting up straight in bed with determined expression,
-      armored captain standing beside her holding documents,
-      sunburst sigil on his blue cloak glowing in sun,
-      lantern light fading on nightstand,
-      sense of new beginning,
-      classical oil painting, plein air naturalism, soft diffused daylight,
-      Constable influence, visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, nighttime, darkness
-    tags:
-      - "dawn"
-      - "new-beginning"
-      - "pastoral"
-      - "anchor-image"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch02-the-lantern-ward-img-02-05-02"
-    source_moment: "ch02-the-lantern-ward-moment-09"
-    scene_id: "scn-02-05"
-    image_type: "establishing"
-    category:
-      - "location"
-      - "mood"
-    scene_mood: "pastoral"
-    mood_rationale: "Establishing the setting and the new day. A moment of peace and breathing room after the claustrophobia of the hospital room."
-    aspect_ratio: "21:9"
-    orientation: "landscape"
-    size: "1792x768"
-    visual_description: |
-      Exterior of Brightstone Healers' Hall at dawn. The building is constructed of pale ashlar stone with dwarven architectural precision. Golden morning light washes over the slate roof and the medicinal gardens surrounding it. In the distance, the towers of Waterdeep rise into the morning mist. A few figures in white robes walk the paths. The scene is peaceful, orderly, and hopeful.
-    composition_notes: |
-      Wide establishing shot. The Hall is central but integrated into the landscape. Morning light hitting the eastern facade.
-    visual_hook: "The golden light washing over the pale stone of the Hall, banishing the night's shadows."
-    depicts_characters: []
-    character_states: {}
-    location: "brightstone-healers-hall"
-    lighting:
-      primary_source: "Rising sun"
-      quality: "clear, golden"
-      direction: "low angle east"
-      color_temperature: "morning gold"
-      shadow_depth: "long morning shadows"
-      atmospheric: "morning mist burning off"
-    palette:
-      dominant:
+        - "white light"
         - "pale stone"
-        - "slate blue"
-        - "garden green"
-        - "morning gold"
+        - "sky blue (window)"
       accent:
-        - "white robes"
-      avoid:
-        - "stormy sky"
-        - "night"
+        - "gold (lantern)"
+        - "green (plants/trees outside)"
     prompt_used: |
-      Exterior wide shot of a stone healing hall with slate roof and medicinal gardens at dawn,
-      pale ashlar stone architecture with dwarven influence,
-      golden morning light washing over the building and burning off mist,
-      city towers visible in distant background,
-      peaceful and orderly atmosphere,
-      classical oil painting, Hudson River School landscape,
-      soft morning light, verdant gardens,
-      visible brushwork, matte finish
+      Oil painting, impressionist light, Monet style morning.
+      A bright hospital room flooded with clean morning sunlight through large open windows.
+      A scarred woman sits on the edge of the bed, looking with determination at an armored man standing nearby who is smiling.
+      Dust motes dance in the light.
+      View of city rooftops and blue sky through the window.
+      Atmosphere of hope, renewal, and fresh beginnings.
+      High key lighting, airy and spacious.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, night, storm, ruin
+      text, watermark, signature, dark, gloomy, night, heavy shadows, clutter, depressing colors.
     tags:
-      - "establishing-shot"
-      - "location"
-      - "brightstone"
       - "dawn"
-      - "pastoral"
+      - "hope"
+      - "founding"
+      - "new-beginning"
     generated_at: null
     file_name: null
     file_path: null

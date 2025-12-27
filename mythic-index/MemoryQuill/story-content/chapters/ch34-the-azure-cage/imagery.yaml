@@ -1,317 +1,351 @@
-# ============================================================================
-# CHAPTER IMAGERY SPECIFICATION
-# Chapter: The Azure Cage
-# Generated: 2025-12-21
-# ============================================================================
-
 metadata:
   entity_type: "chapter-imagery"
   slug: "ch34-the-azure-cage"
   chapter_number: 34
   chapter_title: "The Azure Cage"
-  visual_thesis: "From the cold light of preparation through the dazzling facade of beauty concealing horror, to the grim clarity of shared purpose when masks finally fall."
+  visual_thesis: "The gilded stage—the Last Light Company infiltrates a glittering gala to gather intelligence, each member playing their part while enemies test, probe, and prepare their own moves in this deadly dance of espionage."
   color_palette:
     primary:
-      - "#2A3D45"
-      - "#C9A961"
-      - "#1E5B6E"
-      - "#8B4513"
+      - "#1C3A5F"  # Deep azure twilight
+      - "#C9B896"  # Warm lantern gold / champagne
+      - "#2F4F4F"  # Dark slate gray (evening formal wear)
     accent:
-      - "#E8F4F8"
-      - "#4A90D9"
+      - "#87CEEB"  # Crystal lantern glow
+      - "#B87333"  # Copper/brass prosthetic spark
+      - "#8B0000"  # Warning red (danger sensed)
   generation_defaults:
     provider: "openai"
     model: "dall-e-3"
     quality: "hd"
   mood_distribution:
-    somber: 2
-    pastoral: 1
-    celebratory: 0
-    aquatic: 0
+    ominous: 4
+    kinetic: 2
     ethereal: 1
-    intimate: 2
-    kinetic: 1
-    ominous: 3
+    celebratory: 1
 
 characters:
-  - ref: "veyra-thornwake"
-    name: "Veyra Thornwake"
-    scene_variations: "Formal forest green dress at gala. Standard leather armor in warehouse. Stoic mask concealing battle-fury. Hand on Lysander's ring."
-    reference_images:
-      - "veyra-thornwake-official-portrait-01"
-
-  - ref: "thorne-brightward"
-    name: "Thorne Brightward"
-    scene_variations: "Formal dress uniform. Polished breastplate, blue cloak. Mapping fields of fire. Professional focus."
-    reference_images:
-      - "thorne-brightward-portrait-01"
-
-  - ref: "marcus-heartbridge"
-    name: "Marcus Heartbridge"
-    scene_variations: "Charcoal silk doublet. Conducting the social symphony. Spymaster mode in debrief."
-    reference_images:
-      - "marcus-heartbridge-portrait-study-01"
-
-  - ref: "grimjaw-ironbeard"
-    name: "Grimjaw Ironbeard"
-    scene_variations: "Formal coat over tool belt. Drinking contest with guards. Bellowing ballads. Steadying presence."
-    reference_images:
-      - "grimjaw-ironbeard-portrait-01"
-
   - ref: "cidrella-vexweld"
     name: "Cidrella 'Cid' Vexweld"
-    scene_variations: "Formal gala attire. Brass arm sparking blue-white. Sharp edged dangerous smile. Focused on 'Bellringer'."
+    scene_variations: |
+      CHAPTER 34 VARIATIONS (GALA INFILTRATION):
+      - SCENE 01 (Briefing): Workshop attire transitioning to formal - unruly copper-red hair
+        with blue streak carefully tamed, prosthetic arm's glow deliberately dimmed.
+      - SCENES 02-04 (Gala): Formal dark leather cuirass polished to elegance, tool bandolier
+        hidden beneath a formal coat. Prosthetic arm concealed under long sleeves, only
+        sparking when emotions surge. Hair braided too tight with nervous precision.
+      - SCENE 04 (Declaration): Prosthetic sparks with blue-white arc of barely contained fury.
+        Eyes lock with Mourngrave's in unmistakable challenge. Professional mask cracking.
+      - Throughout: Short, sturdy gnomish build. Freckled face. Large expressive ears with
+        ring piercings. Brown eyes that miss nothing.
     reference_images:
-      - "cidrella-vexweld-portrait-01"
+      - "cidrella-vexweld-portrait"
 
   - ref: "korrath-threnx"
     name: "Korrath Threnx"
-    scene_variations: "Formal attire. Bronze scales dulled by shame. Fingers on marble column. Analyzing stress fractures."
+    scene_variations: |
+      CHAPTER 34 VARIATIONS (HONORED ARCHITECT):
+      - SCENE 01 (Briefing): Bronze scales dull with the weight of tarnished family honor.
+        Formal coat reluctantly worn. Guild crest prominent.
+      - SCENES 02-03 (Gala): Guest of honor attire - formal coat over reinforced leather.
+        Massive scaled fingers running along columns, reading structural secrets.
+      - SCENE 03 (Discovery): Face grave as architect's eye reads cell door signatures in
+        stress fractures. The dishonor visible as a physical weight on his broad shoulders.
+      - Throughout: Tall, broad bronze dragonborn. Deep scar across left eye. Family
+        engineering guild crest on heavy bronze chain.
     reference_images:
-      - "korrath-threnx-portrait-01"
-
-  - ref: "rill-vossari"
-    name: "Rill Vossari"
-    scene_variations: "Kneeling at balustrade. Extracting poison globule. Bioluminescence intensified. Calm anchor."
-    reference_images:
-      - "rill-vossari-casting-portrait-01"
+      - "korrath-threnx-portrait"
 
   - ref: "finn"
     name: "Finn"
-    scene_variations: "Scullery apprentice disguise. Spilling wine to scan manifests. Smelling of grease. Triumphant in debrief."
+    scene_variations: |
+      CHAPTER 34 VARIATIONS (FIRST SPY MISSION):
+      - SCENE 01 (Briefing): Young face flushed with nervous excitement. Lemon and wine
+        on his sleeves from kitchen work. Eyes bright with eagerness.
+      - SCENE 03 (Wine Spill): Heart hammering, feigning a stumble. Hands trembling as
+        he scans shipping manifests. Pale but determined.
+      - SCENE 07 (Revelation): Young face pale but triumphant. Folded paper clutched in
+        trembling hands. Delivering the countdown with quiet determination.
+      - Throughout: Lean build, brown hair, hazel eyes. Simple leather tunic. Growing
+        from nervous youth to proven operative.
     reference_images:
-      - "finn-stable-archer-01"
+      - "finn-portrait"
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: |
+      CHAPTER 34 VARIATIONS (TACTICAL ASSESSMENT):
+      - SCENE 01 (Briefing): Jaw tight, protective of Finn. Old dress uniform polished
+        until brass buttons gleam.
+      - SCENE 02 (Kill Zone): Familiar tension in shoulders as he reads the pier as a
+        perfect chokepoint. Scanning fields of fire automatically.
+      - SCENES 02-06 (Gala): Steel-gray cropped hair, weathered kind face. Faded blue
+        cloak with Last Light Company sigil. Hand touching holy symbol when sensing
+        corruption. Deep-set brown eyes that miss nothing.
+      - Throughout: Broad-shouldered, military posture. Chainmail under formal cloak.
+    reference_images:
+      - "thorne-brightward-portrait"
+
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: |
+      CHAPTER 34 VARIATIONS (COMMANDER'S MASK):
+      - SCENE 01 (Briefing): Watching harbor since before dawn, calculating. Lantern on
+        windowsill beside her.
+      - SCENES 02-06 (Gala): High-collared dress of deep forest green concealing burn scars
+        while projecting quiet authority. Dark mohawk with feathered braids. Mottled burn
+        scar on left face visible despite the collar. Sharp dark eyes reading every exit.
+      - SCENE 06 (Challenge): Controlled response to Mourngrave's gauntlet. Battle fury
+        held in check by command discipline. Scarred hands visible and empty.
+      - Throughout: Wiry half-elf build. Lantern always present—at hip or visible nearby.
+    reference_images:
+      - "veyra-thornwake-portrait"
+
+  - ref: "marcus-heartbridge"
+    name: "Marcus Heartbridge"
+    scene_variations: |
+      CHAPTER 34 VARIATIONS (SPYMASTER AT WORK):
+      - SCENE 01 (Briefing): Tailored silk doublet of deep charcoal drinking warehouse
+        light. Predatory smile playing at lips as he defines the rules of engagement.
+      - SCENES 02-05 (Gala): Immaculate appearance, glass of wine in hand. Smooth
+        confidence extracting information. Charming smile never wavering even as
+        crucial puzzle pieces click.
+      - SCENE 05 (Interception): Stepping smoothly from behind marble column. Effortless
+        smile blocking Greycloak's capture of Lord Thann. Perfect timing.
+      - Throughout: Average height, poised confidence. Well-styled hair. Knowing smile.
+    reference_images:
+      - "marcus-heartbridge-portrait"
 
   - ref: "dr-elisande-mourngrave"
     name: "Dr. Elisande Mourngrave"
-    scene_variations: "Deep blue gown. Gracious mask. Calculating predator eyes. Ice-cold assessment."
+    scene_variations: |
+      CHAPTER 34 VARIATIONS (THE ANTAGONIST):
+      - SCENE 02 (Greeting): Deep blue gown, vision of academic grace. Smile warm but
+        eyes like chips of ice performing rapid assessment.
+      - SCENE 04 (Declaration): Receiving Cid's challenge. Composure tested but maintained.
+      - SCENE 06 (Challenge): Perfectly restored composure. Issuing the tour invitation
+        as gauntlet—'instructive' pause deliberate.
+      - Throughout: Elegant, composed, dangerous. Every word a calculated move.
+    reference_images: []
+
+  - ref: "grimjaw-ironbeard"
+    name: "Grimjaw Ironbeard"
+    scene_variations: |
+      CHAPTER 34 VARIATIONS (THE DISTRACTION):
+      - SCENE 01 (Briefing): Reluctantly persuaded into formal coat, refusing to
+        surrender worn leather belt with tool pouches.
+      - SCENE 03 (Dwarven Chaos): Bellowing thunderous, off-key ballad about gold and
+        giant badgers. Deep in cups with guards. Creating glorious chaos as cover.
+      - Throughout: Sturdy dwarven build. Copper-red beard. Tools always within reach.
     reference_images:
-      - "dr-elisande-mourngrave-formal-handshake-01"
+      - "grimjaw-ironbeard-portrait"
 
 locations:
-  - ref: "warehouse-complex"
-    zones:
-      - id: "war-room"
-        chapter_context: "Industrial bay. Maps, blueprints, round table. Gray pre-dawn light vs warm amber lamps."
   - ref: "azure-pavilion"
     zones:
       - id: "pier"
-        chapter_context: "300-foot oak pier. Sunset copper and rose. Floating crystal lanterns. Tactical chokepoint."
-      - id: "interior"
-        chapter_context: "White marble, azure tiles. Glass and copper dome. Silvery-white luminosity. Elegant facade of a gilded cage."
-      - id: "understructure"
-        chapter_context: "Dark, wet boat perspective. Granite piles, barnacle-crusted timber. Ceiling of light through floor planks."
+        chapter_context: |
+          Twilight approach. 300-foot exposed oak pier stretching toward the pavilion.
+          City Watch screeners at first lay-by niche. Chainable bollards. No cover—a
+          beautifully crafted kill zone that Thorne immediately recognizes. Copper and
+          rose sunset light. Crystal lanterns beginning to glow. Salt air and expensive
+          perfume mixing. The water beneath remembers disturbances—service float traffic.
+      - id: "central-nave"
+        chapter_context: |
+          Heart of the gala. Sweeping arches, central dome of glass and copper catching
+          last light like a captured star. Floating crystal lanterns casting silvery glow.
+          Flower arrangements worth fortunes. Tables laden with Sword Coast delicacies.
+          Marble columns with hidden stress fractures. The symphony of layered deception—
+          every conversation a potential intelligence source or trap. Evening deepening
+          as lanterns float lower, musicians shifting to contemplative music.
+      - id: "colonnade"
+        chapter_context: |
+          Open-air colonnade offering tactical positions. 'Column forest' where Marcus
+          tracks enemy movements. Fluted marble columns providing cover for interception.
+          Shadows lengthening as evening progresses. View of harbor and pier—escape
+          routes visible but exposed.
+
+  - ref: "warehouse-complex"
+    zones:
+      - id: "briefing-circle"
+        chapter_context: |
+          Morning strategy session. Salt and ink smell. Tea cooling at elbows. Bellringer
+          sketch smudged between brass compass and string. Tension from last night's
+          arguments still lingering. Azure invitation on table like a thrown gauntlet.
+          Later (Scene 7): Night debrief. Lantern light on map table. Formal wear shed
+          like snakeskins. Reports compiled. The countdown to rescue revealed.
+      - id: "main-hall"
+        chapter_context: |
+          Quiet when they return. Harbor sounds muffled by thick walls. Late hour shadows.
+          Map table as central gathering point. Veyra's lantern steady despite draft.
 
 moments:
-  - id: "ch34-the-azure-cage-moment-01"
-    scene_id: "scn-34-01"
-    title: "Vigil at the Harbor"
-    narrative_beat: "Veyra standing alone at the window, her lantern casting a warm aura against the silver dawn."
-    visual_weight: "medium"
-    characters_present:
-      - "veyra-thornwake"
-    location_zone: "warehouse-complex/war-room"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch34-the-azure-cage-moment-02"
-    scene_id: "scn-34-01"
-    title: "Invitation to the Cage"
-    narrative_beat: "The Company gathered around the table, Marcus reading the Veridian invitation like a gauntlet thrown."
-    visual_weight: "medium"
-    characters_present:
-      - "marcus-heartbridge"
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "grimjaw-ironbeard"
-      - "cidrella-vexweld"
-      - "korrath-threnx"
-    location_zone: "warehouse-complex/war-room"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch34-the-azure-cage-moment-03"
-    scene_id: "scn-34-02"
-    title: "The Pier Kill-Zone"
-    narrative_beat: "POV shot from Thorne's perspective, walking the exposed pier toward the glittering pavilion trap."
-    visual_weight: "high"
-    characters_present:
-      - "thorne-brightward"
-    location_zone: "azure-pavilion/pier"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch34-the-azure-cage-moment-04"
-    scene_id: "scn-34-02"
-    title: "Gilded Entrance"
-    narrative_beat: "The Company silhouettes walking the pier at sunset, formal wear hiding their warrior bearing."
-    visual_weight: "hero"
-    characters_present:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "korrath-threnx"
-      - "cidrella-vexweld"
-      - "grimjaw-ironbeard"
-      - "rill-vossari"
-    location_zone: "azure-pavilion/pier"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch34-the-azure-cage-moment-05"
-    scene_id: "scn-34-02"
-    title: "Silent Purification"
-    narrative_beat: "Rill kneeling at the balustrade, extracting an iridescent poison globule from the harbor water."
-    visual_weight: "high"
-    characters_present:
-      - "rill-vossari"
-    location_zone: "azure-pavilion/interior"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch34-the-azure-cage-moment-06"
-    scene_id: "scn-34-03"
-    title: "Dwarven Diversion"
-    narrative_beat: "Grimjaw leading a thunderous drinking contest with the guards, creating cover for the team."
-    visual_weight: "medium"
-    characters_present:
-      - "grimjaw-ironbeard"
-    location_zone: "azure-pavilion/interior"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch34-the-azure-cage-moment-07"
-    scene_id: "scn-34-03"
-    title: "Belly of the Beast"
-    narrative_beat: "View from below the pier, the cold barnacle-crusted understructure contrasting with the gala light above."
-    visual_weight: "medium"
-    characters_present: []
-    location_zone: "azure-pavilion/understructure"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch34-the-azure-cage-moment-08"
-    scene_id: "scn-34-03"
-    title: "The Column's Truth"
-    narrative_beat: "Korrath's hand on the marble column, feeling the signature of reinforced cell doors slamming below."
-    visual_weight: "high"
-    characters_present:
-      - "korrath-threnx"
-    location_zone: "azure-pavilion/interior"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch34-the-azure-cage-moment-09"
+  - id: "ch34-the-azure-cage-moment-10"
     scene_id: "scn-34-04"
-    title: "The Spark of Fury"
-    narrative_beat: "Cid's brass hand sparking blue-white lightning as she declares war on Dr. Mourngrave."
+    title: "Declaration of War"
+    narrative_beat: "Cid's prosthetic hand, holding a wine glass, sparked once—a tiny, blue-white arc of barely contained energy. 'The subjects—' she caught herself with practiced ease, '—I mean, the specimens would have no idea how thoroughly they're... protected. From contamination, of course.' Her eyes locked with Mourngrave's. The investors heard only pride. Mourngrave heard a declaration of war."
     visual_weight: "critical"
     characters_present:
       - "cidrella-vexweld"
       - "dr-elisande-mourngrave"
-    location_zone: "azure-pavilion/interior"
-    transformation_state: "n/a"
-    recommended_images: 1
+    location_zone: "azure-pavilion/central-nave"
+    transformation_state: "during"
+    recommended_images: 2
 
-  - id: "ch34-the-azure-cage-moment-10"
-    scene_id: "scn-34-05"
-    title: "Diplomatic Interception"
-    narrative_beat: "Marcus stepping from behind a column to stop Captain Greycloak from isolating Lord Thann."
-    visual_weight: "medium"
+  - id: "ch34-the-azure-cage-moment-08"
+    scene_id: "scn-34-03"
+    title: "Cell Door Signatures"
+    narrative_beat: "This isn't from storage rooms or laboratories, he thought, a cold dread settling in his gut. This is the result of repeated, heavy, dynamic loads. This is the signature of heavy, reinforced cell doors slamming shut. Over and over. His own designs, twisted to cage people. The dishonor of it was a physical weight."
+    visual_weight: "critical"
     characters_present:
-      - "marcus-heartbridge"
-      - "thale-greycloak"
-    location_zone: "azure-pavilion/interior"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch34-the-azure-cage-moment-11"
-    scene_id: "scn-34-06"
-    title: "The Challenge Accepted"
-    narrative_beat: "Veyra meeting Mourngrave's ice-cold gaze as the tour is offered as a trap."
-    visual_weight: "high"
-    characters_present:
-      - "veyra-thornwake"
-      - "dr-elisande-mourngrave"
-    location_zone: "azure-pavilion/interior"
-    transformation_state: "n/a"
-    recommended_images: 1
+      - "korrath-threnx"
+    location_zone: "azure-pavilion/central-nave"
+    transformation_state: "during"
+    recommended_images: 2
 
   - id: "ch34-the-azure-cage-moment-12"
-    scene_id: "scn-34-07"
-    title: "The Circle of Truth"
-    narrative_beat: "The diverse Company gathered in the warehouse, unified by the horror confirmed by Finn's manifest."
-    visual_weight: "hero"
+    scene_id: "scn-34-06"
+    title: "The Challenge"
+    narrative_beat: "'Mr. Threnx, Ms. Vexweld—shall we say next week for that facility tour? I'm sure Commander Thornwake would find our security measures... instructive.' It was no longer an invitation; it was a challenge. The game had been joined."
+    visual_weight: "high"
     characters_present:
+      - "dr-elisande-mourngrave"
       - "veyra-thornwake"
-      - "finn"
-      - "thorne-brightward"
-      - "marcus-heartbridge"
-      - "korrath-threnx"
-      - "cidrella-vexweld"
-      - "grimjaw-ironbeard"
-      - "aldwin-gentleheart"
-      - "rill-vossari"
-    location_zone: "warehouse-complex/war-room"
+      - "thale-greycloak"
+    location_zone: "azure-pavilion/central-nave"
     transformation_state: "after"
     recommended_images: 1
 
-images:
-  - custom_id: "ch34-the-azure-cage-img-34-01-01"
-    source_moment: "ch34-the-azure-cage-moment-01"
-    scene_id: "scn-34-01"
-    image_type: "anchor"
-    category:
-      - "character"
-      - "moment"
-      - "emotion"
-    scene_mood: "somber"
-    mood_rationale: "Command burden and isolation. Veyra processes the weight of the mission. Rembrandt single figure illumination."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Veyra Thornwake stands in profile at a harbor-facing window. Her battered lantern sits on the windowsill, warm golden glow against cold silver dawn light. Harbor transitioning from black to silver. Her burn scar catches first light. Company members gathered at map table in blurred background.
-    composition_notes: |
-      Medium shot. Subject right third facing left. Strong window vertical anchor. Depth from blurred background team. Rule of thirds: face upper right, lantern lower right.
-    visual_hook: "The burn scar on her left cheek catching the first silver dawn light while the golden lantern glow warms the shadows"
-    depicts_characters:
+  - id: "ch34-the-azure-cage-moment-13"
+    scene_id: "scn-34-07"
+    title: "Three Days"
+    narrative_beat: "'It's a shipping manifest, Commander. Live cargo—special handling requirements—night-tide transfer.' He looked up, his young face pale but determined. 'Three days from now.' The silence that followed was absolute."
+    visual_weight: "high"
+    characters_present:
+      - "finn"
       - "veyra-thornwake"
+    location_zone: "warehouse-complex/briefing-circle"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch34-the-azure-cage-moment-02"
+    scene_id: "scn-34-02"
+    title: "Kill Zone Beauty"
+    narrative_beat: "The Azure Pavilion was breathtaking at dusk, but to Thorne, the 300-foot pier leading to it was a beautifully crafted kill-zone. He felt a familiar tension in his shoulders as they walked the exposed oak planks, noting the City Watch screeners at the first lay-by niche and the chainable bollards."
+    visual_weight: "high"
+    characters_present:
+      - "thorne-brightward"
+      - "veyra-thornwake"
+    location_zone: "azure-pavilion/pier"
+    transformation_state: "before"
+    recommended_images: 1
+
+  - id: "ch34-the-azure-cage-moment-07"
+    scene_id: "scn-34-03"
+    title: "Finn's Wine Spill"
+    narrative_beat: "Heart hammering, Finn grabbed a bottle of wine from a passing tray and lurched forward, feigning a stumble. Wine sloshed over the crate, soaking a sheaf of papers. His eyes darting across the page. Shipping manifests... Live Cargo..."
+    visual_weight: "high"
+    characters_present:
+      - "finn"
+    location_zone: "azure-pavilion/central-nave"
+    transformation_state: "during"
+    recommended_images: 1
+
+images:
+  - custom_id: "ch34-the-azure-cage-img-04-10-01"
+    source_moment: "ch34-the-azure-cage-moment-10"
+    scene_id: "scn-34-04"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The chapter's defining confrontation. Cid's carefully contained fury finally
+      sparking through—literally. The dread of recognition passing between engineer
+      and captor, war declared in double meanings while investors hear only praise.
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Cid stands among elegantly dressed investors in the Azure Pavilion's central nave,
+      crystal lanterns floating overhead casting silver-blue light. Her prosthetic left
+      arm holds a wine glass, a tiny blue-white arc of electricity sparking between
+      brass joints—the only visible crack in her professional facade. Her copper-red
+      hair with blue streak is braided tight, freckled face composed but eyes blazing
+      with barely contained fury. Across from her, Dr. Mourngrave in deep blue gown
+      receives the challenge, her warm smile frozen as she recognizes the declaration.
+      Between them, oblivious investors in fine silks, hearing only professional pride
+      where war has been spoken.
+    composition_notes: |
+      Medium shot capturing both Cid and Mourngrave with investors between them as
+      visual barrier. Cid on left third, prosthetic spark drawing the eye. Mourngrave
+      on right third, composure cracking. Ultra-wide aspect emphasizes the social
+      battlefield. Floating lanterns above create ethereal ceiling. Eye contact is
+      the focal point—the unspoken understanding crossing the frame.
+    visual_hook: "Blue-white spark from brass prosthetic, eyes locking in silent declaration of war"
+    depicts_characters:
+      - "cidrella-vexweld"
+      - "dr-elisande-mourngrave"
     character_states:
-      veyra-thornwake: |
-        Profile view. Left side (scarred) toward light. Stoic, grave expression. Standard leather gear.
-    location: "warehouse-complex"
+      cidrella-vexweld: |
+        Formal attire masking workshop identity. Copper-red hair braided too tight.
+        Prosthetic arm sparking with fury. Professional smile sharp-edged. Eyes
+        blazing with the knowledge of what her designs have become.
+      dr-elisande-mourngrave: |
+        Deep blue gown, academic grace. Warm smile frozen mid-charm. Ice-chip eyes
+        widening slightly with recognition. Composure tested but holding.
+    location: "azure-pavilion"
+    zone: "central-nave"
     lighting:
-      primary_source: "Dawn sun"
-      secondary_source: "Lantern"
-      quality: "diffused, cold growing"
-      direction: "front-left"
-      color_temperature: "cool silver-gray vs warm amber"
-      shadow_depth: "deep Rembrandt"
-      atmospheric: "harbor mist"
+      primary_source: "Floating crystal lanterns overhead"
+      quality: "ethereal silver-blue glow"
+      direction: "from above, diffused"
+      color_temperature: "cool silver with warm accent from prosthetic spark"
+      shadow_depth: "soft, party-appropriate"
+      atmospheric: "dust motes in lantern light, slight shimmer"
     palette:
       dominant:
-        - "slate gray"
-        - "warm amber"
-        - "desaturated brown"
+        - "deep azure"
+        - "silver-white lantern glow"
+        - "formal evening blacks"
       accent:
-        - "golden lantern glow"
+        - "blue-white prosthetic spark"
+        - "copper-red hair"
+        - "Mourngrave's deep blue gown"
       avoid:
-        - "bright colors"
+        - "harsh reds"
+        - "daylight colors"
+        - "bright greens"
     prompt_used: |
-      Scarred half-elf woman in profile at a warehouse window at dawn,
-      battered lantern on the sill casting warm golden light on her face,
-      cold silver light from the harbor outside,
-      blurred companions at a map table in background,
-      atmosphere of quiet responsibility and vigil,
-      classical oil painting, Rembrandt lighting,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Rembrandt lighting with modern elegance.
+      Grand pavilion interior with floating crystal lanterns, marble columns, azure ceiling tiles.
+      A rock gnome woman in formal attire holding a wine glass, her brass prosthetic arm
+      sparking with a tiny blue-white electrical arc, copper-red hair with blue streak
+      braided precisely, freckled face composed but eyes burning with fury. Across from
+      her a tall elegant human woman in deep blue gown, academic grace frozen as she
+      receives an unspoken challenge. Wealthy investors in fine silks between them,
+      oblivious to the war being declared.
+      Medium shot, ultra-wide cinematic aspect, floating lanterns creating ethereal ceiling.
+      Silver-blue glow from above, warm spark accent, sophisticated evening atmosphere.
+      Subtle fantasy: mixed ancestries among guests, enchanted lanterns, brass-and-crystal
+      magical engineering in prosthetic arm.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright cheerful colors
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      action poses, combat, weapons drawn, daylight, outdoor scene
     tags:
-      - "anchor"
-      - "veyra"
-      - "dawn"
-      - "somber"
+      - "declaration"
+      - "cid"
+      - "mourngrave"
+      - "hero-image"
+      - "ominous"
+      - "confrontation"
+      - "prosthetic-spark"
     generated_at: null
     file_name: null
     file_path: null
@@ -319,77 +353,258 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch34-the-azure-cage-img-34-02-01"
-    source_moment: "ch34-the-azure-cage-moment-04"
-    scene_id: "scn-34-02"
-    image_type: "hero"
+  - custom_id: "ch34-the-azure-cage-img-04-10-02"
+    source_moment: "ch34-the-azure-cage-moment-10"
+    scene_id: "scn-34-04"
+    image_type: "detail"
     category:
-      - "moment"
-      - "location"
-      - "action"
+      - "symbol"
+      - "character"
     scene_mood: "ominous"
-    mood_rationale: "Beauty concealing danger. Glittering pavilion and sunset beauty masking the tactical kill-zone."
-    aspect_ratio: "21:9"
-    orientation: "landscape"
-    size: "2048x878"
+    mood_rationale: |
+      The intimate detail of the spark—the physical manifestation of Cid's barely
+      contained rage. Her engineering turned against children, now her fury turning
+      against those who corrupted her work.
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
     visual_description: |
-      Last Light Company walks the 300-foot oak pier toward the Azure Pavilion. Sunset copper and rose sky. White marble structure holds last light. Azure roof tiles. Floating crystal lanterns casting silvery luminosity. Diverse Company silhouettes walking toward the glittering trap. Long shadows forward.
+      Extreme close-up of Cid's prosthetic hand gripping a crystal wine glass. The
+      brass joints and glowing conduits of her self-made arm are visible, articulated
+      with masterwork precision. A blue-white arc of electricity jumps between two
+      brass knuckles, the spark bright against the evening light. Wine trembles in
+      the glass from the vibration. Her sleeve has ridden up slightly, revealing more
+      of the prosthetic's intricate engineering—spell-focus crystals embedded in the
+      forearm catching the spark's light.
     composition_notes: |
-      Wide cinematic 21:9. Company left third walking right. Pier perspective lines converge. Low angle. Long dramatic shadows.
-    visual_hook: "The diverse Company silhouettes walking the narrow pier toward the luminous trap"
+      Tight portrait framing on hand and glass. Prosthetic fills most of frame with
+      wine glass as visual anchor. Blue-white spark as focal point. Shallow depth of
+      field blurs background gala. Vertical format emphasizes the reach upward, the
+      contained energy seeking release.
+    visual_hook: "Brass prosthetic sparking, wine trembling, engineering beauty containing fury"
     depicts_characters:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "korrath-threnx"
       - "cidrella-vexweld"
-      - "grimjaw-ironbeard"
-      - "rill-vossari"
     character_states:
-      veyra-thornwake: |
-        Leading. Forest green dress. Dark silhouette.
-      thorne-brightward: |
-        Dress uniform. Blue cloak. mapping kill-zone.
-      korrath-threnx: |
-        Dragonborn silhouette. Bronze scales catching light.
       cidrella-vexweld: |
-        Small gnome. Prosthetic arm catching light.
-      grimjaw-ironbeard: |
-        Stocky silhouette. Beard recognizable.
-      rill-vossari: |
-        Aquamarine skin. Head tilted to water.
+        Only prosthetic arm visible. Brass and glowing conduits trembling with
+        suppressed emotion. Spell-focus crystals catching spark-light. The precision
+        of her engineering betraying the chaos of her fury.
     location: "azure-pavilion"
+    zone: "central-nave"
     lighting:
-      primary_source: "Setting sun"
-      secondary_source: "Crystal lanterns"
-      quality: "warm, dying vs cold silver"
-      direction: "behind-left"
-      color_temperature: "copper-rose vs silvery white"
-      shadow_depth: "long shadows on pier"
-      atmospheric: "salt mist"
+      primary_source: "Blue-white prosthetic spark"
+      quality: "harsh momentary flash"
+      direction: "from within the prosthetic"
+      color_temperature: "electric blue-white"
+      shadow_depth: "deep contrast from spark"
+      atmospheric: "slight electrical shimmer"
     palette:
       dominant:
-        - "copper sunset"
-        - "rose twilight"
-        - "azure blue"
-        - "white marble"
+        - "brass gold"
+        - "electric blue-white"
+        - "crystal clarity"
       accent:
-        - "crystal silver"
+        - "wine red in glass"
+        - "conduit glow lines"
       avoid:
-        - "garish neon"
+        - "natural skin tones"
+        - "warm ambient"
     prompt_used: |
-      Diverse group of adventurers walking a long wooden pier toward a glittering marble pavilion at sunset,
-      sky in copper and rose tones,
-      azure roof tiles and floating crystal lanterns,
-      long shadows stretching forward,
-      wide cinematic composition,
-      classical oil painting, Symbolist unease,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Vermeer-like attention to material detail.
+      Extreme close-up of a gnome's prosthetic brass arm gripping a crystal wine glass.
+      Articulated brass joints, glowing arcane conduits running along the forearm,
+      a blue-white electrical arc jumping between brass knuckles, wine trembling in
+      the glass. Spell-focus crystals embedded in forearm catching the spark-light.
+      Tight portrait framing, shallow depth of field, electric moment frozen.
+      Blue-white spark illumination, brass and crystal dominant, magical engineering detail.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, cheerful mood
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, full figure, face visible, busy background, natural hand
     tags:
-      - "hero"
-      - "establishing"
-      - "azure-pavilion"
+      - "prosthetic"
+      - "spark"
+      - "detail"
+      - "cid"
+      - "engineering"
+      - "fury"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch34-the-azure-cage-img-03-08-01"
+    source_moment: "ch34-the-azure-cage-moment-08"
+    scene_id: "scn-34-03"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The architect confronting his corruption. The professional reading of structural
+      evidence that condemns—not just the facility, but his own complicity. Cold dread
+      made visible through craft.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Korrath Threnx stands before an elegant marble column in the Azure Pavilion, his
+      massive bronze-scaled hand pressed against the carved surface. His architect's eye
+      is focused on stress fractures invisible to others—the signature of cell doors
+      slamming. The gala continues behind him, oblivious: crystal lanterns floating,
+      guests in fine silks. But Korrath's face is grave, the deep scar across his left
+      eye catching shadow. His family guild crest—three interlocked gears beneath a
+      hammer—hangs heavy on its bronze chain. The dishonor is a physical weight bowing
+      his broad shoulders.
+    composition_notes: |
+      Medium-wide shot with Korrath at left third, column dominating center. His hand
+      on column creates visual connection to his discovery. Party blurred in background
+      right—the contrast between celebration and revelation. Guild crest visible as
+      reminder of what he's betrayed. Downward angle on his bowed shoulders.
+    visual_hook: "Bronze scales against white marble, architect reading the crimes hidden in stone"
+    depicts_characters:
+      - "korrath-threnx"
+    character_states:
+      korrath-threnx: |
+        Formal coat over reinforced leather. Bronze scales dulled by the weight of
+        discovery. Massive scaled fingers tracing invisible stress fractures. Face
+        grave, scar catching shadow. Guild crest prominent—three generations of
+        honor now tainted. Shoulders bowing under physical weight of dishonor.
+    location: "azure-pavilion"
+    zone: "central-nave"
+    lighting:
+      primary_source: "Floating crystal lanterns"
+      quality: "party glow, but cold to Korrath"
+      direction: "from above and behind"
+      color_temperature: "silver-blue ambient, bronze scale warmth"
+      shadow_depth: "moderate, dramatic on face"
+      atmospheric: "elegant but hollow"
+    palette:
+      dominant:
+        - "white marble"
+        - "bronze scales"
+        - "formal evening black"
+      accent:
+        - "silver lantern glow"
+        - "gold guild crest"
+      avoid:
+        - "warm festive colors"
+        - "bright reds"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Rembrandt lighting for dramatic weight.
+      Grand pavilion interior with floating crystal lanterns, marble columns, azure tiles.
+      A massive bronze dragonborn in formal coat pressing his scaled hand against a
+      carved marble column, his architect's eye reading hidden stress fractures. Deep
+      scar across left eye catching shadow. Family guild crest on bronze chain—three
+      interlocked gears beneath hammer. Face grave with realization. Shoulders bowing
+      under invisible weight. Elegant gala party blurred in background.
+      Medium-wide shot, column dominant, dragonborn at left third.
+      Silver-blue lantern glow, bronze scale warmth, weight of dishonor visible.
+      Subtle fantasy: dragonborn architect, enchanted lanterns, magic and engineering combined.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      happy expression, celebration pose, weapons, combat
+    tags:
+      - "korrath"
+      - "architect"
+      - "discovery"
+      - "anchor"
+      - "ominous"
+      - "dishonor"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch34-the-azure-cage-img-03-08-02"
+    source_moment: "ch34-the-azure-cage-moment-08"
+    scene_id: "scn-34-03"
+    image_type: "detail"
+    category:
+      - "symbol"
+      - "emotion"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The intimate evidence—scaled fingers reading what others cannot see. The
+      architect's trained touch discovering the signature of imprisonment in what
+      should be beauty.
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Extreme close-up of Korrath's bronze-scaled hand pressed against white marble
+      column. His massive fingers trace hairline stress fractures that form a subtle
+      pattern—the signature of repeated, heavy, dynamic loads. Marble dust in the
+      cracks. Fine scars from precision work visible on his scales. The guild crest
+      ring on one finger. In the marble's surface, reflected faintly, the shape of
+      floating lanterns—beauty concealing horror.
+    composition_notes: |
+      Tight portrait framing on hand and column surface. Stress fractures as subtle
+      focal pattern. Guild crest ring catching light. Shallow depth of field. Vertical
+      format emphasizes the pillar's height, the weight it conceals.
+    visual_hook: "Bronze scales on white marble, hairline cracks telling the story of cages"
+    depicts_characters:
+      - "korrath-threnx"
+    character_states:
+      korrath-threnx: |
+        Only hand visible. Bronze scales scarred from precision work. Fingers tracing
+        stress fractures with professional precision. Guild crest ring—the weight of
+        family honor in gold.
+    location: "azure-pavilion"
+    zone: "central-nave"
+    lighting:
+      primary_source: "Reflected lantern glow on marble"
+      quality: "subtle, surface-focused"
+      direction: "ambient from all sides"
+      color_temperature: "cool marble white, warm bronze"
+      shadow_depth: "minimal, revealing detail"
+      atmospheric: "clean, clinical"
+    palette:
+      dominant:
+        - "white marble"
+        - "bronze scales"
+      accent:
+        - "gold guild crest ring"
+        - "silver reflected light"
+      avoid:
+        - "bright colors"
+        - "warm tones"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, hyper-attention to surface detail.
+      Extreme close-up of a bronze dragonborn's scaled hand pressed against white marble
+      column. Massive fingers tracing hairline stress fractures forming subtle pattern.
+      Fine scars on scales from precision work. Gold guild crest ring on one finger.
+      Faint reflection of floating lanterns in polished marble surface.
+      Tight portrait framing, shallow depth of field, evidence revealed through touch.
+      Cool marble white, warm bronze scales, clinical examination atmosphere.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, face visible, action scene, weapons
+    tags:
+      - "korrath"
+      - "detail"
+      - "stress-fractures"
+      - "evidence"
       - "ominous"
     generated_at: null
     file_name: null
@@ -398,61 +613,95 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch34-the-azure-cage-img-34-02-02"
-    source_moment: "ch34-the-azure-cage-moment-05"
-    scene_id: "scn-34-02"
-    image_type: "character"
+  - custom_id: "ch34-the-azure-cage-img-06-12-01"
+    source_moment: "ch34-the-azure-cage-moment-12"
+    scene_id: "scn-34-06"
+    image_type: "beat"
     category:
-      - "character"
       - "moment"
-      - "symbol"
-    scene_mood: "ethereal"
-    mood_rationale: "Rill's water magic and bioluminescence. Sacred duty performed in private. Pre-Raphaelite luminosity."
-    aspect_ratio: "3:4"
-    orientation: "portrait"
-    size: "1024x1365"
+      - "character"
+      - "confrontation"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The gauntlet thrown. Both sides now know the game has been joined. The tour
+      is revealed as a trap they must walk into. Tension crystallized in polite words.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
     visual_description: |
-      Rill Vossari kneels at marble balustrade over dark water. Aquamarine hand hovering. Dark sick-iridescent globule of poison pulses in her palm. Bioluminescent patterns glow brighter with focus. Silver fish dart back into clean water below. Gala lights diffused bokeh background.
+      The gala winding down. Dr. Mourngrave approaches the Last Light Company's
+      contingent, her composure perfectly restored after Cid's challenge, flanked
+      by Captain Greycloak—his face an unreadable mask. She delivers the invitation-
+      as-challenge: 'I'm sure Commander Thornwake would find our security measures...
+      instructive.' Veyra stands opposite, high-collared green dress concealing her
+      scars, battle fury held in check. Her scarred hands visible and empty—deliberate
+      restraint. The double meaning hangs in the cool salt air between them. Lanterns
+      floating lower as the evening deepens.
     composition_notes: |
-      Portrait medium shot. Rill center-right. Arm diagonal toward water. Poison globule focal point. Fish visual anchor lower third.
-    visual_hook: "The sick-iridescent poison globule hovering above Rill's aquamarine palm"
+      Medium shot with three-way tension. Mourngrave at left with Greycloak behind her.
+      Veyra at right, composed but coiled. Space between them charged. Lanterns
+      descending in background suggesting time running out. Harbor visible through
+      colonnade—escape and danger both present.
+    visual_hook: "Two commanders facing off, trap acknowledged, game joined in polite words"
     depicts_characters:
-      - "rill-vossari"
+      - "dr-elisande-mourngrave"
+      - "veyra-thornwake"
+      - "thale-greycloak"
     character_states:
-      rill-vossari: |
-        Kneeling. Bioluminescence intensified. Pupilless grey eyes. Sacred duty posture.
+      dr-elisande-mourngrave: |
+        Deep blue gown, composure perfectly restored. Delivering challenge with
+        professional grace. Eyes like ice chips behind the warm smile.
+      veyra-thornwake: |
+        High-collared forest green dress. Burn scar visible despite coverage. Dark
+        mohawk with feathered braids. Scarred hands visible and empty. Battle fury
+        held by command discipline. Controlled response accepting the game.
+      thale-greycloak: |
+        Flanking Mourngrave. Face unreadable mask. Professional security presence.
     location: "azure-pavilion"
+    zone: "central-nave"
     lighting:
-      primary_source: "internal bioluminescence"
-      quality: "soft, luminous, sourceless"
-      direction: "internal + reflected from below"
-      color_temperature: "cool aquamarine vs silver-blue"
-      shadow_depth: "minimal, dreamy"
-      atmospheric: "water mist"
+      primary_source: "Descending crystal lanterns"
+      quality: "evening glow, tension-heavy"
+      direction: "from above, lower now"
+      color_temperature: "cool silver fading to amber"
+      shadow_depth: "deepening as evening ends"
+      atmospheric: "salt air, declining energy"
     palette:
       dominant:
-        - "deep aquamarine"
-        - "silver-blue"
-        - "dark harbor water"
+        - "deep blue (Mourngrave)"
+        - "forest green (Veyra)"
+        - "evening slate"
       accent:
-        - "oil-slick iridescent poison"
+        - "silver lantern glow"
+        - "Veyra's burn scar"
       avoid:
-        - "harsh lighting"
+        - "bright party colors"
+        - "warm celebration tones"
     prompt_used: |
-      Water genasi woman with glowing aquamarine skin kneeling at a marble railing at night,
-      extracting a dark iridescent oil-like poison from the water,
-      bioluminescent veins glowing on her face and hands,
-      silver fish swimming in clean water below,
-      soft gala lights in background,
-      classical oil painting, Pre-Raphaelite luminosity,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, tense diplomatic standoff.
+      Grand pavilion interior, crystal lanterns floating lower as evening deepens.
+      An elegant woman in deep blue gown delivering a challenge with professional
+      grace, flanked by a masked security captain. Facing her, a scarred half-elf
+      woman in high-collared forest green dress, dark mohawk with feathered braids,
+      burn scar visible on left face. Scarred hands visible and deliberately empty.
+      The space between them charged with unspoken war.
+      Medium shot, three figures, descending lanterns, harbor visible through colonnade.
+      Silver evening light, tension crystallized, both sides knowing the game is joined.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, warm skin tones
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      combat, weapons drawn, action poses, friendly greeting
     tags:
-      - "character"
-      - "rill-vossari"
-      - "ethereal"
-      - "water-magic"
+      - "confrontation"
+      - "mourngrave"
+      - "veyra"
+      - "challenge"
+      - "beat"
+      - "ominous"
     generated_at: null
     file_name: null
     file_path: null
@@ -460,61 +709,188 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch34-the-azure-cage-img-34-02-03"
-    source_moment: "ch34-the-azure-cage-moment-03"
-    scene_id: "scn-34-02"
-    image_type: "perspective"
+  - custom_id: "ch34-the-azure-cage-img-07-13-01"
+    source_moment: "ch34-the-azure-cage-moment-13"
+    scene_id: "scn-34-07"
+    image_type: "beat"
     category:
       - "moment"
       - "character"
-      - "action"
+      - "revelation"
     scene_mood: "ominous"
-    mood_rationale: "The hunter's eye. Thorne sees the trap within the beauty. Tactical reality of the pier. Threat assessment."
-    aspect_ratio: "21:9"
+    mood_rationale: |
+      The countdown begins. Youth delivering devastating news with hard-won courage.
+      The silence that follows is absolute—three days until trafficked children are
+      moved. Stakes crystallized.
+    aspect_ratio: "16:9"
     orientation: "landscape"
-    size: "2048x878"
+    size: "1792x1024"
     visual_description: |
-      POV from Thorne's perspective walking the pier. Breathtaking sunset copper/rose sky. Focus on 'kill-zone' bollards foreground. Watch screeners in stone niche highlighted by low sun. Pavilion as luminous chokepoint. No cover. Map of fields of fire.
+      The warehouse briefing circle at night. Lantern light casts long shadows across
+      gathered faces—the Last Light Company having shed their formal wear. Finn stands
+      at center, young face pale but determined, unfolding a document with trembling
+      hands. 'Three days from now.' Veyra's lantern sits at the table's edge, flame
+      steady despite the draft. Maps spread across the table. The absolute silence
+      following his words visible in the frozen postures of the team. Finn's eyes
+      meet Veyra's—youth delivering the timeline that will define their mission.
     composition_notes: |
-      First-person wide-angle. Pier edges converging lines. Bollards foreground obstacle. High contrast sunlit screeners vs shadows. Exposed and vulnerable feel.
-    visual_hook: "Breathtaking sunset approach framed as a tactical map—every bollard viewed as a chokepoint"
+      Medium shot centered on Finn with team gathered around map table. Lantern light
+      from multiple sources creating pools of warmth in warehouse darkness. Veyra's
+      lantern prominent at table edge. Document in Finn's hands as focal point. Faces
+      grave in surrounding darkness. Low angle emphasizes the weight of the moment.
+    visual_hook: "Pale young face delivering the countdown, absolute silence frozen in lantern light"
     depicts_characters:
-      - "thorne-brightward"
-      - "city-watch-screeners"
+      - "finn"
+      - "veyra-thornwake"
     character_states:
-      thorne-brightward: |
-        POV. Hands visible lower foreground. Assessing environment.
-    location: "azure-pavilion"
+      finn: |
+        Young face pale but determined. Formal wear discarded for simple leather tunic.
+        Hands trembling as they hold the unfolded document. Eyes meeting Veyra's with
+        hard-won courage. No longer the nervous boy—now a proven operative.
+      veyra-thornwake: |
+        Formal dress shed, back to practical gear. Burn scar visible in lantern light.
+        Sharp dark eyes receiving the timeline. Command bearing intact despite the news.
+    location: "warehouse-complex"
+    zone: "briefing-circle"
     lighting:
-      primary_source: "Setting sun"
-      quality: "harsh, raking, long shadows"
-      direction: "front-left"
-      color_temperature: "warm copper vs tactical cold"
-      shadow_depth: "extreme"
-      atmospheric: "salt mist"
+      primary_source: "Multiple lanterns on map table"
+      quality: "warm pools in darkness"
+      direction: "from below, creating dramatic shadows"
+      color_temperature: "amber-gold lantern warmth"
+      shadow_depth: "deep, dramatic"
+      atmospheric: "heavy, still, expectant"
     palette:
       dominant:
-        - "black/charcoal"
-        - "harsh copper"
-        - "weathered oak gray"
+        - "lantern amber-gold"
+        - "warehouse shadow"
+        - "parchment cream"
       accent:
-        - "watch blue"
+        - "Finn's pale face"
+        - "Veyra's burn scar"
       avoid:
-        - "soft romantic lighting"
+        - "party colors"
+        - "bright tones"
+        - "cool blues"
     prompt_used: |
-      First-person perspective walking down a long wooden pier at sunset,
-      sunset copper sky,
-      focus on dark chain bollards and guards in a side niche,
-      luminous marble pavilion as a chokepoint in the distance,
-      no cover, long dramatic shadows,
-      atmosphere of a beautiful trap,
-      classical oil painting, Symbolist unease,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Caravaggio-style dramatic lantern light.
+      Dark warehouse interior with map table at center. Multiple lanterns casting amber
+      pools in surrounding darkness. A young man with brown hair and hazel eyes stands
+      pale but determined, holding an unfolded document with trembling hands. Around
+      him, grave faces of companions frozen in absolute silence. A distinctive brass
+      lantern sits at the table edge, flame steady. Maps and plans spread across the
+      table surface.
+      Medium shot, low angle, lantern light from below creating dramatic shadows.
+      Amber-gold warmth against warehouse darkness, the weight of revelation visible.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, peaceful feeling
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      celebration, smiling faces, bright lighting, daylight, outdoor scene
     tags:
-      - "perspective"
-      - "tactical"
+      - "finn"
+      - "revelation"
+      - "countdown"
+      - "beat"
+      - "ominous"
+      - "debrief"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch34-the-azure-cage-img-02-02-01"
+    source_moment: "ch34-the-azure-cage-moment-02"
+    scene_id: "scn-34-02"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "location"
+      - "atmosphere"
+    scene_mood: "ominous"
+    mood_rationale: |
+      Beauty hiding danger. The breathtaking pavilion at twilight immediately read
+      by the paladin as a perfectly crafted kill zone. Aesthetic wonder weaponized.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The Azure Pavilion at dusk, viewed from the 300-foot oak pier stretching toward
+      it. The white marble seems to hold the day's last light, azure roof tiles
+      deepening to twilight blue. Enchanted crystal lanterns float in the air, casting
+      silver glow that shimmers on the harbor's gentle waves. The copper and rose
+      sunset paints the sky behind the central glass dome. But the perspective is
+      tactical: Thorne and Veyra walk the exposed planks, Thorne's shoulders tense
+      as he reads the pier as a chokepoint. City Watch screeners visible at the first
+      lay-by. Chainable bollards. No cover. Beautiful. Deadly.
+    composition_notes: |
+      Wide establishing shot with pier creating strong leading line to pavilion.
+      Thorne and Veyra small in foreground, emphasizing the exposed distance. Pavilion
+      dominating background as destination and threat. Sunset colors framing the dome.
+      Crystal lanterns creating ethereal markers along the approach. The kill zone
+      visible in the geometry.
+    visual_hook: "Breathtaking pavilion at twilight, 300-foot exposed pier, beauty hiding the kill zone"
+    depicts_characters:
+      - "thorne-brightward"
+      - "veyra-thornwake"
+    character_states:
+      thorne-brightward: |
+        Old dress uniform with polished brass buttons. Steel-gray cropped hair.
+        Familiar tension in shoulders as he reads the tactical reality. Faded blue
+        cloak with Last Light sigil.
+      veyra-thornwake: |
+        High-collared forest green dress. Dark mohawk visible from behind. Walking
+        with deliberate calm despite the exposed position.
+    location: "azure-pavilion"
+    zone: "pier"
+    lighting:
+      primary_source: "Copper and rose sunset behind pavilion"
+      quality: "golden hour transitioning to twilight"
+      direction: "backlit, silhouetting figures"
+      color_temperature: "warm sunset fading to cool silver"
+      shadow_depth: "long shadows from figures"
+      atmospheric: "salt air, crystal lantern shimmer"
+    palette:
+      dominant:
+        - "white marble"
+        - "azure roof tiles"
+        - "copper-rose sunset"
+      accent:
+        - "silver crystal lantern glow"
+        - "oak pier planks"
+        - "harbor blue"
+      avoid:
+        - "harsh contrasts"
+        - "night darkness"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Turner-style luminous atmosphere.
+      Grand white marble pavilion at twilight with azure roof tiles catching last light.
+      Central glass and copper dome framed by copper-rose sunset sky. Enchanted crystal
+      lanterns floating in the air casting silver shimmer on harbor waves. A 300-foot
+      oak pier stretches toward the pavilion, two figures walking the exposed planks—
+      a man in faded blue cloak with tension in his shoulders, a woman in forest green
+      with distinctive dark hair. City Watch screeners visible at a lay-by niche.
+      Beautiful but exposed.
+      Wide establishing shot, pier as leading line, sunset backlighting.
+      Copper-rose warmth transitioning to silver twilight, beauty weaponized.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      night scene, combat, weapons drawn, crowds
+    tags:
+      - "pavilion"
+      - "pier"
+      - "thorne"
+      - "veyra"
+      - "anchor"
       - "ominous"
       - "kill-zone"
     generated_at: null
@@ -524,390 +900,91 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch34-the-azure-cage-img-34-03-01"
-    source_moment: "ch34-the-azure-cage-moment-08"
-    scene_id: "scn-34-03"
-    image_type: "character"
-    category:
-      - "character"
-      - "moment"
-      - "emotion"
-    scene_mood: "somber"
-    mood_rationale: "Honor shattered. Korrath reading the building's trauma. Professional expertise as shame. Rembrandt shadows."
-    aspect_ratio: "2:3"
-    orientation: "portrait"
-    size: "1024x1536"
-    visual_description: |
-      Korrath Threnx presses massive bronze-scaled hand against marble column. Amber-gold eyes wide with horror. Diagonal scar across left eye catches lamplight. Expression crumbles. Guild crest on bronze chain prominent center. Gala background blurred. Identity shattering.
-    composition_notes: |
-      Close portrait. Low angle. Column left third. Face right intersection. Guild crest visual anchor. Chiaroscuro on scales. Transition from assessment to devastation.
-    visual_hook: "Korrath's massive bronze-scaled hand pressed flat against the marble, diagonal scar catching lamplight"
-    depicts_characters:
-      - "korrath-threnx"
-    character_states:
-      korrath-threnx: |
-        Grief gesture. Dulling bronze scales. Wide eyes. Guild crest focal point. Formal gala attire.
-    location: "azure-pavilion"
-    lighting:
-      primary_source: "Gala lamplight"
-      quality: "dramatic, hard edges"
-      direction: "above-right"
-      color_temperature: "warm amber on scales vs cold marble reflection"
-      shadow_depth: "deep, rich"
-      atmospheric: "unfocused background"
-    palette:
-      dominant:
-        - "burnished bronze"
-        - "warm amber"
-        - "shadow black"
-        - "white marble"
-      accent:
-        - "gold crest"
-      avoid:
-        - "cheerful colors"
-    prompt_used: |
-      Close portrait of a bronze dragonborn male pressing a large scaled hand to a marble column,
-      amber-gold eyes wide with horror and shame,
-      diagonal scar across left eye,
-      wearing formal clothes with a heavy bronze guild crest chain,
-      warm amber lamplight and deep shadows,
-      classical oil painting, Rembrandt lighting,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, happy expression
-    tags:
-      - "character"
-      - "korrath"
-      - "somber"
-      - "shame"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch34-the-azure-cage-img-34-03-02"
+  - custom_id: "ch34-the-azure-cage-img-03-07-01"
     source_moment: "ch34-the-azure-cage-moment-07"
     scene_id: "scn-34-03"
-    image_type: "zone"
-    category:
-      - "location"
-      - "detail"
-      - "mystery"
-    scene_mood: "ominous"
-    mood_rationale: "The 'Character's Secret.' Ugly reality beneath grace. Transition from celebratory upper world to barnacle-crusted truth. Claustrophobic."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      View from dark boat beneath the pier. Forest of massive granite piles and tarred supports. Thick barnacles and seaweed. Black oily water. Glimpses of silver-white gala light and azure tiles through narrow floor gaps above. Ceiling of light. Belly of the pavilion.
-    composition_notes: |
-      Low angle looking up into understructure. Pillars create vertical claustrophobia. Boat gunwale lower foreground. Gaps above create 'ceiling of light'. Depth into harbor void.
-    visual_hook: "Warm elegant gala illumination glimpsed through the narrow gaps of a dark, wet, barnacle-crusted foundation."
-    depicts_characters: []
-    character_states: {}
-    location: "azure-pavilion"
-    lighting:
-      primary_source: "Gala light through floor gaps"
-      quality: "narrow shafts, flickering"
-      direction: "top-down"
-      color_temperature: "silver-white vs cold black water"
-      shadow_depth: "absolute shadows in pillars"
-      atmospheric: "damp, salt spray"
-    palette:
-      dominant:
-        - "harbor black"
-        - "barnacle gray"
-        - "seaweed green-black"
-        - "tar brown"
-      accent:
-        - "azure slivers"
-      avoid:
-        - "warm skin tones"
-    prompt_used: |
-      Low angle shot from a boat looking up at the wet barnacle-covered pillars beneath a harbor pier,
-      shafts of warm elegant light through the floor planks above,
-      dark oily water reflecting light slivers,
-      atmosphere of a hidden secret beneath beauty,
-      classical oil painting, Symbolist unease, environmental horror,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, sunny beach
-    tags:
-      - "location"
-      - "understructure"
-      - "ominous"
-      - "secrets"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch34-the-azure-cage-img-34-04-01"
-    source_moment: "ch34-the-azure-cage-moment-09"
-    scene_id: "scn-34-04"
-    image_type: "pivot"
+    image_type: "beat"
     category:
       - "moment"
       - "character"
       - "action"
     scene_mood: "kinetic"
-    mood_rationale: "Contained fury breaking veneer. Wild magic escapes control. Spark cutting through warm gala light. Kinetic energy in social setting."
+    mood_rationale: |
+      Youth proving itself. The nervous stablehand-turned-spy executing his first
+      real intelligence grab—heart hammering, hands trembling, but eyes sharp and
+      mission accomplished.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Cid and Mourngrave face off in golden gala light. Wine glass held in Cid's brass prosthetic arm. Blue-white arc crackles from mechanical fingers. Cid's smile sharp edges. Mourngrave expression ice-cold assessment. Oblivious crowd background. Declaration of war.
+      Near the service hoist in the Azure Pavilion's service area. Finn lurches forward
+      in a feigned stumble, wine bottle in hand, red liquid sloshing over a staging
+      crate and soaking a sheaf of papers. His young face is flushed with terror and
+      determination, eyes darting rapidly across the page even as he yelps an apology.
+      Shipping manifests... Live Cargo... The Veridian administrator is turned away,
+      arguing with a porter, oblivious. Finn's hands tremble as he dabs at the mess
+      with a rag, buying time to scan. In the background, the gala continues—Grimjaw's
+      dwarven chaos audible as distant singing.
     composition_notes: |
-      Two-shot confrontation. Spark visual center. Height difference (gnome vs human). Bokeh background gala-goers. Diagonal energy from arc.
-    visual_hook: "The blue-white arc of magical fury crackling from Cid's brass prosthetic fingers"
+      Medium shot with Finn at center in mid-stumble. Wine splash frozen in motion.
+      Papers on crate catching his scan. Administrator's back turned on left. Porter
+      argument creating distraction. Service hoist visible establishing location.
+      Diagonal composition emphasizing the chaotic motion of the feigned accident.
+    visual_hook: "Wine splashing on manifests, terrified eyes scanning 'Live Cargo' while pretending to apologize"
     depicts_characters:
-      - "cidrella-vexweld"
-      - "dr-elisande-mourngrave"
-    character_states:
-      cidrella-vexweld: |
-        Brass arm holding glass. Blue-white arc. Copper/blue hair. Sharp dangerous smile. Brown eyes blazing.
-      dr-elisande-mourngrave: |
-        Tall, elegant. Dark updo. Blue gown. Ice-cold calculating mask.
-    location: "azure-pavilion"
-    lighting:
-      primary_source: "Gala lights + magical spark"
-      quality: "dramatic contrast"
-      direction: "above + hand"
-      color_temperature: "warm amber vs cold electric blue"
-      shadow_depth: "moderate ambient vs harsh spark shadows"
-      atmospheric: "soft warmth vs electric energy"
-    palette:
-      dominant:
-        - "warm amber"
-        - "copper hair"
-        - "royal blue gown"
-      accent:
-        - "blue-white spark"
-      avoid:
-        - "dark somber colors"
-    prompt_used: |
-      Gnome woman with red hair and blue streak facing an elegant woman in a blue gown,
-      blue-white electricity sparking from the gnome's mechanical hand,
-      dangerous smile and ice-cold stare,
-      formal gala ballroom background,
-      atmosphere of a public declaration of war,
-      classical oil painting, Romantic dynamism,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, peaceful
-    tags:
-      - "pivot"
-      - "confrontation"
-      - "cid"
-      - "kinetic"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch34-the-azure-cage-img-34-07-01"
-    source_moment: "ch34-the-azure-cage-moment-12"
-    scene_id: "scn-34-07"
-    image_type: "anchor"
-    category:
-      - "moment"
-      - "character"
-      - "emotion"
-    scene_mood: "intimate"
-    mood_rationale: "Found family unified by resolve. Diverse faces in warm lantern light. Connection over isolation. Vermeer-style."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Company around lamp-lit map table. Diverse faces (scales, blue skin, scars). Finn at center holding wine-stained manifest in trembling hands. Veyra processing, Thorne planning, Marcus connecting fragments. Lantern at table edge casting golden glow. Unified resolve against darkness.
-    composition_notes: |
-      Medium-wide ensemble. High angle looking down at table. Lantern primary source below-center. Diverse faces circle creates unity. Dark corners.
-    visual_hook: "The diverse Company faces illuminated by golden lantern light—bronze scales, aquamarine skin, burn scars—united in grim purpose"
-    depicts_characters:
-      - "veyra-thornwake"
       - "finn"
-      - "thorne-brightward"
-      - "marcus-heartbridge"
-      - "korrath-threnx"
-      - "cidrella-vexweld"
-      - "grimjaw-ironbeard"
-      - "aldwin-gentleheart"
-      - "rill-vossari"
     character_states:
-      veyra-thornwake: |
-        Grave, resolved. Burn scar catching light.
       finn: |
-        Pale but triumphant. Holding manifest.
-      thorne-brightward: |
-        Deep-set eyes planning. Military bearing.
-      korrath-threnx: |
-        Bronze scales dulled by shame.
-      cidrella-vexweld: |
-        Prosthetic sparking blue.
-    location: "warehouse-complex"
-    lighting:
-      primary_source: "Veyra's lantern"
-      quality: "soft, warm, intimate"
-      direction: "below-center"
-      color_temperature: "warm amber-gold"
-      shadow_depth: "soft gradients"
-      atmospheric: "dark corners"
-    palette:
-      dominant:
-        - "warm amber-gold"
-        - "honey tones"
-        - "sepia shadows"
-      accent:
-        - "teal tattoos"
-        - "aquamarine skin"
-      avoid:
-        - "cold harsh light"
-    prompt_used: |
-      Group of adventurers of different races gathered around a wooden table at night,
-      single golden lantern illuminating their serious faces from below,
-      maps and documents on the table,
-      young man at center holding a stained paper,
-      atmosphere of found family and grim determination,
-      classical oil painting, Vermeer lighting,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, cheerful
-    tags:
-      - "anchor"
-      - "ensemble"
-      - "intimate"
-      - "resolve"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch34-the-azure-cage-img-34-03-03"
-    source_moment: "ch34-the-azure-cage-moment-06"
-    scene_id: "scn-34-03"
-    image_type: "beat"
-    category:
-      - "character"
-      - "humor"
-      - "moment"
-    scene_mood: "celebratory"
-    mood_rationale: "Grimjaw's dwarven diversion. Comedic energy providing necessary cover. Jan Steen tavern energy."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
-    visual_description: |
-      Grimjaw slamming a tankard down on a table, foaming ale splashing. He has a guardsman in a friendly headlock, mouth open mid-ballad. Other guards around him are laughing and raising their own mugs. The scene is one of boisterous, off-key cheer. Warm amber light and thick pipe smoke.
-    composition_notes: |
-      Centered square. Focus on Grimjaw and the splashing ale. Circular arrangement of the guards. Warm radial lighting.
-    visual_hook: "The flying ale foam catching the lantern light as the 'Company Grandpa' creates a pocket of chaos."
-    depicts_characters:
-      - "grimjaw-ironbeard"
-    character_states:
-      grimjaw-ironbeard: |
-        Singing loudly. Laughing. Headlock on guard. Messy beard.
+        Simple leather tunic, kitchen-stained. Young face flushed with terror and
+        determination. Eyes darting across page even while mouth forms apology.
+        Hands trembling. Heart visibly hammering. The transformation from stablehand
+        to operative in progress.
     location: "azure-pavilion"
+    zone: "central-nave"
     lighting:
-      primary_source: "Tavern lamps"
-      quality: "Warm, chaotic"
-      direction: "Multiple"
-      color_temperature: "Amber"
-      shadow_depth: "Soft"
-      atmospheric: "Pipe smoke"
+      primary_source: "Service area lanterns"
+      quality: "practical, less elegant than main gala"
+      direction: "overhead, utilitarian"
+      color_temperature: "warm amber"
+      shadow_depth: "moderate"
+      atmospheric: "busy, chaotic"
     palette:
       dominant:
-        - "warm amber"
-        - "ale brown"
-        - "wood brown"
+        - "wine red splash"
+        - "cream paper"
+        - "simple leather browns"
       accent:
-        - "foam white"
+        - "warm lantern amber"
+        - "Finn's flushed face"
       avoid:
-        - "elegance"
+        - "elegant gala colors"
+        - "cool tones"
     prompt_used: |
-      Dwarf in a formal coat leading a rowdy drinking song with human guards at a party,
-      tankards slamming on table, ale splashing,
-      boisterous and funny atmosphere,
-      warm amber lamplight and smoke,
-      classical oil painting, Jan Steen style,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, captured moment of chaos.
+      Service area near a goods hoist, less elegant than the main gala space.
+      A young man with brown hair in simple leather tunic lurches forward in a
+      feigned stumble, wine bottle in hand, red liquid splashing over a staging
+      crate and soaking a sheaf of papers. His young face flushed with terror and
+      determination, hazel eyes darting across the page while his mouth forms an
+      apology. Administrator's back turned, arguing with a porter. Distant sound
+      of dwarven singing.
+      Medium shot, diagonal composition, wine splash frozen mid-motion.
+      Warm amber service lighting, kinetic energy, youth proving its worth.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, serious
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      calm expression, static pose, elegant setting, formal wear
     tags:
+      - "finn"
+      - "wine-spill"
+      - "intelligence"
       - "beat"
-      - "comedy"
-      - "grimjaw"
-      - "celebratory"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch34-the-azure-cage-img-34-05-01"
-    source_moment: "ch34-the-azure-cage-moment-10"
-    scene_id: "scn-34-05"
-    image_type: "beat"
-    category:
-      - "character"
-      - "action"
-    scene_mood: "intimate"
-    mood_rationale: "Diplomatic interception. Precise maneuvering. Marcus in his element. The column forest context."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Marcus Heartbridge stepping from behind a fluted marble column. His smile is effortless as he intercepts a portly noble (Lord Thann) and a stern guard (Greycloak). Marcus has a hand lightly on the noble's shoulder, guiding him away. Greycloak is frozen in frustration. Elegant pavilion architecture background.
-    composition_notes: |
-      Medium shot. Marcus central. Columns provide vertical framing and rhythm. Focus on the triangular tension between the three men.
-    visual_hook: "The smooth, velvet precision of Marcus's intervention—stopping a threat with a well-placed word and a smile."
-    depicts_characters:
-      - "marcus-heartbridge"
-      - "thale-greycloak"
-    character_states:
-      marcus-heartbridge: |
-        Smiling effortlessly. Charcoal doublet. Hand on noble's arm.
-      thale-greycloak: |
-        Frozen. Frustrated expression. Helmeted.
-    location: "azure-pavilion"
-    lighting:
-      primary_source: "Crystal lanterns"
-      quality: "Warm, sophisticated"
-      direction: "Side"
-      color_temperature: "Gold"
-      shadow_depth: "Soft"
-      atmospheric: "Gala air"
-    palette:
-      dominant:
-        - "marble white"
-        - "charcoal grey"
-        - "gold light"
-      accent:
-        - "noble's colorful silks"
-      avoid:
-        - "violence"
-    prompt_used: |
-      Elegant man in dark silk intercepting a noble and a guard behind a marble column,
-      effortless smile and diplomatic posture,
-      guard looking frustrated,
-      glittering party background,
-      atmosphere of high-stakes social maneuvering,
-      classical oil painting, Vermeer lighting,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "beat"
-      - "marcus"
-      - "politics"
-      - "intimate"
+      - "kinetic"
+      - "spy-mission"
     generated_at: null
     file_name: null
     file_path: null

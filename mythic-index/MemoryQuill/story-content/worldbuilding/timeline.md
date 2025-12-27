@@ -145,7 +145,7 @@
 
 - **Week 6 - Official Formation**:
   - _Event_: Return from Blackvein, company naming ceremony, Last Light Company founding
-  - _Characters Involved_: Veyra, Thorne, Grimjaw, Aldwin, Finn, Mistress Elba, Sarge
+  - _Characters Involved_: Veyra, Thorne, Grimjaw, Aldwin, Finn, Mistress Elba, Tomaq
   - _Location_: Westwall Watchpost
   - _Chapter/Scene Reference_: Chapter 9 - "The Westwall Welcome"
 

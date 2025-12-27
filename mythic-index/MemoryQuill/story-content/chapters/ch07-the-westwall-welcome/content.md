@@ -14,7 +14,7 @@ key_characters:
   - aldwin-gentleheart
   - finn
   - mistress-elba
-  - sarge
+  - lieutenant-tomaq
 key_locations:
   - westwall-watchpost
 timeline_anchor: "Return from Blackvein Lode - Company Formation"
@@ -80,7 +80,7 @@ Grimjaw paused at the hilltop, his ancient eyes taking in every detail with an e
         location:"westwall-watchpost"
         primary_zone:"courtyard"
         location_zones:["courtyard","kitchen"]
-        characters:["finn","mistress-elba","grimjaw-ironbeard","sarge","veyra-thornwake","thorne-brightward"]
+        characters:["finn","mistress-elba","grimjaw-ironbeard","lieutenant-tomaq","veyra-thornwake","thorne-brightward"]
         tags:["welcome","introduction","family","courtyard"]
         images:["ch07-the-westwall-welcome-ch7-finns-joy.png"]
 -->
@@ -131,23 +131,23 @@ She looked Grimjaw up and down with the practiced assessment of a grandmother wh
 
 They locked eyes for a moment, two immovable dwarven forces meeting. Then Grimjaw smiled—a real smile that transformed his craggy face. "Challenge accepted, grandmother."
 
-"Good. Dinner's in two hours. Don't be late, or you'll get what's left, and what's left is usually claimed by Sarge."
+"Good. Dinner's in two hours. Don't be late, or you'll get what's left, and what's left is usually claimed by Tomaq."
 
-"Sarge?" Grimjaw asked.
+"Tomaq?" Grimjaw asked.
 
-His question was answered by the emergence of a massive figure from the main tower. The orc had to duck his head and turn slightly sideways to clear the doorframe, a practiced movement that spoke of years navigating spaces built for smaller folk. Sarge was gray-skinned where most orcs were green, his left tusk broken off halfway, the remains capped with silver. Watch-Sergeant chevrons were sewn onto his pauldron with precise stitches—his own work, Veyra knew, as the orc was surprisingly talented with a needle.
+His question was answered by the emergence of a massive figure from the main tower. The orc had to duck his head and turn slightly sideways to clear the doorframe, a practiced movement that spoke of years navigating spaces built for smaller folk. Tomaq was gray-skinned where most orcs were green, his left tusk broken off halfway, the remains capped with silver. Watch-Sergeant chevrons were sewn onto his pauldron with precise stitches—his own work, Veyra knew, as the orc was surprisingly talented with a needle.
 
 He carried a two-handed battle-axe in one hand, the weapon looking almost delicate in his massive grip. His one good eye—the other hidden behind a leather patch—surveyed the group with professional assessment.
 
-"Another stray?" Sarge rumbled, his voice like grinding millstones.
+"Another stray?" Tomaq rumbled, his voice like grinding millstones.
 
-"Another specialist," Thorne corrected, falling into the easy pattern of their friendship. "Master Grimjaw Ironbeard, meet Sergeant Grushak, called Sarge. He keeps us from falling apart when you're not terrorizing us with training."
+"Another specialist," Thorne corrected, falling into the easy pattern of their friendship. "Master Grimjaw Ironbeard, meet Sergeant Grushak, called Tomaq. He keeps us from falling apart when you're not terrorizing us with training."
 
-"We're running out of room," Sarge observed, though his tone suggested this was merely a tactical consideration rather than a complaint. "Eastern tower's full. Western's got the armory. Northern's half-collapsed."
+"We're running out of room," Tomaq observed, though his tone suggested this was merely a tactical consideration rather than a complaint. "Eastern tower's full. Western's got the armory. Northern's half-collapsed."
 
 "I'll fix that," Grimjaw stated matter-of-factly. "Stone tells me it just needs proper shoring. Week's work, maybe less. Then you'll have room for another dozen."
 
-"Just like that?" Sarge asked, his one eye narrowing with interest.
+"Just like that?" Tomaq asked, his one eye narrowing with interest.
 
 "You got stone?" Grimjaw asked.
 
@@ -159,7 +159,7 @@ He carried a two-handed battle-axe in one hand, the weapon looking almost delica
 
 "Then yes, just like that." Grimjaw set down one of his packs with a thud that suggested its weight. "I got skill, you got materials. Simple equation."
 
-Sarge studied the dwarf for a long moment, then nodded slowly. "You were at Mithral Deep."
+Tomaq studied the dwarf for a long moment, then nodded slowly. "You were at Mithral Deep."
 
 It wasn't a question. Grimjaw stiffened slightly. "You heard about that?"
 
@@ -171,11 +171,11 @@ It wasn't a question. Grimjaw stiffened slightly. "You heard about that?"
 
 "I always count. Someone should remember the exact number. They deserve that much."
 
-Sarge nodded again, deeper this time—one warrior acknowledging another's burden. "There's ale in the pantry. The good stuff Thorne thinks I don't know about."
+Tomaq nodded again, deeper this time—one warrior acknowledging another's burden. "There's ale in the pantry. The good stuff Thorne thinks I don't know about."
 
 "I knew you knew," Thorne protested.
 
-"I know you knew I knew," Sarge replied, the faintest hint of a smile tugging at his remaining tusk. "Welcome to the Westwall, Master Ironbeard. We're all broken here, but we're working on fixing each other."
+"I know you knew I knew," Tomaq replied, the faintest hint of a smile tugging at his remaining tusk. "Welcome to the Westwall, Master Ironbeard. We're all broken here, but we're working on fixing each other."
 
 As the group began dispersing, Mistress Elba caught Grimjaw's arm with surprising strength for someone her size. "You'll want to see the kitchen and storage before dinner," she said, more command than invitation. "Professional courtesy—one dwarf to another."
 
@@ -225,7 +225,7 @@ Fayne had cleared a space in the stable's loft—dry, secure, with a view of the
 
 That evening, the entire company gathered in the main hall. It had been transformed from a stark military mess into something warmer—tapestries covering the worst of the stone walls, benches softened with cushions "liberated" from a noble's discarded furniture, the long table scarred but clean, set with mismatched plates and cups that somehow made it feel more real than matching sets ever could.
 
-The lantern—Veyra's lantern, the one that had survived the canyon—sat in the center of the table, its light casting warm shadows on faces both new and familiar. Aldwin had prepared tea for those who wanted it, while Sarge's "hidden" ale had made a mysterious appearance.
+The lantern—Veyra's lantern, the one that had survived the canyon—sat in the center of the table, its light casting warm shadows on faces both new and familiar. Aldwin had prepared tea for those who wanted it, while Tomaq's "hidden" ale had made a mysterious appearance.
 
 "We need to talk about what we are," Veyra said, standing but not formally, just a woman addressing her chosen family. "We're not a company yet, not officially. The Watch tolerates us because we're useful. The nobles ignore us because we're beneath notice. The common folk..." She paused. "The common folk are starting to know our name."
 
@@ -247,7 +247,7 @@ The lantern—Veyra's lantern, the one that had survived the canyon—sat in the
 
 "Speak for yourself," Grimjaw grumbled from his corner. "I'm perfectly proportioned for my height."
 
-The laughter that followed was genuine, the kind that came from shared understanding. Even Sarge's rumbling chuckle joined in.
+The laughter that followed was genuine, the kind that came from shared understanding. Even Tomaq's rumbling chuckle joined in.
 
 "But seriously," Darric said as the laughter died down. "What do we call ourselves?"
 
@@ -269,7 +269,7 @@ Veyra touched the lantern, its glass warm beneath her scarred fingers. "When eve
 
 "A light for the lost," Aldwin added, his gentle voice carrying clearly.
 
-"A beacon for the broken," Sarge rumbled.
+"A beacon for the broken," Tomaq rumbled.
 
 "And ale for the found," Grimjaw boomed, raising his mug.
 
@@ -304,12 +304,12 @@ Veyra lifted the lantern, holding it high so its light reached every corner of t
         location:"westwall-watchpost"
         primary_zone:"wall-walk"
         location_zones:["main-hall","wall-walk"]
-        characters:["veyra-thornwake","thorne-brightward","grimjaw-ironbeard","sarge","finn","archer-venn","aldwin-gentleheart"]
+        characters:["veyra-thornwake","thorne-brightward","grimjaw-ironbeard","lieutenant-tomaq","finn","archer-venn","aldwin-gentleheart"]
         tags:["bonding","naming","celebration","family"]
         images:["ch07-the-westwall-welcome-ch7-sarges-entrance.png"]
 -->
 
-As the evening wore on, the formal gathering evolved into something more natural—Grimjaw had somehow ended up in a drinking contest with Sarge, the two of them matching each other mug for mug while Mistress Elba provided a running commentary on their declining coherence. Finn and the younger members sat in a circle around Aldwin, who was telling them a story about a brave mouse who saved a lion—a parable about how small acts of kindness could have great consequences.
+As the evening wore on, the formal gathering evolved into something more natural—Grimjaw had somehow ended up in a drinking contest with Tomaq, the two of them matching each other mug for mug while Mistress Elba provided a running commentary on their declining coherence. Finn and the younger members sat in a circle around Aldwin, who was telling them a story about a brave mouse who saved a lion—a parable about how small acts of kindness could have great consequences.
 
 Veyra found herself on the wall walk with Thorne, looking out over Waterdeep as the city settled into night. Lights twinkled below like earthbound stars, each one a life, a story, a potential crisis or salvation.
 
@@ -345,13 +345,13 @@ The Last Light Company had found its name, its purpose, its home. Now the real w
         images:["ch07-the-westwall-welcome-ch7-naming-assembly.png"]
 -->
 
-The next morning came too soon for some—Grimjaw and Sarge were notably subdued at breakfast, though neither would admit defeat in their contest. But hangover or not, the work of building something new didn't pause.
+The next morning came too soon for some—Grimjaw and Tomaq were notably subdued at breakfast, though neither would admit defeat in their contest. But hangover or not, the work of building something new didn't pause.
 
 Grimjaw was already examining the northern tower, making notes in a small leather journal, occasionally knocking on stones and listening to their response with an intensity that bordered on reverence. Finn followed him like a shadow, absorbing every word about load-bearing walls and stress distribution with the focus of a natural student.
 
 Aldwin had begun organizing the infirmary properly, with Halden's eager assistance. The halfling's collection of herbs and medicines was extensive, and his method of organization was both practical and somehow beautiful—jars arranged by use and season, creating a rainbow of healing along the shelves.
 
-Thorne worked with the fighters, running them through drills that emphasized rescue over combat—how to clear debris, how to carry injured, how to work as a team when strength alone wasn't enough. Sarge watched from the side, occasionally barking corrections that made veteran soldiers jump like recruits.
+Thorne worked with the fighters, running them through drills that emphasized rescue over combat—how to clear debris, how to carry injured, how to work as a team when strength alone wasn't enough. Tomaq watched from the side, occasionally barking corrections that made veteran soldiers jump like recruits.
 
 And Veyra stood in her makeshift office, looking at a map of Waterdeep and the surrounding lands. Red pins marked recent disasters, blue pins marked potential allies, black pins marked places where they'd been too late. But now there were green pins too—places where the Last Light Company had made a difference.
 

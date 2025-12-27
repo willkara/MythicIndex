@@ -1,261 +1,229 @@
-# ============================================================================
-# CHAPTER IMAGERY SPECIFICATION
-# Chapter: Splintered Focus
-# Generated: 2025-12-21
-# ============================================================================
-
 metadata:
   entity_type: "chapter-imagery"
   slug: "ch31-splintered-focus"
   chapter_number: 31
   chapter_title: "Splintered Focus"
-  visual_thesis: "From moonlit determination through the beautiful lie of a hidden prison to the blood-price of necessary violence—light and water both become weapons."
+  visual_thesis: "Intelligence warfare—the reconnaissance team splits to double their harvest, with Lyra's surgical extraction proving her worth while Rill must sacrifice her innocence when water becomes a weapon, each victory demanding its own price."
   color_palette:
     primary:
-      - "#1a2633"
-      - "#3d5c6b"
-      - "#8b9faa"
-      - "#d4a574"
+      - "#1C2331"  # Moonlit night / deep shadow
+      - "#4A6FA5"  # Storm-blue / water genasi skin
+      - "#FFB347"  # Lantern gold / warmth
     accent:
-      - "#7b5ea7"
-      - "#c9463d"
+      - "#6B2D5C"  # Deep plum / Lyra's skin
+      - "#2D5A3D"  # Sea-green / corrupted water
+      - "#8B0000"  # Blood red / ritual offering
   generation_defaults:
     provider: "openai"
     model: "dall-e-3"
     quality: "hd"
   mood_distribution:
-    somber: 2
-    pastoral: 1
-    celebratory: 0
-    aquatic: 2
-    ethereal: 2
-    intimate: 1
-    kinetic: 0
-    ominous: 2
+    ominous: 5
+    ethereal: 1
+    intimate: 2
 
 characters:
-  - ref: "veyra-thornwake"
-    name: "Veyra Thornwake"
-    scene_variations: "Lantern dark throughout. Mohawk and cowl prominent. Tactical lead. Mask cracking in private."
-    reference_images:
-      - "veyra-thornwake-official-portrait-01"
-
   - ref: "lyra-kestrel"
     name: "Lyra Kestrel"
-    scene_variations: "Operative mode. Purple wisps active at throat. Embracing Darius. Closing eyes of fallen. Master of shadow."
+    scene_variations: |
+      CHAPTER 31 VARIATIONS (THE INFILTRATION):
+      - SCENES 01-02 (Pre-infiltration): Deep plum skin, auburn hair in severe bun, golden predatory eyes. Dark practical clothing. Observing, calculating, relaxed alertness.
+      - SCENE 02 (The Approach): Moving with fluid silence through shadows. Obsidian horns gleaming in moonlight.
+      - SCENE 02 (Voice Mimicry): Calligraphic patterns on dusky throat pulsing with light as she speaks in Poyra's voice. Darker purple wisps manifesting around neck like visible sound waves.
+      - SCENE 03 (Comforting Rill): Expression softened with professional understanding. Golden eyes meeting Rill's luminous grey.
+      - Throughout: Lean athletic build, moves with weightless grace. Obsidian horns sweep back from temples. Hairpin blade securing severe bun.
     reference_images:
-      - "lyra-kestrel-portrait-01"
+      - "lyra-kestrel-portrait"
 
   - ref: "rill-vossari"
     name: "Rill Vossari"
-    scene_variations: "Skin color shifts from aquamarine to storm-blue to sea-green. Bioluminescence writhing in pain or pulsing in rhythm. Sacrifice and atonement."
+    scene_variations: |
+      CHAPTER 31 VARIATIONS (INNOCENCE LOST):
+      - SCENE 03 (Pre-trigger): Pale sea-glass blue-green skin, visible turquoise currents beneath. Dreadlocks bound with tarnished copper wire, deep sea-green to sea-foam gradient. Calm, focused.
+      - SCENE 03 (Sensing corruption): Skin darkened to grey-green, patterns writhing uneasily. Dreadlocks swaying despite still air. Profound revulsion on face.
+      - SCENE 03 (The Kill): Skin flushed deep storm-blue. Expression of desperate plea becoming horror. Water rising at her call.
+      - SCENE 03 (Aftermath): Storm-blue skin, troubled but controlled. Eyes the soft grey of rain about to fall.
+      - SCENE 03 (Ritual): Cutting palm with bone-handled knife, blood falling into river. Patterns pulsing as water accepts offering.
+      - Throughout: Athletic swimmer's build, weighted oilskin longcoat in harbor blue, water vial pendant glowing softly.
     reference_images:
-      - "rill-vossari-casting-portrait-01"
+      - "rill-vossari-portrait"
 
-  - ref: "thorne-brightward"
-    name: "Thorne Brightward"
-    scene_variations: "Under glamour disguise. Unremarkable appearance. Protective stance. Supporting Rill."
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: |
+      CHAPTER 31 (THE COMMANDER):
+      - Throughout: Scarred face (burns from previous chapters), jet black mohawk with braided lock. Ranger's leather cuirass, lantern always present at belt or in hand.
+      - SCENE 01-02: Professional, assessing. Trusting Lyra's tactical judgment.
+      - SCENE 04: Lantern held high, illuminating seven faces. Weight of leadership evident.
     reference_images:
-      - "thorne-brightward-portrait-01"
-
-  - ref: "archer-venn"
-    name: "Archer Venn"
-    scene_variations: "Bandaged hand. Dusted armor. Concentration replacing smugness."
-    reference_images:
-      - "archer-venn-portrait-01"
+      - "veyra-thornwake-portrait"
 
 locations:
+  - ref: "silent-hand-facility"
+    zones:
+      - id: "observation-post"
+        chapter_context: |
+          Night reconnaissance position at treeline edge. Moonlight filtering through pine branches.
+          Tudor gatehouse visible in distance with warm lamplight glowing through diamond-paned windows.
+          Manicured grounds reveal kill-box architecture—gardens as channels, buildings as overlapping surveillance positions.
+          Cold, tense atmosphere of watching and waiting.
+      - id: "gatehouse"
+        chapter_context: |
+          Tudor cottage-style security checkpoint. Diamond-paned windows with reinforced metal mesh.
+          Warm lamplight interior contrasting with cold moonlit exterior.
+          Operations center behind the facade—papers, filing cabinets, communication systems.
+          The doorway where Lyra uses voice mimicry to breach security.
+      - id: "confluence"
+        chapter_context: |
+          Stream confluence point where Korrath's engineering meets Cid's arcane systems.
+          Primary stream 15 feet wide, secondary 8 feet, merging through carved rock channels.
+          Twenty-three precision sluice gates controlling water flow.
+          Water carries magical suppression—corrupted, weeping, poisoned.
+          Moonlight on churning water. Purple lightning discharge from defensive wards.
+          Site of Rill's first kill and subsequent blood ritual.
+
   - ref: "thornwood-forest"
     zones:
-      - id: "treeline"
-        chapter_context: "Ancient oaks, dense pines. Pools of deep darkness. Muffled footsteps on damp leaves."
-  - ref: "veridian-agronomics-exterior"
-    zones:
-      - id: "overview"
-        chapter_context: "Tudor gatehouse, limestone manor. Manicured gardens as funnel kill zones. Deceptive amber lamplight."
-  - ref: "water-confluence-point"
-    zones:
-      - id: "overview"
-        chapter_context: "Engineered streams, precision sluice gates. Moonlight on wet stone. Churning, corrupted water."
+      - id: "camp"
+        chapter_context: |
+          Rocky overhang rally point in deep forest. Pre-dawn darkness.
+          Familiar shelter now marked by memory of violence.
+          Veyra's lantern casting golden light on seven faces.
+          Intelligence documents spread on stone.
 
 moments:
-  - id: "ch31-splintered-focus-moment-01"
-    scene_id: "scn-31-01"
-    title: "The Splintered Focus"
-    narrative_beat: "Veyra and Thorne conferring in the forest camp, deciding to split the teams for maximum intelligence gathering."
-    visual_weight: "medium"
-    characters_present:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "lyra-kestrel"
-    location_zone: "thornwood-forest/treeline"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch31-splintered-focus-moment-02"
-    scene_id: "scn-31-02"
-    title: "The Beautiful Lie"
-    narrative_beat: "The watchers observing the warmly-lit Tudor estate from the dark pine treeline."
-    visual_weight: "hero"
-    characters_present:
-      - "veyra-thornwake"
-      - "lyra-kestrel"
-      - "archer-venn"
-    location_zone: "veridian-agronomics-exterior/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
   - id: "ch31-splintered-focus-moment-03"
     scene_id: "scn-31-02"
-    title: "The Lover's Call"
-    narrative_beat: "Lyra embracing the guard while her throat wisps pulse with the stolen voice, a corrupted tenderness."
+    title: "The Lover's Key"
+    narrative_beat: "Lyra watches Captain Darius soften at Poyra's touch—love identified as the key to breach their defenses."
     visual_weight: "high"
     characters_present:
       - "lyra-kestrel"
-    location_zone: "veridian-agronomics-exterior/overview"
-    transformation_state: "during"
+    location_zone: "silent-hand-facility/observation-post"
+    transformation_state: "before"
     recommended_images: 1
 
   - id: "ch31-splintered-focus-moment-04"
     scene_id: "scn-31-02"
-    title: "Silent Step"
-    narrative_beat: "Veyra's boot crossing the threshold into the perimeter as magical fog rolls forward."
-    visual_weight: "medium"
+    title: "The Perfect Deception"
+    narrative_beat: "The calligraphic patterns on Lyra's dusky throat pulse with light as she speaks in Poyra's exact voice—the Mockingbird's infernal gift weaponized into perfect deception."
+    visual_weight: "critical"
     characters_present:
-      - "veyra-thornwake"
-    location_zone: "veridian-agronomics-exterior/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
+      - "lyra-kestrel"
+    location_zone: "silent-hand-facility/gatehouse"
+    transformation_state: "during"
+    recommended_images: 2
 
   - id: "ch31-splintered-focus-moment-05"
     scene_id: "scn-31-03"
-    title: "Writhing Water"
-    narrative_beat: "Rill sensing the corruption at the confluence, her skin patterns writhing in elemental distress."
+    title: "Water Carries Poison"
+    narrative_beat: "Rill's sea-glass skin darkens to grey-green as she speaks words of revulsion in Aquan—'Sister-water carries poison-song'—dreadlocks swaying to currents only she can sense."
     visual_weight: "high"
     characters_present:
       - "rill-vossari"
-      - "thorne-brightward"
-      - "sergeant-kelen"
-    location_zone: "water-confluence-point/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch31-splintered-focus-moment-06"
-    scene_id: "scn-31-03"
-    title: "Burial Shroud"
-    narrative_beat: "Water rising to wrap the fallen guard like a shroud, Rill's skin flushed deep storm-blue."
-    visual_weight: "hero"
-    characters_present:
-      - "rill-vossari"
-      - "medic-halden"
-      - "archer-venn"
-    location_zone: "water-confluence-point/overview"
-    transformation_state: "during"
+    location_zone: "silent-hand-facility/confluence"
+    transformation_state: "before"
     recommended_images: 1
 
   - id: "ch31-splintered-focus-moment-07"
     scene_id: "scn-31-03"
-    title: "The Atonement Spiral"
-    narrative_beat: "Rill's bleeding palm over the water, her blood dispersing into a spiral as the river forgives the necessity."
+    title: "Water-Brother"
+    narrative_beat: "Water rises from the bank, not commanded but invited, embracing the guard like a burial shroud as Rill feels his final heartbeat through the current—a single bubble carrying his last breath to the surface."
+    visual_weight: "critical"
+    characters_present:
+      - "rill-vossari"
+    location_zone: "silent-hand-facility/confluence"
+    transformation_state: "during"
+    recommended_images: 2
+
+  - id: "ch31-splintered-focus-moment-08"
+    scene_id: "scn-31-03"
+    title: "Ritual Atonement"
+    narrative_beat: "Rill's blood falls into the river as she speaks ritual words in Aquan—the water initially recoils in grief before accepting her offering, pulsing three times like a great heart beating."
     visual_weight: "high"
     characters_present:
       - "rill-vossari"
-    location_zone: "water-confluence-point/overview"
-    transformation_state: "after"
-    recommended_images: 1
-
-  - id: "ch31-splintered-focus-moment-08"
-    scene_id: "scn-31-04"
-    title: "The Intelligence Table"
-    narrative_beat: "The team huddling over the stolen blueprints and rubbings at the camp, resolve replacing exhaustion."
-    visual_weight: "medium"
-    characters_present:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "lyra-kestrel"
-      - "rill-vossari"
-    location_zone: "thornwood-forest/treeline"
+    location_zone: "silent-hand-facility/confluence"
     transformation_state: "after"
     recommended_images: 1
 
   - id: "ch31-splintered-focus-moment-09"
-    scene_id: "scn-31-04"
-    title: "Dawn Withdrawal"
-    narrative_beat: "Seven mounted silhouettes riding away from the forest toward the first amber light of dawn."
+    scene_id: "scn-31-03"
+    title: "Protection Not Murder"
+    narrative_beat: "Lyra crouches to Rill's level, golden eyes meeting luminous sea-glass—'The water didn't choose to kill. You protected us'—the professional killer recognizing first-kill trauma in the healer."
     visual_weight: "high"
     characters_present:
-      - "veyra-thornwake"
       - "lyra-kestrel"
       - "rill-vossari"
-      - "thorne-brightward"
-      - "archer-venn"
-      - "medic-halden"
-      - "sergeant-kelen"
-    location_zone: "thornwood-forest/treeline"
+    location_zone: "silent-hand-facility/confluence"
     transformation_state: "after"
     recommended_images: 1
 
 images:
-  - custom_id: "ch31-splintered-focus-img-31-01-01"
-    source_moment: "ch31-splintered-focus-moment-01"
-    scene_id: "scn-31-01"
+  - custom_id: "ch31-splintered-focus-img-02-03-01"
+    source_moment: "ch31-splintered-focus-moment-03"
+    scene_id: "scn-31-02"
     image_type: "beat"
     category:
+      - "moment"
       - "character"
       - "emotion"
-      - "moment"
-    scene_mood: "somber"
-    mood_rationale: "Tense preparation under moonlight. The heavy responsibility of leadership splitting the team. Stillness before action."
+    scene_mood: "ominous"
+    mood_rationale: |
+      The operative identifies her angle. The warm lamplight on the lovers contrasts with Lyra's cold calculation in shadow—love as vulnerability, affection as weapon.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Veyra and Thorne huddled together in the forest camp at night. Maps are spread on a log. Veyra's face is half-lit by moonlight, half in shadow. Thorne's disguised features are serious. Lyra stands apart, her silhouette dark and coiled. The forest around them is a wall of impenetrable shadow.
+      Split composition: In the warm lamplit foreground, Captain Darius and Poyra share an intimate moment at the gatehouse checkpoint—his stern face softened, her hand on his arm, his hand covering hers. In the cold moonlit background, barely visible in shadow behind an oak trunk, Lyra watches. Her golden eyes gleam with predatory intelligence. A faint, knowing smile curves her lips. The contrast between warm domestic intimacy and cold tactical assessment creates unease.
     composition_notes: |
-      Two-shot focus on Veyra and Thorne. Lyra as a watchful third element in the background. Moonlight filtering through leaves. High contrast.
-    visual_hook: "The map on the log, illuminated by a sliver of moonlight, becoming the center of their split world."
+      Rule of thirds with the lovers in the left warm zone, Lyra's shadowed face in the right dark zone. Shallow depth of field keeps both areas legible. The eye moves from the obvious emotional scene to the hidden watcher.
+    visual_hook: "Golden eyes gleaming in shadow as Lyra identifies love as the key to breach"
     depicts_characters:
-      - "veyra-thornwake"
-      - "thorne-brightward"
       - "lyra-kestrel"
     character_states:
-      veyra-thornwake: |
-        Leaning over map. Serious expression. Hand near belt tokens.
-      thorne-brightward: |
-        Listening. Disguised features. Posture rigid.
       lyra-kestrel: |
-        Apart. Watchful silhouette. Horns catching light.
-    location: "thornwood-forest"
+        Hidden in deep shadow behind oak trunk. Only golden eyes and hint of plum skin visible. Expression calculating, lips curved in knowing smile. Obsidian horns barely catching moonlight.
+    location: "silent-hand-facility"
+    zone: "observation-post"
     lighting:
-      primary_source: "Moonlight"
-      quality: "Hard, high-contrast"
-      direction: "Side"
-      color_temperature: "Cool silver"
-      shadow_depth: "Deep"
-      atmospheric: "Forest chill"
+      primary_source: "Tudor gatehouse lamplight on lovers"
+      quality: "warm pools and cold voids"
+      direction: "from gatehouse left, moonlight from above"
+      color_temperature: "warm amber (gatehouse) / cold blue (forest)"
+      shadow_depth: "deep in forest, soft near gatehouse"
+      atmospheric: "night mist, pine needles"
     palette:
       dominant:
-        - "shadow black"
-        - "moonlight silver"
-        - "forest green"
+        - "lamplight amber"
+        - "midnight blue"
+        - "forest shadow black"
       accent:
-        - "parchment cream"
+        - "gold (Lyra's eyes)"
+        - "warm skin tones (lovers)"
       avoid:
-        - "warm firelight"
+        - "bright colors"
+        - "green magic glow"
     prompt_used: |
-      Two people huddling over a map on a fallen log in a dark forest at night,
-      cool silver moonlight filtering through trees,
-      shadowed silhouettes of adventurers preparing for a mission,
-      atmosphere of tension and split focus,
-      classical oil painting, chiaroscuro,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Vermeer interior lighting meets Rembrandt shadow.
+      Tudor gatehouse checkpoint at night, diamond-paned windows glowing warm amber.
+      Split composition: In warm lamplight, a uniformed captain and young woman share an intimate moment—his hand covering hers, faces softened by affection.
+      In the cold moonlit forest beyond, a tiefling woman with plum skin hides in shadow behind an oak trunk, only her golden predatory eyes visible, watching with a knowing smile.
+      Medium shot, dual lighting zones creating contrast between warm intimacy and cold surveillance.
+      Fantasy espionage atmosphere, love as vulnerability identified.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, firelight
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      bright lighting, daytime, obvious horns glowing, magic effects
     tags:
-      - "beat"
-      - "planning"
-      - "moonlight"
-      - "somber"
+      - "surveillance"
+      - "lyra-kestrel"
+      - "infiltration"
+      - "ominous"
     generated_at: null
     file_name: null
     file_path: null
@@ -263,130 +231,75 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch31-splintered-focus-img-31-02-01"
-    source_moment: "ch31-splintered-focus-moment-02"
+  - custom_id: "ch31-splintered-focus-img-02-04-01"
+    source_moment: "ch31-splintered-focus-moment-04"
     scene_id: "scn-31-02"
     image_type: "hero"
     category:
-      - "surveillance"
-      - "location"
-      - "ominous"
+      - "moment"
+      - "character"
+      - "symbol"
     scene_mood: "ominous"
-    mood_rationale: "The 'beautiful lie.' Deception disguised as warmth. Cold watchers studying warm deception."
+    mood_rationale: |
+      The signature ability revealed. Lyra's infernal gift made visible through the pulsing calligraphic patterns—a gift weaponized, beauty turned to deception. The supernatural element is subtle but unmistakable.
     aspect_ratio: "21:9"
     orientation: "landscape"
     size: "1792x768"
     visual_description: |
-      Through dark pine branches, the Veridian Agronomics estate glows with deceptive warmth. Tudor gatehouse windows cast amber diamonds of light onto hedges. Limestone manor rises beyond. In foreground shadows, three figures crouch at the treeline. Veyra's mohawk, Lyra's horns, Venn's bow. Utterly still silhouettes.
+      Close-medium shot of Lyra at the gatehouse door, speaking through the reinforced oak. Her deep plum skin catches lamplight filtering through the door crack. The focal point: calligraphic patterns on her dusky throat pulse with subtle inner light, darker purple wisps manifesting around her neck like visible sound waves as she speaks. Her expression is composed, eyes half-lidded in concentration. Auburn hair in severe bun, obsidian horns sweeping back. One hand holds a folder with the Veridian Agronomics seal. The door is barely cracked, warm light spilling out.
     composition_notes: |
-      Wide cinematic shot. Treeline frames left and bottom. Watchers in left third shadow. Lit gatehouse center-right. Depth through layering.
-    visual_hook: "The warm golden glow of diamond-paned windows against the absolute black of the forest"
-    depicts_characters:
-      - "veyra-thornwake"
-      - "lyra-kestrel"
-      - "archer-venn"
-    character_states:
-      veyra-thornwake: |
-        Crouched. Silhouette profile. Lantern dark. Tactical assessment.
-      lyra-kestrel: |
-        Beside Veyra. Horns catching moonlight. Predatory.
-      archer-venn: |
-        Lowered bow. Alert.
-    location: "veridian-agronomics-exterior"
-    lighting:
-      primary_source: "estate lamplight"
-      quality: "split—warm vs cold"
-      direction: "radiating from center-right"
-      color_temperature: "warm amber vs cold blue-black"
-      shadow_depth: "deep, consuming in foreground"
-      atmospheric: "ground mist in gardens"
-    palette:
-      dominant:
-        - "forest black"
-        - "amber lamplight"
-        - "limestone gray"
-      accent:
-        - "moonlight silver"
-      avoid:
-        - "friendly greens"
-    prompt_used: |
-      Shadowed figures crouching at a dark forest edge looking at a warmly lit manor house,
-      Tudor architecture with glowing windows,
-      contrast between warm lights and absolute dark forest,
-      surveillance mission atmosphere,
-      wide cinematic composition,
-      classical oil painting, Symbolist unease,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright happy colors
-    tags:
-      - "hero"
-      - "surveillance"
-      - "stronghold"
-      - "ominous"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch31-splintered-focus-img-31-02-02"
-    source_moment: "ch31-splintered-focus-moment-03"
-    scene_id: "scn-31-02"
-    image_type: "anchor"
-    category:
-      - "character"
-      - "action"
-      - "magic"
-    scene_mood: "intimate"
-    mood_rationale: "Intimacy weaponized into violence. Embrace and warmth used for assassination. Purple wisps of stolen voice."
-    aspect_ratio: "3:4"
-    orientation: "portrait"
-    size: "1024x1365"
-    visual_description: |
-      Inside the gatehouse, Lyra Kestrel embraces a guard from behind. Her arms wrap around him, one hand pressing a cloth to his face. He is sagging against her. Purple wisps swirl around Lyra's throat—calligraphic patterns pulsing. Serene concentration on her face. Warm candlelight makes it look domestic.
-    composition_notes: |
-      Medium-close portrait. Lyra supports his weight. Face visible over shoulder. Purple glow from below. Doorframe frame-within-frame.
-    visual_hook: "The ethereal purple wisps pulsing at Lyra's throat—visible evidence of stolen voice"
+      Cinematic widescreen emphasizes the horizontal throat patterns. Lyra positioned left of center, door and light source on right. The patterns are the visual anchor—subtle glow, not garish magic. Her face in three-quarter profile to show both the patterns and her expression.
+    visual_hook: "Calligraphic patterns pulsing on Lyra's throat as she speaks in stolen voice"
     depicts_characters:
       - "lyra-kestrel"
     character_states:
       lyra-kestrel: |
-        Plum skin in warm light. Purple wisps at throat. Serene focus. Professional. Mechanical precision in embrace.
-    location: "veridian-agronomics-exterior"
+        Standing at reinforced door, composed and confident. Throat patterns pulsing with subtle purple-black light as voice mimicry active. Half-lidded concentration. Auburn hair severe, obsidian horns catching lamplight edge. Holding forged documents.
+    location: "silent-hand-facility"
+    zone: "gatehouse"
     lighting:
-      primary_source: "gatehouse candles"
-      quality: "soft, warm, intimate"
-      direction: "ambient"
-      color_temperature: "warm amber vs purple glow"
-      shadow_depth: "soft"
-      atmospheric: "domestic comfort"
+      primary_source: "Lamplight through door crack"
+      quality: "warm sliver against cool darkness"
+      direction: "from right through narrow gap"
+      color_temperature: "amber warmth / night cool"
+      shadow_depth: "deep, dramatic"
+      atmospheric: "night stillness, breath visible"
     palette:
       dominant:
-        - "warm amber"
-        - "deep plum"
-        - "charcoal"
+        - "deep plum (skin)"
+        - "midnight blue (background)"
+        - "amber (door light)"
       accent:
-        - "ethereal purple"
+        - "purple-black (throat patterns)"
+        - "auburn (hair)"
+        - "gold (eyes)"
       avoid:
-        - "obvious violence"
+        - "bright magic glow"
+        - "rainbow colors"
+        - "white light"
     prompt_used: |
-      Plum-skinned woman in a gentle embrace with a collapsing man in a lamplit room,
-      glowing purple smoke wisps around her throat,
-      serene and focused expression,
-      warm candlelight and soft shadows,
-      the embrace hides a deadly intent,
-      classical oil painting, Vermeer interior lighting,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Caravaggio chiaroscuro.
+      Close-medium shot of a tiefling woman with deep plum-colored skin standing at a reinforced oak door.
+      Warm lamplight spills through the barely-cracked door, illuminating her face in profile.
+      Focal point: faint calligraphic patterns on her throat pulse with subtle purple-black light, darker wisps manifesting around her neck like visible sound waves—she is speaking in a voice not her own.
+      Auburn hair in severe bun, elegant obsidian horns sweeping back from temples, golden eyes half-lidded in concentration.
+      She holds a folder with an official seal, the picture of composed deception.
+      Ultra-wide cinematic framing, the Mockingbird's gift weaponized.
+      Fantasy espionage, voice mimicry made visible, subtle supernatural.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, blood, struggle
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      bright glowing magic, obvious spell effects, bright horns, exaggerated features
     tags:
-      - "anchor"
+      - "lyra-kestrel"
+      - "voice-mimicry"
+      - "hero-image"
       - "infiltration"
-      - "lyra"
-      - "magic"
-      - "intimate"
+      - "signature-ability"
     generated_at: null
     file_name: null
     file_path: null
@@ -394,60 +307,70 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch31-splintered-focus-img-31-02-03"
+  - custom_id: "ch31-splintered-focus-img-02-04-02"
     source_moment: "ch31-splintered-focus-moment-04"
     scene_id: "scn-31-02"
     image_type: "beat"
     category:
-      - "location"
-      - "infiltration"
-      - "ethereal"
-    scene_mood: "ethereal"
-    mood_rationale: "The 'Character's Silent Approach.' Magical concealment. boundary between world and mission vanishes. Phantom-like."
+      - "moment"
+      - "action"
+      - "character"
+    scene_mood: "clandestine"
+    mood_rationale: |
+      The sedative embrace. The second image of this moment captures the culmination—the target subdued through trust weaponized. Pools and voids, faces half-lit, candle-and-ink feeling.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Ground level shot at the estate edge. Thick magically enhanced fog rolling forward. Out of mist, the iron-banded stone base of a guard tower emerges. A single dark-booted foot is mid-step, silently crossing the threshold. Warm diamonds of windows visible far above the mist.
+      Interior of the gatehouse operations center. Captain Darius has stepped forward to embrace who he believes is Poyra—but Lyra, disguised by shadow and expectation, has pressed the Dreaming Willow cloth to his face. His body is going limp in her arms, expression shifting from affection to surprise to peaceful unconsciousness. Lyra supports his weight with practiced efficiency, guiding him toward the command chair. Papers and coffee cup visible on the desk behind. Warm lamplight from a brass desk lamp, shadows deep in corners.
     composition_notes: |
-      Extreme low-angle. Fog dominates lower two-thirds. Guard tower base vertical anchor right. Boot as human anchor. Silver-gray vs dark charcoal.
-    visual_hook: "A single dark boot caught mid-step as a wave of magical fog rolls over the base of a guard tower."
+      Medium shot capturing the embrace turned ambush. Darius's larger form supported by Lyra's precise positioning. His face visible in transition to sleep. The desk and documents visible in background establishing the intelligence target. Intimate framing of a clinical action.
+    visual_hook: "The embrace becomes sedation—trust weaponized, target subdued"
     depicts_characters:
-      - "veyra-thornwake"
+      - "lyra-kestrel"
     character_states:
-      veyra-thornwake: |
-        Only dark boot and leg visible. Mid-step. Warrior's focus.
-    location: "veridian-agronomics-exterior"
+      lyra-kestrel: |
+        Supporting unconscious Darius in embrace position. Expression clinical, efficient—the professional at work. One hand holding cloth to his face, other supporting his weight. Plum skin catching lamplight. Obsidian horns visible in profile.
+    location: "silent-hand-facility"
+    zone: "gatehouse"
     lighting:
-      primary_source: "predawn gray"
-      quality: "diffused, soft, dreamlike"
-      direction: "ambient"
-      color_temperature: "silver-gray"
-      shadow_depth: "minimal"
-      atmospheric: "thick magical mist"
+      primary_source: "Brass desk lamp"
+      quality: "warm pools, deliberate shadow"
+      direction: "from desk right, creating pools"
+      color_temperature: "amber warm"
+      shadow_depth: "deep in corners"
+      atmospheric: "close, intimate, operational"
     palette:
       dominant:
-        - "mist gray"
-        - "stone blue-black"
-        - "earth brown"
+        - "amber lamplight"
+        - "shadow black"
+        - "uniform gray (Darius)"
       accent:
-        - "amber window glow top"
+        - "deep plum (Lyra)"
+        - "paper cream (documents)"
       avoid:
-        - "sharp edges"
+        - "cold lighting"
+        - "bright colors"
     prompt_used: |
-      Low angle shot of a boot stepping through thick ground mist toward a stone wall,
-      stone tower base emerging from fog,
-      ghostly and dreamlike atmosphere,
-      silver-gray light and soft focus,
-      classical oil painting, Pre-Raphaelite luminosity,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, intimate Dutch interior style.
+      Operations center interior at night, brass desk lamp casting warm pools of light.
+      A tiefling woman with deep plum skin supports an unconscious uniformed captain in her arms, one hand pressing a cloth to his face as he slumps. His expression peaceful, transitioning from surprise to sleep.
+      She guides him toward a command chair, papers and empty coffee cup on the desk behind.
+      Clinical efficiency in intimate framing—the embrace as weapon, trust weaponized.
+      Medium shot, warm amber lighting, clandestine atmosphere.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright sunlight
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      violence, blood, struggle, bright lighting, cold tones
     tags:
-      - "beat"
+      - "lyra-kestrel"
       - "infiltration"
-      - "mist"
-      - "ethereal"
+      - "sedation"
+      - "clandestine"
     generated_at: null
     file_name: null
     file_path: null
@@ -455,66 +378,148 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch31-splintered-focus-img-31-03-01"
+  - custom_id: "ch31-splintered-focus-img-03-05-01"
     source_moment: "ch31-splintered-focus-moment-05"
     scene_id: "scn-31-03"
-    image_type: "mood"
+    image_type: "detail"
     category:
-      - "character"
-      - "emotion"
       - "moment"
+      - "character"
+      - "symbol"
     scene_mood: "ominous"
-    mood_rationale: "Corrupted water. Rill's physical reaction to elemental pain. Beautiful and terrible engineering. Elemental dread."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
+    mood_rationale: |
+      Corruption sensed. Rill's druidic connection reveals the water's violation. The detail shot emphasizes her physical transformation—skin darkening, patterns writhing, dreadlocks moving to unseen currents. Wrongness made visible through the water-touched body.
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
     visual_description: |
-      Rill kneels at engineered confluence. Hands hover above surface. Skin darkened to troubled grey-green. Bioluminescent patterns writhing convulsively. Dreadlocks sway without wind. Thorne (disguised) and Kelen background defensive. Sluice gates gleam with moonlight and brass.
+      Tight portrait framing on Rill's face and upper body as she kneels at the water's edge. Her sea-glass skin has darkened to a troubling grey-green, visible turquoise patterns beneath her flesh writhing uneasily. Her dreadlocks sway despite still air, copper wire bindings catching moonlight. Her eyes—normally soft grey—have flooded entirely with storm-color, an unnerving mark of deep communion. Expression of profound revulsion, lips parting to speak Aquan words of grief. The corrupted water reflects moonlight below frame.
     composition_notes: |
-      Medium shot center. Rill kneeling profile. Sluice gates receding background. Bioluminescence irregular pulsing illumination. Watchers middle-distance silhouettes.
-    visual_hook: "The bioluminescent currents under Rill's skin writhing like distressed creatures"
+      Portrait orientation emphasizes vertical movement of dreadlocks. Face in center, patterns visible on cheeks and throat. Water's edge at bottom of frame. Shallow depth of field keeps focus on her transformation. Moonlight from above-left creates rim lighting on dreadlock tips.
+    visual_hook: "Dreadlocks swaying to unfelt currents as Rill's skin darkens sensing corruption"
     depicts_characters:
       - "rill-vossari"
-      - "thorne-brightward"
-      - "sergeant-kelen"
     character_states:
       rill-vossari: |
-        Sensing corruption. Grey-green skin. Writhing bioluminescence. Wide eyes. Revulsion.
-      thorne-brightward: |
-        Under glamour. Unremarkable man. Guard posture.
-      sergeant-kelen: |
-        Armored. Watchful. Slate tablet in hand.
-    location: "water-confluence-point"
+        Kneeling at water's edge, transformation beginning. Skin darkened from sea-glass to grey-green. Patterns writhing beneath flesh. Dreadlocks moving unnaturally, copper bindings glinting. Eyes flooded grey with deep communion. Expression of profound revulsion—she feels the water's pain.
+    location: "silent-hand-facility"
+    zone: "confluence"
     lighting:
-      primary_source: "disturbed bioluminescence"
-      quality: "unsettling, organic"
-      direction: "from within outward"
-      color_temperature: "sickly blue-green"
-      shadow_depth: "deep beyond glow"
-      atmospheric: "humid, cold stillness"
+      primary_source: "Moonlight from above"
+      quality: "cold, revealing"
+      direction: "from above-left"
+      color_temperature: "cold blue-white"
+      shadow_depth: "moderate, defining features"
+      atmospheric: "still night, water reflection"
     palette:
       dominant:
-        - "troubled grey-green"
-        - "sickly teal"
-        - "granite"
+        - "grey-green (transformed skin)"
+        - "midnight blue (night)"
+        - "moonlight silver"
       accent:
-        - "writhing blue"
+        - "turquoise (writhing patterns)"
+        - "copper verdigris (wire bindings)"
+        - "sea-foam (dreadlock tips)"
       avoid:
-        - "healthy aquamarine"
+        - "warm colors"
+        - "bright magic"
+        - "blood red"
     prompt_used: |
-      Water genasi woman with troubled grey-green skin sensing corruption at a stream,
-      bioluminescent veins writhing under her skin in pain,
-      hands hovering above water,
-      precision sluice gates and dark stone background,
-      two soldiers in shadows watching,
-      classical oil painting, Symbolist unease,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Pre-Raphaelite detail.
+      Portrait of a water genasi woman kneeling at a stream's edge at night.
+      Her translucent skin has darkened from pale sea-glass to troubled grey-green, visible turquoise currents writhing beneath her flesh like distressed serpents.
+      Her thick rope-like dreadlocks sway despite no wind, bound with tarnished copper wire, fading from sea-green roots to sea-foam tips.
+      Her eyes have flooded entirely with storm-grey, an unnerving mark of deep elemental communion.
+      Expression of profound revulsion—she senses corruption in the water.
+      Tight portrait framing, cold moonlight from above, supernatural unease.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, peaceful
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, full body, warm lighting, calm expression, bright colors
     tags:
-      - "mood"
-      - "rill"
-      - "water-corruption"
+      - "rill-vossari"
+      - "water-genasi"
+      - "corruption"
+      - "detail"
+      - "transformation"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch31-splintered-focus-img-03-07-01"
+    source_moment: "ch31-splintered-focus-moment-07"
+    scene_id: "scn-31-03"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "action"
+      - "emotion"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The chapter's emotional climax. Water becomes weapon at Rill's desperate plea—not commanded but invited, rising with purposeful grace to embrace and drown. The healer becomes killer. Dread, wrongness, supernatural threat made hauntingly beautiful.
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      The confluence point at night. Water rises from the bank in purposeful tendrils, flowing with the grace of a living thing. The guard is caught—water wrapped around his ankles, shoulders, pulling him into the shallows like a burial shroud. His face breaks the surface, mouth open in cut-short shout, arms reaching. Rill stands at the bank's edge, skin flushed deep storm-blue, patterns pulsing beneath her flesh. Her expression is horror at what she has called forth. Her lips form the Aquan plea. Moonlight on churning water, the confluence's engineered channels visible.
+    composition_notes: |
+      Ultra-wide cinematic framing with Rill on the left third, the drowning guard center-right, water as the connecting element between them. The eye moves from Rill's horrified expression to the water's embrace to the guard's final struggle. Engineered stone channels visible establishing location.
+    visual_hook: "Water rising like a burial shroud to embrace the guard at Rill's desperate plea"
+    depicts_characters:
+      - "rill-vossari"
+    character_states:
+      rill-vossari: |
+        Standing at bank's edge, storm-blue skin reflecting the violence she has invited. Patterns pulsing frantically beneath flesh. Expression of horror—lips forming Aquan plea. Dreadlocks lifted by unseen currents. Hands not raised but body language of desperate need.
+    location: "silent-hand-facility"
+    zone: "confluence"
+    lighting:
+      primary_source: "Moonlight on water"
+      quality: "cold, revealing, glinting"
+      direction: "from above"
+      color_temperature: "cold silver-blue"
+      shadow_depth: "deep in water, moderate on banks"
+      atmospheric: "water spray, churning surface"
+    palette:
+      dominant:
+        - "storm-blue (Rill's skin)"
+        - "churning silver (water)"
+        - "midnight (sky/banks)"
+      accent:
+        - "turquoise (patterns)"
+        - "flesh tone (guard)"
+        - "stone grey (engineered channels)"
+      avoid:
+        - "warm colors"
+        - "blood"
+        - "bright magic effects"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Turner's water luminosity.
+      Stream confluence at night, engineered stone channels visible. Water rises from the bank in purposeful tendrils, flowing with the grace of a living thing protecting its kin.
+      A uniformed guard is caught in the water's embrace—liquid wrapped around his ankles and shoulders, pulling him into the shallows like a burial shroud. His face breaks the surface, mouth open in silenced shout.
+      At the bank's edge, a water genasi woman with deep storm-blue skin watches in horror, patterns pulsing beneath her translucent flesh, dreadlocks lifted by unseen currents, lips forming an Aquan plea.
+      Ultra-wide cinematic framing, cold moonlight on churning water, the healer become killer.
+      Water as weapon, protection through violence, supernatural horror in natural element.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      blood, gore, graphic violence, calm water, warm lighting, victory pose
+    tags:
+      - "rill-vossari"
+      - "hero-image"
+      - "water-kill"
+      - "innocence-lost"
       - "ominous"
     generated_at: null
     file_name: null
@@ -523,68 +528,73 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch31-splintered-focus-img-31-03-02"
-    source_moment: "ch31-splintered-focus-moment-06"
+  - custom_id: "ch31-splintered-focus-img-03-07-02"
+    source_moment: "ch31-splintered-focus-moment-07"
     scene_id: "scn-31-03"
-    image_type: "anchor"
+    image_type: "beat"
     category:
-      - "action"
       - "moment"
-      - "character"
+      - "symbol"
+      - "emotion"
     scene_mood: "somber"
-    mood_rationale: "Killing as funeral. Burial shroud water. Sorrowful necessity and grief. Death as sacrament."
+    mood_rationale: |
+      The aftermath image. A single bubble rises, carrying the guard's last breath. Grief, loss, heaviness—the weight of what has been done. Desaturated, cool, light feels thin.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Water rises to wrap fallen guard's head like a burial shroud. Body in shallows. Rill stands in middle distance, hand outstretched in command. Skin flushed deep storm-blue. Face shows horror at the act. Behind, Halden over Venn, golden healing glow fading. Single bubble rises.
+      The water has stilled. The guard's body is gone, pulled into the tangle of roots and vegetation. The surface is almost calm. A single bubble rises to the surface, catching moonlight—the last breath ascending. Rill kneels at the bank's edge, one hand touching the water, her reflection broken by ripples. Her expression is controlled grief, staring at the spot where the body disappeared. The night is very still. The engineered sluice gates visible in background, reminders of the corruption that forced this.
     composition_notes: |
-      Low angle from water. Shrouded form dominates foreground. Rill middle distance anchor. Fading healing glow background right. Diagonal of consequence.
-    visual_hook: "The water wrapping the guard's head and shoulders 'like a burial shroud'—terrible and complete"
+      Medium-wide shot with water dominating the lower half. Rill positioned left, the rising bubble center-right, creating a visual conversation between killer and killed. Her reflection in the water adds symbolic weight. Background details establish the engineered environment.
+    visual_hook: "A single bubble rises—the guard's last breath ascending to the surface"
     depicts_characters:
       - "rill-vossari"
-      - "medic-halden"
-      - "archer-venn"
     character_states:
       rill-vossari: |
-        Deep storm-blue skin. Hand outstretched. Horror and grief. Soaked coat.
-      medic-halden: |
-        Healing glow fading. Realization.
-      archer-venn: |
-        On ground. Right hand smoking from burn. Watching grimly.
-    location: "water-confluence-point"
+        Kneeling at water's edge, one hand touching the surface. Expression of controlled grief, staring at the death she caused. Storm-blue skin beginning to settle. Dreadlocks still, weighted by what has passed.
+    location: "silent-hand-facility"
+    zone: "confluence"
     lighting:
-      primary_source: "storm-blue bioluminescence"
-      quality: "cold, intense"
-      direction: "radiating from Rill"
-      color_temperature: "cold storm-blue"
-      shadow_depth: "deep Rembrandt"
-      atmospheric: "mist rising"
+      primary_source: "Moonlight"
+      quality: "thin, grey, desaturated"
+      direction: "from above"
+      color_temperature: "cool silver"
+      shadow_depth: "soft, muted"
+      atmospheric: "stillness, grief-weight"
     palette:
       dominant:
-        - "deep storm-blue"
-        - "cold silver water"
-        - "shadow"
+        - "muted blue-grey (water)"
+        - "storm-blue (skin)"
+        - "shadow grey"
       accent:
-        - "fading gold glow"
+        - "silver (bubble/moonlight)"
+        - "root-brown (vegetation)"
       avoid:
-        - "warm tones"
+        - "warm colors"
+        - "bright accents"
+        - "violence"
     prompt_used: |
-      Water rising to wrap a fallen soldier's head like a burial shroud,
-      water genasi woman with deep blue skin standing in shallows with hand extended,
-      expression of horror and regret,
-      other people in background tending to a wounded man with fading light,
-      atmosphere of necessary but tragic violence,
-      classical oil painting, Rembrandt lighting, chiaroscuro,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, muted and somber.
+      Stream confluence at night, the water now almost still. A tangle of roots and vegetation visible where the current flows.
+      A single bubble rises to the surface, catching moonlight—the last breath of a drowned man ascending.
+      A water genasi woman with storm-blue skin kneels at the bank's edge, one hand touching the water, staring at the spot where the body disappeared. Her reflection broken by ripples.
+      Expression of controlled grief, the weight of first kill settling.
+      Medium-wide framing, desaturated cool palette, thin light.
+      The healer who has become killer, mourning her transformation.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, heroic killing
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      body visible, blood, violence, warm lighting, bright colors, action pose
     tags:
-      - "anchor"
-      - "drowning"
-      - "rill"
-      - "moral-weight"
+      - "rill-vossari"
+      - "aftermath"
       - "somber"
+      - "first-kill"
+      - "grief"
     generated_at: null
     file_name: null
     file_path: null
@@ -592,135 +602,147 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch31-splintered-focus-img-31-03-03"
-    source_moment: "ch31-splintered-focus-moment-07"
+  - custom_id: "ch31-splintered-focus-img-03-08-01"
+    source_moment: "ch31-splintered-focus-moment-08"
     scene_id: "scn-31-03"
-    image_type: "detail"
-    category:
-      - "character"
-      - "emotion"
-      - "symbol"
-    scene_mood: "ethereal"
-    mood_rationale: "Sacred action. Ritual atonement. Transformation of grief into grace. Pulsing water heart."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
-    visual_description: |
-      Overhead view: Rill's bleeding palm over water. Blood drops in a spiral pattern in current. Driftwood with symbols, mint sprig, bone-handled knife on bank. Water glows faintly and pulses like a heart. Luminous circle where blood meets water. Skin deep sea-green.
-    composition_notes: |
-      Overhead close. Centered icon-like. Rill's palm focal point. Blood spiral anchor. Sacred objects at edge.
-    visual_hook: "Blood dispersing into current in a spiral pattern within a perfect luminous circle"
-    depicts_characters:
-      - "rill-vossari"
-    character_states:
-      rill-vossari: |
-        Palm/forearm only. Sea-green skin. Ritual cut. Steadily pulsing bioluminescence.
-    location: "water-confluence-point"
-    lighting:
-      primary_source: "bioluminescence + water glow"
-      quality: "soft, luminous, otherworldly"
-      direction: "internal/below"
-      color_temperature: "sea-green/silver-blue"
-      shadow_depth: "minimal"
-      atmospheric: "pre-dawn gray reflection"
-    palette:
-      dominant:
-        - "deep sea-green"
-        - "silver-blue"
-        - "blood crimson"
-      accent:
-        - "copper coils"
-      avoid:
-        - "harsh shadows"
-    prompt_used: |
-      Macro detail of a hand with deep green skin bleeding into a glowing stream,
-      blood drops forming a spiral in the water,
-      ritual wooden carvings and herbs on the bank nearby,
-      water pulsing with soft light,
-      atmosphere of sacred ritual and apology,
-      classical oil painting, Pre-Raphaelite luminosity,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, face visible
-    tags:
-      - "detail"
-      - "ritual"
-      - "blood"
-      - "rill"
-      - "ethereal"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch31-splintered-focus-img-31-04-01"
-    source_moment: "ch31-splintered-focus-moment-09"
-    scene_id: "scn-31-04"
-    image_type: "mood"
+    image_type: "beat"
     category:
       - "moment"
-      - "emotion"
-    scene_mood: "pastoral"
-    mood_rationale: "Dawn release. First warm light after cold darkness. Promise of return. Respite after weight."
-    aspect_ratio: "21:9"
+      - "symbol"
+      - "character"
+    scene_mood: "ethereal"
+    mood_rationale: |
+      Druidic ritual restores balance. The sacred words, the blood offering, the water's acceptance—otherworldly beauty in the act of spiritual atonement. Sourceless glow, impossible colors done tastefully.
+    aspect_ratio: "16:9"
     orientation: "landscape"
-    size: "1792x768"
+    size: "1792x1024"
     visual_description: |
-      Seven mounted silhouettes against first amber dawn light. Withdrawing from forest. Horizon glows gold/amber. Sky deep blue to rose. Identifiable by silhouette: mohawk, horns, trident, bandaged hand, kettle hat. Shadows carrying weight returning to waking world.
+      Rill kneels at the water's edge, ritual in progress. Her cut palm extends over the river, blood falling in droplets into the current. The water initially recoils—tiny waves rippling away from the blood as if the river itself grieves. But where the blood meets water, a soft bioluminescent glow begins to pulse. The current forms a perfect spiral, accepting her offering. Driftwood and water-blessed mint rest at the bank. Her bone-handled knife lies beside her. Her expression is focused, serene despite the grief—the ritual working.
     composition_notes: |
-      Classic silhouette composition. Wide cinematic. Riders form loose column moving left-to-right. Forest frames edges.
-    visual_hook: "Seven figures becoming shadows-on-horseback against the first amber light"
+      Medium shot with Rill left-center, the ritual action (blood to water) as focal point center-right. The spiral forming in the water draws the eye. Ritual objects visible at the bank establish the sacred nature. Soft glow from the water provides gentle illumination from below.
+    visual_hook: "Blood dispersing into spiral current as the river accepts the ritual offering"
     depicts_characters:
-      - "veyra-thornwake"
-      - "lyra-kestrel"
       - "rill-vossari"
-      - "thorne-brightward"
-      - "archer-venn"
-      - "medic-halden"
-      - "sergeant-kelen"
     character_states:
-      veyra-thornwake: |
-        Silhouette. Leading. Mohawk. Straight but weary.
-      lyra-kestrel: |
-        Silhouette. Horns. Composed.
       rill-vossari: |
-        Silhouette. Trident secured.
-      thorne-brightward: |
-        Silhouette. Glamour fading. Mustache emerging.
-    location: "thornwood-forest"
+        Kneeling, cut palm extended over water. Expression of focused ritual concentration, serene despite underlying grief. Storm-blue skin beginning to return to sea-glass as balance restores. Dreadlocks still, weighted with sacred purpose.
+    location: "silent-hand-facility"
+    zone: "confluence"
     lighting:
-      primary_source: "dawn horizon"
-      quality: "soft, warm, diffused"
-      direction: "backlighting"
-      color_temperature: "warm amber/gold"
-      shadow_depth: "figures in full shadow"
-      atmospheric: "morning mist catching light"
+      primary_source: "Moonlight and bioluminescent water glow"
+      quality: "ethereal, sourceless warmth"
+      direction: "from above and below (water)"
+      color_temperature: "cool moonlight / warm water pulse"
+      shadow_depth: "soft, sacred"
+      atmospheric: "ritual stillness, held breath"
     palette:
       dominant:
-        - "silhouette black"
-        - "dawn amber"
-        - "pre-dawn rose"
+        - "storm-blue/sea-glass (skin transition)"
+        - "silver moonlight"
+        - "soft aqua glow (water)"
       accent:
-        - "gold horizon"
+        - "blood red (dispersing)"
+        - "copper-brown (ritual objects)"
       avoid:
-        - "harsh contrast"
+        - "harsh lighting"
+        - "garish magic effects"
     prompt_used: |
-      Wide cinematic shot of seven mounted silhouettes against a golden dawn sky,
-      riders moving away through a forest,
-      identifiable shapes of a mohawk and horns against the sunrise,
-      sky transitioning from deep blue to amber and rose,
-      atmosphere of successful but heavy return,
-      classical oil painting, plein air naturalism,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Pre-Raphaelite sacred beauty.
+      A water genasi woman kneels at a river's edge, performing a druidic blood ritual.
+      Her cut palm extends over the water, blood falling in droplets. The river initially recoils, tiny waves rippling away in grief, but then accepts the offering—the current forming a perfect spiral with soft bioluminescent glow where blood meets water.
+      Driftwood carved with druidic symbols and water-blessed mint rest at the bank. A bone-handled knife lies beside her.
+      Her storm-blue skin is transitioning back toward sea-glass as balance restores, expression of focused ritual serenity.
+      Medium framing, ethereal lighting from moon and water-glow, sacred atonement.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, full daylight, detailed faces
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      graphic wound, excessive blood, dark mood, cold tones only
     tags:
-      - "mood"
-      - "departure"
-      - "silhouette"
-      - "pastoral"
+      - "rill-vossari"
+      - "ritual"
+      - "ethereal"
+      - "druidic"
+      - "blood-offering"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch31-splintered-focus-img-03-09-01"
+    source_moment: "ch31-splintered-focus-moment-09"
+    scene_id: "scn-31-03"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Shared understanding between two killers. Lyra's professional recognition of first-kill trauma meets Rill's grief. Close emotional connection, warm pools amid darkness, faces lit.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Lyra crouches to Rill's level at the water's edge. Two faces close together in the moonlight—deep plum and storm-blue, golden eyes meeting luminous grey. Lyra's hand rests briefly on Rill's shoulder, a gesture of professional solidarity. Rill looks up, meeting the operative's gaze with raw vulnerability. Behind them, the river flows quietly. The contrast is striking: the experienced killer offering comfort to the new one, both marked by their heritage, both carrying weight.
+    composition_notes: |
+      Two-shot portrait composition, faces at same level due to Lyra crouching. Golden and grey eyes as focal point of connection. Shoulder touch visible but not dominant. Background soft-focused with water visible. Intimate framing despite outdoor location.
+    visual_hook: "Golden eyes meeting luminous grey—two killers recognizing each other"
+    depicts_characters:
+      - "lyra-kestrel"
+      - "rill-vossari"
+    character_states:
+      lyra-kestrel: |
+        Crouched to Rill's level, expression softened with understanding. Golden eyes meeting Rill's with professional recognition of trauma. Hand on Rill's shoulder—brief, supportive. Plum skin catching moonlight.
+      rill-vossari: |
+        Looking up at Lyra, raw vulnerability in storm-grey eyes. Beginning to accept the truth of Lyra's words. Storm-blue skin, grief etched in features, but finding anchor in understanding.
+    location: "silent-hand-facility"
+    zone: "confluence"
+    lighting:
+      primary_source: "Moonlight"
+      quality: "soft, intimate pools"
+      direction: "from above-right"
+      color_temperature: "cool but softened"
+      shadow_depth: "moderate, flattering"
+      atmospheric: "quiet intimacy, shared moment"
+    palette:
+      dominant:
+        - "deep plum (Lyra)"
+        - "storm-blue (Rill)"
+        - "moonlight silver"
+      accent:
+        - "gold (Lyra's eyes)"
+        - "luminous grey (Rill's eyes)"
+      avoid:
+        - "harsh lighting"
+        - "bright colors"
+        - "water effects"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Vermeer intimacy.
+      Two women at a river's edge at night. A tiefling with deep plum skin and golden eyes crouches to the level of a water genasi with storm-blue skin and luminous grey eyes.
+      Lyra's hand rests on Rill's shoulder—a brief touch of solidarity. Their eyes meet with shared understanding: the professional killer recognizing first-kill trauma in the healer.
+      Golden eyes meeting luminous grey, two faces close together in moonlight.
+      Intimate two-shot framing, soft moonlight creating warmth amid darkness.
+      Understanding shared between two killers, different paths to the same weight.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      action pose, bright lighting, theatrical expression, violence
+    tags:
+      - "lyra-kestrel"
+      - "rill-vossari"
+      - "intimate"
+      - "understanding"
+      - "first-kill"
     generated_at: null
     file_name: null
     file_path: null

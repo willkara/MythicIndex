@@ -42,7 +42,7 @@
   - *Dynamics*: His healing abilities support her potentially dangerous infiltration work
   - *Professional Opinion of*: Values his medical expertise for post-mission care
 
-- **Rylan Stormcaller**:
+- **Rylan Ashvale**:
   - *Nature of Relationship*: Fellow specialist
   - *Hierarchy*: Different areas of expertise (infiltration vs. magical support)
   - *Dynamics*: His weather magic might provide cover for Kaida's infiltration activities

@@ -51,7 +51,7 @@
   - *Current Status*: Close mentor-mentee bond.
   - *Feelings Toward*: She sees him as a steadfast, protective figure, a source of quiet strength.
 
-- **Rylan Stormcaller**: 
+- **Rylan Ashvale**: 
   - *Nature of Relationship*: Fellow Company member
   - *Hierarchy*: Equals with different specialties
   - *Dynamics*: His weather magic might assist with tracking conditions or provide cover

@@ -1,240 +1,358 @@
-# ============================================================================
-# CHAPTER IMAGERY SPECIFICATION
-# Chapter: Hearth and Home
-# Generated: 2025-12-21
-# ============================================================================
-
 metadata:
   entity_type: "chapter-imagery"
   slug: "ch09-hearth-and-home"
   chapter_number: 9
   chapter_title: "Hearth and Home"
-  visual_thesis: "From the solitary cold of burden carried alone to the warm shared resolve of a family deciding to grow together."
+  visual_thesis: "Growing pains made visible—a community strangling itself with success, every crowded corner proof of what they've built and what they need to become."
   color_palette:
     primary:
-      - "#C4956A"
-      - "#8B5A2B"
-      - "#3A3A4A"
-      - "#D4A574"
+      - "#4A4A52"  # frost-gray stone
+      - "#8B5A2B"  # amber warmth
+      - "#D4A574"  # sunset gold
     accent:
-      - "#E8DCC8"
-      - "#FFD700"
+      - "#E07B39"  # forge-orange
+      - "#2C3E50"  # pre-dawn blue
+      - "#F5DEB3"  # candlelight
   generation_defaults:
     provider: "openai"
     model: "dall-e-3"
     quality: "hd"
   mood_distribution:
-    somber: 2
-    pastoral: 0
+    intimate: 3
     celebratory: 1
-    aquatic: 0
-    ethereal: 1
-    intimate: 2
-    kinetic: 1
-    ominous: 0
+    kinetic: 2
+    somber: 2
+    pastoral: 2
 
 characters:
   - ref: "veyra-thornwake"
     name: "Veyra Thornwake"
-    scene_variations: "Private pre-dawn contemplation. Scarred face in ember light. Unguarded expression watching family. Resolve at sunset."
+    scene_variations: |
+      CHAPTER 9 (DAILY ROUTINE - NO TRANSFORMATION):
+      - Throughout: Half-elf commander with dark mohawk, shaved sides, feathered braids.
+        Mottled burn scar on left side of face. Sharp dark eyes. Weatherworn leather
+        coat with mismatched armor plates. Battered golden lantern always at hip.
+        Teal tattoos visible on neck and arms.
+      - Morning scenes: Alert but unguarded among her people, rare moments of
+        contentment visible in relaxed shoulders.
+      - Evening parapet: Contemplative, scarred hands gripping stone battlements,
+        silhouetted against sunset.
     reference_images:
       - "veyra-thornwake-official-portrait-01"
 
   - ref: "thorne-brightward"
     name: "Thorne Brightward"
-    scene_variations: "Providing quiet support at dawn. Pacing with a mug. Shared vision at sunset."
+    scene_variations: |
+      CHAPTER 9 (DAILY ROUTINE):
+      - Throughout: Human male in early forties, steel-gray short-cropped hair,
+        weathered but kind face. Deep-set brown eyes. Faded blue wool cloak with
+        Last Light Company sigil. Well-maintained chainmail over padded gambeson.
+      - Pre-dawn: Moves quietly, carries steaming mugs, reads maps alongside Veyra.
+      - Parapet: Stands close beside Veyra, shoulder almost touching, partnership
+        visible in comfortable silence.
     reference_images:
-      - "thorne-brightward-portrait-01"
-
-  - ref: "aldwin-gentleheart"
-    name: "Brother Aldwin Gentleheart"
-    scene_variations: "Cross-legged in meditation. Grinding herbs in a cramped corner. Benevolent focus."
-    reference_images:
-      - "aldwin-gentleheart-official-portrait-01"
+      - "thorne-brightward-official-portrait-01"
 
   - ref: "grimjaw-ironbeard"
     name: "Grimjaw Ironbeard"
-    scene_variations: "Hammering anvil at dawn. Standing to eat due to space. Precise movements in combat demonstration."
+    scene_variations: |
+      CHAPTER 9 (DAILY ROUTINE):
+      - Throughout: Stocky dwarf with iron-gray beard braided with metal charms
+        and tiny tools. Bright, keen eyes. Weathered face and hands. Practical
+        mining clothes with reinforced leather and metal studs.
+      - Dawn forge: Silhouetted against forge glow, hammer raised, soot-streaked
+        leather apron.
+      - Training: Fighting stance in cramped courtyard, dangerous glint in eye,
+        demonstrating spatial combat mastery.
     reference_images:
-      - "grimjaw-ironbeard-portrait-01"
+      - "grimjaw-ironbeard-official-portrait-01"
+
+  - ref: "aldwin-gentleheart"
+    name: "Aldwin Gentleheart"
+    scene_variations: |
+      CHAPTER 9 (DAILY ROUTINE):
+      - Throughout: Halfling with compact, sturdy build. Curly brown hair with
+        silver at temples. Kind hazel eyes. Small but incredibly steady hands
+        with herb-stained fingers and faint surgery scars. Practical brown wool
+        robes with leather reinforcement.
+      - Infirmary: Working in cramped quarters, herbs in repurposed containers,
+        gentle teaching demeanor with Halden.
+    reference_images:
+      - "aldwin-gentleheart-official-portrait-01"
 
   - ref: "vera-moonwhisper"
     name: "Vera Moonwhisper"
-    scene_variations: "Moving like a ghost in the courtyard. Methodical apple dissection. Sharing woodcraft knowledge."
+    scene_variations: |
+      CHAPTER 9 (DAILY ROUTINE):
+      - Throughout: Half-elf with lean, rangy build. Dark brown hair in practical
+        braid with feathers and bone beads. Hazel eyes. Earth-toned leather and
+        canvas clothing. Echo the raven on shoulder or nearby.
+      - Morning: Alert, scanning shadows, checking horses and ravens.
+      - Training: Crouched in tiny patch of earth, teaching tracking to Fayne.
     reference_images:
-      - "vera-moonwhisper-portrait-01"
+      - "vera-moonwhisper-official-portrait-01"
+
+  - ref: "medic-halden"
+    name: "Medic Halden"
+    scene_variations: |
+      CHAPTER 9 (DAILY ROUTINE):
+      - Throughout: Human male, shy but earnest expression. City Guard armor
+        with medical pack. Nervous tic at corner of left eye when stressed.
+        Careful, methodical movements.
+      - Infirmary: Working alongside Aldwin, learning whole-person healing,
+        instruments arranged with military precision on improvised table.
+    reference_images: []
+
+  - ref: "quartermaster-fayne"
+    name: "Quartermaster Fayne"
+    scene_variations: |
+      CHAPTER 9 (DAILY ROUTINE):
+      - Throughout: Rock gnome, 3'4", wiry and nimble. Short auburn hair.
+        Hazel eyes behind multi-lens spectacles. Ink-stained fingers.
+        Modified androgynous City Guard uniform. Leather bandolier with
+        quills and inks.
+      - Barracks: Sketching by candlelight, documenting Venn's head impacts.
+      - Training: Crouched with Vera, journal capturing track patterns.
+    reference_images: []
+
+  - ref: "corporal-darric"
+    name: "Corporal Darric"
+    scene_variations: |
+      CHAPTER 9 (DAILY ROUTINE):
+      - Throughout: Human soldier, professional demeanor. City Guard armor.
+      - Training: Sparring in cramped courtyard, outmaneuvered by Grimjaw,
+        respectful expression after demonstration.
+    reference_images: []
+
+  - ref: "archer-venn"
+    name: "Archer Venn"
+    scene_variations: |
+      CHAPTER 9 (DAILY ROUTINE):
+      - Throughout: Human archer, City Guard armor. Rueful expression from
+        repeated head impacts on triple-tier bunks.
+      - Training: Practice sword in cramped courtyard, learning spatial
+        combat from Grimjaw.
+    reference_images: []
 
   - ref: "mistress-elba"
     name: "Mistress Elba"
-    scene_variations: "Bustling whirlwind. Defensive of her turnip Bertha. Mothering the Company."
-    reference_images:
-      - "mistress-elba-kitchen-portrait-01"
+    scene_variations: |
+      CHAPTER 9 (MENTIONED ONLY):
+      - Stout woman, efficient movements masking warm heart. Kitchen domain
+        overflowing with supplies, fond exasperation at growing numbers.
+    reference_images: []
 
 locations:
   - ref: "westwall-watchpost"
     zones:
+      - id: "forge"
+        chapter_context: |
+          Cramped into a former storage room, barely large enough for anvil and
+          furnace. Grimjaw must duck through the doorway, has singed his beard
+          on low-hanging cooling chains. Dawn light barely penetrates; the space
+          glows primarily from forge fire. Soot deposits near the flue, strong
+          ventilation through ridge vents. The three measured hammer strikes at
+          dawn have become the compound's heartbeat, announcing the day's start.
+
       - id: "mess-hall"
-        chapter_context: "Cramped stone chamber. Mismatched tables, dying hearth. Frost patterns on windows."
+        chapter_context: |
+          Once seemed ample, now cramped with bodies pressed shoulder to shoulder.
+          The extended table wobbles dangerously, assembled from mismatched boards.
+          Some eat from repurposed measuring cups because bowls ran out. Frost
+          patterns on windows at pre-dawn, dying ember glow from great hearth.
+          Warm chaos of found family, acoustic warmth despite overcrowding.
+
       - id: "infirmary"
-        chapter_context: "Curtained corner of barracks. Improvised table, competing oil lamps. Crowded herb jars."
+        chapter_context: |
+          Little more than a curtained corner of the barracks. Campaign tent wall
+          provides no sound privacy. Treatment table is a door balanced on sawhorses.
+          Herbs stored in wine bottles, emptied ink jars, a repurposed helmet.
+          Three oil lamps positioned at angles create working light but add smoke.
+          Aldwin and Halden must coordinate movements to avoid collision.
+
       - id: "courtyard"
-        chapter_context: "Narrow square of uneven cobblestones. Forge door nearby. Training scuff marks on walls."
+        chapter_context: |
+          Perhaps thirty feet square with uneven cobblestones that must be memorized
+          to avoid turned ankles. Barely room for three people to spar without
+          hitting walls. Slanting winter sun, shadows creeping early. Tiny four-foot
+          patch of earth is the only tracking training ground. Grimjaw has memorized
+          every settled cobblestone for spatial combat advantage.
+
+      - id: "barracks"
+        chapter_context: |
+          Bunks pushed together, now stacked three tiers high to accommodate
+          growing numbers. Gear creates obstacle course in pre-dawn darkness.
+          Venn has hit his head eighteen times on the new upper bunk. Fayne
+          sketches by candlelight, documenting everything. Little floor space,
+          every piece of equipment a potential hazard.
+
       - id: "parapet"
-        chapter_context: "High stone battlements. Narrow walkway. View of sunset and future home."
+        chapter_context: |
+          Highest point of the watchtower, accessed by forty-three worn stone
+          steps with a failing rope handrail. Veyra's thinking place, the only
+          spot where she can be alone with thoughts. Commanding view of sunset-
+          gold countryside, activity visible in courtyard below. Stars emerging
+          as evening falls, wolf howls in the distance.
 
 moments:
-  - id: "ch09-hearth-and-home-moment-01"
-    scene_id: "scn-09-01"
-    title: "The Pre-Dawn Map"
-    narrative_beat: "Veyra studying maps alone in the freezing mess hall, her back to the dying fire."
-    visual_weight: "hero"
-    characters_present:
-      - "veyra-thornwake"
-    location_zone: "westwall-watchpost/mess-hall"
-    transformation_state: "before"
-    recommended_images: 1
-
-  - id: "ch09-hearth-and-home-moment-02"
-    scene_id: "scn-09-01"
-    title: "Quiet Tea"
-    narrative_beat: "Thorne bringing tea to Veyra, a moment of silent partnership before the day's chaos."
-    visual_weight: "medium"
-    characters_present:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-    location_zone: "westwall-watchpost/mess-hall"
-    transformation_state: "n/a"
-    recommended_images: 1
-
   - id: "ch09-hearth-and-home-moment-03"
     scene_id: "scn-09-02"
-    title: "The Heartbeat Strike"
-    narrative_beat: "Grimjaw's dawn ritual at the anvil, the ring of steel announcing the new day."
+    title: "Grimjaw's Dawn Hammer"
+    narrative_beat: "Three measured strikes on the anvil—Grimjaw's way of greeting the dawn—the sound carrying through corridors like a gentle bell, the heartbeat of their morning."
     visual_weight: "high"
     characters_present:
-      - "grimjaw-ironbeard"
-    location_zone: "westwall-watchpost/courtyard"
-    transformation_state: "n/a"
+      - grimjaw-ironbeard
+    location_zone: "westwall-watchpost/forge"
+    transformation_state: "during"
     recommended_images: 1
 
   - id: "ch09-hearth-and-home-moment-04"
     scene_id: "scn-09-02"
-    title: "Cramped Breakfast"
-    narrative_beat: "The Company packed shoulder to shoulder at the breakfast table, abundance straining space."
-    visual_weight: "medium"
-    characters_present:
-      - "veyra-thornwake"
-      - "grimjaw-ironbeard"
-      - "vera-moonwhisper"
-      - "quartermaster-fayne"
-    location_zone: "westwall-watchpost/mess-hall"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch09-hearth-and-home-moment-05"
-    scene_id: "scn-09-03"
-    title: "Constrained Care"
-    narrative_beat: "Aldwin and Halden working in the tiny infirmary corner, competing with shadows and dust."
+    title: "Crowded Breakfast"
+    narrative_beat: "The mess hall packed shoulder-to-shoulder, people eating from measuring cups because bowls ran out, the extended table wobbling dangerously."
     visual_weight: "high"
     characters_present:
-      - "aldwin-gentleheart"
-      - "medic-halden"
-    location_zone: "westwall-watchpost/infirmary"
-    transformation_state: "n/a"
+      - veyra-thornwake
+      - grimjaw-ironbeard
+      - vera-moonwhisper
+      - aldwin-gentleheart
+    location_zone: "westwall-watchpost/mess-hall"
+    transformation_state: "during"
     recommended_images: 1
 
   - id: "ch09-hearth-and-home-moment-06"
-    scene_id: "scn-09-04"
-    title: "The Six-Inch Sidestep"
-    narrative_beat: "Grimjaw demonstrating precise movement in the cramped practice yard, defeating younger soldiers with economy of motion."
-    visual_weight: "high"
+    scene_id: "scn-09-03"
+    title: "The Makeshift Infirmary"
+    narrative_beat: "Aldwin and Halden work in a curtained corner, instruments on a door-balanced-on-sawhorses, herbs in repurposed wine bottles and an old helmet."
+    visual_weight: "critical"
     characters_present:
-      - "grimjaw-ironbeard"
-      - "darric"
-      - "venn"
-    location_zone: "westwall-watchpost/courtyard"
-    transformation_state: "n/a"
-    recommended_images: 1
+      - aldwin-gentleheart
+      - medic-halden
+    location_zone: "westwall-watchpost/infirmary"
+    transformation_state: "during"
+    recommended_images: 2
 
   - id: "ch09-hearth-and-home-moment-07"
-    scene_id: "scn-09-05"
-    title: "Shared Vision"
-    narrative_beat: "Veyra and Thorne on the parapet at sunset, committing to build a proper home for the Company."
-    visual_weight: "hero"
+    scene_id: "scn-09-03"
+    title: "The Whole Person"
+    narrative_beat: "Aldwin explains: 'I got very good at saving lives. It took me twenty years to learn how to save a person.'"
+    visual_weight: "critical"
     characters_present:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-    location_zone: "westwall-watchpost/parapet"
-    transformation_state: "after"
-    recommended_images: 1
+      - aldwin-gentleheart
+      - medic-halden
+    location_zone: "westwall-watchpost/infirmary"
+    transformation_state: "during"
+    recommended_images: 2
 
   - id: "ch09-hearth-and-home-moment-08"
+    scene_id: "scn-09-04"
+    title: "Forge Geometry Combat"
+    narrative_beat: "Grimjaw applies engineering to combat—'Your sword's thirty-two inches, your clearance is thirty. Do the mathematics.'—then proves his theory in thirty seconds."
+    visual_weight: "critical"
+    characters_present:
+      - grimjaw-ironbeard
+      - corporal-darric
+      - archer-venn
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "during"
+    recommended_images: 2
+
+  - id: "ch09-hearth-and-home-moment-10"
     scene_id: "scn-09-05"
-    title: "The Narrow Descent"
-    narrative_beat: "POV looking down the narrow spiral stairs as guards squeeze past each other under lantern light."
-    visual_weight: "medium"
-    characters_present: []
-    location_zone: "westwall-watchpost/stairs"
-    transformation_state: "n/a"
-    recommended_images: 1
+    title: "Sunset Vision"
+    narrative_beat: "Veyra and Thorne on the parapet at sunset—'We've built something precious here, but we're strangling it'—planning the future they need."
+    visual_weight: "critical"
+    characters_present:
+      - veyra-thornwake
+      - thorne-brightward
+    location_zone: "westwall-watchpost/parapet"
+    transformation_state: "during"
+    recommended_images: 2
 
 images:
-  - custom_id: "ch09-hearth-and-home-img-09-01-01"
-    source_moment: "ch09-hearth-and-home-moment-01"
-    scene_id: "scn-09-01"
-    image_type: "hero"
+  - custom_id: "ch09-hearth-and-home-img-02-03-01"
+    source_moment: "ch09-hearth-and-home-moment-03"
+    scene_id: "scn-09-02"
+    image_type: "anchor"
     category:
       - "moment"
       - "character"
-      - "emotion"
-    scene_mood: "somber"
-    mood_rationale: "Solitary burden carried alone before dawn. Dying embers, frost patterns, and visible breath. Protective sacrifice."
+      - "symbol"
+    scene_mood: "pastoral"
+    mood_rationale: |
+      The forge at dawn is sacred ritual—reliable rhythm that grounds the community.
+      Pastoral despite the industrial setting because it represents safety, routine,
+      the heartbeat of home.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Veyra sits alone at the head of a scarred table in the pre-dawn mess hall. Tactical maps spread before her. Her back is to the dying hearth. Ember-glow catches frost on windows. Her breath mists in the cold air. Scarred fingers trace routes. Warmth barely reaches her hunched shoulders.
+      Grimjaw stands at his anvil in the cramped forge, hammer raised for the first
+      strike of morning. His stocky silhouette is backlit by the orange glow of the
+      freshly stoked furnace. Iron-gray beard braided with metal charms catches the
+      firelight. The forge room is tight—he fills most of the space, low chains
+      hanging near his head, soot-blackened walls pressing close. Through the narrow
+      doorway behind him, cold gray dawn light seeps in. The moment before the hammer
+      falls—the held breath of a community about to wake.
     composition_notes: |
-      Medium framing. Veyra left-third. Hearth right edge. Frosted windows background. Low angle. Deep depth.
-    visual_hook: "The frost on the windows catching ember-light while Veyra's breath mists visibly"
+      Medium shot, Grimjaw framed by the doorway and forge. Forge-orange glow from
+      right illuminates his profile, cold dawn gray from left creates contrast.
+      Hammer at apex of swing is focal point. Vertical emphasis from low ceiling
+      and chains creates sense of cramped space. Rule of thirds places Grimjaw
+      at left intersection, forge fire at right.
+    visual_hook: "Hammer raised at dawn, silhouette against forge-glow, the moment before the compound wakes"
     depicts_characters:
-      - "veyra-thornwake"
+      - grimjaw-ironbeard
     character_states:
-      veyra-thornwake: |
-        Seated, hunched over maps. Mohawk and braid visible. Burn scar catches ember-light. Focused, grave expression. Lantern at belt.
+      grimjaw-ironbeard: |
+        Profile view, hammer raised overhead in practiced motion. Soot-streaked
+        leather apron. Iron-gray beard with metal charms catching firelight.
+        Expression of quiet satisfaction—this ritual is his gift to the community.
     location: "westwall-watchpost"
-    zone: "mess-hall"
+    zone: "forge"
     lighting:
-      primary_source: "Hearth embers"
-      quality: "Hard edges, dramatic chiaroscuro"
-      direction: "Side/back"
-      color_temperature: "Warm amber vs cold blue"
-      shadow_depth: "Deep, rich"
-      atmospheric: "Visible breath mist"
+      primary_source: "Forge furnace"
+      quality: "warm, flickering"
+      direction: "from right/below"
+      color_temperature: "forge-orange"
+      shadow_depth: "deep on left side"
+      atmospheric: "heat shimmer, floating ash motes"
     palette:
       dominant:
-        - "ember gold"
-        - "frost gray"
-        - "indigo blue"
+        - "forge orange"
+        - "iron gray"
+        - "soot black"
       accent:
-        - "lantern gold"
+        - "cold dawn blue through doorway"
+        - "metal gleam on charms"
       avoid:
-        - "bright daylight"
+        - "bright colors"
+        - "green"
     prompt_used: |
-      Woman with mohawk sitting alone at a wooden table in a dark freezing room,
-      studying maps by the glow of dying fireplace embers,
-      frost on the windows,
-      breath misting in the air,
-      atmosphere of solitary duty and cold morning,
-      classical oil painting, Rembrandt lighting,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Rembrandt chiaroscuro.
+      Cramped dwarven forge carved from storage room, low ceiling with hanging chains,
+      soot-blackened stone walls, furnace glowing orange in the pre-dawn darkness.
+      Stocky dwarf silhouetted against forge glow, hammer raised overhead at apex
+      of swing, iron-gray beard braided with metal charms catching firelight,
+      leather apron soot-streaked, the ritualistic first strike of morning.
+      Medium shot framed by narrow doorway, cold gray dawn light from behind,
+      forge-orange illumination from right, deep shadows on left side.
+      Heat shimmer and floating ash motes in the air.
+      Subtle fantasy: dwarven craftsmanship in tool arrangement, ward-marks on anvil.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright light
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      spacious room, high ceilings, bright lighting, action pose
     tags:
-      - "hero"
-      - "solitude"
+      - "grimjaw"
+      - "forge"
       - "dawn"
-      - "somber"
+      - "ritual"
+      - "anchor"
     generated_at: null
     file_name: null
     file_path: null
@@ -242,60 +360,200 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch09-hearth-and-home-img-09-02-01"
-    source_moment: "ch09-hearth-and-home-moment-03"
+  - custom_id: "ch09-hearth-and-home-img-02-04-01"
+    source_moment: "ch09-hearth-and-home-moment-04"
     scene_id: "scn-09-02"
-    image_type: "mood"
+    image_type: "anchor"
     category:
       - "moment"
       - "character"
-      - "symbol"
-    scene_mood: "intimate"
-    mood_rationale: "Ritual of reliability. Forge-fire warmth. The heartbeat of the morning. Vermeer's domestic poetry."
+      - "emotion"
+    scene_mood: "celebratory"
+    mood_rationale: |
+      Despite the cramped chaos, this is family breakfast—warm, loud, alive.
+      The crowding is evidence of success, of people wanting to be together.
+      Joy exists in the mess.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Grimjaw stands at his anvil in the cramped forge. Sledgehammer Tremor at moment of impact. Sparks spray in a brief constellation. Ring of steel. Morning light through too-small doorway fights amber forge-glow. Heartbeat of the morning.
+      The mess hall overflows with bodies. Company members sit shoulder to shoulder
+      around a wobbling extended table made of mismatched boards. Grimjaw's broad
+      shoulders press against the wall; he's given up fitting on the bench and stands
+      to eat. Some hold measuring cups instead of bowls. Vera perches near the
+      frost-patterned window, Echo on her shoulder. Morning light streams through,
+      catching steam rising from porridge. Veyra sits at the table's head, watching
+      her people with rare unguarded contentment. The great hearth glows behind them.
     composition_notes: |
-      Medium-wide. Grimjaw center. Low angle. Doorway frames background. Spark-spray dynamic energy. Split lighting warm/cool.
-    visual_hook: "The spray of sparks at the exact moment of hammer-strike, forge-amber fighting cold dawn light"
+      Wide shot capturing the full length of the crowded table. Veyra at frame left
+      as focal anchor, Grimjaw standing at right for vertical contrast. Frost-window
+      provides natural backlight. Steam and hearth-glow create warm atmospheric haze.
+      Bodies create visual rhythm across the frame. The table's wobble should be
+      subtly visible in the uneven surface.
+    visual_hook: "Shoulder-to-shoulder family breakfast, measuring cups as bowls, crowded warmth"
     depicts_characters:
-      - "grimjaw-ironbeard"
+      - veyra-thornwake
+      - grimjaw-ironbeard
+      - vera-moonwhisper
+      - aldwin-gentleheart
     character_states:
+      veyra-thornwake: |
+        Seated at table head, expression unguarded, rare contentment visible.
+        Dark mohawk and feathered braids, burn scar partially shadowed.
+        Watching her people rather than eating.
       grimjaw-ironbeard: |
-        Full extension of swing. Silhouetted by competing lights. Braided beard. Solemn satisfied expression.
+        Standing because bench is too cramped, eating from bowl held in hand.
+        Shoulders against wall, amused tolerance of the chaos.
+      vera-moonwhisper: |
+        Perched by frost-window, Echo on shoulder. Eating apple in careful
+        pieces—habit from rationed years. Alert but relaxed.
+      aldwin-gentleheart: |
+        Seated among others, kind eyes observing. Small hands wrapped around
+        steaming mug. Warm expression at the family chaos.
     location: "westwall-watchpost"
-    zone: "courtyard"
+    zone: "mess-hall"
     lighting:
-      primary_source: "Forge fire"
-      quality: "Soft, warm, embracing"
-      direction: "Side + Backlit"
-      color_temperature: "Warm amber vs cool silver"
-      shadow_depth: "Soft gradients"
-      atmospheric: "Spark spray"
+      primary_source: "Morning light through frost-windows, great hearth"
+      quality: "soft, diffused"
+      direction: "from windows (right) and hearth (behind)"
+      color_temperature: "warm amber mixed with cold morning blue"
+      shadow_depth: "soft gradients"
+      atmospheric: "steam from food, breath mist, hearth smoke"
     palette:
       dominant:
-        - "forge amber"
-        - "iron gray"
-        - "copper"
+        - "warm amber"
+        - "wood brown"
+        - "stone gray"
       accent:
-        - "spark white"
+        - "frost-blue window light"
+        - "hearth-red glow"
+        - "food steam white"
       avoid:
-        - "harsh shadows"
+        - "neon colors"
+        - "sterile white"
     prompt_used: |
-      Dwarf blacksmith striking an anvil at dawn,
-      sparks flying in a dark cramped forge,
-      warm orange fire light vs cold blue morning light through a door,
-      atmosphere of reliable ritual and morning work,
-      classical oil painting, Vermeer lighting,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Vermeer interior warmth.
+      Crowded medieval mess hall, mismatched wooden table extended to breaking point,
+      rough stone walls with great hearth glowing behind.
+      Company of adventurers packed shoulder to shoulder eating breakfast,
+      half-elf woman with dark mohawk and burn scar watching from table head,
+      stocky dwarf standing against wall because bench is too cramped,
+      half-elf ranger with raven on shoulder by frost-patterned window,
+      some eating from measuring cups because bowls ran out.
+      Wide shot capturing warm chaos of found family at breakfast,
+      morning light through frost-windows mixing with hearth glow,
+      steam rising from porridge bowls, visible breath in cold air.
+      Subtle fantasy: mixed ancestries, guild insignia on cloaks, ward-marks.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, aggressive
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wrong character count, extra limbs, duplicate faces, spacious room
     tags:
-      - "mood"
-      - "ritual"
-      - "forge"
+      - "mess-hall"
+      - "breakfast"
+      - "crowded"
+      - "family"
+      - "warmth"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch09-hearth-and-home-img-03-06-01"
+    source_moment: "ch09-hearth-and-home-moment-06"
+    scene_id: "scn-09-03"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "location"
+    scene_mood: "intimate"
+    mood_rationale: |
+      The cramped infirmary forces intimacy—two healers working inches apart,
+      dedication visible in improvisation. Close emotional connection born of
+      shared purpose in inadequate conditions.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Aldwin and Halden work in their curtained corner infirmary. The campaign-tent
+      curtain hangs behind them, providing no real privacy. Aldwin's herbs are stored
+      in old wine bottles, emptied ink jars, and a repurposed helmet lined up on a
+      bowing shelf. The treatment table—a door balanced on sawhorses—holds Halden's
+      precisely arranged surgical instruments. Three oil lamps at different angles
+      create working light but add smoke to the close air. The halfling grinds herbs
+      in a worn mortar while Halden organizes supplies, their movements coordinated
+      to avoid collision in the cramped space.
+    composition_notes: |
+      Medium shot, both healers in frame. Aldwin at left with herbs, Halden at right
+      with instruments. Campaign-tent curtain creates textured backdrop. Oil lamp
+      light pools on work surfaces. The door-table and repurposed containers tell
+      the story of improvisation. Vertical space compressed by low ceiling and
+      crowded shelves.
+    visual_hook: "Herbs in wine bottles and helmets, door-on-sawhorses table, healers working inches apart"
+    depicts_characters:
+      - aldwin-gentleheart
+      - medic-halden
+    character_states:
+      aldwin-gentleheart: |
+        Grinding herbs in worn mortar, steady hands stained with oils.
+        Brown wool robes with leather reinforcement. Kind hazel eyes focused
+        on work. Silver-touched temples visible in lamplight.
+      medic-halden: |
+        Organizing instruments on door-table with military precision.
+        City Guard armor with medical pack. Careful, methodical movements.
+        Concentration visible, learning Aldwin's broader approach.
+    location: "westwall-watchpost"
+    zone: "infirmary"
+    lighting:
+      primary_source: "Three oil lamps at angles"
+      quality: "warm pools of light, shadowed edges"
+      direction: "multiple sources creating crossed shadows"
+      color_temperature: "amber oil-lamp warmth"
+      shadow_depth: "moderate, with soft edges"
+      atmospheric: "lamp smoke, close air, herb dust"
+    palette:
+      dominant:
+        - "amber lamplight"
+        - "brown earth tones"
+        - "gray stone"
+      accent:
+        - "green herb tones"
+        - "glass bottle reflections"
+        - "metal instrument gleam"
+      avoid:
+        - "bright sterile white"
+        - "modern medical colors"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Dutch Golden Age interior.
+      Cramped makeshift infirmary carved from barracks corner, campaign-tent curtain
+      as partition, bowing wooden shelf lined with herbs in repurposed wine bottles
+      and emptied ink jars and an old helmet.
+      Halfling healer in brown wool robes grinding herbs in worn mortar,
+      human medic in guard armor organizing surgical instruments on door-on-sawhorses
+      table, two healers working inches apart coordinating movements.
+      Medium shot with three oil lamps casting crossed amber light pools,
+      lamp smoke in close air, herb dust floating.
+      Subtle fantasy: healing runes on mortar, ward-marks on curtain edge.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      spacious room, modern medical equipment, bright fluorescent lighting
+    tags:
+      - "infirmary"
+      - "healers"
+      - "improvisation"
+      - "cramped"
       - "intimate"
     generated_at: null
     file_name: null
@@ -304,138 +562,84 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch09-hearth-and-home-img-09-02-02"
-    source_moment: "ch09-hearth-and-home-moment-04"
-    scene_id: "scn-09-02"
-    image_type: "anchor"
-    category:
-      - "moment"
-      - "character"
-      - "location"
-    scene_mood: "celebratory"
-    mood_rationale: "Cramped warmth. Tension between abundance of community and scarcity of space. Jan Steen's warm chaos. Found family breakfast."
-    aspect_ratio: "21:9"
-    orientation: "landscape"
-    size: "1792x768"
-    visual_description: |
-      Mess hall at breakfast. Bodies pressed shoulder to shoulder. Steam from too many bowls. Grimjaw stands because he doesn't fit on the bench. Vera dissecting an apple. Fayne's ink-stained fingers. Veyra watching with unguarded expression. Morning light and residual firelight. Constraint as price of community.
-    composition_notes: |
-      Wide cinematic. Captures full table length. Slightly elevated angle. Grimjaw vertical contrast. Steam depth. Multiple focal points.
-    visual_hook: "Grimjaw standing to eat while everyone else is crammed onto benches, his broad silhouette accepting limitation"
-    depicts_characters:
-      - "veyra-thornwake"
-      - "grimjaw-ironbeard"
-      - "vera-moonwhisper"
-      - "quartermaster-fayne"
-    character_states:
-      veyra-thornwake: |
-        At head of table. Soft observation. Burn scar catching light.
-      grimjaw-ironbeard: |
-        Standing. Bowl in hand. Patient acceptance. Broad shoulders.
-      vera-moonwhisper: |
-        Methodical dissection. Chestnut braid. Watchful eyes.
-      quartermaster-fayne: |
-        Small, almost lost. Spectacles catching light. Ink-stained fingers.
-    location: "westwall-watchpost"
-    zone: "mess-hall"
-    lighting:
-      primary_source: "mixed morning light + firelight"
-      quality: "warm, flickering"
-      direction: "multiple"
-      color_temperature: "warm amber/gold"
-      shadow_depth: "soft"
-      atmospheric: "thick steam"
-    palette:
-      dominant:
-        - "warm brown"
-        - "gold"
-        - "amber"
-      accent:
-        - "green cloak"
-      avoid:
-        - "cold colors"
-    prompt_used: |
-      Crowded medieval hall at breakfast,
-      people shoulder to shoulder at long tables,
-      steam rising from many bowls,
-      dwarf standing to eat among seated people,
-      woman with mohawk watching with a soft expression,
-      warm morning sunlight and hearth light,
-      atmosphere of found family and cramped warmth,
-      classical oil painting, Dutch genre style,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, spacious
-    tags:
-      - "anchor"
-      - "breakfast"
-      - "community"
-      - "celebratory"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch09-hearth-and-home-img-09-03-01"
-    source_moment: "ch09-hearth-and-home-moment-05"
+  - custom_id: "ch09-hearth-and-home-img-03-06-02"
+    source_moment: "ch09-hearth-and-home-moment-06"
     scene_id: "scn-09-03"
     image_type: "detail"
     category:
-      - "moment"
-      - "character"
-      - "emotion"
-    scene_mood: "somber"
-    mood_rationale: "Constrained dedication. Healing limited by space. Conflicting shadows and falling dust. Melancholy of limitation."
+      - "symbol"
+      - "location"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Close-up on the improvised storage tells the whole story—professional
+      dedication practiced in inadequate conditions, creativity born of necessity.
     aspect_ratio: "3:4"
     orientation: "portrait"
     size: "1024x1365"
     visual_description: |
-      Aldwin and Halden in makeshift infirmary. Curtain corner so cramped they must coordinate. Aldwin grinding herbs in mortar. Halden organizing surgical instruments on a door-table. Three oil lamps at careful angles cast conflicting shadows. Dust motes filtering down from ceiling. Dedicated professionalism constrained.
+      Extreme close-up of the infirmary's improvised herb storage. A bowing wooden
+      shelf holds an eclectic collection: old wine bottles with dried herb bundles
+      visible through green glass, emptied ink jars with cork stoppers and handwritten
+      labels, and most distinctively, an old guard helmet repurposed as a bowl for
+      fresh-ground herb powder. Aldwin's small, herb-stained hand reaches into frame
+      selecting a bottle. Behind, the campaign-tent curtain is visible, and a shaft
+      of thin gray window light cuts across the arrangement.
     composition_notes: |
-      Portrait orientation. Vertical compression. Medium framing. Visible lamps and dust motes. Improvised nature of everything.
-    visual_hook: "Dust motes filtering down through oil-lamp light, settling on clean surgical instruments"
+      Tight portrait framing on shelf and containers. Aldwin's hand provides scale
+      and human element. Bottles create vertical rhythm, helmet breaks pattern with
+      organic curve. Labels add storytelling detail. Shallow depth of field with
+      front bottles sharp, background soft.
+    visual_hook: "Herbs in wine bottles and an old helmet, handwritten labels, healer's stained hand"
     depicts_characters:
-      - "aldwin-gentleheart"
-      - "medic-halden"
+      - aldwin-gentleheart
     character_states:
       aldwin-gentleheart: |
-        Standing at small table. Grinding herbs. Benevolent focus. Salt-and-pepper hair.
-      medic-halden: |
-        No helmet. Organizing tools. Weary eyes. Earnest expression.
+        Only hand visible—small, steady, herb-stained fingers selecting a bottle.
+        The hand tells his story: years of grinding, mixing, healing.
     location: "westwall-watchpost"
     zone: "infirmary"
     lighting:
-      primary_source: "three oil lamps"
-      quality: "hard, conflicting"
-      direction: "multiple"
-      color_temperature: "warm amber but insufficient"
-      shadow_depth: "deep, rich"
-      atmospheric: "lamp smoke, dust"
+      primary_source: "Oil lamp below frame, thin window light"
+      quality: "intimate, warm pools"
+      direction: "from below-left and window-right"
+      color_temperature: "warm amber with cold gray accent"
+      shadow_depth: "soft gradients"
+      atmospheric: "herb dust, still air"
     palette:
       dominant:
-        - "amber"
-        - "shadow brown"
-        - "dust gray"
+        - "amber glass"
+        - "green herb tones"
+        - "weathered wood"
       accent:
-        - "red cross"
+        - "metal helmet gray"
+        - "ink-black jars"
+        - "parchment label cream"
       avoid:
-        - "clean white"
+        - "bright colors"
+        - "plastic"
     prompt_used: |
-      Cramped medieval medical station behind a canvas curtain,
-      halfling and human medic working in very tight space,
-      dust motes falling through shafts of oil lamp light,
-      herbs and surgical tools on an improvised table,
-      atmosphere of professional dedication in poor conditions,
-      classical oil painting, Rembrandt lighting, chiaroscuro,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, still life tradition.
+      Extreme close-up of improvised apothecary shelf, bowing wooden board
+      holding old wine bottles with dried herbs visible through green glass,
+      emptied ink jars with cork stoppers and handwritten parchment labels,
+      repurposed guard helmet containing fresh-ground herb powder.
+      Small herb-stained halfling hand reaching into frame selecting a bottle.
+      Tight portrait framing, warm amber light from below, thin gray window
+      light from right, shallow depth of field with labels readable.
+      Subtle fantasy: healing runes on some labels, ward-symbol on helmet.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, modern hospital
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, busy background, modern containers
     tags:
       - "detail"
-      - "healing"
-      - "somber"
+      - "herbs"
+      - "improvisation"
+      - "symbol"
       - "infirmary"
     generated_at: null
     file_name: null
@@ -444,61 +648,277 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch09-hearth-and-home-img-09-04-01"
-    source_moment: "ch09-hearth-and-home-moment-06"
+  - custom_id: "ch09-hearth-and-home-img-03-07-01"
+    source_moment: "ch09-hearth-and-home-moment-07"
+    scene_id: "scn-09-03"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Mentorship in close quarters—wisdom passing between generations in a space
+      barely big enough for two. The intimacy is physical and emotional, teacher
+      and student connected by shared purpose.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Aldwin and Halden in close conversation within the cramped infirmary. Aldwin's
+      weathered hands rest over pouches of herbs on the crowded shelf, gesturing as
+      he teaches. Halden leans against the wall—the only way to find space—listening
+      intently, his usual nervous tic absent in focused attention. The lamplight
+      catches Aldwin's silver-touched temples and kind hazel eyes. Between them,
+      healing knowledge passes in words unheard but visible in their expressions.
+    composition_notes: |
+      Close medium shot, both faces in frame. Aldwin at left, slightly lower due
+      to halfling height, hands visible with herbs. Halden at right, leaning on
+      wall, bent slightly to hear. Eye contact between them is focal point.
+      Lamp creates warm halo around the teaching moment.
+    visual_hook: "Weathered hands over herbs, intently listening student, wisdom passing between generations"
+    depicts_characters:
+      - aldwin-gentleheart
+      - medic-halden
+    character_states:
+      aldwin-gentleheart: |
+        Hands resting over herb pouches, gesturing while teaching. Silver at
+        temples catches light. Eyes hold the weight of experience being shared.
+        Voice gentle but steel underneath—"It took me twenty years to learn
+        how to save a person."
+      medic-halden: |
+        Leaning against wall to find space, focused attention replacing usual
+        nervousness. Eyes intent, absorbing wisdom. Understanding dawning in
+        expression—seeing beyond wounds to whole persons for the first time.
+    location: "westwall-watchpost"
+    zone: "infirmary"
+    lighting:
+      primary_source: "Single oil lamp between them"
+      quality: "soft, intimate"
+      direction: "from below/center"
+      color_temperature: "warm amber"
+      shadow_depth: "soft gradients on faces"
+      atmospheric: "still, solemn"
+    palette:
+      dominant:
+        - "warm amber"
+        - "brown robes"
+        - "gray stone wall"
+      accent:
+        - "green herbs"
+        - "silver hair"
+        - "hazel eyes"
+      avoid:
+        - "harsh light"
+        - "cold tones"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Caravaggio intimate lighting.
+      Close conversation in cramped infirmary, halfling healer in brown wool robes
+      with hands over herb pouches teaching, human medic leaning against stone wall
+      listening intently, wisdom passing between generations.
+      Close medium shot capturing both faces, oil lamp creating warm halo,
+      silver-touched temples catching light, focused eyes meeting in understanding.
+      Subtle fantasy: faint healing glow on healer's hands, ancient symbols on pouches.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      action pose, theatrical expression, bright lighting
+    tags:
+      - "mentorship"
+      - "wisdom"
+      - "healers"
+      - "intimate"
+      - "teaching"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch09-hearth-and-home-img-03-07-02"
+    source_moment: "ch09-hearth-and-home-moment-07"
+    scene_id: "scn-09-03"
+    image_type: "detail"
+    category:
+      - "symbol"
+      - "character"
+    scene_mood: "somber"
+    mood_rationale: |
+      Aldwin's hands tell his entire story—decades of saving lives, herb-stained
+      fingers, surgery scars. The weight of twenty years learning to see whole
+      persons visible in every line and callus.
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Extreme close-up of Aldwin's hands. Small but remarkably steady, herb-stained
+      fingers with permanent green and brown discoloration. Faint scars from field
+      surgery cross the palms. One hand holds a small ceramic mortar, the other a
+      worn pestle mid-grind. The herbs being processed are partially visible—dried
+      valerian root and chamomile for the sleep tea mentioned in the chapter. Behind,
+      blurred bottles and the edge of the door-table. Lamplight catches the texture
+      of his weathered skin.
+    composition_notes: |
+      Tight portrait framing on hands and mortar. Shallow depth of field—hands
+      sharp, background soft. Herb colors provide accent against skin tones.
+      The scars and stains are the story—evidence of a life dedicated to healing.
+      Pestle in motion suggests the ongoing work.
+    visual_hook: "Herb-stained hands, surgery scars, mortar and pestle, twenty years of healing visible"
+    depicts_characters:
+      - aldwin-gentleheart
+    character_states:
+      aldwin-gentleheart: |
+        Hands only—small, steady, impossibly gentle despite the scars.
+        Herb stains permanent in the creases. Working herbs for sleep tea
+        with practiced efficiency. These hands have held the dying and
+        guided the living.
+    location: "westwall-watchpost"
+    zone: "infirmary"
+    lighting:
+      primary_source: "Oil lamp from above-right"
+      quality: "warm, revealing"
+      direction: "from above, creating texture shadows"
+      color_temperature: "amber warmth"
+      shadow_depth: "enough to show skin texture"
+      atmospheric: "still, focused"
+    palette:
+      dominant:
+        - "skin tones"
+        - "herb greens and browns"
+        - "ceramic cream"
+      accent:
+        - "scar pink"
+        - "wood grain"
+        - "lamp amber"
+      avoid:
+        - "garish colors"
+        - "cold tones"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Vermeer detail work.
+      Extreme close-up of halfling healer's hands grinding herbs in ceramic mortar,
+      small steady fingers permanently stained green and brown from decades of work,
+      faint surgery scars crossing palms, worn pestle in practiced motion,
+      dried valerian root and chamomile visible in mortar.
+      Tight portrait framing, amber lamplight revealing skin texture,
+      shallow depth of field with blurred bottles behind.
+      Subtle fantasy: faint healing warmth in fingertips, ancient symbols on mortar rim.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, full figure, young hands, clean unstained skin
+    tags:
+      - "hands"
+      - "detail"
+      - "aldwin"
+      - "healing"
+      - "symbol"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch09-hearth-and-home-img-04-08-01"
+    source_moment: "ch09-hearth-and-home-moment-08"
     scene_id: "scn-09-04"
-    image_type: "anchor"
+    image_type: "hero"
     category:
       - "moment"
       - "character"
       - "action"
     scene_mood: "kinetic"
-    mood_rationale: "Martial action. Precision over power. Six-inch sidestep. Visual tension between constraint and mastery."
-    aspect_ratio: "16:9"
+    mood_rationale: |
+      Combat demonstration in confined space—age defeating youth through spatial
+      mastery. The kinetic energy is controlled, purposeful, teaching through
+      action rather than words.
+    aspect_ratio: "21:9"
     orientation: "landscape"
-    size: "1792x1024"
+    size: "1792x768"
     visual_description: |
-      Grimjaw's six-inch sidestep. Economy of motion. Two young soldiers caught off-balance in the narrow courtyard. Grimjaw centered and stable. Darric's strike finding air. Venn staggering. Walls close and dark. Precision in confined space. Pale winter sun.
+      The thirty-foot courtyard becomes a combat classroom. Grimjaw stands in
+      controlled fighting stance, having just outmaneuvered Darric and Venn—both
+      younger men are on the ground, not hurt but thoroughly defeated. The dwarf
+      barely looks winded, feet planted on the uneven cobblestones he's memorized
+      from his morning forge work. Walls press close on all sides, visible sword
+      marks on stone where someone misjudged their backswing. Fayne sketches from
+      the sidelines, capturing the moment. Pale winter sun cuts harsh shadows
+      across the scene.
     composition_notes: |
-      Medium framing. Strong diagonal energy. Grimjaw stable center. Young soldiers diagonal off-balance. Low angle. Confining walls.
-    visual_hook: "The six-inch sidestep that seems almost lazy—Grimjaw utterly still while two soldiers flail past"
+      Ultra-wide hero shot capturing the full courtyard and its constraints.
+      Grimjaw center-left, standing victorious. Darric and Venn on ground at
+      right, rueful respect on their faces. Walls visible on all sides emphasizing
+      confinement. Fayne at far right with journal. Diagonal shadows from winter
+      sun create dynamic composition.
+    visual_hook: "Dwarf standing over two defeated soldiers in tiny courtyard, walls inches from sword-tips"
     depicts_characters:
-      - "grimjaw-ironbeard"
+      - grimjaw-ironbeard
+      - corporal-darric
+      - archer-venn
     character_states:
       grimjaw-ironbeard: |
-        Perfect balance. Feet wide. Still. Braided beard in winter light. Patient satisfaction. Grandfatherly warmth.
+        Fighting stance, barely winded. Feet planted on memorized cobblestones.
+        Dangerous glint in keen eyes. Practice sword held with casual mastery.
+        "Forge geometry" proven—age and wisdom defeating youth and speed.
+      corporal-darric: |
+        On ground at right, not hurt but outmaneuvered. Rueful respect in
+        expression—recognizing the lesson. Practice sword out of reach.
+      archer-venn: |
+        Also on ground, rubbing shoulder where he hit the wall. Learning
+        spatial awareness the hard way. Genuine admiration for the demonstration.
     location: "westwall-watchpost"
     zone: "courtyard"
     lighting:
-      primary_source: "pale winter sun"
-      quality: "hard, dramatic"
-      direction: "high angle"
-      color_temperature: "cool pale"
-      shadow_depth: "harsh contrast"
-      atmospheric: "kicked-up dust"
+      primary_source: "Pale winter sun"
+      quality: "harsh, clear"
+      direction: "from above-left, creating diagonal shadows"
+      color_temperature: "cold winter white"
+      shadow_depth: "sharp, dramatic"
+      atmospheric: "cold air, visible breath"
     palette:
       dominant:
-        - "cobblestone gray"
-        - "pale gold"
-        - "shadow brown"
+        - "stone gray"
+        - "winter white"
+        - "iron shadow"
       accent:
-        - "copper pauldrons"
+        - "leather brown"
+        - "metal gleam"
+        - "breath mist white"
       avoid:
-        - "spaciousness"
+        - "warm colors"
+        - "soft lighting"
     prompt_used: |
-      Dwarf master teaching two young soldiers in a tiny stone courtyard,
-      dwarf making a small step to avoid a large sword swing,
-      younger men stumbling off balance,
-      pale winter sun casting long shadows from the walls,
-      atmosphere of mastery and precision,
-      classical oil painting, Romantic dynamism,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, dynamic composition.
+      Cramped medieval courtyard thirty feet square with uneven cobblestones,
+      stone walls pressing close with visible sword marks.
+      Stocky dwarf in fighting stance barely winded, two younger human soldiers
+      on the ground defeated but unharmed, practice swords scattered.
+      Ultra-wide hero shot, pale winter sun creating harsh diagonal shadows,
+      walls inches from sword-tips emphasizing confined combat.
+      Breath mist visible in cold air, gnome with journal sketching from sidelines.
+      Subtle fantasy: dwarven fighting stance recognizable, ward-marks on courtyard stones.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, blood
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      static poses, calm expressions, symmetrical composition, spacious arena
     tags:
-      - "anchor"
-      - "training"
+      - "hero"
+      - "combat"
       - "grimjaw"
+      - "training"
       - "kinetic"
     generated_at: null
     file_name: null
@@ -507,66 +927,87 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch09-hearth-and-home-img-09-05-01"
-    source_moment: "ch09-hearth-and-home-moment-07"
-    scene_id: "scn-09-05"
-    image_type: "pivot"
+  - custom_id: "ch09-hearth-and-home-img-04-08-02"
+    source_moment: "ch09-hearth-and-home-moment-08"
+    scene_id: "scn-09-04"
+    image_type: "beat"
     category:
       - "moment"
       - "character"
-      - "emotion"
-      - "symbol"
-    scene_mood: "ethereal"
-    mood_rationale: "Commitment to build a future. Sunset gold to twilight purple. Transcendent hope of shared vision. Romantic beauty of partnership."
-    aspect_ratio: "21:9"
+    scene_mood: "kinetic"
+    mood_rationale: |
+      Mid-action freeze-frame—the moment of the strike that proves the theory.
+      Grimjaw's movement is minimal but devastating, spatial mastery made visible.
+    aspect_ratio: "16:9"
     orientation: "landscape"
-    size: "1792x768"
+    size: "1792x1024"
     visual_description: |
-      Veyra and Thorne on the watchtower parapet at sunset. Silhouetted between ancient merlons. Sunset blazes behind them. Stone battlements painted gold then bleeding into purple. First stars emerging. Veyra's hand on Thorne's arm. Shared vision. Horizon flames with dying light.
+      Action freeze-frame: Grimjaw mid-maneuver, having sidestepped Darric's
+      overhead strike by exactly six inches—all the space available. Darric is
+      overextended, sword about to hit the wall behind him. Grimjaw's practice
+      sword is already moving to capitalize on the opening. The dwarf's expression
+      shows controlled focus—this is applied engineering, not chaos. The cobblestone
+      where Grimjaw plants his foot is the settled one he mentioned, perfectly
+      positioned for his counter.
     composition_notes: |
-      Ultra-wide cinematic. Veyra and Thorne center-left silhouettes. Sky upper half. Low angle looking up. symbolic territory. First stars visible.
-    visual_hook: "Two silhouettes framed between merlons against a sky transitioning from sunset gold to purple to blue"
+      Medium shot capturing the moment of the sidestep. Grimjaw at center,
+      Darric at right overextended. Wall clearly visible behind Darric showing
+      how close his sword will hit. Grimjaw's minimal movement contrasts with
+      Darric's wild swing. The geometry of the space is the story.
+    visual_hook: "Six-inch sidestep, overextended opponent, wall about to catch the sword"
     depicts_characters:
-      - "veyra-thornwake"
-      - "thorne-brightward"
+      - grimjaw-ironbeard
+      - corporal-darric
     character_states:
-      veyra-thornwake: |
-        Profile against sunset. Mohawk silhouetted. Hand on Thorne's arm. Determined but soft.
-      thorne-brightward: |
-        Beside Veyra. Broad silhouette. Gray hair catching light. Protective warmth.
+      grimjaw-ironbeard: |
+        Mid-sidestep, minimal movement of exactly six inches. Practice sword
+        already moving to counter. Expression of controlled focus—calculating
+        angles like forge work. Feet planted on the specific settled cobblestone.
+      corporal-darric: |
+        Overextended in overhead strike, momentum carrying him past Grimjaw.
+        Sword about to contact wall behind—realizing the error in his
+        expression. The mathematics proving itself wrong.
     location: "westwall-watchpost"
-    zone: "parapet"
+    zone: "courtyard"
     lighting:
-      primary_source: "Dying sunset sky"
-      quality: "soft, sourceless glow"
-      direction: "ambient"
-      color_temperature: "gold to purple to silver-blue"
-      shadow_depth: "minimal, rim-lit"
-      atmospheric: "clear winter air"
+      primary_source: "Winter sun"
+      quality: "clear, harsh"
+      direction: "from above"
+      color_temperature: "cold white"
+      shadow_depth: "sharp"
+      atmospheric: "motion blur feeling, cold air"
     palette:
       dominant:
-        - "sunset gold"
-        - "twilight purple"
-        - "deep blue"
+        - "stone gray"
+        - "metal gleam"
+        - "winter white"
       accent:
-        - "lantern gold"
+        - "leather brown"
+        - "motion blur"
       avoid:
-        - "dark shadows"
+        - "warm soft lighting"
     prompt_used: |
-      Two silhouettes on stone battlements against a vast sunset sky,
-      sky turning from gold to purple with stars appearing,
-      woman with mohawk touching the arm of a man in a cloak,
-      quiet and hopeful atmosphere of planning a future,
-      wide cinematic composition,
-      classical oil painting, Pre-Raphaelite luminosity,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, action composition.
+      Medieval courtyard combat demonstration, stocky dwarf mid-sidestep with
+      minimal six-inch movement, human soldier overextended in overhead strike
+      about to hit stone wall behind him, practice swords in motion.
+      Medium shot capturing precise geometry of the maneuver, harsh winter light,
+      settled cobblestone visible under dwarf's planted foot.
+      Subtle fantasy: dwarven fighting form recognizable, spatial mastery visible.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, dark oppressive sky
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      static poses, spacious arena, theatrical fighting
     tags:
-      - "pivot"
-      - "hope"
-      - "sunset"
-      - "ethereal"
+      - "action"
+      - "geometry"
+      - "grimjaw"
+      - "combat"
+      - "training"
     generated_at: null
     file_name: null
     file_path: null
@@ -574,58 +1015,186 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch09-hearth-and-home-img-09-05-02"
-    source_moment: "ch09-hearth-and-home-moment-08"
+  - custom_id: "ch09-hearth-and-home-img-05-10-01"
+    source_moment: "ch09-hearth-and-home-moment-10"
     scene_id: "scn-09-05"
-    image_type: "beat"
+    image_type: "hero"
     category:
-      - "location"
-      - "perspective"
+      - "moment"
+      - "character"
       - "emotion"
     scene_mood: "somber"
-    mood_rationale: "Character's Constraint. Narrow stone stairs. Squeezing past each other. Stars as only escape."
-    aspect_ratio: "9:16"
-    orientation: "portrait"
-    size: "640x1136"
+    mood_rationale: |
+      The chapter's culminating moment—recognition of growth requiring change.
+      Somber because they're acknowledging limitation, but hopeful because they're
+      planning forward. The weight of leadership at sunset.
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
     visual_description: |
-      Vertical shot down narrow stone stairs at night. Two guards squeezed past each other mid-flight. Worn stones and failing rope rail. Iron lantern held by one guard illuminates flickering amber. Rest lost in shadow. Sliver of cold infinite starry sky through a narrow arrow slit.
+      Veyra and Thorne stand on the parapet at sunset, silhouetted against the
+      golden sky. The worn stone battlements frame them, ancient and enduring.
+      Below, the courtyard activity is visible—tiny figures going about evening
+      routines, smoke rising from the forge, lantern light beginning to appear
+      in windows. The western hills are painted gold and rose by the dying light.
+      Stars begin to emerge in the deepening blue above. Their shoulders almost
+      touch in the narrow space between merlons. This is the view of commanders
+      surveying what they've built and what they must become.
     composition_notes: |
-      Extreme vertical looking down spiral. Vertical silhouettes. Arrow slit bright geometric break. High contrast amber vs indigo.
-    visual_hook: "Two guards squeezed shoulder-to-shoulder on a narrow spiral staircase, lantern light fighting shadows"
-    depicts_characters: []
-    character_states: {}
+      Ultra-wide hero shot, horizontal emphasis. Veyra and Thorne silhouetted
+      at center-left, sunset at right creating natural gradient. Battlements
+      frame bottom of composition. Courtyard activity below provides context.
+      Stars emerging above add temporal depth. The intimacy of their stance
+      contrasts with the vast view.
+    visual_hook: "Two silhouettes on parapet at sunset, activity below, stars emerging above"
+    depicts_characters:
+      - veyra-thornwake
+      - thorne-brightward
+    character_states:
+      veyra-thornwake: |
+        Silhouetted against sunset, scarred hands gripping stone battlements.
+        Dark mohawk profile distinctive against gold sky. Scarred face in
+        profile, contemplative. Lantern at hip catches last light.
+      thorne-brightward: |
+        Standing beside her, shoulder almost touching. Steel-gray cropped
+        hair visible in silhouette. Blue cloak catching sunset color.
+        Posture of comfortable partnership—fifteen years of discipline
+        relaxed in this private moment.
     location: "westwall-watchpost"
+    zone: "parapet"
     lighting:
-      primary_source: "single iron lantern"
-      quality: "flickering, narrow"
-      direction: "up/out"
-      color_temperature: "warm amber vs silver-blue"
-      shadow_depth: "deep absolute shadows"
-      atmospheric: "cold stone air"
+      primary_source: "Sunset"
+      quality: "golden hour, transitional"
+      direction: "from right/west"
+      color_temperature: "dying gold to emerging blue"
+      shadow_depth: "silhouettes against bright sky"
+      atmospheric: "clear winter evening, first stars"
     palette:
       dominant:
-        - "stone gray"
-        - "shadow"
-        - "indigo"
+        - "sunset gold"
+        - "rose pink"
+        - "deepening blue"
       accent:
-        - "starlight silver"
+        - "stone gray battlements"
+        - "emerging star white"
+        - "lantern light below"
       avoid:
-        - "open space"
+        - "harsh shadows"
+        - "dark oppressive colors"
     prompt_used: |
-      Vertical shot looking down a narrow stone spiral staircase,
-      silhouettes of two people squeezing past each other,
-      single lantern casting warm light on worn steps,
-      sliver of starry sky through a thin arrow slit in the wall,
-      atmosphere of cramped duty and cold stone,
-      classical oil painting, Symbolist night atmosphere,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Turner luminosity.
+      Two figures silhouetted on medieval watchtower parapet at sunset,
+      half-elf woman with distinctive mohawk profile and human man in cloak,
+      shoulders almost touching between ancient stone merlons.
+      Ultra-wide cinematic shot, western hills painted gold and rose,
+      stars emerging in deepening blue sky above, courtyard activity
+      visible below with forge smoke and lantern light appearing.
+      Commanders surveying their domain, leadership at sunset.
+      Subtle fantasy: faint ward-glow on battlements, lantern at woman's hip.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright light
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      action pose, bright lighting, indoor scene
     tags:
-      - "beat"
-      - "stairs"
-      - "cramped"
-      - "somber"
+      - "hero"
+      - "sunset"
+      - "parapet"
+      - "vision"
+      - "leadership"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch09-hearth-and-home-img-05-10-02"
+    source_moment: "ch09-hearth-and-home-moment-10"
+    scene_id: "scn-09-05"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "pastoral"
+    mood_rationale: |
+      The view from above shows the community they've built—pastoral despite
+      the military setting. Every light, every movement below represents lives
+      they've touched. Peace in recognition of what they have.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Looking down from the parapet, the courtyard spreads below in evening light.
+      Finn leads horses to the stable, speaking gently to them. Mistress Elba
+      shakes out dishcloths at the kitchen door. Grimjaw banks the forge fire,
+      orange glow visible through the doorway. Aldwin gathers herbs from his
+      window boxes before frost damage. Vera sits on the stable roof with Echo,
+      finding solitude. The scene is alive with routine, with purpose, with the
+      small moments that make a home. Lantern light begins to glow in windows.
+      Veyra's hand is visible at frame edge, gripping the battlements as she
+      watches.
+    composition_notes: |
+      High angle looking down at courtyard. Multiple figures engaged in evening
+      tasks create visual rhythm. Forge glow provides warm accent at right.
+      Window lights emerging create pattern. Veyra's hand at frame edge connects
+      viewer to her perspective. Depth from parapet to courtyard floor.
+    visual_hook: "Evening routines below, forge glow and emerging lantern light, community visible in motion"
+    depicts_characters:
+      - veyra-thornwake
+    character_states:
+      veyra-thornwake: |
+        Only scarred hand visible at frame edge, gripping stone battlements.
+        Perspective shot—we see what she sees, the community she's built.
+    location: "westwall-watchpost"
+    zone: "parapet"
+    lighting:
+      primary_source: "Dying evening light, emerging lanterns, forge glow"
+      quality: "transitional, warm points in cooling darkness"
+      direction: "from west (fading) and internal sources (emerging)"
+      color_temperature: "blue evening with warm accent points"
+      shadow_depth: "soft, evening"
+      atmospheric: "evening cool, smoke rising from forge"
+    palette:
+      dominant:
+        - "evening blue-gray"
+        - "stone gray"
+        - "shadow purple"
+      accent:
+        - "forge orange"
+        - "lantern gold"
+        - "window warmth"
+      avoid:
+        - "harsh contrasts"
+        - "neon colors"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Vermeer evening light.
+      High angle view looking down from parapet at medieval courtyard at evening,
+      figures engaged in routine tasks below—stable boy with horses, cook at door,
+      dwarf banking forge fire visible through doorway, halfling gathering herbs,
+      ranger on stable roof with raven.
+      Scarred hand visible at frame edge gripping stone battlements.
+      Warm forge glow and emerging window lantern light against cooling blue evening,
+      smoke rising from forge, community in motion.
+      Subtle fantasy: ward-glow on battlements, mixed ancestries visible in figures.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      action scene, wrong character count, duplicate figures
+    tags:
+      - "community"
+      - "evening"
+      - "routine"
+      - "pastoral"
+      - "home"
     generated_at: null
     file_name: null
     file_path: null

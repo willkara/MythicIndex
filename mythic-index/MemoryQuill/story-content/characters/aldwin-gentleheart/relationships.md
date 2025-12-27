@@ -34,7 +34,7 @@
   - *Current Status*: Professional colleagues
   - *Professional Opinion of*: Appreciates his experience and protective instincts
 
-- **Rylan Stormcaller**: 
+- **Rylan Ashvale**: 
   - *Nature of Relationship*: Fellow Company member
   - *Hierarchy*: Different specialties (medical vs. magical support)
   - *Dynamics*: His magical abilities might complement his healing in certain situations

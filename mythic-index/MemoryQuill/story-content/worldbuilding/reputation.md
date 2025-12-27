@@ -17,7 +17,7 @@ The Last Light Company is widely regarded as a beacon of hope and a symbol of pr
 *   "When you hear Captain Brightward's horn, you know help has arrived. It's not just a sound; it's a promise. It means the professionals are here."
 *   "He's the rock of that company. Veyra might be the heart, but Thorne is the shield. He's the one who makes sure the plans are solid and everyone comes home."
 
-#### Vera Moonwhisper & Rylan Stormcaller
+#### Vera Moonwhisper & Rylan Ashvale
 *   "My cousin was lost in the Westwood. The Watch said it was a lost cause. Two days later, the Last Light brought him back. Said a woman with eyes like a storm and a whisper of a tracker found his trail when no one else could."
 *   **Vera**: "Vera doesn't just talk to animals, she *listens*. My friend swears he saw her get directions from a squirrel. A squirrel! And she found the missing kid, didn't she?"
 *   **Rylan**: "The weather mage? Be careful what you say around him. My neighbor's crops were dying, and he cursed the lack of rain. The next day, a storm flooded his fields. He's powerful, but his magic has a mind of its own."

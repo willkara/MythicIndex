@@ -4,9 +4,9 @@
 
 import { select, input, checkbox } from '@inquirer/prompts';
 import chalk from 'chalk';
-import { join } from 'path';
+import { join, extname, basename } from 'path';
 import { existsSync } from 'fs';
-import { readdir } from 'fs/promises';
+import { readdir, rename } from 'fs/promises';
 import type { CharacterInfo } from './character-select.js';
 import {
   readImageIdeasYaml,
@@ -435,13 +435,58 @@ async function runImageAnalysis(character: CharacterInfo): Promise<void> {
   const results = await withProgress(
     newImages,
     async (imagePath) => {
-      return await analyzeImage({
+      const result = await analyzeImage({
         imagePath,
         characterName: character.name,
         slug: character.slug,
         appearance,
         filename: imagePath.split('/').pop() || '',
       });
+
+      if (!result) {
+        return null;
+      }
+
+      const filename = basename(imagePath);
+      if (filename.toLowerCase() === 'portrait.png') {
+        return result;
+      }
+
+      const suggested = result.content?.suggested_filename;
+      if (!suggested) {
+        return result;
+      }
+
+      const firstName = character.name.trim().split(/\s+/)[0] || character.slug;
+      const firstNameSlug = slugifyToken(firstName);
+      const suggestedSlug = slugifyToken(suggested);
+      if (!firstNameSlug || !suggestedSlug) {
+        return result;
+      }
+
+      const ext = extname(imagePath) || '.png';
+      const newFileName = buildShortNameFilename(
+        firstNameSlug,
+        suggestedSlug,
+        ext,
+        imagesDir,
+        imagePath
+      );
+
+      if (!newFileName || newFileName.toLowerCase() === filename.toLowerCase()) {
+        return result;
+      }
+
+      try {
+        await rename(imagePath, join(imagesDir, newFileName));
+        result.path = `images/${newFileName}`;
+        result.provenance = result.provenance || {};
+        result.provenance.original_filename = newFileName;
+      } catch (error) {
+        showWarning(`Rename failed for ${filename}: ${(error as Error).message}`);
+      }
+
+      return result;
     },
     (imagePath) => `Analyzing ${imagePath.split('/').pop()}`,
     (imagePath, result) =>
@@ -464,6 +509,38 @@ async function runImageAnalysis(character: CharacterInfo): Promise<void> {
   showSuccess(`Added ${validResults.length} new entries to imagery.yaml`);
   showInfo(`Total inventory: ${imageryData.image_inventory.length} images`);
   newLine();
+}
+
+function slugifyToken(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+function buildShortNameFilename(
+  firstNameSlug: string,
+  suggestedSlug: string,
+  ext: string,
+  imagesDir: string,
+  currentPath: string
+): string | null {
+  if (!firstNameSlug || !suggestedSlug) {
+    return null;
+  }
+
+  let index = 1;
+  while (index < 100) {
+    const suffix = String(index).padStart(2, '0');
+    const candidate = `${firstNameSlug}-${suggestedSlug}-${suffix}${ext}`;
+    const candidatePath = join(imagesDir, candidate);
+    if (!existsSync(candidatePath) || candidatePath === currentPath) {
+      return candidate;
+    }
+    index += 1;
+  }
+
+  return null;
 }
 
 /**

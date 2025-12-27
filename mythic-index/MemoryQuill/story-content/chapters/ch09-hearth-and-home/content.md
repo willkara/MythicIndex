@@ -233,7 +233,7 @@ They worked in companionable silence after that, though it was punctuated by the
 
 The morning's chill had burned off under a pale winter sun, leaving the courtyard dry enough for training—though "courtyard" was a generous term for the narrow space between buildings that they'd claimed for practice. It was perhaps thirty feet square, with uneven cobblestones that had to be memorized to avoid turning an ankle during combat drills.
 
-Darric and Venn had claimed a patch of ground near the armory—really just a reinforced door to a storage room where weapons were stacked like cordwood. They went through sword drills with the methodical precision of professional soldiers, though they had to be careful not to strike the walls on their backswings. Yesterday, Venn had put a chip in the stone that Sarge had noticed with displeasure.
+Darric and Venn had claimed a patch of ground near the armory—really just a reinforced door to a storage room where weapons were stacked like cordwood. They went through sword drills with the methodical precision of professional soldiers, though they had to be careful not to strike the walls on their backswings. Yesterday, Venn had put a chip in the stone that Tomaq had noticed with displeasure.
 
 Grimjaw emerged from the forge, wiping soot from his hands on a leather apron that had seen better decades. The forge itself was cramped into what had been a storage room, barely large enough for the anvil and furnace. He had to duck through the doorway, and more than once he'd singed his beard on the low-hanging chains he used to suspend pieces for cooling. He paused to watch their practice, his experienced eye noting technique and form.
 

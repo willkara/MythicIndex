@@ -1,6 +1,6 @@
 ---
 name: "Lieutenant Tomaq"
-aliases: ["Tomaq", "Sarge"]
+aliases: ["Tomaq", "Tomaq"]
 race: "Orc"
 class: "Fighter"
 role: "city_watch_lieutenant"
@@ -10,7 +10,7 @@ role: "city_watch_lieutenant"
 
 ## Basic Information
 - **Full Name**: Lieutenant Tomaq (formerly Sergeant Grushak)
-- **Aliases/Nicknames**: "Sarge" (common nickname), "Grushak" (formal name from sergeant days)
+- **Aliases/Nicknames**: "Tomaq" (common nickname), "Grushak" (formal name from sergeant days)
 - **Age**: 
 - **Gender**: Male
 - **Role in Story**: City Watch Lieutenant

@@ -21,7 +21,7 @@
   - *Institutions*: Studied at a prestigious academy in Waterdeep, focusing on advanced medicine, philosophy, and theology.
   - *Mentors*: Various professors and healers (specific names TBD).
   - *Areas of Study*: His studies focused on the intersection of physical and spiritual well-being, laying the groundwork for his holistic approach.
-  - *Notable Acquaintances*: During his studies, he occasionally attended cross-disciplinary lectures on arcane theory, where he was briefly acquainted with a brilliant, if eccentric, elven elementalist named Rylan Stormcaller. He remembers being fascinated by his theories on how atmospheric pressure could affect somatic components, though he found his approach a bit too detached for his own tastes.
+  - *Notable Acquaintances*: During his studies, he occasionally attended cross-disciplinary lectures on arcane theory, where he was briefly acquainted with a brilliant, if eccentric, elven elementalist named Rylan Ashvale. He remembers being fascinated by his theories on how atmospheric pressure could affect somatic components, though he found his approach a bit too detached for his own tastes.
   
 - **Adolescence/Young Adulthood**:
   - *Key Events*: Left his village to pursue higher education, a rare choice for a halfling of his community.
@@ -69,7 +69,7 @@
 - **Connection to Main Plot**: Medic for the Last Light Company.
 - **Connection to Other Characters**: 
   - Respects Veyra as a kindred spirit.
-  - Has a pre-existing, if distant, academic connection to Rylan Stormcaller.
+  - Has a pre-existing, if distant, academic connection to Rylan Ashvale.
   
 - **Connection to Story World**: 
   - Experienced the Border Wars.

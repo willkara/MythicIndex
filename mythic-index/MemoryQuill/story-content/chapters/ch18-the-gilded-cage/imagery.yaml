@@ -1,289 +1,325 @@
-# ============================================================================
-# CHAPTER IMAGERY SPECIFICATION
-# Chapter: The Gilded Cage
-# Generated: 2025-12-21
-# ============================================================================
-
 metadata:
   entity_type: "chapter-imagery"
   slug: "ch18-the-gilded-cage"
   chapter_number: 18
   chapter_title: "The Gilded Cage"
-  visual_thesis: "From the somber dignity of public survival to the private realization that freedom has been purchased with invisible chains."
+  visual_thesis: "Victory becomes bureaucracy—the Company enters Waterdeep's gilded halls and shadowed warehouses, discovering that legitimacy comes with strings and debts."
   color_palette:
     primary:
-      - "#4A5568"
-      - "#2D3748"
-      - "#8B7355"
-      - "#C9A86C"
+      - "#4169E1"  # Cavalry blue (honor guard cloaks)
+      - "#C0C0C0"  # Silver armor (contrast to battered Company)
+      - "#2F4F4F"  # Warehouse shadow (oppressive cage)
     accent:
-      - "#1A365D"
-      - "#744210"
-      - "#2C5282"
+      - "#FFFFF0"  # Committee marble (intimidation architecture)
+      - "#228B22"  # Druid grove green (healing sanctuary)
+      - "#20B2AA"  # Rill's sea-glass skin (water genasi)
   generation_defaults:
     provider: "openai"
     model: "dall-e-3"
     quality: "hd"
   mood_distribution:
     somber: 2
-    pastoral: 1
-    celebratory: 0
-    aquatic: 0
-    ethereal: 2
+    ominous: 3
+    ethereal: 1
     intimate: 2
-    kinetic: 0
-    ominous: 1
 
 characters:
   - ref: "veyra-thornwake"
     name: "Veyra Thornwake"
-    scene_variations: "Right arm in a sling. Burn scar prominent. Controlled exhaustion. Vulnerable in private, commanding in public."
+    scene_variations: |
+      CHAPTER 18 VARIATIONS (POST-BATTLE ARRIVAL):
+      - SCENE 01 (Procession): Arm in sling, scarred face a mask of controlled
+        exhaustion. Riding at center of cavalry escort. The "Ash-Marked" legend
+        solidifying in public view.
+      - SCENE 04 (Marcus): Standing in warehouse, overseeing infirmary setup.
+        Clipped tone, professional. Cold realization dawning as Marcus reveals
+        the debt.
+      - SCENE 05 (Vera): Softer than usual, sitting beside Vera in druid grove.
+        Commander's tenderness—"That's an order."
+      - Throughout: Dark mohawk with shaved sides, burn scar left face (jawline
+        to temple), teal tattoos on neck/arms, battered lantern at hip.
+        Weatherworn leather with mismatched armor plates.
     reference_images:
-      - "veyra-thornwake-official-portrait-01"
-
-  - ref: "thorne-brightward"
-    name: "Thorne Brightward"
-    scene_variations: "White-knuckled in committee. Buried in legal texts. Trusted specialist in the market."
-    reference_images:
-      - "thorne-brightward-portrait-01"
+      - "veyra-thornwake-portrait"
 
   - ref: "marcus-heartbridge"
     name: "Marcus Heartbridge"
-    scene_variations: "Immaculate charcoal doublet. Predatory smile when revealing leverage. Gold signet ring."
+    scene_variations: |
+      CHAPTER 18 (THE FIXER'S LEVERAGE):
+      - SCENE 04: Immaculate despite warehouse surroundings. Well-tailored
+        doublet, polished boots. Smooth confidence as he reveals the debt.
+        Smile sharpening as he delivers: "Such gifts often create opportunities
+        for future collaboration."
+      - Throughout: Average height, poised posture. Knowing smile that
+        sharpens into something predatory when revealing leverage.
+        Never disheveled, even in dust and shadow.
     reference_images:
-      - "marcus-heartbridge-portrait-study-01"
+      - "marcus-heartbridge-portrait"
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: |
+      CHAPTER 18 (THE POLITICAL GAUNTLET):
+      - SCENE 01 (Procession): Riding with escort, grim set of face.
+      - SCENE 03 (Committee): In best uniform at polished lectern.
+        Hot flush of anger rising up neck as Lady Aridith attacks.
+        Gripping lectern edge, knuckles white. Parade-ground calm
+        masking fury. Out of his element—"easier to face a dozen
+        mercenaries than three politicians."
+      - Throughout: Watch Captain plate armor, blue cloak with sunburst.
+        Stern but compassionate. Strained expression.
+    reference_images:
+      - "thorne-brightward-portrait"
 
   - ref: "grimjaw-ironbeard"
     name: "Grimjaw Ironbeard"
-    scene_variations: "Iron-gray beard. Meticulous engineer. Teaching Finn woodworking. Critiquing the 'tomb' warehouse."
-    reference_images:
-      - "grimjaw-ironbeard-portrait-01"
-
-  - ref: "vera-moonwhisper"
-    name: "Vera Moonwhisper"
-    scene_variations: "Unconscious in wagon. Recovering in grove. Pale, thin, fragile. Faint smile of recognition."
-    reference_images:
-      - "vera-moonwhisper-portrait-01"
+    scene_variations: |
+      CHAPTER 18 (THE ENGINEER'S ASSESSMENT):
+      - SCENE 02: Standing in cavernous warehouse, dwarfed by the space.
+        Engineer's eye already cataloging flaws—poor ventilation, damp
+        corners, acoustics that will drive a man mad.
+        Muttering: "It's a bloody tomb with a roof."
+      - Throughout: Dwarven build, gruff demeanor. Practical, assessing.
+    reference_images: []
 
   - ref: "rill-vossari"
     name: "Rill Vossari"
-    scene_variations: "Water genasi. Sea-glass skin, turquoise bioluminescence. Pouring silver liquid into pool."
-    reference_images:
-      - "rill-vossari-casting-portrait-01"
+    scene_variations: |
+      CHAPTER 18 (THE WATER SPEAKER):
+      - SCENE 05: Kneeling at pool's edge in druid grove. Sea-glass skin
+        with visible turquoise currents beneath surface (throat, wrists,
+        cheeks). Hair in thick dreadlocks, deep sea-green to sea-foam
+        white at tips, bound with verdigris copper wire.
+        Eyes the clouded gray of rain about to fall.
+        Pouring silver liquid that makes pool shimmer blue.
+        "I can ask the water to remember its true nature."
+      - Throughout: Deep blue oilskin longcoat, sailor's harness with
+        iron rings. Bare feet. Strong swimmer's build, broad shoulders.
+        Calm, patient focus. Holy symbol: vial of ever-moving water.
+    reference_images: []
 
-  - ref: "finn"
-    name: "Finn"
-    scene_variations: "Dusted with sawdust. Learning from Grimjaw. Devoted watch over Vera."
-    reference_images:
-      - "finn-stable-archer-01"
+  - ref: "vera-moonwhisper"
+    name: "Vera Moonwhisper"
+    scene_variations: |
+      CHAPTER 18 (RECOVERY):
+      - SCENE 05: Resting on moss bed near pool in druid grove. Weak from
+        transformation, spirit guttering like a damp candle. Thin voice,
+        weak smile when Veyra gives "order" to heal. Transformation left
+        chaotic residue—water in her veins "soured."
+      - Throughout: Ranger gear, but vulnerable. Pale, exhausted.
+        Hope visible despite weakness: "Yes, Commander."
+    reference_images: []
 
 locations:
   - ref: "waterdeep-streets"
     zones:
-      - id: "overview"
-        chapter_context: "Wide cobblestone avenues. Gray stone buildings. Silent crowds watching the somber procession."
+      - id: "streets"
+        chapter_context: |
+          Morning in Waterdeep. Citizens lining the streets, commerce forgotten.
+          Hushed silence as the somber procession passes. Cavalry in immaculate
+          blue and silver escorting the battered, weary Company. Whispers rising
+          like a tide: "The Ash-Marked" ... "commanded a dire wolf" ... The legend
+          being written in public view, witnessed by thousands.
+
   - ref: "dock-ward-warehouse"
     zones:
-      - id: "interior"
-        chapter_context: "Cavernous, cold stone space. High narrow windows, long shadows. Smells of salt and damp."
-  - ref: "castle-waterdeep-committee-chamber"
+      - id: "main-floor"
+        chapter_context: |
+          Massive cavernous space. High narrow windows letting in slivers of light
+          that emphasize oppressive shadows. Cold, still air carrying ghosts of
+          forgotten cargoes. A cage of stone and timber. "A bloody tomb with a roof."
+          Voices echo small. Function without feeling. The gilded cage made visible—
+          they have a home, but it came with a leash.
+
+  - ref: "castle-waterdeep"
     zones:
-      - id: "overview"
-        chapter_context: "Vaulted ceilings, white marble floors. Elevated judgment table. Cold, institutional light."
+      - id: "committee-chamber"
+        chapter_context: |
+          Chamber designed to intimidate. Polished marble floors, high vaulted
+          ceilings. Long table where three powerful figures sit in judgment.
+          Lady Aridith's sharp eyes, Captain Grimsby's procedural neutrality.
+          A battlefield of words where soldiers are out of their element.
+          Political knives come out wrapped in reasonable language.
+
   - ref: "druid-grove-waterdeep"
     zones:
-      - id: "overview"
-        chapter_context: "Hidden green sanctuary. Ancient trees, dapples of light. Clear central pool."
-  - ref: "dock-ward"
-    zones:
-      - id: "overview"
-        chapter_context: "The bustling, salt-stained streets of the Dock Ward. Heavy carts, muddy cobblestones, warehouse gates."
-      - id: "market"
-        chapter_context: "The chaotic market stalls and vendors of the Dock Ward."
+      - id: "pool"
+        chapter_context: |
+          Hidden pocket of wild green within Waterdeep. Moss-covered ground,
+          filtered light through canopy. Small clear pool at center where
+          Vera rests nearby. Rill Vossari kneeling at water's edge, performing
+          cleansing ritual. Silver liquid making pool shimmer blue.
+          Ethereal atmosphere—healing sanctuary, spiritual recovery.
 
 moments:
   - id: "ch18-the-gilded-cage-moment-01"
     scene_id: "scn-18-01"
-    title: "The Wounded Procession"
-    narrative_beat: "Veyra leading the Company through the silent streets of Waterdeep, legend becoming flesh."
-    visual_weight: "hero"
+    title: "The Ash-Marked"
+    narrative_beat: "Citizens lined the streets, watching in hushed silence. 'Is that the commander? The Ash-Marked?' 'They say she commanded a dire wolf in the battle...'"
+    visual_weight: "critical"
     characters_present:
       - "veyra-thornwake"
+      - "thorne-brightward"
       - "commander-atlock"
-    location_zone: "waterdeep-streets/overview"
-    transformation_state: "n/a"
+    location_zone: "waterdeep-streets/streets"
+    transformation_state: "after"
     recommended_images: 1
 
   - id: "ch18-the-gilded-cage-moment-02"
     scene_id: "scn-18-02"
-    title: "Symphony of the Docks"
-    narrative_beat: "The rumble of commerce and the salt-spray of the Dock Ward, the Company's new industrial home."
-    visual_weight: "medium"
-    characters_present:
-      - "veyra-thornwake"
-    location_zone: "dock-ward/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch18-the-gilded-cage-moment-03"
-    scene_id: "scn-18-02"
-    title: "The Echoing Tomb"
-    narrative_beat: "First look at the cavernous, cold interior of the warehouse complex."
-    visual_weight: "medium"
+    title: "A Bloody Tomb With a Roof"
+    narrative_beat: "'It's a bloody tomb with a roof,' Grimjaw muttered, his engineer's eye already cataloging the flaws. 'Poor ventilation, damp in the corners, and the acoustics will drive a man mad.'"
+    visual_weight: "high"
     characters_present:
       - "grimjaw-ironbeard"
       - "quartermaster-fayne"
-    location_zone: "dock-ward-warehouse/interior"
-    transformation_state: "n/a"
+      - "commander-atlock"
+    location_zone: "dock-ward-warehouse/main-floor"
+    transformation_state: "after"
     recommended_images: 1
 
-  - id: "ch18-the-gilded-cage-moment-04"
+  - id: "ch18-the-gilded-cage-moment-03"
     scene_id: "scn-18-03"
-    title: "Trial of the Lectern"
-    narrative_beat: "Thorne standing at the witness lectern in the marble chamber, white-knuckled and furious."
-    visual_weight: "high"
+    title: "Discretionary Acquisitions"
+    narrative_beat: "'There's a recurring line item for 'discretionary acquisitions'. A polite term for looting, some might say.' Lady Aridith's sharp eyes fixed on Thorne as political knives came out."
+    visual_weight: "critical"
     characters_present:
       - "thorne-brightward"
       - "commander-atlock"
-    location_zone: "castle-waterdeep-committee-chamber/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
+      - "lady-aridith"
+      - "captain-grimsby"
+    location_zone: "castle-waterdeep/committee-chamber"
+    transformation_state: "after"
+    recommended_images: 2
 
   - id: "ch18-the-gilded-cage-moment-05"
     scene_id: "scn-18-04"
-    title: "Invisible Chains"
-    narrative_beat: "Marcus revealing his leverage over the committee to Veyra, the price of the home."
+    title: "The Bill Will Come Due"
+    narrative_beat: "'Consider it a gift. Of course, such gifts often create opportunities for future collaboration. I'm sure we'll find a way for you to repay the favor.' Marcus's smile sharpened as Veyra realized their home had been bought."
     visual_weight: "critical"
     characters_present:
       - "marcus-heartbridge"
       - "veyra-thornwake"
-    location_zone: "dock-ward-warehouse/interior"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch18-the-gilded-cage-moment-06"
-    scene_id: "scn-18-05"
-    title: "The Artisan's Refuge"
-    narrative_beat: "Grimjaw teaching Finn woodworking in the forge, a pocket of warmth in the cage."
-    visual_weight: "medium"
-    characters_present:
-      - "grimjaw-ironbeard"
-      - "finn"
-    location_zone: "dock-ward-warehouse/interior"
-    transformation_state: "n/a"
-    recommended_images: 1
+    location_zone: "dock-ward-warehouse/courtyard"
+    transformation_state: "after"
+    recommended_images: 2
 
   - id: "ch18-the-gilded-cage-moment-07"
     scene_id: "scn-18-05"
-    title: "Cleansing the Well"
-    narrative_beat: "Rill Vossari performing the water ritual in the hidden grove to heal Vera's spirit."
-    visual_weight: "high"
+    title: "Water Remembering"
+    narrative_beat: "Rill Vossari, a water genasi with sea-glass skin and currents swirling beneath her surface, poured silver liquid into the pool. 'I can ask the water to remember its true nature.'"
+    visual_weight: "critical"
     characters_present:
       - "rill-vossari"
       - "vera-moonwhisper"
-    location_zone: "druid-grove-waterdeep/overview"
-    transformation_state: "n/a"
+      - "veyra-thornwake"
+      - "aldwin-gentleheart"
+    location_zone: "druid-grove-waterdeep/pool"
+    transformation_state: "after"
     recommended_images: 1
 
   - id: "ch18-the-gilded-cage-moment-08"
     scene_id: "scn-18-05"
-    title: "The Hidden Threshold"
-    narrative_beat: "The unassuming ivy-covered door in the Sea Ward wall that opens into the wild grove."
-    visual_weight: "medium"
-    characters_present: []
-    location_zone: "druid-grove-waterdeep/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch18-the-gilded-cage-moment-09"
-    scene_id: "scn-18-06"
-    title: "Master of the Market"
-    narrative_beat: "Kelen and Venn negotiating for timber and grain, re-affirming their place in the city."
-    visual_weight: "medium"
-    characters_present:
-      - "sergeant-kelen"
-      - "archer-venn"
-    location_zone: "dock-ward-market/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch18-the-gilded-cage-moment-10"
-    scene_id: "scn-18-06"
-    title: "The Burden of Supply"
-    narrative_beat: "Veyra reviewing the supply list with Thorne, accepting the need for city expertise."
-    visual_weight: "medium"
+    title: "First, You Heal"
+    narrative_beat: "'My brother...' 'Is still out there. And we will find him. Together. But first, you heal. That's an order.' Vera managed a weak smile. 'Yes, Commander.'"
+    visual_weight: "high"
     characters_present:
       - "veyra-thornwake"
-      - "thorne-brightward"
-    location_zone: "dock-ward-warehouse/interior"
-    transformation_state: "n/a"
+      - "vera-moonwhisper"
+    location_zone: "druid-grove-waterdeep/pool"
+    transformation_state: "after"
     recommended_images: 1
 
 images:
-  - custom_id: "ch18-the-gilded-cage-img-18-01-01"
+  - custom_id: "ch18-the-gilded-cage-img-01-01-01"
     source_moment: "ch18-the-gilded-cage-moment-01"
     scene_id: "scn-18-01"
     image_type: "hero"
     category:
       - "moment"
+      - "location"
       - "character"
-      - "action"
     scene_mood: "somber"
-    mood_rationale: "The cost of legend made public. Wounds on parade, hushed crowds. Rembrandt's chiaroscuro and earth tones."
+    mood_rationale: |
+      The arrival is not triumphant but heavy with grief and exhaustion.
+      A somber procession through silent streets—legend being witnessed,
+      not celebrated. The weight of survival visible in every battered figure.
     aspect_ratio: "21:9"
     orientation: "landscape"
     size: "1792x768"
     visual_description: |
-      The Last Light Company enters Waterdeep in somber procession. Forty cavalrymen in blue and silver escort battered wagons. Veyra walks at the head beside Atlock, her right arm in a sling, her burn-scarred face a mask of endurance. Silent citizens line the cobblestone streets. Morning light casts long shadows forward.
+      Wide cinematic shot of the Last Light Company's arrival in Waterdeep.
+      Forty cavalrymen in immaculate blue and silver cloaks form an honor
+      guard, their polished armor a stark contrast to the battered, weary
+      figures they escort. Wounded on stretchers, torn banners, splintered
+      shields. At the center rides Veyra, arm in sling, scarred face a mask
+      of controlled exhaustion. Citizens line the streets in hushed silence,
+      commerce forgotten. Heads turning, whispers visible in the stillness.
+      Morning light, cool and grey, catching the cavalry silver.
     composition_notes: |
-      Wide cinematic frame. Veyra left third, walking. Atlock mounted beside her. Battered wagons middle ground. Receding lines of silent crowd. Morning light from upper right.
-    visual_hook: "Veyra's burn-scarred face set in controlled exhaustion, arm in sling, the contrast of her battered leather against the pristine blue-silver cavalry"
+      Ultra-wide format emphasizes the procession's length. Cavalry forms
+      disciplined lines on either side. Company members in the center,
+      smaller and more ragged. Veyra as the focal point in center frame.
+      Citizens as audience, creating natural vignette.
+    visual_hook: "Immaculate cavalry escorting battered survivors through silent, watching streets"
     depicts_characters:
       - "veyra-thornwake"
-      - "commander-atlock"
       - "thorne-brightward"
+      - "commander-atlock"
     character_states:
       veyra-thornwake: |
-        Arm in sling. Measured steps. Burn scar and tattoos visible. Battered lantern at belt.
-      commander-atlock: |
-        Mounted. Formal uniform. Granite expression.
+        Riding at center. Arm in sling. Scarred face visible, exhausted but
+        controlled. Dark mohawk, teal tattoos. The "Ash-Marked" in public view.
       thorne-brightward: |
-        Visible behind Veyra. Blue cloak dusty. Watchful.
-    location: "castle-ward"
+        Riding nearby. Grim expression, strained.
+      commander-atlock: |
+        Leading the escort. Rigid military bearing, immaculate uniform.
+    location: "waterdeep-streets"
     zone: "streets"
     lighting:
-      primary_source: "Morning sun"
-      quality: "Directional, dramatic"
-      direction: "Side-front"
-      color_temperature: "Warm gold vs cool shadows"
-      shadow_depth: "Deep, rich"
-      atmospheric: "Dust motes"
+      primary_source: "Morning overcast sky"
+      quality: "diffused, grey, somber"
+      direction: "from above, even"
+      color_temperature: "cool grey with cavalry silver accents"
+      shadow_depth: "soft, muted"
+      atmospheric: "morning haze, street dust"
     palette:
       dominant:
-        - "slate gray"
-        - "worn brown"
         - "cavalry blue"
+        - "silver armor"
+        - "grey stone streets"
       accent:
-        - "cavalry silver"
-        - "gold trim"
+        - "battered leather brown"
+        - "dried blood"
+        - "Veyra's teal tattoos"
       avoid:
-        - "bright colors"
+        - "bright celebratory colors"
+        - "warm tones"
     prompt_used: |
-      Somber military procession through wide cobblestone streets,
-      scarred woman with mohawk and arm in sling leading on foot,
-      mounted commander in formal navy uniform,
-      blue and silver cavalry escorting battered wagons,
-      hushed crowds watching,
-      long shadows at morning,
-      classical oil painting, Rembrandt lighting, chiaroscuro,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, classical military procession.
+      Wide shot of a medieval city street, citizens lining the route in hushed silence.
+      Forty cavalrymen in immaculate blue and silver cloaks form an honor guard,
+      escorting a battered group of survivors on foot and stretcher.
+      At center, a half-elf woman with scarred face and arm in sling rides wearily.
+      Torn banners, splintered shields, wounded on stretchers.
+      Morning grey light, somber atmosphere, legend being witnessed.
+      Procession fills the frame, citizens as silent audience.
+      Fantasy medieval setting, no modern elements.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin, stock photo, celebratory
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      celebration, cheering crowds, bright festive colors, victory parade
     tags:
-      - "hero"
       - "procession"
-      - "waterdeep"
+      - "arrival"
       - "somber"
+      - "legend"
+      - "hero"
+      - "veyra"
     generated_at: null
     file_name: null
     file_path: null
@@ -291,63 +327,92 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch18-the-gilded-cage-img-18-02-01"
-    source_moment: "ch18-the-gilded-cage-moment-03"
+  - custom_id: "ch18-the-gilded-cage-img-02-02-01"
+    source_moment: "ch18-the-gilded-cage-moment-02"
     scene_id: "scn-18-02"
-    image_type: "establishing"
+    image_type: "anchor"
     category:
-      - "location"
       - "moment"
-    scene_mood: "somber"
-    mood_rationale: "Establishing the warehouse home. Cavernous and cold. A place of function, not feeling. Oppressive shadows."
+      - "location"
+      - "character"
+    scene_mood: "oppressive"
+    mood_rationale: |
+      Claustrophobic weight despite the cavernous space. The warehouse
+      is a cage of stone and timber—function without feeling. The high
+      narrow windows and oppressive shadows press in on the small figures.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Interior of the massive Dock Ward warehouse complex. Cavernous space with high, narrow windows letting in slivers of afternoon light. Timber support beams darkened by damp. Cold stone floors. Fayne and Grimjaw look small in the echoing space. Stacks of crates and barrels.
+      Wide establishing shot of the massive warehouse interior. Grimjaw,
+      Fayne, and Atlock stand small in the center of the cavernous space,
+      dwarfed by the oppressive architecture. High narrow windows let in
+      slivers of light that cut through the darkness like prison bars.
+      Stone walls, heavy timber beams overhead. Shadows dominate—the space
+      feels cold, still, empty. Dust motes in the light shafts. Grimjaw's
+      posture shows assessment, cataloging flaws. The cage made visible.
     composition_notes: |
-      Wide shot. Deep perspective. High ceilings. Light shafts creating high contrast. Tiny figures for scale.
-    visual_hook: "The high, narrow windows acting like arrow slits, casting thin bars of light across an endless, cold stone floor."
+      Figures placed small in lower third of frame. Architecture dominates.
+      Light shafts create vertical bars. The emptiness is the point—
+      this is not a home, it's a functional prison. Rule of thirds places
+      the characters off-center, emphasizing the space around them.
+    visual_hook: "Three figures dwarfed by cavernous warehouse, light shafts like prison bars"
     depicts_characters:
       - "grimjaw-ironbeard"
       - "quartermaster-fayne"
+      - "commander-atlock"
     character_states:
       grimjaw-ironbeard: |
-        Looking up at beams. Hands on hips. Disapproving posture.
+        Dwarven build, hands on hips, assessing posture. Looking up at
+        the flaws—ventilation, damp, acoustics. "Bloody tomb with a roof."
       quartermaster-fayne: |
-        Looking around. Notebook in hand. Overwhelmed.
+        Standing nearby, voice small in echoing space.
+      commander-atlock: |
+        Military posture, gesturing toward the buildings.
     location: "dock-ward-warehouse"
+    zone: "main-floor"
     lighting:
-      primary_source: "high narrow windows"
-      quality: "harsh, fragmented"
-      direction: "top-down shafts"
-      color_temperature: "cool blue-gray"
-      shadow_depth: "deep, absolute"
-      atmospheric: "salt mist and dust"
+      primary_source: "High narrow windows"
+      quality: "slivers of light, oppressive shadow"
+      direction: "from above/sides through narrow windows"
+      color_temperature: "cold grey"
+      shadow_depth: "deep, dominating"
+      atmospheric: "dust motes in light shafts, still air"
     palette:
       dominant:
-        - "stone gray"
-        - "timber black"
-        - "shadow"
+        - "shadow black"
+        - "stone grey"
+        - "timber brown"
       accent:
-        - "pale light shafts"
+        - "light shaft grey-white"
+        - "dust motes"
       avoid:
-        - "warmth"
+        - "warm colors"
+        - "cozy atmosphere"
     prompt_used: |
-      Interior of a cavernous medieval stone warehouse,
-      high narrow windows casting thin shafts of cold light,
-      massive timber beams and cold stone floor,
-      small figures of a dwarf and gnome looking around,
-      atmosphere of a 'gilded cage',
-      classical oil painting, chiaroscuro,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, cathedral-scale interior.
+      Massive warehouse interior, cavernous and oppressive.
+      Three figures standing small in the center—a dwarf, a human, a soldier.
+      High narrow windows casting slivers of light like prison bars.
+      Heavy timber beams overhead, cold stone walls.
+      Shadows dominate the space, dust motes visible in light shafts.
+      Cold, still, empty atmosphere. A cage of stone and timber.
+      Figures dwarfed by architecture, emphasizing isolation.
+      Fantasy medieval warehouse, no modern elements.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, cozy, modern warehouse
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      warm lighting, cozy atmosphere, welcoming space, bright windows
     tags:
-      - "establishing"
-      - "location"
       - "warehouse"
-      - "somber"
+      - "oppressive"
+      - "cage"
+      - "grimjaw"
+      - "anchor"
     generated_at: null
     file_name: null
     file_path: null
@@ -355,127 +420,96 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch18-the-gilded-cage-img-18-02-02"
-    source_moment: "ch18-the-gilded-cage-moment-02"
-    scene_id: "scn-18-02"
-    image_type: "beat"
-    category:
-      - "moment"
-      - "location"
-      - "sensory"
-    scene_mood: "somber"
-    mood_rationale: "The 'Character's Symphony.' Visualizing the Dock Ward as an overwhelming sensory experience. Motion and rattle."
-    aspect_ratio: "21:9"
-    orientation: "landscape"
-    size: "1792x768"
-    visual_description: |
-      Wide-angle, low-angle shot from street level. A heavy cart rumbles across the foreground, wheels spraying salt-water and mud. In the background, the massive salt-stained gates of the warehouse are visible. Veyra stands as a dark silhouette there. Heavy gray sky.
-    composition_notes: |
-      Ultra-wide. Cart wheel foreground left. Leading lines of cobblestones. Veyra right third. High contrast.
-    visual_hook: "A massive, mud-spraying cart wheel in the extreme foreground, framing the Company's new warehouse home"
-    depicts_characters:
-      - "veyra-thornwake"
-    character_states:
-      veyra-thornwake: |
-        Silhouette. Sentinel posture. Assessing the 'symphony' of the docks.
-    location: "dock-ward"
-    lighting:
-      primary_source: "diffuse overcast daylight"
-      quality: "flat, heavy"
-      direction: "ambient"
-      color_temperature: "cool gray"
-      shadow_depth: "moderate"
-      atmospheric: "salt mist and tar haze"
-    palette:
-      dominant:
-        - "charcoal stone"
-        - "tar black"
-        - "fog gray"
-      accent:
-        - "mud brown"
-      avoid:
-        - "bright colors"
-    prompt_used: |
-      Low angle shot of a heavy cart wheel rumbling over wet salt-stained cobblestones,
-      mud and water spraying,
-      massive warehouse gates in the background with a silhouetted woman,
-      heavy gray sky,
-      atmosphere of noise and industry,
-      classical oil painting, Turner influence in mist and motion,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, clean streets, modern vehicles
-    tags:
-      - "beat"
-      - "location"
-      - "motion"
-      - "dock-ward"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch18-the-gilded-cage-img-18-03-01"
-    source_moment: "ch18-the-gilded-cage-moment-04"
+  - custom_id: "ch18-the-gilded-cage-img-03-03-01"
+    source_moment: "ch18-the-gilded-cage-moment-03"
     scene_id: "scn-18-03"
     image_type: "anchor"
     category:
       - "moment"
       - "character"
-      - "emotion"
-    scene_mood: "somber"
-    mood_rationale: "Institutional coldness and political weight. Thorne's suppressed fury. Architecture of judgment."
+      - "action"
+    scene_mood: "ominous"
+    mood_rationale: |
+      Political threat made visible. The chamber is designed to intimidate.
+      Lady Aridith's sharp eyes, Thorne at the lectern—a soldier facing
+      bureaucrats in a battlefield of words where he's out of his element.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Thorne stands isolated at the witness lectern in the Lords' Committee Chamber. White-knuckled grip on wood. Hot flush of anger on his neck. Three committee members sit elevated behind a long table. Atlock stands nearby, constrained. Polished marble, high vaulted ceilings.
+      Wide shot of the Committee Chamber in Castle Waterdeep. Polished
+      marble floors, high vaulted ceilings designed to intimidate. A long
+      table elevated on a dais where three powerful figures sit in judgment.
+      Lady Aridith, sharp-eyed and severe, is the focal point. Thorne stands
+      below at a polished lectern, in his best uniform, looking up at them.
+      Commander Atlock stands supportive beside him. The architecture
+      emphasizes the power dynamic—small figures before authority.
     composition_notes: |
-      Thorne center-left. Low angle. Committee members elevated right. Table as wall. Cold shafts of light from high windows. Shadowed ceiling.
-    visual_hook: "White-knuckled grip on the polished witness lectern, veins standing out on weathered hands"
+      Low angle looking up toward the Committee table emphasizes power
+      dynamic. Thorne small in frame, committee large and elevated.
+      Marble and vaulted ceiling provide architectural weight.
+      Lady Aridith's eyes are the secondary focal point after Thorne.
+    visual_hook: "Soldier at lectern facing elevated political tribunal, marble architecture intimidating"
     depicts_characters:
       - "thorne-brightward"
       - "commander-atlock"
+      - "lady-aridith"
+      - "captain-grimsby"
     character_states:
       thorne-brightward: |
-        Rigid posture. White knuckles. Angry flush. Blue cloak gold sunburst. Forced parade-ground calm.
+        At polished lectern, best uniform. Hands gripping lectern edge.
+        Looking up at committee. Out of his element, maintaining composure.
       commander-atlock: |
-        Formal uniform. Hands behind back. Frustrated eyes.
-    location: "castle-waterdeep-committee-chamber"
+        Beside Thorne, supportive stance. Military posture.
+      lady-aridith: |
+        Sharp-eyed, severe, elevated position. The political knife.
+      captain-grimsby: |
+        Professional neutrality, procedural expert.
+    location: "castle-waterdeep"
+    zone: "committee-chamber"
     lighting:
-      primary_source: "high windows"
-      quality: "cold, formal"
-      direction: "harsh angles"
-      color_temperature: "clinical blue-white"
-      shadow_depth: "deep, clean-edged"
-      atmospheric: "oppressively clean"
+      primary_source: "High windows and formal chandeliers"
+      quality: "formal, cold, institutional"
+      direction: "from above, emphasizing marble"
+      color_temperature: "cool white marble reflection"
+      shadow_depth: "sharp institutional shadows"
+      atmospheric: "still, formal, oppressive formality"
     palette:
       dominant:
-        - "white marble"
-        - "shadow black"
-        - "dark wood"
+        - "marble white"
+        - "formal grey"
+        - "shadow"
       accent:
-        - "blue cloak"
-        - "crimson uniform piping"
+        - "uniform blue"
+        - "gold trim"
+        - "Lady Aridith's formal robes"
       avoid:
-        - "warm tones"
+        - "warm domestic colors"
+        - "casual atmosphere"
     prompt_used: |
-      Man with gray mustache gripping a polished wooden lectern in a vast marble chamber,
-      white knuckles and angry flush on neck,
-      armored captain in blue cloak,
-      elevated judges at a long table in background,
-      cold light from high windows,
-      classical oil painting, Rembrandt lighting, chiaroscuro,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, classical courtroom scene.
+      Formal committee chamber with polished marble and vaulted ceilings.
+      Three powerful figures seated at elevated table in judgment.
+      A soldier in military uniform stands at a lectern below, looking up.
+      Sharp-eyed noblewoman is the central authority figure.
+      Architecture designed to intimidate—power dynamic visible.
+      Formal, cold atmosphere, political tension.
+      Low angle emphasizing the committee's elevation.
+      Fantasy medieval formal chamber, no modern elements.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, friendly expressions
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      friendly atmosphere, smiling faces, casual setting
     tags:
-      - "pivot"
-      - "politics"
+      - "political"
+      - "committee"
       - "thorne"
-      - "castle-waterdeep"
+      - "intimidation"
+      - "anchor"
     generated_at: null
     file_name: null
     file_path: null
@@ -483,65 +517,177 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch18-the-gilded-cage-img-18-04-01"
-    source_moment: "ch18-the-gilded-cage-moment-05"
-    scene_id: "scn-18-04"
-    image_type: "anchor"
+  - custom_id: "ch18-the-gilded-cage-img-03-03-02"
+    source_moment: "ch18-the-gilded-cage-moment-03"
+    scene_id: "scn-18-03"
+    image_type: "beat"
     category:
       - "moment"
       - "character"
       - "emotion"
     scene_mood: "ominous"
-    mood_rationale: "Gilded cage. Marcus's smooth charm vs Veyra's cold realization. Velvet threat and invisible chains."
-    aspect_ratio: "3:4"
-    orientation: "portrait"
-    size: "1024x1365"
+    mood_rationale: |
+      The emotional beat—Thorne's anger rising as Lady Aridith attacks.
+      A hot flush on his neck, knuckles white on the lectern. The soldier
+      fighting to maintain parade-ground calm in a battle of words.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
     visual_description: |
-      Marcus stands with relaxed confidence in the cold warehouse. Immaculate charcoal doublet. Smile sharpening to something predatory. Veyra faces him, arm in sling, scarred face shifting to cold understanding. Light shafts from high windows catch Marcus, leave Veyra in shadow. Gold signet ring glints.
+      Medium close-up on Thorne at the lectern. His hands grip the polished
+      wood edge, knuckles white with controlled anger. A flush of red is
+      visible on his neck, rising toward his face. His jaw is set, eyes
+      meeting Lady Aridith's gaze (visible in soft focus above). He is
+      forcing parade-ground calm, but the anger is barely contained.
+      The lectern and his white-knuckled grip are the focal point.
     composition_notes: |
-      Medium-close two-shot. Marcus forward in light. Veyra right third in shadow. High windows creating diagonal shafts. Industrial background blurred.
-    visual_hook: "Marcus's smile sharpening from practiced charm to something predatory, the exact moment Veyra recognizes the cage"
+      Medium close shot, Thorne filling right two-thirds of frame.
+      Focus on hands gripping lectern—the physical tell of controlled rage.
+      Face in Rembrandt lighting, flush visible on neck.
+      Lady Aridith's form visible in soft focus above.
+    visual_hook: "White-knuckled grip on lectern, flush of anger on soldier's neck"
+    depicts_characters:
+      - "thorne-brightward"
+    character_states:
+      thorne-brightward: |
+        Gripping lectern, knuckles white. Hot flush rising on neck.
+        Jaw set, forcing steady voice. Parade-ground calm masking fury.
+        Out of his element—easier to face mercenaries than politicians.
+    location: "castle-waterdeep"
+    zone: "committee-chamber"
+    lighting:
+      primary_source: "Formal chamber lighting"
+      quality: "Rembrandt split lighting"
+      direction: "from above/side"
+      color_temperature: "cool with warm flush on skin"
+      shadow_depth: "dramatic on face"
+      atmospheric: "tension visible"
+    palette:
+      dominant:
+        - "uniform blue"
+        - "polished wood"
+        - "flesh tones"
+      accent:
+        - "angry red flush"
+        - "white knuckles"
+      avoid:
+        - "calm colors"
+        - "relaxed atmosphere"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Rembrandt portrait lighting.
+      Medium close-up of a military officer at a wooden lectern.
+      His hands grip the polished edge, knuckles white with controlled anger.
+      A flush of red visible on his neck, rising toward his face.
+      Jaw set, eyes steady but furious, forcing calm.
+      Blurred figure of authority visible above him.
+      Tension, barely contained rage, political battlefield.
+      Dramatic lighting, focus on hands and expression.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      smiling, relaxed, calm expression, casual pose
+    tags:
+      - "thorne"
+      - "anger"
+      - "political"
+      - "tension"
+      - "beat"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch18-the-gilded-cage-img-05-04-01"
+    source_moment: "ch18-the-gilded-cage-moment-05"
+    scene_id: "scn-18-04"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The chapter's thematic core. Marcus's smile sharpening as he reveals
+      the debt—diplomatic predator showing teeth. Dread and wrongness:
+      the gift that creates obligation, the cage that was bought.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Two-shot in the warehouse courtyard, evening light. Marcus stands
+      in immaculate clothes, his smile sharpening as he delivers the truth.
+      Veyra faces him, her scarred face showing cold realization. The
+      warehouse shadows behind them reinforce the cage metaphor. Marcus
+      is lit with sickly evening light that emphasizes his predatory
+      expression. Veyra's expression shifts from confusion to understanding
+      to cold anger. The debt has been created.
+    composition_notes: |
+      Two figures, Marcus on left, Veyra on right. Marcus's face in slight
+      three-quarter view, smile visible and sharpening. Veyra's profile
+      shows realization dawning. Warehouse architecture behind provides
+      context. Evening shadows significant.
+    visual_hook: "Marcus's sharpening smile facing Veyra's cold realization, warehouse shadows behind"
     depicts_characters:
       - "marcus-heartbridge"
       - "veyra-thornwake"
     character_states:
       marcus-heartbridge: |
-        Pristine clothes. Neat goatee. Predatory smile. Gold ring glinting. Controlled gesture.
+        Immaculate clothes, smooth confidence. Smile sharpening into
+        something predatory. Delivering leverage: "Such gifts often
+        create opportunities for future collaboration."
       veyra-thornwake: |
-        Arm in sling. Leather armor. Burn scar catching light. Grim understanding.
+        Scarred face showing cold realization. Arm in sling. Processing
+        that their home was bought at a price. The bill will come due.
     location: "dock-ward-warehouse"
+    zone: "courtyard"
     lighting:
-      primary_source: "high windows"
-      quality: "cold, harsh"
-      direction: "above-left"
-      color_temperature: "sickly"
-      shadow_depth: "deep"
-      atmospheric: "oppressive stillness"
+      primary_source: "Evening light through warehouse gaps"
+      quality: "sickly evening, shadows significant"
+      direction: "from side, creating sharp shadows"
+      color_temperature: "amber turning cold"
+      shadow_depth: "deep, ominous"
+      atmospheric: "dust, warehouse chill"
     palette:
       dominant:
-        - "cold gray"
-        - "charcoal black"
-        - "shadow"
+        - "Marcus's immaculate clothes (rich fabric)"
+        - "warehouse shadow"
+        - "evening amber"
       accent:
-        - "gold signet ring"
-        - "teal tattoos"
+        - "Veyra's weathered leather"
+        - "burn scar"
       avoid:
-        - "warm tones"
+        - "warm friendly colors"
+        - "bright lighting"
     prompt_used: |
-      Man in charcoal doublet with predatory smile facing a woman with arm in sling in a cold warehouse,
-      high windows casting thin shafts of light,
-      man looks powerful and knowing, woman looks grim and realizes the debt,
-      classical oil painting, Symbolist unease,
-      cold sickly palette,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Caravaggio chiaroscuro.
+      Two figures in a warehouse courtyard at evening.
+      A well-dressed man in immaculate clothing, smile sharpening predatorily.
+      Facing him, a scarred woman with arm in sling, expression showing cold realization.
+      Evening light creates sickly amber, deep shadows behind.
+      Warehouse architecture visible, reinforcing cage metaphor.
+      Ominous atmosphere, leverage revealed, debt created.
+      Fantasy medieval setting, diplomatic threat visible.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, friendly expressions
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      friendly smiles, warm atmosphere, daylight, casual meeting
     tags:
-      - "anchor"
       - "marcus"
       - "veyra"
-      - "ominous"
+      - "debt"
       - "leverage"
+      - "ominous"
+      - "beat"
     generated_at: null
     file_name: null
     file_path: null
@@ -549,131 +695,176 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch18-the-gilded-cage-img-18-05-01"
-    source_moment: "ch18-the-gilded-cage-moment-06"
+  - custom_id: "ch18-the-gilded-cage-img-05-04-02"
+    source_moment: "ch18-the-gilded-cage-moment-05"
+    scene_id: "scn-18-04"
+    image_type: "detail"
+    category:
+      - "moment"
+      - "character"
+      - "symbol"
+    scene_mood: "ominous"
+    mood_rationale: |
+      Close on the predator's face. Marcus's smile as it sharpens—
+      the moment of revelation, the diplomatic mask slipping to show
+      the teeth beneath. Intimate, threatening, indelible.
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Extreme close-up portrait of Marcus Heartbridge. His face fills the
+      frame, lit from below/side in ominous amber. His smile is the focal
+      point—once smooth and diplomatic, now sharpening into something
+      predatory. Eyes intelligent and calculating, knowing exactly what
+      he's done. Well-groomed but the polish is a mask. The smile doesn't
+      reach his eyes. "I'm sure we'll find a way for you to repay the favor."
+    composition_notes: |
+      Tight portrait, face filling frame. Focus on the smile and eyes.
+      Asymmetrical lighting from below creates ominous shadows.
+      The sharpening smile is the visual hook—diplomatic becoming predatory.
+    visual_hook: "Marcus's smile sharpening from smooth to predatory, lit from below"
+    depicts_characters:
+      - "marcus-heartbridge"
+    character_states:
+      marcus-heartbridge: |
+        Face in extreme close-up. Smile sharpening. Eyes calculating.
+        The Fixer showing his teeth. Diplomatic predator revealed.
+    location: "dock-ward-warehouse"
+    zone: "courtyard"
+    lighting:
+      primary_source: "Below/side lamp or evening light"
+      quality: "ominous, theatrical"
+      direction: "from below, creating shadow on upper face"
+      color_temperature: "sickly amber"
+      shadow_depth: "dramatic"
+      atmospheric: "intimate threat"
+    palette:
+      dominant:
+        - "flesh tones"
+        - "shadow"
+        - "amber"
+      accent:
+        - "teeth (smile)"
+        - "calculating eyes"
+      avoid:
+        - "warm friendly colors"
+        - "even lighting"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Caravaggio portrait.
+      Extreme close-up of a well-groomed man's face.
+      His smile is sharpening from smooth diplomatic to predatory.
+      Eyes intelligent and calculating, knowing exactly what he's done.
+      Lit from below in sickly amber, dramatic shadows on upper face.
+      The smile doesn't reach his eyes. Diplomatic mask slipping.
+      Intimate, threatening, ominous atmosphere.
+      Portrait format, face filling frame.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      genuine smile, friendly expression, warm lighting, wide shot
+    tags:
+      - "marcus"
+      - "portrait"
+      - "predator"
+      - "smile"
+      - "detail"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch18-the-gilded-cage-img-07-05-01"
+    source_moment: "ch18-the-gilded-cage-moment-07"
     scene_id: "scn-18-05"
     image_type: "detail"
     category:
       - "moment"
       - "character"
-      - "emotion"
-    scene_mood: "intimate"
-    mood_rationale: "Found family in action. Grimjaw teaching Finn. Pocket of warmth against institutional chill."
+      - "magic"
+    scene_mood: "ethereal"
+    mood_rationale: |
+      Otherworldly beauty and healing. Rill Vossari is a visual marvel—
+      sea-glass skin with visible currents, pouring silver liquid that
+      makes the pool shimmer blue. Divine presence, high magic done
+      tastefully, spiritual healing.
     aspect_ratio: "3:4"
     orientation: "portrait"
     size: "1024x1365"
     visual_description: |
-      Grimjaw Ironbeard demonstrating joinery to Finn in the forge building. His large calloused hands over Finn's sawdust-covered ones. Partially constructed bunk frame. Sawdust hanging golden in the forge-light. Finn's hazel eyes focused. Warm amber sanctuary.
+      Rill Vossari kneels at the edge of a clear pool in the druid grove.
+      Her sea-glass skin—pale translucent blue-green—glows softly with
+      visible turquoise currents swirling beneath the surface at her throat
+      and wrists. Her thick rope-like dreadlocks fade from deep sea-green
+      to sea-foam white at the tips, bound with verdigris copper wire.
+      Her eyes are the clouded gray of rain about to fall. She is pouring
+      silver liquid from a vial, and where it meets the pool surface, blue
+      light shimmers outward. Her expression is calm, focused. She wears a
+      deep blue oilskin longcoat and sailor's harness.
     composition_notes: |
-      Medium-close. Hands and face lit by forge-glow from side. Finn slightly lower. Bunk frame between them. Shallow depth.
-    visual_hook: "Grimjaw's large, calloused hands positioned over Finn's sawdust-covered ones, showing proper grip on a wood joint"
-    depicts_characters:
-      - "grimjaw-ironbeard"
-      - "finn"
-    character_states:
-      grimjaw-ironbeard: |
-        Standing at bench. Braided beard catching light. Patient instruction. Copper pauldrons.
-      finn: |
-        Sleeves rolled. Dusted with sawdust. Raptor attention. Quiet pride.
-    location: "dock-ward-warehouse"
-    lighting:
-      primary_source: "Forge fire"
-      quality: "soft, warm"
-      direction: "side"
-      color_temperature: "warm amber"
-      shadow_depth: "gentle gradients"
-      atmospheric: "golden sawdust"
-    palette:
-      dominant:
-        - "amber"
-        - "warm brown"
-        - "honey gold"
-      accent:
-        - "copper pauldrons"
-      avoid:
-        - "cold tones"
-    prompt_used: |
-      Dwarf with magnificent braided beard teaching a young man woodworking in a forge,
-      his large calloused hands guiding the youth's hands on a wood joint,
-      warm amber firelight illuminating them,
-      sawdust in the air,
-      found family warmth,
-      classical oil painting, Vermeer lighting,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, cold lighting
-    tags:
-      - "detail"
-      - "teaching"
-      - "warmth"
-      - "intimate"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch18-the-gilded-cage-img-18-05-02"
-    source_moment: "ch18-the-gilded-cage-moment-07"
-    scene_id: "scn-18-05"
-    image_type: "mood"
-    category:
-      - "moment"
-      - "character"
-      - "action"
-    scene_mood: "ethereal"
-    mood_rationale: "Healing magic and genasi bioluminescence. Pool glowing with blue light. Dappled forest sanctuary."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
-    visual_description: |
-      Rill Vossari kneeling barefoot at the edge of a pool in a hidden grove. Pouring silver liquid from a vial. Soft blue luminescence spreading in ripples. Turquoise currents swirling beneath her sea-glass skin. Pale gray eyes focused. Vera resting on moss nearby, pale and fragile. Dappled forest light overhead.
-    composition_notes: |
-      Square format. Low angle from water level. Pool luminescence primary light. Vera soft-focus mid-ground. Centered, contemplative.
-    visual_hook: "The darker turquoise currents swirling beneath Rill's translucent skin, quickening as the pool responds with blue light"
+      Portrait format emphasizing Rill's exotic features. She fills left
+      side of frame, pool visible on right. The silver liquid pouring and
+      pool shimmer create the magical focal point. Grove greenery soft
+      in background. Her face and the water meeting point are key.
+    visual_hook: "Water genasi with sea-glass skin pouring silver liquid, pool shimmering blue"
     depicts_characters:
       - "rill-vossari"
-      - "vera-moonwhisper"
     character_states:
       rill-vossari: |
-        Kneeling. Translucent aquamarine skin. Bioluminescent veins. Pouring silver liquid. Resolute expression.
-      vera-moonwhisper: |
-        Resting on moss. Pale face. Eyes closed. Wrapped in green cloak.
+        Kneeling at pool edge. Sea-glass skin with turquoise currents visible.
+        Dreadlocks sea-green to white. Eyes rain-gray, focused.
+        Pouring silver liquid from vial. "I can ask the water to remember."
     location: "druid-grove-waterdeep"
+    zone: "pool"
     lighting:
-      primary_source: "Pool luminescence"
-      quality: "soft, sourceless"
-      direction: "ambient from below"
-      color_temperature: "blue-silver vs dappled green"
-      shadow_depth: "minimal"
-      atmospheric: "humid grove air"
+      primary_source: "Pool shimmer and grove-filtered light"
+      quality: "ethereal, sourceless glow"
+      direction: "from below (pool) and above (canopy)"
+      color_temperature: "blue-green water light"
+      shadow_depth: "soft, dreamlike"
+      atmospheric: "ethereal, sacred, healing"
     palette:
       dominant:
-        - "blue luminescence"
-        - "aquamarine skin"
-        - "forest green"
+        - "sea-glass blue-green (Rill's skin)"
+        - "pool blue shimmer"
+        - "grove green"
       accent:
         - "silver liquid"
-        - "copper coils"
+        - "turquoise currents"
+        - "verdigris copper"
       avoid:
-        - "harsh shadows"
+        - "harsh colors"
+        - "unnatural neon"
     prompt_used: |
-      Water genasi woman with bioluminescent turquoise veins kneeling at a glowing blue forest pool,
-      pouring silver liquid from a vial,
-      luminous aquamarine skin,
-      pale woman resting on moss nearby,
-      hidden druid grove background with dappled light,
-      classical oil painting, Pre-Raphaelite luminosity,
-      luminous quality, dreamy atmosphere,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Pre-Raphaelite ethereal.
+      A water genasi woman kneels at the edge of a clear pool in a forest grove.
+      Her skin is pale translucent blue-green like sea-glass, with visible
+      turquoise currents swirling beneath at throat and wrists.
+      Thick rope-like dreadlocks fade from deep sea-green to sea-foam white,
+      bound with verdigris copper wire. Eyes clouded gray like rain.
+      She pours silver liquid from a vial, pool shimmering blue where it touches.
+      Deep blue oilskin coat, sailor's harness, bare feet.
+      Ethereal, sacred healing atmosphere, grove light filtering through.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, industrial, urban
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      garish magic effects, lightning bolts, over-the-top fantasy
     tags:
-      - "mood"
-      - "magic"
+      - "rill-vossari"
+      - "water-genasi"
       - "healing"
       - "ethereal"
+      - "pool"
+      - "detail"
     generated_at: null
     file_name: null
     file_path: null
@@ -681,122 +872,91 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch18-the-gilded-cage-img-18-05-03"
+  - custom_id: "ch18-the-gilded-cage-img-08-05-01"
     source_moment: "ch18-the-gilded-cage-moment-08"
     scene_id: "scn-18-05"
     image_type: "beat"
     category:
-      - "location"
-      - "threshold"
-    scene_mood: "ethereal"
-    mood_rationale: "The 'Character's Privacy.' Hidden sanctuary within the cold city. Blindingly vibrant green sliver."
-    aspect_ratio: "9:16"
-    orientation: "portrait"
-    size: "640x1136"
-    visual_description: |
-      High stone wall in the Sea Ward draped in dark ivy. Small iron-bound oak door slightly ajar. Through the gap, a sliver of blindingly vibrant emerald green is visible—moss and ferns catching perfect sunlight. Contrast between city gray and primordial life. Humid haze.
-    composition_notes: |
-      Vertical perspective. Stone wall frames the scene. Door gap focal point. High contrast gray vs vibrant green.
-    visual_hook: "A narrow sliver of blindingly vibrant emerald green glimpsed through a heavy iron-bound door in a cold gray wall."
-    depicts_characters: []
-    character_states: {}
-    location: "druid-grove-waterdeep"
-    lighting:
-      primary_source: "brilliant interior sun"
-      quality: "blinding, vibrant"
-      direction: "from within outward"
-      color_temperature: "golden-green vs cool gray"
-      shadow_depth: "deep exterior shadow"
-      atmospheric: "humid haze"
-    palette:
-      dominant:
-        - "stone gray"
-        - "ivy dark green"
-        - "emerald green"
-      accent:
-        - "sunlight gold"
-      avoid:
-        - "modern elements"
-    prompt_used: |
-      Vertical shot of a heavy oak door in a dark ivy-covered stone wall,
-      door slightly open revealing a sliver of brilliant sun-drenched green forest inside,
-      high contrast between dark gray city and hidden bright sanctuary,
-      classical oil painting, Symbolist unease meets Pre-Raphaelite luminosity,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, modern city, cars
-    tags:
-      - "threshold"
-      - "location"
-      - "mystery"
-      - "ethereal"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch18-the-gilded-cage-img-18-06-01"
-    source_moment: "ch18-the-gilded-cage-moment-09"
-    scene_id: "scn-18-06"
-    image_type: "beat"
-    category:
+      - "moment"
       - "character"
-      - "location"
-    scene_mood: "pastoral"
-    mood_rationale: "Re-affirming place in the city. Professional courtesy between trusted friends. The bustling market."
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Close emotional connection. Commander's tenderness with a wounded
+      companion. "First, you heal. That's an order." The intimacy is in
+      the soft voice, the unguarded care, the weak smile in response.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Kelen and Venn at the Herbalists' Collective shop. Mistress Elara is pulling a prepared crate of supplies from under the counter. The shop is quiet and smells of lavender. Kelen is accepting the crate with a nod of respect. Venn is looking at a bunch of dried moss. Warm, lived-in interior.
+      Medium shot in the druid grove near the pool. Veyra sits beside Vera's
+      moss bed, her voice softer than usual. Vera lies weak, pale, recovering
+      from transformation—but managing a weak smile. The grove provides a
+      green, peaceful backdrop. Veyra's scarred face shows unguarded care—
+      the commander being tender. Her hand rests near Vera's. "Yes, Commander,"
+      Vera whispers. The pool shimmers in soft focus behind them.
     composition_notes: |
-      Medium shot. Counter foreground. Elara center. Kelen/Venn right. Shelves of jars background. Natural window light.
-    visual_hook: "The exchange of the supply crate—a tangible mark of the Company's integration into the city's network of trust."
+      Two figures, Veyra seated, Vera lying on moss bed. Veyra on left,
+      leaning toward Vera. Eye contact between them is the emotional core.
+      Grove greenery provides warm, healing context. Pool visible in
+      soft focus. Intimate framing, faces prominent.
+    visual_hook: "Commander's scarred face soft with care, weak patient's grateful smile"
     depicts_characters:
-      - "sergeant-kelen"
-      - "archer-venn"
-      - "mistress-elara"
+      - "veyra-thornwake"
+      - "vera-moonwhisper"
     character_states:
-      sergeant-kelen: |
-        Accepting crate. Respectful expression.
-      archer-venn: |
-        Examining moss. Relaxed but watchful.
-      mistress-elara: |
-        Providing supplies. Warmth in her gaze despite seriousness.
-    location: "dock-ward"
-    zone: "market"
+      veyra-thornwake: |
+        Sitting beside bed, voice softer than usual. Scarred face showing
+        unguarded care. Arm still in sling. "But first, you heal. That's
+        an order." Tender command.
+      vera-moonwhisper: |
+        Lying on moss bed, weak but hopeful. Pale, thin voice. Managing
+        a weak smile: "Yes, Commander." Spirit beginning to heal.
+    location: "druid-grove-waterdeep"
+    zone: "pool"
     lighting:
-      primary_source: "Window light"
-      quality: "Soft, natural"
-      direction: "Side"
-      color_temperature: "Neutral"
-      shadow_depth: "Soft"
-      atmospheric: "Lavender scented"
+      primary_source: "Grove-filtered afternoon light"
+      quality: "warm, gentle, healing"
+      direction: "from above through canopy"
+      color_temperature: "warm green-gold"
+      shadow_depth: "soft, dappled"
+      atmospheric: "peaceful, sanctuary"
     palette:
       dominant:
-        - "wood brown"
-        - "herb green"
-        - "amber"
+        - "grove green"
+        - "moss earth"
+        - "flesh tones"
       accent:
-        - "lavender purple"
+        - "pool blue shimmer"
+        - "Veyra's teal tattoos"
+        - "hope in eyes"
       avoid:
-        - "darkness"
+        - "harsh lighting"
+        - "cold colors"
     prompt_used: |
-      Two soldiers in an apothecary shop accepting a crate of medicines from a woman,
-      shelves of jars and dried herbs,
-      warm natural window light,
-      atmosphere of quiet professional respect and homecoming,
-      classical oil painting, genre scene,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, intimate bedside scene.
+      A scarred half-elf woman sits beside a moss bed in a forest grove,
+      her expression uncharacteristically soft and caring.
+      On the bed lies a pale, weak young woman, managing a grateful smile.
+      Grove greenery provides peaceful backdrop, pool shimmers behind.
+      Warm afternoon light filters through canopy.
+      Commander's tenderness, patient's hope. Healing sanctuary.
+      Intimate framing, focus on faces and connection.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      clinical hospital, harsh lighting, cold atmosphere, formal poses
     tags:
+      - "veyra"
+      - "vera"
+      - "healing"
+      - "intimate"
+      - "care"
       - "beat"
-      - "logistics"
-      - "market"
-      - "pastoral"
     generated_at: null
     file_name: null
     file_path: null

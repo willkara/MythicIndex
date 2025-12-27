@@ -1,399 +1,301 @@
-# ============================================================================
-# CHAPTER IMAGERY SPECIFICATION
-# Chapter: The Long Road Home
-# Generated: 2025-12-21
-# ============================================================================
-
 metadata:
   entity_type: "chapter-imagery"
   slug: "ch17-the-long-road-home"
   chapter_number: 17
   chapter_title: "The Long Road Home"
-  visual_thesis: "From the ash of a broken home to scattered campfire lights—the journey from devastation to fragile hope, told through weary bodies, tender gestures, and the quiet preparation for wars yet to come."
+  visual_thesis: "Leaving a broken home for an uncertain future—cavalry escort, wounded wagons, and campfire conversations mark the slow retreat toward whatever comes next."
   color_palette:
     primary:
-      - "#4A4A4A"
-      - "#8B7355"
-      - "#2C3E50"
-      - "#D4A574"
+      - "#8B8B8B"  # ash-gray ruins, morning devastation
+      - "#DAA520"  # tavern warmth, lamplight and ale
+      - "#191970"  # midnight blue, starlight and campfires
     accent:
-      - "#FFD700"
-      - "#E6E6FA"
+      - "#4169E1"  # cavalry blue and silver
+      - "#FF6347"  # campfire warmth
+      - "#C0C0C0"  # cold morning light, stone
   generation_defaults:
     provider: "openai"
     model: "dall-e-3"
     quality: "hd"
   mood_distribution:
     somber: 3
-    pastoral: 0
-    celebratory: 1
-    aquatic: 0
-    ethereal: 1
-    intimate: 3
-    kinetic: 0
-    ominous: 0
+    intimate: 2
+    celebratory: 2
 
 characters:
   - ref: "veyra-thornwake"
     name: "Veyra Thornwake"
-    scene_variations: "Right arm in a sling. Post-battle exhaustion. Lantern at hip."
+    scene_variations: |
+      CHAPTER 17 VARIATIONS (DEPARTURE ARC):
+      - SCENE 01: Arm in sling, standing in ruined courtyard. Face showing
+        grief and resolve. Seeing ghosts of what they built. The smell of
+        ash triggering Undershade Canyon memories.
+      - SCENES 02-04: Traveling, quiet, carrying the weight. Moments of
+        softening—validating Finn, acknowledging Marcus's different war.
+      - Throughout: Burns visible on left face, dark leather armor worn,
+        lantern at belt. Commander of survivors, not sole survivor.
     reference_images:
-      - "veyra-thornwake-official-portrait-01"
-
-  - ref: "commander-atlock"
-    name: "Commander Marcus Atlock"
-    scene_variations: "Field conditions, road dust. Leading cavalry escort."
-    reference_images:
-      - "commander-atlock-formal-portrait-01"
-
-  - ref: "thorne-brightward"
-    name: "Thorne Brightward"
-    scene_variations: "Road-weary, dust on cloak. Maintaining discipline."
-    reference_images:
-      - "thorne-brightward-portrait-01"
-
-  - ref: "grimjaw-ironbeard"
-    name: "Grimjaw Ironbeard"
-    scene_variations: "Mourning structural damage. Planning next stronghold."
-    reference_images:
-      - "grimjaw-ironbeard-portrait-01"
-
-  - ref: "vera-moonwhisper"
-    name: "Vera Moonwhisper"
-    scene_variations: "UNCONSCIOUS. Pale and thin. Lying in wagon."
-    reference_images:
-      - "vera-moonwhisper-portrait-01"
+      - "veyra-thornwake-portrait"
 
   - ref: "finn"
     name: "Finn"
-    scene_variations: "Ribs tightly bound. Walking wounded. Devoted vigil."
+    scene_variations: |
+      CHAPTER 17 (VIGIL AND GROWTH):
+      - SCENE 02: Ribs bound, walking alongside Vera's wagon, hand on
+        worn wood. Murmuring comfort to unconscious friend.
+      - SCENE 04: Finding Veyra with cider. Processing near-death
+        experience, receiving validation from his commander.
+    reference_images: []
+
+  - ref: "vera-moonwhisper"
+    name: "Vera Moonwhisper"
+    scene_variations: |
+      CHAPTER 17 (UNCONSCIOUS THROUGHOUT):
+      - ALL SCENES: Still as death in wagon, under blankets. Breathing
+        shallow. A flickering candle in high wind. The cost of her
+        transformation visible in her stillness.
     reference_images:
-      - "finn-stable-archer-01"
+      - "vera-moonwhisper-portrait"
+
+  - ref: "commander-atlock"
+    name: "Commander Atlock"
+    scene_variations: |
+      CHAPTER 17 (GRIM DUTY AND RESPECT):
+      - SCENE 01: Delivering bad news with grim purpose.
+      - SCENE 03: Rare weary smile, recognizing the "finest mess."
+      - Throughout: Military bearing, but genuine respect for Company.
+    reference_images: []
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: |
+      CHAPTER 17 (STEADY SECOND):
+      - SCENE 01: Receiving order to leave.
+      - SCENE 03: Road-dust covered, entering tavern first.
+      - "The finest mess I've ever had the honor to serve with."
+    reference_images: []
 
   - ref: "durja"
     name: "Durja"
-    scene_variations: "Orc innkeeper. Both hands on bar. Weary resignation."
-    reference_images:
-      - "durja-tavern-keep-01"
+    scene_variations: |
+      CHAPTER 17 (GRUDGING HOSPITALITY):
+      - SCENE 03: Scarred orc face, massive hands on bar. Profound
+        bone-deep sigh. "For fuck's sake." Hospitality in its rawest form.
+    reference_images: []
 
   - ref: "marcus-heartbridge"
     name: "Marcus Heartbridge"
-    scene_variations: "Serious expression. Bathing in sending stone light."
-    reference_images:
-      - "marcus-heartbridge-portrait-study-01"
+    scene_variations: |
+      CHAPTER 17 (THE OTHER WAR):
+      - SCENE 03: Expensive clothes, practiced charm. Gold purse on bar.
+        "Get on with it, peacock."
+      - SCENE 04: By road at night, sending-stone glow fading.
+        "My part is just beginning." Political war commander.
+    reference_images: []
+
+  - ref: "grimjaw-ironbeard"
+    name: "Grimjaw Ironbeard"
+    scene_variations: |
+      CHAPTER 17 (BATTERED BUT PLANNING):
+      - SCENE 01: Physically ill looking at leaning tower.
+      - SCENE 03: At table, poking at gristle in stew.
+      - SCENE 04: By fire with Fayne, sketching fortifications.
+    reference_images: []
 
 locations:
   - ref: "westwall-watchpost"
     zones:
-      - id: "ruined"
-        chapter_context: "Broken gate, fractured wall, leaning tower. Wet ash and ozone scent."
+      - id: "courtyard"
+        chapter_context: |
+          The morning after—a funeral atmosphere. Gate hanging from single
+          hinge like a broken jaw. Eastern wall a jagged wound of splintered
+          timber and fractured stone. Northern tower leaning dangerously.
+          Wet ash smell, ozone, scattered personal effects. The quiet after
+          the celebration, ghosts visible in every corner.
+
   - ref: "road-to-waterdeep"
     zones:
-      - id: "overview"
-        chapter_context: "Rutted dirt road, skeletal trees. Overcast sky. Blue cavalry cloaks vs ragged survivors."
+      - id: "road"
+        chapter_context: |
+          Slow somber procession south. Forty elite cavalry in blue and silver
+          as honor guard. Company's wounded in wagons. Overcast skies, cold
+          damp air. Four days of careful travel with wounded, twice normal time.
+
   - ref: "wayward-compass"
     zones:
-      - id: "interior"
-        chapter_context: "Low-beamed, smoke-stained tavern. Sawdust floor. Amber lamplight."
+      - id: "common-room"
+        chapter_context: |
+          Dusk arrival, warm light against fading day. Smoke from chimneys
+          promising warmth and ale. Durja's domain—practical hospitality.
+          The council table in the corner where exhausted leaders gather.
+          Hot stew and cold ale. Home away from home.
+
   - ref: "wayward-compass-fields"
     zones:
-      - id: "overview"
-        chapter_context: "Military camp at night. Constellation of campfires. Defensive perimeter."
+      - id: "camp"
+        chapter_context: |
+          Fields beside the inn, cavalry perimeter. Multiple small fires
+          dotting the darkness, each a circle of warmth and quiet conversation.
+          Medical wagon for continued care. Stars emerging overhead. A
+          temporary home on the long road to somewhere else.
 
 moments:
   - id: "ch17-the-long-road-home-moment-01"
     scene_id: "scn-17-01"
-    title: "Surveying the Corpse"
-    narrative_beat: "Veyra stands in the ruined courtyard, her arm in a sling, looking at the ghosts of what they built."
-    visual_weight: "hero"
+    title: "The Gate Hung Like a Broken Jaw"
+    narrative_beat: "Veyra stood in the center of the courtyard. The gate hung from a single hinge like a broken jaw. The eastern wall was a jagged wound. For a fleeting, terrifying moment, the scent of the ash transported her back to Undershade Canyon."
+    visual_weight: "critical"
     characters_present:
       - "veyra-thornwake"
-    location_zone: "westwall-watchpost/ruined"
-    transformation_state: "after"
-    recommended_images: 1
-
-  - id: "ch17-the-long-road-home-moment-02"
-    scene_id: "scn-17-01"
-    title: "Memory Overlay"
-    narrative_beat: "Close up of a puddle reflecting the broken gate, with spectral flames of the canyon visible beneath."
-    visual_weight: "medium"
-    characters_present: []
-    location_zone: "westwall-watchpost/ruined"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch17-the-long-road-home-moment-03"
-    scene_id: "scn-17-01"
-    title: "Broken Jaw Gate"
-    narrative_beat: "Establishing the total loss of the watchpost, the gate hanging like a dislocated jaw."
-    visual_weight: "high"
-    characters_present: []
-    location_zone: "westwall-watchpost/ruined"
-    transformation_state: "after"
-    recommended_images: 1
-
-  - id: "ch17-the-long-road-home-moment-04"
-    scene_id: "scn-17-02"
-    title: "The Tragic Column"
-    narrative_beat: "The cavalry honor guard surrounding the wagons of the wounded on the rutted road."
-    visual_weight: "high"
-    characters_present:
-      - "commander-atlock"
-      - "thorne-brightward"
-      - "vera-moonwhisper"
-    location_zone: "road-to-waterdeep/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch17-the-long-road-home-moment-05"
-    scene_id: "scn-17-02"
-    title: "Finn's Vigil"
-    narrative_beat: "Finn walking alongside the wagon, his hand on the wood, watching the unconscious Vera."
-    visual_weight: "medium"
-    characters_present:
-      - "finn"
-      - "vera-moonwhisper"
-    location_zone: "road-to-waterdeep/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch17-the-long-road-home-moment-06"
-    scene_id: "scn-17-03"
-    title: "Weary Recognition"
-    narrative_beat: "Durja's hands flat on the bar, eyes taking in the arrival of the ragged army."
-    visual_weight: "high"
-    characters_present:
-      - "durja"
-      - "thorne-brightward"
-    location_zone: "wayward-compass/interior"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch17-the-long-road-home-moment-07"
-    scene_id: "scn-17-03"
-    title: "The Leadership Table"
-    narrative_beat: "The exhausted leaders sharing stew and ale in the corner of the inn, a council of survivors."
-    visual_weight: "medium"
-    characters_present:
-      - "veyra-thornwake"
-      - "thorne-brightward"
       - "commander-atlock"
       - "grimjaw-ironbeard"
-    location_zone: "wayward-compass/interior"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch17-the-long-road-home-moment-08"
-    scene_id: "scn-17-04"
-    title: "Mentor and Student"
-    narrative_beat: "Veyra and Finn sharing cider and hard-won wisdom under the stars."
-    visual_weight: "high"
-    characters_present:
-      - "veyra-thornwake"
-      - "finn"
-    location_zone: "wayward-compass-fields/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "before"
+    recommended_images: 2
 
   - id: "ch17-the-long-road-home-moment-09"
     scene_id: "scn-17-04"
-    title: "Shadow War Prep"
-    narrative_beat: "Marcus bathed in the violet light of his sending stone, preparing for the political battlefield."
-    visual_weight: "high"
+    title: "The Single Breath"
+    narrative_beat: "'The one where you see the end. The trick isn't to avoid it. It's to decide what you're going to do in the single breath you have before it happens.' Veyra looked at Finn. 'You held your ground.'"
+    visual_weight: "critical"
     characters_present:
-      - "marcus-heartbridge"
       - "veyra-thornwake"
-    location_zone: "wayward-compass-fields/overview"
-    transformation_state: "n/a"
+      - "finn"
+    location_zone: "wayward-compass-fields/camp"
+    transformation_state: "after"
     recommended_images: 1
 
   - id: "ch17-the-long-road-home-moment-10"
     scene_id: "scn-17-04"
-    title: "Engineering the Future"
-    narrative_beat: "Grimjaw and Fayne sketching plans for the Bastion on a piece of slate by the fire."
-    visual_weight: "medium"
+    title: "My Part Is Just Beginning"
+    narrative_beat: "'The physical fight is over, Veyra. Now comes the political one. My part is just beginning.' Two commanders of two different kinds of war, watching the stars emerge."
+    visual_weight: "critical"
     characters_present:
-      - "grimjaw-ironbeard"
-      - "quartermaster-fayne"
-    location_zone: "wayward-compass-fields/overview"
-    transformation_state: "n/a"
+      - "marcus-heartbridge"
+      - "veyra-thornwake"
+    location_zone: "wayward-compass-fields/camp"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch17-the-long-road-home-moment-03"
+    scene_id: "scn-17-02"
+    title: "Just Come Back"
+    narrative_beat: "Finn, his own ribs tightly bound, walked alongside Vera's wagon, his hand resting on the worn wood. 'Just... just come back.' In the wagon, Vera lay still as death."
+    visual_weight: "critical"
+    characters_present:
+      - "finn"
+      - "vera-moonwhisper"
+    location_zone: "road-to-waterdeep/road"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch17-the-long-road-home-moment-05"
+    scene_id: "scn-17-03"
+    title: "For Fuck's Sake"
+    narrative_beat: "Durja put down her rag with deliberate slowness, placed both massive hands on the bar, and sighed. The sound was a low rumble of profound, bone-deep weariness. 'For fuck's sake,' she said."
+    visual_weight: "high"
+    characters_present:
+      - "durja"
+      - "thorne-brightward"
+    location_zone: "wayward-compass/common-room"
+    transformation_state: "during"
+    recommended_images: 1
+
+  - id: "ch17-the-long-road-home-moment-07"
+    scene_id: "scn-17-03"
+    title: "The Finest Mess"
+    narrative_beat: "Atlock surveyed the table—the battered, bruised, and utterly spent heroes of Westwall. 'Gods, look at us. A right mess.' 'The finest mess I've ever had the honor to serve with, Commander.'"
+    visual_weight: "high"
+    characters_present:
+      - "commander-atlock"
+      - "thorne-brightward"
+    location_zone: "wayward-compass/common-room"
+    transformation_state: "during"
     recommended_images: 1
 
 images:
-  - custom_id: "ch17-the-long-road-home-img-17-01-01"
+  - custom_id: "ch17-the-long-road-home-img-01-01-01"
     source_moment: "ch17-the-long-road-home-moment-01"
     scene_id: "scn-17-01"
     image_type: "hero"
     category:
       - "moment"
       - "character"
-      - "emotion"
+      - "location"
     scene_mood: "somber"
-    mood_rationale: "Visual thesis of aftermath. Grief and determined acceptance. Lantern glow provides only warmth."
+    mood_rationale: |
+      The chapter's defining image—a commander surveying the ruins of home.
+      Somber because this is grief, loss, and the weight of being the one
+      who survives. The gate's broken jaw is the visual metaphor.
     aspect_ratio: "21:9"
     orientation: "landscape"
     size: "1792x768"
     visual_description: |
-      Veyra Thornwake stands alone in the center of a ruined courtyard at dawn. Right arm in a sling. Broken gate behind her. Eastern wall is a jagged wound. Northern tower leans sickeningly. Cold shafts of light cut through smoke. Lantern at hip glows warm gold.
+      Veyra stands small and alone in the center of the ruined courtyard, her
+      arm in a sling, her scarred face turned toward the damage. The gate hangs
+      from a single hinge at an unnatural angle—like a broken jaw. The eastern
+      wall gapes, a jagged wound of splintered timber and fractured stone. The
+      northern tower leans dangerously. Cold morning light illuminates everything
+      with merciless clarity. Wet ash covers the ground, personal effects scattered
+      in the rubble. She sees not just destruction but ghosts—the memory of what
+      they built here.
     composition_notes: |
-      Wide establishing shot. Veyra small against scale. Broken gate frames her. Leaning tower background. Low angle.
-    visual_hook: "Her arm in a sling, lantern at her hip casting its eternal golden glow against the gray devastation"
+      Ultra-wide hero shot with Veyra small in frame, emphasizing the scale of
+      destruction around her. Gate's broken hinge as focal point on left third.
+      Eastern wall wound visible on right. Cold, flat morning light revealing
+      every detail of loss. Shallow human figure against vast damage.
+    visual_hook: "Lone commander small in ruined courtyard, gate hanging like broken jaw"
     depicts_characters:
       - "veyra-thornwake"
     character_states:
       veyra-thornwake: |
-        Standing still. Arm in sling. Mohawk silhouette. Burn scar prominent. Lantern glowing.
+        Arm in sling, standing alone. Burns visible on left face. Expression
+        showing grief beneath commander's resolve. Seeing ghosts in the rubble.
+        The smell of ash triggering old memories.
     location: "westwall-watchpost"
-    zone: "ruined"
+    zone: "courtyard"
     lighting:
-      primary_source: "cold dawn light"
-      quality: "diffused, heavy"
-      direction: "behind/above"
-      color_temperature: "cool blue vs warm lantern amber"
-      shadow_depth: "deep, rich"
-      atmospheric: "lingering smoke"
+      primary_source: "Cold morning sun"
+      quality: "flat, merciless, revealing"
+      direction: "from right, low angle"
+      color_temperature: "cold gray-blue"
+      shadow_depth: "soft but present"
+      atmospheric: "wet ash, morning mist, ozone"
     palette:
       dominant:
-        - "cold gray"
-        - "wet ash black"
-        - "pale blue"
+        - "ash gray stone"
+        - "cold morning blue"
+        - "splintered wood brown"
       accent:
-        - "warm gold lantern"
+        - "Veyra's dark leather"
+        - "scattered personal effects"
       avoid:
-        - "warm sky tones"
+        - "warm tones"
+        - "hope colors"
     prompt_used: |
-      Half-elf woman with arm in sling standing in ruined castle courtyard at dawn,
-      broken gate and leaning tower in background,
-      rubble and ash on ground,
-      lantern at hip casting warm gold light,
-      cold morning shafts through smoke,
-      cinematic wide shot,
-      classical oil painting, Rembrandt lighting, chiaroscuro,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Turner devastation grandeur.
+      Ruined stone fortress courtyard at cold morning, damaged gate hanging from
+      single hinge like broken jaw, eastern wall a jagged wound of splintered
+      timber, northern tower leaning dangerously, lone female half-elf commander
+      with burn scars and arm in sling standing small in center surveying destruction,
+      wet ash and scattered personal effects on ground, cold merciless morning light,
+      ultra-wide hero composition emphasizing scale of loss against small human figure,
+      somber funeral atmosphere, ghosts of what was built visible in emptiness.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stable building, cheerful
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      warm light, hopeful atmosphere, action pose, bright colors
     tags:
-      - "hero"
-      - "aftermath"
-      - "somber"
-      - "veyra"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch17-the-long-road-home-img-17-01-02"
-    source_moment: "ch17-the-long-road-home-moment-02"
-    scene_id: "scn-17-01"
-    image_type: "beat"
-    category:
-      - "moment"
-      - "symbol"
-      - "emotion"
-    scene_mood: "somber"
-    mood_rationale: "The 'Character's Trigger.' Failure haunting the present. Ash and memory."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
-    visual_description: |
-      Close-up of an ash-gray puddle on wet flagstones. Reflects the broken gate hanging from a single hinge. Overlaid/merging spectral image of orange-red flames and black smoke from the canyon. Charred scrap of banner floating.
-    composition_notes: |
-      Tight square framing on puddle. Reflection focal point. Spectral flames as semi-transparent layer. Shallow depth.
-    visual_hook: "A cold courtyard puddle reflecting a broken gate, while beneath the water's surface, spectral flames seem to burn."
-    depicts_characters: []
-    character_states: {}
-    location: "westwall-watchpost"
-    zone: "ruined"
-    lighting:
-      primary_source: "cold daylight + ghostly fire"
-      quality: "conflicting, layered"
-      direction: "above + internal"
-      color_temperature: "cool blue vs hot orange"
-      shadow_depth: "moderate"
-      atmospheric: "smoke haze"
-    palette:
-      dominant:
-        - "ash gray"
-        - "wet black"
-        - "ghost orange"
-      accent:
-        - "charred black"
-      avoid:
-        - "bright colors"
-    prompt_used: |
-      Macro detail of a puddle on ruined stone floor reflecting a broken castle gate,
-      ghostly glowing flames visible within the water's reflection,
-      charred banner scrap floating,
-      high contrast between cold gray and hot orange,
-      classical oil painting, Symbolist unease,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, happy
-    tags:
-      - "detail"
-      - "memory"
-      - "trauma"
-      - "somber"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch17-the-long-road-home-img-17-01-03"
-    source_moment: "ch17-the-long-road-home-moment-03"
-    scene_id: "scn-17-01"
-    image_type: "beat"
-    category:
-      - "location"
-      - "emotion"
-    scene_mood: "somber"
-    mood_rationale: "The 'Character's Death.' Watchpost as a corpse. Finality of abandonment."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Wide shot of the main gate at dawn. Hanging from one hinge like a dislocated jaw. Splintered timbers, scorched stone. Courtyard mess of ash and rubble. Northern tower leans sickeningly in distance. Abandoned mug and banner scrap half-buried.
-    composition_notes: |
-      Wide-angle looking toward gate. Dislocated gate dominates center. Leaning tower background right. Empty and silent.
-    visual_hook: "A massive gate hanging like a broken jaw from a single hinge, framing a courtyard of wet ash"
-    depicts_characters: []
-    character_states: {}
-    location: "westwall-watchpost"
-    zone: "ruined"
-    lighting:
-      primary_source: "pale morning light"
-      quality: "flat, cold"
-      direction: "above/front"
-      color_temperature: "cool gray-blue"
-      shadow_depth: "deep black in splinters"
-      atmospheric: "ash haze"
-    palette:
-      dominant:
-        - "stone gray"
-        - "ash black"
-        - "timber brown"
-      accent:
-        - "rusty iron"
-      avoid:
-        - "living things"
-    prompt_used: |
-      Wide cinematic shot of a ruined stone castle gate hanging from one hinge,
-      courtyard covered in wet ash and rubble,
-      leaning watchtower in distance,
-      silent and tragic atmosphere,
-      classical oil painting, Rembrandt lighting,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, stable building
-    tags:
-      - "location"
-      - "aftermath"
       - "ruins"
+      - "veyra"
+      - "hero-image"
       - "somber"
+      - "departure"
+      - "loss"
     generated_at: null
     file_name: null
     file_path: null
@@ -401,275 +303,75 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch17-the-long-road-home-img-17-02-01"
-    source_moment: "ch17-the-long-road-home-moment-04"
-    scene_id: "scn-17-02"
-    image_type: "anchor"
-    category:
-      - "moment"
-      - "action"
-    scene_mood: "somber"
-    mood_rationale: "Tragic procession. Formal recognition vs ragged resilience. Overcast light, honest and unflattering."
-    aspect_ratio: "21:9"
-    orientation: "landscape"
-    size: "1792x768"
-    visual_description: |
-      Long column winds south along a rutted road. Forty cavalry in bright blue and silver cloaks form an honor guard. Wagons with wounded in the center. Survivors walking alongside. Overcast sky, skeletal trees.
-    composition_notes: |
-      Panoramic view. Column length. Cavalry flanking center wagons. Atlock at head. Blue cloaks pop against muted brown.
-    visual_hook: "The bright blue and silver cloaks of elite cavalry surrounding the earth-toned wagons of the wounded"
-    depicts_characters:
-      - "commander-atlock"
-      - "thorne-brightward"
-      - "vera-moonwhisper"
-    character_states:
-      commander-atlock: |
-        Mounted at head. Rigid posture. Navy uniform.
-      thorne-brightward: |
-        Near wagons. Dust-covered blue cloak.
-      vera-moonwhisper: |
-        In wagon. Pale face, eyes closed. chestnut braid.
-    location: "road-to-waterdeep"
-    lighting:
-      primary_source: "overcast daylight"
-      quality: "flat, diffused"
-      direction: "above"
-      color_temperature: "cool gray-white"
-      shadow_depth: "minimal"
-      atmospheric: "damp spring chill"
-    palette:
-      dominant:
-        - "road brown"
-        - "field gray"
-        - "overcast white"
-      accent:
-        - "cavalry blue"
-        - "silver trim"
-      avoid:
-        - "warm gold"
-    prompt_used: |
-      Long military column on rutted dirt road,
-      blue and silver cavalry honor guard surrounding wagons of wounded,
-      overcast gray sky and skeletal trees,
-      stark contrast between professional soldiers and ragged survivors,
-      panoramic wide shot,
-      classical oil painting, somber dignity,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, sunny day
-    tags:
-      - "anchor"
-      - "procession"
-      - "cavalry"
-      - "somber"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch17-the-long-road-home-img-17-02-02"
-    source_moment: "ch17-the-long-road-home-moment-05"
-    scene_id: "scn-17-02"
-    image_type: "detail"
-    category:
-      - "character"
-      - "emotion"
-    scene_mood: "intimate"
-    mood_rationale: "Tender devotion. Finn's vigil. Small private moment during somber procession. Vermeer-quiet."
-    aspect_ratio: "4:5"
-    orientation: "portrait"
-    size: "1024x1280"
-    visual_description: |
-      Finn walking alongside a wagon, ribs bound under tunic. Hand rests on worn wood of the wagon edge. In the wagon, Vera lies still, pale, eyes closed. Her braid visible. Column blurred behind. Finn's eyes on her face, lips moving.
-    composition_notes: |
-      Medium shot. Finn left-of-center. Vera upper right. Focus on hand on wood. Soft background. Vertical format.
-    visual_hook: "Finn's young hand resting on the weathered wagon wood—the point of contact"
-    depicts_characters:
-      - "finn"
-      - "vera-moonwhisper"
-    character_states:
-      finn: |
-        Walking carefully. Hand on wagon. Bound ribs. Earnest expression.
-      vera-moonwhisper: |
-        Lying motionless. Pale face. Eyes closed. Fragile.
-    location: "road-to-waterdeep"
-    lighting:
-      primary_source: "overcast daylight"
-      quality: "soft, even"
-      direction: "above/left"
-      color_temperature: "neutral"
-      shadow_depth: "gentle"
-      atmospheric: "still"
-    palette:
-      dominant:
-        - "wood brown"
-        - "soft amber"
-        - "gray-green"
-      accent:
-        - "pale skin"
-      avoid:
-        - "harsh contrast"
-    prompt_used: |
-      Young man with bandaged ribs walking alongside wagon,
-      hand resting on weathered wood,
-      unconscious woman lying in wagon,
-      soft overcast lighting,
-      private moment of devotion,
-      classical oil painting, Vermeer lighting,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, healthy color
-    tags:
-      - "detail"
-      - "finn"
-      - "vera"
-      - "intimate"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch17-the-long-road-home-img-17-03-01"
-    source_moment: "ch17-the-long-road-home-moment-06"
-    scene_id: "scn-17-03"
-    image_type: "mood"
-    category:
-      - "character"
-      - "moment"
-    scene_mood: "celebratory"
-    mood_rationale: "Transition to interior warmth. Comedic exasperation. Warm haven vs cold arrival. Jan Steen energy."
-    aspect_ratio: "3:4"
-    orientation: "portrait"
-    size: "1024x1365"
-    visual_description: |
-      Durja behind her bar, hands flat on surface. Expression of bone-deep weariness. Thorne's silhouette in doorway against blue-gray dusk. Cavalry and Grimjaw visible behind him. Tavern interior glows warm amber.
-    composition_notes: |
-      Medium shot centered on Durja. Doorway behind. Contrast warm interior/cold exterior. Hands focal point.
-    visual_hook: "Durja's massive green hands flat on the oiled oak bar, her expression of profound, bone-deep weariness"
-    depicts_characters:
-      - "durja"
-      - "thorne-brightward"
-      - "grimjaw-ironbeard"
-      - "commander-atlock"
-    character_states:
-      durja: |
-        Hands flat on bar. Weary resignation. Mossy skin. Broken tusk.
-      thorne-brightward: |
-        Silhouette in doorway. Dust-covered cloak.
-      grimjaw-ironbeard: |
-        Silhouette visible behind Thorne.
-      commander-atlock: |
-        Silhouette visible in twilight.
-    location: "wayward-compass"
-    zone: "interior"
-    lighting:
-      primary_source: "tavern lamplight + door dusk"
-      quality: "warm vs cool"
-      direction: "ambient vs backlit"
-      color_temperature: "amber interior, blue-gray door"
-      shadow_depth: "soft, warm"
-      atmospheric: "smoke haze"
-    palette:
-      dominant:
-        - "oiled oak brown"
-        - "warm amber"
-        - "olive green"
-      accent:
-        - "cool dusk blue"
-      avoid:
-        - "dark oppressive"
-    prompt_used: |
-      Orc woman behind tavern bar with hands flat on surface,
-      expression of weary resignation,
-      silhouette of soldiers entering bright doorway behind her,
-      contrast between warm tavern and cold exterior,
-      classical oil painting, Dutch Golden Age tavern warmth,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smiling
-    tags:
-      - "mood"
-      - "durja"
-      - "arrival"
-      - "celebratory"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch17-the-long-road-home-img-17-03-02"
-    source_moment: "ch17-the-long-road-home-moment-07"
-    scene_id: "scn-17-03"
+  - custom_id: "ch17-the-long-road-home-img-01-01-02"
+    source_moment: "ch17-the-long-road-home-moment-01"
+    scene_id: "scn-17-01"
     image_type: "beat"
     category:
-      - "character"
       - "moment"
-    scene_mood: "intimate"
-    mood_rationale: "Exhausted leadership council. The shared meal after battle. Bonding in fatigue."
+      - "location"
+      - "symbol"
+    scene_mood: "desolate"
+    mood_rationale: |
+      Focus on the architectural wounds—the gate, the wall, the tower.
+      Desolate because the image shows absence, aftermath, places left behind.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      The core Company leadership and Atlock at a large table in the tavern corner. Council of the exhausted. Hot stew and ale. Thorne and Atlock talking. Aldwin sliding bread to Veyra. Mismatched chairs, scarred wood. Battered but united.
+      Detail of the destruction: the gate hanging at that broken-jaw angle,
+      wood splintered and hinges sheared. Beyond it, the eastern wall's breach—
+      fifteen feet of fractured stone and timber, morning light streaming through
+      the wound. A dropped mug lies in the rubble, a scorched scrap of banner
+      caught on jagged stone. The damage is absolute, undeniable. This was home.
     composition_notes: |
-      Medium ensemble shot. Low angle to emphasize the group. Warm pools of lamplight on faces. Focus on the quiet mutual respect.
-    visual_hook: "The tired, soot-streaked faces of the commanders sharing a simple meal, military armor catching the tavern's soft amber light."
-    depicts_characters:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "commander-atlock"
-      - "grimjaw-ironbeard"
-      - "aldwin-gentleheart"
-    character_states:
-      veyra-thornwake: |
-        Seated. Arm in sling. Grateful nod to Aldwin.
-      thorne-brightward: |
-        Tired but firm. Talking to Atlock.
-      commander-atlock: |
-        Weary smile. Drinking ale.
-      grimjaw-ironbeard: |
-        Poking at stew. Singed beard.
-      aldwin-gentleheart: |
-        Sliding bread to Veyra. Kind expression.
-    location: "wayward-compass"
-    zone: "interior"
+      Medium-wide shot focused on architectural damage. Gate in foreground left,
+      breach visible through/beyond it. Personal effects provide human scale.
+      Light streaming through breach creates contrast with shadowed interior.
+    visual_hook: "Gate's broken hinge, breach beyond, personal effects in rubble"
+    depicts_characters: []
+    character_states: {}
+    location: "westwall-watchpost"
+    zone: "courtyard"
     lighting:
-      primary_source: "Tavern lamps"
-      quality: "Warm, low"
-      direction: "Overhead/Side"
-      color_temperature: "Amber"
-      shadow_depth: "Soft"
-      atmospheric: "Cooking steam"
+      primary_source: "Morning sun through breach"
+      quality: "harsh contrast, revealing damage"
+      direction: "from east through wall wound"
+      color_temperature: "cold gray with shaft of light"
+      shadow_depth: "strong contrast"
+      atmospheric: "dust motes in light shaft, wet ash"
     palette:
       dominant:
-        - "warm wood"
-        - "amber light"
-        - "steel gray"
+        - "splintered wood"
+        - "fractured stone gray"
+        - "rubble brown"
       accent:
-        - "reddish scar"
+        - "morning light shaft"
+        - "scorched banner fabric"
       avoid:
-        - "bright light"
+        - "warm homey colors"
+        - "intact structures"
     prompt_used: |
-      Group of exhausted adventurers and a general sharing a meal at a tavern table,
-      soot-streaked faces and dented armor,
-      simple stew and ale,
-      warm amber lamplight,
-      atmosphere of shared burden and respect,
-      classical oil painting, interior realism,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, architectural devastation study.
+      Damaged fortress gate hanging from single sheared hinge, wood splintered,
+      beyond it a fifteen-foot breach in stone wall with morning light streaming
+      through the wound, dropped personal items in rubble—mug, scorched banner scrap,
+      cold morning atmosphere, medium-wide composition focused on damage detail,
+      desolate aftermath atmosphere, places abandoned, home destroyed.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      intact structures, warm lighting, people present
     tags:
-      - "beat"
-      - "leadership"
-      - "tavern"
-      - "intimate"
+      - "ruins"
+      - "detail"
+      - "beat-image"
+      - "desolate"
+      - "architecture"
     generated_at: null
     file_name: null
     file_path: null
@@ -677,65 +379,89 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch17-the-long-road-home-img-17-04-01"
-    source_moment: "ch17-the-long-road-home-moment-08"
+  - custom_id: "ch17-the-long-road-home-img-04-09-01"
+    source_moment: "ch17-the-long-road-home-moment-09"
     scene_id: "scn-17-04"
-    image_type: "character"
+    image_type: "beat"
     category:
+      - "moment"
       - "character"
       - "emotion"
     scene_mood: "intimate"
-    mood_rationale: "Mentor and student processing trauma. Vermeer-quiet. Veyra's mask relaxing."
+    mood_rationale: |
+      Mentorship moment between trauma survivors. Intimate because it's a
+      quiet conversation away from the fires, wisdom passed in soft voices.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Veyra on a low stone wall at camp edge. Finn stands near her with two cups of cider. Campfires in background distance. Veyra's expression softened. Burn scar catches firelight. Arm in sling. Stars sharp in night sky. Quiet communion.
+      Veyra and Finn sit on a low stone wall, away from the main campfires
+      visible in the background. Each holds a cup of hot cider, steam rising
+      in the cold night air. Veyra's scarred face is soft in the distant
+      firelight as she looks at the young man—validating his courage, passing
+      wisdom about that single breath before death. Stars emerge overhead.
+      The moment is quiet, personal, away from the others.
     composition_notes: |
-      Two figures apart from camp. Veyra right of center. Finn left. Rim lighting from distant fires. Horizontal format.
-    visual_hook: "Veyra's expression softening just a fraction as she looks at Finn—the mentor acknowledging the student"
+      Medium shot with both figures seated on stone wall, left third of frame.
+      Camp fires distant in background right. Stars visible above. Veyra's
+      face is the emotional focal point—rare softening. Cider cups provide
+      warmth accent against cold night.
+    visual_hook: "Two survivors on stone wall, cider cups, distant campfires, stars emerging"
     depicts_characters:
       - "veyra-thornwake"
       - "finn"
     character_states:
       veyra-thornwake: |
-        Seated. Arm in sling. Lantern at hip. Stoic mask relaxing. Tender expression.
+        Seated on stone wall, cider cup in good hand. Scarred face softened,
+        not the commander mask. Looking at Finn with validation. Arm still
+        in sling. Passing wisdom earned through survival.
       finn: |
-        Standing. Holding cider. Vulnerable expression. Processing.
+        Seated beside her, ribs still bound. Young face showing processing
+        of near-death experience. Receiving affirmation. Cider cup warming
+        hands.
     location: "wayward-compass-fields"
+    zone: "camp"
     lighting:
-      primary_source: "distant campfires"
-      quality: "soft rim light"
-      direction: "behind/side"
-      color_temperature: "warm amber rim vs cool blue shadows"
-      shadow_depth: "moderate"
-      atmospheric: "clear cold night"
+      primary_source: "Distant campfires, emerging starlight"
+      quality: "soft, warm, indirect"
+      direction: "from right (distant fires), from above (stars)"
+      color_temperature: "cool night with warm fire tints"
+      shadow_depth: "soft, gentle"
+      atmospheric: "cold night air, steam from cider, stars"
     palette:
       dominant:
         - "night blue"
-        - "warm amber rim"
-        - "shadow gray"
+        - "stone gray"
+        - "distant fire amber"
       accent:
-        - "gold lantern"
-        - "star silver"
+        - "cider steam white"
+        - "star points"
       avoid:
-        - "harsh contrast"
+        - "harsh light"
+        - "bright colors"
     prompt_used: |
-      Woman with arm in sling and mohawk sitting on stone wall at night talking to a young man,
-      young man holding two cups of cider,
-      distant campfires in background under a starry sky,
-      quiet intimate atmosphere of mentorship,
-      rim lighting on figures,
-      classical oil painting, Vermeer lighting,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Vermeer intimate conversation.
+      Night camp scene, two figures seated on low stone wall away from fires,
+      battle-scarred female half-elf commander with arm in sling and young man
+      with bound ribs, each holding steaming cider cups, her scarred face softened
+      as she validates his courage, distant campfires glowing in background,
+      stars emerging overhead, medium shot composition, intimate mentorship moment,
+      "single breath" wisdom being passed, cool night with warm fire tints.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright lighting
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      bright daylight, action pose, harsh lighting, commander mask expression
     tags:
-      - "character"
-      - "mentorship"
-      - "intimate"
       - "veyra"
       - "finn"
+      - "mentorship"
+      - "beat-image"
+      - "intimate"
+      - "campfire"
     generated_at: null
     file_name: null
     file_path: null
@@ -743,64 +469,89 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch17-the-long-road-home-img-17-04-02"
-    source_moment: "ch17-the-long-road-home-moment-09"
+  - custom_id: "ch17-the-long-road-home-img-04-10-01"
+    source_moment: "ch17-the-long-road-home-moment-10"
     scene_id: "scn-17-04"
-    image_type: "symbol"
+    image_type: "anchor"
     category:
+      - "moment"
       - "character"
       - "symbol"
-    scene_mood: "ethereal"
-    mood_rationale: "Sending stone light. Otherworldly and luminous. Signaling a different kind of war. Marcus in sourceless glow."
-    aspect_ratio: "4:5"
-    orientation: "portrait"
-    size: "1024x1280"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Two commanders of different wars recognizing each other's battlefields.
+      Intimate despite the vast night around them—a personal understanding
+      between those who fight in different ways.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
     visual_description: |
-      Marcus stands near road at night. Face bathed in pulsating violet-white glow of a sending stone. Serious expression. Veyra's silhouette approaches from background left. Campfires distant. Road stretches into darkness. Stars overhead.
+      Marcus stands near the road at the edge of camp, the fading glow of a
+      sending-stone in his hand. Veyra approaches, her silhouette visible
+      against the distant camp fires. Behind them, the camp is a small
+      constellation of lights in the vast darkness. Stars fill the sky.
+      Two commanders of two different kinds of war, facing the night and
+      what comes next. Marcus's political battle is about to begin.
     composition_notes: |
-      Marcus foreground right. Sending stone focal point. Veyra silhouette background. Vertical format.
-    visual_hook: "The pale violet-white pulse of the sending stone illuminating Marcus's face from below"
+      Wide anchor shot with figures in left third, vast night sky dominant.
+      Marcus in foreground with fading sending-stone glow. Veyra approaching.
+      Camp lights distant behind, stars above. The scale of night emphasizes
+      their small human presence against vast challenges ahead.
+    visual_hook: "Two silhouettes against starry night, sending-stone glow fading, camp fires distant"
     depicts_characters:
       - "marcus-heartbridge"
       - "veyra-thornwake"
     character_states:
       marcus-heartbridge: |
-        Pulsing violet light on face. Serious expression. Charcoal doublet.
+        Standing near road, sending-stone's glow fading in hand. Expensive
+        clothes now travel-worn. Expression serious—his battle is beginning.
+        The bard's charm set aside for the political warrior.
       veyra-thornwake: |
-        Distant silhouette. Arm in sling. Lantern glow at hip.
+        Approaching from camp, silhouette visible. Arm in sling. Recognizing
+        that her fight is ending as his begins. Two different warriors.
     location: "wayward-compass-fields"
+    zone: "camp"
     lighting:
-      primary_source: "sending stone"
-      quality: "soft, luminous, otherworldly"
-      direction: "from below"
-      color_temperature: "cool violet vs warm amber distance"
-      shadow_depth: "soft edges"
-      atmospheric: "clear night"
+      primary_source: "Starlight, fading sending-stone, distant campfires"
+      quality: "soft, multiple sources"
+      direction: "from above (stars), from hand (stone), from behind (fires)"
+      color_temperature: "cool starlight with warm accent from stone/fires"
+      shadow_depth: "soft, night shadows"
+      atmospheric: "vast night, stars, the weight of what comes"
     palette:
       dominant:
-        - "violet-white"
-        - "night blue-black"
-        - "charcoal gray"
-      accent:
-        - "amber distance"
+        - "midnight blue sky"
         - "star silver"
+        - "silhouette dark"
+      accent:
+        - "sending-stone pale glow"
+        - "distant fire amber"
       avoid:
-        - "harsh contrasts"
+        - "bright light"
+        - "daytime colors"
     prompt_used: |
-      Man with neat goatee holding a stone pulsing with violet light in the night,
-      ethereal glow illuminating face from below,
-      serious expression,
-      distant campfire lights and silhouette of woman approaching in background,
-      night sky with stars,
-      classical oil painting, Pre-Raphaelite luminosity,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Romantic night sky grandeur.
+      Night scene at edge of camp, well-dressed man standing near road with
+      fading magical glow in his hand, female half-elf commander approaching
+      from camp behind, camp a small constellation of fires in vast darkness,
+      stars filling the sky, wide anchor composition with figures in left third,
+      "my part is just beginning" moment, two commanders of different wars
+      recognizing each other's battles, political war previewed.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright colors
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      bright daylight, harsh magic glow, action scene
     tags:
-      - "symbol"
       - "marcus"
-      - "magic"
-      - "ethereal"
+      - "veyra"
+      - "two-wars"
+      - "anchor-image"
+      - "intimate"
+      - "starlight"
     generated_at: null
     file_name: null
     file_path: null
@@ -808,63 +559,273 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch17-the-long-road-home-img-17-04-03"
-    source_moment: "ch17-the-long-road-home-moment-10"
-    scene_id: "scn-17-04"
-    image_type: "beat"
+  - custom_id: "ch17-the-long-road-home-img-02-03-01"
+    source_moment: "ch17-the-long-road-home-moment-03"
+    scene_id: "scn-17-02"
+    image_type: "anchor"
     category:
+      - "moment"
       - "character"
-      - "action"
-    scene_mood: "intimate"
-    mood_rationale: "Planning the future. Grimjaw and Fayne collaborating. The 'engineering' of a home."
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: |
+      Vigil on the road—the rescued watching over the one who saved him.
+      Somber because Vera lies still as death and Finn walks wounded himself,
+      pleading for her return.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Grimjaw and Fayne sitting by a small campfire. They have a piece of slate between them, sketching architectural designs with charcoal. Grimjaw is gesturing at a drawing of a wall. Fayne is counting on his fingers. Their faces are lit by the fire's warm orange glow.
+      The slow procession on the road south. Finn walks alongside a wagon,
+      his ribs tightly bound, his hand resting on the worn wood. Inside the
+      wagon, Vera lies under blankets, still as death, breathing shallow.
+      Behind them, the blue and silver cloaks of Atlock's cavalry provide
+      escort. Overcast sky presses down. The road stretches ahead, uncertain.
     composition_notes: |
-      Two-shot. Low angle focus on the slate and their hands. Warm firelight modeling their features.
-    visual_hook: "The charcoal-smudged slate showing the first rough shapes of the Bastion, born from firelight and friendship."
+      Medium-wide anchor shot with Finn and wagon as focal point in center.
+      Vera visible inside wagon. Cavalry escort visible behind. Road stretching
+      into overcast distance. Finn's posture shows protective vigil.
+    visual_hook: "Young man with bound ribs walking beside wagon, hand on wood, Vera still inside"
     depicts_characters:
-      - "grimjaw-ironbeard"
-      - "quartermaster-fayne"
+      - "finn"
+      - "vera-moonwhisper"
     character_states:
-      grimjaw-ironbeard: |
-        Gesturing at slate. Intense expression. Singed beard.
-      quartermaster-fayne: |
-        Calculating. Spectacles reflecting fire.
-    location: "wayward-compass-fields"
+      finn: |
+        Walking alongside wagon despite own injuries. Ribs bound tightly.
+        Hand on worn wagon wood—maintaining connection. Face showing
+        protective worry. "Just come back."
+      vera-moonwhisper: |
+        Visible in wagon, under blankets, still as death. Breathing shallow.
+        A flickering candle in high wind. The cost of transformation.
+    location: "road-to-waterdeep"
+    zone: "road"
     lighting:
-      primary_source: "Campfire"
-      quality: "Warm, flickering"
-      direction: "Below/Side"
-      color_temperature: "Orange"
-      shadow_depth: "Soft"
-      atmospheric: "Woodsmoke"
+      primary_source: "Overcast sky"
+      quality: "flat, gray, somber"
+      direction: "diffused from above"
+      color_temperature: "cold gray"
+      shadow_depth: "minimal, flat light"
+      atmospheric: "overcast, cold damp air"
     palette:
       dominant:
-        - "fire orange"
-        - "slate gray"
-        - "leather brown"
+        - "road brown"
+        - "overcast gray"
+        - "wagon wood"
       accent:
-        - "charcoal black"
+        - "cavalry blue and silver"
+        - "blanket colors"
       avoid:
-        - "cold tones"
+        - "warm sunlight"
+        - "bright colors"
     prompt_used: |
-      Dwarf and gnome sitting by campfire sketching plans on a piece of slate,
-      charcoal drawings of fortifications,
-      warm firelight on weathered faces,
-      collaborative planning,
-      classical oil painting, genre scene,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, road journey solemnity.
+      Somber road procession under overcast sky, young man with bound ribs
+      walking alongside covered wagon, hand on worn wood, half-elf woman
+      visible inside wagon still as death under blankets, cavalry escort in
+      blue and silver visible behind, road stretching into gray distance,
+      medium-wide anchor composition, protective vigil moment,
+      "just come back" emotional weight.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      bright sunlight, happy expressions, action scene
     tags:
-      - "beat"
-      - "planning"
-      - "grimjaw"
-      - "fayne"
+      - "finn"
+      - "vera"
+      - "vigil"
+      - "anchor-image"
+      - "somber"
+      - "road"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch17-the-long-road-home-img-03-05-01"
+    source_moment: "ch17-the-long-road-home-moment-05"
+    scene_id: "scn-17-03"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "celebratory"
+    mood_rationale: |
+      Perfect comic timing—Durja's profound sigh and perfect greeting cut
+      through the exhaustion with raw honesty that invites laughter.
+      Celebratory because the moment is joy despite circumstances.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The interior of the Wayward Compass. Durja, the scarred orc innkeeper,
+      stands behind the bar, both massive hands flat on the wood, rag set
+      aside with deliberate slowness. Her face conveys bone-deep weariness
+      as she takes in the scene: Thorne road-dust covered in the doorway,
+      and through the door behind him, the unmistakable forms of forty
+      cavalrymen. "For fuck's sake." Perfect hospitality in its rawest form.
+    composition_notes: |
+      Medium shot with Durja as focal point behind bar. Thorne visible in
+      doorway. Cavalry glimpsed beyond. Warm tavern light contrasts with
+      cold exterior. Durja's posture—hands flat, sigh visible in shoulders—
+      tells the whole story.
+    visual_hook: "Scarred orc innkeeper, massive hands on bar, profound sigh, army visible through door"
+    depicts_characters:
+      - "durja"
+      - "thorne-brightward"
+    character_states:
+      durja: |
+        Scarred orc face, massive hands flat on bar. Rag set aside with
+        deliberate slowness. Posture showing bone-deep sigh. Expression
+        of profound, practical weariness. "For fuck's sake."
+      thorne-brightward: |
+        Road-dust covered, fatigue in every line. Standing in doorway,
+        the first to face Durja's greeting.
+    location: "wayward-compass"
+    zone: "common-room"
+    lighting:
+      primary_source: "Tavern lamps and hearth"
+      quality: "warm, welcoming despite greeting"
+      direction: "from interior, cold light from door"
+      color_temperature: "warm amber interior"
+      shadow_depth: "soft, comfortable"
+      atmospheric: "tavern warmth, smoke, promise of ale"
+    palette:
+      dominant:
+        - "tavern wood"
+        - "warm lamplight"
+        - "bar surface gleam"
+      accent:
+        - "Durja's green-gray skin"
+        - "cold dusk through door"
+      avoid:
+        - "cold clinical light"
+        - "harsh shadows"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Dutch tavern scene warmth.
+      Tavern interior at dusk, scarred orc innkeeper with massive hands flat
+      on wooden bar, rag set aside, posture showing bone-deep sigh, road-dust
+      covered soldier visible in doorway, cavalry glimpsed in twilight beyond,
+      warm lamplight interior against cold exterior, medium shot with innkeeper
+      as focal point, "for fuck's sake" moment, hospitality in rawest form,
+      comedy timing perfect.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      welcoming smile, happy greeting, empty tavern
+    tags:
+      - "durja"
+      - "thorne"
+      - "comic-relief"
+      - "beat-image"
+      - "celebratory"
+      - "tavern"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch17-the-long-road-home-img-03-07-01"
+    source_moment: "ch17-the-long-road-home-moment-07"
+    scene_id: "scn-17-03"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Military camaraderie at its purest—exhausted leaders recognizing
+      each other's worth. Intimate because the respect is personal, not
+      formal, earned through shared suffering.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The corner table at the Wayward Compass. Commander Atlock surveys his
+      companions—Veyra, Thorne, Grimjaw, Aldwin, Fayne, Tomaq—all battered,
+      bruised, utterly spent. Hot stew and cold ale on the table. Atlock's
+      weathered face shows a rare, weary smile. "A right mess." Thorne's
+      quiet reply visible in his expression: "The finest mess I've ever had
+      the honor to serve with." Lamplight makes the exhaustion look noble.
+    composition_notes: |
+      Wide anchor shot of the table group. Atlock in position of observation,
+      surveying the others. Various states of exhaustion around the table.
+      Lamplight creating warm pool around the group. Rare smiles breaking
+      through weariness.
+    visual_hook: "Table of exhausted heroes, rare smiles, 'right mess' camaraderie"
+    depicts_characters:
+      - "commander-atlock"
+      - "thorne-brightward"
+      - "veyra-thornwake"
+      - "grimjaw-ironbeard"
+    character_states:
+      commander-atlock: |
+        Weathered military face showing rare weary smile. Surveying his
+        company with genuine respect. Ale in hand.
+      thorne-brightward: |
+        Quiet firm response visible in posture. Respect for rank mixed
+        with deep personal camaraderie. "The finest mess."
+      veyra-thornwake: |
+        At table, arm in sling. Exhaustion visible but surrounded by
+        people who matter.
+      grimjaw-ironbeard: |
+        Poking at stew suspiciously, but present, alive, part of the mess.
+    location: "wayward-compass"
+    zone: "common-room"
+    lighting:
+      primary_source: "Table lamp and tavern fire"
+      quality: "warm, pooled around group"
+      direction: "from above and side"
+      color_temperature: "warm amber"
+      shadow_depth: "soft, kind to exhausted faces"
+      atmospheric: "tavern warmth, ale vapor, comfort"
+    palette:
+      dominant:
+        - "table wood"
+        - "warm lamplight"
+        - "ale amber"
+      accent:
+        - "stew steam"
+        - "military colors"
+      avoid:
+        - "cold light"
+        - "empty spaces"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Rembrandt group portrait.
+      Tavern corner table with group of exhausted warriors, weathered military
+      commander with rare smile surveying battered companions—scarred female
+      commander with arm in sling, tall soldier, stout dwarf poking at stew,
+      gentle healer, gnome with ledger, orc lieutenant—hot stew and cold ale
+      on table, warm lamplight pooling around group, wide anchor composition,
+      "right mess" camaraderie moment, respect earned through shared suffering.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      formal military posture, cold expressions, empty table
+    tags:
+      - "atlock"
+      - "thorne"
+      - "company"
+      - "anchor-image"
       - "intimate"
+      - "camaraderie"
     generated_at: null
     file_name: null
     file_path: null

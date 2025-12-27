@@ -7,9 +7,9 @@
  * 3. Creating atomic backups before modifications
  */
 
-import { writeFile, mkdir, copyFile } from 'fs/promises';
+import { writeFile, mkdir, copyFile, rename } from 'fs/promises';
 import { existsSync } from 'fs';
-import { join, dirname as _dirname } from 'path';
+import { join, dirname as _dirname, basename, extname } from 'path';
 import { parse as parseYaml } from 'yaml';
 import {
   safeValidateImageInventoryEntry,
@@ -605,6 +605,41 @@ async function applyImageAnalysisResult(
     // Cast to ImageInventoryEntry - safe since Zod schema matches the TypeScript type
     const entry = validationResult.data as ImageInventoryEntry;
 
+    // Rename analyzed file to short name format if suggested
+    const originalFilename = task.targetMetadata?.filename as string | undefined;
+    const referencePath = task.referenceImages?.[0]?.path;
+    const firstNameSource =
+      typeof task.targetMetadata?.name === 'string' ? task.targetMetadata?.name : task.entitySlug;
+    const firstNameSlug = getFirstNameSlug(firstNameSource);
+    const suggested = entry.content?.suggested_filename;
+    let effectiveFilename = originalFilename;
+
+    if (referencePath && suggested && firstNameSlug) {
+      const suggestedSlug = slugifyToken(suggested);
+      if (suggestedSlug) {
+        const imagesDir = _dirname(referencePath);
+        const ext = extname(referencePath) || (originalFilename ? extname(originalFilename) : '.png');
+        const newFileName = buildShortNameFilename(
+          firstNameSlug,
+          suggestedSlug,
+          ext || '.png',
+          imagesDir,
+          referencePath
+        );
+
+        if (newFileName) {
+          const currentName = basename(referencePath);
+          if (newFileName.toLowerCase() !== currentName.toLowerCase()) {
+            await rename(referencePath, join(imagesDir, newFileName));
+          }
+          entry.path = `images/${newFileName}`;
+          entry.provenance = entry.provenance || {};
+          entry.provenance.original_filename = newFileName;
+          effectiveFilename = newFileName;
+        }
+      }
+    }
+
     // Load existing imagery.yaml
     const charImagery = (await readImageryYaml('character', task.entitySlug)) as CharacterImagery | null;
     if (!charImagery) {
@@ -617,7 +652,7 @@ async function applyImageAnalysisResult(
     const inventory = charImagery.image_inventory || [];
 
     // Find existing entry by filename
-    const filename = task.targetMetadata?.filename as string;
+    const filename = effectiveFilename || (task.targetMetadata?.filename as string);
     const existingIndex = inventory.findIndex(
       (e) => e.path === `images/${filename}` || e.path.endsWith(`/${filename}`)
     );
@@ -647,6 +682,44 @@ async function applyImageAnalysisResult(
       reason: `Failed to apply analysis: ${error}`,
     };
   }
+}
+
+function getFirstNameSlug(nameOrSlug: string): string {
+  const firstToken = nameOrSlug.trim().split(/\s+/)[0];
+  const fallback = nameOrSlug.split('-')[0];
+  return slugifyToken(firstToken || fallback);
+}
+
+function slugifyToken(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+function buildShortNameFilename(
+  firstNameSlug: string,
+  suggestedSlug: string,
+  ext: string,
+  imagesDir: string,
+  currentPath: string
+): string | null {
+  if (!firstNameSlug || !suggestedSlug) {
+    return null;
+  }
+
+  let index = 1;
+  while (index < 100) {
+    const suffix = String(index).padStart(2, '0');
+    const candidate = `${firstNameSlug}-${suggestedSlug}-${suffix}${ext}`;
+    const candidatePath = join(imagesDir, candidate);
+    if (!existsSync(candidatePath) || candidatePath === currentPath) {
+      return candidate;
+    }
+    index += 1;
+  }
+
+  return null;
 }
 
 /**

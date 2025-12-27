@@ -354,7 +354,7 @@ The Battle for Westwall had begun in earnest.
         location:"westwall-watchpost"
         primary_zone:"main-gate"
         location_zones:["main-gate","ramparts"]
-        characters:["veyra-thornwake","thorne-brightward","grimjaw-ironbeard","vera-moonwhisper","krag","sarge","sergeant-kelen","corporal-darric","archer-venn","quartermaster-fayne"]
+        characters:["veyra-thornwake","thorne-brightward","grimjaw-ironbeard","vera-moonwhisper","krag","lieutenant-tomaq","sergeant-kelen","corporal-darric","archer-venn","quartermaster-fayne"]
         tags:["assault","defense"]
         images:[]
 -->

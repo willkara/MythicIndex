@@ -1,165 +1,204 @@
-# ============================================================================
-# CHAPTER IMAGERY SPECIFICATION
-# Chapter: The Road North
-# Generated: 2025-12-21
-# ============================================================================
-
 metadata:
   entity_type: "chapter-imagery"
   slug: "ch28-the-road-north"
   chapter_number: 28
   chapter_title: "The Road North"
-  visual_thesis: "From the open vulnerability of the road to the suffocating clasp of corrupted wilderness, ending with shapes dissolving into protective mist at the threshold of evil."
+  visual_thesis: "Journey into danger—the reconnaissance team travels north through awakening spring, gathers intelligence at the waystation, and begins infiltrating the Silent Hand's hidden fortress."
   color_palette:
     primary:
-      - "#4A5D4A"
-      - "#8B7355"
-      - "#2F4F4F"
-      - "#708090"
+      - "#5C4033"  # Mud road brown
+      - "#2D5A3D"  # Pine forest green
+      - "#4A6670"  # Mist gray
     accent:
-      - "#20B2AA"
-      - "#DAA520"
+      - "#7EBDC2"  # Sea-glass blue (Rill)
+      - "#8B7355"  # Earth-tone plumage (Quierk)
+      - "#A69F8F"  # Facility stone
   generation_defaults:
     provider: "openai"
     model: "dall-e-3"
     quality: "hd"
   mood_distribution:
-    somber: 1
-    pastoral: 2
-    celebratory: 1
-    aquatic: 2
-    ethereal: 1
-    intimate: 0
-    kinetic: 0
-    ominous: 2
+    ominous: 4
+    intimate: 1
+    kinetic: 1
+    pastoral: 1
 
 characters:
-  - ref: "veyra-thornwake"
-    name: "Veyra Thornwake"
-    scene_variations: "Riding gear, mounted. Alert and watchful. Hand on knife hilt in mist. Burn scar prominent. Lantern unlit."
-    reference_images:
-      - "veyra-thornwake-official-portrait-01"
-
-  - ref: "thorne-brightward"
-    name: "Thorne Brightward"
-    scene_variations: "Disguised as sellsword. Neutral browns/grays. Military bearing. Spyglass sweep."
-    reference_images:
-      - "thorne-brightward-portrait-01"
-
-  - ref: "lyra-kestrel"
-    name: "Lyra Kestrel"
-    scene_variations: "Glamoured features. Bored noblewoman persona. Golden eyes still sharp. Analyzing structures."
-    reference_images:
-      - "lyra-kestrel-portrait-01"
-
   - ref: "rill-vossari"
     name: "Rill Vossari"
-    scene_variations: "Heavy cloak travel. Full bioluminescence during water communion. Accelerated patterns showing alarm."
+    scene_variations: |
+      CHAPTER 28 VARIATIONS (WATER DIVINER):
+      - SCENE 03 (Stream): Kneeling by stream bank, webbed fingers dipping into current.
+        Sea-glass blue-green skin with visible turquoise currents moving beneath when
+        working with water. Thick dreadlocks from deep sea-green at roots to sea-foam
+        white at tips, bound with verdigris-patina copper wire. Gray eyes like rain
+        about to fall, shifting to slate with storm clouds when detecting taint.
+        Harbor-blue oilskin longcoat, bare feet on wet stone.
+      - Throughout: Athletic swimmer's build, callused worker's hands moving with
+        fluid hypnotic grace. Expression of calm focused intensity sharpening to
+        resolute determination when reading water. Small vial of ever-moving water
+        at throat on simple cord.
     reference_images:
-      - "rill-vossari-casting-portrait-01"
+      - "rill-vossari-portrait"
 
   - ref: "quierk"
     name: "Quierk"
-    scene_variations: "Aarakocra innkeeper. Owl features. Leather apron. Talon holding tankard. Keen assessment."
+    scene_variations: |
+      CHAPTER 28 VARIATIONS (UNASSUMING SPYMASTER):
+      - SCENE 02 (Inn door): Meeting team at door of Windborne Roost. Aarakocra with
+        earth-tone plumage—browns, tans, forest greens suited to Thornwood edge.
+        Feathered head cocked to one side, keen sharp eyes assessing visitors with
+        single glance. Lighter avian frame with wings. Practical innkeeper attire
+        adapted for aarakocra anatomy.
+      - Distinguishing: Voice melodic blend of birdcall and human speech. Eyes miss
+        nothing. Economical movements, silent competence, observant stillness.
+        "Creature of the sky running inn with grounded efficiency."
     reference_images:
-      - "quierk-innkeeper-portrait-01"
+      - "quierk-portrait"
 
   - ref: "vera-moonwhisper"
     name: "Vera Moonwhisper"
-    scene_variations: "Predatory grace in forest. Hand on bow. ReportingDiscovery of contamination."
+    scene_variations: |
+      CHAPTER 28 (PREDATOR IN HER ELEMENT):
+      - SCENE 04 (Forest): Moving through Thornwood with silent predator grace.
+        Lean rangy build. Dark brown braided hair with feathers, bone beads, leather
+        cords. Hazel eyes shifting to amber when using abilities. Earth-toned leather
+        and canvas for silent movement. Echo the raven soaring overhead scanning canopy.
+      - Throughout: Alert, observant, constantly scanning environment. Whisperwind
+        bow-staff at ready. The tracker hunting.
     reference_images:
-      - "vera-moonwhisper-portrait-01"
+      - "vera-moonwhisper-portrait"
+
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: |
+      CHAPTER 28 (COMMANDER ON RECONNAISSANCE):
+      - Throughout: Dark mohawk with shaved sides, feathered braids. Burn scar on
+        left face. Weatherworn leather coat. Sharp dark eyes. Riding at head of
+        column with practiced vigilance. Leading reconnaissance with calm authority.
+      - SCENE 05-06: On rocky outcrop observing facility. In mist approaching
+        perimeter with Halden and Venn.
+    reference_images:
+      - "veyra-thornwake-portrait"
+
+  - ref: "lyra-kestrel"
+    name: "Lyra Kestrel"
+    scene_variations: |
+      CHAPTER 28 (GLAMOUR-DISGUISED):
+      - SCENE 01-02: Tiefling features subtly altered by Aldwin's glamour. Riding
+        with easy grace. Golden eyes missing nothing beneath disguise.
+      - SCENE 07: Voice echoing from drainage grate—perfect mimicry of guard's
+        bored whistle. Coded clicks and taps signaling success. Skills proven.
+    reference_images:
+      - "lyra-kestrel-portrait"
 
 locations:
   - ref: "northern-road"
     zones:
-      - id: "overview"
-        chapter_context: "Muddy road, snowmelt ruts. Dense pine forest pressing close. Gaps of shadow."
+      - id: "road"
+        chapter_context: |
+          Ribbon of mud and thawing earth winding through awakening spring landscape.
+          Air crisp with scent of pine and damp soil. Team riding in small column,
+          Veyra at head. Treeline requiring constant vigilance. Muddy quagmire from
+          spring thaw. The journey toward danger begins here.
+
   - ref: "windborne-roost"
     zones:
-      - id: "overview"
-        chapter_context: "Timber inn at forest edge. Multiple chimneys, smoke. Warm amber light vs cooling dusk."
+      - id: "common-room"
+        chapter_context: |
+          Sprawling inn and trading post at edge of Thornwood. Smoke curling from
+          numerous chimneys. Laughter and music from open doors. Wagons and horses
+          in stable yard. Travelers of every description. Quierk at door assessing
+          arrivals with keen eyes. Cover being tested by sharp intelligence.
+
+      - id: "stream"
+        chapter_context: |
+          Nearby stream flowing from heart of Thornwood. Waters clear and cold,
+          carrying scent of pine and damp earth. Evening light. Rill kneeling at
+          bank, webbed fingers in current detecting magical suppression compounds.
+          The water humming with faint unnatural energy. Horror discovered—the
+          wilderness weaponized.
+
   - ref: "thornwood-forest"
     zones:
-      - id: "stream"
-        chapter_context: "Clear cold water, mossy banks. Overhanging branches. Hidden corruption ripples."
-      - id: "labyrinth"
-        chapter_context: "Gnarled tree roots, muddy quagmire. Labyrinth of ancient oaks."
+      - id: "trail"
+        chapter_context: |
+          Labyrinth of ancient trees, winding game trails, hidden hollows. Spring
+          thaw making ground muddy quagmire. Thick scent of damp earth and decaying
+          leaves. Vera moving through with predator grace, Echo overhead. Team
+          disappearing like ghosts. Their territory now.
+
   - ref: "silent-hand-facility"
     zones:
-      - id: "observation"
-        chapter_context: "Rocky outcrop overlooking valley. Elegant manor vs prison walls. Sunset watching eyes."
+      - id: "observation-post"
+        chapter_context: |
+          Rocky outcrop overlooking hidden valley. Clear view of sprawling estate
+          blending with natural landscape. Multiple guard towers, reinforced walls,
+          magical warding system visible. Large elegant manor house out of place
+          in rugged wilderness. Small lake at heart with hidden dock. The gilded
+          cage revealed—target sighted.
+
       - id: "perimeter"
-        chapter_context: "Reinforced stone walls. Thick magical ground-mist. Pre-dawn gray."
+        chapter_context: |
+          Reinforced stone wall melting into fog. Rill's magically enhanced mist
+          clinging to ground, obscuring movements, muffling footsteps. Air thick
+          with scent of damp earth and magic. Small drainage grate near wall base
+          leading to underground tunnels. Lyra inside, coded signals emerging.
+          Infiltration begins.
 
 moments:
-  - id: "ch28-the-road-north-moment-01"
-    scene_id: "scn-28-01"
-    title: "The Vulnerable Column"
-    narrative_beat: "The reconnaissance team riding along the muddy northern road, scanned by the silent forest."
-    visual_weight: "hero"
-    characters_present:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "lyra-kestrel"
-      - "rill-vossari"
-    location_zone: "northern-road/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
   - id: "ch28-the-road-north-moment-02"
     scene_id: "scn-28-02"
-    title: "The Watcher at the Roost"
-    narrative_beat: "Quierk the aarakocra assessing the team at the threshold of the Windborne Roost."
+    title: "Quierk's Assessment"
+    narrative_beat: "Quierk, the aarakocra proprietor, met them at the door, his feathered head cocked to one side, his keen eyes assessing their group with a single glance. 'Welcome, travelers,' he chirped, his voice a melodic blend of birdcall and human speech."
     visual_weight: "high"
     characters_present:
       - "quierk"
       - "veyra-thornwake"
-      - "lyra-kestrel"
-    location_zone: "windborne-roost/overview"
-    transformation_state: "n/a"
+      - "thorne-brightward"
+    location_zone: "windborne-roost/common-room"
+    transformation_state: "before"
     recommended_images: 1
 
   - id: "ch28-the-road-north-moment-03"
     scene_id: "scn-28-03"
-    title: "Poison in the Clear"
-    narrative_beat: "Rill sensing the suppression compounds in the pristine-looking forest stream."
+    title: "Tainted Waters"
+    narrative_beat: "She knelt by the bank, her webbed fingers dipping into the current. The water hummed with a faint, almost imperceptible energy, a subtle distortion that spoke of unnatural forces at play. 'They're using the waterways to transport their captives,' she murmured."
     visual_weight: "critical"
     characters_present:
       - "rill-vossari"
-      - "vera-moonwhisper"
-    location_zone: "thornwood-forest/stream"
+    location_zone: "windborne-roost/stream"
     transformation_state: "during"
-    recommended_images: 1
+    recommended_images: 2
 
   - id: "ch28-the-road-north-moment-04"
     scene_id: "scn-28-04"
-    title: "Grasping Labyrinth"
-    narrative_beat: "Detail of the ancient gnarled roots and muddy quagmire the team must navigate."
-    visual_weight: "medium"
-    characters_present: []
-    location_zone: "thornwood-forest/labyrinth"
-    transformation_state: "n/a"
+    title: "Predator Grace"
+    narrative_beat: "She moved through the forest with the silent grace of a predator, her senses attuned to every subtle shift in the environment. Echo soared overhead, his keen eyes scanning the canopy for any sign of movement."
+    visual_weight: "high"
+    characters_present:
+      - "vera-moonwhisper"
+      - "echo-raven"
+    location_zone: "thornwood-forest/trail"
+    transformation_state: "during"
     recommended_images: 1
 
   - id: "ch28-the-road-north-moment-05"
     scene_id: "scn-28-05"
-    title: "The Beautiful Lie"
-    narrative_beat: "First sight of the Silent Hand facility from the outcrop, elegant manor framed by prison walls."
-    visual_weight: "hero"
+    title: "The Target Revealed"
+    narrative_beat: "The Silent Hand facility was a sprawling estate nestled in a hidden valley, its buildings blending seamlessly with the natural landscape. From their concealed observation post on a rocky outcrop overlooking the valley, Veyra and her team had a clear view of their target."
+    visual_weight: "critical"
     characters_present:
       - "veyra-thornwake"
       - "thorne-brightward"
-      - "rill-vossari"
-      - "lyra-kestrel"
-    location_zone: "silent-hand-facility/observation"
-    transformation_state: "n/a"
+    location_zone: "silent-hand-facility/observation-post"
+    transformation_state: "during"
     recommended_images: 1
 
   - id: "ch28-the-road-north-moment-06"
     scene_id: "scn-28-06"
-    title: "Phantoms in the Mist"
-    narrative_beat: "The team approaching the perimeter wall under cover of the magically enhanced ground-fog."
+    title: "Mist Approach"
+    narrative_beat: "Under the cover of Rill's magically enhanced mist, Veyra, Halden, and Venn moved toward the Silent Hand facility. The fog clung to the ground, obscuring their movements, muffling their footsteps."
     visual_weight: "high"
     characters_present:
       - "veyra-thornwake"
@@ -169,72 +208,205 @@ moments:
     transformation_state: "during"
     recommended_images: 1
 
+  - id: "ch28-the-road-north-moment-07"
+    scene_id: "scn-28-06"
+    title: "Lyra's Signal"
+    narrative_beat: "As if on cue, Lyra's voice echoed from the grate, a perfect mimicry of a guard's bored whistle. 'All clear here. Just a few rats. Nothing to worry about.' They waited, the mist swirling around them. Then, a faint signal—a series of clicks and taps from within the grate. Lyra's code."
+    visual_weight: "high"
+    characters_present:
+      - "lyra-kestrel"
+      - "veyra-thornwake"
+    location_zone: "silent-hand-facility/perimeter"
+    transformation_state: "after"
+    recommended_images: 1
+
 images:
-  - custom_id: "ch28-the-road-north-img-28-01-01"
-    source_moment: "ch28-the-road-north-moment-01"
-    scene_id: "scn-28-01"
+  - custom_id: "ch28-the-road-north-img-02-02-01"
+    source_moment: "ch28-the-road-north-moment-02"
+    scene_id: "scn-28-02"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "location"
+    scene_mood: "intimate"
+    mood_rationale: |
+      The asset who misses nothing. Quierk's keen assessment represents the threshold
+      between open road and covert operations. His intelligence and discretion are
+      crucial to their mission. Warm inn light against fading day creates intimate
+      moment of assessment and recognition.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Medium shot at doorway of the Windborne Roost inn. Quierk the aarakocra stands
+      in the doorframe, his feathered head cocked to one side in assessment. Earth-tone
+      plumage—browns, tans, forest greens—blends with the Thornwood edge setting.
+      His keen, intelligent eyes sweep over the arriving team with a single glance
+      that misses nothing. Warm lantern light spills from the inn behind him, creating
+      a golden rim around his silhouette. In the foreground, we see partial figures
+      of the team—Veyra's burn-scarred profile, Thorne's steel-gray hair. The stable
+      yard is visible to one side with wagons and horses. Smoke curls from chimneys
+      above. The unassuming spymaster greets his visitors.
+    composition_notes: |
+      Quierk centered in doorway, warm light behind. Team figures in foreground
+      create depth. Stable yard activity provides context of busy waystation.
+      The threshold moment between road and sanctuary.
+    visual_hook: "Aarakocra with feathered head cocked, keen eyes assessing arrivals, warm inn light behind"
+    depicts_characters:
+      - "quierk"
+      - "veyra-thornwake"
+      - "thorne-brightward"
+    character_states:
+      quierk: |
+        Standing in doorway. Feathered head cocked to side. Earth-tone plumage.
+        Keen sharp eyes assessing visitors. Practical innkeeper attire. Observant
+        stillness. "Welcome, travelers."
+      veyra-thornwake: |
+        Partial profile in foreground. Burn scar visible. Dark mohawk. Dismounting
+        with practiced ease despite weariness.
+      thorne-brightward: |
+        Partial figure. Steel-gray hair. Disguised as sellsword but tension visible.
+    location: "windborne-roost"
+    zone: "common-room"
+    lighting:
+      primary_source: "Inn interior lanterns"
+      quality: "warm, welcoming, spilling out"
+      direction: "from behind Quierk, backlighting him"
+      color_temperature: "warm amber gold"
+      shadow_depth: "soft, inviting"
+      atmospheric: "dusk settling, transition from road to shelter"
+    palette:
+      dominant:
+        - "earth-tone plumage browns"
+        - "warm lantern gold"
+        - "dusk blue-gray"
+      accent:
+        - "forest green in feathers"
+        - "copper inn fixtures"
+        - "stable yard wood"
+      avoid:
+        - "harsh colors"
+        - "cold lighting"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Vermeer interior lighting.
+      Medium shot at doorway of a fantasy inn, an aarakocra (avian humanoid) stands
+      in the doorframe, feathered head cocked to one side in assessment. Earth-tone
+      plumage in browns, tans, and forest greens. Keen intelligent eyes sweep over
+      arrivals. Warm lantern light spills from inn behind, backlighting his form.
+      Partial figures of travelers in foreground—a scarred half-elf woman, a steel-haired
+      soldier. Stable yard visible with wagons. Smoke from chimneys. Dusk settling.
+      The unassuming spymaster greets his visitors at the threshold.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      aggressive pose, threatening stance, harsh lighting
+    tags:
+      - "quierk"
+      - "aarakocra"
+      - "windborne-roost"
+      - "waystation"
+      - "assessment"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch28-the-road-north-img-03-03-01"
+    source_moment: "ch28-the-road-north-moment-03"
+    scene_id: "scn-28-03"
     image_type: "hero"
     category:
       - "moment"
       - "character"
-      - "location"
-    scene_mood: "pastoral"
-    mood_rationale: "Journey through awakening spring. Open vulnerability of the road. Soft morning light."
+      - "magic"
+    scene_mood: "ominous"
+    mood_rationale: |
+      Horror discovered. The wilderness weaponized. Rill's water magic reveals the
+      Silent Hand's monstrous method—using waterways to transport captives while
+      keeping them subdued. The beautiful stream carries terrible secrets. The
+      turquoise currents beneath her skin quicken as she reads the taint.
     aspect_ratio: "21:9"
     orientation: "landscape"
     size: "1792x768"
     visual_description: |
-      Column of mounted travelers winding through an awakening spring forest on a muddy northern road. Veyra leads, her spiky mohawk and burn scar visible. Battered lantern dark at her hip. Behind her, Thorne in sellsword disguise. Thick ancient pines press close. Thawing brown earth and patches of snow. Soft morning light through canopy.
+      Close medium shot of Rill Vossari kneeling by the stream bank at evening. Her
+      webbed fingers are submerged in the current, and the water around her hands
+      glows with a faint, sickly greenish energy—the magical suppression compounds
+      she's detecting. Her sea-glass blue-green skin is translucent in the evening
+      light, and the turquoise currents beneath her skin are visibly quickening,
+      swirling toward her hands as she reads the water. Her thick dreadlocks cascade
+      over her shoulders, the gradient from sea-green to sea-foam white catching
+      the fading light, copper wire bindings visible. Her gray eyes have shifted
+      to slate—storm clouds gathering in her irises as she comprehends the horror.
+      Expression is grim focus, jaw tightening. The stream itself is beautiful—
+      clear water, moss-covered stones—making the invisible taint more terrible.
     composition_notes: |
-      Ultra-wide cinematic. Veyra left third. Column creates diagonal. Low horizon line. Depth from atmospheric haze.
-    visual_hook: "Veyra's battered lantern, cold and dark in daylight, swaying at her hip"
+      Tight on Rill, ultra-wide aspect for cinematic drama. Stream water dominates
+      lower frame with her hands as focal point. The glow of detection magic draws
+      the eye. Her face shows the weight of discovery. Beauty and horror combined.
+    visual_hook: "Rill's webbed fingers in glowing stream, turquoise currents quickening beneath sea-glass skin"
     depicts_characters:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "lyra-kestrel"
       - "rill-vossari"
     character_states:
-      veyra-thornwake: |
-        Mounted at head. Alert and scanning. Lantern unlit. Cowl loose.
-      thorne-brightward: |
-        Alongside Veyra. Disguised. Watchful.
-      lyra-kestrel: |
-        Following. Bored noblewoman affect. Glamoured.
       rill-vossari: |
-        Cloaked. Quiet intensity.
-    location: "thornwood-forest"
-    zone: "trail"
+        Kneeling at stream bank. Webbed fingers in water. Sea-glass blue-green skin
+        with turquoise currents quickening beneath. Dreadlocks from sea-green to
+        sea-foam white. Gray eyes shifted to slate with dawning horror. Grim focus.
+        Reading the tainted water, discovering the mechanism of captive transport.
+    location: "windborne-roost"
+    zone: "stream"
     lighting:
-      primary_source: "morning sun"
-      quality: "soft, dappled"
-      direction: "above/side"
-      color_temperature: "warm gold/cool green"
-      shadow_depth: "gentle"
-      atmospheric: "light haze"
+      primary_source: "Evening sky, detection magic glow"
+      quality: "fading daylight, supernatural undertones"
+      direction: "from above and from water"
+      color_temperature: "warm evening gold mixed with sickly green glow"
+      shadow_depth: "deepening with dusk"
+      atmospheric: "peaceful stream hiding terrible secret"
     palette:
       dominant:
-        - "pine green"
-        - "thawing brown"
-        - "soft gold"
+        - "sea-glass blue-green skin"
+        - "stream water clear"
+        - "evening gold"
       accent:
-        - "teal tattoos"
+        - "sickly green detection glow"
+        - "turquoise skin currents"
+        - "sea-green to white dreadlock gradient"
       avoid:
-        - "harsh shadows"
+        - "bright cheerful colors"
+        - "harsh contrast"
     prompt_used: |
-      Wide cinematic shot of mounted adventurers on a muddy forest road at dawn,
-      woman with mohawk and burn scar leading,
-      thick pine trees and patches of melting snow,
-      unlit lantern at belt,
-      soft morning light filtering through trees,
-      classical oil painting, plein air naturalism,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Rembrandt water study lighting.
+      Close medium shot of a water genasi woman kneeling at a stream bank at evening.
+      Sea-glass blue-green translucent skin with visible turquoise currents moving
+      beneath, quickening toward her hands. Webbed fingers submerged in water that
+      glows with faint sickly green energy. Thick dreadlocks in gradient from deep
+      sea-green at roots to sea-foam white at tips, bound with verdigris copper wire.
+      Gray eyes shifted to slate like storm clouds. Expression of grim comprehension.
+      Beautiful clear stream with moss-covered stones hides terrible secret.
+      Ultra-wide cinematic aspect, horror discovered in peaceful water.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      happy expression, bright cheerful lighting, polluted-looking water,
+      obvious corruption, dark murky stream
     tags:
-      - "hero"
-      - "journey"
-      - "forest"
-      - "pastoral"
+      - "rill-vossari"
+      - "water-magic"
+      - "detection"
+      - "stream"
+      - "hero-image"
+      - "horror"
     generated_at: null
     file_name: null
     file_path: null
@@ -242,129 +414,91 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch28-the-road-north-img-28-02-01"
-    source_moment: "ch28-the-road-north-moment-02"
-    scene_id: "scn-28-02"
-    image_type: "character"
+  - custom_id: "ch28-the-road-north-img-03-03-02"
+    source_moment: "ch28-the-road-north-moment-03"
+    scene_id: "scn-28-03"
+    image_type: "detail"
     category:
-      - "character"
       - "moment"
-      - "location"
-    scene_mood: "celebratory"
-    mood_rationale: "Inn as sanctuary. Warm light and hospitality. Recognition of intelligence assets."
+      - "magic"
+      - "symbol"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The mechanism revealed. A close study of Rill's hands in the water—the
+      webbing between fingers, the turquoise currents rushing toward her palms,
+      the faint sickly glow of suppression compounds. The intimacy of magical
+      detection, the hands that read water's secrets.
     aspect_ratio: "3:4"
     orientation: "portrait"
     size: "1024x1365"
     visual_description: |
-      Quierk the aarakocra stands in the doorway of the Windborne Roost. Great horned owl features, mottled russet plumage. Golden-amber eye catching warm light. Holding wooden tankard. Hearth-light behind creates rim lighting. Veyra at threshold meeting his gaze.
+      Extreme close-up of Rill's hands submerged in the stream. Webbed fingers
+      spread, feeling the current. The sea-glass blue-green skin is translucent,
+      and beneath the surface we can see darker turquoise currents rushing toward
+      her palms and fingertips—the visible manifestation of her water-reading
+      ability. Around her hands, the water glows with a faint, sickly greenish
+      light—the magical suppression compounds she's detecting. The stream water
+      is otherwise crystal clear, moss-covered pebbles visible on the bottom.
+      The contrast between the natural beauty and the unnatural taint is stark.
+      Callused worker's hands, yet moving with fluid hypnotic grace. The small
+      vial of ever-moving water at her wrist is visible, its blue light dimmed
+      by proximity to the corrupted stream.
     composition_notes: |
-      Vertical portrait. Quierk center-right. Doorframe framing. Temperature contrast warm interior vs cool dusk exterior.
-    visual_hook: "Quierk's golden-amber eye catching the warm inn-light while fixing on the travelers"
-    depicts_characters:
-      - "quierk"
-      - "veyra-thornwake"
-      - "lyra-kestrel"
-    character_states:
-      quierk: |
-        Standing in doorway. Head cocked. Talon-tipped hands. Leather apron. Professional assessment.
-      veyra-thornwake: |
-        At threshold. Neutral expression. Accepting recognition.
-    location: "windborne-roost"
-    lighting:
-      primary_source: "hearth fire"
-      quality: "warm, flickering"
-      direction: "backlit"
-      color_temperature: "warm amber vs cool dusk"
-      shadow_depth: "soft"
-      atmospheric: "warm glow"
-    palette:
-      dominant:
-        - "amber"
-        - "warm gold"
-        - "russet plumage"
-      accent:
-        - "moss green"
-      avoid:
-        - "dark shadows"
-    prompt_used: |
-      Aarakocra with owl features standing in a tavern doorway,
-      mottled brown and cream feathers,
-      piercing golden eyes,
-      warm amber light spilling from behind,
-      talon hands holding a mug,
-      adventurers at the threshold in the dusk,
-      classical oil painting, Dutch genre warmth,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, threatening
-    tags:
-      - "character"
-      - "aarakocra"
-      - "inn"
-      - "celebratory"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch28-the-road-north-img-28-03-01"
-    source_moment: "ch28-the-road-north-moment-03"
-    scene_id: "scn-28-03"
-    image_type: "anchor"
-    category:
-      - "moment"
-      - "character"
-      - "magic"
-    scene_mood: "aquatic"
-    mood_rationale: "Water as medium of discovery. Rill's bioluminescence revealing poison. Wrongness beneath clean surfaces."
-    aspect_ratio: "2:3"
-    orientation: "portrait"
-    size: "1024x1536"
-    visual_description: |
-      Rill Vossari kneels at stream bank in twilight. Cloak thrown back, full bioluminescence visible. Webbed fingers submerged. Bioluminescent currents beneath skin quickening toward hands. Pupil-less eyes wide with horror. Stream appears pristine but carries invisible poison. Trident planted nearby.
-    composition_notes: |
-      Vertical portrait. Low angle from water level. Bioluminescence primary illumination. Trident vertical anchor. Overhanging branches frame top.
-    visual_hook: "The glowing aquamarine veins beneath Rill's skin accelerating their movement toward her submerged fingers"
+      Hands fill frame. Portrait orientation for vertical depth into water.
+      Turquoise currents as primary visual interest. Sickly green glow as accent.
+      Clear water and moss-stones provide beautiful backdrop to horror.
+    visual_hook: "Webbed fingers in glowing water, turquoise currents rushing toward detection"
     depicts_characters:
       - "rill-vossari"
     character_states:
       rill-vossari: |
-        Kneeling. Full bioluminescence. Webbed fingers submerged. Horror in expression.
-    location: "thornwood-forest"
+        Only hands visible. Webbed fingers spread in water. Sea-glass skin with
+        turquoise currents rushing toward palms. Callused worker's hands with
+        fluid grace. Vial at wrist dimmed by corrupt water proximity.
+    location: "windborne-roost"
+    zone: "stream"
     lighting:
-      primary_source: "internal bioluminescence"
-      quality: "ethereal, luminous"
-      direction: "internal + reflected"
-      color_temperature: "cool aquamarine"
-      shadow_depth: "soft"
-      atmospheric: "twilight mist"
+      primary_source: "Ambient light through water, detection magic glow"
+      quality: "underwater luminescence"
+      direction: "from above and within water"
+      color_temperature: "turquoise with sickly green accent"
+      shadow_depth: "soft, water-diffused"
+      atmospheric: "magical detection in progress"
     palette:
       dominant:
-        - "aquamarine"
-        - "teal"
-        - "silver-gray"
+        - "sea-glass blue-green skin"
+        - "clear stream water"
+        - "moss green stones"
       accent:
-        - "copper coils"
+        - "turquoise skin currents"
+        - "sickly green detection glow"
+        - "copper wire verdigris"
       avoid:
-        - "warm tones"
+        - "murky water"
+        - "bright colors"
     prompt_used: |
-      Water genasi woman with glowing aquamarine skin kneeling at a pristine forest stream,
-      webbed fingers submerged in water,
-      glowing turquoise veins pulsing and flowing toward hands,
-      horror on her face,
-      twilight forest setting with rising mist,
-      classical oil painting, maritime realism, Turner influence,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, underwater study.
+      Extreme close-up of webbed hands submerged in clear stream water.
+      Sea-glass blue-green translucent skin with darker turquoise currents
+      rushing toward palms and fingertips. Water around hands glows with
+      faint sickly green light. Crystal clear water, moss-covered pebbles
+      on bottom. Callused yet graceful hands. Small vial at wrist with
+      dimmed blue glow. Portrait orientation, magical detection in progress,
+      natural beauty hiding unnatural taint.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, murky water
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      murky dirty water, obvious pollution, extra fingers, malformed hands
     tags:
-      - "anchor"
-      - "magic"
-      - "discovery"
+      - "detail"
+      - "hands"
       - "rill-vossari"
-      - "aquatic"
+      - "water-magic"
+      - "detection"
     generated_at: null
     file_name: null
     file_path: null
@@ -372,56 +506,94 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch28-the-road-north-img-28-04-01"
+  - custom_id: "ch28-the-road-north-img-04-04-01"
     source_moment: "ch28-the-road-north-moment-04"
     scene_id: "scn-28-04"
     image_type: "beat"
     category:
-      - "location"
-      - "detail"
-    scene_mood: "somber"
-    mood_rationale: "The 'Character's Hunger.' Forest as active, consuming force. Gnarled age and muddy quagmire."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
+      - "moment"
+      - "character"
+      - "action"
+    scene_mood: "kinetic"
+    mood_rationale: |
+      The tracker in her element. Vera moves through the Thornwood with predator
+      grace, Echo soaring above. This is where she belongs—the labyrinth of ancient
+      trees, the hunt. Her abilities fully engaged, reading every shift in environment.
+      Kinetic because she is in motion, hunting.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
     visual_description: |
-      Macro shot of a hidden hollow. Ancient gnarled tree roots snake across early spring mud and decaying leaves. Roots look like massive arthritic fingers. Ground is a muddy quagmire. Background massive oaks swallow the sky. Dim green-filtered light.
+      Medium shot of Vera Moonwhisper moving through the Thornwood Forest. She flows
+      between ancient trees with silent predator grace, her lean rangy build suited
+      to this environment. Her dark brown braided hair with feathers, bone beads,
+      and leather cords trails behind her. Her hazel eyes are alert, constantly
+      scanning. She wears earth-toned leather and canvas designed for silent movement.
+      Above the forest canopy, Echo the raven is visible soaring against dappled
+      light filtering through leaves, his keen eyes scanning for movement. The forest
+      is a labyrinth of massive trunks, winding game trails, and hidden hollows.
+      Spring thaw has made the ground muddy, but Vera moves without leaving trace.
+      She is one with this environment—the tracker hunting.
     composition_notes: |
-      Tight square framing on forest floor. Roots as grasping diagonals. Shallow depth.
-    visual_hook: "Ancient, arthritic tree roots reaching through black mud and decaying leaves like giant fingers"
-    depicts_characters: []
-    character_states: {}
+      Vera mid-stride between trees. Vertical tree trunks create natural framing.
+      Echo visible through gap in canopy above. Dappled light creates pattern.
+      Movement implied through posture and composition. Forest as partner not obstacle.
+    visual_hook: "Vera flowing between ancient trees with predator grace, Echo soaring above canopy"
+    depicts_characters:
+      - "vera-moonwhisper"
+      - "echo-raven"
+    character_states:
+      vera-moonwhisper: |
+        Mid-stride, flowing between trees. Lean rangy build. Dark braided hair with
+        feathers and beads trailing. Hazel eyes alert. Earth-toned leather and canvas.
+        Silent predator grace. In her element, hunting.
+      echo-raven: |
+        Soaring above canopy. Keen eyes scanning. Black feathers against dappled light.
+        Working in tandem with Vera below.
     location: "thornwood-forest"
+    zone: "trail"
     lighting:
-      primary_source: "filtered daylight"
-      quality: "dim, green-gray"
-      direction: "top-down"
-      color_temperature: "cold forest green"
-      shadow_depth: "absolute black in hollows"
-      atmospheric: "thick dampness"
+      primary_source: "Dappled sunlight through canopy"
+      quality: "filtered, shifting, natural"
+      direction: "from above through leaves"
+      color_temperature: "green-gold filtered light"
+      shadow_depth: "deep forest shadows, bright patches"
+      atmospheric: "ancient forest alive with light and shadow"
     palette:
       dominant:
-        - "forest green-black"
-        - "mud brown"
-        - "leaf ochre"
+        - "forest green"
+        - "earth brown bark"
+        - "dappled gold light"
       accent:
-        - "moss green"
+        - "bone bead white"
+        - "feather patterns"
+        - "echo black"
       avoid:
-        - "bright sun"
+        - "artificial colors"
+        - "bright unnatural light"
     prompt_used: |
-      Macro detail of gnarled tree roots snaking through dark mud and dead leaves,
-      roots look like giant hands reaching out,
-      dark claustrophobic forest background,
-      damp primeval atmosphere,
-      classical oil painting, Symbolist unease,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, forest light study.
+      Medium shot of a half-elf woman moving through ancient forest with predator
+      grace. Lean rangy build, dark brown braided hair with feathers and bone beads
+      trailing. Hazel eyes alert. Earth-toned leather and canvas clothing. Flowing
+      between massive tree trunks. Above the canopy visible through gap, a black
+      raven soars against dappled light. Ancient forest labyrinth with winding trails.
+      Spring thaw mud but she moves without trace. Dappled sunlight through leaves.
+      The tracker hunting in her element.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, sunny
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      bright clearing, young trees, manicured forest, obvious path
     tags:
-      - "detail"
+      - "vera"
+      - "echo"
       - "forest"
-      - "roots"
-      - "somber"
+      - "tracking"
+      - "predator"
     generated_at: null
     file_name: null
     file_path: null
@@ -429,71 +601,94 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch28-the-road-north-img-28-05-01"
+  - custom_id: "ch28-the-road-north-img-05-05-01"
     source_moment: "ch28-the-road-north-moment-05"
     scene_id: "scn-28-05"
-    image_type: "anchor"
+    image_type: "hero"
     category:
       - "moment"
       - "location"
-      - "symbol"
+      - "establishing"
     scene_mood: "ominous"
-    mood_rationale: "Stronghold first sight. Elegant manor vs prison reality. Gilded architecture hiding horror. Watching eyes."
+    mood_rationale: |
+      The gilded cage revealed. First view of the target—the Silent Hand facility
+      sprawled across a hidden valley. Beautiful estate blending with landscape,
+      but guard towers, magical wards, and hidden dock reveal its true nature.
+      The reconnaissance team sees what they must overcome.
     aspect_ratio: "21:9"
     orientation: "landscape"
     size: "1792x768"
     visual_description: |
-      View from concealed outcrop looking down into valley. Elegant manor house with wings, windows catching golden sunset like watching eyes. Surrounded by guard towers, reinforced walls. Streams converge on central lake. Team prone on lichen-covered granite in foreground. Darkening green forest.
+      Wide establishing shot from rocky outcrop looking down into hidden valley.
+      In the foreground, silhouettes of the reconnaissance team—Veyra's distinctive
+      mohawk profile, Thorne's broad shoulders—crouch among rocks, observing.
+      Below them, the Silent Hand facility is revealed: a sprawling estate that
+      blends with the natural landscape. An elegant manor house seems utterly out
+      of place in the rugged wilderness. Multiple guard towers rise at intervals
+      along reinforced walls. Faint shimmer of magical warding systems visible in
+      the air. A small lake at the heart of the facility with what appears to be
+      a hidden dock. Several outbuildings scattered strategically. Late afternoon
+      light casts long shadows across the valley, painting the scene in gold and
+      warning. The juxtaposition of beauty and imprisonment is stark.
     composition_notes: |
-      Ultra-wide vista. Team silhouettes foreground anchor. High angle over shoulders. Manor center-right. Silver stream ribbons. Cold shadow in forest.
-    visual_hook: "The manor's windows catching golden sunset light like watching eyes, while the surrounding forest lies in deep shadow"
+      Ultra-wide cinematic aspect. Team silhouettes in foreground provide scale
+      and POV. Facility spread across middle ground. Valley walls frame the scene.
+      Late light creates drama with long shadows. The reveal shot.
+    visual_hook: "Team on rocky outcrop overlooking sprawling estate in hidden valley—guard towers and magical wards visible"
     depicts_characters:
       - "veyra-thornwake"
       - "thorne-brightward"
-      - "rill-vossari"
-      - "lyra-kestrel"
     character_states:
       veyra-thornwake: |
-        Prone on outcrop. Assessing.
+        Silhouette crouching among rocks. Distinctive mohawk profile visible.
+        Observing target below with tactical assessment.
       thorne-brightward: |
-        Spyglass raised. Methodical sweep.
-      rill-vossari: |
-        Grim confirmation. Fixed on water.
-      lyra-kestrel: |
-        Identifying entry points.
+        Silhouette beside Veyra. Broad shoulders. Spyglass raised to eye.
+        Cataloging defenses.
     location: "silent-hand-facility"
+    zone: "observation-post"
     lighting:
-      primary_source: "low western sun"
-      quality: "unsettling contrast"
-      direction: "side"
-      color_temperature: "sickly gold vs cold purple"
-      shadow_depth: "deep in valley"
-      atmospheric: "oppressive stillness"
+      primary_source: "Late afternoon sun"
+      quality: "golden hour, long shadows"
+      direction: "from west, low angle"
+      color_temperature: "warm gold with cooling shadows"
+      shadow_depth: "long dramatic shadows across valley"
+      atmospheric: "afternoon haze in valley, clarity on heights"
     palette:
       dominant:
-        - "purple shadow"
-        - "pallid stone gold"
-        - "forest black-green"
+        - "valley green"
+        - "facility stone gray"
+        - "golden afternoon light"
       accent:
-        - "silver streams"
+        - "guard tower dark"
+        - "lake reflection blue"
+        - "ward shimmer silver"
       avoid:
-        - "inviting warmth"
+        - "night colors"
+        - "harsh contrast"
     prompt_used: |
-      Wide cinematic vista of an elegant white manor house in a hidden valley at sunset,
-      manor windows catch golden light like eyes,
-      surrounded by high walls and guard towers,
-      team of silhouetted figures watching from a rocky cliff in foreground,
-      surrounding forest in deep shadow,
-      atmosphere of a 'gilded cage',
-      classical oil painting, Symbolist unease,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, classical landscape composition.
+      Wide establishing shot from rocky outcrop overlooking hidden valley.
+      Silhouettes of reconnaissance team in foreground—distinctive mohawk profile,
+      broad-shouldered soldier with spyglass. Below, sprawling estate blending with
+      wilderness. Elegant manor house incongruous in rugged setting. Multiple guard
+      towers along reinforced walls. Faint magical ward shimmer in air. Small lake
+      with hidden dock. Late afternoon golden light casting long shadows.
+      Ultra-wide cinematic aspect, the gilded cage revealed.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, inviting
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      obvious prison, industrial facility, modern architecture
     tags:
-      - "anchor"
-      - "stronghold"
-      - "surveillance"
-      - "ominous"
+      - "facility"
+      - "reconnaissance"
+      - "hero-image"
+      - "establishing"
+      - "target"
     generated_at: null
     file_name: null
     file_path: null
@@ -501,67 +696,193 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch28-the-road-north-img-28-06-01"
+  - custom_id: "ch28-the-road-north-img-06-06-01"
     source_moment: "ch28-the-road-north-moment-06"
     scene_id: "scn-28-06"
     image_type: "mood"
     category:
       - "moment"
+      - "atmosphere"
       - "action"
-      - "emotion"
-    scene_mood: "ethereal"
-    mood_rationale: "Mist infiltration. Dreamlike, ghostly. Shapes dissolving into protective mist. Liminal boundary."
+    scene_mood: "ominous"
+    mood_rationale: |
+      Ghosts in the mist. The team approaches under cover of Rill's magically
+      enhanced fog—movements obscured, footsteps muffled. The facility wall
+      looms ahead but is softened by swirling mist. Tension of infiltration,
+      the moment before discovery could end everything.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Under magical mist, three figures approach facility perimeter. Fog clings to ground in thick banks, obscuring from waist down. Veyra leads, hand on knife. Halden with medical kit. Venn covers with bow. Stone wall materializes from fog. Guard tower lost in mist above.
+      Wide atmospheric shot of figures moving through dense mist toward a
+      reinforced stone wall. The fog clings to the ground, swirling around
+      three figures: Veyra in the lead, her burn scar visible in profile,
+      Halden with his medical kit secured, Venn with bow ready. They are
+      half-revealed by the mist, ghostly shapes in motion. The facility's
+      perimeter wall is visible ahead—reinforced stone that seems to melt
+      into the fog. Moonlight diffuses through the mist, creating an ethereal
+      blue-silver glow. The air is thick with the scent of damp earth and
+      magic—Rill's enhancement giving the natural fog unnatural persistence.
+      Their movements are obscured, their footsteps muffled. The tension of
+      approach before the danger of discovery.
     composition_notes: |
-      Low ground-level perspective. Partial silhouettes emerging. Perimeter wall right third. Sourceless luminosity. Mist as character.
-    visual_hook: "Veyra's lantern, still dark, visible only as a shape at her hip—light withheld"
+      Figures as focal points but partially obscured by mist. Wall ahead as
+      destination. Fog creates natural vignetting. Movement implied through
+      body posture. Moonlight diffusion creates dreamy danger.
+    visual_hook: "Three figures moving through magically enhanced mist toward facility wall, ghostly and determined"
     depicts_characters:
       - "veyra-thornwake"
       - "medic-halden"
       - "archer-venn"
     character_states:
       veyra-thornwake: |
-        Leading. hand on knife. Upper body clear, lower body fog. Lantern dark. Focused.
+        Leading approach through mist. Burn scar visible in profile. Hand on
+        knife hilt. Moving with practiced stealth.
       medic-halden: |
-        Close behind. Kit secured. Scanning for traps. Tense.
+        Behind Veyra. Medical kit secured. Moving with quiet efficiency. Eyes
+        scanning for traps.
       archer-venn: |
-        Covering side. Bow ready. Alert.
+        Covering rear. Bow ready. Partially turned to watch behind. Arrow nocked.
     location: "silent-hand-facility"
+    zone: "perimeter"
     lighting:
-      primary_source: "predawn gray"
-      quality: "soft, dreamlike"
-      direction: "ambient"
-      color_temperature: "silver-gray/blue"
-      shadow_depth: "minimal"
-      atmospheric: "thick magical mist"
+      primary_source: "Moonlight diffused through mist"
+      quality: "ethereal, diffused, mysterious"
+      direction: "from above, scattered by fog"
+      color_temperature: "blue-silver moonlight"
+      shadow_depth: "soft, obscured by mist"
+      atmospheric: "thick fog, magical enhancement visible"
     palette:
       dominant:
-        - "mist gray"
-        - "stone blue"
-        - "silver"
+        - "mist gray-white"
+        - "moonlight blue-silver"
+        - "wall stone dark"
       accent:
-        - "dark gear shapes"
+        - "weapon glint"
+        - "leather brown"
+        - "burn scar texture"
       avoid:
+        - "bright colors"
         - "warm tones"
+        - "clear visibility"
     prompt_used: |
-      Three ghostly figures emerging from thick ground mist toward a stone wall,
-      figures obscured from the waist down by swirling fog,
-      woman with mohawk leading,
-      predawn gray light and moisture in the air,
-      atmosphere of silent infiltration and magical concealment,
-      classical oil painting, Pre-Raphaelite luminosity,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, atmospheric study.
+      Wide shot of three figures moving through dense ground mist toward
+      reinforced stone wall. A scarred woman leads, half-revealed by swirling
+      fog. A man with medical kit follows. An archer covers rear with bow ready.
+      Moonlight diffuses through magically enhanced mist, creating ethereal
+      blue-silver glow. Wall ahead melts into fog. Ghostly determined approach,
+      movements obscured, footsteps muffled. Tension of infiltration.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, clear visibility, lit lanterns
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      clear sky, bright lighting, visible features, no mist
     tags:
-      - "mood"
-      - "infiltration"
       - "mist"
-      - "ethereal"
+      - "approach"
+      - "infiltration"
+      - "stealth"
+      - "mood-image"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch28-the-road-north-img-06-07-01"
+    source_moment: "ch28-the-road-north-moment-07"
+    scene_id: "scn-28-06"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "symbol"
+    scene_mood: "ominous"
+    mood_rationale: |
+      Skills proven. Lyra's perfect mimicry echoes from the drainage grate—the
+      specialist at work inside the facility. The coded clicks and taps signal
+      her success. The team waits in swirling mist, hope and danger balanced.
+      The Mockingbird has earned her place.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Close shot focused on a small drainage grate near the base of the facility
+      wall, mist swirling around it. The grate is iron, aged and slightly rusted,
+      barely large enough for a person to squeeze through. From within, we can
+      almost see the impression of a figure—just hints of deep plum tiefling skin,
+      a glint of golden eyes in darkness. The mist swirls around the grate as if
+      drawn by breath from within. In the foreground, Veyra's profile is visible,
+      her ear cocked toward the grate, listening. Her expression is tense hope—
+      waiting for the signal. The wall looms above, but the grate is the focal
+      point—the small opening that Lyra's skills have turned into an entry point.
+      The coded clicks and taps are implied by the focused listening.
+    composition_notes: |
+      Grate as center focal point. Veyra's listening profile in foreground.
+      Mist swirling toward grate creates natural motion. Wall above provides
+      scale and threat. Darkness within grate hints at Lyra but doesn't fully
+      reveal her—she is the voice in the darkness.
+    visual_hook: "Drainage grate with hints of Lyra within, Veyra listening for coded signal in swirling mist"
+    depicts_characters:
+      - "lyra-kestrel"
+      - "veyra-thornwake"
+    character_states:
+      lyra-kestrel: |
+        Barely visible within grate—hint of plum skin, glint of golden eyes in
+        darkness. The voice that echoed guard's whistle, now silent, signaling
+        with clicks and taps.
+      veyra-thornwake: |
+        Profile in foreground. Burn scar visible. Ear cocked toward grate.
+        Expression of tense hope, listening for the signal.
+    location: "silent-hand-facility"
+    zone: "perimeter"
+    lighting:
+      primary_source: "Moonlight on wall and grate"
+      quality: "selective, focused"
+      direction: "from above on wall, darkness within grate"
+      color_temperature: "blue moonlight, hints of gold in grate"
+      shadow_depth: "deep in grate, mist-softened on wall"
+      atmospheric: "tension, waiting, signal pending"
+    palette:
+      dominant:
+        - "iron grate rust-brown"
+        - "wall stone gray"
+        - "mist white-gray"
+      accent:
+        - "golden eye glint"
+        - "plum skin hint"
+        - "moonlight blue"
+      avoid:
+        - "bright lighting inside grate"
+        - "fully visible Lyra"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, dramatic focus.
+      Close shot of iron drainage grate at base of stone wall, mist swirling
+      around it. Within the darkness of the grate, hints of a figure—glimpse
+      of deep plum skin, glint of golden eyes. In foreground, a woman's profile
+      with burn scar, ear cocked toward grate, listening with tense hope.
+      Wall looms above. Mist drawn toward grate as if by breath. The voice in
+      the darkness, the coded signal awaited. Skills proven through small opening.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      Lyra fully visible, bright inside grate, clear interior view,
+      relaxed expressions, safe atmosphere
+    tags:
+      - "lyra"
+      - "signal"
+      - "infiltration"
+      - "grate"
+      - "success"
     generated_at: null
     file_name: null
     file_path: null

@@ -1,1133 +1,287 @@
-# ============================================================================
-# CHAPTER IMAGERY SPECIFICATION
-# Chapter: Foundations of Stone and Spirit
-# Generated: 2025-12-21
-# ============================================================================
-
 metadata:
   entity_type: "chapter-imagery"
   slug: "ch06-foundations-of-stone-and-spirit"
   chapter_number: 6
   chapter_title: "Foundations of Stone and Spirit"
-  visual_thesis: "From the harsh industrial aftermath of rescue to the warmth of chosen family forming around firelight and ancient stone"
+  visual_thesis: "Building home from grief and craft—the broken recognize each other and construct something permanent from shared fragments."
   color_palette:
     primary:
-      - "#8B7355"
-      - "#CD853F"
-      - "#708090"
-      - "#D4A76A"
+      - "#B87333"  # copper sunset
+      - "#708090"  # slate gray
+      - "#DAA520"  # warm gold
     accent:
-      - "#E8B87D"
-      - "#9B7B73"
+      - "#E6E6FA"  # lavender
+      - "#FFB6C1"  # rose gold dawn
+      - "#2F4F4F"  # forge iron
   generation_defaults:
     provider: "openai"
     model: "dall-e-3"
     quality: "hd"
   mood_distribution:
+    intimate: 5
     somber: 2
     pastoral: 3
-    celebratory: 2
-    aquatic: 0
-    ethereal: 1
-    intimate: 4
-    kinetic: 0
-    ominous: 0
 
 characters:
-  - ref: "veyra-thornwake"
-    name: "Veyra Thornwake"
-    scene_variations: "This chapter: Travel-worn from mine rescue, some residual rock dust on gear. Observant and attentive rather than command-focused."
-    reference_images:
-      - "veyra-thornwake-official-portrait-01"
-
   - ref: "grimjaw-ironbeard"
     name: "Grimjaw Ironbeard"
-    scene_variations: "This chapter: Transitions from host in his own domain to departing exile. Pride when showing cabin, tenderness when packing Meya's figure."
+    scene_variations: |
+      CHAPTER 6 VARIATIONS (JOINING THE COMPANY):
+      - SCENE 01 (Post-rescue): Dust-covered from mine rescue, massive pack of confiscated tools,
+        gruff but observant. Watching families reunite with hidden emotion.
+      - SCENES 02-04 (At his cabin): In his element, methodical and reverent. Hands moving with
+        ritual precision as he packs fifteen years of solitary life. Moments of vulnerability
+        when touching Meya's carved figure.
+      - SCENES 05-07 (Campfire): Philosophical mode unlocked. Holding stones, sharing wisdom,
+        face softened by firelight. Making his oath with the weight of mountains behind it.
+      - Throughout: Iron-gray beard braided with metal charms and tiny tools. Weathered hands
+        and face. Stocky, solid stance. Practical mining clothes with reinforced leather.
     reference_images:
-      - "grimjaw-ironbeard-portrait-01"
+      - "grimjaw-ironbeard-structural-assessment"
+      - "grimjaw-ironbeard-grandpa-s-advice"
+
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: |
+      CHAPTER 6 VARIATIONS (BUILDING THE COMPANY):
+      - SCENE 01 (Mine departure): Dust-covered, small smile touching scarred lips. Watching
+        reunions with quiet satisfaction. Already planning next steps.
+      - SCENES 02-04 (Grimjaw's cabin): Observant, asking gentle questions. Recognizing grief
+        in Grimjaw's possessions. Connecting through shared understanding of loss.
+      - SCENES 05-07 (Campfire and watch): Leader mode softened by genuine connection. Speaking
+        of purpose, broken ones, building home. Dawn gratitude at ancient stones.
+      - Throughout: Dark mohawk with braided locks and beads. Burn scar on left face. Teal
+        tattoos on arms. Weatherworn leather coat. Lantern always present.
+    reference_images:
+      - "veyra-thornwake-scar-and-beads-portrait"
+      - "veyra-thornwake-the-map-wall-vigil"
 
   - ref: "thorne-brightward"
     name: "Thorne Brightward"
-    scene_variations: "This chapter: Post-mine rescue exhaustion showing. New scrape across cheek, armor gray with rock dust."
-    reference_images:
-      - "thorne-brightward-portrait-01"
+    scene_variations: |
+      CHAPTER 6 VARIATIONS (SUPPORTING ROLE):
+      - SCENE 01: Gray with dust, new scrape on cheek. Philosophical about second chances.
+      - SCENES 05-07: Contributing to discussions about trust. Catching Veyra's eye with
+        shared amusement at Grimjaw's opinions.
+      - Throughout: Steady presence, reliable second-in-command energy.
+    reference_images: []
 
   - ref: "aldwin-gentleheart"
     name: "Aldwin Gentleheart"
-    scene_variations: "This chapter: Curious appreciation in workshop scene. Finds tea service."
-    reference_images:
-      - "aldwin-gentleheart-official-portrait-01"
+    scene_variations: |
+      CHAPTER 6 VARIATIONS (HEALER'S PRESENCE):
+      - SCENE 01: Riding with injured miners, monitoring crushed ribs and stone-dust lungs.
+      - SCENES 02-04: Curious about Grimjaw's philosophy books, interested in dwarven tea
+        ceremony. Finding common ground through ritual.
+      - SCENES 05-07: Preparing evening tea with practiced grace, adding "compassion" to
+        the discussion. Calm presence blending tea-steam with woodsmoke.
+      - Throughout: Small halfling keeping pace with surprising ease. Tea service always
+        near. Gentle voice, professional healing demeanor.
+    reference_images: []
 
   - ref: "quartermaster-fayne"
     name: "Quartermaster Fayne"
-    scene_variations: "This chapter: Artist's appreciation for Grimjaw's craftsmanship."
-    reference_images:
-      - "quartermaster-fayne-standard-portrait-01"
-
-  - ref: "corporal-darric"
-    name: "Corporal Darric"
-    scene_variations: "This chapter: Breathing hard from mountain climb. Grinning at 'philosophy from a dwarf'."
-    reference_images:
-      - "corporal-darric-portrait-01"
-
-  - ref: "archer-venn"
-    name: "Archer Venn"
-    scene_variations: "This chapter: Storytelling animation, then listening to philosophy."
-    reference_images:
-      - "archer-venn-portrait-01"
-
-  - ref: "medic-halden"
-    name: "Medic Halden"
-    scene_variations: "This chapter: Quietly absorbing wisdom."
-    reference_images:
-      - "medic-halden-standing-portrait-01"
-
-  - ref: "sergeant-kelen"
-    name: "Sergeant Kelen"
-    scene_variations: "This chapter: Thoughtful questioner."
+    scene_variations: |
+      CHAPTER 6 VARIATIONS (OBSERVER):
+      - SCENES 02-03: Artist's eye appreciating the cabin's functional aesthetics. First to
+        call it "beautiful." Carefully wrapping delicate instruments during packing.
+      - SCENE 05: Distributing evening rations with quiet efficiency.
+      - Throughout: Observant, appreciative of craft and beauty in unexpected places.
     reference_images: []
 
 locations:
-  - ref: "blackvein-lode"
-    zones:
-      - id: "overview"
-        chapter_context: "Industrial wound in mountainside. Sunset light. Departure activity."
-
   - ref: "grimjaw-cabin"
     zones:
-      - id: "overview"
-        chapter_context: "Masterwork dwarven engineering built into mountainside. Glass windows, slate roof, water wheel. Interior organized workshop."
+      - id: "mountain-trail"
+        chapter_context: |
+          Evening light making the deliberately difficult trail even more treacherous.
+          Loose rocks placed on purpose as "discouragements." Growing shadows. Grimjaw
+          leading with expertise, pointing out which stones would send visitors tumbling.
+          The path that took hours before now takes barely one with the right guide.
+      - id: "cabin-approach"
+        chapter_context: |
+          First view reveals a masterwork of engineering instead of the expected hermit's
+          hovel. Cabin built directly into mountainside, walls seamlessly blending stonework
+          with natural rock face. Slate roof for shedding snow. Glass windows positioned
+          for morning light. Water wheel turning slowly in diverted mountain stream.
+      - id: "workshop-interior"
+        chapter_context: |
+          Revelation of character through space. Tools line every wall, organized by
+          function and frequency. Cold forge in one corner, well-maintained. Shelves of
+          oils and treatments. Books on geology, engineering, philosophy. Small touches:
+          kettle on cold stove, single chair by window for watching sunset, carved figure
+          of dwarf woman with gentle smile on mantle. Lavender scent preserved fifteen years.
 
-  - ref: "stone-circle-grove"
+  - ref: "mountain-campsite"
     zones:
-      - id: "overview"
-        chapter_context: "Ring of weathered standing stones forming natural shelter. Clear spring. Firelight casting long shadows."
+      - id: "stone-circle"
+        chapter_context: |
+          Sheltered grove with ancient stones forming natural circle. Clear spring bubbling
+          up from deep underground. Granite checked by Grimjaw before fire is lit—good
+          granite that won't crack from heat. Night reveals starfield overhead. Dawn strikes
+          the stones, making them glow rose-gold. Sacred feeling of permanence and witness.
+
+  - ref: "blackvein-lode"
+    zones:
+      - id: "mine-head"
+        chapter_context: |
+          Post-rescue aftermath. Air still tasting of rock dust and relief. Last wagons
+          loading rescued miners. Sunset painting mountains in copper and shadow. Organized
+          chaos of departure. Families arriving for reunions—wives clutching husbands,
+          children lifted into arms that nearly stilled forever.
 
 moments:
-  - id: "ch06-foundations-of-stone-and-spirit-moment-01"
-    scene_id: "scn-06-01"
-    title: "The Reunion"
-    narrative_beat: "Families reuniting with rescued miners at sunset. Veyra and Thorne watching the departure."
-    visual_weight: "medium"
-    characters_present:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-    location_zone: "blackvein-lode/overview"
-    transformation_state: "after"
-    recommended_images: 1
-
-  - id: "ch06-foundations-of-stone-and-spirit-moment-02"
-    scene_id: "scn-06-01"
-    title: "The Invitation"
-    narrative_beat: "Veyra inviting Grimjaw to retrieve his tools, acknowledging his value."
-    visual_weight: "medium"
-    characters_present:
-      - "veyra-thornwake"
-      - "grimjaw-ironbeard"
-    location_zone: "blackvein-lode/overview"
-    transformation_state: "after"
-    recommended_images: 1
-
   - id: "ch06-foundations-of-stone-and-spirit-moment-03"
-    scene_id: "scn-06-02"
-    title: "The Trail Guide"
-    narrative_beat: "Grimjaw leading the team up the treacherous path, pointing out 'discouragements'."
-    visual_weight: "medium"
-    characters_present:
-      - "grimjaw-ironbeard"
-      - "corporal-darric"
-    location_zone: "grimjaw-cabin/exterior"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch06-foundations-of-stone-and-spirit-moment-04"
-    scene_id: "scn-06-02"
-    title: "The Cabin Reveal"
-    narrative_beat: "The company cresting the rise to see Grimjaw's masterwork cabin."
-    visual_weight: "hero"
-    characters_present:
-      - "grimjaw-ironbeard"
-      - "veyra-thornwake"
-    location_zone: "grimjaw-cabin/exterior"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch06-foundations-of-stone-and-spirit-moment-05"
     scene_id: "scn-06-03"
-    title: "The Workshop"
-    narrative_beat: "Establishing the interior of the cabin, the organized tools, and the mantle shrine."
-    visual_weight: "medium"
-    characters_present:
-      - "veyra-thornwake"
-      - "grimjaw-ironbeard"
-    location_zone: "grimjaw-cabin/interior"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch06-foundations-of-stone-and-spirit-moment-06"
-    scene_id: "scn-06-03"
-    title: "Meya's Memory"
-    narrative_beat: "Grimjaw packing the carved figure of his wife."
+    title: "The Wife on the Mantle"
+    narrative_beat: "Veyra notices the carved figure of a dwarf woman with a gentle smile—and learns of Meya, who died saving stubborn fools at Mithral Deep."
     visual_weight: "critical"
     characters_present:
       - "grimjaw-ironbeard"
-    location_zone: "grimjaw-cabin/interior"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch06-foundations-of-stone-and-spirit-moment-07"
-    scene_id: "scn-06-04"
-    title: "The Right Tool"
-    narrative_beat: "Grimjaw explaining the Resonance Hammer to the team while packing."
-    visual_weight: "medium"
-    characters_present:
-      - "grimjaw-ironbeard"
-      - "medic-halden"
-    location_zone: "grimjaw-cabin/interior"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch06-foundations-of-stone-and-spirit-moment-08"
-    scene_id: "scn-06-04"
-    title: "Leaving Home"
-    narrative_beat: "Grimjaw looking back at his empty cabin before closing the door."
-    visual_weight: "medium"
-    characters_present:
-      - "grimjaw-ironbeard"
-    location_zone: "grimjaw-cabin/exterior"
-    transformation_state: "n/a"
-    recommended_images: 1
+      - "veyra-thornwake"
+    location_zone: "grimjaw-cabin/workshop-interior"
+    transformation_state: "before"
+    recommended_images: 2
 
   - id: "ch06-foundations-of-stone-and-spirit-moment-09"
-    scene_id: "scn-06-05"
-    title: "Camp in the Stones"
-    narrative_beat: "Establishing the night camp within the standing stone circle."
-    visual_weight: "medium"
-    characters_present: []
-    location_zone: "stone-circle-grove/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
+    scene_id: "scn-06-07"
+    title: "The Night Watch Oath"
+    narrative_beat: "On first watch, Grimjaw commits to building the company—not for glory, but because Meya would have wanted him to use what he knows."
+    visual_weight: "critical"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "veyra-thornwake"
+    location_zone: "mountain-campsite/stone-circle"
+    transformation_state: "during"
+    recommended_images: 2
+
+  - id: "ch06-foundations-of-stone-and-spirit-moment-05"
+    scene_id: "scn-06-04"
+    title: "Lavender-Wrapped Memory"
+    narrative_beat: "Grimjaw wraps the carved figure of his wife in soft cloth that smells of lavender—preserved fifteen years."
+    visual_weight: "critical"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "veyra-thornwake"
+    location_zone: "grimjaw-cabin/workshop-interior"
+    transformation_state: "before"
+    recommended_images: 2
+
+  - id: "ch06-foundations-of-stone-and-spirit-moment-06"
+    scene_id: "scn-06-04"
+    title: "The Broken Ones Are Strongest"
+    narrative_beat: "Grimjaw quotes his wife—the broken are strongest because they know where the weak points are and reinforce them."
+    visual_weight: "critical"
+    characters_present:
+      - "grimjaw-ironbeard"
+      - "veyra-thornwake"
+    location_zone: "grimjaw-cabin/workshop-interior"
+    transformation_state: "before"
+    recommended_images: 2
 
   - id: "ch06-foundations-of-stone-and-spirit-moment-10"
-    scene_id: "scn-06-05"
-    title: "The Bread Structure"
-    narrative_beat: "Grimjaw examining the bread structure by firelight."
-    visual_weight: "medium"
+    scene_id: "scn-06-07"
+    title: "Dawn on Ancient Stone"
+    narrative_beat: "Veyra places her hand on ancient stone in gratitude, and Grimjaw approves—respect given is strength received."
+    visual_weight: "critical"
     characters_present:
+      - "veyra-thornwake"
       - "grimjaw-ironbeard"
-    location_zone: "stone-circle-grove/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
+    location_zone: "mountain-campsite/stone-circle"
+    transformation_state: "after"
+    recommended_images: 2
 
-  - id: "ch06-foundations-of-stone-and-spirit-moment-11"
-    scene_id: "scn-06-06"
-    title: "The Peacock Story"
-    narrative_beat: "Venn telling the story of the peacock rescue, laughter around the fire."
-    visual_weight: "medium"
-    characters_present:
-      - "archer-venn"
-      - "corporal-darric"
-    location_zone: "stone-circle-grove/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch06-foundations-of-stone-and-spirit-moment-12"
-    scene_id: "scn-06-06"
-    title: "Stone Philosophy"
-    narrative_beat: "Grimjaw holding the stone and sharing wisdom."
+  - id: "ch06-foundations-of-stone-and-spirit-moment-02"
+    scene_id: "scn-06-02"
+    title: "The Masterwork Revealed"
+    narrative_beat: "The patrol crests the rise expecting a hermit's hovel and finds instead a masterwork of engineering—cabin seamlessly blending into mountainside."
     visual_weight: "high"
     characters_present:
       - "grimjaw-ironbeard"
+      - "quartermaster-fayne"
       - "veyra-thornwake"
-    location_zone: "stone-circle-grove/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch06-foundations-of-stone-and-spirit-moment-13"
-    scene_id: "scn-06-07"
-    title: "The Oath Watch"
-    narrative_beat: "Grimjaw maintaining tools and swearing his oath during the night watch."
-    visual_weight: "high"
-    characters_present:
-      - "grimjaw-ironbeard"
-      - "veyra-thornwake"
-    location_zone: "stone-circle-grove/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch06-foundations-of-stone-and-spirit-moment-14"
-    scene_id: "scn-06-07"
-    title: "Touching the Foundation"
-    narrative_beat: "Veyra touching the standing stone at dawn, feeling the gratitude."
-    visual_weight: "medium"
-    characters_present:
-      - "veyra-thornwake"
-    location_zone: "stone-circle-grove/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch06-foundations-of-stone-and-spirit-moment-15"
-    scene_id: "scn-06-07"
-    title: "The Dawn Descent"
-    narrative_beat: "The company leaving the mountain in morning light, a unified team."
-    visual_weight: "hero"
-    characters_present:
-      - "veyra-thornwake"
-      - "grimjaw-ironbeard"
-    location_zone: "stone-circle-grove/exterior"
-    transformation_state: "n/a"
+    location_zone: "grimjaw-cabin/cabin-approach"
+    transformation_state: "before"
     recommended_images: 1
 
 images:
-  - custom_id: "ch06-foundations-of-stone-and-spirit-img-06-01-01"
-    source_moment: "ch06-foundations-of-stone-and-spirit-moment-01"
-    scene_id: "scn-06-01"
-    image_type: "anchor"
-    category:
-      - "moment"
-      - "emotion"
-      - "location"
-    scene_mood: "pastoral"
-    mood_rationale: "The relief of rescue. Sunset light painting the moment of families reuniting."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Sunset at the Blackvein Lode. Families embrace dust-coated miners. Veyra and Thorne stand at the mine entrance, watching. Grimjaw approaches with his pack. Aldwin tends a patient in a wagon.
-    composition_notes: |
-      Wide shot. Mine entrance background. Reunion vignettes mid-ground. Veyra/Thorne foreground left.
-    visual_hook: "The golden sunset light washing over the dust-gray scene, highlighting the relief of reunion."
-    depicts_characters:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "grimjaw-ironbeard"
-      - "aldwin-gentleheart"
-    character_states:
-      veyra-thornwake: |
-        Watching. Relaxed stance.
-      thorne-brightward: |
-        Watching. Scrape on cheek visible.
-      grimjaw-ironbeard: |
-        Approaching. Large pack.
-      aldwin-gentleheart: |
-        Tending patient.
-    location: "blackvein-lode"
-    lighting:
-      primary_source: "Sunset"
-      quality: "Warm, long shadows"
-      direction: "Side"
-      color_temperature: "Copper/Gold"
-      shadow_depth: "Long"
-      atmospheric: "Dust haze"
-    palette:
-      dominant:
-        - "copper sunset"
-        - "dust gray"
-        - "shadow"
-      accent:
-        - "embrace warmth"
-      avoid:
-        - "harsh midday light"
-    prompt_used: |
-      Miners reuniting with families at sunset at mine entrance,
-      commanders watching from side,
-      dwarf approaching with pack,
-      golden hour light through dust haze,
-      classical oil painting, emotional realism,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "anchor"
-      - "reunion"
-      - "aftermath"
-      - "pastoral"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch06-foundations-of-stone-and-spirit-img-06-01-02"
-    source_moment: "ch06-foundations-of-stone-and-spirit-moment-02"
-    scene_id: "scn-06-01"
-    image_type: "beat"
-    category:
-      - "character"
-      - "dialogue"
-    scene_mood: "intimate"
-    mood_rationale: "Quiet conversation between leaders. The invitation to join."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Veyra speaking to Grimjaw at the mine entrance. Grimjaw looks skeptical but intrigued. Veyra's expression is open, inviting. Thorne stands nearby.
-    composition_notes: |
-      Two-shot. Veyra and Grimjaw. Sunset light.
-    visual_hook: "The contrast between Veyra's height and Grimjaw's stoutness, connected by eye contact."
-    depicts_characters:
-      - "veyra-thornwake"
-      - "grimjaw-ironbeard"
-    character_states:
-      veyra-thornwake: |
-        Speaking. Hand gesture inviting.
-      grimjaw-ironbeard: |
-        Listening. Arms crossed or adjusting pack.
-    location: "blackvein-lode"
-    lighting:
-      primary_source: "Sunset"
-      quality: "Warm"
-      direction: "Side"
-      color_temperature: "Amber"
-      shadow_depth: "Soft"
-      atmospheric: "Clearer air"
-    palette:
-      dominant:
-        - "sunset"
-        - "gray stone"
-        - "brown leather"
-      accent:
-        - "copper pauldrons"
-      avoid:
-        - "darkness"
-    prompt_used: |
-      Scarred woman speaking to elderly dwarf at mine entrance at sunset,
-      invitation moment,
-      warm lighting,
-      classical oil painting, realism,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "beat"
-      - "dialogue"
-      - "recruitment"
-      - "intimate"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch06-foundations-of-stone-and-spirit-img-06-02-01"
+  - custom_id: "ch06-foundations-of-stone-and-spirit-img-03-03-01"
     source_moment: "ch06-foundations-of-stone-and-spirit-moment-03"
-    scene_id: "scn-06-02"
-    image_type: "action"
-    category:
-      - "action"
-      - "location"
-    scene_mood: "kinetic"
-    mood_rationale: "The climb back up. Grimjaw pointing out the trap. Movement and instruction."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      The party climbing the mountain trail at dusk. Grimjaw is in the lead, pointing his hammer handle at a loose rock. Darric is stepping carefully around it. Aldwin follows. Shadows are lengthening.
-    composition_notes: |
-      Low angle looking up trail. Grimjaw pointing down. Danger implied.
-    visual_hook: "Grimjaw's gesture indicating the invisible danger, the team following his lead."
-    depicts_characters:
-      - "grimjaw-ironbeard"
-      - "corporal-darric"
-      - "aldwin-gentleheart"
-    character_states:
-      grimjaw-ironbeard: |
-        Pointing. Authoritative.
-      corporal-darric: |
-        Stepping carefully. Looking down.
-      aldwin-gentleheart: |
-        Climbing.
-    location: "grimjaw-cabin"
-    lighting:
-      primary_source: "Dusk"
-      quality: "Dimming"
-      direction: "Overhead"
-      color_temperature: "Blue/Purple"
-      shadow_depth: "Deep"
-      atmospheric: "Mountain cool"
-    palette:
-      dominant:
-        - "twilight blue"
-        - "rock gray"
-        - "pine green"
-      accent:
-        - "lantern light starting"
-      avoid:
-        - "bright sun"
-    prompt_used: |
-      Dwarf guide pointing out trap on mountain trail to companions at dusk,
-      steep climb,
-      twilight atmosphere,
-      classical oil painting, action composition,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "beat"
-      - "climb"
-      - "instruction"
-      - "kinetic"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch06-foundations-of-stone-and-spirit-img-06-02-02"
-    source_moment: "ch06-foundations-of-stone-and-spirit-moment-04"
-    scene_id: "scn-06-02"
-    image_type: "hero"
-    category:
-      - "location"
-      - "moment"
-      - "character"
-    scene_mood: "pastoral"
-    mood_rationale: "Wonder and relief meeting unexpected beauty. Pastoral provides the breathing room."
-    aspect_ratio: "21:9"
-    orientation: "landscape"
-    size: "1792x768"
-    visual_description: |
-      The company crests a mountain rise and stops in surprise at Grimjaw's cabin—a masterwork of engineering built into the mountainside. Glass windows catch amber sunlight. Slate roof, water wheel. Silhouettes of travelers in foreground.
-    composition_notes: |
-      Wide establishing shot. Cabin right. Travelers left. Low angle. Golden hour light.
-    visual_hook: "Glass windows catching golden evening light like jewels set in stone—unexpected luxury gleaming in wilderness"
-    depicts_characters:
-      - "grimjaw-ironbeard"
-      - "veyra-thornwake"
-      - "corporal-darric"
-      - "aldwin-gentleheart"
-    character_states:
-      grimjaw-ironbeard: |
-        Leading. Back to viewer. Gesturing with pride.
-      veyra-thornwake: |
-        Paused. Profile visible.
-      corporal-darric: |
-        Stopped. Amazed.
-      aldwin-gentleheart: |
-        Curious appreciation.
-    location: "grimjaw-cabin"
-    lighting:
-      primary_source: "Late evening sun"
-      quality: "Soft, warm"
-      direction: "Front on cabin"
-      color_temperature: "Gold/Amber"
-      shadow_depth: "Gentle"
-      atmospheric: "Haze"
-    palette:
-      dominant:
-        - "warm gold"
-        - "mountain gray"
-        - "forest green"
-      accent:
-        - "copper window glint"
-      avoid:
-        - "harsh reds"
-    prompt_used: |
-      Masterwork dwarven cabin built into mountainside catching golden evening light,
-      glass windows and water wheel,
-      group of fantasy travelers silhouetted in foreground looking in amazement,
-      wide landscape composition,
-      classical oil painting, Hudson River School influence,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "establishing-shot"
-      - "architecture"
-      - "wonder"
-      - "pastoral"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch06-foundations-of-stone-and-spirit-img-06-03-01"
-    source_moment: "ch06-foundations-of-stone-and-spirit-moment-05"
     scene_id: "scn-06-03"
     image_type: "detail"
     category:
-      - "location"
-      - "character"
+      - "moment"
       - "symbol"
+      - "emotion"
     scene_mood: "intimate"
-    mood_rationale: "Interior domestic space revealing character. Dutch Golden Age intimacy."
+    mood_rationale: |
+      The quiet revelation of Grimjaw's deepest grief. Two people recognizing shared loss
+      in a space filled with carefully preserved memory. Warm but weighted.
     aspect_ratio: "3:4"
     orientation: "portrait"
     size: "1024x1365"
     visual_description: |
-      Grimjaw's workshop interior. Tools on walls. Philosophy books. Cold forge. Mantle with carved figure of dwarf woman. Veyra standing in middle ground recognizing the domestic details. Grimjaw packing.
+      Close focus on the carved figure of Meya on the mantle—a small dwarf woman with a
+      gentle smile, lovingly detailed in warm wood. Behind and slightly blurred, Grimjaw's
+      massive weathered hands have stilled in their work. Cold forge visible in background.
+      Natural window light falls on the carving, making the wood glow. Tools organized on
+      walls create context of the workshop. The carving is small but commands attention—
+      fifteen years of grief made tangible in wood and care.
     composition_notes: |
-      Medium shot. Mantle focal point. Veyra attentive. Window light mixing with lamp.
-    visual_hook: "The small carved figure on the mantle—the emotional center that organizes fifteen years of solitary life"
-    depicts_characters:
-      - "veyra-thornwake"
-      - "grimjaw-ironbeard"
-      - "aldwin-gentleheart"
-      - "quartermaster-fayne"
-    character_states:
-      veyra-thornwake: |
-        Standing. Looking at mantle. Quiet recognition.
-      grimjaw-ironbeard: |
-        Packing tools. Back turned.
-      aldwin-gentleheart: |
-        Examining tea service.
-      quartermaster-fayne: |
-        Wrapping instruments.
-    location: "grimjaw-cabin"
-    lighting:
-      primary_source: "Mixed window and lamp"
-      quality: "Soft, warm"
-      direction: "Side"
-      color_temperature: "Amber/Blue mix"
-      shadow_depth: "Soft"
-      atmospheric: "Still"
-    palette:
-      dominant:
-        - "amber"
-        - "honey wood"
-        - "slate blue"
-      accent:
-        - "soft rose figure"
-      avoid:
-        - "harsh contrast"
-    prompt_used: |
-      Dwarven workshop interior with tools and books,
-      small carved figure on mantle,
-      scarred woman observing quietly,
-      dwarf packing tools,
-      mixed evening and lamp light,
-      classical oil painting, Vermeer interior lighting,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "interior"
-      - "memorial"
-      - "intimate"
-      - "detail"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch06-foundations-of-stone-and-spirit-img-06-03-02"
-    source_moment: "ch06-foundations-of-stone-and-spirit-moment-06"
-    scene_id: "scn-06-03"
-    image_type: "anchor"
-    category:
-      - "character"
-      - "emotion"
-      - "symbol"
-    scene_mood: "somber"
-    mood_rationale: "Grimjaw wrapping his wife's figure. Somber mood with Rembrandt lighting."
-    aspect_ratio: "4:5"
-    orientation: "portrait"
-    size: "1024x1280"
-    visual_description: |
-      Grimjaw's massive hands handling a small carved wooden figure with delicacy. Wrapping it in pale cloth. His face in profile, unreadable but tender. Empty mantle behind him. Veyra witnessing.
-    composition_notes: |
-      Close-medium shot. Hands and figure center. Face profile top. Chiaroscuro.
-    visual_hook: "His massive, calloused hands handling the small figure with the delicacy of a jeweler"
+      Portrait orientation for intimate detail. Carved figure in sharp focus, occupying
+      upper third. Grimjaw's stilled hands in middle ground, slightly soft. Workshop
+      backdrop provides context. Natural light from window creates warm highlight on wood.
+      Shallow depth of field draws eye to the carving.
+    visual_hook: "Small carved figure glowing in window light, massive hands stilled in reverence behind"
     depicts_characters:
       - "grimjaw-ironbeard"
-      - "veyra-thornwake"
     character_states:
       grimjaw-ironbeard: |
-        Profile. Tender body language. Hands dominating frame.
-      veyra-thornwake: |
-        Edge of frame. Witnessing.
+        Hands visible, stilled mid-motion. Weathered, strong, suddenly still with memory.
     location: "grimjaw-cabin"
+    zone: "workshop-interior"
     lighting:
-      primary_source: "Single lamp"
-      quality: "Hard, dramatic"
-      direction: "Side"
-      color_temperature: "Warm amber"
-      shadow_depth: "Deep"
-      atmospheric: "Reverent"
+      primary_source: "Natural window light"
+      quality: "soft, golden"
+      direction: "from right, falling on mantle"
+      color_temperature: "warm amber"
+      shadow_depth: "soft gradients"
+      atmospheric: "dust motes in light beam"
     palette:
       dominant:
-        - "deep ochre"
-        - "burnt sienna"
-        - "shadow"
+        - "warm wood brown"
+        - "workshop amber"
+        - "iron gray"
       accent:
-        - "pale cloth"
+        - "window light gold"
+        - "cold forge blue-gray"
       avoid:
         - "bright colors"
-    prompt_used: |
-      Close up of dwarf's massive hands gently wrapping small wooden carving of woman,
-      profile face showing deep emotion,
-      single lamp lighting,
-      classical oil painting, Rembrandt lighting,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "close-up"
-      - "grief"
-      - "tenderness"
-      - "somber"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch06-foundations-of-stone-and-spirit-img-06-04-01"
-    source_moment: "ch06-foundations-of-stone-and-spirit-moment-07"
-    scene_id: "scn-06-04"
-    image_type: "detail"
-    category:
-      - "object"
-      - "character"
-    scene_mood: "intimate"
-    mood_rationale: "Grimjaw explaining his tools. The 'Resonance Hammer'. Craftsmanship and philosophy."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
-    visual_description: |
-      Close up of the "Resonance Hammer" in Grimjaw's hand. It has a peculiar head with multiple surfaces. He is showing it to Halden. Halden looks fascinated. Tools packed in background.
-    composition_notes: |
-      Tight shot on hammer. Grimjaw's hand holding it. Halden's face visible.
-    visual_hook: "The unique design of the hammer, a tool for listening rather than breaking."
-    depicts_characters:
-      - "grimjaw-ironbeard"
-      - "medic-halden"
-    character_states:
-      grimjaw-ironbeard: |
-        Holding hammer. Explaining.
-      medic-halden: |
-        Listening. Fascinated.
-    location: "grimjaw-cabin"
-    lighting:
-      primary_source: "Lamp"
-      quality: "Warm"
-      direction: "Side"
-      color_temperature: "Amber"
-      shadow_depth: "Moderate"
-      atmospheric: "Interior"
-    palette:
-      dominant:
-        - "steel"
-        - "wood"
-        - "amber"
-      accent:
-        - "polished metal"
-      avoid:
-        - "blur"
-    prompt_used: |
-      Dwarf holding unique resonance hammer tool, showing it to human medic,
-      detailed tool craftsmanship,
-      warm workshop interior,
-      classical oil painting, realism,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "detail"
-      - "tools"
-      - "craft"
-      - "intimate"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch06-foundations-of-stone-and-spirit-img-06-04-02"
-    source_moment: "ch06-foundations-of-stone-and-spirit-moment-08"
-    scene_id: "scn-06-04"
-    image_type: "transition"
-    category:
-      - "moment"
-      - "emotion"
-    scene_mood: "somber"
-    mood_rationale: "Leaving home. The final look back. Transition from hermit to company member."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Grimjaw standing outside his closed cabin door, fully packed. He is looking back at the structure one last time. It is nightfall. Veyra waits respectfully a few steps away. The cabin looks dark and silent now.
-    composition_notes: |
-      Wide shot. Grimjaw small against cabin. Veyra waiting. Night sky.
-    visual_hook: "The heavy pack on his back, the darkened windows of the home he built."
-    depicts_characters:
-      - "grimjaw-ironbeard"
-      - "veyra-thornwake"
-    character_states:
-      grimjaw-ironbeard: |
-        Standing. Looking back. Fully packed.
-      veyra-thornwake: |
-        Waiting. Patient.
-    location: "grimjaw-cabin"
-    lighting:
-      primary_source: "Moonlight"
-      quality: "Cool, silent"
-      direction: "Overhead"
-      color_temperature: "Blue/Silver"
-      shadow_depth: "Deep"
-      atmospheric: "Night air"
-    palette:
-      dominant:
-        - "night blue"
-        - "stone gray"
-        - "shadow"
-      accent:
-        - "moonlight reflection on glass"
-      avoid:
-        - "warmth inside cabin"
-    prompt_used: |
-      Elderly dwarf with heavy pack standing outside dark mountain cabin at night looking back,
-      woman waiting nearby,
-      moonlight,
-      poignant departure,
-      classical oil painting, somber atmosphere,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "transition"
-      - "departure"
-      - "somber"
-      - "home"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch06-foundations-of-stone-and-spirit-img-06-05-01"
-    source_moment: "ch06-foundations-of-stone-and-spirit-moment-09"
-    scene_id: "scn-06-05"
-    image_type: "establishing"
-    category:
-      - "location"
-      - "mood"
-    scene_mood: "ethereal"
-    mood_rationale: "The stone circle campsite. Ancient protection. Ethereal quality of the standing stones."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      A circle of ancient standing stones in a mountain grove at night. A campfire burns in the center, casting dancing shadows on the monoliths. The spring reflects the stars. The stones seem to watch the sleepers.
-    composition_notes: |
-      Wide shot. Stones framing the fire. Campers settling in. Starry sky.
-    visual_hook: "The ancient stones glowing faintly in starlight and firelight, forming a protective ring."
-    depicts_characters: []
-    character_states: {}
-    location: "stone-circle-grove"
-    lighting:
-      primary_source: "Campfire + Starlight"
-      quality: "Mixed"
-      direction: "Center/Above"
-      color_temperature: "Orange/Blue"
-      shadow_depth: "Deep"
-      atmospheric: "Clear"
-    palette:
-      dominant:
-        - "night blue"
-        - "granite gray"
-        - "fire orange"
-      accent:
-        - "stars"
-      avoid:
-        - "daylight"
-    prompt_used: |
-      Ancient standing stone circle in mountain grove at night with campfire in center,
-      stones casting shadows,
-      starry sky,
-      mystical atmosphere,
-      classical oil painting, landscape,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "establishing"
-      - "location"
-      - "stone-circle"
-      - "ethereal"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch06-foundations-of-stone-and-spirit-img-06-05-02"
-    source_moment: "ch06-foundations-of-stone-and-spirit-moment-10"
-    scene_id: "scn-06-05"
-    image_type: "beat"
-    category:
-      - "character"
-      - "humor"
-    scene_mood: "intimate"
-    mood_rationale: "Grimjaw rating the bread. Character beat showing his obsession with structure. Warmth and humor."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
-    visual_description: |
-      Close-up of Grimjaw examining a piece of bread by firelight. He holds it with technical scrutiny. Darric and Venn watching with amusement. Firelight illuminates the texture of the bread and his beard.
-    composition_notes: |
-      Square focus. Hands and bread. Face visible. Background reaction.
-    visual_hook: "The engineer's scrutiny applied to a simple dinner roll."
-    depicts_characters:
-      - "grimjaw-ironbeard"
-      - "corporal-darric"
-      - "archer-venn"
-    character_states:
-      grimjaw-ironbeard: |
-        Examining bread. Serious expression.
-      corporal-darric: |
-        Grinning.
-      archer-venn: |
-        Amused.
-    location: "stone-circle-grove"
-    lighting:
-      primary_source: "Campfire"
-      quality: "Warm, flickering"
-      direction: "Side/Below"
-      color_temperature: "Amber"
-      shadow_depth: "Soft"
-      atmospheric: "Cozy"
-    palette:
-      dominant:
-        - "amber"
-        - "bread brown"
-        - "beard gray"
-      accent:
-        - "fire highlight"
-      avoid:
-        - "cold tones"
-    prompt_used: |
-      Dwarf examining piece of bread with technical intensity by campfire light,
-      companions watching with amusement,
-      warm firelight,
-      humorous character moment,
-      classical oil painting, genre painting,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "beat"
-      - "humor"
-      - "character"
-      - "intimate"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch06-foundations-of-stone-and-spirit-img-06-06-01"
-    source_moment: "ch06-foundations-of-stone-and-spirit-moment-12"
-    scene_id: "scn-06-06"
-    image_type: "mood"
-    category:
-      - "character"
-      - "symbol"
-      - "moment"
-    scene_mood: "celebratory"
-    mood_rationale: "Company gathered around fire, wisdom being shared. Dutch Golden Age warmth."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Grimjaw holds a simple stone in firelight, turning it so it glows like amber. Listeners arranged in loose semicircle. Ancient standing stones rise behind them.
-    composition_notes: |
-      Medium-wide. Grimjaw central. Listeners framing. Fire uplighting.
-    visual_hook: "The stone in his palm catching firelight, glowing like held amber"
-    depicts_characters:
-      - "grimjaw-ironbeard"
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "archer-venn"
-      - "quartermaster-fayne"
-      - "corporal-darric"
-    character_states:
-      grimjaw-ironbeard: |
-        Holding stone. Teaching.
-      veyra-thornwake: |
-        Listening.
-      thorne-brightward: |
-        Smiling.
-      archer-venn: |
-        Relaxed.
-      quartermaster-fayne: |
-        Thoughtful.
-      corporal-darric: |
-        Grinning.
-    location: "stone-circle-grove"
-    lighting:
-      primary_source: "Campfire"
-      quality: "Warm"
-      direction: "Uplighting"
-      color_temperature: "Orange/Gold"
-      shadow_depth: "Warm"
-      atmospheric: "Clear night"
-    palette:
-      dominant:
-        - "amber gold"
-        - "warm orange"
-        - "rich brown"
-      accent:
-        - "cool night blue"
-      avoid:
-        - "cold dominance"
-    prompt_used: |
-      Elderly dwarf holding stone in firelight teaching companions around campfire,
-      diverse group listening,
-      ancient stone circle background,
-      starry sky,
-      warm convivial atmosphere,
-      classical oil painting, Dutch Golden Age,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "campfire"
-      - "philosophy"
-      - "celebratory"
-      - "ensemble"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch06-foundations-of-stone-and-spirit-img-06-06-02"
-    source_moment: "ch06-foundations-of-stone-and-spirit-moment-11"
-    scene_id: "scn-06-06"
-    image_type: "beat"
-    category:
-      - "character"
-      - "humor"
-    scene_mood: "celebratory"
-    mood_rationale: "Venn's story about the peacock. Laughter and bonding."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Venn standing/gesturing dramatically by the fire, mimicking a peacock attack. Darric is laughing, burying his face in his hands. Others laughing. Firelight captures the joy.
-    composition_notes: |
-      Action shot. Venn dynamic. Reactions visible.
-    visual_hook: "The elf's dramatic pantomime and the group's genuine laughter."
-    depicts_characters:
-      - "archer-venn"
-      - "corporal-darric"
-      - "veyra-thornwake"
-    character_states:
-      archer-venn: |
-        Gesturing. Animated.
-      corporal-darric: |
-        Laughing.
-      veyra-thornwake: |
-        Smiling.
-    location: "stone-circle-grove"
-    lighting:
-      primary_source: "Campfire"
-      quality: "Warm, active"
-      direction: "Uplighting"
-      color_temperature: "Orange"
-      shadow_depth: "Moving shadows"
-      atmospheric: "Joyful"
-    palette:
-      dominant:
-        - "fire orange"
-        - "face tones"
-        - "night"
-      accent:
-        - "white teeth (smiles)"
-      avoid:
-        - "gloom"
-    prompt_used: |
-      Elf woman telling funny story with dramatic gestures by campfire,
-      companions laughing,
-      warm firelight,
-      joyful bonding moment,
-      classical oil painting, genre scene,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "beat"
-      - "storytelling"
-      - "humor"
-      - "celebratory"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch06-foundations-of-stone-and-spirit-img-06-07-01"
-    source_moment: "ch06-foundations-of-stone-and-spirit-moment-13"
-    scene_id: "scn-06-07"
-    image_type: "anchor"
-    category:
-      - "character"
-      - "moment"
-      - "emotion"
-    scene_mood: "intimate"
-    mood_rationale: "The formal oath scene. Grimjaw swearing to Meya through Veyra. Vermeer interior intimacy outdoors."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Night watch. Grimjaw sits working whetstone, eyes looking far away. Veyra listens nearby. Sleeping company in background. Banked fire glow. Starlight rim.
-    composition_notes: |
-      Medium two-shot. Grimjaw working but looking away. Veyra listening. Rim light separation.
-    visual_hook: "His hands working automatically while his eyes look into memory"
-    depicts_characters:
-      - "grimjaw-ironbeard"
-      - "veyra-thornwake"
-    character_states:
-      grimjaw-ironbeard: |
-        Working whetstone. Eyes distant. Solemn.
-      veyra-thornwake: |
-        Listening. Patient.
-    location: "stone-circle-grove"
-    lighting:
-      primary_source: "Banked fire"
-      quality: "Soft, warm"
-      direction: "Side"
-      color_temperature: "Amber"
-      shadow_depth: "Soft"
-      atmospheric: "Clear night"
-    palette:
-      dominant:
-        - "deep amber"
-        - "warm brown"
-        - "night blue"
-      accent:
-        - "silver rim"
-      avoid:
         - "harsh contrast"
     prompt_used: |
-      Elderly dwarf sharpening tools by dying campfire at night while looking distant,
-      scarred woman listening nearby,
-      sleeping companions in background,
-      quiet intimate conversation,
-      classical oil painting, Vermeer lighting,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Vermeer interior lighting.
+      Dwarven workshop interior with tools on every wall, cold forge in corner.
+      Close focus on a small carved wooden figure of a dwarf woman with gentle smile
+      on a stone mantle, glowing in natural window light. Behind the figure, massive
+      weathered dwarf hands have stilled mid-motion, slightly blurred.
+      Portrait framing, shallow depth of field, carved figure as focal point.
+      Warm amber light from window, soft shadows, dust motes catching light.
+      Quiet grief made tangible, fifteen years of memory preserved.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, full figure, busy background, bright lighting, action pose
     tags:
-      - "night-watch"
-      - "oath"
+      - "grief"
+      - "memory"
+      - "meya"
+      - "grimjaw"
+      - "detail"
       - "intimate"
-      - "two-shot"
     generated_at: null
     file_name: null
     file_path: null
@@ -1135,63 +289,86 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch06-foundations-of-stone-and-spirit-img-06-07-02"
-    source_moment: "ch06-foundations-of-stone-and-spirit-moment-14"
-    scene_id: "scn-06-07"
-    image_type: "symbol"
+  - custom_id: "ch06-foundations-of-stone-and-spirit-img-03-03-02"
+    source_moment: "ch06-foundations-of-stone-and-spirit-moment-03"
+    scene_id: "scn-06-03"
+    image_type: "beat"
     category:
+      - "moment"
       - "character"
-      - "symbol"
       - "emotion"
-    scene_mood: "ethereal"
-    mood_rationale: "Veyra's scarred hand on ancient stone. Transcendence and connection."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
+    scene_mood: "intimate"
+    mood_rationale: |
+      The moment of revelation shared between two people who understand loss.
+      Grimjaw's gruff exterior cracking, Veyra's gentle question bridging the gap.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
     visual_description: |
-      Close view of Veyra's scarred hand pressed flat against ancient standing stone at dawn. Rose-gold light catches textures. Grimjaw soft in background nodding. Mist.
+      Medium two-shot in the workshop. Grimjaw stands near the mantle, his profile turned
+      toward the carved figure, hand reaching toward it. Veyra stands slightly behind,
+      her scarred face showing gentle understanding. Workshop surrounds them—tools,
+      books, the cold forge. Window light creates a warm pool around them both.
+      The carved figure of Meya is visible on the mantle between them.
     composition_notes: |
-      Close up. Hand on stone. Square format. Grimjaw soft background.
-    visual_hook: "Her scarred hand flat against the stone—two survivors touching"
+      Two figures in warm interior light. Grimjaw in left third, profile view, reaching.
+      Veyra in right third, three-quarter view, observing. Carved figure between them
+      creates visual connection. Workshop context fills background. Warm golden hour
+      quality to the light.
+    visual_hook: "Two figures connected by a small carved memory, grief recognized in shared glance"
     depicts_characters:
-      - "veyra-thornwake"
       - "grimjaw-ironbeard"
+      - "veyra-thornwake"
     character_states:
-      veyra-thornwake: |
-        Hand visible. Scarred.
       grimjaw-ironbeard: |
-        Background. Nodding.
-    location: "stone-circle-grove"
+        Profile view, reaching toward mantle. Expression shows vulnerability breaking
+        through gruff exterior. Iron-gray beard, weathered face, mining clothes.
+      veyra-thornwake: |
+        Standing slightly behind, burn scar visible, expression showing gentle recognition.
+        Dark mohawk, teal tattoos, weatherworn leather coat.
+    location: "grimjaw-cabin"
+    zone: "workshop-interior"
     lighting:
-      primary_source: "Dawn light"
-      quality: "Luminous"
-      direction: "Horizontal"
-      color_temperature: "Rose-gold"
-      shadow_depth: "Minimal"
-      atmospheric: "Mist"
+      primary_source: "Window light"
+      quality: "warm, golden"
+      direction: "from left, side-lighting both figures"
+      color_temperature: "golden amber"
+      shadow_depth: "moderate, soft edges"
+      atmospheric: "intimate interior warmth"
     palette:
       dominant:
-        - "rose gold"
-        - "gray granite"
-        - "pale silver"
+        - "workshop amber"
+        - "stone gray"
+        - "warm wood"
       accent:
+        - "window gold"
         - "teal tattoo"
       avoid:
-        - "harsh contrast"
+        - "cold tones"
+        - "harsh shadows"
     prompt_used: |
-      Close up of scarred hand pressing ancient standing stone at dawn,
-      morning mist,
-      dwarf nodding in background,
-      ethereal atmosphere,
-      classical oil painting, Pre-Raphaelite luminosity,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Rembrandt interior lighting.
+      Dwarven workshop with tools on walls, cold forge, books on shelves.
+      Medium two-shot: stocky dwarf with iron-gray braided beard standing near mantle,
+      reaching toward a small carved figure, profile showing vulnerability.
+      Behind him, a half-elf woman with dark mohawk and burn scar on left face,
+      expression showing gentle understanding of grief.
+      Warm window light from left, golden amber atmosphere, intimate connection.
+      Fantasy grounding: teal arm tattoos, metal charms in beard, weatherworn leather.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      action pose, theatrical expression, bright lighting, wrong character count
     tags:
-      - "symbol"
-      - "stone"
-      - "ethereal"
-      - "dawn"
+      - "grief"
+      - "revelation"
+      - "grimjaw"
+      - "veyra"
+      - "connection"
     generated_at: null
     file_name: null
     file_path: null
@@ -1199,74 +376,770 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch06-foundations-of-stone-and-spirit-img-06-07-03"
-    source_moment: "ch06-foundations-of-stone-and-spirit-moment-15"
+  - custom_id: "ch06-foundations-of-stone-and-spirit-img-07-09-01"
+    source_moment: "ch06-foundations-of-stone-and-spirit-moment-09"
     scene_id: "scn-06-07"
     image_type: "hero"
     category:
       - "moment"
       - "character"
-      - "symbol"
-    scene_mood: "pastoral"
-    mood_rationale: "Closing hero shot. Hope and forward motion. The glowing stones offering benediction."
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: |
+      The oath-making moment under stars. Grief transformed into purpose. The weight
+      of fifteen years of isolation ending with a promise to honor the dead by saving the living.
     aspect_ratio: "21:9"
     orientation: "landscape"
     size: "1792x768"
     visual_description: |
-      The Company descends a mountain path as morning sun strikes the standing stone circle behind them. They move in natural formation. Mountain vista opens before them. Golden light on stones says 'go with our blessing.'
+      Wide shot of the stone circle at night. Grimjaw and Veyra sit side by side on ancient
+      granite, their backs to the dying campfire. Stars wheel overhead in a vast field.
+      Grimjaw's hands work a whetstone over one of his tools, the methodical motion of
+      a ritual. Veyra listens, her scarred profile catching firelight from behind.
+      The ancient stones rise around them like silent witnesses. The composition emphasizes
+      their small human presence against eternal stone and infinite stars.
     composition_notes: |
-      Wide cinematic shot. Elevated angle. Stones background. Company mid-ground. Vista foreground. Leading line.
-    visual_hook: "The glowing stones behind them like a benediction"
+      Ultra-wide cinematic framing. Two figures small but centered, seated on stone.
+      Starfield fills upper two-thirds. Ancient stones frame the scene left and right.
+      Dying fire behind them creates rim light on their silhouettes.
+      Vast scale emphasizes the weight of the oath being made.
+    visual_hook: "Two small figures against infinite stars, oath-making visible in their posture"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "veyra-thornwake"
+    character_states:
+      grimjaw-ironbeard: |
+        Seated, working whetstone over tool. Posture carries weight of decision.
+        Iron-gray beard catching starlight, face in partial profile.
+      veyra-thornwake: |
+        Seated beside him, listening. Scarred profile lit from behind by dying fire.
+        Stillness of witness, receiving the oath.
+    location: "mountain-campsite"
+    zone: "stone-circle"
+    lighting:
+      primary_source: "Starlight and dying campfire"
+      quality: "soft, vast, intimate"
+      direction: "from above (stars) and behind (fire)"
+      color_temperature: "cool blue stars, warm amber rim light"
+      shadow_depth: "deep but gentle"
+      atmospheric: "clear mountain night, infinite depth"
+    palette:
+      dominant:
+        - "starfield black"
+        - "granite gray"
+        - "fire amber rim"
+      accent:
+        - "star white"
+        - "iron-gray beard"
+      avoid:
+        - "bright lighting"
+        - "neon"
+        - "green"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Turner luminosity for night sky.
+      Ancient stone circle on a mountain, vast starfield overhead.
+      Two figures seated on granite—a stocky dwarf with iron-gray braided beard
+      working a whetstone, a half-elf woman with dark mohawk and burn scar listening.
+      Dying campfire behind them creates warm rim light on silhouettes.
+      Ancient stones rise around them as silent witnesses.
+      Ultra-wide cinematic framing, figures small against infinite stars.
+      Cool starlight from above, warm amber from behind. Oath-making atmosphere.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      bright lighting, action pose, theatrical expression, wrong character count
+    tags:
+      - "oath"
+      - "stars"
+      - "grimjaw"
+      - "veyra"
+      - "hero"
+      - "somber"
+      - "commitment"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch06-foundations-of-stone-and-spirit-img-07-09-02"
+    source_moment: "ch06-foundations-of-stone-and-spirit-moment-09"
+    scene_id: "scn-06-07"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Closer view of the oath moment—Grimjaw's face as he speaks the words that
+      transform grief into purpose. The whetstone work as meditation and commitment.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Medium shot focused on Grimjaw's hands and face. He works the whetstone over
+      a tool with practiced rhythm, face illuminated by dying firelight. His expression
+      carries the weight of decision—not grief now, but purpose found. Starfield
+      visible above, ancient stone behind. The motion of the whetstone is the visual
+      anchor, representing his philosophy of maintenance and care.
+    composition_notes: |
+      Medium shot, Grimjaw filling center frame. Hands and whetstone in lower third,
+      face in upper third. Starlight from above, firelight from side. Ancient stone
+      provides backdrop. Focus on expression and the ritual motion of tool maintenance.
+    visual_hook: "Whetstone rhythm, firelit face showing grief transformed to purpose"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+    character_states:
+      grimjaw-ironbeard: |
+        Face showing quiet determination. Not grief but acceptance and new purpose.
+        Hands steady on whetstone, the ritual of maintenance as meditation.
+        Iron-gray beard catching warm and cool light. Eyes seeing beyond the tool.
+    location: "mountain-campsite"
+    zone: "stone-circle"
+    lighting:
+      primary_source: "Dying campfire from side, starlight from above"
+      quality: "mixed warm and cool"
+      direction: "side-lit by fire, overhead glow from stars"
+      color_temperature: "amber fire, blue-white stars"
+      shadow_depth: "dramatic but soft"
+      atmospheric: "night clarity, fire warmth"
+    palette:
+      dominant:
+        - "iron gray"
+        - "fire amber"
+        - "stone dark"
+      accent:
+        - "star blue-white"
+        - "beard metal charms"
+      avoid:
+        - "bright daylight"
+        - "green"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Rembrandt lighting.
+      Medium shot of a stocky dwarf with iron-gray braided beard adorned with
+      metal charms, working a whetstone over a tool with practiced rhythm.
+      Face illuminated by dying firelight, expression showing quiet determination
+      and purpose found after grief. Starfield visible above, ancient stone behind.
+      Warm amber firelight from side, cool starlight from above.
+      The ritual of tool maintenance as meditation and commitment.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      action pose, theatrical expression, daylight, bright lighting
+    tags:
+      - "oath"
+      - "whetstone"
+      - "grimjaw"
+      - "purpose"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch06-foundations-of-stone-and-spirit-img-04-05-01"
+    source_moment: "ch06-foundations-of-stone-and-spirit-moment-05"
+    scene_id: "scn-06-04"
+    image_type: "detail"
+    category:
+      - "moment"
+      - "symbol"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      The most tender moment in the chapter. Massive hands performing the gentlest
+      act—wrapping preserved memory in lavender-scented cloth. Grief made portable.
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Extreme close-up of Grimjaw's massive weathered hands tenderly wrapping the
+      small carved figure of Meya in soft lavender-colored cloth. The contrast is
+      everything: huge, calloused, work-worn hands handling something small and
+      precious with infinite care. The cloth has the soft, worn look of being
+      unfolded and refolded many times over fifteen years. Workshop light from
+      windows makes the scene warm. Packed bags visible at edge of frame.
+    composition_notes: |
+      Portrait framing for intimate detail. Hands and carved figure fill most of frame.
+      Lavender cloth as color accent against warm wood and weathered skin.
+      Shallow depth of field. Workshop context blurred at edges.
+      The size contrast between hands and figure is the emotional core.
+    visual_hook: "Massive hands, tiny figure, lavender cloth—grief wrapped with care"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+    character_states:
+      grimjaw-ironbeard: |
+        Only hands visible. Massive, weathered, calloused—but moving with infinite
+        tenderness. The care in the gesture tells the whole story.
+    location: "grimjaw-cabin"
+    zone: "workshop-interior"
+    lighting:
+      primary_source: "Workshop window light"
+      quality: "soft, golden"
+      direction: "from side"
+      color_temperature: "warm amber"
+      shadow_depth: "soft, gentle"
+      atmospheric: "intimate, preserved"
+    palette:
+      dominant:
+        - "weathered skin tone"
+        - "warm wood"
+        - "lavender cloth"
+      accent:
+        - "window gold"
+        - "workshop amber"
+      avoid:
+        - "harsh colors"
+        - "cold tones"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Vermeer detail and light.
+      Extreme close-up of massive weathered dwarf hands tenderly wrapping
+      a small carved wooden figure of a dwarf woman in soft lavender-colored cloth.
+      The contrast between huge calloused work-worn hands and the delicate gesture.
+      Warm workshop light from window. Cloth looks soft and worn from years of use.
+      Portrait framing, shallow depth of field, the gentlest moment.
+      Grief made portable, memory preserved with care.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, full figure, bright lighting, busy background, action
+    tags:
+      - "grief"
+      - "tender"
+      - "lavender"
+      - "meya"
+      - "detail"
+      - "hands"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch06-foundations-of-stone-and-spirit-img-04-05-02"
+    source_moment: "ch06-foundations-of-stone-and-spirit-moment-05"
+    scene_id: "scn-06-04"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: |
+      Grimjaw's words to Veyra—"She would have liked you"—as he holds the wrapped
+      figure. The passing of approval from one broken soul to another.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Medium shot of Grimjaw holding the lavender-wrapped bundle against his chest,
+      speaking to Veyra. His expression is unguarded—genuine warmth breaking through
+      the gruff exterior. Veyra stands nearby, her scarred face receiving his words
+      with understanding. The workshop surrounds them, packed bags behind Grimjaw
+      showing he's ready to leave this home. Soft golden light fills the space.
+    composition_notes: |
+      Medium two-shot. Grimjaw in left two-thirds holding bundle, Veyra in right third.
+      His expression is the focal point—vulnerability visible. Packed workshop
+      behind him. Warm interior light throughout.
+    visual_hook: "Gruff dwarf holding wrapped memory, unguarded warmth in his eyes"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "veyra-thornwake"
+    character_states:
+      grimjaw-ironbeard: |
+        Holding lavender bundle against chest. Expression unguarded, genuine warmth.
+        Iron-gray beard, weathered face softened. Speaking of his wife to someone
+        he's decided to trust.
+      veyra-thornwake: |
+        Receiving his words with understanding. Burn scar visible, dark mohawk,
+        expression showing recognition of the honor being given.
+    location: "grimjaw-cabin"
+    zone: "workshop-interior"
+    lighting:
+      primary_source: "Workshop windows"
+      quality: "soft, golden"
+      direction: "diffused from multiple angles"
+      color_temperature: "warm amber"
+      shadow_depth: "gentle"
+      atmospheric: "departure warmth"
+    palette:
+      dominant:
+        - "lavender cloth"
+        - "workshop amber"
+        - "stone gray"
+      accent:
+        - "teal tattoos"
+        - "metal beard charms"
+      avoid:
+        - "cold tones"
+        - "harsh shadow"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Rembrandt warmth.
+      Workshop interior with packed bags showing departure. Medium two-shot:
+      a stocky dwarf with iron-gray braided beard holding a lavender-wrapped bundle
+      against his chest, expression showing unguarded warmth and trust.
+      A half-elf woman with dark mohawk and burn scar on left face receives his words.
+      Warm golden workshop light, soft shadows, departure atmosphere.
+      Fantasy: metal charms in beard, teal arm tattoos, weatherworn leather.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      action pose, theatrical expression, wrong character count
+    tags:
+      - "departure"
+      - "trust"
+      - "grimjaw"
+      - "veyra"
+      - "lavender"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch06-foundations-of-stone-and-spirit-img-04-06-01"
+    source_moment: "ch06-foundations-of-stone-and-spirit-moment-06"
+    scene_id: "scn-06-04"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Wisdom transmission—Meya's philosophy passing through Grimjaw to Veyra.
+      The broken ones recognize each other, understand their shared strength.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Two figures face to face in the workshop. Grimjaw, packed bags behind him,
+      looks at Veyra with the eyes of someone sharing essential truth. Veyra's
+      scarred face receives his wife's wisdom without shame—"You're all broken,
+      aren't you?" "Every one of us." The workshop is ready for departure.
+      Afternoon light creates a sense of ending and beginning.
+    composition_notes: |
+      Medium two-shot, figures facing each other. Grimjaw's packed bags provide
+      context behind him. Space between them charged with understanding.
+      Afternoon light from windows. Rule of thirds with figures on opposite sides.
+    visual_hook: "Two broken ones recognizing each other, wisdom passing between them"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "veyra-thornwake"
+    character_states:
+      grimjaw-ironbeard: |
+        Speaking with weight. Eyes showing recognition of a kindred soul.
+        Packed and ready to leave, but delivering essential truth first.
+      veyra-thornwake: |
+        Receiving without shame. Burn scar visible, posture open.
+        Confirming brokenness as qualification, not weakness.
+    location: "grimjaw-cabin"
+    zone: "workshop-interior"
+    lighting:
+      primary_source: "Afternoon window light"
+      quality: "soft, transitional"
+      direction: "from side"
+      color_temperature: "warm gold"
+      shadow_depth: "moderate"
+      atmospheric: "departure hour"
+    palette:
+      dominant:
+        - "workshop amber"
+        - "leather brown"
+        - "stone gray"
+      accent:
+        - "window gold"
+        - "teal tattoos"
+      avoid:
+        - "cold tones"
+        - "bright colors"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Rembrandt interior light.
+      Workshop interior with packed bags, ready for departure. Two figures facing
+      each other: a stocky dwarf with iron-gray braided beard speaking essential
+      truth, a half-elf woman with dark mohawk and burn scar receiving it.
+      Medium two-shot, afternoon window light, atmosphere of ending and beginning.
+      Understanding visible between them. Fantasy: metal charms, teal tattoos.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      action pose, theatrical expression, wrong character count
+    tags:
+      - "wisdom"
+      - "broken"
+      - "meya"
+      - "grimjaw"
+      - "veyra"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch06-foundations-of-stone-and-spirit-img-04-06-02"
+    source_moment: "ch06-foundations-of-stone-and-spirit-moment-06"
+    scene_id: "scn-06-04"
+    image_type: "detail"
+    category:
+      - "moment"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: |
+      The philosophy made visual—focus on their scarred hands, the evidence of
+      breaking and rebuilding. The broken ones know where the weak points are.
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Close detail shot of two pairs of hands in the workshop light. Grimjaw's
+      massive, calloused, bearing decades of mining work. Veyra's smaller but
+      scarred, the "record of weight" ink trail visible on her left arm. Neither
+      touching—just present together, showing their damage and their strength.
+      Workshop light illuminates the scars and calluses.
+    composition_notes: |
+      Portrait framing, hands filling center frame. Grimjaw's hands upper left,
+      Veyra's hands lower right. Workshop blurred behind. Warm light catches
+      texture of skin, scars, calluses. The damage is the story.
+    visual_hook: "Two pairs of scarred hands—the evidence of breaking and rebuilding"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "veyra-thornwake"
+    character_states:
+      grimjaw-ironbeard: |
+        Hands only—massive, calloused, bearing witness to decades of work.
+      veyra-thornwake: |
+        Hands and forearm—scarred, ink trail of names visible, showing her
+        own record of damage and survival.
+    location: "grimjaw-cabin"
+    zone: "workshop-interior"
+    lighting:
+      primary_source: "Workshop window"
+      quality: "soft, detailed"
+      direction: "from side"
+      color_temperature: "warm amber"
+      shadow_depth: "gentle"
+      atmospheric: "intimate, revealing"
+    palette:
+      dominant:
+        - "skin tones"
+        - "scar white"
+        - "workshop brown"
+      accent:
+        - "teal ink"
+        - "callus yellow"
+      avoid:
+        - "bright colors"
+        - "harsh contrast"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, intimate detail study.
+      Close-up of two pairs of hands in workshop light. Large weathered dwarf
+      hands bearing decades of calluses and mining scars. Smaller half-elf hands
+      with burn scars and a trail of teal ink tattoos climbing the left forearm.
+      Portrait framing, hands as subject, workshop blurred behind.
+      Warm amber light catching texture of damaged skin. Evidence of breaking
+      and rebuilding, strength through survival.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, full figure, busy background, faces
+    tags:
+      - "hands"
+      - "scars"
+      - "broken"
+      - "detail"
+      - "symbol"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch06-foundations-of-stone-and-spirit-img-07-10-01"
+    source_moment: "ch06-foundations-of-stone-and-spirit-moment-10"
+    scene_id: "scn-06-07"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "symbol"
+      - "emotion"
+    scene_mood: "pastoral"
+    mood_rationale: |
+      Dawn on ancient stone—the closing image that embodies the chapter's foundation
+      theme. Human connection to permanence, gratitude given to the mountain.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Dawn breaks over the stone circle. Veyra stands with her hand pressed against
+      an ancient standing stone, its surface glowing rose-gold in the first light.
+      Grimjaw watches from nearby, nodding approval. The rest of the company
+      prepares to depart in the background. The stone is massive, ancient, witness
+      to countless dawns—and now to this small gesture of gratitude. Mountains
+      rise behind, catching the dawn light.
+    composition_notes: |
+      Wide landscape shot. Veyra and stone in left third, Grimjaw in center watching,
+      company preparing to leave in right third. Dawn light strikes the stones,
+      creating rose-gold highlights. Mountains in background catch light.
+      Human scale against ancient permanence.
+    visual_hook: "Scarred hand on ancient stone, dawn light making both glow rose-gold"
     depicts_characters:
       - "veyra-thornwake"
       - "grimjaw-ironbeard"
-      - "thorne-brightward"
-      - "aldwin-gentleheart"
-      - "quartermaster-fayne"
-      - "corporal-darric"
-      - "archer-venn"
-      - "medic-halden"
-      - "sergeant-kelen"
     character_states:
       veyra-thornwake: |
-        Leading.
+        Hand pressed to stone, face showing quiet gratitude. Dawn light on her
+        scarred features. Small gesture carrying great weight.
       grimjaw-ironbeard: |
-        With group. Packs.
-      thorne-brightward: |
-        Formation.
-      aldwin-gentleheart: |
-        Walking.
-    location: "stone-circle-grove"
+        Watching, nodding approval. Packs ready, stance showing readiness
+        to teach that respect given is strength received.
+    location: "mountain-campsite"
+    zone: "stone-circle"
     lighting:
-      primary_source: "Morning sun"
-      quality: "Warm, backlighting stones"
-      direction: "Behind-right"
-      color_temperature: "Golden"
-      shadow_depth: "Gentle"
-      atmospheric: "Mist"
+      primary_source: "Dawn sun"
+      quality: "golden, new, hopeful"
+      direction: "from right, striking stones and figures"
+      color_temperature: "rose-gold dawn"
+      shadow_depth: "long morning shadows"
+      atmospheric: "mountain clarity, first light"
     palette:
       dominant:
-        - "rose gold"
-        - "gray granite"
-        - "green"
+        - "rose-gold dawn"
+        - "granite gray"
+        - "mountain blue"
       accent:
-        - "blue cloak"
+        - "warm stone gold"
+        - "teal tattoos"
       avoid:
-        - "heavy shadows"
+        - "harsh midday"
+        - "neon"
     prompt_used: |
-      Fantasy adventure company walking down mountain path at dawn,
-      ancient glowing standing stones behind them,
-      misty valley vista ahead,
-      hopeful departure,
-      classical oil painting, landscape,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Turner dawn luminosity.
+      Ancient stone circle on a mountain, dawn breaking over peaks.
+      A half-elf woman with dark mohawk and burn scar presses her scarred hand
+      against a massive standing stone that glows rose-gold in first light.
+      A stocky dwarf with iron-gray braided beard watches nearby, nodding approval.
+      Company preparing to depart in background. Wide landscape framing.
+      Rose-gold dawn light, long morning shadows, mountain clarity.
+      Human connection to permanence, gratitude to the mountain.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      midday light, harsh shadows, wrong character count
     tags:
-      - "departure"
-      - "hero"
-      - "ensemble"
-      - "pastoral"
+      - "dawn"
+      - "stone"
+      - "gratitude"
+      - "veyra"
+      - "foundation"
+      - "anchor"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch06-foundations-of-stone-and-spirit-img-07-10-02"
+    source_moment: "ch06-foundations-of-stone-and-spirit-moment-10"
+    scene_id: "scn-06-07"
+    image_type: "detail"
+    category:
+      - "moment"
+      - "symbol"
+    scene_mood: "pastoral"
+    mood_rationale: |
+      The hand on the stone—intimate detail of the closing gesture. Permanence
+      meeting impermanence, the mountain remembering everything including gratitude.
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Extreme close-up of Veyra's scarred hand pressed against ancient granite.
+      Her burns are visible, her ink trail of names climbing her wrist and forearm.
+      The stone's surface is rough, ancient, lichen-touched—but glowing rose-gold
+      in dawn light. Her fingers spread against the coolness. The contrast:
+      human skin (damaged, healing, temporary) against eternal stone (patient,
+      witnessing, remembering).
+    composition_notes: |
+      Portrait detail shot. Hand center frame, fingers spread. Stone texture fills
+      background. Dawn light creates rose-gold glow. Ink trail visible climbing
+      from hand to wrist. Shallow depth focuses on the connection point.
+    visual_hook: "Scarred hand on eternal stone, dawn-gilt meeting ancient gray"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Hand and forearm visible. Burn scars, ink trail of names, fingers spread
+        against cool stone. The gesture of one who has learned to thank the mountain.
+    location: "mountain-campsite"
+    zone: "stone-circle"
+    lighting:
+      primary_source: "Dawn sun"
+      quality: "golden, warm, new"
+      direction: "from side, catching stone and skin"
+      color_temperature: "rose-gold"
+      shadow_depth: "soft, long"
+      atmospheric: "morning clarity, first light"
+    palette:
+      dominant:
+        - "rose-gold light"
+        - "granite gray"
+        - "skin tone"
+      accent:
+        - "teal ink"
+        - "scar white"
+        - "lichen green"
+      avoid:
+        - "harsh colors"
+        - "cold blue"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, intimate detail.
+      Extreme close-up of a scarred hand pressed against ancient granite stone.
+      The hand shows burn scars, with a trail of teal ink tattoo names climbing
+      from hand to wrist. Stone surface rough, ancient, touched with lichen.
+      Dawn light makes both hand and stone glow rose-gold.
+      Portrait framing, shallow depth of field, connection point as focus.
+      Human impermanence meeting eternal stone, gratitude made tangible.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, full figure, busy background, faces, harsh light
+    tags:
+      - "hand"
+      - "stone"
+      - "dawn"
+      - "detail"
+      - "symbol"
+      - "gratitude"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch06-foundations-of-stone-and-spirit-img-02-02-01"
+    source_moment: "ch06-foundations-of-stone-and-spirit-moment-02"
+    scene_id: "scn-06-02"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "location"
+    scene_mood: "pastoral"
+    mood_rationale: |
+      The revelation of craft as character. The patrol expecting a hermit's hovel
+      finds instead a masterwork—the cabin tells us everything about who built it.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Wide establishing shot as the patrol crests the final rise. In the distance,
+      Grimjaw's cabin is revealed—built directly into the mountainside, walls
+      seamlessly blending stonework with natural rock face. Slate roof, glass
+      windows catching evening light, water wheel turning in the stream. The
+      patrol stops in surprise at the unexpected beauty. Evening light gilds
+      the scene, smoke rising from the chimney. Mountains rise behind.
+    composition_notes: |
+      Wide landscape shot. Patrol in foreground (small, backs to viewer), cabin
+      in middle ground as focal point. Mountain behind. Evening light creates
+      warm glow on cabin. Rule of thirds places cabin at right intersection.
+      Architecture as character study.
+    visual_hook: "Masterwork cabin emerging from mountainside, beauty where none was expected"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "quartermaster-fayne"
+      - "veyra-thornwake"
+    character_states:
+      grimjaw-ironbeard: |
+        Small figure leading the group toward his home. Pride evident even in
+        silhouette.
+      quartermaster-fayne: |
+        Stopped, appreciating. Artist's eye catching the functional aesthetics.
+      veyra-thornwake: |
+        Part of the group, taking in the revelation of Grimjaw's character.
+    location: "grimjaw-cabin"
+    zone: "cabin-approach"
+    lighting:
+      primary_source: "Evening sun"
+      quality: "golden, warm"
+      direction: "from left, gilding the cabin"
+      color_temperature: "golden hour"
+      shadow_depth: "long afternoon shadows"
+      atmospheric: "mountain clarity, wood smoke"
+    palette:
+      dominant:
+        - "stone gray"
+        - "evening gold"
+        - "mountain blue"
+      accent:
+        - "glass window gleam"
+        - "stream silver"
+        - "smoke gray"
+      avoid:
+        - "harsh colors"
+        - "modern materials"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, landscape master quality.
+      Wide establishing shot of a mountain cabin built directly into a rock face,
+      walls seamlessly blending stonework with natural stone. Slate roof, glass
+      windows catching evening light, water wheel turning in a stream.
+      Small group of figures approaching on a trail, stopped in surprise at the beauty.
+      Evening golden hour light, smoke rising from chimney, mountains behind.
+      Wide landscape framing, architecture as character revelation.
+      Craft made manifest, unexpected beauty in the wilderness.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      close-up, wrong architecture, harsh lighting, wrong character count
+    tags:
+      - "cabin"
+      - "architecture"
+      - "revelation"
+      - "grimjaw"
+      - "anchor"
+      - "establishing"
     generated_at: null
     file_name: null
     file_path: null

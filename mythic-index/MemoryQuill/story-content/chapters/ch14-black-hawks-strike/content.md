@@ -92,7 +92,7 @@ Aldwin nodded, his hazel eyes holding that patient attention she'd learned to va
 
 "How many lives are you responsible for?"
 
-She was quiet for a long moment, counting. "The core Company. Thorne's patrol. The Watchmen who've thrown in with us. The people in the infirmary. Mistress Elba, Finn, Sarge..." Her voice grew smaller. "Sometimes I feel like I'm carrying the weight of everyone who's ever looked at our lantern symbol and thought 'they'll come for me if I need them.'"
+She was quiet for a long moment, counting. "The core Company. Thorne's patrol. The Watchmen who've thrown in with us. The people in the infirmary. Mistress Elba, Finn, Tomaq..." Her voice grew smaller. "Sometimes I feel like I'm carrying the weight of everyone who's ever looked at our lantern symbol and thought 'they'll come for me if I need them.'"
 
 "That's a heavy burden."
 

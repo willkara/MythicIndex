@@ -41,7 +41,7 @@
   - *Current Status*: A deep, familial bond. She rolls her eyes when he calls her "Vexxy" in public, but would tear down a mountain to keep him safe.
   - *Feelings Toward*: She sees him as a stubborn, lovable, walking geological formation who needs her brains to stay safe. Her affection for him is immense, though she is more likely to show it by triple-checking the integrity of his gear than with a hug.
   
-- **Rylan Stormcaller**:
+- **Rylan Ashvale**:
   - *Nature of Relationship*: Fellow magical specialist and research colleague
   - *Hierarchy*: Different magical disciplines (artifice vs. elemental/planar magic)
   - *Dynamics*: Mutual intellectual respect and shared enthusiasm for discovery

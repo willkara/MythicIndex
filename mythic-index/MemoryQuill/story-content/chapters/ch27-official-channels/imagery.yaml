@@ -1,435 +1,642 @@
-# ============================================================================
-# CHAPTER IMAGERY SPECIFICATION
-# Chapter: Official Channels
-# Generated: 2025-12-21
-# ============================================================================
-
 metadata:
   entity_type: "chapter-imagery"
   slug: "ch27-official-channels"
   chapter_number: 27
   chapter_title: "Official Channels"
-  visual_thesis: "From institutional formality through the revelation of caged power, tracking the dangerous beauty of a legend made flesh and the cracks in her armor that reveal unexpected humanity."
+  visual_thesis: "Authority and necessity collide—the Company navigates official channels to acquire a dangerous asset, Lyra Kestrel the Mockingbird, whose skills they need but whose nature challenges everything they stand for."
   color_palette:
     primary:
-      - "#2C3E50"
-      - "#8B7355"
-      - "#4A4A4A"
-      - "#D4A574"
+      - "#5D4E37"  # Polished mahogany
+      - "#4A3C5C"  # Deep plum (Lyra's skin)
+      - "#1A1A2E"  # Pre-dawn darkness
     accent:
-      - "#800080"
-      - "#FFD700"
-      - "#C0C0C0"
+      - "#FFD700"  # Golden eyes
+      - "#9B59B6"  # Violet tattoo glow
+      - "#8B4513"  # Auburn hair
   generation_defaults:
     provider: "openai"
     model: "dall-e-3"
     quality: "hd"
   mood_distribution:
-    somber: 2
-    pastoral: 0
-    celebratory: 0
-    aquatic: 0
-    ethereal: 2
-    intimate: 3
-    kinetic: 0
-    ominous: 1
+    ominous: 3
+    intimate: 4
 
 characters:
   - ref: "lyra-kestrel"
     name: "Lyra Kestrel"
-    scene_variations: "In custody: plum skin, elegant horns. No weapons. Meticulous cell behavior. Tattoos flicker violet during mimicry. Cuffed during walk. Weary but graceful."
+    scene_variations: |
+      CHAPTER 27 VARIATIONS (THE MOCKINGBIRD REVEALED):
+      - SCENES 02-03 (Cell): Immaculate prisoner, deep plum tiefling skin with subtle shimmer.
+        Long auburn hair in severe bun with ornate hairpin. Elegant curved horns filed smooth.
+        Golden eyes sharp and calculating. Simple but quality prison attire.
+        Surrounded by precise wood carvings and organized books.
+      - SCENE 03 (Rage): Tattoos flicker with violet light like heat lightning.
+        Predatory posture, dangerous flash in golden eyes.
+      - SCENE 03 (Break): Vulnerable, smaller, younger-looking. Violet tattoo light gutters.
+        Tears held back making golden irises gleam like coins in wishing well.
+      - SCENES 05-08 (Release): Traveling clothes from evidence lockup. Iron cuffs (scene 05).
+        Silver tracking pendant at throat. Moving with calculated grace.
+        Twin kukri blades "Release and Chorus" returned for training.
+      - Throughout: Deep plum skin, auburn hair, golden eyes, elegant horns, violet shadow
+        wisps when using voice powers. Precise, economical movements.
     reference_images:
-      - "lyra-kestrel-portrait-01"
-
-  - ref: "veyra-thornwake"
-    name: "Veyra Thornwake"
-    scene_variations: "Standard gear. Assessing Lyra. Burn scar prominent. Lantern at hip."
-    reference_images:
-      - "#veyra-thornwake-official-portrait-01"
+      - "lyra-kestrel-portrait"
 
   - ref: "thorne-brightward"
     name: "Thorne Brightward"
-    scene_variations: "Rigid posture. Watchful eyes. Carrying tracking crystal. Disguised later."
+    scene_variations: |
+      CHAPTER 27 (HUNTER MEETS QUARRY):
+      - SCENE 02 (Recognition): Body goes rigid. Steel-gray hair, deep-set brown eyes.
+        Watch Captain's faded blue cloak. Voice tight, barely a whisper.
+      - SCENES 03-05: Growing complexity in expression. Professional tension mixed with
+        grudging respect. Former hunter now forced to work with former prey.
+      - SCENE 08: Glamour altering features. Voice changed by Aldwin's potion.
+        Disguised as traveling sellsword.
     reference_images:
-      - "#thorne-brightward-portrait-01"
+      - "thorne-brightward-portrait"
 
-  - ref: "lady-moira-blackwater"
-    name: "Lady Moira Blackwater"
-    scene_variations: "Commanding office. Auburn hair streaked silver. Directing the release."
+  - ref: "veyra-thornwake"
+    name: "Veyra Thornwake"
+    scene_variations: |
+      CHAPTER 27 (COMMANDER'S PRAGMATISM):
+      - Throughout: Dark mohawk with shaved sides, feathered braids. Burn scar on left face.
+        Weatherworn leather coat. Sharp dark eyes. Calm, deliberate command presence.
+      - SCENE 05: Leading formation through headquarters.
+      - SCENE 08: Final briefing, claiming Lyra as team member. Direct eye contact,
+        firm leadership in pre-dawn darkness.
     reference_images:
-      - "#lady-moira-blackwater-war-room-portrait-01"
+      - "veyra-thornwake-portrait"
 
-  - ref: "captain-grimsby"
-    name: "Captain Grimsby"
-    scene_variations: "Immaculate uniform. Formal, stiff greeting. Watching Lyra with wariness."
+  - ref: "vera-moonwhisper"
+    name: "Vera Moonwhisper"
+    scene_variations: |
+      CHAPTER 27 (OBSERVER):
+      - Throughout: Dark brown braided hair with feathers and beads. Hazel eyes.
+        Lean, alert posture. Echo the raven on shoulder.
+      - SCENE 07: Receiving carved raven gift from Lyra. Studying newcomer with
+        predator-recognizes-predator intensity.
     reference_images:
-      - "#captain-grimsby-official-portrait-01"
+      - "vera-moonwhisper-portrait"
 
 locations:
-  - ref: "city-watch-headquarters"
-    zones:
-      - id: "office"
-        chapter_context: "Mahogany paneling, maps, weapons. Morning light. Administrative weight."
-      - id: "corridors"
-        chapter_context: "Stone passages. Hushed whispers. Parting crowds. Torchlight and shadow."
   - ref: "spire-of-inquiry"
     zones:
-      - id: "detention"
-        chapter_context: "Austere stone cells. Magical wards. Lyra's ordered sanctuary of carvings and books."
+      - id: "detention-block"
+        chapter_context: |
+          High-security detention level beneath administrative buildings.
+          Reinforced stone walls, iron doors, magical wards humming faintly.
+          Anti-magic fields on certain cells. Sound-dampening materials.
+          Lyra's cell is immaculate: books in precise formations, delicate
+          wood carvings (birds, animals, abstract designs) on shelves,
+          sketches covering one wall in organized gallery. Small window
+          with filtered light. Atmosphere of controlled captivity transformed
+          into artist's studio through obsessive precision.
+
+  - ref: "city-watch-headquarters"
+    zones:
+      - id: "corridors"
+        chapter_context: |
+          Transition from administrative warmth (polished wood, brass fixtures)
+          to austere security corridors (reinforced stone, iron doors).
+          Ascending from detention depths back to administrative levels.
+          Clerks and off-duty guards present, flattening against walls
+          as the Mockingbird's procession passes. Whispers trailing in wake.
+          The legend walks among mortals. Natural light returns as they
+          ascend. Distant sounds of blacksmith's hammer, conversation murmurs.
+
   - ref: "warehouse-complex"
     zones:
-      - id: "interior"
-        chapter_context: "Industrial practicality. Forge glow. Pre-dawn departure energy."
+      - id: "mess"
+        chapter_context: |
+          Morning light. Nervous anticipation. Grimjaw's forge hammer
+          provides rhythmic backdrop. Team assembled for uncomfortable
+          introductions. Tables and benches, practical company space.
+          Tension thick in the air as the Mockingbird demonstrates
+          voice mimicry with purple shadow wisps at throat.
+
+      - id: "training-yard"
+        chapter_context: |
+          Fading evening light transitioning to pre-dawn darkness.
+          Lyra practicing kukri forms in quiet corner. Dark blurs
+          of "Release and Chorus" blades. Wagons being loaded for
+          departure. Final preparations and contingencies discussed.
+          The energy of dangerous missions pending.
 
 moments:
   - id: "ch27-official-channels-moment-01"
-    scene_id: "scn-27-01"
-    title: "The Intelligence Table"
-    narrative_beat: "Lady Moira spreading out regional maps and Silent Hand documents in her sunlit office."
-    visual_weight: "medium"
+    scene_id: "scn-27-02"
+    title: "Mockingbird"
+    narrative_beat: "Thorne stepped forward, his entire body going rigid as recognition hit. His voice came out tight, barely above a whisper. 'Mockingbird.'"
+    visual_weight: "high"
     characters_present:
-      - "lady-moira-blackwater"
-      - "veyra-thornwake"
       - "thorne-brightward"
-      - "marcus-heartbridge"
-    location_zone: "city-watch-headquarters/office"
-    transformation_state: "n/a"
+      - "lyra-kestrel"
+    location_zone: "spire-of-inquiry/detention-block"
+    transformation_state: "before"
     recommended_images: 1
 
   - id: "ch27-official-channels-moment-02"
     scene_id: "scn-27-02"
     title: "The Artist's Cell"
-    narrative_beat: "The first look at Lyra in her cell, meticulously carving a dragon while ignoring her visitors."
-    visual_weight: "hero"
+    narrative_beat: "Through the reinforced bars, they could see an immaculate space. Books were stacked in precise formations. Delicate wood carvings lined another shelf—birds, animals, abstract designs, all carved with extraordinary detail."
+    visual_weight: "high"
     characters_present:
       - "lyra-kestrel"
-    location_zone: "spire-of-inquiry/detention"
-    transformation_state: "n/a"
+    location_zone: "spire-of-inquiry/detention-block"
+    transformation_state: "before"
     recommended_images: 1
 
   - id: "ch27-official-channels-moment-03"
     scene_id: "scn-27-03"
-    title: "Predatory Reveal"
-    narrative_beat: "Lyra rising from her seat, her tattoos flickering with violet light as her professional mask slips."
-    visual_weight: "high"
+    title: "Not a Killer"
+    narrative_beat: "'I have killed,' she said, the word carrying weight that made the air feel thinner. 'I am not a killer. There is a difference. One is an action. The other is an identity.' Her intricate tattoos along her arms flickered with violet light."
+    visual_weight: "critical"
     characters_present:
       - "lyra-kestrel"
       - "thorne-brightward"
-    location_zone: "spire-of-inquiry/detention"
-    transformation_state: "n/a"
+    location_zone: "spire-of-inquiry/detention-block"
+    transformation_state: "during"
     recommended_images: 1
 
   - id: "ch27-official-channels-moment-04"
-    scene_id: "scn-27-04"
-    title: "Caged Freedom"
-    narrative_beat: "Lyra alone in her cell after the agreement, tracing her bird carving with a bitter smile."
-    visual_weight: "medium"
+    scene_id: "scn-27-03"
+    title: "Children Break Her"
+    narrative_beat: "This time, Lyra didn't crack. She broke. Her golden eyes went distant, as if she was seeing something far beyond the prison walls. When she opened them again, the tears she wouldn't let fall made her golden irises gleam like coins at the bottom of a wishing well."
+    visual_weight: "critical"
     characters_present:
       - "lyra-kestrel"
-    location_zone: "spire-of-inquiry/detention"
-    transformation_state: "n/a"
-    recommended_images: 1
+    location_zone: "spire-of-inquiry/detention-block"
+    transformation_state: "during"
+    recommended_images: 2
 
   - id: "ch27-official-channels-moment-05"
     scene_id: "scn-27-05"
-    title: "Parting the World"
-    narrative_beat: "Lyra walking through the corridors in chains, onlookers flattening themselves against the walls."
+    title: "Walk of Whispers"
+    narrative_beat: "Lyra walked in the center of their formation, her hands bound before her in heavy iron cuffs. Despite the restraints, she moved with an unnerving grace, her head held high. Clerks and off-duty guards would flatten themselves against the walls."
     visual_weight: "high"
     characters_present:
       - "lyra-kestrel"
       - "thorne-brightward"
       - "veyra-thornwake"
     location_zone: "city-watch-headquarters/corridors"
-    transformation_state: "n/a"
+    transformation_state: "during"
     recommended_images: 1
 
-  - id: "ch27-official-channels-moment-06"
-    scene_id: "scn-27-06"
-    title: "The Monitoring Matrix"
-    narrative_beat: "Wizard Aldrich attuning the silver tracking pendant to Lyra's throat in the arcane division chamber."
-    visual_weight: "medium"
-    characters_present:
-      - "lyra-kestrel"
-      - "thorne-brightward"
-    location_zone: "city-watch-headquarters/office"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch27-official-channels-moment-07"
-    scene_id: "scn-27-07"
-    title: "Voice of Deception"
-    narrative_beat: "Lyra demonstrating her mimicry, purple wisps of shadow dancing around her throat as she speaks."
+  - id: "ch27-official-channels-moment-09"
+    scene_id: "scn-27-08"
+    title: "Not on My Team"
+    narrative_beat: "'That includes you. You're part of this team for this mission. We protect each other.' Lyra straightened slightly, something flickering in her expression—surprise, perhaps even a touch of vulnerability before her careful mask reasserted itself."
     visual_weight: "high"
     characters_present:
-      - "lyra-kestrel"
       - "veyra-thornwake"
-      - "grimjaw-ironbeard"
-    location_zone: "warehouse-complex/interior"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch27-official-channels-moment-08"
-    scene_id: "scn-27-08"
-    title: "Dawn Departure"
-    narrative_beat: "The reconnaissance team preparing to depart the warehouse in the pre-dawn darkness."
-    visual_weight: "medium"
-    characters_present:
-      - "veyra-thornwake"
-      - "thorne-brightward"
       - "lyra-kestrel"
-    location_zone: "warehouse-complex/interior"
-    transformation_state: "n/a"
+    location_zone: "warehouse-complex/training-yard"
+    transformation_state: "after"
     recommended_images: 1
 
 images:
-  - custom_id: "ch27-official-channels-img-27-01-01"
+  - custom_id: "ch27-official-channels-img-02-01-01"
     source_moment: "ch27-official-channels-moment-01"
-    scene_id: "scn-27-01"
-    image_type: "establishing"
-    category:
-      - "location"
-      - "moment"
-    scene_mood: "somber"
-    mood_rationale: "Establishing the formal briefing. mahogany paneling and morning light. The weight of official responsibility."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Lady Moira's office in City Watch HQ. Maps covered in pins on one wall, weapons on another. Polished mahogany table covered in documents. Morning light through high windows creates long shadows. Veyra and Thorne are listening as Moira points at a regional map.
-    composition_notes: |
-      Wide shot. Deep perspective. Moira at center of action. Team around table. High ceiling. Formal atmosphere.
-    visual_hook: "The wall of tactical maps and pinned operations, the scale of the city's oversight made visible."
-    depicts_characters:
-      - "lady-moira-blackwater"
-      - "veyra-thornwake"
-      - "thorne-brightward"
-    character_states:
-      lady-moira-blackwater: |
-        Leaning forward. Pointing at map. Commanding.
-      veyra-thornwake: |
-        Listening. Guarded.
-      thorne-brightward: |
-        Military attention.
-    location: "city-watch-headquarters"
-    lighting:
-      primary_source: "Morning sun"
-      quality: "Clear, directional"
-      direction: "Side"
-      color_temperature: "Neutral/Gold"
-      shadow_depth: "Moderate"
-      atmospheric: "Dust motes"
-    palette:
-      dominant:
-        - "mahogany brown"
-        - "slate blue"
-        - "parchment"
-      accent:
-        - "brass fixtures"
-      avoid:
-        - "darkness"
-    prompt_used: |
-      Interior of a formal government office with mahogany walls and maps,
-      group of people around a large table looking at documents,
-      morning sunlight through tall windows,
-      military maps and brass details,
-      atmosphere of planning and authority,
-      classical oil painting, realism,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "establishing"
-      - "briefing"
-      - "office"
-      - "somber"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch27-official-channels-img-27-02-01"
-    source_moment: "ch27-official-channels-moment-02"
     scene_id: "scn-27-02"
-    image_type: "hero"
-    category:
-      - "character"
-      - "moment"
-    scene_mood: "intimate"
-    mood_rationale: "Lyra's introduction. Sanctuary of control within a cell. Ordered and beautiful precision."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Tiefling woman with plum skin sitting at a small wooden table in a prison cell. Completely absorbed in carving a miniature dragon. Golden eyes fixed on her work. Cell around her has stacks of books, delicate carvings on shelves, sketches on wall. Iron bars frame foreground.
-    composition_notes: |
-      Medium shot through cell bars. Lyra right third. Shelf of carvings background. Bar shadows as diagonals. Focus on the carving.
-    visual_hook: "Her fingers working the carving knife with supernatural precision while ignoring the world beyond"
-    depicts_characters:
-      - "lyra-kestrel"
-    character_states:
-      lyra-kestrel: |
-        Seated. Spine straight. Plum skin. Auburn hair in bun. Golden eyes focused. Concentrated.
-    location: "spire-of-inquiry"
-    lighting:
-      primary_source: "high window"
-      quality: "soft, contemplative"
-      direction: "side"
-      color_temperature: "cool/warm mix"
-      shadow_depth: "moderate"
-      atmospheric: "dust motes"
-    palette:
-      dominant:
-        - "deep plum"
-        - "prison gray"
-        - "wood tones"
-      accent:
-        - "amber-gold eyes"
-      avoid:
-        - "bright colors"
-    prompt_used: |
-      Tiefling woman with plum skin carving a small wooden dragon in a prison cell,
-      books and sketches in the background,
-      iron bars in foreground,
-      soft morning light from a high window,
-      atmosphere of quiet focus and artistic precision,
-      classical oil painting, Vermeer lighting,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin
-    tags:
-      - "hero"
-      - "lyra"
-      - "cell"
-      - "intimate"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch27-official-channels-img-27-03-01"
-    source_moment: "ch27-official-channels-moment-03"
-    scene_id: "scn-27-03"
-    image_type: "pivot"
+    image_type: "beat"
     category:
       - "moment"
       - "character"
       - "emotion"
     scene_mood: "ominous"
-    mood_rationale: "The predator's reveal. Violet light in tattoos. Sudden stillness and threat made visible."
+    mood_rationale: |
+      The hunter meets his quarry. Eight months of chase crystallized in a single moment
+      of recognition. Thorne's rigid body and whispered word carry the weight of history.
+      The bars between them are both physical and symbolic.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Medium shot through reinforced detention cell bars. In the foreground, Thorne Brightward
+      stands rigid, his body locked in recognition, steel-gray hair catching filtered light.
+      His profile is toward the viewer, faded blue cloak visible over his shoulder. Beyond
+      the bars, Lyra Kestrel looks up from her carving table with wry amusement, golden eyes
+      finding his. Her deep plum tiefling skin catches the small window's light. Elegant
+      horns curve back from her temples. Auburn hair secured in severe bun. Wood shavings
+      and a half-carved dragon on the table before her. Books and carvings visible on shelves.
+    composition_notes: |
+      Bars create visual separation and frame both figures. Thorne in foreground left,
+      rigid silhouette. Lyra in background right, relaxed predator. Shallow depth of field
+      keeps bars slightly soft. Eye line connection between hunter and prey.
+    visual_hook: "Thorne rigid with recognition as Lyra's golden eyes find him through prison bars"
+    depicts_characters:
+      - "thorne-brightward"
+      - "lyra-kestrel"
+    character_states:
+      thorne-brightward: |
+        Body rigid, recognition hitting. Voice tight. Steel-gray hair, deep-set brown eyes.
+        Faded blue cloak. Professional tension in every line of his body.
+      lyra-kestrel: |
+        Seated at carving table, looking up with mild surprise shifting to wry amusement.
+        Golden eyes sharp. Plum skin, auburn hair in bun, elegant horns. Carving knife
+        and half-finished dragon in hands.
+    location: "spire-of-inquiry"
+    zone: "detention-block"
+    lighting:
+      primary_source: "Small cell window"
+      quality: "filtered, directional"
+      direction: "from upper right, through window"
+      color_temperature: "cool daylight filtered through stone"
+      shadow_depth: "moderate, bars casting linear shadows"
+      atmospheric: "dust motes in light shaft"
+    palette:
+      dominant:
+        - "stone gray"
+        - "plum tiefling skin"
+        - "iron bar black"
+      accent:
+        - "golden eyes"
+        - "auburn hair warmth"
+        - "faded blue cloak"
+      avoid:
+        - "bright colors"
+        - "warm tones"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Caravaggio chiaroscuro.
+      High-security prison cell interior, reinforced iron bars in foreground.
+      Male soldier figure stands rigid in foreground, steel-gray hair, faded blue cloak,
+      body frozen in recognition. Beyond the bars, a female tiefling with deep plum skin
+      and elegant curved horns looks up from a carving table, golden eyes sharp and amused,
+      long auburn hair in severe bun. Cell contains precisely organized books and delicate
+      wood carvings on shelves. Filtered light from small window creates dust motes.
+      Medium shot, bars framing both figures, tension and recognition.
+      Fantasy realism, hunter meets quarry through prison bars.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      friendly expressions, warm lighting, bright colors, casual poses
+    tags:
+      - "recognition"
+      - "thorne"
+      - "lyra"
+      - "mockingbird"
+      - "detention"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch27-official-channels-img-02-02-01"
+    source_moment: "ch27-official-channels-moment-02"
+    scene_id: "scn-27-02"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "location"
+      - "character"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Humanity preserved in captivity. The assassin revealed as artist. The immaculate
+      cell space speaks to obsessive precision and the need to create beauty even in
+      confinement. Intimate glimpse into the private world behind the legend.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Wide shot looking through reinforced bars into Lyra's immaculate cell. The space
+      bears no resemblance to a typical prison—it is an artist's studio rendered in
+      miniature. Books are stacked in precise geometric formations on a small shelf.
+      Delicate wood carvings line another shelf: birds captured mid-flight, animals
+      in lifelike poses, abstract spiraling designs, each carved with extraordinary
+      detail. Sketches cover one wall in an organized gallery, arranged by subject
+      or technique. A small table holds carving tools laid out with surgical precision.
+      Lyra sits at the table in warm light from a small window, her plum skin luminous,
+      working on a miniature with focused absorption.
+    composition_notes: |
+      Through-the-bars framing creates voyeuristic intimacy. Wide angle captures the
+      full organized space. Lyra is small in frame, dwarfed by her creations.
+      Leading lines from shelves draw eye through the composition. Warm window light
+      provides contrast to cool stone.
+    visual_hook: "Prison cell transformed into artist's studio—carvings, books, sketches in perfect order"
+    depicts_characters:
+      - "lyra-kestrel"
+    character_states:
+      lyra-kestrel: |
+        Seated at carving table, absorbed in work. Plum skin catching window light.
+        Auburn hair in severe bun. Elegant horns. Expression focused, peaceful—the
+        artisan rather than the assassin. Surrounded by her creations.
+    location: "spire-of-inquiry"
+    zone: "detention-block"
+    lighting:
+      primary_source: "Small cell window"
+      quality: "warm, intimate, grazing surfaces"
+      direction: "from left side"
+      color_temperature: "warm afternoon gold"
+      shadow_depth: "soft gradients"
+      atmospheric: "still, contemplative"
+    palette:
+      dominant:
+        - "warm wood tones"
+        - "stone gray"
+        - "parchment cream"
+      accent:
+        - "plum tiefling skin"
+        - "golden window light"
+        - "carved wood grain"
+      avoid:
+        - "harsh colors"
+        - "prison gray uniformity"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Vermeer interior lighting.
+      Prison cell interior transformed into artist's studio, viewed through reinforced bars.
+      Books stacked in precise geometric formations on shelves. Delicate wood carvings
+      of birds, animals, and abstract designs arranged with obsessive care. Wall covered
+      in organized sketches. Female tiefling with deep plum skin and elegant horns
+      works at small carving table, auburn hair in bun, warm window light on her face.
+      Wide shot showing full organized space, intimate atmosphere despite confinement.
+      Humanity preserved in captivity, the assassin revealed as artist.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      dirty cell, chaos, disorder, typical prison, grimy surfaces
+    tags:
+      - "cell"
+      - "artist"
+      - "carvings"
+      - "lyra"
+      - "intimacy"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch27-official-channels-img-03-03-01"
+    source_moment: "ch27-official-channels-moment-03"
+    scene_id: "scn-27-03"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "magic"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The Mockingbird shows her teeth. Identity defended with dangerous precision.
+      The violet tattoo flicker reveals the supernatural power beneath the composed
+      exterior. This is the moment viewers understand why people whisper about her.
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Close medium shot of Lyra Kestrel facing the camera, risen from her chair with
+      predatory sharpness. Her golden eyes are cold and dangerous, boring into the
+      viewer. The intricate tattoos along her arms flicker with violet light like
+      heat lightning—brief, supernatural pulses that make shadows dance. Her deep
+      plum skin seems to absorb light while her horns catch it. Auburn hair still
+      in severe bun, but strands have escaped, framing her face. Her posture is
+      coiled tension, ready to strike. The cell bars are visible at frame edges,
+      but she dominates the space entirely. The air itself seems thinner.
+    composition_notes: |
+      Tight framing on Lyra, ultra-wide aspect emphasizing the confrontational moment.
+      Direct eye contact with viewer creates uncomfortable intimacy. Violet tattoo
+      glow provides unnatural accent lighting from her arms. Cell bars at edges
+      remind us of her containment even as her presence overwhelms the frame.
+    visual_hook: "Lyra's golden eyes cold and dangerous, arm tattoos flickering violet like heat lightning"
+    depicts_characters:
+      - "lyra-kestrel"
+    character_states:
+      lyra-kestrel: |
+        Standing, predatory posture. Golden eyes cold and dangerous. Tattoos flickering
+        with violet light. The careful performance cracked, revealing something older,
+        something that learned to bite before it learned to smile. Voice carrying
+        weight that makes air feel thinner.
+    location: "spire-of-inquiry"
+    zone: "detention-block"
+    lighting:
+      primary_source: "Violet tattoo glow + cell window"
+      quality: "unnatural, pulsing"
+      direction: "from arms (tattoos), ambient from window"
+      color_temperature: "violet-purple supernatural mixed with cool daylight"
+      shadow_depth: "deep, dancing with tattoo pulses"
+      atmospheric: "charged, threatening"
+    palette:
+      dominant:
+        - "deep plum skin"
+        - "violet magical glow"
+        - "shadow black"
+      accent:
+        - "golden eyes"
+        - "auburn hair"
+        - "cell stone gray"
+      avoid:
+        - "warm friendly tones"
+        - "soft lighting"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Rembrandt dramatic lighting.
+      Close medium shot of a female tiefling confronting the viewer with cold fury.
+      Deep plum skin, elegant curved horns, golden eyes cold and dangerous.
+      Long auburn hair in bun with escaped strands. Intricate arm tattoos flicker
+      with violet light like heat lightning, casting dancing shadows.
+      Predatory posture, coiled tension. Prison cell bars visible at frame edges.
+      Ultra-wide cinematic aspect, direct eye contact, supernatural menace.
+      The Mockingbird showing her teeth, identity defended with dangerous precision.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      friendly expression, soft lighting, submissive pose, bright colors
+    tags:
+      - "dangerous"
+      - "lyra"
+      - "tattoos"
+      - "violet"
+      - "hero-image"
+      - "confrontation"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch27-official-channels-img-03-04-01"
+    source_moment: "ch27-official-channels-moment-04"
+    scene_id: "scn-27-03"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      The breaking—vulnerability revealed. The predator gone, replaced by something
+      raw and wounded. This is the emotional peak of the chapter, the moment that
+      transforms Lyra from threat to tragic figure. The tears she won't let fall
+      are more powerful than any that could be shed.
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Close-up of Lyra's face, the frame tight on her features. Her golden eyes have
+      gone distant, seeing something far beyond the prison walls—the faces of her
+      niece and nephew. The violet light in her tattoos has guttered and died,
+      leaving her looking suddenly smaller, younger, more fragile. Her hands tremble
+      slightly at the edge of frame. When her eyes refocus on the viewer, unshed tears
+      make her golden irises gleam like coins at the bottom of a wishing well—liquid
+      gold that catches and multiplies what little light enters the cell. Her expression
+      is raw grief held back by will alone. The assassin is gone. Only the wounded woman
+      remains.
+    composition_notes: |
+      Extreme close-up on face. Ultra-wide aspect with negative space representing
+      emotional isolation. Soft focus on everything but her eyes. Tears catching
+      light are the focal point—golden coins of grief. Intimate despite the format.
+    visual_hook: "Unshed tears making golden irises gleam like coins at the bottom of a wishing well"
+    depicts_characters:
+      - "lyra-kestrel"
+    character_states:
+      lyra-kestrel: |
+        Broken, not cracked. Golden eyes distant then refocusing with unshed tears.
+        Violet tattoo light guttered. Looking smaller, younger, wounded.
+        Hands trembling. Voice lost its edges—just a woman confronting an old wound.
+    location: "spire-of-inquiry"
+    zone: "detention-block"
+    lighting:
+      primary_source: "Soft cell window light"
+      quality: "gentle, catching tears"
+      direction: "from side, highlighting tear-shine"
+      color_temperature: "muted, desaturated"
+      shadow_depth: "soft, protective"
+      atmospheric: "still, heavy with emotion"
+    palette:
+      dominant:
+        - "deep plum skin"
+        - "muted stone"
+        - "shadow"
+      accent:
+        - "liquid gold eyes with tear-gleam"
+        - "auburn hair warmth"
+      avoid:
+        - "bright colors"
+        - "violet glow (extinguished)"
+        - "harsh lighting"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Vermeer intimate portraiture.
+      Extreme close-up of a female tiefling's face, deep plum skin and elegant horns.
+      Golden eyes hold unshed tears that gleam like coins at the bottom of a wishing well,
+      liquid gold catching soft light. Expression is raw grief held back by will—
+      the predator gone, replaced by something wounded and young.
+      Auburn hair in bun, some strands escaped. No violet tattoo glow, power extinguished.
+      Ultra-wide cinematic aspect, soft focus on everything but the gleaming eyes.
+      Emotional vulnerability revealed, the breaking moment.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      angry expression, dangerous pose, violet glow, falling tears, theatrical crying
+    tags:
+      - "emotional"
+      - "lyra"
+      - "vulnerable"
+      - "tears"
+      - "hero-image"
+      - "children"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch27-official-channels-img-03-04-02"
+    source_moment: "ch27-official-channels-moment-04"
+    scene_id: "scn-27-03"
+    image_type: "detail"
+    category:
+      - "moment"
+      - "symbol"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      The trembling hands—physical manifestation of emotional rupture. Not with rage
+      but with grief. The hands that have killed are now the hands that remember
+      children's faces. Intimate detail work showing the cost of vulnerability.
     aspect_ratio: "3:4"
     orientation: "portrait"
     size: "1024x1365"
     visual_description: |
-      Lyra has risen from her chair, carving knife stopped. Golden eyes cold and ancient. Tattoos on arms flicker with violet light like heat lightning. Thorne stands rigid beyond bars. Air feels thinner.
+      Extreme close-up of Lyra's hands in her lap, trembling. Deep plum tiefling skin,
+      the fingers that moments ago held carving knife with surgical precision now
+      unable to stay still. The intricate tattoos on her wrists and forearms are
+      visible but unlit—no violet glow, power dormant. Her nails are practical, clean.
+      A few wood shavings cling to her fingers from her earlier carving work.
+      The hands of an artist, the hands of an assassin, now just the hands of a woman
+      remembering the faces of her niece and nephew on every child she ever saved.
     composition_notes: |
-      Low angle looking up at Lyra. Bars between her and viewer. Thorne visible through bars background. Violet light draws eye to arms and eyes.
-    visual_hook: "Violet light flickering through her arm tattoos like heat lightning under plum skin"
-    depicts_characters:
-      - "lyra-kestrel"
-      - "thorne-brightward"
-    character_states:
-      lyra-kestrel: |
-        Standing. Predatory grace. Violet light in tattoos. Plum skin. Ancient cold gaze.
-      thorne-brightward: |
-        Beyond bars. Rigid. Clenched jaw.
-    location: "spire-of-inquiry"
-    lighting:
-      primary_source: "ambient + violet glow"
-      quality: "unsettling, unnatural"
-      direction: "ambient + upward from arms"
-      color_temperature: "cold with violet undertones"
-      shadow_depth: "deep"
-      atmospheric: "oppressive stillness"
-    palette:
-      dominant:
-        - "deep plum"
-        - "prison gray"
-        - "bruise purple"
-      accent:
-        - "violet magic"
-      avoid:
-        - "warm tones"
-    prompt_used: |
-      Tiefling woman standing in a cell with glowing violet tattoos on her arms,
-      cold ancient golden eyes,
-      soldier watching from outside the bars,
-      unsettling purple light illuminating her face from below,
-      atmosphere of hidden danger revealed,
-      classical oil painting, Symbolist unease,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, friendly
-    tags:
-      - "pivot"
-      - "lyra"
-      - "magic"
-      - "ominous"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch27-official-channels-img-27-04-01"
-    source_moment: "ch27-official-channels-moment-04"
-    scene_id: "scn-27-04"
-    image_type: "character"
-    category:
-      - "character"
-      - "symbol"
-      - "emotion"
-    scene_mood: "intimate"
-    mood_rationale: "True solitude. No performance. Caged bird holding a carved bird. Tender vulnerability."
-    aspect_ratio: "2:3"
-    orientation: "portrait"
-    size: "1024x1536"
-    visual_description: |
-      Lyra sits alone after the visitors have left. She holds a half-finished bird carving. Amber-gold eyes soft and unguarded. Faint bitter smile. Cell organization surrounds her. Light from small window falls gently.
-    composition_notes: |
-      Close portrait. Intimate framing. Slightly high angle. Bird carving draws eye. Iron bars soft-focus background.
-    visual_hook: "Her amber eyes soft and unguarded for the first time, a bitter smile on plum-colored lips"
+      Portrait orientation for intimate detail. Hands fill most of frame. Shallow
+      depth of field. Texture emphasis on skin, tattoo lines, wood shavings.
+      The tremor should be implied through slight blur or positioning rather than
+      motion blur.
+    visual_hook: "Assassin's precise hands trembling—not with rage, but grief"
     depicts_characters:
       - "lyra-kestrel"
     character_states:
       lyra-kestrel: |
-        Seated. Alone. Unguarded expression. Tracing bird wings. Plum skin.
+        Only hands visible. Trembling in lap. Tattoos visible but unlit. Wood shavings
+        clinging to fingers. The physical manifestation of emotional breaking.
     location: "spire-of-inquiry"
+    zone: "detention-block"
     lighting:
-      primary_source: "high window"
-      quality: "gentle, contemplative"
-      direction: "side"
-      color_temperature: "cool natural vs warm wood"
+      primary_source: "Soft ambient cell light"
+      quality: "even, revealing texture"
+      direction: "from above"
+      color_temperature: "neutral to cool"
       shadow_depth: "soft"
-      atmospheric: "stillness"
+      atmospheric: "still, intimate"
     palette:
       dominant:
-        - "deep plum"
-        - "warm wood"
-        - "soft gray"
+        - "deep plum skin"
+        - "tattoo ink dark"
+        - "wood shaving gold-brown"
       accent:
-        - "amber eyes"
+        - "practical nail pink"
+        - "fabric of lap"
       avoid:
-        - "harsh light"
+        - "violet glow"
+        - "bright colors"
     prompt_used: |
-      Close portrait of a tiefling woman alone in a prison cell holding a small bird carving,
-      soft unguarded expression,
-      faint light from a high window,
-      cell filled with books and wood carvings,
-      atmosphere of quiet solitude and hidden heart,
-      classical oil painting, Vermeer lighting,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Vermeer detail work.
+      Extreme close-up of trembling hands in a lap. Deep plum tiefling skin,
+      intricate dark tattoos on wrists and forearms, tattoos unlit with no glow.
+      Fingers that were precise now tremble with grief not rage. Wood shavings
+      cling to the skin. Practical clean nails. The hands of an artist and assassin
+      now showing vulnerability. Portrait orientation, shallow depth of field,
+      intimate detail, emotional weight carried in physical stillness broken.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, aggressive
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      clenched fists, angry gesture, violet glowing tattoos, weapons in hand
     tags:
-      - "character"
+      - "detail"
+      - "hands"
       - "lyra"
-      - "solitude"
-      - "intimate"
+      - "trembling"
+      - "vulnerability"
     generated_at: null
     file_name: null
     file_path: null
@@ -437,67 +644,97 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch27-official-channels-img-27-05-01"
+  - custom_id: "ch27-official-channels-img-05-05-01"
     source_moment: "ch27-official-channels-moment-05"
     scene_id: "scn-27-05"
     image_type: "anchor"
     category:
       - "moment"
+      - "character"
       - "action"
-    scene_mood: "somber"
-    mood_rationale: "Legend made flesh in chains. Public spectacle. The weight of reputation."
-    aspect_ratio: "21:9"
+    scene_mood: "ominous"
+    mood_rationale: |
+      Legend walks among mortals. Reputation made flesh. The whispers trailing in her
+      wake, the clerks flattening against walls, the fear she generates—all captured
+      in a single procession through the corridors of power.
+    aspect_ratio: "16:9"
     orientation: "landscape"
-    size: "1792x768"
+    size: "1792x1024"
     visual_description: |
-      Lyra at center of guard formation in HQ. Heavy iron cuffs on wrists. Walking with grace, head high. Clerks flatten against walls. Whispers trail. Serene expression but jaw tight. Thorne visible behind watching her.
+      Wide shot of the Watch headquarters corridor. Lyra walks at the center of a guard
+      formation, her hands bound before her in heavy iron cuffs. Despite the restraints,
+      she moves with unnerving grace, head held high, golden eyes taking in everything.
+      Her deep plum skin and elegant horns mark her as distinctly tiefling. Flanking her
+      are grim-faced guards. In the foreground left, a young watchman presses himself
+      against the wall, his face pale. His veteran partner stands nearby, unable to take
+      his eyes off the prisoner. In the background, clerks have stopped mid-motion,
+      documents frozen in hand. The wake of whispers is almost visible—conversations
+      dying as she passes. Veyra and Marcus lead the way ahead, while Thorne follows
+      behind with Lady Moira.
     composition_notes: |
-      Wide cinematic low angle. Parted crowd. Space opens around her. Iron cuffs prominent. Leading lines toward procession.
-    visual_hook: "Her elegant horns and high-held head above iron chains, moving with fluid grace"
+      Wide corridor shot with Lyra as focal point despite being surrounded.
+      Lines of architecture lead to her. Reaction shots in foreground provide
+      scale of impact. Movement implied from left to right.
+    visual_hook: "Lyra walking in iron cuffs with unnerving grace as clerks flatten against walls"
     depicts_characters:
       - "lyra-kestrel"
       - "thorne-brightward"
       - "veyra-thornwake"
     character_states:
       lyra-kestrel: |
-        Cuffed. Head high. Graceful movement. Serene but jaw tight. Plum skin.
+        Center of formation. Iron cuffs on wrists. Head held high with unnerving grace.
+        Golden eyes cataloging everything. Deep plum skin, elegant horns, auburn hair.
+        The Mockingbird walking among mortals.
       thorne-brightward: |
-        Behind Lyra. Watchful. Armor visible.
+        Following behind, expression complex. Eight months of chase now walking beside
+        the reality. Tension in his posture.
       veyra-thornwake: |
-        Ahead. Clearing path. Professional focus.
+        Leading ahead, clearing path. Calm command presence despite unusual escort.
     location: "city-watch-headquarters"
+    zone: "corridors"
     lighting:
-      primary_source: "torch + window"
-      quality: "dramatic, directional"
-      direction: "side"
-      color_temperature: "warm vs cool"
-      shadow_depth: "deep, rich"
-      atmospheric: "heavy air"
+      primary_source: "Corridor windows, ambient torches"
+      quality: "institutional, even"
+      direction: "from multiple sources"
+      color_temperature: "neutral daylight"
+      shadow_depth: "moderate"
+      atmospheric: "tense silence made visible"
     palette:
       dominant:
-        - "stone gray"
-        - "plum skin"
-        - "iron black"
+        - "stone gray corridor"
+        - "watch blue uniforms"
+        - "iron cuff black"
       accent:
-        - "gold hairpin"
+        - "plum tiefling skin"
+        - "golden eyes"
+        - "pale frightened faces"
       avoid:
-        - "bright colors"
+        - "warm inviting colors"
+        - "casual atmosphere"
     prompt_used: |
-      Wide cinematic shot of a tiefling woman in chains being escorted through a crowded stone hallway,
-      onlookers backing away in fear,
-      guards surrounding her,
-      man in blue cloak following closely,
-      dramatic light and long shadows,
-      atmosphere of legendary reputation and hushed whispers,
-      classical oil painting, Rembrandt lighting,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, classical composition.
+      Wide shot of a stone corridor in a fantasy government building.
+      A female tiefling with deep plum skin and elegant horns walks at the center
+      of a guard formation, hands bound in heavy iron cuffs, head held high with
+      unnerving grace. Golden eyes miss nothing. Grim-faced guards flank her.
+      In foreground, a young watchman presses against the wall in fear while his
+      veteran partner stares. Clerks in background frozen mid-motion.
+      The wake of whispers, legend walking among mortals. Institutional lighting,
+      tense atmosphere, procession of power.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, happy people
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      friendly atmosphere, casual poses, smiling faces, relaxed guards
     tags:
-      - "anchor"
       - "procession"
-      - "legend"
-      - "somber"
+      - "mockingbird"
+      - "reputation"
+      - "lyra"
+      - "whispers"
     generated_at: null
     file_name: null
     file_path: null
@@ -505,197 +742,96 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch27-official-channels-img-27-06-01"
-    source_moment: "ch27-official-channels-moment-06"
-    scene_id: "scn-27-06"
+  - custom_id: "ch27-official-channels-img-08-09-01"
+    source_moment: "ch27-official-channels-moment-09"
+    scene_id: "scn-27-08"
     image_type: "beat"
     category:
-      - "character"
-      - "magic"
-    scene_mood: "intimate"
-    mood_rationale: "The submission to oversight. Attuning the silver tracking pendant. Clinical but intimate magic."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
-    visual_description: |
-      Lyra leaning forward as Wizard Aldrich places a silver pendant around her neck. The pendant has intricate writhing engravings. A faint glow appears beneath her collar. Thorne stands nearby, holding the corresponding tracking crystal. Arcane workbench background.
-    composition_notes: |
-      Tight shot on the neck and hands. Focus on the silver pendant and the wizard's precise fingers. High texture on skin and metal.
-    visual_hook: "The faint, magical silver glow pulsing against the deep plum skin of her throat."
-    depicts_characters:
-      - "lyra-kestrel"
-      - "thorne-brightward"
-    character_states:
-      lyra-kestrel: |
-        Leaning forward. Passive submission. Neck exposed.
-      thorne-brightward: |
-        Watching. Holding crystal. Resigned.
-    location: "city-watch-headquarters"
-    lighting:
-      primary_source: "Workbench lamps + magical glow"
-      quality: "Sharp, clinical"
-      direction: "Side"
-      color_temperature: "Cool blue magic vs warm lamp"
-      shadow_depth: "Moderate"
-      atmospheric: "Still"
-    palette:
-      dominant:
-        - "plum skin"
-        - "silver"
-        - "wood brown"
-      accent:
-        - "blue magical glow"
-      avoid:
-        - "chaos"
-    prompt_used: |
-      Wizard placing a magical silver pendant around a tiefling woman's neck,
-      intricate engravings on metal glowing faintly,
-      man in background watching,
-      arcane workshop setting,
-      close up on the act of binding,
-      classical oil painting, Vermeer lighting,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "beat"
-      - "magic"
-      - "binding"
-      - "intimate"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch27-official-channels-img-27-07-01"
-    source_moment: "ch27-official-channels-moment-07"
-    scene_id: "scn-27-07"
-    image_type: "detail"
-    category:
-      - "character"
-      - "magic"
-      - "symbol"
-    scene_mood: "ethereal"
-    mood_rationale: "Lyra's unique magical signature. Supernatural ability made visible. Wonder and unease."
-    aspect_ratio: "3:4"
-    orientation: "portrait"
-    size: "1024x1365"
-    visual_description: |
-      Lyra speaking in Veyra's voice. Wisps of darker purple shadow dance around her neck and collarbone. Swirling like ethereal smoke or sound waves. Glowing faintly. Veyra watches in background with unsettled fascination. Grimjaw at forge background.
-    composition_notes: |
-      Medium-close on face and throat. Wisps visual centerpiece. Warehouse interior soft focus background. Natural clerestory light mixed with forge glow and magic.
-    visual_hook: "Wisps of darker purple shadow dancing visibly around her neck like ethereal smoke"
-    depicts_characters:
-      - "lyra-kestrel"
-      - "veyra-thornwake"
-      - "grimjaw-ironbeard"
-    character_states:
-      lyra-kestrel: |
-        Composed. Professional demonstration. Purple wisps at throat. Plum skin.
-      veyra-thornwake: |
-        Background. Unsettled fascination.
-      grimjaw-ironbeard: |
-        Background. Keen assessment.
-    location: "warehouse-complex"
-    lighting:
-      primary_source: "clerestory light + forge glow + magic"
-      quality: "soft, luminous, otherworldly"
-      direction: "ambient + side + internal"
-      color_temperature: "mixed natural/warm/purple"
-      shadow_depth: "minimal, dreamy"
-      atmospheric: "luminous magic"
-    palette:
-      dominant:
-        - "deep plum"
-        - "purple wisps"
-        - "gray-brown"
-      accent:
-        - "amber forge glow"
-      avoid:
-        - "harsh shadows"
-    prompt_used: |
-      Tiefling woman with purple wisps of magical shadow dancing around her throat as she speaks,
-      glowing sound waves made of smoke,
-      warehouse interior background with people watching,
-      mysterious and beautiful magic demonstration,
-      classical oil painting, Pre-Raphaelite luminosity,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin, aggressive
-    tags:
-      - "detail"
-      - "mimicry"
-      - "magic"
-      - "ethereal"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch27-official-channels-img-27-08-01"
-    source_moment: "ch27-official-channels-moment-08"
-    scene_id: "scn-27-08"
-    image_type: "establishing"
-    category:
-      - "location"
       - "moment"
-    scene_mood: "somber"
-    mood_rationale: "Departure into the unknown. Pre-dawn shadows and the unlikely alliance. The start of a new, dangerous path."
-    aspect_ratio: "21:9"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Inclusion offered—the outsider claimed as team. Veyra's direct leadership
+      meets Lyra's carefully maintained walls. The flicker of vulnerability before
+      the mask returns captures the tentative beginning of trust. Pre-dawn darkness
+      gives the moment weight and privacy.
+    aspect_ratio: "16:9"
     orientation: "landscape"
-    size: "1792x768"
+    size: "1792x1024"
     visual_description: |
-      Unmarked wagons rolling out of the warehouse in pre-dawn darkness. The team is gathering in the courtyard. Veyra, Thorne, Lyra, and Rill are visible by the lead wagon. Lanterns cast small islands of light. The city is silent and dark. A sense of secrecy and heavy stakes.
+      Medium two-shot of Veyra and Lyra in the pre-dawn darkness of the warehouse
+      training yard. Lantern light provides warm illumination. Veyra stands facing
+      Lyra, her burn-scarred face serious, dark mohawk and feathered braids visible.
+      She makes direct eye contact—the commander claiming her responsibility.
+      Lyra has straightened slightly from her previous relaxed stance, something
+      flickering in her expression: surprise, perhaps vulnerability, before her
+      careful mask begins to reassert itself. Her golden eyes are caught between
+      distrust and an unfamiliar hope. Behind them, loaded wagons wait for departure.
+      The moment is private despite others nearby.
     composition_notes: |
-      Wide cinematic shot. Perspective from the side of the exit. Wagons create a line of motion. Small figures silhouetted by their own lanterns.
-    visual_hook: "The small points of lantern light against the vast, sleeping city, marking the beginning of a mission that officially doesn't exist."
+      Two-shot with Veyra slightly dominant in frame (speaker). Direct eye line
+      between them. Lantern light creates warm bubble in pre-dawn darkness.
+      Wagons in soft focus background establish context. Intimate framing
+      despite wide setting.
+    visual_hook: "Veyra claiming Lyra as team while vulnerability flickers before the mask returns"
     depicts_characters:
       - "veyra-thornwake"
-      - "thorne-brightward"
       - "lyra-kestrel"
     character_states:
       veyra-thornwake: |
-        Standing by wagon. Commanding.
-      thorne-brightward: |
-        Checking gear. Unrecognizable features (disguise).
+        Standing firm, burn scar visible, direct eye contact. Commander claiming
+        responsibility. Dark mohawk, feathered braids. "We protect each other"
+        carrying full weight of leadership.
       lyra-kestrel: |
-        Watching from the shadow of the wagon. Watchful.
+        Straightened slightly. Surprise and vulnerability flickering before mask
+        reasserts. Golden eyes caught between distrust and unfamiliar hope.
+        Not used to being claimed rather than used.
     location: "warehouse-complex"
+    zone: "training-yard"
     lighting:
-      primary_source: "Hand lanterns"
-      quality: "Small, isolated pools"
-      direction: "Radial"
-      color_temperature: "Amber gold vs Pre-dawn blue"
-      shadow_depth: "Deep, long"
-      atmospheric: "Cold morning mist"
+      primary_source: "Lantern"
+      quality: "warm, intimate bubble"
+      direction: "from side, illuminating both faces"
+      color_temperature: "warm amber"
+      shadow_depth: "soft, protective darkness beyond"
+      atmospheric: "pre-dawn stillness"
     palette:
       dominant:
-        - "deep blue-black"
-        - "shadow"
-        - "warm amber"
+        - "pre-dawn darkness"
+        - "warm lantern gold"
+        - "leather earth tones"
       accent:
-        - "wagon wood"
+        - "plum tiefling skin"
+        - "golden eyes"
+        - "burn scar texture"
       avoid:
-        - "bright sun"
+        - "harsh daylight"
+        - "cool tones"
     prompt_used: |
-      Medieval wagons leaving a dark stone building at predawn,
-      small points of lantern light in a sleeping city,
-      silhouettes of adventurers gathering,
-      atmosphere of secrecy and danger,
-      wide cinematic composition,
-      classical oil painting, Rembrandt lighting,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Rembrandt intimate lighting.
+      Medium two-shot of two women in pre-dawn darkness of a warehouse training yard.
+      First woman is half-elf with dark mohawk, feathered braids, burn scar on left face,
+      making direct eye contact with authority and warmth. Second woman is tiefling
+      with deep plum skin, elegant horns, golden eyes, auburn hair—expression flickering
+      between surprise and vulnerability before mask reasserts. Warm lantern light
+      creates intimate bubble against darkness. Loaded wagons in soft focus background.
+      The moment when outsider is claimed as team.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      bright daylight, hostile expressions, confrontational poses, violet glow
     tags:
-      - "establishing"
+      - "acceptance"
+      - "veyra"
+      - "lyra"
+      - "team"
+      - "vulnerability"
       - "departure"
-      - "mission"
-      - "somber"
     generated_at: null
     file_name: null
     file_path: null

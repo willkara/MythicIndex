@@ -52,7 +52,7 @@
   - *Current Status*: Trusted heavy rescue specialist
   - *Professional Opinion of*: Values his commitment to ensuring no one is left behind
 
-- **Rylan Stormcaller**: 
+- **Rylan Ashvale**: 
   - *Nature of Relationship*: Commander and Magical Support
   - *Hierarchy*: Leader to specialist
   - *Dynamics*: Values his unique magical capabilities for rescue operations

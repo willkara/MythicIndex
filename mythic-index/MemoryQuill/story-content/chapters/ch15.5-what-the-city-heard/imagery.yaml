@@ -1,319 +1,239 @@
-# ============================================================================
-# CHAPTER IMAGERY SPECIFICATION
-# Chapter: What the City Heard
-# Generated: 2025-12-21
-# ============================================================================
-
 metadata:
   entity_type: "chapter-imagery"
-  slug: "ch15-5-what-the-city-heard"
+  slug: "ch15.5-what-the-city-heard"
   chapter_number: 15.5
   chapter_title: "What the City Heard"
-  visual_thesis: "A triptych of responses to battle—candlelit grief becoming shadow calculation becoming ruined hope—showing how light and darkness both move when walls fall."
+  visual_thesis: "News echoes through Waterdeep—paper editorials, guild minutes, candlelight vigils, and enemy recalculations all responding to what the walls held."
   color_palette:
     primary:
-      - "#B8860B"
-      - "#4A5568"
-      - "#2D3748"
-      - "#8B4513"
+      - "#1A1A2E"  # Ink-black (editorial columns, shadow safehouse)
+      - "#FFD700"  # Candlelight gold (vigil lanterns)
+      - "#708090"  # Chalk-map gray (assessment, ruins)
     accent:
-      - "#98FB98"
-      - "#F5DEB3"
+      - "#F5F5DC"  # Paper-bright (newsprint, guild minutes)
+      - "#8B4513"  # Timber/leather guild warmth
+      - "#4A4A4A"  # Charcoal (Silent Hand menace)
   generation_defaults:
     provider: "openai"
     model: "dall-e-3"
     quality: "hd"
   mood_distribution:
-    somber: 3
-    pastoral: 0
-    celebratory: 0
-    aquatic: 0
-    ethereal: 0
-    intimate: 1
-    kinetic: 0
-    ominous: 2
+    somber: 2
+    intimate: 2
+    ominous: 1
 
 characters:
   - ref: "commander-atlock"
     name: "Commander Marcus Atlock"
-    scene_variations: "Field gear (heavy dark coat, leather shoulder protection). Post-battle wear—dust on clothing, fatigue in posture."
-    reference_images:
-      - "commander-atlock-formal-portrait-01"
+    scene_variations: |
+      CHAPTER 15.5 (PRIVATE ASSESSMENT):
+      - SCENE 05: Walking through ruined Westwall Watchpost courtyard.
+        Immaculate military uniform despite dust and debris.
+        Gray short hair, steel-gray observant eyes, weathered scarred face.
+        Expression shows rare respect—not warmth, but professional recognition.
+        Posture remains rigid, economical movements as he surveys damage.
+      - Throughout: Tall, military bearing. Uniform always maintained.
+        Hands clasped behind back or at sides. Never disheveled.
+    reference_images: []
 
   - ref: "tennison-quill"
     name: "Tennison Quill"
-    scene_variations: "Ink-stained hands. Focused on his editorial desk. Candlelight."
+    scene_variations: |
+      CHAPTER 15.5 (THE EDITORIAL):
+      - SCENE 01: At editorial desk in Chronicle office.
+        Older human, ink-stained fingers, spectacles.
+        Hunched over fresh copy, quill set aside.
+        Expression of conviction—writing as civic duty.
+      - Throughout: Professional journalist appearance.
+        Surrounded by papers, ink pots, proofs.
     reference_images: []
 
   - ref: "silent-hand-handler"
     name: "Silent Hand Handler"
-    scene_variations: "Anonymous hands. Moving stones on a chalked map. Dim light."
+    scene_variations: |
+      CHAPTER 15.5 (THE RECALCULATION):
+      - SCENE 04: Anonymous figure at knife-scored table.
+        Face in shadow, only hands visible.
+        Moving small stones across chalked map.
+        Deliberate, precise movements. No wasted motion.
+      - Throughout: Faceless menace. Identity obscured.
+        Represents the organization, not an individual.
     reference_images: []
 
 locations:
   - ref: "waterdeep-chronicle"
     zones:
-      - id: "editorial-desk"
-        chapter_context: "Cramped desk covered in proof sheets and ink pots. Single candle illuminating the editorial 'Who Holds the Walls?'"
+      - id: "office"
+        chapter_context: |
+          Late night editorial session. Single lamp illuminates the desk.
+          Fresh newsprint smell, ink drying on the page.
+          The editorial "Who Holds the Walls?" being finalized.
+          Urgency in the air—press deadline approaching.
+          Conviction driving the words onto paper.
+
   - ref: "temple-steps"
     zones:
-      - id: "overview"
-        chapter_context: "Broad stone steps. Evening darkness. Hundreds of small flames from a candlelight vigil."
-  - ref: "silent-hand-safehouse"
+      - id: "steps"
+        chapter_context: |
+          Cold stone steps of a Waterdeep temple at night.
+          Candlelight vigil in progress—hundreds of small flames.
+          An acolyte stands elevated, lantern raised high.
+          Crowd gathered below, each holding a candle.
+          Names being read for the fallen.
+          The phrase "Light endures" rising from the street.
+          Somber yet hopeful—grief becoming shared conviction.
+
+  - ref: "silent-hand-facility"
     zones:
-      - id: "overview"
-        chapter_context: "Windowless room. Low ceiling. Table with chalked tactical map and stone markers."
+      - id: "safehouse"
+        chapter_context: |
+          Underground safehouse. Low lamplight, shadow-heavy.
+          Knife-scored table worn by years of planning.
+          Chalked map showing regional routes and positions.
+          Ring marked WESTWALL. Smaller rings being wiped away.
+          Stones clicking across the surface like teeth.
+          Cold, calculating atmosphere. No emotion, only logistics.
+          The enemy adapting, recalculating around the light.
+
   - ref: "westwall-watchpost"
     zones:
-      - id: "ruins"
-        chapter_context: "Damaged stone walls, scorched surfaces. Breach in wall. Post-battle stillness."
-  - ref: "guildhall"
-    zones:
-      - id: "overview"
-        chapter_context: "The Masons' Guildhall where the formal aid resolution is sealed."
+      - id: "courtyard"
+        chapter_context: |
+          Day after the battle. Smoke-stained ruins.
+          Rubble and debris still being cleared.
+          Afternoon light filtering through damaged walls.
+          Dust motes visible in the air.
+          Signs of the defense everywhere—scorched stones,
+          makeshift barricades, bloodstains fading.
+          Yet also signs of life returning—repair work beginning.
+          Commander Atlock walking through, taking private assessment.
 
 moments:
-  - id: "ch15-5-what-the-city-heard-moment-01"
-    scene_id: "scn-15-5-01"
-    title: "The Editorial Desk"
-    narrative_beat: "Tennison Quill setting the final lines of the editorial, truth being bartered in ink."
-    visual_weight: "medium"
-    characters_present:
-      - "tennison-quill"
-    location_zone: "waterdeep-chronicle/editorial-desk"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch15-5-what-the-city-heard-moment-02"
-    scene_id: "scn-15-5-02"
-    title: "Guildhall Resolution"
-    narrative_beat: "The formal act of sealing the aid resolution for the Westwall Watchpost."
-    visual_weight: "medium"
-    characters_present: []
-    location_zone: "guildhall/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch15-5-what-the-city-heard-moment-03"
+  - id: "ch15.5-what-the-city-heard-moment-03"
     scene_id: "scn-15-5-03"
-    title: "River of Flame"
-    narrative_beat: "The candlelight vigil on the temple steps, names of the fallen read into the night."
-    visual_weight: "hero"
-    characters_present:
-      - "acolyte"
-    location_zone: "temple-steps/overview"
+    title: "Light Endures"
+    narrative_beat: "An acolyte lifted a lantern high: 'For those who hold until relief arrives. For those who go when the road is bad. For those who bring the wounded all the way home.' From the street, someone answered: 'Light endures.'"
+    visual_weight: "critical"
+    characters_present: []
+    location_zone: "temple-steps/steps"
     transformation_state: "after"
-    recommended_images: 1
+    recommended_images: 2
 
-  - id: "ch15-5-what-the-city-heard-moment-04"
+  - id: "ch15.5-what-the-city-heard-moment-05"
+    scene_id: "scn-15-5-05"
+    title: "I Have Seen Many Units"
+    narrative_beat: "'I have seen many units that could fight. Fewer that could hold. Fewer still that could hold and leave a place better than they found it. We should plan as if this one will.'"
+    visual_weight: "critical"
+    characters_present:
+      - "commander-atlock"
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "after"
+    recommended_images: 2
+
+  - id: "ch15.5-what-the-city-heard-moment-04"
     scene_id: "scn-15-5-04"
-    title: "The Erasure"
-    narrative_beat: "A handler's sleeve sweeping away stone markers on a chalked map, cold calculation of loss."
+    title: "Stones Like Teeth"
+    narrative_beat: "A handler moved small stones across a chalked map. 'Advance the early-spring schedule by a week. Split consignments; use second routes.' The stones clicked like teeth."
     visual_weight: "high"
     characters_present:
       - "silent-hand-handler"
-    location_zone: "silent-hand-safehouse/overview"
-    transformation_state: "n/a"
+    location_zone: "silent-hand-facility/safehouse"
+    transformation_state: "after"
     recommended_images: 1
 
-  - id: "ch15-5-what-the-city-heard-moment-05"
-    scene_id: "scn-15-5-04"
-    title: "Shadow Logistics"
-    narrative_beat: "Close up of the chalked map showing the northern pass and the 'advance' notation."
-    visual_weight: "medium"
-    characters_present: []
-    location_zone: "silent-hand-safehouse/overview"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch15-5-what-the-city-heard-moment-06"
-    scene_id: "scn-15-5-05"
-    title: "Atlock Among Ruins"
-    narrative_beat: "Atlock touching the scorched stone of Westwall, planning a fortress built for endurance."
+  - id: "ch15.5-what-the-city-heard-moment-01"
+    scene_id: "scn-15-5-01"
+    title: "Who Holds the Walls?"
+    narrative_beat: "'If the law cannot recognize such facts swiftly, perhaps the citizens can—with supplies, with influence, with insistence that those who act with integrity are not left to shoulder the weight alone.'"
     visual_weight: "high"
     characters_present:
-      - "commander-atlock"
-    location_zone: "westwall-watchpost/ruins"
+      - "tennison-quill"
+    location_zone: "waterdeep-chronicle/office"
     transformation_state: "after"
     recommended_images: 1
 
 images:
-  - custom_id: "ch15-5-what-the-city-heard-img-15-5-01-01"
-    source_moment: "ch15-5-what-the-city-heard-moment-01"
-    scene_id: "scn-15-5-01"
-    image_type: "detail"
-    category:
-      - "moment"
-      - "character"
-      - "symbol"
-    scene_mood: "intimate"
-    mood_rationale: "The 'Character's Voice.' Visualizing the creation of public opinion. Ink and candlelight."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
-    visual_description: |
-      Close-up of Tennison Quill's desk. A single candle illuminates a fresh proof sheet with the title "Who Holds the Walls?". Quill's ink-stained hand is setting down a quill pen. Bottles of dark ink and stacks of paper frame the scene. The atmosphere is hushed and urgent.
-    composition_notes: |
-      Tight square framing. Candlelight focal point. Ink bottle providing contrast. Shallow depth of field.
-    visual_hook: "The wet ink of the title 'Who Holds the Walls?' glinting in the candlelight."
-    depicts_characters:
-      - "tennison-quill"
-    character_states:
-      tennison-quill: |
-        Only ink-stained hand visible. Setting down pen.
-    location: "waterdeep-chronicle"
-    lighting:
-      primary_source: "Single candle"
-      quality: "Soft, warm, intimate"
-      direction: "Side"
-      color_temperature: "Amber"
-      shadow_depth: "Deep"
-      atmospheric: "Ink-scented"
-    palette:
-      dominant:
-        - "paper cream"
-        - "ink black"
-        - "shadow"
-      accent:
-        - "candle gold"
-      avoid:
-        - "bright daylight"
-    prompt_used: |
-      Macro detail still life of a medieval editor's desk,
-      fresh proof sheet with calligraphy title 'Who Holds the Walls?',
-      single candle casting warm amber light and deep shadows,
-      ink-stained hand setting down a quill,
-      ink pots and paper stacks,
-      classical oil painting, Vermeer lighting,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "detail"
-      - "newspaper"
-      - "intimate"
-      - "still-life"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch15-5-what-the-city-heard-img-15-5-02-01"
-    source_moment: "ch15-5-what-the-city-heard-moment-02"
-    scene_id: "scn-15-5-02"
-    image_type: "beat"
-    category:
-      - "location"
-      - "detail"
-      - "symbol"
-    scene_mood: "somber"
-    mood_rationale: "Institutional recording of civic weight. Formal and authoritative."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
-    visual_description: |
-      A close-up shot of a heavy, wax-sealed document on a dark mahogany lectern in the Masons' Guildhall. A brass seal is being pressed into burgundy-red wax. Paneled walls and solemn portraits in the background.
-    composition_notes: |
-      Tight square framing. Seal and wax focal point. Shallow depth. Warm directional lighting.
-    visual_hook: "The brass Masons' Guild seal being pressed into hot red wax on an official record"
-    depicts_characters: []
-    character_states: {}
-    location: "guildhall"
-    lighting:
-      primary_source: "oil lamp"
-      quality: "warm, formal"
-      direction: "top-down diagonal"
-      color_temperature: "warm gold"
-      shadow_depth: "moderate"
-      atmospheric: "still"
-    palette:
-      dominant:
-        - "mahogany brown"
-        - "parchment cream"
-        - "burgundy red"
-      accent:
-        - "brass gold"
-      avoid:
-        - "bright colors"
-    prompt_used: |
-      Macro fantasy detail of a heavy brass guild seal being pressed into hot red wax on a thick parchment document,
-      dark polished wooden desk,
-      solemn portraits in blurry background,
-      institutional formal atmosphere,
-      classical oil painting, Rembrandt lighting,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "detail"
-      - "institutional"
-      - "somber"
-      - "still-life"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch15-5-what-the-city-heard-img-15-5-03-01"
-    source_moment: "ch15-5-what-the-city-heard-moment-03"
+  - custom_id: "ch15.5-what-the-city-heard-img-03-03-01"
+    source_moment: "ch15.5-what-the-city-heard-moment-03"
     scene_id: "scn-15-5-03"
-    image_type: "hero"
+    image_type: "anchor"
     category:
       - "moment"
+      - "location"
       - "emotion"
-      - "symbol"
     scene_mood: "somber"
-    mood_rationale: "Communal grief transmuting into resilience. River of small flames. Ordinary people taking up the light."
+    mood_rationale: |
+      The visual and emotional peak of the chapter. Communal grief transforming
+      into shared conviction. The lantern raised high against darkness—the Last Light
+      Company's symbol being claimed by the city itself.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      A young acolyte stands at the top of broad stone temple steps, raising a simple iron lantern. Below her, hundreds of citizens hold small candles, creating a river of flame descending into the darkness. Their faces are illuminated from below. Temple columns frame the top.
+      Wide shot from below, looking up at cold stone temple steps at night.
+      An acolyte stands elevated on the upper steps, lantern raised high above
+      her head—the flame bright against the dark sky. She is young, her voice
+      steady now after stumbling. Below her, a crowd fills the steps and street,
+      each person holding a small candle. Hundreds of tiny flames create a sea
+      of light. The temple columns frame the scene. Some faces are lifted toward
+      the lantern, others bowed in remembrance. The mood is somber but resolute—
+      grief becoming shared purpose.
     composition_notes: |
-      Low angle looking up from crowd. Acolyte upper third. Lantern brightest point. Crowd fills lower thirds. Rhythmic flames.
-    visual_hook: "The single lantern raised high above the sea of smaller candles—one light stronger than any individual flame"
-    depicts_characters:
-      - "acolyte"
-    character_states:
-      acolyte: |
-        Raising lantern. Resolute expression. Lips parted in speech.
+      Low angle looking up the steps. The acolyte and lantern are the apex of
+      a triangular composition. The crowd forms the base, spreading down and out.
+      The temple architecture provides vertical framing. Individual candle flames
+      create texture across the crowd. Night sky behind provides contrast for
+      the central lantern.
+    visual_hook: "Single raised lantern against night sky, sea of candles below"
+    depicts_characters: []
+    character_states: {}
     location: "temple-steps"
+    zone: "steps"
     lighting:
-      primary_source: "Raised lantern"
-      secondary_source: "hundreds of candles"
-      quality: "warm, flickering, dramatic"
-      direction: "above + below"
-      color_temperature: "warm amber vs cold dark"
-      shadow_depth: "deep beyond circle"
-      atmospheric: "still night air"
+      primary_source: "Hundreds of candles and central lantern"
+      quality: "warm pools against cold night"
+      direction: "from below (candles) and center (lantern)"
+      color_temperature: "warm gold against cold blue-black night"
+      shadow_depth: "soft, overlapping from multiple sources"
+      atmospheric: "breath visible in cold air, slight haze from candle smoke"
     palette:
       dominant:
         - "candlelight gold"
-        - "cold gray stone"
-        - "shadow"
+        - "night blue-black"
+        - "stone gray"
       accent:
-        - "cream robes"
+        - "warm flesh tones"
+        - "white breath"
       avoid:
-        - "bright colors"
+        - "harsh reds"
+        - "neon colors"
     prompt_used: |
-      A young female temple acolyte in simple cream robes standing at the top of stone temple steps raising a lantern high,
-      hundreds of citizens below holding small candles,
-      faces illuminated from below in warm amber light,
-      river of small flames descending into darkness,
-      low angle composition looking up from crowd,
-      classical oil painting, chiaroscuro, muted earth palette with golden highlights,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Rembrandt lighting.
+      Stone temple steps at night, cold and formal architecture.
+      Young acolyte in simple robes standing on upper steps, lantern raised
+      high above her head, flame bright against dark sky.
+      Below, a crowd fills the steps and street, each person holding a
+      small candle—hundreds of tiny flames creating a sea of light.
+      Low angle looking up, acolyte as apex of composition.
+      Somber vigil atmosphere, grief becoming resolve.
+      Warm candlelight gold against cold night blue.
+      Breath visible in cold air, slight candle smoke haze.
+      Medieval fantasy setting, no modern elements.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright daylight
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      daylight, sunny, bright cheerful mood, electric lights
     tags:
-      - "hero"
       - "vigil"
+      - "community"
+      - "lantern"
+      - "candlelight"
       - "somber"
-      - "symbol"
+      - "anchor"
     generated_at: null
     file_name: null
     file_path: null
@@ -321,61 +241,363 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch15-5-what-the-city-heard-img-15-5-04-01"
-    source_moment: "ch15-5-what-the-city-heard-moment-04"
+  - custom_id: "ch15.5-what-the-city-heard-img-03-03-02"
+    source_moment: "ch15.5-what-the-city-heard-moment-03"
+    scene_id: "scn-15-5-03"
+    image_type: "detail"
+    category:
+      - "moment"
+      - "symbol"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Close emotional connection—individual faces in the crowd, the personal
+      within the communal. Hands cupping flames, lips forming words of response.
+      "Light endures" made visible in the small gestures.
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Close-up detail shot focusing on three or four hands cupping candles,
+      flames flickering between fingers. The hands are diverse—weathered working
+      hands, soft merchant hands, young and old together. Above the hands, partial
+      faces are visible, lit from below by their candles. One person's lips are
+      parted, speaking the response: "Light endures." Tears on one cheek catch
+      the candlelight. The focus is on the intimate connection between individuals
+      sharing the moment.
+    composition_notes: |
+      Tight portrait framing. Hands and candles in lower two-thirds.
+      Faces visible in soft focus above. Shallow depth of field.
+      The speaking lips are the secondary focal point after the flames.
+      Vertical format emphasizes the upward lift of prayer/remembrance.
+    visual_hook: "Diverse hands cupping candle flames, tear-streaked face speaking 'Light endures'"
+    depicts_characters: []
+    character_states: {}
+    location: "temple-steps"
+    zone: "steps"
+    lighting:
+      primary_source: "Individual candle flames"
+      quality: "intimate, warm, flickering"
+      direction: "from below (candles in hands)"
+      color_temperature: "warm amber gold"
+      shadow_depth: "soft gradients on faces"
+      atmospheric: "still, solemn"
+    palette:
+      dominant:
+        - "candle gold"
+        - "flesh tones"
+        - "darkness"
+      accent:
+        - "tear highlight"
+        - "warm amber"
+      avoid:
+        - "cool blues"
+        - "harsh shadows"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Vermeer interior lighting.
+      Extreme close-up of hands cupping small candles, flames flickering
+      between diverse fingers—weathered working hands, soft merchant hands,
+      young and old together.
+      Above the hands, partial faces lit from below by candlelight.
+      One person's lips parted, speaking. Tear on cheek catching the light.
+      Tight portrait framing, shallow depth of field.
+      Intimate vigil atmosphere, communal grief made personal.
+      Warm amber candlelight, soft shadows.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, full figures, busy background, bright lighting
+    tags:
+      - "hands"
+      - "candles"
+      - "intimate"
+      - "tears"
+      - "detail"
+      - "vigil"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15.5-what-the-city-heard-img-05-05-01"
+    source_moment: "ch15.5-what-the-city-heard-moment-05"
+    scene_id: "scn-15-5-05"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "location"
+    scene_mood: "intimate"
+    mood_rationale: |
+      A veteran commander's private assessment. Not formal, not public—
+      just a professional soldier walking through ruins and seeing something
+      rare. The intimacy is in the solitude and the internal recognition.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Wide establishing shot of Commander Atlock walking through the ruined
+      Westwall Watchpost courtyard. He is alone, hands clasped behind his back
+      in characteristic posture. The courtyard shows battle damage—scorched
+      stones, rubble piles, a collapsed section of wall. Afternoon light filters
+      through dust, creating visible beams through gaps in the damaged structure.
+      Despite the destruction, there are signs of recovery: lumber stacked for
+      repairs, cleared pathways, a guild banner being raised in the distance.
+      Atlock's immaculate uniform contrasts with the debris around him. His
+      expression is thoughtful, assessing—a professional who has seen many
+      ruins but recognizes something different here.
+    composition_notes: |
+      Atlock placed in the left third, walking right. The ruined courtyard
+      spreads before him. Diagonal lines of rubble and repair materials create
+      visual interest. Light beams through dust provide atmosphere. Signs of
+      repair work visible in background—hope amid destruction.
+    visual_hook: "Immaculate commander walking through battle-scarred ruins, dust beams illuminating his path"
+    depicts_characters:
+      - "commander-atlock"
+    character_states:
+      commander-atlock: |
+        Walking alone through ruins. Hands clasped behind back.
+        Immaculate uniform despite dusty surroundings.
+        Gray short hair, steel-gray eyes scanning the damage.
+        Expression thoughtful—professional recognition, not warmth.
+        Scarred weathered face shows years of similar assessments.
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "Afternoon sun through gaps in damaged walls"
+      quality: "dusty beams, atmospheric"
+      direction: "from above/side through structural gaps"
+      color_temperature: "warm afternoon gold"
+      shadow_depth: "moderate, soft edges from dust diffusion"
+      atmospheric: "visible dust motes, light beams through damage"
+    palette:
+      dominant:
+        - "stone gray"
+        - "smoke stain black"
+        - "dust brown"
+      accent:
+        - "afternoon gold light beams"
+        - "military uniform blue"
+        - "fresh lumber tan"
+      avoid:
+        - "pristine surfaces"
+        - "neon colors"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Turner atmospheric lighting.
+      Ruined medieval fortress courtyard, aftermath of battle.
+      Scorched stones, rubble piles, collapsed wall sections.
+      A tall military commander in immaculate uniform walks through the ruins,
+      hands clasped behind back, surveying the damage with professional assessment.
+      Gray short hair, scarred weathered face, steel-gray observant eyes.
+      Afternoon light filters through gaps in damaged walls, creating dust beams.
+      Signs of repair work beginning—stacked lumber, cleared paths.
+      Atmospheric, dust motes visible, contrast of order and destruction.
+      Fantasy military setting, no modern elements.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      smiling, casual pose, disheveled uniform
+    tags:
+      - "atlock"
+      - "ruins"
+      - "aftermath"
+      - "assessment"
+      - "anchor"
+      - "westwall"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15.5-what-the-city-heard-img-05-05-02"
+    source_moment: "ch15.5-what-the-city-heard-moment-05"
+    scene_id: "scn-15-5-05"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      The key character beat—Atlock's face revealing rare respect.
+      A veteran who has seen many units but recognizes something different.
+      The intimacy is in the unguarded moment of professional admiration.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Medium close-up of Commander Atlock's face and upper body. He has
+      stopped walking and stands looking at something off-frame (the repair
+      work, the signs of recovery). His expression is the focus—steel-gray
+      eyes showing something rarely seen: genuine respect. Not warmth or
+      sentimentality, but the professional recognition of one soldier for
+      the work of others. His scarred, weathered face is partially lit by
+      afternoon sun, half in shadow. Behind him, blurred ruins provide context.
+      His posture remains rigid and military, but his expression has softened
+      almost imperceptibly.
+    composition_notes: |
+      Close medium shot, Atlock in right two-thirds facing left.
+      His face is the focal point, expression readable.
+      Background out of focus but recognizable as ruins.
+      Rembrandt lighting—half face illuminated, half in shadow.
+      The rare moment of unguarded respect captured.
+    visual_hook: "Veteran commander's scarred face showing rare respect, half-lit by afternoon sun"
+    depicts_characters:
+      - "commander-atlock"
+    character_states:
+      commander-atlock: |
+        Paused in assessment. Looking at repair work off-frame.
+        Expression showing rare respect—not warmth, but recognition.
+        Steel-gray eyes thoughtful. Scarred face partially in shadow.
+        Rigid military posture, but expression slightly softened.
+        A memo forming in his mind: "We should plan as if this one will."
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "Afternoon sun from side"
+      quality: "Rembrandt split lighting"
+      direction: "from left side"
+      color_temperature: "warm gold"
+      shadow_depth: "deep on shadow side of face"
+      atmospheric: "dust motes visible in light"
+    palette:
+      dominant:
+        - "flesh tones"
+        - "uniform gray-blue"
+        - "shadow"
+      accent:
+        - "afternoon gold highlight"
+        - "steel-gray eyes"
+      avoid:
+        - "harsh lighting"
+        - "bright backgrounds"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Rembrandt portrait lighting.
+      Close medium shot of a weathered military commander in his 50s.
+      Gray short hair, scarred face, steel-gray observant eyes.
+      His expression shows rare respect—not warmth, but professional recognition.
+      Half his face is illuminated by afternoon sun, half in shadow.
+      Behind him, blurred ruins of a fortress courtyard.
+      Rigid military posture, immaculate uniform.
+      Dust motes visible in the light.
+      Character study, unguarded moment, veteran's assessment.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      smiling broadly, casual expression, young face, smooth skin
+    tags:
+      - "atlock"
+      - "portrait"
+      - "respect"
+      - "character-study"
+      - "beat"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15.5-what-the-city-heard-img-04-04-01"
+    source_moment: "ch15.5-what-the-city-heard-moment-04"
     scene_id: "scn-15-5-04"
-    image_type: "mood"
+    image_type: "detail"
     category:
       - "moment"
       - "symbol"
       - "action"
     scene_mood: "ominous"
-    mood_rationale: "Calculated menace. Loss reduced to bookkeeping. The handler's face remains obscured."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
+    mood_rationale: |
+      Dread and wrongness. The enemy adapting, recalculating, moving pieces.
+      The stones clicking like teeth—predatory, calculating, patient.
+      The shadow response to the light that held the walls.
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
     visual_description: |
-      Overhead view of two anonymous hands moving small stones across a knife-scored wooden table. The surface has chalk marks like a tactical map. A sleeve is sweeping away two stone markers, leaving chalk smears. Dim, inadequate light.
+      Extreme close-up of a knife-scored wooden table with a chalked map.
+      A handler's hand—anonymous, scarred, ring-less—moves small dark stones
+      across the surface. The map shows regional routes, marked locations.
+      A ring marked WESTWALL is prominent. Two smaller rings are smudged,
+      being wiped away by a sleeve edge. The stones are positioned like pieces
+      in a game, casting small shadows. Low lamplight from one side creates
+      harsh shadows across the table's scarred surface. The atmosphere is
+      cold, calculating—logistics of threat, not emotion.
     composition_notes: |
-      Overhead angle with slight tilt. Focus on hands and chalk surface. Face in shadow. Focal point on the erasure.
-    visual_hook: "The sleeve-swipe that erases two stone markers, leaving pale chalk smears where lives used to be"
+      Tight portrait framing on table surface and hand.
+      The chalked map fills the frame. The hand enters from above.
+      WESTWALL ring is the focal point, stones arranged around it.
+      Shallow depth of field—focus on stones and immediate area.
+      The wiped-away rings suggest eliminated assets.
+    visual_hook: "Anonymous hand moving stones across chalk map, WESTWALL ring prominent, smaller rings being erased"
     depicts_characters:
       - "silent-hand-handler"
     character_states:
       silent-hand-handler: |
-        Hands and forearms only. Drab sleeves. One hand mid-erasure.
-    location: "silent-hand-safehouse"
+        Only hand visible—scarred, deliberate, no identifying marks.
+        Moving stones with precision. No wasted motion.
+        Sleeve edge wiping away markers. Cold efficiency.
+    location: "silent-hand-facility"
+    zone: "safehouse"
     lighting:
-      primary_source: "dim lamp"
-      quality: "harsh, flat, inadequate"
-      direction: "above/side"
-      color_temperature: "sickly yellow"
-      shadow_depth: "deep shadows"
-      atmospheric: "stale"
+      primary_source: "Low oil lamp from side"
+      quality: "harsh, directional"
+      direction: "from left"
+      color_temperature: "sickly amber"
+      shadow_depth: "deep, sharp-edged"
+      atmospheric: "no dust, still air, cold"
     palette:
       dominant:
-        - "bile green-brown"
-        - "chalk white"
-        - "old wood"
+        - "chalk white on dark wood"
+        - "stone gray-black"
+        - "shadow"
       accent:
-        - "drab cloth gray"
+        - "sickly lamp amber"
+        - "old blood brown (table stains)"
       avoid:
-        - "warmth"
+        - "warm colors"
+        - "bright lighting"
     prompt_used: |
-      Overhead view of anonymous hands moving small stones across a chalk-marked wooden table,
-      crude tactical map on wood surface,
-      sleeve sweeping away markers leaving chalk smears,
-      dim inadequate light casting harsh shadows,
-      cramped windowless room,
-      classical oil painting, Symbolist unease,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Caravaggio chiaroscuro.
+      Extreme close-up of a knife-scored wooden table with a chalked map.
+      A scarred hand moves small dark stones across the surface.
+      Map shows routes and locations, a ring marked WESTWALL prominent.
+      Two smaller rings being wiped away by sleeve edge—erased markers.
+      Low oil lamp lighting from side, harsh shadows, cold atmosphere.
+      Conspiracy, calculation, menace visible in the arrangement.
+      No identifying features on the hand. Anonymous threat.
+      Dark fantasy, criminal planning, no modern elements.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, visible face
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      bright lighting, warm atmosphere, identifiable face, modern map
     tags:
-      - "ominous"
       - "silent-hand"
-      - "menace"
       - "map"
+      - "stones"
+      - "menace"
+      - "ominous"
+      - "detail"
     generated_at: null
     file_name: null
     file_path: null
@@ -383,120 +605,89 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch15-5-what-the-city-heard-img-15-5-04-02"
-    source_moment: "ch15-5-what-the-city-heard-moment-05"
-    scene_id: "scn-15-5-04"
+  - custom_id: "ch15.5-what-the-city-heard-img-01-01-01"
+    source_moment: "ch15.5-what-the-city-heard-moment-01"
+    scene_id: "scn-15-5-01"
     image_type: "detail"
     category:
       - "moment"
       - "symbol"
-    scene_mood: "ominous"
-    mood_rationale: "Close up of the shadow logistics. The northern pass and the 'advance' notation. Cold calculation."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
-    visual_description: |
-      Extreme close-up of the chalked map on the wooden table. A knuckle taps a specific point labeled "Northern Pass". Strange stones wait like teeth nearby. The chalk is smudged and dusty.
-    composition_notes: |
-      Macro focus on the text and stones. High contrast between chalk and dark wood.
-    visual_hook: "The clicking stones arranged like teeth around a marked mountain pass."
-    depicts_characters: []
-    character_states: {}
-    location: "silent-hand-safehouse"
-    lighting:
-      primary_source: "Dim candle"
-      quality: "Harsh, low"
-      direction: "Side"
-      color_temperature: "Yellow"
-      shadow_depth: "Sharp"
-      atmospheric: "Still"
-    palette:
-      dominant:
-        - "dark wood"
-        - "chalk white"
-      accent:
-        - "stone gray"
-      avoid:
-        - "bright colors"
-    prompt_used: |
-      Macro detail of a chalk tactical map on a dark scarred table,
-      small stones arranged like teeth,
-      text 'Northern Pass' visible,
-      harsh dim lighting,
-      atmosphere of cold calculation and shadow warfare,
-      classical oil painting, realism,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "detail"
-      - "map"
-      - "secrets"
-      - "ominous"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch15-5-what-the-city-heard-img-15-5-05-01"
-    source_moment: "ch15-5-what-the-city-heard-moment-06"
-    scene_id: "scn-15-5-05"
-    image_type: "character"
-    category:
-      - "character"
-      - "location"
-      - "moment"
-    scene_mood: "somber"
-    mood_rationale: "Atlock surveying ruins. Weary determination. Post-battle assessment and planning."
+      - "action"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Journalism as civic conscience. The words as action—conviction
+      made visible on the page. Intimate detail work of editorial craft,
+      the quill set aside, ink still drying, deadline met.
     aspect_ratio: "3:4"
     orientation: "portrait"
-    size: "1024x1536"
+    size: "1024x1365"
     visual_description: |
-      Commander Atlock stands amid the damaged walls of Westwall Watchpost. Hand resting on scorched stone. Damaged towers and debris background. He wears heavy field gear, dusted with debris. Face shows exhaustion held by discipline. Steel gray eyes scan the damage.
+      Close-up detail shot of a newsprint page on an editorial desk.
+      The headline "Who Holds the Walls?" is visible at the top, rendered
+      in formal typeface. Below, the editorial column text is partially
+      visible—the key phrase "those who act with integrity" readable.
+      A quill pen lies set aside on the desk, ink still wet on the nib.
+      The page itself shows fresh ink, slightly gleaming in the lamplight.
+      Surrounding the page: ink pot, blotting paper, other documents.
+      The atmosphere conveys deadline met, conviction expressed, civic duty done.
     composition_notes: |
-      Medium portrait. Atlock lower two-thirds. Damaged architecture background. Eye-level. Hand on scorched stone is anchor.
-    visual_hook: "Atlock's weathered hand resting on scorched stone—the veteran commander touching what held"
+      Tight portrait framing on the editorial page.
+      Headline at top, column text below filling frame.
+      Quill and ink pot provide context at edges.
+      Shallow depth of field—focus on the words.
+      The wet ink gleam is the subtle visual hook.
+    visual_hook: "Fresh editorial page with 'Who Holds the Walls?' headline, ink still wet, quill set aside"
     depicts_characters:
-      - "commander-atlock"
+      - "tennison-quill"
     character_states:
-      commander-atlock: |
-        Field gear. Dust-covered. Rigid posture despite fatigue. Stoic assessing expression. Hand on wall.
-    location: "westwall-watchpost"
+      tennison-quill: |
+        Not directly visible—only his work.
+        The quill set aside implies the hand that wrote.
+        Conviction visible in the words themselves.
+    location: "waterdeep-chronicle"
+    zone: "office"
     lighting:
-      primary_source: "overcast daylight"
-      quality: "flat, honest, documentary"
-      direction: "ambient"
-      color_temperature: "neutral/cool"
-      shadow_depth: "moderate, soft"
-      atmospheric: "dust haze"
+      primary_source: "Desk lamp"
+      quality: "warm, focused pool"
+      direction: "from above/side"
+      color_temperature: "warm amber"
+      shadow_depth: "soft around edges of light pool"
+      atmospheric: "still, late night, deadline quiet"
     palette:
       dominant:
-        - "scorched gray stone"
-        - "brown dust"
-        - "charcoal gear"
+        - "paper cream-white"
+        - "ink black"
+        - "wood desk brown"
       accent:
-        - "steel glint"
+        - "lamp amber"
+        - "wet ink gleam"
       avoid:
-        - "bright colors"
+        - "harsh colors"
+        - "modern printing"
     prompt_used: |
-      Commander Marcus Atlock standing amid battle-damaged stone fortifications,
-      hand resting on scorched blackened stonework,
-      weathered face with gray military hair and steel eyes,
-      field armor dusted with debris,
-      damaged tower background,
-      overcast flat daylight,
-      classical oil painting, military realism,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Vermeer still life lighting.
+      Close-up of a newsprint editorial page on a wooden desk.
+      Headline "Who Holds the Walls?" in formal typeface at top.
+      Editorial column text visible below, fresh ink still wet and gleaming.
+      A quill pen set aside, ink on nib. Ink pot nearby.
+      Warm desk lamp lighting, late night atmosphere.
+      Journalism as civic duty, conviction in printed words.
+      Medieval fantasy printing, no modern elements.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, formal dress uniform
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      computer, modern printing, wide shot, full desk visible
     tags:
-      - "character"
-      - "aftermath"
-      - "atlock"
-      - "ruins"
-      - "somber"
+      - "editorial"
+      - "newspaper"
+      - "journalism"
+      - "civic"
+      - "detail"
+      - "words"
     generated_at: null
     file_name: null
     file_path: null

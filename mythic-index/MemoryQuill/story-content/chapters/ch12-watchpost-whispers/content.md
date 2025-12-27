@@ -6,7 +6,7 @@ word_count: 4500
 pov_character: multiple
 canon_level: canonical
 purpose: transition_and_development
-key_characters: [veyra-thornwake, thorne-brightward, grimjaw-ironbeard, quartermaster-fayne, medic-halden, sarge, mistress-elba,
+key_characters: [veyra-thornwake, thorne-brightward, grimjaw-ironbeard, quartermaster-fayne, medic-halden, Tomaq, mistress-elba,
   vera-moonwhisper, aldwin-gentleheart]
 key_locations: [westwall-watchpost]
 timeline_anchor: After Stonebridge Mission - Company Debrief and Planning
@@ -124,7 +124,7 @@ Before he left, Fayne dog-eared a fresh ledger—irregular entries he’d circle
         location:"westwall-watchpost"
         primary_zone:"training-yard"
         location_zones:["training-yard"]
-        characters:["thorne-brightward","sarge","grimjaw-ironbeard","vera-moonwhisper"]
+        characters:["thorne-brightward","lieutenant-tomaq","grimjaw-ironbeard","vera-moonwhisper"]
         tags:["training","watch"]
         images:["ch12-watchpost-whispers-ch12-training-discipline.png"]
 -->
@@ -133,11 +133,11 @@ When the sun dipped, talk gave way to drill.
 
 
 
-The Westwall training yard wore early evening like a mantle; shadows stretched long while Thorne watched a knot of recruits work their forms. Sarge's bark cracked across the yard. "Again! Faster! You move like a pregnant owlbear! Commander Thornwake wouldn't hesitate—why are you?"
+The Westwall training yard wore early evening like a mantle; shadows stretched long while Thorne watched a knot of recruits work their forms. Tomaq's bark cracked across the yard. "Again! Faster! You move like a pregnant owlbear! Commander Thornwake wouldn't hesitate—why are you?"
 
-Thorne paced beside him, tempering the edge. "They're adapting, Sarge. Not everyone has our experience—or Vera's bow-hand."
+Thorne paced beside him, tempering the edge. "They're adapting, Tomaq. Not everyone has our experience—or Vera's bow-hand."
 
-"Hmph. Instincts," Sarge muttered, though a reluctant humor tugged at his mouth. "Give me a shield wall any day. Still—the dwarf's got a way with timber. And the halfling's teas... wonders for a bruised ego after a spar."
+"Hmph. Instincts," Tomaq muttered, though a reluctant humor tugged at his mouth. "Give me a shield wall any day. Still—the dwarf's got a way with timber. And the halfling's teas... wonders for a bruised ego after a spar."
 
 Behind them a Watchman whispered to another, awe threading the words. "Heard the Commander can make a man's shadow fight him. Best not to cross her."
 

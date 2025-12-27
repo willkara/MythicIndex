@@ -37,7 +37,7 @@
   - *Dynamics*: TBD
   - *Professional Opinion of*: TBD
   
-- **Rylan Stormcaller**: 
+- **Rylan Ashvale**: 
   - *Nature of Relationship*: Fellow Last Light Company member
   - *Hierarchy*: Different specialties (negotiation and magical support)
   - *Dynamics*: TBD

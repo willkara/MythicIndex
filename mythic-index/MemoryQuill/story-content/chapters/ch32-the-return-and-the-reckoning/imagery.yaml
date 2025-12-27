@@ -1,281 +1,338 @@
-# ============================================================================
-# CHAPTER IMAGERY SPECIFICATION
-# Chapter: The Return and the Reckoning
-# Generated: 2025-12-21
-# ============================================================================
-
 metadata:
   entity_type: "chapter-imagery"
   slug: "ch32-the-return-and-the-reckoning"
   chapter_number: 32
   chapter_title: "The Return and the Reckoning"
-  visual_thesis: "From the exhausted relief of emergence to the cold clarity of confrontation, culminating in the weight of official mandate."
+  visual_thesis: |
+    Homecoming transforms to reckoning—the reconnaissance team returns with damning intelligence,
+    receives official blessing for their rescue, and confronts the cost of the war they've declared
+    against the Silent Hand.
   color_palette:
     primary:
-      - "#8B7355"
-      - "#4A5568"
-      - "#D4A574"
-      - "#2D3748"
+      - "#4A5568"  # Storm gray - exhaustion, determination
+      - "#2D3748"  # Slate shadow - political weight
+      - "#744210"  # Burnt umber - lamplight, briefings
     accent:
-      - "#5B8A72"
-      - "#C9A227"
+      - "#D69E2E"  # Gold - Lyra's eyes, official seals
+      - "#9B2C2C"  # Deep red - war declared, blood cost
+      - "#2B6CB0"  # Cold blue - Lady Blackwater's authority
   generation_defaults:
     provider: "openai"
     model: "dall-e-3"
     quality: "hd"
   mood_distribution:
-    somber: 3
-    pastoral: 2
-    celebratory: 0
-    aquatic: 1
-    ethereal: 0
-    intimate: 2
-    kinetic: 0
-    ominous: 0
+    ominous: 6
+    intimate: 4
 
 characters:
   - ref: "veyra-thornwake"
     name: "Veyra Thornwake"
-    scene_variations: "Leading emergence at dawn. Accusing Marcus in private. Presenting intelligence in office. Resolve returning."
-    reference_images:
-      - "veyra-thornwake-official-portrait-01"
-
-  - ref: "thorne-brightward"
-    name: "Thorne Brightward"
-    scene_variations: "Riding at Veyra's side. Steady support. Validating intelligence in office."
-    reference_images:
-      - "thorne-brightward-portrait-01"
+    scene_variations: |
+      CHAPTER 32 VARIATIONS (EXHAUSTED AUTHORITY):
+      - SCENE 01 (Return): Weary but triumphant. Trail-worn leather coat,
+        dark circles under eyes, but posture straight. Burn scar prominent
+        in watery sunrise light.
+      - SCENE 02 (Reckoning): Voice hoarse with exhaustion. Fierce determination
+        in dark eyes. Confronting Marcus with accusation.
+      - SCENE 03 (Briefing): Professional commander mode. Presenting intelligence
+        with clear authority. Hand unconsciously touching ring at neck.
+      - SCENE 04 (The Plan): Grim determination. Tracing blueprints. Voice firm
+        with promise—"We will bring them home."
+      - Throughout: Mohawk with feathered braids, burn scar on left face,
+        lantern at hip, weathered leather armor with mismatched plates.
+    reference_images: []
 
   - ref: "lyra-kestrel"
     name: "Lyra Kestrel"
-    scene_variations: "Expression softened by warmth during Elba's meal. rare smile. Handing over intelligence roll."
-    reference_images:
-      - "lyra-kestrel-portrait-01"
-
-  - ref: "rill-vossari"
-    name: "Rill Vossari"
-    scene_variations: "Notably pale. Seeking communion at stream. Bioluminescence flowing toward water."
-    reference_images:
-      - "rill-vossari-casting-portrait-01"
+    scene_variations: |
+      CHAPTER 32 VARIATIONS (MASK SLIPPING):
+      - SCENE 01 (Report): Voice flat, emotionless. But jaw clenching subtly,
+        golden eyes flickering with something cold and dangerous as she
+        reports the children's fate.
+      - SCENE 01b (Elba's Welcome): Rare genuine smile softening calculating
+        features. Guard lowered in unexpected understanding. Warmth spreading
+        through her as past is acknowledged without judgment.
+      - Throughout: Deep plum skin, elegant curved horns, auburn hair in severe
+        bun with hidden blade hairpin. Golden predatory eyes. Dark practical
+        clothing in purples and blacks.
+    reference_images: []
 
   - ref: "marcus-heartbridge"
     name: "Marcus Heartbridge"
-    scene_variations: "Composure cracking during private confrontation. Hand through hair. Restored to professional mask in office."
-    reference_images:
-      - "marcus-heartbridge-portrait-study-01"
+    scene_variations: |
+      CHAPTER 32 VARIATIONS (CONSEQUENCES ACKNOWLEDGED):
+      - SCENE 02 (Damning Evidence): Composed facade cracking as he absorbs
+        the intelligence scale. Eyes widening despite himself.
+      - SCENE 02 (War Declared): Voice barely above a whisper. Warning Veyra
+        of the Silent Hand's response. Shadow of something genuine beneath
+        the diplomat's mask.
+      - Throughout: Well-tailored doublet, polished boots. Smooth confidence
+        faltering under the weight of what he knew. Immaculate appearance
+        slightly worn by the pre-dawn hour.
+    reference_images: []
 
   - ref: "lady-moira-blackwater"
     name: "Lady Moira Blackwater"
-    scene_variations: "Severe in harsh window light. Assessing evidence with clinical detachment. Silhouette against city dusk."
-    reference_images:
-      - "lady-moira-blackwater-war-room-portrait-01"
+    scene_variations: |
+      CHAPTER 32 VARIATIONS (COLD AUTHORITY):
+      - SCENE 03 (The Mandate): Sharp gray-green eyes missing nothing.
+        Voice cold as she authorizes full-scale rescue. Morning sun
+        catching silver streaks in auburn hair.
+      - SCENE 03 (The Bastion Key): Thin, knowing smile as she offers
+        the symbol of city's trust. Political calculation visible
+        beneath the benevolence.
+      - Throughout: Silver-streaked auburn hair in precise professional style.
+        Understated expensive clothing. Leather portfolio with official seals.
+        Composed bearing that commands attention.
+    reference_images: []
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: |
+      CHAPTER 32 VARIATIONS (STEADFAST SUPPORT):
+      - SCENE 04 (The Plan): Standing at Veyra's side at the Briefing Circle.
+        Face grim but resolute. Silent strength backing her promise.
+      - Throughout: Military bearing, stoic expression. Practical armor
+        and equipment. The reliable second-in-command.
+    reference_images: []
 
   - ref: "mistress-elba"
     name: "Mistress Elba"
-    scene_variations: "Knowing smirk. Bustling Whirlwind. Providing personalized comfort."
-    reference_images:
-      - "mistress-elba-kitchen-portrait-01"
+    scene_variations: |
+      CHAPTER 32 VARIATIONS (KNOWING COMFORT):
+      - SCENE 01b (Elba's Welcome): Stout dwarven frame moving with practiced
+        grace. Keen eyes missing nothing. Satisfied smirk as she offers
+        Lyra exactly what she needs without being asked.
+      - Throughout: Kitchen apron, booming laugh, maternal efficiency.
+        The heart of the warehouse's found family.
+    reference_images: []
 
 locations:
-  - ref: "thornwood-edge-at-dawn"
+  - ref: "windborne-roost"
     zones:
-      - id: "overview"
-        chapter_context: "Ragged treeline, pale watery sky. Hilltop inn catching first light. Rising mist."
-  - ref: "windborne-roost-stream"
-    zones:
-      - id: "overview"
-        chapter_context: "Clear mountain stream, smooth river stones. Crystalline water reflecting silver sky."
+      - id: "common-room"
+        chapter_context: |
+          Dawn light filtering through windows as the weary reconnaissance team
+          gathers around the fire. The space feels transformed from waystation
+          to sanctuary—warm firelight, hot food, the relief of safety after
+          the Thornwood's dangers. Quierk's silent assessment, Lyra's damning
+          report delivered in this space of temporary respite.
+
   - ref: "warehouse-complex"
     zones:
-      - id: "mess-hall"
-        chapter_context: "Heavy timber beams, stone hearth. Warm amber light. Sanctuary earned through family."
-      - id: "private-corner"
-        chapter_context: "Shadowed alcove. Single oil lamp, island of light. Contested ground of conflict."
+      - id: "mess"
+        chapter_context: |
+          Mistress Elba's domain transformed into a healing space. Steaming
+          platters, individual comforts tailored to each team member. The
+          clatter of forks replacing tense silence, found family bonds
+          strengthened over shared meal after shared ordeal.
+      - id: "briefing-circle"
+        chapter_context: |
+          Pre-dawn lamplight on documents spread across the table. Charcoal
+          rubbings and stolen manifests revealing the Silent Hand's scope.
+          The weight of war declared in whispered conversation. Later,
+          activity buzzes around as the team prepares—Grimjaw's forge
+          ringing, blueprints studied, medical kits assembled.
+
   - ref: "city-watch-headquarters"
     zones:
-      - id: "blackwater-office"
-        chapter_context: "High-ceilinged corner office. Shafts of morning light. Scrutiny and judgment."
+      - id: "office"
+        chapter_context: |
+          Morning sun streaming through tall windows onto polished mahogany.
+          Lady Blackwater's domain—official seals, damning documents spread
+          in the light, the cold precision of political authorization.
+          The weight of legitimacy granted, the Bastion Key offered as
+          symbol of trust and expectation.
 
 moments:
-  - id: "ch32-the-return-and-the-reckoning-moment-01"
-    scene_id: "scn-32-01"
-    title: "Threshold of Hope"
-    narrative_beat: "The team emerging from the dark Thornwood into the pale sunrise, the forest 'exhaling' relief."
-    visual_weight: "hero"
+  - id: "ch32-the-return-and-the-reckoning-moment-05"
+    scene_id: "scn-32-02"
+    title: "War Declared"
+    narrative_beat: |
+      'Everything,' he replied, his voice barely above a whisper. 'The Silent Hand
+      leaves no loose ends. And they never forget a slight. You've just declared
+      war on them, Commander. And they will respond.' 'Then let them,' Veyra said,
+      her voice firm. 'We're ready.'
+    visual_weight: "critical"
     characters_present:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "lyra-kestrel"
-      - "rill-vossari"
-    location_zone: "thornwood-edge-at-dawn/overview"
-    transformation_state: "after"
-    recommended_images: 1
+      - marcus-heartbridge
+      - veyra-thornwake
+    location_zone: "warehouse-complex/briefing-circle"
+    transformation_state: "during"
+    recommended_images: 2
 
   - id: "ch32-the-return-and-the-reckoning-moment-02"
     scene_id: "scn-32-01"
-    title: "Elemental Restoration"
-    narrative_beat: "Rill kneeling at the mountain stream, bioluminescence flowing toward the pure water."
-    visual_weight: "high"
+    title: "Fifty Children"
+    narrative_beat: |
+      'At least fifty, possibly more. Mostly children with emerging magical abilities.
+      They're being held in the basement research levels, subjected to behavioral
+      conditioning studies.' Lyra's voice was flat, devoid of emotion, but Veyra
+      could see the subtle clenching of her jaw, the flicker of something cold
+      and dangerous in her golden eyes.
+    visual_weight: "critical"
     characters_present:
-      - "rill-vossari"
-    location_zone: "windborne-roost-stream/overview"
-    transformation_state: "after"
-    recommended_images: 1
-
-  - id: "ch32-the-return-and-the-reckoning-moment-03"
-    scene_id: "scn-32-01b"
-    title: "The Spy's Smile"
-    narrative_beat: "Lyra's rare unguarded smile as Mistress Elba provides the precisely right comfort."
-    visual_weight: "high"
-    characters_present:
-      - "lyra-kestrel"
-      - "mistress-elba"
-    location_zone: "warehouse-complex/mess-hall"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch32-the-return-and-the-reckoning-moment-04"
-    scene_id: "scn-32-01b"
-    title: "Found Family Feast"
-    narrative_beat: "Establishing the warm mess hall scene, the team sharing a meal after the harrowing mission."
-    visual_weight: "medium"
-    characters_present:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "grimjaw-ironbeard"
-      - "marcus-heartbridge"
-    location_zone: "warehouse-complex/mess-hall"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch32-the-return-and-the-reckoning-moment-05"
-    scene_id: "scn-32-02"
-    title: "The Accusation"
-    narrative_beat: "Veyra confronting Marcus in the shadowed alcove, trust breaking against his calculated pragmatism."
-    visual_weight: "hero"
-    characters_present:
-      - "veyra-thornwake"
-      - "marcus-heartbridge"
-    location_zone: "warehouse-complex/private-corner"
-    transformation_state: "n/a"
-    recommended_images: 1
+      - lyra-kestrel
+      - veyra-thornwake
+    location_zone: "windborne-roost/common-room"
+    transformation_state: "before"
+    recommended_images: 2
 
   - id: "ch32-the-return-and-the-reckoning-moment-06"
     scene_id: "scn-32-03"
-    title: "Judgment by Sunlight"
-    narrative_beat: "Veyra presenting the evidence in Blackwater's sun-drenched office, light acting as a scrutinizer."
+    title: "Lady Blackwater's Mandate"
+    narrative_beat: |
+      'This is a direct threat to city security,' Lady Moira said finally, her
+      voice cold. 'And a violation of every ethical code known to man. We will
+      authorize a full-scale rescue operation. Commander Thornwake, you will
+      have full operational autonomy.'
+    visual_weight: "critical"
+    characters_present:
+      - lady-moira-blackwater
+      - veyra-thornwake
+      - captain-grimsby
+    location_zone: "city-watch-headquarters/office"
+    transformation_state: "during"
+    recommended_images: 2
+
+  - id: "ch32-the-return-and-the-reckoning-moment-10"
+    scene_id: "scn-32-04"
+    title: "We Will Bring Them Home"
+    narrative_beat: |
+      'We have the intelligence. We have the team. And we have the will. We will
+      bring those children home.' As the team made their final preparations,
+      a sense of grim determination settled over the warehouse complex.
+    visual_weight: "critical"
+    characters_present:
+      - veyra-thornwake
+      - thorne-brightward
+    location_zone: "warehouse-complex/briefing-circle"
+    transformation_state: "after"
+    recommended_images: 2
+
+  - id: "ch32-the-return-and-the-reckoning-moment-03"
+    scene_id: "scn-32-01b"
+    title: "Elba Knows"
+    narrative_beat: |
+      Lyra, who rarely showed more than a flicker of emotion, felt a genuine warmth
+      spread through her. It wasn't just the food, or the whiskey; it was the
+      unexpected understanding, the quiet acknowledgment of her past without
+      judgment. A rare, unforced smile touched her lips, softening the usual
+      calculating glint in her golden eyes.
     visual_weight: "high"
     characters_present:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "lady-moira-blackwater"
-      - "marcus-heartbridge"
-    location_zone: "city-watch-headquarters/blackwater-office"
-    transformation_state: "n/a"
+      - lyra-kestrel
+      - mistress-elba
+    location_zone: "warehouse-complex/mess"
+    transformation_state: "before"
     recommended_images: 1
 
   - id: "ch32-the-return-and-the-reckoning-moment-07"
     scene_id: "scn-32-03"
-    title: "The Spymaster's View"
-    narrative_beat: "Lady Blackwater silhouetted against the city dusk, the constellation of responsibility below."
-    visual_weight: "medium"
-    characters_present:
-      - "lady-moira-blackwater"
-    location_zone: "city-watch-headquarters/blackwater-office"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch32-the-return-and-the-reckoning-moment-08"
-    scene_id: "scn-32-04"
-    title: "Forging the Breach"
-    narrative_beat: "Grimjaw at his forge, crafting specialized tools for the rescue, the heartbeat of the mission."
-    visual_weight: "medium"
-    characters_present:
-      - "grimjaw-ironbeard"
-    location_zone: "warehouse-complex/interior"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch32-the-return-and-the-reckoning-moment-09"
-    scene_id: "scn-32-04"
-    title: "Briefing the Assault"
-    narrative_beat: "The Company gathered around the Briefing Circle, final plans being set for the Silent Hand shattering."
+    title: "The Bastion Key"
+    narrative_beat: |
+      Lady Moira smiled, a thin, knowing expression. 'The key to the Bastion will
+      be yours, Commander. A headquarters worthy of the Last Light Company's
+      growing reputation. And a symbol of the city's trust.'
     visual_weight: "high"
     characters_present:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "lyra-kestrel"
-      - "rill-vossari"
-    location_zone: "warehouse-complex/interior"
-    transformation_state: "n/a"
+      - lady-moira-blackwater
+      - veyra-thornwake
+    location_zone: "city-watch-headquarters/office"
+    transformation_state: "during"
     recommended_images: 1
 
 images:
-  - custom_id: "ch32-the-return-and-the-reckoning-img-32-01-01"
-    source_moment: "ch32-the-return-and-the-reckoning-moment-01"
-    scene_id: "scn-32-01"
+  - custom_id: "ch32-the-return-and-the-reckoning-img-02-05-01"
+    source_moment: "ch32-the-return-and-the-reckoning-moment-05"
+    scene_id: "scn-32-02"
     image_type: "hero"
     category:
       - "moment"
-      - "location"
+      - "character"
       - "emotion"
-    scene_mood: "pastoral"
-    mood_rationale: "Relief and transition. Forest 'exhaling' at the threshold of hope. Soft sunrise light."
+    scene_mood: "ominous"
+    mood_rationale: |
+      The declaration of war against the Silent Hand. Marcus's whispered warning
+      carries the weight of consequences acknowledged—dread of what's to come
+      meets Veyra's unflinching resolve. Tension crystallized into commitment.
     aspect_ratio: "21:9"
     orientation: "landscape"
     size: "1792x768"
     visual_description: |
-      The team emerges from the dark Thornwood treeline at a pale, watery dawn. They are silhouetted against the light, exhausted but unbroken. Behind them, a dark wall of twisted trees. Ahead, the first rays of sun touch the distant hilltop Roost. Mist rises from the ground like an exhale.
+      Pre-dawn warehouse, lamplight casting long shadows across the Briefing Circle.
+      Marcus Heartbridge and Veyra Thornwake face each other across documents spread
+      on the table—charcoal rubbings, stolen manifests, the evidence of horror.
+      Marcus's usually composed face shows cracks, his voice barely a whisper,
+      eyes holding genuine warning. Veyra stands opposite, burn scar catching
+      lamplight, dark eyes burning with fierce determination. Her posture is
+      straight despite exhaustion, jaw set. Between them, the damning evidence
+      of children trafficked and imprisoned. The weight of war declared hangs
+      in the air between two people who understand exactly what it means.
     composition_notes: |
-      Ultra-wide cinematic. Team center-left third. Emergence from dark to light. Roost on distant hilltop. Low angle heroic silhouettes.
-    visual_hook: "The contrast between the dark wall of forest behind and the pale golden sunrise ahead"
+      Wide cinematic framing emphasizing the space between them. Documents as
+      visual anchor at center-bottom. Marcus on left third, Veyra on right third.
+      Lamplight creates pools of warm light with deep shadows beyond. Faces
+      in sharp focus, environment slightly soft. Ultra-wide aspect ratio
+      emphasizes the weight of the moment.
+    visual_hook: "Two faces in lamplight, war declared across a table of damning evidence"
     depicts_characters:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "lyra-kestrel"
-      - "rill-vossari"
+      - marcus-heartbridge
+      - veyra-thornwake
     character_states:
+      marcus-heartbridge: |
+        Composed facade cracking. Voice barely above whisper. Eyes showing
+        genuine concern beneath the diplomat's mask. Well-tailored doublet
+        slightly rumpled from pre-dawn hour. Warning delivered with weight.
       veyra-thornwake: |
-        Leading on horseback. Lantern glowing warm gold. Mohawk silhouette.
-      thorne-brightward: |
-        Riding alongside. Broad-shouldered. Blue cloak catching light.
-      lyra-kestrel: |
-        Horns distinctive against sky. Composed.
-      rill-vossari: |
-        Pale skin. Muted glow. Holding trident.
-    location: "thornwood-edge-at-dawn"
+        Exhausted but unflinching. Burn scar prominent in lamplight. Dark eyes
+        burning with determination. Posture straight, voice firm. Ready for war.
+    location: "warehouse-complex"
+    zone: "briefing-circle"
     lighting:
-      primary_source: "pale sunrise"
-      quality: "soft, diffused"
-      direction: "backlit"
-      color_temperature: "warm gold vs pre-dawn blue"
-      shadow_depth: "gentle"
-      atmospheric: "rising mist"
+      primary_source: "Oil lamp on table"
+      quality: "warm, intimate, dramatic"
+      direction: "from below/center, casting upward shadows"
+      color_temperature: "warm amber"
+      shadow_depth: "deep, dramatic"
+      atmospheric: "still, heavy air, pre-dawn stillness"
     palette:
       dominant:
-        - "forest shadow"
-        - "sunrise gold"
-        - "blue-gray sky"
+        - "amber lamplight"
+        - "deep shadow"
+        - "weathered wood brown"
       accent:
-        - "lantern amber"
+        - "document parchment cream"
+        - "charcoal rubbing gray"
       avoid:
-        - "harsh midday colors"
+        - "bright colors"
+        - "natural daylight"
     prompt_used: |
-      Group of mounted adventurers emerging from a dark forest into a pale golden dawn,
-      silhouettes against the rising sun,
-      mist rising from muddy ground,
-      distant hilltop building catching first light,
-      atmosphere of relief and hard-won survival,
-      wide cinematic composition,
-      classical oil painting, Hudson River School style,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Rembrandt lighting, chiaroscuro.
+      Pre-dawn warehouse interior, rough wooden walls, documents spread on heavy table,
+      oil lamp casting amber pools of light.
+      Two figures facing each other across a table covered in documents and charcoal rubbings,
+      a human man in well-tailored doublet with cracking composure, eyes holding genuine warning,
+      opposite a half-elf woman commander with burn scar on left face, dark mohawk with braids,
+      weathered leather armor, her expression fierce and determined despite exhaustion.
+      Wide cinematic framing, figures on rule-of-thirds, documents as anchor between them.
+      Warm amber lamplight from center-below, deep dramatic shadows beyond.
+      Fantasy grounding: guild marks on documents, ward-scratched table edges.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      daylight, bright lighting, cheerful expressions, celebration
     tags:
-      - "hero"
-      - "dawn"
-      - "pastoral"
-      - "emergence"
+      - "war-declared"
+      - "marcus"
+      - "veyra"
+      - "hero-image"
+      - "ominous"
+      - "confrontation"
     generated_at: null
     file_name: null
     file_path: null
@@ -283,127 +340,267 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch32-the-return-and-the-reckoning-img-32-01-02"
+  - custom_id: "ch32-the-return-and-the-reckoning-img-02-05-02"
+    source_moment: "ch32-the-return-and-the-reckoning-moment-05"
+    scene_id: "scn-32-02"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+    scene_mood: "ominous"
+    mood_rationale: |
+      Veyra's response—"Then let them. We're ready"—captured in her unflinching
+      gaze. The moment of absolute commitment, consequences accepted.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Close focus on Veyra Thornwake's face as she delivers her response. Her
+      burn scar catches lamplight from below, the mottled tissue a map of
+      survival. Dark eyes hold steady, unwavering, the determination of
+      someone who has already survived worse. Her jaw is set, mouth forming
+      the words "We're ready." Behind her, the shadows of the warehouse,
+      the suggestion of her team waiting in the darkness.
+    composition_notes: |
+      Medium close-up on Veyra's face, slightly off-center left. Lamplight
+      from below creating dramatic uplighting on burn scar. Background
+      falls to shadow with suggestions of figures. Her expression is the
+      focal point—calm resolution meeting threatened storm.
+    visual_hook: "Veyra's scarred face in lamplight, absolutely certain, ready for war"
+    depicts_characters:
+      - veyra-thornwake
+    character_states:
+      veyra-thornwake: |
+        Face calm but fierce. Burn scar prominent in dramatic lighting.
+        Dark eyes steady, unwavering. Jaw set with determination.
+        Exhaustion visible but irrelevant—commitment absolute.
+    location: "warehouse-complex"
+    zone: "briefing-circle"
+    lighting:
+      primary_source: "Oil lamp below frame"
+      quality: "dramatic uplight"
+      direction: "from below"
+      color_temperature: "warm amber"
+      shadow_depth: "deep on upper face"
+      atmospheric: "still, pregnant with consequence"
+    palette:
+      dominant:
+        - "amber highlight"
+        - "deep shadow"
+        - "skin tone warmth"
+      accent:
+        - "burn scar texture"
+        - "dark mohawk"
+      avoid:
+        - "cool tones"
+        - "flat lighting"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Caravaggio chiaroscuro.
+      Medium close-up portrait of a half-elf woman commander with burn scar
+      covering left side of face from jaw to temple, dark mohawk hairstyle
+      with braided sections and feathers, sharp dark eyes staring forward
+      with fierce determination, jaw set, expression calm but absolutely resolute.
+      Dramatic amber lamplight from below casting uplighting on features,
+      deep shadows on upper face and behind, suggestion of warehouse darkness.
+      Portrait composition, face slightly left of center, burn scar prominent.
+      Fantasy grounding: subtle tattoo visible on neck, ear piercings with simple rings.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      fear, uncertainty, soft expression, daylight, flat lighting
+    tags:
+      - "veyra"
+      - "determination"
+      - "war-ready"
+      - "portrait"
+      - "ominous"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch32-the-return-and-the-reckoning-img-01-02-01"
     source_moment: "ch32-the-return-and-the-reckoning-moment-02"
     scene_id: "scn-32-01"
-    image_type: "symbol"
+    image_type: "anchor"
     category:
+      - "moment"
       - "character"
-      - "symbol"
       - "emotion"
-    scene_mood: "aquatic"
-    mood_rationale: "Water as healer and kin. Genasi seeking communion. Silver-teal palette, reflected light."
+    scene_mood: "ominous"
+    mood_rationale: |
+      The horror quantified. Lyra's emotionless voice delivering the count of
+      fifty children, her flat tone belying the cold rage flickering in her
+      golden eyes. The stakes made viscerally real.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Interior of the Windborne Roost common room, firelight casting warm glow
+      across exhausted faces. Lyra Kestrel stands delivering her report, her
+      deep plum skin catching firelight, golden eyes fixed on Veyra. Her voice
+      is flat—but her jaw clenches subtly, and something cold and dangerous
+      flickers in those golden predatory eyes. She holds a small rolled paper—
+      the intelligence. Veyra sits nearby, her expression tight as she absorbs
+      the count. "At least fifty. Mostly children." The fire crackles behind
+      them, warmth at odds with the cold horror of the words.
+    composition_notes: |
+      Medium shot with Lyra as primary focus, Veyra in secondary position.
+      Firelight from right casting warm glow with flickering shadows. Lyra's
+      face caught between calculated mask and genuine rage. Golden eyes
+      as focal point—the dangerous flicker. Veyra's tight expression
+      completing the emotional circuit.
+    visual_hook: "Lyra's golden eyes flickering with cold rage, delivering the children's count"
+    depicts_characters:
+      - lyra-kestrel
+      - veyra-thornwake
+    character_states:
+      lyra-kestrel: |
+        Deep plum skin catching firelight. Auburn hair in severe bun.
+        Golden eyes fixed, predatory, with cold dangerous flicker.
+        Jaw subtly clenching. Voice would be flat, emotionless—but
+        the mask is slipping. Elegant curved horns swept back.
+      veyra-thornwake: |
+        Exhausted, trail-worn. Expression tight as she absorbs the count.
+        Burn scar in shadow. Processing the stakes.
+    location: "windborne-roost"
+    zone: "common-room"
+    lighting:
+      primary_source: "Fireplace"
+      quality: "warm, flickering"
+      direction: "from right side"
+      color_temperature: "warm orange-amber"
+      shadow_depth: "moderate, dancing"
+      atmospheric: "sanctuary warmth at odds with cold report"
+    palette:
+      dominant:
+        - "fire orange"
+        - "deep plum skin"
+        - "shadow gray"
+      accent:
+        - "golden eyes"
+        - "auburn hair highlights"
+      avoid:
+        - "cool blues"
+        - "harsh lighting"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Dutch Golden Age interior lighting.
+      Tavern common room with stone fireplace casting warm flickering light,
+      wooden beams and comfortable furnishings suggesting sanctuary.
+      A tiefling woman with deep plum-colored skin and elegant curved horns
+      delivering a report, her auburn hair in a severe bun, golden predatory eyes
+      fixed forward with a cold dangerous flicker despite her flat expression,
+      jaw subtly clenching, holding a small rolled paper.
+      A half-elf woman with burn scar and dark mohawk listening with tight expression.
+      Medium shot, firelight from right, warm orange glow with dancing shadows.
+      Fantasy grounding: travel-worn clothing, subtle horn elegance, mixed ancestry gathering.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wrong character count, extra limbs, duplicate faces, demonic tiefling,
+      red skin, overly monstrous horns, cheerful expressions
+    tags:
+      - "lyra"
+      - "intelligence-report"
+      - "fifty-children"
+      - "ominous"
+      - "stakes"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch32-the-return-and-the-reckoning-img-01-02-02"
+    source_moment: "ch32-the-return-and-the-reckoning-moment-02"
+    scene_id: "scn-32-01"
+    image_type: "detail"
+    category:
+      - "moment"
+      - "symbol"
+      - "character"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The physical evidence of horror—Lyra's charcoal rubbings and stolen
+      documents. The texture of conspiracy laid bare in lamplight.
     aspect_ratio: "3:4"
     orientation: "portrait"
     size: "1024x1365"
     visual_description: |
-      Rill Vossari kneels at the edge of a clear mountain stream. Hands hover above water. Pale, exhausted skin. Bioluminescent patterns glow and flow toward her fingertips like a magnetic pull. Stream ripples toward her. Trident lies on the bank. Silver and gold morning reflections.
+      Close-up of documents spread on a rough wooden table—charcoal rubbings
+      of facility layouts, stolen manifests with coded entries, the physical
+      evidence of the Silent Hand's operation. Lyra's plum-colored hand with
+      elegant fingers holds one corner of a rubbing, tracing a line. The
+      charcoal dust smudges the parchment edges. Firelight catches the texture
+      of the rubbings, revealing architectural details—cell blocks, research
+      levels, the basement prison where children are held.
     composition_notes: |
-      Vertical portrait. Rill lower two-thirds. Hands focal point. Trident foreground left. Depth from stream perspective.
-    visual_hook: "The bioluminescent patterns on her skin flowing toward her fingertips like light being pulled by water's gravity"
+      Tight portrait framing on documents and hand. Shallow depth of field.
+      Charcoal texture as visual interest. Lyra's distinctive skin color
+      identifying the hand. Firelight from above-right. Vertical format
+      emphasizes the downward-tracing motion.
+    visual_hook: "Plum-colored fingers tracing charcoal prison blueprints"
     depicts_characters:
-      - "rill-vossari"
-    character_states:
-      rill-vossari: |
-        Kneeling. Face turned down. Solemn seeking. Paler than usual. active bioluminescence. Dreadlocks hanging forward.
-    location: "windborne-roost-stream"
-    lighting:
-      primary_source: "morning sky + water reflection"
-      quality: "silvery, wet"
-      direction: "above + below"
-      color_temperature: "silver-blue vs pale morning gold"
-      shadow_depth: "soft, luminous"
-      atmospheric: "clean morning air"
-    palette:
-      dominant:
-        - "aquamarine"
-        - "clear silver"
-        - "teal depths"
-      accent:
-        - "blue-white bioluminescence"
-      avoid:
-        - "warm earth tones"
-    prompt_used: |
-      Water genasi woman with glowing aquamarine skin kneeling at a clear stream,
-      hands hovering above water,
-      bioluminescent patterns flowing toward her fingers,
-      morning sunlight reflecting off the ripples,
-      trident lying on the bank,
-      atmosphere of elemental healing,
-      classical oil painting, maritime realism, Turner influence,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, murky water
-    tags:
-      - "symbol"
-      - "aquatic"
-      - "healing"
-      - "rill-vossari"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch32-the-return-and-the-reckoning-img-32-01b-01"
-    source_moment: "ch32-the-return-and-the-reckoning-moment-03"
-    scene_id: "scn-32-01b"
-    image_type: "character"
-    category:
-      - "character"
-      - "emotion"
-    scene_mood: "intimate"
-    mood_rationale: "Tender emotional breakthrough. A spy's armor cracking through kindness. Warm amber tones of hearth and whiskey."
-    aspect_ratio: "4:5"
-    orientation: "portrait"
-    size: "1024x1280"
-    visual_description: |
-      Lyra Kestrel sits at the mess hall table. Genuine, unforced smile. Amber-gold eyes catch hearth-light, matching the whiskey in her glass. Elba visible in soft background moving away with a smirk. Purple wisps at throat are calm. Warm, private moment.
-    composition_notes: |
-      Close portrait. Lyra center. Whiskey glass shared focus. Elba background right anchor. Shallow depth. Single warm light source.
-    visual_hook: "The genuine softening in her amber eyes—the same color as the whiskey she holds"
-    depicts_characters:
-      - "lyra-kestrel"
-      - "mistress-elba"
+      - lyra-kestrel
     character_states:
       lyra-kestrel: |
-        Seated. Jacket unbuttoned. Rare warm smile. Amber eyes glowing. Calm purple wisps.
-      mistress-elba: |
-        Background. Moving away. Satisfied smirk.
-    location: "warehouse-complex"
+        Only hand visible—deep plum skin, elegant fingers.
+        Precise, controlled motion. The infiltrator's work made tangible.
+    location: "windborne-roost"
+    zone: "common-room"
     lighting:
-      primary_source: "hearth fire + candles"
-      quality: "soft, warm"
-      direction: "side"
-      color_temperature: "warm amber"
-      shadow_depth: "soft gradients"
-      atmospheric: "still air"
+      primary_source: "Firelight from above"
+      quality: "warm, angled"
+      direction: "from upper right"
+      color_temperature: "amber-orange"
+      shadow_depth: "moderate"
+      atmospheric: "focused, intimate"
     palette:
       dominant:
-        - "amber gold"
-        - "deep plum"
+        - "parchment cream"
+        - "charcoal black"
         - "wood brown"
       accent:
-        - "burgundy leather"
+        - "plum skin tone"
+        - "amber firelight"
       avoid:
-        - "cold blues"
+        - "bright colors"
+        - "harsh contrast"
     prompt_used: |
-      Close portrait of a tiefling woman with plum skin sitting at a wooden table,
-      rare warm genuine smile,
-      holding a glass of amber whiskey,
-      glowing golden eyes,
-      warm hearth light casting soft shadows,
-      dwarf woman smirking in background,
-      classical oil painting, Vermeer lighting,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Vermeer detail study.
+      Close-up of documents spread on rough wooden table, charcoal rubbings
+      of architectural layouts showing cell blocks and research levels,
+      stolen parchment manifests with coded entries visible.
+      A deep plum-colored hand with elegant fingers holds one corner,
+      tracing a charcoal line on the blueprint.
+      Tight portrait framing, shallow depth of field, document texture prominent.
+      Warm amber firelight from upper right, charcoal dust on parchment edges.
+      Fantasy grounding: ward-marks on paper edges, guild seal impressions.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, calculating expression
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, full figure, busy background, legible text
     tags:
-      - "character"
-      - "intimate"
+      - "documents"
+      - "intelligence"
+      - "detail"
       - "lyra"
-      - "warmth"
+      - "evidence"
     generated_at: null
     file_name: null
     file_path: null
@@ -411,206 +608,98 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch32-the-return-and-the-reckoning-img-32-01b-02"
-    source_moment: "ch24-debts-and-truths-moment-04"
-    scene_id: "scn-32-01b"
-    image_type: "establishing"
-    category:
-      - "location"
-      - "moment"
-    scene_mood: "intimate"
-    mood_rationale: "Found family feast. Warm refuge heart. Industrial bones made domestic by life and food."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Interior of the warehouse mess hall. Heavy beams, stone hearth with blazing fire. Long tables with steaming platters of food. Company members gathered, eating and talking in low voices. Warm amber light across the space. The atmosphere is one of sanctuary and shared bonds.
-    composition_notes: |
-      Wide shot. Deep perspective through tables. Hearth as focal point of warmth. Balanced human activity.
-    visual_hook: "The long wooden table laden with steam-rising food, bringing the warriors back to humanity."
-    depicts_characters:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "grimjaw-ironbeard"
-      - "marcus-heartbridge"
-    character_states:
-      veyra-thornwake: |
-        Seated. Sipping tea. Sigh of contentment.
-      thorne-brightward: |
-        Appreciative nod to Elba. Savory pie.
-      grimjaw-ironbeard: |
-        Laughing. Tankard of ale. Boar meat.
-      marcus-heartbridge: |
-        Raising an eyebrow in amused surprise.
-    location: "warehouse-complex"
-    lighting:
-      primary_source: "Hearth + Oil lamps"
-      quality: "Warm, flickering, convivial"
-      direction: "Multiple"
-      color_temperature: "Warm amber"
-      shadow_depth: "Soft, warm"
-      atmospheric: "Cooking aromas made visual"
-    palette:
-      dominant:
-        - "warm amber"
-        - "wood brown"
-        - "hearth orange"
-      accent:
-        - "Company blue banner"
-      avoid:
-        - "cold industrial tones"
-    prompt_used: |
-      Wide shot of a group of adventurers sharing a large meal in a stone hall,
-      long wooden tables with steaming food,
-      blazing hearth fire casting warm light,
-      atmosphere of sanctuary and family,
-      classical oil painting, Dutch genre warmth,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, cold lighting
-    tags:
-      - "establishing"
-      - "family"
-      - "mess-hall"
-      - "intimate"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch32-the-return-and-the-reckoning-img-32-02-01"
-    source_moment: "ch32-the-return-and-the-reckoning-moment-05"
-    scene_id: "scn-32-02"
-    image_type: "pivot"
-    category:
-      - "moment"
-      - "character"
-      - "emotion"
-    scene_mood: "somber"
-    mood_rationale: "Emotional pivot. Betrayal and accusation. Single lamp dividing shadows. trust breaking."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Veyra and Marcus face each other in a shadowed warehouse alcove. Single oil lamp on table splits the space. Veyra rigid, burn-scarred face catching light, eyes burning with protective fury. Marcus composure cracking, hand through hair. Intelligence documents between them as evidence.
-    composition_notes: |
-      Medium shot center. Figures opposite thirds. Lamp/documents center. Veyra left catching light. Marcus right partially in shadow. Dutch angle creates unease.
-    visual_hook: "Veyra's mottled burn scar catching the harsh lamplight while Marcus's practiced calm visibly cracks"
-    depicts_characters:
-      - "veyra-thornwake"
-      - "marcus-heartbridge"
-    character_states:
-      veyra-thornwake: |
-        Rigid fury. Jaw tight. Hand near lantern. Accusing.
-      marcus-heartbridge: |
-        Frustrated posture. Hand through hair. Mask slipped. Defending choices.
-    location: "warehouse-complex"
-    lighting:
-      primary_source: "oil lamp"
-      quality: "hard, dividing"
-      direction: "below/center"
-      color_temperature: "warm amber vs cold shadow"
-      shadow_depth: "deep, rich"
-      atmospheric: "oppressive"
-    palette:
-      dominant:
-        - "amber"
-        - "shadow black"
-        - "brown"
-      accent:
-        - "red-brown scar"
-      avoid:
-        - "soft lighting"
-    prompt_used: |
-      Two people in a tense confrontation in a dark room,
-      single oil lamp on a table between them casting dramatic shadows,
-      scarred woman looking furious and accusing,
-      man with goatee looking frustrated and running a hand through his hair,
-      scattered documents on the table,
-      classical oil painting, Rembrandt lighting, chiaroscuro,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, friendly expressions
-    tags:
-      - "pivot"
-      - "confrontation"
-      - "trust"
-      - "somber"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch32-the-return-and-the-reckoning-img-32-03-01"
+  - custom_id: "ch32-the-return-and-the-reckoning-img-03-06-01"
     source_moment: "ch32-the-return-and-the-reckoning-moment-06"
     scene_id: "scn-32-03"
     image_type: "anchor"
     category:
       - "moment"
-      - "location"
+      - "character"
       - "action"
-    scene_mood: "somber"
-    mood_rationale: "Judgment by sunlight. Evidence of evil illuminated. Official scrutiny. institutional gravity."
+    scene_mood: "ominous"
+    mood_rationale: |
+      Political authority grants blessing for war. Lady Blackwater's cold voice
+      authorizing the rescue operation carries the weight of government power
+      meeting justified cause. The mandate delivered with clinical precision.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Morning sun through tall windows of Blackwater's office. defined shafts of light across mahogany desk with evidence. Veyra stands presenting intelligence, scarred face illuminated. Thorne, Grimjaw, Marcus flanking. Blackwater listens in silence, severe. Evidence catching light as judgment.
+      Lady Moira Blackwater's office, morning sun streaming through tall windows
+      onto polished mahogany. She sits behind her desk, silver-streaked auburn
+      hair precise, sharp gray-green eyes fixed on the documents before her.
+      Her voice is cold as she delivers the mandate: "Full operational autonomy."
+      Veyra stands opposite, presenting intelligence. Captain Grimsby looms in
+      the background, expression grim. The damning documents are spread across
+      the mahogany surface, official seals and charcoal rubbings catching
+      morning light. Authority crystallized in cold precision.
     composition_notes: |
-      Wide shot, elevated angle. Blackwater frame left. Company frame right. Evidence focal point center. Defined light shafts. High angle emphasizes institutional weight.
-    visual_hook: "Sunlight catching the wax seals on intelligence documents as evidence is illuminated under scrutiny"
+      Lady Blackwater seated behind desk as focal point, positioned on left third.
+      Veyra standing opposite on right third. Grimsby in background center.
+      Tall windows creating dramatic morning light shafts. Documents on desk
+      as anchor point. Formal composition reflecting formal authority.
+    visual_hook: "Gray-green eyes delivering cold authorization, morning sun on official documents"
     depicts_characters:
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "marcus-heartbridge"
-      - "lady-moira-blackwater"
-      - "grimjaw-ironbeard"
+      - lady-moira-blackwater
+      - veyra-thornwake
+      - captain-grimsby
     character_states:
-      veyra-thornwake: |
-        Standing at attention. Presenting evidence. Clear, authoritative.
-      thorne-brightward: |
-        Supportive. Grave expression.
-      marcus-heartbridge: |
-        Restored mask. assessing response.
       lady-moira-blackwater: |
-        Clinically detached. Sharp gray-green eyes.
-      grimjaw-ironbeard: |
-        Gruff determination. Braided beard.
+        Seated with composed authority. Silver-streaked auburn hair precise.
+        Sharp gray-green eyes missing nothing. Voice cold, clinical.
+        Understated expensive clothing. Leather portfolio nearby.
+      veyra-thornwake: |
+        Standing, presenting intelligence. Professional commander mode.
+        Burn scar in morning light. Posture straight, awaiting authorization.
+      captain-grimsby: |
+        Background presence. Grim expression. Military bearing.
+        The official weight of Watch support.
     location: "city-watch-headquarters"
+    zone: "office"
     lighting:
-      primary_source: "morning windows"
-      quality: "hard, clear, scrutinizing"
-      direction: "side shafts"
-      color_temperature: "cool white vs warm wood"
-      shadow_depth: "deep where light misses"
-      atmospheric: "clear air"
+      primary_source: "Tall windows, morning sun"
+      quality: "bright, official, dramatic"
+      direction: "from left/behind Lady Blackwater"
+      color_temperature: "cool morning light with warm wood tones"
+      shadow_depth: "crisp, defined"
+      atmospheric: "formal, authoritative"
     palette:
       dominant:
         - "mahogany brown"
-        - "white-gold light"
-        - "parchment cream"
+        - "morning light gold"
+        - "document parchment"
       accent:
-        - "red wax seals"
+        - "gray-green eyes"
+        - "silver hair streaks"
+        - "official seal red"
       avoid:
-        - "cheerful tones"
+        - "casual warmth"
+        - "soft lighting"
     prompt_used: |
-      Formal meeting in a grand office with shafts of morning light,
-      group of adventurers presenting documents to a severe official,
-      polished wood desk and high windows,
-      atmosphere of institutional judgment and grave decisions,
-      classical oil painting, Rembrandt lighting,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, formal portrait tradition.
+      Official government office with tall windows streaming morning sunlight,
+      polished mahogany desk covered with documents and official seals.
+      A half-elf woman with silver-streaked auburn hair in precise professional style
+      seated behind the desk, sharp gray-green eyes fixed forward with cold authority,
+      wearing understated expensive clothing suitable for high office.
+      A half-elf woman commander with burn scar and dark mohawk standing opposite,
+      presenting intelligence. A uniformed captain looming in background.
+      Formal composition, figures on rule of thirds, morning light dramatic.
+      Fantasy grounding: official seals with magical sigils, guild marks on documents.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smiling
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wrong character count, casual setting, warm expressions, informal clothing
     tags:
-      - "anchor"
-      - "briefing"
+      - "lady-blackwater"
       - "authorization"
-      - "somber"
+      - "official"
+      - "mandate"
+      - "ominous"
     generated_at: null
     file_name: null
     file_path: null
@@ -618,61 +707,81 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch32-the-return-and-the-reckoning-img-32-03-02"
-    source_moment: "ch32-the-return-and-the-reckoning-moment-07"
+  - custom_id: "ch32-the-return-and-the-reckoning-img-03-06-02"
+    source_moment: "ch32-the-return-and-the-reckoning-moment-06"
     scene_id: "scn-32-03"
     image_type: "beat"
     category:
       - "moment"
       - "character"
-      - "location"
-    scene_mood: "somber"
-    mood_rationale: "The 'Character's Calculation.' Panoramic power. Spymaster viewing her domain. Contrast between cold dusk and warm lamp-lit calculation."
+    scene_mood: "ominous"
+    mood_rationale: |
+      The intelligence laid bare. Documents spread in morning light,
+      the systematic horror of magical trafficking exposed to official eyes.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Blackwater as sharp silhouette against massive corner windows at dusk. Looking over glittering tapestry of Waterdeep. Still posture, hands behind back. Mahogany desk foreground, lamp illuminates ledger and red wax seals. City lights as constellation of responsibility.
+      Wide view of the mahogany desk surface, morning sunlight streaming across
+      spread documents. Charcoal rubbings of facility layouts, stolen manifests
+      with prisoner counts, the evidence of behavioral conditioning programs.
+      Lady Blackwater's hands visible at the edge, one finger tracing a line.
+      The scale of the operation visible in the sheer volume of evidence—
+      systematic, organized, horrifying.
     composition_notes: |
-      Medium-wide. Blackwater right third silhouette. Desk foreground left. City view right/background scale. Island of light on desk secondary focal point.
-    visual_hook: "Lady Blackwater as a dark silhouette against a panoramic city dusk, with a single lamp illuminating the 'ledger'"
+      Top-down angle on desk surface with documents. Hands at edge for scale.
+      Morning light creating dramatic shadows and highlights on paper texture.
+      Volume of documents emphasizing scale. Official seal visible among papers.
+    visual_hook: "Sea of damning evidence spread in morning light"
     depicts_characters:
-      - "lady-moira-blackwater"
+      - lady-moira-blackwater
     character_states:
       lady-moira-blackwater: |
-        Silhouette only. Clinical detachment. Rigid command.
+        Only hands visible—elegant, controlled, with small scars from fieldwork.
+        One finger tracing a damning line of evidence.
     location: "city-watch-headquarters"
+    zone: "office"
     lighting:
-      primary_source: "task lamp + dusk sky"
-      quality: "high-contrast, moody"
-      direction: "backlight + pool"
-      color_temperature: "blue-purple vs amber"
-      shadow_depth: "deep shadow interior"
-      atmospheric: "clear night beyond"
+      primary_source: "Morning sun through windows"
+      quality: "bright, revealing"
+      direction: "from upper left"
+      color_temperature: "cool morning white"
+      shadow_depth: "crisp document shadows"
+      atmospheric: "clinical, exposing"
     palette:
       dominant:
-        - "twilight blue"
+        - "parchment cream"
+        - "charcoal gray"
         - "mahogany brown"
-        - "amber lamp"
       accent:
-        - "red wax seal"
+        - "official seal red"
+        - "morning light gold"
       avoid:
-        - "morning brightness"
+        - "warm intimate tones"
+        - "shadow obscuring"
     prompt_used: |
-      Woman silhouetted against a large window looking over a city at dusk,
-      dark office interior with a single lamp on a desk,
-      desk has a ledger and red wax seals,
-      city lights like stars below,
-      atmosphere of absolute command and calculation,
-      classical oil painting, Vermeer lighting,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Dutch still life precision.
+      Top-down view of polished mahogany desk surface covered with documents,
+      morning sunlight streaming across charcoal rubbings of prison layouts,
+      stolen manifests with coded entries, stacks of evidence papers.
+      Elegant hands with small scars visible at frame edge, one finger tracing a line.
+      Official seal among papers, the scale of conspiracy visible in document volume.
+      High angle composition, morning light from upper left, crisp shadows.
+      Fantasy grounding: ward-marked paper edges, guild seal impressions.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, sunny
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      legible text, faces visible, cluttered composition
     tags:
-      - "beat"
-      - "blackwater"
-      - "command"
-      - "somber"
+      - "documents"
+      - "evidence"
+      - "official"
+      - "scale"
+      - "ominous"
     generated_at: null
     file_name: null
     file_path: null
@@ -680,58 +789,92 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch32-the-return-and-the-reckoning-img-32-01-03"
-    source_moment: "ch32-the-return-and-the-reckoning-moment-01"
-    scene_id: "scn-32-01"
-    image_type: "beat"
+  - custom_id: "ch32-the-return-and-the-reckoning-img-04-10-01"
+    source_moment: "ch32-the-return-and-the-reckoning-moment-10"
+    scene_id: "scn-32-04"
+    image_type: "mood"
     category:
-      - "location"
-      - "temporal"
-      - "atmospheric"
-    scene_mood: "pastoral"
-    mood_rationale: "The 'Character's Relief.' Forest 'exhale.' Transition from hostile territory to sanctuary."
-    aspect_ratio: "21:9"
+      - "moment"
+      - "emotion"
+      - "action"
+    scene_mood: "intimate"
+    mood_rationale: |
+      The promise crystallized. Grim determination settling over the team as
+      Veyra speaks the mission's purpose aloud—"We will bring those children home."
+      Not ominous threat, but intimate commitment. Found family bound by purpose.
+    aspect_ratio: "16:9"
     orientation: "landscape"
-    size: "1792x768"
+    size: "1792x1024"
     visual_description: |
-      Wide shot from forest edge at dawn. Ragged treeline silhouetted against pale watery sky of gold and indigo. Mud and leaf litter steaming, thick mist rising. Windborne Roost on distant hilltop catching first light. Single green shoot in mud.
+      The warehouse Briefing Circle, transformed by activity. Veyra stands at
+      the center, Thorne at her shoulder, as she speaks to the assembled team.
+      Her voice carries across the space—"We will bring those children home."
+      Around them, the evidence of preparation: Grimjaw's forge glowing in the
+      background, blueprints spread on the table, medical kits being assembled.
+      The team listens with grim determination. Not despair—commitment. Purpose
+      crystallized into action. Mixed lamplight and forge-glow creating warm
+      atmosphere despite the weight of what's to come.
     composition_notes: |
-      Ultra-wide. Dark treeline left/upper. Horizon of hope right. Roost secondary focal point distant. Mist volume. No human figures.
-    visual_hook: "A dark, ragged treeline silhouetted against a pale watery dawn, with thick mist rising like an exhale"
-    depicts_characters: []
-    character_states: {}
-    location: "thornwood-edge-at-dawn"
+      Wide shot with Veyra and Thorne as focal center. Team arranged around
+      listening. Multiple light sources—lamps, forge glow—creating warm pools.
+      Activity visible at edges: forge, medical supplies, blueprints. Sense
+      of preparation and purpose unified.
+    visual_hook: "Commander speaking the promise, team bound by grim determination"
+    depicts_characters:
+      - veyra-thornwake
+      - thorne-brightward
+    character_states:
+      veyra-thornwake: |
+        Standing at Briefing Circle center. Voice carrying the promise.
+        Grim but resolute. Burn scar in mixed light. Commander fully present.
+      thorne-brightward: |
+        At her shoulder, steady support. Military bearing. Face grim but
+        committed. The reliable second backing the promise.
+    location: "warehouse-complex"
+    zone: "briefing-circle"
     lighting:
-      primary_source: "golden sunrise"
-      quality: "soft, diffused"
-      direction: "backlit from horizon"
-      color_temperature: "warm amber vs cool indigo"
-      shadow_depth: "moderate"
-      atmospheric: "thick rising mist"
+      primary_source: "Multiple—lamps and distant forge"
+      quality: "warm, unified, purposeful"
+      direction: "mixed sources"
+      color_temperature: "warm amber and orange"
+      shadow_depth: "moderate, comfortable"
+      atmospheric: "purposeful activity, determination"
     palette:
       dominant:
-        - "sunrise gold"
-        - "indigo sky"
-        - "charcoal trees"
+        - "warm amber"
+        - "forge orange"
+        - "wood brown"
       accent:
-        - "mist silver"
+        - "steel gray (equipment)"
+        - "parchment (blueprints)"
       avoid:
-        - "harsh midday"
+        - "cold tones"
+        - "harsh shadows"
     prompt_used: |
-      Wide cinematic shot of a forest edge at sunrise,
-      mist rising from the ground,
-      dark treeline against a pale gold and purple sky,
-      distant hilltop building catching first rays,
-      atmosphere of profound relief and new day,
-      classical oil painting, Hudson River School style,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, warm interior lighting tradition.
+      Warehouse briefing area with multiple light sources—oil lamps and distant forge glow,
+      wooden beams and rough stone walls, activity visible in background.
+      A half-elf woman commander with burn scar and dark mohawk standing at center
+      speaking to assembled listeners, another figure in armor at her shoulder,
+      both with expressions of grim determination.
+      Forge glowing orange in background, blueprints on nearby table, medical supplies.
+      Wide composition, warm unified lighting, sense of purposeful preparation.
+      Fantasy grounding: mixed ancestries in assembled group, ward-marks on walls.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, scary forest
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      despair, defeat, cold lighting, static poses
     tags:
-      - "beat"
-      - "dawn"
-      - "relief"
-      - "pastoral"
+      - "promise"
+      - "veyra"
+      - "thorne"
+      - "team"
+      - "determination"
+      - "intimate"
     generated_at: null
     file_name: null
     file_path: null
@@ -739,60 +882,275 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch32-the-return-and-the-reckoning-img-32-04-01"
-    source_moment: "ch32-the-return-and-the-reckoning-moment-08"
+  - custom_id: "ch32-the-return-and-the-reckoning-img-04-10-02"
+    source_moment: "ch32-the-return-and-the-reckoning-moment-10"
     scene_id: "scn-32-04"
     image_type: "beat"
     category:
-      - "character"
-      - "action"
       - "moment"
+      - "action"
     scene_mood: "intimate"
-    mood_rationale: "Engineering the rescue. Heartbeat of the mission. Grimjaw's expertise translated to tools."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
+    mood_rationale: |
+      The preparation montage—forge ringing, blueprints studied, medical kits
+      assembled. The intimacy of shared purpose made tangible through work.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
     visual_description: |
-      Grimjaw at his forge, crafting specialized tools. Massive hands using a smaller hammer for precision work. Red-hot metal on the anvil. His face is lit by the fire's glow, soot-streaked but calm. Specialized chains and anchor plates nearby. The heartbeat of preparation.
+      The warehouse complex alive with activity. In the foreground, hands trace
+      facility blueprints—Vera and Rill studying the water networks. Mid-ground,
+      Aldwin and Halden prepare medical kits, their faces grim as they review
+      potential injuries. Background, Grimjaw's forge rings with hammer on steel,
+      sparks flying as he crafts specialized tools. Multiple pools of activity
+      unified by purpose. Everyone has a role. Everyone is ready.
     composition_notes: |
-      Tight square framing. Focus on the anvil and hands. Warm radial firelight. Depth through workshop tools in background.
-    visual_hook: "The sparks flying from the anvil, caught in the warm amber glow of the forge, as rescue tools take shape."
+      Layered depth—blueprints foreground, medical prep mid-ground, forge background.
+      Multiple activity centers creating visual rhythm. Warm lighting unifying
+      the disparate actions. Sense of coordinated preparation.
+    visual_hook: "Forge sparks, blueprint hands, medical kits—the Company prepares for war"
     depicts_characters:
-      - "grimjaw-ironbeard"
+      - grimjaw-ironbeard
+      - aldwin-gentleheart
     character_states:
       grimjaw-ironbeard: |
-        Focused. Working. Soot-streaked.
+        At forge in background. Hammer raised, sparks flying. Crafting tools for rescue.
+        Copper-red beard catching forge glow.
+      aldwin-gentleheart: |
+        At table with medical supplies. Face grim, reviewing injury protocols.
+        Healer preparing for the worst.
     location: "warehouse-complex"
+    zone: "briefing-circle"
     lighting:
-      primary_source: "Forge fire"
-      quality: "Warm, flickering"
-      direction: "Side/Below"
-      color_temperature: "Orange/Gold"
-      shadow_depth: "Soft"
-      atmospheric: "Hazy forge smoke"
+      primary_source: "Forge and scattered lamps"
+      quality: "warm, active, purposeful"
+      direction: "multiple sources"
+      color_temperature: "forge orange dominant, lamp amber secondary"
+      shadow_depth: "dynamic, active"
+      atmospheric: "sparks, activity, energy"
     palette:
       dominant:
-        - "forge amber"
-        - "iron gray"
-        - "shadow"
+        - "forge orange"
+        - "steel gray"
+        - "wood brown"
       accent:
-        - "red-hot metal"
+        - "blueprint blue-gray"
+        - "medical white bandages"
       avoid:
-        - "cold light"
+        - "static composition"
+        - "single light source"
     prompt_used: |
-      Dwarf blacksmith working at a forge at night,
-      hammering glowing red metal on an anvil,
-      sparks flying,
-      warm firelight on a weathered face with magnificent beard,
-      atmosphere of intense purposeful creation,
-      classical oil painting, Vermeer lighting quality,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, workshop activity tradition.
+      Warehouse interior with layered depth of activity, forge glowing orange
+      in background with dwarf hammering steel and sparks flying,
+      medical supplies being organized on table in mid-ground,
+      hands tracing blueprints in foreground.
+      Multiple activity centers unified by warm lighting and shared purpose.
+      Forge orange glow, lamp amber pools, dynamic composition with energy.
+      Fantasy grounding: dwarven forge techniques, mixed ancestry team, ward-tools.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      static poses, single activity, cold tones
     tags:
-      - "beat"
-      - "grimjaw"
+      - "preparation"
       - "forge"
+      - "medical"
+      - "blueprints"
+      - "activity"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch32-the-return-and-the-reckoning-img-01b-03-01"
+    source_moment: "ch32-the-return-and-the-reckoning-moment-03"
+    scene_id: "scn-32-01b"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      The mask slips—Lyra's rare, genuine smile as Elba offers understanding
+      without judgment. The assassin experiencing warmth, the calculating glint
+      softened by unexpected acceptance. Found family includes everyone.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The warehouse mess hall, warm kitchen light casting comfortable glow.
+      Lyra Kestrel sits at the common table, a plate of spiced chicken and rice
+      before her, a glass of fine whiskey at hand. Her deep plum skin catches
+      the warm light. And on her face—rare, unforced, genuine—a smile. The
+      calculating glint in her golden eyes softened by unexpected understanding.
+      Mistress Elba moves on in the background, a satisfied smirk on her stout
+      dwarven face, having offered exactly what was needed without being asked.
+      The moment of acceptance, the assassin welcomed into found family.
+    composition_notes: |
+      Medium shot focused on Lyra's face, the rare smile as focal point.
+      Elba moving away in background, satisfied. Kitchen warmth enveloping
+      the scene. Lyra slightly off-center, the smile transforming her features.
+    visual_hook: "Lyra's rare genuine smile, the calculating glint softened by acceptance"
+    depicts_characters:
+      - lyra-kestrel
+      - mistress-elba
+    character_states:
+      lyra-kestrel: |
+        Seated, plate before her. Deep plum skin in warm light. Auburn hair
+        still in severe bun, but expression transformed. Rare genuine smile
+        touching her lips, softening the usual calculating glint in golden eyes.
+        Guard lowered, warmth spreading through her.
+      mistress-elba: |
+        Moving away in background. Stout dwarven frame, kitchen apron.
+        Satisfied smirk—she knows what she's done. Maternal efficiency personified.
+    location: "warehouse-complex"
+    zone: "mess"
+    lighting:
+      primary_source: "Kitchen hearth and lamps"
+      quality: "warm, domestic, comfortable"
+      direction: "diffused from multiple sources"
+      color_temperature: "warm amber, cozy"
+      shadow_depth: "soft, comfortable"
+      atmospheric: "steam from food, warmth of home"
+    palette:
+      dominant:
+        - "warm amber"
+        - "deep plum skin"
+        - "wood brown"
+      accent:
+        - "golden eyes (softened)"
+        - "food colors"
+        - "whiskey amber"
+      avoid:
+        - "cold tones"
+        - "harsh shadows"
+        - "calculating expressions"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Dutch interior warmth.
+      Warehouse mess hall with kitchen warmth, common table with plates of food,
+      warm amber light from hearth and lamps.
+      A tiefling woman with deep plum skin and elegant curved horns seated at table,
+      auburn hair in severe bun, but face transformed by a rare genuine smile,
+      golden eyes softened from their usual calculating glint, plate of food before her.
+      A stout dwarven woman moving away in background with satisfied smirk.
+      Medium composition focused on the smiling tiefling, domestic warmth enveloping.
+      Fantasy grounding: mixed ancestry comfort, simple pleasures shared.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      demonic tiefling, red skin, monstrous horns, calculating expression, cold lighting
+    tags:
+      - "lyra"
+      - "elba"
+      - "smile"
+      - "acceptance"
+      - "found-family"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch32-the-return-and-the-reckoning-img-03-07-01"
+    source_moment: "ch32-the-return-and-the-reckoning-moment-07"
+    scene_id: "scn-32-03"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "symbol"
+      - "character"
+    scene_mood: "intimate"
+    mood_rationale: |
+      The symbol offered—Lady Blackwater's thin smile as she references the
+      Bastion Key. Recognition formalized, the Company becoming official.
+      Veyra's hand at her ring, one symbol answered by another.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Lady Blackwater's office, the morning briefing concluded. Lady Moira
+      wears a thin, knowing smile as she speaks of the Bastion Key—"A symbol
+      of the city's trust." Across from her, Veyra's hand unconsciously
+      moves to the ring at her neck—Lysander's ring, the symbol of who she
+      fights for. Morning sunlight catches both women in its glow, one offering
+      official recognition, the other remembering personal sacrifice.
+      Two symbols, two kinds of trust.
+    composition_notes: |
+      Two-shot with Lady Blackwater and Veyra. Lady Blackwater's thin smile
+      as focal point. Veyra's hand at her neck, touching the ring. Morning
+      light from window behind creating halo effect. Symbolic resonance
+      between official and personal.
+    visual_hook: "Thin smile offering the key, hand touching the ring—symbols of trust"
+    depicts_characters:
+      - lady-moira-blackwater
+      - veyra-thornwake
+    character_states:
+      lady-moira-blackwater: |
+        Thin, knowing smile. Political calculation visible beneath benevolence.
+        Silver-streaked auburn hair catching morning light. Gray-green eyes
+        assessing even as she offers recognition.
+      veyra-thornwake: |
+        Hand unconsciously at neck, touching Lysander's ring on its cord.
+        Processing the offer of official recognition. Burn scar in morning light.
+        One symbol answered by another.
+    location: "city-watch-headquarters"
+    zone: "office"
+    lighting:
+      primary_source: "Morning sunlight through windows"
+      quality: "bright, formal, symbolic"
+      direction: "from behind/side"
+      color_temperature: "cool morning with warm wood tones"
+      shadow_depth: "soft, formal"
+      atmospheric: "official yet intimate moment"
+    palette:
+      dominant:
+        - "morning light gold"
+        - "mahogany brown"
+        - "formal clothing tones"
+      accent:
+        - "ring metal gleam"
+        - "silver hair streaks"
+      avoid:
+        - "cold harsh tones"
+        - "aggressive expressions"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, formal portrait warmth.
+      Government office with morning sunlight streaming through tall windows,
+      polished mahogany desk, formal setting.
+      A half-elf woman with silver-streaked auburn hair wearing a thin knowing smile,
+      gray-green eyes assessing, offering something symbolic.
+      Opposite her, a half-elf woman commander with burn scar and dark mohawk,
+      her hand unconsciously touching a ring worn on a cord at her neck.
+      Two-shot composition, morning light creating soft halo, intimate despite formality.
+      Fantasy grounding: official seals, personal tokens worn as jewelry.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      aggressive expressions, cold formality, physical key shown
+    tags:
+      - "bastion-key"
+      - "lady-blackwater"
+      - "veyra"
+      - "symbol"
+      - "recognition"
       - "intimate"
     generated_at: null
     file_name: null

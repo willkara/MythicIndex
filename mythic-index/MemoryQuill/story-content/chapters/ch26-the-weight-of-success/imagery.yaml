@@ -1,177 +1,198 @@
-# ============================================================================
-# CHAPTER IMAGERY SPECIFICATION
-# Chapter: The Weight of Success
-# Generated: 2025-12-21
-# ============================================================================
-
 metadata:
   entity_type: "chapter-imagery"
   slug: "ch26-the-weight-of-success"
   chapter_number: 26
   chapter_title: "The Weight of Success"
-  visual_thesis: "From the warm glow of hard-won recognition through the cold weight of moral compromise to the quiet steel of reaffirmed purpose."
+  visual_thesis: "Recognition reshapes everything—from academic triumph to commercial pressure to intelligence offers, the Company confronts the moral complexity of fame while recommitting to their mission: no one left behind."
   color_palette:
     primary:
-      - "#C4A35A"
-      - "#8B7355"
-      - "#A0522D"
-      - "#D4C4A8"
+      - "#D4AF37"  # Academic gold / amphitheater light
+      - "#8B4513"  # Warm warehouse wood
+      - "#2F4F4F"  # Evening shadow slate
     accent:
-      - "#4A6B8A"
-      - "#2F4F4F"
+      - "#FFD700"  # Lantern flame
+      - "#CD853F"  # Copper (Cid's hair/arm)
   generation_defaults:
     provider: "openai"
     model: "dall-e-3"
     quality: "hd"
   mood_distribution:
-    somber: 1
-    pastoral: 1
-    celebratory: 1
-    aquatic: 0
-    ethereal: 0
-    intimate: 3
-    kinetic: 0
-    ominous: 0
+    intimate: 5
+    ominous: 1
 
 characters:
   - ref: "grimjaw-ironbeard"
     name: "Grimjaw Ironbeard"
-    scene_variations: "Formal shirt beneath leathers. Hand on compass pocket. Straighter posture. Magnificent braided beard."
+    scene_variations: |
+      CHAPTER 26 APPEARANCE (ACADEMIC TRIUMPH):
+      - SCENE 01 (Lecture): Formal scholar attire—reinforced leather with metal studs
+        replaced by practical but presentable clothing. Formal shirt feels strange after
+        months of work clothes. Iron-gray beard braided with small metal charms and tools.
+        Hand finds brass compass in vest pocket (Jorik's gift) for comfort. Weathered
+        face and keen eyes that still hold curiosity.
+      - SCENES 02-03: Returns to practical appearance at warehouse.
+      - Throughout: Stocky dwarven build, solid stance, plants feet firmly when making
+        points. Deep rumbling bass voice. Strokes beard when thinking.
     reference_images:
-      - "grimjaw-ironbeard-portrait-01"
+      - "grimjaw-ironbeard-portrait"
 
   - ref: "veyra-thornwake"
     name: "Veyra Thornwake"
-    scene_variations: "Lysander's ring beneath armor. Calculating neutrality. Resolute steel at window. Hand on belt tokens."
+    scene_variations: |
+      CHAPTER 26 APPEARANCE (COMMANDER OBSERVING):
+      - SCENE 01: Watching from back of amphitheater with quiet pride. Practical
+        clothing and weathered gear among academic robes.
+      - SCENE 02: Studying Cid's open, honest face. Recognizing moral complexity
+        of their situation with Korrath.
+      - SCENE 03: At tall windows, city lights beyond. Hand rises to touch
+        Lysander's ring warm against her chest.
+      - Throughout: Battle-hardened half-elf. Striking dark mohawk with shaved sides,
+        longer braids with feathers and beads. Mottled burn scar on left face from
+        jawline to temple. Sharp, clear dark eyes with steady gaze. Swirling tattoos
+        on neck and arms. Weatherworn leather coat with mismatched armor plates.
+        Lantern always present.
     reference_images:
-      - "veyra-thornwake-official-portrait-01"
+      - "veyra-thornwake-portrait"
 
   - ref: "cidrella-vexweld"
     name: "Cidrella Vexweld"
-    scene_variations: "Animated and proud. Mechanical arm gesturing. Pulsing blue conduits. Unaware enthusiast."
+    scene_variations: |
+      CHAPTER 26 APPEARANCE (INNOCENT ENTHUSIASM):
+      - SCENE 02: Arrives at warehouse with leather satchel and architectural drawings.
+        Spreads optimization plans on map table. Speaks with infectious enthusiasm
+        about Korrath's work—completely guileless, driven by professional pride.
+        Open, honest face lit with genuine interest.
+      - Throughout: Rock gnome with sturdy, compact build. Unruly copper-red hair
+        with bold blue streak. Tinkerer's goggles on forehead. Freckles across nose
+        and cheeks, often smudged with grease. Ring piercings on large gnomish ears.
+        Masterwork prosthetic left arm of articulated brass and glowing conduits.
+        Dark leather tunic, heavy apron, bandolier of power cells.
     reference_images:
-      - "cidrella-vexweld-portrait-01"
+      - "cidrella-vexweld-portrait"
 
   - ref: "marcus-heartbridge"
     name: "Marcus Heartbridge"
-    scene_variations: "Subtle tension in jaw. Exchanging meaningful glances. Analytical mode. Charcoal doublet."
+    scene_variations: |
+      CHAPTER 26 APPEARANCE (INTELLIGENCE WARNING):
+      - SCENE 02: Appears from behind stack of papers, cataloging contract proposals.
+      - SCENE 03: Delivers warning about intelligence services with carefully neutral
+        expression. Speaks quietly about "flexible definitions of rescue missions."
+      - Throughout: Human male with immaculate appearance. Well-tailored doublets
+        in rich fabrics. Polished boots. Smooth confidence equally at ease in
+        noble courts or back alleys. Adjusts cuffs when transitioning between personas.
+        Knowing smile, fingers drum when calculating.
     reference_images:
-      - "marcus-heartbridge-portrait-study-01"
-
-  - ref: "quartermaster-fayne"
-    name: "Quartermaster Fayne"
-    scene_variations: "Analytical overwhelm. Spectacles pushed up. Gilt-edged documents. Ink-stained fingers."
-    reference_images:
-      - "quartermaster-fayne-standard-portrait-01"
-
-  - ref: "thorne-brightward"
-    name: "Thorne Brightward"
-    scene_variations: "Seated in front row. Confident expression. Strategic mindset in briefing."
-    reference_images:
-      - "thorne-brightward-portrait-01"
+      - "marcus-heartbridge-portrait"
 
 locations:
   - ref: "spire-of-learning"
     zones:
       - id: "amphitheater"
-        chapter_context: "Pale marble semicircle. Tiered wooden benches. Morning light and dust motes. Heavy oak podium."
+        chapter_context: |
+          The grand amphitheater filled to capacity—three hundred faces in tiered
+          seating. Scholars, engineers, city officials, and curious nobles drawn by
+          the promise of hearing from the heroes of the Great Library rescue. Academic
+          robes contrast with the Company's practical clothing and weathered gear.
+          Professor Stoneforge presides from the front row. Diffused scholarly light
+          from above, dust motes visible in shafts of illumination. Polite but expectant
+          applause gives way to genuine intellectual engagement as Grimjaw transforms
+          from nervous craftsman to commanding teacher.
+
   - ref: "warehouse-complex"
     zones:
-      - id: "reception"
-        chapter_context: "High-bay industrial space. Buried under gilt-edged contracts. Formal carriages outside."
-      - id: "briefing"
-        chapter_context: "Nightfall shadows. Harbor lights through windows. Map table lit by lanterns. Heavy decisions."
+      - id: "mess"
+        chapter_context: |
+          The usual communal dining area transformed into an impromptu reception room.
+          Mistress Elba bustles with tea trays, treating nobles like grandchildren who
+          haven't eaten properly. Fayne sits at the central map table, now covered with
+          documents instead of tactical planning materials, looking dazed by the flood
+          of contract proposals. Seventeen formal visitors with carriages. Stacks of
+          ornate documents. Warm afternoon warehouse light. The contrast between their
+          mission and commercial expectations laid bare.
+
+      - id: "briefing-circle"
+        chapter_context: |
+          Evening strategy session as night settles over Waterdeep. Tall windows show
+          city lights sparkling like stars. Intelligence spread across the central map
+          table—information about Korrath, the Silent Hand facility, their moral dilemma.
+          Lantern light casts warm pools, faces partially illuminated. The weight of
+          success pressing down as they contemplate the next step. Marcus speaks quietly
+          of darker attention their capabilities have attracted. Veyra reaffirms their
+          mission at the window, Lysander's ring warm against her chest.
 
 moments:
   - id: "ch26-the-weight-of-success-moment-01"
     scene_id: "scn-26-01"
-    title: "Academic Triumph"
-    narrative_beat: "Grimjaw Ironbeard delivering his lecture at the Spire, his hand on the compass pocket."
-    visual_weight: "hero"
+    title: "Finding His Voice"
+    narrative_beat: "As he looked out at the waiting audience, something shifted in his chest. These weren't judges waiting to find him wanting. They were scholars eager to learn. Grimjaw Ironbeard straightened his shoulders and found his voice."
+    visual_weight: "critical"
     characters_present:
       - "grimjaw-ironbeard"
-      - "veyra-thornwake"
-      - "thorne-brightward"
     location_zone: "spire-of-learning/amphitheater"
-    transformation_state: "after"
-    recommended_images: 1
+    transformation_state: "before"
+    recommended_images: 2
 
   - id: "ch26-the-weight-of-success-moment-02"
-    scene_id: "scn-26-02"
-    title: "Commercial Corruption"
-    narrative_beat: "Fayne buried under a mountain of frivolous noble contracts, the cost of success."
-    visual_weight: "medium"
-    characters_present:
-      - "quartermaster-fayne"
-    location_zone: "warehouse-complex/reception"
-    transformation_state: "after"
-    recommended_images: 1
-
-  - id: "ch26-the-weight-of-success-moment-03"
-    scene_id: "scn-26-02"
-    title: "The Creative Spark"
-    narrative_beat: "Cid in her workshop (or explaining her work), her joy of creation contrasting with the coming horror."
-    visual_weight: "medium"
-    characters_present:
-      - "cidrella-vexweld"
-    location_zone: "warehouse-complex/reception"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch26-the-weight-of-success-moment-04"
-    scene_id: "scn-26-02"
-    title: "The Silent Briefing"
-    narrative_beat: "Veyra and Marcus exchanging looks as Cid unknowingly describes the Silent Hand's prison."
+    scene_id: "scn-26-01"
+    title: "Asking the Right Questions"
+    narrative_beat: "'Engineering is not about knowing all the answers. It's about asking the right questions when everything is falling apart.'"
     visual_weight: "high"
     characters_present:
-      - "cidrella-vexweld"
-      - "veyra-thornwake"
-      - "marcus-heartbridge"
-    location_zone: "warehouse-complex/reception"
-    transformation_state: "n/a"
-    recommended_images: 1
-
-  - id: "ch26-the-weight-of-success-moment-05"
-    scene_id: "scn-26-02"
-    title: "The Burden of Knowledge"
-    narrative_beat: "Veyra studying Cid with complex calculation, realizing the danger she's in."
-    visual_weight: "high"
-    characters_present:
-      - "veyra-thornwake"
-      - "cidrella-vexweld"
-    location_zone: "warehouse-complex/reception"
-    transformation_state: "n/a"
+      - "grimjaw-ironbeard"
+      - "professor-aldara-stoneforge"
+    location_zone: "spire-of-learning/amphitheater"
+    transformation_state: "before"
     recommended_images: 1
 
   - id: "ch26-the-weight-of-success-moment-06"
-    scene_id: "scn-26-03"
-    title: "The Tea of Strategy"
-    narrative_beat: "The leadership team huddling over the map table at night, the warmth of the home under threat."
-    visual_weight: "medium"
+    scene_id: "scn-26-02"
+    title: "Innocent Enthusiasm"
+    narrative_beat: "'He believes the most beautiful design is one that achieves perfect structural integrity with the least effort—an elegance in its strength.' As Cid continued, Veyra found herself studying the woman's open, honest face."
+    visual_weight: "high"
     characters_present:
+      - "cidrella-vexweld"
       - "veyra-thornwake"
-      - "thorne-brightward"
-      - "marcus-heartbridge"
-      - "grimjaw-ironbeard"
-      - "aldwin-gentleheart"
-    location_zone: "warehouse-complex/briefing"
-    transformation_state: "n/a"
+    location_zone: "warehouse-complex/mess"
+    transformation_state: "before"
     recommended_images: 1
 
   - id: "ch26-the-weight-of-success-moment-07"
     scene_id: "scn-26-03"
-    title: "Steel Resolve"
-    narrative_beat: "Veyra at the warehouse window, hand on her chest over Lysander's ring, declaring their mission."
-    visual_weight: "hero"
+    title: "Flexible Definitions"
+    narrative_beat: "'The kind that require deniability and specialized skills. The kind that blur the line between rescue and assassination.' His expression was carefully neutral."
+    visual_weight: "high"
+    characters_present:
+      - "marcus-heartbridge"
+      - "veyra-thornwake"
+    location_zone: "warehouse-complex/briefing-circle"
+    transformation_state: "after"
+    recommended_images: 1
+
+  - id: "ch26-the-weight-of-success-moment-08"
+    scene_id: "scn-26-03"
+    title: "Our Mission Stands"
+    narrative_beat: "'Our mission stands. No one left behind means no one. Not no one unless it's politically convenient, and certainly not no asset left behind.' She met his eyes, her own reflecting the lantern's flame."
+    visual_weight: "critical"
     characters_present:
       - "veyra-thornwake"
       - "marcus-heartbridge"
-    location_zone: "warehouse-complex/briefing"
-    transformation_state: "n/a"
+    location_zone: "warehouse-complex/briefing-circle"
+    transformation_state: "after"
+    recommended_images: 2
+
+  - id: "ch26-the-weight-of-success-moment-09"
+    scene_id: "scn-26-03"
+    title: "Window Vigil"
+    narrative_beat: "As night settled over Waterdeep and the warehouse complex grew quiet, Veyra stood again at the tall windows, Lysander's ring warm against her chest."
+    visual_weight: "high"
+    characters_present:
+      - "veyra-thornwake"
+    location_zone: "warehouse-complex/briefing-circle"
+    transformation_state: "after"
     recommended_images: 1
 
 images:
-  - custom_id: "ch26-the-weight-of-success-img-26-01-01"
+  - custom_id: "ch26-the-weight-of-success-img-01-01-01"
     source_moment: "ch26-the-weight-of-success-moment-01"
     scene_id: "scn-26-01"
     image_type: "hero"
@@ -179,59 +200,80 @@ images:
       - "moment"
       - "character"
       - "emotion"
-    scene_mood: "celebratory"
-    mood_rationale: "Lifetime of wisdom receiving recognition. Warm morning light and golden marble. Dignified intimacy."
-    aspect_ratio: "16:9"
+    scene_mood: "intimate"
+    mood_rationale: |
+      The chapter's triumphant opening—Grimjaw's transformation from nervous craftsman
+      to commanding teacher. Close emotional connection between speaker and audience,
+      the moment of finding purpose in sharing wisdom.
+    aspect_ratio: "21:9"
     orientation: "landscape"
-    size: "1792x1024"
+    size: "1792x768"
     visual_description: |
-      Grimjaw Ironbeard stands at a heavy oak podium in a pale marble amphitheater. Weathered hand pressed firmly against his vest pocket. Morning light streams through high windows, catching on his iron-gray beard hardware. Shoulders squared, chin lifted. Three hundred scholarly faces in tiered seating background. Company members in front row watch with pride.
+      Grimjaw Ironbeard stands at a podium in the grand amphitheater of the Spire of
+      Learning. Three hundred faces fill the tiered seating behind him, a sea of
+      scholarly robes and curious nobles. He has just straightened his shoulders—
+      the moment of transformation visible in his posture. His hand has released the
+      brass compass in his vest pocket. His weathered face shows the shift from
+      nervousness to purpose, keen eyes now focused with newfound confidence.
+      Iron-gray beard braided with metal charms catches the diffused amphitheater light.
+      Before him, architectural diagrams and engineering sketches are spread on the podium.
+      Professor Stoneforge leans forward in the front row with visible interest.
     composition_notes: |
-      Low angle looking up at Grimjaw. Podium grounds lower third. Tiered seating creates depth. Rule of thirds: face upper intersection, hand lower. Diagonal light beams.
-    visual_hook: "Grimjaw's weathered hand pressing against his vest pocket, knuckles slightly white with the grip"
+      Wide cinematic framing. Grimjaw at podium in foreground left, shoulders squared.
+      The amphitheater stretches behind him, filled with expectant faces. Light from
+      above creates a scholarly glow, highlighting him as the focal point. The scale
+      emphasizes the weight of the moment—one dwarf before hundreds.
+    visual_hook: "Grimjaw at podium, shoulders straightening, three hundred faces waiting"
     depicts_characters:
       - "grimjaw-ironbeard"
-      - "veyra-thornwake"
-      - "thorne-brightward"
     character_states:
       grimjaw-ironbeard: |
-        Standing at podium. Hand on vest pocket. Resolute posture. Metal bands in beard glinting.
-      veyra-thornwake: |
-        Seated front row. Profile view. Quiet pride.
-      thorne-brightward: |
-        Seated front row. Military posture. Confident expression.
+        Formal but practical attire. Iron-gray beard with metal charms. Weathered face
+        showing transformation from nervousness to purpose. Shoulders squared, stance
+        solid. Hand just released from vest pocket where compass rests.
     location: "spire-of-learning"
+    zone: "amphitheater"
     lighting:
-      primary_source: "Morning sun"
-      quality: "Warm, slightly diffused"
-      direction: "Above/Side"
-      color_temperature: "Warm gold"
-      shadow_depth: "Moderate"
-      atmospheric: "Dust motes"
+      primary_source: "Diffused amphitheater light from above"
+      quality: "soft, scholarly, even"
+      direction: "from above"
+      color_temperature: "warm gold"
+      shadow_depth: "soft gradients"
+      atmospheric: "dust motes in light shafts"
     palette:
       dominant:
-        - "pale marble"
-        - "scholarly gold"
-        - "warm amber"
+        - "academic gold"
+        - "stone gray"
+        - "scholar robe brown"
       accent:
-        - "copper hardware"
+        - "iron-gray beard"
+        - "brass compass glint"
       avoid:
         - "harsh shadows"
+        - "cool tones"
     prompt_used: |
-      Elderly dwarf engineer speaking at a marble podium in a tiered hall,
-      hand pressed to his vest pocket,
-      magnificent gray braided beard with metal bands catching morning sunlight,
-      hundreds of scholars listening in tiered seating,
-      low angle heroic framing,
-      classical oil painting, Dutch Golden Age warmth,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Vermeer interior lighting.
+      Grand academic amphitheater with tiered stone seating filled with three hundred
+      scholars in robes. A stocky dwarf with iron-gray braided beard stands at a wooden
+      podium, shoulders squared, weathered face showing newfound confidence. Architectural
+      diagrams spread before him. Diffused light from above creates scholarly atmosphere.
+      Wide cinematic composition, warm gold palette, the transformation from nervousness
+      to purpose visible in his posture. Fantasy academic setting with subtle medieval elements.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      action pose, theatrical expression, harsh lighting, modern lecture hall
     tags:
-      - "hero"
-      - "lecture"
       - "grimjaw"
-      - "celebratory"
+      - "triumph"
+      - "hero-image"
+      - "intimate"
+      - "transformation"
+      - "academic"
     generated_at: null
     file_name: null
     file_path: null
@@ -239,255 +281,78 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch26-the-weight-of-success-img-26-02-01"
-    source_moment: "ch26-the-weight-of-success-moment-02"
-    scene_id: "scn-26-02"
-    image_type: "anchor"
+  - custom_id: "ch26-the-weight-of-success-img-01-01-02"
+    source_moment: "ch26-the-weight-of-success-moment-01"
+    scene_id: "scn-26-01"
+    image_type: "beat"
     category:
       - "moment"
-      - "location"
-      - "emotion"
-    scene_mood: "pastoral"
-    mood_rationale: "Pastoral softness for the absurdist comedy of the situation. Overwhelmed but not urgent. Gentle invasion by wealth."
+      - "character"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: |
+      The detail of the compass—Jorik's gift—being released as confidence replaces
+      nervousness. A symbol of trust and the journey that brought him here.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Fayne sits at the map table buried under gilt-edged documents and silk-ribboned contracts. Ink-stained fingers frozen in disbelief. Spectacles pushed up. Industrial warehouse background invaded by nobles in fine attire. Afternoon light streams through loading doors.
+      Close shot of Grimjaw's weathered hand releasing the brass compass in his vest
+      pocket. The compass is partially visible—worn, well-used, beloved. His other
+      hand rests on the podium beside his engineering sketches. The fabric of his
+      formal shirt—strange after months of work clothes—is visible. In the soft focus
+      background, the blur of three hundred faces waiting.
     composition_notes: |
-      Wide shot. Fayne center. Table mountains foreground. High windows provide depth. Nobility positioned for contrast.
-    visual_hook: "Fayne's ink-stained fingers frozen mid-air over a stack of gilt-edged documents"
+      Medium-close framing on hands and compass. Shallow depth of field with amphitheater
+      audience softly blurred. The compass is the symbolic focal point—the thing he no
+      longer needs to grip for comfort.
+    visual_hook: "Weathered hand releasing brass compass, engineering sketches nearby"
     depicts_characters:
-      - "quartermaster-fayne"
+      - "grimjaw-ironbeard"
     character_states:
-      quartermaster-fayne: |
-        Seated. Overwhelmed. Spectacles on forehead. Ink-stained hands. Auburn hair tousled.
-    location: "warehouse-complex"
+      grimjaw-ironbeard: |
+        Only hands visible. Weathered, calloused from decades of work. One hand
+        releasing the compass, the other steady on the podium.
+    location: "spire-of-learning"
+    zone: "amphitheater"
     lighting:
-      primary_source: "Afternoon sun"
-      quality: "Soft, diffused"
-      direction: "Multiple"
-      color_temperature: "Warm gold"
-      shadow_depth: "Gentle"
-      atmospheric: "Dust and perfume"
+      primary_source: "Amphitheater light from above"
+      quality: "soft, warm"
+      direction: "from above and front"
+      color_temperature: "warm gold"
+      shadow_depth: "gentle"
+      atmospheric: "scholarly calm"
     palette:
       dominant:
-        - "industrial brown"
-        - "afternoon gold"
-        - "aged wood"
+        - "brass gold"
+        - "worn leather"
+        - "parchment cream"
       accent:
-        - "gilt edges"
-        - "jewel tones"
-      avoid:
-        - "harsh contrast"
-    prompt_used: |
-      Gnome buried under stacks of fancy documents and gold-sealed contracts in a warehouse,
-      ink-stained fingers frozen in disbelief,
-      nobles in fine clothes in the background,
-      warm afternoon light from high windows,
-      atmosphere of chaotic success,
-      classical oil painting, Jan Steen style,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin, action pose
-    tags:
-      - "anchor"
-      - "chaos"
-      - "fayne"
-      - "pastoral"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch26-the-weight-of-success-img-26-02-02"
-    source_moment: "ch26-the-weight-of-success-moment-04"
-    scene_id: "scn-26-02"
-    image_type: "pivot"
-    category:
-      - "moment"
-      - "character"
-      - "emotion"
-    scene_mood: "intimate"
-    mood_rationale: "Dramatic irony. Seeing Cid's enthusiasm vs the guarded knowledge behind her. Closeness while subtext carries weight."
-    aspect_ratio: "3:4"
-    orientation: "portrait"
-    size: "1024x1536"
-    visual_description: |
-      Cidrella Vexweld spreads plans across a table, mechanical arm gesturing. Conduits pulse blue. Freckled face warm with pride. Behind her, Veyra and Marcus maintain neutral but tense expressions. Veyra's hand drifts toward her belt tokens. Warm lamp light masks the cold realization.
-    composition_notes: |
-      Medium shot. Cid foreground focal point. वाचठयर्स middle ground counterpoint. Drawings lower third. Single warm lamp. Visual irony.
-    visual_hook: "The glowing blue conduits in Cid's prosthetic arm pulsing with enthusiasm while Veyra's hand moves to her belt"
-    depicts_characters:
-      - "cidrella-vexweld"
-      - "veyra-thornwake"
-      - "marcus-heartbridge"
-    character_states:
-      cidrella-vexweld: |
-        Animated. Mechanical arm raised. Blue pulse. Proud smile. Goggles on forehead.
-      veyra-thornwake: |
-        Neutral mask. Cold recognition in eyes. Hand on tokens.
-      marcus-heartbridge: |
-        Subtle jaw tension. Sharp dark eyes.
-    location: "warehouse-complex"
-    lighting:
-      primary_source: "Workshop lamp"
-      quality: "Soft, intimate"
-      direction: "Side"
-      color_temperature: "Warm amber + blue accent"
-      shadow_depth: "Soft gradients"
-      atmospheric: "Workshop warmth"
-    palette:
-      dominant:
-        - "warm amber"
-        - "copper red"
-        - "brown"
-      accent:
-        - "blue prosthetic glow"
-      avoid:
-        - "ominous tones"
-    prompt_used: |
-      Female gnome with red hair and brass prosthetic arm showing plans to two people,
-      mechanical arm glowing blue,
-      people behind her looking serious and worried,
-      warm interior light,
-      atmosphere of hidden danger and dramatic irony,
-      classical oil painting, Vermeer lighting,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, suspicious faces
-    tags:
-      - "pivot"
-      - "irony"
-      - "cid"
-      - "intimate"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch26-the-weight-of-success-img-26-02-03"
-    source_moment: "ch26-the-weight-of-success-moment-05"
-    scene_id: "scn-26-02"
-    image_type: "detail"
-    category:
-      - "character"
-      - "emotion"
-    scene_mood: "somber"
-    mood_rationale: "Character weight. Processing moral implications. Protective instincts vs operational necessity. Rembrandt shadows."
-    aspect_ratio: "2:3"
-    orientation: "portrait"
-    size: "1024x1536"
-    visual_description: |
-      Veyra's dark eyes study Cid's face with calculation. Burn scar catches edge of light. Cid's face in soft focus foreground—enthusiastic and innocent. Veyra's hand rests on belt tokens. Drawings on table describe a prison. Psychological focus.
-    composition_notes: |
-      Close framing on Veyra upper two-thirds. Cid soft foreground. Single lamp side light (Rembrandt). Hand on tokens lower anchor.
-    visual_hook: "Veyra's dark eyes reflecting complex calculation while Cid's face glows soft and unfocused"
-    depicts_characters:
-      - "veyra-thornwake"
-      - "cidrella-vexweld"
-    character_states:
-      veyra-thornwake: |
-        Calculating eyes. Burn scar texture. Stoic expression. Hand on tokens. Teal tattoos visible.
-      cidrella-vexweld: |
-        Foreground soft focus. Warm enthusiasm. Oblivious contrast.
-    location: "warehouse-complex"
-    lighting:
-      primary_source: "Warm lamp"
-      quality: "Dramatic, Rembrandt"
-      direction: "Side"
-      color_temperature: "Warm amber"
-      shadow_depth: "Deep, rich"
-      atmospheric: "Heavy air"
-    palette:
-      dominant:
-        - "ochre"
-        - "sienna"
-        - "slate"
-      accent:
-        - "teal tattoo"
+        - "compass patina"
+        - "ink marks on sketches"
       avoid:
         - "bright colors"
+        - "harsh contrast"
     prompt_used: |
-      Close portrait of scarred woman thinking deeply,
-      looking at a blurry happy person in foreground,
-      expression of moral burden,
-      hand on belt tokens,
-      single light source creating deep shadows,
-      classical oil painting, Rembrandt lighting,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, intimate detail shot.
+      Close-up of weathered dwarven hands—one releasing a worn brass compass from
+      a vest pocket, the other resting on a wooden podium beside architectural sketches.
+      Shallow depth of field, blurred audience of scholars in background. Warm gold
+      amphitheater lighting. The compass is well-used and beloved—a talisman no longer
+      needed for comfort. Symbolic moment of confidence found.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, smooth skin
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, full figure, action pose, modern props
     tags:
-      - "detail"
-      - "weight"
-      - "veyra"
-      - "somber"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch26-the-weight-of-success-img-26-02-04"
-    source_moment: "ch26-the-weight-of-success-moment-03"
-    scene_id: "scn-26-02"
-    image_type: "detail"
-    category:
-      - "moment"
-      - "character"
+      - "compass"
       - "symbol"
-    scene_mood: "intimate"
-    mood_rationale: "The 'Character's Joy.' Creative spark before horror. Life built from gears and wire. Bright and hopeful."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
-    visual_description: |
-      Macro shot of half-assembled mechanical bird on brass stand. Skeletal copper and steel wing. Delicate pincers inserting multi-faceted crystal eye. Eye refracts sunbeam into rainbow. Cid seen as a blur of copper hair background. Explosion of creativity.
-    composition_notes: |
-      Tight square framing. Crystal eye center focal point. Pincers dynamic diagonal. Shallow depth. High-key highlights.
-    visual_hook: "A delicate mechanical bird coming to life under a beam of sunlit crystal"
-    depicts_characters:
-      - "cidrella-vexweld"
-    character_states:
-      cidrella-vexweld: |
-        Blur of copper hair. Leaning shadow.
-    location: "warehouse-complex"
-    lighting:
-      primary_source: "Afternoon sun"
-      quality: "High-key, clear"
-      direction: "Side"
-      color_temperature: "Warm gold"
-      shadow_depth: "Minimal"
-      atmospheric: "Clear air"
-    palette:
-      dominant:
-        - "copper/brass"
-        - "gold"
-        - "crystal"
-      accent:
-        - "rainbow refraction"
-      avoid:
-        - "harsh shadows"
-    prompt_used: |
-      Macro detail of a mechanical bird being built,
-      copper gears and a crystal eye catching a beam of light,
-      refracting into a rainbow,
-      soft background of an inventor's shop,
-      atmosphere of pure creativity,
-      classical oil painting, Dutch Golden Age still life,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, electricity
-    tags:
       - "detail"
-      - "clockwork"
-      - "invention"
+      - "grimjaw"
       - "intimate"
     generated_at: null
     file_name: null
@@ -496,65 +361,82 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch26-the-weight-of-success-img-26-03-01"
-    source_moment: "ch26-the-weight-of-success-moment-07"
-    scene_id: "scn-26-03"
-    image_type: "symbol"
+  - custom_id: "ch26-the-weight-of-success-img-01-02-01"
+    source_moment: "ch26-the-weight-of-success-moment-02"
+    scene_id: "scn-26-01"
+    image_type: "beat"
     category:
+      - "moment"
       - "character"
-      - "emotion"
-      - "symbol"
+      - "dialogue"
     scene_mood: "intimate"
-    mood_rationale: "Emotional climax. Veyra's connection to Lysander through the ring. Private moment of public resolve. City lights vs warm interior."
+    mood_rationale: |
+      Grimjaw's philosophy articulated—the gravelly voice carrying through the
+      amphitheater as scholars lean forward. Practical wisdom made universal.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Veyra at the tall warehouse windows, silhouette against scattered harbor lights. Right hand presses flat to chest where ring rests. City lights reflected in glass, catching scar and tattoos. Marcus watching from middle distance in warm lantern light. Constellation of promises below. Quiet steel.
+      Medium shot of Grimjaw speaking from the podium, gesturing toward one of his
+      engineering diagrams—a detailed sketch of the library collapse. His gravelly
+      voice carries clearly through the space. In the foreground, Professor Stoneforge
+      and other scholars lean forward with visible interest, quills moving to capture
+      his words. The audience is engaged, not judging—hungry for practical wisdom.
     composition_notes: |
-      Medium shot, slightly low angle. Veyra right third silhouette. City lights backlight. Warm interior light creates rim light on her side. Hand on chest focal point. Marcus background left third scale.
-    visual_hook: "Veyra's silhouette against the window, one hand pressed to her chest where the ring rests"
+      Grimjaw in the middle ground at his podium. Foreground shows the backs of heads
+      and leaning postures of engaged scholars. The diagram he references is partially
+      visible. Dynamic composition showing knowledge transfer in action.
+    visual_hook: "Grimjaw gesturing to collapse diagram, scholars leaning forward with interest"
     depicts_characters:
-      - "veyra-thornwake"
-      - "marcus-heartbridge"
+      - "grimjaw-ironbeard"
+      - "professor-aldara-stoneforge"
     character_states:
-      veyra-thornwake: |
-        Facing window. Hand on heart. Burn scar catching reflection. Resolve in posture. Mohawk visible. Lantern at belt.
-      marcus-heartbridge: |
-        Background witness. Recognition expression. Dark coat.
-    location: "warehouse-complex"
-    zone: "briefing-room"
+      grimjaw-ironbeard: |
+        Speaking with authority, gesturing to diagram. Face animated with the joy of
+        teaching. Gravelly voice carrying.
+      professor-aldara-stoneforge: |
+        Leaning forward in front row, visible interest. Scholarly robes.
+    location: "spire-of-learning"
+    zone: "amphitheater"
     lighting:
-      primary_source: "City lights + interior lanterns"
-      quality: "Mixed—cool vs warm"
-      direction: "Backlight + warm fill behind"
-      color_temperature: "Silver-blue vs amber"
-      shadow_depth: "Gentle gradients"
-      atmospheric: "Clear night beyond"
+      primary_source: "Amphitheater ambient light"
+      quality: "warm, scholarly"
+      direction: "diffused from above"
+      color_temperature: "gold"
+      shadow_depth: "soft"
+      atmospheric: "academic engagement"
     palette:
       dominant:
-        - "silver-blue lights"
-        - "warm amber"
-        - "shadow"
+        - "parchment cream"
+        - "scholar robe brown"
+        - "stone gray"
       accent:
-        - "teal tattoos"
+        - "ink diagram lines"
+        - "iron-gray beard"
       avoid:
-        - "ominous darkness"
+        - "cold tones"
+        - "empty space"
     prompt_used: |
-      Woman silhouetted against a large window looking at city lights at night,
-      hand pressed to her heart,
-      reflections of scars and tattoos in the glass,
-      warm lantern light from the room behind her,
-      man watching from the background,
-      atmosphere of resolve and responsibility,
-      classical oil painting, Vermeer lighting with city backlight,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, academic scene.
+      A dwarf with iron-gray beard speaks from a podium in a grand amphitheater,
+      gesturing toward an architectural diagram showing a collapsed building. In the
+      foreground, scholars in robes lean forward with genuine interest, some taking
+      notes with quills. The speaker's face shows the joy of teaching, voice carrying
+      across the tiered seating. Warm scholarly lighting, engaged audience, the transfer
+      of practical wisdom made visible. Fantasy medieval academic setting.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, action pose
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      bored audience, modern classroom, projector
     tags:
-      - "symbol"
-      - "resolve"
-      - "veyra"
+      - "grimjaw"
+      - "teaching"
+      - "philosophy"
+      - "scholars"
       - "intimate"
     generated_at: null
     file_name: null
@@ -563,73 +445,435 @@ images:
     model: null
     provider_metadata: {}
 
-  - custom_id: "ch26-the-weight-of-success-img-26-03-02"
+  - custom_id: "ch26-the-weight-of-success-img-02-06-01"
     source_moment: "ch26-the-weight-of-success-moment-06"
+    scene_id: "scn-26-02"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      The moral complexity of innocence unknowingly complicit. Cid's open, honest
+      enthusiasm contrasted with Veyra's careful study of her face—the commander
+      weighing the cost of knowledge.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The warehouse mess area, afternoon light warming the space. Cidrella Vexweld
+      sits at the map table with architectural drawings spread before her, face
+      animated with enthusiasm as she describes Korrath's philosophy. Her copper-red
+      hair with blue streak catches the light, prosthetic brass arm gesturing as she
+      speaks. Across from her, Veyra listens with carefully neutral expression, dark
+      eyes studying Cid's open, honest face. The contrast is subtle but present—
+      innocent passion meeting watchful assessment.
+    composition_notes: |
+      Two-shot framing. Cid in profile or three-quarter, animated and gesturing.
+      Veyra facing more toward camera, expression carefully neutral as she studies.
+      Architectural drawings on table between them. Warm afternoon light from windows.
+    visual_hook: "Cid's enthusiastic expression, Veyra's careful study of her innocent face"
+    depicts_characters:
+      - "cidrella-vexweld"
+      - "veyra-thornwake"
+    character_states:
+      cidrella-vexweld: |
+        Animated enthusiasm, copper-red hair with blue streak, prosthetic brass arm
+        gesturing, freckled face lit with genuine interest. Completely guileless.
+      veyra-thornwake: |
+        Carefully neutral expression, dark eyes studying Cid's face. Burn scar visible.
+        The weight of knowledge she carries hidden behind measured listening.
+    location: "warehouse-complex"
+    zone: "mess"
+    lighting:
+      primary_source: "Afternoon window light"
+      quality: "warm, domestic"
+      direction: "from side windows"
+      color_temperature: "warm amber"
+      shadow_depth: "soft"
+      atmospheric: "comfortable but layered with tension"
+    palette:
+      dominant:
+        - "warehouse wood brown"
+        - "afternoon gold"
+        - "parchment drawings"
+      accent:
+        - "copper-red hair"
+        - "blue hair streak"
+        - "brass prosthetic glow"
+      avoid:
+        - "harsh shadows"
+        - "cold industrial"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, intimate conversation scene.
+      A rock gnome woman with copper-red hair and blue streak sits at a wooden table
+      covered with architectural drawings, face animated with enthusiasm, prosthetic
+      brass arm gesturing as she speaks. Across from her, a half-elf woman with burn
+      scar on her face and dark mohawk listens with carefully neutral expression,
+      dark eyes studying the gnome's open, honest face. Warm afternoon light through
+      windows. The contrast between innocent passion and watchful assessment.
+      Fantasy warehouse interior with domestic warmth masking complexity.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      theatrical expression, bright lighting, modern office
+    tags:
+      - "cid"
+      - "veyra"
+      - "moral-complexity"
+      - "innocence"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch26-the-weight-of-success-img-03-07-01"
+    source_moment: "ch26-the-weight-of-success-moment-07"
     scene_id: "scn-26-03"
     image_type: "beat"
     category:
+      - "moment"
+      - "character"
+      - "dialogue"
+    scene_mood: "ominous"
+    mood_rationale: |
+      Marcus's warning about darker attention—intelligence services with "flexible
+      definitions." The tension of success attracting shadow-side interest. Dread
+      of what fame has summoned.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Evening in the briefing circle. Marcus Heartbridge speaks quietly, his well-
+      tailored doublet catching the last light from tall windows. His expression is
+      carefully neutral—a diplomat's mask that itself conveys warning. Veyra stands
+      nearby, partially silhouetted against the window, listening. Intelligence
+      documents spread on the central table. The city lights are beginning to appear
+      beyond the glass, but shadows are deepening inside. Marcus's words hang heavy:
+      "flexible definitions of what constitutes a rescue mission."
+    composition_notes: |
+      Two-shot with Marcus in foreground, Veyra at window behind. Evening light
+      transitioning to interior lantern light. The documents on the table suggest
+      the weight of information. Shadows emphasize the ominous nature of his warning.
+    visual_hook: "Marcus's carefully neutral expression delivering dark warning, shadows deepening"
+    depicts_characters:
+      - "marcus-heartbridge"
+      - "veyra-thornwake"
+    character_states:
+      marcus-heartbridge: |
+        Well-tailored doublet, carefully neutral expression. Speaks quietly but with
+        weight. The diplomat's mask itself a warning.
+      veyra-thornwake: |
+        Partially silhouetted at window, listening. Burn scar catches fading light.
+        Weight of his words visible in her stillness.
+    location: "warehouse-complex"
+    zone: "briefing-circle"
+    lighting:
+      primary_source: "Fading window light + beginning lantern light"
+      quality: "transitional, shadowed"
+      direction: "from windows and central lantern"
+      color_temperature: "cooling to warm lantern"
+      shadow_depth: "deepening"
+      atmospheric: "tension, foreboding"
+    palette:
+      dominant:
+        - "evening blue-gray"
+        - "shadow slate"
+        - "document cream"
+      accent:
+        - "lantern warm gold"
+        - "doublet rich fabric"
+      avoid:
+        - "bright cheerful colors"
+        - "full lighting"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Rembrandt chiaroscuro.
+      Evening in a warehouse briefing room. A well-dressed human man in tailored doublet
+      speaks quietly with carefully neutral expression, his face catching fading light.
+      Behind him, a half-elf woman with burn scar and mohawk stands partially silhouetted
+      against tall windows showing city lights appearing. Documents spread on a central
+      table. Shadows deepening as evening settles. The weight of ominous words hanging
+      in the air. Tension, foreboding, the shadow side of success.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      bright lighting, cheerful expressions, daytime
+    tags:
+      - "marcus"
+      - "warning"
+      - "ominous"
+      - "intelligence"
+      - "shadow"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch26-the-weight-of-success-img-03-08-01"
+    source_moment: "ch26-the-weight-of-success-moment-08"
+    scene_id: "scn-26-03"
+    image_type: "hero"
+    category:
+      - "moment"
       - "character"
       - "emotion"
     scene_mood: "intimate"
-    mood_rationale: "The 'Character's Hearth.' Strategy session over tea. Warmth of home under threat. Collaborative focus."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
+    mood_rationale: |
+      The thematic climax—Veyra reaffirming their mission against corruption. Her
+      voice hardening, eyes reflecting lantern flame, the Commander defending their
+      identity. Close emotional weight, devotion to purpose.
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
     visual_description: |
-      Veyra, Thorne, Grimjaw, and Aldwin huddled around a tea service on the map table. Maps are pushed aside for steaming mugs. Faces are lit by a central lantern. Everyone looks serious but comfortable. Elba is in the background, arms crossed, watching. The warehouse is getting dark.
+      Veyra has turned from the window to face Marcus, her expression hardened with
+      purpose. Lantern light illuminates her face, the flame reflected in her dark
+      eyes. Her burn scar is visible, mohawk silhouetted against the city lights
+      beyond. She speaks the mission statement: "No one left behind means no one."
+      The conviction in her posture, the flame in her eyes—this is the Commander
+      defending everything they are against corruption and compromise.
     composition_notes: |
-      Tight ensemble shot. Circle of faces around the lantern. Steam rising from mugs. Focus on the shared mission and safety.
-    visual_hook: "The cluster of mugs and steam at the center of a table covered in tactical maps—war room as kitchen table."
+      Close-medium shot on Veyra, lantern light from below/side creating dramatic
+      illumination. Her eyes are the focal point—reflecting the flame. City lights
+      bokeh through window behind her. Cinematic widescreen emphasizes the weight
+      of the moment.
+    visual_hook: "Veyra's hardened face, lantern flame reflected in dark eyes, mission reaffirmed"
     depicts_characters:
       - "veyra-thornwake"
-      - "thorne-brightward"
-      - "grimjaw-ironbeard"
-      - "aldwin-gentleheart"
-      - "mistress-elba"
     character_states:
       veyra-thornwake: |
-        Holding mug. Thoughtful.
-      thorne-brightward: |
-        Nodding. Strategic.
-      grimjaw-ironbeard: |
-        Lean in. Critical.
-      aldwin-gentleheart: |
-        Pouring tea. Peaceful.
-      mistress-elba: |
-        Background. Watchful guardian.
+        Voice hardened, expression resolute. Burn scar highlighted by lantern glow.
+        Dark eyes reflecting flame. The Commander at her most certain—defending
+        their identity, their purpose, their people.
     location: "warehouse-complex"
-    zone: "briefing-room"
+    zone: "briefing-circle"
     lighting:
-      primary_source: "Central lantern"
-      quality: "Warm, grounding"
-      direction: "Below/Center"
-      color_temperature: "Amber"
-      shadow_depth: "Soft"
-      atmospheric: "Tea steam"
+      primary_source: "Lantern below/beside her"
+      quality: "warm, dramatic"
+      direction: "from below and side"
+      color_temperature: "flame gold"
+      shadow_depth: "dramatic contrast"
+      atmospheric: "conviction, weight"
     palette:
       dominant:
-        - "warm amber"
-        - "wood brown"
-        - "shadow"
+        - "lantern gold"
+        - "shadow black"
+        - "city light blue"
       accent:
-        - "teal tattoo glimpse"
+        - "flame reflection in eyes"
+        - "burn scar texture"
       avoid:
-        - "harsh light"
+        - "cool detachment"
+        - "soft lighting"
     prompt_used: |
-      Group of adventurers sitting around a table with tea and maps,
-      warm lantern light illuminating their faces,
-      steam rising from mugs,
-      warehouse interior at night,
-      atmosphere of shared mission and home,
-      classical oil painting, interior realism,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, Caravaggio dramatic lighting.
+      Close-medium shot of a half-elf woman with burn scar on left face and dark
+      mohawk, her expression hardened with conviction. Lantern light from below
+      illuminates her face, flame visibly reflected in her dark, intense eyes.
+      City lights blur through tall window behind her. She speaks with certainty,
+      defending her mission. The Commander's moment of absolute conviction.
+      Ultra-wide cinematic aspect, dramatic chiaroscuro, the weight of leadership.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      soft expression, doubt, bright even lighting, wide shot
     tags:
-      - "beat"
-      - "family"
-      - "tea"
+      - "veyra"
+      - "mission"
+      - "hero-image"
       - "intimate"
+      - "conviction"
+      - "flame"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch26-the-weight-of-success-img-03-08-02"
+    source_moment: "ch26-the-weight-of-success-moment-08"
+    scene_id: "scn-26-03"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "reaction"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Marcus's response to Veyra's declaration. The acknowledgment that he never
+      doubted—but the warning that others will test them. Quiet understanding
+      between allies.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Two-shot of Veyra and Marcus in the briefing circle. Veyra has just spoken,
+      her conviction still visible in her posture. Marcus meets her eyes with quiet
+      acknowledgment—"I never doubted it." The lantern burns between them on the
+      table, documents of intelligence spread out. City lights through the windows.
+      Two people who understand each other, even as they recognize the harder tests
+      to come.
+    composition_notes: |
+      Eye-level two-shot. Veyra and Marcus facing each other across the table with
+      lantern between them. Documents visible. The moment of understanding, mutual
+      respect, shared purpose.
+    visual_hook: "Veyra and Marcus meeting eyes across lantern, quiet mutual understanding"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "marcus-heartbridge"
+    character_states:
+      veyra-thornwake: |
+        Conviction still visible, facing Marcus. The Commander who has stated her truth.
+      marcus-heartbridge: |
+        Quiet acknowledgment in expression. Respect visible. The diplomat who never
+        doubted but knows the tests ahead.
+    location: "warehouse-complex"
+    zone: "briefing-circle"
+    lighting:
+      primary_source: "Lantern on table between them"
+      quality: "warm, intimate"
+      direction: "from center table"
+      color_temperature: "warm gold"
+      shadow_depth: "moderate"
+      atmospheric: "understanding, alliance"
+    palette:
+      dominant:
+        - "lantern gold"
+        - "shadow"
+        - "document cream"
+      accent:
+        - "city light blue through windows"
+        - "doublet fabric"
+      avoid:
+        - "cold distance"
+        - "bright lighting"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, intimate lighting.
+      Two figures face each other across a table in a warehouse briefing room—a
+      half-elf woman with burn scar and mohawk, and a well-dressed human man in
+      tailored doublet. A lantern burns on the table between them, documents spread
+      out. They meet eyes with quiet understanding and mutual respect. City lights
+      visible through tall windows. The moment after conviction is spoken—
+      acknowledgment between allies who know harder tests await.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      conflict, argument, bright lighting, daytime
+    tags:
+      - "veyra"
+      - "marcus"
+      - "alliance"
+      - "understanding"
+      - "intimate"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch26-the-weight-of-success-img-03-09-01"
+    source_moment: "ch26-the-weight-of-success-moment-09"
+    scene_id: "scn-26-03"
+    image_type: "mood"
+    category:
+      - "moment"
+      - "character"
+      - "symbol"
+    scene_mood: "intimate"
+    mood_rationale: |
+      The chapter's closing image—Veyra at the window contemplating the weight of
+      success. City lights, Lysander's ring, the burden of proving worthy. Quiet
+      reflection after the storm of the day.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Night has settled over Waterdeep. Veyra stands alone at the tall warehouse
+      windows, silhouetted against the city lights that sparkle like stars beyond
+      the glass. Her hand has risen to touch Lysander's ring, warm against her chest
+      beneath her collar. The warehouse complex is quiet, the briefing circle empty
+      behind her. She contemplates the weight of their success—two days ago they
+      were specialists trying to prove themselves. Now they are recognized specialists
+      trying to prove they are worthy.
+    composition_notes: |
+      Veyra as silhouette against window, hand at chest. City lights fill the window
+      frame. Empty briefing circle behind her suggests the quiet after the team has
+      dispersed. Contemplative, reflective framing.
+    visual_hook: "Veyra silhouetted at window, hand touching hidden ring, city lights beyond"
+    depicts_characters:
+      - "veyra-thornwake"
+    character_states:
+      veyra-thornwake: |
+        Silhouetted, reflective. Hand touching the ring hidden against her chest.
+        Contemplating the weight of success, the children counting on them,
+        the mission that guides her.
+    location: "warehouse-complex"
+    zone: "briefing-circle"
+    lighting:
+      primary_source: "City lights through window"
+      quality: "backlit, atmospheric"
+      direction: "from outside through glass"
+      color_temperature: "cool city lights with warm interior hint"
+      shadow_depth: "silhouette"
+      atmospheric: "contemplative night"
+    palette:
+      dominant:
+        - "city light blue-white"
+        - "silhouette black"
+        - "window glass"
+      accent:
+        - "warm hint at edges"
+        - "ring metal warmth"
+      avoid:
+        - "harsh interior lighting"
+        - "bright colors"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, contemplative mood piece.
+      A half-elf woman with mohawk stands silhouetted at tall warehouse windows at
+      night, her hand raised to touch something hidden at her chest. City lights
+      sparkle beyond the glass like stars. The interior is quiet and dark behind her,
+      an empty briefing table barely visible. She contemplates the weight of her
+      responsibilities. The ring of a lost love warm against her heart. Nighttime
+      contemplation, the burden of success, the mission that awaits.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      bright interior, busy scene, daytime, action pose
+    tags:
+      - "veyra"
+      - "contemplation"
+      - "mood"
+      - "night"
+      - "ring"
+      - "closing"
     generated_at: null
     file_name: null
     file_path: null

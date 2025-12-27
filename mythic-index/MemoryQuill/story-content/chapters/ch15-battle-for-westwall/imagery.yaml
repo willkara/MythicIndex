@@ -1,97 +1,152 @@
-# ============================================================================
-# CHAPTER IMAGERY SPECIFICATION
-# Chapter: The Battle for Westwall
-# Generated: 2025-12-21
-# ============================================================================
-
 metadata:
   entity_type: "chapter-imagery"
   slug: "ch15-battle-for-westwall"
   chapter_number: 15
-  chapter_title: "The Battle for Westwall"
-  visual_thesis: "From the howling communion of the wild to the shattered silence of sacrifice—a guardian's power burns itself to ash for family."
+  chapter_title: "Battle for Westwall"
+  visual_thesis: |
+    Home becomes battlefield, family becomes shield wall—transformation costs everything, but the light holds until dawn brings cavalry hooves and howling wolves.
   color_palette:
     primary:
-      - "#2a1f1a"
-      - "#4a3728"
-      - "#6b4e31"
-      - "#8c7851"
+      - "#4A4A4A" # Pre-dawn gray / veteran stillness
+      - "#8B0000" # Blood-red chaos / battle
+      - "#C0C0C0" # Silver-gray fur / dire wolf
     accent:
-      - "#c9a227"
-      - "#8b0000"
-      - "#708090"
+      - "#DAA520" # Amber-fire eyes / wolf glow
+      - "#708090" # Steel-on-steel / armor clash
+      - "#B8860B" # Cavalry-dust gold / hope
   generation_defaults:
     provider: "openai"
-    model: "dall-e-3"
+    model: "gpt-image-1.5"
     quality: "hd"
   mood_distribution:
-    somber: 2
-    pastoral: 1
-    celebratory: 0
-    aquatic: 0
-    ethereal: 1
-    intimate: 2
-    kinetic: 5
-    ominous: 1
+    ethereal: 4
+    kinetic: 8
+    intimate: 3
+    ominous: 4
+    somber: 3
+    heroic: 3
 
 characters:
   - ref: "vera-moonwhisper"
     name: "Vera Moonwhisper"
-    scene_variations: "Pre-battle: amber eyes. Mid-transformation: armor snapping, bones reshaping. Dire wolf form: twice natural size, silver-gray fur. Hybrid form: twisted amalgam, blood-slick face. Aftermath: human, severely weakened, fragile."
+    scene_variations: |
+      CHAPTER 15 VARIATIONS (DIRE WOLF TRANSFORMATION ARC):
+      - SCENES 01-04 (Pre-transformation): Human form, practical leather armor, dark brown braided hair with feathers and bone beads. Hazel eyes alert and scanning. Earth-toned leather and canvas. Echo on shoulder. Lean rangy build.
+      - SCENE 05-10 (Battle begins): Human but eyes shifting amber when stressed. Bow in hand, moving fast along walls. Protective instincts engaged.
+      - SCENE 15 (Full Dire Wolf): Complete transformation—spine elongating, silver-gray fur erupting across skin, twice natural wolf size. Amber eyes blazing. Armor straps snapping. Something primal and protective emerging.
+      - SCENES 16-17 (Hybrid Horror): "Not wolf, not woman, but something horribly in between." Half-transformed nightmare state—clawed hands, fangs, glowing amber eyes, gray-silver patches on arms and neck, features sharpened but still recognizable as Vera. Emerging from rubble. Pure protective rage.
+      - SCENE 17+ (Aftermath): Collapsed human form, unconscious, pale, trembling. Eyes when open are wrong—unfocused, darting. Only rasping whines instead of speech. Hand finding familiar touch with newborn-kitten strength.
+      - Throughout: Echo (raven) always nearby or on shoulder.
     reference_images:
-      - "vera-moonwhisper-portrait-01"
+      - "vera-moonwhisper-portrait"
 
   - ref: "veyra-thornwake"
     name: "Veyra Thornwake"
-    scene_variations: "Battle-worn, bloodied, armor dented. Commanding calm to weary relief."
+    scene_variations: |
+      CHAPTER 15 VARIATIONS (COMMANDER UNDER SIEGE):
+      - SCENES 01-03 (Pre-battle): Full field gear, weatherworn leather coat with mismatched armor plates. Lantern at belt. Calm, deliberate presence. Toast speech in mess hall.
+      - SCENES 05-20 (Battle): Battle-worn, blood-splattered but unwavering. Commanding, directing, holding lines. Burn scars stark in harsh light. Dual scimitars drawn.
+      - SCENE 20 (Final Stand): Leading ragged shield wall circle around unconscious Vera. "HOLD THE LINE!" Exhausted but unbroken.
+      - SCENE 24 (Aftermath): Watching over Vera, tear sliding down cheek, relief and fear mixed.
+      - Throughout: Jet black mohawk with braided lock, deep earth-brown skin, teal tattoos on arms, burn scars on left face. Lantern ALWAYS at belt.
     reference_images:
-      - "veyra-thornwake-official-portrait-01"
-
-  - ref: "mistress-elba"
-    name: "Mistress Elba"
-    scene_variations: "Beige apron splattered with blood. Kitchen cleaver. Protective fury."
-    reference_images:
-      - "mistress-elba-kitchen-portrait-01"
-
-  - ref: "aldwin-gentleheart"
-    name: "Brother Aldwin Gentleheart"
-    scene_variations: "Bloodied hands, clinical focus. Working under fire."
-    reference_images:
-      - "aldwin-gentleheart-official-portrait-01"
+      - "veyra-thornwake-portrait"
 
   - ref: "grimjaw-ironbeard"
     name: "Grimjaw Ironbeard"
-    scene_variations: "Raising Tremor. Beard singed. Engineering expert."
+    scene_variations: |
+      CHAPTER 15 (VETERAN STRATEGIST):
+      - SCENE 01 (Preparation): Directing oil barrel placement with absolute certainty. Thirty years of siege knowledge in every gesture.
+      - SCENES 05-21 (Battle): Dwarven engineer at war—manning improvised ballistae, coordinating defenses, face grim but competent.
+      - Throughout: Compact dwarven build, gray-streaked beard, patchwork armor from dozens of battles. Weathered face of someone who's watched too many walls fall.
     reference_images:
-      - "grimjaw-ironbeard-portrait-01"
-
-  - ref: "thorne-brightward"
-    name: "Thorne Brightward"
-    scene_variations: "Shield raised, armor dented, cloak torn. Steady command."
-    reference_images:
-      - "thorne-brightward-portrait-01"
+      - "grimjaw-ironbeard-portrait"
 
   - ref: "finn"
     name: "Finn"
-    scene_variations: "Blooded warrior. Desperate defense of Vera."
+    scene_variations: |
+      CHAPTER 15 (FIRST REAL BATTLE):
+      - SCENES 01-04 (Pre-battle): Young ranger, nervous but determined. Helping carry supplies. This will be his first real battle.
+      - SCENE 06 (Tactical Shot): Impossible archery—arrow threading between fighting pairs. Hands finally steady.
+      - SCENES 16-17 (Saved/Savior): On ground with Serka about to strike—saved by dire wolf Vera. Then standing over her unconscious form with salvaged spear: "You saved me. My turn."
+      - Throughout: Young face, ranger training visible in stance. Bloodied by scene 17—gash across ribs.
+    reference_images: []
+
+  - ref: "mistress-elba"
+    name: "Mistress Elba"
+    scene_variations: |
+      CHAPTER 15 (GRANDMOTHER WARRIOR):
+      - SCENE 03 (Last Meal): Cook with maternal efficiency, pushing extra portions to young soldiers. "Heroes need their strength."
+      - SCENE 12 (Defending Station): Complete transformation—grandmother with kitchen cleaver raised over fallen mercenary, apron splattered with blood. "No one touches my boys! By stone and steel!"
+      - SCENE 23 (Command): Standing over seated Commander Atlock with soup ladle as scepter. Grandmother authority outranking military command.
+      - Throughout: Sturdy frame, capable hands. Face shifts from maternal warmth to protective fury.
+    reference_images: []
+
+  - ref: "thorne-brightward"
+    name: "Thorne Brightward"
+    scene_variations: |
+      CHAPTER 15 (DEPUTY COMMANDER):
+      - Throughout battle: Full Watch armor, blue cloak, coordinating mobile reserve. "We become the line." Stern but competent, managing the defense with Veyra.
     reference_images:
-      - "finn-stable-archer-01"
+      - "thorne-brightward-portrait"
+
+  - ref: "commander-atlock"
+    name: "Commander Atlock"
+    scene_variations: |
+      CHAPTER 15 (CAVALRY COMMANDER):
+      - SCENE 21 (The Charge): Scarred face grim, leading two hundred mounted soldiers. "PER EQUITES, MORS!" Sabers gleaming, professional military might.
+      - SCENE 23 (Aftermath): Veteran of dozen campaigns sitting on rubble eating stew, obeying Mistress Elba with quiet bemusement.
+    reference_images: []
+
+  - ref: "echo-raven"
+    name: "Echo (Raven)"
+    scene_variations: |
+      CHAPTER 15 (ALARM AND COMPANION):
+      - SCENE 05: Harsh primal alarm cry shattering pre-dawn quiet. "INCOMING!"
+      - SCENE 24: On cot's edge beside unconscious Vera, making soft crooning sounds.
+      - Throughout: Bright intelligent eyes, black feathers. On Vera's shoulder or nearby.
+    reference_images: []
 
 locations:
   - ref: "westwall-watchpost"
     zones:
-      - id: "battlements"
-        chapter_context: "Stone parapets, crenellations. Improvised defenses. Morning light on steel."
       - id: "courtyard"
-        chapter_context: "Blood-soaked flagstones, breached wall. Chaos of siege. Smoke and debris."
+        chapter_context: |
+          Morning: Systematic transformation into killing field—oil barrels positioned, weapons checked, Grimjaw's veteran knowledge shaping every defensive preparation.
+          Battle: Field triage station, horses thundering through gates, blood and dust.
+          Final stand: Ragged circle of exhausted defenders around unconscious Vera.
+          Victory: Cavalry dust settling, Mistress Elba commanding generals to eat soup.
+      - id: "mess-hall"
+        chapter_context: |
+          Evening lamplight, simple fare shared. Veyra's toast: "They face a family defending its home." Distant howling audible through windows. Last supper energy before the storm.
+      - id: "eastern-wall"
+        chapter_context: |
+          Pre-dawn attack point. Echo's alarm cry, arrows darkening the pale dawn sky, shields raised just in time. Sparks flying off metal, soldiers falling.
+      - id: "ramparts"
+        chapter_context: |
+          Vera's transformation platform. Smoke-filtered morning light. Body twisting mid-change on battlements, spine elongating, silver-gray fur erupting. The ultimate sacrifice for family.
+      - id: "breach"
+        chapter_context: |
+          Stone wall crumbling, mercenaries pouring through. Vera's fall and horrifying re-emergence. Hybrid nightmare lunging from rubble—armor crumpling under jaws.
       - id: "medical-station"
-        chapter_context: "Low-ceilinged triage station. Bandages, herbs, copper basins. Protected but besieged."
+        chapter_context: |
+          Old barracks transformed for triage. Aldwin's clinical precision, the black bag from Border Wars. Where Elba defends with cleaver, where Vera finally wakes with unfocused eyes.
+      - id: "eastern-tower"
+        chapter_context: |
+          Vera's final watch position before battle. Enhanced senses picking up distant armor sounds, oil smell on wind. Eyes shifting hazel to amber in pre-dawn darkness.
+      - id: "south-wall"
+        chapter_context: |
+          Finn's position for tactical archery. Arrow threading impossible angles between fighting pairs to save lives.
+      - id: "forest-edge"
+        chapter_context: |
+          Three treelines erupting with howls. Gray wolf shadows flowing with deadly purpose. Primitive fear in both sides as the wild answers the call.
 
 moments:
   - id: "ch15-battle-for-westwall-moment-01"
     scene_id: "scn-15-01"
-    title: "The Defensive Architecture"
-    narrative_beat: "Grimjaw directing the placement of oil barrels and improvised ballistae, engineering the killing field."
+    title: "Fire Flows Like Water"
+    narrative_beat: |
+      'Not there. Corner placement's a young soldier's mistake. Trust someone who's watched three different fortresses burn. Fire flows like water. You control where it starts, you control where it goes.'
     visual_weight: "medium"
     characters_present:
       - "grimjaw-ironbeard"
@@ -100,128 +155,163 @@ moments:
     recommended_images: 1
 
   - id: "ch15-battle-for-westwall-moment-02"
-    scene_id: "scn-15-04"
-    title: "Amber Vigil"
-    narrative_beat: "Vera atop the tower at pre-dawn, eyes glowing amber as she feels the wolves approach."
+    scene_id: "scn-15-03"
+    title: "Family Defending Home"
+    narrative_beat: |
+      'Tomorrow they face something stronger. They face a family defending its home.' The toast rippled through the room, voices joining together.
     visual_weight: "high"
     characters_present:
-      - "vera-moonwhisper"
-    location_zone: "westwall-watchpost/battlements"
+      - "veyra-thornwake"
+      - "grimjaw-ironbeard"
+    location_zone: "westwall-watchpost/mess-hall"
     transformation_state: "before"
     recommended_images: 1
 
   - id: "ch15-battle-for-westwall-moment-03"
-    scene_id: "scn-15-06"
-    title: "Ballista Impact"
-    narrative_beat: "Grimjaw's improvised ballista strikes the clustered mercenaries, a moment of mechanical devastation."
+    scene_id: "scn-15-05"
+    title: "Arrow Rain"
+    narrative_beat: |
+      Echo's cry shattered the pre-dawn quiet. 'SHIELDS UP NOW!' The order saved lives. Arrows darkened the dawn sky moments later, a whistling rain of death.
     visual_weight: "high"
     characters_present:
       - "grimjaw-ironbeard"
-    location_zone: "westwall-watchpost/battlements"
-    transformation_state: "during"
+      - "vera-moonwhisper"
+      - "echo-raven"
+    location_zone: "westwall-watchpost/eastern-wall"
+    transformation_state: "before"
     recommended_images: 1
 
   - id: "ch15-battle-for-westwall-moment-04"
     scene_id: "scn-15-06"
-    title: "Finn's Perfect Shot"
-    narrative_beat: "Finn threads an arrow between combatants to disable a mercenary, the boy becoming a ranger."
+    title: "Finn's Tactical Archery"
+    narrative_beat: |
+      The arrow had to thread between two fighting pairs, over the head of a crouching soldier, and hit its target at an angle that would disable without risking the friendly directly behind. The arrow took the mercenary in the sword arm.
     visual_weight: "high"
     characters_present:
       - "finn"
-    location_zone: "westwall-watchpost/battlements"
-    transformation_state: "n/a"
+    location_zone: "westwall-watchpost/south-wall"
+    transformation_state: "before"
     recommended_images: 1
 
   - id: "ch15-battle-for-westwall-moment-05"
-    scene_id: "scn-15-11"
-    title: "Patrol Cohesion"
-    narrative_beat: "Thorne's patrol fighting at the breach as a single mind, shields locked, blades moving in unison."
+    scene_id: "scn-15-10"
+    title: "Wolves Answer"
+    narrative_beat: |
+      The forest erupted with howls that sent primitive fear through both sides. They came from three directions—gray shadows flowing from the tree line with deadly purpose.
     visual_weight: "high"
     characters_present:
-      - "thorne-brightward"
-      - "sergeant-kelen"
-      - "corporal-darric"
-      - "archer-venn"
-      - "quartermaster-fayne"
-    location_zone: "westwall-watchpost/courtyard"
-    transformation_state: "n/a"
+      - "vera-moonwhisper"
+    location_zone: "thornwood-forest/forest-edge"
+    transformation_state: "during"
     recommended_images: 1
 
   - id: "ch15-battle-for-westwall-moment-06"
     scene_id: "scn-15-12"
-    title: "Elba's Cleaver"
-    narrative_beat: "Mistress Elba defending the medical station with a kitchen cleaver, maternal fury turned lethal."
-    visual_weight: "high"
+    title: "No One Touches My Boys"
+    narrative_beat: |
+      When a mercenary broke through and charged the medical station, Mistress Elba met him with a kitchen cleaver to the neck. 'No one touches my boys! By stone and steel!'
+    visual_weight: "critical"
     characters_present:
       - "mistress-elba"
       - "aldwin-gentleheart"
     location_zone: "westwall-watchpost/medical-station"
-    transformation_state: "n/a"
-    recommended_images: 1
+    transformation_state: "during"
+    recommended_images: 2
 
   - id: "ch15-battle-for-westwall-moment-07"
     scene_id: "scn-15-15"
-    title: "Violent Metamorphosis"
-    narrative_beat: "Vera's body breaking and reforming on the battlements, silver-gray fur erupting in a moment of inner violence."
-    visual_weight: "hero"
-    characters_present:
-      - "vera-moonwhisper"
-    location_zone: "westwall-watchpost/battlements"
-    transformation_state: "during"
-    recommended_images: 1
-
-  - id: "ch15-battle-for-westwall-moment-08"
-    scene_id: "scn-15-16"
-    title: "Dire Wolf Rampage"
-    narrative_beat: "Vera in full dire wolf form crashing into the mercenary line, splintering shields and bone."
-    visual_weight: "high"
-    characters_present:
-      - "vera-moonwhisper"
-    location_zone: "westwall-watchpost/courtyard"
-    transformation_state: "during"
-    recommended_images: 1
-
-  - id: "ch15-battle-for-westwall-moment-09"
-    scene_id: "scn-15-17"
-    title: "Nightmare Lunge"
-    narrative_beat: "Vera's hybrid form lunging from the rubble to maim Krag, a twisted amalgam of human and wolf."
+    title: "The Unleashing"
+    narrative_beat: |
+      Her spine elongated in a series of wet pops. Bones breaking and reforming. Silver-gray fur erupted across her skin as if her humanity was being torn away. The transformation consumed her—leaving something twice the size of any natural wolf.
     visual_weight: "critical"
     characters_present:
       - "vera-moonwhisper"
+    location_zone: "westwall-watchpost/ramparts"
+    transformation_state: "during"
+    recommended_images: 2
+
+  - id: "ch15-battle-for-westwall-moment-08"
+    scene_id: "scn-15-16"
+    title: "Dire Wolf Leap"
+    narrative_beat: |
+      A dire wolf in full leap is a sight that burns itself into memory. Vera launched herself from the wall—twenty feet down—and hit Finn's would-be killer like an avalanche of fur and fury.
+    visual_weight: "critical"
+    characters_present:
+      - "vera-moonwhisper"
+      - "finn"
     location_zone: "westwall-watchpost/courtyard"
     transformation_state: "during"
-    recommended_images: 1
+    recommended_images: 2
+
+  - id: "ch15-battle-for-westwall-moment-09"
+    scene_id: "scn-15-17"
+    title: "Vera Maims Krag"
+    narrative_beat: |
+      From the rubble emerged a nightmare—not wolf, not woman, but something horribly in between. Her jaws clamped down on Krag's sword arm. Armor crumpled like tin. Bones snapped like twigs.
+    visual_weight: "critical"
+    characters_present:
+      - "vera-moonwhisper"
+      - "krag"
+    location_zone: "westwall-watchpost/breach"
+    transformation_state: "during"
+    recommended_images: 3
 
   - id: "ch15-battle-for-westwall-moment-10"
+    scene_id: "scn-15-17"
+    title: "My Turn"
+    narrative_beat: |
+      Young Finn, bloodied but alive, stood over Vera's unconscious form with a salvaged spear. 'You saved me. My turn.'
+    visual_weight: "critical"
+    characters_present:
+      - "finn"
+      - "vera-moonwhisper"
+    location_zone: "westwall-watchpost/breach"
+    transformation_state: "after"
+    recommended_images: 2
+
+  - id: "ch15-battle-for-westwall-moment-11"
     scene_id: "scn-15-20"
-    title: "The Circle of Kinship"
-    narrative_beat: "The survivors forming a protective ring around the fallen Vera, accepting the end together."
+    title: "Shield Wall Final Stand"
+    narrative_beat: |
+      They made their stand in the courtyard, a ragged circle of exhausted defenders around an unconscious woman. The mercenaries charged. 'HOLD THE LINE!' Veyra shouted.
     visual_weight: "high"
     characters_present:
       - "veyra-thornwake"
       - "thorne-brightward"
-      - "grimjaw-ironbeard"
-      - "finn"
       - "vera-moonwhisper"
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "after"
+    recommended_images: 2
+
+  - id: "ch15-battle-for-westwall-moment-12"
+    scene_id: "scn-15-21"
+    title: "Three Horns"
+    narrative_beat: |
+      The first horn sounded from the eastern hills—clear, bright, cutting through the morning air like a blade of pure hope. Then a second from the north. A third from the south.
+    visual_weight: "high"
+    characters_present:
+      - "commander-atlock"
     location_zone: "westwall-watchpost/courtyard"
     transformation_state: "after"
     recommended_images: 1
 
-  - id: "ch15-battle-for-westwall-moment-11"
+  - id: "ch15-battle-for-westwall-moment-13"
     scene_id: "scn-15-21"
-    title: "Cavalry Envelopment"
-    narrative_beat: "Commander Atlock's cavalry squadrons cresting the hills, horns sounding the arrival of the hammer."
-    visual_weight: "hero"
+    title: "Cavalry Charge"
+    narrative_beat: |
+      'PER EQUITES, MORS!' Atlock's voice boomed across the battlefield. Two hundred mounted soldiers took up the cry. 'THROUGH CAVALRY, DEATH!'
+    visual_weight: "critical"
     characters_present:
       - "commander-atlock"
-    location_zone: "westwall-watchpost/exterior"
-    transformation_state: "n/a"
-    recommended_images: 1
+    location_zone: "westwall-watchpost/courtyard"
+    transformation_state: "after"
+    recommended_images: 2
 
-  - id: "ch15-battle-for-westwall-moment-12"
+  - id: "ch15-battle-for-westwall-moment-14"
     scene_id: "scn-15-23"
-    title: "Feeding the Heroes"
-    narrative_beat: "Mistress Elba mothering Commander Atlock into eating, humanity returning to the battlefield."
+    title: "Heroes Need to Eat"
+    narrative_beat: |
+      'Sit, child.' Mistress Elba pointed to rubble with the authority of a general. Commander Atlock, veteran of dozen campaigns and scourge of bureaucrats, sat.
     visual_weight: "medium"
     characters_present:
       - "mistress-elba"
@@ -230,76 +320,376 @@ moments:
     transformation_state: "after"
     recommended_images: 1
 
-  - id: "ch15-battle-for-westwall-moment-13"
+  - id: "ch15-battle-for-westwall-moment-15"
     scene_id: "scn-15-24"
-    title: "Fragile Survival"
-    narrative_beat: "Vera waking with unfocused eyes, her hand finding Veyra's in a moment of tender aftermath."
+    title: "She's Awake"
+    narrative_beat: |
+      Vera's eyes were open, but wrong—unfocused, darting, seeing things that weren't there. Her body trembled. When she tried to speak, only a rasping whine emerged.
     visual_weight: "high"
     characters_present:
       - "vera-moonwhisper"
       - "veyra-thornwake"
-    location_zone: "westwall-watchpost/interior"
+      - "aldwin-gentleheart"
+      - "echo-raven"
+    location_zone: "westwall-watchpost/medical-station"
     transformation_state: "after"
     recommended_images: 1
 
 images:
-  - custom_id: "ch15-battle-for-westwall-img-15-04-01"
-    source_moment: "ch15-battle-for-westwall-moment-02"
-    scene_id: "scn-15-04"
-    image_type: "mood"
+  - custom_id: "ch15-battle-for-westwall-img-15-01-01"
+    source_moment: "ch15-battle-for-westwall-moment-01"
+    scene_id: "scn-15-01"
+    image_type: "anchor"
     category:
       - "moment"
       - "character"
-      - "emotion"
-    scene_mood: "ominous"
-    mood_rationale: "Pre-dawn communion. Vera's amber eyes glowing against the dark. Foreshadowing the violence."
+    scene_mood: "intimate"
+    mood_rationale: |
+      Veteran wisdom in quiet morning—Grimjaw's decades of experience distilled into one gesture. The intimacy of knowledge being passed down before chaos arrives.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Vera stands atop the eastern tower in pre-dawn darkness. Her eyes glow amber. Echo the raven perches on her shoulder. The forest below is absolute darkness, but eyes glint there. The stone crenellations frame her. Stillness vibrating with anticipation.
+      Medium shot of Grimjaw directing two City Watch soldiers in the courtyard at dawn. The dwarf points with absolute certainty to a specific spot fifteen feet from the entrance—not where they'd placed the oil barrel, but where fire flows like water. His weathered face holds the weight of three burned fortresses. Soldiers exchange uncertain glances but move the barrel without question. Gray morning light, methodical preparation, the courtyard transforming into a killing field one adjustment at a time.
     composition_notes: |
-      Low angle looking up. Vera at left intersection. Lightening horizon upper right. Tower provides vertical framing. Focal point on glowing eyes.
-    visual_hook: "Her amber eyes glowing against the pre-dawn darkness—an unnatural light that marks her as something between worlds"
+      Grimjaw as focal point, soldiers and barrel in motion. Dawn light from left. Courtyard architecture provides scale. The gesture itself—pointing finger—draws the eye.
+    visual_hook: "Grimjaw pointing to precise location, thirty years of siege wisdom in one gesture"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+    character_states:
+      grimjaw-ironbeard: |
+        Directing with absolute certainty. Weathered face, gray-streaked beard, patchwork armor from dozens of battles. Not arrogance but earned knowledge.
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "Early morning sun"
+      quality: "soft, gray, pre-dawn"
+      direction: "from east, low angle"
+      color_temperature: "cool gray with warm edge"
+      shadow_depth: "long morning shadows"
+      atmospheric: "morning mist, preparation tension"
+    palette:
+      dominant:
+        - "stone gray"
+        - "armor steel"
+        - "dawn gray"
+      accent:
+        - "oil barrel brown"
+        - "dwarf beard gray-brown"
+      avoid:
+        - "warm colors"
+        - "sunset tones"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, natural morning light.
+      Stone fortress courtyard at dawn. A weathered dwarf in patchwork armor directs two human soldiers positioning an oil barrel. His pointing gesture is precise, commanding—thirty years of siege knowledge visible in his certainty. Soldiers exchange uncertain glances but obey.
+      Medium shot, courtyard transforming into defensive position.
+      Gray morning light, long shadows, methodical preparation.
+      Steel and stone palette.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      action poses, combat, bright lighting, sunset colors
+    tags:
+      - "preparation"
+      - "grimjaw"
+      - "veteran"
+      - "intimate"
+      - "courtyard"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15-battle-for-westwall-img-15-02-01"
+    source_moment: "ch15-battle-for-westwall-moment-02"
+    scene_id: "scn-15-03"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Last supper energy—a family before battle. The toast ripples through the room, voices joining together. Communal resolve before the storm.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Wide shot of the mess hall at evening. Veyra stands at the head of a long table, raising a simple cup of water, her scarred face swept across assembled faces. Around her, soldiers both veteran and green, dwarves and humans, Watch reinforcements and Company members. Grimjaw raises his own cup with a booming "Here, here!" The lamplight catches the gleam of raised cups throughout the room. Through the window, distant howling is almost audible. Simple fare on the tables—not a feast, but something more important.
+    composition_notes: |
+      Veyra standing, toast raised, as focal point. Faces turned toward her create radiating composition. Lamplight pools on faces. Window shows darkening sky.
+    visual_hook: "Veyra raising cup, scarred face illuminated, voices joining in toast"
+    depicts_characters:
+      - "veyra-thornwake"
+      - "grimjaw-ironbeard"
+    character_states:
+      veyra-thornwake: |
+        Standing with cup raised, scarred face swept across assembled faces. Burn scars visible in lamplight. "They face a family defending its home."
+      grimjaw-ironbeard: |
+        Raising cup with booming enthusiasm. "Never stood with finer."
+    location: "westwall-watchpost"
+    zone: "mess-hall"
+    lighting:
+      primary_source: "Oil lamps, hearth fire"
+      quality: "warm, golden, communion warmth"
+      direction: "from center and sides"
+      color_temperature: "amber gold"
+      shadow_depth: "soft, community feeling"
+      atmospheric: "smoke wisps, lamp glow"
+    palette:
+      dominant:
+        - "lamplight amber"
+        - "wood brown"
+        - "hearth orange"
+      accent:
+        - "water gleam in cups"
+        - "teal tattoos"
+      avoid:
+        - "cold blue"
+        - "harsh white"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, Rembrandt interior lighting.
+      Medieval mess hall at evening, long wooden tables with simple fare. A half-elf woman with burn scars on face and jet black mohawk stands raising a cup of water, addressing the assembled soldiers. A gray-bearded dwarf raises his own cup with enthusiasm. Faces throughout the room turn toward her, cups rising.
+      Wide shot, communion atmosphere, last meal before battle.
+      Warm lamplight amber, hearth glow, community warmth.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      action poses, combat, outdoor, cold colors, empty room
+    tags:
+      - "toast"
+      - "veyra"
+      - "community"
+      - "intimate"
+      - "mess-hall"
+      - "family"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15-battle-for-westwall-img-15-03-01"
+    source_moment: "ch15-battle-for-westwall-moment-03"
+    scene_id: "scn-15-05"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "action"
+    scene_mood: "kinetic"
+    mood_rationale: |
+      Battle begins with death raining from the sky. Echo's cry, shields raised just in time, arrows darkening the dawn. The first moment of chaos.
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Cinematic wide shot of the eastern wall at pre-dawn. Shields raised in a wall just in time, arrows darkening the pale gray sky like a rain of death. Sparks fly where arrows strike metal. One soldier fallen with shaft in thigh. Echo the raven visible in upper corner, wings spread in alarm cry. The moment between peace and war captured in flight.
+    composition_notes: |
+      Ultra-wide cinematic aspect. Wall of raised shields as horizontal band. Arrows creating diagonal rain pattern. Echo's silhouette against pale sky. Fallen soldier provides human cost.
+    visual_hook: "Shields raised against arrow rain, sparks flying, death darkening the dawn sky"
+    depicts_characters:
+      - "vera-moonwhisper"
+      - "grimjaw-ironbeard"
+      - "echo-raven"
+    character_states:
+      vera-moonwhisper: |
+        On wall, bow in hand, shouting alarm. Eyes shifting toward amber. Human form but battle instincts engaged.
+      grimjaw-ironbeard: |
+        Shield raised, directing defenders. Veteran reflexes.
+      echo-raven: |
+        Harsh alarm cry, wings spread. Silhouette against pale sky.
+    location: "westwall-watchpost"
+    zone: "eastern-wall"
+    lighting:
+      primary_source: "Pre-dawn gray"
+      quality: "pale, ominous, arrow-shadow"
+      direction: "from eastern horizon"
+      color_temperature: "cold gray"
+      shadow_depth: "sharp arrow shadows"
+      atmospheric: "death falling from sky"
+    palette:
+      dominant:
+        - "pre-dawn gray"
+        - "arrow-shaft brown"
+        - "shield steel"
+      accent:
+        - "spark orange"
+        - "blood red"
+      avoid:
+        - "warm sunlight"
+        - "peaceful colors"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, dramatic action.
+      Stone fortress wall at pre-dawn, shields raised in formation as arrows darken the pale gray sky. Sparks fly where arrows strike metal. A raven silhouette against the pale sky, wings spread in alarm. One soldier fallen with arrow in leg.
+      Ultra-wide cinematic shot, battle beginning, rain of death.
+      Cold gray palette with spark orange accents.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      static poses, calm expressions, sunny day, peaceful atmosphere
+    tags:
+      - "battle"
+      - "arrows"
+      - "shields"
+      - "kinetic"
+      - "echo"
+      - "hero-image"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15-battle-for-westwall-img-15-04-01"
+    source_moment: "ch15-battle-for-westwall-moment-04"
+    scene_id: "scn-15-06"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "action"
+    scene_mood: "kinetic"
+    mood_rationale: |
+      Skill revealed under pressure—young ranger's impossible shot threading chaos. His first real battle, and his hands are finally steady.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Medium shot following Finn's arrow mid-flight. The shaft threads between two fighting pairs, passes over a crouching soldier's head, and strikes the mercenary's sword arm just as his blade begins its downward arc. The defender below is saved, never knowing how close death came. Finn visible in background, bow still in release position, young face showing concentration beyond his years.
+    composition_notes: |
+      Arrow trajectory as leading line through chaos. Fighting pairs as obstacles. Mercenary's mid-strike moment frozen. Finn in background creates depth.
+    visual_hook: "Arrow threading impossible angle between fighting pairs, sword arm hit mid-swing"
+    depicts_characters:
+      - "finn"
+    character_states:
+      finn: |
+        Young ranger, bow in release position. Face showing concentration beyond years. Hands finally steady. First real battle proving his skill.
+    location: "westwall-watchpost"
+    zone: "south-wall"
+    lighting:
+      primary_source: "Morning battle light"
+      quality: "harsh, revealing"
+      direction: "from side"
+      color_temperature: "neutral"
+      shadow_depth: "action shadows"
+      atmospheric: "dust, motion"
+    palette:
+      dominant:
+        - "arrow-shaft wood"
+        - "armor steel"
+        - "battle dust"
+      accent:
+        - "blood spray"
+        - "sword flash"
+      avoid:
+        - "peaceful colors"
+        - "soft lighting"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, frozen action moment.
+      An arrow mid-flight threading between two pairs of fighting soldiers, passing over a crouching figure, striking a mercenary's sword arm just as his blade descends. In the background, a young archer in ranger gear holds his bow in release position, face concentrated.
+      Medium shot showing impossible trajectory, chaos and precision.
+      Steel and dust palette.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      static poses, calm scene, empty battlefield
+    tags:
+      - "finn"
+      - "archery"
+      - "impossible-shot"
+      - "kinetic"
+      - "proving"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15-battle-for-westwall-img-15-05-01"
+    source_moment: "ch15-battle-for-westwall-moment-05"
+    scene_id: "scn-15-10"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "magic"
+      - "symbol"
+    scene_mood: "ethereal"
+    mood_rationale: |
+      The wild answers the call—nature joining human battle. Primal fear and primal power in a single image. The pack honoring its bond.
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Cinematic shot from the Watchpost looking toward three treelines. Gray wolf shadows flow from the forest with deadly purpose—from east, from north, from south. Their howls have sent primitive fear through both armies. In the foreground, mercenaries' faces show terror at something no armor can protect against. On a tower, Vera stands tall with amber eyes and too-sharp teeth, connected to something vast and ancient. The wild has heard the call.
+    composition_notes: |
+      Ultra-wide aspect showing three treelines as composition points. Wolves flowing as diagonal lines toward battle. Vera on tower as vertical anchor. Terror in foreground faces.
+    visual_hook: "Gray wolf shadows flowing from three treelines, Vera standing with amber eyes"
     depicts_characters:
       - "vera-moonwhisper"
     character_states:
       vera-moonwhisper: |
-        Still vigil. Eyes glowing amber. Watchful expression. Forest-green cloak. Chestnut braid.
-    location: "westwall-watchpost"
-    zone: "battlements"
+        Standing tall on tower, amber eyes blazing, too-sharp teeth visible. Connected to the pack through something primal. Not yet transformed but no longer entirely human.
+    location: "thornwood-forest"
+    zone: "forest-edge"
     lighting:
-      primary_source: "Amber eye-glow + horizon light"
-      quality: "Unsettling, internal"
-      direction: "Radial from eyes"
-      color_temperature: "Cool blue vs unnatural amber"
-      shadow_depth: "Deep"
-      atmospheric: "Oppressive stillness"
+      primary_source: "Morning light"
+      quality: "ethereal, primal"
+      direction: "from behind wolves, backlighting"
+      color_temperature: "amber glow"
+      shadow_depth: "wolf-shadow flowing"
+      atmospheric: "howl-energy visible"
     palette:
       dominant:
-        - "pre-dawn indigo"
-        - "slate gray"
-        - "black"
+        - "wolf gray"
+        - "forest dark green"
+        - "morning pale"
       accent:
-        - "amber eye-glow"
+        - "amber eyes"
+        - "primitive fear"
       avoid:
-        - "bright colors"
+        - "cheerful colors"
+        - "soft lighting"
     prompt_used: |
-      Half-elf woman sentinel on stone battlements at pre-dawn,
-      glowing amber eyes the only source of unnatural light,
-      raven perched on her shoulder,
-      forest in absolute darkness below with glinting eyes,
-      silhouette against a sky barely lightening at horizon,
-      classical oil painting, Symbolist unease,
-      cold sickly palette vs amber glow,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, primal fantasy.
+      View from stone fortress toward forest edge at morning. Gray wolf shadows flow from three treelines with deadly purpose. On a tower, a half-elf woman stands with amber glowing eyes and too-sharp teeth. In foreground, armored mercenaries' faces show primitive terror.
+      Ultra-wide cinematic, the wild answering the call.
+      Wolf gray and forest dark, amber eye accent.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, bright daylight
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      single wolf, domestic dogs, peaceful forest, no animals
     tags:
-      - "sentinel"
-      - "amber-eyes"
-      - "pre-dawn"
-      - "ominous"
+      - "wolves"
+      - "vera"
+      - "primal"
+      - "ethereal"
+      - "hero-image"
+      - "calling"
     generated_at: null
     file_name: null
     file_path: null
@@ -308,60 +698,787 @@ images:
     provider_metadata: {}
 
   - custom_id: "ch15-battle-for-westwall-img-15-06-01"
-    source_moment: "ch15-battle-for-westwall-moment-03"
-    scene_id: "scn-15-06"
-    image_type: "action"
+    source_moment: "ch15-battle-for-westwall-moment-06"
+    scene_id: "scn-15-12"
+    image_type: "anchor"
     category:
+      - "moment"
+      - "character"
       - "action"
-      - "military"
     scene_mood: "kinetic"
-    mood_rationale: "Siege engineering in action. The moment of impact. Force and consequences."
+    mood_rationale: |
+      Grandmother becomes warrior—domestic fury made lethal. The transformation from cook to defender captures the chapter's theme of family fighting for home.
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      An improvised ballista on the battlements firing. A massive wooden bolt, crafted from a tree trunk, has just been released. In the background, the bolt has smashed into a column of mercenaries on the road, bodies flying. Grimjaw is directing the reload with grimy hands.
+      Medium shot of Mistress Elba standing over a fallen mercenary, kitchen cleaver dark with blood. Her apron is splattered, her eyes blaze with protective fury. Behind her, Aldwin works frantically on wounded. The mercenary had broken through and charged the medical station—he never expected a grandmother with thirty years of butchering experience. Her mouth forms the words: "No one touches my boys!"
     composition_notes: |
-      Action shot. Ballista foreground left. Path of bolt creates a strong diagonal. Impact in mid-ground.
-    visual_hook: "The massive size of the 'bolt' and the splinters flying from the mechanism as it fires."
+      Elba as dominant vertical figure, cleaver as focal point. Fallen mercenary creates diagonal. Aldwin in background provides context. Eyes draw viewer to her face.
+    visual_hook: "Mistress Elba with bloody cleaver, apron splattered, eyes blazing protective fury"
     depicts_characters:
-      - "grimjaw-ironbeard"
+      - "mistress-elba"
+      - "aldwin-gentleheart"
     character_states:
-      grimjaw-ironbeard: |
-        Directing reload. Grimy hands. Intense focus.
+      mistress-elba: |
+        Standing over fallen mercenary, cleaver dark with blood. Apron splattered. Eyes blazing with protective fury. Grandmother transformed into warrior.
+      aldwin-gentleheart: |
+        Working on wounded behind her, clinical efficiency.
     location: "westwall-watchpost"
-    zone: "battlements"
+    zone: "medical-station"
     lighting:
-      primary_source: "Morning sun"
-      quality: "Hard, active"
-      direction: "Side"
-      color_temperature: "Bright"
-      shadow_depth: "Sharp"
-      atmospheric: "Dust/Splinters"
+      primary_source: "Battle-filtered daylight"
+      quality: "harsh, revealing"
+      direction: "from side"
+      color_temperature: "blood-warm"
+      shadow_depth: "dramatic"
+      atmospheric: "smoke, dust, blood"
     palette:
       dominant:
-        - "wood brown"
-        - "stone gray"
-        - "blood rust"
+        - "apron cream"
+        - "blood red"
+        - "cleaver steel"
       accent:
-        - "sun glint on steel"
+        - "grandmother gray hair"
+        - "eye fire"
       avoid:
-        - "stillness"
+        - "soft colors"
+        - "peaceful atmosphere"
     prompt_used: |
-      Improvised medieval ballista firing from castle wall,
-      massive wooden bolt flying toward mercenaries,
-      dwarf engineer directing crew,
-      splinters and dust in the air,
-      dynamic action composition,
-      classical oil painting, kinetic energy,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, dramatic moment.
+      Medical station in fortress, a sturdy grandmother figure stands over a fallen mercenary, kitchen cleaver dark with blood. Her apron is splattered, her eyes blaze with protective fury. Behind her, a halfling healer works on wounded. Her mouth forms a battle cry.
+      Medium shot, grandmother as warrior.
+      Blood red accent on cream apron.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      peaceful scene, clean kitchen, no blood
     tags:
-      - "action"
-      - "siege"
-      - "ballista"
+      - "elba"
+      - "cleaver"
+      - "grandmother"
       - "kinetic"
+      - "protective"
+      - "transformation"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15-battle-for-westwall-img-15-06-02"
+    source_moment: "ch15-battle-for-westwall-moment-06"
+    scene_id: "scn-15-12"
+    image_type: "detail"
+    category:
+      - "character"
+      - "emotion"
+    scene_mood: "ominous"
+    mood_rationale: |
+      Close-up reveals the truth—this is not rage but love made lethal. A grandmother's protective fury in her eyes, more terrifying than any soldier's anger.
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Close portrait of Mistress Elba's face, blood spattering one cheek. Her eyes hold something primal—not rage but the absolute certainty of a mother defending her children. "No one touches my boys." The cleaver's edge is visible at frame's bottom. Gray hair escaped from its bun. The transformation from cook to killer complete in her expression.
+    composition_notes: |
+      Tight portrait, face filling frame. Eyes as absolute focal point. Blood spatter provides asymmetry. Cleaver edge at bottom creates threat.
+    visual_hook: "Grandmother's face, blood-spattered, eyes holding protective fury beyond rage"
+    depicts_characters:
+      - "mistress-elba"
+    character_states:
+      mistress-elba: |
+        Face close-up, blood on cheek. Eyes not rage but protective certainty. Gray hair escaped. Expression of love made lethal.
+    location: "westwall-watchpost"
+    zone: "medical-station"
+    lighting:
+      primary_source: "Battle light from side"
+      quality: "harsh, revealing"
+      direction: "from left"
+      color_temperature: "neutral with blood warmth"
+      shadow_depth: "half-face shadow"
+      atmospheric: "intensity"
+    palette:
+      dominant:
+        - "skin tones"
+        - "blood red"
+        - "gray hair"
+      accent:
+        - "cleaver steel"
+        - "eye intensity"
+      avoid:
+        - "soft lighting"
+        - "warm comfort"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, intense portrait.
+      Close-up of an elderly woman's face, blood spattering one cheek. Her eyes hold protective fury—not rage but the certainty of a mother defending her children. Gray hair escaped from bun. A cleaver's edge visible at bottom of frame.
+      Tight portrait, grandmother as guardian.
+      Skin tones with blood accent.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, full figure, peaceful expression, clean face
+    tags:
+      - "elba"
+      - "portrait"
+      - "detail"
+      - "ominous"
+      - "protective"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15-battle-for-westwall-img-15-07-01"
+    source_moment: "ch15-battle-for-westwall-moment-07"
+    scene_id: "scn-15-15"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "character"
+      - "magic"
+    scene_mood: "ethereal"
+    mood_rationale: |
+      The chapter's visual climax—transformation at full desperate power. Humanity being torn away to save family. Magic and flesh merging in something twice wolf-size.
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Cinematic hero shot of Vera on the battlements, body twisted mid-change. Her spine elongates in visible wet pops, bones breaking and reforming. Silver-gray fur erupts across her skin as if humanity is being torn away. Amber eyes blaze with something primal and protective. Armor straps snap from expanding mass. She is becoming something twice the size of any natural wolf. Smoke-filtered morning light catches the horror and power of the transformation.
+    composition_notes: |
+      Ultra-wide aspect frames transformation as centerpiece. Battlements provide horizontal line. Vera's twisting form creates organic chaos. Amber eyes draw focus. Snapping armor straps add motion.
+    visual_hook: "Vera mid-transformation on battlements, spine elongating, silver-gray fur erupting, amber eyes blazing"
+    depicts_characters:
+      - "vera-moonwhisper"
+    character_states:
+      vera-moonwhisper: |
+        Full dire wolf transformation in progress. Spine elongating with visible wet pops. Silver-gray fur erupting across skin. Amber eyes blazing. Armor straps snapping. Becoming something twice wolf-size.
+    location: "westwall-watchpost"
+    zone: "ramparts"
+    lighting:
+      primary_source: "Smoke-filtered morning sun"
+      quality: "primal, transformation glow"
+      direction: "from behind, rim lighting"
+      color_temperature: "amber transformation"
+      shadow_depth: "dramatic front shadows"
+      atmospheric: "transformation energy, primal power"
+    palette:
+      dominant:
+        - "silver-gray fur"
+        - "amber eye fire"
+        - "smoke gray"
+      accent:
+        - "snapping leather brown"
+        - "bone white"
+      avoid:
+        - "cool colors"
+        - "sterile lighting"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, primal fantasy transformation.
+      A half-elf woman on stone battlements, body twisted mid-change. Spine elongates visibly, bones breaking and reforming. Silver-gray fur erupts across her skin. Her eyes blaze amber with primal power. Armor straps snap from expanding mass. She is becoming something twice wolf size.
+      Ultra-wide cinematic hero shot, transformation climax.
+      Silver-gray fur and amber fire palette.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      full werewolf monster, horror creature, calm pose, human form
+    tags:
+      - "vera"
+      - "transformation"
+      - "dire-wolf"
+      - "ethereal"
+      - "hero-image"
+      - "climax"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15-battle-for-westwall-img-15-07-02"
+    source_moment: "ch15-battle-for-westwall-moment-07"
+    scene_id: "scn-15-15"
+    image_type: "detail"
+    category:
+      - "magic"
+      - "symbol"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The cost made visceral—close-up of transformation's horror. Bones breaking, fur erupting, humanity stripped away. The price of power.
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Extreme close-up of Vera's arm mid-transformation. Skin splits as silver-gray fur erupts in tufts. Muscle and sinew visible beneath, elongating, reshaping. Fingers lengthen into something between human and wolf—claws extending from what were nails. The visceral reality of transformation: this is not magic but metamorphosis, painful and primal.
+    composition_notes: |
+      Portrait format emphasizes vertical transformation. Arm fills frame. Skin splitting as texture focus. Emerging fur creates contrast. Clinical horror.
+    visual_hook: "Arm splitting, silver-gray fur erupting, fingers elongating into claws"
+    depicts_characters:
+      - "vera-moonwhisper"
+    character_states:
+      vera-moonwhisper: |
+        Arm only, mid-transformation. Skin splitting, fur erupting, fingers elongating into claws. The visceral cost visible.
+    location: "westwall-watchpost"
+    zone: "ramparts"
+    lighting:
+      primary_source: "Battle light"
+      quality: "harsh, clinical"
+      direction: "from side"
+      color_temperature: "flesh and fur contrast"
+      shadow_depth: "anatomical shadows"
+      atmospheric: "transformation"
+    palette:
+      dominant:
+        - "skin flesh"
+        - "silver-gray fur"
+        - "muscle red"
+      accent:
+        - "claw white"
+        - "blood"
+      avoid:
+        - "clean colors"
+        - "soft lighting"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, anatomical horror.
+      Extreme close-up of an arm mid-transformation—skin splitting as silver-gray fur erupts in tufts. Muscle and sinew visible, elongating. Fingers lengthen into claws. The visceral reality of metamorphosis.
+      Portrait format, anatomical detail.
+      Flesh and fur contrast.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, full figure, clean transformation, no pain
+    tags:
+      - "transformation"
+      - "detail"
+      - "ominous"
+      - "cost"
+      - "fur"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15-battle-for-westwall-img-15-08-01"
+    source_moment: "ch15-battle-for-westwall-moment-08"
+    scene_id: "scn-15-16"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "action"
+      - "character"
+    scene_mood: "kinetic"
+    mood_rationale: |
+      A dire wolf in full leap burns itself into memory. Twenty feet down, protective fury incarnate, death from above.
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Cinematic action shot—massive dire wolf launching from battlements in full leap. Silver-gray fur catches the morning light. Below, Finn sprawls on the ground as Serka's blade begins its fatal arc. Twenty feet of air between wolf and victim. The moment before impact, frozen—avalanche of fur and fury about to hit. The mercenary's face beginning to register what approaches.
+    composition_notes: |
+      Ultra-wide diagonal composition. Dire wolf in upper left, Finn and Serka in lower right. Twenty-foot drop creates dramatic space. Motion lines implicit in pose.
+    visual_hook: "Dire wolf mid-leap from wall, silver-gray fur catching light, twenty feet above victim"
+    depicts_characters:
+      - "vera-moonwhisper"
+      - "finn"
+    character_states:
+      vera-moonwhisper: |
+        Full dire wolf form, mid-leap. Silver-gray fur, massive size. Protective fury in motion.
+      finn: |
+        On ground, about to be killed. Looking up at salvation.
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "Morning battle light"
+      quality: "dramatic, frozen moment"
+      direction: "from side"
+      color_temperature: "neutral action"
+      shadow_depth: "motion shadows"
+      atmospheric: "dust, motion"
+    palette:
+      dominant:
+        - "silver-gray fur"
+        - "stone gray"
+        - "armor steel"
+      accent:
+        - "amber eyes"
+        - "blood"
+      avoid:
+        - "peaceful colors"
+        - "static composition"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, frozen action moment.
+      A massive silver-gray dire wolf launches from stone battlements in full leap, fur catching morning light. Below, a young man sprawls on the ground as an armored mercenary's blade descends. Twenty feet of air between wolf and impact.
+      Ultra-wide cinematic, death from above.
+      Silver-gray fur with steel accents.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      static poses, wolf on ground, peaceful scene
+    tags:
+      - "vera"
+      - "dire-wolf"
+      - "leap"
+      - "kinetic"
+      - "hero-image"
+      - "finn"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15-battle-for-westwall-img-15-08-02"
+    source_moment: "ch15-battle-for-westwall-moment-08"
+    scene_id: "scn-15-16"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "action"
+    scene_mood: "kinetic"
+    mood_rationale: |
+      Impact moment—avalanche of fur and fury meeting Finn's would-be killer. The moment after the leap, salvation made physical.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The impact. Dire wolf hitting Serka like an avalanche, mercenary's body crumpling under the weight. Finn scrambling back, face showing shock and relief. Dust exploding from the courtyard stones. The massive wolf's jaws closing on the mercenary's sword arm. Violence and salvation in one moment.
+    composition_notes: |
+      Impact as central burst. Wolf and mercenary as main mass. Finn to side, reactive. Dust explosion creates framing.
+    visual_hook: "Dire wolf impact, mercenary crumpling, dust explosion, Finn scrambling back"
+    depicts_characters:
+      - "vera-moonwhisper"
+      - "finn"
+    character_states:
+      vera-moonwhisper: |
+        Full dire wolf, moment of impact. Jaws closing on sword arm. Weight crushing victim.
+      finn: |
+        Scrambling back, shock and relief on young face.
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "Morning battle light"
+      quality: "impact chaos"
+      direction: "from above"
+      color_temperature: "dust-filtered"
+      shadow_depth: "impact shadows"
+      atmospheric: "dust explosion"
+    palette:
+      dominant:
+        - "wolf silver-gray"
+        - "dust tan"
+        - "armor steel"
+      accent:
+        - "blood"
+        - "amber eyes"
+      avoid:
+        - "peaceful colors"
+        - "clean environment"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, impact moment.
+      A massive silver-gray dire wolf crashing into an armored mercenary, body crumpling under weight. Jaws closing on sword arm. A young man scrambles back in shock and relief. Dust explodes from courtyard stones.
+      Action impact shot, salvation as violence.
+      Wolf gray and impact dust.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      static poses, before impact, clean scene
+    tags:
+      - "vera"
+      - "dire-wolf"
+      - "impact"
+      - "kinetic"
+      - "finn"
+      - "salvation"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15-battle-for-westwall-img-15-09-01"
+    source_moment: "ch15-battle-for-westwall-moment-09"
+    scene_id: "scn-15-17"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "magic"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The nightmare hybrid form—neither wolf nor woman. Horror of transformation's cost made visible as Vera emerges from the fall, something horribly in between.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      From the rubble emerges a nightmare. Not wolf, not woman, but something horribly in between. Vera's form is half-transformed—humanoid but wrong. Clawed hands, elongated limbs, gray-silver fur patches across exposed skin. Her face retains human features but sharpened, predatory—pointed ears, prominent canines, amber eyes blazing. She emerges from debris in a predatory crouch, glowing amber eyes fixed on her prey.
+    composition_notes: |
+      Vera emerging from debris as central figure. Predatory crouch creates tension. Rubble provides framing. Amber eyes as focal point. Darkness behind, light on hybrid form.
+    visual_hook: "Hybrid nightmare emerging from rubble—not wolf, not woman, amber eyes blazing"
+    depicts_characters:
+      - "vera-moonwhisper"
+    character_states:
+      vera-moonwhisper: |
+        Hybrid horror form. Clawed hands, elongated limbs, gray-silver fur patches. Human features sharpened to predatory. Amber eyes blazing. Emerging from debris in predatory crouch.
+    location: "westwall-watchpost"
+    zone: "breach"
+    lighting:
+      primary_source: "Battle light through debris"
+      quality: "horror-lit, unnatural"
+      direction: "from above/behind"
+      color_temperature: "amber glow from eyes"
+      shadow_depth: "deep nightmare shadows"
+      atmospheric: "dust, debris, horror"
+    palette:
+      dominant:
+        - "rubble gray"
+        - "gray-silver fur"
+        - "skin flesh"
+      accent:
+        - "amber eye fire"
+        - "claw white"
+      avoid:
+        - "cheerful colors"
+        - "soft lighting"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, horror fantasy.
+      From rubble emerges a nightmare—a half-transformed figure, not wolf not woman but something in between. Clawed hands, elongated limbs, gray-silver fur patches across humanoid form. Face retains human features but sharpened predatory—pointed ears, fangs, amber blazing eyes. Emerging in predatory crouch.
+      Medium shot, hybrid horror emergence.
+      Gray debris with amber eye accent.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      full wolf, full human, peaceful scene, no debris
+    tags:
+      - "vera"
+      - "hybrid"
+      - "nightmare"
+      - "ominous"
+      - "transformation"
+      - "horror"
+    generated_at: "2025-12-26T00:00:00Z"
+    file_name: "vera-after-fall-transformation.png"
+    file_path: "chapters/ch15-battle-for-westwall/ARCHIVED_IMAGES/vera-after-fall-transformation.png"
+    provider: "gpt-image-1.5"
+    model: "gpt-image-1.5"
+    provider_metadata: {}
+
+  - custom_id: "ch15-battle-for-westwall-img-15-09-02"
+    source_moment: "ch15-battle-for-westwall-moment-09"
+    scene_id: "scn-15-17"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "action"
+      - "character"
+    scene_mood: "kinetic"
+    mood_rationale: |
+      The hybrid nightmare attacks—Vera's jaws clamping down on Krag's arm. Armor crumples like tin. The horrifying power unleashed.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      The attack. Vera's hybrid form lunges from the debris, clawed hands grasping Krag's arm as her jaws clamp down. The massive mercenary leader's face is a mask of agony as his armor crumples like tin, bones snapping like twigs beneath. Her amber eyes blaze with protective fury—this is the man who threatened her family. Violence at its most primal and directed.
+    composition_notes: |
+      Two-figure composition locked in violence. Vera's hybrid form dominant despite smaller size. Krag's face showing agony. Crumpling armor as focal detail. Motion and impact.
+    visual_hook: "Hybrid Vera's jaws clamping on Krag's arm, armor crumpling, bones snapping"
+    depicts_characters:
+      - "vera-moonwhisper"
+      - "krag"
+    character_states:
+      vera-moonwhisper: |
+        Hybrid horror attacking. Clawed hands gripping, jaws clamping on sword arm. Amber eyes blazing with protective fury.
+      krag: |
+        Massive mercenary leader, face mask of agony. Armor crumpling like tin under inhuman strength.
+    location: "westwall-watchpost"
+    zone: "breach"
+    lighting:
+      primary_source: "Battle light"
+      quality: "violence-lit"
+      direction: "from side"
+      color_temperature: "blood and amber"
+      shadow_depth: "action shadows"
+      atmospheric: "dust, violence"
+    palette:
+      dominant:
+        - "armor steel"
+        - "gray-silver fur"
+        - "blood"
+      accent:
+        - "amber eyes"
+        - "crumpling metal"
+      avoid:
+        - "peaceful colors"
+        - "static composition"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, violent action.
+      A half-transformed hybrid figure lunges at a massive armored mercenary, clawed hands gripping his sword arm as jaws clamp down. The armor crumples like tin. The mercenary's face is a mask of agony. Amber eyes blaze with fury.
+      Action shot, violence unleashed.
+      Steel and blood palette.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      peaceful scene, no contact, static poses
+    tags:
+      - "vera"
+      - "hybrid"
+      - "krag"
+      - "kinetic"
+      - "attack"
+      - "anchor"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15-battle-for-westwall-img-15-09-03"
+    source_moment: "ch15-battle-for-westwall-moment-09"
+    scene_id: "scn-15-17"
+    image_type: "detail"
+    category:
+      - "moment"
+      - "symbol"
+    scene_mood: "ominous"
+    mood_rationale: |
+      The cost of power—close-up of crumpling armor. Steel that should protect warriors failing like tin foil under inhuman strength.
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Extreme close-up of Krag's sword arm in the moment of destruction. Vera's hybrid jaws clamped down, armor crumpling inward like tin foil. Blood beginning to seep from gaps. The metal buckles and folds where it should hold. Clawed fingers visible gripping above the bite. The horrific reality of what Vera has become.
+    composition_notes: |
+      Portrait format, arm fills frame. Jaws and armor as focal point. Crumpling metal texture. Blood seeping through gaps.
+    visual_hook: "Armor crumpling like tin under hybrid jaws, blood seeping through gaps"
+    depicts_characters:
+      - "vera-moonwhisper"
+      - "krag"
+    character_states:
+      vera-moonwhisper: |
+        Jaws only visible, clamped on arm. Clawed fingers gripping. Inhuman strength.
+      krag: |
+        Arm only, armor crumpling inward. Blood seeping.
+    location: "westwall-watchpost"
+    zone: "breach"
+    lighting:
+      primary_source: "Battle light"
+      quality: "clinical horror"
+      direction: "from side"
+      color_temperature: "metal and blood"
+      shadow_depth: "texture shadows"
+      atmospheric: "violence detail"
+    palette:
+      dominant:
+        - "armor steel"
+        - "fur gray"
+        - "blood red"
+      accent:
+        - "crumpling metal"
+        - "fang white"
+      avoid:
+        - "peaceful colors"
+        - "soft texture"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, anatomical violence.
+      Extreme close-up of an armored arm being crushed by hybrid wolf jaws. The armor crumples inward like tin foil. Blood seeps from gaps. Clawed fingers grip above the bite point.
+      Portrait detail, the cost of power.
+      Steel and blood palette.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, full figures, intact armor
+    tags:
+      - "detail"
+      - "armor"
+      - "violence"
+      - "ominous"
+      - "cost"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15-battle-for-westwall-img-15-10-01"
+    source_moment: "ch15-battle-for-westwall-moment-10"
+    scene_id: "scn-15-17"
+    image_type: "anchor"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: |
+      The rescued becoming rescuer—Finn standing over unconscious Vera, simple courage completing the circle. "You saved me. My turn."
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Young Finn stands over Vera's collapsed human form, a salvaged spear gripped in bloodied hands. His face shows simple determination—gash across ribs from his earlier near-death, blood smeared but still standing. Vera lies unconscious at his feet, returned to human form, pale and still. Mercenaries approach in the smoke behind. He is outmatched and knows it. "You saved me. My turn."
+    composition_notes: |
+      Finn as vertical sentinel, Vera as horizontal protected form. Approaching threat in background creates urgency. Protective stance defines the frame.
+    visual_hook: "Bloodied Finn standing over unconscious Vera with spear—'You saved me. My turn.'"
+    depicts_characters:
+      - "finn"
+      - "vera-moonwhisper"
+    character_states:
+      finn: |
+        Young ranger, bloodied—gash across ribs, blood-smeared face. Salvaged spear in hands. Simple determination against impossible odds.
+      vera-moonwhisper: |
+        Collapsed human form at his feet. Unconscious, pale, still. Transformed back from hybrid horror.
+    location: "westwall-watchpost"
+    zone: "breach"
+    lighting:
+      primary_source: "Battle smoke light"
+      quality: "protective determination"
+      direction: "from behind"
+      color_temperature: "smoke gray"
+      shadow_depth: "sentinel shadows"
+      atmospheric: "smoke, threat approaching"
+    palette:
+      dominant:
+        - "blood red"
+        - "spear wood"
+        - "skin pale"
+      accent:
+        - "approaching threat"
+        - "determination"
+      avoid:
+        - "cheerful colors"
+        - "victory tones"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, protective moment.
+      A young man stands over a collapsed woman, gripping a salvaged spear. His face shows simple determination despite the gash across his ribs and blood-smeared features. She lies unconscious at his feet, pale and still. Armored figures approach through smoke behind.
+      Medium shot, the rescued becoming rescuer.
+      Blood and smoke palette.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      clean clothes, no wounds, victory pose
+    tags:
+      - "finn"
+      - "vera"
+      - "protection"
+      - "somber"
+      - "circle-complete"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15-battle-for-westwall-img-15-10-02"
+    source_moment: "ch15-battle-for-westwall-moment-10"
+    scene_id: "scn-15-17"
+    image_type: "detail"
+    category:
+      - "character"
+      - "emotion"
+    scene_mood: "somber"
+    mood_rationale: |
+      Young Finn's face—fear controlled by duty. First battle, first wounds, first time standing between death and someone who matters.
+    aspect_ratio: "3:4"
+    orientation: "portrait"
+    size: "1024x1365"
+    visual_description: |
+      Close portrait of Finn's face. Young features streaked with blood and grime. Eyes holding fear controlled by something stronger—duty, gratitude, the simple promise "my turn." The gash across his cheek. The tight grip visible at frame edge on spear shaft. First battle written in every line, but not breaking.
+    composition_notes: |
+      Tight portrait, face filling frame. Eyes as focal point—fear and determination mixed. Blood and grime texture. Spear grip at edge.
+    visual_hook: "Finn's young face—fear controlled by duty, blood-streaked but not breaking"
+    depicts_characters:
+      - "finn"
+    character_states:
+      finn: |
+        Face close-up. Young features bloodied and grimy. Eyes holding fear controlled by duty. First battle, but standing.
+    location: "westwall-watchpost"
+    zone: "breach"
+    lighting:
+      primary_source: "Battle smoke light"
+      quality: "revealing"
+      direction: "from side"
+      color_temperature: "neutral"
+      shadow_depth: "face shadows"
+      atmospheric: "intimate in chaos"
+    palette:
+      dominant:
+        - "skin tones"
+        - "blood red"
+        - "grime brown"
+      accent:
+        - "eye clarity"
+        - "fear and duty"
+      avoid:
+        - "clean face"
+        - "soft lighting"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, portrait.
+      Close-up of a young man's face, features streaked with blood and grime. His eyes hold fear controlled by duty. A gash across his cheek. Grip on a spear shaft visible at frame edge. First battle, but not breaking.
+      Tight portrait, duty over fear.
+      Skin and blood palette.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, clean face, calm expression
+    tags:
+      - "finn"
+      - "portrait"
+      - "detail"
+      - "somber"
+      - "first-battle"
     generated_at: null
     file_name: null
     file_path: null
@@ -370,72 +1487,428 @@ images:
     provider_metadata: {}
 
   - custom_id: "ch15-battle-for-westwall-img-15-11-01"
-    source_moment: "ch15-battle-for-westwall-moment-05"
-    scene_id: "scn-15-11"
+    source_moment: "ch15-battle-for-westwall-moment-11"
+    scene_id: "scn-15-20"
     image_type: "anchor"
     category:
-      - "action"
       - "moment"
+      - "action"
+      - "symbol"
     scene_mood: "kinetic"
-    mood_rationale: "Thorne's patrol as a single mind. The coordinated defense of the breach."
+    mood_rationale: |
+      Final stand—love made shield wall. A ragged circle of exhausted defenders around their fallen family member. "HOLD THE LINE!"
     aspect_ratio: "16:9"
     orientation: "landscape"
     size: "1792x1024"
     visual_description: |
-      Thorne's patrol holding the east wall breach. Kelen and Thorne in a two-man shield wall at the center. Darric striking from the flank. Fayne shouting directions. Venn's arrows raining from above. They move like a single organism in the smoke and blood.
+      Wide shot of the courtyard. A ragged circle of exhausted defenders has formed around Vera's unconscious form. Shields locked despite arms shaking with fatigue. Veyra at the fore, sword raised, scarred face grim: "HOLD THE LINE!" Thorne beside her, Grimjaw's dwarven bulk anchoring one edge. Mercenaries charge from all sides. The family makes their stand—battered, bloody, refusing to break.
     composition_notes: |
-      Tight ensemble shot. Shields interlocking. Overlapping actions. High intensity.
-    visual_hook: "The perfect cohesion of the five friends—blades and shields working in a gap of broken stone."
+      Circular composition with Vera at center (unconscious). Defenders forming protective ring. Veyra as command focal point. Approaching mercenaries create pressure from edges.
+    visual_hook: "Ragged shield circle around unconscious Vera, Veyra shouting 'HOLD THE LINE!'"
     depicts_characters:
+      - "veyra-thornwake"
       - "thorne-brightward"
-      - "sergeant-kelen"
-      - "corporal-darric"
-      - "archer-venn"
-      - "quartermaster-fayne"
+      - "vera-moonwhisper"
+      - "grimjaw-ironbeard"
     character_states:
+      veyra-thornwake: |
+        At front of circle, sword raised, scarred face grim. "HOLD THE LINE!" Exhausted but unbroken.
       thorne-brightward: |
-        Leading shield wall. Sword active.
-      sergeant-kelen: |
-        Locked shield with Thorne.
-      corporal-darric: |
-        Low strike beneath shields.
-      archer-venn: |
-        Elevated on rubble. Aiming.
-      quartermaster-fayne: |
-        Calling alerts. Agile.
+        Beside Veyra, shield raised, blue cloak tattered.
+      vera-moonwhisper: |
+        Center of circle, unconscious human form.
+      grimjaw-ironbeard: |
+        Anchoring one edge, dwarven stubbornness.
     location: "westwall-watchpost"
     zone: "courtyard"
     lighting:
-      primary_source: "Morning sun through smoke"
-      quality: "Harsh, flickering"
-      direction: "Multiple"
-      color_temperature: "High contrast"
-      shadow_depth: "Deep"
-      atmospheric: "Thick battle smoke"
+      primary_source: "Morning battle light"
+      quality: "desperate, revealing"
+      direction: "from above"
+      color_temperature: "exhaustion gray"
+      shadow_depth: "final stand shadows"
+      atmospheric: "dust, desperation"
     palette:
       dominant:
-        - "steel gray"
-        - "blood red"
-        - "smoke gray"
+        - "shield steel"
+        - "blood"
+        - "exhaustion gray"
       accent:
-        - "blue cloak remnants"
+        - "Watch blue (tattered)"
+        - "Veyra's teal tattoos"
       avoid:
-        - "softness"
+        - "fresh colors"
+        - "victory tones"
     prompt_used: |
-      Group of fantasy adventurers in a coordinated shield wall defending a broken wall,
-      interlocking shields and striking blades,
-      blood and smoke everywhere,
-      high intensity battle scene,
-      classical oil painting, Delacroix energy,
-      high contrast,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, desperate stand.
+      Courtyard scene—a ragged circle of exhausted defenders with shields locked around an unconscious woman at center. A half-elf with burn scars and mohawk stands at front, sword raised, shouting. Mercenaries charge from all sides. Battered, bloody, but refusing to break.
+      Wide shot, family as shield wall.
+      Steel and exhaustion gray.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, static pose
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      clean armor, fresh troops, victory
     tags:
-      - "action"
-      - "patrol"
-      - "breach"
+      - "final-stand"
+      - "shield-wall"
+      - "veyra"
       - "kinetic"
+      - "family"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15-battle-for-westwall-img-15-11-02"
+    source_moment: "ch15-battle-for-westwall-moment-11"
+    scene_id: "scn-15-20"
+    image_type: "mood"
+    category:
+      - "moment"
+      - "symbol"
+    scene_mood: "somber"
+    mood_rationale: |
+      The weight of the stand—exhausted faces in the shield wall. Not heroes but family, holding because they must.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Medium shot focusing on the faces in the shield wall. Exhaustion etched deep—eyes hollow with fatigue, arms trembling against shields, blood from a dozen wounds. Yet no one breaks. Dwarf, human, half-elf—different faces united in stubborn refusal. Behind them, Vera's still form. Before them, certain death. They hold.
+    composition_notes: |
+      Faces as focal points across frame. Shields create horizontal structure. Exhaustion visible in every feature. Unity in diversity.
+    visual_hook: "Exhausted faces in shield wall—hollow eyes, trembling arms, refusing to break"
+    depicts_characters:
+      - "grimjaw-ironbeard"
+      - "thorne-brightward"
+    character_states:
+      grimjaw-ironbeard: |
+        Dwarven face, exhaustion and stubbornness mixed.
+      thorne-brightward: |
+        Human captain, eyes hollow but steady.
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "Battle light"
+      quality: "exhaustion-revealing"
+      direction: "from front"
+      color_temperature: "gray fatigue"
+      shadow_depth: "hollow-eye shadows"
+      atmospheric: "weight of stand"
+    palette:
+      dominant:
+        - "face flesh"
+        - "shield steel"
+        - "blood"
+      accent:
+        - "hollow eyes"
+        - "stubborn set"
+      avoid:
+        - "fresh colors"
+        - "energy"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, weight of exhaustion.
+      Shield wall faces—dwarf, human, half-elf—united in exhaustion. Eyes hollow with fatigue, arms trembling against shields, blood from wounds. Yet no one breaks. Medium shot on faces.
+      Exhaustion and stubborn refusal.
+      Flesh and steel palette.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      fresh troops, energetic, clean faces
+    tags:
+      - "exhaustion"
+      - "shield-wall"
+      - "faces"
+      - "somber"
+      - "unity"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15-battle-for-westwall-img-15-12-01"
+    source_moment: "ch15-battle-for-westwall-moment-12"
+    scene_id: "scn-15-21"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "symbol"
+    scene_mood: "heroic"
+    mood_rationale: |
+      Hope made audible—three horns from three directions. The moment before salvation, blade of pure hope cutting through the air.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Wide landscape shot showing the horizon from three angles. Three cavalry squadrons crest three hills—east, north, south—simultaneously. Morning light catches armor. Horns still echoing, visible as lines of sound cutting through the air. In the foreground, defenders' faces turn toward hope. After the endless night, dawn brings hooves and steel.
+    composition_notes: |
+      Three-point composition—cavalry on three horizons. Central foreground shows defenders reacting. Morning light creates rim-lighting on distant cavalry. Sound waves suggested in air.
+    visual_hook: "Three cavalry squadrons cresting three hills, horns echoing, dawn-lit armor"
+    depicts_characters:
+      - "commander-atlock"
+    character_states:
+      commander-atlock: |
+        Distant figure leading eastern squadron, identifiable by command position.
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "Morning sun"
+      quality: "hope-dawn"
+      direction: "from behind cavalry"
+      color_temperature: "gold dawn"
+      shadow_depth: "rim-light glory"
+      atmospheric: "dust, hope"
+    palette:
+      dominant:
+        - "cavalry steel"
+        - "dawn gold"
+        - "hill green"
+      accent:
+        - "banner colors"
+        - "armor gleam"
+      avoid:
+        - "gray despair"
+        - "dark colors"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, cavalry arrival.
+      Wide landscape—three cavalry squadrons crest three hills simultaneously from east, north, and south. Morning light catches armor, rim-lighting the riders. In foreground, exhausted defenders turn toward the sound of horns.
+      Three-point hope composition.
+      Dawn gold and cavalry steel.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      single direction, no cavalry, flat light
+    tags:
+      - "cavalry"
+      - "hope"
+      - "three-horns"
+      - "heroic"
+      - "salvation"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15-battle-for-westwall-img-15-13-01"
+    source_moment: "ch15-battle-for-westwall-moment-13"
+    scene_id: "scn-15-21"
+    image_type: "hero"
+    category:
+      - "moment"
+      - "action"
+      - "character"
+    scene_mood: "heroic"
+    mood_rationale: |
+      Military glory incarnate—Commander Atlock leading the charge. "PER EQUITES, MORS!" Two hundred mounted soldiers, sabers gleaming.
+    aspect_ratio: "21:9"
+    orientation: "landscape"
+    size: "1792x768"
+    visual_description: |
+      Cinematic hero shot of Commander Atlock at the head of the charging cavalry. His scarred face is grim, saber raised, voice booming: "PER EQUITES, MORS!" Two hundred mounted soldiers take up the cry behind him—"THROUGH CAVALRY, DEATH!" Hooves churn dust into clouds of glory. Sabers gleam. Mercenaries scatter before the wave of steel. The charge that breaks armies.
+    composition_notes: |
+      Ultra-wide cinematic. Atlock as spearhead, cavalry spreading behind in V-formation. Dust clouds create atmosphere. Scattered mercenaries in foreground.
+    visual_hook: "Atlock leading cavalry charge, saber raised, two hundred riders, dust and glory"
+    depicts_characters:
+      - "commander-atlock"
+    character_states:
+      commander-atlock: |
+        At head of charge, scarred face grim. Saber raised, voice booming battle cry. Professional military might personified.
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "Morning sun"
+      quality: "glory light"
+      direction: "from behind, rim-lighting"
+      color_temperature: "gold glory"
+      shadow_depth: "action shadows"
+      atmospheric: "dust clouds, impact light"
+    palette:
+      dominant:
+        - "cavalry steel"
+        - "horse brown"
+        - "dust gold"
+      accent:
+        - "saber gleam"
+        - "banner colors"
+      avoid:
+        - "dark despair"
+        - "static composition"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, cavalry charge glory.
+      A scarred commander at the head of charging cavalry, saber raised, voice booming. Two hundred mounted soldiers behind in V-formation, sabers gleaming. Dust churns into gold clouds. Mercenaries scatter before the wave of steel.
+      Ultra-wide cinematic, military glory.
+      Steel and dust gold palette.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      static poses, single rider, no charge
+    tags:
+      - "atlock"
+      - "cavalry"
+      - "charge"
+      - "heroic"
+      - "hero-image"
+      - "victory"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15-battle-for-westwall-img-15-13-02"
+    source_moment: "ch15-battle-for-westwall-moment-13"
+    scene_id: "scn-15-21"
+    image_type: "mood"
+    category:
+      - "moment"
+      - "action"
+    scene_mood: "heroic"
+    mood_rationale: |
+      The envelopment—mercenaries trapped between three cavalry forces. The tactical brilliance of coordinated salvation.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Wide tactical shot showing the three-pronged cavalry envelopment from above. Mercenaries caught in the center as cavalry closes from east, north, and south. The Watchpost visible behind the defended. Dust clouds mark each cavalry arm. The trap closes. Professional military doctrine executed with devastating precision.
+    composition_notes: |
+      Bird's-eye tactical view. Three cavalry arms as converging lines. Mercenaries as trapped mass in center. Watchpost as defended point.
+    visual_hook: "Three cavalry arms closing on trapped mercenaries—tactical envelopment from above"
+    depicts_characters: []
+    character_states: {}
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "Morning sun"
+      quality: "tactical clarity"
+      direction: "from above"
+      color_temperature: "battle gold"
+      shadow_depth: "tactical shadows"
+      atmospheric: "dust tracking cavalry"
+    palette:
+      dominant:
+        - "ground brown"
+        - "cavalry steel"
+        - "dust clouds"
+      accent:
+        - "trapped enemy"
+        - "formation lines"
+      avoid:
+        - "confusion"
+        - "unclear composition"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, tactical battle scene.
+      Bird's-eye view of three cavalry forces converging on trapped mercenaries. Stone fortress visible as defended point. Dust clouds track each cavalry arm. Three-pronged envelopment closing.
+      Wide tactical shot, coordinated destruction.
+      Ground brown with steel and dust.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      single force, unclear formation, close-up
+    tags:
+      - "cavalry"
+      - "tactical"
+      - "envelopment"
+      - "heroic"
+      - "mood"
+    generated_at: null
+    file_name: null
+    file_path: null
+    provider: null
+    model: null
+    provider_metadata: {}
+
+  - custom_id: "ch15-battle-for-westwall-img-15-14-01"
+    source_moment: "ch15-battle-for-westwall-moment-14"
+    scene_id: "scn-15-23"
+    image_type: "beat"
+    category:
+      - "moment"
+      - "character"
+      - "emotion"
+    scene_mood: "intimate"
+    mood_rationale: |
+      Comic relief earned—the grandmother who commands armies. Atlock sitting on rubble eating stew because Mistress Elba told him to.
+    aspect_ratio: "16:9"
+    orientation: "landscape"
+    size: "1792x1024"
+    visual_description: |
+      Medium shot of aftermath humor. Mistress Elba stands with crossed arms, soup ladle as scepter, surveying her domain. Commander Atlock—veteran of dozen campaigns, scourge of bureaucrats—sits on a piece of rubble eating stew from a bowl. His face shows quiet bemusement. Weak chuckles from exhausted soldiers around them. Heroes need to eat.
+    composition_notes: |
+      Elba as standing dominant figure, Atlock as seated subordinate despite rank. Role reversal composition. Weak smiles in background.
+    visual_hook: "Elba standing over seated Atlock with soup ladle—grandmother commands general"
+    depicts_characters:
+      - "mistress-elba"
+      - "commander-atlock"
+    character_states:
+      mistress-elba: |
+        Standing with crossed arms, soup ladle as scepter. Grandmother authority absolute.
+      commander-atlock: |
+        Sitting on rubble eating stew. Scarred veteran obeying cook. Quiet bemusement.
+    location: "westwall-watchpost"
+    zone: "courtyard"
+    lighting:
+      primary_source: "Afternoon sun"
+      quality: "exhaustion warmth"
+      direction: "from side"
+      color_temperature: "warm aftermath"
+      shadow_depth: "soft relief"
+      atmospheric: "dust settling, humor emerging"
+    palette:
+      dominant:
+        - "rubble gray"
+        - "stew brown"
+        - "apron cream"
+      accent:
+        - "ladle gleam"
+        - "weak smiles"
+      avoid:
+        - "harsh light"
+        - "battle tension"
+    prompt_used: |
+      Oil painting, matte finish, visible brushwork, aftermath humor.
+      A sturdy grandmother stands with crossed arms and soup ladle, surveying her domain. A scarred military commander sits on rubble eating stew. Exhausted soldiers show weak smiles around them.
+      Medium shot, grandmother outranks general.
+      Aftermath warmth palette.
+    negative_prompt: |
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      battle scene, tension, dramatic lighting
+    tags:
+      - "elba"
+      - "atlock"
+      - "humor"
+      - "intimate"
+      - "aftermath"
     generated_at: null
     file_name: null
     file_path: null
@@ -444,462 +1917,75 @@ images:
     provider_metadata: {}
 
   - custom_id: "ch15-battle-for-westwall-img-15-15-01"
-    source_moment: "ch15-battle-for-westwall-moment-07"
-    scene_id: "scn-15-15"
-    image_type: "hero"
-    category:
-      - "moment"
-      - "character"
-      - "action"
-    scene_mood: "kinetic"
-    mood_rationale: "Violent metamorphosis. Bones breaking, armor snapping. Sacrifice transmuted into power."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Vera's transformation on the battlements. Body convulsing, spine elongating, ribcage cracking. Armor straps snapping. Silver-gray fur erupting across flesh. Amber eyes hold intelligent fury. Unnerving human smirk on wolf features. Battle smoke and sun.
-    composition_notes: |
-      Low angle. Vera center. Diagonal instability. Battlements horizontal base. Smoke background. Focal point on eyes and smirk.
-    visual_hook: "The horrifying intersection of human expression—that deliberate smirk—on an emerging wolf face"
-    depicts_characters:
-      - "vera-moonwhisper"
-    character_states:
-      vera-moonwhisper: |
-        Mid-transformation. Body breaking apart. Fur patches. Human/wolf amalgam face. Smirking. Armor fragments falling.
-    location: "westwall-watchpost"
-    zone: "battlements"
-    lighting:
-      primary_source: "sun through smoke + fire"
-      quality: "harsh, chaotic"
-      direction: "conflicting"
-      color_temperature: "white sun vs orange fire"
-      shadow_depth: "harsh contrast"
-      atmospheric: "smoke, debris"
-    palette:
-      dominant:
-        - "silver-gray fur"
-        - "blood crimson"
-        - "smoke gray"
-      accent:
-        - "fire orange"
-        - "amber glow"
-      avoid:
-        - "pastoral"
-    prompt_used: |
-      Half-elf woman mid-violent transformation into a dire wolf on stone walls,
-      spine elongating, armor snapping, fur erupting,
-      human face shifting to lupine snout but with a terrifying human smirk,
-      amber eyes holding fury,
-      battle smoke and fire light,
-      classical oil painting, Romantic dynamism,
-      high contrast, urgent brushwork,
-      Delacroix energy, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, beautiful transformation
-    tags:
-      - "transformation"
-      - "dire-wolf"
-      - "kinetic"
-      - "vera"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - id: "ch15-battle-for-westwall-img-15-16-01"
-    source_moment: "ch15-battle-for-westwall-moment-08"
-    scene_id: "scn-15-16"
-    image_type: "action"
-    category:
-      - "action"
-      - "moment"
-    scene_mood: "kinetic"
-    mood_rationale: "The wolf's rampage. Direct impact against the mercenary line. Breaking the formation."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Vera in dire wolf form crashing into a mercenary shield wall. She hit with the force of a warhorse. Splintering shields, men thrown into the air. A mercenary lieutenant is being dragged down. Chaos and silver fur.
-    composition_notes: |
-      Wide shot. Impact center. Motion lines radiating. The wolf as a massive gray hammer.
-    visual_hook: "The raw power of the beast as it literally shatters the professional military formation."
-    depicts_characters:
-      - "vera-moonwhisper"
-    character_states:
-      vera-moonwhisper: |
-        Dire wolf form. Mid-strike. Claws rending metal. Snarling.
-    location: "westwall-watchpost"
-    zone: "courtyard"
-    lighting:
-      primary_source: "Sun through smoke"
-      quality: "Harsh, dramatic"
-      direction: "Overhead"
-      color_temperature: "Muted"
-      shadow_depth: "Deep"
-      atmospheric: "Blood mist/Dust"
-    palette:
-      dominant:
-        - "silver fur"
-        - "blood red"
-        - "shield wood"
-      accent:
-        - "amber eye streak"
-      avoid:
-        - "peace"
-    prompt_used: |
-      Massive silver-gray dire wolf crashing into a line of armored mercenaries with shields,
-      splintering wood and flying bodies,
-      visceral combat,
-      blood splatter and smoke,
-      classical oil painting, Romantic dynamism,
-      urgent brushwork, Delacroix energy,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "action"
-      - "dire-wolf"
-      - "rampage"
-      - "kinetic"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch15-battle-for-westwall-img-15-17-01"
-    source_moment: "ch15-battle-for-westwall-moment-09"
-    scene_id: "scn-15-17"
-    image_type: "anchor"
-    category:
-      - "moment"
-      - "character"
-      - "action"
-    scene_mood: "kinetic"
-    mood_rationale: "Hybrid form attack. Body horror and visceral violence. Survival rage."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      Vera's hybrid form lunges from rubble at Krag. Twisted amalgam of human limbs and lupine features. Face slick with blood, caught between woman and wolf. Jaws clamp down on Krag's sword arm. Armor crumples, bone snaps. Krag's scream. Debris and dust.
-    composition_notes: |
-      Dutch angle. Diagonal lunge lower-left to upper-right. Ruined arm focal point. Debris frames violence.
-    visual_hook: "Her face—slick with blood, caught between human features and lupine snout, amber eyes holding human fury"
-    depicts_characters:
-      - "vera-moonwhisper"
-    character_states:
-      vera-moonwhisper: |
-        Hybrid form. Broken gait. Twisted amalgam limbs. Blood-slick face. Amber eyes holding human fury. Lunging from wreckage.
-    location: "westwall-watchpost"
-    zone: "courtyard"
-    lighting:
-      primary_source: "harsh sun + debris fire"
-      quality: "harsh, brutal"
-      direction: "overhead"
-      color_temperature: "cold white vs warm fire"
-      shadow_depth: "extreme"
-      atmospheric: "smoke, dust"
-    palette:
-      dominant:
-        - "blood crimson"
-        - "silver-gray fur"
-        - "bone white"
-      accent:
-        - "amber eyes"
-        - "fire orange"
-      avoid:
-        - "clean surfaces"
-    prompt_used: |
-      Horrifying hybrid creature lunging from rubble at an armored giant,
-      amalgam of woman and wolf,
-      blood-slicked face with amber eyes,
-      crushing armored arm in powerful jaws,
-      Krag's expression of shock and agony,
-      debris and smoke,
-      classical oil painting, Romantic dynamism,
-      baroque violence, body horror triumph,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, beautiful werewolf
-    tags:
-      - "hybrid-form"
-      - "body-horror"
-      - "kinetic"
-      - "vera"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch15-battle-for-westwall-img-15-20-01"
-    source_moment: "ch15-battle-for-westwall-moment-10"
-    scene_id: "scn-15-20"
-    image_type: "symbol"
-    category:
-      - "moment"
-      - "emotion"
-      - "symbol"
-    scene_mood: "somber"
-    mood_rationale: "Defensive circle as symbolic geometry. Found family choosing to die together. Weighted determination."
-    aspect_ratio: "16:9"
-    orientation: "landscape"
-    size: "1792x1024"
-    visual_description: |
-      High angle on the protective ring in blood-soaked courtyard. Vera lies broken at center. Survivors shields locked around her. Veyra commanding, Thorne and Grimjaw anchoring. Mercenaries closing from edges. shadows converging toward center.
-    composition_notes: |
-      God's eye view. Vera center visual anchor. Converging shadows. Mercenaries frame edges. Geometric perfection vs chaos.
-    visual_hook: "The geometric perfection of the protective circle against the chaos of the battlefield"
-    depicts_characters:
-      - "vera-moonwhisper"
-      - "veyra-thornwake"
-      - "thorne-brightward"
-      - "grimjaw-ironbeard"
-      - "finn"
-    character_states:
-      vera-moonwhisper: |
-        Unconscious at center. Reverted human form. Broken limbs. Matted hair.
-      veyra-thornwake: |
-        Commanding circle. Raised sword. Blood-streaked. Lantern glowing.
-      thorne-brightward: |
-        Shield wall anchor. Grim determination. Torn blue cloak.
-      grimjaw-ironbeard: |
-        Immovable presence. Raised Tremor. Singed beard.
-      finn: |
-        Warrior stance with veterans. Resolute.
-    location: "westwall-watchpost"
-    zone: "courtyard"
-    lighting:
-      primary_source: "sun through smoke"
-      quality: "diffused, heavy"
-      direction: "above"
-      color_temperature: "muted, desaturated"
-      shadow_depth: "deep, converging"
-      atmospheric: "smoke, dust"
-    palette:
-      dominant:
-        - "blood-soaked stone gray"
-        - "muted earth tones"
-      accent:
-        - "lantern gold"
-        - "pale flesh center"
-      avoid:
-        - "bright colors"
-    prompt_used: |
-      High angle view of a protective defensive circle of soldiers around an unconscious woman,
-      blood-soaked stone courtyard,
-      locked shields and raised weapons,
-      enemies closing in from all sides,
-      shadows converging toward the center,
-      atmosphere of last stand and sacrifice,
-      classical oil painting, Rembrandt lighting,
-      melancholy weight, visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, victory colors
-    tags:
-      - "circle"
-      - "family"
-      - "sacrifice"
-      - "somber"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch15-battle-for-westwall-img-15-21-01"
-    source_moment: "ch15-battle-for-westwall-moment-11"
-    scene_id: "scn-15-21"
-    image_type: "action"
-    category:
-      - "action"
-      - "moment"
-    scene_mood: "pastoral"
-    mood_rationale: "The arrival of the cavalry. A moment of salvation and sweeping scale. The horizon line breaking with hope."
-    aspect_ratio: "21:9"
-    orientation: "landscape"
-    size: "1792x768"
-    visual_description: |
-      Commander Atlock's cavalry squadron cresting the eastern rise. Horses at full gallop, sabers gleaming. Sun at their backs creates a wall of golden light. Banners snap in the wind. The mercenary ranks below are beginning to break in terror.
-    composition_notes: |
-      Extreme wide shot. Cavalry silhouetted against the morning sun on the ridge. Movement down the slope toward the viewer.
-    visual_hook: "The wall of golden light behind the charging horses, making them look like a descending tide of justice."
-    depicts_characters:
-      - "commander-atlock"
-    character_states:
-      commander-atlock: |
-        Leading charge. Saber raised. Weathered face set in grim resolve.
-    location: "westwall-watchpost"
-    zone: "exterior"
-    lighting:
-      primary_source: "Morning sun"
-      quality: "Blinding, golden"
-      direction: "Back-lit"
-      color_temperature: "Pure gold"
-      shadow_depth: "Deep on the slope"
-      atmospheric: "Mist and dust"
-    palette:
-      dominant:
-        - "gold"
-        - "grass green"
-        - "steel gray"
-      accent:
-        - "blue banners"
-      avoid:
-        - "darkness"
-    prompt_used: |
-      Commander leading a cavalry charge over a hilltop at sunrise,
-      silhouettes against a wall of golden morning light,
-      gleaming sabers and snapping banners,
-      horses at full gallop,
-      atmosphere of salvation and power,
-      classical oil painting, Hudson River School grandeur,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "action"
-      - "cavalry"
-      - "salvation"
-      - "pastoral"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch15-battle-for-westwall-img-15-23-01"
-    source_moment: "ch15-battle-for-westwall-moment-12"
-    scene_id: "scn-15-23"
-    image_type: "beat"
-    category:
-      - "character"
-      - "emotion"
-    scene_mood: "intimate"
-    mood_rationale: "Humanity returning after battle. Elba mothering the high commander. A moment of grounding humor."
-    aspect_ratio: "1:1"
-    orientation: "square"
-    size: "1024x1024"
-    visual_description: |
-      Mistress Elba standing over a seated Commander Atlock. She has thrust a bowl of stew into his hands and has her arms crossed, waiting for him to eat. Atlock looks bewildered but submissive. The background is the messy courtyard being cleared by soldiers.
-    composition_notes: |
-      Two-shot. Elba towers over the seated Atlock (metaphorically). Focus on the stew bowl and their expressions.
-    visual_hook: "The most powerful man in the city being scolded into eating his soup by a flour-dusted cook."
-    depicts_characters:
-      - "mistress-elba"
-      - "commander-atlock"
-    character_states:
-      mistress-elba: |
-        Arms crossed. Commanding expression. Clean apron over bloodied dress.
-      commander-atlock: |
-        Seated on rubble. Holding bowl. Taken aback.
-    location: "westwall-watchpost"
-    zone: "courtyard"
-    lighting:
-      primary_source: "Mid-morning sun"
-      quality: "Even, clear"
-      direction: "Overhead"
-      color_temperature: "Natural"
-      shadow_depth: "Soft"
-      atmospheric: "Smoke clearing"
-    palette:
-      dominant:
-        - "stone gray"
-        - "stew amber"
-        - "beige apron"
-      accent:
-        - "Atlock's medals"
-      avoid:
-        - "violence"
-    prompt_used: |
-      Elderly dwarven cook standing over a seated high-ranking general,
-      forcing him to eat a bowl of stew,
-      battlefield aftermath background,
-      humorous character moment,
-      classical oil painting, genre scene,
-      visible brushwork, matte finish
-    negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed
-    tags:
-      - "beat"
-      - "elba"
-      - "atlock"
-      - "humor"
-      - "intimate"
-    generated_at: null
-    file_name: null
-    file_path: null
-    provider: null
-    model: null
-    provider_metadata: {}
-
-  - custom_id: "ch15-battle-for-westwall-img-15-24-01"
-    source_moment: "ch15-battle-for-westwall-moment-13"
+    source_moment: "ch15-battle-for-westwall-moment-15"
     scene_id: "scn-15-24"
     image_type: "detail"
     category:
       - "moment"
       - "character"
       - "emotion"
-    scene_mood: "intimate"
-    mood_rationale: "Vera as human—fragile, damaged, alive. Love surviving destruction. Breathing room after violence."
-    aspect_ratio: "4:5"
+    scene_mood: "somber"
+    mood_rationale: |
+      Survival's cost made visible—Vera's eyes open but wrong. The price of transformation written in unfocused gaze and trembling form.
+    aspect_ratio: "3:4"
     orientation: "portrait"
-    size: "1024x1280"
+    size: "1024x1365"
     visual_description: |
-      Close framing on Vera's face and reaching hand. Eyes unfocused, wrong. Hand trembling, finding Veyra's scarred hand and squeezing. Single tear tracks down cheek. Echo perches on cot edge, crooning. Soft morning light creates warmth.
+      Close-up portrait of Vera's face in the medical station. Her eyes are open but wrong—unfocused, darting, seeing things that aren't there. Echo perches on the cot's edge beside her, making soft crooning sounds. A tear slides from the corner of her eye. Her hand, visible at frame edge, finds Veyra's with newborn-kitten strength. Alive, but at what cost.
     composition_notes: |
-      Close portrait. connection of hands is lower intersection. Tear focal point. Echo at frame edge. Background soft.
-    visual_hook: "The single tear tracking down her cheek, her eyes unfocused and wrong—alive but damaged"
+      Portrait format, Vera's face fills upper frame. Eyes as disturbing focal point—open but not seeing. Echo provides grounding. Hand connection at edge.
+    visual_hook: "Vera's eyes open but wrong, unfocused, darting—Echo crooning beside her"
     depicts_characters:
       - "vera-moonwhisper"
+      - "echo-raven"
       - "veyra-thornwake"
     character_states:
       vera-moonwhisper: |
-        Waking from near-death. Unfocused eyes. Trembling hand reaching. Single tear. Fragile survival.
+        Face close-up. Eyes open but unfocused, darting, seeing things not there. Body trembling. Tear sliding. Human again but damaged.
+      echo-raven: |
+        On cot's edge, making soft crooning sounds. Bright eyes worried.
       veyra-thornwake: |
-        Only scarred hand and arm visible. Clasping Vera's. Steady, protective.
+        Hand only visible, being found by Vera's weak grip.
     location: "westwall-watchpost"
-    zone: "interior"
+    zone: "medical-station"
     lighting:
-      primary_source: "soft morning window light"
-      quality: "soft, warm, gentle"
-      direction: "side"
-      color_temperature: "warm amber"
-      shadow_depth: "soft gradients"
-      atmospheric: "still"
+      primary_source: "Afternoon gold through window"
+      quality: "medical warmth"
+      direction: "from side"
+      color_temperature: "relief gold"
+      shadow_depth: "soft concern"
+      atmospheric: "still, tense hope"
     palette:
       dominant:
-        - "pale flesh"
-        - "warm amber light"
-        - "gray bandages"
+        - "skin pale"
+        - "raven black"
+        - "afternoon gold"
       accent:
         - "tear gleam"
-        - "black feathers"
+        - "unfocused eyes"
       avoid:
-        - "blood red"
+        - "cheerful colors"
+        - "healthy tones"
     prompt_used: |
-      Close intimate portrait of a woman waking in a makeshift bed,
-      eyes unfocused and watery with a single tear,
-      clasping a scarred hand with her own trembling hand,
-      raven perched nearby crooning,
-      soft gentle morning light,
-      atmosphere of recovery and relief,
-      classical oil painting, Vermeer lighting,
-      visible brushwork, matte finish
+      Oil painting, matte finish, visible brushwork, aftermath portrait.
+      Close-up of a half-elf woman's face, eyes open but unfocused, darting, seeing things not there. A raven perches beside her making soft sounds. A tear slides from her eye. Her hand weakly finds another's at frame edge.
+      Portrait detail, survival's cost.
+      Pale skin and afternoon gold.
     negative_prompt: |
-      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI, video game screenshot, neon colors, airbrushed, action pose
+      text, watermark, signature, artist name, UI elements, health bars, HUD, level indicator,
+      cartoon, anime, manga, cel-shaded, plastic, glossy, 3D render, CGI,
+      video game screenshot, neon colors, airbrushed, smooth surfaces, stock photo,
+      digital art gloss, concept art polish, AI artifacts, modern elements,
+      futuristic elements, photorealistic, sci-fi, firearms,
+      empty sterile unused appearance, pristine new construction,
+      wide shot, healthy appearance, focused eyes, victory
     tags:
-      - "intimate"
-      - "survival"
-      - "aftermath"
       - "vera"
+      - "aftermath"
+      - "echo"
+      - "somber"
+      - "detail"
+      - "cost"
     generated_at: null
     file_name: null
     file_path: null
